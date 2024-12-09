@@ -14,7 +14,8 @@ on:
 jobs:
   build:
     name: Build Deel REST API
-    runs-on: ubuntu-latest
+    # use self-hosted runners
+    runs-on: global-general
     strategy:
       matrix:
         java: [ 17, 21 ]
