@@ -1,0 +1,15 @@
+name: sdk-generation
+on:
+  workflow_dispatch:
+permissions:
+  id-token: write
+  contents: read
+  statuses: write
+
+jobs:
+  openapi:
+    uses: letsdeel/actions-templates/.github/workflows/openapi-java.yml@PA-3579-create-java-sdk-based-on-openapi-yaml-file
+    with:
+      node-version: '20'
+      runner-label: global-general
+    secrets: inherit
