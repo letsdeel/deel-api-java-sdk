@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * CreateGPContract201ResponseDataClient
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateGPContract201ResponseDataClient {
   public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
+  @javax.annotation.Nullable
   private CreateGPContract201ResponseDataClientLegalEntity legalEntity;
 
   public CreateGPContract201ResponseDataClient() {
   }
 
-  public CreateGPContract201ResponseDataClient legalEntity(CreateGPContract201ResponseDataClientLegalEntity legalEntity) {
+  public CreateGPContract201ResponseDataClient legalEntity(@javax.annotation.Nullable CreateGPContract201ResponseDataClientLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
     return this;
   }
@@ -72,7 +73,7 @@ public class CreateGPContract201ResponseDataClient {
     return legalEntity;
   }
 
-  public void setLegalEntity(CreateGPContract201ResponseDataClientLegalEntity legalEntity) {
+  public void setLegalEntity(@javax.annotation.Nullable CreateGPContract201ResponseDataClientLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
   }
 

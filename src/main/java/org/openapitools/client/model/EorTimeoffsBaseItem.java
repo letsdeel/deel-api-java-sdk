@@ -56,84 +56,102 @@ import org.openapitools.client.JSON;
 /**
  * EorTimeoffsBaseItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorTimeoffsBaseItem {
   public static final String SERIALIZED_NAME_REASON = "reason";
   @SerializedName(SERIALIZED_NAME_REASON)
+  @javax.annotation.Nullable
   private String reason;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TimeoffsTypeEnum type;
 
   public static final String SERIALIZED_NAME_REQUESTED_AT = "requested_at";
   @SerializedName(SERIALIZED_NAME_REQUESTED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime requestedAt;
 
   public static final String SERIALIZED_NAME_REVIEWED_AT = "reviewed_at";
   @SerializedName(SERIALIZED_NAME_REVIEWED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime reviewedAt;
 
   public static final String SERIALIZED_NAME_DENIAL_REASON = "denial_reason";
   @SerializedName(SERIALIZED_NAME_DENIAL_REASON)
+  @javax.annotation.Nullable
   private String denialReason;
 
   public static final String SERIALIZED_NAME_HAS_MULTIPLE_DATES = "has_multiple_dates";
   @SerializedName(SERIALIZED_NAME_HAS_MULTIPLE_DATES)
+  @javax.annotation.Nullable
   private Boolean hasMultipleDates;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private TimeoffsStatusEnum status;
 
   public static final String SERIALIZED_NAME_OTHER_TIMEOFF_NAME = "other_timeoff_name";
   @SerializedName(SERIALIZED_NAME_OTHER_TIMEOFF_NAME)
+  @javax.annotation.Nullable
   private String otherTimeoffName;
 
   public static final String SERIALIZED_NAME_REQUESTER = "requester";
   @SerializedName(SERIALIZED_NAME_REQUESTER)
+  @javax.annotation.Nullable
   private TimeoffsProfile requester;
 
   public static final String SERIALIZED_NAME_REVIEWER = "reviewer";
   @SerializedName(SERIALIZED_NAME_REVIEWER)
+  @javax.annotation.Nullable
   private TimeoffsProfile reviewer;
 
   public static final String SERIALIZED_NAME_DAYS_USED_START_YEAR = "days_used_start_year";
   @SerializedName(SERIALIZED_NAME_DAYS_USED_START_YEAR)
+  @javax.annotation.Nullable
   private String daysUsedStartYear;
 
   public static final String SERIALIZED_NAME_DAYS_USED_END_YEAR = "days_used_end_year";
   @SerializedName(SERIALIZED_NAME_DAYS_USED_END_YEAR)
+  @javax.annotation.Nullable
   private String daysUsedEndYear;
 
   public static final String SERIALIZED_NAME_TOTAL_DAYS_USED = "total_days_used";
   @SerializedName(SERIALIZED_NAME_TOTAL_DAYS_USED)
+  @javax.annotation.Nullable
   private String totalDaysUsed;
 
   public static final String SERIALIZED_NAME_START_DATE_IS_HALF_DAY = "start_date_is_half_day";
   @SerializedName(SERIALIZED_NAME_START_DATE_IS_HALF_DAY)
+  @javax.annotation.Nullable
   private Boolean startDateIsHalfDay;
 
   public static final String SERIALIZED_NAME_END_DATE_IS_HALF_DAY = "end_date_is_half_day";
   @SerializedName(SERIALIZED_NAME_END_DATE_IS_HALF_DAY)
+  @javax.annotation.Nullable
   private Boolean endDateIsHalfDay;
 
   public static final String SERIALIZED_NAME_SINGLE_DATE = "single_date";
   @SerializedName(SERIALIZED_NAME_SINGLE_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime singleDate;
 
   public static final String SERIALIZED_NAME_DATE_IS_HALF_DAY = "date_is_half_day";
   @SerializedName(SERIALIZED_NAME_DATE_IS_HALF_DAY)
+  @javax.annotation.Nullable
   private Boolean dateIsHalfDay;
 
   public static final String SERIALIZED_NAME_ATTACHMENTS = "attachments";
   @SerializedName(SERIALIZED_NAME_ATTACHMENTS)
+  @javax.annotation.Nullable
   private List<TimeoffsAttachmentsItem> attachments = new ArrayList<>();
 
   public EorTimeoffsBaseItem() {
   }
 
-  public EorTimeoffsBaseItem reason(String reason) {
+  public EorTimeoffsBaseItem reason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
     return this;
   }
@@ -147,12 +165,12 @@ public class EorTimeoffsBaseItem {
     return reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
   }
 
 
-  public EorTimeoffsBaseItem type(TimeoffsTypeEnum type) {
+  public EorTimeoffsBaseItem type(@javax.annotation.Nonnull TimeoffsTypeEnum type) {
     this.type = type;
     return this;
   }
@@ -166,12 +184,12 @@ public class EorTimeoffsBaseItem {
     return type;
   }
 
-  public void setType(TimeoffsTypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TimeoffsTypeEnum type) {
     this.type = type;
   }
 
 
-  public EorTimeoffsBaseItem requestedAt(OffsetDateTime requestedAt) {
+  public EorTimeoffsBaseItem requestedAt(@javax.annotation.Nullable OffsetDateTime requestedAt) {
     this.requestedAt = requestedAt;
     return this;
   }
@@ -185,12 +203,12 @@ public class EorTimeoffsBaseItem {
     return requestedAt;
   }
 
-  public void setRequestedAt(OffsetDateTime requestedAt) {
+  public void setRequestedAt(@javax.annotation.Nullable OffsetDateTime requestedAt) {
     this.requestedAt = requestedAt;
   }
 
 
-  public EorTimeoffsBaseItem reviewedAt(OffsetDateTime reviewedAt) {
+  public EorTimeoffsBaseItem reviewedAt(@javax.annotation.Nullable OffsetDateTime reviewedAt) {
     this.reviewedAt = reviewedAt;
     return this;
   }
@@ -204,12 +222,12 @@ public class EorTimeoffsBaseItem {
     return reviewedAt;
   }
 
-  public void setReviewedAt(OffsetDateTime reviewedAt) {
+  public void setReviewedAt(@javax.annotation.Nullable OffsetDateTime reviewedAt) {
     this.reviewedAt = reviewedAt;
   }
 
 
-  public EorTimeoffsBaseItem denialReason(String denialReason) {
+  public EorTimeoffsBaseItem denialReason(@javax.annotation.Nullable String denialReason) {
     this.denialReason = denialReason;
     return this;
   }
@@ -223,12 +241,12 @@ public class EorTimeoffsBaseItem {
     return denialReason;
   }
 
-  public void setDenialReason(String denialReason) {
+  public void setDenialReason(@javax.annotation.Nullable String denialReason) {
     this.denialReason = denialReason;
   }
 
 
-  public EorTimeoffsBaseItem hasMultipleDates(Boolean hasMultipleDates) {
+  public EorTimeoffsBaseItem hasMultipleDates(@javax.annotation.Nullable Boolean hasMultipleDates) {
     this.hasMultipleDates = hasMultipleDates;
     return this;
   }
@@ -242,12 +260,12 @@ public class EorTimeoffsBaseItem {
     return hasMultipleDates;
   }
 
-  public void setHasMultipleDates(Boolean hasMultipleDates) {
+  public void setHasMultipleDates(@javax.annotation.Nullable Boolean hasMultipleDates) {
     this.hasMultipleDates = hasMultipleDates;
   }
 
 
-  public EorTimeoffsBaseItem status(TimeoffsStatusEnum status) {
+  public EorTimeoffsBaseItem status(@javax.annotation.Nonnull TimeoffsStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -261,12 +279,12 @@ public class EorTimeoffsBaseItem {
     return status;
   }
 
-  public void setStatus(TimeoffsStatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull TimeoffsStatusEnum status) {
     this.status = status;
   }
 
 
-  public EorTimeoffsBaseItem otherTimeoffName(String otherTimeoffName) {
+  public EorTimeoffsBaseItem otherTimeoffName(@javax.annotation.Nullable String otherTimeoffName) {
     this.otherTimeoffName = otherTimeoffName;
     return this;
   }
@@ -280,12 +298,12 @@ public class EorTimeoffsBaseItem {
     return otherTimeoffName;
   }
 
-  public void setOtherTimeoffName(String otherTimeoffName) {
+  public void setOtherTimeoffName(@javax.annotation.Nullable String otherTimeoffName) {
     this.otherTimeoffName = otherTimeoffName;
   }
 
 
-  public EorTimeoffsBaseItem requester(TimeoffsProfile requester) {
+  public EorTimeoffsBaseItem requester(@javax.annotation.Nullable TimeoffsProfile requester) {
     this.requester = requester;
     return this;
   }
@@ -299,12 +317,12 @@ public class EorTimeoffsBaseItem {
     return requester;
   }
 
-  public void setRequester(TimeoffsProfile requester) {
+  public void setRequester(@javax.annotation.Nullable TimeoffsProfile requester) {
     this.requester = requester;
   }
 
 
-  public EorTimeoffsBaseItem reviewer(TimeoffsProfile reviewer) {
+  public EorTimeoffsBaseItem reviewer(@javax.annotation.Nullable TimeoffsProfile reviewer) {
     this.reviewer = reviewer;
     return this;
   }
@@ -318,12 +336,12 @@ public class EorTimeoffsBaseItem {
     return reviewer;
   }
 
-  public void setReviewer(TimeoffsProfile reviewer) {
+  public void setReviewer(@javax.annotation.Nullable TimeoffsProfile reviewer) {
     this.reviewer = reviewer;
   }
 
 
-  public EorTimeoffsBaseItem daysUsedStartYear(String daysUsedStartYear) {
+  public EorTimeoffsBaseItem daysUsedStartYear(@javax.annotation.Nullable String daysUsedStartYear) {
     this.daysUsedStartYear = daysUsedStartYear;
     return this;
   }
@@ -337,12 +355,12 @@ public class EorTimeoffsBaseItem {
     return daysUsedStartYear;
   }
 
-  public void setDaysUsedStartYear(String daysUsedStartYear) {
+  public void setDaysUsedStartYear(@javax.annotation.Nullable String daysUsedStartYear) {
     this.daysUsedStartYear = daysUsedStartYear;
   }
 
 
-  public EorTimeoffsBaseItem daysUsedEndYear(String daysUsedEndYear) {
+  public EorTimeoffsBaseItem daysUsedEndYear(@javax.annotation.Nullable String daysUsedEndYear) {
     this.daysUsedEndYear = daysUsedEndYear;
     return this;
   }
@@ -356,12 +374,12 @@ public class EorTimeoffsBaseItem {
     return daysUsedEndYear;
   }
 
-  public void setDaysUsedEndYear(String daysUsedEndYear) {
+  public void setDaysUsedEndYear(@javax.annotation.Nullable String daysUsedEndYear) {
     this.daysUsedEndYear = daysUsedEndYear;
   }
 
 
-  public EorTimeoffsBaseItem totalDaysUsed(String totalDaysUsed) {
+  public EorTimeoffsBaseItem totalDaysUsed(@javax.annotation.Nullable String totalDaysUsed) {
     this.totalDaysUsed = totalDaysUsed;
     return this;
   }
@@ -375,12 +393,12 @@ public class EorTimeoffsBaseItem {
     return totalDaysUsed;
   }
 
-  public void setTotalDaysUsed(String totalDaysUsed) {
+  public void setTotalDaysUsed(@javax.annotation.Nullable String totalDaysUsed) {
     this.totalDaysUsed = totalDaysUsed;
   }
 
 
-  public EorTimeoffsBaseItem startDateIsHalfDay(Boolean startDateIsHalfDay) {
+  public EorTimeoffsBaseItem startDateIsHalfDay(@javax.annotation.Nullable Boolean startDateIsHalfDay) {
     this.startDateIsHalfDay = startDateIsHalfDay;
     return this;
   }
@@ -394,12 +412,12 @@ public class EorTimeoffsBaseItem {
     return startDateIsHalfDay;
   }
 
-  public void setStartDateIsHalfDay(Boolean startDateIsHalfDay) {
+  public void setStartDateIsHalfDay(@javax.annotation.Nullable Boolean startDateIsHalfDay) {
     this.startDateIsHalfDay = startDateIsHalfDay;
   }
 
 
-  public EorTimeoffsBaseItem endDateIsHalfDay(Boolean endDateIsHalfDay) {
+  public EorTimeoffsBaseItem endDateIsHalfDay(@javax.annotation.Nullable Boolean endDateIsHalfDay) {
     this.endDateIsHalfDay = endDateIsHalfDay;
     return this;
   }
@@ -413,12 +431,12 @@ public class EorTimeoffsBaseItem {
     return endDateIsHalfDay;
   }
 
-  public void setEndDateIsHalfDay(Boolean endDateIsHalfDay) {
+  public void setEndDateIsHalfDay(@javax.annotation.Nullable Boolean endDateIsHalfDay) {
     this.endDateIsHalfDay = endDateIsHalfDay;
   }
 
 
-  public EorTimeoffsBaseItem singleDate(OffsetDateTime singleDate) {
+  public EorTimeoffsBaseItem singleDate(@javax.annotation.Nullable OffsetDateTime singleDate) {
     this.singleDate = singleDate;
     return this;
   }
@@ -432,12 +450,12 @@ public class EorTimeoffsBaseItem {
     return singleDate;
   }
 
-  public void setSingleDate(OffsetDateTime singleDate) {
+  public void setSingleDate(@javax.annotation.Nullable OffsetDateTime singleDate) {
     this.singleDate = singleDate;
   }
 
 
-  public EorTimeoffsBaseItem dateIsHalfDay(Boolean dateIsHalfDay) {
+  public EorTimeoffsBaseItem dateIsHalfDay(@javax.annotation.Nullable Boolean dateIsHalfDay) {
     this.dateIsHalfDay = dateIsHalfDay;
     return this;
   }
@@ -451,12 +469,12 @@ public class EorTimeoffsBaseItem {
     return dateIsHalfDay;
   }
 
-  public void setDateIsHalfDay(Boolean dateIsHalfDay) {
+  public void setDateIsHalfDay(@javax.annotation.Nullable Boolean dateIsHalfDay) {
     this.dateIsHalfDay = dateIsHalfDay;
   }
 
 
-  public EorTimeoffsBaseItem attachments(List<TimeoffsAttachmentsItem> attachments) {
+  public EorTimeoffsBaseItem attachments(@javax.annotation.Nullable List<TimeoffsAttachmentsItem> attachments) {
     this.attachments = attachments;
     return this;
   }
@@ -478,7 +496,7 @@ public class EorTimeoffsBaseItem {
     return attachments;
   }
 
-  public void setAttachments(List<TimeoffsAttachmentsItem> attachments) {
+  public void setAttachments(@javax.annotation.Nullable List<TimeoffsAttachmentsItem> attachments) {
     this.attachments = attachments;
   }
 

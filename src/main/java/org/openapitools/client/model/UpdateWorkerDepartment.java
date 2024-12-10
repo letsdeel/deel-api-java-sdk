@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * UpdateWorkerDepartment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateWorkerDepartment {
   public static final String SERIALIZED_NAME_DEPARTMENT_ID = "department_id";
   @SerializedName(SERIALIZED_NAME_DEPARTMENT_ID)
+  @javax.annotation.Nonnull
   private String departmentId;
 
   public UpdateWorkerDepartment() {
   }
 
-  public UpdateWorkerDepartment departmentId(String departmentId) {
+  public UpdateWorkerDepartment departmentId(@javax.annotation.Nonnull String departmentId) {
     this.departmentId = departmentId;
     return this;
   }
@@ -71,7 +72,7 @@ public class UpdateWorkerDepartment {
     return departmentId;
   }
 
-  public void setDepartmentId(String departmentId) {
+  public void setDepartmentId(@javax.annotation.Nonnull String departmentId) {
     this.departmentId = departmentId;
   }
 

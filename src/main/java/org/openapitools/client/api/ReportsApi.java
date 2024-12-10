@@ -202,7 +202,8 @@ public class ReportsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful response. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -221,7 +222,8 @@ public class ReportsApi {
          * @return PaymentsDetailedReportContainer
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful response. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -241,7 +243,8 @@ public class ReportsApi {
          * @return ApiResponse&lt;PaymentsDetailedReportContainer&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful response. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -261,7 +264,8 @@ public class ReportsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful response. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -283,7 +287,8 @@ public class ReportsApi {
      * @param toDate Filtered results will include records created before the provided date. (required)
      * @return APIgetDetailedPaymentsReportRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful response. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>

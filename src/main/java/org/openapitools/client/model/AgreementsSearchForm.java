@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * Convenient model to encapsulate query parameters to get a list of agreements.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class AgreementsSearchForm {
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nullable
   private String contractId;
 
   public static final String SERIALIZED_NAME_LIMIT = "limit";
   @SerializedName(SERIALIZED_NAME_LIMIT)
+  @javax.annotation.Nullable
   private String limit = "50";
 
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
+  @javax.annotation.Nullable
   private String offset = "0";
 
   public AgreementsSearchForm() {
   }
 
-  public AgreementsSearchForm contractId(String contractId) {
+  public AgreementsSearchForm contractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -79,12 +82,12 @@ public class AgreementsSearchForm {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
   }
 
 
-  public AgreementsSearchForm limit(String limit) {
+  public AgreementsSearchForm limit(@javax.annotation.Nullable String limit) {
     this.limit = limit;
     return this;
   }
@@ -98,12 +101,12 @@ public class AgreementsSearchForm {
     return limit;
   }
 
-  public void setLimit(String limit) {
+  public void setLimit(@javax.annotation.Nullable String limit) {
     this.limit = limit;
   }
 
 
-  public AgreementsSearchForm offset(String offset) {
+  public AgreementsSearchForm offset(@javax.annotation.Nullable String offset) {
     this.offset = offset;
     return this;
   }
@@ -117,7 +120,7 @@ public class AgreementsSearchForm {
     return offset;
   }
 
-  public void setOffset(String offset) {
+  public void setOffset(@javax.annotation.Nullable String offset) {
     this.offset = offset;
   }
 

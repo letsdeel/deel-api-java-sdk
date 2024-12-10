@@ -50,36 +50,42 @@ import org.openapitools.client.JSON;
 /**
  * OffboardingTrackerIdGet200ResponseDataContract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffboardingTrackerIdGet200ResponseDataContract {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_EOR = "eor";
   @SerializedName(SERIALIZED_NAME_EOR)
+  @javax.annotation.Nullable
   private OffboardingTrackerIdGet200ResponseDataContractEor eor;
 
   public static final String SERIALIZED_NAME_OID = "oid";
   @SerializedName(SERIALIZED_NAME_OID)
+  @javax.annotation.Nullable
   private String oid;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TIMEZONE = "timezone";
   @SerializedName(SERIALIZED_NAME_TIMEZONE)
+  @javax.annotation.Nullable
   private String timezone;
 
   public static final String SERIALIZED_NAME_CONTRACT_TYPE = "contract_type";
   @SerializedName(SERIALIZED_NAME_CONTRACT_TYPE)
+  @javax.annotation.Nullable
   private String contractType;
 
   public OffboardingTrackerIdGet200ResponseDataContract() {
   }
 
-  public OffboardingTrackerIdGet200ResponseDataContract id(String id) {
+  public OffboardingTrackerIdGet200ResponseDataContract id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -93,12 +99,12 @@ public class OffboardingTrackerIdGet200ResponseDataContract {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataContract eor(OffboardingTrackerIdGet200ResponseDataContractEor eor) {
+  public OffboardingTrackerIdGet200ResponseDataContract eor(@javax.annotation.Nullable OffboardingTrackerIdGet200ResponseDataContractEor eor) {
     this.eor = eor;
     return this;
   }
@@ -112,12 +118,12 @@ public class OffboardingTrackerIdGet200ResponseDataContract {
     return eor;
   }
 
-  public void setEor(OffboardingTrackerIdGet200ResponseDataContractEor eor) {
+  public void setEor(@javax.annotation.Nullable OffboardingTrackerIdGet200ResponseDataContractEor eor) {
     this.eor = eor;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataContract oid(String oid) {
+  public OffboardingTrackerIdGet200ResponseDataContract oid(@javax.annotation.Nullable String oid) {
     this.oid = oid;
     return this;
   }
@@ -131,12 +137,12 @@ public class OffboardingTrackerIdGet200ResponseDataContract {
     return oid;
   }
 
-  public void setOid(String oid) {
+  public void setOid(@javax.annotation.Nullable String oid) {
     this.oid = oid;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataContract name(String name) {
+  public OffboardingTrackerIdGet200ResponseDataContract name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -150,12 +156,12 @@ public class OffboardingTrackerIdGet200ResponseDataContract {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataContract timezone(String timezone) {
+  public OffboardingTrackerIdGet200ResponseDataContract timezone(@javax.annotation.Nullable String timezone) {
     this.timezone = timezone;
     return this;
   }
@@ -169,12 +175,12 @@ public class OffboardingTrackerIdGet200ResponseDataContract {
     return timezone;
   }
 
-  public void setTimezone(String timezone) {
+  public void setTimezone(@javax.annotation.Nullable String timezone) {
     this.timezone = timezone;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataContract contractType(String contractType) {
+  public OffboardingTrackerIdGet200ResponseDataContract contractType(@javax.annotation.Nullable String contractType) {
     this.contractType = contractType;
     return this;
   }
@@ -188,7 +194,7 @@ public class OffboardingTrackerIdGet200ResponseDataContract {
     return contractType;
   }
 
-  public void setContractType(String contractType) {
+  public void setContractType(@javax.annotation.Nullable String contractType) {
     this.contractType = contractType;
   }
 

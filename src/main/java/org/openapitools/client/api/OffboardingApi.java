@@ -270,7 +270,8 @@ public class OffboardingApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved list of offboarding </td><td>  -  </td></tr>
          </table>
@@ -284,7 +285,8 @@ public class OffboardingApi {
          * @return OffboardingTrackerGet200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved list of offboarding </td><td>  -  </td></tr>
          </table>
@@ -299,7 +301,8 @@ public class OffboardingApi {
          * @return ApiResponse&lt;OffboardingTrackerGet200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved list of offboarding </td><td>  -  </td></tr>
          </table>
@@ -314,7 +317,8 @@ public class OffboardingApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved list of offboarding </td><td>  -  </td></tr>
          </table>
@@ -329,7 +333,8 @@ public class OffboardingApi {
      * Retrieve offboarding list
      * @return APIoffboardingTrackerGetRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successfully retrieved list of offboarding </td><td>  -  </td></tr>
      </table>
@@ -421,7 +426,8 @@ public class OffboardingApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved offboarding details </td><td>  -  </td></tr>
          </table>
@@ -435,7 +441,8 @@ public class OffboardingApi {
          * @return OffboardingTrackerIdGet200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved offboarding details </td><td>  -  </td></tr>
          </table>
@@ -450,7 +457,8 @@ public class OffboardingApi {
          * @return ApiResponse&lt;OffboardingTrackerIdGet200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved offboarding details </td><td>  -  </td></tr>
          </table>
@@ -465,7 +473,8 @@ public class OffboardingApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved offboarding details </td><td>  -  </td></tr>
          </table>
@@ -481,7 +490,8 @@ public class OffboardingApi {
      * @param oid Unique hris profile oid (required)
      * @return APIoffboardingTrackerHrisProfileOidGetRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successfully retrieved offboarding details </td><td>  -  </td></tr>
      </table>
@@ -573,7 +583,8 @@ public class OffboardingApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved offboarding details </td><td>  -  </td></tr>
          </table>
@@ -587,7 +598,8 @@ public class OffboardingApi {
          * @return OffboardingTrackerIdGet200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved offboarding details </td><td>  -  </td></tr>
          </table>
@@ -602,7 +614,8 @@ public class OffboardingApi {
          * @return ApiResponse&lt;OffboardingTrackerIdGet200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved offboarding details </td><td>  -  </td></tr>
          </table>
@@ -617,7 +630,8 @@ public class OffboardingApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved offboarding details </td><td>  -  </td></tr>
          </table>
@@ -633,7 +647,8 @@ public class OffboardingApi {
      * @param id Unique onboarding tracker identifier (required)
      * @return APIoffboardingTrackerIdGetRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successfully retrieved offboarding details </td><td>  -  </td></tr>
      </table>

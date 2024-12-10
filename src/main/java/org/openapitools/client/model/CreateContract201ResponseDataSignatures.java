@@ -49,32 +49,37 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseDataSignatures
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataSignatures {
   public static final String SERIALIZED_NAME_SIGNED_AT = "signed_at";
   @SerializedName(SERIALIZED_NAME_SIGNED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime signedAt;
 
   public static final String SERIALIZED_NAME_CLIENT_SIGNATURE = "client_signature";
   @SerializedName(SERIALIZED_NAME_CLIENT_SIGNATURE)
+  @javax.annotation.Nonnull
   private String clientSignature;
 
   public static final String SERIALIZED_NAME_CLIENT_SIGNED_AT = "client_signed_at";
   @SerializedName(SERIALIZED_NAME_CLIENT_SIGNED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime clientSignedAt;
 
   public static final String SERIALIZED_NAME_WORKER_SIGNATURE = "worker_signature";
   @SerializedName(SERIALIZED_NAME_WORKER_SIGNATURE)
+  @javax.annotation.Nonnull
   private String workerSignature;
 
   public static final String SERIALIZED_NAME_WORKER_SIGNED_AT = "worker_signed_at";
   @SerializedName(SERIALIZED_NAME_WORKER_SIGNED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime workerSignedAt;
 
   public CreateContract201ResponseDataSignatures() {
   }
 
-  public CreateContract201ResponseDataSignatures signedAt(OffsetDateTime signedAt) {
+  public CreateContract201ResponseDataSignatures signedAt(@javax.annotation.Nullable OffsetDateTime signedAt) {
     this.signedAt = signedAt;
     return this;
   }
@@ -88,12 +93,12 @@ public class CreateContract201ResponseDataSignatures {
     return signedAt;
   }
 
-  public void setSignedAt(OffsetDateTime signedAt) {
+  public void setSignedAt(@javax.annotation.Nullable OffsetDateTime signedAt) {
     this.signedAt = signedAt;
   }
 
 
-  public CreateContract201ResponseDataSignatures clientSignature(String clientSignature) {
+  public CreateContract201ResponseDataSignatures clientSignature(@javax.annotation.Nonnull String clientSignature) {
     this.clientSignature = clientSignature;
     return this;
   }
@@ -107,12 +112,12 @@ public class CreateContract201ResponseDataSignatures {
     return clientSignature;
   }
 
-  public void setClientSignature(String clientSignature) {
+  public void setClientSignature(@javax.annotation.Nonnull String clientSignature) {
     this.clientSignature = clientSignature;
   }
 
 
-  public CreateContract201ResponseDataSignatures clientSignedAt(OffsetDateTime clientSignedAt) {
+  public CreateContract201ResponseDataSignatures clientSignedAt(@javax.annotation.Nullable OffsetDateTime clientSignedAt) {
     this.clientSignedAt = clientSignedAt;
     return this;
   }
@@ -126,12 +131,12 @@ public class CreateContract201ResponseDataSignatures {
     return clientSignedAt;
   }
 
-  public void setClientSignedAt(OffsetDateTime clientSignedAt) {
+  public void setClientSignedAt(@javax.annotation.Nullable OffsetDateTime clientSignedAt) {
     this.clientSignedAt = clientSignedAt;
   }
 
 
-  public CreateContract201ResponseDataSignatures workerSignature(String workerSignature) {
+  public CreateContract201ResponseDataSignatures workerSignature(@javax.annotation.Nonnull String workerSignature) {
     this.workerSignature = workerSignature;
     return this;
   }
@@ -145,12 +150,12 @@ public class CreateContract201ResponseDataSignatures {
     return workerSignature;
   }
 
-  public void setWorkerSignature(String workerSignature) {
+  public void setWorkerSignature(@javax.annotation.Nonnull String workerSignature) {
     this.workerSignature = workerSignature;
   }
 
 
-  public CreateContract201ResponseDataSignatures workerSignedAt(OffsetDateTime workerSignedAt) {
+  public CreateContract201ResponseDataSignatures workerSignedAt(@javax.annotation.Nullable OffsetDateTime workerSignedAt) {
     this.workerSignedAt = workerSignedAt;
     return this;
   }
@@ -164,7 +169,7 @@ public class CreateContract201ResponseDataSignatures {
     return workerSignedAt;
   }
 
-  public void setWorkerSignedAt(OffsetDateTime workerSignedAt) {
+  public void setWorkerSignedAt(@javax.annotation.Nullable OffsetDateTime workerSignedAt) {
     this.workerSignedAt = workerSignedAt;
   }
 

@@ -1,7 +1,7 @@
 lazy val root = (project in file(".")).
   settings(
-    organization := "org.openapitools",
-    name := "openapi-java-client",
+    organization := "com.deel",
+    name := "deel-api-java-sdk",
     version := "1.25.0",
     scalaVersion := "2.11.4",
     scalacOptions ++= Seq("-feature"),
@@ -13,7 +13,7 @@ lazy val root = (project in file(".")).
       "com.squareup.okhttp3" % "okhttp" % "4.12.0",
       "com.squareup.okhttp3" % "logging-interceptor" % "4.12.0",
       "com.google.code.gson" % "gson" % "2.9.1",
-      "org.apache.commons" % "commons-lang3" % "3.12.0",
+      "org.apache.commons" % "commons-lang3" % "3.17.0",
       "jakarta.ws.rs" % "jakarta.ws.rs-api" % "2.1.6",
       "org.openapitools" % "jackson-databind-nullable" % "0.2.6",
       "org.apache.oltu.oauth2" % "org.apache.oltu.oauth2.client" % "1.0.2",

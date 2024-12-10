@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * This is a model to make it easier to understand and restrict search parameters
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ContractSearchFormWithCursor {
   public static final String SERIALIZED_NAME_AFTER_CURSOR = "after_cursor";
   @SerializedName(SERIALIZED_NAME_AFTER_CURSOR)
+  @javax.annotation.Nullable
   private String afterCursor;
 
   public static final String SERIALIZED_NAME_LIMIT = "limit";
   @SerializedName(SERIALIZED_NAME_LIMIT)
+  @javax.annotation.Nullable
   private String limit = "10";
 
   public ContractSearchFormWithCursor() {
   }
 
-  public ContractSearchFormWithCursor afterCursor(String afterCursor) {
+  public ContractSearchFormWithCursor afterCursor(@javax.annotation.Nullable String afterCursor) {
     this.afterCursor = afterCursor;
     return this;
   }
@@ -75,12 +77,12 @@ public class ContractSearchFormWithCursor {
     return afterCursor;
   }
 
-  public void setAfterCursor(String afterCursor) {
+  public void setAfterCursor(@javax.annotation.Nullable String afterCursor) {
     this.afterCursor = afterCursor;
   }
 
 
-  public ContractSearchFormWithCursor limit(String limit) {
+  public ContractSearchFormWithCursor limit(@javax.annotation.Nullable String limit) {
     this.limit = limit;
     return this;
   }
@@ -94,7 +96,7 @@ public class ContractSearchFormWithCursor {
     return limit;
   }
 
-  public void setLimit(String limit) {
+  public void setLimit(@javax.annotation.Nullable String limit) {
     this.limit = limit;
   }
 

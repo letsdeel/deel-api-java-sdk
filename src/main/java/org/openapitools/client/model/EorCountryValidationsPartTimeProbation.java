@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * Probation period range for part-time contracts.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorCountryValidationsPartTimeProbation {
   public static final String SERIALIZED_NAME_MIN = "min";
   @SerializedName(SERIALIZED_NAME_MIN)
+  @javax.annotation.Nullable
   private BigDecimal min;
 
   public static final String SERIALIZED_NAME_MAX = "max";
   @SerializedName(SERIALIZED_NAME_MAX)
+  @javax.annotation.Nullable
   private BigDecimal max;
 
   public EorCountryValidationsPartTimeProbation() {
   }
 
-  public EorCountryValidationsPartTimeProbation min(BigDecimal min) {
+  public EorCountryValidationsPartTimeProbation min(@javax.annotation.Nullable BigDecimal min) {
     this.min = min;
     return this;
   }
@@ -76,12 +78,12 @@ public class EorCountryValidationsPartTimeProbation {
     return min;
   }
 
-  public void setMin(BigDecimal min) {
+  public void setMin(@javax.annotation.Nullable BigDecimal min) {
     this.min = min;
   }
 
 
-  public EorCountryValidationsPartTimeProbation max(BigDecimal max) {
+  public EorCountryValidationsPartTimeProbation max(@javax.annotation.Nullable BigDecimal max) {
     this.max = max;
     return this;
   }
@@ -95,7 +97,7 @@ public class EorCountryValidationsPartTimeProbation {
     return max;
   }
 
-  public void setMax(BigDecimal max) {
+  public void setMax(@javax.annotation.Nullable BigDecimal max) {
     this.max = max;
   }
 

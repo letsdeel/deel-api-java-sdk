@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * CreateOrUpdateParentRelationBetweenProfilesRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateOrUpdateParentRelationBetweenProfilesRequestData {
   public static final String SERIALIZED_NAME_EDIT_REASON = "edit_reason";
   @SerializedName(SERIALIZED_NAME_EDIT_REASON)
+  @javax.annotation.Nullable
   private CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason editReason;
 
   public static final String SERIALIZED_NAME_RELATION_EXTERNAL_ID = "relation_external_id";
   @SerializedName(SERIALIZED_NAME_RELATION_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String relationExternalId;
 
   public static final String SERIALIZED_NAME_PARENT_PROFILE_EXTERNAL_ID = "parent_profile_external_id";
   @SerializedName(SERIALIZED_NAME_PARENT_PROFILE_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String parentProfileExternalId;
 
   public static final String SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_EXTERNAL_ID = "hris_relationship_type_external_id";
   @SerializedName(SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String hrisRelationshipTypeExternalId;
 
   public CreateOrUpdateParentRelationBetweenProfilesRequestData() {
   }
 
-  public CreateOrUpdateParentRelationBetweenProfilesRequestData editReason(CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason editReason) {
+  public CreateOrUpdateParentRelationBetweenProfilesRequestData editReason(@javax.annotation.Nullable CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason editReason) {
     this.editReason = editReason;
     return this;
   }
@@ -84,12 +88,12 @@ public class CreateOrUpdateParentRelationBetweenProfilesRequestData {
     return editReason;
   }
 
-  public void setEditReason(CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason editReason) {
+  public void setEditReason(@javax.annotation.Nullable CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason editReason) {
     this.editReason = editReason;
   }
 
 
-  public CreateOrUpdateParentRelationBetweenProfilesRequestData relationExternalId(String relationExternalId) {
+  public CreateOrUpdateParentRelationBetweenProfilesRequestData relationExternalId(@javax.annotation.Nullable String relationExternalId) {
     this.relationExternalId = relationExternalId;
     return this;
   }
@@ -103,12 +107,12 @@ public class CreateOrUpdateParentRelationBetweenProfilesRequestData {
     return relationExternalId;
   }
 
-  public void setRelationExternalId(String relationExternalId) {
+  public void setRelationExternalId(@javax.annotation.Nullable String relationExternalId) {
     this.relationExternalId = relationExternalId;
   }
 
 
-  public CreateOrUpdateParentRelationBetweenProfilesRequestData parentProfileExternalId(String parentProfileExternalId) {
+  public CreateOrUpdateParentRelationBetweenProfilesRequestData parentProfileExternalId(@javax.annotation.Nullable String parentProfileExternalId) {
     this.parentProfileExternalId = parentProfileExternalId;
     return this;
   }
@@ -122,12 +126,12 @@ public class CreateOrUpdateParentRelationBetweenProfilesRequestData {
     return parentProfileExternalId;
   }
 
-  public void setParentProfileExternalId(String parentProfileExternalId) {
+  public void setParentProfileExternalId(@javax.annotation.Nullable String parentProfileExternalId) {
     this.parentProfileExternalId = parentProfileExternalId;
   }
 
 
-  public CreateOrUpdateParentRelationBetweenProfilesRequestData hrisRelationshipTypeExternalId(String hrisRelationshipTypeExternalId) {
+  public CreateOrUpdateParentRelationBetweenProfilesRequestData hrisRelationshipTypeExternalId(@javax.annotation.Nullable String hrisRelationshipTypeExternalId) {
     this.hrisRelationshipTypeExternalId = hrisRelationshipTypeExternalId;
     return this;
   }
@@ -141,7 +145,7 @@ public class CreateOrUpdateParentRelationBetweenProfilesRequestData {
     return hrisRelationshipTypeExternalId;
   }
 
-  public void setHrisRelationshipTypeExternalId(String hrisRelationshipTypeExternalId) {
+  public void setHrisRelationshipTypeExternalId(@javax.annotation.Nullable String hrisRelationshipTypeExternalId) {
     this.hrisRelationshipTypeExternalId = hrisRelationshipTypeExternalId;
   }
 

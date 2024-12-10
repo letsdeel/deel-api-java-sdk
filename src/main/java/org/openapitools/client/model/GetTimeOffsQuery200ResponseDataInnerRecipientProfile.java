@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * GetTimeOffsQuery200ResponseDataInnerRecipientProfile
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetTimeOffsQuery200ResponseDataInnerRecipientProfile {
   public static final String SERIALIZED_NAME_HRIS_PROFILE_ID = "hris_profile_id";
   @SerializedName(SERIALIZED_NAME_HRIS_PROFILE_ID)
+  @javax.annotation.Nullable
   private UUID hrisProfileId;
 
   public static final String SERIALIZED_NAME_ORGANIZATION_ID = "organization_id";
   @SerializedName(SERIALIZED_NAME_ORGANIZATION_ID)
+  @javax.annotation.Nullable
   private UUID organizationId;
 
   public static final String SERIALIZED_NAME_CLIENT_PROFILE_ID = "client_profile_id";
   @SerializedName(SERIALIZED_NAME_CLIENT_PROFILE_ID)
+  @javax.annotation.Nullable
   private UUID clientProfileId;
 
   public GetTimeOffsQuery200ResponseDataInnerRecipientProfile() {
   }
 
-  public GetTimeOffsQuery200ResponseDataInnerRecipientProfile hrisProfileId(UUID hrisProfileId) {
+  public GetTimeOffsQuery200ResponseDataInnerRecipientProfile hrisProfileId(@javax.annotation.Nullable UUID hrisProfileId) {
     this.hrisProfileId = hrisProfileId;
     return this;
   }
@@ -80,12 +83,12 @@ public class GetTimeOffsQuery200ResponseDataInnerRecipientProfile {
     return hrisProfileId;
   }
 
-  public void setHrisProfileId(UUID hrisProfileId) {
+  public void setHrisProfileId(@javax.annotation.Nullable UUID hrisProfileId) {
     this.hrisProfileId = hrisProfileId;
   }
 
 
-  public GetTimeOffsQuery200ResponseDataInnerRecipientProfile organizationId(UUID organizationId) {
+  public GetTimeOffsQuery200ResponseDataInnerRecipientProfile organizationId(@javax.annotation.Nullable UUID organizationId) {
     this.organizationId = organizationId;
     return this;
   }
@@ -99,12 +102,12 @@ public class GetTimeOffsQuery200ResponseDataInnerRecipientProfile {
     return organizationId;
   }
 
-  public void setOrganizationId(UUID organizationId) {
+  public void setOrganizationId(@javax.annotation.Nullable UUID organizationId) {
     this.organizationId = organizationId;
   }
 
 
-  public GetTimeOffsQuery200ResponseDataInnerRecipientProfile clientProfileId(UUID clientProfileId) {
+  public GetTimeOffsQuery200ResponseDataInnerRecipientProfile clientProfileId(@javax.annotation.Nullable UUID clientProfileId) {
     this.clientProfileId = clientProfileId;
     return this;
   }
@@ -118,7 +121,7 @@ public class GetTimeOffsQuery200ResponseDataInnerRecipientProfile {
     return clientProfileId;
   }
 
-  public void setClientProfileId(UUID clientProfileId) {
+  public void setClientProfileId(@javax.annotation.Nullable UUID clientProfileId) {
     this.clientProfileId = clientProfileId;
   }
 

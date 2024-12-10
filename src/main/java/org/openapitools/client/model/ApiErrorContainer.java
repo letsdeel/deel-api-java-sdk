@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * ApiErrorContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ApiErrorContainer {
   public static final String SERIALIZED_NAME_REQUEST = "request";
   @SerializedName(SERIALIZED_NAME_REQUEST)
+  @javax.annotation.Nullable
   private ApiErrorRequest request;
 
   public static final String SERIALIZED_NAME_ERRORS = "errors";
   @SerializedName(SERIALIZED_NAME_ERRORS)
+  @javax.annotation.Nullable
   private List<ApiError> errors = new ArrayList<>();
 
   public ApiErrorContainer() {
   }
 
-  public ApiErrorContainer request(ApiErrorRequest request) {
+  public ApiErrorContainer request(@javax.annotation.Nullable ApiErrorRequest request) {
     this.request = request;
     return this;
   }
@@ -79,12 +81,12 @@ public class ApiErrorContainer {
     return request;
   }
 
-  public void setRequest(ApiErrorRequest request) {
+  public void setRequest(@javax.annotation.Nullable ApiErrorRequest request) {
     this.request = request;
   }
 
 
-  public ApiErrorContainer errors(List<ApiError> errors) {
+  public ApiErrorContainer errors(@javax.annotation.Nullable List<ApiError> errors) {
     this.errors = errors;
     return this;
   }
@@ -106,7 +108,7 @@ public class ApiErrorContainer {
     return errors;
   }
 
-  public void setErrors(List<ApiError> errors) {
+  public void setErrors(@javax.annotation.Nullable List<ApiError> errors) {
     this.errors = errors;
   }
 

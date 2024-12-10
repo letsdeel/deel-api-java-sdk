@@ -49,10 +49,11 @@ import org.openapitools.client.JSON;
 /**
  * Currency type
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CustomFieldToUpdateContainerDataOneOf1 {
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal amount;
 
   /**
@@ -127,12 +128,13 @@ public class CustomFieldToUpdateContainerDataOneOf1 {
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private CurrencyEnum currency;
 
   public CustomFieldToUpdateContainerDataOneOf1() {
   }
 
-  public CustomFieldToUpdateContainerDataOneOf1 amount(BigDecimal amount) {
+  public CustomFieldToUpdateContainerDataOneOf1 amount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -146,12 +148,12 @@ public class CustomFieldToUpdateContainerDataOneOf1 {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public CustomFieldToUpdateContainerDataOneOf1 currency(CurrencyEnum currency) {
+  public CustomFieldToUpdateContainerDataOneOf1 currency(@javax.annotation.Nullable CurrencyEnum currency) {
     this.currency = currency;
     return this;
   }
@@ -165,7 +167,7 @@ public class CustomFieldToUpdateContainerDataOneOf1 {
     return currency;
   }
 
-  public void setCurrency(CurrencyEnum currency) {
+  public void setCurrency(@javax.annotation.Nullable CurrencyEnum currency) {
     this.currency = currency;
   }
 

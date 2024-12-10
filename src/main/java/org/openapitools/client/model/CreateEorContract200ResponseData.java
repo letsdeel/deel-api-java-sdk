@@ -48,10 +48,11 @@ import org.openapitools.client.JSON;
 /**
  * CreateEorContract200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateEorContract200ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   /**
@@ -132,6 +133,7 @@ public class CreateEorContract200ResponseData {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private TypeEnum type;
 
   /**
@@ -216,12 +218,13 @@ public class CreateEorContract200ResponseData {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private StatusEnum status;
 
   public CreateEorContract200ResponseData() {
   }
 
-  public CreateEorContract200ResponseData id(String id) {
+  public CreateEorContract200ResponseData id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -235,12 +238,12 @@ public class CreateEorContract200ResponseData {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public CreateEorContract200ResponseData type(TypeEnum type) {
+  public CreateEorContract200ResponseData type(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -254,12 +257,12 @@ public class CreateEorContract200ResponseData {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
 
-  public CreateEorContract200ResponseData status(StatusEnum status) {
+  public CreateEorContract200ResponseData status(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -273,7 +276,7 @@ public class CreateEorContract200ResponseData {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
   }
 

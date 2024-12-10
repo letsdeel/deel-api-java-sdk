@@ -50,24 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * ApplyChangesPositionsRequestDataAddInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ApplyChangesPositionsRequestDataAddInner {
   public static final String SERIALIZED_NAME_ROLE_ID = "role_id";
   @SerializedName(SERIALIZED_NAME_ROLE_ID)
+  @javax.annotation.Nullable
   private UUID roleId;
 
   public static final String SERIALIZED_NAME_TEAM_ID = "team_id";
   @SerializedName(SERIALIZED_NAME_TEAM_ID)
+  @javax.annotation.Nonnull
   private UUID teamId;
 
   public static final String SERIALIZED_NAME_IS_SUPPORTIVE = "is_supportive";
   @SerializedName(SERIALIZED_NAME_IS_SUPPORTIVE)
+  @javax.annotation.Nullable
   private Boolean isSupportive;
 
   public ApplyChangesPositionsRequestDataAddInner() {
   }
 
-  public ApplyChangesPositionsRequestDataAddInner roleId(UUID roleId) {
+  public ApplyChangesPositionsRequestDataAddInner roleId(@javax.annotation.Nullable UUID roleId) {
     this.roleId = roleId;
     return this;
   }
@@ -81,12 +84,12 @@ public class ApplyChangesPositionsRequestDataAddInner {
     return roleId;
   }
 
-  public void setRoleId(UUID roleId) {
+  public void setRoleId(@javax.annotation.Nullable UUID roleId) {
     this.roleId = roleId;
   }
 
 
-  public ApplyChangesPositionsRequestDataAddInner teamId(UUID teamId) {
+  public ApplyChangesPositionsRequestDataAddInner teamId(@javax.annotation.Nonnull UUID teamId) {
     this.teamId = teamId;
     return this;
   }
@@ -100,12 +103,12 @@ public class ApplyChangesPositionsRequestDataAddInner {
     return teamId;
   }
 
-  public void setTeamId(UUID teamId) {
+  public void setTeamId(@javax.annotation.Nonnull UUID teamId) {
     this.teamId = teamId;
   }
 
 
-  public ApplyChangesPositionsRequestDataAddInner isSupportive(Boolean isSupportive) {
+  public ApplyChangesPositionsRequestDataAddInner isSupportive(@javax.annotation.Nullable Boolean isSupportive) {
     this.isSupportive = isSupportive;
     return this;
   }
@@ -119,7 +122,7 @@ public class ApplyChangesPositionsRequestDataAddInner {
     return isSupportive;
   }
 
-  public void setIsSupportive(Boolean isSupportive) {
+  public void setIsSupportive(@javax.annotation.Nullable Boolean isSupportive) {
     this.isSupportive = isSupportive;
   }
 

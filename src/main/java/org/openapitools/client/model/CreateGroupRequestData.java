@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * CreateGroupRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateGroupRequestData {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_EXTERNAL_METADATA = "external_metadata";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_METADATA)
+  @javax.annotation.Nullable
   private Object externalMetadata;
 
   public CreateGroupRequestData() {
   }
 
-  public CreateGroupRequestData name(String name) {
+  public CreateGroupRequestData name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -75,12 +77,12 @@ public class CreateGroupRequestData {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public CreateGroupRequestData externalMetadata(Object externalMetadata) {
+  public CreateGroupRequestData externalMetadata(@javax.annotation.Nullable Object externalMetadata) {
     this.externalMetadata = externalMetadata;
     return this;
   }
@@ -94,7 +96,7 @@ public class CreateGroupRequestData {
     return externalMetadata;
   }
 
-  public void setExternalMetadata(Object externalMetadata) {
+  public void setExternalMetadata(@javax.annotation.Nullable Object externalMetadata) {
     this.externalMetadata = externalMetadata;
   }
 

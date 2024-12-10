@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInner {
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
+  @javax.annotation.Nullable
   private OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInnerMeta meta;
 
   public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInner() {
   }
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInner meta(OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInnerMeta meta) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInner meta(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInnerMeta meta) {
     this.meta = meta;
     return this;
   }
@@ -72,7 +73,7 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEm
     return meta;
   }
 
-  public void setMeta(OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInnerMeta meta) {
+  public void setMeta(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInnerMeta meta) {
     this.meta = meta;
   }
 

@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * Currency
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Currency {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
+  @javax.annotation.Nonnull
   private String code;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public Currency() {
   }
 
-  public Currency code(String code) {
+  public Currency code(@javax.annotation.Nonnull String code) {
     this.code = code;
     return this;
   }
@@ -75,12 +77,12 @@ public class Currency {
     return code;
   }
 
-  public void setCode(String code) {
+  public void setCode(@javax.annotation.Nonnull String code) {
     this.code = code;
   }
 
 
-  public Currency name(String name) {
+  public Currency name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -94,7 +96,7 @@ public class Currency {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 

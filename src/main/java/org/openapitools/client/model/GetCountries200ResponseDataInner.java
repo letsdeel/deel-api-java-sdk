@@ -51,36 +51,42 @@ import org.openapitools.client.JSON;
 /**
  * GetCountries200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetCountries200ResponseDataInner {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
+  @javax.annotation.Nonnull
   private String code;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_STATES = "states";
   @SerializedName(SERIALIZED_NAME_STATES)
+  @javax.annotation.Nonnull
   private List<GetCountries200ResponseDataInnerStatesInner> states = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_STATE_TYPE = "state_type";
   @SerializedName(SERIALIZED_NAME_STATE_TYPE)
+  @javax.annotation.Nullable
   private String stateType;
 
   public static final String SERIALIZED_NAME_EOR_SUPPORT = "eor_support";
   @SerializedName(SERIALIZED_NAME_EOR_SUPPORT)
+  @javax.annotation.Nonnull
   private Boolean eorSupport;
 
   public static final String SERIALIZED_NAME_VISA_SUPPORT = "visa_support";
   @SerializedName(SERIALIZED_NAME_VISA_SUPPORT)
+  @javax.annotation.Nonnull
   private Boolean visaSupport;
 
   public GetCountries200ResponseDataInner() {
   }
 
-  public GetCountries200ResponseDataInner code(String code) {
+  public GetCountries200ResponseDataInner code(@javax.annotation.Nonnull String code) {
     this.code = code;
     return this;
   }
@@ -94,12 +100,12 @@ public class GetCountries200ResponseDataInner {
     return code;
   }
 
-  public void setCode(String code) {
+  public void setCode(@javax.annotation.Nonnull String code) {
     this.code = code;
   }
 
 
-  public GetCountries200ResponseDataInner name(String name) {
+  public GetCountries200ResponseDataInner name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -113,12 +119,12 @@ public class GetCountries200ResponseDataInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public GetCountries200ResponseDataInner states(List<GetCountries200ResponseDataInnerStatesInner> states) {
+  public GetCountries200ResponseDataInner states(@javax.annotation.Nonnull List<GetCountries200ResponseDataInnerStatesInner> states) {
     this.states = states;
     return this;
   }
@@ -140,12 +146,12 @@ public class GetCountries200ResponseDataInner {
     return states;
   }
 
-  public void setStates(List<GetCountries200ResponseDataInnerStatesInner> states) {
+  public void setStates(@javax.annotation.Nonnull List<GetCountries200ResponseDataInnerStatesInner> states) {
     this.states = states;
   }
 
 
-  public GetCountries200ResponseDataInner stateType(String stateType) {
+  public GetCountries200ResponseDataInner stateType(@javax.annotation.Nullable String stateType) {
     this.stateType = stateType;
     return this;
   }
@@ -159,12 +165,12 @@ public class GetCountries200ResponseDataInner {
     return stateType;
   }
 
-  public void setStateType(String stateType) {
+  public void setStateType(@javax.annotation.Nullable String stateType) {
     this.stateType = stateType;
   }
 
 
-  public GetCountries200ResponseDataInner eorSupport(Boolean eorSupport) {
+  public GetCountries200ResponseDataInner eorSupport(@javax.annotation.Nonnull Boolean eorSupport) {
     this.eorSupport = eorSupport;
     return this;
   }
@@ -178,12 +184,12 @@ public class GetCountries200ResponseDataInner {
     return eorSupport;
   }
 
-  public void setEorSupport(Boolean eorSupport) {
+  public void setEorSupport(@javax.annotation.Nonnull Boolean eorSupport) {
     this.eorSupport = eorSupport;
   }
 
 
-  public GetCountries200ResponseDataInner visaSupport(Boolean visaSupport) {
+  public GetCountries200ResponseDataInner visaSupport(@javax.annotation.Nonnull Boolean visaSupport) {
     this.visaSupport = visaSupport;
     return this;
   }
@@ -197,7 +203,7 @@ public class GetCountries200ResponseDataInner {
     return visaSupport;
   }
 
-  public void setVisaSupport(Boolean visaSupport) {
+  public void setVisaSupport(@javax.annotation.Nonnull Boolean visaSupport) {
     this.visaSupport = visaSupport;
   }
 

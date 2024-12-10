@@ -48,32 +48,37 @@ import org.openapitools.client.JSON;
 /**
  * CreateGPContractRequestDataEmployeeAddress
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateGPContractRequestDataEmployeeAddress {
   public static final String SERIALIZED_NAME_ZIP = "zip";
   @SerializedName(SERIALIZED_NAME_ZIP)
+  @javax.annotation.Nonnull
   private String zip;
 
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nonnull
   private String city;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_STREET = "street";
   @SerializedName(SERIALIZED_NAME_STREET)
+  @javax.annotation.Nonnull
   private String street;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nonnull
   private String country;
 
   public CreateGPContractRequestDataEmployeeAddress() {
   }
 
-  public CreateGPContractRequestDataEmployeeAddress zip(String zip) {
+  public CreateGPContractRequestDataEmployeeAddress zip(@javax.annotation.Nonnull String zip) {
     this.zip = zip;
     return this;
   }
@@ -87,12 +92,12 @@ public class CreateGPContractRequestDataEmployeeAddress {
     return zip;
   }
 
-  public void setZip(String zip) {
+  public void setZip(@javax.annotation.Nonnull String zip) {
     this.zip = zip;
   }
 
 
-  public CreateGPContractRequestDataEmployeeAddress city(String city) {
+  public CreateGPContractRequestDataEmployeeAddress city(@javax.annotation.Nonnull String city) {
     this.city = city;
     return this;
   }
@@ -106,12 +111,12 @@ public class CreateGPContractRequestDataEmployeeAddress {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nonnull String city) {
     this.city = city;
   }
 
 
-  public CreateGPContractRequestDataEmployeeAddress state(String state) {
+  public CreateGPContractRequestDataEmployeeAddress state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -125,12 +130,12 @@ public class CreateGPContractRequestDataEmployeeAddress {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public CreateGPContractRequestDataEmployeeAddress street(String street) {
+  public CreateGPContractRequestDataEmployeeAddress street(@javax.annotation.Nonnull String street) {
     this.street = street;
     return this;
   }
@@ -144,12 +149,12 @@ public class CreateGPContractRequestDataEmployeeAddress {
     return street;
   }
 
-  public void setStreet(String street) {
+  public void setStreet(@javax.annotation.Nonnull String street) {
     this.street = street;
   }
 
 
-  public CreateGPContractRequestDataEmployeeAddress country(String country) {
+  public CreateGPContractRequestDataEmployeeAddress country(@javax.annotation.Nonnull String country) {
     this.country = country;
     return this;
   }
@@ -163,7 +168,7 @@ public class CreateGPContractRequestDataEmployeeAddress {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nonnull String country) {
     this.country = country;
   }
 

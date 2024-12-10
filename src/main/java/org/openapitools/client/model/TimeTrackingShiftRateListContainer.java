@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * TimeTrackingShiftRateListContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeTrackingShiftRateListContainer {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private List<TimeTrackingShiftRateResponse> data = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAGE = "page";
   @SerializedName(SERIALIZED_NAME_PAGE)
+  @javax.annotation.Nonnull
   private PageInfoWithoutCursorNew page;
 
   public TimeTrackingShiftRateListContainer() {
   }
 
-  public TimeTrackingShiftRateListContainer data(List<TimeTrackingShiftRateResponse> data) {
+  public TimeTrackingShiftRateListContainer data(@javax.annotation.Nonnull List<TimeTrackingShiftRateResponse> data) {
     this.data = data;
     return this;
   }
@@ -87,12 +89,12 @@ public class TimeTrackingShiftRateListContainer {
     return data;
   }
 
-  public void setData(List<TimeTrackingShiftRateResponse> data) {
+  public void setData(@javax.annotation.Nonnull List<TimeTrackingShiftRateResponse> data) {
     this.data = data;
   }
 
 
-  public TimeTrackingShiftRateListContainer page(PageInfoWithoutCursorNew page) {
+  public TimeTrackingShiftRateListContainer page(@javax.annotation.Nonnull PageInfoWithoutCursorNew page) {
     this.page = page;
     return this;
   }
@@ -106,7 +108,7 @@ public class TimeTrackingShiftRateListContainer {
     return page;
   }
 
-  public void setPage(PageInfoWithoutCursorNew page) {
+  public void setPage(@javax.annotation.Nonnull PageInfoWithoutCursorNew page) {
     this.page = page;
   }
 

@@ -49,40 +49,47 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseDataQuoteBenefitsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataQuoteBenefitsInner {
   public static final String SERIALIZED_NAME_FEE = "fee";
   @SerializedName(SERIALIZED_NAME_FEE)
+  @javax.annotation.Nullable
   private BigDecimal fee;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_PLAN = "plan";
   @SerializedName(SERIALIZED_NAME_PLAN)
+  @javax.annotation.Nullable
   private String plan;
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal price;
 
   public static final String SERIALIZED_NAME_FEE_USD = "fee_usd";
   @SerializedName(SERIALIZED_NAME_FEE_USD)
+  @javax.annotation.Nullable
   private BigDecimal feeUsd;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_PRICE_USD = "price_usd";
   @SerializedName(SERIALIZED_NAME_PRICE_USD)
+  @javax.annotation.Nullable
   private BigDecimal priceUsd;
 
   public CreateContract201ResponseDataQuoteBenefitsInner() {
   }
 
-  public CreateContract201ResponseDataQuoteBenefitsInner fee(BigDecimal fee) {
+  public CreateContract201ResponseDataQuoteBenefitsInner fee(@javax.annotation.Nullable BigDecimal fee) {
     this.fee = fee;
     return this;
   }
@@ -96,12 +103,12 @@ public class CreateContract201ResponseDataQuoteBenefitsInner {
     return fee;
   }
 
-  public void setFee(BigDecimal fee) {
+  public void setFee(@javax.annotation.Nullable BigDecimal fee) {
     this.fee = fee;
   }
 
 
-  public CreateContract201ResponseDataQuoteBenefitsInner name(String name) {
+  public CreateContract201ResponseDataQuoteBenefitsInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -115,12 +122,12 @@ public class CreateContract201ResponseDataQuoteBenefitsInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public CreateContract201ResponseDataQuoteBenefitsInner plan(String plan) {
+  public CreateContract201ResponseDataQuoteBenefitsInner plan(@javax.annotation.Nullable String plan) {
     this.plan = plan;
     return this;
   }
@@ -134,12 +141,12 @@ public class CreateContract201ResponseDataQuoteBenefitsInner {
     return plan;
   }
 
-  public void setPlan(String plan) {
+  public void setPlan(@javax.annotation.Nullable String plan) {
     this.plan = plan;
   }
 
 
-  public CreateContract201ResponseDataQuoteBenefitsInner price(BigDecimal price) {
+  public CreateContract201ResponseDataQuoteBenefitsInner price(@javax.annotation.Nullable BigDecimal price) {
     this.price = price;
     return this;
   }
@@ -153,12 +160,12 @@ public class CreateContract201ResponseDataQuoteBenefitsInner {
     return price;
   }
 
-  public void setPrice(BigDecimal price) {
+  public void setPrice(@javax.annotation.Nullable BigDecimal price) {
     this.price = price;
   }
 
 
-  public CreateContract201ResponseDataQuoteBenefitsInner feeUsd(BigDecimal feeUsd) {
+  public CreateContract201ResponseDataQuoteBenefitsInner feeUsd(@javax.annotation.Nullable BigDecimal feeUsd) {
     this.feeUsd = feeUsd;
     return this;
   }
@@ -172,12 +179,12 @@ public class CreateContract201ResponseDataQuoteBenefitsInner {
     return feeUsd;
   }
 
-  public void setFeeUsd(BigDecimal feeUsd) {
+  public void setFeeUsd(@javax.annotation.Nullable BigDecimal feeUsd) {
     this.feeUsd = feeUsd;
   }
 
 
-  public CreateContract201ResponseDataQuoteBenefitsInner currency(String currency) {
+  public CreateContract201ResponseDataQuoteBenefitsInner currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -191,12 +198,12 @@ public class CreateContract201ResponseDataQuoteBenefitsInner {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public CreateContract201ResponseDataQuoteBenefitsInner priceUsd(BigDecimal priceUsd) {
+  public CreateContract201ResponseDataQuoteBenefitsInner priceUsd(@javax.annotation.Nullable BigDecimal priceUsd) {
     this.priceUsd = priceUsd;
     return this;
   }
@@ -210,7 +217,7 @@ public class CreateContract201ResponseDataQuoteBenefitsInner {
     return priceUsd;
   }
 
-  public void setPriceUsd(BigDecimal priceUsd) {
+  public void setPriceUsd(@javax.annotation.Nullable BigDecimal priceUsd) {
     this.priceUsd = priceUsd;
   }
 

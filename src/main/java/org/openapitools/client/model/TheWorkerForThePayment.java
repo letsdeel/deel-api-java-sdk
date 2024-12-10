@@ -50,28 +50,32 @@ import org.openapitools.client.JSON;
 /**
  * TheWorkerForThePayment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TheWorkerForThePayment {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private BigDecimal id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name = "";
 
   public static final String SERIALIZED_NAME_PIC_URL = "picUrl";
   @SerializedName(SERIALIZED_NAME_PIC_URL)
+  @javax.annotation.Nullable
   private String picUrl;
 
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nullable
   private String contractId;
 
   public TheWorkerForThePayment() {
   }
 
-  public TheWorkerForThePayment id(BigDecimal id) {
+  public TheWorkerForThePayment id(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
     return this;
   }
@@ -85,12 +89,12 @@ public class TheWorkerForThePayment {
     return id;
   }
 
-  public void setId(BigDecimal id) {
+  public void setId(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
   }
 
 
-  public TheWorkerForThePayment name(String name) {
+  public TheWorkerForThePayment name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -104,12 +108,12 @@ public class TheWorkerForThePayment {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public TheWorkerForThePayment picUrl(String picUrl) {
+  public TheWorkerForThePayment picUrl(@javax.annotation.Nullable String picUrl) {
     this.picUrl = picUrl;
     return this;
   }
@@ -123,12 +127,12 @@ public class TheWorkerForThePayment {
     return picUrl;
   }
 
-  public void setPicUrl(String picUrl) {
+  public void setPicUrl(@javax.annotation.Nullable String picUrl) {
     this.picUrl = picUrl;
   }
 
 
-  public TheWorkerForThePayment contractId(String contractId) {
+  public TheWorkerForThePayment contractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -142,7 +146,7 @@ public class TheWorkerForThePayment {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
   }
 

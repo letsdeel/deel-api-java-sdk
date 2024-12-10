@@ -129,11 +129,6 @@ tags:
     description: See
     url: https://developer.letsdeel.com
   name: Time Tracking Rates
-- description: Manage time off requests.
-  externalDocs:
-    description: See
-    url: https://developer.letsdeel.com
-  name: Time Off
 - description: API endpoints related to Candidates.
   externalDocs:
     description: See
@@ -6763,9 +6758,6 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/createContract_request'
-          multipart/form-data:
-            schema:
-              $ref: '#/components/schemas/createContract_request_1'
         required: true
       responses:
         "201":
@@ -9198,103 +9190,6 @@ paths:
       x-content-type: application/json
       x-accepts:
       - application/json
-  /contracts/{contract_id}/final-payments:
-    get:
-      description: Calculate the final payment due to the contractor when ending the
-        contract.
-      operationId: calculateFinalPayment
-      parameters:
-      - description: Deel contract id.
-        example: 37nex2x
-        explode: false
-        in: path
-        name: contract_id
-        required: true
-        schema:
-          type: string
-        style: simple
-      - description: The day to end the contract.
-        explode: true
-        in: query
-        name: end_date
-        required: false
-        schema:
-          $ref: '#/components/schemas/DateString'
-        style: form
-      - description: The days to calculate.
-        explode: true
-        in: query
-        name: calculation_type
-        required: false
-        schema:
-          enum:
-          - CUSTOM_AMOUNT
-          - WORK_DAYS
-          - CALENDAR_DAYS
-          - FULL_AMOUNT
-          type: string
-        style: form
-      - description: "The day the work week starts, 0 to 6"
-        explode: true
-        in: query
-        name: workweek_start
-        required: false
-        schema:
-          maximum: 6
-          minimum: 0
-          type: string
-        style: form
-      - description: "The day the work week ends, 0 to 6"
-        explode: true
-        in: query
-        name: workweek_end
-        required: false
-        schema:
-          maximum: 6
-          minimum: 0
-          type: string
-        style: form
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/FinalPaymentCalculatedContainer'
-          description: Successful operation.
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "404":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-      security:
-      - deelToken: []
-      - oauth2:
-        - contracts:write
-        - contracts:read
-      summary: Calculate final payment
-      tags:
-      - Contracts
-      x-accepts:
-      - application/json
   /timesheets:
     get:
       description: "Retrieve a list of timesheets in your Deel account. You can filter\
@@ -10418,7 +10313,9 @@ paths:
           description: Operation failed.
       security:
       - deelToken: []
-      - oauth2: []
+      - oauth2:
+        - organizations:read
+        - accounting:read
       summary: List of legal entities
       tags:
       - Organizations
@@ -10869,71 +10766,6 @@ paths:
       - Organizations
       x-accepts:
       - application/json
-  /attachments:
-    post:
-      description: Upload file to Deel storage to use the file attachment feature
-        for other endpoints.
-      operationId: createFileRef
-      requestBody:
-        $ref: '#/components/requestBodies/RequestBodyToCreateFileRef'
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/OutputToCreateFileRefContainer'
-          description: Successful operation.
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "404":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "405":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "429":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-      security:
-      - deelToken: []
-      - oauth2:
-        - contracts:write
-        - invoice-adjustments:write
-        - milestones:write
-        - off-cycle-payments:write
-        - tasks:write
-        - timesheets:write
-      summary: Upload file to Deel
-      tags:
-      - Adjustments
-      x-content-type: application/json
-      x-accepts:
-      - application/json
   /contract-templates:
     get:
       description: Fetches a collection of contract templates available within your
@@ -11326,6 +11158,7 @@ paths:
       - deelToken: []
       - oauth2:
         - people:read
+        - Users:read
       summary: List of people
       tags:
       - People
@@ -13535,6 +13368,66 @@ paths:
       - Contracts
       x-accepts:
       - application/json
+  /invoices/{id}/download:
+    get:
+      description: Get a link to download the invoice PDF.
+      operationId: getBillingInvoiceDownloadLink
+      parameters:
+      - description: The invoice ID used to identify the invoice to be downloaded.
+        example: abcd1234efgh5678
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getBillingInvoiceDownloadLink_200_response'
+          description: Successful operation.
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+      security:
+      - deelToken: []
+      - oauth2:
+        - accounting:read
+      summary: Download invoice PDF
+      tags:
+      - Accounting
+      x-accepts:
+      - application/json
   /benefits/legal-entities/{id}/employees/{employee_id}:
     get:
       description: Get employee from organization integrated with external benefits
@@ -14156,66 +14049,6 @@ paths:
       - Payroll
       x-accepts:
       - application/json
-  /invoices/{id}/download:
-    get:
-      description: Get a link to download the invoice PDF.
-      operationId: getBillingInvoiceDownloadLink
-      parameters:
-      - description: The invoice ID used to identify the invoice to be downloaded.
-        example: abcd1234efgh5678
-        explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-        style: simple
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/getBillingInvoiceDownloadLink_200_response'
-          description: Successful operation.
-        "400":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "404":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-      security:
-      - deelToken: []
-      - oauth2:
-        - accounting:read
-      summary: Download invoice PDF
-      tags:
-      - Accounting
-      x-accepts:
-      - application/json
   /benefits/legal-entities/{id}/payroll-settings:
     get:
       description: Get legal entity payroll settings from organization integrated
@@ -14700,6 +14533,85 @@ paths:
       summary: Activate the 401k integration for the legal entity
       tags:
       - 401K Plans
+      x-accepts:
+      - application/json
+  /contracts/{contractId}/terminations:
+    post:
+      description: Terminate contract.
+      operationId: terminateContract
+      parameters:
+      - description: Contract id
+        example: 5f4e1e4e
+        explode: false
+        in: path
+        name: contractId
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/terminateContract_request'
+        required: true
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/terminateContract_201_response'
+          description: Successful operation
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "405":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "429":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+      security:
+      - deelToken: []
+      - oauth2:
+        - contracts:write
+      summary: Terminate contract
+      tags:
+      - Contractors
+      x-content-type: application/json
       x-accepts:
       - application/json
   /benefits/legal-entities/{id}/contracts/{contract_id}/plans/{plan_id}/deductions:
@@ -15600,32 +15512,33 @@ paths:
       - Custom Fields
       x-accepts:
       - application/json
-  /contracts/{contractId}/terminations:
-    post:
-      description: Terminate contract.
-      operationId: terminateContract
+  /equity/exercise/{public_id}:
+    patch:
+      description: Approve an equity exercise.
+      operationId: approveExerciseEquity
       parameters:
-      - description: Contract id
-        example: 5f4e1e4e
+      - description: Equity exercise public ID.
+        example: 123e4567-e89b-12d3-a456-426614174000
         explode: false
         in: path
-        name: contractId
+        name: public_id
         required: true
         schema:
+          format: uuid
           type: string
         style: simple
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/terminateContract_request'
+              $ref: '#/components/schemas/approveExerciseEquity_request'
         required: true
       responses:
-        "201":
+        "200":
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/terminateContract_201_response'
+                $ref: '#/components/schemas/approveExerciseEquity_200_response'
           description: Successful operation
         "400":
           content:
@@ -15651,18 +15564,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/ApiErrorContainer'
           description: Operation failed.
-        "405":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "429":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
         "500":
           content:
             application/json:
@@ -15673,9 +15574,9 @@ paths:
       - deelToken: []
       - oauth2:
         - contracts:write
-      summary: Terminate contract
+      summary: Approve an equity exercise
       tags:
-      - Contractors
+      - Contracts
       x-content-type: application/json
       x-accepts:
       - application/json
@@ -15759,74 +15660,6 @@ paths:
       summary: Retrieve a single off-cycle payment
       tags:
       - Off-cycle Payments
-      x-accepts:
-      - application/json
-  /equity/exercise/{public_id}:
-    patch:
-      description: Approve an equity exercise.
-      operationId: approveExerciseEquity
-      parameters:
-      - description: Equity exercise public ID.
-        example: 123e4567-e89b-12d3-a456-426614174000
-        explode: false
-        in: path
-        name: public_id
-        required: true
-        schema:
-          format: uuid
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/approveExerciseEquity_request'
-        required: true
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/approveExerciseEquity_200_response'
-          description: Successful operation
-        "400":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "404":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-      security:
-      - deelToken: []
-      - oauth2:
-        - contracts:write
-      summary: Approve an equity exercise
-      tags:
-      - Contracts
-      x-content-type: application/json
       x-accepts:
       - application/json
   /people/custom_fields/{id}:
@@ -18629,13 +18462,7 @@ components:
       content:
         application/json:
           schema:
-            properties:
-              data:
-                example: https://app.deel.com/contract/aaaaa?token=ABC
-                type: string
-            required:
-            - data
-            type: object
+            $ref: '#/components/schemas/inline_object'
       description: Successful operation.
     ResponseBodyForPeoplePersonal:
       content:
@@ -19085,9 +18912,7 @@ components:
         statuses:
           $ref: '#/components/schemas/ContractSearchFormWithoutCursor_statuses'
         team_id:
-          description: Unique identifier of this resource.
-          example: 00000000-0000-0000-0000-000000000000
-          type: string
+          $ref: '#/components/schemas/IdentifierValueForFilter'
         external_id:
           description: Filter contracts for given external ID
           maxLength: 255
@@ -22985,9 +22810,6 @@ components:
       nullable: false
       type: string
     InputToCreateFileRef:
-      example:
-        data:
-          content_type: application/pdf
       properties:
         data:
           $ref: '#/components/schemas/InputToCreateFileRef_data'
@@ -22995,9 +22817,6 @@ components:
       - data
       type: object
     OutputToCreateFileRef:
-      example:
-        key: key
-        url: url
       properties:
         key:
           nullable: false
@@ -23010,10 +22829,6 @@ components:
       - url
       type: object
     OutputToCreateFileRefContainer:
-      example:
-        data:
-          key: key
-          url: url
       properties:
         data:
           $ref: '#/components/schemas/OutputToCreateFileRef'
@@ -23561,18 +23376,6 @@ components:
       - year
       type: object
     FinalPaymentCalculatedContainer:
-      example:
-        data:
-          calculation_type: CUSTOM_AMOUNT
-          total: "5.8571"
-          daily_rate: "5.8571"
-          last_cycle:
-            start: 2022-05-24T09:38:46.235Z
-            end: 2022-05-24T09:38:46.235Z
-            completion_date: 2022-05-24T09:38:46.235Z
-          workweek_end: 6.027456183070403
-          remaining_days: "5.8571"
-          workweek_start: 0.8008281904610115
       properties:
         data:
           $ref: '#/components/schemas/FinalPaymentCalculated'
@@ -23580,17 +23383,6 @@ components:
       - data
       type: object
     FinalPaymentCalculated:
-      example:
-        calculation_type: CUSTOM_AMOUNT
-        total: "5.8571"
-        daily_rate: "5.8571"
-        last_cycle:
-          start: 2022-05-24T09:38:46.235Z
-          end: 2022-05-24T09:38:46.235Z
-          completion_date: 2022-05-24T09:38:46.235Z
-        workweek_end: 6.027456183070403
-        remaining_days: "5.8571"
-        workweek_start: 0.8008281904610115
       properties:
         daily_rate:
           description: The daily rate paid.
@@ -26991,7 +26783,7 @@ components:
         legal_entity:
           $ref: '#/components/schemas/GPClient_legal_entity'
         team:
-          $ref: '#/components/schemas/GPClient_team'
+          $ref: '#/components/schemas/EorContractToCreate_client_team'
       required:
       - legal_entity
       - team
@@ -27072,7 +26864,7 @@ components:
           nullable: true
           type: string
         contract_id:
-          description: "Unique identifier of the contract. #magic___^_^___line"
+          description: Unique identifier of the contract
           type: string
       required:
       - amount
@@ -28420,10 +28212,11 @@ components:
       type: integer
     IdentifierValue:
       $ref: '#/components/schemas/UniqueObjectIdentifier'
-    TeamIdentifierValue:
-      $ref: '#/components/schemas/TeamUniqueObjectIdentifier'
     IdentifierValueForFilter:
-      $ref: '#/components/schemas/UniqueObjectIdentifier'
+      oneOf:
+      - $ref: '#/components/schemas/UniqueObjectIdentifier'
+      - $ref: '#/components/schemas/NumericIdentifier'
+      - $ref: '#/components/schemas/StringIdentifier'
     CreatePublicTokenContainer:
       example:
         data:
@@ -28725,9 +28518,7 @@ components:
             $ref: '#/components/schemas/IdentifierValueForFilter'
           type: array
         package_id:
-          description: Unique identifier of this resource.
-          example: 00000000-0000-0000-0000-000000000000
-          type: string
+          $ref: '#/components/schemas/IdentifierValueForFilter'
       required:
       - contract_ids
       type: object
@@ -29645,7 +29436,7 @@ components:
         vat_id: "123456789"
         processed_at: 2022-05-24T09:38:46.235Z
         currency: GBP
-        id: rhCTiRd9Mad41RwjsFWw-
+        id: Hn7KBUpkuraaHAj8nJMYJ
         payment_method: payment_method
         early_payout_fee: "10"
         amount: "1000"
@@ -29666,7 +29457,7 @@ components:
       properties:
         id:
           description: Unique identifier of this resource.
-          example: rhCTiRd9Mad41RwjsFWw-
+          example: Hn7KBUpkuraaHAj8nJMYJ
           type: string
         fee:
           description: Fee added to the invoice amount.
@@ -29863,7 +29654,7 @@ components:
           vat_id: "123456789"
           processed_at: 2022-05-24T09:38:46.235Z
           currency: GBP
-          id: rhCTiRd9Mad41RwjsFWw-
+          id: Hn7KBUpkuraaHAj8nJMYJ
           payment_method: payment_method
           early_payout_fee: "10"
           amount: "1000"
@@ -29897,7 +29688,7 @@ components:
           vat_id: "123456789"
           processed_at: 2022-05-24T09:38:46.235Z
           currency: GBP
-          id: rhCTiRd9Mad41RwjsFWw-
+          id: Hn7KBUpkuraaHAj8nJMYJ
           payment_method: payment_method
           early_payout_fee: "10"
           amount: "1000"
@@ -29973,7 +29764,7 @@ components:
             vat_id: "123456789"
             processed_at: 2022-05-24T09:38:46.235Z
             currency: GBP
-            id: rhCTiRd9Mad41RwjsFWw-
+            id: Hn7KBUpkuraaHAj8nJMYJ
             payment_method: payment_method
             early_payout_fee: "10"
             amount: "1000"
@@ -30007,7 +29798,7 @@ components:
             vat_id: "123456789"
             processed_at: 2022-05-24T09:38:46.235Z
             currency: GBP
-            id: rhCTiRd9Mad41RwjsFWw-
+            id: Hn7KBUpkuraaHAj8nJMYJ
             payment_method: payment_method
             early_payout_fee: "10"
             amount: "1000"
@@ -36701,19 +36492,14 @@ components:
           format: nullable
           type: string
       type: object
-    getEorCountryValidations_200_response_data_health_insurance_providers_inner_id:
-      oneOf:
-      - format: uuid
-        type: string
-      - format: int64
-        type: integer
     getEorCountryValidations_200_response_data_health_insurance_providers_inner:
       example:
         name: name
         id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
       properties:
         id:
-          $ref: '#/components/schemas/getEorCountryValidations_200_response_data_health_insurance_providers_inner_id'
+          format: uuid
+          type: string
         name:
           description: Provider name.
           type: string
@@ -39449,7 +39235,7 @@ components:
       - data
       - page
       type: object
-    createContract_request_anyOf_allOf_meta:
+    PAY_AS_YOU_GO_TIME_BASED_allOf_meta:
       description: Additional custom info about a contract
       properties:
         is_main_income:
@@ -39465,7 +39251,7 @@ components:
       required:
       - documents_required
       type: object
-    createContract_request_anyOf_allOf_client_team_id:
+    PAY_AS_YOU_GO_TIME_BASED_allOf_client_team_id:
       anyOf:
       - type: string
       - type: number
@@ -39473,35 +39259,35 @@ components:
       example:
       - 12345678
       - 00000000-0000-0000-0000-000000000000
-    createContract_request_anyOf_allOf_client_team:
+    PAY_AS_YOU_GO_TIME_BASED_allOf_client_team:
       description: Choose the Deel team for this contract. Use teams endpoint to retrieve
         a list of teams in your organization.
       properties:
         id:
-          $ref: '#/components/schemas/createContract_request_anyOf_allOf_client_team_id'
+          $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_client_team_id'
       required:
       - id
       type: object
-    createContract_request_anyOf_allOf_client_legal_entity:
+    PAY_AS_YOU_GO_TIME_BASED_allOf_client_legal_entity:
       description: Choose the Deel legal entity for this contract. Use legal entity
         endpoint to retrieve a list of legal entities in your organization.
       properties:
         id:
-          $ref: '#/components/schemas/createContract_request_anyOf_allOf_client_team_id'
+          $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_client_team_id'
       required:
       - id
       type: object
-    createContract_request_anyOf_allOf_client:
+    PAY_AS_YOU_GO_TIME_BASED_allOf_client:
       properties:
         team:
-          $ref: '#/components/schemas/createContract_request_anyOf_allOf_client_team'
+          $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_client_team'
         legal_entity:
-          $ref: '#/components/schemas/createContract_request_anyOf_allOf_client_legal_entity'
+          $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_client_legal_entity'
       required:
       - legal_entity
       - team
       type: object
-    createContract_request_anyOf_allOf_worker:
+    PAY_AS_YOU_GO_TIME_BASED_allOf_worker:
       description: Worker properties
       nullable: true
       properties:
@@ -39528,12 +39314,12 @@ components:
       - expected_email
       - first_name
       type: object
-    createContract_request_anyOf_allOf_job_title:
+    PAY_AS_YOU_GO_TIME_BASED_allOf_job_title:
       description: Worker's job title. You can enter a custom job title or use a pre-defiled
         job title using the Id retrieved in job-titles endpoint.
       properties:
         id:
-          $ref: '#/components/schemas/createContract_request_anyOf_allOf_client_team_id'
+          $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_client_team_id'
         name:
           description: Job title. Please leave it blank when entering an Id.
           example: Software Developer
@@ -39541,15 +39327,15 @@ components:
           nullable: true
           type: string
       type: object
-    createContract_request_anyOf_allOf_seniority:
+    PAY_AS_YOU_GO_TIME_BASED_allOf_seniority:
       description: Job seniority level. Please use the seniority levels endpoint to
         retrieve the list of seniority levels.
       nullable: true
       properties:
         id:
-          $ref: '#/components/schemas/createContract_request_anyOf_allOf_client_team_id'
+          $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_client_team_id'
       type: object
-    createContract_request_anyOf_allOf_compensation_details:
+    PAY_AS_YOU_GO_TIME_BASED_allOf_compensation_details:
       allOf:
       - properties:
           amount:
@@ -39660,24 +39446,24 @@ components:
         - amount
         - scale
         type: object
-    createContract_request_anyOf:
+    PAY_AS_YOU_GO_TIME_BASED:
       allOf:
       - description: Details of contract to create
         properties:
           meta:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_meta'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_meta'
           title:
             description: The title of the contract.
             example: Software Developer
             type: string
           client:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_client'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_client'
           worker:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_worker'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_worker'
           job_title:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_job_title'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_job_title'
           seniority:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_seniority'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_seniority'
           state_code:
             description: The state or province code. Use country lookup endpoint to
               retrieve state codes.
@@ -39756,11 +39542,12 @@ components:
         type: object
       - properties:
           compensation_details:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_compensation_details'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_compensation_details'
         required:
         - compensation_details
         type: object
-    createContract_request_anyOf_1_allOf_compensation_details:
+      title: PAY_AS_YOU_GO_TIME_BASED
+    PAYG_TASKS_allOf_compensation_details:
       properties:
         amount:
           description: Amount to be paid. This field can be excluded when creating
@@ -39845,24 +39632,24 @@ components:
       - payment_due_days
       - payment_due_type
       type: object
-    createContract_request_anyOf_1:
+    PAYG_TASKS:
       allOf:
       - description: Details of contract to create
         properties:
           meta:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_meta'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_meta'
           title:
             description: The title of the contract.
             example: Software Developer
             type: string
           client:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_client'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_client'
           worker:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_worker'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_worker'
           job_title:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_job_title'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_job_title'
           seniority:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_seniority'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_seniority'
           state_code:
             description: The state or province code. Use country lookup endpoint to
               retrieve state codes.
@@ -39941,28 +39728,29 @@ components:
         type: object
       - properties:
           compensation_details:
-            $ref: '#/components/schemas/createContract_request_anyOf_1_allOf_compensation_details'
+            $ref: '#/components/schemas/PAYG_TASKS_allOf_compensation_details'
         required:
         - compensation_details
         type: object
-    createContract_request_anyOf_2:
+      title: PAYG_TASKS
+    PAYG_MILESTONES:
       allOf:
       - description: Details of contract to create
         properties:
           meta:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_meta'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_meta'
           title:
             description: The title of the contract.
             example: Software Developer
             type: string
           client:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_client'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_client'
           worker:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_worker'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_worker'
           job_title:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_job_title'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_job_title'
           seniority:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_seniority'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_seniority'
           state_code:
             description: The state or province code. Use country lookup endpoint to
               retrieve state codes.
@@ -40041,28 +39829,29 @@ components:
         type: object
       - properties:
           compensation_details:
-            $ref: '#/components/schemas/createContract_request_anyOf_1_allOf_compensation_details'
+            $ref: '#/components/schemas/PAYG_TASKS_allOf_compensation_details'
         required:
         - compensation_details
         type: object
-    createContract_request_anyOf_3:
+      title: PAYG_MILESTONES
+    ONGOING_TIME_BASED:
       allOf:
       - description: Details of contract to create
         properties:
           meta:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_meta'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_meta'
           title:
             description: The title of the contract.
             example: Software Developer
             type: string
           client:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_client'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_client'
           worker:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_worker'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_worker'
           job_title:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_job_title'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_job_title'
           seniority:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_seniority'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_seniority'
           state_code:
             description: The state or province code. Use country lookup endpoint to
               retrieve state codes.
@@ -40141,444 +39930,31 @@ components:
         type: object
       - properties:
           compensation_details:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_compensation_details'
+            $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_compensation_details'
         required:
         - compensation_details
         type: object
-    createContract_request:
+      title: ONGOING_TIME_BASED
+    createContract_request_data:
       anyOf:
-      - $ref: '#/components/schemas/createContract_request_anyOf'
-      - $ref: '#/components/schemas/createContract_request_anyOf_1'
-      - $ref: '#/components/schemas/createContract_request_anyOf_2'
-      - $ref: '#/components/schemas/createContract_request_anyOf_3'
-    createContract_request_1_oneOf:
-      allOf:
-      - description: Details of contract to create
-        properties:
-          meta:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_meta'
-          title:
-            description: The title of the contract.
-            example: Software Developer
-            type: string
-          client:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_client'
-          worker:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_worker'
-          job_title:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_job_title'
-          seniority:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_seniority'
-          state_code:
-            description: The state or province code. Use country lookup endpoint to
-              retrieve state codes.
-            example: CO
-            nullable: true
-            type: string
-          external_id:
-            description: External Id.
-            example: 00000000-0000-0000-0000-000000000000
-            nullable: true
-            type: string
-          who_reports:
-            description: Flag to indicate who is supposed to provide regular reports
-            enum:
-            - both
-            - client
-            - contractor
-            example: both
-            type: string
-          country_code:
-            description: Country code.
-            example: US
-            maxLength: 2
-            minLength: 2
-            pattern: "^[A-Z]{2}$"
-            type: string
-          notice_period:
-            default: 0
-            description: Days before to notice the termination of contract for eather
-              party.
-            example: 15
-            minimum: 0
-            type: number
-          scope_of_work:
-            description: Describe the work to be performed.
-            example: Software development
-            nullable: true
-            type: string
-          special_clause:
-            description: Enter any special clause you may have.
-            example: Special clause
-            nullable: true
-            type: string
-          termination_date:
-            description: "Short date in format ISO-8601 (YYYY-MM-DD). For example:\
-              \ 2022-12-31."
-            example: 1999-12-31
-            format: date
-            nullable: true
-            pattern: "^\\d{4}-\\d{2}-\\d{2}$"
-            type: string
-        required:
-        - client
-        - job_title
-        - meta
-        - title
-        - type
-        type: object
-      - properties:
-          type:
-            description: Type of contract
-            enum:
-            - pay_as_you_go_time_based
-            example: pay_as_you_go_time_based
-            type: string
-          start_date:
-            description: "Short date in format ISO-8601 (YYYY-MM-DD). For example:\
-              \ 2022-12-31."
-            example: 1999-12-31
-            format: date
-            pattern: "^\\d{4}-\\d{2}-\\d{2}$"
-            type: string
-          custom_contract_file:
-            description: Upload the file you want to attach to this entry.
-            example: !!binary |-
-              ZmlsZQ==
-            format: binary
-            type: string
-        required:
-        - custom_contract_file
-        - start_date
-        - type
-        type: object
-      - properties:
-          compensation_details:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_compensation_details'
-        required:
-        - compensation_details
-        type: object
-    createContract_request_1_oneOf_1:
-      allOf:
-      - description: Details of contract to create
-        properties:
-          meta:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_meta'
-          title:
-            description: The title of the contract.
-            example: Software Developer
-            type: string
-          client:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_client'
-          worker:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_worker'
-          job_title:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_job_title'
-          seniority:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_seniority'
-          state_code:
-            description: The state or province code. Use country lookup endpoint to
-              retrieve state codes.
-            example: CO
-            nullable: true
-            type: string
-          external_id:
-            description: External Id.
-            example: 00000000-0000-0000-0000-000000000000
-            nullable: true
-            type: string
-          who_reports:
-            description: Flag to indicate who is supposed to provide regular reports
-            enum:
-            - both
-            - client
-            - contractor
-            example: both
-            type: string
-          country_code:
-            description: Country code.
-            example: US
-            maxLength: 2
-            minLength: 2
-            pattern: "^[A-Z]{2}$"
-            type: string
-          notice_period:
-            default: 0
-            description: Days before to notice the termination of contract for eather
-              party.
-            example: 15
-            minimum: 0
-            type: number
-          scope_of_work:
-            description: Describe the work to be performed.
-            example: Software development
-            nullable: true
-            type: string
-          special_clause:
-            description: Enter any special clause you may have.
-            example: Special clause
-            nullable: true
-            type: string
-          termination_date:
-            description: "Short date in format ISO-8601 (YYYY-MM-DD). For example:\
-              \ 2022-12-31."
-            example: 1999-12-31
-            format: date
-            nullable: true
-            pattern: "^\\d{4}-\\d{2}-\\d{2}$"
-            type: string
-        required:
-        - client
-        - job_title
-        - meta
-        - title
-        - type
-        type: object
-      - properties:
-          type:
-            description: Type of contract
-            enum:
-            - payg_tasks
-            example: payg_tasks
-            type: string
-          start_date:
-            description: "Short date in format ISO-8601 (YYYY-MM-DD). For example:\
-              \ 2022-12-31."
-            example: 1999-12-31
-            format: date
-            pattern: "^\\d{4}-\\d{2}-\\d{2}$"
-            type: string
-          custom_contract_file:
-            description: Upload the file you want to attach to this entry.
-            format: binary
-            type: string
-        required:
-        - custom_contract_file
-        - start_date
-        - type
-        type: object
-      - properties:
-          compensation_details:
-            $ref: '#/components/schemas/createContract_request_anyOf_1_allOf_compensation_details'
-        required:
-        - compensation_details
-        type: object
-    createContract_request_1_oneOf_2:
-      allOf:
-      - description: Details of contract to create
-        properties:
-          meta:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_meta'
-          title:
-            description: The title of the contract.
-            example: Software Developer
-            type: string
-          client:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_client'
-          worker:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_worker'
-          job_title:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_job_title'
-          seniority:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_seniority'
-          state_code:
-            description: The state or province code. Use country lookup endpoint to
-              retrieve state codes.
-            example: CO
-            nullable: true
-            type: string
-          external_id:
-            description: External Id.
-            example: 00000000-0000-0000-0000-000000000000
-            nullable: true
-            type: string
-          who_reports:
-            description: Flag to indicate who is supposed to provide regular reports
-            enum:
-            - both
-            - client
-            - contractor
-            example: both
-            type: string
-          country_code:
-            description: Country code.
-            example: US
-            maxLength: 2
-            minLength: 2
-            pattern: "^[A-Z]{2}$"
-            type: string
-          notice_period:
-            default: 0
-            description: Days before to notice the termination of contract for eather
-              party.
-            example: 15
-            minimum: 0
-            type: number
-          scope_of_work:
-            description: Describe the work to be performed.
-            example: Software development
-            nullable: true
-            type: string
-          special_clause:
-            description: Enter any special clause you may have.
-            example: Special clause
-            nullable: true
-            type: string
-          termination_date:
-            description: "Short date in format ISO-8601 (YYYY-MM-DD). For example:\
-              \ 2022-12-31."
-            example: 1999-12-31
-            format: date
-            nullable: true
-            pattern: "^\\d{4}-\\d{2}-\\d{2}$"
-            type: string
-        required:
-        - client
-        - job_title
-        - meta
-        - title
-        - type
-        type: object
-      - properties:
-          type:
-            description: Type of contract
-            enum:
-            - payg_milestones
-            example: payg_milestones
-            type: string
-          start_date:
-            description: "Short date in format ISO-8601 (YYYY-MM-DD). For example:\
-              \ 2022-12-31."
-            example: 1999-12-31
-            format: date
-            nullable: true
-            pattern: "^\\d{4}-\\d{2}-\\d{2}$"
-            type: string
-          custom_contract_file:
-            description: Upload the file you want to attach to this entry.
-            format: binary
-            type: string
-        required:
-        - custom_contract_file
-        - type
-        type: object
-      - properties:
-          compensation_details:
-            $ref: '#/components/schemas/createContract_request_anyOf_1_allOf_compensation_details'
-        required:
-        - compensation_details
-        type: object
-    createContract_request_1_oneOf_3:
-      allOf:
-      - description: Details of contract to create
-        properties:
-          meta:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_meta'
-          title:
-            description: The title of the contract.
-            example: Software Developer
-            type: string
-          client:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_client'
-          worker:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_worker'
-          job_title:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_job_title'
-          seniority:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_seniority'
-          state_code:
-            description: The state or province code. Use country lookup endpoint to
-              retrieve state codes.
-            example: CO
-            nullable: true
-            type: string
-          external_id:
-            description: External Id.
-            example: 00000000-0000-0000-0000-000000000000
-            nullable: true
-            type: string
-          who_reports:
-            description: Flag to indicate who is supposed to provide regular reports
-            enum:
-            - both
-            - client
-            - contractor
-            example: both
-            type: string
-          country_code:
-            description: Country code.
-            example: US
-            maxLength: 2
-            minLength: 2
-            pattern: "^[A-Z]{2}$"
-            type: string
-          notice_period:
-            default: 0
-            description: Days before to notice the termination of contract for eather
-              party.
-            example: 15
-            minimum: 0
-            type: number
-          scope_of_work:
-            description: Describe the work to be performed.
-            example: Software development
-            nullable: true
-            type: string
-          special_clause:
-            description: Enter any special clause you may have.
-            example: Special clause
-            nullable: true
-            type: string
-          termination_date:
-            description: "Short date in format ISO-8601 (YYYY-MM-DD). For example:\
-              \ 2022-12-31."
-            example: 1999-12-31
-            format: date
-            nullable: true
-            pattern: "^\\d{4}-\\d{2}-\\d{2}$"
-            type: string
-        required:
-        - client
-        - job_title
-        - meta
-        - title
-        - type
-        type: object
-      - properties:
-          type:
-            description: Type of contract
-            enum:
-            - ongoing_time_based
-            example: ongoing_time_based
-            type: string
-          start_date:
-            description: "Short date in format ISO-8601 (YYYY-MM-DD). For example:\
-              \ 2022-12-31."
-            example: 1999-12-31
-            format: date
-            pattern: "^\\d{4}-\\d{2}-\\d{2}$"
-            type: string
-          custom_contract_file:
-            description: Upload the file you want to attach to this entry.
-            format: binary
-            type: string
-        required:
-        - custom_contract_file
-        - start_date
-        - type
-        type: object
-      - properties:
-          compensation_details:
-            $ref: '#/components/schemas/createContract_request_anyOf_allOf_compensation_details'
-        required:
-        - compensation_details
-        type: object
-    createContract_request_1:
-      oneOf:
-      - $ref: '#/components/schemas/createContract_request_1_oneOf'
-      - $ref: '#/components/schemas/createContract_request_1_oneOf_1'
-      - $ref: '#/components/schemas/createContract_request_1_oneOf_2'
-      - $ref: '#/components/schemas/createContract_request_1_oneOf_3'
+      - $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED'
+      - $ref: '#/components/schemas/PAYG_TASKS'
+      - $ref: '#/components/schemas/PAYG_MILESTONES'
+      - $ref: '#/components/schemas/ONGOING_TIME_BASED'
+      properties:
+        contract_custom_file:
+          description: Upload the file you want to attach to this entry.
+          format: binary
+          nullable: true
+          type: string
+      type: object
+    createContract_request:
+      properties:
+        data:
+          $ref: '#/components/schemas/createContract_request_data'
+      required:
+      - data
+      type: object
     createContract_201_response_data_quote_benefits_inner:
       example:
         price_usd: 100
@@ -40947,7 +40323,7 @@ components:
       nullable: true
       properties:
         id:
-          $ref: '#/components/schemas/createContract_request_anyOf_allOf_client_team_id'
+          $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_client_team_id'
         team:
           $ref: '#/components/schemas/createContract_201_response_data_client_team'
         email:
@@ -41041,7 +40417,7 @@ components:
       nullable: true
       properties:
         id:
-          $ref: '#/components/schemas/createContract_request_anyOf_allOf_client_team_id'
+          $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_client_team_id'
         email:
           description: User's email address.
           example: test@example.com
@@ -41114,7 +40490,7 @@ components:
       nullable: true
       properties:
         id:
-          $ref: '#/components/schemas/createContract_request_anyOf_allOf_client_team_id'
+          $ref: '#/components/schemas/PAY_AS_YOU_GO_TIME_BASED_allOf_client_team_id'
         name:
           description: Name of seniority level e.g. Mid (Individual Contributor Level
             2)
@@ -42767,9 +42143,34 @@ components:
     inviteToSignContract_request_data:
       properties:
         email:
+          description: Worker email
+          example: john@example.com
           format: email
           type: string
+        locale:
+          default: en
+          description: Locale of the email
+          enum:
+          - en
+          - es
+          - fr
+          - de
+          - it
+          - pt
+          - pl
+          - nn
+          - nl
+          - da
+          - deAT
+          - fi
+          - sv
+          - nlBE
+          - ja
+          example: en
+          type: string
         message:
+          description: Message to the worker
+          example: Please sign the contract
           type: string
       type: object
     inviteToSignContract_request:
@@ -48491,6 +47892,45 @@ components:
       required:
       - data
       type: object
+    getBillingInvoiceDownloadLink_200_response_data:
+      example:
+        expires_at: 2024-11-30T10:58:49.78Z
+        id: abcd1234efgh5678
+        url: https://s3URL/letsdeel.com/invoices/abcd1234efgh5678.pdf
+      properties:
+        id:
+          description: Unique identifier of the invoice.
+          example: abcd1234efgh5678
+          type: string
+        url:
+          description: URL to the requested invoice for download. This URL may expire
+            after a certain duration.
+          example: https://s3URL/letsdeel.com/invoices/abcd1234efgh5678.pdf
+          nullable: true
+          type: string
+        expires_at:
+          description: "The expiration date and time of the download URL, after which\
+            \ the URL will no longer be accessible."
+          example: 2024-11-30T10:58:49.78Z
+          format: date-time
+          type: string
+      required:
+      - expires_at
+      - id
+      - url
+      type: object
+    getBillingInvoiceDownloadLink_200_response:
+      example:
+        data:
+          expires_at: 2024-11-30T10:58:49.78Z
+          id: abcd1234efgh5678
+          url: https://s3URL/letsdeel.com/invoices/abcd1234efgh5678.pdf
+      properties:
+        data:
+          $ref: '#/components/schemas/getBillingInvoiceDownloadLink_200_response_data'
+      required:
+      - data
+      type: object
     getBenefitEmployee_200_response_phones_inner:
       example:
         dial_code: "+1"
@@ -49884,45 +49324,6 @@ components:
           nullable: false
           type: string
       type: object
-    getBillingInvoiceDownloadLink_200_response_data:
-      example:
-        expires_at: 2024-11-30T10:58:49.78Z
-        id: abcd1234efgh5678
-        url: https://s3URL/letsdeel.com/invoices/abcd1234efgh5678.pdf
-      properties:
-        id:
-          description: Unique identifier of the invoice.
-          example: abcd1234efgh5678
-          type: string
-        url:
-          description: URL to the requested invoice for download. This URL may expire
-            after a certain duration.
-          example: https://s3URL/letsdeel.com/invoices/abcd1234efgh5678.pdf
-          nullable: true
-          type: string
-        expires_at:
-          description: "The expiration date and time of the download URL, after which\
-            \ the URL will no longer be accessible."
-          example: 2024-11-30T10:58:49.78Z
-          format: date-time
-          type: string
-      required:
-      - expires_at
-      - id
-      - url
-      type: object
-    getBillingInvoiceDownloadLink_200_response:
-      example:
-        data:
-          expires_at: 2024-11-30T10:58:49.78Z
-          id: abcd1234efgh5678
-          url: https://s3URL/letsdeel.com/invoices/abcd1234efgh5678.pdf
-      properties:
-        data:
-          $ref: '#/components/schemas/getBillingInvoiceDownloadLink_200_response_data'
-      required:
-      - data
-      type: object
     getLegalEntityPayrollSettings_200_response_inner:
       example:
         first_payroll_start_date: 2000-01-23
@@ -50435,6 +49836,52 @@ components:
           example: true
           nullable: false
           type: boolean
+      type: object
+    terminateContract_request_data:
+      properties:
+        message:
+          description: Termination message
+          example: Contractor is not performing well
+          type: string
+        terminate_now:
+          default: false
+          description: Terminate contract immediately
+          example: false
+          type: boolean
+        completion_date:
+          description: Contract completion date
+          example: 2022-01-01
+          format: date
+          type: string
+      type: object
+    terminateContract_request:
+      properties:
+        data:
+          $ref: '#/components/schemas/terminateContract_request_data'
+      type: object
+    terminateContract_201_response_data:
+      example:
+        completion_date: 2022-01-01T00:00:00Z
+        id: 5f4e1e4e
+      properties:
+        id:
+          description: Contract id
+          example: 5f4e1e4e
+          type: string
+        completion_date:
+          description: Contract completion date
+          example: 2022-01-01T00:00:00Z
+          format: date-time
+          type: string
+      type: object
+    terminateContract_201_response:
+      example:
+        data:
+          completion_date: 2022-01-01T00:00:00Z
+          id: 5f4e1e4e
+      properties:
+        data:
+          $ref: '#/components/schemas/terminateContract_201_response_data'
       type: object
     post401kSingleDeductionDefinition_request:
       description: Schema for the 401K Guideline Plan request body.
@@ -52294,51 +51741,55 @@ components:
         page:
           $ref: '#/components/schemas/listOnboardingTracker_200_response_page'
       type: object
-    terminateContract_request_data:
+    approveExerciseEquity_request:
       properties:
-        message:
-          description: Termination message
-          example: Contractor is not performing well
+        employer_approval:
+          description: "Approval decision by the employer for the equity exercise.\
+            \ Valid values: 'approved', 'rejected'."
+          example: approved
           type: string
-        terminate_now:
-          default: false
-          description: Terminate contract immediately
-          example: false
-          type: boolean
-        completion_date:
-          description: Contract completion date
-          example: 2022-01-01
-          format: date
-          type: string
+      required:
+      - employer_approval
       type: object
-    terminateContract_request:
-      properties:
-        data:
-          $ref: '#/components/schemas/terminateContract_request_data'
-      type: object
-    terminateContract_201_response_data:
+    approveExerciseEquity_200_response:
       example:
-        completion_date: 2022-01-01T00:00:00Z
-        id: 5f4e1e4e
+        updated_at: 2023-05-05
+        employer_approval: approved
+        created_at: 2023-05-01
+        id: 123e4567-e89b-12d3-a456-426614174000
+        status: approved
       properties:
         id:
-          description: Contract id
-          example: 5f4e1e4e
+          description: Unique identifier of the equity exercise.
+          example: 123e4567-e89b-12d3-a456-426614174000
+          format: uuid
           type: string
-        completion_date:
-          description: Contract completion date
-          example: 2022-01-01T00:00:00Z
-          format: date-time
+        status:
+          description: "The current status of the equity exercise, e.g., 'approved'\
+            \ or 'pending'."
+          example: approved
           type: string
-      type: object
-    terminateContract_201_response:
-      example:
-        data:
-          completion_date: 2022-01-01T00:00:00Z
-          id: 5f4e1e4e
-      properties:
-        data:
-          $ref: '#/components/schemas/terminateContract_201_response_data'
+        created_at:
+          description: The date when the equity exercise was created.
+          example: 2023-05-01
+          format: date
+          type: string
+        updated_at:
+          description: The date when the equity exercise was last updated.
+          example: 2023-05-05
+          format: date
+          type: string
+        employer_approval:
+          description: "Indicates whether the employer has approved the equity exercise.\
+            \ Valid values: 'approved', 'rejected'."
+          example: approved
+          type: string
+      required:
+      - created_at
+      - employer_approval
+      - id
+      - status
+      - updated_at
       type: object
     getOffCyclePaymentByContractAndId_200_response_data_reported_by:
       example:
@@ -52450,56 +51901,6 @@ components:
           $ref: '#/components/schemas/getOffCyclePaymentByContractAndId_200_response_data'
       required:
       - data
-      type: object
-    approveExerciseEquity_request:
-      properties:
-        employer_approval:
-          description: "Approval decision by the employer for the equity exercise.\
-            \ Valid values: 'approved', 'rejected'."
-          example: approved
-          type: string
-      required:
-      - employer_approval
-      type: object
-    approveExerciseEquity_200_response:
-      example:
-        updated_at: 2023-05-05
-        employer_approval: approved
-        created_at: 2023-05-01
-        id: 123e4567-e89b-12d3-a456-426614174000
-        status: approved
-      properties:
-        id:
-          description: Unique identifier of the equity exercise.
-          example: 123e4567-e89b-12d3-a456-426614174000
-          format: uuid
-          type: string
-        status:
-          description: "The current status of the equity exercise, e.g., 'approved'\
-            \ or 'pending'."
-          example: approved
-          type: string
-        created_at:
-          description: The date when the equity exercise was created.
-          example: 2023-05-01
-          format: date
-          type: string
-        updated_at:
-          description: The date when the equity exercise was last updated.
-          example: 2023-05-05
-          format: date
-          type: string
-        employer_approval:
-          description: "Indicates whether the employer has approved the equity exercise.\
-            \ Valid values: 'approved', 'rejected'."
-          example: approved
-          type: string
-      required:
-      - created_at
-      - employer_approval
-      - id
-      - status
-      - updated_at
       type: object
     getCustomFieldFromPeopleById_200_response_data_type_oneOf:
       properties:
@@ -54202,8 +53603,6 @@ components:
       - type: string
       - type: number
     InputToCreateFileRef_data:
-      example:
-        content_type: application/pdf
       properties:
         content_type:
           $ref: '#/components/schemas/FileRefTypeEnum'
@@ -54295,10 +53694,6 @@ components:
       type: object
     FinalPaymentCalculated_last_cycle:
       description: The last payment cycle.
-      example:
-        start: 2022-05-24T09:38:46.235Z
-        end: 2022-05-24T09:38:46.235Z
-        completion_date: 2022-05-24T09:38:46.235Z
       properties:
         start:
           description: Long date-time format following ISO-8601
@@ -55673,17 +55068,6 @@ components:
         id:
           description: Unique identifier of this resource.
           example: 00000000-0000-0000-0000-000000000000
-          type: string
-      required:
-      - id
-      type: object
-    GPClient_team:
-      properties:
-        id:
-          description: Refers to Groups in the platform. Working groups that reflect
-            the organization's structure.
-          example: 00000000-0000-0000-0000-000000000000
-          format: uuid
           type: string
       required:
       - id
@@ -57218,6 +56602,14 @@ components:
         - start_date
         - time_off_type_id
         type: object
+    inline_object:
+      properties:
+        data:
+          example: https://app.deel.com/contract/aaaaa?token=ABC
+          type: string
+      required:
+      - data
+      type: object
   securitySchemes:
     deelToken:
       bearerFormat: JWT

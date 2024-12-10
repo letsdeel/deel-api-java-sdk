@@ -52,24 +52,27 @@ import org.openapitools.client.JSON;
 /**
  * The background check information for a contract. Either &#x60;individual_check_ids&#x60; or &#x60;package_id&#x60; must be provided, but not both.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateBackgroundCheckForContractsRequest {
   public static final String SERIALIZED_NAME_PACKAGE_ID = "package_id";
   @SerializedName(SERIALIZED_NAME_PACKAGE_ID)
+  @javax.annotation.Nullable
   private UUID packageId;
 
   public static final String SERIALIZED_NAME_CONTRACT_IDS = "contract_ids";
   @SerializedName(SERIALIZED_NAME_CONTRACT_IDS)
+  @javax.annotation.Nonnull
   private List<String> contractIds = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_INDIVIDUAL_CHECK_IDS = "individual_check_ids";
   @SerializedName(SERIALIZED_NAME_INDIVIDUAL_CHECK_IDS)
+  @javax.annotation.Nullable
   private List<UUID> individualCheckIds;
 
   public CreateBackgroundCheckForContractsRequest() {
   }
 
-  public CreateBackgroundCheckForContractsRequest packageId(UUID packageId) {
+  public CreateBackgroundCheckForContractsRequest packageId(@javax.annotation.Nullable UUID packageId) {
     this.packageId = packageId;
     return this;
   }
@@ -83,12 +86,12 @@ public class CreateBackgroundCheckForContractsRequest {
     return packageId;
   }
 
-  public void setPackageId(UUID packageId) {
+  public void setPackageId(@javax.annotation.Nullable UUID packageId) {
     this.packageId = packageId;
   }
 
 
-  public CreateBackgroundCheckForContractsRequest contractIds(List<String> contractIds) {
+  public CreateBackgroundCheckForContractsRequest contractIds(@javax.annotation.Nonnull List<String> contractIds) {
     this.contractIds = contractIds;
     return this;
   }
@@ -110,12 +113,12 @@ public class CreateBackgroundCheckForContractsRequest {
     return contractIds;
   }
 
-  public void setContractIds(List<String> contractIds) {
+  public void setContractIds(@javax.annotation.Nonnull List<String> contractIds) {
     this.contractIds = contractIds;
   }
 
 
-  public CreateBackgroundCheckForContractsRequest individualCheckIds(List<UUID> individualCheckIds) {
+  public CreateBackgroundCheckForContractsRequest individualCheckIds(@javax.annotation.Nullable List<UUID> individualCheckIds) {
     this.individualCheckIds = individualCheckIds;
     return this;
   }
@@ -137,7 +140,7 @@ public class CreateBackgroundCheckForContractsRequest {
     return individualCheckIds;
   }
 
-  public void setIndividualCheckIds(List<UUID> individualCheckIds) {
+  public void setIndividualCheckIds(@javax.annotation.Nullable List<UUID> individualCheckIds) {
     this.individualCheckIds = individualCheckIds;
   }
 

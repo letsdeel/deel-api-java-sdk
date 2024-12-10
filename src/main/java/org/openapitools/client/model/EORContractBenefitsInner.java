@@ -51,18 +51,21 @@ import org.openapitools.client.JSON;
 /**
  * EORContractBenefitsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EORContractBenefitsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_PROVIDER = "provider";
   @SerializedName(SERIALIZED_NAME_PROVIDER)
+  @javax.annotation.Nullable
   private EORContractBenefitsInnerProvider provider;
 
   /**
@@ -119,20 +122,23 @@ public class EORContractBenefitsInner {
 
   public static final String SERIALIZED_NAME_OFFER_STATUS = "offer_status";
   @SerializedName(SERIALIZED_NAME_OFFER_STATUS)
+  @javax.annotation.Nullable
   private OfferStatusEnum offerStatus;
 
   public static final String SERIALIZED_NAME_PLAN = "plan";
   @SerializedName(SERIALIZED_NAME_PLAN)
+  @javax.annotation.Nullable
   private EORContractBenefitsInnerPlan plan;
 
   public static final String SERIALIZED_NAME_ENROLLMENT_DETAILS = "enrollment_details";
   @SerializedName(SERIALIZED_NAME_ENROLLMENT_DETAILS)
+  @javax.annotation.Nullable
   private EORContractBenefitsInnerEnrollmentDetails enrollmentDetails;
 
   public EORContractBenefitsInner() {
   }
 
-  public EORContractBenefitsInner id(String id) {
+  public EORContractBenefitsInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -146,12 +152,12 @@ public class EORContractBenefitsInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public EORContractBenefitsInner name(String name) {
+  public EORContractBenefitsInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -165,12 +171,12 @@ public class EORContractBenefitsInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public EORContractBenefitsInner provider(EORContractBenefitsInnerProvider provider) {
+  public EORContractBenefitsInner provider(@javax.annotation.Nullable EORContractBenefitsInnerProvider provider) {
     this.provider = provider;
     return this;
   }
@@ -184,12 +190,12 @@ public class EORContractBenefitsInner {
     return provider;
   }
 
-  public void setProvider(EORContractBenefitsInnerProvider provider) {
+  public void setProvider(@javax.annotation.Nullable EORContractBenefitsInnerProvider provider) {
     this.provider = provider;
   }
 
 
-  public EORContractBenefitsInner offerStatus(OfferStatusEnum offerStatus) {
+  public EORContractBenefitsInner offerStatus(@javax.annotation.Nullable OfferStatusEnum offerStatus) {
     this.offerStatus = offerStatus;
     return this;
   }
@@ -203,12 +209,12 @@ public class EORContractBenefitsInner {
     return offerStatus;
   }
 
-  public void setOfferStatus(OfferStatusEnum offerStatus) {
+  public void setOfferStatus(@javax.annotation.Nullable OfferStatusEnum offerStatus) {
     this.offerStatus = offerStatus;
   }
 
 
-  public EORContractBenefitsInner plan(EORContractBenefitsInnerPlan plan) {
+  public EORContractBenefitsInner plan(@javax.annotation.Nullable EORContractBenefitsInnerPlan plan) {
     this.plan = plan;
     return this;
   }
@@ -222,12 +228,12 @@ public class EORContractBenefitsInner {
     return plan;
   }
 
-  public void setPlan(EORContractBenefitsInnerPlan plan) {
+  public void setPlan(@javax.annotation.Nullable EORContractBenefitsInnerPlan plan) {
     this.plan = plan;
   }
 
 
-  public EORContractBenefitsInner enrollmentDetails(EORContractBenefitsInnerEnrollmentDetails enrollmentDetails) {
+  public EORContractBenefitsInner enrollmentDetails(@javax.annotation.Nullable EORContractBenefitsInnerEnrollmentDetails enrollmentDetails) {
     this.enrollmentDetails = enrollmentDetails;
     return this;
   }
@@ -241,7 +247,7 @@ public class EORContractBenefitsInner {
     return enrollmentDetails;
   }
 
-  public void setEnrollmentDetails(EORContractBenefitsInnerEnrollmentDetails enrollmentDetails) {
+  public void setEnrollmentDetails(@javax.annotation.Nullable EORContractBenefitsInnerEnrollmentDetails enrollmentDetails) {
     this.enrollmentDetails = enrollmentDetails;
   }
 

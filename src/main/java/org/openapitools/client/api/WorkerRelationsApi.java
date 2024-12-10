@@ -179,7 +179,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -197,7 +198,8 @@ public class WorkerRelationsApi {
          * Execute createOrUpdateChildRelationBetweenProfiles request
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -216,7 +218,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;Void&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -236,7 +239,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -258,7 +262,8 @@ public class WorkerRelationsApi {
      * @param createOrUpdateChildRelationBetweenProfilesRequest  (required)
      * @return APIcreateOrUpdateChildRelationBetweenProfilesRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -361,7 +366,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -379,7 +385,8 @@ public class WorkerRelationsApi {
          * Execute createOrUpdateParentRelationBetweenProfiles request
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -398,7 +405,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;Void&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -418,7 +426,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -440,7 +449,8 @@ public class WorkerRelationsApi {
      * @param createOrUpdateParentRelationBetweenProfilesRequest  (required)
      * @return APIcreateOrUpdateParentRelationBetweenProfilesRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -535,7 +545,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -553,7 +564,8 @@ public class WorkerRelationsApi {
          * Execute createWorkerRelation request
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -572,7 +584,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;Void&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -592,7 +605,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -613,7 +627,8 @@ public class WorkerRelationsApi {
      * @param createWorkerRelationRequest  (required)
      * @return APIcreateWorkerRelationRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -708,7 +723,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -726,7 +742,8 @@ public class WorkerRelationsApi {
          * Execute createWorkerRelationExternalId request
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -745,7 +762,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;Void&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -765,7 +783,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -786,7 +805,8 @@ public class WorkerRelationsApi {
      * @param createWorkerRelationExternalIdRequest  (required)
      * @return APIcreateWorkerRelationExternalIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -883,7 +903,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -902,7 +923,8 @@ public class WorkerRelationsApi {
          * @return CreateWorkerRelationType201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -922,7 +944,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;CreateWorkerRelationType201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -942,7 +965,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -963,7 +987,8 @@ public class WorkerRelationsApi {
      * @param createWorkerRelationTypeRequest  (required)
      * @return APIcreateWorkerRelationTypeRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1058,7 +1083,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1076,7 +1102,8 @@ public class WorkerRelationsApi {
          * Execute deleteWorkerRelation request
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1095,7 +1122,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;Void&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1115,7 +1143,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1136,7 +1165,8 @@ public class WorkerRelationsApi {
      * @param hrisProfileOid Worker Relation ID (required)
      * @return APIdeleteWorkerRelationRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1231,7 +1261,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1249,7 +1280,8 @@ public class WorkerRelationsApi {
          * Execute deleteWorkerRelationExternalId request
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1268,7 +1300,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;Void&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1288,7 +1321,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1309,7 +1343,8 @@ public class WorkerRelationsApi {
      * @param profileId Worker Relation external ID (required)
      * @return APIdeleteWorkerRelationExternalIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1404,7 +1439,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1422,7 +1458,8 @@ public class WorkerRelationsApi {
          * Execute deleteWorkerRelationType request
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1441,7 +1478,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;Void&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1461,7 +1499,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1482,7 +1521,8 @@ public class WorkerRelationsApi {
      * @param typeId Worker Relation Type ID (required)
      * @return APIdeleteWorkerRelationTypeRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1577,7 +1617,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1595,7 +1636,8 @@ public class WorkerRelationsApi {
          * Execute deleteWorkerRelationTypeExternalId request
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1614,7 +1656,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;Void&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1634,7 +1677,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1655,7 +1699,8 @@ public class WorkerRelationsApi {
      * @param externalId Worker Relation Type external ID (required)
      * @return APIdeleteWorkerRelationTypeExternalIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1752,7 +1797,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1771,7 +1817,8 @@ public class WorkerRelationsApi {
          * @return GetAllProfileWorkerRelations200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1791,7 +1838,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;GetAllProfileWorkerRelations200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1811,7 +1859,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1832,7 +1881,8 @@ public class WorkerRelationsApi {
      * @param hrisProfileOid HrisProfile ID (required)
      * @return APIgetAllProfileWorkerRelationsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1929,7 +1979,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1948,7 +1999,8 @@ public class WorkerRelationsApi {
          * @return GetAllProfileWorkerRelationsExternalId200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1968,7 +2020,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;GetAllProfileWorkerRelationsExternalId200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1988,7 +2041,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2009,7 +2063,8 @@ public class WorkerRelationsApi {
      * @param profileId HrisProfile external ID (required)
      * @return APIgetAllProfileWorkerRelationsExternalIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2098,7 +2153,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2117,7 +2173,8 @@ public class WorkerRelationsApi {
          * @return GetAllWorkerRelationTypes200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2137,7 +2194,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;GetAllWorkerRelationTypes200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2157,7 +2215,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2177,7 +2236,8 @@ public class WorkerRelationsApi {
      * Retrieve all worker relation types.
      * @return APIgetAllWorkerRelationTypesRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2282,7 +2342,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2301,7 +2362,8 @@ public class WorkerRelationsApi {
          * @return UpdateWorkerRelationType204Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2321,7 +2383,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;UpdateWorkerRelationType204Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2341,7 +2404,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2363,7 +2427,8 @@ public class WorkerRelationsApi {
      * @param updateWorkerRelationTypeRequest  (required)
      * @return APIupdateWorkerRelationTypeRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2468,7 +2533,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2487,7 +2553,8 @@ public class WorkerRelationsApi {
          * @return UpdateWorkerRelationTypeExternalId204Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2507,7 +2574,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;UpdateWorkerRelationTypeExternalId204Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2527,7 +2595,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2549,7 +2618,8 @@ public class WorkerRelationsApi {
      * @param updateWorkerRelationTypeRequest  (required)
      * @return APIupdateWorkerRelationTypeExternalIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2652,7 +2722,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2670,7 +2741,8 @@ public class WorkerRelationsApi {
          * Execute upsertChildWorkerRelations request
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2689,7 +2761,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;Void&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2709,7 +2782,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2731,7 +2805,8 @@ public class WorkerRelationsApi {
      * @param upsertChildWorkerRelationsRequest  (required)
      * @return APIupsertChildWorkerRelationsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2834,7 +2909,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
          </table>
@@ -2847,7 +2923,8 @@ public class WorkerRelationsApi {
          * Execute upsertChildWorkerRelationsExternalId request
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
          </table>
@@ -2861,7 +2938,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;Void&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
          </table>
@@ -2876,7 +2954,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
          </table>
@@ -2893,7 +2972,8 @@ public class WorkerRelationsApi {
      * @param upsertChildWorkerRelationsExternalIdRequest  (required)
      * @return APIupsertChildWorkerRelationsExternalIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
@@ -2991,7 +3071,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3009,7 +3090,8 @@ public class WorkerRelationsApi {
          * Execute upsertParentWorkerRelations request
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3028,7 +3110,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;Void&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3048,7 +3131,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3070,7 +3154,8 @@ public class WorkerRelationsApi {
      * @param upsertParentWorkerRelationsRequest  (required)
      * @return APIupsertParentWorkerRelationsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3173,7 +3258,8 @@ public class WorkerRelationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
          </table>
@@ -3186,7 +3272,8 @@ public class WorkerRelationsApi {
          * Execute upsertParentWorkerRelationsExternalId request
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
          </table>
@@ -3200,7 +3287,8 @@ public class WorkerRelationsApi {
          * @return ApiResponse&lt;Void&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
          </table>
@@ -3215,7 +3303,8 @@ public class WorkerRelationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
          </table>
@@ -3232,7 +3321,8 @@ public class WorkerRelationsApi {
      * @param upsertParentWorkerRelationsExternalIdRequest  (required)
      * @return APIupsertParentWorkerRelationsExternalIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>

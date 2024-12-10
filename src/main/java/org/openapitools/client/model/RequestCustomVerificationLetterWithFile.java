@@ -51,14 +51,16 @@ import org.openapitools.client.JSON;
 /**
  * RequestCustomVerificationLetterWithFile
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class RequestCustomVerificationLetterWithFile {
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_INCLUDE_Q_R_CODE = "includeQRCode";
   @SerializedName(SERIALIZED_NAME_INCLUDE_Q_R_CODE)
+  @javax.annotation.Nullable
   private Boolean includeQRCode;
 
   /**
@@ -123,16 +125,18 @@ public class RequestCustomVerificationLetterWithFile {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_FILES = "files";
   @SerializedName(SERIALIZED_NAME_FILES)
+  @javax.annotation.Nonnull
   private List<FileObject> files = new ArrayList<>();
 
   public RequestCustomVerificationLetterWithFile() {
   }
 
-  public RequestCustomVerificationLetterWithFile description(String description) {
+  public RequestCustomVerificationLetterWithFile description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -146,12 +150,12 @@ public class RequestCustomVerificationLetterWithFile {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public RequestCustomVerificationLetterWithFile includeQRCode(Boolean includeQRCode) {
+  public RequestCustomVerificationLetterWithFile includeQRCode(@javax.annotation.Nullable Boolean includeQRCode) {
     this.includeQRCode = includeQRCode;
     return this;
   }
@@ -165,12 +169,12 @@ public class RequestCustomVerificationLetterWithFile {
     return includeQRCode;
   }
 
-  public void setIncludeQRCode(Boolean includeQRCode) {
+  public void setIncludeQRCode(@javax.annotation.Nullable Boolean includeQRCode) {
     this.includeQRCode = includeQRCode;
   }
 
 
-  public RequestCustomVerificationLetterWithFile type(TypeEnum type) {
+  public RequestCustomVerificationLetterWithFile type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -184,12 +188,12 @@ public class RequestCustomVerificationLetterWithFile {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public RequestCustomVerificationLetterWithFile files(List<FileObject> files) {
+  public RequestCustomVerificationLetterWithFile files(@javax.annotation.Nonnull List<FileObject> files) {
     this.files = files;
     return this;
   }
@@ -211,7 +215,7 @@ public class RequestCustomVerificationLetterWithFile {
     return files;
   }
 
-  public void setFiles(List<FileObject> files) {
+  public void setFiles(@javax.annotation.Nonnull List<FileObject> files) {
     this.files = files;
   }
 

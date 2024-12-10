@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * GetPeoplePersonalInformationById200ResponseDataDemographicsGender
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPeoplePersonalInformationById200ResponseDataDemographicsGender {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_OTHER_NAME = "other_name";
   @SerializedName(SERIALIZED_NAME_OTHER_NAME)
+  @javax.annotation.Nullable
   private String otherName;
 
   public GetPeoplePersonalInformationById200ResponseDataDemographicsGender() {
   }
 
-  public GetPeoplePersonalInformationById200ResponseDataDemographicsGender id(UUID id) {
+  public GetPeoplePersonalInformationById200ResponseDataDemographicsGender id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -80,12 +83,12 @@ public class GetPeoplePersonalInformationById200ResponseDataDemographicsGender {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public GetPeoplePersonalInformationById200ResponseDataDemographicsGender name(String name) {
+  public GetPeoplePersonalInformationById200ResponseDataDemographicsGender name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -99,12 +102,12 @@ public class GetPeoplePersonalInformationById200ResponseDataDemographicsGender {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public GetPeoplePersonalInformationById200ResponseDataDemographicsGender otherName(String otherName) {
+  public GetPeoplePersonalInformationById200ResponseDataDemographicsGender otherName(@javax.annotation.Nullable String otherName) {
     this.otherName = otherName;
     return this;
   }
@@ -118,7 +121,7 @@ public class GetPeoplePersonalInformationById200ResponseDataDemographicsGender {
     return otherName;
   }
 
-  public void setOtherName(String otherName) {
+  public void setOtherName(@javax.annotation.Nullable String otherName) {
     this.otherName = otherName;
   }
 

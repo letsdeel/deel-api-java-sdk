@@ -54,18 +54,21 @@ import org.openapitools.client.JSON;
 /**
  * Schema for the 401K Guideline Plan request body.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Put401kPlansDefinitionRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_DETAILS = "details";
   @SerializedName(SERIALIZED_NAME_DETAILS)
+  @javax.annotation.Nullable
   private Put401kPlansDefinitionRequestDetails details;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private LocalDate startDate;
 
   /**
@@ -124,20 +127,23 @@ public class Put401kPlansDefinitionRequest {
 
   public static final String SERIALIZED_NAME_CONTRIBUTION_TYPE = "contribution_type";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTION_TYPE)
+  @javax.annotation.Nullable
   private ContributionTypeEnum contributionType;
 
   public static final String SERIALIZED_NAME_CONTRIBUTION_VALUE = "contribution_value";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTION_VALUE)
+  @javax.annotation.Nullable
   private BigDecimal contributionValue;
 
   public static final String SERIALIZED_NAME_CONTRIBUTION_VALUE_FOR_MATCH_RATE = "contribution_value_for_match_rate";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTION_VALUE_FOR_MATCH_RATE)
+  @javax.annotation.Nullable
   private List<Put401kPlansDefinitionRequestContributionValueForMatchRateInner> contributionValueForMatchRate = new ArrayList<>();
 
   public Put401kPlansDefinitionRequest() {
   }
 
-  public Put401kPlansDefinitionRequest name(String name) {
+  public Put401kPlansDefinitionRequest name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -151,12 +157,12 @@ public class Put401kPlansDefinitionRequest {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public Put401kPlansDefinitionRequest details(Put401kPlansDefinitionRequestDetails details) {
+  public Put401kPlansDefinitionRequest details(@javax.annotation.Nullable Put401kPlansDefinitionRequestDetails details) {
     this.details = details;
     return this;
   }
@@ -170,12 +176,12 @@ public class Put401kPlansDefinitionRequest {
     return details;
   }
 
-  public void setDetails(Put401kPlansDefinitionRequestDetails details) {
+  public void setDetails(@javax.annotation.Nullable Put401kPlansDefinitionRequestDetails details) {
     this.details = details;
   }
 
 
-  public Put401kPlansDefinitionRequest startDate(LocalDate startDate) {
+  public Put401kPlansDefinitionRequest startDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -189,12 +195,12 @@ public class Put401kPlansDefinitionRequest {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public Put401kPlansDefinitionRequest contributionType(ContributionTypeEnum contributionType) {
+  public Put401kPlansDefinitionRequest contributionType(@javax.annotation.Nullable ContributionTypeEnum contributionType) {
     this.contributionType = contributionType;
     return this;
   }
@@ -208,12 +214,12 @@ public class Put401kPlansDefinitionRequest {
     return contributionType;
   }
 
-  public void setContributionType(ContributionTypeEnum contributionType) {
+  public void setContributionType(@javax.annotation.Nullable ContributionTypeEnum contributionType) {
     this.contributionType = contributionType;
   }
 
 
-  public Put401kPlansDefinitionRequest contributionValue(BigDecimal contributionValue) {
+  public Put401kPlansDefinitionRequest contributionValue(@javax.annotation.Nullable BigDecimal contributionValue) {
     this.contributionValue = contributionValue;
     return this;
   }
@@ -227,12 +233,12 @@ public class Put401kPlansDefinitionRequest {
     return contributionValue;
   }
 
-  public void setContributionValue(BigDecimal contributionValue) {
+  public void setContributionValue(@javax.annotation.Nullable BigDecimal contributionValue) {
     this.contributionValue = contributionValue;
   }
 
 
-  public Put401kPlansDefinitionRequest contributionValueForMatchRate(List<Put401kPlansDefinitionRequestContributionValueForMatchRateInner> contributionValueForMatchRate) {
+  public Put401kPlansDefinitionRequest contributionValueForMatchRate(@javax.annotation.Nullable List<Put401kPlansDefinitionRequestContributionValueForMatchRateInner> contributionValueForMatchRate) {
     this.contributionValueForMatchRate = contributionValueForMatchRate;
     return this;
   }
@@ -254,7 +260,7 @@ public class Put401kPlansDefinitionRequest {
     return contributionValueForMatchRate;
   }
 
-  public void setContributionValueForMatchRate(List<Put401kPlansDefinitionRequestContributionValueForMatchRateInner> contributionValueForMatchRate) {
+  public void setContributionValueForMatchRate(@javax.annotation.Nullable List<Put401kPlansDefinitionRequestContributionValueForMatchRateInner> contributionValueForMatchRate) {
     this.contributionValueForMatchRate = contributionValueForMatchRate;
   }
 

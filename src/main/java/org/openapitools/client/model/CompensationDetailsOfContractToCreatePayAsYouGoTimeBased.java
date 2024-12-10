@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * CompensationDetailsOfContractToCreatePayAsYouGoTimeBased
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CompensationDetailsOfContractToCreatePayAsYouGoTimeBased {
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nonnull
   private WorkStatementScaleEnum scale;
 
   public CompensationDetailsOfContractToCreatePayAsYouGoTimeBased() {
   }
 
-  public CompensationDetailsOfContractToCreatePayAsYouGoTimeBased amount(BigDecimal amount) {
+  public CompensationDetailsOfContractToCreatePayAsYouGoTimeBased amount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -77,12 +79,12 @@ public class CompensationDetailsOfContractToCreatePayAsYouGoTimeBased {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public CompensationDetailsOfContractToCreatePayAsYouGoTimeBased scale(WorkStatementScaleEnum scale) {
+  public CompensationDetailsOfContractToCreatePayAsYouGoTimeBased scale(@javax.annotation.Nonnull WorkStatementScaleEnum scale) {
     this.scale = scale;
     return this;
   }
@@ -96,7 +98,7 @@ public class CompensationDetailsOfContractToCreatePayAsYouGoTimeBased {
     return scale;
   }
 
-  public void setScale(WorkStatementScaleEnum scale) {
+  public void setScale(@javax.annotation.Nonnull WorkStatementScaleEnum scale) {
     this.scale = scale;
   }
 

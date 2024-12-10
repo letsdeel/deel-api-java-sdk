@@ -49,10 +49,11 @@ import org.openapitools.client.JSON;
 /**
  * Details about the contributions.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContributionsInner {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   /**
@@ -109,16 +110,18 @@ public class GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContrib
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal amount;
 
   public GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContributionsInner() {
   }
 
-  public GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContributionsInner name(String name) {
+  public GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContributionsInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -132,12 +135,12 @@ public class GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContrib
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContributionsInner type(TypeEnum type) {
+  public GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContributionsInner type(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -151,12 +154,12 @@ public class GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContrib
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
 
-  public GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContributionsInner amount(BigDecimal amount) {
+  public GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContributionsInner amount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -170,7 +173,7 @@ public class GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContrib
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
   }
 

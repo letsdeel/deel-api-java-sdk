@@ -50,26 +50,31 @@ import org.openapitools.client.JSON;
 /**
  * UpdateGPEmployeeInformationRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateGPEmployeeInformationRequestData {
   public static final String SERIALIZED_NAME_GENDER = "gender";
   @SerializedName(SERIALIZED_NAME_GENDER)
+  @javax.annotation.Nullable
   private String gender;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_MIDDLE_NAME = "middle_name";
   @SerializedName(SERIALIZED_NAME_MIDDLE_NAME)
+  @javax.annotation.Nullable
   private String middleName;
 
   public static final String SERIALIZED_NAME_DATE_OF_BIRTH = "date_of_birth";
   @SerializedName(SERIALIZED_NAME_DATE_OF_BIRTH)
+  @javax.annotation.Nullable
   private LocalDate dateOfBirth;
 
   /**
@@ -136,16 +141,18 @@ public class UpdateGPEmployeeInformationRequestData {
 
   public static final String SERIALIZED_NAME_MARITAL_STATUS = "marital_status";
   @SerializedName(SERIALIZED_NAME_MARITAL_STATUS)
+  @javax.annotation.Nullable
   private MaritalStatusEnum maritalStatus;
 
   public static final String SERIALIZED_NAME_EMPLOYEE_NUMBER = "employee_number";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE_NUMBER)
+  @javax.annotation.Nullable
   private String employeeNumber;
 
   public UpdateGPEmployeeInformationRequestData() {
   }
 
-  public UpdateGPEmployeeInformationRequestData gender(String gender) {
+  public UpdateGPEmployeeInformationRequestData gender(@javax.annotation.Nullable String gender) {
     this.gender = gender;
     return this;
   }
@@ -159,12 +166,12 @@ public class UpdateGPEmployeeInformationRequestData {
     return gender;
   }
 
-  public void setGender(String gender) {
+  public void setGender(@javax.annotation.Nullable String gender) {
     this.gender = gender;
   }
 
 
-  public UpdateGPEmployeeInformationRequestData lastName(String lastName) {
+  public UpdateGPEmployeeInformationRequestData lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -178,12 +185,12 @@ public class UpdateGPEmployeeInformationRequestData {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
 
-  public UpdateGPEmployeeInformationRequestData firstName(String firstName) {
+  public UpdateGPEmployeeInformationRequestData firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -197,12 +204,12 @@ public class UpdateGPEmployeeInformationRequestData {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public UpdateGPEmployeeInformationRequestData middleName(String middleName) {
+  public UpdateGPEmployeeInformationRequestData middleName(@javax.annotation.Nullable String middleName) {
     this.middleName = middleName;
     return this;
   }
@@ -216,12 +223,12 @@ public class UpdateGPEmployeeInformationRequestData {
     return middleName;
   }
 
-  public void setMiddleName(String middleName) {
+  public void setMiddleName(@javax.annotation.Nullable String middleName) {
     this.middleName = middleName;
   }
 
 
-  public UpdateGPEmployeeInformationRequestData dateOfBirth(LocalDate dateOfBirth) {
+  public UpdateGPEmployeeInformationRequestData dateOfBirth(@javax.annotation.Nullable LocalDate dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
     return this;
   }
@@ -235,12 +242,12 @@ public class UpdateGPEmployeeInformationRequestData {
     return dateOfBirth;
   }
 
-  public void setDateOfBirth(LocalDate dateOfBirth) {
+  public void setDateOfBirth(@javax.annotation.Nullable LocalDate dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
   }
 
 
-  public UpdateGPEmployeeInformationRequestData maritalStatus(MaritalStatusEnum maritalStatus) {
+  public UpdateGPEmployeeInformationRequestData maritalStatus(@javax.annotation.Nullable MaritalStatusEnum maritalStatus) {
     this.maritalStatus = maritalStatus;
     return this;
   }
@@ -254,12 +261,12 @@ public class UpdateGPEmployeeInformationRequestData {
     return maritalStatus;
   }
 
-  public void setMaritalStatus(MaritalStatusEnum maritalStatus) {
+  public void setMaritalStatus(@javax.annotation.Nullable MaritalStatusEnum maritalStatus) {
     this.maritalStatus = maritalStatus;
   }
 
 
-  public UpdateGPEmployeeInformationRequestData employeeNumber(String employeeNumber) {
+  public UpdateGPEmployeeInformationRequestData employeeNumber(@javax.annotation.Nullable String employeeNumber) {
     this.employeeNumber = employeeNumber;
     return this;
   }
@@ -273,7 +280,7 @@ public class UpdateGPEmployeeInformationRequestData {
     return employeeNumber;
   }
 
-  public void setEmployeeNumber(String employeeNumber) {
+  public void setEmployeeNumber(@javax.annotation.Nullable String employeeNumber) {
     this.employeeNumber = employeeNumber;
   }
 

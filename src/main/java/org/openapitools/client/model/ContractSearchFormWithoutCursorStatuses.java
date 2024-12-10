@@ -52,7 +52,7 @@ import com.google.gson.JsonParseException;
 
 import org.openapitools.client.JSON;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ContractSearchFormWithoutCursorStatuses extends AbstractOpenApiSchema {
     private static final Logger log = Logger.getLogger(ContractSearchFormWithoutCursorStatuses.class.getName());
 
@@ -218,6 +218,7 @@ public class ContractSearchFormWithoutCursorStatuses extends AbstractOpenApiSche
     public List<ContractStatusEnum> getListContractStatusEnum() throws ClassCastException {
         return (List<ContractStatusEnum>)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `ContractStatusEnum`. If the actual instance is not `ContractStatusEnum`,
      * the ClassCastException will be thrown.

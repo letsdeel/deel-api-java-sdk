@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * Job seniority level. Please use the seniority levels endpoint to retrieve the list of seniority levels.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ContractToCreateSharedSeniority {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private ContractToCreateSharedSeniorityId id;
 
   public ContractToCreateSharedSeniority() {
   }
 
-  public ContractToCreateSharedSeniority id(ContractToCreateSharedSeniorityId id) {
+  public ContractToCreateSharedSeniority id(@javax.annotation.Nullable ContractToCreateSharedSeniorityId id) {
     this.id = id;
     return this;
   }
@@ -72,7 +73,7 @@ public class ContractToCreateSharedSeniority {
     return id;
   }
 
-  public void setId(ContractToCreateSharedSeniorityId id) {
+  public void setId(@javax.annotation.Nullable ContractToCreateSharedSeniorityId id) {
     this.id = id;
   }
 

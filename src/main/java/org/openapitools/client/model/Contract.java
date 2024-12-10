@@ -66,108 +66,132 @@ import org.openapitools.client.JSON;
 /**
  * Contract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Contract {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nonnull
   private String title;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private ContractTypeEnum type;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private ContractStatusEnum status;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nullable
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_SENIORITY = "seniority";
   @SerializedName(SERIALIZED_NAME_SENIORITY)
+  @javax.annotation.Nullable
   private Seniority seniority;
 
   public static final String SERIALIZED_NAME_WHO_REPORTS = "who_reports";
   @SerializedName(SERIALIZED_NAME_WHO_REPORTS)
+  @javax.annotation.Nullable
   private ContractWhoReportsEnum whoReports;
 
   public static final String SERIALIZED_NAME_SCOPE_OF_WORK = "scope_of_work";
   @SerializedName(SERIALIZED_NAME_SCOPE_OF_WORK)
+  @javax.annotation.Nullable
   private String scopeOfWork;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime startDate;
 
   public static final String SERIALIZED_NAME_TERMINATION_DATE = "termination_date";
   @SerializedName(SERIALIZED_NAME_TERMINATION_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime terminationDate;
 
   public static final String SERIALIZED_NAME_SPECIAL_CLAUSE = "special_clause";
   @SerializedName(SERIALIZED_NAME_SPECIAL_CLAUSE)
+  @javax.annotation.Nonnull
   private String specialClause;
 
   public static final String SERIALIZED_NAME_IS_ARCHIVED = "is_archived";
   @SerializedName(SERIALIZED_NAME_IS_ARCHIVED)
+  @javax.annotation.Nonnull
   private Boolean isArchived;
 
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
+  @javax.annotation.Nullable
   private ClientOfContract client;
 
   public static final String SERIALIZED_NAME_WORKER = "worker";
   @SerializedName(SERIALIZED_NAME_WORKER)
+  @javax.annotation.Nullable
   private WorkerOfContract worker;
 
   public static final String SERIALIZED_NAME_INVITATIONS = "invitations";
   @SerializedName(SERIALIZED_NAME_INVITATIONS)
+  @javax.annotation.Nonnull
   private InvitationsOfBasicContract invitations;
 
   public static final String SERIALIZED_NAME_SIGNATURES = "signatures";
   @SerializedName(SERIALIZED_NAME_SIGNATURES)
+  @javax.annotation.Nonnull
   private SignaturesOfContract signatures;
 
   public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
   @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
+  @javax.annotation.Nonnull
   private CompensationDetailsOfContract compensationDetails;
 
   public static final String SERIALIZED_NAME_EMPLOYMENT_DETAILS = "employment_details";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT_DETAILS)
+  @javax.annotation.Nonnull
   private EmploymentDetailsOfContract employmentDetails;
 
   public static final String SERIALIZED_NAME_NOTICE_PERIOD = "notice_period";
   @SerializedName(SERIALIZED_NAME_NOTICE_PERIOD)
+  @javax.annotation.Nullable
   private BigDecimal noticePeriod = new BigDecimal("0");
 
   public static final String SERIALIZED_NAME_CONTRACT_TEMPLATE = "contract_template";
   @SerializedName(SERIALIZED_NAME_CONTRACT_TEMPLATE)
+  @javax.annotation.Nullable
   private ContractTemplate contractTemplate;
 
   public static final String SERIALIZED_NAME_CUSTOM_FIELDS = "custom_fields";
   @SerializedName(SERIALIZED_NAME_CUSTOM_FIELDS)
+  @javax.annotation.Nullable
   private List<ContractCustomField> customFields = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_QUOTE = "quote";
   @SerializedName(SERIALIZED_NAME_QUOTE)
+  @javax.annotation.Nullable
   private EorQuoteBase quote;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public Contract() {
   }
 
-  public Contract id(String id) {
+  public Contract id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -181,12 +205,12 @@ public class Contract {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public Contract title(String title) {
+  public Contract title(@javax.annotation.Nonnull String title) {
     this.title = title;
     return this;
   }
@@ -200,12 +224,12 @@ public class Contract {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nonnull String title) {
     this.title = title;
   }
 
 
-  public Contract type(ContractTypeEnum type) {
+  public Contract type(@javax.annotation.Nonnull ContractTypeEnum type) {
     this.type = type;
     return this;
   }
@@ -219,12 +243,12 @@ public class Contract {
     return type;
   }
 
-  public void setType(ContractTypeEnum type) {
+  public void setType(@javax.annotation.Nonnull ContractTypeEnum type) {
     this.type = type;
   }
 
 
-  public Contract status(ContractStatusEnum status) {
+  public Contract status(@javax.annotation.Nonnull ContractStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -238,12 +262,12 @@ public class Contract {
     return status;
   }
 
-  public void setStatus(ContractStatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull ContractStatusEnum status) {
     this.status = status;
   }
 
 
-  public Contract createdAt(OffsetDateTime createdAt) {
+  public Contract createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -257,12 +281,12 @@ public class Contract {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public Contract jobTitle(String jobTitle) {
+  public Contract jobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -276,12 +300,12 @@ public class Contract {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public Contract seniority(Seniority seniority) {
+  public Contract seniority(@javax.annotation.Nullable Seniority seniority) {
     this.seniority = seniority;
     return this;
   }
@@ -295,12 +319,12 @@ public class Contract {
     return seniority;
   }
 
-  public void setSeniority(Seniority seniority) {
+  public void setSeniority(@javax.annotation.Nullable Seniority seniority) {
     this.seniority = seniority;
   }
 
 
-  public Contract whoReports(ContractWhoReportsEnum whoReports) {
+  public Contract whoReports(@javax.annotation.Nullable ContractWhoReportsEnum whoReports) {
     this.whoReports = whoReports;
     return this;
   }
@@ -314,12 +338,12 @@ public class Contract {
     return whoReports;
   }
 
-  public void setWhoReports(ContractWhoReportsEnum whoReports) {
+  public void setWhoReports(@javax.annotation.Nullable ContractWhoReportsEnum whoReports) {
     this.whoReports = whoReports;
   }
 
 
-  public Contract scopeOfWork(String scopeOfWork) {
+  public Contract scopeOfWork(@javax.annotation.Nullable String scopeOfWork) {
     this.scopeOfWork = scopeOfWork;
     return this;
   }
@@ -333,12 +357,12 @@ public class Contract {
     return scopeOfWork;
   }
 
-  public void setScopeOfWork(String scopeOfWork) {
+  public void setScopeOfWork(@javax.annotation.Nullable String scopeOfWork) {
     this.scopeOfWork = scopeOfWork;
   }
 
 
-  public Contract startDate(OffsetDateTime startDate) {
+  public Contract startDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -352,12 +376,12 @@ public class Contract {
     return startDate;
   }
 
-  public void setStartDate(OffsetDateTime startDate) {
+  public void setStartDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
   }
 
 
-  public Contract terminationDate(OffsetDateTime terminationDate) {
+  public Contract terminationDate(@javax.annotation.Nullable OffsetDateTime terminationDate) {
     this.terminationDate = terminationDate;
     return this;
   }
@@ -371,12 +395,12 @@ public class Contract {
     return terminationDate;
   }
 
-  public void setTerminationDate(OffsetDateTime terminationDate) {
+  public void setTerminationDate(@javax.annotation.Nullable OffsetDateTime terminationDate) {
     this.terminationDate = terminationDate;
   }
 
 
-  public Contract specialClause(String specialClause) {
+  public Contract specialClause(@javax.annotation.Nonnull String specialClause) {
     this.specialClause = specialClause;
     return this;
   }
@@ -390,12 +414,12 @@ public class Contract {
     return specialClause;
   }
 
-  public void setSpecialClause(String specialClause) {
+  public void setSpecialClause(@javax.annotation.Nonnull String specialClause) {
     this.specialClause = specialClause;
   }
 
 
-  public Contract isArchived(Boolean isArchived) {
+  public Contract isArchived(@javax.annotation.Nonnull Boolean isArchived) {
     this.isArchived = isArchived;
     return this;
   }
@@ -409,12 +433,12 @@ public class Contract {
     return isArchived;
   }
 
-  public void setIsArchived(Boolean isArchived) {
+  public void setIsArchived(@javax.annotation.Nonnull Boolean isArchived) {
     this.isArchived = isArchived;
   }
 
 
-  public Contract client(ClientOfContract client) {
+  public Contract client(@javax.annotation.Nullable ClientOfContract client) {
     this.client = client;
     return this;
   }
@@ -428,12 +452,12 @@ public class Contract {
     return client;
   }
 
-  public void setClient(ClientOfContract client) {
+  public void setClient(@javax.annotation.Nullable ClientOfContract client) {
     this.client = client;
   }
 
 
-  public Contract worker(WorkerOfContract worker) {
+  public Contract worker(@javax.annotation.Nullable WorkerOfContract worker) {
     this.worker = worker;
     return this;
   }
@@ -447,12 +471,12 @@ public class Contract {
     return worker;
   }
 
-  public void setWorker(WorkerOfContract worker) {
+  public void setWorker(@javax.annotation.Nullable WorkerOfContract worker) {
     this.worker = worker;
   }
 
 
-  public Contract invitations(InvitationsOfBasicContract invitations) {
+  public Contract invitations(@javax.annotation.Nonnull InvitationsOfBasicContract invitations) {
     this.invitations = invitations;
     return this;
   }
@@ -466,12 +490,12 @@ public class Contract {
     return invitations;
   }
 
-  public void setInvitations(InvitationsOfBasicContract invitations) {
+  public void setInvitations(@javax.annotation.Nonnull InvitationsOfBasicContract invitations) {
     this.invitations = invitations;
   }
 
 
-  public Contract signatures(SignaturesOfContract signatures) {
+  public Contract signatures(@javax.annotation.Nonnull SignaturesOfContract signatures) {
     this.signatures = signatures;
     return this;
   }
@@ -485,12 +509,12 @@ public class Contract {
     return signatures;
   }
 
-  public void setSignatures(SignaturesOfContract signatures) {
+  public void setSignatures(@javax.annotation.Nonnull SignaturesOfContract signatures) {
     this.signatures = signatures;
   }
 
 
-  public Contract compensationDetails(CompensationDetailsOfContract compensationDetails) {
+  public Contract compensationDetails(@javax.annotation.Nonnull CompensationDetailsOfContract compensationDetails) {
     this.compensationDetails = compensationDetails;
     return this;
   }
@@ -504,12 +528,12 @@ public class Contract {
     return compensationDetails;
   }
 
-  public void setCompensationDetails(CompensationDetailsOfContract compensationDetails) {
+  public void setCompensationDetails(@javax.annotation.Nonnull CompensationDetailsOfContract compensationDetails) {
     this.compensationDetails = compensationDetails;
   }
 
 
-  public Contract employmentDetails(EmploymentDetailsOfContract employmentDetails) {
+  public Contract employmentDetails(@javax.annotation.Nonnull EmploymentDetailsOfContract employmentDetails) {
     this.employmentDetails = employmentDetails;
     return this;
   }
@@ -523,12 +547,12 @@ public class Contract {
     return employmentDetails;
   }
 
-  public void setEmploymentDetails(EmploymentDetailsOfContract employmentDetails) {
+  public void setEmploymentDetails(@javax.annotation.Nonnull EmploymentDetailsOfContract employmentDetails) {
     this.employmentDetails = employmentDetails;
   }
 
 
-  public Contract noticePeriod(BigDecimal noticePeriod) {
+  public Contract noticePeriod(@javax.annotation.Nullable BigDecimal noticePeriod) {
     this.noticePeriod = noticePeriod;
     return this;
   }
@@ -543,12 +567,12 @@ public class Contract {
     return noticePeriod;
   }
 
-  public void setNoticePeriod(BigDecimal noticePeriod) {
+  public void setNoticePeriod(@javax.annotation.Nullable BigDecimal noticePeriod) {
     this.noticePeriod = noticePeriod;
   }
 
 
-  public Contract contractTemplate(ContractTemplate contractTemplate) {
+  public Contract contractTemplate(@javax.annotation.Nullable ContractTemplate contractTemplate) {
     this.contractTemplate = contractTemplate;
     return this;
   }
@@ -562,12 +586,12 @@ public class Contract {
     return contractTemplate;
   }
 
-  public void setContractTemplate(ContractTemplate contractTemplate) {
+  public void setContractTemplate(@javax.annotation.Nullable ContractTemplate contractTemplate) {
     this.contractTemplate = contractTemplate;
   }
 
 
-  public Contract customFields(List<ContractCustomField> customFields) {
+  public Contract customFields(@javax.annotation.Nullable List<ContractCustomField> customFields) {
     this.customFields = customFields;
     return this;
   }
@@ -589,12 +613,12 @@ public class Contract {
     return customFields;
   }
 
-  public void setCustomFields(List<ContractCustomField> customFields) {
+  public void setCustomFields(@javax.annotation.Nullable List<ContractCustomField> customFields) {
     this.customFields = customFields;
   }
 
 
-  public Contract quote(EorQuoteBase quote) {
+  public Contract quote(@javax.annotation.Nullable EorQuoteBase quote) {
     this.quote = quote;
     return this;
   }
@@ -608,12 +632,12 @@ public class Contract {
     return quote;
   }
 
-  public void setQuote(EorQuoteBase quote) {
+  public void setQuote(@javax.annotation.Nullable EorQuoteBase quote) {
     this.quote = quote;
   }
 
 
-  public Contract externalId(String externalId) {
+  public Contract externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -627,7 +651,7 @@ public class Contract {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 

@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * Pension provider.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PensionProvider {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_HOME_PAGE_URL = "home_page_url";
   @SerializedName(SERIALIZED_NAME_HOME_PAGE_URL)
+  @javax.annotation.Nullable
   private String homePageUrl;
 
   public static final String SERIALIZED_NAME_CONTRIBUTION = "contribution";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTION)
+  @javax.annotation.Nullable
   private Contribution contribution;
 
   public PensionProvider() {
   }
 
-  public PensionProvider id(String id) {
+  public PensionProvider id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -84,12 +88,12 @@ public class PensionProvider {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public PensionProvider name(String name) {
+  public PensionProvider name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -103,12 +107,12 @@ public class PensionProvider {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public PensionProvider homePageUrl(String homePageUrl) {
+  public PensionProvider homePageUrl(@javax.annotation.Nullable String homePageUrl) {
     this.homePageUrl = homePageUrl;
     return this;
   }
@@ -122,12 +126,12 @@ public class PensionProvider {
     return homePageUrl;
   }
 
-  public void setHomePageUrl(String homePageUrl) {
+  public void setHomePageUrl(@javax.annotation.Nullable String homePageUrl) {
     this.homePageUrl = homePageUrl;
   }
 
 
-  public PensionProvider contribution(Contribution contribution) {
+  public PensionProvider contribution(@javax.annotation.Nullable Contribution contribution) {
     this.contribution = contribution;
     return this;
   }
@@ -141,7 +145,7 @@ public class PensionProvider {
     return contribution;
   }
 
-  public void setContribution(Contribution contribution) {
+  public void setContribution(@javax.annotation.Nullable Contribution contribution) {
     this.contribution = contribution;
   }
 

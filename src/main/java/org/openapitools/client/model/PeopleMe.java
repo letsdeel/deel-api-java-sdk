@@ -51,80 +51,97 @@ import org.openapitools.client.JSON;
 /**
  * People object representing a Deel
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PeopleMe {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private BigDecimal id;
 
   public static final String SERIALIZED_NAME_USER_ID = "user_id";
   @SerializedName(SERIALIZED_NAME_USER_ID)
+  @javax.annotation.Nullable
   private BigDecimal userId;
 
   public static final String SERIALIZED_NAME_USERNAME = "username";
   @SerializedName(SERIALIZED_NAME_USERNAME)
+  @javax.annotation.Nullable
   private String username;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_MIDDLE_NAME = "middle_name";
   @SerializedName(SERIALIZED_NAME_MIDDLE_NAME)
+  @javax.annotation.Nullable
   private String middleName;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nullable
   private String fullName;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_AVATAR_URL = "avatar_url";
   @SerializedName(SERIALIZED_NAME_AVATAR_URL)
+  @javax.annotation.Nullable
   private String avatarUrl;
 
   public static final String SERIALIZED_NAME_PROFILE_TYPE = "profile_type";
   @SerializedName(SERIALIZED_NAME_PROFILE_TYPE)
+  @javax.annotation.Nullable
   private ProfileTypeEnum profileType;
 
   public static final String SERIALIZED_NAME_SLACK_USER_ID = "slack_user_id";
   @SerializedName(SERIALIZED_NAME_SLACK_USER_ID)
+  @javax.annotation.Nullable
   private String slackUserId;
 
   public static final String SERIALIZED_NAME_SLACK_TEAM_ID = "slack_team_id";
   @SerializedName(SERIALIZED_NAME_SLACK_TEAM_ID)
+  @javax.annotation.Nullable
   private String slackTeamId;
 
   public static final String SERIALIZED_NAME_ORGANIZATION_ID = "organization_id";
   @SerializedName(SERIALIZED_NAME_ORGANIZATION_ID)
+  @javax.annotation.Nullable
   private BigDecimal organizationId;
 
   public static final String SERIALIZED_NAME_ORGANIZATION_NAME = "organization_name";
   @SerializedName(SERIALIZED_NAME_ORGANIZATION_NAME)
+  @javax.annotation.Nullable
   private String organizationName;
 
   public static final String SERIALIZED_NAME_CLIENT_COUNTRY = "client_country";
   @SerializedName(SERIALIZED_NAME_CLIENT_COUNTRY)
+  @javax.annotation.Nullable
   private String clientCountry;
 
   public static final String SERIALIZED_NAME_CONTRACTOR_COUNTRY = "contractor_country";
   @SerializedName(SERIALIZED_NAME_CONTRACTOR_COUNTRY)
+  @javax.annotation.Nullable
   private String contractorCountry;
 
   public static final String SERIALIZED_NAME_HRIS_ENABLED = "hris_enabled";
   @SerializedName(SERIALIZED_NAME_HRIS_ENABLED)
+  @javax.annotation.Nullable
   private Boolean hrisEnabled;
 
   public PeopleMe() {
   }
 
-  public PeopleMe id(BigDecimal id) {
+  public PeopleMe id(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
     return this;
   }
@@ -138,12 +155,12 @@ public class PeopleMe {
     return id;
   }
 
-  public void setId(BigDecimal id) {
+  public void setId(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
   }
 
 
-  public PeopleMe userId(BigDecimal userId) {
+  public PeopleMe userId(@javax.annotation.Nullable BigDecimal userId) {
     this.userId = userId;
     return this;
   }
@@ -157,12 +174,12 @@ public class PeopleMe {
     return userId;
   }
 
-  public void setUserId(BigDecimal userId) {
+  public void setUserId(@javax.annotation.Nullable BigDecimal userId) {
     this.userId = userId;
   }
 
 
-  public PeopleMe username(String username) {
+  public PeopleMe username(@javax.annotation.Nullable String username) {
     this.username = username;
     return this;
   }
@@ -176,12 +193,12 @@ public class PeopleMe {
     return username;
   }
 
-  public void setUsername(String username) {
+  public void setUsername(@javax.annotation.Nullable String username) {
     this.username = username;
   }
 
 
-  public PeopleMe firstName(String firstName) {
+  public PeopleMe firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -195,12 +212,12 @@ public class PeopleMe {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public PeopleMe middleName(String middleName) {
+  public PeopleMe middleName(@javax.annotation.Nullable String middleName) {
     this.middleName = middleName;
     return this;
   }
@@ -214,12 +231,12 @@ public class PeopleMe {
     return middleName;
   }
 
-  public void setMiddleName(String middleName) {
+  public void setMiddleName(@javax.annotation.Nullable String middleName) {
     this.middleName = middleName;
   }
 
 
-  public PeopleMe lastName(String lastName) {
+  public PeopleMe lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -233,12 +250,12 @@ public class PeopleMe {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
 
-  public PeopleMe fullName(String fullName) {
+  public PeopleMe fullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -252,12 +269,12 @@ public class PeopleMe {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
   }
 
 
-  public PeopleMe email(String email) {
+  public PeopleMe email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -271,12 +288,12 @@ public class PeopleMe {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public PeopleMe avatarUrl(String avatarUrl) {
+  public PeopleMe avatarUrl(@javax.annotation.Nullable String avatarUrl) {
     this.avatarUrl = avatarUrl;
     return this;
   }
@@ -290,12 +307,12 @@ public class PeopleMe {
     return avatarUrl;
   }
 
-  public void setAvatarUrl(String avatarUrl) {
+  public void setAvatarUrl(@javax.annotation.Nullable String avatarUrl) {
     this.avatarUrl = avatarUrl;
   }
 
 
-  public PeopleMe profileType(ProfileTypeEnum profileType) {
+  public PeopleMe profileType(@javax.annotation.Nullable ProfileTypeEnum profileType) {
     this.profileType = profileType;
     return this;
   }
@@ -309,12 +326,12 @@ public class PeopleMe {
     return profileType;
   }
 
-  public void setProfileType(ProfileTypeEnum profileType) {
+  public void setProfileType(@javax.annotation.Nullable ProfileTypeEnum profileType) {
     this.profileType = profileType;
   }
 
 
-  public PeopleMe slackUserId(String slackUserId) {
+  public PeopleMe slackUserId(@javax.annotation.Nullable String slackUserId) {
     this.slackUserId = slackUserId;
     return this;
   }
@@ -328,12 +345,12 @@ public class PeopleMe {
     return slackUserId;
   }
 
-  public void setSlackUserId(String slackUserId) {
+  public void setSlackUserId(@javax.annotation.Nullable String slackUserId) {
     this.slackUserId = slackUserId;
   }
 
 
-  public PeopleMe slackTeamId(String slackTeamId) {
+  public PeopleMe slackTeamId(@javax.annotation.Nullable String slackTeamId) {
     this.slackTeamId = slackTeamId;
     return this;
   }
@@ -347,12 +364,12 @@ public class PeopleMe {
     return slackTeamId;
   }
 
-  public void setSlackTeamId(String slackTeamId) {
+  public void setSlackTeamId(@javax.annotation.Nullable String slackTeamId) {
     this.slackTeamId = slackTeamId;
   }
 
 
-  public PeopleMe organizationId(BigDecimal organizationId) {
+  public PeopleMe organizationId(@javax.annotation.Nullable BigDecimal organizationId) {
     this.organizationId = organizationId;
     return this;
   }
@@ -366,12 +383,12 @@ public class PeopleMe {
     return organizationId;
   }
 
-  public void setOrganizationId(BigDecimal organizationId) {
+  public void setOrganizationId(@javax.annotation.Nullable BigDecimal organizationId) {
     this.organizationId = organizationId;
   }
 
 
-  public PeopleMe organizationName(String organizationName) {
+  public PeopleMe organizationName(@javax.annotation.Nullable String organizationName) {
     this.organizationName = organizationName;
     return this;
   }
@@ -385,12 +402,12 @@ public class PeopleMe {
     return organizationName;
   }
 
-  public void setOrganizationName(String organizationName) {
+  public void setOrganizationName(@javax.annotation.Nullable String organizationName) {
     this.organizationName = organizationName;
   }
 
 
-  public PeopleMe clientCountry(String clientCountry) {
+  public PeopleMe clientCountry(@javax.annotation.Nullable String clientCountry) {
     this.clientCountry = clientCountry;
     return this;
   }
@@ -404,12 +421,12 @@ public class PeopleMe {
     return clientCountry;
   }
 
-  public void setClientCountry(String clientCountry) {
+  public void setClientCountry(@javax.annotation.Nullable String clientCountry) {
     this.clientCountry = clientCountry;
   }
 
 
-  public PeopleMe contractorCountry(String contractorCountry) {
+  public PeopleMe contractorCountry(@javax.annotation.Nullable String contractorCountry) {
     this.contractorCountry = contractorCountry;
     return this;
   }
@@ -423,12 +440,12 @@ public class PeopleMe {
     return contractorCountry;
   }
 
-  public void setContractorCountry(String contractorCountry) {
+  public void setContractorCountry(@javax.annotation.Nullable String contractorCountry) {
     this.contractorCountry = contractorCountry;
   }
 
 
-  public PeopleMe hrisEnabled(Boolean hrisEnabled) {
+  public PeopleMe hrisEnabled(@javax.annotation.Nullable Boolean hrisEnabled) {
     this.hrisEnabled = hrisEnabled;
     return this;
   }
@@ -442,7 +459,7 @@ public class PeopleMe {
     return hrisEnabled;
   }
 
-  public void setHrisEnabled(Boolean hrisEnabled) {
+  public void setHrisEnabled(@javax.annotation.Nullable Boolean hrisEnabled) {
     this.hrisEnabled = hrisEnabled;
   }
 

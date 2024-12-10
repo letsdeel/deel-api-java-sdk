@@ -49,40 +49,47 @@ import org.openapitools.client.JSON;
 /**
  * CreateGPContractRequestDataEmployee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateGPContractRequestDataEmployee {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nonnull
   private String email;
 
   public static final String SERIALIZED_NAME_ADDRESS = "address";
   @SerializedName(SERIALIZED_NAME_ADDRESS)
+  @javax.annotation.Nonnull
   private CreateGPContractRequestDataEmployeeAddress address;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nonnull
   private String lastName;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nonnull
   private String firstName;
 
   public static final String SERIALIZED_NAME_WORK_EMAIL = "work_email";
   @SerializedName(SERIALIZED_NAME_WORK_EMAIL)
+  @javax.annotation.Nonnull
   private String workEmail;
 
   public static final String SERIALIZED_NAME_NATIONALITY = "nationality";
   @SerializedName(SERIALIZED_NAME_NATIONALITY)
+  @javax.annotation.Nullable
   private String nationality;
 
   public static final String SERIALIZED_NAME_EMPLOYEE_NUMBER = "employee_number";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE_NUMBER)
+  @javax.annotation.Nullable
   private String employeeNumber;
 
   public CreateGPContractRequestDataEmployee() {
   }
 
-  public CreateGPContractRequestDataEmployee email(String email) {
+  public CreateGPContractRequestDataEmployee email(@javax.annotation.Nonnull String email) {
     this.email = email;
     return this;
   }
@@ -96,12 +103,12 @@ public class CreateGPContractRequestDataEmployee {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nonnull String email) {
     this.email = email;
   }
 
 
-  public CreateGPContractRequestDataEmployee address(CreateGPContractRequestDataEmployeeAddress address) {
+  public CreateGPContractRequestDataEmployee address(@javax.annotation.Nonnull CreateGPContractRequestDataEmployeeAddress address) {
     this.address = address;
     return this;
   }
@@ -115,12 +122,12 @@ public class CreateGPContractRequestDataEmployee {
     return address;
   }
 
-  public void setAddress(CreateGPContractRequestDataEmployeeAddress address) {
+  public void setAddress(@javax.annotation.Nonnull CreateGPContractRequestDataEmployeeAddress address) {
     this.address = address;
   }
 
 
-  public CreateGPContractRequestDataEmployee lastName(String lastName) {
+  public CreateGPContractRequestDataEmployee lastName(@javax.annotation.Nonnull String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -134,12 +141,12 @@ public class CreateGPContractRequestDataEmployee {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nonnull String lastName) {
     this.lastName = lastName;
   }
 
 
-  public CreateGPContractRequestDataEmployee firstName(String firstName) {
+  public CreateGPContractRequestDataEmployee firstName(@javax.annotation.Nonnull String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -153,12 +160,12 @@ public class CreateGPContractRequestDataEmployee {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nonnull String firstName) {
     this.firstName = firstName;
   }
 
 
-  public CreateGPContractRequestDataEmployee workEmail(String workEmail) {
+  public CreateGPContractRequestDataEmployee workEmail(@javax.annotation.Nonnull String workEmail) {
     this.workEmail = workEmail;
     return this;
   }
@@ -172,12 +179,12 @@ public class CreateGPContractRequestDataEmployee {
     return workEmail;
   }
 
-  public void setWorkEmail(String workEmail) {
+  public void setWorkEmail(@javax.annotation.Nonnull String workEmail) {
     this.workEmail = workEmail;
   }
 
 
-  public CreateGPContractRequestDataEmployee nationality(String nationality) {
+  public CreateGPContractRequestDataEmployee nationality(@javax.annotation.Nullable String nationality) {
     this.nationality = nationality;
     return this;
   }
@@ -191,12 +198,12 @@ public class CreateGPContractRequestDataEmployee {
     return nationality;
   }
 
-  public void setNationality(String nationality) {
+  public void setNationality(@javax.annotation.Nullable String nationality) {
     this.nationality = nationality;
   }
 
 
-  public CreateGPContractRequestDataEmployee employeeNumber(String employeeNumber) {
+  public CreateGPContractRequestDataEmployee employeeNumber(@javax.annotation.Nullable String employeeNumber) {
     this.employeeNumber = employeeNumber;
     return this;
   }
@@ -210,7 +217,7 @@ public class CreateGPContractRequestDataEmployee {
     return employeeNumber;
   }
 
-  public void setEmployeeNumber(String employeeNumber) {
+  public void setEmployeeNumber(@javax.annotation.Nullable String employeeNumber) {
     this.employeeNumber = employeeNumber;
   }
 

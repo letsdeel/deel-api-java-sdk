@@ -185,7 +185,8 @@ public class EnrollmentsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -199,7 +200,8 @@ public class EnrollmentsApi {
          * @return Object
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -214,7 +216,8 @@ public class EnrollmentsApi {
          * @return ApiResponse&lt;Object&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -229,7 +232,8 @@ public class EnrollmentsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -248,7 +252,8 @@ public class EnrollmentsApi {
      * @param delete401kEnrollmentsDefinitionRequest  (required)
      * @return APIdelete401kEnrollmentsDefinitionRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successful operation. </td><td>  -  </td></tr>
      </table>
@@ -356,7 +361,8 @@ public class EnrollmentsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -370,7 +376,8 @@ public class EnrollmentsApi {
          * @return List&lt;Get401kEnrollmentsDefinition200ResponseInner&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -385,7 +392,8 @@ public class EnrollmentsApi {
          * @return ApiResponse&lt;List&lt;Get401kEnrollmentsDefinition200ResponseInner&gt;&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -400,7 +408,8 @@ public class EnrollmentsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -418,7 +427,8 @@ public class EnrollmentsApi {
      * @param planId Plan id to enroll the employee into (required)
      * @return APIget401kEnrollmentsDefinitionRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
      </table>
@@ -534,7 +544,8 @@ public class EnrollmentsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -548,7 +559,8 @@ public class EnrollmentsApi {
          * @return Post401kEnrollmentsDefinition200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -563,7 +575,8 @@ public class EnrollmentsApi {
          * @return ApiResponse&lt;Post401kEnrollmentsDefinition200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -578,7 +591,8 @@ public class EnrollmentsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -597,7 +611,8 @@ public class EnrollmentsApi {
      * @param post401kEnrollmentsDefinitionRequest  (required)
      * @return APIpost401kEnrollmentsDefinitionRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
      </table>
@@ -713,7 +728,8 @@ public class EnrollmentsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -727,7 +743,8 @@ public class EnrollmentsApi {
          * @return Put401kEnrollmentsDefinition200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -742,7 +759,8 @@ public class EnrollmentsApi {
          * @return ApiResponse&lt;Put401kEnrollmentsDefinition200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -757,7 +775,8 @@ public class EnrollmentsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
          </table>
@@ -776,7 +795,8 @@ public class EnrollmentsApi {
      * @param put401kEnrollmentsDefinitionRequest  (required)
      * @return APIput401kEnrollmentsDefinitionRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
      </table>

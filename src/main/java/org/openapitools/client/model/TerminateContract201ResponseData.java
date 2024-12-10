@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * TerminateContract201ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TerminateContract201ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_COMPLETION_DATE = "completion_date";
   @SerializedName(SERIALIZED_NAME_COMPLETION_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime completionDate;
 
   public TerminateContract201ResponseData() {
   }
 
-  public TerminateContract201ResponseData id(String id) {
+  public TerminateContract201ResponseData id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -76,12 +78,12 @@ public class TerminateContract201ResponseData {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public TerminateContract201ResponseData completionDate(OffsetDateTime completionDate) {
+  public TerminateContract201ResponseData completionDate(@javax.annotation.Nullable OffsetDateTime completionDate) {
     this.completionDate = completionDate;
     return this;
   }
@@ -95,7 +97,7 @@ public class TerminateContract201ResponseData {
     return completionDate;
   }
 
-  public void setCompletionDate(OffsetDateTime completionDate) {
+  public void setCompletionDate(@javax.annotation.Nullable OffsetDateTime completionDate) {
     this.completionDate = completionDate;
   }
 

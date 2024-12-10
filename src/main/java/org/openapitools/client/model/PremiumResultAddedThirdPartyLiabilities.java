@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * PremiumResultAddedThirdPartyLiabilities
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PremiumResultAddedThirdPartyLiabilities {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public PremiumResultAddedThirdPartyLiabilities() {
   }
 
-  public PremiumResultAddedThirdPartyLiabilities name(String name) {
+  public PremiumResultAddedThirdPartyLiabilities name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -75,12 +77,12 @@ public class PremiumResultAddedThirdPartyLiabilities {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public PremiumResultAddedThirdPartyLiabilities description(String description) {
+  public PremiumResultAddedThirdPartyLiabilities description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -94,7 +96,7 @@ public class PremiumResultAddedThirdPartyLiabilities {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 

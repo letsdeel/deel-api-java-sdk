@@ -51,28 +51,32 @@ import org.openapitools.client.JSON;
 /**
  * CreateContractPgoTakRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContractPgoTakRequestData {
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private String amount;
 
   public static final String SERIALIZED_NAME_ATTACHMENT = "attachment";
   @SerializedName(SERIALIZED_NAME_ATTACHMENT)
+  @javax.annotation.Nullable
   private CreateContractPgoTakRequestDataAttachment attachment;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_DATE_SUBMITTED = "date_submitted";
   @SerializedName(SERIALIZED_NAME_DATE_SUBMITTED)
+  @javax.annotation.Nonnull
   private LocalDate dateSubmitted;
 
   public CreateContractPgoTakRequestData() {
   }
 
-  public CreateContractPgoTakRequestData amount(String amount) {
+  public CreateContractPgoTakRequestData amount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
     return this;
   }
@@ -86,12 +90,12 @@ public class CreateContractPgoTakRequestData {
     return amount;
   }
 
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
   }
 
 
-  public CreateContractPgoTakRequestData attachment(CreateContractPgoTakRequestDataAttachment attachment) {
+  public CreateContractPgoTakRequestData attachment(@javax.annotation.Nullable CreateContractPgoTakRequestDataAttachment attachment) {
     this.attachment = attachment;
     return this;
   }
@@ -105,12 +109,12 @@ public class CreateContractPgoTakRequestData {
     return attachment;
   }
 
-  public void setAttachment(CreateContractPgoTakRequestDataAttachment attachment) {
+  public void setAttachment(@javax.annotation.Nullable CreateContractPgoTakRequestDataAttachment attachment) {
     this.attachment = attachment;
   }
 
 
-  public CreateContractPgoTakRequestData description(String description) {
+  public CreateContractPgoTakRequestData description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -124,12 +128,12 @@ public class CreateContractPgoTakRequestData {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public CreateContractPgoTakRequestData dateSubmitted(LocalDate dateSubmitted) {
+  public CreateContractPgoTakRequestData dateSubmitted(@javax.annotation.Nonnull LocalDate dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
     return this;
   }
@@ -143,7 +147,7 @@ public class CreateContractPgoTakRequestData {
     return dateSubmitted;
   }
 
-  public void setDateSubmitted(LocalDate dateSubmitted) {
+  public void setDateSubmitted(@javax.annotation.Nonnull LocalDate dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
   }
 

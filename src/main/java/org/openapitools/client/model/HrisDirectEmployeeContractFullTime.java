@@ -50,14 +50,16 @@ import org.openapitools.client.JSON;
 /**
  * HrisDirectEmployeeContractFullTime
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisDirectEmployeeContractFullTime {
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private LocalDate startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private LocalDate endDate;
 
   /**
@@ -112,12 +114,13 @@ public class HrisDirectEmployeeContractFullTime {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public HrisDirectEmployeeContractFullTime() {
   }
 
-  public HrisDirectEmployeeContractFullTime startDate(LocalDate startDate) {
+  public HrisDirectEmployeeContractFullTime startDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -131,12 +134,12 @@ public class HrisDirectEmployeeContractFullTime {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public HrisDirectEmployeeContractFullTime endDate(LocalDate endDate) {
+  public HrisDirectEmployeeContractFullTime endDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -150,12 +153,12 @@ public class HrisDirectEmployeeContractFullTime {
     return endDate;
   }
 
-  public void setEndDate(LocalDate endDate) {
+  public void setEndDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
   }
 
 
-  public HrisDirectEmployeeContractFullTime type(TypeEnum type) {
+  public HrisDirectEmployeeContractFullTime type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -169,7 +172,7 @@ public class HrisDirectEmployeeContractFullTime {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 

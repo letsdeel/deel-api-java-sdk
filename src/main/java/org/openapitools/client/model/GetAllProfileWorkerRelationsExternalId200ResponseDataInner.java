@@ -53,36 +53,42 @@ import org.openapitools.client.JSON;
 /**
  * GetAllProfileWorkerRelationsExternalId200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetAllProfileWorkerRelationsExternalId200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private UUID id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_IS_PARENT = "is_parent";
   @SerializedName(SERIALIZED_NAME_IS_PARENT)
+  @javax.annotation.Nullable
   private Boolean isParent;
 
   public static final String SERIALIZED_NAME_IS_DEFAULT = "is_default";
   @SerializedName(SERIALIZED_NAME_IS_DEFAULT)
+  @javax.annotation.Nullable
   private Boolean isDefault;
 
   public static final String SERIALIZED_NAME_CHILD_RELATIONSHIPS = "child_relationships";
   @SerializedName(SERIALIZED_NAME_CHILD_RELATIONSHIPS)
+  @javax.annotation.Nullable
   private List<GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner> childRelationships = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PARENT_RELATIONSHIP = "parent_relationship";
   @SerializedName(SERIALIZED_NAME_PARENT_RELATIONSHIP)
+  @javax.annotation.Nullable
   private GetAllProfileWorkerRelationsExternalId200ResponseDataInnerParentRelationship parentRelationship;
 
   public GetAllProfileWorkerRelationsExternalId200ResponseDataInner() {
   }
 
-  public GetAllProfileWorkerRelationsExternalId200ResponseDataInner id(UUID id) {
+  public GetAllProfileWorkerRelationsExternalId200ResponseDataInner id(@javax.annotation.Nullable UUID id) {
     this.id = id;
     return this;
   }
@@ -96,12 +102,12 @@ public class GetAllProfileWorkerRelationsExternalId200ResponseDataInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nullable UUID id) {
     this.id = id;
   }
 
 
-  public GetAllProfileWorkerRelationsExternalId200ResponseDataInner name(String name) {
+  public GetAllProfileWorkerRelationsExternalId200ResponseDataInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -115,12 +121,12 @@ public class GetAllProfileWorkerRelationsExternalId200ResponseDataInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetAllProfileWorkerRelationsExternalId200ResponseDataInner isParent(Boolean isParent) {
+  public GetAllProfileWorkerRelationsExternalId200ResponseDataInner isParent(@javax.annotation.Nullable Boolean isParent) {
     this.isParent = isParent;
     return this;
   }
@@ -134,12 +140,12 @@ public class GetAllProfileWorkerRelationsExternalId200ResponseDataInner {
     return isParent;
   }
 
-  public void setIsParent(Boolean isParent) {
+  public void setIsParent(@javax.annotation.Nullable Boolean isParent) {
     this.isParent = isParent;
   }
 
 
-  public GetAllProfileWorkerRelationsExternalId200ResponseDataInner isDefault(Boolean isDefault) {
+  public GetAllProfileWorkerRelationsExternalId200ResponseDataInner isDefault(@javax.annotation.Nullable Boolean isDefault) {
     this.isDefault = isDefault;
     return this;
   }
@@ -153,12 +159,12 @@ public class GetAllProfileWorkerRelationsExternalId200ResponseDataInner {
     return isDefault;
   }
 
-  public void setIsDefault(Boolean isDefault) {
+  public void setIsDefault(@javax.annotation.Nullable Boolean isDefault) {
     this.isDefault = isDefault;
   }
 
 
-  public GetAllProfileWorkerRelationsExternalId200ResponseDataInner childRelationships(List<GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner> childRelationships) {
+  public GetAllProfileWorkerRelationsExternalId200ResponseDataInner childRelationships(@javax.annotation.Nullable List<GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner> childRelationships) {
     this.childRelationships = childRelationships;
     return this;
   }
@@ -180,12 +186,12 @@ public class GetAllProfileWorkerRelationsExternalId200ResponseDataInner {
     return childRelationships;
   }
 
-  public void setChildRelationships(List<GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner> childRelationships) {
+  public void setChildRelationships(@javax.annotation.Nullable List<GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner> childRelationships) {
     this.childRelationships = childRelationships;
   }
 
 
-  public GetAllProfileWorkerRelationsExternalId200ResponseDataInner parentRelationship(GetAllProfileWorkerRelationsExternalId200ResponseDataInnerParentRelationship parentRelationship) {
+  public GetAllProfileWorkerRelationsExternalId200ResponseDataInner parentRelationship(@javax.annotation.Nullable GetAllProfileWorkerRelationsExternalId200ResponseDataInnerParentRelationship parentRelationship) {
     this.parentRelationship = parentRelationship;
     return this;
   }
@@ -199,7 +205,7 @@ public class GetAllProfileWorkerRelationsExternalId200ResponseDataInner {
     return parentRelationship;
   }
 
-  public void setParentRelationship(GetAllProfileWorkerRelationsExternalId200ResponseDataInnerParentRelationship parentRelationship) {
+  public void setParentRelationship(@javax.annotation.Nullable GetAllProfileWorkerRelationsExternalId200ResponseDataInnerParentRelationship parentRelationship) {
     this.parentRelationship = parentRelationship;
   }
 

@@ -51,48 +51,57 @@ import org.openapitools.client.JSON;
 /**
  * EmployeeTimeoffsPoliciesItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EmployeeTimeoffsPoliciesItem {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private String type;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_UNIT_AMOUNT = "unit_amount";
   @SerializedName(SERIALIZED_NAME_UNIT_AMOUNT)
+  @javax.annotation.Nonnull
   private BigDecimal unitAmount;
 
   public static final String SERIALIZED_NAME_USED = "used";
   @SerializedName(SERIALIZED_NAME_USED)
+  @javax.annotation.Nullable
   private BigDecimal used;
 
   public static final String SERIALIZED_NAME_TRACKING_START_DATE = "tracking_start_date";
   @SerializedName(SERIALIZED_NAME_TRACKING_START_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime trackingStartDate;
 
   public static final String SERIALIZED_NAME_TRACKING_END_DATE = "tracking_end_date";
   @SerializedName(SERIALIZED_NAME_TRACKING_END_DATE)
+  @javax.annotation.Nullable
   private Object trackingEndDate = null;
 
   public static final String SERIALIZED_NAME_ENTITLEMENT = "entitlement";
   @SerializedName(SERIALIZED_NAME_ENTITLEMENT)
+  @javax.annotation.Nonnull
   private EmployeeTimeoffsPoliciesItemEntitlement entitlement;
 
   public EmployeeTimeoffsPoliciesItem() {
   }
 
-  public EmployeeTimeoffsPoliciesItem id(String id) {
+  public EmployeeTimeoffsPoliciesItem id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -106,12 +115,12 @@ public class EmployeeTimeoffsPoliciesItem {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public EmployeeTimeoffsPoliciesItem type(String type) {
+  public EmployeeTimeoffsPoliciesItem type(@javax.annotation.Nonnull String type) {
     this.type = type;
     return this;
   }
@@ -125,12 +134,12 @@ public class EmployeeTimeoffsPoliciesItem {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nonnull String type) {
     this.type = type;
   }
 
 
-  public EmployeeTimeoffsPoliciesItem name(String name) {
+  public EmployeeTimeoffsPoliciesItem name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -144,12 +153,12 @@ public class EmployeeTimeoffsPoliciesItem {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public EmployeeTimeoffsPoliciesItem description(String description) {
+  public EmployeeTimeoffsPoliciesItem description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -163,12 +172,12 @@ public class EmployeeTimeoffsPoliciesItem {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public EmployeeTimeoffsPoliciesItem unitAmount(BigDecimal unitAmount) {
+  public EmployeeTimeoffsPoliciesItem unitAmount(@javax.annotation.Nonnull BigDecimal unitAmount) {
     this.unitAmount = unitAmount;
     return this;
   }
@@ -182,12 +191,12 @@ public class EmployeeTimeoffsPoliciesItem {
     return unitAmount;
   }
 
-  public void setUnitAmount(BigDecimal unitAmount) {
+  public void setUnitAmount(@javax.annotation.Nonnull BigDecimal unitAmount) {
     this.unitAmount = unitAmount;
   }
 
 
-  public EmployeeTimeoffsPoliciesItem used(BigDecimal used) {
+  public EmployeeTimeoffsPoliciesItem used(@javax.annotation.Nullable BigDecimal used) {
     this.used = used;
     return this;
   }
@@ -201,12 +210,12 @@ public class EmployeeTimeoffsPoliciesItem {
     return used;
   }
 
-  public void setUsed(BigDecimal used) {
+  public void setUsed(@javax.annotation.Nullable BigDecimal used) {
     this.used = used;
   }
 
 
-  public EmployeeTimeoffsPoliciesItem trackingStartDate(OffsetDateTime trackingStartDate) {
+  public EmployeeTimeoffsPoliciesItem trackingStartDate(@javax.annotation.Nullable OffsetDateTime trackingStartDate) {
     this.trackingStartDate = trackingStartDate;
     return this;
   }
@@ -220,12 +229,12 @@ public class EmployeeTimeoffsPoliciesItem {
     return trackingStartDate;
   }
 
-  public void setTrackingStartDate(OffsetDateTime trackingStartDate) {
+  public void setTrackingStartDate(@javax.annotation.Nullable OffsetDateTime trackingStartDate) {
     this.trackingStartDate = trackingStartDate;
   }
 
 
-  public EmployeeTimeoffsPoliciesItem trackingEndDate(Object trackingEndDate) {
+  public EmployeeTimeoffsPoliciesItem trackingEndDate(@javax.annotation.Nullable Object trackingEndDate) {
     this.trackingEndDate = trackingEndDate;
     return this;
   }
@@ -239,12 +248,12 @@ public class EmployeeTimeoffsPoliciesItem {
     return trackingEndDate;
   }
 
-  public void setTrackingEndDate(Object trackingEndDate) {
+  public void setTrackingEndDate(@javax.annotation.Nullable Object trackingEndDate) {
     this.trackingEndDate = trackingEndDate;
   }
 
 
-  public EmployeeTimeoffsPoliciesItem entitlement(EmployeeTimeoffsPoliciesItemEntitlement entitlement) {
+  public EmployeeTimeoffsPoliciesItem entitlement(@javax.annotation.Nonnull EmployeeTimeoffsPoliciesItemEntitlement entitlement) {
     this.entitlement = entitlement;
     return this;
   }
@@ -258,7 +267,7 @@ public class EmployeeTimeoffsPoliciesItem {
     return entitlement;
   }
 
-  public void setEntitlement(EmployeeTimeoffsPoliciesItemEntitlement entitlement) {
+  public void setEntitlement(@javax.annotation.Nonnull EmployeeTimeoffsPoliciesItemEntitlement entitlement) {
     this.entitlement = entitlement;
   }
 

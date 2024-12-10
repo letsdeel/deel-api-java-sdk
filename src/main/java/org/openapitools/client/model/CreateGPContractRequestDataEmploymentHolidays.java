@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * CreateGPContractRequestDataEmploymentHolidays
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateGPContractRequestDataEmploymentHolidays {
   public static final String SERIALIZED_NAME_ALLOWANCE = "allowance";
   @SerializedName(SERIALIZED_NAME_ALLOWANCE)
+  @javax.annotation.Nonnull
   private BigDecimal allowance;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private LocalDate startDate;
 
   public CreateGPContractRequestDataEmploymentHolidays() {
   }
 
-  public CreateGPContractRequestDataEmploymentHolidays allowance(BigDecimal allowance) {
+  public CreateGPContractRequestDataEmploymentHolidays allowance(@javax.annotation.Nonnull BigDecimal allowance) {
     this.allowance = allowance;
     return this;
   }
@@ -77,12 +79,12 @@ public class CreateGPContractRequestDataEmploymentHolidays {
     return allowance;
   }
 
-  public void setAllowance(BigDecimal allowance) {
+  public void setAllowance(@javax.annotation.Nonnull BigDecimal allowance) {
     this.allowance = allowance;
   }
 
 
-  public CreateGPContractRequestDataEmploymentHolidays startDate(LocalDate startDate) {
+  public CreateGPContractRequestDataEmploymentHolidays startDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -96,7 +98,7 @@ public class CreateGPContractRequestDataEmploymentHolidays {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
   }
 

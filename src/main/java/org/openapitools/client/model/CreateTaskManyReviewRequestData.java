@@ -52,14 +52,16 @@ import org.openapitools.client.JSON;
 /**
  * CreateTaskManyReviewRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateTaskManyReviewRequestData {
   public static final String SERIALIZED_NAME_IDS = "ids";
   @SerializedName(SERIALIZED_NAME_IDS)
+  @javax.annotation.Nonnull
   private List<UUID> ids = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_REASON = "reason";
   @SerializedName(SERIALIZED_NAME_REASON)
+  @javax.annotation.Nullable
   private String reason;
 
   /**
@@ -116,12 +118,13 @@ public class CreateTaskManyReviewRequestData {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private StatusEnum status;
 
   public CreateTaskManyReviewRequestData() {
   }
 
-  public CreateTaskManyReviewRequestData ids(List<UUID> ids) {
+  public CreateTaskManyReviewRequestData ids(@javax.annotation.Nonnull List<UUID> ids) {
     this.ids = ids;
     return this;
   }
@@ -143,12 +146,12 @@ public class CreateTaskManyReviewRequestData {
     return ids;
   }
 
-  public void setIds(List<UUID> ids) {
+  public void setIds(@javax.annotation.Nonnull List<UUID> ids) {
     this.ids = ids;
   }
 
 
-  public CreateTaskManyReviewRequestData reason(String reason) {
+  public CreateTaskManyReviewRequestData reason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
     return this;
   }
@@ -162,12 +165,12 @@ public class CreateTaskManyReviewRequestData {
     return reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
   }
 
 
-  public CreateTaskManyReviewRequestData status(StatusEnum status) {
+  public CreateTaskManyReviewRequestData status(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -181,7 +184,7 @@ public class CreateTaskManyReviewRequestData {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 

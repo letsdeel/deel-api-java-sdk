@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * UpdateShiftRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateShiftRequestData {
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
+  @javax.annotation.Nullable
   private UpdateShiftRequestDataMeta meta;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_DATE_OF_WORK = "date_of_work";
   @SerializedName(SERIALIZED_NAME_DATE_OF_WORK)
+  @javax.annotation.Nullable
   private String dateOfWork;
 
   public UpdateShiftRequestData() {
   }
 
-  public UpdateShiftRequestData meta(UpdateShiftRequestDataMeta meta) {
+  public UpdateShiftRequestData meta(@javax.annotation.Nullable UpdateShiftRequestDataMeta meta) {
     this.meta = meta;
     return this;
   }
@@ -80,12 +83,12 @@ public class UpdateShiftRequestData {
     return meta;
   }
 
-  public void setMeta(UpdateShiftRequestDataMeta meta) {
+  public void setMeta(@javax.annotation.Nullable UpdateShiftRequestDataMeta meta) {
     this.meta = meta;
   }
 
 
-  public UpdateShiftRequestData description(String description) {
+  public UpdateShiftRequestData description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -99,12 +102,12 @@ public class UpdateShiftRequestData {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public UpdateShiftRequestData dateOfWork(String dateOfWork) {
+  public UpdateShiftRequestData dateOfWork(@javax.annotation.Nullable String dateOfWork) {
     this.dateOfWork = dateOfWork;
     return this;
   }
@@ -118,7 +121,7 @@ public class UpdateShiftRequestData {
     return dateOfWork;
   }
 
-  public void setDateOfWork(String dateOfWork) {
+  public void setDateOfWork(@javax.annotation.Nullable String dateOfWork) {
     this.dateOfWork = dateOfWork;
   }
 

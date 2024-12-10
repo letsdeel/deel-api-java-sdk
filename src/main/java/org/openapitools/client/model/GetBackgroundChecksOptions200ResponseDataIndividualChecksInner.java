@@ -49,36 +49,42 @@ import org.openapitools.client.JSON;
 /**
  * GetBackgroundChecksOptions200ResponseDataIndividualChecksInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBackgroundChecksOptions200ResponseDataIndividualChecksInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal price;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_IS_AVAILABLE = "is_available";
   @SerializedName(SERIALIZED_NAME_IS_AVAILABLE)
+  @javax.annotation.Nullable
   private Boolean isAvailable;
 
   public static final String SERIALIZED_NAME_THIRD_PARTY_NAME = "third_party_name";
   @SerializedName(SERIALIZED_NAME_THIRD_PARTY_NAME)
+  @javax.annotation.Nullable
   private String thirdPartyName;
 
   public GetBackgroundChecksOptions200ResponseDataIndividualChecksInner() {
   }
 
-  public GetBackgroundChecksOptions200ResponseDataIndividualChecksInner id(String id) {
+  public GetBackgroundChecksOptions200ResponseDataIndividualChecksInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -92,12 +98,12 @@ public class GetBackgroundChecksOptions200ResponseDataIndividualChecksInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public GetBackgroundChecksOptions200ResponseDataIndividualChecksInner name(String name) {
+  public GetBackgroundChecksOptions200ResponseDataIndividualChecksInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -111,12 +117,12 @@ public class GetBackgroundChecksOptions200ResponseDataIndividualChecksInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetBackgroundChecksOptions200ResponseDataIndividualChecksInner price(BigDecimal price) {
+  public GetBackgroundChecksOptions200ResponseDataIndividualChecksInner price(@javax.annotation.Nullable BigDecimal price) {
     this.price = price;
     return this;
   }
@@ -130,12 +136,12 @@ public class GetBackgroundChecksOptions200ResponseDataIndividualChecksInner {
     return price;
   }
 
-  public void setPrice(BigDecimal price) {
+  public void setPrice(@javax.annotation.Nullable BigDecimal price) {
     this.price = price;
   }
 
 
-  public GetBackgroundChecksOptions200ResponseDataIndividualChecksInner currency(String currency) {
+  public GetBackgroundChecksOptions200ResponseDataIndividualChecksInner currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -149,12 +155,12 @@ public class GetBackgroundChecksOptions200ResponseDataIndividualChecksInner {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public GetBackgroundChecksOptions200ResponseDataIndividualChecksInner isAvailable(Boolean isAvailable) {
+  public GetBackgroundChecksOptions200ResponseDataIndividualChecksInner isAvailable(@javax.annotation.Nullable Boolean isAvailable) {
     this.isAvailable = isAvailable;
     return this;
   }
@@ -168,12 +174,12 @@ public class GetBackgroundChecksOptions200ResponseDataIndividualChecksInner {
     return isAvailable;
   }
 
-  public void setIsAvailable(Boolean isAvailable) {
+  public void setIsAvailable(@javax.annotation.Nullable Boolean isAvailable) {
     this.isAvailable = isAvailable;
   }
 
 
-  public GetBackgroundChecksOptions200ResponseDataIndividualChecksInner thirdPartyName(String thirdPartyName) {
+  public GetBackgroundChecksOptions200ResponseDataIndividualChecksInner thirdPartyName(@javax.annotation.Nullable String thirdPartyName) {
     this.thirdPartyName = thirdPartyName;
     return this;
   }
@@ -187,7 +193,7 @@ public class GetBackgroundChecksOptions200ResponseDataIndividualChecksInner {
     return thirdPartyName;
   }
 
-  public void setThirdPartyName(String thirdPartyName) {
+  public void setThirdPartyName(@javax.annotation.Nullable String thirdPartyName) {
     this.thirdPartyName = thirdPartyName;
   }
 

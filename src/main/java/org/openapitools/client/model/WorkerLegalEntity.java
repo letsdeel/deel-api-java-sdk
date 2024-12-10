@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * WorkerLegalEntity
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class WorkerLegalEntity {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private LegalEntityType type;
 
   public static final String SERIALIZED_NAME_PERSONAL_NAME = "personal_name";
   @SerializedName(SERIALIZED_NAME_PERSONAL_NAME)
+  @javax.annotation.Nonnull
   private String personalName;
 
   public static final String SERIALIZED_NAME_REGISTRATION_NUMBER = "registration_number";
   @SerializedName(SERIALIZED_NAME_REGISTRATION_NUMBER)
+  @javax.annotation.Nonnull
   private String registrationNumber;
 
   public WorkerLegalEntity() {
   }
 
-  public WorkerLegalEntity type(LegalEntityType type) {
+  public WorkerLegalEntity type(@javax.annotation.Nonnull LegalEntityType type) {
     this.type = type;
     return this;
   }
@@ -80,12 +83,12 @@ public class WorkerLegalEntity {
     return type;
   }
 
-  public void setType(LegalEntityType type) {
+  public void setType(@javax.annotation.Nonnull LegalEntityType type) {
     this.type = type;
   }
 
 
-  public WorkerLegalEntity personalName(String personalName) {
+  public WorkerLegalEntity personalName(@javax.annotation.Nonnull String personalName) {
     this.personalName = personalName;
     return this;
   }
@@ -99,12 +102,12 @@ public class WorkerLegalEntity {
     return personalName;
   }
 
-  public void setPersonalName(String personalName) {
+  public void setPersonalName(@javax.annotation.Nonnull String personalName) {
     this.personalName = personalName;
   }
 
 
-  public WorkerLegalEntity registrationNumber(String registrationNumber) {
+  public WorkerLegalEntity registrationNumber(@javax.annotation.Nonnull String registrationNumber) {
     this.registrationNumber = registrationNumber;
     return this;
   }
@@ -118,7 +121,7 @@ public class WorkerLegalEntity {
     return registrationNumber;
   }
 
-  public void setRegistrationNumber(String registrationNumber) {
+  public void setRegistrationNumber(@javax.annotation.Nonnull String registrationNumber) {
     this.registrationNumber = registrationNumber;
   }
 

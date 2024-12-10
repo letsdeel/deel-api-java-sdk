@@ -51,48 +51,57 @@ import org.openapitools.client.JSON;
 /**
  * Post401kSingleDeductionDefinition200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Post401kSingleDeductionDefinition200Response {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime endDate;
 
   public static final String SERIALIZED_NAME_IS_ACTIVE = "is_active";
   @SerializedName(SERIALIZED_NAME_IS_ACTIVE)
+  @javax.annotation.Nullable
   private Boolean isActive;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime startDate;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime updatedAt;
 
   public static final String SERIALIZED_NAME_EMPLOYMENT_ID = "employment_id";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT_ID)
+  @javax.annotation.Nullable
   private String employmentId;
 
   public static final String SERIALIZED_NAME_PAYROLL_REPORT_COLUMN_ID = "payroll_report_column_id";
   @SerializedName(SERIALIZED_NAME_PAYROLL_REPORT_COLUMN_ID)
+  @javax.annotation.Nullable
   private String payrollReportColumnId;
 
   public Post401kSingleDeductionDefinition200Response() {
   }
 
-  public Post401kSingleDeductionDefinition200Response id(String id) {
+  public Post401kSingleDeductionDefinition200Response id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -106,12 +115,12 @@ public class Post401kSingleDeductionDefinition200Response {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public Post401kSingleDeductionDefinition200Response amount(BigDecimal amount) {
+  public Post401kSingleDeductionDefinition200Response amount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -125,12 +134,12 @@ public class Post401kSingleDeductionDefinition200Response {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public Post401kSingleDeductionDefinition200Response endDate(OffsetDateTime endDate) {
+  public Post401kSingleDeductionDefinition200Response endDate(@javax.annotation.Nullable OffsetDateTime endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -144,12 +153,12 @@ public class Post401kSingleDeductionDefinition200Response {
     return endDate;
   }
 
-  public void setEndDate(OffsetDateTime endDate) {
+  public void setEndDate(@javax.annotation.Nullable OffsetDateTime endDate) {
     this.endDate = endDate;
   }
 
 
-  public Post401kSingleDeductionDefinition200Response isActive(Boolean isActive) {
+  public Post401kSingleDeductionDefinition200Response isActive(@javax.annotation.Nullable Boolean isActive) {
     this.isActive = isActive;
     return this;
   }
@@ -163,12 +172,12 @@ public class Post401kSingleDeductionDefinition200Response {
     return isActive;
   }
 
-  public void setIsActive(Boolean isActive) {
+  public void setIsActive(@javax.annotation.Nullable Boolean isActive) {
     this.isActive = isActive;
   }
 
 
-  public Post401kSingleDeductionDefinition200Response createdAt(OffsetDateTime createdAt) {
+  public Post401kSingleDeductionDefinition200Response createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -182,12 +191,12 @@ public class Post401kSingleDeductionDefinition200Response {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public Post401kSingleDeductionDefinition200Response startDate(OffsetDateTime startDate) {
+  public Post401kSingleDeductionDefinition200Response startDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -201,12 +210,12 @@ public class Post401kSingleDeductionDefinition200Response {
     return startDate;
   }
 
-  public void setStartDate(OffsetDateTime startDate) {
+  public void setStartDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
   }
 
 
-  public Post401kSingleDeductionDefinition200Response updatedAt(OffsetDateTime updatedAt) {
+  public Post401kSingleDeductionDefinition200Response updatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -220,12 +229,12 @@ public class Post401kSingleDeductionDefinition200Response {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public Post401kSingleDeductionDefinition200Response employmentId(String employmentId) {
+  public Post401kSingleDeductionDefinition200Response employmentId(@javax.annotation.Nullable String employmentId) {
     this.employmentId = employmentId;
     return this;
   }
@@ -239,12 +248,12 @@ public class Post401kSingleDeductionDefinition200Response {
     return employmentId;
   }
 
-  public void setEmploymentId(String employmentId) {
+  public void setEmploymentId(@javax.annotation.Nullable String employmentId) {
     this.employmentId = employmentId;
   }
 
 
-  public Post401kSingleDeductionDefinition200Response payrollReportColumnId(String payrollReportColumnId) {
+  public Post401kSingleDeductionDefinition200Response payrollReportColumnId(@javax.annotation.Nullable String payrollReportColumnId) {
     this.payrollReportColumnId = payrollReportColumnId;
     return this;
   }
@@ -258,7 +267,7 @@ public class Post401kSingleDeductionDefinition200Response {
     return payrollReportColumnId;
   }
 
-  public void setPayrollReportColumnId(String payrollReportColumnId) {
+  public void setPayrollReportColumnId(@javax.annotation.Nullable String payrollReportColumnId) {
     this.payrollReportColumnId = payrollReportColumnId;
   }
 

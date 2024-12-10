@@ -188,7 +188,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -206,7 +207,8 @@ public class GlobalPayrollApi {
          * @return AddGpBankAccount201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -225,7 +227,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;AddGpBankAccount201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -244,7 +247,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -265,7 +269,8 @@ public class GlobalPayrollApi {
      * @param updateGPEmployeeAddressRequest Request body containing the details of the bank account to be added. (required)
      * @return APIaddGpBankAccountRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -361,7 +366,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -379,7 +385,8 @@ public class GlobalPayrollApi {
          * @return CreateGPContract201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -398,7 +405,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;CreateGPContract201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -417,7 +425,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -437,7 +446,8 @@ public class GlobalPayrollApi {
      * @param createGPContractRequest Global Payroll (GP) contract object that needs to be created (required)
      * @return APIcreateGPContractRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -534,7 +544,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -552,7 +563,8 @@ public class GlobalPayrollApi {
          * @return String
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -571,7 +583,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;String&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -590,7 +603,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -610,7 +624,8 @@ public class GlobalPayrollApi {
      * @param gpReportId Id of gp report. (required)
      * @return APIdownloadGrossToNetGPReportRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -714,7 +729,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -732,7 +748,8 @@ public class GlobalPayrollApi {
          * @return GetDownloadUrlForGPPayslip200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -751,7 +768,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;GetDownloadUrlForGPPayslip200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -770,7 +788,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -791,7 +810,8 @@ public class GlobalPayrollApi {
      * @param payslipId Unique identifier for the payslip. (required)
      * @return APIgetDownloadUrlForGPPayslipRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -902,7 +922,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -920,7 +941,8 @@ public class GlobalPayrollApi {
          * @return GetGPLegalEntities200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -939,7 +961,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;GetGPLegalEntities200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -958,7 +981,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -978,7 +1002,8 @@ public class GlobalPayrollApi {
      * @param id Unique identifier for the legal entity. (required)
      * @return APIgetGPLegalEntitiesRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1074,7 +1099,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1092,7 +1118,8 @@ public class GlobalPayrollApi {
          * @return GetGpBankAccounts200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1111,7 +1138,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;GetGpBankAccounts200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1130,7 +1158,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1150,7 +1179,8 @@ public class GlobalPayrollApi {
      * @param workerId Unique identifier for a worker. (required)
      * @return APIgetGpBankAccountsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1246,7 +1276,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1264,7 +1295,8 @@ public class GlobalPayrollApi {
          * @return GetGpBankGuide200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1283,7 +1315,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;GetGpBankGuide200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1302,7 +1335,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1322,7 +1356,8 @@ public class GlobalPayrollApi {
      * @param workerId Unique identifier for a worker in UUID format. (required)
      * @return APIgetGpBankGuideRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1418,7 +1453,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1436,7 +1472,8 @@ public class GlobalPayrollApi {
          * @return GetGrossToNetGPReports200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1455,7 +1492,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;GetGrossToNetGPReports200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1474,7 +1512,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1494,7 +1533,8 @@ public class GlobalPayrollApi {
      * @param id Unique identifier for the payroll report in UUID format. (required)
      * @return APIgetGrossToNetGPReportsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1590,7 +1630,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1608,7 +1649,8 @@ public class GlobalPayrollApi {
          * @return GetWorkerPayslips200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1627,7 +1669,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;GetWorkerPayslips200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1646,7 +1689,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1666,7 +1710,8 @@ public class GlobalPayrollApi {
      * @param id Unique identifier for the worker. (required)
      * @return APIgetWorkerPayslipsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1778,7 +1823,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1797,7 +1843,8 @@ public class GlobalPayrollApi {
          * @return PatchGpBankAccount200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1817,7 +1864,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;PatchGpBankAccount200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1837,7 +1885,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1860,7 +1909,8 @@ public class GlobalPayrollApi {
      * @param updateGPEmployeeAddressRequestData Request body to modify an existing bank account for an employee. (required)
      * @return APIpatchGpBankAccountRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1965,7 +2015,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1983,7 +2034,8 @@ public class GlobalPayrollApi {
          * @return RequestTermination201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2002,7 +2054,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;RequestTermination201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2021,7 +2074,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2042,7 +2096,8 @@ public class GlobalPayrollApi {
      * @param requestTerminationRequest Request body to request a termination for an employee. (required)
      * @return APIrequestTerminationRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2146,7 +2201,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -2165,7 +2221,8 @@ public class GlobalPayrollApi {
          * @return GPEmployeeAddressUpdatedContainer
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -2185,7 +2242,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;GPEmployeeAddressUpdatedContainer&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -2205,7 +2263,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -2227,7 +2286,8 @@ public class GlobalPayrollApi {
      * @param updateGPEmployeeAddressRequest Request body containing the new address and related details. (required)
      * @return APIupdateGPEmployeeAddressRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -2332,7 +2392,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2350,7 +2411,8 @@ public class GlobalPayrollApi {
          * @return UpdateGPEmployeeCompensation200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2369,7 +2431,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;UpdateGPEmployeeCompensation200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2388,7 +2451,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2409,7 +2473,8 @@ public class GlobalPayrollApi {
      * @param updateGPEmployeeCompensationRequest Request body containing the data to update the compensation of the employee. (required)
      * @return APIupdateGPEmployeeCompensationRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2513,7 +2578,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -2532,7 +2598,8 @@ public class GlobalPayrollApi {
          * @return GPEmployeeInformationUpdatedContainer
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -2552,7 +2619,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;GPEmployeeInformationUpdatedContainer&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -2572,7 +2640,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -2594,7 +2663,8 @@ public class GlobalPayrollApi {
      * @param updateGPEmployeeInformationRequest  (required)
      * @return APIupdateGPEmployeeInformationRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -2699,7 +2769,8 @@ public class GlobalPayrollApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2717,7 +2788,8 @@ public class GlobalPayrollApi {
          * @return UpdateGPEmployeePto200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2736,7 +2808,8 @@ public class GlobalPayrollApi {
          * @return ApiResponse&lt;UpdateGPEmployeePto200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2755,7 +2828,8 @@ public class GlobalPayrollApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2776,7 +2850,8 @@ public class GlobalPayrollApi {
      * @param updateGPEmployeePtoRequest Contract object that needs to be amended. (required)
      * @return APIupdateGPEmployeePtoRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>

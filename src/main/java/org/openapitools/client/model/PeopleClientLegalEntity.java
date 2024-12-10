@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * PeopleClientLegalEntity
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PeopleClientLegalEntity {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public PeopleClientLegalEntity() {
   }
 
-  public PeopleClientLegalEntity id(String id) {
+  public PeopleClientLegalEntity id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -75,12 +77,12 @@ public class PeopleClientLegalEntity {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public PeopleClientLegalEntity name(String name) {
+  public PeopleClientLegalEntity name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -94,7 +96,7 @@ public class PeopleClientLegalEntity {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 

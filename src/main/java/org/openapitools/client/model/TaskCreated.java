@@ -50,24 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * TaskCreated
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TaskCreated {
   public static final String SERIALIZED_NAME_CREATED = "created";
   @SerializedName(SERIALIZED_NAME_CREATED)
+  @javax.annotation.Nullable
   private Boolean created;
 
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private TimesheetStatusEnum status;
 
   public TaskCreated() {
   }
 
-  public TaskCreated created(Boolean created) {
+  public TaskCreated created(@javax.annotation.Nullable Boolean created) {
     this.created = created;
     return this;
   }
@@ -81,12 +84,12 @@ public class TaskCreated {
     return created;
   }
 
-  public void setCreated(Boolean created) {
+  public void setCreated(@javax.annotation.Nullable Boolean created) {
     this.created = created;
   }
 
 
-  public TaskCreated id(String id) {
+  public TaskCreated id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -100,12 +103,12 @@ public class TaskCreated {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public TaskCreated status(TimesheetStatusEnum status) {
+  public TaskCreated status(@javax.annotation.Nullable TimesheetStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -119,7 +122,7 @@ public class TaskCreated {
     return status;
   }
 
-  public void setStatus(TimesheetStatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable TimesheetStatusEnum status) {
     this.status = status;
   }
 

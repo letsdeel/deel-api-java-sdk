@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * FileAttachment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class FileAttachment {
   public static final String SERIALIZED_NAME_KEY = "key";
   @SerializedName(SERIALIZED_NAME_KEY)
+  @javax.annotation.Nullable
   private String key;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public FileAttachment() {
   }
 
-  public FileAttachment key(String key) {
+  public FileAttachment key(@javax.annotation.Nullable String key) {
     this.key = key;
     return this;
   }
@@ -75,12 +77,12 @@ public class FileAttachment {
     return key;
   }
 
-  public void setKey(String key) {
+  public void setKey(@javax.annotation.Nullable String key) {
     this.key = key;
   }
 
 
-  public FileAttachment name(String name) {
+  public FileAttachment name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -94,7 +96,7 @@ public class FileAttachment {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 

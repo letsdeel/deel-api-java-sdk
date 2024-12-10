@@ -49,36 +49,42 @@ import org.openapitools.client.JSON;
 /**
  * GetBenefitEmployee200ResponseAddressesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBenefitEmployee200ResponseAddressesInner {
   public static final String SERIALIZED_NAME_ZIP = "zip";
   @SerializedName(SERIALIZED_NAME_ZIP)
+  @javax.annotation.Nullable
   private String zip;
 
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nullable
   private String city;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_STREET = "street";
   @SerializedName(SERIALIZED_NAME_STREET)
+  @javax.annotation.Nullable
   private String street;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public GetBenefitEmployee200ResponseAddressesInner() {
   }
 
-  public GetBenefitEmployee200ResponseAddressesInner zip(String zip) {
+  public GetBenefitEmployee200ResponseAddressesInner zip(@javax.annotation.Nullable String zip) {
     this.zip = zip;
     return this;
   }
@@ -92,12 +98,12 @@ public class GetBenefitEmployee200ResponseAddressesInner {
     return zip;
   }
 
-  public void setZip(String zip) {
+  public void setZip(@javax.annotation.Nullable String zip) {
     this.zip = zip;
   }
 
 
-  public GetBenefitEmployee200ResponseAddressesInner city(String city) {
+  public GetBenefitEmployee200ResponseAddressesInner city(@javax.annotation.Nullable String city) {
     this.city = city;
     return this;
   }
@@ -111,12 +117,12 @@ public class GetBenefitEmployee200ResponseAddressesInner {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nullable String city) {
     this.city = city;
   }
 
 
-  public GetBenefitEmployee200ResponseAddressesInner type(String type) {
+  public GetBenefitEmployee200ResponseAddressesInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -130,12 +136,12 @@ public class GetBenefitEmployee200ResponseAddressesInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public GetBenefitEmployee200ResponseAddressesInner state(String state) {
+  public GetBenefitEmployee200ResponseAddressesInner state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -149,12 +155,12 @@ public class GetBenefitEmployee200ResponseAddressesInner {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public GetBenefitEmployee200ResponseAddressesInner street(String street) {
+  public GetBenefitEmployee200ResponseAddressesInner street(@javax.annotation.Nullable String street) {
     this.street = street;
     return this;
   }
@@ -168,12 +174,12 @@ public class GetBenefitEmployee200ResponseAddressesInner {
     return street;
   }
 
-  public void setStreet(String street) {
+  public void setStreet(@javax.annotation.Nullable String street) {
     this.street = street;
   }
 
 
-  public GetBenefitEmployee200ResponseAddressesInner country(String country) {
+  public GetBenefitEmployee200ResponseAddressesInner country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -187,7 +193,7 @@ public class GetBenefitEmployee200ResponseAddressesInner {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 

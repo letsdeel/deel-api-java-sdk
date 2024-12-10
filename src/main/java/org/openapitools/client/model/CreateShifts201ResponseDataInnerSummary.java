@@ -49,32 +49,37 @@ import org.openapitools.client.JSON;
 /**
  * CreateShifts201ResponseDataInnerSummary
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateShifts201ResponseDataInnerSummary {
   public static final String SERIALIZED_NAME_TOTAL_BREAK_HOURS = "total_break_hours";
   @SerializedName(SERIALIZED_NAME_TOTAL_BREAK_HOURS)
+  @javax.annotation.Nullable
   private BigDecimal totalBreakHours;
 
   public static final String SERIALIZED_NAME_PAYABLE_BREAK_HOURS = "payable_break_hours";
   @SerializedName(SERIALIZED_NAME_PAYABLE_BREAK_HOURS)
+  @javax.annotation.Nullable
   private BigDecimal payableBreakHours;
 
   public static final String SERIALIZED_NAME_TOTAL_PAYABLE_HOURS = "total_payable_hours";
   @SerializedName(SERIALIZED_NAME_TOTAL_PAYABLE_HOURS)
+  @javax.annotation.Nullable
   private BigDecimal totalPayableHours;
 
   public static final String SERIALIZED_NAME_SHIFT_DURATION_HOURS = "shift_duration_hours";
   @SerializedName(SERIALIZED_NAME_SHIFT_DURATION_HOURS)
+  @javax.annotation.Nullable
   private BigDecimal shiftDurationHours;
 
   public static final String SERIALIZED_NAME_SHIFT_RATE_EXTERNAL_ID = "shift_rate_external_id";
   @SerializedName(SERIALIZED_NAME_SHIFT_RATE_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String shiftRateExternalId;
 
   public CreateShifts201ResponseDataInnerSummary() {
   }
 
-  public CreateShifts201ResponseDataInnerSummary totalBreakHours(BigDecimal totalBreakHours) {
+  public CreateShifts201ResponseDataInnerSummary totalBreakHours(@javax.annotation.Nullable BigDecimal totalBreakHours) {
     this.totalBreakHours = totalBreakHours;
     return this;
   }
@@ -88,12 +93,12 @@ public class CreateShifts201ResponseDataInnerSummary {
     return totalBreakHours;
   }
 
-  public void setTotalBreakHours(BigDecimal totalBreakHours) {
+  public void setTotalBreakHours(@javax.annotation.Nullable BigDecimal totalBreakHours) {
     this.totalBreakHours = totalBreakHours;
   }
 
 
-  public CreateShifts201ResponseDataInnerSummary payableBreakHours(BigDecimal payableBreakHours) {
+  public CreateShifts201ResponseDataInnerSummary payableBreakHours(@javax.annotation.Nullable BigDecimal payableBreakHours) {
     this.payableBreakHours = payableBreakHours;
     return this;
   }
@@ -107,12 +112,12 @@ public class CreateShifts201ResponseDataInnerSummary {
     return payableBreakHours;
   }
 
-  public void setPayableBreakHours(BigDecimal payableBreakHours) {
+  public void setPayableBreakHours(@javax.annotation.Nullable BigDecimal payableBreakHours) {
     this.payableBreakHours = payableBreakHours;
   }
 
 
-  public CreateShifts201ResponseDataInnerSummary totalPayableHours(BigDecimal totalPayableHours) {
+  public CreateShifts201ResponseDataInnerSummary totalPayableHours(@javax.annotation.Nullable BigDecimal totalPayableHours) {
     this.totalPayableHours = totalPayableHours;
     return this;
   }
@@ -126,12 +131,12 @@ public class CreateShifts201ResponseDataInnerSummary {
     return totalPayableHours;
   }
 
-  public void setTotalPayableHours(BigDecimal totalPayableHours) {
+  public void setTotalPayableHours(@javax.annotation.Nullable BigDecimal totalPayableHours) {
     this.totalPayableHours = totalPayableHours;
   }
 
 
-  public CreateShifts201ResponseDataInnerSummary shiftDurationHours(BigDecimal shiftDurationHours) {
+  public CreateShifts201ResponseDataInnerSummary shiftDurationHours(@javax.annotation.Nullable BigDecimal shiftDurationHours) {
     this.shiftDurationHours = shiftDurationHours;
     return this;
   }
@@ -145,12 +150,12 @@ public class CreateShifts201ResponseDataInnerSummary {
     return shiftDurationHours;
   }
 
-  public void setShiftDurationHours(BigDecimal shiftDurationHours) {
+  public void setShiftDurationHours(@javax.annotation.Nullable BigDecimal shiftDurationHours) {
     this.shiftDurationHours = shiftDurationHours;
   }
 
 
-  public CreateShifts201ResponseDataInnerSummary shiftRateExternalId(String shiftRateExternalId) {
+  public CreateShifts201ResponseDataInnerSummary shiftRateExternalId(@javax.annotation.Nullable String shiftRateExternalId) {
     this.shiftRateExternalId = shiftRateExternalId;
     return this;
   }
@@ -164,7 +169,7 @@ public class CreateShifts201ResponseDataInnerSummary {
     return shiftRateExternalId;
   }
 
-  public void setShiftRateExternalId(String shiftRateExternalId) {
+  public void setShiftRateExternalId(@javax.annotation.Nullable String shiftRateExternalId) {
     this.shiftRateExternalId = shiftRateExternalId;
   }
 

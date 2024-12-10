@@ -50,14 +50,16 @@ import org.openapitools.client.JSON;
 /**
  * GetContractPaymentDates200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractPaymentDates200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_DUE = "due";
   @SerializedName(SERIALIZED_NAME_DUE)
+  @javax.annotation.Nonnull
   private OffsetDateTime due;
 
   /**
@@ -118,12 +120,13 @@ public class GetContractPaymentDates200ResponseDataInner {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private StatusEnum status;
 
   public GetContractPaymentDates200ResponseDataInner() {
   }
 
-  public GetContractPaymentDates200ResponseDataInner id(UUID id) {
+  public GetContractPaymentDates200ResponseDataInner id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -137,12 +140,12 @@ public class GetContractPaymentDates200ResponseDataInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public GetContractPaymentDates200ResponseDataInner due(OffsetDateTime due) {
+  public GetContractPaymentDates200ResponseDataInner due(@javax.annotation.Nonnull OffsetDateTime due) {
     this.due = due;
     return this;
   }
@@ -156,12 +159,12 @@ public class GetContractPaymentDates200ResponseDataInner {
     return due;
   }
 
-  public void setDue(OffsetDateTime due) {
+  public void setDue(@javax.annotation.Nonnull OffsetDateTime due) {
     this.due = due;
   }
 
 
-  public GetContractPaymentDates200ResponseDataInner status(StatusEnum status) {
+  public GetContractPaymentDates200ResponseDataInner status(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -175,7 +178,7 @@ public class GetContractPaymentDates200ResponseDataInner {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 

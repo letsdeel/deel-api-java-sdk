@@ -55,108 +55,132 @@ import org.openapitools.client.JSON;
 /**
  * EOR quote approved by Deel
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataQuote {
   public static final String SERIALIZED_NAME_BENEFITS = "benefits";
   @SerializedName(SERIALIZED_NAME_BENEFITS)
+  @javax.annotation.Nullable
   private List<CreateContract201ResponseDataQuoteBenefitsInner> benefits = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_CBA_TOTAL = "cba_total";
   @SerializedName(SERIALIZED_NAME_CBA_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal cbaTotal;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private LocalDate createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private LocalDate updatedAt;
 
   public static final String SERIALIZED_NAME_SALARY_TOTAL = "salary_total";
   @SerializedName(SERIALIZED_NAME_SALARY_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal salaryTotal;
 
   public static final String SERIALIZED_NAME_ANNUAL_SALARY = "annual_salary";
   @SerializedName(SERIALIZED_NAME_ANNUAL_SALARY)
+  @javax.annotation.Nullable
   private BigDecimal annualSalary;
 
   public static final String SERIALIZED_NAME_CBA_TOTAL_USD = "cba_total_usd";
   @SerializedName(SERIALIZED_NAME_CBA_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal cbaTotalUsd;
 
   public static final String SERIALIZED_NAME_BREAKDOWN_COSTS = "breakdown_costs";
   @SerializedName(SERIALIZED_NAME_BREAKDOWN_COSTS)
+  @javax.annotation.Nullable
   private CreateContract201ResponseDataQuoteBreakdownCosts breakdownCosts;
 
   public static final String SERIALIZED_NAME_SALARY_TOTAL_USD = "salary_total_usd";
   @SerializedName(SERIALIZED_NAME_SALARY_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal salaryTotalUsd;
 
   public static final String SERIALIZED_NAME_GROSS_SALARY_TOTAL = "gross_salary_total";
   @SerializedName(SERIALIZED_NAME_GROSS_SALARY_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal grossSalaryTotal;
 
   public static final String SERIALIZED_NAME_MOBILITY_FEE_TOTAL = "mobility_fee_total";
   @SerializedName(SERIALIZED_NAME_MOBILITY_FEE_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal mobilityFeeTotal;
 
   public static final String SERIALIZED_NAME_MONTHLY_COST_TOTAL = "monthly_cost_total";
   @SerializedName(SERIALIZED_NAME_MONTHLY_COST_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal monthlyCostTotal;
 
   public static final String SERIALIZED_NAME_PLATFORM_FEE_TOTAL = "platform_fee_total";
   @SerializedName(SERIALIZED_NAME_PLATFORM_FEE_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal platformFeeTotal;
 
   public static final String SERIALIZED_NAME_EMPLOYER_COST_TOTAL = "employer_cost_total";
   @SerializedName(SERIALIZED_NAME_EMPLOYER_COST_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal employerCostTotal;
 
   public static final String SERIALIZED_NAME_GROSS_SALARY_TOTAL_USD = "gross_salary_total_usd";
   @SerializedName(SERIALIZED_NAME_GROSS_SALARY_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal grossSalaryTotalUsd;
 
   public static final String SERIALIZED_NAME_MOBILITY_FEE_TOTAL_USD = "mobility_fee_total_usd";
   @SerializedName(SERIALIZED_NAME_MOBILITY_FEE_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal mobilityFeeTotalUsd;
 
   public static final String SERIALIZED_NAME_MONTHLY_COST_TOTAL_USD = "monthly_cost_total_usd";
   @SerializedName(SERIALIZED_NAME_MONTHLY_COST_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal monthlyCostTotalUsd;
 
   public static final String SERIALIZED_NAME_PLATFORM_FEE_TOTAL_USD = "platform_fee_total_usd";
   @SerializedName(SERIALIZED_NAME_PLATFORM_FEE_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal platformFeeTotalUsd;
 
   public static final String SERIALIZED_NAME_EMPLOYER_COST_TOTAL_USD = "employer_cost_total_usd";
   @SerializedName(SERIALIZED_NAME_EMPLOYER_COST_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal employerCostTotalUsd;
 
   public static final String SERIALIZED_NAME_SEVERANCE_ACCRUAL_TOTAL = "severance_accrual_total";
   @SerializedName(SERIALIZED_NAME_SEVERANCE_ACCRUAL_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal severanceAccrualTotal;
 
   public static final String SERIALIZED_NAME_RECURRING_ALLOWANCE_TOTAL = "recurring_allowance_total";
   @SerializedName(SERIALIZED_NAME_RECURRING_ALLOWANCE_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal recurringAllowanceTotal;
 
   public static final String SERIALIZED_NAME_SEVERANCE_ACCRUAL_TOTAL_USD = "severance_accrual_total_usd";
   @SerializedName(SERIALIZED_NAME_SEVERANCE_ACCRUAL_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal severanceAccrualTotalUsd;
 
   public static final String SERIALIZED_NAME_RECURRING_ALLOWANCE_TOTAL_USD = "recurring_allowance_total_usd";
   @SerializedName(SERIALIZED_NAME_RECURRING_ALLOWANCE_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal recurringAllowanceTotalUsd;
 
   public CreateContract201ResponseDataQuote() {
   }
 
-  public CreateContract201ResponseDataQuote benefits(List<CreateContract201ResponseDataQuoteBenefitsInner> benefits) {
+  public CreateContract201ResponseDataQuote benefits(@javax.annotation.Nullable List<CreateContract201ResponseDataQuoteBenefitsInner> benefits) {
     this.benefits = benefits;
     return this;
   }
@@ -178,12 +202,12 @@ public class CreateContract201ResponseDataQuote {
     return benefits;
   }
 
-  public void setBenefits(List<CreateContract201ResponseDataQuoteBenefitsInner> benefits) {
+  public void setBenefits(@javax.annotation.Nullable List<CreateContract201ResponseDataQuoteBenefitsInner> benefits) {
     this.benefits = benefits;
   }
 
 
-  public CreateContract201ResponseDataQuote currency(String currency) {
+  public CreateContract201ResponseDataQuote currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -197,12 +221,12 @@ public class CreateContract201ResponseDataQuote {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public CreateContract201ResponseDataQuote cbaTotal(BigDecimal cbaTotal) {
+  public CreateContract201ResponseDataQuote cbaTotal(@javax.annotation.Nullable BigDecimal cbaTotal) {
     this.cbaTotal = cbaTotal;
     return this;
   }
@@ -216,12 +240,12 @@ public class CreateContract201ResponseDataQuote {
     return cbaTotal;
   }
 
-  public void setCbaTotal(BigDecimal cbaTotal) {
+  public void setCbaTotal(@javax.annotation.Nullable BigDecimal cbaTotal) {
     this.cbaTotal = cbaTotal;
   }
 
 
-  public CreateContract201ResponseDataQuote createdAt(LocalDate createdAt) {
+  public CreateContract201ResponseDataQuote createdAt(@javax.annotation.Nullable LocalDate createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -235,12 +259,12 @@ public class CreateContract201ResponseDataQuote {
     return createdAt;
   }
 
-  public void setCreatedAt(LocalDate createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable LocalDate createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public CreateContract201ResponseDataQuote updatedAt(LocalDate updatedAt) {
+  public CreateContract201ResponseDataQuote updatedAt(@javax.annotation.Nullable LocalDate updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -254,12 +278,12 @@ public class CreateContract201ResponseDataQuote {
     return updatedAt;
   }
 
-  public void setUpdatedAt(LocalDate updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable LocalDate updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public CreateContract201ResponseDataQuote salaryTotal(BigDecimal salaryTotal) {
+  public CreateContract201ResponseDataQuote salaryTotal(@javax.annotation.Nullable BigDecimal salaryTotal) {
     this.salaryTotal = salaryTotal;
     return this;
   }
@@ -273,12 +297,12 @@ public class CreateContract201ResponseDataQuote {
     return salaryTotal;
   }
 
-  public void setSalaryTotal(BigDecimal salaryTotal) {
+  public void setSalaryTotal(@javax.annotation.Nullable BigDecimal salaryTotal) {
     this.salaryTotal = salaryTotal;
   }
 
 
-  public CreateContract201ResponseDataQuote annualSalary(BigDecimal annualSalary) {
+  public CreateContract201ResponseDataQuote annualSalary(@javax.annotation.Nullable BigDecimal annualSalary) {
     this.annualSalary = annualSalary;
     return this;
   }
@@ -292,12 +316,12 @@ public class CreateContract201ResponseDataQuote {
     return annualSalary;
   }
 
-  public void setAnnualSalary(BigDecimal annualSalary) {
+  public void setAnnualSalary(@javax.annotation.Nullable BigDecimal annualSalary) {
     this.annualSalary = annualSalary;
   }
 
 
-  public CreateContract201ResponseDataQuote cbaTotalUsd(BigDecimal cbaTotalUsd) {
+  public CreateContract201ResponseDataQuote cbaTotalUsd(@javax.annotation.Nullable BigDecimal cbaTotalUsd) {
     this.cbaTotalUsd = cbaTotalUsd;
     return this;
   }
@@ -311,12 +335,12 @@ public class CreateContract201ResponseDataQuote {
     return cbaTotalUsd;
   }
 
-  public void setCbaTotalUsd(BigDecimal cbaTotalUsd) {
+  public void setCbaTotalUsd(@javax.annotation.Nullable BigDecimal cbaTotalUsd) {
     this.cbaTotalUsd = cbaTotalUsd;
   }
 
 
-  public CreateContract201ResponseDataQuote breakdownCosts(CreateContract201ResponseDataQuoteBreakdownCosts breakdownCosts) {
+  public CreateContract201ResponseDataQuote breakdownCosts(@javax.annotation.Nullable CreateContract201ResponseDataQuoteBreakdownCosts breakdownCosts) {
     this.breakdownCosts = breakdownCosts;
     return this;
   }
@@ -330,12 +354,12 @@ public class CreateContract201ResponseDataQuote {
     return breakdownCosts;
   }
 
-  public void setBreakdownCosts(CreateContract201ResponseDataQuoteBreakdownCosts breakdownCosts) {
+  public void setBreakdownCosts(@javax.annotation.Nullable CreateContract201ResponseDataQuoteBreakdownCosts breakdownCosts) {
     this.breakdownCosts = breakdownCosts;
   }
 
 
-  public CreateContract201ResponseDataQuote salaryTotalUsd(BigDecimal salaryTotalUsd) {
+  public CreateContract201ResponseDataQuote salaryTotalUsd(@javax.annotation.Nullable BigDecimal salaryTotalUsd) {
     this.salaryTotalUsd = salaryTotalUsd;
     return this;
   }
@@ -349,12 +373,12 @@ public class CreateContract201ResponseDataQuote {
     return salaryTotalUsd;
   }
 
-  public void setSalaryTotalUsd(BigDecimal salaryTotalUsd) {
+  public void setSalaryTotalUsd(@javax.annotation.Nullable BigDecimal salaryTotalUsd) {
     this.salaryTotalUsd = salaryTotalUsd;
   }
 
 
-  public CreateContract201ResponseDataQuote grossSalaryTotal(BigDecimal grossSalaryTotal) {
+  public CreateContract201ResponseDataQuote grossSalaryTotal(@javax.annotation.Nullable BigDecimal grossSalaryTotal) {
     this.grossSalaryTotal = grossSalaryTotal;
     return this;
   }
@@ -368,12 +392,12 @@ public class CreateContract201ResponseDataQuote {
     return grossSalaryTotal;
   }
 
-  public void setGrossSalaryTotal(BigDecimal grossSalaryTotal) {
+  public void setGrossSalaryTotal(@javax.annotation.Nullable BigDecimal grossSalaryTotal) {
     this.grossSalaryTotal = grossSalaryTotal;
   }
 
 
-  public CreateContract201ResponseDataQuote mobilityFeeTotal(BigDecimal mobilityFeeTotal) {
+  public CreateContract201ResponseDataQuote mobilityFeeTotal(@javax.annotation.Nullable BigDecimal mobilityFeeTotal) {
     this.mobilityFeeTotal = mobilityFeeTotal;
     return this;
   }
@@ -387,12 +411,12 @@ public class CreateContract201ResponseDataQuote {
     return mobilityFeeTotal;
   }
 
-  public void setMobilityFeeTotal(BigDecimal mobilityFeeTotal) {
+  public void setMobilityFeeTotal(@javax.annotation.Nullable BigDecimal mobilityFeeTotal) {
     this.mobilityFeeTotal = mobilityFeeTotal;
   }
 
 
-  public CreateContract201ResponseDataQuote monthlyCostTotal(BigDecimal monthlyCostTotal) {
+  public CreateContract201ResponseDataQuote monthlyCostTotal(@javax.annotation.Nullable BigDecimal monthlyCostTotal) {
     this.monthlyCostTotal = monthlyCostTotal;
     return this;
   }
@@ -406,12 +430,12 @@ public class CreateContract201ResponseDataQuote {
     return monthlyCostTotal;
   }
 
-  public void setMonthlyCostTotal(BigDecimal monthlyCostTotal) {
+  public void setMonthlyCostTotal(@javax.annotation.Nullable BigDecimal monthlyCostTotal) {
     this.monthlyCostTotal = monthlyCostTotal;
   }
 
 
-  public CreateContract201ResponseDataQuote platformFeeTotal(BigDecimal platformFeeTotal) {
+  public CreateContract201ResponseDataQuote platformFeeTotal(@javax.annotation.Nullable BigDecimal platformFeeTotal) {
     this.platformFeeTotal = platformFeeTotal;
     return this;
   }
@@ -425,12 +449,12 @@ public class CreateContract201ResponseDataQuote {
     return platformFeeTotal;
   }
 
-  public void setPlatformFeeTotal(BigDecimal platformFeeTotal) {
+  public void setPlatformFeeTotal(@javax.annotation.Nullable BigDecimal platformFeeTotal) {
     this.platformFeeTotal = platformFeeTotal;
   }
 
 
-  public CreateContract201ResponseDataQuote employerCostTotal(BigDecimal employerCostTotal) {
+  public CreateContract201ResponseDataQuote employerCostTotal(@javax.annotation.Nullable BigDecimal employerCostTotal) {
     this.employerCostTotal = employerCostTotal;
     return this;
   }
@@ -444,12 +468,12 @@ public class CreateContract201ResponseDataQuote {
     return employerCostTotal;
   }
 
-  public void setEmployerCostTotal(BigDecimal employerCostTotal) {
+  public void setEmployerCostTotal(@javax.annotation.Nullable BigDecimal employerCostTotal) {
     this.employerCostTotal = employerCostTotal;
   }
 
 
-  public CreateContract201ResponseDataQuote grossSalaryTotalUsd(BigDecimal grossSalaryTotalUsd) {
+  public CreateContract201ResponseDataQuote grossSalaryTotalUsd(@javax.annotation.Nullable BigDecimal grossSalaryTotalUsd) {
     this.grossSalaryTotalUsd = grossSalaryTotalUsd;
     return this;
   }
@@ -463,12 +487,12 @@ public class CreateContract201ResponseDataQuote {
     return grossSalaryTotalUsd;
   }
 
-  public void setGrossSalaryTotalUsd(BigDecimal grossSalaryTotalUsd) {
+  public void setGrossSalaryTotalUsd(@javax.annotation.Nullable BigDecimal grossSalaryTotalUsd) {
     this.grossSalaryTotalUsd = grossSalaryTotalUsd;
   }
 
 
-  public CreateContract201ResponseDataQuote mobilityFeeTotalUsd(BigDecimal mobilityFeeTotalUsd) {
+  public CreateContract201ResponseDataQuote mobilityFeeTotalUsd(@javax.annotation.Nullable BigDecimal mobilityFeeTotalUsd) {
     this.mobilityFeeTotalUsd = mobilityFeeTotalUsd;
     return this;
   }
@@ -482,12 +506,12 @@ public class CreateContract201ResponseDataQuote {
     return mobilityFeeTotalUsd;
   }
 
-  public void setMobilityFeeTotalUsd(BigDecimal mobilityFeeTotalUsd) {
+  public void setMobilityFeeTotalUsd(@javax.annotation.Nullable BigDecimal mobilityFeeTotalUsd) {
     this.mobilityFeeTotalUsd = mobilityFeeTotalUsd;
   }
 
 
-  public CreateContract201ResponseDataQuote monthlyCostTotalUsd(BigDecimal monthlyCostTotalUsd) {
+  public CreateContract201ResponseDataQuote monthlyCostTotalUsd(@javax.annotation.Nullable BigDecimal monthlyCostTotalUsd) {
     this.monthlyCostTotalUsd = monthlyCostTotalUsd;
     return this;
   }
@@ -501,12 +525,12 @@ public class CreateContract201ResponseDataQuote {
     return monthlyCostTotalUsd;
   }
 
-  public void setMonthlyCostTotalUsd(BigDecimal monthlyCostTotalUsd) {
+  public void setMonthlyCostTotalUsd(@javax.annotation.Nullable BigDecimal monthlyCostTotalUsd) {
     this.monthlyCostTotalUsd = monthlyCostTotalUsd;
   }
 
 
-  public CreateContract201ResponseDataQuote platformFeeTotalUsd(BigDecimal platformFeeTotalUsd) {
+  public CreateContract201ResponseDataQuote platformFeeTotalUsd(@javax.annotation.Nullable BigDecimal platformFeeTotalUsd) {
     this.platformFeeTotalUsd = platformFeeTotalUsd;
     return this;
   }
@@ -520,12 +544,12 @@ public class CreateContract201ResponseDataQuote {
     return platformFeeTotalUsd;
   }
 
-  public void setPlatformFeeTotalUsd(BigDecimal platformFeeTotalUsd) {
+  public void setPlatformFeeTotalUsd(@javax.annotation.Nullable BigDecimal platformFeeTotalUsd) {
     this.platformFeeTotalUsd = platformFeeTotalUsd;
   }
 
 
-  public CreateContract201ResponseDataQuote employerCostTotalUsd(BigDecimal employerCostTotalUsd) {
+  public CreateContract201ResponseDataQuote employerCostTotalUsd(@javax.annotation.Nullable BigDecimal employerCostTotalUsd) {
     this.employerCostTotalUsd = employerCostTotalUsd;
     return this;
   }
@@ -539,12 +563,12 @@ public class CreateContract201ResponseDataQuote {
     return employerCostTotalUsd;
   }
 
-  public void setEmployerCostTotalUsd(BigDecimal employerCostTotalUsd) {
+  public void setEmployerCostTotalUsd(@javax.annotation.Nullable BigDecimal employerCostTotalUsd) {
     this.employerCostTotalUsd = employerCostTotalUsd;
   }
 
 
-  public CreateContract201ResponseDataQuote severanceAccrualTotal(BigDecimal severanceAccrualTotal) {
+  public CreateContract201ResponseDataQuote severanceAccrualTotal(@javax.annotation.Nullable BigDecimal severanceAccrualTotal) {
     this.severanceAccrualTotal = severanceAccrualTotal;
     return this;
   }
@@ -558,12 +582,12 @@ public class CreateContract201ResponseDataQuote {
     return severanceAccrualTotal;
   }
 
-  public void setSeveranceAccrualTotal(BigDecimal severanceAccrualTotal) {
+  public void setSeveranceAccrualTotal(@javax.annotation.Nullable BigDecimal severanceAccrualTotal) {
     this.severanceAccrualTotal = severanceAccrualTotal;
   }
 
 
-  public CreateContract201ResponseDataQuote recurringAllowanceTotal(BigDecimal recurringAllowanceTotal) {
+  public CreateContract201ResponseDataQuote recurringAllowanceTotal(@javax.annotation.Nullable BigDecimal recurringAllowanceTotal) {
     this.recurringAllowanceTotal = recurringAllowanceTotal;
     return this;
   }
@@ -577,12 +601,12 @@ public class CreateContract201ResponseDataQuote {
     return recurringAllowanceTotal;
   }
 
-  public void setRecurringAllowanceTotal(BigDecimal recurringAllowanceTotal) {
+  public void setRecurringAllowanceTotal(@javax.annotation.Nullable BigDecimal recurringAllowanceTotal) {
     this.recurringAllowanceTotal = recurringAllowanceTotal;
   }
 
 
-  public CreateContract201ResponseDataQuote severanceAccrualTotalUsd(BigDecimal severanceAccrualTotalUsd) {
+  public CreateContract201ResponseDataQuote severanceAccrualTotalUsd(@javax.annotation.Nullable BigDecimal severanceAccrualTotalUsd) {
     this.severanceAccrualTotalUsd = severanceAccrualTotalUsd;
     return this;
   }
@@ -596,12 +620,12 @@ public class CreateContract201ResponseDataQuote {
     return severanceAccrualTotalUsd;
   }
 
-  public void setSeveranceAccrualTotalUsd(BigDecimal severanceAccrualTotalUsd) {
+  public void setSeveranceAccrualTotalUsd(@javax.annotation.Nullable BigDecimal severanceAccrualTotalUsd) {
     this.severanceAccrualTotalUsd = severanceAccrualTotalUsd;
   }
 
 
-  public CreateContract201ResponseDataQuote recurringAllowanceTotalUsd(BigDecimal recurringAllowanceTotalUsd) {
+  public CreateContract201ResponseDataQuote recurringAllowanceTotalUsd(@javax.annotation.Nullable BigDecimal recurringAllowanceTotalUsd) {
     this.recurringAllowanceTotalUsd = recurringAllowanceTotalUsd;
     return this;
   }
@@ -615,7 +639,7 @@ public class CreateContract201ResponseDataQuote {
     return recurringAllowanceTotalUsd;
   }
 
-  public void setRecurringAllowanceTotalUsd(BigDecimal recurringAllowanceTotalUsd) {
+  public void setRecurringAllowanceTotalUsd(@javax.annotation.Nullable BigDecimal recurringAllowanceTotalUsd) {
     this.recurringAllowanceTotalUsd = recurringAllowanceTotalUsd;
   }
 

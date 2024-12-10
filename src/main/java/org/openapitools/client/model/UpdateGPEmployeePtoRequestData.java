@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * UpdateGPEmployeePtoRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateGPEmployeePtoRequestData {
   public static final String SERIALIZED_NAME_YEARLY_ALLOWANCE = "yearly_allowance";
   @SerializedName(SERIALIZED_NAME_YEARLY_ALLOWANCE)
+  @javax.annotation.Nonnull
   private String yearlyAllowance;
 
   public static final String SERIALIZED_NAME_ACCRUAL_START_DATE = "accrual_start_date";
   @SerializedName(SERIALIZED_NAME_ACCRUAL_START_DATE)
+  @javax.annotation.Nonnull
   private LocalDate accrualStartDate;
 
   public UpdateGPEmployeePtoRequestData() {
   }
 
-  public UpdateGPEmployeePtoRequestData yearlyAllowance(String yearlyAllowance) {
+  public UpdateGPEmployeePtoRequestData yearlyAllowance(@javax.annotation.Nonnull String yearlyAllowance) {
     this.yearlyAllowance = yearlyAllowance;
     return this;
   }
@@ -76,12 +78,12 @@ public class UpdateGPEmployeePtoRequestData {
     return yearlyAllowance;
   }
 
-  public void setYearlyAllowance(String yearlyAllowance) {
+  public void setYearlyAllowance(@javax.annotation.Nonnull String yearlyAllowance) {
     this.yearlyAllowance = yearlyAllowance;
   }
 
 
-  public UpdateGPEmployeePtoRequestData accrualStartDate(LocalDate accrualStartDate) {
+  public UpdateGPEmployeePtoRequestData accrualStartDate(@javax.annotation.Nonnull LocalDate accrualStartDate) {
     this.accrualStartDate = accrualStartDate;
     return this;
   }
@@ -95,7 +97,7 @@ public class UpdateGPEmployeePtoRequestData {
     return accrualStartDate;
   }
 
-  public void setAccrualStartDate(LocalDate accrualStartDate) {
+  public void setAccrualStartDate(@javax.annotation.Nonnull LocalDate accrualStartDate) {
     this.accrualStartDate = accrualStartDate;
   }
 

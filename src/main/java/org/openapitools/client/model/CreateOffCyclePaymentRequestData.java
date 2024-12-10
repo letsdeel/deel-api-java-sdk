@@ -50,24 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * CreateOffCyclePaymentRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateOffCyclePaymentRequestData {
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_DATE_SUBMITTED = "date_submitted";
   @SerializedName(SERIALIZED_NAME_DATE_SUBMITTED)
+  @javax.annotation.Nonnull
   private LocalDate dateSubmitted;
 
   public CreateOffCyclePaymentRequestData() {
   }
 
-  public CreateOffCyclePaymentRequestData amount(BigDecimal amount) {
+  public CreateOffCyclePaymentRequestData amount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -82,12 +85,12 @@ public class CreateOffCyclePaymentRequestData {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public CreateOffCyclePaymentRequestData description(String description) {
+  public CreateOffCyclePaymentRequestData description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -101,12 +104,12 @@ public class CreateOffCyclePaymentRequestData {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public CreateOffCyclePaymentRequestData dateSubmitted(LocalDate dateSubmitted) {
+  public CreateOffCyclePaymentRequestData dateSubmitted(@javax.annotation.Nonnull LocalDate dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
     return this;
   }
@@ -120,7 +123,7 @@ public class CreateOffCyclePaymentRequestData {
     return dateSubmitted;
   }
 
-  public void setDateSubmitted(LocalDate dateSubmitted) {
+  public void setDateSubmitted(@javax.annotation.Nonnull LocalDate dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
   }
 

@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * CustomFieldsObjectTypeOneOf1
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CustomFieldsObjectTypeOneOf1 {
   /**
    * Currency type
@@ -102,20 +102,23 @@ public class CustomFieldsObjectTypeOneOf1 {
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private NameEnum name;
 
   public static final String SERIALIZED_NAME_IS_FIXED = "isFixed";
   @SerializedName(SERIALIZED_NAME_IS_FIXED)
+  @javax.annotation.Nullable
   private Boolean isFixed;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public CustomFieldsObjectTypeOneOf1() {
   }
 
-  public CustomFieldsObjectTypeOneOf1 name(NameEnum name) {
+  public CustomFieldsObjectTypeOneOf1 name(@javax.annotation.Nullable NameEnum name) {
     this.name = name;
     return this;
   }
@@ -129,12 +132,12 @@ public class CustomFieldsObjectTypeOneOf1 {
     return name;
   }
 
-  public void setName(NameEnum name) {
+  public void setName(@javax.annotation.Nullable NameEnum name) {
     this.name = name;
   }
 
 
-  public CustomFieldsObjectTypeOneOf1 isFixed(Boolean isFixed) {
+  public CustomFieldsObjectTypeOneOf1 isFixed(@javax.annotation.Nullable Boolean isFixed) {
     this.isFixed = isFixed;
     return this;
   }
@@ -148,12 +151,12 @@ public class CustomFieldsObjectTypeOneOf1 {
     return isFixed;
   }
 
-  public void setIsFixed(Boolean isFixed) {
+  public void setIsFixed(@javax.annotation.Nullable Boolean isFixed) {
     this.isFixed = isFixed;
   }
 
 
-  public CustomFieldsObjectTypeOneOf1 currency(String currency) {
+  public CustomFieldsObjectTypeOneOf1 currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -167,7 +170,7 @@ public class CustomFieldsObjectTypeOneOf1 {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 

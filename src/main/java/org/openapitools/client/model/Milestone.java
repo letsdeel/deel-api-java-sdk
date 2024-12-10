@@ -51,48 +51,57 @@ import org.openapitools.client.JSON;
 /**
  * Milestone
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Milestone {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private String amount;
 
   public static final String SERIALIZED_NAME_APPROVAL_REQUESTED = "approval_requested";
   @SerializedName(SERIALIZED_NAME_APPROVAL_REQUESTED)
+  @javax.annotation.Nonnull
   private Boolean approvalRequested;
 
   public static final String SERIALIZED_NAME_REVIEWED_BY = "reviewed_by";
   @SerializedName(SERIALIZED_NAME_REVIEWED_BY)
+  @javax.annotation.Nullable
   private MilestoneReviewedBy reviewedBy;
 
   public static final String SERIALIZED_NAME_REPORTED_BY = "reported_by";
   @SerializedName(SERIALIZED_NAME_REPORTED_BY)
+  @javax.annotation.Nonnull
   private MilestoneReportedBy reportedBy;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nonnull
   private String title;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private String status;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public Milestone() {
   }
 
-  public Milestone id(String id) {
+  public Milestone id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -106,12 +115,12 @@ public class Milestone {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public Milestone amount(String amount) {
+  public Milestone amount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
     return this;
   }
@@ -125,12 +134,12 @@ public class Milestone {
     return amount;
   }
 
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
   }
 
 
-  public Milestone approvalRequested(Boolean approvalRequested) {
+  public Milestone approvalRequested(@javax.annotation.Nonnull Boolean approvalRequested) {
     this.approvalRequested = approvalRequested;
     return this;
   }
@@ -144,12 +153,12 @@ public class Milestone {
     return approvalRequested;
   }
 
-  public void setApprovalRequested(Boolean approvalRequested) {
+  public void setApprovalRequested(@javax.annotation.Nonnull Boolean approvalRequested) {
     this.approvalRequested = approvalRequested;
   }
 
 
-  public Milestone reviewedBy(MilestoneReviewedBy reviewedBy) {
+  public Milestone reviewedBy(@javax.annotation.Nullable MilestoneReviewedBy reviewedBy) {
     this.reviewedBy = reviewedBy;
     return this;
   }
@@ -163,12 +172,12 @@ public class Milestone {
     return reviewedBy;
   }
 
-  public void setReviewedBy(MilestoneReviewedBy reviewedBy) {
+  public void setReviewedBy(@javax.annotation.Nullable MilestoneReviewedBy reviewedBy) {
     this.reviewedBy = reviewedBy;
   }
 
 
-  public Milestone reportedBy(MilestoneReportedBy reportedBy) {
+  public Milestone reportedBy(@javax.annotation.Nonnull MilestoneReportedBy reportedBy) {
     this.reportedBy = reportedBy;
     return this;
   }
@@ -182,12 +191,12 @@ public class Milestone {
     return reportedBy;
   }
 
-  public void setReportedBy(MilestoneReportedBy reportedBy) {
+  public void setReportedBy(@javax.annotation.Nonnull MilestoneReportedBy reportedBy) {
     this.reportedBy = reportedBy;
   }
 
 
-  public Milestone title(String title) {
+  public Milestone title(@javax.annotation.Nonnull String title) {
     this.title = title;
     return this;
   }
@@ -201,12 +210,12 @@ public class Milestone {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nonnull String title) {
     this.title = title;
   }
 
 
-  public Milestone description(String description) {
+  public Milestone description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -220,12 +229,12 @@ public class Milestone {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public Milestone status(String status) {
+  public Milestone status(@javax.annotation.Nonnull String status) {
     this.status = status;
     return this;
   }
@@ -239,12 +248,12 @@ public class Milestone {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nonnull String status) {
     this.status = status;
   }
 
 
-  public Milestone createdAt(OffsetDateTime createdAt) {
+  public Milestone createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -258,7 +267,7 @@ public class Milestone {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 

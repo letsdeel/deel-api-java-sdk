@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * BasicInvoiceAdjustmentPaymentCycle
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BasicInvoiceAdjustmentPaymentCycle {
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime endDate;
 
   public BasicInvoiceAdjustmentPaymentCycle() {
   }
 
-  public BasicInvoiceAdjustmentPaymentCycle startDate(OffsetDateTime startDate) {
+  public BasicInvoiceAdjustmentPaymentCycle startDate(@javax.annotation.Nonnull OffsetDateTime startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -76,12 +78,12 @@ public class BasicInvoiceAdjustmentPaymentCycle {
     return startDate;
   }
 
-  public void setStartDate(OffsetDateTime startDate) {
+  public void setStartDate(@javax.annotation.Nonnull OffsetDateTime startDate) {
     this.startDate = startDate;
   }
 
 
-  public BasicInvoiceAdjustmentPaymentCycle endDate(OffsetDateTime endDate) {
+  public BasicInvoiceAdjustmentPaymentCycle endDate(@javax.annotation.Nonnull OffsetDateTime endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -95,7 +97,7 @@ public class BasicInvoiceAdjustmentPaymentCycle {
     return endDate;
   }
 
-  public void setEndDate(OffsetDateTime endDate) {
+  public void setEndDate(@javax.annotation.Nonnull OffsetDateTime endDate) {
     this.endDate = endDate;
   }
 

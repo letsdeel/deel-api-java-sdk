@@ -51,20 +51,22 @@ import org.openapitools.client.JSON;
 /**
  * PaymentStatementInitiatedWebhook
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PaymentStatementInitiatedWebhook {
   public static final String SERIALIZED_NAME_BILLING_INVOICES = "billing_invoices";
   @SerializedName(SERIALIZED_NAME_BILLING_INVOICES)
+  @javax.annotation.Nonnull
   private List<BigDecimal> billingInvoices = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_INVOICES = "invoices";
   @SerializedName(SERIALIZED_NAME_INVOICES)
+  @javax.annotation.Nonnull
   private List<BigDecimal> invoices = new ArrayList<>();
 
   public PaymentStatementInitiatedWebhook() {
   }
 
-  public PaymentStatementInitiatedWebhook billingInvoices(List<BigDecimal> billingInvoices) {
+  public PaymentStatementInitiatedWebhook billingInvoices(@javax.annotation.Nonnull List<BigDecimal> billingInvoices) {
     this.billingInvoices = billingInvoices;
     return this;
   }
@@ -86,12 +88,12 @@ public class PaymentStatementInitiatedWebhook {
     return billingInvoices;
   }
 
-  public void setBillingInvoices(List<BigDecimal> billingInvoices) {
+  public void setBillingInvoices(@javax.annotation.Nonnull List<BigDecimal> billingInvoices) {
     this.billingInvoices = billingInvoices;
   }
 
 
-  public PaymentStatementInitiatedWebhook invoices(List<BigDecimal> invoices) {
+  public PaymentStatementInitiatedWebhook invoices(@javax.annotation.Nonnull List<BigDecimal> invoices) {
     this.invoices = invoices;
     return this;
   }
@@ -113,7 +115,7 @@ public class PaymentStatementInitiatedWebhook {
     return invoices;
   }
 
-  public void setInvoices(List<BigDecimal> invoices) {
+  public void setInvoices(@javax.annotation.Nonnull List<BigDecimal> invoices) {
     this.invoices = invoices;
   }
 

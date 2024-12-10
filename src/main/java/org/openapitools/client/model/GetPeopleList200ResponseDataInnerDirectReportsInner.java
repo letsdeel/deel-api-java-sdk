@@ -48,28 +48,32 @@ import org.openapitools.client.JSON;
 /**
  * GetPeopleList200ResponseDataInnerDirectReportsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPeopleList200ResponseDataInnerDirectReportsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_WORK_EMAIL = "work_email";
   @SerializedName(SERIALIZED_NAME_WORK_EMAIL)
+  @javax.annotation.Nullable
   private String workEmail;
 
   public GetPeopleList200ResponseDataInnerDirectReportsInner() {
   }
 
-  public GetPeopleList200ResponseDataInnerDirectReportsInner id(String id) {
+  public GetPeopleList200ResponseDataInnerDirectReportsInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -83,12 +87,12 @@ public class GetPeopleList200ResponseDataInnerDirectReportsInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public GetPeopleList200ResponseDataInnerDirectReportsInner lastName(String lastName) {
+  public GetPeopleList200ResponseDataInnerDirectReportsInner lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -102,12 +106,12 @@ public class GetPeopleList200ResponseDataInnerDirectReportsInner {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
 
-  public GetPeopleList200ResponseDataInnerDirectReportsInner firstName(String firstName) {
+  public GetPeopleList200ResponseDataInnerDirectReportsInner firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -121,12 +125,12 @@ public class GetPeopleList200ResponseDataInnerDirectReportsInner {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public GetPeopleList200ResponseDataInnerDirectReportsInner workEmail(String workEmail) {
+  public GetPeopleList200ResponseDataInnerDirectReportsInner workEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
     return this;
   }
@@ -140,7 +144,7 @@ public class GetPeopleList200ResponseDataInnerDirectReportsInner {
     return workEmail;
   }
 
-  public void setWorkEmail(String workEmail) {
+  public void setWorkEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
   }
 

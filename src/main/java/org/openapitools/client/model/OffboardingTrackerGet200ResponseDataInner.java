@@ -53,48 +53,57 @@ import org.openapitools.client.JSON;
 /**
  * OffboardingTrackerGet200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffboardingTrackerGet200ResponseDataInner {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_CONTRACT = "contract";
   @SerializedName(SERIALIZED_NAME_CONTRACT)
+  @javax.annotation.Nullable
   private OffboardingTrackerGet200ResponseDataInnerContract contract;
 
   public static final String SERIALIZED_NAME_PROGRESS = "progress";
   @SerializedName(SERIALIZED_NAME_PROGRESS)
+  @javax.annotation.Nullable
   private OffboardingTrackerGet200ResponseDataInnerProgress progress;
 
   public static final String SERIALIZED_NAME_UNIQUE_ID = "unique_id";
   @SerializedName(SERIALIZED_NAME_UNIQUE_ID)
+  @javax.annotation.Nullable
   private String uniqueId;
 
   public static final String SERIALIZED_NAME_HIRING_TYPE = "hiring_type";
   @SerializedName(SERIALIZED_NAME_HIRING_TYPE)
+  @javax.annotation.Nullable
   private String hiringType;
 
   public static final String SERIALIZED_NAME_HRIS_PROFILE = "hris_profile";
   @SerializedName(SERIALIZED_NAME_HRIS_PROFILE)
+  @javax.annotation.Nullable
   private OffboardingTrackerGet200ResponseDataInnerHrisProfile hrisProfile;
 
   public static final String SERIALIZED_NAME_APP_EXPERIENCE = "app_experience";
   @SerializedName(SERIALIZED_NAME_APP_EXPERIENCE)
+  @javax.annotation.Nullable
   private OffboardingTrackerIdGet200ResponseDataAppExperience appExperience;
 
   public static final String SERIALIZED_NAME_TERMINATION_ID = "termination_id";
   @SerializedName(SERIALIZED_NAME_TERMINATION_ID)
+  @javax.annotation.Nullable
   private String terminationId;
 
   public static final String SERIALIZED_NAME_OFFBOARDING_TYPE = "offboarding_type";
   @SerializedName(SERIALIZED_NAME_OFFBOARDING_TYPE)
+  @javax.annotation.Nullable
   private String offboardingType;
 
   public OffboardingTrackerGet200ResponseDataInner() {
   }
 
-  public OffboardingTrackerGet200ResponseDataInner name(String name) {
+  public OffboardingTrackerGet200ResponseDataInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -108,12 +117,12 @@ public class OffboardingTrackerGet200ResponseDataInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public OffboardingTrackerGet200ResponseDataInner contract(OffboardingTrackerGet200ResponseDataInnerContract contract) {
+  public OffboardingTrackerGet200ResponseDataInner contract(@javax.annotation.Nullable OffboardingTrackerGet200ResponseDataInnerContract contract) {
     this.contract = contract;
     return this;
   }
@@ -127,12 +136,12 @@ public class OffboardingTrackerGet200ResponseDataInner {
     return contract;
   }
 
-  public void setContract(OffboardingTrackerGet200ResponseDataInnerContract contract) {
+  public void setContract(@javax.annotation.Nullable OffboardingTrackerGet200ResponseDataInnerContract contract) {
     this.contract = contract;
   }
 
 
-  public OffboardingTrackerGet200ResponseDataInner progress(OffboardingTrackerGet200ResponseDataInnerProgress progress) {
+  public OffboardingTrackerGet200ResponseDataInner progress(@javax.annotation.Nullable OffboardingTrackerGet200ResponseDataInnerProgress progress) {
     this.progress = progress;
     return this;
   }
@@ -146,12 +155,12 @@ public class OffboardingTrackerGet200ResponseDataInner {
     return progress;
   }
 
-  public void setProgress(OffboardingTrackerGet200ResponseDataInnerProgress progress) {
+  public void setProgress(@javax.annotation.Nullable OffboardingTrackerGet200ResponseDataInnerProgress progress) {
     this.progress = progress;
   }
 
 
-  public OffboardingTrackerGet200ResponseDataInner uniqueId(String uniqueId) {
+  public OffboardingTrackerGet200ResponseDataInner uniqueId(@javax.annotation.Nullable String uniqueId) {
     this.uniqueId = uniqueId;
     return this;
   }
@@ -165,12 +174,12 @@ public class OffboardingTrackerGet200ResponseDataInner {
     return uniqueId;
   }
 
-  public void setUniqueId(String uniqueId) {
+  public void setUniqueId(@javax.annotation.Nullable String uniqueId) {
     this.uniqueId = uniqueId;
   }
 
 
-  public OffboardingTrackerGet200ResponseDataInner hiringType(String hiringType) {
+  public OffboardingTrackerGet200ResponseDataInner hiringType(@javax.annotation.Nullable String hiringType) {
     this.hiringType = hiringType;
     return this;
   }
@@ -184,12 +193,12 @@ public class OffboardingTrackerGet200ResponseDataInner {
     return hiringType;
   }
 
-  public void setHiringType(String hiringType) {
+  public void setHiringType(@javax.annotation.Nullable String hiringType) {
     this.hiringType = hiringType;
   }
 
 
-  public OffboardingTrackerGet200ResponseDataInner hrisProfile(OffboardingTrackerGet200ResponseDataInnerHrisProfile hrisProfile) {
+  public OffboardingTrackerGet200ResponseDataInner hrisProfile(@javax.annotation.Nullable OffboardingTrackerGet200ResponseDataInnerHrisProfile hrisProfile) {
     this.hrisProfile = hrisProfile;
     return this;
   }
@@ -203,12 +212,12 @@ public class OffboardingTrackerGet200ResponseDataInner {
     return hrisProfile;
   }
 
-  public void setHrisProfile(OffboardingTrackerGet200ResponseDataInnerHrisProfile hrisProfile) {
+  public void setHrisProfile(@javax.annotation.Nullable OffboardingTrackerGet200ResponseDataInnerHrisProfile hrisProfile) {
     this.hrisProfile = hrisProfile;
   }
 
 
-  public OffboardingTrackerGet200ResponseDataInner appExperience(OffboardingTrackerIdGet200ResponseDataAppExperience appExperience) {
+  public OffboardingTrackerGet200ResponseDataInner appExperience(@javax.annotation.Nullable OffboardingTrackerIdGet200ResponseDataAppExperience appExperience) {
     this.appExperience = appExperience;
     return this;
   }
@@ -222,12 +231,12 @@ public class OffboardingTrackerGet200ResponseDataInner {
     return appExperience;
   }
 
-  public void setAppExperience(OffboardingTrackerIdGet200ResponseDataAppExperience appExperience) {
+  public void setAppExperience(@javax.annotation.Nullable OffboardingTrackerIdGet200ResponseDataAppExperience appExperience) {
     this.appExperience = appExperience;
   }
 
 
-  public OffboardingTrackerGet200ResponseDataInner terminationId(String terminationId) {
+  public OffboardingTrackerGet200ResponseDataInner terminationId(@javax.annotation.Nullable String terminationId) {
     this.terminationId = terminationId;
     return this;
   }
@@ -241,12 +250,12 @@ public class OffboardingTrackerGet200ResponseDataInner {
     return terminationId;
   }
 
-  public void setTerminationId(String terminationId) {
+  public void setTerminationId(@javax.annotation.Nullable String terminationId) {
     this.terminationId = terminationId;
   }
 
 
-  public OffboardingTrackerGet200ResponseDataInner offboardingType(String offboardingType) {
+  public OffboardingTrackerGet200ResponseDataInner offboardingType(@javax.annotation.Nullable String offboardingType) {
     this.offboardingType = offboardingType;
     return this;
   }
@@ -260,7 +269,7 @@ public class OffboardingTrackerGet200ResponseDataInner {
     return offboardingType;
   }
 
-  public void setOffboardingType(String offboardingType) {
+  public void setOffboardingType(@javax.annotation.Nullable String offboardingType) {
     this.offboardingType = offboardingType;
   }
 

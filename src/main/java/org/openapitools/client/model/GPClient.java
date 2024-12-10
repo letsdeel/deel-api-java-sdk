@@ -21,8 +21,8 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import org.openapitools.client.model.EorContractToCreateClientTeam;
 import org.openapitools.client.model.GPClientLegalEntity;
-import org.openapitools.client.model.GPClientTeam;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * GPClient
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GPClient {
   public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
+  @javax.annotation.Nonnull
   private GPClientLegalEntity legalEntity;
 
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
-  private GPClientTeam team;
+  @javax.annotation.Nonnull
+  private EorContractToCreateClientTeam team;
 
   public GPClient() {
   }
 
-  public GPClient legalEntity(GPClientLegalEntity legalEntity) {
+  public GPClient legalEntity(@javax.annotation.Nonnull GPClientLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
     return this;
   }
@@ -77,12 +79,12 @@ public class GPClient {
     return legalEntity;
   }
 
-  public void setLegalEntity(GPClientLegalEntity legalEntity) {
+  public void setLegalEntity(@javax.annotation.Nonnull GPClientLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
   }
 
 
-  public GPClient team(GPClientTeam team) {
+  public GPClient team(@javax.annotation.Nonnull EorContractToCreateClientTeam team) {
     this.team = team;
     return this;
   }
@@ -92,11 +94,11 @@ public class GPClient {
    * @return team
    */
   @javax.annotation.Nonnull
-  public GPClientTeam getTeam() {
+  public EorContractToCreateClientTeam getTeam() {
     return team;
   }
 
-  public void setTeam(GPClientTeam team) {
+  public void setTeam(@javax.annotation.Nonnull EorContractToCreateClientTeam team) {
     this.team = team;
   }
 
@@ -188,7 +190,7 @@ public class GPClient {
       // validate the required field `legal_entity`
       GPClientLegalEntity.validateJsonElement(jsonObj.get("legal_entity"));
       // validate the required field `team`
-      GPClientTeam.validateJsonElement(jsonObj.get("team"));
+      EorContractToCreateClientTeam.validateJsonElement(jsonObj.get("team"));
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

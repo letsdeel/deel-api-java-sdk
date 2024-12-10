@@ -49,40 +49,47 @@ import org.openapitools.client.JSON;
 /**
  * ClientLegalEntity
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ClientLegalEntity {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private LegalEntityType type;
 
   public static final String SERIALIZED_NAME_SUBTYPE = "subtype";
   @SerializedName(SERIALIZED_NAME_SUBTYPE)
+  @javax.annotation.Nonnull
   private String subtype;
 
   public static final String SERIALIZED_NAME_REGISTRATION_NUMBER = "registration_number";
   @SerializedName(SERIALIZED_NAME_REGISTRATION_NUMBER)
+  @javax.annotation.Nonnull
   private String registrationNumber;
 
   public static final String SERIALIZED_NAME_VAT_NUMBER = "vat_number";
   @SerializedName(SERIALIZED_NAME_VAT_NUMBER)
+  @javax.annotation.Nonnull
   private String vatNumber;
 
   public ClientLegalEntity() {
   }
 
-  public ClientLegalEntity id(String id) {
+  public ClientLegalEntity id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -96,12 +103,12 @@ public class ClientLegalEntity {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public ClientLegalEntity name(String name) {
+  public ClientLegalEntity name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -115,12 +122,12 @@ public class ClientLegalEntity {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public ClientLegalEntity email(String email) {
+  public ClientLegalEntity email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -134,12 +141,12 @@ public class ClientLegalEntity {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public ClientLegalEntity type(LegalEntityType type) {
+  public ClientLegalEntity type(@javax.annotation.Nonnull LegalEntityType type) {
     this.type = type;
     return this;
   }
@@ -153,12 +160,12 @@ public class ClientLegalEntity {
     return type;
   }
 
-  public void setType(LegalEntityType type) {
+  public void setType(@javax.annotation.Nonnull LegalEntityType type) {
     this.type = type;
   }
 
 
-  public ClientLegalEntity subtype(String subtype) {
+  public ClientLegalEntity subtype(@javax.annotation.Nonnull String subtype) {
     this.subtype = subtype;
     return this;
   }
@@ -172,12 +179,12 @@ public class ClientLegalEntity {
     return subtype;
   }
 
-  public void setSubtype(String subtype) {
+  public void setSubtype(@javax.annotation.Nonnull String subtype) {
     this.subtype = subtype;
   }
 
 
-  public ClientLegalEntity registrationNumber(String registrationNumber) {
+  public ClientLegalEntity registrationNumber(@javax.annotation.Nonnull String registrationNumber) {
     this.registrationNumber = registrationNumber;
     return this;
   }
@@ -191,12 +198,12 @@ public class ClientLegalEntity {
     return registrationNumber;
   }
 
-  public void setRegistrationNumber(String registrationNumber) {
+  public void setRegistrationNumber(@javax.annotation.Nonnull String registrationNumber) {
     this.registrationNumber = registrationNumber;
   }
 
 
-  public ClientLegalEntity vatNumber(String vatNumber) {
+  public ClientLegalEntity vatNumber(@javax.annotation.Nonnull String vatNumber) {
     this.vatNumber = vatNumber;
     return this;
   }
@@ -210,7 +217,7 @@ public class ClientLegalEntity {
     return vatNumber;
   }
 
-  public void setVatNumber(String vatNumber) {
+  public void setVatNumber(@javax.annotation.Nonnull String vatNumber) {
     this.vatNumber = vatNumber;
   }
 

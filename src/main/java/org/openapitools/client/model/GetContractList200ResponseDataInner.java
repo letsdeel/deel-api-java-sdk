@@ -55,10 +55,11 @@ import org.openapitools.client.JSON;
 /**
  * GetContractList200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractList200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   /**
@@ -137,18 +138,22 @@ public class GetContractList200ResponseDataInner {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nullable
   private String scale;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nonnull
   private String title;
 
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
+  @javax.annotation.Nonnull
   private GetContractList200ResponseDataInnerClient client;
 
   /**
@@ -231,34 +236,42 @@ public class GetContractList200ResponseDataInner {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_WORKER = "worker";
   @SerializedName(SERIALIZED_NAME_WORKER)
+  @javax.annotation.Nullable
   private GetContractList200ResponseDataInnerWorker worker;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_SIGNATURES = "signatures";
   @SerializedName(SERIALIZED_NAME_SIGNATURES)
+  @javax.annotation.Nonnull
   private GetContractList200ResponseDataInnerSignatures signatures;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_INVITATIONS = "invitations";
   @SerializedName(SERIALIZED_NAME_INVITATIONS)
+  @javax.annotation.Nonnull
   private GetContractList200ResponseDataInnerInvitations invitations;
 
   public static final String SERIALIZED_NAME_IS_ARCHIVED = "is_archived";
   @SerializedName(SERIALIZED_NAME_IS_ARCHIVED)
+  @javax.annotation.Nonnull
   private Boolean isArchived;
 
   public static final String SERIALIZED_NAME_IS_SHIELDED = "is_shielded";
   @SerializedName(SERIALIZED_NAME_IS_SHIELDED)
+  @javax.annotation.Nonnull
   private Boolean isShielded;
 
   /**
@@ -317,20 +330,23 @@ public class GetContractList200ResponseDataInner {
 
   public static final String SERIALIZED_NAME_WHO_REPORTS = "who_reports";
   @SerializedName(SERIALIZED_NAME_WHO_REPORTS)
+  @javax.annotation.Nullable
   private WhoReportsEnum whoReports;
 
   public static final String SERIALIZED_NAME_NOTICE_PERIOD = "notice_period";
   @SerializedName(SERIALIZED_NAME_NOTICE_PERIOD)
+  @javax.annotation.Nullable
   private BigDecimal noticePeriod = new BigDecimal("0");
 
   public static final String SERIALIZED_NAME_TERMINATION_DATE = "termination_date";
   @SerializedName(SERIALIZED_NAME_TERMINATION_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime terminationDate;
 
   public GetContractList200ResponseDataInner() {
   }
 
-  public GetContractList200ResponseDataInner id(String id) {
+  public GetContractList200ResponseDataInner id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -344,12 +360,12 @@ public class GetContractList200ResponseDataInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public GetContractList200ResponseDataInner type(TypeEnum type) {
+  public GetContractList200ResponseDataInner type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -363,12 +379,12 @@ public class GetContractList200ResponseDataInner {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public GetContractList200ResponseDataInner scale(String scale) {
+  public GetContractList200ResponseDataInner scale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
     return this;
   }
@@ -382,12 +398,12 @@ public class GetContractList200ResponseDataInner {
     return scale;
   }
 
-  public void setScale(String scale) {
+  public void setScale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
   }
 
 
-  public GetContractList200ResponseDataInner title(String title) {
+  public GetContractList200ResponseDataInner title(@javax.annotation.Nonnull String title) {
     this.title = title;
     return this;
   }
@@ -401,12 +417,12 @@ public class GetContractList200ResponseDataInner {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nonnull String title) {
     this.title = title;
   }
 
 
-  public GetContractList200ResponseDataInner client(GetContractList200ResponseDataInnerClient client) {
+  public GetContractList200ResponseDataInner client(@javax.annotation.Nonnull GetContractList200ResponseDataInnerClient client) {
     this.client = client;
     return this;
   }
@@ -420,12 +436,12 @@ public class GetContractList200ResponseDataInner {
     return client;
   }
 
-  public void setClient(GetContractList200ResponseDataInnerClient client) {
+  public void setClient(@javax.annotation.Nonnull GetContractList200ResponseDataInnerClient client) {
     this.client = client;
   }
 
 
-  public GetContractList200ResponseDataInner status(StatusEnum status) {
+  public GetContractList200ResponseDataInner status(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -439,12 +455,12 @@ public class GetContractList200ResponseDataInner {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 
 
-  public GetContractList200ResponseDataInner worker(GetContractList200ResponseDataInnerWorker worker) {
+  public GetContractList200ResponseDataInner worker(@javax.annotation.Nullable GetContractList200ResponseDataInnerWorker worker) {
     this.worker = worker;
     return this;
   }
@@ -458,12 +474,12 @@ public class GetContractList200ResponseDataInner {
     return worker;
   }
 
-  public void setWorker(GetContractList200ResponseDataInnerWorker worker) {
+  public void setWorker(@javax.annotation.Nullable GetContractList200ResponseDataInnerWorker worker) {
     this.worker = worker;
   }
 
 
-  public GetContractList200ResponseDataInner createdAt(OffsetDateTime createdAt) {
+  public GetContractList200ResponseDataInner createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -477,12 +493,12 @@ public class GetContractList200ResponseDataInner {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public GetContractList200ResponseDataInner signatures(GetContractList200ResponseDataInnerSignatures signatures) {
+  public GetContractList200ResponseDataInner signatures(@javax.annotation.Nonnull GetContractList200ResponseDataInnerSignatures signatures) {
     this.signatures = signatures;
     return this;
   }
@@ -496,12 +512,12 @@ public class GetContractList200ResponseDataInner {
     return signatures;
   }
 
-  public void setSignatures(GetContractList200ResponseDataInnerSignatures signatures) {
+  public void setSignatures(@javax.annotation.Nonnull GetContractList200ResponseDataInnerSignatures signatures) {
     this.signatures = signatures;
   }
 
 
-  public GetContractList200ResponseDataInner externalId(String externalId) {
+  public GetContractList200ResponseDataInner externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -515,12 +531,12 @@ public class GetContractList200ResponseDataInner {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public GetContractList200ResponseDataInner invitations(GetContractList200ResponseDataInnerInvitations invitations) {
+  public GetContractList200ResponseDataInner invitations(@javax.annotation.Nonnull GetContractList200ResponseDataInnerInvitations invitations) {
     this.invitations = invitations;
     return this;
   }
@@ -534,12 +550,12 @@ public class GetContractList200ResponseDataInner {
     return invitations;
   }
 
-  public void setInvitations(GetContractList200ResponseDataInnerInvitations invitations) {
+  public void setInvitations(@javax.annotation.Nonnull GetContractList200ResponseDataInnerInvitations invitations) {
     this.invitations = invitations;
   }
 
 
-  public GetContractList200ResponseDataInner isArchived(Boolean isArchived) {
+  public GetContractList200ResponseDataInner isArchived(@javax.annotation.Nonnull Boolean isArchived) {
     this.isArchived = isArchived;
     return this;
   }
@@ -553,12 +569,12 @@ public class GetContractList200ResponseDataInner {
     return isArchived;
   }
 
-  public void setIsArchived(Boolean isArchived) {
+  public void setIsArchived(@javax.annotation.Nonnull Boolean isArchived) {
     this.isArchived = isArchived;
   }
 
 
-  public GetContractList200ResponseDataInner isShielded(Boolean isShielded) {
+  public GetContractList200ResponseDataInner isShielded(@javax.annotation.Nonnull Boolean isShielded) {
     this.isShielded = isShielded;
     return this;
   }
@@ -572,12 +588,12 @@ public class GetContractList200ResponseDataInner {
     return isShielded;
   }
 
-  public void setIsShielded(Boolean isShielded) {
+  public void setIsShielded(@javax.annotation.Nonnull Boolean isShielded) {
     this.isShielded = isShielded;
   }
 
 
-  public GetContractList200ResponseDataInner whoReports(WhoReportsEnum whoReports) {
+  public GetContractList200ResponseDataInner whoReports(@javax.annotation.Nullable WhoReportsEnum whoReports) {
     this.whoReports = whoReports;
     return this;
   }
@@ -591,12 +607,12 @@ public class GetContractList200ResponseDataInner {
     return whoReports;
   }
 
-  public void setWhoReports(WhoReportsEnum whoReports) {
+  public void setWhoReports(@javax.annotation.Nullable WhoReportsEnum whoReports) {
     this.whoReports = whoReports;
   }
 
 
-  public GetContractList200ResponseDataInner noticePeriod(BigDecimal noticePeriod) {
+  public GetContractList200ResponseDataInner noticePeriod(@javax.annotation.Nullable BigDecimal noticePeriod) {
     this.noticePeriod = noticePeriod;
     return this;
   }
@@ -611,12 +627,12 @@ public class GetContractList200ResponseDataInner {
     return noticePeriod;
   }
 
-  public void setNoticePeriod(BigDecimal noticePeriod) {
+  public void setNoticePeriod(@javax.annotation.Nullable BigDecimal noticePeriod) {
     this.noticePeriod = noticePeriod;
   }
 
 
-  public GetContractList200ResponseDataInner terminationDate(OffsetDateTime terminationDate) {
+  public GetContractList200ResponseDataInner terminationDate(@javax.annotation.Nullable OffsetDateTime terminationDate) {
     this.terminationDate = terminationDate;
     return this;
   }
@@ -630,7 +646,7 @@ public class GetContractList200ResponseDataInner {
     return terminationDate;
   }
 
-  public void setTerminationDate(OffsetDateTime terminationDate) {
+  public void setTerminationDate(@javax.annotation.Nullable OffsetDateTime terminationDate) {
     this.terminationDate = terminationDate;
   }
 

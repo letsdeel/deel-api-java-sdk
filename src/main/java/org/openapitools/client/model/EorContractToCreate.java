@@ -56,52 +56,62 @@ import org.openapitools.client.JSON;
 /**
  * EorContractToCreate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorContractToCreate {
   public static final String SERIALIZED_NAME_EMPLOYEE = "employee";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE)
+  @javax.annotation.Nonnull
   private EorContractToCreateEmployee employee;
 
   public static final String SERIALIZED_NAME_EMPLOYMENT = "employment";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT)
+  @javax.annotation.Nonnull
   private EorContractToCreateEmployment employment;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nonnull
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_SENIORITY = "seniority";
   @SerializedName(SERIALIZED_NAME_SENIORITY)
+  @javax.annotation.Nonnull
   private EorContractToCreateSeniority seniority;
 
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
+  @javax.annotation.Nonnull
   private EorContractToCreateClient client;
 
   public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
   @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
+  @javax.annotation.Nonnull
   private EorContractToCreateCompensationDetails compensationDetails;
 
   public static final String SERIALIZED_NAME_QUOTE_ADDITIONAL_FIELDS = "quote_additional_fields";
   @SerializedName(SERIALIZED_NAME_QUOTE_ADDITIONAL_FIELDS)
+  @javax.annotation.Nullable
   private EorContractToCreateQuoteAdditionalFields quoteAdditionalFields;
 
   public static final String SERIALIZED_NAME_PROVIDER_ID = "provider_id";
   @SerializedName(SERIALIZED_NAME_PROVIDER_ID)
+  @javax.annotation.Nullable
   private String providerId;
 
   public static final String SERIALIZED_NAME_HEALTH_PLAN_ID = "health_plan_id";
   @SerializedName(SERIALIZED_NAME_HEALTH_PLAN_ID)
+  @javax.annotation.Nullable
   private String healthPlanId;
 
   public static final String SERIALIZED_NAME_PENSION = "pension";
   @SerializedName(SERIALIZED_NAME_PENSION)
+  @javax.annotation.Nullable
   private PensionEORContractToCreate pension;
 
   public EorContractToCreate() {
   }
 
-  public EorContractToCreate employee(EorContractToCreateEmployee employee) {
+  public EorContractToCreate employee(@javax.annotation.Nonnull EorContractToCreateEmployee employee) {
     this.employee = employee;
     return this;
   }
@@ -115,12 +125,12 @@ public class EorContractToCreate {
     return employee;
   }
 
-  public void setEmployee(EorContractToCreateEmployee employee) {
+  public void setEmployee(@javax.annotation.Nonnull EorContractToCreateEmployee employee) {
     this.employee = employee;
   }
 
 
-  public EorContractToCreate employment(EorContractToCreateEmployment employment) {
+  public EorContractToCreate employment(@javax.annotation.Nonnull EorContractToCreateEmployment employment) {
     this.employment = employment;
     return this;
   }
@@ -134,12 +144,12 @@ public class EorContractToCreate {
     return employment;
   }
 
-  public void setEmployment(EorContractToCreateEmployment employment) {
+  public void setEmployment(@javax.annotation.Nonnull EorContractToCreateEmployment employment) {
     this.employment = employment;
   }
 
 
-  public EorContractToCreate jobTitle(String jobTitle) {
+  public EorContractToCreate jobTitle(@javax.annotation.Nonnull String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -153,12 +163,12 @@ public class EorContractToCreate {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nonnull String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public EorContractToCreate seniority(EorContractToCreateSeniority seniority) {
+  public EorContractToCreate seniority(@javax.annotation.Nonnull EorContractToCreateSeniority seniority) {
     this.seniority = seniority;
     return this;
   }
@@ -172,12 +182,12 @@ public class EorContractToCreate {
     return seniority;
   }
 
-  public void setSeniority(EorContractToCreateSeniority seniority) {
+  public void setSeniority(@javax.annotation.Nonnull EorContractToCreateSeniority seniority) {
     this.seniority = seniority;
   }
 
 
-  public EorContractToCreate client(EorContractToCreateClient client) {
+  public EorContractToCreate client(@javax.annotation.Nonnull EorContractToCreateClient client) {
     this.client = client;
     return this;
   }
@@ -191,12 +201,12 @@ public class EorContractToCreate {
     return client;
   }
 
-  public void setClient(EorContractToCreateClient client) {
+  public void setClient(@javax.annotation.Nonnull EorContractToCreateClient client) {
     this.client = client;
   }
 
 
-  public EorContractToCreate compensationDetails(EorContractToCreateCompensationDetails compensationDetails) {
+  public EorContractToCreate compensationDetails(@javax.annotation.Nonnull EorContractToCreateCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
     return this;
   }
@@ -210,12 +220,12 @@ public class EorContractToCreate {
     return compensationDetails;
   }
 
-  public void setCompensationDetails(EorContractToCreateCompensationDetails compensationDetails) {
+  public void setCompensationDetails(@javax.annotation.Nonnull EorContractToCreateCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
   }
 
 
-  public EorContractToCreate quoteAdditionalFields(EorContractToCreateQuoteAdditionalFields quoteAdditionalFields) {
+  public EorContractToCreate quoteAdditionalFields(@javax.annotation.Nullable EorContractToCreateQuoteAdditionalFields quoteAdditionalFields) {
     this.quoteAdditionalFields = quoteAdditionalFields;
     return this;
   }
@@ -229,12 +239,12 @@ public class EorContractToCreate {
     return quoteAdditionalFields;
   }
 
-  public void setQuoteAdditionalFields(EorContractToCreateQuoteAdditionalFields quoteAdditionalFields) {
+  public void setQuoteAdditionalFields(@javax.annotation.Nullable EorContractToCreateQuoteAdditionalFields quoteAdditionalFields) {
     this.quoteAdditionalFields = quoteAdditionalFields;
   }
 
 
-  public EorContractToCreate providerId(String providerId) {
+  public EorContractToCreate providerId(@javax.annotation.Nullable String providerId) {
     this.providerId = providerId;
     return this;
   }
@@ -248,12 +258,12 @@ public class EorContractToCreate {
     return providerId;
   }
 
-  public void setProviderId(String providerId) {
+  public void setProviderId(@javax.annotation.Nullable String providerId) {
     this.providerId = providerId;
   }
 
 
-  public EorContractToCreate healthPlanId(String healthPlanId) {
+  public EorContractToCreate healthPlanId(@javax.annotation.Nullable String healthPlanId) {
     this.healthPlanId = healthPlanId;
     return this;
   }
@@ -267,12 +277,12 @@ public class EorContractToCreate {
     return healthPlanId;
   }
 
-  public void setHealthPlanId(String healthPlanId) {
+  public void setHealthPlanId(@javax.annotation.Nullable String healthPlanId) {
     this.healthPlanId = healthPlanId;
   }
 
 
-  public EorContractToCreate pension(PensionEORContractToCreate pension) {
+  public EorContractToCreate pension(@javax.annotation.Nullable PensionEORContractToCreate pension) {
     this.pension = pension;
     return this;
   }
@@ -286,7 +296,7 @@ public class EorContractToCreate {
     return pension;
   }
 
-  public void setPension(PensionEORContractToCreate pension) {
+  public void setPension(@javax.annotation.Nullable PensionEORContractToCreate pension) {
     this.pension = pension;
   }
 

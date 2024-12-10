@@ -52,7 +52,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateInvoiceAdjustmentRequest1
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateInvoiceAdjustmentRequest1 {
   /**
    * Type of invoice adjustment.
@@ -120,36 +120,43 @@ public class CreateInvoiceAdjustmentRequest1 {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nonnull
   private String contractId;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_DATE_SUBMITTED = "date_submitted";
   @SerializedName(SERIALIZED_NAME_DATE_SUBMITTED)
+  @javax.annotation.Nonnull
   private LocalDate dateSubmitted;
 
   public static final String SERIALIZED_NAME_PAYMENT_CYCLE_ID = "paymentCycleId";
   @SerializedName(SERIALIZED_NAME_PAYMENT_CYCLE_ID)
+  @javax.annotation.Nullable
   private String paymentCycleId;
 
   public static final String SERIALIZED_NAME_FILE = "file";
   @SerializedName(SERIALIZED_NAME_FILE)
+  @javax.annotation.Nullable
   private File _file;
 
   public CreateInvoiceAdjustmentRequest1() {
   }
 
-  public CreateInvoiceAdjustmentRequest1 type(TypeEnum type) {
+  public CreateInvoiceAdjustmentRequest1 type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -163,12 +170,12 @@ public class CreateInvoiceAdjustmentRequest1 {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public CreateInvoiceAdjustmentRequest1 amount(BigDecimal amount) {
+  public CreateInvoiceAdjustmentRequest1 amount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -183,12 +190,12 @@ public class CreateInvoiceAdjustmentRequest1 {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public CreateInvoiceAdjustmentRequest1 contractId(String contractId) {
+  public CreateInvoiceAdjustmentRequest1 contractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -202,12 +209,12 @@ public class CreateInvoiceAdjustmentRequest1 {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
   }
 
 
-  public CreateInvoiceAdjustmentRequest1 description(String description) {
+  public CreateInvoiceAdjustmentRequest1 description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -221,12 +228,12 @@ public class CreateInvoiceAdjustmentRequest1 {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public CreateInvoiceAdjustmentRequest1 dateSubmitted(LocalDate dateSubmitted) {
+  public CreateInvoiceAdjustmentRequest1 dateSubmitted(@javax.annotation.Nonnull LocalDate dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
     return this;
   }
@@ -240,12 +247,12 @@ public class CreateInvoiceAdjustmentRequest1 {
     return dateSubmitted;
   }
 
-  public void setDateSubmitted(LocalDate dateSubmitted) {
+  public void setDateSubmitted(@javax.annotation.Nonnull LocalDate dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
   }
 
 
-  public CreateInvoiceAdjustmentRequest1 paymentCycleId(String paymentCycleId) {
+  public CreateInvoiceAdjustmentRequest1 paymentCycleId(@javax.annotation.Nullable String paymentCycleId) {
     this.paymentCycleId = paymentCycleId;
     return this;
   }
@@ -259,12 +266,12 @@ public class CreateInvoiceAdjustmentRequest1 {
     return paymentCycleId;
   }
 
-  public void setPaymentCycleId(String paymentCycleId) {
+  public void setPaymentCycleId(@javax.annotation.Nullable String paymentCycleId) {
     this.paymentCycleId = paymentCycleId;
   }
 
 
-  public CreateInvoiceAdjustmentRequest1 _file(File _file) {
+  public CreateInvoiceAdjustmentRequest1 _file(@javax.annotation.Nullable File _file) {
     this._file = _file;
     return this;
   }
@@ -278,7 +285,7 @@ public class CreateInvoiceAdjustmentRequest1 {
     return _file;
   }
 
-  public void setFile(File _file) {
+  public void setFile(@javax.annotation.Nullable File _file) {
     this._file = _file;
   }
 

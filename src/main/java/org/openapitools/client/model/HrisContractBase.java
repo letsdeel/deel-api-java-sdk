@@ -51,28 +51,32 @@ import org.openapitools.client.JSON;
 /**
  * HrisContractBase
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisContractBase {
   public static final String SERIALIZED_NAME_CONTRACT_OID = "contract_oid";
   @SerializedName(SERIALIZED_NAME_CONTRACT_OID)
+  @javax.annotation.Nonnull
   private String contractOid;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private LocalDate startDate;
 
   public static final String SERIALIZED_NAME_EMPLOYEE_NUMBER = "employee_number";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE_NUMBER)
+  @javax.annotation.Nullable
   private BigDecimal employeeNumber;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private LocalDate endDate;
 
   public HrisContractBase() {
   }
 
-  public HrisContractBase contractOid(String contractOid) {
+  public HrisContractBase contractOid(@javax.annotation.Nonnull String contractOid) {
     this.contractOid = contractOid;
     return this;
   }
@@ -86,12 +90,12 @@ public class HrisContractBase {
     return contractOid;
   }
 
-  public void setContractOid(String contractOid) {
+  public void setContractOid(@javax.annotation.Nonnull String contractOid) {
     this.contractOid = contractOid;
   }
 
 
-  public HrisContractBase startDate(LocalDate startDate) {
+  public HrisContractBase startDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -105,12 +109,12 @@ public class HrisContractBase {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public HrisContractBase employeeNumber(BigDecimal employeeNumber) {
+  public HrisContractBase employeeNumber(@javax.annotation.Nullable BigDecimal employeeNumber) {
     this.employeeNumber = employeeNumber;
     return this;
   }
@@ -124,12 +128,12 @@ public class HrisContractBase {
     return employeeNumber;
   }
 
-  public void setEmployeeNumber(BigDecimal employeeNumber) {
+  public void setEmployeeNumber(@javax.annotation.Nullable BigDecimal employeeNumber) {
     this.employeeNumber = employeeNumber;
   }
 
 
-  public HrisContractBase endDate(LocalDate endDate) {
+  public HrisContractBase endDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -143,7 +147,7 @@ public class HrisContractBase {
     return endDate;
   }
 
-  public void setEndDate(LocalDate endDate) {
+  public void setEndDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
   }
 

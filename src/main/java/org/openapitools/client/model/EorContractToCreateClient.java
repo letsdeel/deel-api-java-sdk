@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * EorContractToCreateClient
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorContractToCreateClient {
   public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
+  @javax.annotation.Nonnull
   private EorContractToCreateSeniority legalEntity;
 
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
+  @javax.annotation.Nonnull
   private EorContractToCreateClientTeam team;
 
   public EorContractToCreateClient() {
   }
 
-  public EorContractToCreateClient legalEntity(EorContractToCreateSeniority legalEntity) {
+  public EorContractToCreateClient legalEntity(@javax.annotation.Nonnull EorContractToCreateSeniority legalEntity) {
     this.legalEntity = legalEntity;
     return this;
   }
@@ -77,12 +79,12 @@ public class EorContractToCreateClient {
     return legalEntity;
   }
 
-  public void setLegalEntity(EorContractToCreateSeniority legalEntity) {
+  public void setLegalEntity(@javax.annotation.Nonnull EorContractToCreateSeniority legalEntity) {
     this.legalEntity = legalEntity;
   }
 
 
-  public EorContractToCreateClient team(EorContractToCreateClientTeam team) {
+  public EorContractToCreateClient team(@javax.annotation.Nonnull EorContractToCreateClientTeam team) {
     this.team = team;
     return this;
   }
@@ -96,7 +98,7 @@ public class EorContractToCreateClient {
     return team;
   }
 
-  public void setTeam(EorContractToCreateClientTeam team) {
+  public void setTeam(@javax.annotation.Nonnull EorContractToCreateClientTeam team) {
     this.team = team;
   }
 

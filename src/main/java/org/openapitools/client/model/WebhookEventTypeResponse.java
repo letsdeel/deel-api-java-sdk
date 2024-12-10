@@ -50,44 +50,52 @@ import org.openapitools.client.JSON;
 /**
  * WebhookEventTypeResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class WebhookEventTypeResponse {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private BigDecimal id;
 
   public static final String SERIALIZED_NAME_MODULE_NAME = "module_name";
   @SerializedName(SERIALIZED_NAME_MODULE_NAME)
+  @javax.annotation.Nonnull
   private String moduleName;
 
   public static final String SERIALIZED_NAME_MODULE_LABEL = "module_label";
   @SerializedName(SERIALIZED_NAME_MODULE_LABEL)
+  @javax.annotation.Nonnull
   private String moduleLabel;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_PAYLOAD_EXAMPLE = "payload_example";
   @SerializedName(SERIALIZED_NAME_PAYLOAD_EXAMPLE)
+  @javax.annotation.Nullable
   private String payloadExample;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private String createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private String updatedAt;
 
   public WebhookEventTypeResponse() {
   }
 
-  public WebhookEventTypeResponse id(BigDecimal id) {
+  public WebhookEventTypeResponse id(@javax.annotation.Nonnull BigDecimal id) {
     this.id = id;
     return this;
   }
@@ -101,12 +109,12 @@ public class WebhookEventTypeResponse {
     return id;
   }
 
-  public void setId(BigDecimal id) {
+  public void setId(@javax.annotation.Nonnull BigDecimal id) {
     this.id = id;
   }
 
 
-  public WebhookEventTypeResponse moduleName(String moduleName) {
+  public WebhookEventTypeResponse moduleName(@javax.annotation.Nonnull String moduleName) {
     this.moduleName = moduleName;
     return this;
   }
@@ -120,12 +128,12 @@ public class WebhookEventTypeResponse {
     return moduleName;
   }
 
-  public void setModuleName(String moduleName) {
+  public void setModuleName(@javax.annotation.Nonnull String moduleName) {
     this.moduleName = moduleName;
   }
 
 
-  public WebhookEventTypeResponse moduleLabel(String moduleLabel) {
+  public WebhookEventTypeResponse moduleLabel(@javax.annotation.Nonnull String moduleLabel) {
     this.moduleLabel = moduleLabel;
     return this;
   }
@@ -139,12 +147,12 @@ public class WebhookEventTypeResponse {
     return moduleLabel;
   }
 
-  public void setModuleLabel(String moduleLabel) {
+  public void setModuleLabel(@javax.annotation.Nonnull String moduleLabel) {
     this.moduleLabel = moduleLabel;
   }
 
 
-  public WebhookEventTypeResponse name(String name) {
+  public WebhookEventTypeResponse name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -158,12 +166,12 @@ public class WebhookEventTypeResponse {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public WebhookEventTypeResponse description(String description) {
+  public WebhookEventTypeResponse description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -177,12 +185,12 @@ public class WebhookEventTypeResponse {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public WebhookEventTypeResponse payloadExample(String payloadExample) {
+  public WebhookEventTypeResponse payloadExample(@javax.annotation.Nullable String payloadExample) {
     this.payloadExample = payloadExample;
     return this;
   }
@@ -196,12 +204,12 @@ public class WebhookEventTypeResponse {
     return payloadExample;
   }
 
-  public void setPayloadExample(String payloadExample) {
+  public void setPayloadExample(@javax.annotation.Nullable String payloadExample) {
     this.payloadExample = payloadExample;
   }
 
 
-  public WebhookEventTypeResponse createdAt(String createdAt) {
+  public WebhookEventTypeResponse createdAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -215,12 +223,12 @@ public class WebhookEventTypeResponse {
     return createdAt;
   }
 
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public WebhookEventTypeResponse updatedAt(String updatedAt) {
+  public WebhookEventTypeResponse updatedAt(@javax.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -234,7 +242,7 @@ public class WebhookEventTypeResponse {
     return updatedAt;
   }
 
-  public void setUpdatedAt(String updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
   }
 

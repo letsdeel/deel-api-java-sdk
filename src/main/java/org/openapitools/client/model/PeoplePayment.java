@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * PeoplePayment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PeoplePayment {
   public static final String SERIALIZED_NAME_RATE = "rate";
   @SerializedName(SERIALIZED_NAME_RATE)
+  @javax.annotation.Nullable
   private BigDecimal rate;
 
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nullable
   private String scale;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_CONTRACT_NAME = "contract_name";
   @SerializedName(SERIALIZED_NAME_CONTRACT_NAME)
+  @javax.annotation.Nullable
   private String contractName;
 
   public PeoplePayment() {
   }
 
-  public PeoplePayment rate(BigDecimal rate) {
+  public PeoplePayment rate(@javax.annotation.Nullable BigDecimal rate) {
     this.rate = rate;
     return this;
   }
@@ -84,12 +88,12 @@ public class PeoplePayment {
     return rate;
   }
 
-  public void setRate(BigDecimal rate) {
+  public void setRate(@javax.annotation.Nullable BigDecimal rate) {
     this.rate = rate;
   }
 
 
-  public PeoplePayment scale(String scale) {
+  public PeoplePayment scale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
     return this;
   }
@@ -103,12 +107,12 @@ public class PeoplePayment {
     return scale;
   }
 
-  public void setScale(String scale) {
+  public void setScale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
   }
 
 
-  public PeoplePayment currency(String currency) {
+  public PeoplePayment currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -122,12 +126,12 @@ public class PeoplePayment {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public PeoplePayment contractName(String contractName) {
+  public PeoplePayment contractName(@javax.annotation.Nullable String contractName) {
     this.contractName = contractName;
     return this;
   }
@@ -141,7 +145,7 @@ public class PeoplePayment {
     return contractName;
   }
 
-  public void setContractName(String contractName) {
+  public void setContractName(@javax.annotation.Nullable String contractName) {
     this.contractName = contractName;
   }
 

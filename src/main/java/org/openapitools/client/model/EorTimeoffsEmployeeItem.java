@@ -52,44 +52,52 @@ import org.openapitools.client.JSON;
 /**
  * EorTimeoffsEmployeeItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorTimeoffsEmployeeItem {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_EOR_CONTRACT_ID = "eor_contract_id";
   @SerializedName(SERIALIZED_NAME_EOR_CONTRACT_ID)
+  @javax.annotation.Nonnull
   private BigDecimal eorContractId;
 
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nonnull
   private String contractId;
 
   public static final String SERIALIZED_NAME_VACATIONS = "vacations";
   @SerializedName(SERIALIZED_NAME_VACATIONS)
+  @javax.annotation.Nonnull
   private List<EorClientTimeoffRequests> vacations = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SICK_LEAVES = "sick_leaves";
   @SerializedName(SERIALIZED_NAME_SICK_LEAVES)
+  @javax.annotation.Nonnull
   private List<EorClientTimeoffRequests> sickLeaves = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_OTHERS = "others";
   @SerializedName(SERIALIZED_NAME_OTHERS)
+  @javax.annotation.Nonnull
   private List<EorClientTimeoffRequests> others = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TIME_ZONES = "time_zones";
   @SerializedName(SERIALIZED_NAME_TIME_ZONES)
+  @javax.annotation.Nonnull
   private String timeZones;
 
   public EorTimeoffsEmployeeItem() {
   }
 
-  public EorTimeoffsEmployeeItem id(String id) {
+  public EorTimeoffsEmployeeItem id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -103,12 +111,12 @@ public class EorTimeoffsEmployeeItem {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public EorTimeoffsEmployeeItem name(String name) {
+  public EorTimeoffsEmployeeItem name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -122,12 +130,12 @@ public class EorTimeoffsEmployeeItem {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public EorTimeoffsEmployeeItem eorContractId(BigDecimal eorContractId) {
+  public EorTimeoffsEmployeeItem eorContractId(@javax.annotation.Nonnull BigDecimal eorContractId) {
     this.eorContractId = eorContractId;
     return this;
   }
@@ -141,12 +149,12 @@ public class EorTimeoffsEmployeeItem {
     return eorContractId;
   }
 
-  public void setEorContractId(BigDecimal eorContractId) {
+  public void setEorContractId(@javax.annotation.Nonnull BigDecimal eorContractId) {
     this.eorContractId = eorContractId;
   }
 
 
-  public EorTimeoffsEmployeeItem contractId(String contractId) {
+  public EorTimeoffsEmployeeItem contractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -160,12 +168,12 @@ public class EorTimeoffsEmployeeItem {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
   }
 
 
-  public EorTimeoffsEmployeeItem vacations(List<EorClientTimeoffRequests> vacations) {
+  public EorTimeoffsEmployeeItem vacations(@javax.annotation.Nonnull List<EorClientTimeoffRequests> vacations) {
     this.vacations = vacations;
     return this;
   }
@@ -187,12 +195,12 @@ public class EorTimeoffsEmployeeItem {
     return vacations;
   }
 
-  public void setVacations(List<EorClientTimeoffRequests> vacations) {
+  public void setVacations(@javax.annotation.Nonnull List<EorClientTimeoffRequests> vacations) {
     this.vacations = vacations;
   }
 
 
-  public EorTimeoffsEmployeeItem sickLeaves(List<EorClientTimeoffRequests> sickLeaves) {
+  public EorTimeoffsEmployeeItem sickLeaves(@javax.annotation.Nonnull List<EorClientTimeoffRequests> sickLeaves) {
     this.sickLeaves = sickLeaves;
     return this;
   }
@@ -214,12 +222,12 @@ public class EorTimeoffsEmployeeItem {
     return sickLeaves;
   }
 
-  public void setSickLeaves(List<EorClientTimeoffRequests> sickLeaves) {
+  public void setSickLeaves(@javax.annotation.Nonnull List<EorClientTimeoffRequests> sickLeaves) {
     this.sickLeaves = sickLeaves;
   }
 
 
-  public EorTimeoffsEmployeeItem others(List<EorClientTimeoffRequests> others) {
+  public EorTimeoffsEmployeeItem others(@javax.annotation.Nonnull List<EorClientTimeoffRequests> others) {
     this.others = others;
     return this;
   }
@@ -241,12 +249,12 @@ public class EorTimeoffsEmployeeItem {
     return others;
   }
 
-  public void setOthers(List<EorClientTimeoffRequests> others) {
+  public void setOthers(@javax.annotation.Nonnull List<EorClientTimeoffRequests> others) {
     this.others = others;
   }
 
 
-  public EorTimeoffsEmployeeItem timeZones(String timeZones) {
+  public EorTimeoffsEmployeeItem timeZones(@javax.annotation.Nonnull String timeZones) {
     this.timeZones = timeZones;
     return this;
   }
@@ -260,7 +268,7 @@ public class EorTimeoffsEmployeeItem {
     return timeZones;
   }
 
-  public void setTimeZones(String timeZones) {
+  public void setTimeZones(@javax.annotation.Nonnull String timeZones) {
     this.timeZones = timeZones;
   }
 

@@ -51,14 +51,16 @@ import org.openapitools.client.JSON;
 /**
  * HrisDirectEmployeeContractPartTime
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisDirectEmployeeContractPartTime {
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private LocalDate startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private LocalDate endDate;
 
   /**
@@ -113,16 +115,18 @@ public class HrisDirectEmployeeContractPartTime {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_PART_TIME_PERCENTAGE = "part_time_percentage";
   @SerializedName(SERIALIZED_NAME_PART_TIME_PERCENTAGE)
+  @javax.annotation.Nonnull
   private BigDecimal partTimePercentage;
 
   public HrisDirectEmployeeContractPartTime() {
   }
 
-  public HrisDirectEmployeeContractPartTime startDate(LocalDate startDate) {
+  public HrisDirectEmployeeContractPartTime startDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -136,12 +140,12 @@ public class HrisDirectEmployeeContractPartTime {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public HrisDirectEmployeeContractPartTime endDate(LocalDate endDate) {
+  public HrisDirectEmployeeContractPartTime endDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -155,12 +159,12 @@ public class HrisDirectEmployeeContractPartTime {
     return endDate;
   }
 
-  public void setEndDate(LocalDate endDate) {
+  public void setEndDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
   }
 
 
-  public HrisDirectEmployeeContractPartTime type(TypeEnum type) {
+  public HrisDirectEmployeeContractPartTime type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -174,12 +178,12 @@ public class HrisDirectEmployeeContractPartTime {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public HrisDirectEmployeeContractPartTime partTimePercentage(BigDecimal partTimePercentage) {
+  public HrisDirectEmployeeContractPartTime partTimePercentage(@javax.annotation.Nonnull BigDecimal partTimePercentage) {
     this.partTimePercentage = partTimePercentage;
     return this;
   }
@@ -195,7 +199,7 @@ public class HrisDirectEmployeeContractPartTime {
     return partTimePercentage;
   }
 
-  public void setPartTimePercentage(BigDecimal partTimePercentage) {
+  public void setPartTimePercentage(@javax.annotation.Nonnull BigDecimal partTimePercentage) {
     this.partTimePercentage = partTimePercentage;
   }
 

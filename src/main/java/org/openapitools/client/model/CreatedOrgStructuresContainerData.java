@@ -49,48 +49,57 @@ import org.openapitools.client.JSON;
 /**
  * CreatedOrgStructuresContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreatedOrgStructuresContainerData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime updatedAt;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_ENABLE_ROLES = "enable_roles";
   @SerializedName(SERIALIZED_NAME_ENABLE_ROLES)
+  @javax.annotation.Nullable
   private Boolean enableRoles;
 
   public static final String SERIALIZED_NAME_IS_MULTI_SELECT = "is_multi_select";
   @SerializedName(SERIALIZED_NAME_IS_MULTI_SELECT)
+  @javax.annotation.Nullable
   private Boolean isMultiSelect;
 
   public static final String SERIALIZED_NAME_ORGANIZATION_ID = "organization_id";
   @SerializedName(SERIALIZED_NAME_ORGANIZATION_ID)
+  @javax.annotation.Nullable
   private Integer organizationId;
 
   public CreatedOrgStructuresContainerData() {
   }
 
-  public CreatedOrgStructuresContainerData id(String id) {
+  public CreatedOrgStructuresContainerData id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -104,12 +113,12 @@ public class CreatedOrgStructuresContainerData {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public CreatedOrgStructuresContainerData name(String name) {
+  public CreatedOrgStructuresContainerData name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -123,12 +132,12 @@ public class CreatedOrgStructuresContainerData {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public CreatedOrgStructuresContainerData type(String type) {
+  public CreatedOrgStructuresContainerData type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -142,12 +151,12 @@ public class CreatedOrgStructuresContainerData {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public CreatedOrgStructuresContainerData createdAt(OffsetDateTime createdAt) {
+  public CreatedOrgStructuresContainerData createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -161,12 +170,12 @@ public class CreatedOrgStructuresContainerData {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public CreatedOrgStructuresContainerData updatedAt(OffsetDateTime updatedAt) {
+  public CreatedOrgStructuresContainerData updatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -180,12 +189,12 @@ public class CreatedOrgStructuresContainerData {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public CreatedOrgStructuresContainerData externalId(String externalId) {
+  public CreatedOrgStructuresContainerData externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -199,12 +208,12 @@ public class CreatedOrgStructuresContainerData {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public CreatedOrgStructuresContainerData enableRoles(Boolean enableRoles) {
+  public CreatedOrgStructuresContainerData enableRoles(@javax.annotation.Nullable Boolean enableRoles) {
     this.enableRoles = enableRoles;
     return this;
   }
@@ -218,12 +227,12 @@ public class CreatedOrgStructuresContainerData {
     return enableRoles;
   }
 
-  public void setEnableRoles(Boolean enableRoles) {
+  public void setEnableRoles(@javax.annotation.Nullable Boolean enableRoles) {
     this.enableRoles = enableRoles;
   }
 
 
-  public CreatedOrgStructuresContainerData isMultiSelect(Boolean isMultiSelect) {
+  public CreatedOrgStructuresContainerData isMultiSelect(@javax.annotation.Nullable Boolean isMultiSelect) {
     this.isMultiSelect = isMultiSelect;
     return this;
   }
@@ -237,12 +246,12 @@ public class CreatedOrgStructuresContainerData {
     return isMultiSelect;
   }
 
-  public void setIsMultiSelect(Boolean isMultiSelect) {
+  public void setIsMultiSelect(@javax.annotation.Nullable Boolean isMultiSelect) {
     this.isMultiSelect = isMultiSelect;
   }
 
 
-  public CreatedOrgStructuresContainerData organizationId(Integer organizationId) {
+  public CreatedOrgStructuresContainerData organizationId(@javax.annotation.Nullable Integer organizationId) {
     this.organizationId = organizationId;
     return this;
   }
@@ -256,7 +265,7 @@ public class CreatedOrgStructuresContainerData {
     return organizationId;
   }
 
-  public void setOrganizationId(Integer organizationId) {
+  public void setOrganizationId(@javax.annotation.Nullable Integer organizationId) {
     this.organizationId = organizationId;
   }
 

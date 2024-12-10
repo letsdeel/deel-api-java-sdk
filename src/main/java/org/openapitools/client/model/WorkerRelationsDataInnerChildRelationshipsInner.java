@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * WorkerRelationsDataInnerChildRelationshipsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class WorkerRelationsDataInnerChildRelationshipsInner {
   public static final String SERIALIZED_NAME_RELATION_ID = "relation_id";
   @SerializedName(SERIALIZED_NAME_RELATION_ID)
+  @javax.annotation.Nullable
   private UUID relationId;
 
   public static final String SERIALIZED_NAME_PROFILE_ID = "profile_id";
   @SerializedName(SERIALIZED_NAME_PROFILE_ID)
+  @javax.annotation.Nullable
   private UUID profileId;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public WorkerRelationsDataInnerChildRelationshipsInner() {
   }
 
-  public WorkerRelationsDataInnerChildRelationshipsInner relationId(UUID relationId) {
+  public WorkerRelationsDataInnerChildRelationshipsInner relationId(@javax.annotation.Nullable UUID relationId) {
     this.relationId = relationId;
     return this;
   }
@@ -84,12 +88,12 @@ public class WorkerRelationsDataInnerChildRelationshipsInner {
     return relationId;
   }
 
-  public void setRelationId(UUID relationId) {
+  public void setRelationId(@javax.annotation.Nullable UUID relationId) {
     this.relationId = relationId;
   }
 
 
-  public WorkerRelationsDataInnerChildRelationshipsInner profileId(UUID profileId) {
+  public WorkerRelationsDataInnerChildRelationshipsInner profileId(@javax.annotation.Nullable UUID profileId) {
     this.profileId = profileId;
     return this;
   }
@@ -103,12 +107,12 @@ public class WorkerRelationsDataInnerChildRelationshipsInner {
     return profileId;
   }
 
-  public void setProfileId(UUID profileId) {
+  public void setProfileId(@javax.annotation.Nullable UUID profileId) {
     this.profileId = profileId;
   }
 
 
-  public WorkerRelationsDataInnerChildRelationshipsInner firstName(String firstName) {
+  public WorkerRelationsDataInnerChildRelationshipsInner firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -122,12 +126,12 @@ public class WorkerRelationsDataInnerChildRelationshipsInner {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public WorkerRelationsDataInnerChildRelationshipsInner lastName(String lastName) {
+  public WorkerRelationsDataInnerChildRelationshipsInner lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -141,7 +145,7 @@ public class WorkerRelationsDataInnerChildRelationshipsInner {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 

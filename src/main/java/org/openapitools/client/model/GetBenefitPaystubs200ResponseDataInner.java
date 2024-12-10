@@ -51,22 +51,26 @@ import org.openapitools.client.JSON;
 /**
  * GetBenefitPaystubs200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBenefitPaystubs200ResponseDataInner {
   public static final String SERIALIZED_NAME_EMPLOYEES = "employees";
   @SerializedName(SERIALIZED_NAME_EMPLOYEES)
+  @javax.annotation.Nullable
   private List<GetBenefitPaystubs200ResponseDataInnerEmployeesInner> employees = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAYROLL_ID = "payroll_id";
   @SerializedName(SERIALIZED_NAME_PAYROLL_ID)
+  @javax.annotation.Nullable
   private String payrollId;
 
   public static final String SERIALIZED_NAME_PAYMENT_DATE = "payment_date";
   @SerializedName(SERIALIZED_NAME_PAYMENT_DATE)
+  @javax.annotation.Nullable
   private String paymentDate;
 
   public static final String SERIALIZED_NAME_PAYROLL_TYPE = "payroll_type";
   @SerializedName(SERIALIZED_NAME_PAYROLL_TYPE)
+  @javax.annotation.Nullable
   private String payrollType;
 
   /**
@@ -125,10 +129,12 @@ public class GetBenefitPaystubs200ResponseDataInner {
 
   public static final String SERIALIZED_NAME_PAYROLL_STATE = "payroll_state";
   @SerializedName(SERIALIZED_NAME_PAYROLL_STATE)
+  @javax.annotation.Nullable
   private PayrollStateEnum payrollState;
 
   public static final String SERIALIZED_NAME_PAYROLL_END_DATE = "payroll_end_date";
   @SerializedName(SERIALIZED_NAME_PAYROLL_END_DATE)
+  @javax.annotation.Nullable
   private String payrollEndDate;
 
   /**
@@ -191,16 +197,18 @@ public class GetBenefitPaystubs200ResponseDataInner {
 
   public static final String SERIALIZED_NAME_PAYROLL_SCHEDULE = "payroll_schedule";
   @SerializedName(SERIALIZED_NAME_PAYROLL_SCHEDULE)
+  @javax.annotation.Nullable
   private PayrollScheduleEnum payrollSchedule;
 
   public static final String SERIALIZED_NAME_PAYROLL_START_DATE = "payroll_start_date";
   @SerializedName(SERIALIZED_NAME_PAYROLL_START_DATE)
+  @javax.annotation.Nullable
   private String payrollStartDate;
 
   public GetBenefitPaystubs200ResponseDataInner() {
   }
 
-  public GetBenefitPaystubs200ResponseDataInner employees(List<GetBenefitPaystubs200ResponseDataInnerEmployeesInner> employees) {
+  public GetBenefitPaystubs200ResponseDataInner employees(@javax.annotation.Nullable List<GetBenefitPaystubs200ResponseDataInnerEmployeesInner> employees) {
     this.employees = employees;
     return this;
   }
@@ -222,12 +230,12 @@ public class GetBenefitPaystubs200ResponseDataInner {
     return employees;
   }
 
-  public void setEmployees(List<GetBenefitPaystubs200ResponseDataInnerEmployeesInner> employees) {
+  public void setEmployees(@javax.annotation.Nullable List<GetBenefitPaystubs200ResponseDataInnerEmployeesInner> employees) {
     this.employees = employees;
   }
 
 
-  public GetBenefitPaystubs200ResponseDataInner payrollId(String payrollId) {
+  public GetBenefitPaystubs200ResponseDataInner payrollId(@javax.annotation.Nullable String payrollId) {
     this.payrollId = payrollId;
     return this;
   }
@@ -241,12 +249,12 @@ public class GetBenefitPaystubs200ResponseDataInner {
     return payrollId;
   }
 
-  public void setPayrollId(String payrollId) {
+  public void setPayrollId(@javax.annotation.Nullable String payrollId) {
     this.payrollId = payrollId;
   }
 
 
-  public GetBenefitPaystubs200ResponseDataInner paymentDate(String paymentDate) {
+  public GetBenefitPaystubs200ResponseDataInner paymentDate(@javax.annotation.Nullable String paymentDate) {
     this.paymentDate = paymentDate;
     return this;
   }
@@ -260,12 +268,12 @@ public class GetBenefitPaystubs200ResponseDataInner {
     return paymentDate;
   }
 
-  public void setPaymentDate(String paymentDate) {
+  public void setPaymentDate(@javax.annotation.Nullable String paymentDate) {
     this.paymentDate = paymentDate;
   }
 
 
-  public GetBenefitPaystubs200ResponseDataInner payrollType(String payrollType) {
+  public GetBenefitPaystubs200ResponseDataInner payrollType(@javax.annotation.Nullable String payrollType) {
     this.payrollType = payrollType;
     return this;
   }
@@ -279,12 +287,12 @@ public class GetBenefitPaystubs200ResponseDataInner {
     return payrollType;
   }
 
-  public void setPayrollType(String payrollType) {
+  public void setPayrollType(@javax.annotation.Nullable String payrollType) {
     this.payrollType = payrollType;
   }
 
 
-  public GetBenefitPaystubs200ResponseDataInner payrollState(PayrollStateEnum payrollState) {
+  public GetBenefitPaystubs200ResponseDataInner payrollState(@javax.annotation.Nullable PayrollStateEnum payrollState) {
     this.payrollState = payrollState;
     return this;
   }
@@ -298,12 +306,12 @@ public class GetBenefitPaystubs200ResponseDataInner {
     return payrollState;
   }
 
-  public void setPayrollState(PayrollStateEnum payrollState) {
+  public void setPayrollState(@javax.annotation.Nullable PayrollStateEnum payrollState) {
     this.payrollState = payrollState;
   }
 
 
-  public GetBenefitPaystubs200ResponseDataInner payrollEndDate(String payrollEndDate) {
+  public GetBenefitPaystubs200ResponseDataInner payrollEndDate(@javax.annotation.Nullable String payrollEndDate) {
     this.payrollEndDate = payrollEndDate;
     return this;
   }
@@ -317,12 +325,12 @@ public class GetBenefitPaystubs200ResponseDataInner {
     return payrollEndDate;
   }
 
-  public void setPayrollEndDate(String payrollEndDate) {
+  public void setPayrollEndDate(@javax.annotation.Nullable String payrollEndDate) {
     this.payrollEndDate = payrollEndDate;
   }
 
 
-  public GetBenefitPaystubs200ResponseDataInner payrollSchedule(PayrollScheduleEnum payrollSchedule) {
+  public GetBenefitPaystubs200ResponseDataInner payrollSchedule(@javax.annotation.Nullable PayrollScheduleEnum payrollSchedule) {
     this.payrollSchedule = payrollSchedule;
     return this;
   }
@@ -336,12 +344,12 @@ public class GetBenefitPaystubs200ResponseDataInner {
     return payrollSchedule;
   }
 
-  public void setPayrollSchedule(PayrollScheduleEnum payrollSchedule) {
+  public void setPayrollSchedule(@javax.annotation.Nullable PayrollScheduleEnum payrollSchedule) {
     this.payrollSchedule = payrollSchedule;
   }
 
 
-  public GetBenefitPaystubs200ResponseDataInner payrollStartDate(String payrollStartDate) {
+  public GetBenefitPaystubs200ResponseDataInner payrollStartDate(@javax.annotation.Nullable String payrollStartDate) {
     this.payrollStartDate = payrollStartDate;
     return this;
   }
@@ -355,7 +363,7 @@ public class GetBenefitPaystubs200ResponseDataInner {
     return payrollStartDate;
   }
 
-  public void setPayrollStartDate(String payrollStartDate) {
+  public void setPayrollStartDate(@javax.annotation.Nullable String payrollStartDate) {
     this.payrollStartDate = payrollStartDate;
   }
 

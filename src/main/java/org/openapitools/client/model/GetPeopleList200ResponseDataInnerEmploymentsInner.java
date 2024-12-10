@@ -55,120 +55,147 @@ import org.openapitools.client.JSON;
 /**
  * GetPeopleList200ResponseDataInnerEmploymentsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPeopleList200ResponseDataInnerEmploymentsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
+  @javax.annotation.Nullable
   private GetPeopleList200ResponseDataInnerEmploymentsInnerTeam team;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_PAYMENT = "payment";
   @SerializedName(SERIALIZED_NAME_PAYMENT)
+  @javax.annotation.Nullable
   private GetPeopleList200ResponseDataInnerEmploymentsInnerPayment payment;
 
   public static final String SERIALIZED_NAME_IS_ENDED = "is_ended";
   @SerializedName(SERIALIZED_NAME_IS_ENDED)
+  @javax.annotation.Nullable
   private Boolean isEnded;
 
   public static final String SERIALIZED_NAME_TIMEZONE = "timezone";
   @SerializedName(SERIALIZED_NAME_TIMEZONE)
+  @javax.annotation.Nullable
   private String timezone;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nullable
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_SENIORITY = "seniority";
   @SerializedName(SERIALIZED_NAME_SENIORITY)
+  @javax.annotation.Nullable
   private String seniority;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private LocalDate startDate;
 
   public static final String SERIALIZED_NAME_WORK_EMAIL = "work_email";
   @SerializedName(SERIALIZED_NAME_WORK_EMAIL)
+  @javax.annotation.Nullable
   private String workEmail;
 
   public static final String SERIALIZED_NAME_HIRING_TYPE = "hiring_type";
   @SerializedName(SERIALIZED_NAME_HIRING_TYPE)
+  @javax.annotation.Nullable
   private String hiringType;
 
   public static final String SERIALIZED_NAME_HIRING_STATUS = "hiring_status";
   @SerializedName(SERIALIZED_NAME_HIRING_STATUS)
+  @javax.annotation.Nullable
   private String hiringStatus;
 
   public static final String SERIALIZED_NAME_COMPLETION_DATE = "completion_date";
   @SerializedName(SERIALIZED_NAME_COMPLETION_DATE)
+  @javax.annotation.Nullable
   private String completionDate;
 
   public static final String SERIALIZED_NAME_CONTRACT_STATUS = "contract_status";
   @SerializedName(SERIALIZED_NAME_CONTRACT_STATUS)
+  @javax.annotation.Nullable
   private String contractStatus;
 
   public static final String SERIALIZED_NAME_VOLUNTARILY_LEFT = "voluntarily_left";
   @SerializedName(SERIALIZED_NAME_VOLUNTARILY_LEFT)
+  @javax.annotation.Nullable
   private String voluntarilyLeft;
 
   public static final String SERIALIZED_NAME_CONTRACT_COVERAGE = "contract_coverage";
   @SerializedName(SERIALIZED_NAME_CONTRACT_COVERAGE)
+  @javax.annotation.Nullable
   private List<String> contractCoverage = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NEW_HIRING_STATUS = "new_hiring_status";
   @SerializedName(SERIALIZED_NAME_NEW_HIRING_STATUS)
+  @javax.annotation.Nullable
   private String newHiringStatus;
 
   public static final String SERIALIZED_NAME_CLIENT_LEGAL_ENTITY = "client_legal_entity";
   @SerializedName(SERIALIZED_NAME_CLIENT_LEGAL_ENTITY)
+  @javax.annotation.Nullable
   private GetPeopleList200ResponseDataInnerEmploymentsInnerClientLegalEntity clientLegalEntity;
 
   public static final String SERIALIZED_NAME_HAS_EOR_TERMINATION = "has_eor_termination";
   @SerializedName(SERIALIZED_NAME_HAS_EOR_TERMINATION)
+  @javax.annotation.Nullable
   private String hasEorTermination;
 
   public static final String SERIALIZED_NAME_CONTRACT_IS_ARCHIVED = "contract_is_archived";
   @SerializedName(SERIALIZED_NAME_CONTRACT_IS_ARCHIVED)
+  @javax.annotation.Nullable
   private Boolean contractIsArchived;
 
   public static final String SERIALIZED_NAME_TERMINATION_LAST_DAY = "termination_last_day";
   @SerializedName(SERIALIZED_NAME_TERMINATION_LAST_DAY)
+  @javax.annotation.Nullable
   private OffsetDateTime terminationLastDay;
 
   public static final String SERIALIZED_NAME_CONTRACT_HAS_CONTRACTOR = "contract_has_contractor";
   @SerializedName(SERIALIZED_NAME_CONTRACT_HAS_CONTRACTOR)
+  @javax.annotation.Nullable
   private Boolean contractHasContractor;
 
   public static final String SERIALIZED_NAME_IS_USER_CONTRACT_DELETED = "is_user_contract_deleted";
   @SerializedName(SERIALIZED_NAME_IS_USER_CONTRACT_DELETED)
+  @javax.annotation.Nullable
   private Boolean isUserContractDeleted;
 
   public static final String SERIALIZED_NAME_HRIS_DIRECT_EMPLOYEE_INVITATION = "hris_direct_employee_invitation";
   @SerializedName(SERIALIZED_NAME_HRIS_DIRECT_EMPLOYEE_INVITATION)
+  @javax.annotation.Nullable
   private String hrisDirectEmployeeInvitation;
 
   public GetPeopleList200ResponseDataInnerEmploymentsInner() {
   }
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner id(String id) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -182,12 +209,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner name(String name) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -201,12 +228,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner team(GetPeopleList200ResponseDataInnerEmploymentsInnerTeam team) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner team(@javax.annotation.Nullable GetPeopleList200ResponseDataInnerEmploymentsInnerTeam team) {
     this.team = team;
     return this;
   }
@@ -220,12 +247,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return team;
   }
 
-  public void setTeam(GetPeopleList200ResponseDataInnerEmploymentsInnerTeam team) {
+  public void setTeam(@javax.annotation.Nullable GetPeopleList200ResponseDataInnerEmploymentsInnerTeam team) {
     this.team = team;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner email(String email) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -239,12 +266,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner state(String state) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -258,12 +285,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner country(String country) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -277,12 +304,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner payment(GetPeopleList200ResponseDataInnerEmploymentsInnerPayment payment) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner payment(@javax.annotation.Nullable GetPeopleList200ResponseDataInnerEmploymentsInnerPayment payment) {
     this.payment = payment;
     return this;
   }
@@ -296,12 +323,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return payment;
   }
 
-  public void setPayment(GetPeopleList200ResponseDataInnerEmploymentsInnerPayment payment) {
+  public void setPayment(@javax.annotation.Nullable GetPeopleList200ResponseDataInnerEmploymentsInnerPayment payment) {
     this.payment = payment;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner isEnded(Boolean isEnded) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner isEnded(@javax.annotation.Nullable Boolean isEnded) {
     this.isEnded = isEnded;
     return this;
   }
@@ -315,12 +342,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return isEnded;
   }
 
-  public void setIsEnded(Boolean isEnded) {
+  public void setIsEnded(@javax.annotation.Nullable Boolean isEnded) {
     this.isEnded = isEnded;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner timezone(String timezone) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner timezone(@javax.annotation.Nullable String timezone) {
     this.timezone = timezone;
     return this;
   }
@@ -334,12 +361,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return timezone;
   }
 
-  public void setTimezone(String timezone) {
+  public void setTimezone(@javax.annotation.Nullable String timezone) {
     this.timezone = timezone;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner jobTitle(String jobTitle) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner jobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -353,12 +380,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner seniority(String seniority) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner seniority(@javax.annotation.Nullable String seniority) {
     this.seniority = seniority;
     return this;
   }
@@ -372,12 +399,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return seniority;
   }
 
-  public void setSeniority(String seniority) {
+  public void setSeniority(@javax.annotation.Nullable String seniority) {
     this.seniority = seniority;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner startDate(LocalDate startDate) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner startDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -391,12 +418,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner workEmail(String workEmail) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner workEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
     return this;
   }
@@ -410,12 +437,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return workEmail;
   }
 
-  public void setWorkEmail(String workEmail) {
+  public void setWorkEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner hiringType(String hiringType) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner hiringType(@javax.annotation.Nullable String hiringType) {
     this.hiringType = hiringType;
     return this;
   }
@@ -429,12 +456,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return hiringType;
   }
 
-  public void setHiringType(String hiringType) {
+  public void setHiringType(@javax.annotation.Nullable String hiringType) {
     this.hiringType = hiringType;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner hiringStatus(String hiringStatus) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner hiringStatus(@javax.annotation.Nullable String hiringStatus) {
     this.hiringStatus = hiringStatus;
     return this;
   }
@@ -448,12 +475,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return hiringStatus;
   }
 
-  public void setHiringStatus(String hiringStatus) {
+  public void setHiringStatus(@javax.annotation.Nullable String hiringStatus) {
     this.hiringStatus = hiringStatus;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner completionDate(String completionDate) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner completionDate(@javax.annotation.Nullable String completionDate) {
     this.completionDate = completionDate;
     return this;
   }
@@ -467,12 +494,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return completionDate;
   }
 
-  public void setCompletionDate(String completionDate) {
+  public void setCompletionDate(@javax.annotation.Nullable String completionDate) {
     this.completionDate = completionDate;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner contractStatus(String contractStatus) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner contractStatus(@javax.annotation.Nullable String contractStatus) {
     this.contractStatus = contractStatus;
     return this;
   }
@@ -486,12 +513,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return contractStatus;
   }
 
-  public void setContractStatus(String contractStatus) {
+  public void setContractStatus(@javax.annotation.Nullable String contractStatus) {
     this.contractStatus = contractStatus;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner voluntarilyLeft(String voluntarilyLeft) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner voluntarilyLeft(@javax.annotation.Nullable String voluntarilyLeft) {
     this.voluntarilyLeft = voluntarilyLeft;
     return this;
   }
@@ -505,12 +532,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return voluntarilyLeft;
   }
 
-  public void setVoluntarilyLeft(String voluntarilyLeft) {
+  public void setVoluntarilyLeft(@javax.annotation.Nullable String voluntarilyLeft) {
     this.voluntarilyLeft = voluntarilyLeft;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner contractCoverage(List<String> contractCoverage) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner contractCoverage(@javax.annotation.Nullable List<String> contractCoverage) {
     this.contractCoverage = contractCoverage;
     return this;
   }
@@ -532,12 +559,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return contractCoverage;
   }
 
-  public void setContractCoverage(List<String> contractCoverage) {
+  public void setContractCoverage(@javax.annotation.Nullable List<String> contractCoverage) {
     this.contractCoverage = contractCoverage;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner newHiringStatus(String newHiringStatus) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner newHiringStatus(@javax.annotation.Nullable String newHiringStatus) {
     this.newHiringStatus = newHiringStatus;
     return this;
   }
@@ -551,12 +578,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return newHiringStatus;
   }
 
-  public void setNewHiringStatus(String newHiringStatus) {
+  public void setNewHiringStatus(@javax.annotation.Nullable String newHiringStatus) {
     this.newHiringStatus = newHiringStatus;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner clientLegalEntity(GetPeopleList200ResponseDataInnerEmploymentsInnerClientLegalEntity clientLegalEntity) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner clientLegalEntity(@javax.annotation.Nullable GetPeopleList200ResponseDataInnerEmploymentsInnerClientLegalEntity clientLegalEntity) {
     this.clientLegalEntity = clientLegalEntity;
     return this;
   }
@@ -570,12 +597,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return clientLegalEntity;
   }
 
-  public void setClientLegalEntity(GetPeopleList200ResponseDataInnerEmploymentsInnerClientLegalEntity clientLegalEntity) {
+  public void setClientLegalEntity(@javax.annotation.Nullable GetPeopleList200ResponseDataInnerEmploymentsInnerClientLegalEntity clientLegalEntity) {
     this.clientLegalEntity = clientLegalEntity;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner hasEorTermination(String hasEorTermination) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner hasEorTermination(@javax.annotation.Nullable String hasEorTermination) {
     this.hasEorTermination = hasEorTermination;
     return this;
   }
@@ -589,12 +616,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return hasEorTermination;
   }
 
-  public void setHasEorTermination(String hasEorTermination) {
+  public void setHasEorTermination(@javax.annotation.Nullable String hasEorTermination) {
     this.hasEorTermination = hasEorTermination;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner contractIsArchived(Boolean contractIsArchived) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner contractIsArchived(@javax.annotation.Nullable Boolean contractIsArchived) {
     this.contractIsArchived = contractIsArchived;
     return this;
   }
@@ -608,12 +635,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return contractIsArchived;
   }
 
-  public void setContractIsArchived(Boolean contractIsArchived) {
+  public void setContractIsArchived(@javax.annotation.Nullable Boolean contractIsArchived) {
     this.contractIsArchived = contractIsArchived;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner terminationLastDay(OffsetDateTime terminationLastDay) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner terminationLastDay(@javax.annotation.Nullable OffsetDateTime terminationLastDay) {
     this.terminationLastDay = terminationLastDay;
     return this;
   }
@@ -627,12 +654,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return terminationLastDay;
   }
 
-  public void setTerminationLastDay(OffsetDateTime terminationLastDay) {
+  public void setTerminationLastDay(@javax.annotation.Nullable OffsetDateTime terminationLastDay) {
     this.terminationLastDay = terminationLastDay;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner contractHasContractor(Boolean contractHasContractor) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner contractHasContractor(@javax.annotation.Nullable Boolean contractHasContractor) {
     this.contractHasContractor = contractHasContractor;
     return this;
   }
@@ -646,12 +673,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return contractHasContractor;
   }
 
-  public void setContractHasContractor(Boolean contractHasContractor) {
+  public void setContractHasContractor(@javax.annotation.Nullable Boolean contractHasContractor) {
     this.contractHasContractor = contractHasContractor;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner isUserContractDeleted(Boolean isUserContractDeleted) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner isUserContractDeleted(@javax.annotation.Nullable Boolean isUserContractDeleted) {
     this.isUserContractDeleted = isUserContractDeleted;
     return this;
   }
@@ -665,12 +692,12 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return isUserContractDeleted;
   }
 
-  public void setIsUserContractDeleted(Boolean isUserContractDeleted) {
+  public void setIsUserContractDeleted(@javax.annotation.Nullable Boolean isUserContractDeleted) {
     this.isUserContractDeleted = isUserContractDeleted;
   }
 
 
-  public GetPeopleList200ResponseDataInnerEmploymentsInner hrisDirectEmployeeInvitation(String hrisDirectEmployeeInvitation) {
+  public GetPeopleList200ResponseDataInnerEmploymentsInner hrisDirectEmployeeInvitation(@javax.annotation.Nullable String hrisDirectEmployeeInvitation) {
     this.hrisDirectEmployeeInvitation = hrisDirectEmployeeInvitation;
     return this;
   }
@@ -684,7 +711,7 @@ public class GetPeopleList200ResponseDataInnerEmploymentsInner {
     return hrisDirectEmployeeInvitation;
   }
 
-  public void setHrisDirectEmployeeInvitation(String hrisDirectEmployeeInvitation) {
+  public void setHrisDirectEmployeeInvitation(@javax.annotation.Nullable String hrisDirectEmployeeInvitation) {
     this.hrisDirectEmployeeInvitation = hrisDirectEmployeeInvitation;
   }
 

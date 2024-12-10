@@ -49,10 +49,11 @@ import org.openapitools.client.JSON;
 /**
  * GetLegalEntityPayrollSettings200ResponseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetLegalEntityPayrollSettings200ResponseInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   /**
@@ -113,20 +114,23 @@ public class GetLegalEntityPayrollSettings200ResponseInner {
 
   public static final String SERIALIZED_NAME_CYCLE_TYPE = "cycle_type";
   @SerializedName(SERIALIZED_NAME_CYCLE_TYPE)
+  @javax.annotation.Nullable
   private CycleTypeEnum cycleType;
 
   public static final String SERIALIZED_NAME_FIRST_PAYROLL_START_DATE = "first_payroll_start_date";
   @SerializedName(SERIALIZED_NAME_FIRST_PAYROLL_START_DATE)
+  @javax.annotation.Nullable
   private LocalDate firstPayrollStartDate;
 
   public static final String SERIALIZED_NAME_PAYROLL_PROCESSING_LEAD_TIME_DAYS = "payroll_processing_lead_time_days";
   @SerializedName(SERIALIZED_NAME_PAYROLL_PROCESSING_LEAD_TIME_DAYS)
+  @javax.annotation.Nullable
   private Integer payrollProcessingLeadTimeDays;
 
   public GetLegalEntityPayrollSettings200ResponseInner() {
   }
 
-  public GetLegalEntityPayrollSettings200ResponseInner id(String id) {
+  public GetLegalEntityPayrollSettings200ResponseInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -140,12 +144,12 @@ public class GetLegalEntityPayrollSettings200ResponseInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public GetLegalEntityPayrollSettings200ResponseInner cycleType(CycleTypeEnum cycleType) {
+  public GetLegalEntityPayrollSettings200ResponseInner cycleType(@javax.annotation.Nullable CycleTypeEnum cycleType) {
     this.cycleType = cycleType;
     return this;
   }
@@ -159,12 +163,12 @@ public class GetLegalEntityPayrollSettings200ResponseInner {
     return cycleType;
   }
 
-  public void setCycleType(CycleTypeEnum cycleType) {
+  public void setCycleType(@javax.annotation.Nullable CycleTypeEnum cycleType) {
     this.cycleType = cycleType;
   }
 
 
-  public GetLegalEntityPayrollSettings200ResponseInner firstPayrollStartDate(LocalDate firstPayrollStartDate) {
+  public GetLegalEntityPayrollSettings200ResponseInner firstPayrollStartDate(@javax.annotation.Nullable LocalDate firstPayrollStartDate) {
     this.firstPayrollStartDate = firstPayrollStartDate;
     return this;
   }
@@ -178,12 +182,12 @@ public class GetLegalEntityPayrollSettings200ResponseInner {
     return firstPayrollStartDate;
   }
 
-  public void setFirstPayrollStartDate(LocalDate firstPayrollStartDate) {
+  public void setFirstPayrollStartDate(@javax.annotation.Nullable LocalDate firstPayrollStartDate) {
     this.firstPayrollStartDate = firstPayrollStartDate;
   }
 
 
-  public GetLegalEntityPayrollSettings200ResponseInner payrollProcessingLeadTimeDays(Integer payrollProcessingLeadTimeDays) {
+  public GetLegalEntityPayrollSettings200ResponseInner payrollProcessingLeadTimeDays(@javax.annotation.Nullable Integer payrollProcessingLeadTimeDays) {
     this.payrollProcessingLeadTimeDays = payrollProcessingLeadTimeDays;
     return this;
   }
@@ -198,7 +202,7 @@ public class GetLegalEntityPayrollSettings200ResponseInner {
     return payrollProcessingLeadTimeDays;
   }
 
-  public void setPayrollProcessingLeadTimeDays(Integer payrollProcessingLeadTimeDays) {
+  public void setPayrollProcessingLeadTimeDays(@javax.annotation.Nullable Integer payrollProcessingLeadTimeDays) {
     this.payrollProcessingLeadTimeDays = payrollProcessingLeadTimeDays;
   }
 

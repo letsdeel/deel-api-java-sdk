@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * AdjustmentsContainerPage
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class AdjustmentsContainerPage {
   public static final String SERIALIZED_NAME_TOTAL_ROWS = "total_rows";
   @SerializedName(SERIALIZED_NAME_TOTAL_ROWS)
+  @javax.annotation.Nullable
   private BigDecimal totalRows;
 
   public static final String SERIALIZED_NAME_ITEMS_PER_PAGE = "items_per_page";
   @SerializedName(SERIALIZED_NAME_ITEMS_PER_PAGE)
+  @javax.annotation.Nullable
   private BigDecimal itemsPerPage;
 
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
+  @javax.annotation.Nullable
   private BigDecimal offset;
 
   public AdjustmentsContainerPage() {
   }
 
-  public AdjustmentsContainerPage totalRows(BigDecimal totalRows) {
+  public AdjustmentsContainerPage totalRows(@javax.annotation.Nullable BigDecimal totalRows) {
     this.totalRows = totalRows;
     return this;
   }
@@ -80,12 +83,12 @@ public class AdjustmentsContainerPage {
     return totalRows;
   }
 
-  public void setTotalRows(BigDecimal totalRows) {
+  public void setTotalRows(@javax.annotation.Nullable BigDecimal totalRows) {
     this.totalRows = totalRows;
   }
 
 
-  public AdjustmentsContainerPage itemsPerPage(BigDecimal itemsPerPage) {
+  public AdjustmentsContainerPage itemsPerPage(@javax.annotation.Nullable BigDecimal itemsPerPage) {
     this.itemsPerPage = itemsPerPage;
     return this;
   }
@@ -99,12 +102,12 @@ public class AdjustmentsContainerPage {
     return itemsPerPage;
   }
 
-  public void setItemsPerPage(BigDecimal itemsPerPage) {
+  public void setItemsPerPage(@javax.annotation.Nullable BigDecimal itemsPerPage) {
     this.itemsPerPage = itemsPerPage;
   }
 
 
-  public AdjustmentsContainerPage offset(BigDecimal offset) {
+  public AdjustmentsContainerPage offset(@javax.annotation.Nullable BigDecimal offset) {
     this.offset = offset;
     return this;
   }
@@ -118,7 +121,7 @@ public class AdjustmentsContainerPage {
     return offset;
   }
 
-  public void setOffset(BigDecimal offset) {
+  public void setOffset(@javax.annotation.Nullable BigDecimal offset) {
     this.offset = offset;
   }
 

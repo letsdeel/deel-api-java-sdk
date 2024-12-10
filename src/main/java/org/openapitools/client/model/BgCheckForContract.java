@@ -52,18 +52,21 @@ import org.openapitools.client.JSON;
 /**
  * BgCheckForContract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BgCheckForContract {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private UUID id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_THIRD_PARTY_NAME = "third_party_name";
   @SerializedName(SERIALIZED_NAME_THIRD_PARTY_NAME)
+  @javax.annotation.Nullable
   private String thirdPartyName;
 
   /**
@@ -130,32 +133,38 @@ public class BgCheckForContract {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_IS_COMPLETE = "is_complete";
   @SerializedName(SERIALIZED_NAME_IS_COMPLETE)
+  @javax.annotation.Nullable
   private Boolean isComplete;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_COMPLETED_AT = "completed_at";
   @SerializedName(SERIALIZED_NAME_COMPLETED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime completedAt;
 
   public static final String SERIALIZED_NAME_PACKAGE = "package";
   @SerializedName(SERIALIZED_NAME_PACKAGE)
+  @javax.annotation.Nullable
   private GetBackgroundChecksByContractId200ResponseDataPackage _package;
 
   public static final String SERIALIZED_NAME_CANDIDATE_EMAIL = "candidate_email";
   @SerializedName(SERIALIZED_NAME_CANDIDATE_EMAIL)
+  @javax.annotation.Nullable
   private String candidateEmail;
 
   public BgCheckForContract() {
   }
 
-  public BgCheckForContract id(UUID id) {
+  public BgCheckForContract id(@javax.annotation.Nullable UUID id) {
     this.id = id;
     return this;
   }
@@ -169,12 +178,12 @@ public class BgCheckForContract {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nullable UUID id) {
     this.id = id;
   }
 
 
-  public BgCheckForContract name(String name) {
+  public BgCheckForContract name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -188,12 +197,12 @@ public class BgCheckForContract {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public BgCheckForContract thirdPartyName(String thirdPartyName) {
+  public BgCheckForContract thirdPartyName(@javax.annotation.Nullable String thirdPartyName) {
     this.thirdPartyName = thirdPartyName;
     return this;
   }
@@ -207,12 +216,12 @@ public class BgCheckForContract {
     return thirdPartyName;
   }
 
-  public void setThirdPartyName(String thirdPartyName) {
+  public void setThirdPartyName(@javax.annotation.Nullable String thirdPartyName) {
     this.thirdPartyName = thirdPartyName;
   }
 
 
-  public BgCheckForContract status(StatusEnum status) {
+  public BgCheckForContract status(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -226,12 +235,12 @@ public class BgCheckForContract {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
   }
 
 
-  public BgCheckForContract isComplete(Boolean isComplete) {
+  public BgCheckForContract isComplete(@javax.annotation.Nullable Boolean isComplete) {
     this.isComplete = isComplete;
     return this;
   }
@@ -245,12 +254,12 @@ public class BgCheckForContract {
     return isComplete;
   }
 
-  public void setIsComplete(Boolean isComplete) {
+  public void setIsComplete(@javax.annotation.Nullable Boolean isComplete) {
     this.isComplete = isComplete;
   }
 
 
-  public BgCheckForContract createdAt(OffsetDateTime createdAt) {
+  public BgCheckForContract createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -264,12 +273,12 @@ public class BgCheckForContract {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public BgCheckForContract completedAt(OffsetDateTime completedAt) {
+  public BgCheckForContract completedAt(@javax.annotation.Nullable OffsetDateTime completedAt) {
     this.completedAt = completedAt;
     return this;
   }
@@ -283,12 +292,12 @@ public class BgCheckForContract {
     return completedAt;
   }
 
-  public void setCompletedAt(OffsetDateTime completedAt) {
+  public void setCompletedAt(@javax.annotation.Nullable OffsetDateTime completedAt) {
     this.completedAt = completedAt;
   }
 
 
-  public BgCheckForContract _package(GetBackgroundChecksByContractId200ResponseDataPackage _package) {
+  public BgCheckForContract _package(@javax.annotation.Nullable GetBackgroundChecksByContractId200ResponseDataPackage _package) {
     this._package = _package;
     return this;
   }
@@ -302,12 +311,12 @@ public class BgCheckForContract {
     return _package;
   }
 
-  public void setPackage(GetBackgroundChecksByContractId200ResponseDataPackage _package) {
+  public void setPackage(@javax.annotation.Nullable GetBackgroundChecksByContractId200ResponseDataPackage _package) {
     this._package = _package;
   }
 
 
-  public BgCheckForContract candidateEmail(String candidateEmail) {
+  public BgCheckForContract candidateEmail(@javax.annotation.Nullable String candidateEmail) {
     this.candidateEmail = candidateEmail;
     return this;
   }
@@ -321,7 +330,7 @@ public class BgCheckForContract {
     return candidateEmail;
   }
 
-  public void setCandidateEmail(String candidateEmail) {
+  public void setCandidateEmail(@javax.annotation.Nullable String candidateEmail) {
     this.candidateEmail = candidateEmail;
   }
 

@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * Object containing additional information about the 401K plan.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Put401kPlansDefinitionRequestDetails {
   public static final String SERIALIZED_NAME_KEY = "key";
   @SerializedName(SERIALIZED_NAME_KEY)
+  @javax.annotation.Nullable
   private String key;
 
   public Put401kPlansDefinitionRequestDetails() {
   }
 
-  public Put401kPlansDefinitionRequestDetails key(String key) {
+  public Put401kPlansDefinitionRequestDetails key(@javax.annotation.Nullable String key) {
     this.key = key;
     return this;
   }
@@ -71,7 +72,7 @@ public class Put401kPlansDefinitionRequestDetails {
     return key;
   }
 
-  public void setKey(String key) {
+  public void setKey(@javax.annotation.Nullable String key) {
     this.key = key;
   }
 

@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * GetBenefitEmployee200ResponsePhonesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBenefitEmployee200ResponsePhonesInner {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_DIAL_CODE = "dial_code";
   @SerializedName(SERIALIZED_NAME_DIAL_CODE)
+  @javax.annotation.Nullable
   private String dialCode;
 
   public static final String SERIALIZED_NAME_PHONE_NUMBER = "phone_number";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBER)
+  @javax.annotation.Nullable
   private String phoneNumber;
 
   public GetBenefitEmployee200ResponsePhonesInner() {
   }
 
-  public GetBenefitEmployee200ResponsePhonesInner type(String type) {
+  public GetBenefitEmployee200ResponsePhonesInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -79,12 +82,12 @@ public class GetBenefitEmployee200ResponsePhonesInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public GetBenefitEmployee200ResponsePhonesInner dialCode(String dialCode) {
+  public GetBenefitEmployee200ResponsePhonesInner dialCode(@javax.annotation.Nullable String dialCode) {
     this.dialCode = dialCode;
     return this;
   }
@@ -98,12 +101,12 @@ public class GetBenefitEmployee200ResponsePhonesInner {
     return dialCode;
   }
 
-  public void setDialCode(String dialCode) {
+  public void setDialCode(@javax.annotation.Nullable String dialCode) {
     this.dialCode = dialCode;
   }
 
 
-  public GetBenefitEmployee200ResponsePhonesInner phoneNumber(String phoneNumber) {
+  public GetBenefitEmployee200ResponsePhonesInner phoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
     return this;
   }
@@ -117,7 +120,7 @@ public class GetBenefitEmployee200ResponsePhonesInner {
     return phoneNumber;
   }
 
-  public void setPhoneNumber(String phoneNumber) {
+  public void setPhoneNumber(@javax.annotation.Nullable String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 

@@ -174,7 +174,8 @@ public class OrganizationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -193,7 +194,8 @@ public class OrganizationsApi {
          * @return CreateOrganizationRole200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -213,7 +215,8 @@ public class OrganizationsApi {
          * @return ApiResponse&lt;CreateOrganizationRole200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -233,7 +236,8 @@ public class OrganizationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -254,7 +258,8 @@ public class OrganizationsApi {
      * @param createOrganizationRoleRequest  (required)
      * @return APIcreateOrganizationRoleRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -343,7 +348,8 @@ public class OrganizationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the list of departments. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -364,7 +370,8 @@ public class OrganizationsApi {
          * @return GetDepartments200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the list of departments. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -386,7 +393,8 @@ public class OrganizationsApi {
          * @return ApiResponse&lt;GetDepartments200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the list of departments. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -408,7 +416,8 @@ public class OrganizationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the list of departments. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -430,7 +439,8 @@ public class OrganizationsApi {
      * Retrieve a list of departments within the organization associated with the authenticated user. Each department contains its unique identifier, name, and optionally, the parent department if applicable.
      * @return APIgetDepartmentsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful retrieval of the list of departments. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -536,7 +546,8 @@ public class OrganizationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -557,7 +568,8 @@ public class OrganizationsApi {
          * @return GetLegalEntityList200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -579,7 +591,8 @@ public class OrganizationsApi {
          * @return ApiResponse&lt;GetLegalEntityList200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -601,7 +614,8 @@ public class OrganizationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -623,7 +637,8 @@ public class OrganizationsApi {
      * Retrieve a list of legal entities in your account.
      * @return APIgetLegalEntityListRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -714,7 +729,8 @@ public class OrganizationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the organization roles. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. The request was malformed or missing required parameters. </td><td>  -  </td></tr>
@@ -733,7 +749,8 @@ public class OrganizationsApi {
          * @return List&lt;GetOrganizationRoles200ResponseInner&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the organization roles. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. The request was malformed or missing required parameters. </td><td>  -  </td></tr>
@@ -753,7 +770,8 @@ public class OrganizationsApi {
          * @return ApiResponse&lt;List&lt;GetOrganizationRoles200ResponseInner&gt;&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the organization roles. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. The request was malformed or missing required parameters. </td><td>  -  </td></tr>
@@ -773,7 +791,8 @@ public class OrganizationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the organization roles. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. The request was malformed or missing required parameters. </td><td>  -  </td></tr>
@@ -793,7 +812,8 @@ public class OrganizationsApi {
      * Retrieve a list of roles assigned within the current organization. Each role has a unique identifier, name, scope, and optional HRIS structure ID. This helps determine the types of roles within the organization and their corresponding access levels.
      * @return APIgetOrganizationRolesRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful retrieval of the organization roles. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request. The request was malformed or missing required parameters. </td><td>  -  </td></tr>
@@ -882,7 +902,8 @@ public class OrganizationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the organization details. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -903,7 +924,8 @@ public class OrganizationsApi {
          * @return GetOrganizations200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the organization details. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -925,7 +947,8 @@ public class OrganizationsApi {
          * @return ApiResponse&lt;GetOrganizations200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the organization details. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -947,7 +970,8 @@ public class OrganizationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the organization details. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -969,7 +993,8 @@ public class OrganizationsApi {
      * Retrieve details of the current organization associated with the authenticated user. The organization is automatically detected based on the authentication token provided in the request.
      * @return APIgetOrganizationsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful retrieval of the organization details. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1060,7 +1085,8 @@ public class OrganizationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the teams in the organization. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1081,7 +1107,8 @@ public class OrganizationsApi {
          * @return GetTeams200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the teams in the organization. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1103,7 +1130,8 @@ public class OrganizationsApi {
          * @return ApiResponse&lt;GetTeams200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the teams in the organization. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1125,7 +1153,8 @@ public class OrganizationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of the teams in the organization. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1147,7 +1176,8 @@ public class OrganizationsApi {
      * Retrieve a list of teams within the organization associated with the authenticated user. This list provides basic details about each team, including the team ID and name.
      * @return APIgetTeamsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful retrieval of the teams in the organization. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1238,7 +1268,8 @@ public class OrganizationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1259,7 +1290,8 @@ public class OrganizationsApi {
          * @return WorkingLocationsContainer
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1281,7 +1313,8 @@ public class OrganizationsApi {
          * @return ApiResponse&lt;WorkingLocationsContainer&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1303,7 +1336,8 @@ public class OrganizationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1325,7 +1359,8 @@ public class OrganizationsApi {
      * Get organization working locations.
      * @return APIgetWorkingLocationsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1432,7 +1467,8 @@ public class OrganizationsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1451,7 +1487,8 @@ public class OrganizationsApi {
          * @return UpdateOrganizationRole200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1471,7 +1508,8 @@ public class OrganizationsApi {
          * @return ApiResponse&lt;UpdateOrganizationRole200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1491,7 +1529,8 @@ public class OrganizationsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1513,7 +1552,8 @@ public class OrganizationsApi {
      * @param updateOrganizationRoleRequest  (required)
      * @return APIupdateOrganizationRoleRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>

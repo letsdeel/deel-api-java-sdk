@@ -49,36 +49,42 @@ import org.openapitools.client.JSON;
 /**
  * UpdateShiftRate200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateShiftRate200ResponseData {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private BigDecimal value;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private String createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private String updatedAt;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public UpdateShiftRate200ResponseData() {
   }
 
-  public UpdateShiftRate200ResponseData name(String name) {
+  public UpdateShiftRate200ResponseData name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -92,12 +98,12 @@ public class UpdateShiftRate200ResponseData {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public UpdateShiftRate200ResponseData type(String type) {
+  public UpdateShiftRate200ResponseData type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -111,12 +117,12 @@ public class UpdateShiftRate200ResponseData {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public UpdateShiftRate200ResponseData value(BigDecimal value) {
+  public UpdateShiftRate200ResponseData value(@javax.annotation.Nullable BigDecimal value) {
     this.value = value;
     return this;
   }
@@ -130,12 +136,12 @@ public class UpdateShiftRate200ResponseData {
     return value;
   }
 
-  public void setValue(BigDecimal value) {
+  public void setValue(@javax.annotation.Nullable BigDecimal value) {
     this.value = value;
   }
 
 
-  public UpdateShiftRate200ResponseData createdAt(String createdAt) {
+  public UpdateShiftRate200ResponseData createdAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -149,12 +155,12 @@ public class UpdateShiftRate200ResponseData {
     return createdAt;
   }
 
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public UpdateShiftRate200ResponseData updatedAt(String updatedAt) {
+  public UpdateShiftRate200ResponseData updatedAt(@javax.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -168,12 +174,12 @@ public class UpdateShiftRate200ResponseData {
     return updatedAt;
   }
 
-  public void setUpdatedAt(String updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public UpdateShiftRate200ResponseData externalId(String externalId) {
+  public UpdateShiftRate200ResponseData externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -187,7 +193,7 @@ public class UpdateShiftRate200ResponseData {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 

@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * OutputToCreateFileRef
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OutputToCreateFileRef {
   public static final String SERIALIZED_NAME_KEY = "key";
   @SerializedName(SERIALIZED_NAME_KEY)
+  @javax.annotation.Nonnull
   private String key;
 
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
+  @javax.annotation.Nonnull
   private String url;
 
   public OutputToCreateFileRef() {
   }
 
-  public OutputToCreateFileRef key(String key) {
+  public OutputToCreateFileRef key(@javax.annotation.Nonnull String key) {
     this.key = key;
     return this;
   }
@@ -75,12 +77,12 @@ public class OutputToCreateFileRef {
     return key;
   }
 
-  public void setKey(String key) {
+  public void setKey(@javax.annotation.Nonnull String key) {
     this.key = key;
   }
 
 
-  public OutputToCreateFileRef url(String url) {
+  public OutputToCreateFileRef url(@javax.annotation.Nonnull String url) {
     this.url = url;
     return this;
   }
@@ -94,7 +96,7 @@ public class OutputToCreateFileRef {
     return url;
   }
 
-  public void setUrl(String url) {
+  public void setUrl(@javax.annotation.Nonnull String url) {
     this.url = url;
   }
 

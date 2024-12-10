@@ -49,88 +49,107 @@ import org.openapitools.client.JSON;
 /**
  * EmployeeTimeoffsEntitlementsItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EmployeeTimeoffsEntitlementsItem {
   public static final String SERIALIZED_NAME_YEAR = "year";
   @SerializedName(SERIALIZED_NAME_YEAR)
+  @javax.annotation.Nonnull
   private BigDecimal year;
 
   public static final String SERIALIZED_NAME_TRACKING_PERIOD = "tracking_period";
   @SerializedName(SERIALIZED_NAME_TRACKING_PERIOD)
+  @javax.annotation.Nonnull
   private String trackingPeriod;
 
   public static final String SERIALIZED_NAME_VACATION_ALLOWED = "vacation_allowed";
   @SerializedName(SERIALIZED_NAME_VACATION_ALLOWED)
+  @javax.annotation.Nonnull
   private String vacationAllowed;
 
   public static final String SERIALIZED_NAME_VACATION_ROLLOVER = "vacation_rollover";
   @SerializedName(SERIALIZED_NAME_VACATION_ROLLOVER)
+  @javax.annotation.Nonnull
   private String vacationRollover;
 
   public static final String SERIALIZED_NAME_VACATION_EXPIRED = "vacation_expired";
   @SerializedName(SERIALIZED_NAME_VACATION_EXPIRED)
+  @javax.annotation.Nonnull
   private String vacationExpired;
 
   public static final String SERIALIZED_NAME_VACATION_PAYOUT = "vacation_payout";
   @SerializedName(SERIALIZED_NAME_VACATION_PAYOUT)
+  @javax.annotation.Nonnull
   private String vacationPayout;
 
   public static final String SERIALIZED_NAME_VACATION_REQUESTED = "vacation_requested";
   @SerializedName(SERIALIZED_NAME_VACATION_REQUESTED)
+  @javax.annotation.Nonnull
   private String vacationRequested;
 
   public static final String SERIALIZED_NAME_VACATION_APPROVED = "vacation_approved";
   @SerializedName(SERIALIZED_NAME_VACATION_APPROVED)
+  @javax.annotation.Nonnull
   private String vacationApproved;
 
   public static final String SERIALIZED_NAME_VACATION_USED = "vacation_used";
   @SerializedName(SERIALIZED_NAME_VACATION_USED)
+  @javax.annotation.Nonnull
   private String vacationUsed;
 
   public static final String SERIALIZED_NAME_VACATION_TOTAL = "vacation_total";
   @SerializedName(SERIALIZED_NAME_VACATION_TOTAL)
+  @javax.annotation.Nonnull
   private String vacationTotal;
 
   public static final String SERIALIZED_NAME_SICK_LEAVE_REQUESTED = "sick_leave_requested";
   @SerializedName(SERIALIZED_NAME_SICK_LEAVE_REQUESTED)
+  @javax.annotation.Nonnull
   private String sickLeaveRequested;
 
   public static final String SERIALIZED_NAME_SICK_LEAVE_APPROVED = "sick_leave_approved";
   @SerializedName(SERIALIZED_NAME_SICK_LEAVE_APPROVED)
+  @javax.annotation.Nonnull
   private String sickLeaveApproved;
 
   public static final String SERIALIZED_NAME_SICK_LEAVE_USED = "sick_leave_used";
   @SerializedName(SERIALIZED_NAME_SICK_LEAVE_USED)
+  @javax.annotation.Nonnull
   private String sickLeaveUsed;
 
   public static final String SERIALIZED_NAME_SICK_LEAVE_TOTAL = "sick_leave_total";
   @SerializedName(SERIALIZED_NAME_SICK_LEAVE_TOTAL)
+  @javax.annotation.Nonnull
   private String sickLeaveTotal;
 
   public static final String SERIALIZED_NAME_SICK_LEAVE_ALLOWED = "sick_leave_allowed";
   @SerializedName(SERIALIZED_NAME_SICK_LEAVE_ALLOWED)
+  @javax.annotation.Nonnull
   private String sickLeaveAllowed;
 
   public static final String SERIALIZED_NAME_OTHER_LEAVE_REQUESTED = "other_leave_requested";
   @SerializedName(SERIALIZED_NAME_OTHER_LEAVE_REQUESTED)
+  @javax.annotation.Nonnull
   private String otherLeaveRequested;
 
   public static final String SERIALIZED_NAME_OTHER_LEAVE_APPROVED = "other_leave_approved";
   @SerializedName(SERIALIZED_NAME_OTHER_LEAVE_APPROVED)
+  @javax.annotation.Nonnull
   private String otherLeaveApproved;
 
   public static final String SERIALIZED_NAME_OTHER_LEAVE_USED = "other_leave_used";
   @SerializedName(SERIALIZED_NAME_OTHER_LEAVE_USED)
+  @javax.annotation.Nonnull
   private String otherLeaveUsed;
 
   public static final String SERIALIZED_NAME_OTHER_LEAVE_TOTAL = "other_leave_total";
   @SerializedName(SERIALIZED_NAME_OTHER_LEAVE_TOTAL)
+  @javax.annotation.Nonnull
   private String otherLeaveTotal;
 
   public EmployeeTimeoffsEntitlementsItem() {
   }
 
-  public EmployeeTimeoffsEntitlementsItem year(BigDecimal year) {
+  public EmployeeTimeoffsEntitlementsItem year(@javax.annotation.Nonnull BigDecimal year) {
     this.year = year;
     return this;
   }
@@ -144,12 +163,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return year;
   }
 
-  public void setYear(BigDecimal year) {
+  public void setYear(@javax.annotation.Nonnull BigDecimal year) {
     this.year = year;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem trackingPeriod(String trackingPeriod) {
+  public EmployeeTimeoffsEntitlementsItem trackingPeriod(@javax.annotation.Nonnull String trackingPeriod) {
     this.trackingPeriod = trackingPeriod;
     return this;
   }
@@ -163,12 +182,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return trackingPeriod;
   }
 
-  public void setTrackingPeriod(String trackingPeriod) {
+  public void setTrackingPeriod(@javax.annotation.Nonnull String trackingPeriod) {
     this.trackingPeriod = trackingPeriod;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem vacationAllowed(String vacationAllowed) {
+  public EmployeeTimeoffsEntitlementsItem vacationAllowed(@javax.annotation.Nonnull String vacationAllowed) {
     this.vacationAllowed = vacationAllowed;
     return this;
   }
@@ -182,12 +201,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return vacationAllowed;
   }
 
-  public void setVacationAllowed(String vacationAllowed) {
+  public void setVacationAllowed(@javax.annotation.Nonnull String vacationAllowed) {
     this.vacationAllowed = vacationAllowed;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem vacationRollover(String vacationRollover) {
+  public EmployeeTimeoffsEntitlementsItem vacationRollover(@javax.annotation.Nonnull String vacationRollover) {
     this.vacationRollover = vacationRollover;
     return this;
   }
@@ -201,12 +220,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return vacationRollover;
   }
 
-  public void setVacationRollover(String vacationRollover) {
+  public void setVacationRollover(@javax.annotation.Nonnull String vacationRollover) {
     this.vacationRollover = vacationRollover;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem vacationExpired(String vacationExpired) {
+  public EmployeeTimeoffsEntitlementsItem vacationExpired(@javax.annotation.Nonnull String vacationExpired) {
     this.vacationExpired = vacationExpired;
     return this;
   }
@@ -220,12 +239,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return vacationExpired;
   }
 
-  public void setVacationExpired(String vacationExpired) {
+  public void setVacationExpired(@javax.annotation.Nonnull String vacationExpired) {
     this.vacationExpired = vacationExpired;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem vacationPayout(String vacationPayout) {
+  public EmployeeTimeoffsEntitlementsItem vacationPayout(@javax.annotation.Nonnull String vacationPayout) {
     this.vacationPayout = vacationPayout;
     return this;
   }
@@ -239,12 +258,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return vacationPayout;
   }
 
-  public void setVacationPayout(String vacationPayout) {
+  public void setVacationPayout(@javax.annotation.Nonnull String vacationPayout) {
     this.vacationPayout = vacationPayout;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem vacationRequested(String vacationRequested) {
+  public EmployeeTimeoffsEntitlementsItem vacationRequested(@javax.annotation.Nonnull String vacationRequested) {
     this.vacationRequested = vacationRequested;
     return this;
   }
@@ -258,12 +277,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return vacationRequested;
   }
 
-  public void setVacationRequested(String vacationRequested) {
+  public void setVacationRequested(@javax.annotation.Nonnull String vacationRequested) {
     this.vacationRequested = vacationRequested;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem vacationApproved(String vacationApproved) {
+  public EmployeeTimeoffsEntitlementsItem vacationApproved(@javax.annotation.Nonnull String vacationApproved) {
     this.vacationApproved = vacationApproved;
     return this;
   }
@@ -277,12 +296,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return vacationApproved;
   }
 
-  public void setVacationApproved(String vacationApproved) {
+  public void setVacationApproved(@javax.annotation.Nonnull String vacationApproved) {
     this.vacationApproved = vacationApproved;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem vacationUsed(String vacationUsed) {
+  public EmployeeTimeoffsEntitlementsItem vacationUsed(@javax.annotation.Nonnull String vacationUsed) {
     this.vacationUsed = vacationUsed;
     return this;
   }
@@ -296,12 +315,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return vacationUsed;
   }
 
-  public void setVacationUsed(String vacationUsed) {
+  public void setVacationUsed(@javax.annotation.Nonnull String vacationUsed) {
     this.vacationUsed = vacationUsed;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem vacationTotal(String vacationTotal) {
+  public EmployeeTimeoffsEntitlementsItem vacationTotal(@javax.annotation.Nonnull String vacationTotal) {
     this.vacationTotal = vacationTotal;
     return this;
   }
@@ -315,12 +334,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return vacationTotal;
   }
 
-  public void setVacationTotal(String vacationTotal) {
+  public void setVacationTotal(@javax.annotation.Nonnull String vacationTotal) {
     this.vacationTotal = vacationTotal;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem sickLeaveRequested(String sickLeaveRequested) {
+  public EmployeeTimeoffsEntitlementsItem sickLeaveRequested(@javax.annotation.Nonnull String sickLeaveRequested) {
     this.sickLeaveRequested = sickLeaveRequested;
     return this;
   }
@@ -334,12 +353,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return sickLeaveRequested;
   }
 
-  public void setSickLeaveRequested(String sickLeaveRequested) {
+  public void setSickLeaveRequested(@javax.annotation.Nonnull String sickLeaveRequested) {
     this.sickLeaveRequested = sickLeaveRequested;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem sickLeaveApproved(String sickLeaveApproved) {
+  public EmployeeTimeoffsEntitlementsItem sickLeaveApproved(@javax.annotation.Nonnull String sickLeaveApproved) {
     this.sickLeaveApproved = sickLeaveApproved;
     return this;
   }
@@ -353,12 +372,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return sickLeaveApproved;
   }
 
-  public void setSickLeaveApproved(String sickLeaveApproved) {
+  public void setSickLeaveApproved(@javax.annotation.Nonnull String sickLeaveApproved) {
     this.sickLeaveApproved = sickLeaveApproved;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem sickLeaveUsed(String sickLeaveUsed) {
+  public EmployeeTimeoffsEntitlementsItem sickLeaveUsed(@javax.annotation.Nonnull String sickLeaveUsed) {
     this.sickLeaveUsed = sickLeaveUsed;
     return this;
   }
@@ -372,12 +391,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return sickLeaveUsed;
   }
 
-  public void setSickLeaveUsed(String sickLeaveUsed) {
+  public void setSickLeaveUsed(@javax.annotation.Nonnull String sickLeaveUsed) {
     this.sickLeaveUsed = sickLeaveUsed;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem sickLeaveTotal(String sickLeaveTotal) {
+  public EmployeeTimeoffsEntitlementsItem sickLeaveTotal(@javax.annotation.Nonnull String sickLeaveTotal) {
     this.sickLeaveTotal = sickLeaveTotal;
     return this;
   }
@@ -391,12 +410,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return sickLeaveTotal;
   }
 
-  public void setSickLeaveTotal(String sickLeaveTotal) {
+  public void setSickLeaveTotal(@javax.annotation.Nonnull String sickLeaveTotal) {
     this.sickLeaveTotal = sickLeaveTotal;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem sickLeaveAllowed(String sickLeaveAllowed) {
+  public EmployeeTimeoffsEntitlementsItem sickLeaveAllowed(@javax.annotation.Nonnull String sickLeaveAllowed) {
     this.sickLeaveAllowed = sickLeaveAllowed;
     return this;
   }
@@ -410,12 +429,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return sickLeaveAllowed;
   }
 
-  public void setSickLeaveAllowed(String sickLeaveAllowed) {
+  public void setSickLeaveAllowed(@javax.annotation.Nonnull String sickLeaveAllowed) {
     this.sickLeaveAllowed = sickLeaveAllowed;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem otherLeaveRequested(String otherLeaveRequested) {
+  public EmployeeTimeoffsEntitlementsItem otherLeaveRequested(@javax.annotation.Nonnull String otherLeaveRequested) {
     this.otherLeaveRequested = otherLeaveRequested;
     return this;
   }
@@ -429,12 +448,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return otherLeaveRequested;
   }
 
-  public void setOtherLeaveRequested(String otherLeaveRequested) {
+  public void setOtherLeaveRequested(@javax.annotation.Nonnull String otherLeaveRequested) {
     this.otherLeaveRequested = otherLeaveRequested;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem otherLeaveApproved(String otherLeaveApproved) {
+  public EmployeeTimeoffsEntitlementsItem otherLeaveApproved(@javax.annotation.Nonnull String otherLeaveApproved) {
     this.otherLeaveApproved = otherLeaveApproved;
     return this;
   }
@@ -448,12 +467,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return otherLeaveApproved;
   }
 
-  public void setOtherLeaveApproved(String otherLeaveApproved) {
+  public void setOtherLeaveApproved(@javax.annotation.Nonnull String otherLeaveApproved) {
     this.otherLeaveApproved = otherLeaveApproved;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem otherLeaveUsed(String otherLeaveUsed) {
+  public EmployeeTimeoffsEntitlementsItem otherLeaveUsed(@javax.annotation.Nonnull String otherLeaveUsed) {
     this.otherLeaveUsed = otherLeaveUsed;
     return this;
   }
@@ -467,12 +486,12 @@ public class EmployeeTimeoffsEntitlementsItem {
     return otherLeaveUsed;
   }
 
-  public void setOtherLeaveUsed(String otherLeaveUsed) {
+  public void setOtherLeaveUsed(@javax.annotation.Nonnull String otherLeaveUsed) {
     this.otherLeaveUsed = otherLeaveUsed;
   }
 
 
-  public EmployeeTimeoffsEntitlementsItem otherLeaveTotal(String otherLeaveTotal) {
+  public EmployeeTimeoffsEntitlementsItem otherLeaveTotal(@javax.annotation.Nonnull String otherLeaveTotal) {
     this.otherLeaveTotal = otherLeaveTotal;
     return this;
   }
@@ -486,7 +505,7 @@ public class EmployeeTimeoffsEntitlementsItem {
     return otherLeaveTotal;
   }
 
-  public void setOtherLeaveTotal(String otherLeaveTotal) {
+  public void setOtherLeaveTotal(@javax.annotation.Nonnull String otherLeaveTotal) {
     this.otherLeaveTotal = otherLeaveTotal;
   }
 

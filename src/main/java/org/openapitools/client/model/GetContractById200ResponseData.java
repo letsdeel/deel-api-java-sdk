@@ -51,10 +51,11 @@ import org.openapitools.client.JSON;
 /**
  * GetContractById200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   /**
@@ -133,18 +134,22 @@ public class GetContractById200ResponseData {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_QUOTE = "quote";
   @SerializedName(SERIALIZED_NAME_QUOTE)
+  @javax.annotation.Nullable
   private GetContractById200ResponseDataQuote quote;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nonnull
   private String title;
 
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
+  @javax.annotation.Nullable
   private GetContractById200ResponseDataClient client;
 
   /**
@@ -227,20 +232,23 @@ public class GetContractById200ResponseData {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nonnull
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_SENIORITY = "seniority";
   @SerializedName(SERIALIZED_NAME_SENIORITY)
+  @javax.annotation.Nullable
   private GetContractById200ResponseDataSeniority seniority;
 
   public GetContractById200ResponseData() {
   }
 
-  public GetContractById200ResponseData id(String id) {
+  public GetContractById200ResponseData id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -254,12 +262,12 @@ public class GetContractById200ResponseData {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public GetContractById200ResponseData type(TypeEnum type) {
+  public GetContractById200ResponseData type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -273,12 +281,12 @@ public class GetContractById200ResponseData {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public GetContractById200ResponseData quote(GetContractById200ResponseDataQuote quote) {
+  public GetContractById200ResponseData quote(@javax.annotation.Nullable GetContractById200ResponseDataQuote quote) {
     this.quote = quote;
     return this;
   }
@@ -292,12 +300,12 @@ public class GetContractById200ResponseData {
     return quote;
   }
 
-  public void setQuote(GetContractById200ResponseDataQuote quote) {
+  public void setQuote(@javax.annotation.Nullable GetContractById200ResponseDataQuote quote) {
     this.quote = quote;
   }
 
 
-  public GetContractById200ResponseData title(String title) {
+  public GetContractById200ResponseData title(@javax.annotation.Nonnull String title) {
     this.title = title;
     return this;
   }
@@ -311,12 +319,12 @@ public class GetContractById200ResponseData {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nonnull String title) {
     this.title = title;
   }
 
 
-  public GetContractById200ResponseData client(GetContractById200ResponseDataClient client) {
+  public GetContractById200ResponseData client(@javax.annotation.Nullable GetContractById200ResponseDataClient client) {
     this.client = client;
     return this;
   }
@@ -330,12 +338,12 @@ public class GetContractById200ResponseData {
     return client;
   }
 
-  public void setClient(GetContractById200ResponseDataClient client) {
+  public void setClient(@javax.annotation.Nullable GetContractById200ResponseDataClient client) {
     this.client = client;
   }
 
 
-  public GetContractById200ResponseData status(StatusEnum status) {
+  public GetContractById200ResponseData status(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -349,12 +357,12 @@ public class GetContractById200ResponseData {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 
 
-  public GetContractById200ResponseData jobTitle(String jobTitle) {
+  public GetContractById200ResponseData jobTitle(@javax.annotation.Nonnull String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -368,12 +376,12 @@ public class GetContractById200ResponseData {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nonnull String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public GetContractById200ResponseData seniority(GetContractById200ResponseDataSeniority seniority) {
+  public GetContractById200ResponseData seniority(@javax.annotation.Nullable GetContractById200ResponseDataSeniority seniority) {
     this.seniority = seniority;
     return this;
   }
@@ -387,7 +395,7 @@ public class GetContractById200ResponseData {
     return seniority;
   }
 
-  public void setSeniority(GetContractById200ResponseDataSeniority seniority) {
+  public void setSeniority(@javax.annotation.Nullable GetContractById200ResponseDataSeniority seniority) {
     this.seniority = seniority;
   }
 

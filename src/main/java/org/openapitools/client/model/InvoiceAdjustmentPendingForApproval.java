@@ -51,40 +51,47 @@ import org.openapitools.client.JSON;
 /**
  * InvoiceAdjustmentPendingForApproval
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class InvoiceAdjustmentPendingForApproval {
   public static final String SERIALIZED_NAME_TEAM_ID = "team_id";
   @SerializedName(SERIALIZED_NAME_TEAM_ID)
+  @javax.annotation.Nullable
   private String teamId;
 
   public static final String SERIALIZED_NAME_CONTRACT_NAME = "contract_name";
   @SerializedName(SERIALIZED_NAME_CONTRACT_NAME)
+  @javax.annotation.Nonnull
   private String contractName;
 
   public static final String SERIALIZED_NAME_CONTRACT_OID = "contract_oid";
   @SerializedName(SERIALIZED_NAME_CONTRACT_OID)
+  @javax.annotation.Nonnull
   private String contractOid;
 
   public static final String SERIALIZED_NAME_ADJUSTMENT_ID = "adjustment_id";
   @SerializedName(SERIALIZED_NAME_ADJUSTMENT_ID)
+  @javax.annotation.Nonnull
   private String adjustmentId;
 
   public static final String SERIALIZED_NAME_ADJUSTMENT_TYPE = "adjustment_type";
   @SerializedName(SERIALIZED_NAME_ADJUSTMENT_TYPE)
+  @javax.annotation.Nonnull
   private String adjustmentType;
 
   public static final String SERIALIZED_NAME_APPROVERS = "approvers";
   @SerializedName(SERIALIZED_NAME_APPROVERS)
+  @javax.annotation.Nullable
   private List<InvoiceAdjustmentPendingForApprovalApproversInner> approvers = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_EVENT_TYPE = "event_type";
   @SerializedName(SERIALIZED_NAME_EVENT_TYPE)
+  @javax.annotation.Nonnull
   private String eventType;
 
   public InvoiceAdjustmentPendingForApproval() {
   }
 
-  public InvoiceAdjustmentPendingForApproval teamId(String teamId) {
+  public InvoiceAdjustmentPendingForApproval teamId(@javax.annotation.Nullable String teamId) {
     this.teamId = teamId;
     return this;
   }
@@ -98,12 +105,12 @@ public class InvoiceAdjustmentPendingForApproval {
     return teamId;
   }
 
-  public void setTeamId(String teamId) {
+  public void setTeamId(@javax.annotation.Nullable String teamId) {
     this.teamId = teamId;
   }
 
 
-  public InvoiceAdjustmentPendingForApproval contractName(String contractName) {
+  public InvoiceAdjustmentPendingForApproval contractName(@javax.annotation.Nonnull String contractName) {
     this.contractName = contractName;
     return this;
   }
@@ -117,12 +124,12 @@ public class InvoiceAdjustmentPendingForApproval {
     return contractName;
   }
 
-  public void setContractName(String contractName) {
+  public void setContractName(@javax.annotation.Nonnull String contractName) {
     this.contractName = contractName;
   }
 
 
-  public InvoiceAdjustmentPendingForApproval contractOid(String contractOid) {
+  public InvoiceAdjustmentPendingForApproval contractOid(@javax.annotation.Nonnull String contractOid) {
     this.contractOid = contractOid;
     return this;
   }
@@ -136,12 +143,12 @@ public class InvoiceAdjustmentPendingForApproval {
     return contractOid;
   }
 
-  public void setContractOid(String contractOid) {
+  public void setContractOid(@javax.annotation.Nonnull String contractOid) {
     this.contractOid = contractOid;
   }
 
 
-  public InvoiceAdjustmentPendingForApproval adjustmentId(String adjustmentId) {
+  public InvoiceAdjustmentPendingForApproval adjustmentId(@javax.annotation.Nonnull String adjustmentId) {
     this.adjustmentId = adjustmentId;
     return this;
   }
@@ -155,12 +162,12 @@ public class InvoiceAdjustmentPendingForApproval {
     return adjustmentId;
   }
 
-  public void setAdjustmentId(String adjustmentId) {
+  public void setAdjustmentId(@javax.annotation.Nonnull String adjustmentId) {
     this.adjustmentId = adjustmentId;
   }
 
 
-  public InvoiceAdjustmentPendingForApproval adjustmentType(String adjustmentType) {
+  public InvoiceAdjustmentPendingForApproval adjustmentType(@javax.annotation.Nonnull String adjustmentType) {
     this.adjustmentType = adjustmentType;
     return this;
   }
@@ -174,12 +181,12 @@ public class InvoiceAdjustmentPendingForApproval {
     return adjustmentType;
   }
 
-  public void setAdjustmentType(String adjustmentType) {
+  public void setAdjustmentType(@javax.annotation.Nonnull String adjustmentType) {
     this.adjustmentType = adjustmentType;
   }
 
 
-  public InvoiceAdjustmentPendingForApproval approvers(List<InvoiceAdjustmentPendingForApprovalApproversInner> approvers) {
+  public InvoiceAdjustmentPendingForApproval approvers(@javax.annotation.Nullable List<InvoiceAdjustmentPendingForApprovalApproversInner> approvers) {
     this.approvers = approvers;
     return this;
   }
@@ -201,12 +208,12 @@ public class InvoiceAdjustmentPendingForApproval {
     return approvers;
   }
 
-  public void setApprovers(List<InvoiceAdjustmentPendingForApprovalApproversInner> approvers) {
+  public void setApprovers(@javax.annotation.Nullable List<InvoiceAdjustmentPendingForApprovalApproversInner> approvers) {
     this.approvers = approvers;
   }
 
 
-  public InvoiceAdjustmentPendingForApproval eventType(String eventType) {
+  public InvoiceAdjustmentPendingForApproval eventType(@javax.annotation.Nonnull String eventType) {
     this.eventType = eventType;
     return this;
   }
@@ -220,7 +227,7 @@ public class InvoiceAdjustmentPendingForApproval {
     return eventType;
   }
 
-  public void setEventType(String eventType) {
+  public void setEventType(@javax.annotation.Nonnull String eventType) {
     this.eventType = eventType;
   }
 

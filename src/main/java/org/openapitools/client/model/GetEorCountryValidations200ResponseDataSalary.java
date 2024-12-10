@@ -48,14 +48,16 @@ import org.openapitools.client.JSON;
 /**
  * GetEorCountryValidations200ResponseDataSalary
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetEorCountryValidations200ResponseDataSalary {
   public static final String SERIALIZED_NAME_MAX = "max";
   @SerializedName(SERIALIZED_NAME_MAX)
+  @javax.annotation.Nullable
   private String max;
 
   public static final String SERIALIZED_NAME_MIN = "min";
   @SerializedName(SERIALIZED_NAME_MIN)
+  @javax.annotation.Nullable
   private String min;
 
   /**
@@ -118,12 +120,13 @@ public class GetEorCountryValidations200ResponseDataSalary {
 
   public static final String SERIALIZED_NAME_FREQUENCY = "frequency";
   @SerializedName(SERIALIZED_NAME_FREQUENCY)
+  @javax.annotation.Nullable
   private FrequencyEnum frequency;
 
   public GetEorCountryValidations200ResponseDataSalary() {
   }
 
-  public GetEorCountryValidations200ResponseDataSalary max(String max) {
+  public GetEorCountryValidations200ResponseDataSalary max(@javax.annotation.Nullable String max) {
     this.max = max;
     return this;
   }
@@ -137,12 +140,12 @@ public class GetEorCountryValidations200ResponseDataSalary {
     return max;
   }
 
-  public void setMax(String max) {
+  public void setMax(@javax.annotation.Nullable String max) {
     this.max = max;
   }
 
 
-  public GetEorCountryValidations200ResponseDataSalary min(String min) {
+  public GetEorCountryValidations200ResponseDataSalary min(@javax.annotation.Nullable String min) {
     this.min = min;
     return this;
   }
@@ -156,12 +159,12 @@ public class GetEorCountryValidations200ResponseDataSalary {
     return min;
   }
 
-  public void setMin(String min) {
+  public void setMin(@javax.annotation.Nullable String min) {
     this.min = min;
   }
 
 
-  public GetEorCountryValidations200ResponseDataSalary frequency(FrequencyEnum frequency) {
+  public GetEorCountryValidations200ResponseDataSalary frequency(@javax.annotation.Nullable FrequencyEnum frequency) {
     this.frequency = frequency;
     return this;
   }
@@ -175,7 +178,7 @@ public class GetEorCountryValidations200ResponseDataSalary {
     return frequency;
   }
 
-  public void setFrequency(FrequencyEnum frequency) {
+  public void setFrequency(@javax.annotation.Nullable FrequencyEnum frequency) {
     this.frequency = frequency;
   }
 

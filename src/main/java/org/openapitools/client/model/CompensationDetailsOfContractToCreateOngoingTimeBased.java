@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * CompensationDetailsOfContractToCreateOngoingTimeBased
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CompensationDetailsOfContractToCreateOngoingTimeBased {
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nonnull
   private WorkStatementScaleEnum scale;
 
   public CompensationDetailsOfContractToCreateOngoingTimeBased() {
   }
 
-  public CompensationDetailsOfContractToCreateOngoingTimeBased amount(BigDecimal amount) {
+  public CompensationDetailsOfContractToCreateOngoingTimeBased amount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -77,12 +79,12 @@ public class CompensationDetailsOfContractToCreateOngoingTimeBased {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public CompensationDetailsOfContractToCreateOngoingTimeBased scale(WorkStatementScaleEnum scale) {
+  public CompensationDetailsOfContractToCreateOngoingTimeBased scale(@javax.annotation.Nonnull WorkStatementScaleEnum scale) {
     this.scale = scale;
     return this;
   }
@@ -96,7 +98,7 @@ public class CompensationDetailsOfContractToCreateOngoingTimeBased {
     return scale;
   }
 
-  public void setScale(WorkStatementScaleEnum scale) {
+  public void setScale(@javax.annotation.Nonnull WorkStatementScaleEnum scale) {
     this.scale = scale;
   }
 

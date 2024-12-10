@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * InputToCreateFileRefData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class InputToCreateFileRefData {
   public static final String SERIALIZED_NAME_CONTENT_TYPE = "content_type";
   @SerializedName(SERIALIZED_NAME_CONTENT_TYPE)
+  @javax.annotation.Nonnull
   private FileRefTypeEnum contentType;
 
   public InputToCreateFileRefData() {
   }
 
-  public InputToCreateFileRefData contentType(FileRefTypeEnum contentType) {
+  public InputToCreateFileRefData contentType(@javax.annotation.Nonnull FileRefTypeEnum contentType) {
     this.contentType = contentType;
     return this;
   }
@@ -72,7 +73,7 @@ public class InputToCreateFileRefData {
     return contentType;
   }
 
-  public void setContentType(FileRefTypeEnum contentType) {
+  public void setContentType(@javax.annotation.Nonnull FileRefTypeEnum contentType) {
     this.contentType = contentType;
   }
 

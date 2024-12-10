@@ -48,32 +48,37 @@ import org.openapitools.client.JSON;
 /**
  * CalculateEorEmploymentCost200ResponseCostsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CalculateEorEmploymentCost200ResponseCostsInner {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private String amount;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_FREQUENCY = "frequency";
   @SerializedName(SERIALIZED_NAME_FREQUENCY)
+  @javax.annotation.Nullable
   private String frequency;
 
   public static final String SERIALIZED_NAME_COUNTRY_CODE = "country_code";
   @SerializedName(SERIALIZED_NAME_COUNTRY_CODE)
+  @javax.annotation.Nullable
   private String countryCode;
 
   public CalculateEorEmploymentCost200ResponseCostsInner() {
   }
 
-  public CalculateEorEmploymentCost200ResponseCostsInner name(String name) {
+  public CalculateEorEmploymentCost200ResponseCostsInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -87,12 +92,12 @@ public class CalculateEorEmploymentCost200ResponseCostsInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public CalculateEorEmploymentCost200ResponseCostsInner amount(String amount) {
+  public CalculateEorEmploymentCost200ResponseCostsInner amount(@javax.annotation.Nullable String amount) {
     this.amount = amount;
     return this;
   }
@@ -106,12 +111,12 @@ public class CalculateEorEmploymentCost200ResponseCostsInner {
     return amount;
   }
 
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nullable String amount) {
     this.amount = amount;
   }
 
 
-  public CalculateEorEmploymentCost200ResponseCostsInner country(String country) {
+  public CalculateEorEmploymentCost200ResponseCostsInner country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -125,12 +130,12 @@ public class CalculateEorEmploymentCost200ResponseCostsInner {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public CalculateEorEmploymentCost200ResponseCostsInner frequency(String frequency) {
+  public CalculateEorEmploymentCost200ResponseCostsInner frequency(@javax.annotation.Nullable String frequency) {
     this.frequency = frequency;
     return this;
   }
@@ -144,12 +149,12 @@ public class CalculateEorEmploymentCost200ResponseCostsInner {
     return frequency;
   }
 
-  public void setFrequency(String frequency) {
+  public void setFrequency(@javax.annotation.Nullable String frequency) {
     this.frequency = frequency;
   }
 
 
-  public CalculateEorEmploymentCost200ResponseCostsInner countryCode(String countryCode) {
+  public CalculateEorEmploymentCost200ResponseCostsInner countryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -163,7 +168,7 @@ public class CalculateEorEmploymentCost200ResponseCostsInner {
     return countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
   }
 

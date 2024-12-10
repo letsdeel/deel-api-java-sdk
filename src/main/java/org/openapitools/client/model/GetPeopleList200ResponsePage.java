@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * GetPeopleList200ResponsePage
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPeopleList200ResponsePage {
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
+  @javax.annotation.Nonnull
   private BigDecimal offset;
 
   public static final String SERIALIZED_NAME_TOTAL_ROWS = "total_rows";
   @SerializedName(SERIALIZED_NAME_TOTAL_ROWS)
+  @javax.annotation.Nonnull
   private BigDecimal totalRows;
 
   public static final String SERIALIZED_NAME_ITEMS_PER_PAGE = "items_per_page";
   @SerializedName(SERIALIZED_NAME_ITEMS_PER_PAGE)
+  @javax.annotation.Nonnull
   private BigDecimal itemsPerPage;
 
   public GetPeopleList200ResponsePage() {
   }
 
-  public GetPeopleList200ResponsePage offset(BigDecimal offset) {
+  public GetPeopleList200ResponsePage offset(@javax.annotation.Nonnull BigDecimal offset) {
     this.offset = offset;
     return this;
   }
@@ -82,12 +85,12 @@ public class GetPeopleList200ResponsePage {
     return offset;
   }
 
-  public void setOffset(BigDecimal offset) {
+  public void setOffset(@javax.annotation.Nonnull BigDecimal offset) {
     this.offset = offset;
   }
 
 
-  public GetPeopleList200ResponsePage totalRows(BigDecimal totalRows) {
+  public GetPeopleList200ResponsePage totalRows(@javax.annotation.Nonnull BigDecimal totalRows) {
     this.totalRows = totalRows;
     return this;
   }
@@ -101,12 +104,12 @@ public class GetPeopleList200ResponsePage {
     return totalRows;
   }
 
-  public void setTotalRows(BigDecimal totalRows) {
+  public void setTotalRows(@javax.annotation.Nonnull BigDecimal totalRows) {
     this.totalRows = totalRows;
   }
 
 
-  public GetPeopleList200ResponsePage itemsPerPage(BigDecimal itemsPerPage) {
+  public GetPeopleList200ResponsePage itemsPerPage(@javax.annotation.Nonnull BigDecimal itemsPerPage) {
     this.itemsPerPage = itemsPerPage;
     return this;
   }
@@ -122,7 +125,7 @@ public class GetPeopleList200ResponsePage {
     return itemsPerPage;
   }
 
-  public void setItemsPerPage(BigDecimal itemsPerPage) {
+  public void setItemsPerPage(@javax.annotation.Nonnull BigDecimal itemsPerPage) {
     this.itemsPerPage = itemsPerPage;
   }
 

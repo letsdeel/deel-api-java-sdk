@@ -53,32 +53,37 @@ import org.openapitools.client.JSON;
 /**
  * EorEmployeeCostCalculationRequestBody
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorEmployeeCostCalculationRequestBody {
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
+  @javax.annotation.Nonnull
   private BigDecimal salary;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nonnull
   private String country;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nonnull
   private String currency;
 
   public static final String SERIALIZED_NAME_BENEFITS = "benefits";
   @SerializedName(SERIALIZED_NAME_BENEFITS)
+  @javax.annotation.Nullable
   private List<EorEmployeeCostCalculationRequestBodyBenefitsInner> benefits;
 
   public EorEmployeeCostCalculationRequestBody() {
   }
 
-  public EorEmployeeCostCalculationRequestBody salary(BigDecimal salary) {
+  public EorEmployeeCostCalculationRequestBody salary(@javax.annotation.Nonnull BigDecimal salary) {
     this.salary = salary;
     return this;
   }
@@ -93,12 +98,12 @@ public class EorEmployeeCostCalculationRequestBody {
     return salary;
   }
 
-  public void setSalary(BigDecimal salary) {
+  public void setSalary(@javax.annotation.Nonnull BigDecimal salary) {
     this.salary = salary;
   }
 
 
-  public EorEmployeeCostCalculationRequestBody country(String country) {
+  public EorEmployeeCostCalculationRequestBody country(@javax.annotation.Nonnull String country) {
     this.country = country;
     return this;
   }
@@ -112,12 +117,12 @@ public class EorEmployeeCostCalculationRequestBody {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nonnull String country) {
     this.country = country;
   }
 
 
-  public EorEmployeeCostCalculationRequestBody state(String state) {
+  public EorEmployeeCostCalculationRequestBody state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -131,12 +136,12 @@ public class EorEmployeeCostCalculationRequestBody {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public EorEmployeeCostCalculationRequestBody currency(String currency) {
+  public EorEmployeeCostCalculationRequestBody currency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
     return this;
   }
@@ -150,12 +155,12 @@ public class EorEmployeeCostCalculationRequestBody {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
   }
 
 
-  public EorEmployeeCostCalculationRequestBody benefits(List<EorEmployeeCostCalculationRequestBodyBenefitsInner> benefits) {
+  public EorEmployeeCostCalculationRequestBody benefits(@javax.annotation.Nullable List<EorEmployeeCostCalculationRequestBodyBenefitsInner> benefits) {
     this.benefits = benefits;
     return this;
   }
@@ -177,7 +182,7 @@ public class EorEmployeeCostCalculationRequestBody {
     return benefits;
   }
 
-  public void setBenefits(List<EorEmployeeCostCalculationRequestBodyBenefitsInner> benefits) {
+  public void setBenefits(@javax.annotation.Nullable List<EorEmployeeCostCalculationRequestBodyBenefitsInner> benefits) {
     this.benefits = benefits;
   }
 

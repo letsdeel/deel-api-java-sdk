@@ -49,32 +49,37 @@ import org.openapitools.client.JSON;
 /**
  * CreateWorkerRelationTypeResponseContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateWorkerRelationTypeResponseContainerData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private UUID id;
 
   public static final String SERIALIZED_NAME_PARENT_NAME = "parent_name";
   @SerializedName(SERIALIZED_NAME_PARENT_NAME)
+  @javax.annotation.Nullable
   private String parentName;
 
   public static final String SERIALIZED_NAME_CHILD_NAME = "child_name";
   @SerializedName(SERIALIZED_NAME_CHILD_NAME)
+  @javax.annotation.Nullable
   private String childName;
 
   public static final String SERIALIZED_NAME_IS_DEFAULT = "is_default";
   @SerializedName(SERIALIZED_NAME_IS_DEFAULT)
+  @javax.annotation.Nullable
   private Boolean isDefault;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public CreateWorkerRelationTypeResponseContainerData() {
   }
 
-  public CreateWorkerRelationTypeResponseContainerData id(UUID id) {
+  public CreateWorkerRelationTypeResponseContainerData id(@javax.annotation.Nullable UUID id) {
     this.id = id;
     return this;
   }
@@ -88,12 +93,12 @@ public class CreateWorkerRelationTypeResponseContainerData {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nullable UUID id) {
     this.id = id;
   }
 
 
-  public CreateWorkerRelationTypeResponseContainerData parentName(String parentName) {
+  public CreateWorkerRelationTypeResponseContainerData parentName(@javax.annotation.Nullable String parentName) {
     this.parentName = parentName;
     return this;
   }
@@ -107,12 +112,12 @@ public class CreateWorkerRelationTypeResponseContainerData {
     return parentName;
   }
 
-  public void setParentName(String parentName) {
+  public void setParentName(@javax.annotation.Nullable String parentName) {
     this.parentName = parentName;
   }
 
 
-  public CreateWorkerRelationTypeResponseContainerData childName(String childName) {
+  public CreateWorkerRelationTypeResponseContainerData childName(@javax.annotation.Nullable String childName) {
     this.childName = childName;
     return this;
   }
@@ -126,12 +131,12 @@ public class CreateWorkerRelationTypeResponseContainerData {
     return childName;
   }
 
-  public void setChildName(String childName) {
+  public void setChildName(@javax.annotation.Nullable String childName) {
     this.childName = childName;
   }
 
 
-  public CreateWorkerRelationTypeResponseContainerData isDefault(Boolean isDefault) {
+  public CreateWorkerRelationTypeResponseContainerData isDefault(@javax.annotation.Nullable Boolean isDefault) {
     this.isDefault = isDefault;
     return this;
   }
@@ -145,12 +150,12 @@ public class CreateWorkerRelationTypeResponseContainerData {
     return isDefault;
   }
 
-  public void setIsDefault(Boolean isDefault) {
+  public void setIsDefault(@javax.annotation.Nullable Boolean isDefault) {
     this.isDefault = isDefault;
   }
 
 
-  public CreateWorkerRelationTypeResponseContainerData externalId(String externalId) {
+  public CreateWorkerRelationTypeResponseContainerData externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -164,7 +169,7 @@ public class CreateWorkerRelationTypeResponseContainerData {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 

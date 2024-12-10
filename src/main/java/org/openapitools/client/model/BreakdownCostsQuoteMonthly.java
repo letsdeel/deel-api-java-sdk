@@ -52,24 +52,27 @@ import org.openapitools.client.JSON;
 /**
  * BreakdownCostsQuoteMonthly
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BreakdownCostsQuoteMonthly {
   public static final String SERIALIZED_NAME_COSTS = "costs";
   @SerializedName(SERIALIZED_NAME_COSTS)
+  @javax.annotation.Nullable
   private List<CostQuote> costs = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal total;
 
   public static final String SERIALIZED_NAME_TOTAL_USD = "total_usd";
   @SerializedName(SERIALIZED_NAME_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal totalUsd;
 
   public BreakdownCostsQuoteMonthly() {
   }
 
-  public BreakdownCostsQuoteMonthly costs(List<CostQuote> costs) {
+  public BreakdownCostsQuoteMonthly costs(@javax.annotation.Nullable List<CostQuote> costs) {
     this.costs = costs;
     return this;
   }
@@ -91,12 +94,12 @@ public class BreakdownCostsQuoteMonthly {
     return costs;
   }
 
-  public void setCosts(List<CostQuote> costs) {
+  public void setCosts(@javax.annotation.Nullable List<CostQuote> costs) {
     this.costs = costs;
   }
 
 
-  public BreakdownCostsQuoteMonthly total(BigDecimal total) {
+  public BreakdownCostsQuoteMonthly total(@javax.annotation.Nullable BigDecimal total) {
     this.total = total;
     return this;
   }
@@ -110,12 +113,12 @@ public class BreakdownCostsQuoteMonthly {
     return total;
   }
 
-  public void setTotal(BigDecimal total) {
+  public void setTotal(@javax.annotation.Nullable BigDecimal total) {
     this.total = total;
   }
 
 
-  public BreakdownCostsQuoteMonthly totalUsd(BigDecimal totalUsd) {
+  public BreakdownCostsQuoteMonthly totalUsd(@javax.annotation.Nullable BigDecimal totalUsd) {
     this.totalUsd = totalUsd;
     return this;
   }
@@ -129,7 +132,7 @@ public class BreakdownCostsQuoteMonthly {
     return totalUsd;
   }
 
-  public void setTotalUsd(BigDecimal totalUsd) {
+  public void setTotalUsd(@javax.annotation.Nullable BigDecimal totalUsd) {
     this.totalUsd = totalUsd;
   }
 

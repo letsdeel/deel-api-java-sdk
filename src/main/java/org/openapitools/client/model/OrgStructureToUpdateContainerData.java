@@ -50,32 +50,37 @@ import org.openapitools.client.JSON;
 /**
  * OrgStructureToUpdateContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OrgStructureToUpdateContainerData {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TEAMS = "teams";
   @SerializedName(SERIALIZED_NAME_TEAMS)
+  @javax.annotation.Nonnull
   private List<Object> teams = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_ENABLE_ROLES = "enable_roles";
   @SerializedName(SERIALIZED_NAME_ENABLE_ROLES)
+  @javax.annotation.Nullable
   private Boolean enableRoles;
 
   public static final String SERIALIZED_NAME_IS_MULTISELECT = "is_multiselect";
   @SerializedName(SERIALIZED_NAME_IS_MULTISELECT)
+  @javax.annotation.Nullable
   private Boolean isMultiselect;
 
   public OrgStructureToUpdateContainerData() {
   }
 
-  public OrgStructureToUpdateContainerData name(String name) {
+  public OrgStructureToUpdateContainerData name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -89,12 +94,12 @@ public class OrgStructureToUpdateContainerData {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public OrgStructureToUpdateContainerData teams(List<Object> teams) {
+  public OrgStructureToUpdateContainerData teams(@javax.annotation.Nonnull List<Object> teams) {
     this.teams = teams;
     return this;
   }
@@ -116,12 +121,12 @@ public class OrgStructureToUpdateContainerData {
     return teams;
   }
 
-  public void setTeams(List<Object> teams) {
+  public void setTeams(@javax.annotation.Nonnull List<Object> teams) {
     this.teams = teams;
   }
 
 
-  public OrgStructureToUpdateContainerData externalId(String externalId) {
+  public OrgStructureToUpdateContainerData externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -135,12 +140,12 @@ public class OrgStructureToUpdateContainerData {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public OrgStructureToUpdateContainerData enableRoles(Boolean enableRoles) {
+  public OrgStructureToUpdateContainerData enableRoles(@javax.annotation.Nullable Boolean enableRoles) {
     this.enableRoles = enableRoles;
     return this;
   }
@@ -154,12 +159,12 @@ public class OrgStructureToUpdateContainerData {
     return enableRoles;
   }
 
-  public void setEnableRoles(Boolean enableRoles) {
+  public void setEnableRoles(@javax.annotation.Nullable Boolean enableRoles) {
     this.enableRoles = enableRoles;
   }
 
 
-  public OrgStructureToUpdateContainerData isMultiselect(Boolean isMultiselect) {
+  public OrgStructureToUpdateContainerData isMultiselect(@javax.annotation.Nullable Boolean isMultiselect) {
     this.isMultiselect = isMultiselect;
     return this;
   }
@@ -173,7 +178,7 @@ public class OrgStructureToUpdateContainerData {
     return isMultiselect;
   }
 
-  public void setIsMultiselect(Boolean isMultiselect) {
+  public void setIsMultiselect(@javax.annotation.Nullable Boolean isMultiselect) {
     this.isMultiselect = isMultiselect;
   }
 

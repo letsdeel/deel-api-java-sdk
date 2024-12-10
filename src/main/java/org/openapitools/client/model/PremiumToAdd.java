@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * PremiumToAdd
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PremiumToAdd {
   public static final String SERIALIZED_NAME_AGREEMENT_REFLECTS_RELATION = "agreement_reflects_relation";
   @SerializedName(SERIALIZED_NAME_AGREEMENT_REFLECTS_RELATION)
+  @javax.annotation.Nonnull
   private Boolean agreementReflectsRelation;
 
   public static final String SERIALIZED_NAME_CONTRACTOR_CHARACTERISTICS = "contractor_characteristics";
   @SerializedName(SERIALIZED_NAME_CONTRACTOR_CHARACTERISTICS)
+  @javax.annotation.Nonnull
   private Boolean contractorCharacteristics;
 
   public PremiumToAdd() {
   }
 
-  public PremiumToAdd agreementReflectsRelation(Boolean agreementReflectsRelation) {
+  public PremiumToAdd agreementReflectsRelation(@javax.annotation.Nonnull Boolean agreementReflectsRelation) {
     this.agreementReflectsRelation = agreementReflectsRelation;
     return this;
   }
@@ -75,12 +77,12 @@ public class PremiumToAdd {
     return agreementReflectsRelation;
   }
 
-  public void setAgreementReflectsRelation(Boolean agreementReflectsRelation) {
+  public void setAgreementReflectsRelation(@javax.annotation.Nonnull Boolean agreementReflectsRelation) {
     this.agreementReflectsRelation = agreementReflectsRelation;
   }
 
 
-  public PremiumToAdd contractorCharacteristics(Boolean contractorCharacteristics) {
+  public PremiumToAdd contractorCharacteristics(@javax.annotation.Nonnull Boolean contractorCharacteristics) {
     this.contractorCharacteristics = contractorCharacteristics;
     return this;
   }
@@ -94,7 +96,7 @@ public class PremiumToAdd {
     return contractorCharacteristics;
   }
 
-  public void setContractorCharacteristics(Boolean contractorCharacteristics) {
+  public void setContractorCharacteristics(@javax.annotation.Nonnull Boolean contractorCharacteristics) {
     this.contractorCharacteristics = contractorCharacteristics;
   }
 

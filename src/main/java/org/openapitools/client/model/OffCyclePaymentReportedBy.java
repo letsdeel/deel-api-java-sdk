@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * OffCyclePaymentReportedBy
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffCyclePaymentReportedBy {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nonnull
   private String fullName;
 
   public OffCyclePaymentReportedBy() {
   }
 
-  public OffCyclePaymentReportedBy id(String id) {
+  public OffCyclePaymentReportedBy id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -75,12 +77,12 @@ public class OffCyclePaymentReportedBy {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public OffCyclePaymentReportedBy fullName(String fullName) {
+  public OffCyclePaymentReportedBy fullName(@javax.annotation.Nonnull String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -94,7 +96,7 @@ public class OffCyclePaymentReportedBy {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nonnull String fullName) {
     this.fullName = fullName;
   }
 

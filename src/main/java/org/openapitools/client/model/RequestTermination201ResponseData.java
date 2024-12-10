@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * RequestTermination201ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class RequestTermination201ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_LAST_DATE_OF_WORK = "last_date_of_work";
   @SerializedName(SERIALIZED_NAME_LAST_DATE_OF_WORK)
+  @javax.annotation.Nonnull
   private OffsetDateTime lastDateOfWork;
 
   public RequestTermination201ResponseData() {
   }
 
-  public RequestTermination201ResponseData id(UUID id) {
+  public RequestTermination201ResponseData id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -77,12 +79,12 @@ public class RequestTermination201ResponseData {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public RequestTermination201ResponseData lastDateOfWork(OffsetDateTime lastDateOfWork) {
+  public RequestTermination201ResponseData lastDateOfWork(@javax.annotation.Nonnull OffsetDateTime lastDateOfWork) {
     this.lastDateOfWork = lastDateOfWork;
     return this;
   }
@@ -96,7 +98,7 @@ public class RequestTermination201ResponseData {
     return lastDateOfWork;
   }
 
-  public void setLastDateOfWork(OffsetDateTime lastDateOfWork) {
+  public void setLastDateOfWork(@javax.annotation.Nonnull OffsetDateTime lastDateOfWork) {
     this.lastDateOfWork = lastDateOfWork;
   }
 

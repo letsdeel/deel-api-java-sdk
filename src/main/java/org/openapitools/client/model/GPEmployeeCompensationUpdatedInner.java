@@ -52,28 +52,32 @@ import org.openapitools.client.JSON;
 /**
  * GPEmployeeCompensationUpdatedInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GPEmployeeCompensationUpdatedInner {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private GPContractSalaryStatusEnum status;
 
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nullable
   private GPContractSalaryScaleEnum scale;
 
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
+  @javax.annotation.Nullable
   private BigDecimal salary;
 
   public static final String SERIALIZED_NAME_EFFECTIVE_DATE = "effective_date";
   @SerializedName(SERIALIZED_NAME_EFFECTIVE_DATE)
+  @javax.annotation.Nullable
   private LocalDate effectiveDate;
 
   public GPEmployeeCompensationUpdatedInner() {
   }
 
-  public GPEmployeeCompensationUpdatedInner status(GPContractSalaryStatusEnum status) {
+  public GPEmployeeCompensationUpdatedInner status(@javax.annotation.Nullable GPContractSalaryStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -87,12 +91,12 @@ public class GPEmployeeCompensationUpdatedInner {
     return status;
   }
 
-  public void setStatus(GPContractSalaryStatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable GPContractSalaryStatusEnum status) {
     this.status = status;
   }
 
 
-  public GPEmployeeCompensationUpdatedInner scale(GPContractSalaryScaleEnum scale) {
+  public GPEmployeeCompensationUpdatedInner scale(@javax.annotation.Nullable GPContractSalaryScaleEnum scale) {
     this.scale = scale;
     return this;
   }
@@ -106,12 +110,12 @@ public class GPEmployeeCompensationUpdatedInner {
     return scale;
   }
 
-  public void setScale(GPContractSalaryScaleEnum scale) {
+  public void setScale(@javax.annotation.Nullable GPContractSalaryScaleEnum scale) {
     this.scale = scale;
   }
 
 
-  public GPEmployeeCompensationUpdatedInner salary(BigDecimal salary) {
+  public GPEmployeeCompensationUpdatedInner salary(@javax.annotation.Nullable BigDecimal salary) {
     this.salary = salary;
     return this;
   }
@@ -125,12 +129,12 @@ public class GPEmployeeCompensationUpdatedInner {
     return salary;
   }
 
-  public void setSalary(BigDecimal salary) {
+  public void setSalary(@javax.annotation.Nullable BigDecimal salary) {
     this.salary = salary;
   }
 
 
-  public GPEmployeeCompensationUpdatedInner effectiveDate(LocalDate effectiveDate) {
+  public GPEmployeeCompensationUpdatedInner effectiveDate(@javax.annotation.Nullable LocalDate effectiveDate) {
     this.effectiveDate = effectiveDate;
     return this;
   }
@@ -144,7 +148,7 @@ public class GPEmployeeCompensationUpdatedInner {
     return effectiveDate;
   }
 
-  public void setEffectiveDate(LocalDate effectiveDate) {
+  public void setEffectiveDate(@javax.annotation.Nullable LocalDate effectiveDate) {
     this.effectiveDate = effectiveDate;
   }
 

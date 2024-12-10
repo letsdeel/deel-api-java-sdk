@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * HrisJobInformationTitleName
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisJobInformationTitleName {
   public static final String SERIALIZED_NAME_SENIORITY_ID = "seniority_id";
   @SerializedName(SERIALIZED_NAME_SENIORITY_ID)
+  @javax.annotation.Nonnull
   private BigDecimal seniorityId;
 
   public static final String SERIALIZED_NAME_JOB_TITLE_NAME = "job_title_name";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE_NAME)
+  @javax.annotation.Nonnull
   private String jobTitleName;
 
   public HrisJobInformationTitleName() {
   }
 
-  public HrisJobInformationTitleName seniorityId(BigDecimal seniorityId) {
+  public HrisJobInformationTitleName seniorityId(@javax.annotation.Nonnull BigDecimal seniorityId) {
     this.seniorityId = seniorityId;
     return this;
   }
@@ -76,12 +78,12 @@ public class HrisJobInformationTitleName {
     return seniorityId;
   }
 
-  public void setSeniorityId(BigDecimal seniorityId) {
+  public void setSeniorityId(@javax.annotation.Nonnull BigDecimal seniorityId) {
     this.seniorityId = seniorityId;
   }
 
 
-  public HrisJobInformationTitleName jobTitleName(String jobTitleName) {
+  public HrisJobInformationTitleName jobTitleName(@javax.annotation.Nonnull String jobTitleName) {
     this.jobTitleName = jobTitleName;
     return this;
   }
@@ -95,7 +97,7 @@ public class HrisJobInformationTitleName {
     return jobTitleName;
   }
 
-  public void setJobTitleName(String jobTitleName) {
+  public void setJobTitleName(@javax.annotation.Nonnull String jobTitleName) {
     this.jobTitleName = jobTitleName;
   }
 

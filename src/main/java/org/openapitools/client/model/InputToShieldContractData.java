@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * InputToShieldContractData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class InputToShieldContractData {
   public static final String SERIALIZED_NAME_AGREEMENT_ID = "agreement_id";
   @SerializedName(SERIALIZED_NAME_AGREEMENT_ID)
+  @javax.annotation.Nonnull
   private BigDecimal agreementId;
 
   public InputToShieldContractData() {
   }
 
-  public InputToShieldContractData agreementId(BigDecimal agreementId) {
+  public InputToShieldContractData agreementId(@javax.annotation.Nonnull BigDecimal agreementId) {
     this.agreementId = agreementId;
     return this;
   }
@@ -72,7 +73,7 @@ public class InputToShieldContractData {
     return agreementId;
   }
 
-  public void setAgreementId(BigDecimal agreementId) {
+  public void setAgreementId(@javax.annotation.Nonnull BigDecimal agreementId) {
     this.agreementId = agreementId;
   }
 

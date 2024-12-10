@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * InputToCreatePgoTask
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class InputToCreatePgoTask {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private PgoTaskToCreate data;
 
   public InputToCreatePgoTask() {
   }
 
-  public InputToCreatePgoTask data(PgoTaskToCreate data) {
+  public InputToCreatePgoTask data(@javax.annotation.Nonnull PgoTaskToCreate data) {
     this.data = data;
     return this;
   }
@@ -72,7 +73,7 @@ public class InputToCreatePgoTask {
     return data;
   }
 
-  public void setData(PgoTaskToCreate data) {
+  public void setData(@javax.annotation.Nonnull PgoTaskToCreate data) {
     this.data = data;
   }
 

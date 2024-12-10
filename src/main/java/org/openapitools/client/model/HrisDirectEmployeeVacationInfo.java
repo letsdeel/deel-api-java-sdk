@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * HrisDirectEmployeeVacationInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisDirectEmployeeVacationInfo {
   public static final String SERIALIZED_NAME_VACATION_ACCRUAL_START_DATE = "vacation_accrual_start_date";
   @SerializedName(SERIALIZED_NAME_VACATION_ACCRUAL_START_DATE)
+  @javax.annotation.Nonnull
   private LocalDate vacationAccrualStartDate;
 
   public static final String SERIALIZED_NAME_VACATION_YEARLY_POLICY = "vacation_yearly_policy";
   @SerializedName(SERIALIZED_NAME_VACATION_YEARLY_POLICY)
+  @javax.annotation.Nonnull
   private BigDecimal vacationYearlyPolicy;
 
   public HrisDirectEmployeeVacationInfo() {
   }
 
-  public HrisDirectEmployeeVacationInfo vacationAccrualStartDate(LocalDate vacationAccrualStartDate) {
+  public HrisDirectEmployeeVacationInfo vacationAccrualStartDate(@javax.annotation.Nonnull LocalDate vacationAccrualStartDate) {
     this.vacationAccrualStartDate = vacationAccrualStartDate;
     return this;
   }
@@ -77,12 +79,12 @@ public class HrisDirectEmployeeVacationInfo {
     return vacationAccrualStartDate;
   }
 
-  public void setVacationAccrualStartDate(LocalDate vacationAccrualStartDate) {
+  public void setVacationAccrualStartDate(@javax.annotation.Nonnull LocalDate vacationAccrualStartDate) {
     this.vacationAccrualStartDate = vacationAccrualStartDate;
   }
 
 
-  public HrisDirectEmployeeVacationInfo vacationYearlyPolicy(BigDecimal vacationYearlyPolicy) {
+  public HrisDirectEmployeeVacationInfo vacationYearlyPolicy(@javax.annotation.Nonnull BigDecimal vacationYearlyPolicy) {
     this.vacationYearlyPolicy = vacationYearlyPolicy;
     return this;
   }
@@ -98,7 +100,7 @@ public class HrisDirectEmployeeVacationInfo {
     return vacationYearlyPolicy;
   }
 
-  public void setVacationYearlyPolicy(BigDecimal vacationYearlyPolicy) {
+  public void setVacationYearlyPolicy(@javax.annotation.Nonnull BigDecimal vacationYearlyPolicy) {
     this.vacationYearlyPolicy = vacationYearlyPolicy;
   }
 

@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * GetBackgroundChecksOptions200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBackgroundChecksOptions200ResponseData {
   public static final String SERIALIZED_NAME_PACKAGES = "packages";
   @SerializedName(SERIALIZED_NAME_PACKAGES)
+  @javax.annotation.Nullable
   private List<GetBackgroundChecksOptions200ResponseDataPackagesInner> packages = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_INDIVIDUAL_CHECKS = "individual_checks";
   @SerializedName(SERIALIZED_NAME_INDIVIDUAL_CHECKS)
+  @javax.annotation.Nullable
   private List<GetBackgroundChecksOptions200ResponseDataIndividualChecksInner> individualChecks = new ArrayList<>();
 
   public GetBackgroundChecksOptions200ResponseData() {
   }
 
-  public GetBackgroundChecksOptions200ResponseData packages(List<GetBackgroundChecksOptions200ResponseDataPackagesInner> packages) {
+  public GetBackgroundChecksOptions200ResponseData packages(@javax.annotation.Nullable List<GetBackgroundChecksOptions200ResponseDataPackagesInner> packages) {
     this.packages = packages;
     return this;
   }
@@ -87,12 +89,12 @@ public class GetBackgroundChecksOptions200ResponseData {
     return packages;
   }
 
-  public void setPackages(List<GetBackgroundChecksOptions200ResponseDataPackagesInner> packages) {
+  public void setPackages(@javax.annotation.Nullable List<GetBackgroundChecksOptions200ResponseDataPackagesInner> packages) {
     this.packages = packages;
   }
 
 
-  public GetBackgroundChecksOptions200ResponseData individualChecks(List<GetBackgroundChecksOptions200ResponseDataIndividualChecksInner> individualChecks) {
+  public GetBackgroundChecksOptions200ResponseData individualChecks(@javax.annotation.Nullable List<GetBackgroundChecksOptions200ResponseDataIndividualChecksInner> individualChecks) {
     this.individualChecks = individualChecks;
     return this;
   }
@@ -114,7 +116,7 @@ public class GetBackgroundChecksOptions200ResponseData {
     return individualChecks;
   }
 
-  public void setIndividualChecks(List<GetBackgroundChecksOptions200ResponseDataIndividualChecksInner> individualChecks) {
+  public void setIndividualChecks(@javax.annotation.Nullable List<GetBackgroundChecksOptions200ResponseDataIndividualChecksInner> individualChecks) {
     this.individualChecks = individualChecks;
   }
 

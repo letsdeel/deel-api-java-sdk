@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * GetHrisPositions200ResponseDataInnerTeam
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetHrisPositions200ResponseDataInnerTeam {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private Integer id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_ORGANIZATION_STRUCTURE = "organization_structure";
   @SerializedName(SERIALIZED_NAME_ORGANIZATION_STRUCTURE)
+  @javax.annotation.Nullable
   private GetHrisPositions200ResponseDataInnerTeamOrganizationStructure organizationStructure;
 
   public GetHrisPositions200ResponseDataInnerTeam() {
   }
 
-  public GetHrisPositions200ResponseDataInnerTeam id(Integer id) {
+  public GetHrisPositions200ResponseDataInnerTeam id(@javax.annotation.Nullable Integer id) {
     this.id = id;
     return this;
   }
@@ -80,12 +83,12 @@ public class GetHrisPositions200ResponseDataInnerTeam {
     return id;
   }
 
-  public void setId(Integer id) {
+  public void setId(@javax.annotation.Nullable Integer id) {
     this.id = id;
   }
 
 
-  public GetHrisPositions200ResponseDataInnerTeam name(String name) {
+  public GetHrisPositions200ResponseDataInnerTeam name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -99,12 +102,12 @@ public class GetHrisPositions200ResponseDataInnerTeam {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetHrisPositions200ResponseDataInnerTeam organizationStructure(GetHrisPositions200ResponseDataInnerTeamOrganizationStructure organizationStructure) {
+  public GetHrisPositions200ResponseDataInnerTeam organizationStructure(@javax.annotation.Nullable GetHrisPositions200ResponseDataInnerTeamOrganizationStructure organizationStructure) {
     this.organizationStructure = organizationStructure;
     return this;
   }
@@ -118,7 +121,7 @@ public class GetHrisPositions200ResponseDataInnerTeam {
     return organizationStructure;
   }
 
-  public void setOrganizationStructure(GetHrisPositions200ResponseDataInnerTeamOrganizationStructure organizationStructure) {
+  public void setOrganizationStructure(@javax.annotation.Nullable GetHrisPositions200ResponseDataInnerTeamOrganizationStructure organizationStructure) {
     this.organizationStructure = organizationStructure;
   }
 

@@ -54,26 +54,31 @@ import org.openapitools.client.JSON;
 /**
  * Post401kPlansDefinition200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Post401kPlansDefinition200Response {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_DETAILS = "details";
   @SerializedName(SERIALIZED_NAME_DETAILS)
+  @javax.annotation.Nullable
   private Get401kPlansDefinition200ResponseInnerDetails details;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private LocalDate startDate;
 
   /**
@@ -132,20 +137,23 @@ public class Post401kPlansDefinition200Response {
 
   public static final String SERIALIZED_NAME_CONTRIBUTION_TYPE = "contribution_type";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTION_TYPE)
+  @javax.annotation.Nullable
   private ContributionTypeEnum contributionType;
 
   public static final String SERIALIZED_NAME_CONTRIBUTION_VALUE = "contribution_value";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTION_VALUE)
+  @javax.annotation.Nullable
   private BigDecimal contributionValue;
 
   public static final String SERIALIZED_NAME_CONTRIBUTION_VALUE_FOR_MATCH_RATE = "contribution_value_for_match_rate";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTION_VALUE_FOR_MATCH_RATE)
+  @javax.annotation.Nullable
   private List<Post401kPlansDefinitionRequestContributionValueForMatchRateInner> contributionValueForMatchRate = new ArrayList<>();
 
   public Post401kPlansDefinition200Response() {
   }
 
-  public Post401kPlansDefinition200Response id(String id) {
+  public Post401kPlansDefinition200Response id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -159,12 +167,12 @@ public class Post401kPlansDefinition200Response {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public Post401kPlansDefinition200Response name(String name) {
+  public Post401kPlansDefinition200Response name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -178,12 +186,12 @@ public class Post401kPlansDefinition200Response {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public Post401kPlansDefinition200Response details(Get401kPlansDefinition200ResponseInnerDetails details) {
+  public Post401kPlansDefinition200Response details(@javax.annotation.Nullable Get401kPlansDefinition200ResponseInnerDetails details) {
     this.details = details;
     return this;
   }
@@ -197,12 +205,12 @@ public class Post401kPlansDefinition200Response {
     return details;
   }
 
-  public void setDetails(Get401kPlansDefinition200ResponseInnerDetails details) {
+  public void setDetails(@javax.annotation.Nullable Get401kPlansDefinition200ResponseInnerDetails details) {
     this.details = details;
   }
 
 
-  public Post401kPlansDefinition200Response currency(String currency) {
+  public Post401kPlansDefinition200Response currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -216,12 +224,12 @@ public class Post401kPlansDefinition200Response {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public Post401kPlansDefinition200Response startDate(LocalDate startDate) {
+  public Post401kPlansDefinition200Response startDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -235,12 +243,12 @@ public class Post401kPlansDefinition200Response {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public Post401kPlansDefinition200Response contributionType(ContributionTypeEnum contributionType) {
+  public Post401kPlansDefinition200Response contributionType(@javax.annotation.Nullable ContributionTypeEnum contributionType) {
     this.contributionType = contributionType;
     return this;
   }
@@ -254,12 +262,12 @@ public class Post401kPlansDefinition200Response {
     return contributionType;
   }
 
-  public void setContributionType(ContributionTypeEnum contributionType) {
+  public void setContributionType(@javax.annotation.Nullable ContributionTypeEnum contributionType) {
     this.contributionType = contributionType;
   }
 
 
-  public Post401kPlansDefinition200Response contributionValue(BigDecimal contributionValue) {
+  public Post401kPlansDefinition200Response contributionValue(@javax.annotation.Nullable BigDecimal contributionValue) {
     this.contributionValue = contributionValue;
     return this;
   }
@@ -273,12 +281,12 @@ public class Post401kPlansDefinition200Response {
     return contributionValue;
   }
 
-  public void setContributionValue(BigDecimal contributionValue) {
+  public void setContributionValue(@javax.annotation.Nullable BigDecimal contributionValue) {
     this.contributionValue = contributionValue;
   }
 
 
-  public Post401kPlansDefinition200Response contributionValueForMatchRate(List<Post401kPlansDefinitionRequestContributionValueForMatchRateInner> contributionValueForMatchRate) {
+  public Post401kPlansDefinition200Response contributionValueForMatchRate(@javax.annotation.Nullable List<Post401kPlansDefinitionRequestContributionValueForMatchRateInner> contributionValueForMatchRate) {
     this.contributionValueForMatchRate = contributionValueForMatchRate;
     return this;
   }
@@ -300,7 +308,7 @@ public class Post401kPlansDefinition200Response {
     return contributionValueForMatchRate;
   }
 
-  public void setContributionValueForMatchRate(List<Post401kPlansDefinitionRequestContributionValueForMatchRateInner> contributionValueForMatchRate) {
+  public void setContributionValueForMatchRate(@javax.annotation.Nullable List<Post401kPlansDefinitionRequestContributionValueForMatchRateInner> contributionValueForMatchRate) {
     this.contributionValueForMatchRate = contributionValueForMatchRate;
   }
 

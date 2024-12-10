@@ -55,48 +55,57 @@ import org.openapitools.client.JSON;
 /**
  * Payment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Payment {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private BigDecimal id;
 
   public static final String SERIALIZED_NAME_PAYMENT_METHOD = "payment_method";
   @SerializedName(SERIALIZED_NAME_PAYMENT_METHOD)
+  @javax.annotation.Nonnull
   private PaymentMethod paymentMethod;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private PaymentStatusEnum status;
 
   public static final String SERIALIZED_NAME_PAYMENT_CURRENCY = "payment_currency";
   @SerializedName(SERIALIZED_NAME_PAYMENT_CURRENCY)
+  @javax.annotation.Nonnull
   private String paymentCurrency;
 
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nonnull
   private String label;
 
   public static final String SERIALIZED_NAME_PAID_AT = "paid_at";
   @SerializedName(SERIALIZED_NAME_PAID_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime paidAt;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
+  @javax.annotation.Nonnull
   private String total;
 
   public static final String SERIALIZED_NAME_WORKERS = "workers";
   @SerializedName(SERIALIZED_NAME_WORKERS)
+  @javax.annotation.Nonnull
   private List<PaymentWorker> workers = new ArrayList<>();
 
   public Payment() {
   }
 
-  public Payment id(BigDecimal id) {
+  public Payment id(@javax.annotation.Nonnull BigDecimal id) {
     this.id = id;
     return this;
   }
@@ -110,12 +119,12 @@ public class Payment {
     return id;
   }
 
-  public void setId(BigDecimal id) {
+  public void setId(@javax.annotation.Nonnull BigDecimal id) {
     this.id = id;
   }
 
 
-  public Payment paymentMethod(PaymentMethod paymentMethod) {
+  public Payment paymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     this.paymentMethod = paymentMethod;
     return this;
   }
@@ -129,12 +138,12 @@ public class Payment {
     return paymentMethod;
   }
 
-  public void setPaymentMethod(PaymentMethod paymentMethod) {
+  public void setPaymentMethod(@javax.annotation.Nonnull PaymentMethod paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
 
 
-  public Payment status(PaymentStatusEnum status) {
+  public Payment status(@javax.annotation.Nonnull PaymentStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -148,12 +157,12 @@ public class Payment {
     return status;
   }
 
-  public void setStatus(PaymentStatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull PaymentStatusEnum status) {
     this.status = status;
   }
 
 
-  public Payment paymentCurrency(String paymentCurrency) {
+  public Payment paymentCurrency(@javax.annotation.Nonnull String paymentCurrency) {
     this.paymentCurrency = paymentCurrency;
     return this;
   }
@@ -167,12 +176,12 @@ public class Payment {
     return paymentCurrency;
   }
 
-  public void setPaymentCurrency(String paymentCurrency) {
+  public void setPaymentCurrency(@javax.annotation.Nonnull String paymentCurrency) {
     this.paymentCurrency = paymentCurrency;
   }
 
 
-  public Payment label(String label) {
+  public Payment label(@javax.annotation.Nonnull String label) {
     this.label = label;
     return this;
   }
@@ -186,12 +195,12 @@ public class Payment {
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nonnull String label) {
     this.label = label;
   }
 
 
-  public Payment paidAt(OffsetDateTime paidAt) {
+  public Payment paidAt(@javax.annotation.Nullable OffsetDateTime paidAt) {
     this.paidAt = paidAt;
     return this;
   }
@@ -205,12 +214,12 @@ public class Payment {
     return paidAt;
   }
 
-  public void setPaidAt(OffsetDateTime paidAt) {
+  public void setPaidAt(@javax.annotation.Nullable OffsetDateTime paidAt) {
     this.paidAt = paidAt;
   }
 
 
-  public Payment createdAt(OffsetDateTime createdAt) {
+  public Payment createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -224,12 +233,12 @@ public class Payment {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public Payment total(String total) {
+  public Payment total(@javax.annotation.Nonnull String total) {
     this.total = total;
     return this;
   }
@@ -243,12 +252,12 @@ public class Payment {
     return total;
   }
 
-  public void setTotal(String total) {
+  public void setTotal(@javax.annotation.Nonnull String total) {
     this.total = total;
   }
 
 
-  public Payment workers(List<PaymentWorker> workers) {
+  public Payment workers(@javax.annotation.Nonnull List<PaymentWorker> workers) {
     this.workers = workers;
     return this;
   }
@@ -270,7 +279,7 @@ public class Payment {
     return workers;
   }
 
-  public void setWorkers(List<PaymentWorker> workers) {
+  public void setWorkers(@javax.annotation.Nonnull List<PaymentWorker> workers) {
     this.workers = workers;
   }
 

@@ -49,32 +49,37 @@ import org.openapitools.client.JSON;
 /**
  * OnboardingTrackerHrisProfileOidGet200ResponseDataProgress
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OnboardingTrackerHrisProfileOidGet200ResponseDataProgress {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_REFERENCE_DATE = "reference_date";
   @SerializedName(SERIALIZED_NAME_REFERENCE_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime referenceDate;
 
   public static final String SERIALIZED_NAME_SUBJECT_TO_OVERDUE = "subject_to_overdue";
   @SerializedName(SERIALIZED_NAME_SUBJECT_TO_OVERDUE)
+  @javax.annotation.Nullable
   private Boolean subjectToOverdue;
 
   public static final String SERIALIZED_NAME_REFERENCE_DATE_TIMEZONE = "reference_date_timezone";
   @SerializedName(SERIALIZED_NAME_REFERENCE_DATE_TIMEZONE)
+  @javax.annotation.Nullable
   private String referenceDateTimezone;
 
   public static final String SERIALIZED_NAME_IS_ACTION_REQUIRED_FROM_CLIENT = "is_action_required_from_client";
   @SerializedName(SERIALIZED_NAME_IS_ACTION_REQUIRED_FROM_CLIENT)
+  @javax.annotation.Nullable
   private Boolean isActionRequiredFromClient;
 
   public OnboardingTrackerHrisProfileOidGet200ResponseDataProgress() {
   }
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataProgress status(String status) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataProgress status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -88,12 +93,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataProgress {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataProgress referenceDate(OffsetDateTime referenceDate) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataProgress referenceDate(@javax.annotation.Nullable OffsetDateTime referenceDate) {
     this.referenceDate = referenceDate;
     return this;
   }
@@ -107,12 +112,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataProgress {
     return referenceDate;
   }
 
-  public void setReferenceDate(OffsetDateTime referenceDate) {
+  public void setReferenceDate(@javax.annotation.Nullable OffsetDateTime referenceDate) {
     this.referenceDate = referenceDate;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataProgress subjectToOverdue(Boolean subjectToOverdue) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataProgress subjectToOverdue(@javax.annotation.Nullable Boolean subjectToOverdue) {
     this.subjectToOverdue = subjectToOverdue;
     return this;
   }
@@ -126,12 +131,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataProgress {
     return subjectToOverdue;
   }
 
-  public void setSubjectToOverdue(Boolean subjectToOverdue) {
+  public void setSubjectToOverdue(@javax.annotation.Nullable Boolean subjectToOverdue) {
     this.subjectToOverdue = subjectToOverdue;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataProgress referenceDateTimezone(String referenceDateTimezone) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataProgress referenceDateTimezone(@javax.annotation.Nullable String referenceDateTimezone) {
     this.referenceDateTimezone = referenceDateTimezone;
     return this;
   }
@@ -145,12 +150,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataProgress {
     return referenceDateTimezone;
   }
 
-  public void setReferenceDateTimezone(String referenceDateTimezone) {
+  public void setReferenceDateTimezone(@javax.annotation.Nullable String referenceDateTimezone) {
     this.referenceDateTimezone = referenceDateTimezone;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataProgress isActionRequiredFromClient(Boolean isActionRequiredFromClient) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataProgress isActionRequiredFromClient(@javax.annotation.Nullable Boolean isActionRequiredFromClient) {
     this.isActionRequiredFromClient = isActionRequiredFromClient;
     return this;
   }
@@ -164,7 +169,7 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataProgress {
     return isActionRequiredFromClient;
   }
 
-  public void setIsActionRequiredFromClient(Boolean isActionRequiredFromClient) {
+  public void setIsActionRequiredFromClient(@javax.annotation.Nullable Boolean isActionRequiredFromClient) {
     this.isActionRequiredFromClient = isActionRequiredFromClient;
   }
 

@@ -48,28 +48,32 @@ import org.openapitools.client.JSON;
 /**
  * CreateGPContract201ResponseDataEmployee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateGPContract201ResponseDataEmployee {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_EMPLOYEE_NUMBER = "employee_number";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE_NUMBER)
+  @javax.annotation.Nullable
   private String employeeNumber;
 
   public CreateGPContract201ResponseDataEmployee() {
   }
 
-  public CreateGPContract201ResponseDataEmployee email(String email) {
+  public CreateGPContract201ResponseDataEmployee email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -83,12 +87,12 @@ public class CreateGPContract201ResponseDataEmployee {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public CreateGPContract201ResponseDataEmployee lastName(String lastName) {
+  public CreateGPContract201ResponseDataEmployee lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -102,12 +106,12 @@ public class CreateGPContract201ResponseDataEmployee {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
 
-  public CreateGPContract201ResponseDataEmployee firstName(String firstName) {
+  public CreateGPContract201ResponseDataEmployee firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -121,12 +125,12 @@ public class CreateGPContract201ResponseDataEmployee {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public CreateGPContract201ResponseDataEmployee employeeNumber(String employeeNumber) {
+  public CreateGPContract201ResponseDataEmployee employeeNumber(@javax.annotation.Nullable String employeeNumber) {
     this.employeeNumber = employeeNumber;
     return this;
   }
@@ -140,7 +144,7 @@ public class CreateGPContract201ResponseDataEmployee {
     return employeeNumber;
   }
 
-  public void setEmployeeNumber(String employeeNumber) {
+  public void setEmployeeNumber(@javax.annotation.Nullable String employeeNumber) {
     this.employeeNumber = employeeNumber;
   }
 

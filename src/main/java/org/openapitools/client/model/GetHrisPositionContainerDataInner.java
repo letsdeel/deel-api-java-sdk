@@ -51,28 +51,32 @@ import org.openapitools.client.JSON;
 /**
  * GetHrisPositionContainerDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetHrisPositionContainerDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private UUID id;
 
   public static final String SERIALIZED_NAME_ROLE = "role";
   @SerializedName(SERIALIZED_NAME_ROLE)
+  @javax.annotation.Nullable
   private GetAllOrgStructuresContainerDataInnerRolesInner role;
 
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
+  @javax.annotation.Nullable
   private GetHrisPositionContainerDataInnerTeam team;
 
   public static final String SERIALIZED_NAME_IS_SUPPORTIVE = "is_supportive";
   @SerializedName(SERIALIZED_NAME_IS_SUPPORTIVE)
+  @javax.annotation.Nullable
   private Boolean isSupportive;
 
   public GetHrisPositionContainerDataInner() {
   }
 
-  public GetHrisPositionContainerDataInner id(UUID id) {
+  public GetHrisPositionContainerDataInner id(@javax.annotation.Nullable UUID id) {
     this.id = id;
     return this;
   }
@@ -86,12 +90,12 @@ public class GetHrisPositionContainerDataInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nullable UUID id) {
     this.id = id;
   }
 
 
-  public GetHrisPositionContainerDataInner role(GetAllOrgStructuresContainerDataInnerRolesInner role) {
+  public GetHrisPositionContainerDataInner role(@javax.annotation.Nullable GetAllOrgStructuresContainerDataInnerRolesInner role) {
     this.role = role;
     return this;
   }
@@ -105,12 +109,12 @@ public class GetHrisPositionContainerDataInner {
     return role;
   }
 
-  public void setRole(GetAllOrgStructuresContainerDataInnerRolesInner role) {
+  public void setRole(@javax.annotation.Nullable GetAllOrgStructuresContainerDataInnerRolesInner role) {
     this.role = role;
   }
 
 
-  public GetHrisPositionContainerDataInner team(GetHrisPositionContainerDataInnerTeam team) {
+  public GetHrisPositionContainerDataInner team(@javax.annotation.Nullable GetHrisPositionContainerDataInnerTeam team) {
     this.team = team;
     return this;
   }
@@ -124,12 +128,12 @@ public class GetHrisPositionContainerDataInner {
     return team;
   }
 
-  public void setTeam(GetHrisPositionContainerDataInnerTeam team) {
+  public void setTeam(@javax.annotation.Nullable GetHrisPositionContainerDataInnerTeam team) {
     this.team = team;
   }
 
 
-  public GetHrisPositionContainerDataInner isSupportive(Boolean isSupportive) {
+  public GetHrisPositionContainerDataInner isSupportive(@javax.annotation.Nullable Boolean isSupportive) {
     this.isSupportive = isSupportive;
     return this;
   }
@@ -143,7 +147,7 @@ public class GetHrisPositionContainerDataInner {
     return isSupportive;
   }
 
-  public void setIsSupportive(Boolean isSupportive) {
+  public void setIsSupportive(@javax.annotation.Nullable Boolean isSupportive) {
     this.isSupportive = isSupportive;
   }
 

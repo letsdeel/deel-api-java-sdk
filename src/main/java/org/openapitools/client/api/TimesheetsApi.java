@@ -176,7 +176,8 @@ public class TimesheetsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -197,7 +198,8 @@ public class TimesheetsApi {
          * @return CreateTimesheet201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -219,7 +221,8 @@ public class TimesheetsApi {
          * @return ApiResponse&lt;CreateTimesheet201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -241,7 +244,8 @@ public class TimesheetsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -264,7 +268,8 @@ public class TimesheetsApi {
      * @param createTimesheetRequest Timesheet object that needs to be created (required)
      * @return APIcreateTimesheetRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -371,7 +376,8 @@ public class TimesheetsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -392,7 +398,8 @@ public class TimesheetsApi {
          * @return SignContract201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -414,7 +421,8 @@ public class TimesheetsApi {
          * @return ApiResponse&lt;SignContract201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -436,7 +444,8 @@ public class TimesheetsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -460,7 +469,8 @@ public class TimesheetsApi {
      * @param createTimesheetReviewRequest  (required)
      * @return APIcreateTimesheetReviewRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -563,7 +573,8 @@ public class TimesheetsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -584,7 +595,8 @@ public class TimesheetsApi {
          * @return GenericResultCreated
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -606,7 +618,8 @@ public class TimesheetsApi {
          * @return ApiResponse&lt;GenericResultCreated&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -628,7 +641,8 @@ public class TimesheetsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -650,7 +664,8 @@ public class TimesheetsApi {
      * Review a batch of timesheets to approve or reject submitted work.
      * @return APIcreateTimesheetReviewsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -764,7 +779,8 @@ public class TimesheetsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -785,7 +801,8 @@ public class TimesheetsApi {
          * @return UninviteToSignContract200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -807,7 +824,8 @@ public class TimesheetsApi {
          * @return ApiResponse&lt;UninviteToSignContract200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -829,7 +847,8 @@ public class TimesheetsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -852,7 +871,8 @@ public class TimesheetsApi {
      * @param id ID of an existing timesheet (required)
      * @return APIdeleteTimesheetByIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -951,7 +971,8 @@ public class TimesheetsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -972,7 +993,8 @@ public class TimesheetsApi {
          * @return GetTimesheetById200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -994,7 +1016,8 @@ public class TimesheetsApi {
          * @return ApiResponse&lt;GetTimesheetById200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1016,7 +1039,8 @@ public class TimesheetsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1039,7 +1063,8 @@ public class TimesheetsApi {
      * @param id ID of an existing timesheet (required)
      * @return APIgetTimesheetByIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1250,7 +1275,8 @@ public class TimesheetsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1271,7 +1297,8 @@ public class TimesheetsApi {
          * @return GetTimesheets200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1293,7 +1320,8 @@ public class TimesheetsApi {
          * @return ApiResponse&lt;GetTimesheets200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1315,7 +1343,8 @@ public class TimesheetsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1337,7 +1366,8 @@ public class TimesheetsApi {
      * Retrieve a list of timesheets in your Deel account. You can filter the list by providing additional paramters e.g. contract_id, contract_type etc.
      * @return APIgetTimesheetsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1541,7 +1571,8 @@ public class TimesheetsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1562,7 +1593,8 @@ public class TimesheetsApi {
          * @return GetTimesheetsByContract200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1584,7 +1616,8 @@ public class TimesheetsApi {
          * @return ApiResponse&lt;GetTimesheetsByContract200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1606,7 +1639,8 @@ public class TimesheetsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1629,7 +1663,8 @@ public class TimesheetsApi {
      * @param contractId Deel contract id. (required)
      * @return APIgetTimesheetsByContractRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1736,7 +1771,8 @@ public class TimesheetsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -1758,7 +1794,8 @@ public class TimesheetsApi {
          * @return GenericResultUpdated
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -1781,7 +1818,8 @@ public class TimesheetsApi {
          * @return ApiResponse&lt;GenericResultUpdated&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -1804,7 +1842,8 @@ public class TimesheetsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -1829,7 +1868,8 @@ public class TimesheetsApi {
      * @param updateTimesheetByIdRequest  (required)
      * @return APIupdateTimesheetByIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>

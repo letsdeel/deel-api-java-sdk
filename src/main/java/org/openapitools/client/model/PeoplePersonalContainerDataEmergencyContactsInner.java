@@ -50,36 +50,42 @@ import org.openapitools.client.JSON;
 /**
  * PeoplePersonalContainerDataEmergencyContactsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PeoplePersonalContainerDataEmergencyContactsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_RELATIONSHIP = "relationship";
   @SerializedName(SERIALIZED_NAME_RELATIONSHIP)
+  @javax.annotation.Nonnull
   private String relationship;
 
   public static final String SERIALIZED_NAME_PHONE = "phone";
   @SerializedName(SERIALIZED_NAME_PHONE)
+  @javax.annotation.Nonnull
   private String phone;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nonnull
   private String email;
 
   public static final String SERIALIZED_NAME_PREFERRED_LANGUAGE = "preferred_language";
   @SerializedName(SERIALIZED_NAME_PREFERRED_LANGUAGE)
+  @javax.annotation.Nullable
   private PeoplePersonalContainerDataEmergencyContactsInnerPreferredLanguage preferredLanguage;
 
   public PeoplePersonalContainerDataEmergencyContactsInner() {
   }
 
-  public PeoplePersonalContainerDataEmergencyContactsInner id(UUID id) {
+  public PeoplePersonalContainerDataEmergencyContactsInner id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -93,12 +99,12 @@ public class PeoplePersonalContainerDataEmergencyContactsInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public PeoplePersonalContainerDataEmergencyContactsInner name(String name) {
+  public PeoplePersonalContainerDataEmergencyContactsInner name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -112,12 +118,12 @@ public class PeoplePersonalContainerDataEmergencyContactsInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public PeoplePersonalContainerDataEmergencyContactsInner relationship(String relationship) {
+  public PeoplePersonalContainerDataEmergencyContactsInner relationship(@javax.annotation.Nonnull String relationship) {
     this.relationship = relationship;
     return this;
   }
@@ -131,12 +137,12 @@ public class PeoplePersonalContainerDataEmergencyContactsInner {
     return relationship;
   }
 
-  public void setRelationship(String relationship) {
+  public void setRelationship(@javax.annotation.Nonnull String relationship) {
     this.relationship = relationship;
   }
 
 
-  public PeoplePersonalContainerDataEmergencyContactsInner phone(String phone) {
+  public PeoplePersonalContainerDataEmergencyContactsInner phone(@javax.annotation.Nonnull String phone) {
     this.phone = phone;
     return this;
   }
@@ -150,12 +156,12 @@ public class PeoplePersonalContainerDataEmergencyContactsInner {
     return phone;
   }
 
-  public void setPhone(String phone) {
+  public void setPhone(@javax.annotation.Nonnull String phone) {
     this.phone = phone;
   }
 
 
-  public PeoplePersonalContainerDataEmergencyContactsInner email(String email) {
+  public PeoplePersonalContainerDataEmergencyContactsInner email(@javax.annotation.Nonnull String email) {
     this.email = email;
     return this;
   }
@@ -169,12 +175,12 @@ public class PeoplePersonalContainerDataEmergencyContactsInner {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nonnull String email) {
     this.email = email;
   }
 
 
-  public PeoplePersonalContainerDataEmergencyContactsInner preferredLanguage(PeoplePersonalContainerDataEmergencyContactsInnerPreferredLanguage preferredLanguage) {
+  public PeoplePersonalContainerDataEmergencyContactsInner preferredLanguage(@javax.annotation.Nullable PeoplePersonalContainerDataEmergencyContactsInnerPreferredLanguage preferredLanguage) {
     this.preferredLanguage = preferredLanguage;
     return this;
   }
@@ -188,7 +194,7 @@ public class PeoplePersonalContainerDataEmergencyContactsInner {
     return preferredLanguage;
   }
 
-  public void setPreferredLanguage(PeoplePersonalContainerDataEmergencyContactsInnerPreferredLanguage preferredLanguage) {
+  public void setPreferredLanguage(@javax.annotation.Nullable PeoplePersonalContainerDataEmergencyContactsInnerPreferredLanguage preferredLanguage) {
     this.preferredLanguage = preferredLanguage;
   }
 

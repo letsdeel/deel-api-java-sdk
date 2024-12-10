@@ -50,56 +50,67 @@ import org.openapitools.client.JSON;
 /**
  * Details of candidate to create
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CandidateToCreate {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nonnull
   private String firstName;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nonnull
   private String lastName;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private CandidateStatusEnum status;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private LocalDate startDate;
 
   public static final String SERIALIZED_NAME_LINK = "link";
   @SerializedName(SERIALIZED_NAME_LINK)
+  @javax.annotation.Nonnull
   private String link;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nullable
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_NATIONALITY = "nationality";
   @SerializedName(SERIALIZED_NAME_NATIONALITY)
+  @javax.annotation.Nullable
   private String nationality;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public CandidateToCreate() {
   }
 
-  public CandidateToCreate id(String id) {
+  public CandidateToCreate id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -113,12 +124,12 @@ public class CandidateToCreate {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public CandidateToCreate firstName(String firstName) {
+  public CandidateToCreate firstName(@javax.annotation.Nonnull String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -132,12 +143,12 @@ public class CandidateToCreate {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nonnull String firstName) {
     this.firstName = firstName;
   }
 
 
-  public CandidateToCreate lastName(String lastName) {
+  public CandidateToCreate lastName(@javax.annotation.Nonnull String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -151,12 +162,12 @@ public class CandidateToCreate {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nonnull String lastName) {
     this.lastName = lastName;
   }
 
 
-  public CandidateToCreate status(CandidateStatusEnum status) {
+  public CandidateToCreate status(@javax.annotation.Nonnull CandidateStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -170,12 +181,12 @@ public class CandidateToCreate {
     return status;
   }
 
-  public void setStatus(CandidateStatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull CandidateStatusEnum status) {
     this.status = status;
   }
 
 
-  public CandidateToCreate startDate(LocalDate startDate) {
+  public CandidateToCreate startDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -189,12 +200,12 @@ public class CandidateToCreate {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public CandidateToCreate link(String link) {
+  public CandidateToCreate link(@javax.annotation.Nonnull String link) {
     this.link = link;
     return this;
   }
@@ -208,12 +219,12 @@ public class CandidateToCreate {
     return link;
   }
 
-  public void setLink(String link) {
+  public void setLink(@javax.annotation.Nonnull String link) {
     this.link = link;
   }
 
 
-  public CandidateToCreate jobTitle(String jobTitle) {
+  public CandidateToCreate jobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -227,12 +238,12 @@ public class CandidateToCreate {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public CandidateToCreate email(String email) {
+  public CandidateToCreate email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -246,12 +257,12 @@ public class CandidateToCreate {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public CandidateToCreate nationality(String nationality) {
+  public CandidateToCreate nationality(@javax.annotation.Nullable String nationality) {
     this.nationality = nationality;
     return this;
   }
@@ -265,12 +276,12 @@ public class CandidateToCreate {
     return nationality;
   }
 
-  public void setNationality(String nationality) {
+  public void setNationality(@javax.annotation.Nullable String nationality) {
     this.nationality = nationality;
   }
 
 
-  public CandidateToCreate country(String country) {
+  public CandidateToCreate country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -284,12 +295,12 @@ public class CandidateToCreate {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public CandidateToCreate state(String state) {
+  public CandidateToCreate state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -303,7 +314,7 @@ public class CandidateToCreate {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 

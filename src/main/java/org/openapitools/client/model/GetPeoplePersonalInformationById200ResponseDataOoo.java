@@ -49,14 +49,16 @@ import org.openapitools.client.JSON;
 /**
  * GetPeoplePersonalInformationById200ResponseDataOoo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPeoplePersonalInformationById200ResponseDataOoo {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nonnull
   private String endDate;
 
   /**
@@ -113,16 +115,18 @@ public class GetPeoplePersonalInformationById200ResponseDataOoo {
 
   public static final String SERIALIZED_NAME_LEAVE_TYPE = "leave_type";
   @SerializedName(SERIALIZED_NAME_LEAVE_TYPE)
+  @javax.annotation.Nonnull
   private LeaveTypeEnum leaveType;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private LocalDate startDate;
 
   public GetPeoplePersonalInformationById200ResponseDataOoo() {
   }
 
-  public GetPeoplePersonalInformationById200ResponseDataOoo name(String name) {
+  public GetPeoplePersonalInformationById200ResponseDataOoo name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -136,12 +140,12 @@ public class GetPeoplePersonalInformationById200ResponseDataOoo {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public GetPeoplePersonalInformationById200ResponseDataOoo endDate(String endDate) {
+  public GetPeoplePersonalInformationById200ResponseDataOoo endDate(@javax.annotation.Nonnull String endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -155,12 +159,12 @@ public class GetPeoplePersonalInformationById200ResponseDataOoo {
     return endDate;
   }
 
-  public void setEndDate(String endDate) {
+  public void setEndDate(@javax.annotation.Nonnull String endDate) {
     this.endDate = endDate;
   }
 
 
-  public GetPeoplePersonalInformationById200ResponseDataOoo leaveType(LeaveTypeEnum leaveType) {
+  public GetPeoplePersonalInformationById200ResponseDataOoo leaveType(@javax.annotation.Nonnull LeaveTypeEnum leaveType) {
     this.leaveType = leaveType;
     return this;
   }
@@ -174,12 +178,12 @@ public class GetPeoplePersonalInformationById200ResponseDataOoo {
     return leaveType;
   }
 
-  public void setLeaveType(LeaveTypeEnum leaveType) {
+  public void setLeaveType(@javax.annotation.Nonnull LeaveTypeEnum leaveType) {
     this.leaveType = leaveType;
   }
 
 
-  public GetPeoplePersonalInformationById200ResponseDataOoo startDate(LocalDate startDate) {
+  public GetPeoplePersonalInformationById200ResponseDataOoo startDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -193,7 +197,7 @@ public class GetPeoplePersonalInformationById200ResponseDataOoo {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
   }
 

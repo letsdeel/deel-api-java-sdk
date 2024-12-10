@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * UpdatePeopleWorkingLocationRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdatePeopleWorkingLocationRequest {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private UpdatePeopleWorkingLocationRequestData data;
 
   public UpdatePeopleWorkingLocationRequest() {
   }
 
-  public UpdatePeopleWorkingLocationRequest data(UpdatePeopleWorkingLocationRequestData data) {
+  public UpdatePeopleWorkingLocationRequest data(@javax.annotation.Nonnull UpdatePeopleWorkingLocationRequestData data) {
     this.data = data;
     return this;
   }
@@ -72,7 +73,7 @@ public class UpdatePeopleWorkingLocationRequest {
     return data;
   }
 
-  public void setData(UpdatePeopleWorkingLocationRequestData data) {
+  public void setData(@javax.annotation.Nonnull UpdatePeopleWorkingLocationRequestData data) {
     this.data = data;
   }
 

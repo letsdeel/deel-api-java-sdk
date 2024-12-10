@@ -12,7 +12,7 @@ This is a model to make it easier to understand and restrict search parameters
 |**orderDirection** | **SortDirEnum** |  |  [optional] |
 |**types** | [**ContractSearchFormWithoutCursorTypes**](ContractSearchFormWithoutCursorTypes.md) |  |  [optional] |
 |**statuses** | [**ContractSearchFormWithoutCursorStatuses**](ContractSearchFormWithoutCursorStatuses.md) |  |  [optional] |
-|**teamId** | **String** | Unique identifier of this resource. |  [optional] |
+|**teamId** | [**IdentifierValueForFilter**](IdentifierValueForFilter.md) |  |  [optional] |
 |**externalId** | **String** | Filter contracts for given external ID |  [optional] |
 |**countries** | [**ContractSearchFormWithoutCursorCountries**](ContractSearchFormWithoutCursorCountries.md) |  |  [optional] |
 |**currencies** | [**ContractSearchFormWithoutCursorCurrencies**](ContractSearchFormWithoutCursorCurrencies.md) |  |  [optional] |

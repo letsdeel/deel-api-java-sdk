@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * BankAccountValueAllowed
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BankAccountValueAllowed {
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private String value;
 
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nullable
   private String label;
 
   public BankAccountValueAllowed() {
   }
 
-  public BankAccountValueAllowed value(String value) {
+  public BankAccountValueAllowed value(@javax.annotation.Nullable String value) {
     this.value = value;
     return this;
   }
@@ -75,12 +77,12 @@ public class BankAccountValueAllowed {
     return value;
   }
 
-  public void setValue(String value) {
+  public void setValue(@javax.annotation.Nullable String value) {
     this.value = value;
   }
 
 
-  public BankAccountValueAllowed label(String label) {
+  public BankAccountValueAllowed label(@javax.annotation.Nullable String label) {
     this.label = label;
     return this;
   }
@@ -94,7 +96,7 @@ public class BankAccountValueAllowed {
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nullable String label) {
     this.label = label;
   }
 

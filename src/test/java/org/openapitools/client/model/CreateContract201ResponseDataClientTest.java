@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.client.model.CreateContract201ResponseDataClientLegalEntity;
 import org.openapitools.client.model.CreateContract201ResponseDataClientTeam;
-import org.openapitools.client.model.CreateContractRequestAnyOfAllOfClientTeamId;
+import org.openapitools.client.model.PAYASYOUGOTIMEBASEDAllOfClientTeamId;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

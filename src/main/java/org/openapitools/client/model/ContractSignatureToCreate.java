@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * ContractSignatureToCreate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ContractSignatureToCreate {
   public static final String SERIALIZED_NAME_CLIENT_SIGNATURE = "client_signature";
   @SerializedName(SERIALIZED_NAME_CLIENT_SIGNATURE)
+  @javax.annotation.Nonnull
   private String clientSignature;
 
   public static final String SERIALIZED_NAME_CONTRACT_TEMPLATE_ID = "contract_template_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_TEMPLATE_ID)
+  @javax.annotation.Nullable
   private ContractSignatureToCreateContractTemplateId contractTemplateId = null;
 
   public ContractSignatureToCreate() {
   }
 
-  public ContractSignatureToCreate clientSignature(String clientSignature) {
+  public ContractSignatureToCreate clientSignature(@javax.annotation.Nonnull String clientSignature) {
     this.clientSignature = clientSignature;
     return this;
   }
@@ -76,12 +78,12 @@ public class ContractSignatureToCreate {
     return clientSignature;
   }
 
-  public void setClientSignature(String clientSignature) {
+  public void setClientSignature(@javax.annotation.Nonnull String clientSignature) {
     this.clientSignature = clientSignature;
   }
 
 
-  public ContractSignatureToCreate contractTemplateId(ContractSignatureToCreateContractTemplateId contractTemplateId) {
+  public ContractSignatureToCreate contractTemplateId(@javax.annotation.Nullable ContractSignatureToCreateContractTemplateId contractTemplateId) {
     this.contractTemplateId = contractTemplateId;
     return this;
   }
@@ -95,7 +97,7 @@ public class ContractSignatureToCreate {
     return contractTemplateId;
   }
 
-  public void setContractTemplateId(ContractSignatureToCreateContractTemplateId contractTemplateId) {
+  public void setContractTemplateId(@javax.annotation.Nullable ContractSignatureToCreateContractTemplateId contractTemplateId) {
     this.contractTemplateId = contractTemplateId;
   }
 

@@ -19,7 +19,6 @@ import org.openapitools.client.model.AmendContractDetailsRequest;
 import org.openapitools.client.model.ApiErrorContainer;
 import org.openapitools.client.model.CreateContract201Response;
 import org.openapitools.client.model.CreateContractRequest;
-import org.openapitools.client.model.CreateContractRequest1;
 import org.openapitools.client.model.GenericResultDeleted;
 import org.openapitools.client.model.PremiumResultAddedContainer;
 import org.openapitools.client.model.PremiumToAddContainer;

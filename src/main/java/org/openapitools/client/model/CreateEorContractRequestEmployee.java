@@ -50,32 +50,37 @@ import org.openapitools.client.JSON;
 /**
  * CreateEorContractRequestEmployee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateEorContractRequestEmployee {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_ADDRESS = "address";
   @SerializedName(SERIALIZED_NAME_ADDRESS)
+  @javax.annotation.Nullable
   private CreateEorContractRequestEmployeeAddress address;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nonnull
   private String lastName;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nonnull
   private String firstName;
 
   public static final String SERIALIZED_NAME_NATIONALITY = "nationality";
   @SerializedName(SERIALIZED_NAME_NATIONALITY)
+  @javax.annotation.Nonnull
   private String nationality;
 
   public CreateEorContractRequestEmployee() {
   }
 
-  public CreateEorContractRequestEmployee email(String email) {
+  public CreateEorContractRequestEmployee email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -89,12 +94,12 @@ public class CreateEorContractRequestEmployee {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public CreateEorContractRequestEmployee address(CreateEorContractRequestEmployeeAddress address) {
+  public CreateEorContractRequestEmployee address(@javax.annotation.Nullable CreateEorContractRequestEmployeeAddress address) {
     this.address = address;
     return this;
   }
@@ -108,12 +113,12 @@ public class CreateEorContractRequestEmployee {
     return address;
   }
 
-  public void setAddress(CreateEorContractRequestEmployeeAddress address) {
+  public void setAddress(@javax.annotation.Nullable CreateEorContractRequestEmployeeAddress address) {
     this.address = address;
   }
 
 
-  public CreateEorContractRequestEmployee lastName(String lastName) {
+  public CreateEorContractRequestEmployee lastName(@javax.annotation.Nonnull String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -127,12 +132,12 @@ public class CreateEorContractRequestEmployee {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nonnull String lastName) {
     this.lastName = lastName;
   }
 
 
-  public CreateEorContractRequestEmployee firstName(String firstName) {
+  public CreateEorContractRequestEmployee firstName(@javax.annotation.Nonnull String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -146,12 +151,12 @@ public class CreateEorContractRequestEmployee {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nonnull String firstName) {
     this.firstName = firstName;
   }
 
 
-  public CreateEorContractRequestEmployee nationality(String nationality) {
+  public CreateEorContractRequestEmployee nationality(@javax.annotation.Nonnull String nationality) {
     this.nationality = nationality;
     return this;
   }
@@ -165,7 +170,7 @@ public class CreateEorContractRequestEmployee {
     return nationality;
   }
 
-  public void setNationality(String nationality) {
+  public void setNationality(@javax.annotation.Nonnull String nationality) {
     this.nationality = nationality;
   }
 

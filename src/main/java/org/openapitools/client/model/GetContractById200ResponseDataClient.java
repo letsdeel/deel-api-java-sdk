@@ -51,28 +51,32 @@ import org.openapitools.client.JSON;
 /**
  * GetContractById200ResponseDataClient
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseDataClient {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private GetContractById200ResponseDataClientId id;
 
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
+  @javax.annotation.Nonnull
   private GetContractById200ResponseDataClientTeam team;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nullable
   private String fullName;
 
   public GetContractById200ResponseDataClient() {
   }
 
-  public GetContractById200ResponseDataClient id(GetContractById200ResponseDataClientId id) {
+  public GetContractById200ResponseDataClient id(@javax.annotation.Nullable GetContractById200ResponseDataClientId id) {
     this.id = id;
     return this;
   }
@@ -86,12 +90,12 @@ public class GetContractById200ResponseDataClient {
     return id;
   }
 
-  public void setId(GetContractById200ResponseDataClientId id) {
+  public void setId(@javax.annotation.Nullable GetContractById200ResponseDataClientId id) {
     this.id = id;
   }
 
 
-  public GetContractById200ResponseDataClient team(GetContractById200ResponseDataClientTeam team) {
+  public GetContractById200ResponseDataClient team(@javax.annotation.Nonnull GetContractById200ResponseDataClientTeam team) {
     this.team = team;
     return this;
   }
@@ -105,12 +109,12 @@ public class GetContractById200ResponseDataClient {
     return team;
   }
 
-  public void setTeam(GetContractById200ResponseDataClientTeam team) {
+  public void setTeam(@javax.annotation.Nonnull GetContractById200ResponseDataClientTeam team) {
     this.team = team;
   }
 
 
-  public GetContractById200ResponseDataClient email(String email) {
+  public GetContractById200ResponseDataClient email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -124,12 +128,12 @@ public class GetContractById200ResponseDataClient {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public GetContractById200ResponseDataClient fullName(String fullName) {
+  public GetContractById200ResponseDataClient fullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -143,7 +147,7 @@ public class GetContractById200ResponseDataClient {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
   }
 

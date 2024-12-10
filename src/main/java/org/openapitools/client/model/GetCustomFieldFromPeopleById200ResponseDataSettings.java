@@ -51,22 +51,26 @@ import org.openapitools.client.JSON;
 /**
  * GetCustomFieldFromPeopleById200ResponseDataSettings
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetCustomFieldFromPeopleById200ResponseDataSettings {
   public static final String SERIALIZED_NAME_ACCESS = "access";
   @SerializedName(SERIALIZED_NAME_ACCESS)
+  @javax.annotation.Nullable
   private GetCustomFieldFromPeopleById200ResponseDataSettingsAccess access;
 
   public static final String SERIALIZED_NAME_REQUIRED = "required";
   @SerializedName(SERIALIZED_NAME_REQUIRED)
+  @javax.annotation.Nullable
   private Boolean required;
 
   public static final String SERIALIZED_NAME_COUNTRIES = "countries";
   @SerializedName(SERIALIZED_NAME_COUNTRIES)
+  @javax.annotation.Nullable
   private List<String> countries = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_IS_ENABLED = "is_enabled";
   @SerializedName(SERIALIZED_NAME_IS_ENABLED)
+  @javax.annotation.Nullable
   private Boolean isEnabled;
 
   /**
@@ -127,12 +131,13 @@ public class GetCustomFieldFromPeopleById200ResponseDataSettings {
 
   public static final String SERIALIZED_NAME_WORKER_TYPES = "worker_types";
   @SerializedName(SERIALIZED_NAME_WORKER_TYPES)
+  @javax.annotation.Nullable
   private List<WorkerTypesEnum> workerTypes = new ArrayList<>();
 
   public GetCustomFieldFromPeopleById200ResponseDataSettings() {
   }
 
-  public GetCustomFieldFromPeopleById200ResponseDataSettings access(GetCustomFieldFromPeopleById200ResponseDataSettingsAccess access) {
+  public GetCustomFieldFromPeopleById200ResponseDataSettings access(@javax.annotation.Nullable GetCustomFieldFromPeopleById200ResponseDataSettingsAccess access) {
     this.access = access;
     return this;
   }
@@ -146,12 +151,12 @@ public class GetCustomFieldFromPeopleById200ResponseDataSettings {
     return access;
   }
 
-  public void setAccess(GetCustomFieldFromPeopleById200ResponseDataSettingsAccess access) {
+  public void setAccess(@javax.annotation.Nullable GetCustomFieldFromPeopleById200ResponseDataSettingsAccess access) {
     this.access = access;
   }
 
 
-  public GetCustomFieldFromPeopleById200ResponseDataSettings required(Boolean required) {
+  public GetCustomFieldFromPeopleById200ResponseDataSettings required(@javax.annotation.Nullable Boolean required) {
     this.required = required;
     return this;
   }
@@ -165,12 +170,12 @@ public class GetCustomFieldFromPeopleById200ResponseDataSettings {
     return required;
   }
 
-  public void setRequired(Boolean required) {
+  public void setRequired(@javax.annotation.Nullable Boolean required) {
     this.required = required;
   }
 
 
-  public GetCustomFieldFromPeopleById200ResponseDataSettings countries(List<String> countries) {
+  public GetCustomFieldFromPeopleById200ResponseDataSettings countries(@javax.annotation.Nullable List<String> countries) {
     this.countries = countries;
     return this;
   }
@@ -192,12 +197,12 @@ public class GetCustomFieldFromPeopleById200ResponseDataSettings {
     return countries;
   }
 
-  public void setCountries(List<String> countries) {
+  public void setCountries(@javax.annotation.Nullable List<String> countries) {
     this.countries = countries;
   }
 
 
-  public GetCustomFieldFromPeopleById200ResponseDataSettings isEnabled(Boolean isEnabled) {
+  public GetCustomFieldFromPeopleById200ResponseDataSettings isEnabled(@javax.annotation.Nullable Boolean isEnabled) {
     this.isEnabled = isEnabled;
     return this;
   }
@@ -211,12 +216,12 @@ public class GetCustomFieldFromPeopleById200ResponseDataSettings {
     return isEnabled;
   }
 
-  public void setIsEnabled(Boolean isEnabled) {
+  public void setIsEnabled(@javax.annotation.Nullable Boolean isEnabled) {
     this.isEnabled = isEnabled;
   }
 
 
-  public GetCustomFieldFromPeopleById200ResponseDataSettings workerTypes(List<WorkerTypesEnum> workerTypes) {
+  public GetCustomFieldFromPeopleById200ResponseDataSettings workerTypes(@javax.annotation.Nullable List<WorkerTypesEnum> workerTypes) {
     this.workerTypes = workerTypes;
     return this;
   }
@@ -238,7 +243,7 @@ public class GetCustomFieldFromPeopleById200ResponseDataSettings {
     return workerTypes;
   }
 
-  public void setWorkerTypes(List<WorkerTypesEnum> workerTypes) {
+  public void setWorkerTypes(@javax.annotation.Nullable List<WorkerTypesEnum> workerTypes) {
     this.workerTypes = workerTypes;
   }
 

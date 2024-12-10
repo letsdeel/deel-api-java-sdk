@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * This object is used for pagination.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetTimesheetsByContract200ResponsePage {
   public static final String SERIALIZED_NAME_TOTAL_ROWS = "total_rows";
   @SerializedName(SERIALIZED_NAME_TOTAL_ROWS)
+  @javax.annotation.Nonnull
   private BigDecimal totalRows;
 
   public GetTimesheetsByContract200ResponsePage() {
   }
 
-  public GetTimesheetsByContract200ResponsePage totalRows(BigDecimal totalRows) {
+  public GetTimesheetsByContract200ResponsePage totalRows(@javax.annotation.Nonnull BigDecimal totalRows) {
     this.totalRows = totalRows;
     return this;
   }
@@ -72,7 +73,7 @@ public class GetTimesheetsByContract200ResponsePage {
     return totalRows;
   }
 
-  public void setTotalRows(BigDecimal totalRows) {
+  public void setTotalRows(@javax.annotation.Nonnull BigDecimal totalRows) {
     this.totalRows = totalRows;
   }
 

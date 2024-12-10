@@ -51,20 +51,22 @@ import org.openapitools.client.JSON;
 /**
  * UpsertChildWorkerRelationsExternalIdContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertChildWorkerRelationsExternalIdContainerData {
   public static final String SERIALIZED_NAME_CHILD_HRIS_PROFILE_IDS = "child_hris_profile_ids";
   @SerializedName(SERIALIZED_NAME_CHILD_HRIS_PROFILE_IDS)
+  @javax.annotation.Nonnull
   private List<UpsertChildWorkerRelationsExternalIdContainerDataChildHrisProfileIdsInner> childHrisProfileIds = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_EXTERNAL_ID = "hris_relationship_type_external_id";
   @SerializedName(SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String hrisRelationshipTypeExternalId;
 
   public UpsertChildWorkerRelationsExternalIdContainerData() {
   }
 
-  public UpsertChildWorkerRelationsExternalIdContainerData childHrisProfileIds(List<UpsertChildWorkerRelationsExternalIdContainerDataChildHrisProfileIdsInner> childHrisProfileIds) {
+  public UpsertChildWorkerRelationsExternalIdContainerData childHrisProfileIds(@javax.annotation.Nonnull List<UpsertChildWorkerRelationsExternalIdContainerDataChildHrisProfileIdsInner> childHrisProfileIds) {
     this.childHrisProfileIds = childHrisProfileIds;
     return this;
   }
@@ -86,12 +88,12 @@ public class UpsertChildWorkerRelationsExternalIdContainerData {
     return childHrisProfileIds;
   }
 
-  public void setChildHrisProfileIds(List<UpsertChildWorkerRelationsExternalIdContainerDataChildHrisProfileIdsInner> childHrisProfileIds) {
+  public void setChildHrisProfileIds(@javax.annotation.Nonnull List<UpsertChildWorkerRelationsExternalIdContainerDataChildHrisProfileIdsInner> childHrisProfileIds) {
     this.childHrisProfileIds = childHrisProfileIds;
   }
 
 
-  public UpsertChildWorkerRelationsExternalIdContainerData hrisRelationshipTypeExternalId(String hrisRelationshipTypeExternalId) {
+  public UpsertChildWorkerRelationsExternalIdContainerData hrisRelationshipTypeExternalId(@javax.annotation.Nullable String hrisRelationshipTypeExternalId) {
     this.hrisRelationshipTypeExternalId = hrisRelationshipTypeExternalId;
     return this;
   }
@@ -105,7 +107,7 @@ public class UpsertChildWorkerRelationsExternalIdContainerData {
     return hrisRelationshipTypeExternalId;
   }
 
-  public void setHrisRelationshipTypeExternalId(String hrisRelationshipTypeExternalId) {
+  public void setHrisRelationshipTypeExternalId(@javax.annotation.Nullable String hrisRelationshipTypeExternalId) {
     this.hrisRelationshipTypeExternalId = hrisRelationshipTypeExternalId;
   }
 

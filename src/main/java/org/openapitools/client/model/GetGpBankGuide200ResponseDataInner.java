@@ -52,36 +52,42 @@ import org.openapitools.client.JSON;
 /**
  * GetGpBankGuide200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetGpBankGuide200ResponseDataInner {
   public static final String SERIALIZED_NAME_KEY = "key";
   @SerializedName(SERIALIZED_NAME_KEY)
+  @javax.annotation.Nonnull
   private String key;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nullable
   private String label;
 
   public static final String SERIALIZED_NAME_REQUIRED = "required";
   @SerializedName(SERIALIZED_NAME_REQUIRED)
+  @javax.annotation.Nonnull
   private Boolean required;
 
   public static final String SERIALIZED_NAME_VALIDATIONS = "validations";
   @SerializedName(SERIALIZED_NAME_VALIDATIONS)
+  @javax.annotation.Nullable
   private List<GetGpBankGuide200ResponseDataInnerValidationsInner> validations = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_VALUES_ALLOWED = "values_allowed";
   @SerializedName(SERIALIZED_NAME_VALUES_ALLOWED)
+  @javax.annotation.Nullable
   private List<GetGpBankGuide200ResponseDataInnerValuesAllowedInner> valuesAllowed = new ArrayList<>();
 
   public GetGpBankGuide200ResponseDataInner() {
   }
 
-  public GetGpBankGuide200ResponseDataInner key(String key) {
+  public GetGpBankGuide200ResponseDataInner key(@javax.annotation.Nonnull String key) {
     this.key = key;
     return this;
   }
@@ -95,12 +101,12 @@ public class GetGpBankGuide200ResponseDataInner {
     return key;
   }
 
-  public void setKey(String key) {
+  public void setKey(@javax.annotation.Nonnull String key) {
     this.key = key;
   }
 
 
-  public GetGpBankGuide200ResponseDataInner type(String type) {
+  public GetGpBankGuide200ResponseDataInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -114,12 +120,12 @@ public class GetGpBankGuide200ResponseDataInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public GetGpBankGuide200ResponseDataInner label(String label) {
+  public GetGpBankGuide200ResponseDataInner label(@javax.annotation.Nullable String label) {
     this.label = label;
     return this;
   }
@@ -133,12 +139,12 @@ public class GetGpBankGuide200ResponseDataInner {
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nullable String label) {
     this.label = label;
   }
 
 
-  public GetGpBankGuide200ResponseDataInner required(Boolean required) {
+  public GetGpBankGuide200ResponseDataInner required(@javax.annotation.Nonnull Boolean required) {
     this.required = required;
     return this;
   }
@@ -152,12 +158,12 @@ public class GetGpBankGuide200ResponseDataInner {
     return required;
   }
 
-  public void setRequired(Boolean required) {
+  public void setRequired(@javax.annotation.Nonnull Boolean required) {
     this.required = required;
   }
 
 
-  public GetGpBankGuide200ResponseDataInner validations(List<GetGpBankGuide200ResponseDataInnerValidationsInner> validations) {
+  public GetGpBankGuide200ResponseDataInner validations(@javax.annotation.Nullable List<GetGpBankGuide200ResponseDataInnerValidationsInner> validations) {
     this.validations = validations;
     return this;
   }
@@ -179,12 +185,12 @@ public class GetGpBankGuide200ResponseDataInner {
     return validations;
   }
 
-  public void setValidations(List<GetGpBankGuide200ResponseDataInnerValidationsInner> validations) {
+  public void setValidations(@javax.annotation.Nullable List<GetGpBankGuide200ResponseDataInnerValidationsInner> validations) {
     this.validations = validations;
   }
 
 
-  public GetGpBankGuide200ResponseDataInner valuesAllowed(List<GetGpBankGuide200ResponseDataInnerValuesAllowedInner> valuesAllowed) {
+  public GetGpBankGuide200ResponseDataInner valuesAllowed(@javax.annotation.Nullable List<GetGpBankGuide200ResponseDataInnerValuesAllowedInner> valuesAllowed) {
     this.valuesAllowed = valuesAllowed;
     return this;
   }
@@ -206,7 +212,7 @@ public class GetGpBankGuide200ResponseDataInner {
     return valuesAllowed;
   }
 
-  public void setValuesAllowed(List<GetGpBankGuide200ResponseDataInnerValuesAllowedInner> valuesAllowed) {
+  public void setValuesAllowed(@javax.annotation.Nullable List<GetGpBankGuide200ResponseDataInnerValuesAllowedInner> valuesAllowed) {
     this.valuesAllowed = valuesAllowed;
   }
 

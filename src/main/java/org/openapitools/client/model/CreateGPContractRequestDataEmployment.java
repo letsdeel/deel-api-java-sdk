@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateGPContractRequestDataEmployment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateGPContractRequestDataEmployment {
   /**
    * Is it a full-time contract or a part-time contract?
@@ -106,20 +106,23 @@ public class CreateGPContractRequestDataEmployment {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_HOLIDAYS = "holidays";
   @SerializedName(SERIALIZED_NAME_HOLIDAYS)
+  @javax.annotation.Nonnull
   private CreateGPContractRequestDataEmploymentHolidays holidays;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private LocalDate startDate;
 
   public CreateGPContractRequestDataEmployment() {
   }
 
-  public CreateGPContractRequestDataEmployment type(TypeEnum type) {
+  public CreateGPContractRequestDataEmployment type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -133,12 +136,12 @@ public class CreateGPContractRequestDataEmployment {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public CreateGPContractRequestDataEmployment holidays(CreateGPContractRequestDataEmploymentHolidays holidays) {
+  public CreateGPContractRequestDataEmployment holidays(@javax.annotation.Nonnull CreateGPContractRequestDataEmploymentHolidays holidays) {
     this.holidays = holidays;
     return this;
   }
@@ -152,12 +155,12 @@ public class CreateGPContractRequestDataEmployment {
     return holidays;
   }
 
-  public void setHolidays(CreateGPContractRequestDataEmploymentHolidays holidays) {
+  public void setHolidays(@javax.annotation.Nonnull CreateGPContractRequestDataEmploymentHolidays holidays) {
     this.holidays = holidays;
   }
 
 
-  public CreateGPContractRequestDataEmployment startDate(LocalDate startDate) {
+  public CreateGPContractRequestDataEmployment startDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -171,7 +174,7 @@ public class CreateGPContractRequestDataEmployment {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
   }
 

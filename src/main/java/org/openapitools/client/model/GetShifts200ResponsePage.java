@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * GetShifts200ResponsePage
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetShifts200ResponsePage {
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
+  @javax.annotation.Nonnull
   private Integer offset;
 
   public static final String SERIALIZED_NAME_TOTAL_ROWS = "total_rows";
   @SerializedName(SERIALIZED_NAME_TOTAL_ROWS)
+  @javax.annotation.Nonnull
   private Integer totalRows;
 
   public static final String SERIALIZED_NAME_ITEMS_PER_PAGE = "items_per_page";
   @SerializedName(SERIALIZED_NAME_ITEMS_PER_PAGE)
+  @javax.annotation.Nonnull
   private Integer itemsPerPage;
 
   public GetShifts200ResponsePage() {
   }
 
-  public GetShifts200ResponsePage offset(Integer offset) {
+  public GetShifts200ResponsePage offset(@javax.annotation.Nonnull Integer offset) {
     this.offset = offset;
     return this;
   }
@@ -79,12 +82,12 @@ public class GetShifts200ResponsePage {
     return offset;
   }
 
-  public void setOffset(Integer offset) {
+  public void setOffset(@javax.annotation.Nonnull Integer offset) {
     this.offset = offset;
   }
 
 
-  public GetShifts200ResponsePage totalRows(Integer totalRows) {
+  public GetShifts200ResponsePage totalRows(@javax.annotation.Nonnull Integer totalRows) {
     this.totalRows = totalRows;
     return this;
   }
@@ -98,12 +101,12 @@ public class GetShifts200ResponsePage {
     return totalRows;
   }
 
-  public void setTotalRows(Integer totalRows) {
+  public void setTotalRows(@javax.annotation.Nonnull Integer totalRows) {
     this.totalRows = totalRows;
   }
 
 
-  public GetShifts200ResponsePage itemsPerPage(Integer itemsPerPage) {
+  public GetShifts200ResponsePage itemsPerPage(@javax.annotation.Nonnull Integer itemsPerPage) {
     this.itemsPerPage = itemsPerPage;
     return this;
   }
@@ -117,7 +120,7 @@ public class GetShifts200ResponsePage {
     return itemsPerPage;
   }
 
-  public void setItemsPerPage(Integer itemsPerPage) {
+  public void setItemsPerPage(@javax.annotation.Nonnull Integer itemsPerPage) {
     this.itemsPerPage = itemsPerPage;
   }
 

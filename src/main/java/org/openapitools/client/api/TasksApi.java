@@ -180,7 +180,8 @@ public class TasksApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> The task was successfully created. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -201,7 +202,8 @@ public class TasksApi {
          * @return CreateContractPgoTak201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> The task was successfully created. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -223,7 +225,8 @@ public class TasksApi {
          * @return ApiResponse&lt;CreateContractPgoTak201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> The task was successfully created. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -245,7 +248,8 @@ public class TasksApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> The task was successfully created. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -269,7 +273,8 @@ public class TasksApi {
      * @param createContractPgoTakRequest  (required)
      * @return APIcreateContractPgoTakRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> The task was successfully created. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -376,7 +381,8 @@ public class TasksApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> The task reviews were successfully processed. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -397,7 +403,8 @@ public class TasksApi {
          * @return CreateTaskManyReview201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> The task reviews were successfully processed. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -419,7 +426,8 @@ public class TasksApi {
          * @return ApiResponse&lt;CreateTaskManyReview201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> The task reviews were successfully processed. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -441,7 +449,8 @@ public class TasksApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> The task reviews were successfully processed. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -465,7 +474,8 @@ public class TasksApi {
      * @param createTaskManyReviewRequest  (required)
      * @return APIcreateTaskManyReviewRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> The task reviews were successfully processed. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -580,7 +590,8 @@ public class TasksApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> The task review was successfully processed. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -601,7 +612,8 @@ public class TasksApi {
          * @return CreateTaskReviewById201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> The task review was successfully processed. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -623,7 +635,8 @@ public class TasksApi {
          * @return ApiResponse&lt;CreateTaskReviewById201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> The task review was successfully processed. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -645,7 +658,8 @@ public class TasksApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> The task review was successfully processed. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -670,7 +684,8 @@ public class TasksApi {
      * @param createTaskReviewByIdRequest  (required)
      * @return APIcreateTaskReviewByIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> The task review was successfully processed. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad request. Missing required fields or invalid data format. </td><td>  -  </td></tr>
@@ -792,7 +807,8 @@ public class TasksApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> The task was successfully deleted. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. For example, missing required parameters or invalid format. </td><td>  -  </td></tr>
@@ -813,7 +829,8 @@ public class TasksApi {
          * @return DeleteContractTaskById200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> The task was successfully deleted. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. For example, missing required parameters or invalid format. </td><td>  -  </td></tr>
@@ -835,7 +852,8 @@ public class TasksApi {
          * @return ApiResponse&lt;DeleteContractTaskById200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> The task was successfully deleted. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. For example, missing required parameters or invalid format. </td><td>  -  </td></tr>
@@ -857,7 +875,8 @@ public class TasksApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> The task was successfully deleted. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. For example, missing required parameters or invalid format. </td><td>  -  </td></tr>
@@ -881,7 +900,8 @@ public class TasksApi {
      * @param taskId The unique identifier of the task to be deleted. (required)
      * @return APIdeleteContractTaskByIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> The task was successfully deleted. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid request. For example, missing required parameters or invalid format. </td><td>  -  </td></tr>
@@ -980,7 +1000,8 @@ public class TasksApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. A list of tasks associated with the specified contract. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1001,7 +1022,8 @@ public class TasksApi {
          * @return GetTasksByContract200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. A list of tasks associated with the specified contract. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1023,7 +1045,8 @@ public class TasksApi {
          * @return ApiResponse&lt;GetTasksByContract200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. A list of tasks associated with the specified contract. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1045,7 +1068,8 @@ public class TasksApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. A list of tasks associated with the specified contract. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1068,7 +1092,8 @@ public class TasksApi {
      * @param contractId The unique identifier for the Deel contract. (required)
      * @return APIgetTasksByContractRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. A list of tasks associated with the specified contract. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>

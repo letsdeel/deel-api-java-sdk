@@ -52,36 +52,42 @@ import org.openapitools.client.JSON;
 /**
  * BankAccountGuide
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BankAccountGuide {
   public static final String SERIALIZED_NAME_KEY = "key";
   @SerializedName(SERIALIZED_NAME_KEY)
+  @javax.annotation.Nonnull
   private String key;
 
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nullable
   private String label;
 
   public static final String SERIALIZED_NAME_REQUIRED = "required";
   @SerializedName(SERIALIZED_NAME_REQUIRED)
+  @javax.annotation.Nonnull
   private Boolean required;
 
   public static final String SERIALIZED_NAME_VALUES_ALLOWED = "values_allowed";
   @SerializedName(SERIALIZED_NAME_VALUES_ALLOWED)
+  @javax.annotation.Nullable
   private List<BankAccountValueAllowed> valuesAllowed = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_VALIDATIONS = "validations";
   @SerializedName(SERIALIZED_NAME_VALIDATIONS)
+  @javax.annotation.Nullable
   private List<ValidationType> validations = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public BankAccountGuide() {
   }
 
-  public BankAccountGuide key(String key) {
+  public BankAccountGuide key(@javax.annotation.Nonnull String key) {
     this.key = key;
     return this;
   }
@@ -95,12 +101,12 @@ public class BankAccountGuide {
     return key;
   }
 
-  public void setKey(String key) {
+  public void setKey(@javax.annotation.Nonnull String key) {
     this.key = key;
   }
 
 
-  public BankAccountGuide label(String label) {
+  public BankAccountGuide label(@javax.annotation.Nullable String label) {
     this.label = label;
     return this;
   }
@@ -114,12 +120,12 @@ public class BankAccountGuide {
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nullable String label) {
     this.label = label;
   }
 
 
-  public BankAccountGuide required(Boolean required) {
+  public BankAccountGuide required(@javax.annotation.Nonnull Boolean required) {
     this.required = required;
     return this;
   }
@@ -133,12 +139,12 @@ public class BankAccountGuide {
     return required;
   }
 
-  public void setRequired(Boolean required) {
+  public void setRequired(@javax.annotation.Nonnull Boolean required) {
     this.required = required;
   }
 
 
-  public BankAccountGuide valuesAllowed(List<BankAccountValueAllowed> valuesAllowed) {
+  public BankAccountGuide valuesAllowed(@javax.annotation.Nullable List<BankAccountValueAllowed> valuesAllowed) {
     this.valuesAllowed = valuesAllowed;
     return this;
   }
@@ -160,12 +166,12 @@ public class BankAccountGuide {
     return valuesAllowed;
   }
 
-  public void setValuesAllowed(List<BankAccountValueAllowed> valuesAllowed) {
+  public void setValuesAllowed(@javax.annotation.Nullable List<BankAccountValueAllowed> valuesAllowed) {
     this.valuesAllowed = valuesAllowed;
   }
 
 
-  public BankAccountGuide validations(List<ValidationType> validations) {
+  public BankAccountGuide validations(@javax.annotation.Nullable List<ValidationType> validations) {
     this.validations = validations;
     return this;
   }
@@ -187,12 +193,12 @@ public class BankAccountGuide {
     return validations;
   }
 
-  public void setValidations(List<ValidationType> validations) {
+  public void setValidations(@javax.annotation.Nullable List<ValidationType> validations) {
     this.validations = validations;
   }
 
 
-  public BankAccountGuide type(String type) {
+  public BankAccountGuide type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -206,7 +212,7 @@ public class BankAccountGuide {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 

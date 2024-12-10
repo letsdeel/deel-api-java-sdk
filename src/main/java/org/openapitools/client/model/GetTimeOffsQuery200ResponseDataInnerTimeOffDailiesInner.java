@@ -51,14 +51,16 @@ import org.openapitools.client.JSON;
 /**
  * GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_DATE = "date";
   @SerializedName(SERIALIZED_NAME_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime date;
 
   /**
@@ -117,32 +119,38 @@ public class GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private Float amount;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime updatedAt;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_TIME_OFF_ID = "time_off_id";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_ID)
+  @javax.annotation.Nonnull
   private UUID timeOffId;
 
   public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner() {
   }
 
-  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner id(UUID id) {
+  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -156,12 +164,12 @@ public class GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner date(OffsetDateTime date) {
+  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner date(@javax.annotation.Nonnull OffsetDateTime date) {
     this.date = date;
     return this;
   }
@@ -175,12 +183,12 @@ public class GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner {
     return date;
   }
 
-  public void setDate(OffsetDateTime date) {
+  public void setDate(@javax.annotation.Nonnull OffsetDateTime date) {
     this.date = date;
   }
 
 
-  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner type(TypeEnum type) {
+  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -194,12 +202,12 @@ public class GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner amount(Float amount) {
+  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner amount(@javax.annotation.Nonnull Float amount) {
     this.amount = amount;
     return this;
   }
@@ -213,12 +221,12 @@ public class GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner {
     return amount;
   }
 
-  public void setAmount(Float amount) {
+  public void setAmount(@javax.annotation.Nonnull Float amount) {
     this.amount = amount;
   }
 
 
-  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner createdAt(OffsetDateTime createdAt) {
+  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -232,12 +240,12 @@ public class GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner updatedAt(OffsetDateTime updatedAt) {
+  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner updatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -251,12 +259,12 @@ public class GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner description(String description) {
+  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -270,12 +278,12 @@ public class GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner timeOffId(UUID timeOffId) {
+  public GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner timeOffId(@javax.annotation.Nonnull UUID timeOffId) {
     this.timeOffId = timeOffId;
     return this;
   }
@@ -289,7 +297,7 @@ public class GetTimeOffsQuery200ResponseDataInnerTimeOffDailiesInner {
     return timeOffId;
   }
 
-  public void setTimeOffId(UUID timeOffId) {
+  public void setTimeOffId(@javax.annotation.Nonnull UUID timeOffId) {
     this.timeOffId = timeOffId;
   }
 

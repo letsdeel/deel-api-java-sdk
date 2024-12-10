@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * AgreementMsa
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class AgreementMsa {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nonnull
   private String title;
 
   public AgreementMsa() {
   }
 
-  public AgreementMsa id(String id) {
+  public AgreementMsa id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -75,12 +77,12 @@ public class AgreementMsa {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public AgreementMsa title(String title) {
+  public AgreementMsa title(@javax.annotation.Nonnull String title) {
     this.title = title;
     return this;
   }
@@ -94,7 +96,7 @@ public class AgreementMsa {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nonnull String title) {
     this.title = title;
   }
 

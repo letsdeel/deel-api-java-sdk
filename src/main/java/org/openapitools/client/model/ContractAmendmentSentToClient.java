@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * ContractAmendmentSentToClient
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ContractAmendmentSentToClient {
   public static final String SERIALIZED_NAME_CONTRACT_OID = "contract_oid";
   @SerializedName(SERIALIZED_NAME_CONTRACT_OID)
+  @javax.annotation.Nonnull
   private String contractOid;
 
   public static final String SERIALIZED_NAME_CONTRACT_NAME = "contract_name";
   @SerializedName(SERIALIZED_NAME_CONTRACT_NAME)
+  @javax.annotation.Nonnull
   private String contractName;
 
   public static final String SERIALIZED_NAME_CLIENT_ID = "client_id";
   @SerializedName(SERIALIZED_NAME_CLIENT_ID)
+  @javax.annotation.Nonnull
   private BigDecimal clientId;
 
   public static final String SERIALIZED_NAME_CLIENT_NAME = "client_name";
   @SerializedName(SERIALIZED_NAME_CLIENT_NAME)
+  @javax.annotation.Nonnull
   private String clientName;
 
   public ContractAmendmentSentToClient() {
   }
 
-  public ContractAmendmentSentToClient contractOid(String contractOid) {
+  public ContractAmendmentSentToClient contractOid(@javax.annotation.Nonnull String contractOid) {
     this.contractOid = contractOid;
     return this;
   }
@@ -84,12 +88,12 @@ public class ContractAmendmentSentToClient {
     return contractOid;
   }
 
-  public void setContractOid(String contractOid) {
+  public void setContractOid(@javax.annotation.Nonnull String contractOid) {
     this.contractOid = contractOid;
   }
 
 
-  public ContractAmendmentSentToClient contractName(String contractName) {
+  public ContractAmendmentSentToClient contractName(@javax.annotation.Nonnull String contractName) {
     this.contractName = contractName;
     return this;
   }
@@ -103,12 +107,12 @@ public class ContractAmendmentSentToClient {
     return contractName;
   }
 
-  public void setContractName(String contractName) {
+  public void setContractName(@javax.annotation.Nonnull String contractName) {
     this.contractName = contractName;
   }
 
 
-  public ContractAmendmentSentToClient clientId(BigDecimal clientId) {
+  public ContractAmendmentSentToClient clientId(@javax.annotation.Nonnull BigDecimal clientId) {
     this.clientId = clientId;
     return this;
   }
@@ -122,12 +126,12 @@ public class ContractAmendmentSentToClient {
     return clientId;
   }
 
-  public void setClientId(BigDecimal clientId) {
+  public void setClientId(@javax.annotation.Nonnull BigDecimal clientId) {
     this.clientId = clientId;
   }
 
 
-  public ContractAmendmentSentToClient clientName(String clientName) {
+  public ContractAmendmentSentToClient clientName(@javax.annotation.Nonnull String clientName) {
     this.clientName = clientName;
     return this;
   }
@@ -141,7 +145,7 @@ public class ContractAmendmentSentToClient {
     return clientName;
   }
 
-  public void setClientName(String clientName) {
+  public void setClientName(@javax.annotation.Nonnull String clientName) {
     this.clientName = clientName;
   }
 

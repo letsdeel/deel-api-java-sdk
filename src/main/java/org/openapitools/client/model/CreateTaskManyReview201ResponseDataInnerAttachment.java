@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * CreateTaskManyReview201ResponseDataInnerAttachment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateTaskManyReview201ResponseDataInnerAttachment {
   public static final String SERIALIZED_NAME_KEY = "key";
   @SerializedName(SERIALIZED_NAME_KEY)
+  @javax.annotation.Nullable
   private String key;
 
   public static final String SERIALIZED_NAME_FILENAME = "filename";
   @SerializedName(SERIALIZED_NAME_FILENAME)
+  @javax.annotation.Nullable
   private String filename;
 
   public CreateTaskManyReview201ResponseDataInnerAttachment() {
   }
 
-  public CreateTaskManyReview201ResponseDataInnerAttachment key(String key) {
+  public CreateTaskManyReview201ResponseDataInnerAttachment key(@javax.annotation.Nullable String key) {
     this.key = key;
     return this;
   }
@@ -76,12 +78,12 @@ public class CreateTaskManyReview201ResponseDataInnerAttachment {
     return key;
   }
 
-  public void setKey(String key) {
+  public void setKey(@javax.annotation.Nullable String key) {
     this.key = key;
   }
 
 
-  public CreateTaskManyReview201ResponseDataInnerAttachment filename(String filename) {
+  public CreateTaskManyReview201ResponseDataInnerAttachment filename(@javax.annotation.Nullable String filename) {
     this.filename = filename;
     return this;
   }
@@ -95,7 +97,7 @@ public class CreateTaskManyReview201ResponseDataInnerAttachment {
     return filename;
   }
 
-  public void setFilename(String filename) {
+  public void setFilename(@javax.annotation.Nullable String filename) {
     this.filename = filename;
   }
 

@@ -58,18 +58,21 @@ import org.openapitools.client.JSON;
 /**
  * GetTimesheets200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetTimesheets200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private String type;
 
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nullable
   private String scale;
 
   /**
@@ -134,64 +137,78 @@ public class GetTimesheets200ResponseDataInner {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_CONTRACT = "contract";
   @SerializedName(SERIALIZED_NAME_CONTRACT)
+  @javax.annotation.Nonnull
   private GetTimesheets200ResponseDataInnerContract contract;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private BigDecimal quantity;
 
   public static final String SERIALIZED_NAME_WORKSHEET = "worksheet";
   @SerializedName(SERIALIZED_NAME_WORKSHEET)
+  @javax.annotation.Nullable
   private GetTimesheets200ResponseDataInnerWorksheet worksheet;
 
   public static final String SERIALIZED_NAME_ATTACHMENT = "attachment";
   @SerializedName(SERIALIZED_NAME_ATTACHMENT)
+  @javax.annotation.Nullable
   private GetTimesheets200ResponseDataInnerAttachment attachment;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_REPORTED_BY = "reported_by";
   @SerializedName(SERIALIZED_NAME_REPORTED_BY)
+  @javax.annotation.Nonnull
   private GetTimesheets200ResponseDataInnerReportedBy reportedBy;
 
   public static final String SERIALIZED_NAME_REVIEWED_BY = "reviewed_by";
   @SerializedName(SERIALIZED_NAME_REVIEWED_BY)
+  @javax.annotation.Nullable
   private GetTimesheets200ResponseDataInnerReviewedBy reviewedBy;
 
   public static final String SERIALIZED_NAME_CUSTOM_SCALE = "custom_scale";
   @SerializedName(SERIALIZED_NAME_CUSTOM_SCALE)
+  @javax.annotation.Nullable
   private String customScale;
 
   public static final String SERIALIZED_NAME_TOTAL_AMOUNT = "total_amount";
   @SerializedName(SERIALIZED_NAME_TOTAL_AMOUNT)
+  @javax.annotation.Nonnull
   private String totalAmount;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currency_code";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nonnull
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_PAYMENT_CYCLE = "payment_cycle";
   @SerializedName(SERIALIZED_NAME_PAYMENT_CYCLE)
+  @javax.annotation.Nullable
   private GetTimesheets200ResponseDataInnerPaymentCycle paymentCycle;
 
   public static final String SERIALIZED_NAME_DATE_SUBMITTED = "date_submitted";
   @SerializedName(SERIALIZED_NAME_DATE_SUBMITTED)
+  @javax.annotation.Nonnull
   private OffsetDateTime dateSubmitted;
 
   public GetTimesheets200ResponseDataInner() {
   }
 
-  public GetTimesheets200ResponseDataInner id(UUID id) {
+  public GetTimesheets200ResponseDataInner id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -205,12 +222,12 @@ public class GetTimesheets200ResponseDataInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public GetTimesheets200ResponseDataInner type(String type) {
+  public GetTimesheets200ResponseDataInner type(@javax.annotation.Nonnull String type) {
     this.type = type;
     return this;
   }
@@ -224,12 +241,12 @@ public class GetTimesheets200ResponseDataInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nonnull String type) {
     this.type = type;
   }
 
 
-  public GetTimesheets200ResponseDataInner scale(String scale) {
+  public GetTimesheets200ResponseDataInner scale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
     return this;
   }
@@ -243,12 +260,12 @@ public class GetTimesheets200ResponseDataInner {
     return scale;
   }
 
-  public void setScale(String scale) {
+  public void setScale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
   }
 
 
-  public GetTimesheets200ResponseDataInner status(StatusEnum status) {
+  public GetTimesheets200ResponseDataInner status(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -262,12 +279,12 @@ public class GetTimesheets200ResponseDataInner {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
   }
 
 
-  public GetTimesheets200ResponseDataInner contract(GetTimesheets200ResponseDataInnerContract contract) {
+  public GetTimesheets200ResponseDataInner contract(@javax.annotation.Nonnull GetTimesheets200ResponseDataInnerContract contract) {
     this.contract = contract;
     return this;
   }
@@ -281,12 +298,12 @@ public class GetTimesheets200ResponseDataInner {
     return contract;
   }
 
-  public void setContract(GetTimesheets200ResponseDataInnerContract contract) {
+  public void setContract(@javax.annotation.Nonnull GetTimesheets200ResponseDataInnerContract contract) {
     this.contract = contract;
   }
 
 
-  public GetTimesheets200ResponseDataInner quantity(BigDecimal quantity) {
+  public GetTimesheets200ResponseDataInner quantity(@javax.annotation.Nullable BigDecimal quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -300,12 +317,12 @@ public class GetTimesheets200ResponseDataInner {
     return quantity;
   }
 
-  public void setQuantity(BigDecimal quantity) {
+  public void setQuantity(@javax.annotation.Nullable BigDecimal quantity) {
     this.quantity = quantity;
   }
 
 
-  public GetTimesheets200ResponseDataInner worksheet(GetTimesheets200ResponseDataInnerWorksheet worksheet) {
+  public GetTimesheets200ResponseDataInner worksheet(@javax.annotation.Nullable GetTimesheets200ResponseDataInnerWorksheet worksheet) {
     this.worksheet = worksheet;
     return this;
   }
@@ -319,12 +336,12 @@ public class GetTimesheets200ResponseDataInner {
     return worksheet;
   }
 
-  public void setWorksheet(GetTimesheets200ResponseDataInnerWorksheet worksheet) {
+  public void setWorksheet(@javax.annotation.Nullable GetTimesheets200ResponseDataInnerWorksheet worksheet) {
     this.worksheet = worksheet;
   }
 
 
-  public GetTimesheets200ResponseDataInner attachment(GetTimesheets200ResponseDataInnerAttachment attachment) {
+  public GetTimesheets200ResponseDataInner attachment(@javax.annotation.Nullable GetTimesheets200ResponseDataInnerAttachment attachment) {
     this.attachment = attachment;
     return this;
   }
@@ -338,12 +355,12 @@ public class GetTimesheets200ResponseDataInner {
     return attachment;
   }
 
-  public void setAttachment(GetTimesheets200ResponseDataInnerAttachment attachment) {
+  public void setAttachment(@javax.annotation.Nullable GetTimesheets200ResponseDataInnerAttachment attachment) {
     this.attachment = attachment;
   }
 
 
-  public GetTimesheets200ResponseDataInner createdAt(OffsetDateTime createdAt) {
+  public GetTimesheets200ResponseDataInner createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -357,12 +374,12 @@ public class GetTimesheets200ResponseDataInner {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public GetTimesheets200ResponseDataInner description(String description) {
+  public GetTimesheets200ResponseDataInner description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -376,12 +393,12 @@ public class GetTimesheets200ResponseDataInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public GetTimesheets200ResponseDataInner reportedBy(GetTimesheets200ResponseDataInnerReportedBy reportedBy) {
+  public GetTimesheets200ResponseDataInner reportedBy(@javax.annotation.Nonnull GetTimesheets200ResponseDataInnerReportedBy reportedBy) {
     this.reportedBy = reportedBy;
     return this;
   }
@@ -395,12 +412,12 @@ public class GetTimesheets200ResponseDataInner {
     return reportedBy;
   }
 
-  public void setReportedBy(GetTimesheets200ResponseDataInnerReportedBy reportedBy) {
+  public void setReportedBy(@javax.annotation.Nonnull GetTimesheets200ResponseDataInnerReportedBy reportedBy) {
     this.reportedBy = reportedBy;
   }
 
 
-  public GetTimesheets200ResponseDataInner reviewedBy(GetTimesheets200ResponseDataInnerReviewedBy reviewedBy) {
+  public GetTimesheets200ResponseDataInner reviewedBy(@javax.annotation.Nullable GetTimesheets200ResponseDataInnerReviewedBy reviewedBy) {
     this.reviewedBy = reviewedBy;
     return this;
   }
@@ -414,12 +431,12 @@ public class GetTimesheets200ResponseDataInner {
     return reviewedBy;
   }
 
-  public void setReviewedBy(GetTimesheets200ResponseDataInnerReviewedBy reviewedBy) {
+  public void setReviewedBy(@javax.annotation.Nullable GetTimesheets200ResponseDataInnerReviewedBy reviewedBy) {
     this.reviewedBy = reviewedBy;
   }
 
 
-  public GetTimesheets200ResponseDataInner customScale(String customScale) {
+  public GetTimesheets200ResponseDataInner customScale(@javax.annotation.Nullable String customScale) {
     this.customScale = customScale;
     return this;
   }
@@ -433,12 +450,12 @@ public class GetTimesheets200ResponseDataInner {
     return customScale;
   }
 
-  public void setCustomScale(String customScale) {
+  public void setCustomScale(@javax.annotation.Nullable String customScale) {
     this.customScale = customScale;
   }
 
 
-  public GetTimesheets200ResponseDataInner totalAmount(String totalAmount) {
+  public GetTimesheets200ResponseDataInner totalAmount(@javax.annotation.Nonnull String totalAmount) {
     this.totalAmount = totalAmount;
     return this;
   }
@@ -452,12 +469,12 @@ public class GetTimesheets200ResponseDataInner {
     return totalAmount;
   }
 
-  public void setTotalAmount(String totalAmount) {
+  public void setTotalAmount(@javax.annotation.Nonnull String totalAmount) {
     this.totalAmount = totalAmount;
   }
 
 
-  public GetTimesheets200ResponseDataInner currencyCode(String currencyCode) {
+  public GetTimesheets200ResponseDataInner currencyCode(@javax.annotation.Nonnull String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -471,12 +488,12 @@ public class GetTimesheets200ResponseDataInner {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nonnull String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public GetTimesheets200ResponseDataInner paymentCycle(GetTimesheets200ResponseDataInnerPaymentCycle paymentCycle) {
+  public GetTimesheets200ResponseDataInner paymentCycle(@javax.annotation.Nullable GetTimesheets200ResponseDataInnerPaymentCycle paymentCycle) {
     this.paymentCycle = paymentCycle;
     return this;
   }
@@ -490,12 +507,12 @@ public class GetTimesheets200ResponseDataInner {
     return paymentCycle;
   }
 
-  public void setPaymentCycle(GetTimesheets200ResponseDataInnerPaymentCycle paymentCycle) {
+  public void setPaymentCycle(@javax.annotation.Nullable GetTimesheets200ResponseDataInnerPaymentCycle paymentCycle) {
     this.paymentCycle = paymentCycle;
   }
 
 
-  public GetTimesheets200ResponseDataInner dateSubmitted(OffsetDateTime dateSubmitted) {
+  public GetTimesheets200ResponseDataInner dateSubmitted(@javax.annotation.Nonnull OffsetDateTime dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
     return this;
   }
@@ -509,7 +526,7 @@ public class GetTimesheets200ResponseDataInner {
     return dateSubmitted;
   }
 
-  public void setDateSubmitted(OffsetDateTime dateSubmitted) {
+  public void setDateSubmitted(@javax.annotation.Nonnull OffsetDateTime dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
   }
 

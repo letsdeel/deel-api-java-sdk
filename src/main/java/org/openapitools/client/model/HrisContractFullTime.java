@@ -51,22 +51,26 @@ import org.openapitools.client.JSON;
 /**
  * HrisContractFullTime
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisContractFullTime {
   public static final String SERIALIZED_NAME_CONTRACT_OID = "contract_oid";
   @SerializedName(SERIALIZED_NAME_CONTRACT_OID)
+  @javax.annotation.Nonnull
   private String contractOid;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private LocalDate startDate;
 
   public static final String SERIALIZED_NAME_EMPLOYEE_NUMBER = "employee_number";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE_NUMBER)
+  @javax.annotation.Nullable
   private BigDecimal employeeNumber;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private LocalDate endDate;
 
   /**
@@ -121,12 +125,13 @@ public class HrisContractFullTime {
 
   public static final String SERIALIZED_NAME_EMPLOYMENT_TYPE = "employment_type";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT_TYPE)
+  @javax.annotation.Nonnull
   private EmploymentTypeEnum employmentType;
 
   public HrisContractFullTime() {
   }
 
-  public HrisContractFullTime contractOid(String contractOid) {
+  public HrisContractFullTime contractOid(@javax.annotation.Nonnull String contractOid) {
     this.contractOid = contractOid;
     return this;
   }
@@ -140,12 +145,12 @@ public class HrisContractFullTime {
     return contractOid;
   }
 
-  public void setContractOid(String contractOid) {
+  public void setContractOid(@javax.annotation.Nonnull String contractOid) {
     this.contractOid = contractOid;
   }
 
 
-  public HrisContractFullTime startDate(LocalDate startDate) {
+  public HrisContractFullTime startDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -159,12 +164,12 @@ public class HrisContractFullTime {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public HrisContractFullTime employeeNumber(BigDecimal employeeNumber) {
+  public HrisContractFullTime employeeNumber(@javax.annotation.Nullable BigDecimal employeeNumber) {
     this.employeeNumber = employeeNumber;
     return this;
   }
@@ -178,12 +183,12 @@ public class HrisContractFullTime {
     return employeeNumber;
   }
 
-  public void setEmployeeNumber(BigDecimal employeeNumber) {
+  public void setEmployeeNumber(@javax.annotation.Nullable BigDecimal employeeNumber) {
     this.employeeNumber = employeeNumber;
   }
 
 
-  public HrisContractFullTime endDate(LocalDate endDate) {
+  public HrisContractFullTime endDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -197,12 +202,12 @@ public class HrisContractFullTime {
     return endDate;
   }
 
-  public void setEndDate(LocalDate endDate) {
+  public void setEndDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
   }
 
 
-  public HrisContractFullTime employmentType(EmploymentTypeEnum employmentType) {
+  public HrisContractFullTime employmentType(@javax.annotation.Nonnull EmploymentTypeEnum employmentType) {
     this.employmentType = employmentType;
     return this;
   }
@@ -216,7 +221,7 @@ public class HrisContractFullTime {
     return employmentType;
   }
 
-  public void setEmploymentType(EmploymentTypeEnum employmentType) {
+  public void setEmploymentType(@javax.annotation.Nonnull EmploymentTypeEnum employmentType) {
     this.employmentType = employmentType;
   }
 

@@ -52,22 +52,26 @@ import org.openapitools.client.JSON;
 /**
  * CreateAdjustment201ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateAdjustment201ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_FILE = "file";
   @SerializedName(SERIALIZED_NAME_FILE)
+  @javax.annotation.Nullable
   private CreateAdjustment201ResponseDataFile _file;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nullable
   private String title;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private String amount;
 
   /**
@@ -130,52 +134,63 @@ public class CreateAdjustment201ResponseData {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime updatedAt;
 
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nullable
   private String contractId;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_CYCLE_REFERENCE = "cycle_reference";
   @SerializedName(SERIALIZED_NAME_CYCLE_REFERENCE)
+  @javax.annotation.Nullable
   private String cycleReference;
 
   public static final String SERIALIZED_NAME_MOVE_NEXT_CYCLE = "move_next_cycle";
   @SerializedName(SERIALIZED_NAME_MOVE_NEXT_CYCLE)
+  @javax.annotation.Nullable
   private Boolean moveNextCycle;
 
   public static final String SERIALIZED_NAME_DATE_OF_ADJUSTMENT = "date_of_adjustment";
   @SerializedName(SERIALIZED_NAME_DATE_OF_ADJUSTMENT)
+  @javax.annotation.Nullable
   private LocalDate dateOfAdjustment;
 
   public static final String SERIALIZED_NAME_ACTUAL_END_CYCLE_DATE = "actual_end_cycle_date";
   @SerializedName(SERIALIZED_NAME_ACTUAL_END_CYCLE_DATE)
+  @javax.annotation.Nullable
   private String actualEndCycleDate;
 
   public static final String SERIALIZED_NAME_ADJUSTMENT_CATEGORY_ID = "adjustment_category_id";
   @SerializedName(SERIALIZED_NAME_ADJUSTMENT_CATEGORY_ID)
+  @javax.annotation.Nullable
   private String adjustmentCategoryId;
 
   public static final String SERIALIZED_NAME_ACTUAL_START_CYCLE_DATE = "actual_start_cycle_date";
   @SerializedName(SERIALIZED_NAME_ACTUAL_START_CYCLE_DATE)
+  @javax.annotation.Nullable
   private String actualStartCycleDate;
 
   public CreateAdjustment201ResponseData() {
   }
 
-  public CreateAdjustment201ResponseData id(String id) {
+  public CreateAdjustment201ResponseData id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -189,12 +204,12 @@ public class CreateAdjustment201ResponseData {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public CreateAdjustment201ResponseData _file(CreateAdjustment201ResponseDataFile _file) {
+  public CreateAdjustment201ResponseData _file(@javax.annotation.Nullable CreateAdjustment201ResponseDataFile _file) {
     this._file = _file;
     return this;
   }
@@ -208,12 +223,12 @@ public class CreateAdjustment201ResponseData {
     return _file;
   }
 
-  public void setFile(CreateAdjustment201ResponseDataFile _file) {
+  public void setFile(@javax.annotation.Nullable CreateAdjustment201ResponseDataFile _file) {
     this._file = _file;
   }
 
 
-  public CreateAdjustment201ResponseData title(String title) {
+  public CreateAdjustment201ResponseData title(@javax.annotation.Nullable String title) {
     this.title = title;
     return this;
   }
@@ -227,12 +242,12 @@ public class CreateAdjustment201ResponseData {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nullable String title) {
     this.title = title;
   }
 
 
-  public CreateAdjustment201ResponseData amount(String amount) {
+  public CreateAdjustment201ResponseData amount(@javax.annotation.Nullable String amount) {
     this.amount = amount;
     return this;
   }
@@ -246,12 +261,12 @@ public class CreateAdjustment201ResponseData {
     return amount;
   }
 
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nullable String amount) {
     this.amount = amount;
   }
 
 
-  public CreateAdjustment201ResponseData status(StatusEnum status) {
+  public CreateAdjustment201ResponseData status(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -265,12 +280,12 @@ public class CreateAdjustment201ResponseData {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
   }
 
 
-  public CreateAdjustment201ResponseData createdAt(OffsetDateTime createdAt) {
+  public CreateAdjustment201ResponseData createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -284,12 +299,12 @@ public class CreateAdjustment201ResponseData {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public CreateAdjustment201ResponseData updatedAt(OffsetDateTime updatedAt) {
+  public CreateAdjustment201ResponseData updatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -303,12 +318,12 @@ public class CreateAdjustment201ResponseData {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public CreateAdjustment201ResponseData contractId(String contractId) {
+  public CreateAdjustment201ResponseData contractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -322,12 +337,12 @@ public class CreateAdjustment201ResponseData {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
   }
 
 
-  public CreateAdjustment201ResponseData description(String description) {
+  public CreateAdjustment201ResponseData description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -341,12 +356,12 @@ public class CreateAdjustment201ResponseData {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public CreateAdjustment201ResponseData cycleReference(String cycleReference) {
+  public CreateAdjustment201ResponseData cycleReference(@javax.annotation.Nullable String cycleReference) {
     this.cycleReference = cycleReference;
     return this;
   }
@@ -360,12 +375,12 @@ public class CreateAdjustment201ResponseData {
     return cycleReference;
   }
 
-  public void setCycleReference(String cycleReference) {
+  public void setCycleReference(@javax.annotation.Nullable String cycleReference) {
     this.cycleReference = cycleReference;
   }
 
 
-  public CreateAdjustment201ResponseData moveNextCycle(Boolean moveNextCycle) {
+  public CreateAdjustment201ResponseData moveNextCycle(@javax.annotation.Nullable Boolean moveNextCycle) {
     this.moveNextCycle = moveNextCycle;
     return this;
   }
@@ -379,12 +394,12 @@ public class CreateAdjustment201ResponseData {
     return moveNextCycle;
   }
 
-  public void setMoveNextCycle(Boolean moveNextCycle) {
+  public void setMoveNextCycle(@javax.annotation.Nullable Boolean moveNextCycle) {
     this.moveNextCycle = moveNextCycle;
   }
 
 
-  public CreateAdjustment201ResponseData dateOfAdjustment(LocalDate dateOfAdjustment) {
+  public CreateAdjustment201ResponseData dateOfAdjustment(@javax.annotation.Nullable LocalDate dateOfAdjustment) {
     this.dateOfAdjustment = dateOfAdjustment;
     return this;
   }
@@ -398,12 +413,12 @@ public class CreateAdjustment201ResponseData {
     return dateOfAdjustment;
   }
 
-  public void setDateOfAdjustment(LocalDate dateOfAdjustment) {
+  public void setDateOfAdjustment(@javax.annotation.Nullable LocalDate dateOfAdjustment) {
     this.dateOfAdjustment = dateOfAdjustment;
   }
 
 
-  public CreateAdjustment201ResponseData actualEndCycleDate(String actualEndCycleDate) {
+  public CreateAdjustment201ResponseData actualEndCycleDate(@javax.annotation.Nullable String actualEndCycleDate) {
     this.actualEndCycleDate = actualEndCycleDate;
     return this;
   }
@@ -417,12 +432,12 @@ public class CreateAdjustment201ResponseData {
     return actualEndCycleDate;
   }
 
-  public void setActualEndCycleDate(String actualEndCycleDate) {
+  public void setActualEndCycleDate(@javax.annotation.Nullable String actualEndCycleDate) {
     this.actualEndCycleDate = actualEndCycleDate;
   }
 
 
-  public CreateAdjustment201ResponseData adjustmentCategoryId(String adjustmentCategoryId) {
+  public CreateAdjustment201ResponseData adjustmentCategoryId(@javax.annotation.Nullable String adjustmentCategoryId) {
     this.adjustmentCategoryId = adjustmentCategoryId;
     return this;
   }
@@ -436,12 +451,12 @@ public class CreateAdjustment201ResponseData {
     return adjustmentCategoryId;
   }
 
-  public void setAdjustmentCategoryId(String adjustmentCategoryId) {
+  public void setAdjustmentCategoryId(@javax.annotation.Nullable String adjustmentCategoryId) {
     this.adjustmentCategoryId = adjustmentCategoryId;
   }
 
 
-  public CreateAdjustment201ResponseData actualStartCycleDate(String actualStartCycleDate) {
+  public CreateAdjustment201ResponseData actualStartCycleDate(@javax.annotation.Nullable String actualStartCycleDate) {
     this.actualStartCycleDate = actualStartCycleDate;
     return this;
   }
@@ -455,7 +470,7 @@ public class CreateAdjustment201ResponseData {
     return actualStartCycleDate;
   }
 
-  public void setActualStartCycleDate(String actualStartCycleDate) {
+  public void setActualStartCycleDate(@javax.annotation.Nullable String actualStartCycleDate) {
     this.actualStartCycleDate = actualStartCycleDate;
   }
 

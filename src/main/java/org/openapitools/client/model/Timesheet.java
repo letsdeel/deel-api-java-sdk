@@ -61,84 +61,102 @@ import org.openapitools.client.JSON;
 /**
  * Timesheet
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Timesheet {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private String type;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private TimesheetStatusEnum status;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_DATE_SUBMITTED = "date_submitted";
   @SerializedName(SERIALIZED_NAME_DATE_SUBMITTED)
+  @javax.annotation.Nonnull
   private OffsetDateTime dateSubmitted;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currency_code";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nonnull
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_TOTAL_AMOUNT = "total_amount";
   @SerializedName(SERIALIZED_NAME_TOTAL_AMOUNT)
+  @javax.annotation.Nonnull
   private String totalAmount;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nullable
   private BigDecimal quantity;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private String createdAt;
 
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nullable
   private String scale;
 
   public static final String SERIALIZED_NAME_CUSTOM_SCALE = "custom_scale";
   @SerializedName(SERIALIZED_NAME_CUSTOM_SCALE)
+  @javax.annotation.Nullable
   private String customScale;
 
   public static final String SERIALIZED_NAME_ATTACHMENT = "attachment";
   @SerializedName(SERIALIZED_NAME_ATTACHMENT)
+  @javax.annotation.Nullable
   private FileAttachmentInfo attachment;
 
   public static final String SERIALIZED_NAME_WORKSHEET = "worksheet";
   @SerializedName(SERIALIZED_NAME_WORKSHEET)
+  @javax.annotation.Nullable
   private BasicTimesheetWorksheet worksheet;
 
   public static final String SERIALIZED_NAME_REVIEWED_BY = "reviewed_by";
   @SerializedName(SERIALIZED_NAME_REVIEWED_BY)
+  @javax.annotation.Nullable
   private BasicTimesheetReviewedBy reviewedBy;
 
   public static final String SERIALIZED_NAME_CONTRACT = "contract";
   @SerializedName(SERIALIZED_NAME_CONTRACT)
+  @javax.annotation.Nonnull
   private BasicTimesheetContract contract;
 
   public static final String SERIALIZED_NAME_PAYMENT_CYCLE = "payment_cycle";
   @SerializedName(SERIALIZED_NAME_PAYMENT_CYCLE)
+  @javax.annotation.Nullable
   private BasicTimesheetPaymentCycle paymentCycle;
 
   public static final String SERIALIZED_NAME_REPORTED_BY = "reported_by";
   @SerializedName(SERIALIZED_NAME_REPORTED_BY)
+  @javax.annotation.Nonnull
   private BasicTimesheetReportedBy reportedBy;
 
   public static final String SERIALIZED_NAME_APPROVERS = "approvers";
   @SerializedName(SERIALIZED_NAME_APPROVERS)
+  @javax.annotation.Nonnull
   private List<TimesheetApprover> approvers = new ArrayList<>();
 
   public Timesheet() {
   }
 
-  public Timesheet id(String id) {
+  public Timesheet id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -152,12 +170,12 @@ public class Timesheet {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public Timesheet type(String type) {
+  public Timesheet type(@javax.annotation.Nonnull String type) {
     this.type = type;
     return this;
   }
@@ -171,12 +189,12 @@ public class Timesheet {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nonnull String type) {
     this.type = type;
   }
 
 
-  public Timesheet status(TimesheetStatusEnum status) {
+  public Timesheet status(@javax.annotation.Nullable TimesheetStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -190,12 +208,12 @@ public class Timesheet {
     return status;
   }
 
-  public void setStatus(TimesheetStatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable TimesheetStatusEnum status) {
     this.status = status;
   }
 
 
-  public Timesheet description(String description) {
+  public Timesheet description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -209,12 +227,12 @@ public class Timesheet {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public Timesheet dateSubmitted(OffsetDateTime dateSubmitted) {
+  public Timesheet dateSubmitted(@javax.annotation.Nonnull OffsetDateTime dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
     return this;
   }
@@ -228,12 +246,12 @@ public class Timesheet {
     return dateSubmitted;
   }
 
-  public void setDateSubmitted(OffsetDateTime dateSubmitted) {
+  public void setDateSubmitted(@javax.annotation.Nonnull OffsetDateTime dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
   }
 
 
-  public Timesheet currencyCode(String currencyCode) {
+  public Timesheet currencyCode(@javax.annotation.Nonnull String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -247,12 +265,12 @@ public class Timesheet {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nonnull String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public Timesheet totalAmount(String totalAmount) {
+  public Timesheet totalAmount(@javax.annotation.Nonnull String totalAmount) {
     this.totalAmount = totalAmount;
     return this;
   }
@@ -266,12 +284,12 @@ public class Timesheet {
     return totalAmount;
   }
 
-  public void setTotalAmount(String totalAmount) {
+  public void setTotalAmount(@javax.annotation.Nonnull String totalAmount) {
     this.totalAmount = totalAmount;
   }
 
 
-  public Timesheet quantity(BigDecimal quantity) {
+  public Timesheet quantity(@javax.annotation.Nullable BigDecimal quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -285,12 +303,12 @@ public class Timesheet {
     return quantity;
   }
 
-  public void setQuantity(BigDecimal quantity) {
+  public void setQuantity(@javax.annotation.Nullable BigDecimal quantity) {
     this.quantity = quantity;
   }
 
 
-  public Timesheet createdAt(String createdAt) {
+  public Timesheet createdAt(@javax.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -304,12 +322,12 @@ public class Timesheet {
     return createdAt;
   }
 
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public Timesheet scale(String scale) {
+  public Timesheet scale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
     return this;
   }
@@ -323,12 +341,12 @@ public class Timesheet {
     return scale;
   }
 
-  public void setScale(String scale) {
+  public void setScale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
   }
 
 
-  public Timesheet customScale(String customScale) {
+  public Timesheet customScale(@javax.annotation.Nullable String customScale) {
     this.customScale = customScale;
     return this;
   }
@@ -342,12 +360,12 @@ public class Timesheet {
     return customScale;
   }
 
-  public void setCustomScale(String customScale) {
+  public void setCustomScale(@javax.annotation.Nullable String customScale) {
     this.customScale = customScale;
   }
 
 
-  public Timesheet attachment(FileAttachmentInfo attachment) {
+  public Timesheet attachment(@javax.annotation.Nullable FileAttachmentInfo attachment) {
     this.attachment = attachment;
     return this;
   }
@@ -361,12 +379,12 @@ public class Timesheet {
     return attachment;
   }
 
-  public void setAttachment(FileAttachmentInfo attachment) {
+  public void setAttachment(@javax.annotation.Nullable FileAttachmentInfo attachment) {
     this.attachment = attachment;
   }
 
 
-  public Timesheet worksheet(BasicTimesheetWorksheet worksheet) {
+  public Timesheet worksheet(@javax.annotation.Nullable BasicTimesheetWorksheet worksheet) {
     this.worksheet = worksheet;
     return this;
   }
@@ -380,12 +398,12 @@ public class Timesheet {
     return worksheet;
   }
 
-  public void setWorksheet(BasicTimesheetWorksheet worksheet) {
+  public void setWorksheet(@javax.annotation.Nullable BasicTimesheetWorksheet worksheet) {
     this.worksheet = worksheet;
   }
 
 
-  public Timesheet reviewedBy(BasicTimesheetReviewedBy reviewedBy) {
+  public Timesheet reviewedBy(@javax.annotation.Nullable BasicTimesheetReviewedBy reviewedBy) {
     this.reviewedBy = reviewedBy;
     return this;
   }
@@ -399,12 +417,12 @@ public class Timesheet {
     return reviewedBy;
   }
 
-  public void setReviewedBy(BasicTimesheetReviewedBy reviewedBy) {
+  public void setReviewedBy(@javax.annotation.Nullable BasicTimesheetReviewedBy reviewedBy) {
     this.reviewedBy = reviewedBy;
   }
 
 
-  public Timesheet contract(BasicTimesheetContract contract) {
+  public Timesheet contract(@javax.annotation.Nonnull BasicTimesheetContract contract) {
     this.contract = contract;
     return this;
   }
@@ -418,12 +436,12 @@ public class Timesheet {
     return contract;
   }
 
-  public void setContract(BasicTimesheetContract contract) {
+  public void setContract(@javax.annotation.Nonnull BasicTimesheetContract contract) {
     this.contract = contract;
   }
 
 
-  public Timesheet paymentCycle(BasicTimesheetPaymentCycle paymentCycle) {
+  public Timesheet paymentCycle(@javax.annotation.Nullable BasicTimesheetPaymentCycle paymentCycle) {
     this.paymentCycle = paymentCycle;
     return this;
   }
@@ -437,12 +455,12 @@ public class Timesheet {
     return paymentCycle;
   }
 
-  public void setPaymentCycle(BasicTimesheetPaymentCycle paymentCycle) {
+  public void setPaymentCycle(@javax.annotation.Nullable BasicTimesheetPaymentCycle paymentCycle) {
     this.paymentCycle = paymentCycle;
   }
 
 
-  public Timesheet reportedBy(BasicTimesheetReportedBy reportedBy) {
+  public Timesheet reportedBy(@javax.annotation.Nonnull BasicTimesheetReportedBy reportedBy) {
     this.reportedBy = reportedBy;
     return this;
   }
@@ -456,12 +474,12 @@ public class Timesheet {
     return reportedBy;
   }
 
-  public void setReportedBy(BasicTimesheetReportedBy reportedBy) {
+  public void setReportedBy(@javax.annotation.Nonnull BasicTimesheetReportedBy reportedBy) {
     this.reportedBy = reportedBy;
   }
 
 
-  public Timesheet approvers(List<TimesheetApprover> approvers) {
+  public Timesheet approvers(@javax.annotation.Nonnull List<TimesheetApprover> approvers) {
     this.approvers = approvers;
     return this;
   }
@@ -483,7 +501,7 @@ public class Timesheet {
     return approvers;
   }
 
-  public void setApprovers(List<TimesheetApprover> approvers) {
+  public void setApprovers(@javax.annotation.Nonnull List<TimesheetApprover> approvers) {
     this.approvers = approvers;
   }
 

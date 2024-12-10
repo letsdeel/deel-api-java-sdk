@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * Schema for the 401K Guideline Plan request body.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Delete401kEnrollmentsDefinitionRequest {
   /**
    * Type of the contribution for 401k.
@@ -108,12 +108,13 @@ public class Delete401kEnrollmentsDefinitionRequest {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public Delete401kEnrollmentsDefinitionRequest() {
   }
 
-  public Delete401kEnrollmentsDefinitionRequest type(TypeEnum type) {
+  public Delete401kEnrollmentsDefinitionRequest type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -127,7 +128,7 @@ public class Delete401kEnrollmentsDefinitionRequest {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 

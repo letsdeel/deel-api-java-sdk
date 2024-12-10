@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nullable
   private OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData data;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private String value;
 
   public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner() {
   }
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner data(OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData data) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner data(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData data) {
     this.data = data;
     return this;
   }
@@ -84,12 +88,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner {
     return data;
   }
 
-  public void setData(OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData data) {
+  public void setData(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData data) {
     this.data = data;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner name(String name) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -103,12 +107,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner type(String type) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -122,12 +126,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner value(String value) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner value(@javax.annotation.Nullable String value) {
     this.value = value;
     return this;
   }
@@ -141,7 +145,7 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner {
     return value;
   }
 
-  public void setValue(String value) {
+  public void setValue(@javax.annotation.Nullable String value) {
     this.value = value;
   }
 

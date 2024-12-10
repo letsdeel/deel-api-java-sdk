@@ -63,10 +63,11 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   /**
@@ -145,18 +146,22 @@ public class CreateContract201ResponseData {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_QUOTE = "quote";
   @SerializedName(SERIALIZED_NAME_QUOTE)
+  @javax.annotation.Nullable
   private CreateContract201ResponseDataQuote quote;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nonnull
   private String title;
 
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
+  @javax.annotation.Nullable
   private CreateContract201ResponseDataClient client;
 
   /**
@@ -239,42 +244,52 @@ public class CreateContract201ResponseData {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_WORKER = "worker";
   @SerializedName(SERIALIZED_NAME_WORKER)
+  @javax.annotation.Nullable
   private CreateContract201ResponseDataWorker worker;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nonnull
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_SENIORITY = "seniority";
   @SerializedName(SERIALIZED_NAME_SENIORITY)
+  @javax.annotation.Nullable
   private CreateContract201ResponseDataSeniority seniority;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_SIGNATURES = "signatures";
   @SerializedName(SERIALIZED_NAME_SIGNATURES)
+  @javax.annotation.Nonnull
   private CreateContract201ResponseDataSignatures signatures;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime startDate;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_INVITATIONS = "invitations";
   @SerializedName(SERIALIZED_NAME_INVITATIONS)
+  @javax.annotation.Nonnull
   private CreateContract201ResponseDataInvitations invitations;
 
   public static final String SERIALIZED_NAME_IS_ARCHIVED = "is_archived";
   @SerializedName(SERIALIZED_NAME_IS_ARCHIVED)
+  @javax.annotation.Nonnull
   private Boolean isArchived;
 
   /**
@@ -333,40 +348,48 @@ public class CreateContract201ResponseData {
 
   public static final String SERIALIZED_NAME_WHO_REPORTS = "who_reports";
   @SerializedName(SERIALIZED_NAME_WHO_REPORTS)
+  @javax.annotation.Nullable
   private WhoReportsEnum whoReports;
 
   public static final String SERIALIZED_NAME_CUSTOM_FIELDS = "custom_fields";
   @SerializedName(SERIALIZED_NAME_CUSTOM_FIELDS)
+  @javax.annotation.Nullable
   private List<CreateContract201ResponseDataCustomFieldsInner> customFields = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NOTICE_PERIOD = "notice_period";
   @SerializedName(SERIALIZED_NAME_NOTICE_PERIOD)
+  @javax.annotation.Nullable
   private BigDecimal noticePeriod = new BigDecimal("0");
 
   public static final String SERIALIZED_NAME_SCOPE_OF_WORK = "scope_of_work";
   @SerializedName(SERIALIZED_NAME_SCOPE_OF_WORK)
+  @javax.annotation.Nullable
   private String scopeOfWork;
 
   public static final String SERIALIZED_NAME_SPECIAL_CLAUSE = "special_clause";
   @SerializedName(SERIALIZED_NAME_SPECIAL_CLAUSE)
+  @javax.annotation.Nonnull
   private String specialClause;
 
   public static final String SERIALIZED_NAME_TERMINATION_DATE = "termination_date";
   @SerializedName(SERIALIZED_NAME_TERMINATION_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime terminationDate;
 
   public static final String SERIALIZED_NAME_EMPLOYMENT_DETAILS = "employment_details";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT_DETAILS)
+  @javax.annotation.Nonnull
   private CreateContract201ResponseDataEmploymentDetails employmentDetails;
 
   public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
   @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
+  @javax.annotation.Nonnull
   private CreateContract201ResponseDataCompensationDetails compensationDetails;
 
   public CreateContract201ResponseData() {
   }
 
-  public CreateContract201ResponseData id(UUID id) {
+  public CreateContract201ResponseData id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -380,12 +403,12 @@ public class CreateContract201ResponseData {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public CreateContract201ResponseData type(TypeEnum type) {
+  public CreateContract201ResponseData type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -399,12 +422,12 @@ public class CreateContract201ResponseData {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public CreateContract201ResponseData quote(CreateContract201ResponseDataQuote quote) {
+  public CreateContract201ResponseData quote(@javax.annotation.Nullable CreateContract201ResponseDataQuote quote) {
     this.quote = quote;
     return this;
   }
@@ -418,12 +441,12 @@ public class CreateContract201ResponseData {
     return quote;
   }
 
-  public void setQuote(CreateContract201ResponseDataQuote quote) {
+  public void setQuote(@javax.annotation.Nullable CreateContract201ResponseDataQuote quote) {
     this.quote = quote;
   }
 
 
-  public CreateContract201ResponseData title(String title) {
+  public CreateContract201ResponseData title(@javax.annotation.Nonnull String title) {
     this.title = title;
     return this;
   }
@@ -437,12 +460,12 @@ public class CreateContract201ResponseData {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nonnull String title) {
     this.title = title;
   }
 
 
-  public CreateContract201ResponseData client(CreateContract201ResponseDataClient client) {
+  public CreateContract201ResponseData client(@javax.annotation.Nullable CreateContract201ResponseDataClient client) {
     this.client = client;
     return this;
   }
@@ -456,12 +479,12 @@ public class CreateContract201ResponseData {
     return client;
   }
 
-  public void setClient(CreateContract201ResponseDataClient client) {
+  public void setClient(@javax.annotation.Nullable CreateContract201ResponseDataClient client) {
     this.client = client;
   }
 
 
-  public CreateContract201ResponseData status(StatusEnum status) {
+  public CreateContract201ResponseData status(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -475,12 +498,12 @@ public class CreateContract201ResponseData {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 
 
-  public CreateContract201ResponseData worker(CreateContract201ResponseDataWorker worker) {
+  public CreateContract201ResponseData worker(@javax.annotation.Nullable CreateContract201ResponseDataWorker worker) {
     this.worker = worker;
     return this;
   }
@@ -494,12 +517,12 @@ public class CreateContract201ResponseData {
     return worker;
   }
 
-  public void setWorker(CreateContract201ResponseDataWorker worker) {
+  public void setWorker(@javax.annotation.Nullable CreateContract201ResponseDataWorker worker) {
     this.worker = worker;
   }
 
 
-  public CreateContract201ResponseData jobTitle(String jobTitle) {
+  public CreateContract201ResponseData jobTitle(@javax.annotation.Nonnull String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -513,12 +536,12 @@ public class CreateContract201ResponseData {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nonnull String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public CreateContract201ResponseData seniority(CreateContract201ResponseDataSeniority seniority) {
+  public CreateContract201ResponseData seniority(@javax.annotation.Nullable CreateContract201ResponseDataSeniority seniority) {
     this.seniority = seniority;
     return this;
   }
@@ -532,12 +555,12 @@ public class CreateContract201ResponseData {
     return seniority;
   }
 
-  public void setSeniority(CreateContract201ResponseDataSeniority seniority) {
+  public void setSeniority(@javax.annotation.Nullable CreateContract201ResponseDataSeniority seniority) {
     this.seniority = seniority;
   }
 
 
-  public CreateContract201ResponseData createdAt(OffsetDateTime createdAt) {
+  public CreateContract201ResponseData createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -551,12 +574,12 @@ public class CreateContract201ResponseData {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public CreateContract201ResponseData signatures(CreateContract201ResponseDataSignatures signatures) {
+  public CreateContract201ResponseData signatures(@javax.annotation.Nonnull CreateContract201ResponseDataSignatures signatures) {
     this.signatures = signatures;
     return this;
   }
@@ -570,12 +593,12 @@ public class CreateContract201ResponseData {
     return signatures;
   }
 
-  public void setSignatures(CreateContract201ResponseDataSignatures signatures) {
+  public void setSignatures(@javax.annotation.Nonnull CreateContract201ResponseDataSignatures signatures) {
     this.signatures = signatures;
   }
 
 
-  public CreateContract201ResponseData startDate(OffsetDateTime startDate) {
+  public CreateContract201ResponseData startDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -589,12 +612,12 @@ public class CreateContract201ResponseData {
     return startDate;
   }
 
-  public void setStartDate(OffsetDateTime startDate) {
+  public void setStartDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
   }
 
 
-  public CreateContract201ResponseData externalId(String externalId) {
+  public CreateContract201ResponseData externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -608,12 +631,12 @@ public class CreateContract201ResponseData {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public CreateContract201ResponseData invitations(CreateContract201ResponseDataInvitations invitations) {
+  public CreateContract201ResponseData invitations(@javax.annotation.Nonnull CreateContract201ResponseDataInvitations invitations) {
     this.invitations = invitations;
     return this;
   }
@@ -627,12 +650,12 @@ public class CreateContract201ResponseData {
     return invitations;
   }
 
-  public void setInvitations(CreateContract201ResponseDataInvitations invitations) {
+  public void setInvitations(@javax.annotation.Nonnull CreateContract201ResponseDataInvitations invitations) {
     this.invitations = invitations;
   }
 
 
-  public CreateContract201ResponseData isArchived(Boolean isArchived) {
+  public CreateContract201ResponseData isArchived(@javax.annotation.Nonnull Boolean isArchived) {
     this.isArchived = isArchived;
     return this;
   }
@@ -646,12 +669,12 @@ public class CreateContract201ResponseData {
     return isArchived;
   }
 
-  public void setIsArchived(Boolean isArchived) {
+  public void setIsArchived(@javax.annotation.Nonnull Boolean isArchived) {
     this.isArchived = isArchived;
   }
 
 
-  public CreateContract201ResponseData whoReports(WhoReportsEnum whoReports) {
+  public CreateContract201ResponseData whoReports(@javax.annotation.Nullable WhoReportsEnum whoReports) {
     this.whoReports = whoReports;
     return this;
   }
@@ -665,12 +688,12 @@ public class CreateContract201ResponseData {
     return whoReports;
   }
 
-  public void setWhoReports(WhoReportsEnum whoReports) {
+  public void setWhoReports(@javax.annotation.Nullable WhoReportsEnum whoReports) {
     this.whoReports = whoReports;
   }
 
 
-  public CreateContract201ResponseData customFields(List<CreateContract201ResponseDataCustomFieldsInner> customFields) {
+  public CreateContract201ResponseData customFields(@javax.annotation.Nullable List<CreateContract201ResponseDataCustomFieldsInner> customFields) {
     this.customFields = customFields;
     return this;
   }
@@ -692,12 +715,12 @@ public class CreateContract201ResponseData {
     return customFields;
   }
 
-  public void setCustomFields(List<CreateContract201ResponseDataCustomFieldsInner> customFields) {
+  public void setCustomFields(@javax.annotation.Nullable List<CreateContract201ResponseDataCustomFieldsInner> customFields) {
     this.customFields = customFields;
   }
 
 
-  public CreateContract201ResponseData noticePeriod(BigDecimal noticePeriod) {
+  public CreateContract201ResponseData noticePeriod(@javax.annotation.Nullable BigDecimal noticePeriod) {
     this.noticePeriod = noticePeriod;
     return this;
   }
@@ -712,12 +735,12 @@ public class CreateContract201ResponseData {
     return noticePeriod;
   }
 
-  public void setNoticePeriod(BigDecimal noticePeriod) {
+  public void setNoticePeriod(@javax.annotation.Nullable BigDecimal noticePeriod) {
     this.noticePeriod = noticePeriod;
   }
 
 
-  public CreateContract201ResponseData scopeOfWork(String scopeOfWork) {
+  public CreateContract201ResponseData scopeOfWork(@javax.annotation.Nullable String scopeOfWork) {
     this.scopeOfWork = scopeOfWork;
     return this;
   }
@@ -731,12 +754,12 @@ public class CreateContract201ResponseData {
     return scopeOfWork;
   }
 
-  public void setScopeOfWork(String scopeOfWork) {
+  public void setScopeOfWork(@javax.annotation.Nullable String scopeOfWork) {
     this.scopeOfWork = scopeOfWork;
   }
 
 
-  public CreateContract201ResponseData specialClause(String specialClause) {
+  public CreateContract201ResponseData specialClause(@javax.annotation.Nonnull String specialClause) {
     this.specialClause = specialClause;
     return this;
   }
@@ -750,12 +773,12 @@ public class CreateContract201ResponseData {
     return specialClause;
   }
 
-  public void setSpecialClause(String specialClause) {
+  public void setSpecialClause(@javax.annotation.Nonnull String specialClause) {
     this.specialClause = specialClause;
   }
 
 
-  public CreateContract201ResponseData terminationDate(OffsetDateTime terminationDate) {
+  public CreateContract201ResponseData terminationDate(@javax.annotation.Nullable OffsetDateTime terminationDate) {
     this.terminationDate = terminationDate;
     return this;
   }
@@ -769,12 +792,12 @@ public class CreateContract201ResponseData {
     return terminationDate;
   }
 
-  public void setTerminationDate(OffsetDateTime terminationDate) {
+  public void setTerminationDate(@javax.annotation.Nullable OffsetDateTime terminationDate) {
     this.terminationDate = terminationDate;
   }
 
 
-  public CreateContract201ResponseData employmentDetails(CreateContract201ResponseDataEmploymentDetails employmentDetails) {
+  public CreateContract201ResponseData employmentDetails(@javax.annotation.Nonnull CreateContract201ResponseDataEmploymentDetails employmentDetails) {
     this.employmentDetails = employmentDetails;
     return this;
   }
@@ -788,12 +811,12 @@ public class CreateContract201ResponseData {
     return employmentDetails;
   }
 
-  public void setEmploymentDetails(CreateContract201ResponseDataEmploymentDetails employmentDetails) {
+  public void setEmploymentDetails(@javax.annotation.Nonnull CreateContract201ResponseDataEmploymentDetails employmentDetails) {
     this.employmentDetails = employmentDetails;
   }
 
 
-  public CreateContract201ResponseData compensationDetails(CreateContract201ResponseDataCompensationDetails compensationDetails) {
+  public CreateContract201ResponseData compensationDetails(@javax.annotation.Nonnull CreateContract201ResponseDataCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
     return this;
   }
@@ -807,7 +830,7 @@ public class CreateContract201ResponseData {
     return compensationDetails;
   }
 
-  public void setCompensationDetails(CreateContract201ResponseDataCompensationDetails compensationDetails) {
+  public void setCompensationDetails(@javax.annotation.Nonnull CreateContract201ResponseDataCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
   }
 

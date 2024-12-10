@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * GetPeoplePersonalInformationByExternalId200ResponseDataDemographics
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPeoplePersonalInformationByExternalId200ResponseDataDemographics {
   public static final String SERIALIZED_NAME_GENDER = "gender";
   @SerializedName(SERIALIZED_NAME_GENDER)
+  @javax.annotation.Nullable
   private GetPeoplePersonalInformationByExternalId200ResponseDataDemographicsGender gender;
 
   public static final String SERIALIZED_NAME_ETHNICITY = "ethnicity";
   @SerializedName(SERIALIZED_NAME_ETHNICITY)
+  @javax.annotation.Nullable
   private GetPeoplePersonalInformationByExternalId200ResponseDataDemographicsEthnicity ethnicity;
 
   public GetPeoplePersonalInformationByExternalId200ResponseDataDemographics() {
   }
 
-  public GetPeoplePersonalInformationByExternalId200ResponseDataDemographics gender(GetPeoplePersonalInformationByExternalId200ResponseDataDemographicsGender gender) {
+  public GetPeoplePersonalInformationByExternalId200ResponseDataDemographics gender(@javax.annotation.Nullable GetPeoplePersonalInformationByExternalId200ResponseDataDemographicsGender gender) {
     this.gender = gender;
     return this;
   }
@@ -77,12 +79,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseDataDemographics
     return gender;
   }
 
-  public void setGender(GetPeoplePersonalInformationByExternalId200ResponseDataDemographicsGender gender) {
+  public void setGender(@javax.annotation.Nullable GetPeoplePersonalInformationByExternalId200ResponseDataDemographicsGender gender) {
     this.gender = gender;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseDataDemographics ethnicity(GetPeoplePersonalInformationByExternalId200ResponseDataDemographicsEthnicity ethnicity) {
+  public GetPeoplePersonalInformationByExternalId200ResponseDataDemographics ethnicity(@javax.annotation.Nullable GetPeoplePersonalInformationByExternalId200ResponseDataDemographicsEthnicity ethnicity) {
     this.ethnicity = ethnicity;
     return this;
   }
@@ -96,7 +98,7 @@ public class GetPeoplePersonalInformationByExternalId200ResponseDataDemographics
     return ethnicity;
   }
 
-  public void setEthnicity(GetPeoplePersonalInformationByExternalId200ResponseDataDemographicsEthnicity ethnicity) {
+  public void setEthnicity(@javax.annotation.Nullable GetPeoplePersonalInformationByExternalId200ResponseDataDemographicsEthnicity ethnicity) {
     this.ethnicity = ethnicity;
   }
 

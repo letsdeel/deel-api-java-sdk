@@ -50,24 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * HrisDirectEmployeeToCreateContainerDataClient
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisDirectEmployeeToCreateContainerDataClient {
   public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
+  @javax.annotation.Nonnull
   private CreateDirectEmployeeRequestClientDepartment legalEntity;
 
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
+  @javax.annotation.Nonnull
   private HrisDirectEmployeeToCreateContainerDataClientTeam team;
 
   public static final String SERIALIZED_NAME_DEPARTMENT = "department";
   @SerializedName(SERIALIZED_NAME_DEPARTMENT)
+  @javax.annotation.Nullable
   private CreateDirectEmployeeRequestClientDepartment department;
 
   public HrisDirectEmployeeToCreateContainerDataClient() {
   }
 
-  public HrisDirectEmployeeToCreateContainerDataClient legalEntity(CreateDirectEmployeeRequestClientDepartment legalEntity) {
+  public HrisDirectEmployeeToCreateContainerDataClient legalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestClientDepartment legalEntity) {
     this.legalEntity = legalEntity;
     return this;
   }
@@ -81,12 +84,12 @@ public class HrisDirectEmployeeToCreateContainerDataClient {
     return legalEntity;
   }
 
-  public void setLegalEntity(CreateDirectEmployeeRequestClientDepartment legalEntity) {
+  public void setLegalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestClientDepartment legalEntity) {
     this.legalEntity = legalEntity;
   }
 
 
-  public HrisDirectEmployeeToCreateContainerDataClient team(HrisDirectEmployeeToCreateContainerDataClientTeam team) {
+  public HrisDirectEmployeeToCreateContainerDataClient team(@javax.annotation.Nonnull HrisDirectEmployeeToCreateContainerDataClientTeam team) {
     this.team = team;
     return this;
   }
@@ -100,12 +103,12 @@ public class HrisDirectEmployeeToCreateContainerDataClient {
     return team;
   }
 
-  public void setTeam(HrisDirectEmployeeToCreateContainerDataClientTeam team) {
+  public void setTeam(@javax.annotation.Nonnull HrisDirectEmployeeToCreateContainerDataClientTeam team) {
     this.team = team;
   }
 
 
-  public HrisDirectEmployeeToCreateContainerDataClient department(CreateDirectEmployeeRequestClientDepartment department) {
+  public HrisDirectEmployeeToCreateContainerDataClient department(@javax.annotation.Nullable CreateDirectEmployeeRequestClientDepartment department) {
     this.department = department;
     return this;
   }
@@ -119,7 +122,7 @@ public class HrisDirectEmployeeToCreateContainerDataClient {
     return department;
   }
 
-  public void setDepartment(CreateDirectEmployeeRequestClientDepartment department) {
+  public void setDepartment(@javax.annotation.Nullable CreateDirectEmployeeRequestClientDepartment department) {
     this.department = department;
   }
 

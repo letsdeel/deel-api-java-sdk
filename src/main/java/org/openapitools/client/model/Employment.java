@@ -51,96 +51,117 @@ import org.openapitools.client.JSON;
 /**
  * Employment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Employment {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
+  @javax.annotation.Nullable
   private Team team;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_PAYMENT = "payment";
   @SerializedName(SERIALIZED_NAME_PAYMENT)
+  @javax.annotation.Nullable
   private PeoplePayment payment;
 
   public static final String SERIALIZED_NAME_IS_ENDED = "is_ended";
   @SerializedName(SERIALIZED_NAME_IS_ENDED)
+  @javax.annotation.Nullable
   private Boolean isEnded;
 
   public static final String SERIALIZED_NAME_TIMEZONE = "timezone";
   @SerializedName(SERIALIZED_NAME_TIMEZONE)
+  @javax.annotation.Nullable
   private String timezone;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nullable
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_SENIORITY = "seniority";
   @SerializedName(SERIALIZED_NAME_SENIORITY)
+  @javax.annotation.Nullable
   private String seniority;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private String startDate;
 
   public static final String SERIALIZED_NAME_WORK_EMAIL = "work_email";
   @SerializedName(SERIALIZED_NAME_WORK_EMAIL)
+  @javax.annotation.Nullable
   private String workEmail;
 
   public static final String SERIALIZED_NAME_HIRING_TYPE = "hiring_type";
   @SerializedName(SERIALIZED_NAME_HIRING_TYPE)
+  @javax.annotation.Nullable
   private String hiringType;
 
   public static final String SERIALIZED_NAME_HIRING_STATUS = "hiring_status";
   @SerializedName(SERIALIZED_NAME_HIRING_STATUS)
+  @javax.annotation.Nullable
   private String hiringStatus;
 
   public static final String SERIALIZED_NAME_COMPLETION_DATE = "completion_date";
   @SerializedName(SERIALIZED_NAME_COMPLETION_DATE)
+  @javax.annotation.Nullable
   private String completionDate;
 
   public static final String SERIALIZED_NAME_CONTRACT_STATUS = "contract_status";
   @SerializedName(SERIALIZED_NAME_CONTRACT_STATUS)
+  @javax.annotation.Nullable
   private String contractStatus;
 
   public static final String SERIALIZED_NAME_VOLUNTARILY_LEFT = "voluntarily_left";
   @SerializedName(SERIALIZED_NAME_VOLUNTARILY_LEFT)
+  @javax.annotation.Nullable
   private Boolean voluntarilyLeft;
 
   public static final String SERIALIZED_NAME_CLIENT_LEGAL_ENTITY = "client_legal_entity";
   @SerializedName(SERIALIZED_NAME_CLIENT_LEGAL_ENTITY)
+  @javax.annotation.Nullable
   private PeopleClientLegalEntity clientLegalEntity;
 
   public static final String SERIALIZED_NAME_HAS_EOR_TERMINATION = "has_eor_termination";
   @SerializedName(SERIALIZED_NAME_HAS_EOR_TERMINATION)
+  @javax.annotation.Nullable
   private Boolean hasEorTermination;
 
   public static final String SERIALIZED_NAME_CONTRACT_IS_ARCHIVED = "contract_is_archived";
   @SerializedName(SERIALIZED_NAME_CONTRACT_IS_ARCHIVED)
+  @javax.annotation.Nullable
   private Boolean contractIsArchived;
 
   public Employment() {
   }
 
-  public Employment id(String id) {
+  public Employment id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -154,12 +175,12 @@ public class Employment {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public Employment name(String name) {
+  public Employment name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -173,12 +194,12 @@ public class Employment {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public Employment team(Team team) {
+  public Employment team(@javax.annotation.Nullable Team team) {
     this.team = team;
     return this;
   }
@@ -192,12 +213,12 @@ public class Employment {
     return team;
   }
 
-  public void setTeam(Team team) {
+  public void setTeam(@javax.annotation.Nullable Team team) {
     this.team = team;
   }
 
 
-  public Employment email(String email) {
+  public Employment email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -211,12 +232,12 @@ public class Employment {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public Employment state(String state) {
+  public Employment state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -230,12 +251,12 @@ public class Employment {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public Employment country(String country) {
+  public Employment country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -249,12 +270,12 @@ public class Employment {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public Employment payment(PeoplePayment payment) {
+  public Employment payment(@javax.annotation.Nullable PeoplePayment payment) {
     this.payment = payment;
     return this;
   }
@@ -268,12 +289,12 @@ public class Employment {
     return payment;
   }
 
-  public void setPayment(PeoplePayment payment) {
+  public void setPayment(@javax.annotation.Nullable PeoplePayment payment) {
     this.payment = payment;
   }
 
 
-  public Employment isEnded(Boolean isEnded) {
+  public Employment isEnded(@javax.annotation.Nullable Boolean isEnded) {
     this.isEnded = isEnded;
     return this;
   }
@@ -287,12 +308,12 @@ public class Employment {
     return isEnded;
   }
 
-  public void setIsEnded(Boolean isEnded) {
+  public void setIsEnded(@javax.annotation.Nullable Boolean isEnded) {
     this.isEnded = isEnded;
   }
 
 
-  public Employment timezone(String timezone) {
+  public Employment timezone(@javax.annotation.Nullable String timezone) {
     this.timezone = timezone;
     return this;
   }
@@ -306,12 +327,12 @@ public class Employment {
     return timezone;
   }
 
-  public void setTimezone(String timezone) {
+  public void setTimezone(@javax.annotation.Nullable String timezone) {
     this.timezone = timezone;
   }
 
 
-  public Employment jobTitle(String jobTitle) {
+  public Employment jobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -325,12 +346,12 @@ public class Employment {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public Employment seniority(String seniority) {
+  public Employment seniority(@javax.annotation.Nullable String seniority) {
     this.seniority = seniority;
     return this;
   }
@@ -344,12 +365,12 @@ public class Employment {
     return seniority;
   }
 
-  public void setSeniority(String seniority) {
+  public void setSeniority(@javax.annotation.Nullable String seniority) {
     this.seniority = seniority;
   }
 
 
-  public Employment startDate(String startDate) {
+  public Employment startDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -363,12 +384,12 @@ public class Employment {
     return startDate;
   }
 
-  public void setStartDate(String startDate) {
+  public void setStartDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
   }
 
 
-  public Employment workEmail(String workEmail) {
+  public Employment workEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
     return this;
   }
@@ -382,12 +403,12 @@ public class Employment {
     return workEmail;
   }
 
-  public void setWorkEmail(String workEmail) {
+  public void setWorkEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
   }
 
 
-  public Employment hiringType(String hiringType) {
+  public Employment hiringType(@javax.annotation.Nullable String hiringType) {
     this.hiringType = hiringType;
     return this;
   }
@@ -401,12 +422,12 @@ public class Employment {
     return hiringType;
   }
 
-  public void setHiringType(String hiringType) {
+  public void setHiringType(@javax.annotation.Nullable String hiringType) {
     this.hiringType = hiringType;
   }
 
 
-  public Employment hiringStatus(String hiringStatus) {
+  public Employment hiringStatus(@javax.annotation.Nullable String hiringStatus) {
     this.hiringStatus = hiringStatus;
     return this;
   }
@@ -420,12 +441,12 @@ public class Employment {
     return hiringStatus;
   }
 
-  public void setHiringStatus(String hiringStatus) {
+  public void setHiringStatus(@javax.annotation.Nullable String hiringStatus) {
     this.hiringStatus = hiringStatus;
   }
 
 
-  public Employment completionDate(String completionDate) {
+  public Employment completionDate(@javax.annotation.Nullable String completionDate) {
     this.completionDate = completionDate;
     return this;
   }
@@ -439,12 +460,12 @@ public class Employment {
     return completionDate;
   }
 
-  public void setCompletionDate(String completionDate) {
+  public void setCompletionDate(@javax.annotation.Nullable String completionDate) {
     this.completionDate = completionDate;
   }
 
 
-  public Employment contractStatus(String contractStatus) {
+  public Employment contractStatus(@javax.annotation.Nullable String contractStatus) {
     this.contractStatus = contractStatus;
     return this;
   }
@@ -458,12 +479,12 @@ public class Employment {
     return contractStatus;
   }
 
-  public void setContractStatus(String contractStatus) {
+  public void setContractStatus(@javax.annotation.Nullable String contractStatus) {
     this.contractStatus = contractStatus;
   }
 
 
-  public Employment voluntarilyLeft(Boolean voluntarilyLeft) {
+  public Employment voluntarilyLeft(@javax.annotation.Nullable Boolean voluntarilyLeft) {
     this.voluntarilyLeft = voluntarilyLeft;
     return this;
   }
@@ -477,12 +498,12 @@ public class Employment {
     return voluntarilyLeft;
   }
 
-  public void setVoluntarilyLeft(Boolean voluntarilyLeft) {
+  public void setVoluntarilyLeft(@javax.annotation.Nullable Boolean voluntarilyLeft) {
     this.voluntarilyLeft = voluntarilyLeft;
   }
 
 
-  public Employment clientLegalEntity(PeopleClientLegalEntity clientLegalEntity) {
+  public Employment clientLegalEntity(@javax.annotation.Nullable PeopleClientLegalEntity clientLegalEntity) {
     this.clientLegalEntity = clientLegalEntity;
     return this;
   }
@@ -496,12 +517,12 @@ public class Employment {
     return clientLegalEntity;
   }
 
-  public void setClientLegalEntity(PeopleClientLegalEntity clientLegalEntity) {
+  public void setClientLegalEntity(@javax.annotation.Nullable PeopleClientLegalEntity clientLegalEntity) {
     this.clientLegalEntity = clientLegalEntity;
   }
 
 
-  public Employment hasEorTermination(Boolean hasEorTermination) {
+  public Employment hasEorTermination(@javax.annotation.Nullable Boolean hasEorTermination) {
     this.hasEorTermination = hasEorTermination;
     return this;
   }
@@ -515,12 +536,12 @@ public class Employment {
     return hasEorTermination;
   }
 
-  public void setHasEorTermination(Boolean hasEorTermination) {
+  public void setHasEorTermination(@javax.annotation.Nullable Boolean hasEorTermination) {
     this.hasEorTermination = hasEorTermination;
   }
 
 
-  public Employment contractIsArchived(Boolean contractIsArchived) {
+  public Employment contractIsArchived(@javax.annotation.Nullable Boolean contractIsArchived) {
     this.contractIsArchived = contractIsArchived;
     return this;
   }
@@ -534,7 +555,7 @@ public class Employment {
     return contractIsArchived;
   }
 
-  public void setContractIsArchived(Boolean contractIsArchived) {
+  public void setContractIsArchived(@javax.annotation.Nullable Boolean contractIsArchived) {
     this.contractIsArchived = contractIsArchived;
   }
 

@@ -51,20 +51,22 @@ import org.openapitools.client.JSON;
 /**
  * UpsertChildWorkerRelationsContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertChildWorkerRelationsContainerData {
   public static final String SERIALIZED_NAME_IDS = "ids";
   @SerializedName(SERIALIZED_NAME_IDS)
+  @javax.annotation.Nonnull
   private List<UUID> ids = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_ID = "hris_relationship_type_id";
   @SerializedName(SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_ID)
+  @javax.annotation.Nonnull
   private UUID hrisRelationshipTypeId;
 
   public UpsertChildWorkerRelationsContainerData() {
   }
 
-  public UpsertChildWorkerRelationsContainerData ids(List<UUID> ids) {
+  public UpsertChildWorkerRelationsContainerData ids(@javax.annotation.Nonnull List<UUID> ids) {
     this.ids = ids;
     return this;
   }
@@ -86,12 +88,12 @@ public class UpsertChildWorkerRelationsContainerData {
     return ids;
   }
 
-  public void setIds(List<UUID> ids) {
+  public void setIds(@javax.annotation.Nonnull List<UUID> ids) {
     this.ids = ids;
   }
 
 
-  public UpsertChildWorkerRelationsContainerData hrisRelationshipTypeId(UUID hrisRelationshipTypeId) {
+  public UpsertChildWorkerRelationsContainerData hrisRelationshipTypeId(@javax.annotation.Nonnull UUID hrisRelationshipTypeId) {
     this.hrisRelationshipTypeId = hrisRelationshipTypeId;
     return this;
   }
@@ -105,7 +107,7 @@ public class UpsertChildWorkerRelationsContainerData {
     return hrisRelationshipTypeId;
   }
 
-  public void setHrisRelationshipTypeId(UUID hrisRelationshipTypeId) {
+  public void setHrisRelationshipTypeId(@javax.annotation.Nonnull UUID hrisRelationshipTypeId) {
     this.hrisRelationshipTypeId = hrisRelationshipTypeId;
   }
 

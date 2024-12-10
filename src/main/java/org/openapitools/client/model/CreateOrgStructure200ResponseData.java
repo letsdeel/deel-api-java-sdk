@@ -49,48 +49,57 @@ import org.openapitools.client.JSON;
 /**
  * CreateOrgStructure200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateOrgStructure200ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime updatedAt;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_ENABLE_ROLES = "enable_roles";
   @SerializedName(SERIALIZED_NAME_ENABLE_ROLES)
+  @javax.annotation.Nullable
   private Boolean enableRoles;
 
   public static final String SERIALIZED_NAME_IS_MULTI_SELECT = "is_multi_select";
   @SerializedName(SERIALIZED_NAME_IS_MULTI_SELECT)
+  @javax.annotation.Nullable
   private Boolean isMultiSelect;
 
   public static final String SERIALIZED_NAME_ORGANIZATION_ID = "organization_id";
   @SerializedName(SERIALIZED_NAME_ORGANIZATION_ID)
+  @javax.annotation.Nullable
   private Integer organizationId;
 
   public CreateOrgStructure200ResponseData() {
   }
 
-  public CreateOrgStructure200ResponseData id(String id) {
+  public CreateOrgStructure200ResponseData id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -104,12 +113,12 @@ public class CreateOrgStructure200ResponseData {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public CreateOrgStructure200ResponseData name(String name) {
+  public CreateOrgStructure200ResponseData name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -123,12 +132,12 @@ public class CreateOrgStructure200ResponseData {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public CreateOrgStructure200ResponseData type(String type) {
+  public CreateOrgStructure200ResponseData type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -142,12 +151,12 @@ public class CreateOrgStructure200ResponseData {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public CreateOrgStructure200ResponseData createdAt(OffsetDateTime createdAt) {
+  public CreateOrgStructure200ResponseData createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -161,12 +170,12 @@ public class CreateOrgStructure200ResponseData {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public CreateOrgStructure200ResponseData updatedAt(OffsetDateTime updatedAt) {
+  public CreateOrgStructure200ResponseData updatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -180,12 +189,12 @@ public class CreateOrgStructure200ResponseData {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public CreateOrgStructure200ResponseData externalId(String externalId) {
+  public CreateOrgStructure200ResponseData externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -199,12 +208,12 @@ public class CreateOrgStructure200ResponseData {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public CreateOrgStructure200ResponseData enableRoles(Boolean enableRoles) {
+  public CreateOrgStructure200ResponseData enableRoles(@javax.annotation.Nullable Boolean enableRoles) {
     this.enableRoles = enableRoles;
     return this;
   }
@@ -218,12 +227,12 @@ public class CreateOrgStructure200ResponseData {
     return enableRoles;
   }
 
-  public void setEnableRoles(Boolean enableRoles) {
+  public void setEnableRoles(@javax.annotation.Nullable Boolean enableRoles) {
     this.enableRoles = enableRoles;
   }
 
 
-  public CreateOrgStructure200ResponseData isMultiSelect(Boolean isMultiSelect) {
+  public CreateOrgStructure200ResponseData isMultiSelect(@javax.annotation.Nullable Boolean isMultiSelect) {
     this.isMultiSelect = isMultiSelect;
     return this;
   }
@@ -237,12 +246,12 @@ public class CreateOrgStructure200ResponseData {
     return isMultiSelect;
   }
 
-  public void setIsMultiSelect(Boolean isMultiSelect) {
+  public void setIsMultiSelect(@javax.annotation.Nullable Boolean isMultiSelect) {
     this.isMultiSelect = isMultiSelect;
   }
 
 
-  public CreateOrgStructure200ResponseData organizationId(Integer organizationId) {
+  public CreateOrgStructure200ResponseData organizationId(@javax.annotation.Nullable Integer organizationId) {
     this.organizationId = organizationId;
     return this;
   }
@@ -256,7 +265,7 @@ public class CreateOrgStructure200ResponseData {
     return organizationId;
   }
 
-  public void setOrganizationId(Integer organizationId) {
+  public void setOrganizationId(@javax.annotation.Nullable Integer organizationId) {
     this.organizationId = organizationId;
   }
 

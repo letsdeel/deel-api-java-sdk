@@ -50,24 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * Pagination details for the response.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetManagers200ResponsePage {
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
+  @javax.annotation.Nullable
   private BigDecimal offset;
 
   public static final String SERIALIZED_NAME_TOTAL_ROWS = "total_rows";
   @SerializedName(SERIALIZED_NAME_TOTAL_ROWS)
+  @javax.annotation.Nonnull
   private BigDecimal totalRows;
 
   public static final String SERIALIZED_NAME_ITEMS_PER_PAGE = "items_per_page";
   @SerializedName(SERIALIZED_NAME_ITEMS_PER_PAGE)
+  @javax.annotation.Nullable
   private BigDecimal itemsPerPage;
 
   public GetManagers200ResponsePage() {
   }
 
-  public GetManagers200ResponsePage offset(BigDecimal offset) {
+  public GetManagers200ResponsePage offset(@javax.annotation.Nullable BigDecimal offset) {
     this.offset = offset;
     return this;
   }
@@ -81,12 +84,12 @@ public class GetManagers200ResponsePage {
     return offset;
   }
 
-  public void setOffset(BigDecimal offset) {
+  public void setOffset(@javax.annotation.Nullable BigDecimal offset) {
     this.offset = offset;
   }
 
 
-  public GetManagers200ResponsePage totalRows(BigDecimal totalRows) {
+  public GetManagers200ResponsePage totalRows(@javax.annotation.Nonnull BigDecimal totalRows) {
     this.totalRows = totalRows;
     return this;
   }
@@ -100,12 +103,12 @@ public class GetManagers200ResponsePage {
     return totalRows;
   }
 
-  public void setTotalRows(BigDecimal totalRows) {
+  public void setTotalRows(@javax.annotation.Nonnull BigDecimal totalRows) {
     this.totalRows = totalRows;
   }
 
 
-  public GetManagers200ResponsePage itemsPerPage(BigDecimal itemsPerPage) {
+  public GetManagers200ResponsePage itemsPerPage(@javax.annotation.Nullable BigDecimal itemsPerPage) {
     this.itemsPerPage = itemsPerPage;
     return this;
   }
@@ -119,7 +122,7 @@ public class GetManagers200ResponsePage {
     return itemsPerPage;
   }
 
-  public void setItemsPerPage(BigDecimal itemsPerPage) {
+  public void setItemsPerPage(@javax.annotation.Nullable BigDecimal itemsPerPage) {
     this.itemsPerPage = itemsPerPage;
   }
 

@@ -51,16 +51,17 @@ import org.openapitools.client.JSON;
 /**
  * EmployeePayslipsListContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EmployeePayslipsListContainer {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private List<EmployeePayslipsList> data = new ArrayList<>();
 
   public EmployeePayslipsListContainer() {
   }
 
-  public EmployeePayslipsListContainer data(List<EmployeePayslipsList> data) {
+  public EmployeePayslipsListContainer data(@javax.annotation.Nonnull List<EmployeePayslipsList> data) {
     this.data = data;
     return this;
   }
@@ -82,7 +83,7 @@ public class EmployeePayslipsListContainer {
     return data;
   }
 
-  public void setData(List<EmployeePayslipsList> data) {
+  public void setData(@javax.annotation.Nonnull List<EmployeePayslipsList> data) {
     this.data = data;
   }
 

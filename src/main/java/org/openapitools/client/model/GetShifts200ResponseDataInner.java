@@ -50,44 +50,52 @@ import org.openapitools.client.JSON;
 /**
  * GetShifts200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetShifts200ResponseDataInner {
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
+  @javax.annotation.Nullable
   private GetShifts200ResponseDataInnerMeta meta;
 
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
+  @javax.annotation.Nonnull
   private GetShifts200ResponseDataInnerSummary summary;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private String createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nonnull
   private String updatedAt;
 
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nonnull
   private String contractId;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nonnull
   private String externalId;
 
   public static final String SERIALIZED_NAME_DATE_OF_WORK = "date_of_work";
   @SerializedName(SERIALIZED_NAME_DATE_OF_WORK)
+  @javax.annotation.Nonnull
   private String dateOfWork;
 
   public GetShifts200ResponseDataInner() {
   }
 
-  public GetShifts200ResponseDataInner meta(GetShifts200ResponseDataInnerMeta meta) {
+  public GetShifts200ResponseDataInner meta(@javax.annotation.Nullable GetShifts200ResponseDataInnerMeta meta) {
     this.meta = meta;
     return this;
   }
@@ -101,12 +109,12 @@ public class GetShifts200ResponseDataInner {
     return meta;
   }
 
-  public void setMeta(GetShifts200ResponseDataInnerMeta meta) {
+  public void setMeta(@javax.annotation.Nullable GetShifts200ResponseDataInnerMeta meta) {
     this.meta = meta;
   }
 
 
-  public GetShifts200ResponseDataInner summary(GetShifts200ResponseDataInnerSummary summary) {
+  public GetShifts200ResponseDataInner summary(@javax.annotation.Nonnull GetShifts200ResponseDataInnerSummary summary) {
     this.summary = summary;
     return this;
   }
@@ -120,12 +128,12 @@ public class GetShifts200ResponseDataInner {
     return summary;
   }
 
-  public void setSummary(GetShifts200ResponseDataInnerSummary summary) {
+  public void setSummary(@javax.annotation.Nonnull GetShifts200ResponseDataInnerSummary summary) {
     this.summary = summary;
   }
 
 
-  public GetShifts200ResponseDataInner createdAt(String createdAt) {
+  public GetShifts200ResponseDataInner createdAt(@javax.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -139,12 +147,12 @@ public class GetShifts200ResponseDataInner {
     return createdAt;
   }
 
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public GetShifts200ResponseDataInner updatedAt(String updatedAt) {
+  public GetShifts200ResponseDataInner updatedAt(@javax.annotation.Nonnull String updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -158,12 +166,12 @@ public class GetShifts200ResponseDataInner {
     return updatedAt;
   }
 
-  public void setUpdatedAt(String updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nonnull String updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public GetShifts200ResponseDataInner contractId(String contractId) {
+  public GetShifts200ResponseDataInner contractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -177,12 +185,12 @@ public class GetShifts200ResponseDataInner {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
   }
 
 
-  public GetShifts200ResponseDataInner description(String description) {
+  public GetShifts200ResponseDataInner description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -196,12 +204,12 @@ public class GetShifts200ResponseDataInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public GetShifts200ResponseDataInner externalId(String externalId) {
+  public GetShifts200ResponseDataInner externalId(@javax.annotation.Nonnull String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -215,12 +223,12 @@ public class GetShifts200ResponseDataInner {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nonnull String externalId) {
     this.externalId = externalId;
   }
 
 
-  public GetShifts200ResponseDataInner dateOfWork(String dateOfWork) {
+  public GetShifts200ResponseDataInner dateOfWork(@javax.annotation.Nonnull String dateOfWork) {
     this.dateOfWork = dateOfWork;
     return this;
   }
@@ -234,7 +242,7 @@ public class GetShifts200ResponseDataInner {
     return dateOfWork;
   }
 
-  public void setDateOfWork(String dateOfWork) {
+  public void setDateOfWork(@javax.annotation.Nonnull String dateOfWork) {
     this.dateOfWork = dateOfWork;
   }
 

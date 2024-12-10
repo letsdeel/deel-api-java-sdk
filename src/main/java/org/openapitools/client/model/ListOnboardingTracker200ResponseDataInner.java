@@ -52,40 +52,47 @@ import org.openapitools.client.JSON;
 /**
  * ListOnboardingTracker200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ListOnboardingTracker200ResponseDataInner {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_CONTRACT = "contract";
   @SerializedName(SERIALIZED_NAME_CONTRACT)
+  @javax.annotation.Nullable
   private ListOnboardingTracker200ResponseDataInnerContract contract;
 
   public static final String SERIALIZED_NAME_PROGRESS = "progress";
   @SerializedName(SERIALIZED_NAME_PROGRESS)
+  @javax.annotation.Nullable
   private ListOnboardingTracker200ResponseDataInnerProgress progress;
 
   public static final String SERIALIZED_NAME_UNIQUE_ID = "unique_id";
   @SerializedName(SERIALIZED_NAME_UNIQUE_ID)
+  @javax.annotation.Nullable
   private String uniqueId;
 
   public static final String SERIALIZED_NAME_HIRING_TYPE = "hiring_type";
   @SerializedName(SERIALIZED_NAME_HIRING_TYPE)
+  @javax.annotation.Nullable
   private String hiringType;
 
   public static final String SERIALIZED_NAME_HRIS_PROFILE = "hris_profile";
   @SerializedName(SERIALIZED_NAME_HRIS_PROFILE)
+  @javax.annotation.Nullable
   private ListOnboardingTracker200ResponseDataInnerHrisProfile hrisProfile;
 
   public static final String SERIALIZED_NAME_APP_EXPERIENCE = "app_experience";
   @SerializedName(SERIALIZED_NAME_APP_EXPERIENCE)
+  @javax.annotation.Nullable
   private ListOnboardingTracker200ResponseDataInnerAppExperience appExperience;
 
   public ListOnboardingTracker200ResponseDataInner() {
   }
 
-  public ListOnboardingTracker200ResponseDataInner name(String name) {
+  public ListOnboardingTracker200ResponseDataInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -99,12 +106,12 @@ public class ListOnboardingTracker200ResponseDataInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInner contract(ListOnboardingTracker200ResponseDataInnerContract contract) {
+  public ListOnboardingTracker200ResponseDataInner contract(@javax.annotation.Nullable ListOnboardingTracker200ResponseDataInnerContract contract) {
     this.contract = contract;
     return this;
   }
@@ -118,12 +125,12 @@ public class ListOnboardingTracker200ResponseDataInner {
     return contract;
   }
 
-  public void setContract(ListOnboardingTracker200ResponseDataInnerContract contract) {
+  public void setContract(@javax.annotation.Nullable ListOnboardingTracker200ResponseDataInnerContract contract) {
     this.contract = contract;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInner progress(ListOnboardingTracker200ResponseDataInnerProgress progress) {
+  public ListOnboardingTracker200ResponseDataInner progress(@javax.annotation.Nullable ListOnboardingTracker200ResponseDataInnerProgress progress) {
     this.progress = progress;
     return this;
   }
@@ -137,12 +144,12 @@ public class ListOnboardingTracker200ResponseDataInner {
     return progress;
   }
 
-  public void setProgress(ListOnboardingTracker200ResponseDataInnerProgress progress) {
+  public void setProgress(@javax.annotation.Nullable ListOnboardingTracker200ResponseDataInnerProgress progress) {
     this.progress = progress;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInner uniqueId(String uniqueId) {
+  public ListOnboardingTracker200ResponseDataInner uniqueId(@javax.annotation.Nullable String uniqueId) {
     this.uniqueId = uniqueId;
     return this;
   }
@@ -156,12 +163,12 @@ public class ListOnboardingTracker200ResponseDataInner {
     return uniqueId;
   }
 
-  public void setUniqueId(String uniqueId) {
+  public void setUniqueId(@javax.annotation.Nullable String uniqueId) {
     this.uniqueId = uniqueId;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInner hiringType(String hiringType) {
+  public ListOnboardingTracker200ResponseDataInner hiringType(@javax.annotation.Nullable String hiringType) {
     this.hiringType = hiringType;
     return this;
   }
@@ -175,12 +182,12 @@ public class ListOnboardingTracker200ResponseDataInner {
     return hiringType;
   }
 
-  public void setHiringType(String hiringType) {
+  public void setHiringType(@javax.annotation.Nullable String hiringType) {
     this.hiringType = hiringType;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInner hrisProfile(ListOnboardingTracker200ResponseDataInnerHrisProfile hrisProfile) {
+  public ListOnboardingTracker200ResponseDataInner hrisProfile(@javax.annotation.Nullable ListOnboardingTracker200ResponseDataInnerHrisProfile hrisProfile) {
     this.hrisProfile = hrisProfile;
     return this;
   }
@@ -194,12 +201,12 @@ public class ListOnboardingTracker200ResponseDataInner {
     return hrisProfile;
   }
 
-  public void setHrisProfile(ListOnboardingTracker200ResponseDataInnerHrisProfile hrisProfile) {
+  public void setHrisProfile(@javax.annotation.Nullable ListOnboardingTracker200ResponseDataInnerHrisProfile hrisProfile) {
     this.hrisProfile = hrisProfile;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInner appExperience(ListOnboardingTracker200ResponseDataInnerAppExperience appExperience) {
+  public ListOnboardingTracker200ResponseDataInner appExperience(@javax.annotation.Nullable ListOnboardingTracker200ResponseDataInnerAppExperience appExperience) {
     this.appExperience = appExperience;
     return this;
   }
@@ -213,7 +220,7 @@ public class ListOnboardingTracker200ResponseDataInner {
     return appExperience;
   }
 
-  public void setAppExperience(ListOnboardingTracker200ResponseDataInnerAppExperience appExperience) {
+  public void setAppExperience(@javax.annotation.Nullable ListOnboardingTracker200ResponseDataInnerAppExperience appExperience) {
     this.appExperience = appExperience;
   }
 

@@ -51,48 +51,57 @@ import org.openapitools.client.JSON;
 /**
  * EorContractCreatedEmployment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorContractCreatedEmployment {
   public static final String SERIALIZED_NAME_SCOPE_OF_WORK = "scope_of_work";
   @SerializedName(SERIALIZED_NAME_SCOPE_OF_WORK)
+  @javax.annotation.Nullable
   private String scopeOfWork;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private LocalDate startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private LocalDate endDate;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_WORK_VISA_REQUIRED = "work_visa_required";
   @SerializedName(SERIALIZED_NAME_WORK_VISA_REQUIRED)
+  @javax.annotation.Nullable
   private Boolean workVisaRequired;
 
   public static final String SERIALIZED_NAME_TIME_OFF_TYPE = "time_off_type";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_TYPE)
+  @javax.annotation.Nullable
   private String timeOffType;
 
   public static final String SERIALIZED_NAME_PROBATION_PERIOD = "probation_period";
   @SerializedName(SERIALIZED_NAME_PROBATION_PERIOD)
+  @javax.annotation.Nullable
   private BigDecimal probationPeriod;
 
   public static final String SERIALIZED_NAME_CALCULATED_HOLIDAYS = "calculated_holidays";
   @SerializedName(SERIALIZED_NAME_CALCULATED_HOLIDAYS)
+  @javax.annotation.Nullable
   private String calculatedHolidays;
 
   public EorContractCreatedEmployment() {
   }
 
-  public EorContractCreatedEmployment scopeOfWork(String scopeOfWork) {
+  public EorContractCreatedEmployment scopeOfWork(@javax.annotation.Nullable String scopeOfWork) {
     this.scopeOfWork = scopeOfWork;
     return this;
   }
@@ -106,12 +115,12 @@ public class EorContractCreatedEmployment {
     return scopeOfWork;
   }
 
-  public void setScopeOfWork(String scopeOfWork) {
+  public void setScopeOfWork(@javax.annotation.Nullable String scopeOfWork) {
     this.scopeOfWork = scopeOfWork;
   }
 
 
-  public EorContractCreatedEmployment startDate(LocalDate startDate) {
+  public EorContractCreatedEmployment startDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -125,12 +134,12 @@ public class EorContractCreatedEmployment {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public EorContractCreatedEmployment endDate(LocalDate endDate) {
+  public EorContractCreatedEmployment endDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -144,12 +153,12 @@ public class EorContractCreatedEmployment {
     return endDate;
   }
 
-  public void setEndDate(LocalDate endDate) {
+  public void setEndDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
   }
 
 
-  public EorContractCreatedEmployment country(String country) {
+  public EorContractCreatedEmployment country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -163,12 +172,12 @@ public class EorContractCreatedEmployment {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public EorContractCreatedEmployment state(String state) {
+  public EorContractCreatedEmployment state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -182,12 +191,12 @@ public class EorContractCreatedEmployment {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public EorContractCreatedEmployment workVisaRequired(Boolean workVisaRequired) {
+  public EorContractCreatedEmployment workVisaRequired(@javax.annotation.Nullable Boolean workVisaRequired) {
     this.workVisaRequired = workVisaRequired;
     return this;
   }
@@ -201,12 +210,12 @@ public class EorContractCreatedEmployment {
     return workVisaRequired;
   }
 
-  public void setWorkVisaRequired(Boolean workVisaRequired) {
+  public void setWorkVisaRequired(@javax.annotation.Nullable Boolean workVisaRequired) {
     this.workVisaRequired = workVisaRequired;
   }
 
 
-  public EorContractCreatedEmployment timeOffType(String timeOffType) {
+  public EorContractCreatedEmployment timeOffType(@javax.annotation.Nullable String timeOffType) {
     this.timeOffType = timeOffType;
     return this;
   }
@@ -220,12 +229,12 @@ public class EorContractCreatedEmployment {
     return timeOffType;
   }
 
-  public void setTimeOffType(String timeOffType) {
+  public void setTimeOffType(@javax.annotation.Nullable String timeOffType) {
     this.timeOffType = timeOffType;
   }
 
 
-  public EorContractCreatedEmployment probationPeriod(BigDecimal probationPeriod) {
+  public EorContractCreatedEmployment probationPeriod(@javax.annotation.Nullable BigDecimal probationPeriod) {
     this.probationPeriod = probationPeriod;
     return this;
   }
@@ -239,12 +248,12 @@ public class EorContractCreatedEmployment {
     return probationPeriod;
   }
 
-  public void setProbationPeriod(BigDecimal probationPeriod) {
+  public void setProbationPeriod(@javax.annotation.Nullable BigDecimal probationPeriod) {
     this.probationPeriod = probationPeriod;
   }
 
 
-  public EorContractCreatedEmployment calculatedHolidays(String calculatedHolidays) {
+  public EorContractCreatedEmployment calculatedHolidays(@javax.annotation.Nullable String calculatedHolidays) {
     this.calculatedHolidays = calculatedHolidays;
     return this;
   }
@@ -258,7 +267,7 @@ public class EorContractCreatedEmployment {
     return calculatedHolidays;
   }
 
-  public void setCalculatedHolidays(String calculatedHolidays) {
+  public void setCalculatedHolidays(@javax.annotation.Nullable String calculatedHolidays) {
     this.calculatedHolidays = calculatedHolidays;
   }
 

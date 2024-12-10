@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData {
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_TIMEZONE = "timezone";
   @SerializedName(SERIALIZED_NAME_TIMEZONE)
+  @javax.annotation.Nullable
   private String timezone;
 
   public static final String SERIALIZED_NAME_HAS_WITHDRAW_METHODS = "has_withdraw_methods";
   @SerializedName(SERIALIZED_NAME_HAS_WITHDRAW_METHODS)
+  @javax.annotation.Nullable
   private Boolean hasWithdrawMethods;
 
   public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData() {
   }
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData country(String country) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -79,12 +82,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData timezone(String timezone) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData timezone(@javax.annotation.Nullable String timezone) {
     this.timezone = timezone;
     return this;
   }
@@ -98,12 +101,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData {
     return timezone;
   }
 
-  public void setTimezone(String timezone) {
+  public void setTimezone(@javax.annotation.Nullable String timezone) {
     this.timezone = timezone;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData hasWithdrawMethods(Boolean hasWithdrawMethods) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData hasWithdrawMethods(@javax.annotation.Nullable Boolean hasWithdrawMethods) {
     this.hasWithdrawMethods = hasWithdrawMethods;
     return this;
   }
@@ -117,7 +120,7 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInnerData {
     return hasWithdrawMethods;
   }
 
-  public void setHasWithdrawMethods(Boolean hasWithdrawMethods) {
+  public void setHasWithdrawMethods(@javax.annotation.Nullable Boolean hasWithdrawMethods) {
     this.hasWithdrawMethods = hasWithdrawMethods;
   }
 

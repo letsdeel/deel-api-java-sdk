@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * BasicTimesheetPaymentCycle
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BasicTimesheetPaymentCycle {
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime endDate;
 
   public BasicTimesheetPaymentCycle() {
   }
 
-  public BasicTimesheetPaymentCycle startDate(OffsetDateTime startDate) {
+  public BasicTimesheetPaymentCycle startDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -77,12 +79,12 @@ public class BasicTimesheetPaymentCycle {
     return startDate;
   }
 
-  public void setStartDate(OffsetDateTime startDate) {
+  public void setStartDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
   }
 
 
-  public BasicTimesheetPaymentCycle endDate(OffsetDateTime endDate) {
+  public BasicTimesheetPaymentCycle endDate(@javax.annotation.Nullable OffsetDateTime endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -96,7 +98,7 @@ public class BasicTimesheetPaymentCycle {
     return endDate;
   }
 
-  public void setEndDate(OffsetDateTime endDate) {
+  public void setEndDate(@javax.annotation.Nullable OffsetDateTime endDate) {
     this.endDate = endDate;
   }
 

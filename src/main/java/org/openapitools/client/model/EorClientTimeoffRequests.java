@@ -52,40 +52,47 @@ import org.openapitools.client.JSON;
 /**
  * EorClientTimeoffRequests
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorClientTimeoffRequests {
   public static final String SERIALIZED_NAME_YEAR = "year";
   @SerializedName(SERIALIZED_NAME_YEAR)
+  @javax.annotation.Nullable
   private BigDecimal year;
 
   public static final String SERIALIZED_NAME_DAYS_REQUESTED = "days_requested";
   @SerializedName(SERIALIZED_NAME_DAYS_REQUESTED)
+  @javax.annotation.Nullable
   private BigDecimal daysRequested;
 
   public static final String SERIALIZED_NAME_CURRENT_APPROVED = "current_approved";
   @SerializedName(SERIALIZED_NAME_CURRENT_APPROVED)
+  @javax.annotation.Nullable
   private BigDecimal currentApproved;
 
   public static final String SERIALIZED_NAME_YEARLY_LIMIT = "yearly_limit";
   @SerializedName(SERIALIZED_NAME_YEARLY_LIMIT)
+  @javax.annotation.Nullable
   private BigDecimal yearlyLimit;
 
   public static final String SERIALIZED_NAME_OVER_ANNUAL_LIMIT = "over_annual_limit";
   @SerializedName(SERIALIZED_NAME_OVER_ANNUAL_LIMIT)
+  @javax.annotation.Nullable
   private Boolean overAnnualLimit;
 
   public static final String SERIALIZED_NAME_YEARLY_REQUESTS = "yearly_requests";
   @SerializedName(SERIALIZED_NAME_YEARLY_REQUESTS)
+  @javax.annotation.Nullable
   private BigDecimal yearlyRequests;
 
   public static final String SERIALIZED_NAME_REQUESTS = "requests";
   @SerializedName(SERIALIZED_NAME_REQUESTS)
+  @javax.annotation.Nonnull
   private List<EorTimeoffsItem> requests = new ArrayList<>();
 
   public EorClientTimeoffRequests() {
   }
 
-  public EorClientTimeoffRequests year(BigDecimal year) {
+  public EorClientTimeoffRequests year(@javax.annotation.Nullable BigDecimal year) {
     this.year = year;
     return this;
   }
@@ -99,12 +106,12 @@ public class EorClientTimeoffRequests {
     return year;
   }
 
-  public void setYear(BigDecimal year) {
+  public void setYear(@javax.annotation.Nullable BigDecimal year) {
     this.year = year;
   }
 
 
-  public EorClientTimeoffRequests daysRequested(BigDecimal daysRequested) {
+  public EorClientTimeoffRequests daysRequested(@javax.annotation.Nullable BigDecimal daysRequested) {
     this.daysRequested = daysRequested;
     return this;
   }
@@ -118,12 +125,12 @@ public class EorClientTimeoffRequests {
     return daysRequested;
   }
 
-  public void setDaysRequested(BigDecimal daysRequested) {
+  public void setDaysRequested(@javax.annotation.Nullable BigDecimal daysRequested) {
     this.daysRequested = daysRequested;
   }
 
 
-  public EorClientTimeoffRequests currentApproved(BigDecimal currentApproved) {
+  public EorClientTimeoffRequests currentApproved(@javax.annotation.Nullable BigDecimal currentApproved) {
     this.currentApproved = currentApproved;
     return this;
   }
@@ -137,12 +144,12 @@ public class EorClientTimeoffRequests {
     return currentApproved;
   }
 
-  public void setCurrentApproved(BigDecimal currentApproved) {
+  public void setCurrentApproved(@javax.annotation.Nullable BigDecimal currentApproved) {
     this.currentApproved = currentApproved;
   }
 
 
-  public EorClientTimeoffRequests yearlyLimit(BigDecimal yearlyLimit) {
+  public EorClientTimeoffRequests yearlyLimit(@javax.annotation.Nullable BigDecimal yearlyLimit) {
     this.yearlyLimit = yearlyLimit;
     return this;
   }
@@ -156,12 +163,12 @@ public class EorClientTimeoffRequests {
     return yearlyLimit;
   }
 
-  public void setYearlyLimit(BigDecimal yearlyLimit) {
+  public void setYearlyLimit(@javax.annotation.Nullable BigDecimal yearlyLimit) {
     this.yearlyLimit = yearlyLimit;
   }
 
 
-  public EorClientTimeoffRequests overAnnualLimit(Boolean overAnnualLimit) {
+  public EorClientTimeoffRequests overAnnualLimit(@javax.annotation.Nullable Boolean overAnnualLimit) {
     this.overAnnualLimit = overAnnualLimit;
     return this;
   }
@@ -175,12 +182,12 @@ public class EorClientTimeoffRequests {
     return overAnnualLimit;
   }
 
-  public void setOverAnnualLimit(Boolean overAnnualLimit) {
+  public void setOverAnnualLimit(@javax.annotation.Nullable Boolean overAnnualLimit) {
     this.overAnnualLimit = overAnnualLimit;
   }
 
 
-  public EorClientTimeoffRequests yearlyRequests(BigDecimal yearlyRequests) {
+  public EorClientTimeoffRequests yearlyRequests(@javax.annotation.Nullable BigDecimal yearlyRequests) {
     this.yearlyRequests = yearlyRequests;
     return this;
   }
@@ -194,12 +201,12 @@ public class EorClientTimeoffRequests {
     return yearlyRequests;
   }
 
-  public void setYearlyRequests(BigDecimal yearlyRequests) {
+  public void setYearlyRequests(@javax.annotation.Nullable BigDecimal yearlyRequests) {
     this.yearlyRequests = yearlyRequests;
   }
 
 
-  public EorClientTimeoffRequests requests(List<EorTimeoffsItem> requests) {
+  public EorClientTimeoffRequests requests(@javax.annotation.Nonnull List<EorTimeoffsItem> requests) {
     this.requests = requests;
     return this;
   }
@@ -221,7 +228,7 @@ public class EorClientTimeoffRequests {
     return requests;
   }
 
-  public void setRequests(List<EorTimeoffsItem> requests) {
+  public void setRequests(@javax.annotation.Nonnull List<EorTimeoffsItem> requests) {
     this.requests = requests;
   }
 

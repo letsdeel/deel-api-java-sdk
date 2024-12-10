@@ -54,80 +54,97 @@ import org.openapitools.client.JSON;
 /**
  * You can specify any combination of data points that need changing.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ContractDetailsToAmend {
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currency_code";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nullable
   private WorkStatementScaleEnum scale;
 
   public static final String SERIALIZED_NAME_EFFECTIVE_DATE = "effective_date";
   @SerializedName(SERIALIZED_NAME_EFFECTIVE_DATE)
+  @javax.annotation.Nullable
   private LocalDate effectiveDate;
 
   public static final String SERIALIZED_NAME_FIRST_PAYMENT_DATE = "first_payment_date";
   @SerializedName(SERIALIZED_NAME_FIRST_PAYMENT_DATE)
+  @javax.annotation.Nullable
   private LocalDate firstPaymentDate;
 
   public static final String SERIALIZED_NAME_FIRST_PAYMENT = "first_payment";
   @SerializedName(SERIALIZED_NAME_FIRST_PAYMENT)
+  @javax.annotation.Nullable
   private BigDecimal firstPayment;
 
   public static final String SERIALIZED_NAME_FREQUENCY = "frequency";
   @SerializedName(SERIALIZED_NAME_FREQUENCY)
+  @javax.annotation.Nullable
   private WorkStatementCycleScaleEnum frequency;
 
   public static final String SERIALIZED_NAME_CYCLE_END = "cycle_end";
   @SerializedName(SERIALIZED_NAME_CYCLE_END)
+  @javax.annotation.Nullable
   private BigDecimal cycleEnd;
 
   public static final String SERIALIZED_NAME_CYCLE_END_TYPE = "cycle_end_type";
   @SerializedName(SERIALIZED_NAME_CYCLE_END_TYPE)
+  @javax.annotation.Nullable
   private WorkStatementCycleEndTypeEnum cycleEndType;
 
   public static final String SERIALIZED_NAME_PAYMENT_DUE_TYPE = "payment_due_type";
   @SerializedName(SERIALIZED_NAME_PAYMENT_DUE_TYPE)
+  @javax.annotation.Nullable
   private WorkStatementPaymentDueTypeEnum paymentDueType = WorkStatementPaymentDueTypeEnum.REGULAR;
 
   public static final String SERIALIZED_NAME_PAYMENT_DUE_DAYS = "payment_due_days";
   @SerializedName(SERIALIZED_NAME_PAYMENT_DUE_DAYS)
+  @javax.annotation.Nullable
   private BigDecimal paymentDueDays;
 
   public static final String SERIALIZED_NAME_PAY_BEFORE_WEEKENDS = "pay_before_weekends";
   @SerializedName(SERIALIZED_NAME_PAY_BEFORE_WEEKENDS)
+  @javax.annotation.Nullable
   private Boolean payBeforeWeekends;
 
   public static final String SERIALIZED_NAME_JOB_TITLE_NAME = "job_title_name";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE_NAME)
+  @javax.annotation.Nullable
   private String jobTitleName;
 
   public static final String SERIALIZED_NAME_JOB_TITLE_ID = "job_title_id";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE_ID)
+  @javax.annotation.Nullable
   private String jobTitleId;
 
   public static final String SERIALIZED_NAME_SENIORITY_ID = "seniority_id";
   @SerializedName(SERIALIZED_NAME_SENIORITY_ID)
+  @javax.annotation.Nullable
   private String seniorityId;
 
   public static final String SERIALIZED_NAME_SPECIAL_CLAUSE = "special_clause";
   @SerializedName(SERIALIZED_NAME_SPECIAL_CLAUSE)
+  @javax.annotation.Nullable
   private String specialClause;
 
   public static final String SERIALIZED_NAME_SCOPE_OF_WORK = "scope_of_work";
   @SerializedName(SERIALIZED_NAME_SCOPE_OF_WORK)
+  @javax.annotation.Nullable
   private String scopeOfWork;
 
   public ContractDetailsToAmend() {
   }
 
-  public ContractDetailsToAmend amount(BigDecimal amount) {
+  public ContractDetailsToAmend amount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -142,12 +159,12 @@ public class ContractDetailsToAmend {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public ContractDetailsToAmend currencyCode(String currencyCode) {
+  public ContractDetailsToAmend currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -161,12 +178,12 @@ public class ContractDetailsToAmend {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public ContractDetailsToAmend scale(WorkStatementScaleEnum scale) {
+  public ContractDetailsToAmend scale(@javax.annotation.Nullable WorkStatementScaleEnum scale) {
     this.scale = scale;
     return this;
   }
@@ -180,12 +197,12 @@ public class ContractDetailsToAmend {
     return scale;
   }
 
-  public void setScale(WorkStatementScaleEnum scale) {
+  public void setScale(@javax.annotation.Nullable WorkStatementScaleEnum scale) {
     this.scale = scale;
   }
 
 
-  public ContractDetailsToAmend effectiveDate(LocalDate effectiveDate) {
+  public ContractDetailsToAmend effectiveDate(@javax.annotation.Nullable LocalDate effectiveDate) {
     this.effectiveDate = effectiveDate;
     return this;
   }
@@ -199,12 +216,12 @@ public class ContractDetailsToAmend {
     return effectiveDate;
   }
 
-  public void setEffectiveDate(LocalDate effectiveDate) {
+  public void setEffectiveDate(@javax.annotation.Nullable LocalDate effectiveDate) {
     this.effectiveDate = effectiveDate;
   }
 
 
-  public ContractDetailsToAmend firstPaymentDate(LocalDate firstPaymentDate) {
+  public ContractDetailsToAmend firstPaymentDate(@javax.annotation.Nullable LocalDate firstPaymentDate) {
     this.firstPaymentDate = firstPaymentDate;
     return this;
   }
@@ -218,12 +235,12 @@ public class ContractDetailsToAmend {
     return firstPaymentDate;
   }
 
-  public void setFirstPaymentDate(LocalDate firstPaymentDate) {
+  public void setFirstPaymentDate(@javax.annotation.Nullable LocalDate firstPaymentDate) {
     this.firstPaymentDate = firstPaymentDate;
   }
 
 
-  public ContractDetailsToAmend firstPayment(BigDecimal firstPayment) {
+  public ContractDetailsToAmend firstPayment(@javax.annotation.Nullable BigDecimal firstPayment) {
     this.firstPayment = firstPayment;
     return this;
   }
@@ -238,12 +255,12 @@ public class ContractDetailsToAmend {
     return firstPayment;
   }
 
-  public void setFirstPayment(BigDecimal firstPayment) {
+  public void setFirstPayment(@javax.annotation.Nullable BigDecimal firstPayment) {
     this.firstPayment = firstPayment;
   }
 
 
-  public ContractDetailsToAmend frequency(WorkStatementCycleScaleEnum frequency) {
+  public ContractDetailsToAmend frequency(@javax.annotation.Nullable WorkStatementCycleScaleEnum frequency) {
     this.frequency = frequency;
     return this;
   }
@@ -257,12 +274,12 @@ public class ContractDetailsToAmend {
     return frequency;
   }
 
-  public void setFrequency(WorkStatementCycleScaleEnum frequency) {
+  public void setFrequency(@javax.annotation.Nullable WorkStatementCycleScaleEnum frequency) {
     this.frequency = frequency;
   }
 
 
-  public ContractDetailsToAmend cycleEnd(BigDecimal cycleEnd) {
+  public ContractDetailsToAmend cycleEnd(@javax.annotation.Nullable BigDecimal cycleEnd) {
     this.cycleEnd = cycleEnd;
     return this;
   }
@@ -278,12 +295,12 @@ public class ContractDetailsToAmend {
     return cycleEnd;
   }
 
-  public void setCycleEnd(BigDecimal cycleEnd) {
+  public void setCycleEnd(@javax.annotation.Nullable BigDecimal cycleEnd) {
     this.cycleEnd = cycleEnd;
   }
 
 
-  public ContractDetailsToAmend cycleEndType(WorkStatementCycleEndTypeEnum cycleEndType) {
+  public ContractDetailsToAmend cycleEndType(@javax.annotation.Nullable WorkStatementCycleEndTypeEnum cycleEndType) {
     this.cycleEndType = cycleEndType;
     return this;
   }
@@ -297,12 +314,12 @@ public class ContractDetailsToAmend {
     return cycleEndType;
   }
 
-  public void setCycleEndType(WorkStatementCycleEndTypeEnum cycleEndType) {
+  public void setCycleEndType(@javax.annotation.Nullable WorkStatementCycleEndTypeEnum cycleEndType) {
     this.cycleEndType = cycleEndType;
   }
 
 
-  public ContractDetailsToAmend paymentDueType(WorkStatementPaymentDueTypeEnum paymentDueType) {
+  public ContractDetailsToAmend paymentDueType(@javax.annotation.Nullable WorkStatementPaymentDueTypeEnum paymentDueType) {
     this.paymentDueType = paymentDueType;
     return this;
   }
@@ -316,12 +333,12 @@ public class ContractDetailsToAmend {
     return paymentDueType;
   }
 
-  public void setPaymentDueType(WorkStatementPaymentDueTypeEnum paymentDueType) {
+  public void setPaymentDueType(@javax.annotation.Nullable WorkStatementPaymentDueTypeEnum paymentDueType) {
     this.paymentDueType = paymentDueType;
   }
 
 
-  public ContractDetailsToAmend paymentDueDays(BigDecimal paymentDueDays) {
+  public ContractDetailsToAmend paymentDueDays(@javax.annotation.Nullable BigDecimal paymentDueDays) {
     this.paymentDueDays = paymentDueDays;
     return this;
   }
@@ -337,12 +354,12 @@ public class ContractDetailsToAmend {
     return paymentDueDays;
   }
 
-  public void setPaymentDueDays(BigDecimal paymentDueDays) {
+  public void setPaymentDueDays(@javax.annotation.Nullable BigDecimal paymentDueDays) {
     this.paymentDueDays = paymentDueDays;
   }
 
 
-  public ContractDetailsToAmend payBeforeWeekends(Boolean payBeforeWeekends) {
+  public ContractDetailsToAmend payBeforeWeekends(@javax.annotation.Nullable Boolean payBeforeWeekends) {
     this.payBeforeWeekends = payBeforeWeekends;
     return this;
   }
@@ -356,12 +373,12 @@ public class ContractDetailsToAmend {
     return payBeforeWeekends;
   }
 
-  public void setPayBeforeWeekends(Boolean payBeforeWeekends) {
+  public void setPayBeforeWeekends(@javax.annotation.Nullable Boolean payBeforeWeekends) {
     this.payBeforeWeekends = payBeforeWeekends;
   }
 
 
-  public ContractDetailsToAmend jobTitleName(String jobTitleName) {
+  public ContractDetailsToAmend jobTitleName(@javax.annotation.Nullable String jobTitleName) {
     this.jobTitleName = jobTitleName;
     return this;
   }
@@ -375,12 +392,12 @@ public class ContractDetailsToAmend {
     return jobTitleName;
   }
 
-  public void setJobTitleName(String jobTitleName) {
+  public void setJobTitleName(@javax.annotation.Nullable String jobTitleName) {
     this.jobTitleName = jobTitleName;
   }
 
 
-  public ContractDetailsToAmend jobTitleId(String jobTitleId) {
+  public ContractDetailsToAmend jobTitleId(@javax.annotation.Nullable String jobTitleId) {
     this.jobTitleId = jobTitleId;
     return this;
   }
@@ -394,12 +411,12 @@ public class ContractDetailsToAmend {
     return jobTitleId;
   }
 
-  public void setJobTitleId(String jobTitleId) {
+  public void setJobTitleId(@javax.annotation.Nullable String jobTitleId) {
     this.jobTitleId = jobTitleId;
   }
 
 
-  public ContractDetailsToAmend seniorityId(String seniorityId) {
+  public ContractDetailsToAmend seniorityId(@javax.annotation.Nullable String seniorityId) {
     this.seniorityId = seniorityId;
     return this;
   }
@@ -413,12 +430,12 @@ public class ContractDetailsToAmend {
     return seniorityId;
   }
 
-  public void setSeniorityId(String seniorityId) {
+  public void setSeniorityId(@javax.annotation.Nullable String seniorityId) {
     this.seniorityId = seniorityId;
   }
 
 
-  public ContractDetailsToAmend specialClause(String specialClause) {
+  public ContractDetailsToAmend specialClause(@javax.annotation.Nullable String specialClause) {
     this.specialClause = specialClause;
     return this;
   }
@@ -432,12 +449,12 @@ public class ContractDetailsToAmend {
     return specialClause;
   }
 
-  public void setSpecialClause(String specialClause) {
+  public void setSpecialClause(@javax.annotation.Nullable String specialClause) {
     this.specialClause = specialClause;
   }
 
 
-  public ContractDetailsToAmend scopeOfWork(String scopeOfWork) {
+  public ContractDetailsToAmend scopeOfWork(@javax.annotation.Nullable String scopeOfWork) {
     this.scopeOfWork = scopeOfWork;
     return this;
   }
@@ -451,7 +468,7 @@ public class ContractDetailsToAmend {
     return scopeOfWork;
   }
 
-  public void setScopeOfWork(String scopeOfWork) {
+  public void setScopeOfWork(@javax.annotation.Nullable String scopeOfWork) {
     this.scopeOfWork = scopeOfWork;
   }
 

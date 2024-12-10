@@ -50,96 +50,117 @@ import org.openapitools.client.JSON;
 /**
  * GetGrossToNetGPReports200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetGrossToNetGPReports200ResponseDataInner {
   public static final String SERIALIZED_NAME_NET_PAY = "net_pay";
   @SerializedName(SERIALIZED_NAME_NET_PAY)
+  @javax.annotation.Nullable
   private String netPay;
 
   public static final String SERIALIZED_NAME_EE_LOANS = "ee_loans";
   @SerializedName(SERIALIZED_NAME_EE_LOANS)
+  @javax.annotation.Nullable
   private String eeLoans;
 
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nullable
   private String contractId;
 
   public static final String SERIALIZED_NAME_COST_CENTER = "cost_center";
   @SerializedName(SERIALIZED_NAME_COST_CENTER)
+  @javax.annotation.Nullable
   private String costCenter;
 
   public static final String SERIALIZED_NAME_ANNUAL_BONUS = "annual_bonus";
   @SerializedName(SERIALIZED_NAME_ANNUAL_BONUS)
+  @javax.annotation.Nullable
   private BigDecimal annualBonus;
 
   public static final String SERIALIZED_NAME_CAR_ALLOWANCE = "car_allowance";
   @SerializedName(SERIALIZED_NAME_CAR_ALLOWANCE)
+  @javax.annotation.Nullable
   private BigDecimal carAllowance;
 
   public static final String SERIALIZED_NAME_EE_INCOME_TAX = "ee_income_tax";
   @SerializedName(SERIALIZED_NAME_EE_INCOME_TAX)
+  @javax.annotation.Nullable
   private String eeIncomeTax;
 
   public static final String SERIALIZED_NAME_EMPLOYEE_NAME = "employee_name";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE_NAME)
+  @javax.annotation.Nullable
   private String employeeName;
 
   public static final String SERIALIZED_NAME_EMPLOYER_COST = "employer_cost";
   @SerializedName(SERIALIZED_NAME_EMPLOYER_COST)
+  @javax.annotation.Nullable
   private String employerCost;
 
   public static final String SERIALIZED_NAME_ESP_DEDUCTION = "esp_deduction";
   @SerializedName(SERIALIZED_NAME_ESP_DEDUCTION)
+  @javax.annotation.Nullable
   private BigDecimal espDeduction;
 
   public static final String SERIALIZED_NAME_FUNDING_AMOUNT = "funding_amount";
   @SerializedName(SERIALIZED_NAME_FUNDING_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal fundingAmount;
 
   public static final String SERIALIZED_NAME_HOME_ALLOWANCE = "home_allowance";
   @SerializedName(SERIALIZED_NAME_HOME_ALLOWANCE)
+  @javax.annotation.Nullable
   private String homeAllowance;
 
   public static final String SERIALIZED_NAME_EMPLOYEE_NUMBER = "employee_number";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE_NUMBER)
+  @javax.annotation.Nullable
   private BigDecimal employeeNumber;
 
   public static final String SERIALIZED_NAME_BACKDATED_SALARY = "backdated_salary";
   @SerializedName(SERIALIZED_NAME_BACKDATED_SALARY)
+  @javax.annotation.Nullable
   private String backdatedSalary;
 
   public static final String SERIALIZED_NAME_EMPLOYEE_DIVISION = "employee_division";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE_DIVISION)
+  @javax.annotation.Nullable
   private String employeeDivision;
 
   public static final String SERIALIZED_NAME_EMPLOYEE_JOB_TITLE = "employee_job_title";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE_JOB_TITLE)
+  @javax.annotation.Nullable
   private String employeeJobTitle;
 
   public static final String SERIALIZED_NAME_EMPLOYEE_DEPARTMENT = "employee_department";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE_DEPARTMENT)
+  @javax.annotation.Nullable
   private String employeeDepartment;
 
   public static final String SERIALIZED_NAME_ER_OCCUPATIONAL_RISK = "er_occupational_risk";
   @SerializedName(SERIALIZED_NAME_ER_OCCUPATIONAL_RISK)
+  @javax.annotation.Nullable
   private String erOccupationalRisk;
 
   public static final String SERIALIZED_NAME_PENSION_CONTRIBUTION = "pension_contribution";
   @SerializedName(SERIALIZED_NAME_PENSION_CONTRIBUTION)
+  @javax.annotation.Nullable
   private BigDecimal pensionContribution;
 
   public static final String SERIALIZED_NAME_EMPLOYER_CONTRIBUTION = "employer_contribution";
   @SerializedName(SERIALIZED_NAME_EMPLOYER_CONTRIBUTION)
+  @javax.annotation.Nullable
   private String employerContribution;
 
   public static final String SERIALIZED_NAME_EMPLOYMENT_STATUS_TAG_INTERNAL = "employment_status_tag_internal";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT_STATUS_TAG_INTERNAL)
+  @javax.annotation.Nullable
   private String employmentStatusTagInternal;
 
   public GetGrossToNetGPReports200ResponseDataInner() {
   }
 
-  public GetGrossToNetGPReports200ResponseDataInner netPay(String netPay) {
+  public GetGrossToNetGPReports200ResponseDataInner netPay(@javax.annotation.Nullable String netPay) {
     this.netPay = netPay;
     return this;
   }
@@ -153,12 +174,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return netPay;
   }
 
-  public void setNetPay(String netPay) {
+  public void setNetPay(@javax.annotation.Nullable String netPay) {
     this.netPay = netPay;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner eeLoans(String eeLoans) {
+  public GetGrossToNetGPReports200ResponseDataInner eeLoans(@javax.annotation.Nullable String eeLoans) {
     this.eeLoans = eeLoans;
     return this;
   }
@@ -172,12 +193,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return eeLoans;
   }
 
-  public void setEeLoans(String eeLoans) {
+  public void setEeLoans(@javax.annotation.Nullable String eeLoans) {
     this.eeLoans = eeLoans;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner contractId(String contractId) {
+  public GetGrossToNetGPReports200ResponseDataInner contractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -191,12 +212,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner costCenter(String costCenter) {
+  public GetGrossToNetGPReports200ResponseDataInner costCenter(@javax.annotation.Nullable String costCenter) {
     this.costCenter = costCenter;
     return this;
   }
@@ -210,12 +231,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return costCenter;
   }
 
-  public void setCostCenter(String costCenter) {
+  public void setCostCenter(@javax.annotation.Nullable String costCenter) {
     this.costCenter = costCenter;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner annualBonus(BigDecimal annualBonus) {
+  public GetGrossToNetGPReports200ResponseDataInner annualBonus(@javax.annotation.Nullable BigDecimal annualBonus) {
     this.annualBonus = annualBonus;
     return this;
   }
@@ -229,12 +250,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return annualBonus;
   }
 
-  public void setAnnualBonus(BigDecimal annualBonus) {
+  public void setAnnualBonus(@javax.annotation.Nullable BigDecimal annualBonus) {
     this.annualBonus = annualBonus;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner carAllowance(BigDecimal carAllowance) {
+  public GetGrossToNetGPReports200ResponseDataInner carAllowance(@javax.annotation.Nullable BigDecimal carAllowance) {
     this.carAllowance = carAllowance;
     return this;
   }
@@ -248,12 +269,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return carAllowance;
   }
 
-  public void setCarAllowance(BigDecimal carAllowance) {
+  public void setCarAllowance(@javax.annotation.Nullable BigDecimal carAllowance) {
     this.carAllowance = carAllowance;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner eeIncomeTax(String eeIncomeTax) {
+  public GetGrossToNetGPReports200ResponseDataInner eeIncomeTax(@javax.annotation.Nullable String eeIncomeTax) {
     this.eeIncomeTax = eeIncomeTax;
     return this;
   }
@@ -267,12 +288,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return eeIncomeTax;
   }
 
-  public void setEeIncomeTax(String eeIncomeTax) {
+  public void setEeIncomeTax(@javax.annotation.Nullable String eeIncomeTax) {
     this.eeIncomeTax = eeIncomeTax;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner employeeName(String employeeName) {
+  public GetGrossToNetGPReports200ResponseDataInner employeeName(@javax.annotation.Nullable String employeeName) {
     this.employeeName = employeeName;
     return this;
   }
@@ -286,12 +307,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return employeeName;
   }
 
-  public void setEmployeeName(String employeeName) {
+  public void setEmployeeName(@javax.annotation.Nullable String employeeName) {
     this.employeeName = employeeName;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner employerCost(String employerCost) {
+  public GetGrossToNetGPReports200ResponseDataInner employerCost(@javax.annotation.Nullable String employerCost) {
     this.employerCost = employerCost;
     return this;
   }
@@ -305,12 +326,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return employerCost;
   }
 
-  public void setEmployerCost(String employerCost) {
+  public void setEmployerCost(@javax.annotation.Nullable String employerCost) {
     this.employerCost = employerCost;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner espDeduction(BigDecimal espDeduction) {
+  public GetGrossToNetGPReports200ResponseDataInner espDeduction(@javax.annotation.Nullable BigDecimal espDeduction) {
     this.espDeduction = espDeduction;
     return this;
   }
@@ -324,12 +345,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return espDeduction;
   }
 
-  public void setEspDeduction(BigDecimal espDeduction) {
+  public void setEspDeduction(@javax.annotation.Nullable BigDecimal espDeduction) {
     this.espDeduction = espDeduction;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner fundingAmount(BigDecimal fundingAmount) {
+  public GetGrossToNetGPReports200ResponseDataInner fundingAmount(@javax.annotation.Nullable BigDecimal fundingAmount) {
     this.fundingAmount = fundingAmount;
     return this;
   }
@@ -343,12 +364,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return fundingAmount;
   }
 
-  public void setFundingAmount(BigDecimal fundingAmount) {
+  public void setFundingAmount(@javax.annotation.Nullable BigDecimal fundingAmount) {
     this.fundingAmount = fundingAmount;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner homeAllowance(String homeAllowance) {
+  public GetGrossToNetGPReports200ResponseDataInner homeAllowance(@javax.annotation.Nullable String homeAllowance) {
     this.homeAllowance = homeAllowance;
     return this;
   }
@@ -362,12 +383,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return homeAllowance;
   }
 
-  public void setHomeAllowance(String homeAllowance) {
+  public void setHomeAllowance(@javax.annotation.Nullable String homeAllowance) {
     this.homeAllowance = homeAllowance;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner employeeNumber(BigDecimal employeeNumber) {
+  public GetGrossToNetGPReports200ResponseDataInner employeeNumber(@javax.annotation.Nullable BigDecimal employeeNumber) {
     this.employeeNumber = employeeNumber;
     return this;
   }
@@ -381,12 +402,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return employeeNumber;
   }
 
-  public void setEmployeeNumber(BigDecimal employeeNumber) {
+  public void setEmployeeNumber(@javax.annotation.Nullable BigDecimal employeeNumber) {
     this.employeeNumber = employeeNumber;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner backdatedSalary(String backdatedSalary) {
+  public GetGrossToNetGPReports200ResponseDataInner backdatedSalary(@javax.annotation.Nullable String backdatedSalary) {
     this.backdatedSalary = backdatedSalary;
     return this;
   }
@@ -400,12 +421,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return backdatedSalary;
   }
 
-  public void setBackdatedSalary(String backdatedSalary) {
+  public void setBackdatedSalary(@javax.annotation.Nullable String backdatedSalary) {
     this.backdatedSalary = backdatedSalary;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner employeeDivision(String employeeDivision) {
+  public GetGrossToNetGPReports200ResponseDataInner employeeDivision(@javax.annotation.Nullable String employeeDivision) {
     this.employeeDivision = employeeDivision;
     return this;
   }
@@ -419,12 +440,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return employeeDivision;
   }
 
-  public void setEmployeeDivision(String employeeDivision) {
+  public void setEmployeeDivision(@javax.annotation.Nullable String employeeDivision) {
     this.employeeDivision = employeeDivision;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner employeeJobTitle(String employeeJobTitle) {
+  public GetGrossToNetGPReports200ResponseDataInner employeeJobTitle(@javax.annotation.Nullable String employeeJobTitle) {
     this.employeeJobTitle = employeeJobTitle;
     return this;
   }
@@ -438,12 +459,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return employeeJobTitle;
   }
 
-  public void setEmployeeJobTitle(String employeeJobTitle) {
+  public void setEmployeeJobTitle(@javax.annotation.Nullable String employeeJobTitle) {
     this.employeeJobTitle = employeeJobTitle;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner employeeDepartment(String employeeDepartment) {
+  public GetGrossToNetGPReports200ResponseDataInner employeeDepartment(@javax.annotation.Nullable String employeeDepartment) {
     this.employeeDepartment = employeeDepartment;
     return this;
   }
@@ -457,12 +478,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return employeeDepartment;
   }
 
-  public void setEmployeeDepartment(String employeeDepartment) {
+  public void setEmployeeDepartment(@javax.annotation.Nullable String employeeDepartment) {
     this.employeeDepartment = employeeDepartment;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner erOccupationalRisk(String erOccupationalRisk) {
+  public GetGrossToNetGPReports200ResponseDataInner erOccupationalRisk(@javax.annotation.Nullable String erOccupationalRisk) {
     this.erOccupationalRisk = erOccupationalRisk;
     return this;
   }
@@ -476,12 +497,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return erOccupationalRisk;
   }
 
-  public void setErOccupationalRisk(String erOccupationalRisk) {
+  public void setErOccupationalRisk(@javax.annotation.Nullable String erOccupationalRisk) {
     this.erOccupationalRisk = erOccupationalRisk;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner pensionContribution(BigDecimal pensionContribution) {
+  public GetGrossToNetGPReports200ResponseDataInner pensionContribution(@javax.annotation.Nullable BigDecimal pensionContribution) {
     this.pensionContribution = pensionContribution;
     return this;
   }
@@ -495,12 +516,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return pensionContribution;
   }
 
-  public void setPensionContribution(BigDecimal pensionContribution) {
+  public void setPensionContribution(@javax.annotation.Nullable BigDecimal pensionContribution) {
     this.pensionContribution = pensionContribution;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner employerContribution(String employerContribution) {
+  public GetGrossToNetGPReports200ResponseDataInner employerContribution(@javax.annotation.Nullable String employerContribution) {
     this.employerContribution = employerContribution;
     return this;
   }
@@ -514,12 +535,12 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return employerContribution;
   }
 
-  public void setEmployerContribution(String employerContribution) {
+  public void setEmployerContribution(@javax.annotation.Nullable String employerContribution) {
     this.employerContribution = employerContribution;
   }
 
 
-  public GetGrossToNetGPReports200ResponseDataInner employmentStatusTagInternal(String employmentStatusTagInternal) {
+  public GetGrossToNetGPReports200ResponseDataInner employmentStatusTagInternal(@javax.annotation.Nullable String employmentStatusTagInternal) {
     this.employmentStatusTagInternal = employmentStatusTagInternal;
     return this;
   }
@@ -533,7 +554,7 @@ public class GetGrossToNetGPReports200ResponseDataInner {
     return employmentStatusTagInternal;
   }
 
-  public void setEmploymentStatusTagInternal(String employmentStatusTagInternal) {
+  public void setEmploymentStatusTagInternal(@javax.annotation.Nullable String employmentStatusTagInternal) {
     this.employmentStatusTagInternal = employmentStatusTagInternal;
   }
 

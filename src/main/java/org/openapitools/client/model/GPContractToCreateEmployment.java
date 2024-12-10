@@ -51,24 +51,27 @@ import org.openapitools.client.JSON;
 /**
  * GPContractToCreateEmployment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GPContractToCreateEmployment {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private GPContractStatusTypeEnum type;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private LocalDate startDate;
 
   public static final String SERIALIZED_NAME_HOLIDAYS = "holidays";
   @SerializedName(SERIALIZED_NAME_HOLIDAYS)
+  @javax.annotation.Nonnull
   private GPContractToCreateEmploymentHolidays holidays;
 
   public GPContractToCreateEmployment() {
   }
 
-  public GPContractToCreateEmployment type(GPContractStatusTypeEnum type) {
+  public GPContractToCreateEmployment type(@javax.annotation.Nonnull GPContractStatusTypeEnum type) {
     this.type = type;
     return this;
   }
@@ -82,12 +85,12 @@ public class GPContractToCreateEmployment {
     return type;
   }
 
-  public void setType(GPContractStatusTypeEnum type) {
+  public void setType(@javax.annotation.Nonnull GPContractStatusTypeEnum type) {
     this.type = type;
   }
 
 
-  public GPContractToCreateEmployment startDate(LocalDate startDate) {
+  public GPContractToCreateEmployment startDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -101,12 +104,12 @@ public class GPContractToCreateEmployment {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public GPContractToCreateEmployment holidays(GPContractToCreateEmploymentHolidays holidays) {
+  public GPContractToCreateEmployment holidays(@javax.annotation.Nonnull GPContractToCreateEmploymentHolidays holidays) {
     this.holidays = holidays;
     return this;
   }
@@ -120,7 +123,7 @@ public class GPContractToCreateEmployment {
     return holidays;
   }
 
-  public void setHolidays(GPContractToCreateEmploymentHolidays holidays) {
+  public void setHolidays(@javax.annotation.Nonnull GPContractToCreateEmploymentHolidays holidays) {
     this.holidays = holidays;
   }
 

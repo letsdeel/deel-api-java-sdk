@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * Email
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Email {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private String value;
 
   public Email() {
   }
 
-  public Email type(String type) {
+  public Email type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -75,12 +77,12 @@ public class Email {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public Email value(String value) {
+  public Email value(@javax.annotation.Nullable String value) {
     this.value = value;
     return this;
   }
@@ -94,7 +96,7 @@ public class Email {
     return value;
   }
 
-  public void setValue(String value) {
+  public void setValue(@javax.annotation.Nullable String value) {
     this.value = value;
   }
 

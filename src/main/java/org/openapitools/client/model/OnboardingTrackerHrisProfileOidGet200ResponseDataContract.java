@@ -50,52 +50,62 @@ import org.openapitools.client.JSON;
 /**
  * OnboardingTrackerHrisProfileOidGet200ResponseDataContract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OnboardingTrackerHrisProfileOidGet200ResponseDataContract {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_OID = "oid";
   @SerializedName(SERIALIZED_NAME_OID)
+  @javax.annotation.Nullable
   private String oid;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_FIRST_SIGN = "first_sign";
   @SerializedName(SERIALIZED_NAME_FIRST_SIGN)
+  @javax.annotation.Nullable
   private String firstSign;
 
   public static final String SERIALIZED_NAME_COMPLETION_DATE = "completion_date";
   @SerializedName(SERIALIZED_NAME_COMPLETION_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime completionDate;
 
   public static final String SERIALIZED_NAME_CLIENT_SIGNED_AT = "client_signed_at";
   @SerializedName(SERIALIZED_NAME_CLIENT_SIGNED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime clientSignedAt;
 
   public static final String SERIALIZED_NAME_CONTRACTOR_SIGNED_AT = "contractor_signed_at";
   @SerializedName(SERIALIZED_NAME_CONTRACTOR_SIGNED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime contractorSignedAt;
 
   public static final String SERIALIZED_NAME_INVITED_CONTRACTOR_EMAIL = "invited_contractor_email";
   @SerializedName(SERIALIZED_NAME_INVITED_CONTRACTOR_EMAIL)
+  @javax.annotation.Nullable
   private String invitedContractorEmail;
 
   public OnboardingTrackerHrisProfileOidGet200ResponseDataContract() {
   }
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract id(String id) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -109,12 +119,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataContract {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract oid(String oid) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract oid(@javax.annotation.Nullable String oid) {
     this.oid = oid;
     return this;
   }
@@ -128,12 +138,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataContract {
     return oid;
   }
 
-  public void setOid(String oid) {
+  public void setOid(@javax.annotation.Nullable String oid) {
     this.oid = oid;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract name(String name) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -147,12 +157,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataContract {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract status(String status) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -166,12 +176,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataContract {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract createdAt(OffsetDateTime createdAt) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -185,12 +195,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataContract {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract firstSign(String firstSign) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract firstSign(@javax.annotation.Nullable String firstSign) {
     this.firstSign = firstSign;
     return this;
   }
@@ -204,12 +214,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataContract {
     return firstSign;
   }
 
-  public void setFirstSign(String firstSign) {
+  public void setFirstSign(@javax.annotation.Nullable String firstSign) {
     this.firstSign = firstSign;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract completionDate(OffsetDateTime completionDate) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract completionDate(@javax.annotation.Nullable OffsetDateTime completionDate) {
     this.completionDate = completionDate;
     return this;
   }
@@ -223,12 +233,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataContract {
     return completionDate;
   }
 
-  public void setCompletionDate(OffsetDateTime completionDate) {
+  public void setCompletionDate(@javax.annotation.Nullable OffsetDateTime completionDate) {
     this.completionDate = completionDate;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract clientSignedAt(OffsetDateTime clientSignedAt) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract clientSignedAt(@javax.annotation.Nullable OffsetDateTime clientSignedAt) {
     this.clientSignedAt = clientSignedAt;
     return this;
   }
@@ -242,12 +252,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataContract {
     return clientSignedAt;
   }
 
-  public void setClientSignedAt(OffsetDateTime clientSignedAt) {
+  public void setClientSignedAt(@javax.annotation.Nullable OffsetDateTime clientSignedAt) {
     this.clientSignedAt = clientSignedAt;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract contractorSignedAt(OffsetDateTime contractorSignedAt) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract contractorSignedAt(@javax.annotation.Nullable OffsetDateTime contractorSignedAt) {
     this.contractorSignedAt = contractorSignedAt;
     return this;
   }
@@ -261,12 +271,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataContract {
     return contractorSignedAt;
   }
 
-  public void setContractorSignedAt(OffsetDateTime contractorSignedAt) {
+  public void setContractorSignedAt(@javax.annotation.Nullable OffsetDateTime contractorSignedAt) {
     this.contractorSignedAt = contractorSignedAt;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract invitedContractorEmail(String invitedContractorEmail) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataContract invitedContractorEmail(@javax.annotation.Nullable String invitedContractorEmail) {
     this.invitedContractorEmail = invitedContractorEmail;
     return this;
   }
@@ -280,7 +290,7 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataContract {
     return invitedContractorEmail;
   }
 
-  public void setInvitedContractorEmail(String invitedContractorEmail) {
+  public void setInvitedContractorEmail(@javax.annotation.Nullable String invitedContractorEmail) {
     this.invitedContractorEmail = invitedContractorEmail;
   }
 

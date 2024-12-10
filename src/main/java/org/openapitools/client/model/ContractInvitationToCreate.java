@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * ContractInvitationToCreate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ContractInvitationToCreate {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nonnull
   private String email;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nonnull
   private String message;
 
   public ContractInvitationToCreate() {
   }
 
-  public ContractInvitationToCreate email(String email) {
+  public ContractInvitationToCreate email(@javax.annotation.Nonnull String email) {
     this.email = email;
     return this;
   }
@@ -75,12 +77,12 @@ public class ContractInvitationToCreate {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nonnull String email) {
     this.email = email;
   }
 
 
-  public ContractInvitationToCreate message(String message) {
+  public ContractInvitationToCreate message(@javax.annotation.Nonnull String message) {
     this.message = message;
     return this;
   }
@@ -94,7 +96,7 @@ public class ContractInvitationToCreate {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nonnull String message) {
     this.message = message;
   }
 

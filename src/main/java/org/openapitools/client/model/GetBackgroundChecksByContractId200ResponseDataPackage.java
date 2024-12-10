@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * The package used for this background check.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBackgroundChecksByContractId200ResponseDataPackage {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public GetBackgroundChecksByContractId200ResponseDataPackage() {
   }
 
-  public GetBackgroundChecksByContractId200ResponseDataPackage name(String name) {
+  public GetBackgroundChecksByContractId200ResponseDataPackage name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -71,7 +72,7 @@ public class GetBackgroundChecksByContractId200ResponseDataPackage {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 

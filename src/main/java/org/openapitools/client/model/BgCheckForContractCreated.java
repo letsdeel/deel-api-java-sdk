@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * BgCheckForContractCreated
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BgCheckForContractCreated {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private SignContract201ResponseData data;
 
   public BgCheckForContractCreated() {
   }
 
-  public BgCheckForContractCreated data(SignContract201ResponseData data) {
+  public BgCheckForContractCreated data(@javax.annotation.Nonnull SignContract201ResponseData data) {
     this.data = data;
     return this;
   }
@@ -72,7 +73,7 @@ public class BgCheckForContractCreated {
     return data;
   }
 
-  public void setData(SignContract201ResponseData data) {
+  public void setData(@javax.annotation.Nonnull SignContract201ResponseData data) {
     this.data = data;
   }
 

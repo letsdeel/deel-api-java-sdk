@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * Worker properties
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ContractToCreateSharedWorker {
   public static final String SERIALIZED_NAME_EXPECTED_EMAIL = "expected_email";
   @SerializedName(SERIALIZED_NAME_EXPECTED_EMAIL)
+  @javax.annotation.Nullable
   private String expectedEmail;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public ContractToCreateSharedWorker() {
   }
 
-  public ContractToCreateSharedWorker expectedEmail(String expectedEmail) {
+  public ContractToCreateSharedWorker expectedEmail(@javax.annotation.Nullable String expectedEmail) {
     this.expectedEmail = expectedEmail;
     return this;
   }
@@ -80,12 +83,12 @@ public class ContractToCreateSharedWorker {
     return expectedEmail;
   }
 
-  public void setExpectedEmail(String expectedEmail) {
+  public void setExpectedEmail(@javax.annotation.Nullable String expectedEmail) {
     this.expectedEmail = expectedEmail;
   }
 
 
-  public ContractToCreateSharedWorker firstName(String firstName) {
+  public ContractToCreateSharedWorker firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -99,12 +102,12 @@ public class ContractToCreateSharedWorker {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public ContractToCreateSharedWorker lastName(String lastName) {
+  public ContractToCreateSharedWorker lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -118,7 +121,7 @@ public class ContractToCreateSharedWorker {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 

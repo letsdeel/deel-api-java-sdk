@@ -50,24 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * Data for the shift rate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateTimeTrackingShiftRateContainerData {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private TimeTrackingShiftRateType type;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private BigDecimal value;
 
   public UpdateTimeTrackingShiftRateContainerData() {
   }
 
-  public UpdateTimeTrackingShiftRateContainerData name(String name) {
+  public UpdateTimeTrackingShiftRateContainerData name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -81,12 +84,12 @@ public class UpdateTimeTrackingShiftRateContainerData {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public UpdateTimeTrackingShiftRateContainerData type(TimeTrackingShiftRateType type) {
+  public UpdateTimeTrackingShiftRateContainerData type(@javax.annotation.Nullable TimeTrackingShiftRateType type) {
     this.type = type;
     return this;
   }
@@ -100,12 +103,12 @@ public class UpdateTimeTrackingShiftRateContainerData {
     return type;
   }
 
-  public void setType(TimeTrackingShiftRateType type) {
+  public void setType(@javax.annotation.Nullable TimeTrackingShiftRateType type) {
     this.type = type;
   }
 
 
-  public UpdateTimeTrackingShiftRateContainerData value(BigDecimal value) {
+  public UpdateTimeTrackingShiftRateContainerData value(@javax.annotation.Nullable BigDecimal value) {
     this.value = value;
     return this;
   }
@@ -120,7 +123,7 @@ public class UpdateTimeTrackingShiftRateContainerData {
     return value;
   }
 
-  public void setValue(BigDecimal value) {
+  public void setValue(@javax.annotation.Nullable BigDecimal value) {
     this.value = value;
   }
 

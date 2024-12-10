@@ -50,28 +50,32 @@ import org.openapitools.client.JSON;
 /**
  * GetOrganizationRoles200ResponseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetOrganizationRoles200ResponseInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private BigDecimal id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_SCOPE = "scope";
   @SerializedName(SERIALIZED_NAME_SCOPE)
+  @javax.annotation.Nonnull
   private String scope;
 
   public static final String SERIALIZED_NAME_HRIS_ORG_STRUCTURE_ID = "hrisOrgStructureId";
   @SerializedName(SERIALIZED_NAME_HRIS_ORG_STRUCTURE_ID)
+  @javax.annotation.Nullable
   private String hrisOrgStructureId;
 
   public GetOrganizationRoles200ResponseInner() {
   }
 
-  public GetOrganizationRoles200ResponseInner id(BigDecimal id) {
+  public GetOrganizationRoles200ResponseInner id(@javax.annotation.Nonnull BigDecimal id) {
     this.id = id;
     return this;
   }
@@ -85,12 +89,12 @@ public class GetOrganizationRoles200ResponseInner {
     return id;
   }
 
-  public void setId(BigDecimal id) {
+  public void setId(@javax.annotation.Nonnull BigDecimal id) {
     this.id = id;
   }
 
 
-  public GetOrganizationRoles200ResponseInner name(String name) {
+  public GetOrganizationRoles200ResponseInner name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -104,12 +108,12 @@ public class GetOrganizationRoles200ResponseInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public GetOrganizationRoles200ResponseInner scope(String scope) {
+  public GetOrganizationRoles200ResponseInner scope(@javax.annotation.Nonnull String scope) {
     this.scope = scope;
     return this;
   }
@@ -123,12 +127,12 @@ public class GetOrganizationRoles200ResponseInner {
     return scope;
   }
 
-  public void setScope(String scope) {
+  public void setScope(@javax.annotation.Nonnull String scope) {
     this.scope = scope;
   }
 
 
-  public GetOrganizationRoles200ResponseInner hrisOrgStructureId(String hrisOrgStructureId) {
+  public GetOrganizationRoles200ResponseInner hrisOrgStructureId(@javax.annotation.Nullable String hrisOrgStructureId) {
     this.hrisOrgStructureId = hrisOrgStructureId;
     return this;
   }
@@ -142,7 +146,7 @@ public class GetOrganizationRoles200ResponseInner {
     return hrisOrgStructureId;
   }
 
-  public void setHrisOrgStructureId(String hrisOrgStructureId) {
+  public void setHrisOrgStructureId(@javax.annotation.Nullable String hrisOrgStructureId) {
     this.hrisOrgStructureId = hrisOrgStructureId;
   }
 

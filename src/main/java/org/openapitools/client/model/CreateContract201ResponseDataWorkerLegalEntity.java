@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseDataWorkerLegalEntity
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataWorkerLegalEntity {
   /**
    * Type of a legal entity
@@ -104,20 +104,23 @@ public class CreateContract201ResponseDataWorkerLegalEntity {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_PERSONAL_NAME = "personal_name";
   @SerializedName(SERIALIZED_NAME_PERSONAL_NAME)
+  @javax.annotation.Nonnull
   private String personalName;
 
   public static final String SERIALIZED_NAME_REGISTRATION_NUMBER = "registration_number";
   @SerializedName(SERIALIZED_NAME_REGISTRATION_NUMBER)
+  @javax.annotation.Nonnull
   private String registrationNumber;
 
   public CreateContract201ResponseDataWorkerLegalEntity() {
   }
 
-  public CreateContract201ResponseDataWorkerLegalEntity type(TypeEnum type) {
+  public CreateContract201ResponseDataWorkerLegalEntity type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -131,12 +134,12 @@ public class CreateContract201ResponseDataWorkerLegalEntity {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public CreateContract201ResponseDataWorkerLegalEntity personalName(String personalName) {
+  public CreateContract201ResponseDataWorkerLegalEntity personalName(@javax.annotation.Nonnull String personalName) {
     this.personalName = personalName;
     return this;
   }
@@ -150,12 +153,12 @@ public class CreateContract201ResponseDataWorkerLegalEntity {
     return personalName;
   }
 
-  public void setPersonalName(String personalName) {
+  public void setPersonalName(@javax.annotation.Nonnull String personalName) {
     this.personalName = personalName;
   }
 
 
-  public CreateContract201ResponseDataWorkerLegalEntity registrationNumber(String registrationNumber) {
+  public CreateContract201ResponseDataWorkerLegalEntity registrationNumber(@javax.annotation.Nonnull String registrationNumber) {
     this.registrationNumber = registrationNumber;
     return this;
   }
@@ -169,7 +172,7 @@ public class CreateContract201ResponseDataWorkerLegalEntity {
     return registrationNumber;
   }
 
-  public void setRegistrationNumber(String registrationNumber) {
+  public void setRegistrationNumber(@javax.annotation.Nonnull String registrationNumber) {
     this.registrationNumber = registrationNumber;
   }
 

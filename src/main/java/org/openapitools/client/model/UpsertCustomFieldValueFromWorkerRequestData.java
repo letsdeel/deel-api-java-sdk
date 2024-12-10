@@ -67,7 +67,7 @@ import com.google.gson.JsonParseException;
 
 import org.openapitools.client.JSON;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertCustomFieldValueFromWorkerRequestData extends AbstractOpenApiSchema {
     private static final Logger log = Logger.getLogger(UpsertCustomFieldValueFromWorkerRequestData.class.getName());
 
@@ -342,6 +342,7 @@ public class UpsertCustomFieldValueFromWorkerRequestData extends AbstractOpenApi
     public UpsertCustomFieldValueFromWorkerRequestDataOneOf getUpsertCustomFieldValueFromWorkerRequestDataOneOf() throws ClassCastException {
         return (UpsertCustomFieldValueFromWorkerRequestDataOneOf)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `UpsertCustomFieldValueFromWorkerRequestDataOneOf1`. If the actual instance is not `UpsertCustomFieldValueFromWorkerRequestDataOneOf1`,
      * the ClassCastException will be thrown.
@@ -352,6 +353,7 @@ public class UpsertCustomFieldValueFromWorkerRequestData extends AbstractOpenApi
     public UpsertCustomFieldValueFromWorkerRequestDataOneOf1 getUpsertCustomFieldValueFromWorkerRequestDataOneOf1() throws ClassCastException {
         return (UpsertCustomFieldValueFromWorkerRequestDataOneOf1)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `UpsertCustomFieldValueFromWorkerRequestDataOneOf2`. If the actual instance is not `UpsertCustomFieldValueFromWorkerRequestDataOneOf2`,
      * the ClassCastException will be thrown.
@@ -362,6 +364,7 @@ public class UpsertCustomFieldValueFromWorkerRequestData extends AbstractOpenApi
     public UpsertCustomFieldValueFromWorkerRequestDataOneOf2 getUpsertCustomFieldValueFromWorkerRequestDataOneOf2() throws ClassCastException {
         return (UpsertCustomFieldValueFromWorkerRequestDataOneOf2)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `UpsertCustomFieldValueFromWorkerRequestDataOneOf3`. If the actual instance is not `UpsertCustomFieldValueFromWorkerRequestDataOneOf3`,
      * the ClassCastException will be thrown.
@@ -372,6 +375,7 @@ public class UpsertCustomFieldValueFromWorkerRequestData extends AbstractOpenApi
     public UpsertCustomFieldValueFromWorkerRequestDataOneOf3 getUpsertCustomFieldValueFromWorkerRequestDataOneOf3() throws ClassCastException {
         return (UpsertCustomFieldValueFromWorkerRequestDataOneOf3)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `UpsertCustomFieldValueFromWorkerRequestDataOneOf4`. If the actual instance is not `UpsertCustomFieldValueFromWorkerRequestDataOneOf4`,
      * the ClassCastException will be thrown.
@@ -382,6 +386,7 @@ public class UpsertCustomFieldValueFromWorkerRequestData extends AbstractOpenApi
     public UpsertCustomFieldValueFromWorkerRequestDataOneOf4 getUpsertCustomFieldValueFromWorkerRequestDataOneOf4() throws ClassCastException {
         return (UpsertCustomFieldValueFromWorkerRequestDataOneOf4)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `UpsertCustomFieldValueFromWorkerRequestDataOneOf5`. If the actual instance is not `UpsertCustomFieldValueFromWorkerRequestDataOneOf5`,
      * the ClassCastException will be thrown.
@@ -392,6 +397,7 @@ public class UpsertCustomFieldValueFromWorkerRequestData extends AbstractOpenApi
     public UpsertCustomFieldValueFromWorkerRequestDataOneOf5 getUpsertCustomFieldValueFromWorkerRequestDataOneOf5() throws ClassCastException {
         return (UpsertCustomFieldValueFromWorkerRequestDataOneOf5)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `UpsertCustomFieldValueFromWorkerRequestDataOneOf6`. If the actual instance is not `UpsertCustomFieldValueFromWorkerRequestDataOneOf6`,
      * the ClassCastException will be thrown.

@@ -13,7 +13,7 @@ Search form should include parameters varied based on usage of cursor for pagina
 |**orderDirection** | **SortDirEnum** |  |  [optional] |
 |**types** | [**ContractSearchFormWithoutCursorTypes**](ContractSearchFormWithoutCursorTypes.md) |  |  [optional] |
 |**statuses** | [**ContractSearchFormWithoutCursorStatuses**](ContractSearchFormWithoutCursorStatuses.md) |  |  [optional] |
-|**teamId** | **String** | Unique identifier of this resource. |  [optional] |
+|**teamId** | [**IdentifierValueForFilter**](IdentifierValueForFilter.md) |  |  [optional] |
 |**externalId** | **String** | Filter contracts for given external ID |  [optional] |
 |**countries** | [**ContractSearchFormWithoutCursorCountries**](ContractSearchFormWithoutCursorCountries.md) |  |  [optional] |
 |**currencies** | [**ContractSearchFormWithoutCursorCurrencies**](ContractSearchFormWithoutCursorCurrencies.md) |  |  [optional] |

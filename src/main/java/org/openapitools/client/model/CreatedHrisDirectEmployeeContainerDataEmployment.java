@@ -50,18 +50,21 @@ import org.openapitools.client.JSON;
 /**
  * CreatedHrisDirectEmployeeContainerDataEmployment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreatedHrisDirectEmployeeContainerDataEmployment {
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nonnull
   private String contractId;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private LocalDate startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private LocalDate endDate;
 
   /**
@@ -118,20 +121,23 @@ public class CreatedHrisDirectEmployeeContainerDataEmployment {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_PART_TIME_PERCENTAGE = "part_time_percentage";
   @SerializedName(SERIALIZED_NAME_PART_TIME_PERCENTAGE)
+  @javax.annotation.Nullable
   private BigDecimal partTimePercentage;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nonnull
   private String country;
 
   public CreatedHrisDirectEmployeeContainerDataEmployment() {
   }
 
-  public CreatedHrisDirectEmployeeContainerDataEmployment contractId(String contractId) {
+  public CreatedHrisDirectEmployeeContainerDataEmployment contractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -145,12 +151,12 @@ public class CreatedHrisDirectEmployeeContainerDataEmployment {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
   }
 
 
-  public CreatedHrisDirectEmployeeContainerDataEmployment startDate(LocalDate startDate) {
+  public CreatedHrisDirectEmployeeContainerDataEmployment startDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -164,12 +170,12 @@ public class CreatedHrisDirectEmployeeContainerDataEmployment {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public CreatedHrisDirectEmployeeContainerDataEmployment endDate(LocalDate endDate) {
+  public CreatedHrisDirectEmployeeContainerDataEmployment endDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -183,12 +189,12 @@ public class CreatedHrisDirectEmployeeContainerDataEmployment {
     return endDate;
   }
 
-  public void setEndDate(LocalDate endDate) {
+  public void setEndDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
   }
 
 
-  public CreatedHrisDirectEmployeeContainerDataEmployment type(TypeEnum type) {
+  public CreatedHrisDirectEmployeeContainerDataEmployment type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -202,12 +208,12 @@ public class CreatedHrisDirectEmployeeContainerDataEmployment {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public CreatedHrisDirectEmployeeContainerDataEmployment partTimePercentage(BigDecimal partTimePercentage) {
+  public CreatedHrisDirectEmployeeContainerDataEmployment partTimePercentage(@javax.annotation.Nullable BigDecimal partTimePercentage) {
     this.partTimePercentage = partTimePercentage;
     return this;
   }
@@ -223,12 +229,12 @@ public class CreatedHrisDirectEmployeeContainerDataEmployment {
     return partTimePercentage;
   }
 
-  public void setPartTimePercentage(BigDecimal partTimePercentage) {
+  public void setPartTimePercentage(@javax.annotation.Nullable BigDecimal partTimePercentage) {
     this.partTimePercentage = partTimePercentage;
   }
 
 
-  public CreatedHrisDirectEmployeeContainerDataEmployment country(String country) {
+  public CreatedHrisDirectEmployeeContainerDataEmployment country(@javax.annotation.Nonnull String country) {
     this.country = country;
     return this;
   }
@@ -242,7 +248,7 @@ public class CreatedHrisDirectEmployeeContainerDataEmployment {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nonnull String country) {
     this.country = country;
   }
 

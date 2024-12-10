@@ -48,36 +48,42 @@ import org.openapitools.client.JSON;
 /**
  * Registration address of the legal entity.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetLegalEntity200ResponseRegistrationAddress {
   public static final String SERIALIZED_NAME_ZIP = "zip";
   @SerializedName(SERIALIZED_NAME_ZIP)
+  @javax.annotation.Nullable
   private String zip;
 
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nullable
   private String city;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_STREET = "street";
   @SerializedName(SERIALIZED_NAME_STREET)
+  @javax.annotation.Nullable
   private String street;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_PROVINCE = "province";
   @SerializedName(SERIALIZED_NAME_PROVINCE)
+  @javax.annotation.Nullable
   private String province;
 
   public GetLegalEntity200ResponseRegistrationAddress() {
   }
 
-  public GetLegalEntity200ResponseRegistrationAddress zip(String zip) {
+  public GetLegalEntity200ResponseRegistrationAddress zip(@javax.annotation.Nullable String zip) {
     this.zip = zip;
     return this;
   }
@@ -91,12 +97,12 @@ public class GetLegalEntity200ResponseRegistrationAddress {
     return zip;
   }
 
-  public void setZip(String zip) {
+  public void setZip(@javax.annotation.Nullable String zip) {
     this.zip = zip;
   }
 
 
-  public GetLegalEntity200ResponseRegistrationAddress city(String city) {
+  public GetLegalEntity200ResponseRegistrationAddress city(@javax.annotation.Nullable String city) {
     this.city = city;
     return this;
   }
@@ -110,12 +116,12 @@ public class GetLegalEntity200ResponseRegistrationAddress {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nullable String city) {
     this.city = city;
   }
 
 
-  public GetLegalEntity200ResponseRegistrationAddress state(String state) {
+  public GetLegalEntity200ResponseRegistrationAddress state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -129,12 +135,12 @@ public class GetLegalEntity200ResponseRegistrationAddress {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public GetLegalEntity200ResponseRegistrationAddress street(String street) {
+  public GetLegalEntity200ResponseRegistrationAddress street(@javax.annotation.Nullable String street) {
     this.street = street;
     return this;
   }
@@ -148,12 +154,12 @@ public class GetLegalEntity200ResponseRegistrationAddress {
     return street;
   }
 
-  public void setStreet(String street) {
+  public void setStreet(@javax.annotation.Nullable String street) {
     this.street = street;
   }
 
 
-  public GetLegalEntity200ResponseRegistrationAddress country(String country) {
+  public GetLegalEntity200ResponseRegistrationAddress country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -167,12 +173,12 @@ public class GetLegalEntity200ResponseRegistrationAddress {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public GetLegalEntity200ResponseRegistrationAddress province(String province) {
+  public GetLegalEntity200ResponseRegistrationAddress province(@javax.annotation.Nullable String province) {
     this.province = province;
     return this;
   }
@@ -186,7 +192,7 @@ public class GetLegalEntity200ResponseRegistrationAddress {
     return province;
   }
 
-  public void setProvince(String province) {
+  public void setProvince(@javax.annotation.Nullable String province) {
     this.province = province;
   }
 

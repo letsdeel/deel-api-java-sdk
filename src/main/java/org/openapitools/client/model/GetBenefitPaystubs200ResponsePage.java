@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * GetBenefitPaystubs200ResponsePage
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBenefitPaystubs200ResponsePage {
   public static final String SERIALIZED_NAME_CURSOR = "cursor";
   @SerializedName(SERIALIZED_NAME_CURSOR)
+  @javax.annotation.Nullable
   private String cursor;
 
   public static final String SERIALIZED_NAME_TOTAL_ROWS = "total_rows";
   @SerializedName(SERIALIZED_NAME_TOTAL_ROWS)
+  @javax.annotation.Nullable
   private Integer totalRows;
 
   public static final String SERIALIZED_NAME_ITEMS_PER_PAGE = "items_per_page";
   @SerializedName(SERIALIZED_NAME_ITEMS_PER_PAGE)
+  @javax.annotation.Nullable
   private Integer itemsPerPage;
 
   public GetBenefitPaystubs200ResponsePage() {
   }
 
-  public GetBenefitPaystubs200ResponsePage cursor(String cursor) {
+  public GetBenefitPaystubs200ResponsePage cursor(@javax.annotation.Nullable String cursor) {
     this.cursor = cursor;
     return this;
   }
@@ -80,12 +83,12 @@ public class GetBenefitPaystubs200ResponsePage {
     return cursor;
   }
 
-  public void setCursor(String cursor) {
+  public void setCursor(@javax.annotation.Nullable String cursor) {
     this.cursor = cursor;
   }
 
 
-  public GetBenefitPaystubs200ResponsePage totalRows(Integer totalRows) {
+  public GetBenefitPaystubs200ResponsePage totalRows(@javax.annotation.Nullable Integer totalRows) {
     this.totalRows = totalRows;
     return this;
   }
@@ -99,12 +102,12 @@ public class GetBenefitPaystubs200ResponsePage {
     return totalRows;
   }
 
-  public void setTotalRows(Integer totalRows) {
+  public void setTotalRows(@javax.annotation.Nullable Integer totalRows) {
     this.totalRows = totalRows;
   }
 
 
-  public GetBenefitPaystubs200ResponsePage itemsPerPage(Integer itemsPerPage) {
+  public GetBenefitPaystubs200ResponsePage itemsPerPage(@javax.annotation.Nullable Integer itemsPerPage) {
     this.itemsPerPage = itemsPerPage;
     return this;
   }
@@ -118,7 +121,7 @@ public class GetBenefitPaystubs200ResponsePage {
     return itemsPerPage;
   }
 
-  public void setItemsPerPage(Integer itemsPerPage) {
+  public void setItemsPerPage(@javax.annotation.Nullable Integer itemsPerPage) {
     this.itemsPerPage = itemsPerPage;
   }
 

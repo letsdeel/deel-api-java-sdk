@@ -52,32 +52,37 @@ import org.openapitools.client.JSON;
 /**
  * CreateEorContractRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateEorContractRequest {
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
+  @javax.annotation.Nonnull
   private CreateEorContractRequestClient client;
 
   public static final String SERIALIZED_NAME_EMPLOYEE = "employee";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE)
+  @javax.annotation.Nonnull
   private CreateEorContractRequestEmployee employee;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nonnull
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_EMPLOYMENT = "employment";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT)
+  @javax.annotation.Nonnull
   private CreateEorContractRequestEmployment employment;
 
   public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
   @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
+  @javax.annotation.Nonnull
   private CreateEorContractRequestCompensationDetails compensationDetails;
 
   public CreateEorContractRequest() {
   }
 
-  public CreateEorContractRequest client(CreateEorContractRequestClient client) {
+  public CreateEorContractRequest client(@javax.annotation.Nonnull CreateEorContractRequestClient client) {
     this.client = client;
     return this;
   }
@@ -91,12 +96,12 @@ public class CreateEorContractRequest {
     return client;
   }
 
-  public void setClient(CreateEorContractRequestClient client) {
+  public void setClient(@javax.annotation.Nonnull CreateEorContractRequestClient client) {
     this.client = client;
   }
 
 
-  public CreateEorContractRequest employee(CreateEorContractRequestEmployee employee) {
+  public CreateEorContractRequest employee(@javax.annotation.Nonnull CreateEorContractRequestEmployee employee) {
     this.employee = employee;
     return this;
   }
@@ -110,12 +115,12 @@ public class CreateEorContractRequest {
     return employee;
   }
 
-  public void setEmployee(CreateEorContractRequestEmployee employee) {
+  public void setEmployee(@javax.annotation.Nonnull CreateEorContractRequestEmployee employee) {
     this.employee = employee;
   }
 
 
-  public CreateEorContractRequest jobTitle(String jobTitle) {
+  public CreateEorContractRequest jobTitle(@javax.annotation.Nonnull String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -129,12 +134,12 @@ public class CreateEorContractRequest {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nonnull String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public CreateEorContractRequest employment(CreateEorContractRequestEmployment employment) {
+  public CreateEorContractRequest employment(@javax.annotation.Nonnull CreateEorContractRequestEmployment employment) {
     this.employment = employment;
     return this;
   }
@@ -148,12 +153,12 @@ public class CreateEorContractRequest {
     return employment;
   }
 
-  public void setEmployment(CreateEorContractRequestEmployment employment) {
+  public void setEmployment(@javax.annotation.Nonnull CreateEorContractRequestEmployment employment) {
     this.employment = employment;
   }
 
 
-  public CreateEorContractRequest compensationDetails(CreateEorContractRequestCompensationDetails compensationDetails) {
+  public CreateEorContractRequest compensationDetails(@javax.annotation.Nonnull CreateEorContractRequestCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
     return this;
   }
@@ -167,7 +172,7 @@ public class CreateEorContractRequest {
     return compensationDetails;
   }
 
-  public void setCompensationDetails(CreateEorContractRequestCompensationDetails compensationDetails) {
+  public void setCompensationDetails(@javax.annotation.Nonnull CreateEorContractRequestCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
   }
 

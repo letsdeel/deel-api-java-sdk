@@ -52,24 +52,27 @@ import org.openapitools.client.JSON;
 /**
  * GetYearToDatePay200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetYearToDatePay200Response {
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private LocalDate endDate;
 
   public static final String SERIALIZED_NAME_EMPLOYEES = "employees";
   @SerializedName(SERIALIZED_NAME_EMPLOYEES)
+  @javax.annotation.Nullable
   private List<GetYearToDatePay200ResponseEmployeesInner> employees = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private LocalDate startDate;
 
   public GetYearToDatePay200Response() {
   }
 
-  public GetYearToDatePay200Response endDate(LocalDate endDate) {
+  public GetYearToDatePay200Response endDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -83,12 +86,12 @@ public class GetYearToDatePay200Response {
     return endDate;
   }
 
-  public void setEndDate(LocalDate endDate) {
+  public void setEndDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
   }
 
 
-  public GetYearToDatePay200Response employees(List<GetYearToDatePay200ResponseEmployeesInner> employees) {
+  public GetYearToDatePay200Response employees(@javax.annotation.Nullable List<GetYearToDatePay200ResponseEmployeesInner> employees) {
     this.employees = employees;
     return this;
   }
@@ -110,12 +113,12 @@ public class GetYearToDatePay200Response {
     return employees;
   }
 
-  public void setEmployees(List<GetYearToDatePay200ResponseEmployeesInner> employees) {
+  public void setEmployees(@javax.annotation.Nullable List<GetYearToDatePay200ResponseEmployeesInner> employees) {
     this.employees = employees;
   }
 
 
-  public GetYearToDatePay200Response startDate(LocalDate startDate) {
+  public GetYearToDatePay200Response startDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -129,7 +132,7 @@ public class GetYearToDatePay200Response {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
   }
 

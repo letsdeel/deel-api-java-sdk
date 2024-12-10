@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * CreateGPContract201ResponseDataCompensationDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateGPContract201ResponseDataCompensationDetails {
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nullable
   private String scale;
 
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
+  @javax.annotation.Nullable
   private BigDecimal salary;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public CreateGPContract201ResponseDataCompensationDetails() {
   }
 
-  public CreateGPContract201ResponseDataCompensationDetails scale(String scale) {
+  public CreateGPContract201ResponseDataCompensationDetails scale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
     return this;
   }
@@ -80,12 +83,12 @@ public class CreateGPContract201ResponseDataCompensationDetails {
     return scale;
   }
 
-  public void setScale(String scale) {
+  public void setScale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
   }
 
 
-  public CreateGPContract201ResponseDataCompensationDetails salary(BigDecimal salary) {
+  public CreateGPContract201ResponseDataCompensationDetails salary(@javax.annotation.Nullable BigDecimal salary) {
     this.salary = salary;
     return this;
   }
@@ -99,12 +102,12 @@ public class CreateGPContract201ResponseDataCompensationDetails {
     return salary;
   }
 
-  public void setSalary(BigDecimal salary) {
+  public void setSalary(@javax.annotation.Nullable BigDecimal salary) {
     this.salary = salary;
   }
 
 
-  public CreateGPContract201ResponseDataCompensationDetails currency(String currency) {
+  public CreateGPContract201ResponseDataCompensationDetails currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -118,7 +121,7 @@ public class CreateGPContract201ResponseDataCompensationDetails {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 

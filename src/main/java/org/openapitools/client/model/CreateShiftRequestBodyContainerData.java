@@ -51,20 +51,22 @@ import org.openapitools.client.JSON;
 /**
  * Data for the shift
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateShiftRequestBodyContainerData {
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nonnull
   private String contractId;
 
   public static final String SERIALIZED_NAME_SHIFTS = "shifts";
   @SerializedName(SERIALIZED_NAME_SHIFTS)
+  @javax.annotation.Nonnull
   private List<CreateShiftSchema> shifts = new ArrayList<>();
 
   public CreateShiftRequestBodyContainerData() {
   }
 
-  public CreateShiftRequestBodyContainerData contractId(String contractId) {
+  public CreateShiftRequestBodyContainerData contractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -78,12 +80,12 @@ public class CreateShiftRequestBodyContainerData {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
   }
 
 
-  public CreateShiftRequestBodyContainerData shifts(List<CreateShiftSchema> shifts) {
+  public CreateShiftRequestBodyContainerData shifts(@javax.annotation.Nonnull List<CreateShiftSchema> shifts) {
     this.shifts = shifts;
     return this;
   }
@@ -105,7 +107,7 @@ public class CreateShiftRequestBodyContainerData {
     return shifts;
   }
 
-  public void setShifts(List<CreateShiftSchema> shifts) {
+  public void setShifts(@javax.annotation.Nonnull List<CreateShiftSchema> shifts) {
     this.shifts = shifts;
   }
 

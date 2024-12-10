@@ -50,36 +50,42 @@ import org.openapitools.client.JSON;
 /**
  * GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nonnull
   private String email;
 
   public static final String SERIALIZED_NAME_PHONE = "phone";
   @SerializedName(SERIALIZED_NAME_PHONE)
+  @javax.annotation.Nonnull
   private String phone;
 
   public static final String SERIALIZED_NAME_RELATIONSHIP = "relationship";
   @SerializedName(SERIALIZED_NAME_RELATIONSHIP)
+  @javax.annotation.Nonnull
   private String relationship;
 
   public static final String SERIALIZED_NAME_PREFERRED_LANGUAGE = "preferred_language";
   @SerializedName(SERIALIZED_NAME_PREFERRED_LANGUAGE)
+  @javax.annotation.Nullable
   private GetPeoplePersonalInformationById200ResponseDataEmergencyContactsInnerPreferredLanguage preferredLanguage;
 
   public GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner() {
   }
 
-  public GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner id(UUID id) {
+  public GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -93,12 +99,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyCon
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner name(String name) {
+  public GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -112,12 +118,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyCon
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner email(String email) {
+  public GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner email(@javax.annotation.Nonnull String email) {
     this.email = email;
     return this;
   }
@@ -131,12 +137,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyCon
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nonnull String email) {
     this.email = email;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner phone(String phone) {
+  public GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner phone(@javax.annotation.Nonnull String phone) {
     this.phone = phone;
     return this;
   }
@@ -150,12 +156,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyCon
     return phone;
   }
 
-  public void setPhone(String phone) {
+  public void setPhone(@javax.annotation.Nonnull String phone) {
     this.phone = phone;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner relationship(String relationship) {
+  public GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner relationship(@javax.annotation.Nonnull String relationship) {
     this.relationship = relationship;
     return this;
   }
@@ -169,12 +175,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyCon
     return relationship;
   }
 
-  public void setRelationship(String relationship) {
+  public void setRelationship(@javax.annotation.Nonnull String relationship) {
     this.relationship = relationship;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner preferredLanguage(GetPeoplePersonalInformationById200ResponseDataEmergencyContactsInnerPreferredLanguage preferredLanguage) {
+  public GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner preferredLanguage(@javax.annotation.Nullable GetPeoplePersonalInformationById200ResponseDataEmergencyContactsInnerPreferredLanguage preferredLanguage) {
     this.preferredLanguage = preferredLanguage;
     return this;
   }
@@ -188,7 +194,7 @@ public class GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyCon
     return preferredLanguage;
   }
 
-  public void setPreferredLanguage(GetPeoplePersonalInformationById200ResponseDataEmergencyContactsInnerPreferredLanguage preferredLanguage) {
+  public void setPreferredLanguage(@javax.annotation.Nullable GetPeoplePersonalInformationById200ResponseDataEmergencyContactsInnerPreferredLanguage preferredLanguage) {
     this.preferredLanguage = preferredLanguage;
   }
 

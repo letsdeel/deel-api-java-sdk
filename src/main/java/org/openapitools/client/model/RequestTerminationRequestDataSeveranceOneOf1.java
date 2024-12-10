@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * RequestTerminationRequestDataSeveranceOneOf1
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class RequestTerminationRequestDataSeveranceOneOf1 {
   /**
    * The type of severance, in cash.
@@ -103,20 +103,23 @@ public class RequestTerminationRequestDataSeveranceOneOf1 {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nonnull
   private String currency;
 
   public RequestTerminationRequestDataSeveranceOneOf1() {
   }
 
-  public RequestTerminationRequestDataSeveranceOneOf1 type(TypeEnum type) {
+  public RequestTerminationRequestDataSeveranceOneOf1 type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -130,12 +133,12 @@ public class RequestTerminationRequestDataSeveranceOneOf1 {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public RequestTerminationRequestDataSeveranceOneOf1 amount(BigDecimal amount) {
+  public RequestTerminationRequestDataSeveranceOneOf1 amount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -149,12 +152,12 @@ public class RequestTerminationRequestDataSeveranceOneOf1 {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public RequestTerminationRequestDataSeveranceOneOf1 currency(String currency) {
+  public RequestTerminationRequestDataSeveranceOneOf1 currency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
     return this;
   }
@@ -168,7 +171,7 @@ public class RequestTerminationRequestDataSeveranceOneOf1 {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
   }
 

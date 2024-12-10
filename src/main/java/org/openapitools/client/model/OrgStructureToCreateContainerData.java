@@ -51,32 +51,37 @@ import org.openapitools.client.JSON;
 /**
  * OrgStructureToCreateContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OrgStructureToCreateContainerData {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TEAMS = "teams";
   @SerializedName(SERIALIZED_NAME_TEAMS)
+  @javax.annotation.Nullable
   private List<OrgStructureToCreateContainerDataTeamsInner> teams = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_ENABLE_ROLES = "enable_roles";
   @SerializedName(SERIALIZED_NAME_ENABLE_ROLES)
+  @javax.annotation.Nullable
   private Boolean enableRoles = true;
 
   public static final String SERIALIZED_NAME_IS_MULTIPLE_SELECT = "is_multiple_select";
   @SerializedName(SERIALIZED_NAME_IS_MULTIPLE_SELECT)
+  @javax.annotation.Nullable
   private Boolean isMultipleSelect = true;
 
   public OrgStructureToCreateContainerData() {
   }
 
-  public OrgStructureToCreateContainerData name(String name) {
+  public OrgStructureToCreateContainerData name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -90,12 +95,12 @@ public class OrgStructureToCreateContainerData {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public OrgStructureToCreateContainerData teams(List<OrgStructureToCreateContainerDataTeamsInner> teams) {
+  public OrgStructureToCreateContainerData teams(@javax.annotation.Nullable List<OrgStructureToCreateContainerDataTeamsInner> teams) {
     this.teams = teams;
     return this;
   }
@@ -117,12 +122,12 @@ public class OrgStructureToCreateContainerData {
     return teams;
   }
 
-  public void setTeams(List<OrgStructureToCreateContainerDataTeamsInner> teams) {
+  public void setTeams(@javax.annotation.Nullable List<OrgStructureToCreateContainerDataTeamsInner> teams) {
     this.teams = teams;
   }
 
 
-  public OrgStructureToCreateContainerData externalId(String externalId) {
+  public OrgStructureToCreateContainerData externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -136,12 +141,12 @@ public class OrgStructureToCreateContainerData {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public OrgStructureToCreateContainerData enableRoles(Boolean enableRoles) {
+  public OrgStructureToCreateContainerData enableRoles(@javax.annotation.Nullable Boolean enableRoles) {
     this.enableRoles = enableRoles;
     return this;
   }
@@ -155,12 +160,12 @@ public class OrgStructureToCreateContainerData {
     return enableRoles;
   }
 
-  public void setEnableRoles(Boolean enableRoles) {
+  public void setEnableRoles(@javax.annotation.Nullable Boolean enableRoles) {
     this.enableRoles = enableRoles;
   }
 
 
-  public OrgStructureToCreateContainerData isMultipleSelect(Boolean isMultipleSelect) {
+  public OrgStructureToCreateContainerData isMultipleSelect(@javax.annotation.Nullable Boolean isMultipleSelect) {
     this.isMultipleSelect = isMultipleSelect;
     return this;
   }
@@ -174,7 +179,7 @@ public class OrgStructureToCreateContainerData {
     return isMultipleSelect;
   }
 
-  public void setIsMultipleSelect(Boolean isMultipleSelect) {
+  public void setIsMultipleSelect(@javax.annotation.Nullable Boolean isMultipleSelect) {
     this.isMultipleSelect = isMultipleSelect;
   }
 

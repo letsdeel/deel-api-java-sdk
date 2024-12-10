@@ -53,60 +53,72 @@ import org.openapitools.client.JSON;
 /**
  * CalculateEorEmploymentCost200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CalculateEorEmploymentCost200Response {
   public static final String SERIALIZED_NAME_COSTS = "costs";
   @SerializedName(SERIALIZED_NAME_COSTS)
+  @javax.annotation.Nullable
   private List<CalculateEorEmploymentCost200ResponseCostsInner> costs = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
+  @javax.annotation.Nullable
   private String salary;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_DEEL_FEE = "deel_fee";
   @SerializedName(SERIALIZED_NAME_DEEL_FEE)
+  @javax.annotation.Nullable
   private String deelFee;
 
   public static final String SERIALIZED_NAME_FREQUENCY = "frequency";
   @SerializedName(SERIALIZED_NAME_FREQUENCY)
+  @javax.annotation.Nullable
   private String frequency;
 
   public static final String SERIALIZED_NAME_TOTAL_COSTS = "total_costs";
   @SerializedName(SERIALIZED_NAME_TOTAL_COSTS)
+  @javax.annotation.Nullable
   private String totalCosts;
 
   public static final String SERIALIZED_NAME_COUNTRY_CODE = "country_code";
   @SerializedName(SERIALIZED_NAME_COUNTRY_CODE)
+  @javax.annotation.Nullable
   private String countryCode;
 
   public static final String SERIALIZED_NAME_BENEFITS_DATA = "benefits_data";
   @SerializedName(SERIALIZED_NAME_BENEFITS_DATA)
+  @javax.annotation.Nullable
   private List<CalculateEorEmploymentCost200ResponseBenefitsDataInner> benefitsData = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_EMPLOYER_COSTS = "employer_costs";
   @SerializedName(SERIALIZED_NAME_EMPLOYER_COSTS)
+  @javax.annotation.Nullable
   private String employerCosts;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_DATA = "additional_data";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_DATA)
+  @javax.annotation.Nullable
   private CalculateEorEmploymentCost200ResponseAdditionalData additionalData;
 
   public static final String SERIALIZED_NAME_SEVERANCE_ACCURAL = "severance_accural";
   @SerializedName(SERIALIZED_NAME_SEVERANCE_ACCURAL)
+  @javax.annotation.Nullable
   private String severanceAccural;
 
   public CalculateEorEmploymentCost200Response() {
   }
 
-  public CalculateEorEmploymentCost200Response costs(List<CalculateEorEmploymentCost200ResponseCostsInner> costs) {
+  public CalculateEorEmploymentCost200Response costs(@javax.annotation.Nullable List<CalculateEorEmploymentCost200ResponseCostsInner> costs) {
     this.costs = costs;
     return this;
   }
@@ -128,12 +140,12 @@ public class CalculateEorEmploymentCost200Response {
     return costs;
   }
 
-  public void setCosts(List<CalculateEorEmploymentCost200ResponseCostsInner> costs) {
+  public void setCosts(@javax.annotation.Nullable List<CalculateEorEmploymentCost200ResponseCostsInner> costs) {
     this.costs = costs;
   }
 
 
-  public CalculateEorEmploymentCost200Response salary(String salary) {
+  public CalculateEorEmploymentCost200Response salary(@javax.annotation.Nullable String salary) {
     this.salary = salary;
     return this;
   }
@@ -147,12 +159,12 @@ public class CalculateEorEmploymentCost200Response {
     return salary;
   }
 
-  public void setSalary(String salary) {
+  public void setSalary(@javax.annotation.Nullable String salary) {
     this.salary = salary;
   }
 
 
-  public CalculateEorEmploymentCost200Response country(String country) {
+  public CalculateEorEmploymentCost200Response country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -166,12 +178,12 @@ public class CalculateEorEmploymentCost200Response {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public CalculateEorEmploymentCost200Response currency(String currency) {
+  public CalculateEorEmploymentCost200Response currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -185,12 +197,12 @@ public class CalculateEorEmploymentCost200Response {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public CalculateEorEmploymentCost200Response deelFee(String deelFee) {
+  public CalculateEorEmploymentCost200Response deelFee(@javax.annotation.Nullable String deelFee) {
     this.deelFee = deelFee;
     return this;
   }
@@ -204,12 +216,12 @@ public class CalculateEorEmploymentCost200Response {
     return deelFee;
   }
 
-  public void setDeelFee(String deelFee) {
+  public void setDeelFee(@javax.annotation.Nullable String deelFee) {
     this.deelFee = deelFee;
   }
 
 
-  public CalculateEorEmploymentCost200Response frequency(String frequency) {
+  public CalculateEorEmploymentCost200Response frequency(@javax.annotation.Nullable String frequency) {
     this.frequency = frequency;
     return this;
   }
@@ -223,12 +235,12 @@ public class CalculateEorEmploymentCost200Response {
     return frequency;
   }
 
-  public void setFrequency(String frequency) {
+  public void setFrequency(@javax.annotation.Nullable String frequency) {
     this.frequency = frequency;
   }
 
 
-  public CalculateEorEmploymentCost200Response totalCosts(String totalCosts) {
+  public CalculateEorEmploymentCost200Response totalCosts(@javax.annotation.Nullable String totalCosts) {
     this.totalCosts = totalCosts;
     return this;
   }
@@ -242,12 +254,12 @@ public class CalculateEorEmploymentCost200Response {
     return totalCosts;
   }
 
-  public void setTotalCosts(String totalCosts) {
+  public void setTotalCosts(@javax.annotation.Nullable String totalCosts) {
     this.totalCosts = totalCosts;
   }
 
 
-  public CalculateEorEmploymentCost200Response countryCode(String countryCode) {
+  public CalculateEorEmploymentCost200Response countryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -261,12 +273,12 @@ public class CalculateEorEmploymentCost200Response {
     return countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
   }
 
 
-  public CalculateEorEmploymentCost200Response benefitsData(List<CalculateEorEmploymentCost200ResponseBenefitsDataInner> benefitsData) {
+  public CalculateEorEmploymentCost200Response benefitsData(@javax.annotation.Nullable List<CalculateEorEmploymentCost200ResponseBenefitsDataInner> benefitsData) {
     this.benefitsData = benefitsData;
     return this;
   }
@@ -288,12 +300,12 @@ public class CalculateEorEmploymentCost200Response {
     return benefitsData;
   }
 
-  public void setBenefitsData(List<CalculateEorEmploymentCost200ResponseBenefitsDataInner> benefitsData) {
+  public void setBenefitsData(@javax.annotation.Nullable List<CalculateEorEmploymentCost200ResponseBenefitsDataInner> benefitsData) {
     this.benefitsData = benefitsData;
   }
 
 
-  public CalculateEorEmploymentCost200Response employerCosts(String employerCosts) {
+  public CalculateEorEmploymentCost200Response employerCosts(@javax.annotation.Nullable String employerCosts) {
     this.employerCosts = employerCosts;
     return this;
   }
@@ -307,12 +319,12 @@ public class CalculateEorEmploymentCost200Response {
     return employerCosts;
   }
 
-  public void setEmployerCosts(String employerCosts) {
+  public void setEmployerCosts(@javax.annotation.Nullable String employerCosts) {
     this.employerCosts = employerCosts;
   }
 
 
-  public CalculateEorEmploymentCost200Response additionalData(CalculateEorEmploymentCost200ResponseAdditionalData additionalData) {
+  public CalculateEorEmploymentCost200Response additionalData(@javax.annotation.Nullable CalculateEorEmploymentCost200ResponseAdditionalData additionalData) {
     this.additionalData = additionalData;
     return this;
   }
@@ -326,12 +338,12 @@ public class CalculateEorEmploymentCost200Response {
     return additionalData;
   }
 
-  public void setAdditionalData(CalculateEorEmploymentCost200ResponseAdditionalData additionalData) {
+  public void setAdditionalData(@javax.annotation.Nullable CalculateEorEmploymentCost200ResponseAdditionalData additionalData) {
     this.additionalData = additionalData;
   }
 
 
-  public CalculateEorEmploymentCost200Response severanceAccural(String severanceAccural) {
+  public CalculateEorEmploymentCost200Response severanceAccural(@javax.annotation.Nullable String severanceAccural) {
     this.severanceAccural = severanceAccural;
     return this;
   }
@@ -345,7 +357,7 @@ public class CalculateEorEmploymentCost200Response {
     return severanceAccural;
   }
 
-  public void setSeveranceAccural(String severanceAccural) {
+  public void setSeveranceAccural(@javax.annotation.Nullable String severanceAccural) {
     this.severanceAccural = severanceAccural;
   }
 

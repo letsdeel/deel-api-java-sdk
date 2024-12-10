@@ -62,7 +62,7 @@ import com.google.gson.JsonParseException;
 
 import org.openapitools.client.JSON;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetCustomFieldsFromPeople200ResponseDataType extends AbstractOpenApiSchema {
     private static final Logger log = Logger.getLogger(GetCustomFieldsFromPeople200ResponseDataType.class.getName());
 
@@ -237,6 +237,7 @@ public class GetCustomFieldsFromPeople200ResponseDataType extends AbstractOpenAp
     public GetCustomFieldsFromPeople200ResponseDataTypeOneOf getGetCustomFieldsFromPeople200ResponseDataTypeOneOf() throws ClassCastException {
         return (GetCustomFieldsFromPeople200ResponseDataTypeOneOf)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `GetCustomFieldsFromPeople200ResponseDataTypeOneOf1`. If the actual instance is not `GetCustomFieldsFromPeople200ResponseDataTypeOneOf1`,
      * the ClassCastException will be thrown.
@@ -247,6 +248,7 @@ public class GetCustomFieldsFromPeople200ResponseDataType extends AbstractOpenAp
     public GetCustomFieldsFromPeople200ResponseDataTypeOneOf1 getGetCustomFieldsFromPeople200ResponseDataTypeOneOf1() throws ClassCastException {
         return (GetCustomFieldsFromPeople200ResponseDataTypeOneOf1)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `GetCustomFieldsFromPeople200ResponseDataTypeOneOf2`. If the actual instance is not `GetCustomFieldsFromPeople200ResponseDataTypeOneOf2`,
      * the ClassCastException will be thrown.

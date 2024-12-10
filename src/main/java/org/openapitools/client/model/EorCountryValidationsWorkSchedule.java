@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * Employee&#39;s Work schedule in days and hours.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorCountryValidationsWorkSchedule {
   public static final String SERIALIZED_NAME_DAYS = "days";
   @SerializedName(SERIALIZED_NAME_DAYS)
+  @javax.annotation.Nullable
   private EorCountryValidationsWorkScheduleDays days;
 
   public static final String SERIALIZED_NAME_HOURS = "hours";
   @SerializedName(SERIALIZED_NAME_HOURS)
+  @javax.annotation.Nullable
   private EorCountryValidationsWorkScheduleHours hours;
 
   public EorCountryValidationsWorkSchedule() {
   }
 
-  public EorCountryValidationsWorkSchedule days(EorCountryValidationsWorkScheduleDays days) {
+  public EorCountryValidationsWorkSchedule days(@javax.annotation.Nullable EorCountryValidationsWorkScheduleDays days) {
     this.days = days;
     return this;
   }
@@ -77,12 +79,12 @@ public class EorCountryValidationsWorkSchedule {
     return days;
   }
 
-  public void setDays(EorCountryValidationsWorkScheduleDays days) {
+  public void setDays(@javax.annotation.Nullable EorCountryValidationsWorkScheduleDays days) {
     this.days = days;
   }
 
 
-  public EorCountryValidationsWorkSchedule hours(EorCountryValidationsWorkScheduleHours hours) {
+  public EorCountryValidationsWorkSchedule hours(@javax.annotation.Nullable EorCountryValidationsWorkScheduleHours hours) {
     this.hours = hours;
     return this;
   }
@@ -96,7 +98,7 @@ public class EorCountryValidationsWorkSchedule {
     return hours;
   }
 
-  public void setHours(EorCountryValidationsWorkScheduleHours hours) {
+  public void setHours(@javax.annotation.Nullable EorCountryValidationsWorkScheduleHours hours) {
     this.hours = hours;
   }
 

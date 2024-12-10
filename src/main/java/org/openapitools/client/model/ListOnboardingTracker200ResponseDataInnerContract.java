@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * ListOnboardingTracker200ResponseDataInnerContract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ListOnboardingTracker200ResponseDataInnerContract {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_EFFECTIVE_DATE = "effective_date";
   @SerializedName(SERIALIZED_NAME_EFFECTIVE_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime effectiveDate;
 
   public ListOnboardingTracker200ResponseDataInnerContract() {
   }
 
-  public ListOnboardingTracker200ResponseDataInnerContract id(String id) {
+  public ListOnboardingTracker200ResponseDataInnerContract id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -76,12 +78,12 @@ public class ListOnboardingTracker200ResponseDataInnerContract {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInnerContract effectiveDate(OffsetDateTime effectiveDate) {
+  public ListOnboardingTracker200ResponseDataInnerContract effectiveDate(@javax.annotation.Nullable OffsetDateTime effectiveDate) {
     this.effectiveDate = effectiveDate;
     return this;
   }
@@ -95,7 +97,7 @@ public class ListOnboardingTracker200ResponseDataInnerContract {
     return effectiveDate;
   }
 
-  public void setEffectiveDate(OffsetDateTime effectiveDate) {
+  public void setEffectiveDate(@javax.annotation.Nullable OffsetDateTime effectiveDate) {
     this.effectiveDate = effectiveDate;
   }
 

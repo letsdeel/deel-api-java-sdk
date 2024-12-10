@@ -50,10 +50,11 @@ import org.openapitools.client.JSON;
 /**
  * CreateContractPgoTak201ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContractPgoTak201ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private UUID id;
 
   /**
@@ -118,16 +119,18 @@ public class CreateContractPgoTak201ResponseData {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_CREATED = "created";
   @SerializedName(SERIALIZED_NAME_CREATED)
+  @javax.annotation.Nullable
   private Boolean created;
 
   public CreateContractPgoTak201ResponseData() {
   }
 
-  public CreateContractPgoTak201ResponseData id(UUID id) {
+  public CreateContractPgoTak201ResponseData id(@javax.annotation.Nullable UUID id) {
     this.id = id;
     return this;
   }
@@ -141,12 +144,12 @@ public class CreateContractPgoTak201ResponseData {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nullable UUID id) {
     this.id = id;
   }
 
 
-  public CreateContractPgoTak201ResponseData status(StatusEnum status) {
+  public CreateContractPgoTak201ResponseData status(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -160,12 +163,12 @@ public class CreateContractPgoTak201ResponseData {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
   }
 
 
-  public CreateContractPgoTak201ResponseData created(Boolean created) {
+  public CreateContractPgoTak201ResponseData created(@javax.annotation.Nullable Boolean created) {
     this.created = created;
     return this;
   }
@@ -179,7 +182,7 @@ public class CreateContractPgoTak201ResponseData {
     return created;
   }
 
-  public void setCreated(Boolean created) {
+  public void setCreated(@javax.annotation.Nullable Boolean created) {
     this.created = created;
   }
 

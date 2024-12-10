@@ -49,44 +49,52 @@ import org.openapitools.client.JSON;
 /**
  * ListOnboardingTracker200ResponseDataInnerProgress
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ListOnboardingTracker200ResponseDataInnerProgress {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_REFERENCE_DATE = "reference_date";
   @SerializedName(SERIALIZED_NAME_REFERENCE_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime referenceDate;
 
   public static final String SERIALIZED_NAME_PEOPLE_LIST_STATUS = "people_list_status";
   @SerializedName(SERIALIZED_NAME_PEOPLE_LIST_STATUS)
+  @javax.annotation.Nullable
   private String peopleListStatus;
 
   public static final String SERIALIZED_NAME_SUBJECT_TO_OVERDUE = "subject_to_overdue";
   @SerializedName(SERIALIZED_NAME_SUBJECT_TO_OVERDUE)
+  @javax.annotation.Nullable
   private Boolean subjectToOverdue;
 
   public static final String SERIALIZED_NAME_ONBOARDING_DUE_DATE = "onboarding_due_date";
   @SerializedName(SERIALIZED_NAME_ONBOARDING_DUE_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime onboardingDueDate;
 
   public static final String SERIALIZED_NAME_REFERENCE_DATE_TYPE = "reference_date_type";
   @SerializedName(SERIALIZED_NAME_REFERENCE_DATE_TYPE)
+  @javax.annotation.Nullable
   private String referenceDateType;
 
   public static final String SERIALIZED_NAME_REFERENCE_DATE_TIMEZONE = "reference_date_timezone";
   @SerializedName(SERIALIZED_NAME_REFERENCE_DATE_TIMEZONE)
+  @javax.annotation.Nullable
   private String referenceDateTimezone;
 
   public static final String SERIALIZED_NAME_IS_ACTION_REQUIRED_FROM_CLIENT = "is_action_required_from_client";
   @SerializedName(SERIALIZED_NAME_IS_ACTION_REQUIRED_FROM_CLIENT)
+  @javax.annotation.Nullable
   private Boolean isActionRequiredFromClient;
 
   public ListOnboardingTracker200ResponseDataInnerProgress() {
   }
 
-  public ListOnboardingTracker200ResponseDataInnerProgress status(String status) {
+  public ListOnboardingTracker200ResponseDataInnerProgress status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -100,12 +108,12 @@ public class ListOnboardingTracker200ResponseDataInnerProgress {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInnerProgress referenceDate(OffsetDateTime referenceDate) {
+  public ListOnboardingTracker200ResponseDataInnerProgress referenceDate(@javax.annotation.Nullable OffsetDateTime referenceDate) {
     this.referenceDate = referenceDate;
     return this;
   }
@@ -119,12 +127,12 @@ public class ListOnboardingTracker200ResponseDataInnerProgress {
     return referenceDate;
   }
 
-  public void setReferenceDate(OffsetDateTime referenceDate) {
+  public void setReferenceDate(@javax.annotation.Nullable OffsetDateTime referenceDate) {
     this.referenceDate = referenceDate;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInnerProgress peopleListStatus(String peopleListStatus) {
+  public ListOnboardingTracker200ResponseDataInnerProgress peopleListStatus(@javax.annotation.Nullable String peopleListStatus) {
     this.peopleListStatus = peopleListStatus;
     return this;
   }
@@ -138,12 +146,12 @@ public class ListOnboardingTracker200ResponseDataInnerProgress {
     return peopleListStatus;
   }
 
-  public void setPeopleListStatus(String peopleListStatus) {
+  public void setPeopleListStatus(@javax.annotation.Nullable String peopleListStatus) {
     this.peopleListStatus = peopleListStatus;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInnerProgress subjectToOverdue(Boolean subjectToOverdue) {
+  public ListOnboardingTracker200ResponseDataInnerProgress subjectToOverdue(@javax.annotation.Nullable Boolean subjectToOverdue) {
     this.subjectToOverdue = subjectToOverdue;
     return this;
   }
@@ -157,12 +165,12 @@ public class ListOnboardingTracker200ResponseDataInnerProgress {
     return subjectToOverdue;
   }
 
-  public void setSubjectToOverdue(Boolean subjectToOverdue) {
+  public void setSubjectToOverdue(@javax.annotation.Nullable Boolean subjectToOverdue) {
     this.subjectToOverdue = subjectToOverdue;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInnerProgress onboardingDueDate(OffsetDateTime onboardingDueDate) {
+  public ListOnboardingTracker200ResponseDataInnerProgress onboardingDueDate(@javax.annotation.Nullable OffsetDateTime onboardingDueDate) {
     this.onboardingDueDate = onboardingDueDate;
     return this;
   }
@@ -176,12 +184,12 @@ public class ListOnboardingTracker200ResponseDataInnerProgress {
     return onboardingDueDate;
   }
 
-  public void setOnboardingDueDate(OffsetDateTime onboardingDueDate) {
+  public void setOnboardingDueDate(@javax.annotation.Nullable OffsetDateTime onboardingDueDate) {
     this.onboardingDueDate = onboardingDueDate;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInnerProgress referenceDateType(String referenceDateType) {
+  public ListOnboardingTracker200ResponseDataInnerProgress referenceDateType(@javax.annotation.Nullable String referenceDateType) {
     this.referenceDateType = referenceDateType;
     return this;
   }
@@ -195,12 +203,12 @@ public class ListOnboardingTracker200ResponseDataInnerProgress {
     return referenceDateType;
   }
 
-  public void setReferenceDateType(String referenceDateType) {
+  public void setReferenceDateType(@javax.annotation.Nullable String referenceDateType) {
     this.referenceDateType = referenceDateType;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInnerProgress referenceDateTimezone(String referenceDateTimezone) {
+  public ListOnboardingTracker200ResponseDataInnerProgress referenceDateTimezone(@javax.annotation.Nullable String referenceDateTimezone) {
     this.referenceDateTimezone = referenceDateTimezone;
     return this;
   }
@@ -214,12 +222,12 @@ public class ListOnboardingTracker200ResponseDataInnerProgress {
     return referenceDateTimezone;
   }
 
-  public void setReferenceDateTimezone(String referenceDateTimezone) {
+  public void setReferenceDateTimezone(@javax.annotation.Nullable String referenceDateTimezone) {
     this.referenceDateTimezone = referenceDateTimezone;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInnerProgress isActionRequiredFromClient(Boolean isActionRequiredFromClient) {
+  public ListOnboardingTracker200ResponseDataInnerProgress isActionRequiredFromClient(@javax.annotation.Nullable Boolean isActionRequiredFromClient) {
     this.isActionRequiredFromClient = isActionRequiredFromClient;
     return this;
   }
@@ -233,7 +241,7 @@ public class ListOnboardingTracker200ResponseDataInnerProgress {
     return isActionRequiredFromClient;
   }
 
-  public void setIsActionRequiredFromClient(Boolean isActionRequiredFromClient) {
+  public void setIsActionRequiredFromClient(@javax.annotation.Nullable Boolean isActionRequiredFromClient) {
     this.isActionRequiredFromClient = isActionRequiredFromClient;
   }
 

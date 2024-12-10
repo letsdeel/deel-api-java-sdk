@@ -50,24 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * UpdateShiftRequestDataMetaBreaksInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateShiftRequestDataMetaBreaksInner {
   public static final String SERIALIZED_NAME_END = "end";
   @SerializedName(SERIALIZED_NAME_END)
+  @javax.annotation.Nullable
   private UpdateShiftRequestDataMetaBreaksInnerEnd end;
 
   public static final String SERIALIZED_NAME_START = "start";
   @SerializedName(SERIALIZED_NAME_START)
+  @javax.annotation.Nullable
   private UpdateShiftRequestDataMetaBreaksInnerStart start;
 
   public static final String SERIALIZED_NAME_IS_PAID = "is_paid";
   @SerializedName(SERIALIZED_NAME_IS_PAID)
+  @javax.annotation.Nullable
   private Boolean isPaid;
 
   public UpdateShiftRequestDataMetaBreaksInner() {
   }
 
-  public UpdateShiftRequestDataMetaBreaksInner end(UpdateShiftRequestDataMetaBreaksInnerEnd end) {
+  public UpdateShiftRequestDataMetaBreaksInner end(@javax.annotation.Nullable UpdateShiftRequestDataMetaBreaksInnerEnd end) {
     this.end = end;
     return this;
   }
@@ -81,12 +84,12 @@ public class UpdateShiftRequestDataMetaBreaksInner {
     return end;
   }
 
-  public void setEnd(UpdateShiftRequestDataMetaBreaksInnerEnd end) {
+  public void setEnd(@javax.annotation.Nullable UpdateShiftRequestDataMetaBreaksInnerEnd end) {
     this.end = end;
   }
 
 
-  public UpdateShiftRequestDataMetaBreaksInner start(UpdateShiftRequestDataMetaBreaksInnerStart start) {
+  public UpdateShiftRequestDataMetaBreaksInner start(@javax.annotation.Nullable UpdateShiftRequestDataMetaBreaksInnerStart start) {
     this.start = start;
     return this;
   }
@@ -100,12 +103,12 @@ public class UpdateShiftRequestDataMetaBreaksInner {
     return start;
   }
 
-  public void setStart(UpdateShiftRequestDataMetaBreaksInnerStart start) {
+  public void setStart(@javax.annotation.Nullable UpdateShiftRequestDataMetaBreaksInnerStart start) {
     this.start = start;
   }
 
 
-  public UpdateShiftRequestDataMetaBreaksInner isPaid(Boolean isPaid) {
+  public UpdateShiftRequestDataMetaBreaksInner isPaid(@javax.annotation.Nullable Boolean isPaid) {
     this.isPaid = isPaid;
     return this;
   }
@@ -119,7 +122,7 @@ public class UpdateShiftRequestDataMetaBreaksInner {
     return isPaid;
   }
 
-  public void setIsPaid(Boolean isPaid) {
+  public void setIsPaid(@javax.annotation.Nullable Boolean isPaid) {
     this.isPaid = isPaid;
   }
 

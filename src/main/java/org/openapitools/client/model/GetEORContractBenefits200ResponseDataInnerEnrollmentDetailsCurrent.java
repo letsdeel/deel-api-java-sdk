@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsCurrent
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsCurrent {
   public static final String SERIALIZED_NAME_MONTHLY_COST = "monthly_cost";
   @SerializedName(SERIALIZED_NAME_MONTHLY_COST)
+  @javax.annotation.Nullable
   private String monthlyCost;
 
   public static final String SERIALIZED_NAME_MONTHLY_CONTRIBUTION = "monthly_contribution";
   @SerializedName(SERIALIZED_NAME_MONTHLY_CONTRIBUTION)
+  @javax.annotation.Nullable
   private String monthlyContribution;
 
   public GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsCurrent() {
   }
 
-  public GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsCurrent monthlyCost(String monthlyCost) {
+  public GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsCurrent monthlyCost(@javax.annotation.Nullable String monthlyCost) {
     this.monthlyCost = monthlyCost;
     return this;
   }
@@ -75,12 +77,12 @@ public class GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsCurrent 
     return monthlyCost;
   }
 
-  public void setMonthlyCost(String monthlyCost) {
+  public void setMonthlyCost(@javax.annotation.Nullable String monthlyCost) {
     this.monthlyCost = monthlyCost;
   }
 
 
-  public GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsCurrent monthlyContribution(String monthlyContribution) {
+  public GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsCurrent monthlyContribution(@javax.annotation.Nullable String monthlyContribution) {
     this.monthlyContribution = monthlyContribution;
     return this;
   }
@@ -94,7 +96,7 @@ public class GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsCurrent 
     return monthlyContribution;
   }
 
-  public void setMonthlyContribution(String monthlyContribution) {
+  public void setMonthlyContribution(@javax.annotation.Nullable String monthlyContribution) {
     this.monthlyContribution = monthlyContribution;
   }
 

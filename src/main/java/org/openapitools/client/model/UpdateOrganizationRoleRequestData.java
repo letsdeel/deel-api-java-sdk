@@ -50,24 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * UpdateOrganizationRoleRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateOrganizationRoleRequestData {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_PERMISSION_SETS = "permissionSets";
   @SerializedName(SERIALIZED_NAME_PERMISSION_SETS)
+  @javax.annotation.Nullable
   private List<String> permissionSets = new ArrayList<>();
 
   public UpdateOrganizationRoleRequestData() {
   }
 
-  public UpdateOrganizationRoleRequestData name(String name) {
+  public UpdateOrganizationRoleRequestData name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -81,12 +84,12 @@ public class UpdateOrganizationRoleRequestData {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public UpdateOrganizationRoleRequestData description(String description) {
+  public UpdateOrganizationRoleRequestData description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -100,12 +103,12 @@ public class UpdateOrganizationRoleRequestData {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public UpdateOrganizationRoleRequestData permissionSets(List<String> permissionSets) {
+  public UpdateOrganizationRoleRequestData permissionSets(@javax.annotation.Nullable List<String> permissionSets) {
     this.permissionSets = permissionSets;
     return this;
   }
@@ -127,7 +130,7 @@ public class UpdateOrganizationRoleRequestData {
     return permissionSets;
   }
 
-  public void setPermissionSets(List<String> permissionSets) {
+  public void setPermissionSets(@javax.annotation.Nullable List<String> permissionSets) {
     this.permissionSets = permissionSets;
   }
 

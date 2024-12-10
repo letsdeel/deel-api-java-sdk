@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * TimeoffReview
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeoffReview {
   public static final String SERIALIZED_NAME_IS_APPROVED = "is_approved";
   @SerializedName(SERIALIZED_NAME_IS_APPROVED)
+  @javax.annotation.Nonnull
   private Boolean isApproved;
 
   public static final String SERIALIZED_NAME_DENIAL_REASON = "denial_reason";
   @SerializedName(SERIALIZED_NAME_DENIAL_REASON)
+  @javax.annotation.Nullable
   private String denialReason;
 
   public TimeoffReview() {
   }
 
-  public TimeoffReview isApproved(Boolean isApproved) {
+  public TimeoffReview isApproved(@javax.annotation.Nonnull Boolean isApproved) {
     this.isApproved = isApproved;
     return this;
   }
@@ -75,12 +77,12 @@ public class TimeoffReview {
     return isApproved;
   }
 
-  public void setIsApproved(Boolean isApproved) {
+  public void setIsApproved(@javax.annotation.Nonnull Boolean isApproved) {
     this.isApproved = isApproved;
   }
 
 
-  public TimeoffReview denialReason(String denialReason) {
+  public TimeoffReview denialReason(@javax.annotation.Nullable String denialReason) {
     this.denialReason = denialReason;
     return this;
   }
@@ -94,7 +96,7 @@ public class TimeoffReview {
     return denialReason;
   }
 
-  public void setDenialReason(String denialReason) {
+  public void setDenialReason(@javax.annotation.Nullable String denialReason) {
     this.denialReason = denialReason;
   }
 

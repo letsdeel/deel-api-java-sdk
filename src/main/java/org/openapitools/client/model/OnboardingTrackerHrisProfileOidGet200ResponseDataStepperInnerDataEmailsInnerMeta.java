@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInnerMeta
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInnerMeta {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_SENT_AT = "sent_at";
   @SerializedName(SERIALIZED_NAME_SENT_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime sentAt;
 
   public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInnerMeta() {
   }
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInnerMeta type(String type) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInnerMeta type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -80,12 +83,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEm
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInnerMeta email(String email) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInnerMeta email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -99,12 +102,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEm
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInnerMeta sentAt(OffsetDateTime sentAt) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInnerMeta sentAt(@javax.annotation.Nullable OffsetDateTime sentAt) {
     this.sentAt = sentAt;
     return this;
   }
@@ -118,7 +121,7 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEm
     return sentAt;
   }
 
-  public void setSentAt(OffsetDateTime sentAt) {
+  public void setSentAt(@javax.annotation.Nullable OffsetDateTime sentAt) {
     this.sentAt = sentAt;
   }
 

@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * CreatedHrisDirectEmployeeContainerDataCompensationDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreatedHrisDirectEmployeeContainerDataCompensationDetails {
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nonnull
   private String currency;
 
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
+  @javax.annotation.Nonnull
   private Float salary;
 
   public CreatedHrisDirectEmployeeContainerDataCompensationDetails() {
   }
 
-  public CreatedHrisDirectEmployeeContainerDataCompensationDetails currency(String currency) {
+  public CreatedHrisDirectEmployeeContainerDataCompensationDetails currency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
     return this;
   }
@@ -75,12 +77,12 @@ public class CreatedHrisDirectEmployeeContainerDataCompensationDetails {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
   }
 
 
-  public CreatedHrisDirectEmployeeContainerDataCompensationDetails salary(Float salary) {
+  public CreatedHrisDirectEmployeeContainerDataCompensationDetails salary(@javax.annotation.Nonnull Float salary) {
     this.salary = salary;
     return this;
   }
@@ -94,7 +96,7 @@ public class CreatedHrisDirectEmployeeContainerDataCompensationDetails {
     return salary;
   }
 
-  public void setSalary(Float salary) {
+  public void setSalary(@javax.annotation.Nonnull Float salary) {
     this.salary = salary;
   }
 

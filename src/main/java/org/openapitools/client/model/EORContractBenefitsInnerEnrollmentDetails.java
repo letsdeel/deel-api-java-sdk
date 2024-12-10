@@ -51,28 +51,32 @@ import org.openapitools.client.JSON;
 /**
  * EORContractBenefitsInnerEnrollmentDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EORContractBenefitsInnerEnrollmentDetails {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_PLAN = "plan";
   @SerializedName(SERIALIZED_NAME_PLAN)
+  @javax.annotation.Nullable
   private EORContractBenefitsInnerPlan plan;
 
   public static final String SERIALIZED_NAME_STANDARD = "standard";
   @SerializedName(SERIALIZED_NAME_STANDARD)
+  @javax.annotation.Nullable
   private EORContractBenefitsInnerEnrollmentDetailsStandard standard;
 
   public static final String SERIALIZED_NAME_CURRENT = "current";
   @SerializedName(SERIALIZED_NAME_CURRENT)
+  @javax.annotation.Nullable
   private EORContractBenefitsInnerEnrollmentDetailsCurrent current;
 
   public EORContractBenefitsInnerEnrollmentDetails() {
   }
 
-  public EORContractBenefitsInnerEnrollmentDetails status(String status) {
+  public EORContractBenefitsInnerEnrollmentDetails status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -86,12 +90,12 @@ public class EORContractBenefitsInnerEnrollmentDetails {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public EORContractBenefitsInnerEnrollmentDetails plan(EORContractBenefitsInnerPlan plan) {
+  public EORContractBenefitsInnerEnrollmentDetails plan(@javax.annotation.Nullable EORContractBenefitsInnerPlan plan) {
     this.plan = plan;
     return this;
   }
@@ -105,12 +109,12 @@ public class EORContractBenefitsInnerEnrollmentDetails {
     return plan;
   }
 
-  public void setPlan(EORContractBenefitsInnerPlan plan) {
+  public void setPlan(@javax.annotation.Nullable EORContractBenefitsInnerPlan plan) {
     this.plan = plan;
   }
 
 
-  public EORContractBenefitsInnerEnrollmentDetails standard(EORContractBenefitsInnerEnrollmentDetailsStandard standard) {
+  public EORContractBenefitsInnerEnrollmentDetails standard(@javax.annotation.Nullable EORContractBenefitsInnerEnrollmentDetailsStandard standard) {
     this.standard = standard;
     return this;
   }
@@ -124,12 +128,12 @@ public class EORContractBenefitsInnerEnrollmentDetails {
     return standard;
   }
 
-  public void setStandard(EORContractBenefitsInnerEnrollmentDetailsStandard standard) {
+  public void setStandard(@javax.annotation.Nullable EORContractBenefitsInnerEnrollmentDetailsStandard standard) {
     this.standard = standard;
   }
 
 
-  public EORContractBenefitsInnerEnrollmentDetails current(EORContractBenefitsInnerEnrollmentDetailsCurrent current) {
+  public EORContractBenefitsInnerEnrollmentDetails current(@javax.annotation.Nullable EORContractBenefitsInnerEnrollmentDetailsCurrent current) {
     this.current = current;
     return this;
   }
@@ -143,7 +147,7 @@ public class EORContractBenefitsInnerEnrollmentDetails {
     return current;
   }
 
-  public void setCurrent(EORContractBenefitsInnerEnrollmentDetailsCurrent current) {
+  public void setCurrent(@javax.annotation.Nullable EORContractBenefitsInnerEnrollmentDetailsCurrent current) {
     this.current = current;
   }
 

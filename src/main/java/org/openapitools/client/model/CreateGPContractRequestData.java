@@ -52,32 +52,37 @@ import org.openapitools.client.JSON;
 /**
  * CreateGPContractRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateGPContractRequestData {
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
+  @javax.annotation.Nonnull
   private CreateGPContractRequestDataClient client;
 
   public static final String SERIALIZED_NAME_EMPLOYEE = "employee";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE)
+  @javax.annotation.Nonnull
   private CreateGPContractRequestDataEmployee employee;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nonnull
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_EMPLOYMENT = "employment";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT)
+  @javax.annotation.Nonnull
   private CreateGPContractRequestDataEmployment employment;
 
   public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
   @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
+  @javax.annotation.Nonnull
   private CreateGPContractRequestDataCompensationDetails compensationDetails;
 
   public CreateGPContractRequestData() {
   }
 
-  public CreateGPContractRequestData client(CreateGPContractRequestDataClient client) {
+  public CreateGPContractRequestData client(@javax.annotation.Nonnull CreateGPContractRequestDataClient client) {
     this.client = client;
     return this;
   }
@@ -91,12 +96,12 @@ public class CreateGPContractRequestData {
     return client;
   }
 
-  public void setClient(CreateGPContractRequestDataClient client) {
+  public void setClient(@javax.annotation.Nonnull CreateGPContractRequestDataClient client) {
     this.client = client;
   }
 
 
-  public CreateGPContractRequestData employee(CreateGPContractRequestDataEmployee employee) {
+  public CreateGPContractRequestData employee(@javax.annotation.Nonnull CreateGPContractRequestDataEmployee employee) {
     this.employee = employee;
     return this;
   }
@@ -110,12 +115,12 @@ public class CreateGPContractRequestData {
     return employee;
   }
 
-  public void setEmployee(CreateGPContractRequestDataEmployee employee) {
+  public void setEmployee(@javax.annotation.Nonnull CreateGPContractRequestDataEmployee employee) {
     this.employee = employee;
   }
 
 
-  public CreateGPContractRequestData jobTitle(String jobTitle) {
+  public CreateGPContractRequestData jobTitle(@javax.annotation.Nonnull String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -129,12 +134,12 @@ public class CreateGPContractRequestData {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nonnull String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public CreateGPContractRequestData employment(CreateGPContractRequestDataEmployment employment) {
+  public CreateGPContractRequestData employment(@javax.annotation.Nonnull CreateGPContractRequestDataEmployment employment) {
     this.employment = employment;
     return this;
   }
@@ -148,12 +153,12 @@ public class CreateGPContractRequestData {
     return employment;
   }
 
-  public void setEmployment(CreateGPContractRequestDataEmployment employment) {
+  public void setEmployment(@javax.annotation.Nonnull CreateGPContractRequestDataEmployment employment) {
     this.employment = employment;
   }
 
 
-  public CreateGPContractRequestData compensationDetails(CreateGPContractRequestDataCompensationDetails compensationDetails) {
+  public CreateGPContractRequestData compensationDetails(@javax.annotation.Nonnull CreateGPContractRequestDataCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
     return this;
   }
@@ -167,7 +172,7 @@ public class CreateGPContractRequestData {
     return compensationDetails;
   }
 
-  public void setCompensationDetails(CreateGPContractRequestDataCompensationDetails compensationDetails) {
+  public void setCompensationDetails(@javax.annotation.Nonnull CreateGPContractRequestDataCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
   }
 

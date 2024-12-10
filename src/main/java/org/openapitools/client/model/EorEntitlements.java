@@ -51,16 +51,17 @@ import org.openapitools.client.JSON;
 /**
  * Time-off Entitlements for EOR contracts.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorEntitlements {
   public static final String SERIALIZED_NAME_ENTITLEMENTS = "entitlements";
   @SerializedName(SERIALIZED_NAME_ENTITLEMENTS)
+  @javax.annotation.Nonnull
   private List<EorEntitlementListItem> entitlements = new ArrayList<>();
 
   public EorEntitlements() {
   }
 
-  public EorEntitlements entitlements(List<EorEntitlementListItem> entitlements) {
+  public EorEntitlements entitlements(@javax.annotation.Nonnull List<EorEntitlementListItem> entitlements) {
     this.entitlements = entitlements;
     return this;
   }
@@ -82,7 +83,7 @@ public class EorEntitlements {
     return entitlements;
   }
 
-  public void setEntitlements(List<EorEntitlementListItem> entitlements) {
+  public void setEntitlements(@javax.annotation.Nonnull List<EorEntitlementListItem> entitlements) {
     this.entitlements = entitlements;
   }
 

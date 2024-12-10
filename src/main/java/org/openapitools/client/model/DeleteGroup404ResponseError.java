@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * DeleteGroup404ResponseError
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class DeleteGroup404ResponseError {
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nullable
   private String message;
 
   public DeleteGroup404ResponseError() {
   }
 
-  public DeleteGroup404ResponseError message(String message) {
+  public DeleteGroup404ResponseError message(@javax.annotation.Nullable String message) {
     this.message = message;
     return this;
   }
@@ -71,7 +72,7 @@ public class DeleteGroup404ResponseError {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nullable String message) {
     this.message = message;
   }
 

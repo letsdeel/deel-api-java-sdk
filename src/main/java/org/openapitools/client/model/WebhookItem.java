@@ -51,18 +51,21 @@ import org.openapitools.client.JSON;
 /**
  * WebhookItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class WebhookItem {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   /**
@@ -119,48 +122,58 @@ public class WebhookItem {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
+  @javax.annotation.Nonnull
   private String url;
 
   public static final String SERIALIZED_NAME_SIGNING_KEY = "signing_key";
   @SerializedName(SERIALIZED_NAME_SIGNING_KEY)
+  @javax.annotation.Nullable
   private String signingKey;
 
   public static final String SERIALIZED_NAME_API_VERSION = "api_version";
   @SerializedName(SERIALIZED_NAME_API_VERSION)
+  @javax.annotation.Nonnull
   private String apiVersion = "v2";
 
   public static final String SERIALIZED_NAME_EVENTS = "events";
   @SerializedName(SERIALIZED_NAME_EVENTS)
+  @javax.annotation.Nonnull
   private List<String> events = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private String createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nonnull
   private String updatedAt;
 
   public static final String SERIALIZED_NAME_HIDDEN = "hidden";
   @SerializedName(SERIALIZED_NAME_HIDDEN)
+  @javax.annotation.Nullable
   private Boolean hidden;
 
   public static final String SERIALIZED_NAME_INTERNAL = "internal";
   @SerializedName(SERIALIZED_NAME_INTERNAL)
+  @javax.annotation.Nullable
   private Boolean internal;
 
   public static final String SERIALIZED_NAME_DELETED_AT = "deleted_at";
   @SerializedName(SERIALIZED_NAME_DELETED_AT)
+  @javax.annotation.Nullable
   private String deletedAt;
 
   public WebhookItem() {
   }
 
-  public WebhookItem id(String id) {
+  public WebhookItem id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -174,12 +187,12 @@ public class WebhookItem {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public WebhookItem name(String name) {
+  public WebhookItem name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -193,12 +206,12 @@ public class WebhookItem {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public WebhookItem description(String description) {
+  public WebhookItem description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -212,12 +225,12 @@ public class WebhookItem {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public WebhookItem status(StatusEnum status) {
+  public WebhookItem status(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -231,12 +244,12 @@ public class WebhookItem {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 
 
-  public WebhookItem url(String url) {
+  public WebhookItem url(@javax.annotation.Nonnull String url) {
     this.url = url;
     return this;
   }
@@ -250,12 +263,12 @@ public class WebhookItem {
     return url;
   }
 
-  public void setUrl(String url) {
+  public void setUrl(@javax.annotation.Nonnull String url) {
     this.url = url;
   }
 
 
-  public WebhookItem signingKey(String signingKey) {
+  public WebhookItem signingKey(@javax.annotation.Nullable String signingKey) {
     this.signingKey = signingKey;
     return this;
   }
@@ -269,12 +282,12 @@ public class WebhookItem {
     return signingKey;
   }
 
-  public void setSigningKey(String signingKey) {
+  public void setSigningKey(@javax.annotation.Nullable String signingKey) {
     this.signingKey = signingKey;
   }
 
 
-  public WebhookItem apiVersion(String apiVersion) {
+  public WebhookItem apiVersion(@javax.annotation.Nonnull String apiVersion) {
     this.apiVersion = apiVersion;
     return this;
   }
@@ -288,12 +301,12 @@ public class WebhookItem {
     return apiVersion;
   }
 
-  public void setApiVersion(String apiVersion) {
+  public void setApiVersion(@javax.annotation.Nonnull String apiVersion) {
     this.apiVersion = apiVersion;
   }
 
 
-  public WebhookItem events(List<String> events) {
+  public WebhookItem events(@javax.annotation.Nonnull List<String> events) {
     this.events = events;
     return this;
   }
@@ -315,12 +328,12 @@ public class WebhookItem {
     return events;
   }
 
-  public void setEvents(List<String> events) {
+  public void setEvents(@javax.annotation.Nonnull List<String> events) {
     this.events = events;
   }
 
 
-  public WebhookItem createdAt(String createdAt) {
+  public WebhookItem createdAt(@javax.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -334,12 +347,12 @@ public class WebhookItem {
     return createdAt;
   }
 
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull String createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public WebhookItem updatedAt(String updatedAt) {
+  public WebhookItem updatedAt(@javax.annotation.Nonnull String updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -353,12 +366,12 @@ public class WebhookItem {
     return updatedAt;
   }
 
-  public void setUpdatedAt(String updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nonnull String updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public WebhookItem hidden(Boolean hidden) {
+  public WebhookItem hidden(@javax.annotation.Nullable Boolean hidden) {
     this.hidden = hidden;
     return this;
   }
@@ -372,12 +385,12 @@ public class WebhookItem {
     return hidden;
   }
 
-  public void setHidden(Boolean hidden) {
+  public void setHidden(@javax.annotation.Nullable Boolean hidden) {
     this.hidden = hidden;
   }
 
 
-  public WebhookItem internal(Boolean internal) {
+  public WebhookItem internal(@javax.annotation.Nullable Boolean internal) {
     this.internal = internal;
     return this;
   }
@@ -391,12 +404,12 @@ public class WebhookItem {
     return internal;
   }
 
-  public void setInternal(Boolean internal) {
+  public void setInternal(@javax.annotation.Nullable Boolean internal) {
     this.internal = internal;
   }
 
 
-  public WebhookItem deletedAt(String deletedAt) {
+  public WebhookItem deletedAt(@javax.annotation.Nullable String deletedAt) {
     this.deletedAt = deletedAt;
     return this;
   }
@@ -410,7 +423,7 @@ public class WebhookItem {
     return deletedAt;
   }
 
-  public void setDeletedAt(String deletedAt) {
+  public void setDeletedAt(@javax.annotation.Nullable String deletedAt) {
     this.deletedAt = deletedAt;
   }
 

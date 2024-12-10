@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * PeoplePersonalUpdatedContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PeoplePersonalUpdatedContainer {
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public PeoplePersonalUpdatedContainer() {
   }
 
-  public PeoplePersonalUpdatedContainer description(String description) {
+  public PeoplePersonalUpdatedContainer description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -71,7 +72,7 @@ public class PeoplePersonalUpdatedContainer {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 

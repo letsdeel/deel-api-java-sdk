@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * EorCountryValidationsHealthInsurance
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorCountryValidationsHealthInsurance {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private BenefitStatusEnum status;
 
   public static final String SERIALIZED_NAME_PROVIDERS = "providers";
   @SerializedName(SERIALIZED_NAME_PROVIDERS)
+  @javax.annotation.Nullable
   private List<HealthInsuranceProvider> providers = new ArrayList<>();
 
   public EorCountryValidationsHealthInsurance() {
   }
 
-  public EorCountryValidationsHealthInsurance status(BenefitStatusEnum status) {
+  public EorCountryValidationsHealthInsurance status(@javax.annotation.Nullable BenefitStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -79,12 +81,12 @@ public class EorCountryValidationsHealthInsurance {
     return status;
   }
 
-  public void setStatus(BenefitStatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable BenefitStatusEnum status) {
     this.status = status;
   }
 
 
-  public EorCountryValidationsHealthInsurance providers(List<HealthInsuranceProvider> providers) {
+  public EorCountryValidationsHealthInsurance providers(@javax.annotation.Nullable List<HealthInsuranceProvider> providers) {
     this.providers = providers;
     return this;
   }
@@ -106,7 +108,7 @@ public class EorCountryValidationsHealthInsurance {
     return providers;
   }
 
-  public void setProviders(List<HealthInsuranceProvider> providers) {
+  public void setProviders(@javax.annotation.Nullable List<HealthInsuranceProvider> providers) {
     this.providers = providers;
   }
 

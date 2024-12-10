@@ -49,64 +49,77 @@ import org.openapitools.client.JSON;
 /**
  * RequesterTimeOff
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class RequesterTimeOff {
   public static final String SERIALIZED_NAME_IS_PART_TIME = "is_part_time";
   @SerializedName(SERIALIZED_NAME_IS_PART_TIME)
+  @javax.annotation.Nullable
   private Boolean isPartTime;
 
   public static final String SERIALIZED_NAME_HAS_REACHED_END_DATE = "has_reached_end_date";
   @SerializedName(SERIALIZED_NAME_HAS_REACHED_END_DATE)
+  @javax.annotation.Nullable
   private Boolean hasReachedEndDate;
 
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_UUID = "uuid";
   @SerializedName(SERIALIZED_NAME_UUID)
+  @javax.annotation.Nullable
   private String uuid;
 
   public static final String SERIALIZED_NAME_HRIS_PROFILE_ID = "hris_profile_id";
   @SerializedName(SERIALIZED_NAME_HRIS_PROFILE_ID)
+  @javax.annotation.Nullable
   private String hrisProfileId;
 
   public static final String SERIALIZED_NAME_CLIENT_PROFILE_ID = "client_profile_id";
   @SerializedName(SERIALIZED_NAME_CLIENT_PROFILE_ID)
+  @javax.annotation.Nullable
   private String clientProfileId;
 
   public static final String SERIALIZED_NAME_ORGANIZATION_ID = "organization_id";
   @SerializedName(SERIALIZED_NAME_ORGANIZATION_ID)
+  @javax.annotation.Nullable
   private BigDecimal organizationId;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_WORKER_TYPE = "worker_type";
   @SerializedName(SERIALIZED_NAME_WORKER_TYPE)
+  @javax.annotation.Nullable
   private String workerType;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private String endDate;
 
   public static final String SERIALIZED_NAME_PART_TIME_PERCENTAGE = "part_time_percentage";
   @SerializedName(SERIALIZED_NAME_PART_TIME_PERCENTAGE)
+  @javax.annotation.Nullable
   private String partTimePercentage;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private String createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private String updatedAt;
 
   public RequesterTimeOff() {
   }
 
-  public RequesterTimeOff isPartTime(Boolean isPartTime) {
+  public RequesterTimeOff isPartTime(@javax.annotation.Nullable Boolean isPartTime) {
     this.isPartTime = isPartTime;
     return this;
   }
@@ -120,12 +133,12 @@ public class RequesterTimeOff {
     return isPartTime;
   }
 
-  public void setIsPartTime(Boolean isPartTime) {
+  public void setIsPartTime(@javax.annotation.Nullable Boolean isPartTime) {
     this.isPartTime = isPartTime;
   }
 
 
-  public RequesterTimeOff hasReachedEndDate(Boolean hasReachedEndDate) {
+  public RequesterTimeOff hasReachedEndDate(@javax.annotation.Nullable Boolean hasReachedEndDate) {
     this.hasReachedEndDate = hasReachedEndDate;
     return this;
   }
@@ -139,12 +152,12 @@ public class RequesterTimeOff {
     return hasReachedEndDate;
   }
 
-  public void setHasReachedEndDate(Boolean hasReachedEndDate) {
+  public void setHasReachedEndDate(@javax.annotation.Nullable Boolean hasReachedEndDate) {
     this.hasReachedEndDate = hasReachedEndDate;
   }
 
 
-  public RequesterTimeOff id(String id) {
+  public RequesterTimeOff id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -158,12 +171,12 @@ public class RequesterTimeOff {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public RequesterTimeOff uuid(String uuid) {
+  public RequesterTimeOff uuid(@javax.annotation.Nullable String uuid) {
     this.uuid = uuid;
     return this;
   }
@@ -177,12 +190,12 @@ public class RequesterTimeOff {
     return uuid;
   }
 
-  public void setUuid(String uuid) {
+  public void setUuid(@javax.annotation.Nullable String uuid) {
     this.uuid = uuid;
   }
 
 
-  public RequesterTimeOff hrisProfileId(String hrisProfileId) {
+  public RequesterTimeOff hrisProfileId(@javax.annotation.Nullable String hrisProfileId) {
     this.hrisProfileId = hrisProfileId;
     return this;
   }
@@ -196,12 +209,12 @@ public class RequesterTimeOff {
     return hrisProfileId;
   }
 
-  public void setHrisProfileId(String hrisProfileId) {
+  public void setHrisProfileId(@javax.annotation.Nullable String hrisProfileId) {
     this.hrisProfileId = hrisProfileId;
   }
 
 
-  public RequesterTimeOff clientProfileId(String clientProfileId) {
+  public RequesterTimeOff clientProfileId(@javax.annotation.Nullable String clientProfileId) {
     this.clientProfileId = clientProfileId;
     return this;
   }
@@ -215,12 +228,12 @@ public class RequesterTimeOff {
     return clientProfileId;
   }
 
-  public void setClientProfileId(String clientProfileId) {
+  public void setClientProfileId(@javax.annotation.Nullable String clientProfileId) {
     this.clientProfileId = clientProfileId;
   }
 
 
-  public RequesterTimeOff organizationId(BigDecimal organizationId) {
+  public RequesterTimeOff organizationId(@javax.annotation.Nullable BigDecimal organizationId) {
     this.organizationId = organizationId;
     return this;
   }
@@ -234,12 +247,12 @@ public class RequesterTimeOff {
     return organizationId;
   }
 
-  public void setOrganizationId(BigDecimal organizationId) {
+  public void setOrganizationId(@javax.annotation.Nullable BigDecimal organizationId) {
     this.organizationId = organizationId;
   }
 
 
-  public RequesterTimeOff country(String country) {
+  public RequesterTimeOff country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -253,12 +266,12 @@ public class RequesterTimeOff {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public RequesterTimeOff workerType(String workerType) {
+  public RequesterTimeOff workerType(@javax.annotation.Nullable String workerType) {
     this.workerType = workerType;
     return this;
   }
@@ -272,12 +285,12 @@ public class RequesterTimeOff {
     return workerType;
   }
 
-  public void setWorkerType(String workerType) {
+  public void setWorkerType(@javax.annotation.Nullable String workerType) {
     this.workerType = workerType;
   }
 
 
-  public RequesterTimeOff endDate(String endDate) {
+  public RequesterTimeOff endDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -291,12 +304,12 @@ public class RequesterTimeOff {
     return endDate;
   }
 
-  public void setEndDate(String endDate) {
+  public void setEndDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
   }
 
 
-  public RequesterTimeOff partTimePercentage(String partTimePercentage) {
+  public RequesterTimeOff partTimePercentage(@javax.annotation.Nullable String partTimePercentage) {
     this.partTimePercentage = partTimePercentage;
     return this;
   }
@@ -310,12 +323,12 @@ public class RequesterTimeOff {
     return partTimePercentage;
   }
 
-  public void setPartTimePercentage(String partTimePercentage) {
+  public void setPartTimePercentage(@javax.annotation.Nullable String partTimePercentage) {
     this.partTimePercentage = partTimePercentage;
   }
 
 
-  public RequesterTimeOff createdAt(String createdAt) {
+  public RequesterTimeOff createdAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -329,12 +342,12 @@ public class RequesterTimeOff {
     return createdAt;
   }
 
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public RequesterTimeOff updatedAt(String updatedAt) {
+  public RequesterTimeOff updatedAt(@javax.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -348,7 +361,7 @@ public class RequesterTimeOff {
     return updatedAt;
   }
 
-  public void setUpdatedAt(String updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
   }
 

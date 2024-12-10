@@ -49,10 +49,11 @@ import org.openapitools.client.JSON;
 /**
  * WorkerTerminationBodySeveranceOneOf
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class WorkerTerminationBodySeveranceOneOf {
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private BigDecimal amount;
 
   /**
@@ -107,6 +108,7 @@ public class WorkerTerminationBodySeveranceOneOf {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   /**
@@ -165,16 +167,18 @@ public class WorkerTerminationBodySeveranceOneOf {
 
   public static final String SERIALIZED_NAME_TIME_UNIT = "time_unit";
   @SerializedName(SERIALIZED_NAME_TIME_UNIT)
+  @javax.annotation.Nonnull
   private TimeUnitEnum timeUnit;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nonnull
   private String currency;
 
   public WorkerTerminationBodySeveranceOneOf() {
   }
 
-  public WorkerTerminationBodySeveranceOneOf amount(BigDecimal amount) {
+  public WorkerTerminationBodySeveranceOneOf amount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -188,12 +192,12 @@ public class WorkerTerminationBodySeveranceOneOf {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public WorkerTerminationBodySeveranceOneOf type(TypeEnum type) {
+  public WorkerTerminationBodySeveranceOneOf type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -207,12 +211,12 @@ public class WorkerTerminationBodySeveranceOneOf {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public WorkerTerminationBodySeveranceOneOf timeUnit(TimeUnitEnum timeUnit) {
+  public WorkerTerminationBodySeveranceOneOf timeUnit(@javax.annotation.Nonnull TimeUnitEnum timeUnit) {
     this.timeUnit = timeUnit;
     return this;
   }
@@ -226,12 +230,12 @@ public class WorkerTerminationBodySeveranceOneOf {
     return timeUnit;
   }
 
-  public void setTimeUnit(TimeUnitEnum timeUnit) {
+  public void setTimeUnit(@javax.annotation.Nonnull TimeUnitEnum timeUnit) {
     this.timeUnit = timeUnit;
   }
 
 
-  public WorkerTerminationBodySeveranceOneOf currency(String currency) {
+  public WorkerTerminationBodySeveranceOneOf currency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
     return this;
   }
@@ -245,7 +249,7 @@ public class WorkerTerminationBodySeveranceOneOf {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
   }
 

@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * GPContractCreatedCompensationDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GPContractCreatedCompensationDetails {
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
+  @javax.annotation.Nullable
   private BigDecimal salary;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nullable
   private String scale;
 
   public GPContractCreatedCompensationDetails() {
   }
 
-  public GPContractCreatedCompensationDetails salary(BigDecimal salary) {
+  public GPContractCreatedCompensationDetails salary(@javax.annotation.Nullable BigDecimal salary) {
     this.salary = salary;
     return this;
   }
@@ -80,12 +83,12 @@ public class GPContractCreatedCompensationDetails {
     return salary;
   }
 
-  public void setSalary(BigDecimal salary) {
+  public void setSalary(@javax.annotation.Nullable BigDecimal salary) {
     this.salary = salary;
   }
 
 
-  public GPContractCreatedCompensationDetails currency(String currency) {
+  public GPContractCreatedCompensationDetails currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -99,12 +102,12 @@ public class GPContractCreatedCompensationDetails {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public GPContractCreatedCompensationDetails scale(String scale) {
+  public GPContractCreatedCompensationDetails scale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
     return this;
   }
@@ -118,7 +121,7 @@ public class GPContractCreatedCompensationDetails {
     return scale;
   }
 
-  public void setScale(String scale) {
+  public void setScale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
   }
 

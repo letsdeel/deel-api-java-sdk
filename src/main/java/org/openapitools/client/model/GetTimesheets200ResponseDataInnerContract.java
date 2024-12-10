@@ -48,10 +48,11 @@ import org.openapitools.client.JSON;
 /**
  * GetTimesheets200ResponseDataInnerContract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetTimesheets200ResponseDataInnerContract {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   /**
@@ -132,16 +133,18 @@ public class GetTimesheets200ResponseDataInnerContract {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nonnull
   private String title;
 
   public GetTimesheets200ResponseDataInnerContract() {
   }
 
-  public GetTimesheets200ResponseDataInnerContract id(String id) {
+  public GetTimesheets200ResponseDataInnerContract id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -155,12 +158,12 @@ public class GetTimesheets200ResponseDataInnerContract {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public GetTimesheets200ResponseDataInnerContract type(TypeEnum type) {
+  public GetTimesheets200ResponseDataInnerContract type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -174,12 +177,12 @@ public class GetTimesheets200ResponseDataInnerContract {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public GetTimesheets200ResponseDataInnerContract title(String title) {
+  public GetTimesheets200ResponseDataInnerContract title(@javax.annotation.Nonnull String title) {
     this.title = title;
     return this;
   }
@@ -193,7 +196,7 @@ public class GetTimesheets200ResponseDataInnerContract {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nonnull String title) {
     this.title = title;
   }
 

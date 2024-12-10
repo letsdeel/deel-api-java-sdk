@@ -51,44 +51,52 @@ import org.openapitools.client.JSON;
 /**
  * Response for a single shift creation
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeTrackingShiftCreatedResponse {
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nonnull
   private String externalId;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_DATE_OF_WORK = "date_of_work";
   @SerializedName(SERIALIZED_NAME_DATE_OF_WORK)
+  @javax.annotation.Nonnull
   private String dateOfWork;
 
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nonnull
   private String contractId;
 
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
+  @javax.annotation.Nullable
   private TimeTrackingShiftMetaSchema meta;
 
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
+  @javax.annotation.Nonnull
   private TimeTrackingShiftSummarySchema summary;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime updatedAt;
 
   public TimeTrackingShiftCreatedResponse() {
   }
 
-  public TimeTrackingShiftCreatedResponse externalId(String externalId) {
+  public TimeTrackingShiftCreatedResponse externalId(@javax.annotation.Nonnull String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -102,12 +110,12 @@ public class TimeTrackingShiftCreatedResponse {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nonnull String externalId) {
     this.externalId = externalId;
   }
 
 
-  public TimeTrackingShiftCreatedResponse description(String description) {
+  public TimeTrackingShiftCreatedResponse description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -121,12 +129,12 @@ public class TimeTrackingShiftCreatedResponse {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public TimeTrackingShiftCreatedResponse dateOfWork(String dateOfWork) {
+  public TimeTrackingShiftCreatedResponse dateOfWork(@javax.annotation.Nonnull String dateOfWork) {
     this.dateOfWork = dateOfWork;
     return this;
   }
@@ -140,12 +148,12 @@ public class TimeTrackingShiftCreatedResponse {
     return dateOfWork;
   }
 
-  public void setDateOfWork(String dateOfWork) {
+  public void setDateOfWork(@javax.annotation.Nonnull String dateOfWork) {
     this.dateOfWork = dateOfWork;
   }
 
 
-  public TimeTrackingShiftCreatedResponse contractId(String contractId) {
+  public TimeTrackingShiftCreatedResponse contractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -159,12 +167,12 @@ public class TimeTrackingShiftCreatedResponse {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
   }
 
 
-  public TimeTrackingShiftCreatedResponse meta(TimeTrackingShiftMetaSchema meta) {
+  public TimeTrackingShiftCreatedResponse meta(@javax.annotation.Nullable TimeTrackingShiftMetaSchema meta) {
     this.meta = meta;
     return this;
   }
@@ -178,12 +186,12 @@ public class TimeTrackingShiftCreatedResponse {
     return meta;
   }
 
-  public void setMeta(TimeTrackingShiftMetaSchema meta) {
+  public void setMeta(@javax.annotation.Nullable TimeTrackingShiftMetaSchema meta) {
     this.meta = meta;
   }
 
 
-  public TimeTrackingShiftCreatedResponse summary(TimeTrackingShiftSummarySchema summary) {
+  public TimeTrackingShiftCreatedResponse summary(@javax.annotation.Nonnull TimeTrackingShiftSummarySchema summary) {
     this.summary = summary;
     return this;
   }
@@ -197,12 +205,12 @@ public class TimeTrackingShiftCreatedResponse {
     return summary;
   }
 
-  public void setSummary(TimeTrackingShiftSummarySchema summary) {
+  public void setSummary(@javax.annotation.Nonnull TimeTrackingShiftSummarySchema summary) {
     this.summary = summary;
   }
 
 
-  public TimeTrackingShiftCreatedResponse createdAt(OffsetDateTime createdAt) {
+  public TimeTrackingShiftCreatedResponse createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -216,12 +224,12 @@ public class TimeTrackingShiftCreatedResponse {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public TimeTrackingShiftCreatedResponse updatedAt(OffsetDateTime updatedAt) {
+  public TimeTrackingShiftCreatedResponse updatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -235,7 +243,7 @@ public class TimeTrackingShiftCreatedResponse {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 

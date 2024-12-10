@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * GetSeniorityList200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetSeniorityList200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private Long id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_LEVEL = "level";
   @SerializedName(SERIALIZED_NAME_LEVEL)
+  @javax.annotation.Nonnull
   private BigDecimal level;
 
   public GetSeniorityList200ResponseDataInner() {
   }
 
-  public GetSeniorityList200ResponseDataInner id(Long id) {
+  public GetSeniorityList200ResponseDataInner id(@javax.annotation.Nonnull Long id) {
     this.id = id;
     return this;
   }
@@ -80,12 +83,12 @@ public class GetSeniorityList200ResponseDataInner {
     return id;
   }
 
-  public void setId(Long id) {
+  public void setId(@javax.annotation.Nonnull Long id) {
     this.id = id;
   }
 
 
-  public GetSeniorityList200ResponseDataInner name(String name) {
+  public GetSeniorityList200ResponseDataInner name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -99,12 +102,12 @@ public class GetSeniorityList200ResponseDataInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public GetSeniorityList200ResponseDataInner level(BigDecimal level) {
+  public GetSeniorityList200ResponseDataInner level(@javax.annotation.Nonnull BigDecimal level) {
     this.level = level;
     return this;
   }
@@ -118,7 +121,7 @@ public class GetSeniorityList200ResponseDataInner {
     return level;
   }
 
-  public void setLevel(BigDecimal level) {
+  public void setLevel(@javax.annotation.Nonnull BigDecimal level) {
     this.level = level;
   }
 

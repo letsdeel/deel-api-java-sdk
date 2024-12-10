@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * CreateWorkerRelationExternalIdRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateWorkerRelationExternalIdRequest {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nullable
   private CreateWorkerRelationExternalIdRequestData data;
 
   public CreateWorkerRelationExternalIdRequest() {
   }
 
-  public CreateWorkerRelationExternalIdRequest data(CreateWorkerRelationExternalIdRequestData data) {
+  public CreateWorkerRelationExternalIdRequest data(@javax.annotation.Nullable CreateWorkerRelationExternalIdRequestData data) {
     this.data = data;
     return this;
   }
@@ -72,7 +73,7 @@ public class CreateWorkerRelationExternalIdRequest {
     return data;
   }
 
-  public void setData(CreateWorkerRelationExternalIdRequestData data) {
+  public void setData(@javax.annotation.Nullable CreateWorkerRelationExternalIdRequestData data) {
     this.data = data;
   }
 

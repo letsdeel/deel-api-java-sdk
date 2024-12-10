@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * UpdateAdjustment200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateAdjustment200ResponseData {
   public static final String SERIALIZED_NAME_UPDATED = "updated";
   @SerializedName(SERIALIZED_NAME_UPDATED)
+  @javax.annotation.Nonnull
   private Boolean updated;
 
   public UpdateAdjustment200ResponseData() {
   }
 
-  public UpdateAdjustment200ResponseData updated(Boolean updated) {
+  public UpdateAdjustment200ResponseData updated(@javax.annotation.Nonnull Boolean updated) {
     this.updated = updated;
     return this;
   }
@@ -71,7 +72,7 @@ public class UpdateAdjustment200ResponseData {
     return updated;
   }
 
-  public void setUpdated(Boolean updated) {
+  public void setUpdated(@javax.annotation.Nonnull Boolean updated) {
     this.updated = updated;
   }
 

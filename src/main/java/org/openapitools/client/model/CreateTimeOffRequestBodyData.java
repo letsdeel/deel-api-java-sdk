@@ -54,64 +54,77 @@ import org.openapitools.client.JSON;
 /**
  * CreateTimeOffRequestBodyData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateTimeOffRequestBodyData {
   public static final String SERIALIZED_NAME_RECIPIENT_PROFILE_ID = "recipient_profile_id";
   @SerializedName(SERIALIZED_NAME_RECIPIENT_PROFILE_ID)
+  @javax.annotation.Nonnull
   private String recipientProfileId;
 
   public static final String SERIALIZED_NAME_OTHER_TYPE_DESCRIPTION = "other_type_description";
   @SerializedName(SERIALIZED_NAME_OTHER_TYPE_DESCRIPTION)
+  @javax.annotation.Nullable
   private String otherTypeDescription;
 
   public static final String SERIALIZED_NAME_REASON = "reason";
   @SerializedName(SERIALIZED_NAME_REASON)
+  @javax.annotation.Nullable
   private String reason;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime endDate;
 
   public static final String SERIALIZED_NAME_TIME_OFF_TYPE_ID = "time_off_type_id";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_TYPE_ID)
+  @javax.annotation.Nonnull
   private String timeOffTypeId;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_DEDUCTION_AMOUNT = "deduction_amount";
   @SerializedName(SERIALIZED_NAME_DEDUCTION_AMOUNT)
+  @javax.annotation.Nullable
   private Float deductionAmount;
 
   public static final String SERIALIZED_NAME_IS_PAID = "is_paid";
   @SerializedName(SERIALIZED_NAME_IS_PAID)
+  @javax.annotation.Nullable
   private Boolean isPaid = false;
 
   public static final String SERIALIZED_NAME_CONTRACT_OID = "contract_oid";
   @SerializedName(SERIALIZED_NAME_CONTRACT_OID)
+  @javax.annotation.Nullable
   private String contractOid;
 
   public static final String SERIALIZED_NAME_ATTACHMENTS = "attachments";
   @SerializedName(SERIALIZED_NAME_ATTACHMENTS)
+  @javax.annotation.Nullable
   private List<Attachment> attachments;
 
   public static final String SERIALIZED_NAME_DATES = "dates";
   @SerializedName(SERIALIZED_NAME_DATES)
+  @javax.annotation.Nullable
   private List<TimeOffDate> dates = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TIME_OFF_PERCENTAGE = "time_off_percentage";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_PERCENTAGE)
+  @javax.annotation.Nullable
   private Double timeOffPercentage;
 
   public CreateTimeOffRequestBodyData() {
   }
 
-  public CreateTimeOffRequestBodyData recipientProfileId(String recipientProfileId) {
+  public CreateTimeOffRequestBodyData recipientProfileId(@javax.annotation.Nonnull String recipientProfileId) {
     this.recipientProfileId = recipientProfileId;
     return this;
   }
@@ -125,12 +138,12 @@ public class CreateTimeOffRequestBodyData {
     return recipientProfileId;
   }
 
-  public void setRecipientProfileId(String recipientProfileId) {
+  public void setRecipientProfileId(@javax.annotation.Nonnull String recipientProfileId) {
     this.recipientProfileId = recipientProfileId;
   }
 
 
-  public CreateTimeOffRequestBodyData otherTypeDescription(String otherTypeDescription) {
+  public CreateTimeOffRequestBodyData otherTypeDescription(@javax.annotation.Nullable String otherTypeDescription) {
     this.otherTypeDescription = otherTypeDescription;
     return this;
   }
@@ -144,12 +157,12 @@ public class CreateTimeOffRequestBodyData {
     return otherTypeDescription;
   }
 
-  public void setOtherTypeDescription(String otherTypeDescription) {
+  public void setOtherTypeDescription(@javax.annotation.Nullable String otherTypeDescription) {
     this.otherTypeDescription = otherTypeDescription;
   }
 
 
-  public CreateTimeOffRequestBodyData reason(String reason) {
+  public CreateTimeOffRequestBodyData reason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
     return this;
   }
@@ -163,12 +176,12 @@ public class CreateTimeOffRequestBodyData {
     return reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
   }
 
 
-  public CreateTimeOffRequestBodyData startDate(OffsetDateTime startDate) {
+  public CreateTimeOffRequestBodyData startDate(@javax.annotation.Nonnull OffsetDateTime startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -182,12 +195,12 @@ public class CreateTimeOffRequestBodyData {
     return startDate;
   }
 
-  public void setStartDate(OffsetDateTime startDate) {
+  public void setStartDate(@javax.annotation.Nonnull OffsetDateTime startDate) {
     this.startDate = startDate;
   }
 
 
-  public CreateTimeOffRequestBodyData endDate(OffsetDateTime endDate) {
+  public CreateTimeOffRequestBodyData endDate(@javax.annotation.Nonnull OffsetDateTime endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -201,12 +214,12 @@ public class CreateTimeOffRequestBodyData {
     return endDate;
   }
 
-  public void setEndDate(OffsetDateTime endDate) {
+  public void setEndDate(@javax.annotation.Nonnull OffsetDateTime endDate) {
     this.endDate = endDate;
   }
 
 
-  public CreateTimeOffRequestBodyData timeOffTypeId(String timeOffTypeId) {
+  public CreateTimeOffRequestBodyData timeOffTypeId(@javax.annotation.Nonnull String timeOffTypeId) {
     this.timeOffTypeId = timeOffTypeId;
     return this;
   }
@@ -220,12 +233,12 @@ public class CreateTimeOffRequestBodyData {
     return timeOffTypeId;
   }
 
-  public void setTimeOffTypeId(String timeOffTypeId) {
+  public void setTimeOffTypeId(@javax.annotation.Nonnull String timeOffTypeId) {
     this.timeOffTypeId = timeOffTypeId;
   }
 
 
-  public CreateTimeOffRequestBodyData description(String description) {
+  public CreateTimeOffRequestBodyData description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -239,12 +252,12 @@ public class CreateTimeOffRequestBodyData {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public CreateTimeOffRequestBodyData deductionAmount(Float deductionAmount) {
+  public CreateTimeOffRequestBodyData deductionAmount(@javax.annotation.Nullable Float deductionAmount) {
     this.deductionAmount = deductionAmount;
     return this;
   }
@@ -259,12 +272,12 @@ public class CreateTimeOffRequestBodyData {
     return deductionAmount;
   }
 
-  public void setDeductionAmount(Float deductionAmount) {
+  public void setDeductionAmount(@javax.annotation.Nullable Float deductionAmount) {
     this.deductionAmount = deductionAmount;
   }
 
 
-  public CreateTimeOffRequestBodyData isPaid(Boolean isPaid) {
+  public CreateTimeOffRequestBodyData isPaid(@javax.annotation.Nullable Boolean isPaid) {
     this.isPaid = isPaid;
     return this;
   }
@@ -278,12 +291,12 @@ public class CreateTimeOffRequestBodyData {
     return isPaid;
   }
 
-  public void setIsPaid(Boolean isPaid) {
+  public void setIsPaid(@javax.annotation.Nullable Boolean isPaid) {
     this.isPaid = isPaid;
   }
 
 
-  public CreateTimeOffRequestBodyData contractOid(String contractOid) {
+  public CreateTimeOffRequestBodyData contractOid(@javax.annotation.Nullable String contractOid) {
     this.contractOid = contractOid;
     return this;
   }
@@ -297,12 +310,12 @@ public class CreateTimeOffRequestBodyData {
     return contractOid;
   }
 
-  public void setContractOid(String contractOid) {
+  public void setContractOid(@javax.annotation.Nullable String contractOid) {
     this.contractOid = contractOid;
   }
 
 
-  public CreateTimeOffRequestBodyData attachments(List<Attachment> attachments) {
+  public CreateTimeOffRequestBodyData attachments(@javax.annotation.Nullable List<Attachment> attachments) {
     this.attachments = attachments;
     return this;
   }
@@ -324,12 +337,12 @@ public class CreateTimeOffRequestBodyData {
     return attachments;
   }
 
-  public void setAttachments(List<Attachment> attachments) {
+  public void setAttachments(@javax.annotation.Nullable List<Attachment> attachments) {
     this.attachments = attachments;
   }
 
 
-  public CreateTimeOffRequestBodyData dates(List<TimeOffDate> dates) {
+  public CreateTimeOffRequestBodyData dates(@javax.annotation.Nullable List<TimeOffDate> dates) {
     this.dates = dates;
     return this;
   }
@@ -351,12 +364,12 @@ public class CreateTimeOffRequestBodyData {
     return dates;
   }
 
-  public void setDates(List<TimeOffDate> dates) {
+  public void setDates(@javax.annotation.Nullable List<TimeOffDate> dates) {
     this.dates = dates;
   }
 
 
-  public CreateTimeOffRequestBodyData timeOffPercentage(Double timeOffPercentage) {
+  public CreateTimeOffRequestBodyData timeOffPercentage(@javax.annotation.Nullable Double timeOffPercentage) {
     this.timeOffPercentage = timeOffPercentage;
     return this;
   }
@@ -372,7 +385,7 @@ public class CreateTimeOffRequestBodyData {
     return timeOffPercentage;
   }
 
-  public void setTimeOffPercentage(Double timeOffPercentage) {
+  public void setTimeOffPercentage(@javax.annotation.Nullable Double timeOffPercentage) {
     this.timeOffPercentage = timeOffPercentage;
   }
 

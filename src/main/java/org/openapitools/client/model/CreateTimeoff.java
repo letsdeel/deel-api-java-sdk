@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateTimeoff
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateTimeoff {
   /**
    * Time off type.
@@ -106,40 +106,48 @@ public class CreateTimeoff {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private String startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private String endDate;
 
   public static final String SERIALIZED_NAME_WITH_MULTIPLE_DATES = "with_multiple_dates";
   @SerializedName(SERIALIZED_NAME_WITH_MULTIPLE_DATES)
+  @javax.annotation.Nonnull
   private Boolean withMultipleDates;
 
   public static final String SERIALIZED_NAME_REASON = "reason";
   @SerializedName(SERIALIZED_NAME_REASON)
+  @javax.annotation.Nullable
   private String reason;
 
   public static final String SERIALIZED_NAME_IS_START_DATE_HALF_DAY = "is_start_date_half_day";
   @SerializedName(SERIALIZED_NAME_IS_START_DATE_HALF_DAY)
+  @javax.annotation.Nullable
   private Boolean isStartDateHalfDay;
 
   public static final String SERIALIZED_NAME_IS_END_DATE_HALF_DAY = "is_end_date_half_day";
   @SerializedName(SERIALIZED_NAME_IS_END_DATE_HALF_DAY)
+  @javax.annotation.Nullable
   private Boolean isEndDateHalfDay;
 
   public static final String SERIALIZED_NAME_OTHER_TIMEOFF_NAME = "other_timeoff_name";
   @SerializedName(SERIALIZED_NAME_OTHER_TIMEOFF_NAME)
+  @javax.annotation.Nullable
   private String otherTimeoffName;
 
   public CreateTimeoff() {
   }
 
-  public CreateTimeoff type(TypeEnum type) {
+  public CreateTimeoff type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -153,12 +161,12 @@ public class CreateTimeoff {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public CreateTimeoff startDate(String startDate) {
+  public CreateTimeoff startDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -172,12 +180,12 @@ public class CreateTimeoff {
     return startDate;
   }
 
-  public void setStartDate(String startDate) {
+  public void setStartDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
   }
 
 
-  public CreateTimeoff endDate(String endDate) {
+  public CreateTimeoff endDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -191,12 +199,12 @@ public class CreateTimeoff {
     return endDate;
   }
 
-  public void setEndDate(String endDate) {
+  public void setEndDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
   }
 
 
-  public CreateTimeoff withMultipleDates(Boolean withMultipleDates) {
+  public CreateTimeoff withMultipleDates(@javax.annotation.Nonnull Boolean withMultipleDates) {
     this.withMultipleDates = withMultipleDates;
     return this;
   }
@@ -210,12 +218,12 @@ public class CreateTimeoff {
     return withMultipleDates;
   }
 
-  public void setWithMultipleDates(Boolean withMultipleDates) {
+  public void setWithMultipleDates(@javax.annotation.Nonnull Boolean withMultipleDates) {
     this.withMultipleDates = withMultipleDates;
   }
 
 
-  public CreateTimeoff reason(String reason) {
+  public CreateTimeoff reason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
     return this;
   }
@@ -229,12 +237,12 @@ public class CreateTimeoff {
     return reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
   }
 
 
-  public CreateTimeoff isStartDateHalfDay(Boolean isStartDateHalfDay) {
+  public CreateTimeoff isStartDateHalfDay(@javax.annotation.Nullable Boolean isStartDateHalfDay) {
     this.isStartDateHalfDay = isStartDateHalfDay;
     return this;
   }
@@ -248,12 +256,12 @@ public class CreateTimeoff {
     return isStartDateHalfDay;
   }
 
-  public void setIsStartDateHalfDay(Boolean isStartDateHalfDay) {
+  public void setIsStartDateHalfDay(@javax.annotation.Nullable Boolean isStartDateHalfDay) {
     this.isStartDateHalfDay = isStartDateHalfDay;
   }
 
 
-  public CreateTimeoff isEndDateHalfDay(Boolean isEndDateHalfDay) {
+  public CreateTimeoff isEndDateHalfDay(@javax.annotation.Nullable Boolean isEndDateHalfDay) {
     this.isEndDateHalfDay = isEndDateHalfDay;
     return this;
   }
@@ -267,12 +275,12 @@ public class CreateTimeoff {
     return isEndDateHalfDay;
   }
 
-  public void setIsEndDateHalfDay(Boolean isEndDateHalfDay) {
+  public void setIsEndDateHalfDay(@javax.annotation.Nullable Boolean isEndDateHalfDay) {
     this.isEndDateHalfDay = isEndDateHalfDay;
   }
 
 
-  public CreateTimeoff otherTimeoffName(String otherTimeoffName) {
+  public CreateTimeoff otherTimeoffName(@javax.annotation.Nullable String otherTimeoffName) {
     this.otherTimeoffName = otherTimeoffName;
     return this;
   }
@@ -286,7 +294,7 @@ public class CreateTimeoff {
     return otherTimeoffName;
   }
 
-  public void setOtherTimeoffName(String otherTimeoffName) {
+  public void setOtherTimeoffName(@javax.annotation.Nullable String otherTimeoffName) {
     this.otherTimeoffName = otherTimeoffName;
   }
 

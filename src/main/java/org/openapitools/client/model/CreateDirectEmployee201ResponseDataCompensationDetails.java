@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * CreateDirectEmployee201ResponseDataCompensationDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateDirectEmployee201ResponseDataCompensationDetails {
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
+  @javax.annotation.Nonnull
   private Float salary;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nonnull
   private String currency;
 
   public CreateDirectEmployee201ResponseDataCompensationDetails() {
   }
 
-  public CreateDirectEmployee201ResponseDataCompensationDetails salary(Float salary) {
+  public CreateDirectEmployee201ResponseDataCompensationDetails salary(@javax.annotation.Nonnull Float salary) {
     this.salary = salary;
     return this;
   }
@@ -75,12 +77,12 @@ public class CreateDirectEmployee201ResponseDataCompensationDetails {
     return salary;
   }
 
-  public void setSalary(Float salary) {
+  public void setSalary(@javax.annotation.Nonnull Float salary) {
     this.salary = salary;
   }
 
 
-  public CreateDirectEmployee201ResponseDataCompensationDetails currency(String currency) {
+  public CreateDirectEmployee201ResponseDataCompensationDetails currency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
     return this;
   }
@@ -94,7 +96,7 @@ public class CreateDirectEmployee201ResponseDataCompensationDetails {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
   }
 

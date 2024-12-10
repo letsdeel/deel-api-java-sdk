@@ -22,7 +22,7 @@
 |**issuedAt** | **OffsetDateTime** | Long date-time format following ISO-8601 |  |
 |**vatId** | **String** | VAT identification number. |  |
 |**dueDate** | **OffsetDateTime** | Long date-time format following ISO-8601 |  |
-|**contractId** | **String** | Unique identifier of the contract. #magic___^_^___line |  |
+|**contractId** | **String** | Unique identifier of the contract |  |
 
 
 

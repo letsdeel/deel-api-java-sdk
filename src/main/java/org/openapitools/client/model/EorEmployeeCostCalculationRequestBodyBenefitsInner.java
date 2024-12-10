@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * EorEmployeeCostCalculationRequestBodyBenefitsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorEmployeeCostCalculationRequestBodyBenefitsInner {
   public static final String SERIALIZED_NAME_PROVIDER_ID = "provider_id";
   @SerializedName(SERIALIZED_NAME_PROVIDER_ID)
+  @javax.annotation.Nonnull
   private String providerId;
 
   public static final String SERIALIZED_NAME_PLAN_ID = "plan_id";
   @SerializedName(SERIALIZED_NAME_PLAN_ID)
+  @javax.annotation.Nullable
   private String planId;
 
   public EorEmployeeCostCalculationRequestBodyBenefitsInner() {
   }
 
-  public EorEmployeeCostCalculationRequestBodyBenefitsInner providerId(String providerId) {
+  public EorEmployeeCostCalculationRequestBodyBenefitsInner providerId(@javax.annotation.Nonnull String providerId) {
     this.providerId = providerId;
     return this;
   }
@@ -76,12 +78,12 @@ public class EorEmployeeCostCalculationRequestBodyBenefitsInner {
     return providerId;
   }
 
-  public void setProviderId(String providerId) {
+  public void setProviderId(@javax.annotation.Nonnull String providerId) {
     this.providerId = providerId;
   }
 
 
-  public EorEmployeeCostCalculationRequestBodyBenefitsInner planId(String planId) {
+  public EorEmployeeCostCalculationRequestBodyBenefitsInner planId(@javax.annotation.Nullable String planId) {
     this.planId = planId;
     return this;
   }
@@ -95,7 +97,7 @@ public class EorEmployeeCostCalculationRequestBodyBenefitsInner {
     return planId;
   }
 
-  public void setPlanId(String planId) {
+  public void setPlanId(@javax.annotation.Nullable String planId) {
     this.planId = planId;
   }
 

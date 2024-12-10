@@ -51,32 +51,37 @@ import org.openapitools.client.JSON;
 /**
  * TimeoffsProfile
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeoffsProfile {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_PIC_URL = "pic_url";
   @SerializedName(SERIALIZED_NAME_PIC_URL)
+  @javax.annotation.Nullable
   private URI picUrl;
 
   public static final String SERIALIZED_NAME_PROFILE_TYPE = "profile_type";
   @SerializedName(SERIALIZED_NAME_PROFILE_TYPE)
+  @javax.annotation.Nonnull
   private ProfileTypeEnum profileType;
 
   public static final String SERIALIZED_NAME_IS_EMPLOYEE = "is_employee";
   @SerializedName(SERIALIZED_NAME_IS_EMPLOYEE)
+  @javax.annotation.Nullable
   private Boolean isEmployee;
 
   public TimeoffsProfile() {
   }
 
-  public TimeoffsProfile id(String id) {
+  public TimeoffsProfile id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -90,12 +95,12 @@ public class TimeoffsProfile {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public TimeoffsProfile name(String name) {
+  public TimeoffsProfile name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -109,12 +114,12 @@ public class TimeoffsProfile {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public TimeoffsProfile picUrl(URI picUrl) {
+  public TimeoffsProfile picUrl(@javax.annotation.Nullable URI picUrl) {
     this.picUrl = picUrl;
     return this;
   }
@@ -128,12 +133,12 @@ public class TimeoffsProfile {
     return picUrl;
   }
 
-  public void setPicUrl(URI picUrl) {
+  public void setPicUrl(@javax.annotation.Nullable URI picUrl) {
     this.picUrl = picUrl;
   }
 
 
-  public TimeoffsProfile profileType(ProfileTypeEnum profileType) {
+  public TimeoffsProfile profileType(@javax.annotation.Nonnull ProfileTypeEnum profileType) {
     this.profileType = profileType;
     return this;
   }
@@ -147,12 +152,12 @@ public class TimeoffsProfile {
     return profileType;
   }
 
-  public void setProfileType(ProfileTypeEnum profileType) {
+  public void setProfileType(@javax.annotation.Nonnull ProfileTypeEnum profileType) {
     this.profileType = profileType;
   }
 
 
-  public TimeoffsProfile isEmployee(Boolean isEmployee) {
+  public TimeoffsProfile isEmployee(@javax.annotation.Nullable Boolean isEmployee) {
     this.isEmployee = isEmployee;
     return this;
   }
@@ -166,7 +171,7 @@ public class TimeoffsProfile {
     return isEmployee;
   }
 
-  public void setIsEmployee(Boolean isEmployee) {
+  public void setIsEmployee(@javax.annotation.Nullable Boolean isEmployee) {
     this.isEmployee = isEmployee;
   }
 

@@ -50,32 +50,37 @@ import org.openapitools.client.JSON;
 /**
  * Schema for a single shift
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateShiftSchema {
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nonnull
   private String externalId;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_DATE_OF_WORK = "date_of_work";
   @SerializedName(SERIALIZED_NAME_DATE_OF_WORK)
+  @javax.annotation.Nonnull
   private String dateOfWork;
 
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
+  @javax.annotation.Nullable
   private TimeTrackingShiftMetaSchema meta;
 
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
+  @javax.annotation.Nonnull
   private TimeTrackingShiftSummarySchema summary;
 
   public CreateShiftSchema() {
   }
 
-  public CreateShiftSchema externalId(String externalId) {
+  public CreateShiftSchema externalId(@javax.annotation.Nonnull String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -89,12 +94,12 @@ public class CreateShiftSchema {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nonnull String externalId) {
     this.externalId = externalId;
   }
 
 
-  public CreateShiftSchema description(String description) {
+  public CreateShiftSchema description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -108,12 +113,12 @@ public class CreateShiftSchema {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public CreateShiftSchema dateOfWork(String dateOfWork) {
+  public CreateShiftSchema dateOfWork(@javax.annotation.Nonnull String dateOfWork) {
     this.dateOfWork = dateOfWork;
     return this;
   }
@@ -127,12 +132,12 @@ public class CreateShiftSchema {
     return dateOfWork;
   }
 
-  public void setDateOfWork(String dateOfWork) {
+  public void setDateOfWork(@javax.annotation.Nonnull String dateOfWork) {
     this.dateOfWork = dateOfWork;
   }
 
 
-  public CreateShiftSchema meta(TimeTrackingShiftMetaSchema meta) {
+  public CreateShiftSchema meta(@javax.annotation.Nullable TimeTrackingShiftMetaSchema meta) {
     this.meta = meta;
     return this;
   }
@@ -146,12 +151,12 @@ public class CreateShiftSchema {
     return meta;
   }
 
-  public void setMeta(TimeTrackingShiftMetaSchema meta) {
+  public void setMeta(@javax.annotation.Nullable TimeTrackingShiftMetaSchema meta) {
     this.meta = meta;
   }
 
 
-  public CreateShiftSchema summary(TimeTrackingShiftSummarySchema summary) {
+  public CreateShiftSchema summary(@javax.annotation.Nonnull TimeTrackingShiftSummarySchema summary) {
     this.summary = summary;
     return this;
   }
@@ -165,7 +170,7 @@ public class CreateShiftSchema {
     return summary;
   }
 
-  public void setSummary(TimeTrackingShiftSummarySchema summary) {
+  public void setSummary(@javax.annotation.Nonnull TimeTrackingShiftSummarySchema summary) {
     this.summary = summary;
   }
 

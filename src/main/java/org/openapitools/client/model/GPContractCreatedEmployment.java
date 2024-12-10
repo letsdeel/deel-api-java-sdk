@@ -51,40 +51,47 @@ import org.openapitools.client.JSON;
 /**
  * GPContractCreatedEmployment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GPContractCreatedEmployment {
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime endDate;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_WORK_VISA_REQUIRED = "work_visa_required";
   @SerializedName(SERIALIZED_NAME_WORK_VISA_REQUIRED)
+  @javax.annotation.Nullable
   private Boolean workVisaRequired;
 
   public static final String SERIALIZED_NAME_HOLIDAYS = "holidays";
   @SerializedName(SERIALIZED_NAME_HOLIDAYS)
+  @javax.annotation.Nullable
   private GPContractCreatedEmploymentHolidays holidays;
 
   public GPContractCreatedEmployment() {
   }
 
-  public GPContractCreatedEmployment startDate(OffsetDateTime startDate) {
+  public GPContractCreatedEmployment startDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -98,12 +105,12 @@ public class GPContractCreatedEmployment {
     return startDate;
   }
 
-  public void setStartDate(OffsetDateTime startDate) {
+  public void setStartDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
   }
 
 
-  public GPContractCreatedEmployment endDate(OffsetDateTime endDate) {
+  public GPContractCreatedEmployment endDate(@javax.annotation.Nullable OffsetDateTime endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -117,12 +124,12 @@ public class GPContractCreatedEmployment {
     return endDate;
   }
 
-  public void setEndDate(OffsetDateTime endDate) {
+  public void setEndDate(@javax.annotation.Nullable OffsetDateTime endDate) {
     this.endDate = endDate;
   }
 
 
-  public GPContractCreatedEmployment country(String country) {
+  public GPContractCreatedEmployment country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -136,12 +143,12 @@ public class GPContractCreatedEmployment {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public GPContractCreatedEmployment state(String state) {
+  public GPContractCreatedEmployment state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -155,12 +162,12 @@ public class GPContractCreatedEmployment {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public GPContractCreatedEmployment type(String type) {
+  public GPContractCreatedEmployment type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -174,12 +181,12 @@ public class GPContractCreatedEmployment {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public GPContractCreatedEmployment workVisaRequired(Boolean workVisaRequired) {
+  public GPContractCreatedEmployment workVisaRequired(@javax.annotation.Nullable Boolean workVisaRequired) {
     this.workVisaRequired = workVisaRequired;
     return this;
   }
@@ -193,12 +200,12 @@ public class GPContractCreatedEmployment {
     return workVisaRequired;
   }
 
-  public void setWorkVisaRequired(Boolean workVisaRequired) {
+  public void setWorkVisaRequired(@javax.annotation.Nullable Boolean workVisaRequired) {
     this.workVisaRequired = workVisaRequired;
   }
 
 
-  public GPContractCreatedEmployment holidays(GPContractCreatedEmploymentHolidays holidays) {
+  public GPContractCreatedEmployment holidays(@javax.annotation.Nullable GPContractCreatedEmploymentHolidays holidays) {
     this.holidays = holidays;
     return this;
   }
@@ -212,7 +219,7 @@ public class GPContractCreatedEmployment {
     return holidays;
   }
 
-  public void setHolidays(GPContractCreatedEmploymentHolidays holidays) {
+  public void setHolidays(@javax.annotation.Nullable GPContractCreatedEmploymentHolidays holidays) {
     this.holidays = holidays;
   }
 

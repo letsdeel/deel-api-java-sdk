@@ -50,22 +50,26 @@ import org.openapitools.client.JSON;
 /**
  * FinalPaymentCalculated
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class FinalPaymentCalculated {
   public static final String SERIALIZED_NAME_DAILY_RATE = "daily_rate";
   @SerializedName(SERIALIZED_NAME_DAILY_RATE)
+  @javax.annotation.Nonnull
   private String dailyRate;
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
+  @javax.annotation.Nonnull
   private String total;
 
   public static final String SERIALIZED_NAME_REMAINING_DAYS = "remaining_days";
   @SerializedName(SERIALIZED_NAME_REMAINING_DAYS)
+  @javax.annotation.Nonnull
   private String remainingDays;
 
   public static final String SERIALIZED_NAME_LAST_CYCLE = "last_cycle";
   @SerializedName(SERIALIZED_NAME_LAST_CYCLE)
+  @javax.annotation.Nonnull
   private FinalPaymentCalculatedLastCycle lastCycle;
 
   /**
@@ -126,20 +130,23 @@ public class FinalPaymentCalculated {
 
   public static final String SERIALIZED_NAME_CALCULATION_TYPE = "calculation_type";
   @SerializedName(SERIALIZED_NAME_CALCULATION_TYPE)
+  @javax.annotation.Nonnull
   private CalculationTypeEnum calculationType;
 
   public static final String SERIALIZED_NAME_WORKWEEK_START = "workweek_start";
   @SerializedName(SERIALIZED_NAME_WORKWEEK_START)
+  @javax.annotation.Nonnull
   private BigDecimal workweekStart = new BigDecimal("1");
 
   public static final String SERIALIZED_NAME_WORKWEEK_END = "workweek_end";
   @SerializedName(SERIALIZED_NAME_WORKWEEK_END)
+  @javax.annotation.Nonnull
   private BigDecimal workweekEnd = new BigDecimal("5");
 
   public FinalPaymentCalculated() {
   }
 
-  public FinalPaymentCalculated dailyRate(String dailyRate) {
+  public FinalPaymentCalculated dailyRate(@javax.annotation.Nonnull String dailyRate) {
     this.dailyRate = dailyRate;
     return this;
   }
@@ -153,12 +160,12 @@ public class FinalPaymentCalculated {
     return dailyRate;
   }
 
-  public void setDailyRate(String dailyRate) {
+  public void setDailyRate(@javax.annotation.Nonnull String dailyRate) {
     this.dailyRate = dailyRate;
   }
 
 
-  public FinalPaymentCalculated total(String total) {
+  public FinalPaymentCalculated total(@javax.annotation.Nonnull String total) {
     this.total = total;
     return this;
   }
@@ -172,12 +179,12 @@ public class FinalPaymentCalculated {
     return total;
   }
 
-  public void setTotal(String total) {
+  public void setTotal(@javax.annotation.Nonnull String total) {
     this.total = total;
   }
 
 
-  public FinalPaymentCalculated remainingDays(String remainingDays) {
+  public FinalPaymentCalculated remainingDays(@javax.annotation.Nonnull String remainingDays) {
     this.remainingDays = remainingDays;
     return this;
   }
@@ -191,12 +198,12 @@ public class FinalPaymentCalculated {
     return remainingDays;
   }
 
-  public void setRemainingDays(String remainingDays) {
+  public void setRemainingDays(@javax.annotation.Nonnull String remainingDays) {
     this.remainingDays = remainingDays;
   }
 
 
-  public FinalPaymentCalculated lastCycle(FinalPaymentCalculatedLastCycle lastCycle) {
+  public FinalPaymentCalculated lastCycle(@javax.annotation.Nonnull FinalPaymentCalculatedLastCycle lastCycle) {
     this.lastCycle = lastCycle;
     return this;
   }
@@ -210,12 +217,12 @@ public class FinalPaymentCalculated {
     return lastCycle;
   }
 
-  public void setLastCycle(FinalPaymentCalculatedLastCycle lastCycle) {
+  public void setLastCycle(@javax.annotation.Nonnull FinalPaymentCalculatedLastCycle lastCycle) {
     this.lastCycle = lastCycle;
   }
 
 
-  public FinalPaymentCalculated calculationType(CalculationTypeEnum calculationType) {
+  public FinalPaymentCalculated calculationType(@javax.annotation.Nonnull CalculationTypeEnum calculationType) {
     this.calculationType = calculationType;
     return this;
   }
@@ -229,12 +236,12 @@ public class FinalPaymentCalculated {
     return calculationType;
   }
 
-  public void setCalculationType(CalculationTypeEnum calculationType) {
+  public void setCalculationType(@javax.annotation.Nonnull CalculationTypeEnum calculationType) {
     this.calculationType = calculationType;
   }
 
 
-  public FinalPaymentCalculated workweekStart(BigDecimal workweekStart) {
+  public FinalPaymentCalculated workweekStart(@javax.annotation.Nonnull BigDecimal workweekStart) {
     this.workweekStart = workweekStart;
     return this;
   }
@@ -248,12 +255,12 @@ public class FinalPaymentCalculated {
     return workweekStart;
   }
 
-  public void setWorkweekStart(BigDecimal workweekStart) {
+  public void setWorkweekStart(@javax.annotation.Nonnull BigDecimal workweekStart) {
     this.workweekStart = workweekStart;
   }
 
 
-  public FinalPaymentCalculated workweekEnd(BigDecimal workweekEnd) {
+  public FinalPaymentCalculated workweekEnd(@javax.annotation.Nonnull BigDecimal workweekEnd) {
     this.workweekEnd = workweekEnd;
     return this;
   }
@@ -267,7 +274,7 @@ public class FinalPaymentCalculated {
     return workweekEnd;
   }
 
-  public void setWorkweekEnd(BigDecimal workweekEnd) {
+  public void setWorkweekEnd(@javax.annotation.Nonnull BigDecimal workweekEnd) {
     this.workweekEnd = workweekEnd;
   }
 

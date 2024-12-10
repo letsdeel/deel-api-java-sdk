@@ -50,24 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * GetProfileEntitlements200ResponseEntitlementsInnerRolloversInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetProfileEntitlements200ResponseEntitlementsInnerRolloversInner {
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private GetProfileEntitlements200ResponseEntitlementsInnerRolloversInnerAmount amount;
 
   public static final String SERIALIZED_NAME_EXPIRATION_DATE = "expiration_date";
   @SerializedName(SERIALIZED_NAME_EXPIRATION_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime expirationDate;
 
   public static final String SERIALIZED_NAME_ROLLOVER_TRACKING_PERIOD = "rollover_tracking_period";
   @SerializedName(SERIALIZED_NAME_ROLLOVER_TRACKING_PERIOD)
+  @javax.annotation.Nonnull
   private OffsetDateTime rolloverTrackingPeriod;
 
   public GetProfileEntitlements200ResponseEntitlementsInnerRolloversInner() {
   }
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerRolloversInner amount(GetProfileEntitlements200ResponseEntitlementsInnerRolloversInnerAmount amount) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerRolloversInner amount(@javax.annotation.Nonnull GetProfileEntitlements200ResponseEntitlementsInnerRolloversInnerAmount amount) {
     this.amount = amount;
     return this;
   }
@@ -81,12 +84,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerRolloversInner {
     return amount;
   }
 
-  public void setAmount(GetProfileEntitlements200ResponseEntitlementsInnerRolloversInnerAmount amount) {
+  public void setAmount(@javax.annotation.Nonnull GetProfileEntitlements200ResponseEntitlementsInnerRolloversInnerAmount amount) {
     this.amount = amount;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerRolloversInner expirationDate(OffsetDateTime expirationDate) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerRolloversInner expirationDate(@javax.annotation.Nullable OffsetDateTime expirationDate) {
     this.expirationDate = expirationDate;
     return this;
   }
@@ -100,12 +103,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerRolloversInner {
     return expirationDate;
   }
 
-  public void setExpirationDate(OffsetDateTime expirationDate) {
+  public void setExpirationDate(@javax.annotation.Nullable OffsetDateTime expirationDate) {
     this.expirationDate = expirationDate;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerRolloversInner rolloverTrackingPeriod(OffsetDateTime rolloverTrackingPeriod) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerRolloversInner rolloverTrackingPeriod(@javax.annotation.Nonnull OffsetDateTime rolloverTrackingPeriod) {
     this.rolloverTrackingPeriod = rolloverTrackingPeriod;
     return this;
   }
@@ -119,7 +122,7 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerRolloversInner {
     return rolloverTrackingPeriod;
   }
 
-  public void setRolloverTrackingPeriod(OffsetDateTime rolloverTrackingPeriod) {
+  public void setRolloverTrackingPeriod(@javax.annotation.Nonnull OffsetDateTime rolloverTrackingPeriod) {
     this.rolloverTrackingPeriod = rolloverTrackingPeriod;
   }
 

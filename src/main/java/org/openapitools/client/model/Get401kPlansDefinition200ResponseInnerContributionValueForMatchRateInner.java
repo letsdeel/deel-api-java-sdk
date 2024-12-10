@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * Get401kPlansDefinition200ResponseInnerContributionValueForMatchRateInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Get401kPlansDefinition200ResponseInnerContributionValueForMatchRateInner {
   public static final String SERIALIZED_NAME_RATE = "rate";
   @SerializedName(SERIALIZED_NAME_RATE)
+  @javax.annotation.Nonnull
   private BigDecimal rate;
 
   public static final String SERIALIZED_NAME_LIMIT = "limit";
   @SerializedName(SERIALIZED_NAME_LIMIT)
+  @javax.annotation.Nonnull
   private BigDecimal limit;
 
   public Get401kPlansDefinition200ResponseInnerContributionValueForMatchRateInner() {
   }
 
-  public Get401kPlansDefinition200ResponseInnerContributionValueForMatchRateInner rate(BigDecimal rate) {
+  public Get401kPlansDefinition200ResponseInnerContributionValueForMatchRateInner rate(@javax.annotation.Nonnull BigDecimal rate) {
     this.rate = rate;
     return this;
   }
@@ -76,12 +78,12 @@ public class Get401kPlansDefinition200ResponseInnerContributionValueForMatchRate
     return rate;
   }
 
-  public void setRate(BigDecimal rate) {
+  public void setRate(@javax.annotation.Nonnull BigDecimal rate) {
     this.rate = rate;
   }
 
 
-  public Get401kPlansDefinition200ResponseInnerContributionValueForMatchRateInner limit(BigDecimal limit) {
+  public Get401kPlansDefinition200ResponseInnerContributionValueForMatchRateInner limit(@javax.annotation.Nonnull BigDecimal limit) {
     this.limit = limit;
     return this;
   }
@@ -95,7 +97,7 @@ public class Get401kPlansDefinition200ResponseInnerContributionValueForMatchRate
     return limit;
   }
 
-  public void setLimit(BigDecimal limit) {
+  public void setLimit(@javax.annotation.Nonnull BigDecimal limit) {
     this.limit = limit;
   }
 

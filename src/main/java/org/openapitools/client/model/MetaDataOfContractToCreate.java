@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * Additional custom info about a contract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class MetaDataOfContractToCreate {
   public static final String SERIALIZED_NAME_DOCUMENTS_REQUIRED = "documents_required";
   @SerializedName(SERIALIZED_NAME_DOCUMENTS_REQUIRED)
+  @javax.annotation.Nonnull
   private Boolean documentsRequired;
 
   public static final String SERIALIZED_NAME_IS_MAIN_INCOME = "is_main_income";
   @SerializedName(SERIALIZED_NAME_IS_MAIN_INCOME)
+  @javax.annotation.Nullable
   private Boolean isMainIncome;
 
   public MetaDataOfContractToCreate() {
   }
 
-  public MetaDataOfContractToCreate documentsRequired(Boolean documentsRequired) {
+  public MetaDataOfContractToCreate documentsRequired(@javax.annotation.Nonnull Boolean documentsRequired) {
     this.documentsRequired = documentsRequired;
     return this;
   }
@@ -75,12 +77,12 @@ public class MetaDataOfContractToCreate {
     return documentsRequired;
   }
 
-  public void setDocumentsRequired(Boolean documentsRequired) {
+  public void setDocumentsRequired(@javax.annotation.Nonnull Boolean documentsRequired) {
     this.documentsRequired = documentsRequired;
   }
 
 
-  public MetaDataOfContractToCreate isMainIncome(Boolean isMainIncome) {
+  public MetaDataOfContractToCreate isMainIncome(@javax.annotation.Nullable Boolean isMainIncome) {
     this.isMainIncome = isMainIncome;
     return this;
   }
@@ -94,7 +96,7 @@ public class MetaDataOfContractToCreate {
     return isMainIncome;
   }
 
-  public void setIsMainIncome(Boolean isMainIncome) {
+  public void setIsMainIncome(@javax.annotation.Nullable Boolean isMainIncome) {
     this.isMainIncome = isMainIncome;
   }
 

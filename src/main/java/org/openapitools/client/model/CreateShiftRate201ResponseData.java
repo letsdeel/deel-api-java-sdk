@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * CreateShiftRate201ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateShiftRate201ResponseData {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private BigDecimal value;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public CreateShiftRate201ResponseData() {
   }
 
-  public CreateShiftRate201ResponseData name(String name) {
+  public CreateShiftRate201ResponseData name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -84,12 +88,12 @@ public class CreateShiftRate201ResponseData {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public CreateShiftRate201ResponseData type(String type) {
+  public CreateShiftRate201ResponseData type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -103,12 +107,12 @@ public class CreateShiftRate201ResponseData {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public CreateShiftRate201ResponseData value(BigDecimal value) {
+  public CreateShiftRate201ResponseData value(@javax.annotation.Nullable BigDecimal value) {
     this.value = value;
     return this;
   }
@@ -122,12 +126,12 @@ public class CreateShiftRate201ResponseData {
     return value;
   }
 
-  public void setValue(BigDecimal value) {
+  public void setValue(@javax.annotation.Nullable BigDecimal value) {
     this.value = value;
   }
 
 
-  public CreateShiftRate201ResponseData externalId(String externalId) {
+  public CreateShiftRate201ResponseData externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -141,7 +145,7 @@ public class CreateShiftRate201ResponseData {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 

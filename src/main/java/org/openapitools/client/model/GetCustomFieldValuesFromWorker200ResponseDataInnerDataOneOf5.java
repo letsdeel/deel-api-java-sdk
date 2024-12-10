@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * List type
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf5 {
   public static final String SERIALIZED_NAME_OPTION = "option";
   @SerializedName(SERIALIZED_NAME_OPTION)
+  @javax.annotation.Nullable
   private String option;
 
   public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf5() {
   }
 
-  public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf5 option(String option) {
+  public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf5 option(@javax.annotation.Nullable String option) {
     this.option = option;
     return this;
   }
@@ -71,7 +72,7 @@ public class GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf5 {
     return option;
   }
 
-  public void setOption(String option) {
+  public void setOption(@javax.annotation.Nullable String option) {
     this.option = option;
   }
 

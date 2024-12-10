@@ -51,20 +51,22 @@ import org.openapitools.client.JSON;
 /**
  * GetProfileEntitlements200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetProfileEntitlements200Response {
   public static final String SERIALIZED_NAME_ENTITLEMENTS = "entitlements";
   @SerializedName(SERIALIZED_NAME_ENTITLEMENTS)
+  @javax.annotation.Nonnull
   private List<GetProfileEntitlements200ResponseEntitlementsInner> entitlements = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_HRIS_PROFILE_ID = "hris_profile_id";
   @SerializedName(SERIALIZED_NAME_HRIS_PROFILE_ID)
+  @javax.annotation.Nonnull
   private String hrisProfileId;
 
   public GetProfileEntitlements200Response() {
   }
 
-  public GetProfileEntitlements200Response entitlements(List<GetProfileEntitlements200ResponseEntitlementsInner> entitlements) {
+  public GetProfileEntitlements200Response entitlements(@javax.annotation.Nonnull List<GetProfileEntitlements200ResponseEntitlementsInner> entitlements) {
     this.entitlements = entitlements;
     return this;
   }
@@ -86,12 +88,12 @@ public class GetProfileEntitlements200Response {
     return entitlements;
   }
 
-  public void setEntitlements(List<GetProfileEntitlements200ResponseEntitlementsInner> entitlements) {
+  public void setEntitlements(@javax.annotation.Nonnull List<GetProfileEntitlements200ResponseEntitlementsInner> entitlements) {
     this.entitlements = entitlements;
   }
 
 
-  public GetProfileEntitlements200Response hrisProfileId(String hrisProfileId) {
+  public GetProfileEntitlements200Response hrisProfileId(@javax.annotation.Nonnull String hrisProfileId) {
     this.hrisProfileId = hrisProfileId;
     return this;
   }
@@ -105,7 +107,7 @@ public class GetProfileEntitlements200Response {
     return hrisProfileId;
   }
 
-  public void setHrisProfileId(String hrisProfileId) {
+  public void setHrisProfileId(@javax.annotation.Nonnull String hrisProfileId) {
     this.hrisProfileId = hrisProfileId;
   }
 

@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_PERIOD_END_AT = "period_end_at";
   @SerializedName(SERIALIZED_NAME_PERIOD_END_AT)
+  @javax.annotation.Nullable
   private String periodEndAt;
 
   public static final String SERIALIZED_NAME_PERIOD_IN_DAYS = "period_in_days";
   @SerializedName(SERIALIZED_NAME_PERIOD_IN_DAYS)
+  @javax.annotation.Nullable
   private Integer periodInDays;
 
   public OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod() {
   }
 
-  public OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod status(String status) {
+  public OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -79,12 +82,12 @@ public class OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod periodEndAt(String periodEndAt) {
+  public OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod periodEndAt(@javax.annotation.Nullable String periodEndAt) {
     this.periodEndAt = periodEndAt;
     return this;
   }
@@ -98,12 +101,12 @@ public class OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod {
     return periodEndAt;
   }
 
-  public void setPeriodEndAt(String periodEndAt) {
+  public void setPeriodEndAt(@javax.annotation.Nullable String periodEndAt) {
     this.periodEndAt = periodEndAt;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod periodInDays(Integer periodInDays) {
+  public OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod periodInDays(@javax.annotation.Nullable Integer periodInDays) {
     this.periodInDays = periodInDays;
     return this;
   }
@@ -117,7 +120,7 @@ public class OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod {
     return periodInDays;
   }
 
-  public void setPeriodInDays(Integer periodInDays) {
+  public void setPeriodInDays(@javax.annotation.Nullable Integer periodInDays) {
     this.periodInDays = periodInDays;
   }
 

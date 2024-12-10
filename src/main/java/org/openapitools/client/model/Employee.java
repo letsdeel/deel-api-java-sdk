@@ -63,148 +63,182 @@ import org.openapitools.client.JSON;
 /**
  * Employee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Employee {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nullable
   private String fullName;
 
   public static final String SERIALIZED_NAME_WORKER_ID = "worker_id";
   @SerializedName(SERIALIZED_NAME_WORKER_ID)
+  @javax.annotation.Nullable
   private BigDecimal workerId;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_TERMINATION_LAST_DAY = "termination_last_day";
   @SerializedName(SERIALIZED_NAME_TERMINATION_LAST_DAY)
+  @javax.annotation.Nullable
   private LocalDate terminationLastDay;
 
   public static final String SERIALIZED_NAME_PREFERRED_FIRST_NAME = "preferred_first_name";
   @SerializedName(SERIALIZED_NAME_PREFERRED_FIRST_NAME)
+  @javax.annotation.Nullable
   private String preferredFirstName;
 
   public static final String SERIALIZED_NAME_PREFERRED_LAST_NAME = "preferred_last_name";
   @SerializedName(SERIALIZED_NAME_PREFERRED_LAST_NAME)
+  @javax.annotation.Nullable
   private String preferredLastName;
 
   public static final String SERIALIZED_NAME_ADDRESSES = "addresses";
   @SerializedName(SERIALIZED_NAME_ADDRESSES)
+  @javax.annotation.Nullable
   private List<Address> addresses = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_EMAILS = "emails";
   @SerializedName(SERIALIZED_NAME_EMAILS)
+  @javax.annotation.Nullable
   private List<Email> emails = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_BIRTH_DATE = "birth_date";
   @SerializedName(SERIALIZED_NAME_BIRTH_DATE)
+  @javax.annotation.Nullable
   private String birthDate;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private LocalDate startDate;
 
   public static final String SERIALIZED_NAME_NATIONALITIES = "nationalities";
   @SerializedName(SERIALIZED_NAME_NATIONALITIES)
+  @javax.annotation.Nullable
   private List<String> nationalities = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CLIENT_LEGAL_ENTITY = "client_legal_entity";
   @SerializedName(SERIALIZED_NAME_CLIENT_LEGAL_ENTITY)
+  @javax.annotation.Nullable
   private PeopleClientLegalEntity clientLegalEntity;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_SENIORITY = "seniority";
   @SerializedName(SERIALIZED_NAME_SENIORITY)
+  @javax.annotation.Nullable
   private String seniority;
 
   public static final String SERIALIZED_NAME_COMPLETION_DATE = "completion_date";
   @SerializedName(SERIALIZED_NAME_COMPLETION_DATE)
+  @javax.annotation.Nullable
   private String completionDate;
 
   public static final String SERIALIZED_NAME_DIRECT_MANAGER = "direct_manager";
   @SerializedName(SERIALIZED_NAME_DIRECT_MANAGER)
+  @javax.annotation.Nullable
   private EmployeeDirectManager directManager;
 
   public static final String SERIALIZED_NAME_DIRECT_REPORTS = "direct_reports";
   @SerializedName(SERIALIZED_NAME_DIRECT_REPORTS)
+  @javax.annotation.Nullable
   private List<GetPeopleList200ResponseDataInnerDirectReportsInner> directReports = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_DIRECT_REPORTS_COUNT = "direct_reports_count";
   @SerializedName(SERIALIZED_NAME_DIRECT_REPORTS_COUNT)
+  @javax.annotation.Nullable
   private Integer directReportsCount;
 
   public static final String SERIALIZED_NAME_WORKER_RELATIONS = "worker_relations";
   @SerializedName(SERIALIZED_NAME_WORKER_RELATIONS)
+  @javax.annotation.Nullable
   private List<WorkerRelations> workerRelations = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CUSTOM_FIELD_VALUES = "custom_field_values";
   @SerializedName(SERIALIZED_NAME_CUSTOM_FIELD_VALUES)
+  @javax.annotation.Nullable
   private List<CustomFieldValue> customFieldValues = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_EMPLOYMENTS = "employments";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENTS)
+  @javax.annotation.Nullable
   private List<EmploymentDetail> employments = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_HIRING_STATUS = "hiring_status";
   @SerializedName(SERIALIZED_NAME_HIRING_STATUS)
+  @javax.annotation.Nullable
   private String hiringStatus;
 
   public static final String SERIALIZED_NAME_NEW_HIRING_STATUS = "new_hiring_status";
   @SerializedName(SERIALIZED_NAME_NEW_HIRING_STATUS)
+  @javax.annotation.Nullable
   private String newHiringStatus;
 
   public static final String SERIALIZED_NAME_HIRING_TYPE = "hiring_type";
   @SerializedName(SERIALIZED_NAME_HIRING_TYPE)
+  @javax.annotation.Nullable
   private String hiringType;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nullable
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_TIMEZONE = "timezone";
   @SerializedName(SERIALIZED_NAME_TIMEZONE)
+  @javax.annotation.Nullable
   private String timezone;
 
   public static final String SERIALIZED_NAME_DEPARTMENT = "department";
   @SerializedName(SERIALIZED_NAME_DEPARTMENT)
+  @javax.annotation.Nullable
   private EmployeeDepartment department;
 
   public static final String SERIALIZED_NAME_WORK_LOCATION = "work_location";
   @SerializedName(SERIALIZED_NAME_WORK_LOCATION)
+  @javax.annotation.Nullable
   private String workLocation;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime updatedAt;
 
   public Employee() {
   }
 
-  public Employee id(String id) {
+  public Employee id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -218,12 +252,12 @@ public class Employee {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public Employee createdAt(OffsetDateTime createdAt) {
+  public Employee createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -237,12 +271,12 @@ public class Employee {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public Employee firstName(String firstName) {
+  public Employee firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -256,12 +290,12 @@ public class Employee {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public Employee lastName(String lastName) {
+  public Employee lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -275,12 +309,12 @@ public class Employee {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
 
-  public Employee fullName(String fullName) {
+  public Employee fullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -294,12 +328,12 @@ public class Employee {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
   }
 
 
-  public Employee workerId(BigDecimal workerId) {
+  public Employee workerId(@javax.annotation.Nullable BigDecimal workerId) {
     this.workerId = workerId;
     return this;
   }
@@ -313,12 +347,12 @@ public class Employee {
     return workerId;
   }
 
-  public void setWorkerId(BigDecimal workerId) {
+  public void setWorkerId(@javax.annotation.Nullable BigDecimal workerId) {
     this.workerId = workerId;
   }
 
 
-  public Employee externalId(String externalId) {
+  public Employee externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -332,12 +366,12 @@ public class Employee {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public Employee terminationLastDay(LocalDate terminationLastDay) {
+  public Employee terminationLastDay(@javax.annotation.Nullable LocalDate terminationLastDay) {
     this.terminationLastDay = terminationLastDay;
     return this;
   }
@@ -351,12 +385,12 @@ public class Employee {
     return terminationLastDay;
   }
 
-  public void setTerminationLastDay(LocalDate terminationLastDay) {
+  public void setTerminationLastDay(@javax.annotation.Nullable LocalDate terminationLastDay) {
     this.terminationLastDay = terminationLastDay;
   }
 
 
-  public Employee preferredFirstName(String preferredFirstName) {
+  public Employee preferredFirstName(@javax.annotation.Nullable String preferredFirstName) {
     this.preferredFirstName = preferredFirstName;
     return this;
   }
@@ -370,12 +404,12 @@ public class Employee {
     return preferredFirstName;
   }
 
-  public void setPreferredFirstName(String preferredFirstName) {
+  public void setPreferredFirstName(@javax.annotation.Nullable String preferredFirstName) {
     this.preferredFirstName = preferredFirstName;
   }
 
 
-  public Employee preferredLastName(String preferredLastName) {
+  public Employee preferredLastName(@javax.annotation.Nullable String preferredLastName) {
     this.preferredLastName = preferredLastName;
     return this;
   }
@@ -389,12 +423,12 @@ public class Employee {
     return preferredLastName;
   }
 
-  public void setPreferredLastName(String preferredLastName) {
+  public void setPreferredLastName(@javax.annotation.Nullable String preferredLastName) {
     this.preferredLastName = preferredLastName;
   }
 
 
-  public Employee addresses(List<Address> addresses) {
+  public Employee addresses(@javax.annotation.Nullable List<Address> addresses) {
     this.addresses = addresses;
     return this;
   }
@@ -416,12 +450,12 @@ public class Employee {
     return addresses;
   }
 
-  public void setAddresses(List<Address> addresses) {
+  public void setAddresses(@javax.annotation.Nullable List<Address> addresses) {
     this.addresses = addresses;
   }
 
 
-  public Employee emails(List<Email> emails) {
+  public Employee emails(@javax.annotation.Nullable List<Email> emails) {
     this.emails = emails;
     return this;
   }
@@ -443,12 +477,12 @@ public class Employee {
     return emails;
   }
 
-  public void setEmails(List<Email> emails) {
+  public void setEmails(@javax.annotation.Nullable List<Email> emails) {
     this.emails = emails;
   }
 
 
-  public Employee birthDate(String birthDate) {
+  public Employee birthDate(@javax.annotation.Nullable String birthDate) {
     this.birthDate = birthDate;
     return this;
   }
@@ -462,12 +496,12 @@ public class Employee {
     return birthDate;
   }
 
-  public void setBirthDate(String birthDate) {
+  public void setBirthDate(@javax.annotation.Nullable String birthDate) {
     this.birthDate = birthDate;
   }
 
 
-  public Employee startDate(LocalDate startDate) {
+  public Employee startDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -481,12 +515,12 @@ public class Employee {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public Employee nationalities(List<String> nationalities) {
+  public Employee nationalities(@javax.annotation.Nullable List<String> nationalities) {
     this.nationalities = nationalities;
     return this;
   }
@@ -508,12 +542,12 @@ public class Employee {
     return nationalities;
   }
 
-  public void setNationalities(List<String> nationalities) {
+  public void setNationalities(@javax.annotation.Nullable List<String> nationalities) {
     this.nationalities = nationalities;
   }
 
 
-  public Employee clientLegalEntity(PeopleClientLegalEntity clientLegalEntity) {
+  public Employee clientLegalEntity(@javax.annotation.Nullable PeopleClientLegalEntity clientLegalEntity) {
     this.clientLegalEntity = clientLegalEntity;
     return this;
   }
@@ -527,12 +561,12 @@ public class Employee {
     return clientLegalEntity;
   }
 
-  public void setClientLegalEntity(PeopleClientLegalEntity clientLegalEntity) {
+  public void setClientLegalEntity(@javax.annotation.Nullable PeopleClientLegalEntity clientLegalEntity) {
     this.clientLegalEntity = clientLegalEntity;
   }
 
 
-  public Employee state(String state) {
+  public Employee state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -546,12 +580,12 @@ public class Employee {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public Employee seniority(String seniority) {
+  public Employee seniority(@javax.annotation.Nullable String seniority) {
     this.seniority = seniority;
     return this;
   }
@@ -565,12 +599,12 @@ public class Employee {
     return seniority;
   }
 
-  public void setSeniority(String seniority) {
+  public void setSeniority(@javax.annotation.Nullable String seniority) {
     this.seniority = seniority;
   }
 
 
-  public Employee completionDate(String completionDate) {
+  public Employee completionDate(@javax.annotation.Nullable String completionDate) {
     this.completionDate = completionDate;
     return this;
   }
@@ -584,12 +618,12 @@ public class Employee {
     return completionDate;
   }
 
-  public void setCompletionDate(String completionDate) {
+  public void setCompletionDate(@javax.annotation.Nullable String completionDate) {
     this.completionDate = completionDate;
   }
 
 
-  public Employee directManager(EmployeeDirectManager directManager) {
+  public Employee directManager(@javax.annotation.Nullable EmployeeDirectManager directManager) {
     this.directManager = directManager;
     return this;
   }
@@ -603,12 +637,12 @@ public class Employee {
     return directManager;
   }
 
-  public void setDirectManager(EmployeeDirectManager directManager) {
+  public void setDirectManager(@javax.annotation.Nullable EmployeeDirectManager directManager) {
     this.directManager = directManager;
   }
 
 
-  public Employee directReports(List<GetPeopleList200ResponseDataInnerDirectReportsInner> directReports) {
+  public Employee directReports(@javax.annotation.Nullable List<GetPeopleList200ResponseDataInnerDirectReportsInner> directReports) {
     this.directReports = directReports;
     return this;
   }
@@ -630,12 +664,12 @@ public class Employee {
     return directReports;
   }
 
-  public void setDirectReports(List<GetPeopleList200ResponseDataInnerDirectReportsInner> directReports) {
+  public void setDirectReports(@javax.annotation.Nullable List<GetPeopleList200ResponseDataInnerDirectReportsInner> directReports) {
     this.directReports = directReports;
   }
 
 
-  public Employee directReportsCount(Integer directReportsCount) {
+  public Employee directReportsCount(@javax.annotation.Nullable Integer directReportsCount) {
     this.directReportsCount = directReportsCount;
     return this;
   }
@@ -649,12 +683,12 @@ public class Employee {
     return directReportsCount;
   }
 
-  public void setDirectReportsCount(Integer directReportsCount) {
+  public void setDirectReportsCount(@javax.annotation.Nullable Integer directReportsCount) {
     this.directReportsCount = directReportsCount;
   }
 
 
-  public Employee workerRelations(List<WorkerRelations> workerRelations) {
+  public Employee workerRelations(@javax.annotation.Nullable List<WorkerRelations> workerRelations) {
     this.workerRelations = workerRelations;
     return this;
   }
@@ -676,12 +710,12 @@ public class Employee {
     return workerRelations;
   }
 
-  public void setWorkerRelations(List<WorkerRelations> workerRelations) {
+  public void setWorkerRelations(@javax.annotation.Nullable List<WorkerRelations> workerRelations) {
     this.workerRelations = workerRelations;
   }
 
 
-  public Employee customFieldValues(List<CustomFieldValue> customFieldValues) {
+  public Employee customFieldValues(@javax.annotation.Nullable List<CustomFieldValue> customFieldValues) {
     this.customFieldValues = customFieldValues;
     return this;
   }
@@ -703,12 +737,12 @@ public class Employee {
     return customFieldValues;
   }
 
-  public void setCustomFieldValues(List<CustomFieldValue> customFieldValues) {
+  public void setCustomFieldValues(@javax.annotation.Nullable List<CustomFieldValue> customFieldValues) {
     this.customFieldValues = customFieldValues;
   }
 
 
-  public Employee employments(List<EmploymentDetail> employments) {
+  public Employee employments(@javax.annotation.Nullable List<EmploymentDetail> employments) {
     this.employments = employments;
     return this;
   }
@@ -730,12 +764,12 @@ public class Employee {
     return employments;
   }
 
-  public void setEmployments(List<EmploymentDetail> employments) {
+  public void setEmployments(@javax.annotation.Nullable List<EmploymentDetail> employments) {
     this.employments = employments;
   }
 
 
-  public Employee hiringStatus(String hiringStatus) {
+  public Employee hiringStatus(@javax.annotation.Nullable String hiringStatus) {
     this.hiringStatus = hiringStatus;
     return this;
   }
@@ -749,12 +783,12 @@ public class Employee {
     return hiringStatus;
   }
 
-  public void setHiringStatus(String hiringStatus) {
+  public void setHiringStatus(@javax.annotation.Nullable String hiringStatus) {
     this.hiringStatus = hiringStatus;
   }
 
 
-  public Employee newHiringStatus(String newHiringStatus) {
+  public Employee newHiringStatus(@javax.annotation.Nullable String newHiringStatus) {
     this.newHiringStatus = newHiringStatus;
     return this;
   }
@@ -768,12 +802,12 @@ public class Employee {
     return newHiringStatus;
   }
 
-  public void setNewHiringStatus(String newHiringStatus) {
+  public void setNewHiringStatus(@javax.annotation.Nullable String newHiringStatus) {
     this.newHiringStatus = newHiringStatus;
   }
 
 
-  public Employee hiringType(String hiringType) {
+  public Employee hiringType(@javax.annotation.Nullable String hiringType) {
     this.hiringType = hiringType;
     return this;
   }
@@ -787,12 +821,12 @@ public class Employee {
     return hiringType;
   }
 
-  public void setHiringType(String hiringType) {
+  public void setHiringType(@javax.annotation.Nullable String hiringType) {
     this.hiringType = hiringType;
   }
 
 
-  public Employee jobTitle(String jobTitle) {
+  public Employee jobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -806,12 +840,12 @@ public class Employee {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public Employee country(String country) {
+  public Employee country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -825,12 +859,12 @@ public class Employee {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public Employee timezone(String timezone) {
+  public Employee timezone(@javax.annotation.Nullable String timezone) {
     this.timezone = timezone;
     return this;
   }
@@ -844,12 +878,12 @@ public class Employee {
     return timezone;
   }
 
-  public void setTimezone(String timezone) {
+  public void setTimezone(@javax.annotation.Nullable String timezone) {
     this.timezone = timezone;
   }
 
 
-  public Employee department(EmployeeDepartment department) {
+  public Employee department(@javax.annotation.Nullable EmployeeDepartment department) {
     this.department = department;
     return this;
   }
@@ -863,12 +897,12 @@ public class Employee {
     return department;
   }
 
-  public void setDepartment(EmployeeDepartment department) {
+  public void setDepartment(@javax.annotation.Nullable EmployeeDepartment department) {
     this.department = department;
   }
 
 
-  public Employee workLocation(String workLocation) {
+  public Employee workLocation(@javax.annotation.Nullable String workLocation) {
     this.workLocation = workLocation;
     return this;
   }
@@ -882,12 +916,12 @@ public class Employee {
     return workLocation;
   }
 
-  public void setWorkLocation(String workLocation) {
+  public void setWorkLocation(@javax.annotation.Nullable String workLocation) {
     this.workLocation = workLocation;
   }
 
 
-  public Employee updatedAt(OffsetDateTime updatedAt) {
+  public Employee updatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -901,7 +935,7 @@ public class Employee {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 

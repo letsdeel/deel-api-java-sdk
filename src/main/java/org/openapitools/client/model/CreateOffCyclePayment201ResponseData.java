@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * CreateOffCyclePayment201ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateOffCyclePayment201ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private UUID id;
 
   public static final String SERIALIZED_NAME_CREATED = "created";
   @SerializedName(SERIALIZED_NAME_CREATED)
+  @javax.annotation.Nonnull
   private Boolean created;
 
   public CreateOffCyclePayment201ResponseData() {
   }
 
-  public CreateOffCyclePayment201ResponseData id(UUID id) {
+  public CreateOffCyclePayment201ResponseData id(@javax.annotation.Nullable UUID id) {
     this.id = id;
     return this;
   }
@@ -76,12 +78,12 @@ public class CreateOffCyclePayment201ResponseData {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nullable UUID id) {
     this.id = id;
   }
 
 
-  public CreateOffCyclePayment201ResponseData created(Boolean created) {
+  public CreateOffCyclePayment201ResponseData created(@javax.annotation.Nonnull Boolean created) {
     this.created = created;
     return this;
   }
@@ -95,7 +97,7 @@ public class CreateOffCyclePayment201ResponseData {
     return created;
   }
 
-  public void setCreated(Boolean created) {
+  public void setCreated(@javax.annotation.Nonnull Boolean created) {
     this.created = created;
   }
 

@@ -51,20 +51,22 @@ import org.openapitools.client.JSON;
 /**
  * ProfileEntitlements
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ProfileEntitlements {
   public static final String SERIALIZED_NAME_HRIS_PROFILE_ID = "hris_profile_id";
   @SerializedName(SERIALIZED_NAME_HRIS_PROFILE_ID)
+  @javax.annotation.Nullable
   private String hrisProfileId;
 
   public static final String SERIALIZED_NAME_ENTITLEMENTS = "entitlements";
   @SerializedName(SERIALIZED_NAME_ENTITLEMENTS)
+  @javax.annotation.Nullable
   private List<Entitlements> entitlements = new ArrayList<>();
 
   public ProfileEntitlements() {
   }
 
-  public ProfileEntitlements hrisProfileId(String hrisProfileId) {
+  public ProfileEntitlements hrisProfileId(@javax.annotation.Nullable String hrisProfileId) {
     this.hrisProfileId = hrisProfileId;
     return this;
   }
@@ -78,12 +80,12 @@ public class ProfileEntitlements {
     return hrisProfileId;
   }
 
-  public void setHrisProfileId(String hrisProfileId) {
+  public void setHrisProfileId(@javax.annotation.Nullable String hrisProfileId) {
     this.hrisProfileId = hrisProfileId;
   }
 
 
-  public ProfileEntitlements entitlements(List<Entitlements> entitlements) {
+  public ProfileEntitlements entitlements(@javax.annotation.Nullable List<Entitlements> entitlements) {
     this.entitlements = entitlements;
     return this;
   }
@@ -105,7 +107,7 @@ public class ProfileEntitlements {
     return entitlements;
   }
 
-  public void setEntitlements(List<Entitlements> entitlements) {
+  public void setEntitlements(@javax.annotation.Nullable List<Entitlements> entitlements) {
     this.entitlements = entitlements;
   }
 

@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * Access settings for the custom field
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetCustomFieldFromPeopleById200ResponseDataSettingsAccess {
   /**
    * Gets or Sets providedBy
@@ -106,16 +106,18 @@ public class GetCustomFieldFromPeopleById200ResponseDataSettingsAccess {
 
   public static final String SERIALIZED_NAME_PROVIDED_BY = "provided_by";
   @SerializedName(SERIALIZED_NAME_PROVIDED_BY)
+  @javax.annotation.Nullable
   private List<ProvidedByEnum> providedBy = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_IS_SENSITIVE = "is_sensitive";
   @SerializedName(SERIALIZED_NAME_IS_SENSITIVE)
+  @javax.annotation.Nullable
   private Boolean isSensitive;
 
   public GetCustomFieldFromPeopleById200ResponseDataSettingsAccess() {
   }
 
-  public GetCustomFieldFromPeopleById200ResponseDataSettingsAccess providedBy(List<ProvidedByEnum> providedBy) {
+  public GetCustomFieldFromPeopleById200ResponseDataSettingsAccess providedBy(@javax.annotation.Nullable List<ProvidedByEnum> providedBy) {
     this.providedBy = providedBy;
     return this;
   }
@@ -137,12 +139,12 @@ public class GetCustomFieldFromPeopleById200ResponseDataSettingsAccess {
     return providedBy;
   }
 
-  public void setProvidedBy(List<ProvidedByEnum> providedBy) {
+  public void setProvidedBy(@javax.annotation.Nullable List<ProvidedByEnum> providedBy) {
     this.providedBy = providedBy;
   }
 
 
-  public GetCustomFieldFromPeopleById200ResponseDataSettingsAccess isSensitive(Boolean isSensitive) {
+  public GetCustomFieldFromPeopleById200ResponseDataSettingsAccess isSensitive(@javax.annotation.Nullable Boolean isSensitive) {
     this.isSensitive = isSensitive;
     return this;
   }
@@ -156,7 +158,7 @@ public class GetCustomFieldFromPeopleById200ResponseDataSettingsAccess {
     return isSensitive;
   }
 
-  public void setIsSensitive(Boolean isSensitive) {
+  public void setIsSensitive(@javax.annotation.Nullable Boolean isSensitive) {
     this.isSensitive = isSensitive;
   }
 

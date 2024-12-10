@@ -50,40 +50,47 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseDataEmploymentDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataEmploymentDetails {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private String type;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_DAYS_PER_WEEK = "days_per_week";
   @SerializedName(SERIALIZED_NAME_DAYS_PER_WEEK)
+  @javax.annotation.Nonnull
   private BigDecimal daysPerWeek;
 
   public static final String SERIALIZED_NAME_HOURS_PER_DAY = "hours_per_day";
   @SerializedName(SERIALIZED_NAME_HOURS_PER_DAY)
+  @javax.annotation.Nonnull
   private BigDecimal hoursPerDay;
 
   public static final String SERIALIZED_NAME_PROBATION_PERIOD = "probation_period";
   @SerializedName(SERIALIZED_NAME_PROBATION_PERIOD)
+  @javax.annotation.Nullable
   private BigDecimal probationPeriod;
 
   public static final String SERIALIZED_NAME_PAID_VACATION_DAYS = "paid_vacation_days";
   @SerializedName(SERIALIZED_NAME_PAID_VACATION_DAYS)
+  @javax.annotation.Nonnull
   private BigDecimal paidVacationDays;
 
   public CreateContract201ResponseDataEmploymentDetails() {
   }
 
-  public CreateContract201ResponseDataEmploymentDetails type(String type) {
+  public CreateContract201ResponseDataEmploymentDetails type(@javax.annotation.Nonnull String type) {
     this.type = type;
     return this;
   }
@@ -97,12 +104,12 @@ public class CreateContract201ResponseDataEmploymentDetails {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nonnull String type) {
     this.type = type;
   }
 
 
-  public CreateContract201ResponseDataEmploymentDetails state(String state) {
+  public CreateContract201ResponseDataEmploymentDetails state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -116,12 +123,12 @@ public class CreateContract201ResponseDataEmploymentDetails {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public CreateContract201ResponseDataEmploymentDetails country(String country) {
+  public CreateContract201ResponseDataEmploymentDetails country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -135,12 +142,12 @@ public class CreateContract201ResponseDataEmploymentDetails {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public CreateContract201ResponseDataEmploymentDetails daysPerWeek(BigDecimal daysPerWeek) {
+  public CreateContract201ResponseDataEmploymentDetails daysPerWeek(@javax.annotation.Nonnull BigDecimal daysPerWeek) {
     this.daysPerWeek = daysPerWeek;
     return this;
   }
@@ -154,12 +161,12 @@ public class CreateContract201ResponseDataEmploymentDetails {
     return daysPerWeek;
   }
 
-  public void setDaysPerWeek(BigDecimal daysPerWeek) {
+  public void setDaysPerWeek(@javax.annotation.Nonnull BigDecimal daysPerWeek) {
     this.daysPerWeek = daysPerWeek;
   }
 
 
-  public CreateContract201ResponseDataEmploymentDetails hoursPerDay(BigDecimal hoursPerDay) {
+  public CreateContract201ResponseDataEmploymentDetails hoursPerDay(@javax.annotation.Nonnull BigDecimal hoursPerDay) {
     this.hoursPerDay = hoursPerDay;
     return this;
   }
@@ -173,12 +180,12 @@ public class CreateContract201ResponseDataEmploymentDetails {
     return hoursPerDay;
   }
 
-  public void setHoursPerDay(BigDecimal hoursPerDay) {
+  public void setHoursPerDay(@javax.annotation.Nonnull BigDecimal hoursPerDay) {
     this.hoursPerDay = hoursPerDay;
   }
 
 
-  public CreateContract201ResponseDataEmploymentDetails probationPeriod(BigDecimal probationPeriod) {
+  public CreateContract201ResponseDataEmploymentDetails probationPeriod(@javax.annotation.Nullable BigDecimal probationPeriod) {
     this.probationPeriod = probationPeriod;
     return this;
   }
@@ -192,12 +199,12 @@ public class CreateContract201ResponseDataEmploymentDetails {
     return probationPeriod;
   }
 
-  public void setProbationPeriod(BigDecimal probationPeriod) {
+  public void setProbationPeriod(@javax.annotation.Nullable BigDecimal probationPeriod) {
     this.probationPeriod = probationPeriod;
   }
 
 
-  public CreateContract201ResponseDataEmploymentDetails paidVacationDays(BigDecimal paidVacationDays) {
+  public CreateContract201ResponseDataEmploymentDetails paidVacationDays(@javax.annotation.Nonnull BigDecimal paidVacationDays) {
     this.paidVacationDays = paidVacationDays;
     return this;
   }
@@ -211,7 +218,7 @@ public class CreateContract201ResponseDataEmploymentDetails {
     return paidVacationDays;
   }
 
-  public void setPaidVacationDays(BigDecimal paidVacationDays) {
+  public void setPaidVacationDays(@javax.annotation.Nonnull BigDecimal paidVacationDays) {
     this.paidVacationDays = paidVacationDays;
   }
 

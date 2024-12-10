@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * GetPaymentList200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPaymentList200ResponseData {
   public static final String SERIALIZED_NAME_ROWS = "rows";
   @SerializedName(SERIALIZED_NAME_ROWS)
+  @javax.annotation.Nullable
   private List<GetPaymentList200ResponseDataRowsInner> rows = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal total;
 
   public GetPaymentList200ResponseData() {
   }
 
-  public GetPaymentList200ResponseData rows(List<GetPaymentList200ResponseDataRowsInner> rows) {
+  public GetPaymentList200ResponseData rows(@javax.annotation.Nullable List<GetPaymentList200ResponseDataRowsInner> rows) {
     this.rows = rows;
     return this;
   }
@@ -87,12 +89,12 @@ public class GetPaymentList200ResponseData {
     return rows;
   }
 
-  public void setRows(List<GetPaymentList200ResponseDataRowsInner> rows) {
+  public void setRows(@javax.annotation.Nullable List<GetPaymentList200ResponseDataRowsInner> rows) {
     this.rows = rows;
   }
 
 
-  public GetPaymentList200ResponseData total(BigDecimal total) {
+  public GetPaymentList200ResponseData total(@javax.annotation.Nullable BigDecimal total) {
     this.total = total;
     return this;
   }
@@ -106,7 +108,7 @@ public class GetPaymentList200ResponseData {
     return total;
   }
 
-  public void setTotal(BigDecimal total) {
+  public void setTotal(@javax.annotation.Nullable BigDecimal total) {
     this.total = total;
   }
 

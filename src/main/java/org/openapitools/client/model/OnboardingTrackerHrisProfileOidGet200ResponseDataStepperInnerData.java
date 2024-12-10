@@ -53,20 +53,22 @@ import org.openapitools.client.JSON;
 /**
  * OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerData {
   public static final String SERIALIZED_NAME_EMAILS = "emails";
   @SerializedName(SERIALIZED_NAME_EMAILS)
+  @javax.annotation.Nullable
   private List<OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInner> emails = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NEXT_REMINDER_DATE = "next_reminder_date";
   @SerializedName(SERIALIZED_NAME_NEXT_REMINDER_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime nextReminderDate;
 
   public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerData() {
   }
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerData emails(List<OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInner> emails) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerData emails(@javax.annotation.Nullable List<OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInner> emails) {
     this.emails = emails;
     return this;
   }
@@ -88,12 +90,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerData {
     return emails;
   }
 
-  public void setEmails(List<OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInner> emails) {
+  public void setEmails(@javax.annotation.Nullable List<OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerDataEmailsInner> emails) {
     this.emails = emails;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerData nextReminderDate(OffsetDateTime nextReminderDate) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerData nextReminderDate(@javax.annotation.Nullable OffsetDateTime nextReminderDate) {
     this.nextReminderDate = nextReminderDate;
     return this;
   }
@@ -107,7 +109,7 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerData {
     return nextReminderDate;
   }
 
-  public void setNextReminderDate(OffsetDateTime nextReminderDate) {
+  public void setNextReminderDate(@javax.annotation.Nullable OffsetDateTime nextReminderDate) {
     this.nextReminderDate = nextReminderDate;
   }
 

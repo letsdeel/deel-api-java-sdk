@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * Details of adjustment to update
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateInvoiceAdjustmentRequest {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nullable
   private String title;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public UpdateInvoiceAdjustmentRequest() {
   }
 
-  public UpdateInvoiceAdjustmentRequest title(String title) {
+  public UpdateInvoiceAdjustmentRequest title(@javax.annotation.Nullable String title) {
     this.title = title;
     return this;
   }
@@ -80,12 +83,12 @@ public class UpdateInvoiceAdjustmentRequest {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nullable String title) {
     this.title = title;
   }
 
 
-  public UpdateInvoiceAdjustmentRequest amount(BigDecimal amount) {
+  public UpdateInvoiceAdjustmentRequest amount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -99,12 +102,12 @@ public class UpdateInvoiceAdjustmentRequest {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public UpdateInvoiceAdjustmentRequest description(String description) {
+  public UpdateInvoiceAdjustmentRequest description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -118,7 +121,7 @@ public class UpdateInvoiceAdjustmentRequest {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 

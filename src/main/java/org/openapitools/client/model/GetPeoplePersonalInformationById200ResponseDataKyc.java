@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * GetPeoplePersonalInformationById200ResponseDataKyc
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPeoplePersonalInformationById200ResponseDataKyc {
   public static final String SERIALIZED_NAME_IS_KYC_APPROVED = "is_kyc_approved";
   @SerializedName(SERIALIZED_NAME_IS_KYC_APPROVED)
+  @javax.annotation.Nonnull
   private Boolean isKycApproved;
 
   public static final String SERIALIZED_NAME_KYC_APPROVAL_DATE = "kyc_approval_date";
   @SerializedName(SERIALIZED_NAME_KYC_APPROVAL_DATE)
+  @javax.annotation.Nonnull
   private String kycApprovalDate;
 
   public GetPeoplePersonalInformationById200ResponseDataKyc() {
   }
 
-  public GetPeoplePersonalInformationById200ResponseDataKyc isKycApproved(Boolean isKycApproved) {
+  public GetPeoplePersonalInformationById200ResponseDataKyc isKycApproved(@javax.annotation.Nonnull Boolean isKycApproved) {
     this.isKycApproved = isKycApproved;
     return this;
   }
@@ -75,12 +77,12 @@ public class GetPeoplePersonalInformationById200ResponseDataKyc {
     return isKycApproved;
   }
 
-  public void setIsKycApproved(Boolean isKycApproved) {
+  public void setIsKycApproved(@javax.annotation.Nonnull Boolean isKycApproved) {
     this.isKycApproved = isKycApproved;
   }
 
 
-  public GetPeoplePersonalInformationById200ResponseDataKyc kycApprovalDate(String kycApprovalDate) {
+  public GetPeoplePersonalInformationById200ResponseDataKyc kycApprovalDate(@javax.annotation.Nonnull String kycApprovalDate) {
     this.kycApprovalDate = kycApprovalDate;
     return this;
   }
@@ -94,7 +96,7 @@ public class GetPeoplePersonalInformationById200ResponseDataKyc {
     return kycApprovalDate;
   }
 
-  public void setKycApprovalDate(String kycApprovalDate) {
+  public void setKycApprovalDate(@javax.annotation.Nonnull String kycApprovalDate) {
     this.kycApprovalDate = kycApprovalDate;
   }
 

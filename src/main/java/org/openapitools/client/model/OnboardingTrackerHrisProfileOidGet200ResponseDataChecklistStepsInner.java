@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nullable
   private String label;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_COMPLETED_AT = "completed_at";
   @SerializedName(SERIALIZED_NAME_COMPLETED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime completedAt;
 
   public OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner() {
   }
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner type(String type) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -84,12 +88,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInne
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner label(String label) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner label(@javax.annotation.Nullable String label) {
     this.label = label;
     return this;
   }
@@ -103,12 +107,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInne
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nullable String label) {
     this.label = label;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner status(String status) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -122,12 +126,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInne
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner completedAt(OffsetDateTime completedAt) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner completedAt(@javax.annotation.Nullable OffsetDateTime completedAt) {
     this.completedAt = completedAt;
     return this;
   }
@@ -141,7 +145,7 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInne
     return completedAt;
   }
 
-  public void setCompletedAt(OffsetDateTime completedAt) {
+  public void setCompletedAt(@javax.annotation.Nullable OffsetDateTime completedAt) {
     this.completedAt = completedAt;
   }
 

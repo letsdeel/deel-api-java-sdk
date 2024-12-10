@@ -48,28 +48,32 @@ import org.openapitools.client.JSON;
 /**
  * GetCategories200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetCategories200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nullable
   private String label;
 
   public static final String SERIALIZED_NAME_UNIT_TYPE = "unit_type";
   @SerializedName(SERIALIZED_NAME_UNIT_TYPE)
+  @javax.annotation.Nullable
   private String unitType;
 
   public GetCategories200ResponseDataInner() {
   }
 
-  public GetCategories200ResponseDataInner id(String id) {
+  public GetCategories200ResponseDataInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -83,12 +87,12 @@ public class GetCategories200ResponseDataInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public GetCategories200ResponseDataInner name(String name) {
+  public GetCategories200ResponseDataInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -102,12 +106,12 @@ public class GetCategories200ResponseDataInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetCategories200ResponseDataInner label(String label) {
+  public GetCategories200ResponseDataInner label(@javax.annotation.Nullable String label) {
     this.label = label;
     return this;
   }
@@ -121,12 +125,12 @@ public class GetCategories200ResponseDataInner {
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nullable String label) {
     this.label = label;
   }
 
 
-  public GetCategories200ResponseDataInner unitType(String unitType) {
+  public GetCategories200ResponseDataInner unitType(@javax.annotation.Nullable String unitType) {
     this.unitType = unitType;
     return this;
   }
@@ -140,7 +144,7 @@ public class GetCategories200ResponseDataInner {
     return unitType;
   }
 
-  public void setUnitType(String unitType) {
+  public void setUnitType(@javax.annotation.Nullable String unitType) {
     this.unitType = unitType;
   }
 

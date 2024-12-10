@@ -50,32 +50,37 @@ import org.openapitools.client.JSON;
 /**
  * RequestExerciseEquity201Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class RequestExerciseEquity201Response {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private String status;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime updatedAt;
 
   public static final String SERIALIZED_NAME_EMPLOYER_APPROVAL = "employer_approval";
   @SerializedName(SERIALIZED_NAME_EMPLOYER_APPROVAL)
+  @javax.annotation.Nonnull
   private String employerApproval;
 
   public RequestExerciseEquity201Response() {
   }
 
-  public RequestExerciseEquity201Response id(UUID id) {
+  public RequestExerciseEquity201Response id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -89,12 +94,12 @@ public class RequestExerciseEquity201Response {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public RequestExerciseEquity201Response status(String status) {
+  public RequestExerciseEquity201Response status(@javax.annotation.Nonnull String status) {
     this.status = status;
     return this;
   }
@@ -108,12 +113,12 @@ public class RequestExerciseEquity201Response {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nonnull String status) {
     this.status = status;
   }
 
 
-  public RequestExerciseEquity201Response createdAt(OffsetDateTime createdAt) {
+  public RequestExerciseEquity201Response createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -127,12 +132,12 @@ public class RequestExerciseEquity201Response {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public RequestExerciseEquity201Response updatedAt(OffsetDateTime updatedAt) {
+  public RequestExerciseEquity201Response updatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -146,12 +151,12 @@ public class RequestExerciseEquity201Response {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public RequestExerciseEquity201Response employerApproval(String employerApproval) {
+  public RequestExerciseEquity201Response employerApproval(@javax.annotation.Nonnull String employerApproval) {
     this.employerApproval = employerApproval;
     return this;
   }
@@ -165,7 +170,7 @@ public class RequestExerciseEquity201Response {
     return employerApproval;
   }
 
-  public void setEmployerApproval(String employerApproval) {
+  public void setEmployerApproval(@javax.annotation.Nonnull String employerApproval) {
     this.employerApproval = employerApproval;
   }
 

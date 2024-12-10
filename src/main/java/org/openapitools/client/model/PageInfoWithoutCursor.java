@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * PageInfoWithoutCursor
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PageInfoWithoutCursor {
   public static final String SERIALIZED_NAME_TOTAL_ROWS = "total_rows";
   @SerializedName(SERIALIZED_NAME_TOTAL_ROWS)
+  @javax.annotation.Nonnull
   private BigDecimal totalRows;
 
   public PageInfoWithoutCursor() {
   }
 
-  public PageInfoWithoutCursor totalRows(BigDecimal totalRows) {
+  public PageInfoWithoutCursor totalRows(@javax.annotation.Nonnull BigDecimal totalRows) {
     this.totalRows = totalRows;
     return this;
   }
@@ -72,7 +73,7 @@ public class PageInfoWithoutCursor {
     return totalRows;
   }
 
-  public void setTotalRows(BigDecimal totalRows) {
+  public void setTotalRows(@javax.annotation.Nonnull BigDecimal totalRows) {
     this.totalRows = totalRows;
   }
 

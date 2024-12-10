@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * BgCheckOptions
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BgCheckOptions {
   public static final String SERIALIZED_NAME_INDIVIDUAL_CHECKS = "individual_checks";
   @SerializedName(SERIALIZED_NAME_INDIVIDUAL_CHECKS)
+  @javax.annotation.Nullable
   private List<BgCheckIndividualCheck> individualChecks = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PACKAGES = "packages";
   @SerializedName(SERIALIZED_NAME_PACKAGES)
+  @javax.annotation.Nullable
   private List<BgCheckPackage> packages = new ArrayList<>();
 
   public BgCheckOptions() {
   }
 
-  public BgCheckOptions individualChecks(List<BgCheckIndividualCheck> individualChecks) {
+  public BgCheckOptions individualChecks(@javax.annotation.Nullable List<BgCheckIndividualCheck> individualChecks) {
     this.individualChecks = individualChecks;
     return this;
   }
@@ -87,12 +89,12 @@ public class BgCheckOptions {
     return individualChecks;
   }
 
-  public void setIndividualChecks(List<BgCheckIndividualCheck> individualChecks) {
+  public void setIndividualChecks(@javax.annotation.Nullable List<BgCheckIndividualCheck> individualChecks) {
     this.individualChecks = individualChecks;
   }
 
 
-  public BgCheckOptions packages(List<BgCheckPackage> packages) {
+  public BgCheckOptions packages(@javax.annotation.Nullable List<BgCheckPackage> packages) {
     this.packages = packages;
     return this;
   }
@@ -114,7 +116,7 @@ public class BgCheckOptions {
     return packages;
   }
 
-  public void setPackages(List<BgCheckPackage> packages) {
+  public void setPackages(@javax.annotation.Nullable List<BgCheckPackage> packages) {
     this.packages = packages;
   }
 

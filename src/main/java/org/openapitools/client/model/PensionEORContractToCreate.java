@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * Some countries required a pension benefit.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PensionEORContractToCreate {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_CONTRIBUTION = "contribution";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTION)
+  @javax.annotation.Nullable
   private String contribution;
 
   public PensionEORContractToCreate() {
   }
 
-  public PensionEORContractToCreate id(String id) {
+  public PensionEORContractToCreate id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -75,12 +77,12 @@ public class PensionEORContractToCreate {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public PensionEORContractToCreate contribution(String contribution) {
+  public PensionEORContractToCreate contribution(@javax.annotation.Nullable String contribution) {
     this.contribution = contribution;
     return this;
   }
@@ -94,7 +96,7 @@ public class PensionEORContractToCreate {
     return contribution;
   }
 
-  public void setContribution(String contribution) {
+  public void setContribution(@javax.annotation.Nullable String contribution) {
     this.contribution = contribution;
   }
 

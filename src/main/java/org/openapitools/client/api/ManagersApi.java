@@ -161,7 +161,8 @@ public class ManagersApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Manager created successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The input data did not meet the required validation rules. </td><td>  -  </td></tr>
@@ -181,7 +182,8 @@ public class ManagersApi {
          * @return CreateManager201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Manager created successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The input data did not meet the required validation rules. </td><td>  -  </td></tr>
@@ -202,7 +204,8 @@ public class ManagersApi {
          * @return ApiResponse&lt;CreateManager201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Manager created successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The input data did not meet the required validation rules. </td><td>  -  </td></tr>
@@ -223,7 +226,8 @@ public class ManagersApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Manager created successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The input data did not meet the required validation rules. </td><td>  -  </td></tr>
@@ -245,7 +249,8 @@ public class ManagersApi {
      * @param createManagerRequest Details of the new manager to be created. (required)
      * @return APIcreateManagerRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Manager created successfully. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid request. The input data did not meet the required validation rules. </td><td>  -  </td></tr>
@@ -365,7 +370,8 @@ public class ManagersApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -385,7 +391,8 @@ public class ManagersApi {
          * @return GetManagers200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -406,7 +413,8 @@ public class ManagersApi {
          * @return ApiResponse&lt;GetManagers200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -427,7 +435,8 @@ public class ManagersApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -448,7 +457,8 @@ public class ManagersApi {
      * Retrieve a list of all managers in the organization along with pagination details.
      * @return APIgetManagersRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>

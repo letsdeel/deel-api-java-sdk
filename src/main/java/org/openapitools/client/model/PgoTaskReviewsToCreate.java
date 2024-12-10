@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * PgoTaskReviewsToCreate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PgoTaskReviewsToCreate {
   /**
    * Review status.
@@ -107,20 +107,23 @@ public class PgoTaskReviewsToCreate {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_REASON = "reason";
   @SerializedName(SERIALIZED_NAME_REASON)
+  @javax.annotation.Nullable
   private String reason;
 
   public static final String SERIALIZED_NAME_IDS = "ids";
   @SerializedName(SERIALIZED_NAME_IDS)
+  @javax.annotation.Nonnull
   private List<String> ids = new ArrayList<>();
 
   public PgoTaskReviewsToCreate() {
   }
 
-  public PgoTaskReviewsToCreate status(StatusEnum status) {
+  public PgoTaskReviewsToCreate status(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -134,12 +137,12 @@ public class PgoTaskReviewsToCreate {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 
 
-  public PgoTaskReviewsToCreate reason(String reason) {
+  public PgoTaskReviewsToCreate reason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
     return this;
   }
@@ -153,12 +156,12 @@ public class PgoTaskReviewsToCreate {
     return reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
   }
 
 
-  public PgoTaskReviewsToCreate ids(List<String> ids) {
+  public PgoTaskReviewsToCreate ids(@javax.annotation.Nonnull List<String> ids) {
     this.ids = ids;
     return this;
   }
@@ -180,7 +183,7 @@ public class PgoTaskReviewsToCreate {
     return ids;
   }
 
-  public void setIds(List<String> ids) {
+  public void setIds(@javax.annotation.Nonnull List<String> ids) {
     this.ids = ids;
   }
 

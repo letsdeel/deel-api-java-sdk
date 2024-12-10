@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * The impact of the termination, if applicable.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffboardingTrackerIdGet200ResponseDataTerminationTerminationImpact {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nullable
   private String title;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public OffboardingTrackerIdGet200ResponseDataTerminationTerminationImpact() {
   }
 
-  public OffboardingTrackerIdGet200ResponseDataTerminationTerminationImpact title(String title) {
+  public OffboardingTrackerIdGet200ResponseDataTerminationTerminationImpact title(@javax.annotation.Nullable String title) {
     this.title = title;
     return this;
   }
@@ -75,12 +77,12 @@ public class OffboardingTrackerIdGet200ResponseDataTerminationTerminationImpact 
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nullable String title) {
     this.title = title;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataTerminationTerminationImpact description(String description) {
+  public OffboardingTrackerIdGet200ResponseDataTerminationTerminationImpact description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -94,7 +96,7 @@ public class OffboardingTrackerIdGet200ResponseDataTerminationTerminationImpact 
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 

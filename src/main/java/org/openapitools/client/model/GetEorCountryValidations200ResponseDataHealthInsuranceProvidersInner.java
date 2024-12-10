@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInnerId;
+import java.util.UUID;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
-  private GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInnerId id;
+  @javax.annotation.Nullable
+  private UUID id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner() {
   }
 
-  public GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner id(GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInnerId id) {
+  public GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner id(@javax.annotation.Nullable UUID id) {
     this.id = id;
     return this;
   }
@@ -72,16 +74,16 @@ public class GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInne
    * @return id
    */
   @javax.annotation.Nullable
-  public GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInnerId getId() {
+  public UUID getId() {
     return id;
   }
 
-  public void setId(GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInnerId id) {
+  public void setId(@javax.annotation.Nullable UUID id) {
     this.id = id;
   }
 
 
-  public GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner name(String name) {
+  public GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -95,7 +97,7 @@ public class GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInne
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
@@ -175,9 +177,8 @@ public class GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInne
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the optional field `id`
-      if (jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) {
-        GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInnerId.validateJsonElement(jsonObj.get("id"));
+      if ((jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) && !jsonObj.get("id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
       }
       if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));

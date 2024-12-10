@@ -50,26 +50,31 @@ import org.openapitools.client.JSON;
 /**
  * EntitlementsFutureEventsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EntitlementsFutureEventsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private UUID id;
 
   public static final String SERIALIZED_NAME_PROFILE_ID = "profile_id";
   @SerializedName(SERIALIZED_NAME_PROFILE_ID)
+  @javax.annotation.Nullable
   private UUID profileId;
 
   public static final String SERIALIZED_NAME_POLICY_ID = "policy_id";
   @SerializedName(SERIALIZED_NAME_POLICY_ID)
+  @javax.annotation.Nullable
   private UUID policyId;
 
   public static final String SERIALIZED_NAME_TIME_OFF_ID = "time_off_id";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_ID)
+  @javax.annotation.Nullable
   private UUID timeOffId;
 
   public static final String SERIALIZED_NAME_TRACKING_PERIOD = "tracking_period";
   @SerializedName(SERIALIZED_NAME_TRACKING_PERIOD)
+  @javax.annotation.Nullable
   private OffsetDateTime trackingPeriod;
 
   /**
@@ -146,20 +151,23 @@ public class EntitlementsFutureEventsInner {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private Float amount;
 
   public EntitlementsFutureEventsInner() {
   }
 
-  public EntitlementsFutureEventsInner id(UUID id) {
+  public EntitlementsFutureEventsInner id(@javax.annotation.Nullable UUID id) {
     this.id = id;
     return this;
   }
@@ -173,12 +181,12 @@ public class EntitlementsFutureEventsInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nullable UUID id) {
     this.id = id;
   }
 
 
-  public EntitlementsFutureEventsInner profileId(UUID profileId) {
+  public EntitlementsFutureEventsInner profileId(@javax.annotation.Nullable UUID profileId) {
     this.profileId = profileId;
     return this;
   }
@@ -192,12 +200,12 @@ public class EntitlementsFutureEventsInner {
     return profileId;
   }
 
-  public void setProfileId(UUID profileId) {
+  public void setProfileId(@javax.annotation.Nullable UUID profileId) {
     this.profileId = profileId;
   }
 
 
-  public EntitlementsFutureEventsInner policyId(UUID policyId) {
+  public EntitlementsFutureEventsInner policyId(@javax.annotation.Nullable UUID policyId) {
     this.policyId = policyId;
     return this;
   }
@@ -211,12 +219,12 @@ public class EntitlementsFutureEventsInner {
     return policyId;
   }
 
-  public void setPolicyId(UUID policyId) {
+  public void setPolicyId(@javax.annotation.Nullable UUID policyId) {
     this.policyId = policyId;
   }
 
 
-  public EntitlementsFutureEventsInner timeOffId(UUID timeOffId) {
+  public EntitlementsFutureEventsInner timeOffId(@javax.annotation.Nullable UUID timeOffId) {
     this.timeOffId = timeOffId;
     return this;
   }
@@ -230,12 +238,12 @@ public class EntitlementsFutureEventsInner {
     return timeOffId;
   }
 
-  public void setTimeOffId(UUID timeOffId) {
+  public void setTimeOffId(@javax.annotation.Nullable UUID timeOffId) {
     this.timeOffId = timeOffId;
   }
 
 
-  public EntitlementsFutureEventsInner trackingPeriod(OffsetDateTime trackingPeriod) {
+  public EntitlementsFutureEventsInner trackingPeriod(@javax.annotation.Nullable OffsetDateTime trackingPeriod) {
     this.trackingPeriod = trackingPeriod;
     return this;
   }
@@ -249,12 +257,12 @@ public class EntitlementsFutureEventsInner {
     return trackingPeriod;
   }
 
-  public void setTrackingPeriod(OffsetDateTime trackingPeriod) {
+  public void setTrackingPeriod(@javax.annotation.Nullable OffsetDateTime trackingPeriod) {
     this.trackingPeriod = trackingPeriod;
   }
 
 
-  public EntitlementsFutureEventsInner type(TypeEnum type) {
+  public EntitlementsFutureEventsInner type(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -268,12 +276,12 @@ public class EntitlementsFutureEventsInner {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
 
-  public EntitlementsFutureEventsInner description(String description) {
+  public EntitlementsFutureEventsInner description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -287,12 +295,12 @@ public class EntitlementsFutureEventsInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public EntitlementsFutureEventsInner amount(Float amount) {
+  public EntitlementsFutureEventsInner amount(@javax.annotation.Nullable Float amount) {
     this.amount = amount;
     return this;
   }
@@ -306,7 +314,7 @@ public class EntitlementsFutureEventsInner {
     return amount;
   }
 
-  public void setAmount(Float amount) {
+  public void setAmount(@javax.annotation.Nullable Float amount) {
     this.amount = amount;
   }
 

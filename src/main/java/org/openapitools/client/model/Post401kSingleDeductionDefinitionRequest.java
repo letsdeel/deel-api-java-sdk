@@ -49,10 +49,11 @@ import org.openapitools.client.JSON;
 /**
  * Schema for the 401K Guideline Plan request body.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Post401kSingleDeductionDefinitionRequest {
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nonnull
   private BigDecimal value;
 
   /**
@@ -107,12 +108,13 @@ public class Post401kSingleDeductionDefinitionRequest {
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nonnull
   private CurrencyEnum currency;
 
   public Post401kSingleDeductionDefinitionRequest() {
   }
 
-  public Post401kSingleDeductionDefinitionRequest value(BigDecimal value) {
+  public Post401kSingleDeductionDefinitionRequest value(@javax.annotation.Nonnull BigDecimal value) {
     this.value = value;
     return this;
   }
@@ -126,12 +128,12 @@ public class Post401kSingleDeductionDefinitionRequest {
     return value;
   }
 
-  public void setValue(BigDecimal value) {
+  public void setValue(@javax.annotation.Nonnull BigDecimal value) {
     this.value = value;
   }
 
 
-  public Post401kSingleDeductionDefinitionRequest currency(CurrencyEnum currency) {
+  public Post401kSingleDeductionDefinitionRequest currency(@javax.annotation.Nonnull CurrencyEnum currency) {
     this.currency = currency;
     return this;
   }
@@ -145,7 +147,7 @@ public class Post401kSingleDeductionDefinitionRequest {
     return currency;
   }
 
-  public void setCurrency(CurrencyEnum currency) {
+  public void setCurrency(@javax.annotation.Nonnull CurrencyEnum currency) {
     this.currency = currency;
   }
 

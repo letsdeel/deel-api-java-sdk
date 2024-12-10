@@ -48,32 +48,37 @@ import org.openapitools.client.JSON;
 /**
  * GPContractCreatedEmployee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GPContractCreatedEmployee {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_EMPLOYEE_NUMBER = "employee_number";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE_NUMBER)
+  @javax.annotation.Nullable
   private String employeeNumber;
 
   public GPContractCreatedEmployee() {
   }
 
-  public GPContractCreatedEmployee id(String id) {
+  public GPContractCreatedEmployee id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -87,12 +92,12 @@ public class GPContractCreatedEmployee {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public GPContractCreatedEmployee firstName(String firstName) {
+  public GPContractCreatedEmployee firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -106,12 +111,12 @@ public class GPContractCreatedEmployee {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public GPContractCreatedEmployee lastName(String lastName) {
+  public GPContractCreatedEmployee lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -125,12 +130,12 @@ public class GPContractCreatedEmployee {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
 
-  public GPContractCreatedEmployee email(String email) {
+  public GPContractCreatedEmployee email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -144,12 +149,12 @@ public class GPContractCreatedEmployee {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public GPContractCreatedEmployee employeeNumber(String employeeNumber) {
+  public GPContractCreatedEmployee employeeNumber(@javax.annotation.Nullable String employeeNumber) {
     this.employeeNumber = employeeNumber;
     return this;
   }
@@ -163,7 +168,7 @@ public class GPContractCreatedEmployee {
     return employeeNumber;
   }
 
-  public void setEmployeeNumber(String employeeNumber) {
+  public void setEmployeeNumber(@javax.annotation.Nullable String employeeNumber) {
     this.employeeNumber = employeeNumber;
   }
 

@@ -49,14 +49,16 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseDataClientLegalEntity
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataClientLegalEntity {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private BigDecimal id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   /**
@@ -113,28 +115,33 @@ public class CreateContract201ResponseDataClientLegalEntity {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_SUBTYPE = "subtype";
   @SerializedName(SERIALIZED_NAME_SUBTYPE)
+  @javax.annotation.Nonnull
   private String subtype;
 
   public static final String SERIALIZED_NAME_VAT_NUMBER = "vat_number";
   @SerializedName(SERIALIZED_NAME_VAT_NUMBER)
+  @javax.annotation.Nonnull
   private String vatNumber;
 
   public static final String SERIALIZED_NAME_REGISTRATION_NUMBER = "registration_number";
   @SerializedName(SERIALIZED_NAME_REGISTRATION_NUMBER)
+  @javax.annotation.Nonnull
   private String registrationNumber;
 
   public CreateContract201ResponseDataClientLegalEntity() {
   }
 
-  public CreateContract201ResponseDataClientLegalEntity id(BigDecimal id) {
+  public CreateContract201ResponseDataClientLegalEntity id(@javax.annotation.Nonnull BigDecimal id) {
     this.id = id;
     return this;
   }
@@ -148,12 +155,12 @@ public class CreateContract201ResponseDataClientLegalEntity {
     return id;
   }
 
-  public void setId(BigDecimal id) {
+  public void setId(@javax.annotation.Nonnull BigDecimal id) {
     this.id = id;
   }
 
 
-  public CreateContract201ResponseDataClientLegalEntity name(String name) {
+  public CreateContract201ResponseDataClientLegalEntity name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -167,12 +174,12 @@ public class CreateContract201ResponseDataClientLegalEntity {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public CreateContract201ResponseDataClientLegalEntity type(TypeEnum type) {
+  public CreateContract201ResponseDataClientLegalEntity type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -186,12 +193,12 @@ public class CreateContract201ResponseDataClientLegalEntity {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public CreateContract201ResponseDataClientLegalEntity email(String email) {
+  public CreateContract201ResponseDataClientLegalEntity email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -205,12 +212,12 @@ public class CreateContract201ResponseDataClientLegalEntity {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public CreateContract201ResponseDataClientLegalEntity subtype(String subtype) {
+  public CreateContract201ResponseDataClientLegalEntity subtype(@javax.annotation.Nonnull String subtype) {
     this.subtype = subtype;
     return this;
   }
@@ -224,12 +231,12 @@ public class CreateContract201ResponseDataClientLegalEntity {
     return subtype;
   }
 
-  public void setSubtype(String subtype) {
+  public void setSubtype(@javax.annotation.Nonnull String subtype) {
     this.subtype = subtype;
   }
 
 
-  public CreateContract201ResponseDataClientLegalEntity vatNumber(String vatNumber) {
+  public CreateContract201ResponseDataClientLegalEntity vatNumber(@javax.annotation.Nonnull String vatNumber) {
     this.vatNumber = vatNumber;
     return this;
   }
@@ -243,12 +250,12 @@ public class CreateContract201ResponseDataClientLegalEntity {
     return vatNumber;
   }
 
-  public void setVatNumber(String vatNumber) {
+  public void setVatNumber(@javax.annotation.Nonnull String vatNumber) {
     this.vatNumber = vatNumber;
   }
 
 
-  public CreateContract201ResponseDataClientLegalEntity registrationNumber(String registrationNumber) {
+  public CreateContract201ResponseDataClientLegalEntity registrationNumber(@javax.annotation.Nonnull String registrationNumber) {
     this.registrationNumber = registrationNumber;
     return this;
   }
@@ -262,7 +269,7 @@ public class CreateContract201ResponseDataClientLegalEntity {
     return registrationNumber;
   }
 
-  public void setRegistrationNumber(String registrationNumber) {
+  public void setRegistrationNumber(@javax.annotation.Nonnull String registrationNumber) {
     this.registrationNumber = registrationNumber;
   }
 

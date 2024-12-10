@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * PaymentsDetailedReportContainerDataInnerPayment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PaymentsDetailedReportContainerDataInnerPayment {
   public static final String SERIALIZED_NAME_PAID_AT = "paid_at";
   @SerializedName(SERIALIZED_NAME_PAID_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime paidAt;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private String amount;
 
   public static final String SERIALIZED_NAME_DOCUMENT = "document";
   @SerializedName(SERIALIZED_NAME_DOCUMENT)
+  @javax.annotation.Nullable
   private String document;
 
   public PaymentsDetailedReportContainerDataInnerPayment() {
   }
 
-  public PaymentsDetailedReportContainerDataInnerPayment paidAt(OffsetDateTime paidAt) {
+  public PaymentsDetailedReportContainerDataInnerPayment paidAt(@javax.annotation.Nullable OffsetDateTime paidAt) {
     this.paidAt = paidAt;
     return this;
   }
@@ -84,12 +88,12 @@ public class PaymentsDetailedReportContainerDataInnerPayment {
     return paidAt;
   }
 
-  public void setPaidAt(OffsetDateTime paidAt) {
+  public void setPaidAt(@javax.annotation.Nullable OffsetDateTime paidAt) {
     this.paidAt = paidAt;
   }
 
 
-  public PaymentsDetailedReportContainerDataInnerPayment currency(String currency) {
+  public PaymentsDetailedReportContainerDataInnerPayment currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -103,12 +107,12 @@ public class PaymentsDetailedReportContainerDataInnerPayment {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public PaymentsDetailedReportContainerDataInnerPayment amount(String amount) {
+  public PaymentsDetailedReportContainerDataInnerPayment amount(@javax.annotation.Nullable String amount) {
     this.amount = amount;
     return this;
   }
@@ -122,12 +126,12 @@ public class PaymentsDetailedReportContainerDataInnerPayment {
     return amount;
   }
 
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nullable String amount) {
     this.amount = amount;
   }
 
 
-  public PaymentsDetailedReportContainerDataInnerPayment document(String document) {
+  public PaymentsDetailedReportContainerDataInnerPayment document(@javax.annotation.Nullable String document) {
     this.document = document;
     return this;
   }
@@ -141,7 +145,7 @@ public class PaymentsDetailedReportContainerDataInnerPayment {
     return document;
   }
 
-  public void setDocument(String document) {
+  public void setDocument(@javax.annotation.Nullable String document) {
     this.document = document;
   }
 

@@ -54,36 +54,42 @@ import org.openapitools.client.JSON;
 /**
  * GetBenefitPaystubs200ResponseDataInnerEmployeesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBenefitPaystubs200ResponseDataInnerEmployeesInner {
   public static final String SERIALIZED_NAME_GROSS_PAY = "gross_pay";
   @SerializedName(SERIALIZED_NAME_GROSS_PAY)
+  @javax.annotation.Nullable
   private BigDecimal grossPay;
 
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nullable
   private String contractId;
 
   public static final String SERIALIZED_NAME_EMPLOYEE_ID = "employee_id";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE_ID)
+  @javax.annotation.Nullable
   private String employeeId;
 
   public static final String SERIALIZED_NAME_HOURS_WORKED = "hours_worked";
   @SerializedName(SERIALIZED_NAME_HOURS_WORKED)
+  @javax.annotation.Nullable
   private String hoursWorked;
 
   public static final String SERIALIZED_NAME_CONTRIBUTIONS = "contributions";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTIONS)
+  @javax.annotation.Nullable
   private List<GetBenefitPaystubs200ResponseDataInnerEmployeesInnerContributionsInner> contributions = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_EMPLOYER_CONTRIBUTIONS = "employerContributions";
   @SerializedName(SERIALIZED_NAME_EMPLOYER_CONTRIBUTIONS)
+  @javax.annotation.Nullable
   private List<GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContributionsInner> employerContributions = new ArrayList<>();
 
   public GetBenefitPaystubs200ResponseDataInnerEmployeesInner() {
   }
 
-  public GetBenefitPaystubs200ResponseDataInnerEmployeesInner grossPay(BigDecimal grossPay) {
+  public GetBenefitPaystubs200ResponseDataInnerEmployeesInner grossPay(@javax.annotation.Nullable BigDecimal grossPay) {
     this.grossPay = grossPay;
     return this;
   }
@@ -97,12 +103,12 @@ public class GetBenefitPaystubs200ResponseDataInnerEmployeesInner {
     return grossPay;
   }
 
-  public void setGrossPay(BigDecimal grossPay) {
+  public void setGrossPay(@javax.annotation.Nullable BigDecimal grossPay) {
     this.grossPay = grossPay;
   }
 
 
-  public GetBenefitPaystubs200ResponseDataInnerEmployeesInner contractId(String contractId) {
+  public GetBenefitPaystubs200ResponseDataInnerEmployeesInner contractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -116,12 +122,12 @@ public class GetBenefitPaystubs200ResponseDataInnerEmployeesInner {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
   }
 
 
-  public GetBenefitPaystubs200ResponseDataInnerEmployeesInner employeeId(String employeeId) {
+  public GetBenefitPaystubs200ResponseDataInnerEmployeesInner employeeId(@javax.annotation.Nullable String employeeId) {
     this.employeeId = employeeId;
     return this;
   }
@@ -135,12 +141,12 @@ public class GetBenefitPaystubs200ResponseDataInnerEmployeesInner {
     return employeeId;
   }
 
-  public void setEmployeeId(String employeeId) {
+  public void setEmployeeId(@javax.annotation.Nullable String employeeId) {
     this.employeeId = employeeId;
   }
 
 
-  public GetBenefitPaystubs200ResponseDataInnerEmployeesInner hoursWorked(String hoursWorked) {
+  public GetBenefitPaystubs200ResponseDataInnerEmployeesInner hoursWorked(@javax.annotation.Nullable String hoursWorked) {
     this.hoursWorked = hoursWorked;
     return this;
   }
@@ -154,12 +160,12 @@ public class GetBenefitPaystubs200ResponseDataInnerEmployeesInner {
     return hoursWorked;
   }
 
-  public void setHoursWorked(String hoursWorked) {
+  public void setHoursWorked(@javax.annotation.Nullable String hoursWorked) {
     this.hoursWorked = hoursWorked;
   }
 
 
-  public GetBenefitPaystubs200ResponseDataInnerEmployeesInner contributions(List<GetBenefitPaystubs200ResponseDataInnerEmployeesInnerContributionsInner> contributions) {
+  public GetBenefitPaystubs200ResponseDataInnerEmployeesInner contributions(@javax.annotation.Nullable List<GetBenefitPaystubs200ResponseDataInnerEmployeesInnerContributionsInner> contributions) {
     this.contributions = contributions;
     return this;
   }
@@ -181,12 +187,12 @@ public class GetBenefitPaystubs200ResponseDataInnerEmployeesInner {
     return contributions;
   }
 
-  public void setContributions(List<GetBenefitPaystubs200ResponseDataInnerEmployeesInnerContributionsInner> contributions) {
+  public void setContributions(@javax.annotation.Nullable List<GetBenefitPaystubs200ResponseDataInnerEmployeesInnerContributionsInner> contributions) {
     this.contributions = contributions;
   }
 
 
-  public GetBenefitPaystubs200ResponseDataInnerEmployeesInner employerContributions(List<GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContributionsInner> employerContributions) {
+  public GetBenefitPaystubs200ResponseDataInnerEmployeesInner employerContributions(@javax.annotation.Nullable List<GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContributionsInner> employerContributions) {
     this.employerContributions = employerContributions;
     return this;
   }
@@ -208,7 +214,7 @@ public class GetBenefitPaystubs200ResponseDataInnerEmployeesInner {
     return employerContributions;
   }
 
-  public void setEmployerContributions(List<GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContributionsInner> employerContributions) {
+  public void setEmployerContributions(@javax.annotation.Nullable List<GetBenefitPaystubs200ResponseDataInnerEmployeesInnerEmployerContributionsInner> employerContributions) {
     this.employerContributions = employerContributions;
   }
 

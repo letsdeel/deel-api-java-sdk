@@ -52,68 +52,82 @@ import org.openapitools.client.JSON;
 /**
  * Health insurance provider.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HealthInsuranceProvider {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_IS_UNISURE = "is_unisure";
   @SerializedName(SERIALIZED_NAME_IS_UNISURE)
+  @javax.annotation.Nullable
   private Boolean isUnisure;
 
   public static final String SERIALIZED_NAME_HOME_PAGE_URL = "home_page_url";
   @SerializedName(SERIALIZED_NAME_HOME_PAGE_URL)
+  @javax.annotation.Nullable
   private String homePageUrl;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_ENDING_RULE = "ending_rule";
   @SerializedName(SERIALIZED_NAME_ENDING_RULE)
+  @javax.annotation.Nullable
   private String endingRule;
 
   public static final String SERIALIZED_NAME_DAYS_TO_CANCEL = "days_to_cancel";
   @SerializedName(SERIALIZED_NAME_DAYS_TO_CANCEL)
+  @javax.annotation.Nullable
   private String daysToCancel;
 
   public static final String SERIALIZED_NAME_PRICING_INFO_LINK = "pricing_info_link";
   @SerializedName(SERIALIZED_NAME_PRICING_INFO_LINK)
+  @javax.annotation.Nullable
   private String pricingInfoLink;
 
   public static final String SERIALIZED_NAME_FIXED_PRICE = "fixed_price";
   @SerializedName(SERIALIZED_NAME_FIXED_PRICE)
+  @javax.annotation.Nullable
   private Boolean fixedPrice;
 
   public static final String SERIALIZED_NAME_ATTACHMENTS = "attachments";
   @SerializedName(SERIALIZED_NAME_ATTACHMENTS)
+  @javax.annotation.Nullable
   private List<HealthInsuranceProviderAttachmentsInner> attachments = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CLIENT_INFO_BANNER = "client_info_banner";
   @SerializedName(SERIALIZED_NAME_CLIENT_INFO_BANNER)
+  @javax.annotation.Nullable
   private String clientInfoBanner;
 
   public static final String SERIALIZED_NAME_IS_AVAILABLE_FOR_NEW_QUOTES = "is_available_for_new_quotes";
   @SerializedName(SERIALIZED_NAME_IS_AVAILABLE_FOR_NEW_QUOTES)
+  @javax.annotation.Nullable
   private Boolean isAvailableForNewQuotes;
 
   public static final String SERIALIZED_NAME_PLANS = "plans";
   @SerializedName(SERIALIZED_NAME_PLANS)
+  @javax.annotation.Nullable
   private List<HealthInsuranceProviderPlansInner> plans = new ArrayList<>();
 
   public HealthInsuranceProvider() {
   }
 
-  public HealthInsuranceProvider id(String id) {
+  public HealthInsuranceProvider id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -127,12 +141,12 @@ public class HealthInsuranceProvider {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public HealthInsuranceProvider name(String name) {
+  public HealthInsuranceProvider name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -146,12 +160,12 @@ public class HealthInsuranceProvider {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public HealthInsuranceProvider isUnisure(Boolean isUnisure) {
+  public HealthInsuranceProvider isUnisure(@javax.annotation.Nullable Boolean isUnisure) {
     this.isUnisure = isUnisure;
     return this;
   }
@@ -165,12 +179,12 @@ public class HealthInsuranceProvider {
     return isUnisure;
   }
 
-  public void setIsUnisure(Boolean isUnisure) {
+  public void setIsUnisure(@javax.annotation.Nullable Boolean isUnisure) {
     this.isUnisure = isUnisure;
   }
 
 
-  public HealthInsuranceProvider homePageUrl(String homePageUrl) {
+  public HealthInsuranceProvider homePageUrl(@javax.annotation.Nullable String homePageUrl) {
     this.homePageUrl = homePageUrl;
     return this;
   }
@@ -184,12 +198,12 @@ public class HealthInsuranceProvider {
     return homePageUrl;
   }
 
-  public void setHomePageUrl(String homePageUrl) {
+  public void setHomePageUrl(@javax.annotation.Nullable String homePageUrl) {
     this.homePageUrl = homePageUrl;
   }
 
 
-  public HealthInsuranceProvider currency(String currency) {
+  public HealthInsuranceProvider currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -203,12 +217,12 @@ public class HealthInsuranceProvider {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public HealthInsuranceProvider type(String type) {
+  public HealthInsuranceProvider type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -222,12 +236,12 @@ public class HealthInsuranceProvider {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public HealthInsuranceProvider endingRule(String endingRule) {
+  public HealthInsuranceProvider endingRule(@javax.annotation.Nullable String endingRule) {
     this.endingRule = endingRule;
     return this;
   }
@@ -241,12 +255,12 @@ public class HealthInsuranceProvider {
     return endingRule;
   }
 
-  public void setEndingRule(String endingRule) {
+  public void setEndingRule(@javax.annotation.Nullable String endingRule) {
     this.endingRule = endingRule;
   }
 
 
-  public HealthInsuranceProvider daysToCancel(String daysToCancel) {
+  public HealthInsuranceProvider daysToCancel(@javax.annotation.Nullable String daysToCancel) {
     this.daysToCancel = daysToCancel;
     return this;
   }
@@ -260,12 +274,12 @@ public class HealthInsuranceProvider {
     return daysToCancel;
   }
 
-  public void setDaysToCancel(String daysToCancel) {
+  public void setDaysToCancel(@javax.annotation.Nullable String daysToCancel) {
     this.daysToCancel = daysToCancel;
   }
 
 
-  public HealthInsuranceProvider pricingInfoLink(String pricingInfoLink) {
+  public HealthInsuranceProvider pricingInfoLink(@javax.annotation.Nullable String pricingInfoLink) {
     this.pricingInfoLink = pricingInfoLink;
     return this;
   }
@@ -279,12 +293,12 @@ public class HealthInsuranceProvider {
     return pricingInfoLink;
   }
 
-  public void setPricingInfoLink(String pricingInfoLink) {
+  public void setPricingInfoLink(@javax.annotation.Nullable String pricingInfoLink) {
     this.pricingInfoLink = pricingInfoLink;
   }
 
 
-  public HealthInsuranceProvider fixedPrice(Boolean fixedPrice) {
+  public HealthInsuranceProvider fixedPrice(@javax.annotation.Nullable Boolean fixedPrice) {
     this.fixedPrice = fixedPrice;
     return this;
   }
@@ -298,12 +312,12 @@ public class HealthInsuranceProvider {
     return fixedPrice;
   }
 
-  public void setFixedPrice(Boolean fixedPrice) {
+  public void setFixedPrice(@javax.annotation.Nullable Boolean fixedPrice) {
     this.fixedPrice = fixedPrice;
   }
 
 
-  public HealthInsuranceProvider attachments(List<HealthInsuranceProviderAttachmentsInner> attachments) {
+  public HealthInsuranceProvider attachments(@javax.annotation.Nullable List<HealthInsuranceProviderAttachmentsInner> attachments) {
     this.attachments = attachments;
     return this;
   }
@@ -325,12 +339,12 @@ public class HealthInsuranceProvider {
     return attachments;
   }
 
-  public void setAttachments(List<HealthInsuranceProviderAttachmentsInner> attachments) {
+  public void setAttachments(@javax.annotation.Nullable List<HealthInsuranceProviderAttachmentsInner> attachments) {
     this.attachments = attachments;
   }
 
 
-  public HealthInsuranceProvider clientInfoBanner(String clientInfoBanner) {
+  public HealthInsuranceProvider clientInfoBanner(@javax.annotation.Nullable String clientInfoBanner) {
     this.clientInfoBanner = clientInfoBanner;
     return this;
   }
@@ -344,12 +358,12 @@ public class HealthInsuranceProvider {
     return clientInfoBanner;
   }
 
-  public void setClientInfoBanner(String clientInfoBanner) {
+  public void setClientInfoBanner(@javax.annotation.Nullable String clientInfoBanner) {
     this.clientInfoBanner = clientInfoBanner;
   }
 
 
-  public HealthInsuranceProvider isAvailableForNewQuotes(Boolean isAvailableForNewQuotes) {
+  public HealthInsuranceProvider isAvailableForNewQuotes(@javax.annotation.Nullable Boolean isAvailableForNewQuotes) {
     this.isAvailableForNewQuotes = isAvailableForNewQuotes;
     return this;
   }
@@ -363,12 +377,12 @@ public class HealthInsuranceProvider {
     return isAvailableForNewQuotes;
   }
 
-  public void setIsAvailableForNewQuotes(Boolean isAvailableForNewQuotes) {
+  public void setIsAvailableForNewQuotes(@javax.annotation.Nullable Boolean isAvailableForNewQuotes) {
     this.isAvailableForNewQuotes = isAvailableForNewQuotes;
   }
 
 
-  public HealthInsuranceProvider plans(List<HealthInsuranceProviderPlansInner> plans) {
+  public HealthInsuranceProvider plans(@javax.annotation.Nullable List<HealthInsuranceProviderPlansInner> plans) {
     this.plans = plans;
     return this;
   }
@@ -390,7 +404,7 @@ public class HealthInsuranceProvider {
     return plans;
   }
 
-  public void setPlans(List<HealthInsuranceProviderPlansInner> plans) {
+  public void setPlans(@javax.annotation.Nullable List<HealthInsuranceProviderPlansInner> plans) {
     this.plans = plans;
   }
 

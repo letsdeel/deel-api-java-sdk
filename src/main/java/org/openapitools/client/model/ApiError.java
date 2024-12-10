@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * ApiError
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ApiError {
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nullable
   private String message;
 
   public static final String SERIALIZED_NAME_PATH = "path";
   @SerializedName(SERIALIZED_NAME_PATH)
+  @javax.annotation.Nullable
   private String path;
 
   public ApiError() {
   }
 
-  public ApiError message(String message) {
+  public ApiError message(@javax.annotation.Nullable String message) {
     this.message = message;
     return this;
   }
@@ -75,12 +77,12 @@ public class ApiError {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nullable String message) {
     this.message = message;
   }
 
 
-  public ApiError path(String path) {
+  public ApiError path(@javax.annotation.Nullable String path) {
     this.path = path;
     return this;
   }
@@ -94,7 +96,7 @@ public class ApiError {
     return path;
   }
 
-  public void setPath(String path) {
+  public void setPath(@javax.annotation.Nullable String path) {
     this.path = path;
   }
 

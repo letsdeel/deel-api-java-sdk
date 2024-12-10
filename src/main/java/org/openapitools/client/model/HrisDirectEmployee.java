@@ -55,36 +55,42 @@ import org.openapitools.client.JSON;
 /**
  * HrisDirectEmployee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisDirectEmployee {
   public static final String SERIALIZED_NAME_EMPLOYEE_DETAILS = "employee_details";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE_DETAILS)
+  @javax.annotation.Nonnull
   private HrisDirectEmployeeDetails employeeDetails;
 
   public static final String SERIALIZED_NAME_TEAM_INFORMATION = "team_information";
   @SerializedName(SERIALIZED_NAME_TEAM_INFORMATION)
+  @javax.annotation.Nonnull
   private HrisTeamInformation teamInformation;
 
   public static final String SERIALIZED_NAME_JOB_INFORMATION = "job_information";
   @SerializedName(SERIALIZED_NAME_JOB_INFORMATION)
+  @javax.annotation.Nonnull
   private HrisDirectEmployeeJobInformation jobInformation;
 
   public static final String SERIALIZED_NAME_COMPENSATION = "compensation";
   @SerializedName(SERIALIZED_NAME_COMPENSATION)
+  @javax.annotation.Nonnull
   private HrisCompensation compensation;
 
   public static final String SERIALIZED_NAME_CONTRACT = "contract";
   @SerializedName(SERIALIZED_NAME_CONTRACT)
+  @javax.annotation.Nonnull
   private HrisDirectEmployeeContract contract;
 
   public static final String SERIALIZED_NAME_VACATION_INFO = "vacation_info";
   @SerializedName(SERIALIZED_NAME_VACATION_INFO)
+  @javax.annotation.Nullable
   private HrisDirectEmployeeVacationInfo vacationInfo;
 
   public HrisDirectEmployee() {
   }
 
-  public HrisDirectEmployee employeeDetails(HrisDirectEmployeeDetails employeeDetails) {
+  public HrisDirectEmployee employeeDetails(@javax.annotation.Nonnull HrisDirectEmployeeDetails employeeDetails) {
     this.employeeDetails = employeeDetails;
     return this;
   }
@@ -98,12 +104,12 @@ public class HrisDirectEmployee {
     return employeeDetails;
   }
 
-  public void setEmployeeDetails(HrisDirectEmployeeDetails employeeDetails) {
+  public void setEmployeeDetails(@javax.annotation.Nonnull HrisDirectEmployeeDetails employeeDetails) {
     this.employeeDetails = employeeDetails;
   }
 
 
-  public HrisDirectEmployee teamInformation(HrisTeamInformation teamInformation) {
+  public HrisDirectEmployee teamInformation(@javax.annotation.Nonnull HrisTeamInformation teamInformation) {
     this.teamInformation = teamInformation;
     return this;
   }
@@ -117,12 +123,12 @@ public class HrisDirectEmployee {
     return teamInformation;
   }
 
-  public void setTeamInformation(HrisTeamInformation teamInformation) {
+  public void setTeamInformation(@javax.annotation.Nonnull HrisTeamInformation teamInformation) {
     this.teamInformation = teamInformation;
   }
 
 
-  public HrisDirectEmployee jobInformation(HrisDirectEmployeeJobInformation jobInformation) {
+  public HrisDirectEmployee jobInformation(@javax.annotation.Nonnull HrisDirectEmployeeJobInformation jobInformation) {
     this.jobInformation = jobInformation;
     return this;
   }
@@ -136,12 +142,12 @@ public class HrisDirectEmployee {
     return jobInformation;
   }
 
-  public void setJobInformation(HrisDirectEmployeeJobInformation jobInformation) {
+  public void setJobInformation(@javax.annotation.Nonnull HrisDirectEmployeeJobInformation jobInformation) {
     this.jobInformation = jobInformation;
   }
 
 
-  public HrisDirectEmployee compensation(HrisCompensation compensation) {
+  public HrisDirectEmployee compensation(@javax.annotation.Nonnull HrisCompensation compensation) {
     this.compensation = compensation;
     return this;
   }
@@ -155,12 +161,12 @@ public class HrisDirectEmployee {
     return compensation;
   }
 
-  public void setCompensation(HrisCompensation compensation) {
+  public void setCompensation(@javax.annotation.Nonnull HrisCompensation compensation) {
     this.compensation = compensation;
   }
 
 
-  public HrisDirectEmployee contract(HrisDirectEmployeeContract contract) {
+  public HrisDirectEmployee contract(@javax.annotation.Nonnull HrisDirectEmployeeContract contract) {
     this.contract = contract;
     return this;
   }
@@ -174,12 +180,12 @@ public class HrisDirectEmployee {
     return contract;
   }
 
-  public void setContract(HrisDirectEmployeeContract contract) {
+  public void setContract(@javax.annotation.Nonnull HrisDirectEmployeeContract contract) {
     this.contract = contract;
   }
 
 
-  public HrisDirectEmployee vacationInfo(HrisDirectEmployeeVacationInfo vacationInfo) {
+  public HrisDirectEmployee vacationInfo(@javax.annotation.Nullable HrisDirectEmployeeVacationInfo vacationInfo) {
     this.vacationInfo = vacationInfo;
     return this;
   }
@@ -193,7 +199,7 @@ public class HrisDirectEmployee {
     return vacationInfo;
   }
 
-  public void setVacationInfo(HrisDirectEmployeeVacationInfo vacationInfo) {
+  public void setVacationInfo(@javax.annotation.Nullable HrisDirectEmployeeVacationInfo vacationInfo) {
     this.vacationInfo = vacationInfo;
   }
 

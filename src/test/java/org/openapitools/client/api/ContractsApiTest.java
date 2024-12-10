@@ -23,7 +23,6 @@ import java.math.BigDecimal;
 import org.openapitools.client.model.ContractDocumentContainer;
 import org.openapitools.client.model.DownloadWorkerDocumentsByIdContainer;
 import java.io.File;
-import org.openapitools.client.model.FinalPaymentCalculatedContainer;
 import org.openapitools.client.model.GenericResultCreated;
 import org.openapitools.client.model.GenericResultUpdated;
 import org.openapitools.client.model.GetContractById200Response;
@@ -34,7 +33,6 @@ import org.openapitools.client.model.GetContractTemplates200Response;
 import org.openapitools.client.model.GetInviteLink200Response;
 import org.openapitools.client.model.InputToPatchContractExternalId;
 import org.openapitools.client.model.InviteToSignContractRequest;
-import java.time.LocalDate;
 import org.openapitools.client.model.RequestExerciseEquity201Response;
 import org.openapitools.client.model.RequestExerciseEquityRequest;
 import org.openapitools.client.model.SignContract201Response;
@@ -118,29 +116,6 @@ public class ContractsApiTest {
         String contractId = null;
         InputToPatchContractExternalId inputToPatchContractExternalId = null;
         GenericResultCreated response = api.attachExternalId(contractId, inputToPatchContractExternalId)
-                .execute();
-        // TODO: test validations
-    }
-
-    /**
-     * Calculate final payment
-     *
-     * Calculate the final payment due to the contractor when ending the contract.
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void calculateFinalPaymentTest() throws ApiException {
-        String contractId = null;
-        LocalDate endDate = null;
-        String calculationType = null;
-        String workweekStart = null;
-        String workweekEnd = null;
-        FinalPaymentCalculatedContainer response = api.calculateFinalPayment(contractId)
-                .endDate(endDate)
-                .calculationType(calculationType)
-                .workweekStart(workweekStart)
-                .workweekEnd(workweekEnd)
                 .execute();
         // TODO: test validations
     }

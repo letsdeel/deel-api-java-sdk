@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * InviteTeamMemberToSign
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class InviteTeamMemberToSign {
   public static final String SERIALIZED_NAME_CONTRACT_OID = "contract_oid";
   @SerializedName(SERIALIZED_NAME_CONTRACT_OID)
+  @javax.annotation.Nonnull
   private String contractOid;
 
   public static final String SERIALIZED_NAME_CONTRACT_NAME = "contract_name";
   @SerializedName(SERIALIZED_NAME_CONTRACT_NAME)
+  @javax.annotation.Nonnull
   private String contractName;
 
   public static final String SERIALIZED_NAME_INVITEE_ID = "invitee_id";
   @SerializedName(SERIALIZED_NAME_INVITEE_ID)
+  @javax.annotation.Nonnull
   private BigDecimal inviteeId;
 
   public static final String SERIALIZED_NAME_INVITEE_NAME = "invitee_name";
   @SerializedName(SERIALIZED_NAME_INVITEE_NAME)
+  @javax.annotation.Nonnull
   private String inviteeName;
 
   public InviteTeamMemberToSign() {
   }
 
-  public InviteTeamMemberToSign contractOid(String contractOid) {
+  public InviteTeamMemberToSign contractOid(@javax.annotation.Nonnull String contractOid) {
     this.contractOid = contractOid;
     return this;
   }
@@ -84,12 +88,12 @@ public class InviteTeamMemberToSign {
     return contractOid;
   }
 
-  public void setContractOid(String contractOid) {
+  public void setContractOid(@javax.annotation.Nonnull String contractOid) {
     this.contractOid = contractOid;
   }
 
 
-  public InviteTeamMemberToSign contractName(String contractName) {
+  public InviteTeamMemberToSign contractName(@javax.annotation.Nonnull String contractName) {
     this.contractName = contractName;
     return this;
   }
@@ -103,12 +107,12 @@ public class InviteTeamMemberToSign {
     return contractName;
   }
 
-  public void setContractName(String contractName) {
+  public void setContractName(@javax.annotation.Nonnull String contractName) {
     this.contractName = contractName;
   }
 
 
-  public InviteTeamMemberToSign inviteeId(BigDecimal inviteeId) {
+  public InviteTeamMemberToSign inviteeId(@javax.annotation.Nonnull BigDecimal inviteeId) {
     this.inviteeId = inviteeId;
     return this;
   }
@@ -122,12 +126,12 @@ public class InviteTeamMemberToSign {
     return inviteeId;
   }
 
-  public void setInviteeId(BigDecimal inviteeId) {
+  public void setInviteeId(@javax.annotation.Nonnull BigDecimal inviteeId) {
     this.inviteeId = inviteeId;
   }
 
 
-  public InviteTeamMemberToSign inviteeName(String inviteeName) {
+  public InviteTeamMemberToSign inviteeName(@javax.annotation.Nonnull String inviteeName) {
     this.inviteeName = inviteeName;
     return this;
   }
@@ -141,7 +145,7 @@ public class InviteTeamMemberToSign {
     return inviteeName;
   }
 
-  public void setInviteeName(String inviteeName) {
+  public void setInviteeName(@javax.annotation.Nonnull String inviteeName) {
     this.inviteeName = inviteeName;
   }
 

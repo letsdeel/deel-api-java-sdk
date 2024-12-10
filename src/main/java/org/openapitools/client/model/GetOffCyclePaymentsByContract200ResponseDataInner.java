@@ -51,14 +51,16 @@ import org.openapitools.client.JSON;
 /**
  * GetOffCyclePaymentsByContract200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetOffCyclePaymentsByContract200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private String amount;
 
   /**
@@ -123,32 +125,38 @@ public class GetOffCyclePaymentsByContract200ResponseDataInner {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_REPORTED_BY = "reported_by";
   @SerializedName(SERIALIZED_NAME_REPORTED_BY)
+  @javax.annotation.Nonnull
   private GetOffCyclePaymentsByContract200ResponseDataInnerReportedBy reportedBy;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currency_code";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nonnull
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_DATE_SUBMITTED = "date_submitted";
   @SerializedName(SERIALIZED_NAME_DATE_SUBMITTED)
+  @javax.annotation.Nonnull
   private OffsetDateTime dateSubmitted;
 
   public GetOffCyclePaymentsByContract200ResponseDataInner() {
   }
 
-  public GetOffCyclePaymentsByContract200ResponseDataInner id(UUID id) {
+  public GetOffCyclePaymentsByContract200ResponseDataInner id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -162,12 +170,12 @@ public class GetOffCyclePaymentsByContract200ResponseDataInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public GetOffCyclePaymentsByContract200ResponseDataInner amount(String amount) {
+  public GetOffCyclePaymentsByContract200ResponseDataInner amount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
     return this;
   }
@@ -181,12 +189,12 @@ public class GetOffCyclePaymentsByContract200ResponseDataInner {
     return amount;
   }
 
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
   }
 
 
-  public GetOffCyclePaymentsByContract200ResponseDataInner status(StatusEnum status) {
+  public GetOffCyclePaymentsByContract200ResponseDataInner status(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -200,12 +208,12 @@ public class GetOffCyclePaymentsByContract200ResponseDataInner {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
   }
 
 
-  public GetOffCyclePaymentsByContract200ResponseDataInner createdAt(OffsetDateTime createdAt) {
+  public GetOffCyclePaymentsByContract200ResponseDataInner createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -219,12 +227,12 @@ public class GetOffCyclePaymentsByContract200ResponseDataInner {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public GetOffCyclePaymentsByContract200ResponseDataInner description(String description) {
+  public GetOffCyclePaymentsByContract200ResponseDataInner description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -238,12 +246,12 @@ public class GetOffCyclePaymentsByContract200ResponseDataInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public GetOffCyclePaymentsByContract200ResponseDataInner reportedBy(GetOffCyclePaymentsByContract200ResponseDataInnerReportedBy reportedBy) {
+  public GetOffCyclePaymentsByContract200ResponseDataInner reportedBy(@javax.annotation.Nonnull GetOffCyclePaymentsByContract200ResponseDataInnerReportedBy reportedBy) {
     this.reportedBy = reportedBy;
     return this;
   }
@@ -257,12 +265,12 @@ public class GetOffCyclePaymentsByContract200ResponseDataInner {
     return reportedBy;
   }
 
-  public void setReportedBy(GetOffCyclePaymentsByContract200ResponseDataInnerReportedBy reportedBy) {
+  public void setReportedBy(@javax.annotation.Nonnull GetOffCyclePaymentsByContract200ResponseDataInnerReportedBy reportedBy) {
     this.reportedBy = reportedBy;
   }
 
 
-  public GetOffCyclePaymentsByContract200ResponseDataInner currencyCode(String currencyCode) {
+  public GetOffCyclePaymentsByContract200ResponseDataInner currencyCode(@javax.annotation.Nonnull String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -276,12 +284,12 @@ public class GetOffCyclePaymentsByContract200ResponseDataInner {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nonnull String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public GetOffCyclePaymentsByContract200ResponseDataInner dateSubmitted(OffsetDateTime dateSubmitted) {
+  public GetOffCyclePaymentsByContract200ResponseDataInner dateSubmitted(@javax.annotation.Nonnull OffsetDateTime dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
     return this;
   }
@@ -295,7 +303,7 @@ public class GetOffCyclePaymentsByContract200ResponseDataInner {
     return dateSubmitted;
   }
 
-  public void setDateSubmitted(OffsetDateTime dateSubmitted) {
+  public void setDateSubmitted(@javax.annotation.Nonnull OffsetDateTime dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
   }
 

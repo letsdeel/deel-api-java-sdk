@@ -51,20 +51,22 @@ import org.openapitools.client.JSON;
 /**
  * CreateGPContract201ResponseDataEmploymentHolidays
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateGPContract201ResponseDataEmploymentHolidays {
   public static final String SERIALIZED_NAME_ALLOWANCE = "allowance";
   @SerializedName(SERIALIZED_NAME_ALLOWANCE)
+  @javax.annotation.Nullable
   private BigDecimal allowance;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime startDate;
 
   public CreateGPContract201ResponseDataEmploymentHolidays() {
   }
 
-  public CreateGPContract201ResponseDataEmploymentHolidays allowance(BigDecimal allowance) {
+  public CreateGPContract201ResponseDataEmploymentHolidays allowance(@javax.annotation.Nullable BigDecimal allowance) {
     this.allowance = allowance;
     return this;
   }
@@ -78,12 +80,12 @@ public class CreateGPContract201ResponseDataEmploymentHolidays {
     return allowance;
   }
 
-  public void setAllowance(BigDecimal allowance) {
+  public void setAllowance(@javax.annotation.Nullable BigDecimal allowance) {
     this.allowance = allowance;
   }
 
 
-  public CreateGPContract201ResponseDataEmploymentHolidays startDate(OffsetDateTime startDate) {
+  public CreateGPContract201ResponseDataEmploymentHolidays startDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -97,7 +99,7 @@ public class CreateGPContract201ResponseDataEmploymentHolidays {
     return startDate;
   }
 
-  public void setStartDate(OffsetDateTime startDate) {
+  public void setStartDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
   }
 

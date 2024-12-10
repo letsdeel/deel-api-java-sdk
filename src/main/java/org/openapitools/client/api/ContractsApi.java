@@ -36,7 +36,6 @@ import java.math.BigDecimal;
 import org.openapitools.client.model.ContractDocumentContainer;
 import org.openapitools.client.model.DownloadWorkerDocumentsByIdContainer;
 import java.io.File;
-import org.openapitools.client.model.FinalPaymentCalculatedContainer;
 import org.openapitools.client.model.GenericResultCreated;
 import org.openapitools.client.model.GenericResultUpdated;
 import org.openapitools.client.model.GetContractById200Response;
@@ -47,7 +46,6 @@ import org.openapitools.client.model.GetContractTemplates200Response;
 import org.openapitools.client.model.GetInviteLink200Response;
 import org.openapitools.client.model.InputToPatchContractExternalId;
 import org.openapitools.client.model.InviteToSignContractRequest;
-import java.time.LocalDate;
 import org.openapitools.client.model.RequestExerciseEquity201Response;
 import org.openapitools.client.model.RequestExerciseEquityRequest;
 import org.openapitools.client.model.SignContract201Response;
@@ -199,7 +197,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -220,7 +219,8 @@ public class ContractsApi {
          * @return AddContractDocument201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -242,7 +242,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;AddContractDocument201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -264,7 +265,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -287,7 +289,8 @@ public class ContractsApi {
      * @param contractId Deel contract id. (required)
      * @return APIaddContractDocumentRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -394,7 +397,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -413,7 +417,8 @@ public class ContractsApi {
          * @return ApproveExerciseEquity200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -433,7 +438,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;ApproveExerciseEquity200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -453,7 +459,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -475,7 +482,8 @@ public class ContractsApi {
      * @param approveExerciseEquityRequest  (required)
      * @return APIapproveExerciseEquityRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -573,7 +581,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -594,7 +603,8 @@ public class ContractsApi {
          * @return GenericResultUpdated
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -616,7 +626,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;GenericResultUpdated&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -638,7 +649,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -661,7 +673,8 @@ public class ContractsApi {
      * @param contractId Deel contract id. (required)
      * @return APIarchiveContractRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -768,7 +781,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -789,7 +803,8 @@ public class ContractsApi {
          * @return GenericResultCreated
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -811,7 +826,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;GenericResultCreated&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -833,7 +849,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -857,7 +874,8 @@ public class ContractsApi {
      * @param inputToPatchContractExternalId Contract object that needs to be created (required)
      * @return APIattachExternalIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -871,238 +889,6 @@ public class ContractsApi {
      */
     public APIattachExternalIdRequest attachExternalId(String contractId, InputToPatchContractExternalId inputToPatchContractExternalId) {
         return new APIattachExternalIdRequest(contractId, inputToPatchContractExternalId);
-    }
-    private okhttp3.Call calculateFinalPaymentCall(String contractId, LocalDate endDate, String calculationType, String workweekStart, String workweekEnd, final ApiCallback _callback) throws ApiException {
-        String basePath = null;
-        // Operation Servers
-        String[] localBasePaths = new String[] {  };
-
-        // Determine Base Path to Use
-        if (localCustomBaseUrl != null){
-            basePath = localCustomBaseUrl;
-        } else if ( localBasePaths.length > 0 ) {
-            basePath = localBasePaths[localHostIndex];
-        } else {
-            basePath = null;
-        }
-
-        Object localVarPostBody = null;
-
-        // create path and map variables
-        String localVarPath = "/contracts/{contract_id}/final-payments"
-            .replace("{" + "contract_id" + "}", localVarApiClient.escapeString(contractId.toString()));
-
-        List<Pair> localVarQueryParams = new ArrayList<Pair>();
-        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-        Map<String, String> localVarCookieParams = new HashMap<String, String>();
-        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-        if (endDate != null) {
-            localVarQueryParams.addAll(localVarApiClient.parameterToPair("end_date", endDate));
-        }
-
-        if (calculationType != null) {
-            localVarQueryParams.addAll(localVarApiClient.parameterToPair("calculation_type", calculationType));
-        }
-
-        if (workweekStart != null) {
-            localVarQueryParams.addAll(localVarApiClient.parameterToPair("workweek_start", workweekStart));
-        }
-
-        if (workweekEnd != null) {
-            localVarQueryParams.addAll(localVarApiClient.parameterToPair("workweek_end", workweekEnd));
-        }
-
-        final String[] localVarAccepts = {
-            "application/json"
-        };
-        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-        if (localVarAccept != null) {
-            localVarHeaderParams.put("Accept", localVarAccept);
-        }
-
-        final String[] localVarContentTypes = {
-        };
-        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-        if (localVarContentType != null) {
-            localVarHeaderParams.put("Content-Type", localVarContentType);
-        }
-
-        String[] localVarAuthNames = new String[] { "deelToken", "oauth2" };
-        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-    }
-
-    @SuppressWarnings("rawtypes")
-    private okhttp3.Call calculateFinalPaymentValidateBeforeCall(String contractId, LocalDate endDate, String calculationType, String workweekStart, String workweekEnd, final ApiCallback _callback) throws ApiException {
-        // verify the required parameter 'contractId' is set
-        if (contractId == null) {
-            throw new ApiException("Missing the required parameter 'contractId' when calling calculateFinalPayment(Async)");
-        }
-
-        return calculateFinalPaymentCall(contractId, endDate, calculationType, workweekStart, workweekEnd, _callback);
-
-    }
-
-
-    private ApiResponse<FinalPaymentCalculatedContainer> calculateFinalPaymentWithHttpInfo(String contractId, LocalDate endDate, String calculationType, String workweekStart, String workweekEnd) throws ApiException {
-        okhttp3.Call localVarCall = calculateFinalPaymentValidateBeforeCall(contractId, endDate, calculationType, workweekStart, workweekEnd, null);
-        Type localVarReturnType = new TypeToken<FinalPaymentCalculatedContainer>(){}.getType();
-        return localVarApiClient.execute(localVarCall, localVarReturnType);
-    }
-
-    private okhttp3.Call calculateFinalPaymentAsync(String contractId, LocalDate endDate, String calculationType, String workweekStart, String workweekEnd, final ApiCallback<FinalPaymentCalculatedContainer> _callback) throws ApiException {
-
-        okhttp3.Call localVarCall = calculateFinalPaymentValidateBeforeCall(contractId, endDate, calculationType, workweekStart, workweekEnd, _callback);
-        Type localVarReturnType = new TypeToken<FinalPaymentCalculatedContainer>(){}.getType();
-        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-        return localVarCall;
-    }
-
-    public class APIcalculateFinalPaymentRequest {
-        private final String contractId;
-        private LocalDate endDate;
-        private String calculationType;
-        private String workweekStart;
-        private String workweekEnd;
-
-        private APIcalculateFinalPaymentRequest(String contractId) {
-            this.contractId = contractId;
-        }
-
-        /**
-         * Set endDate
-         * @param endDate The day to end the contract. (optional)
-         * @return APIcalculateFinalPaymentRequest
-         */
-        public APIcalculateFinalPaymentRequest endDate(LocalDate endDate) {
-            this.endDate = endDate;
-            return this;
-        }
-
-        /**
-         * Set calculationType
-         * @param calculationType The days to calculate. (optional)
-         * @return APIcalculateFinalPaymentRequest
-         */
-        public APIcalculateFinalPaymentRequest calculationType(String calculationType) {
-            this.calculationType = calculationType;
-            return this;
-        }
-
-        /**
-         * Set workweekStart
-         * @param workweekStart The day the work week starts, 0 to 6 (optional)
-         * @return APIcalculateFinalPaymentRequest
-         */
-        public APIcalculateFinalPaymentRequest workweekStart(String workweekStart) {
-            this.workweekStart = workweekStart;
-            return this;
-        }
-
-        /**
-         * Set workweekEnd
-         * @param workweekEnd The day the work week ends, 0 to 6 (optional)
-         * @return APIcalculateFinalPaymentRequest
-         */
-        public APIcalculateFinalPaymentRequest workweekEnd(String workweekEnd) {
-            this.workweekEnd = workweekEnd;
-            return this;
-        }
-
-        /**
-         * Build call for calculateFinalPayment
-         * @param _callback ApiCallback API callback
-         * @return Call to execute
-         * @throws ApiException If fail to serialize the request body object
-         * @http.response.details
-         <table summary="Response Details" border="1">
-            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-            <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
-            <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 403 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 404 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 500 </td><td> Operation failed. </td><td>  -  </td></tr>
-         </table>
-         */
-        public okhttp3.Call buildCall(final ApiCallback _callback) throws ApiException {
-            return calculateFinalPaymentCall(contractId, endDate, calculationType, workweekStart, workweekEnd, _callback);
-        }
-
-        /**
-         * Execute calculateFinalPayment request
-         * @return FinalPaymentCalculatedContainer
-         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-         * @http.response.details
-         <table summary="Response Details" border="1">
-            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-            <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
-            <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 403 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 404 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 500 </td><td> Operation failed. </td><td>  -  </td></tr>
-         </table>
-         */
-        public FinalPaymentCalculatedContainer execute() throws ApiException {
-            ApiResponse<FinalPaymentCalculatedContainer> localVarResp = calculateFinalPaymentWithHttpInfo(contractId, endDate, calculationType, workweekStart, workweekEnd);
-            return localVarResp.getData();
-        }
-
-        /**
-         * Execute calculateFinalPayment request with HTTP info returned
-         * @return ApiResponse&lt;FinalPaymentCalculatedContainer&gt;
-         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-         * @http.response.details
-         <table summary="Response Details" border="1">
-            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-            <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
-            <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 403 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 404 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 500 </td><td> Operation failed. </td><td>  -  </td></tr>
-         </table>
-         */
-        public ApiResponse<FinalPaymentCalculatedContainer> executeWithHttpInfo() throws ApiException {
-            return calculateFinalPaymentWithHttpInfo(contractId, endDate, calculationType, workweekStart, workweekEnd);
-        }
-
-        /**
-         * Execute calculateFinalPayment request (asynchronously)
-         * @param _callback The callback to be executed when the API call finishes
-         * @return The request call
-         * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-         * @http.response.details
-         <table summary="Response Details" border="1">
-            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-            <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
-            <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 403 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 404 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 500 </td><td> Operation failed. </td><td>  -  </td></tr>
-         </table>
-         */
-        public okhttp3.Call executeAsync(final ApiCallback<FinalPaymentCalculatedContainer> _callback) throws ApiException {
-            return calculateFinalPaymentAsync(contractId, endDate, calculationType, workweekStart, workweekEnd, _callback);
-        }
-    }
-
-    /**
-     * Calculate final payment
-     * Calculate the final payment due to the contractor when ending the contract.
-     * @param contractId Deel contract id. (required)
-     * @return APIcalculateFinalPaymentRequest
-     * @http.response.details
-     <table summary="Response Details" border="1">
-        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> Operation failed. </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> Operation failed. </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> Operation failed. </td><td>  -  </td></tr>
-     </table>
-     */
-    public APIcalculateFinalPaymentRequest calculateFinalPayment(String contractId) {
-        return new APIcalculateFinalPaymentRequest(contractId);
     }
     private okhttp3.Call editContractDocumentCall(String contractId, File _file, final ApiCallback _callback) throws ApiException {
         String basePath = null;
@@ -1204,7 +990,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1225,7 +1012,8 @@ public class ContractsApi {
          * @return ContractDocumentContainer
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1247,7 +1035,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;ContractDocumentContainer&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1269,7 +1058,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1292,7 +1082,8 @@ public class ContractsApi {
      * @param contractId Deel contract id. (required)
      * @return APIeditContractDocumentRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1391,7 +1182,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1410,7 +1202,8 @@ public class ContractsApi {
          * @return List&lt;AlternateEmailItem&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1430,7 +1223,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;List&lt;AlternateEmailItem&gt;&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1450,7 +1244,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1471,7 +1266,8 @@ public class ContractsApi {
      * @param contractId Deel contract id. (required)
      * @return APIgetAlternateEmailsByContractIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1568,7 +1364,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1589,7 +1386,8 @@ public class ContractsApi {
          * @return GetContractById200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1611,7 +1409,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;GetContractById200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1633,7 +1432,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1656,7 +1456,8 @@ public class ContractsApi {
      * @param contractId Deel contract id. (required)
      * @return APIgetContractByIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1912,7 +1713,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1933,7 +1735,8 @@ public class ContractsApi {
          * @return GetContractList200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1955,7 +1758,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;GetContractList200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1977,7 +1781,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1999,7 +1804,8 @@ public class ContractsApi {
      * Retrieve a list of contracts.
      * @return APIgetContractListRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2098,7 +1904,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> A successful response containing contractor payment dates. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -2115,7 +1922,8 @@ public class ContractsApi {
          * @return GetContractPaymentDates200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> A successful response containing contractor payment dates. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -2133,7 +1941,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;GetContractPaymentDates200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> A successful response containing contractor payment dates. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -2151,7 +1960,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> A successful response containing contractor payment dates. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -2170,7 +1980,8 @@ public class ContractsApi {
      * @param contractId The Deel contract ID for which payment dates are being retrieved. (required)
      * @return APIgetContractPaymentDatesRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> A successful response containing contractor payment dates. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -2257,7 +2068,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> A successful response containing contract templates. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -2278,7 +2090,8 @@ public class ContractsApi {
          * @return GetContractTemplates200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> A successful response containing contract templates. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -2300,7 +2113,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;GetContractTemplates200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> A successful response containing contract templates. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -2322,7 +2136,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> A successful response containing contract templates. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -2344,7 +2159,8 @@ public class ContractsApi {
      * Fetches a collection of contract templates available within your organization. Use this endpoint to retrieve metadata about the templates.
      * @return APIgetContractTemplatesRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> A successful response containing contract templates. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -2451,7 +2267,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> successful operation </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2469,7 +2286,8 @@ public class ContractsApi {
          * @return DownloadWorkerDocumentsByIdContainer
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> successful operation </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2488,7 +2306,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;DownloadWorkerDocumentsByIdContainer&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> successful operation </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2507,7 +2326,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> successful operation </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2528,7 +2348,8 @@ public class ContractsApi {
      * @param documentId Unique identifier for a compliance document in Deel. (required)
      * @return APIgetDownloadWorkerDocumentsByIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> successful operation </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2624,7 +2445,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2645,7 +2467,8 @@ public class ContractsApi {
          * @return GetInviteLink200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2667,7 +2490,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;GetInviteLink200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2689,7 +2513,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2712,7 +2537,8 @@ public class ContractsApi {
      * @param contractId Deel contract id. (required)
      * @return APIgetInviteLinkRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2811,7 +2637,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> successful operation </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2829,7 +2656,8 @@ public class ContractsApi {
          * @return WorkerDocumentsByIdContainer
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> successful operation </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2848,7 +2676,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;WorkerDocumentsByIdContainer&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> successful operation </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2867,7 +2696,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> successful operation </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2887,7 +2717,8 @@ public class ContractsApi {
      * @param workerId Unique identifier for a worker. (required)
      * @return APIgetWorkerDocumentsByIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> successful operation </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -2991,7 +2822,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3012,7 +2844,8 @@ public class ContractsApi {
          * @return SignContract201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3034,7 +2867,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;SignContract201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3056,7 +2890,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3080,7 +2915,8 @@ public class ContractsApi {
      * @param inviteToSignContractRequest  (required)
      * @return APIinviteToSignContractRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3179,7 +3015,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3198,7 +3035,8 @@ public class ContractsApi {
          * @return RequestExerciseEquity201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3218,7 +3056,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;RequestExerciseEquity201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3238,7 +3077,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3259,7 +3099,8 @@ public class ContractsApi {
      * @param requestExerciseEquityRequest  (required)
      * @return APIrequestExerciseEquityRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3364,7 +3205,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3385,7 +3227,8 @@ public class ContractsApi {
          * @return SignContract201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3407,7 +3250,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;SignContract201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3429,7 +3273,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3453,7 +3298,8 @@ public class ContractsApi {
      * @param signContractRequest  (required)
      * @return APIsignContractRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3552,7 +3398,8 @@ public class ContractsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3573,7 +3420,8 @@ public class ContractsApi {
          * @return UninviteToSignContract200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3595,7 +3443,8 @@ public class ContractsApi {
          * @return ApiResponse&lt;UninviteToSignContract200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3617,7 +3466,8 @@ public class ContractsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -3640,7 +3490,8 @@ public class ContractsApi {
      * @param contractId Deel contract id. (required)
      * @return APIuninviteToSignContractRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>

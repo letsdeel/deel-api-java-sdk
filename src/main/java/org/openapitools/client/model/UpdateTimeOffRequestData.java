@@ -54,68 +54,82 @@ import org.openapitools.client.JSON;
 /**
  * UpdateTimeOffRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateTimeOffRequestData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_DATES = "dates";
   @SerializedName(SERIALIZED_NAME_DATES)
+  @javax.annotation.Nullable
   private List<UpdateTimeOffRequestDataDatesInner> dates = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_REASON = "reason";
   @SerializedName(SERIALIZED_NAME_REASON)
+  @javax.annotation.Nullable
   private String reason;
 
   public static final String SERIALIZED_NAME_IS_PAID = "is_paid";
   @SerializedName(SERIALIZED_NAME_IS_PAID)
+  @javax.annotation.Nullable
   private Boolean isPaid = false;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime endDate;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime startDate;
 
   public static final String SERIALIZED_NAME_ATTACHMENTS = "attachments";
   @SerializedName(SERIALIZED_NAME_ATTACHMENTS)
+  @javax.annotation.Nullable
   private List<UpdateTimeOffRequestDataAttachmentsInner> attachments;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_CONTRACT_OID = "contract_oid";
   @SerializedName(SERIALIZED_NAME_CONTRACT_OID)
+  @javax.annotation.Nullable
   private String contractOid;
 
   public static final String SERIALIZED_NAME_DEDUCTION_AMOUNT = "deduction_amount";
   @SerializedName(SERIALIZED_NAME_DEDUCTION_AMOUNT)
+  @javax.annotation.Nullable
   private Float deductionAmount;
 
   public static final String SERIALIZED_NAME_TIME_OFF_TYPE_ID = "time_off_type_id";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_TYPE_ID)
+  @javax.annotation.Nullable
   private String timeOffTypeId;
 
   public static final String SERIALIZED_NAME_TIME_OFF_PERCENTAGE = "time_off_percentage";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_PERCENTAGE)
+  @javax.annotation.Nullable
   private Double timeOffPercentage;
 
   public static final String SERIALIZED_NAME_RECIPIENT_PROFILE_ID = "recipient_profile_id";
   @SerializedName(SERIALIZED_NAME_RECIPIENT_PROFILE_ID)
+  @javax.annotation.Nullable
   private String recipientProfileId;
 
   public static final String SERIALIZED_NAME_OTHER_TYPE_DESCRIPTION = "other_type_description";
   @SerializedName(SERIALIZED_NAME_OTHER_TYPE_DESCRIPTION)
+  @javax.annotation.Nullable
   private String otherTypeDescription;
 
   public UpdateTimeOffRequestData() {
   }
 
-  public UpdateTimeOffRequestData id(String id) {
+  public UpdateTimeOffRequestData id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -129,12 +143,12 @@ public class UpdateTimeOffRequestData {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public UpdateTimeOffRequestData dates(List<UpdateTimeOffRequestDataDatesInner> dates) {
+  public UpdateTimeOffRequestData dates(@javax.annotation.Nullable List<UpdateTimeOffRequestDataDatesInner> dates) {
     this.dates = dates;
     return this;
   }
@@ -156,12 +170,12 @@ public class UpdateTimeOffRequestData {
     return dates;
   }
 
-  public void setDates(List<UpdateTimeOffRequestDataDatesInner> dates) {
+  public void setDates(@javax.annotation.Nullable List<UpdateTimeOffRequestDataDatesInner> dates) {
     this.dates = dates;
   }
 
 
-  public UpdateTimeOffRequestData reason(String reason) {
+  public UpdateTimeOffRequestData reason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
     return this;
   }
@@ -175,12 +189,12 @@ public class UpdateTimeOffRequestData {
     return reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
   }
 
 
-  public UpdateTimeOffRequestData isPaid(Boolean isPaid) {
+  public UpdateTimeOffRequestData isPaid(@javax.annotation.Nullable Boolean isPaid) {
     this.isPaid = isPaid;
     return this;
   }
@@ -194,12 +208,12 @@ public class UpdateTimeOffRequestData {
     return isPaid;
   }
 
-  public void setIsPaid(Boolean isPaid) {
+  public void setIsPaid(@javax.annotation.Nullable Boolean isPaid) {
     this.isPaid = isPaid;
   }
 
 
-  public UpdateTimeOffRequestData endDate(OffsetDateTime endDate) {
+  public UpdateTimeOffRequestData endDate(@javax.annotation.Nullable OffsetDateTime endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -213,12 +227,12 @@ public class UpdateTimeOffRequestData {
     return endDate;
   }
 
-  public void setEndDate(OffsetDateTime endDate) {
+  public void setEndDate(@javax.annotation.Nullable OffsetDateTime endDate) {
     this.endDate = endDate;
   }
 
 
-  public UpdateTimeOffRequestData startDate(OffsetDateTime startDate) {
+  public UpdateTimeOffRequestData startDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -232,12 +246,12 @@ public class UpdateTimeOffRequestData {
     return startDate;
   }
 
-  public void setStartDate(OffsetDateTime startDate) {
+  public void setStartDate(@javax.annotation.Nullable OffsetDateTime startDate) {
     this.startDate = startDate;
   }
 
 
-  public UpdateTimeOffRequestData attachments(List<UpdateTimeOffRequestDataAttachmentsInner> attachments) {
+  public UpdateTimeOffRequestData attachments(@javax.annotation.Nullable List<UpdateTimeOffRequestDataAttachmentsInner> attachments) {
     this.attachments = attachments;
     return this;
   }
@@ -259,12 +273,12 @@ public class UpdateTimeOffRequestData {
     return attachments;
   }
 
-  public void setAttachments(List<UpdateTimeOffRequestDataAttachmentsInner> attachments) {
+  public void setAttachments(@javax.annotation.Nullable List<UpdateTimeOffRequestDataAttachmentsInner> attachments) {
     this.attachments = attachments;
   }
 
 
-  public UpdateTimeOffRequestData description(String description) {
+  public UpdateTimeOffRequestData description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -278,12 +292,12 @@ public class UpdateTimeOffRequestData {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public UpdateTimeOffRequestData contractOid(String contractOid) {
+  public UpdateTimeOffRequestData contractOid(@javax.annotation.Nullable String contractOid) {
     this.contractOid = contractOid;
     return this;
   }
@@ -297,12 +311,12 @@ public class UpdateTimeOffRequestData {
     return contractOid;
   }
 
-  public void setContractOid(String contractOid) {
+  public void setContractOid(@javax.annotation.Nullable String contractOid) {
     this.contractOid = contractOid;
   }
 
 
-  public UpdateTimeOffRequestData deductionAmount(Float deductionAmount) {
+  public UpdateTimeOffRequestData deductionAmount(@javax.annotation.Nullable Float deductionAmount) {
     this.deductionAmount = deductionAmount;
     return this;
   }
@@ -317,12 +331,12 @@ public class UpdateTimeOffRequestData {
     return deductionAmount;
   }
 
-  public void setDeductionAmount(Float deductionAmount) {
+  public void setDeductionAmount(@javax.annotation.Nullable Float deductionAmount) {
     this.deductionAmount = deductionAmount;
   }
 
 
-  public UpdateTimeOffRequestData timeOffTypeId(String timeOffTypeId) {
+  public UpdateTimeOffRequestData timeOffTypeId(@javax.annotation.Nullable String timeOffTypeId) {
     this.timeOffTypeId = timeOffTypeId;
     return this;
   }
@@ -336,12 +350,12 @@ public class UpdateTimeOffRequestData {
     return timeOffTypeId;
   }
 
-  public void setTimeOffTypeId(String timeOffTypeId) {
+  public void setTimeOffTypeId(@javax.annotation.Nullable String timeOffTypeId) {
     this.timeOffTypeId = timeOffTypeId;
   }
 
 
-  public UpdateTimeOffRequestData timeOffPercentage(Double timeOffPercentage) {
+  public UpdateTimeOffRequestData timeOffPercentage(@javax.annotation.Nullable Double timeOffPercentage) {
     this.timeOffPercentage = timeOffPercentage;
     return this;
   }
@@ -357,12 +371,12 @@ public class UpdateTimeOffRequestData {
     return timeOffPercentage;
   }
 
-  public void setTimeOffPercentage(Double timeOffPercentage) {
+  public void setTimeOffPercentage(@javax.annotation.Nullable Double timeOffPercentage) {
     this.timeOffPercentage = timeOffPercentage;
   }
 
 
-  public UpdateTimeOffRequestData recipientProfileId(String recipientProfileId) {
+  public UpdateTimeOffRequestData recipientProfileId(@javax.annotation.Nullable String recipientProfileId) {
     this.recipientProfileId = recipientProfileId;
     return this;
   }
@@ -376,12 +390,12 @@ public class UpdateTimeOffRequestData {
     return recipientProfileId;
   }
 
-  public void setRecipientProfileId(String recipientProfileId) {
+  public void setRecipientProfileId(@javax.annotation.Nullable String recipientProfileId) {
     this.recipientProfileId = recipientProfileId;
   }
 
 
-  public UpdateTimeOffRequestData otherTypeDescription(String otherTypeDescription) {
+  public UpdateTimeOffRequestData otherTypeDescription(@javax.annotation.Nullable String otherTypeDescription) {
     this.otherTypeDescription = otherTypeDescription;
     return this;
   }
@@ -395,7 +409,7 @@ public class UpdateTimeOffRequestData {
     return otherTypeDescription;
   }
 
-  public void setOtherTypeDescription(String otherTypeDescription) {
+  public void setOtherTypeDescription(@javax.annotation.Nullable String otherTypeDescription) {
     this.otherTypeDescription = otherTypeDescription;
   }
 

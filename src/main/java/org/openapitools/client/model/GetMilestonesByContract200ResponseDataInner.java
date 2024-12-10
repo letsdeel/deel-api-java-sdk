@@ -52,48 +52,57 @@ import org.openapitools.client.JSON;
 /**
  * GetMilestonesByContract200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetMilestonesByContract200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private GetMilestonesByContract200ResponseDataInnerId id;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nonnull
   private String title;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private String amount;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private String status;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_REPORTED_BY = "reported_by";
   @SerializedName(SERIALIZED_NAME_REPORTED_BY)
+  @javax.annotation.Nonnull
   private GetMilestonesByContract200ResponseDataInnerReportedBy reportedBy;
 
   public static final String SERIALIZED_NAME_REVIEWED_BY = "reviewed_by";
   @SerializedName(SERIALIZED_NAME_REVIEWED_BY)
+  @javax.annotation.Nullable
   private GetMilestonesByContract200ResponseDataInnerReviewedBy reviewedBy;
 
   public static final String SERIALIZED_NAME_APPROVAL_REQUESTED = "approval_requested";
   @SerializedName(SERIALIZED_NAME_APPROVAL_REQUESTED)
+  @javax.annotation.Nonnull
   private Boolean approvalRequested;
 
   public GetMilestonesByContract200ResponseDataInner() {
   }
 
-  public GetMilestonesByContract200ResponseDataInner id(GetMilestonesByContract200ResponseDataInnerId id) {
+  public GetMilestonesByContract200ResponseDataInner id(@javax.annotation.Nonnull GetMilestonesByContract200ResponseDataInnerId id) {
     this.id = id;
     return this;
   }
@@ -107,12 +116,12 @@ public class GetMilestonesByContract200ResponseDataInner {
     return id;
   }
 
-  public void setId(GetMilestonesByContract200ResponseDataInnerId id) {
+  public void setId(@javax.annotation.Nonnull GetMilestonesByContract200ResponseDataInnerId id) {
     this.id = id;
   }
 
 
-  public GetMilestonesByContract200ResponseDataInner title(String title) {
+  public GetMilestonesByContract200ResponseDataInner title(@javax.annotation.Nonnull String title) {
     this.title = title;
     return this;
   }
@@ -126,12 +135,12 @@ public class GetMilestonesByContract200ResponseDataInner {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nonnull String title) {
     this.title = title;
   }
 
 
-  public GetMilestonesByContract200ResponseDataInner amount(String amount) {
+  public GetMilestonesByContract200ResponseDataInner amount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
     return this;
   }
@@ -145,12 +154,12 @@ public class GetMilestonesByContract200ResponseDataInner {
     return amount;
   }
 
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
   }
 
 
-  public GetMilestonesByContract200ResponseDataInner status(String status) {
+  public GetMilestonesByContract200ResponseDataInner status(@javax.annotation.Nonnull String status) {
     this.status = status;
     return this;
   }
@@ -164,12 +173,12 @@ public class GetMilestonesByContract200ResponseDataInner {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nonnull String status) {
     this.status = status;
   }
 
 
-  public GetMilestonesByContract200ResponseDataInner createdAt(OffsetDateTime createdAt) {
+  public GetMilestonesByContract200ResponseDataInner createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -183,12 +192,12 @@ public class GetMilestonesByContract200ResponseDataInner {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public GetMilestonesByContract200ResponseDataInner description(String description) {
+  public GetMilestonesByContract200ResponseDataInner description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -202,12 +211,12 @@ public class GetMilestonesByContract200ResponseDataInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public GetMilestonesByContract200ResponseDataInner reportedBy(GetMilestonesByContract200ResponseDataInnerReportedBy reportedBy) {
+  public GetMilestonesByContract200ResponseDataInner reportedBy(@javax.annotation.Nonnull GetMilestonesByContract200ResponseDataInnerReportedBy reportedBy) {
     this.reportedBy = reportedBy;
     return this;
   }
@@ -221,12 +230,12 @@ public class GetMilestonesByContract200ResponseDataInner {
     return reportedBy;
   }
 
-  public void setReportedBy(GetMilestonesByContract200ResponseDataInnerReportedBy reportedBy) {
+  public void setReportedBy(@javax.annotation.Nonnull GetMilestonesByContract200ResponseDataInnerReportedBy reportedBy) {
     this.reportedBy = reportedBy;
   }
 
 
-  public GetMilestonesByContract200ResponseDataInner reviewedBy(GetMilestonesByContract200ResponseDataInnerReviewedBy reviewedBy) {
+  public GetMilestonesByContract200ResponseDataInner reviewedBy(@javax.annotation.Nullable GetMilestonesByContract200ResponseDataInnerReviewedBy reviewedBy) {
     this.reviewedBy = reviewedBy;
     return this;
   }
@@ -240,12 +249,12 @@ public class GetMilestonesByContract200ResponseDataInner {
     return reviewedBy;
   }
 
-  public void setReviewedBy(GetMilestonesByContract200ResponseDataInnerReviewedBy reviewedBy) {
+  public void setReviewedBy(@javax.annotation.Nullable GetMilestonesByContract200ResponseDataInnerReviewedBy reviewedBy) {
     this.reviewedBy = reviewedBy;
   }
 
 
-  public GetMilestonesByContract200ResponseDataInner approvalRequested(Boolean approvalRequested) {
+  public GetMilestonesByContract200ResponseDataInner approvalRequested(@javax.annotation.Nonnull Boolean approvalRequested) {
     this.approvalRequested = approvalRequested;
     return this;
   }
@@ -259,7 +268,7 @@ public class GetMilestonesByContract200ResponseDataInner {
     return approvalRequested;
   }
 
-  public void setApprovalRequested(Boolean approvalRequested) {
+  public void setApprovalRequested(@javax.annotation.Nonnull Boolean approvalRequested) {
     this.approvalRequested = approvalRequested;
   }
 

@@ -53,28 +53,32 @@ import org.openapitools.client.JSON;
 /**
  * Metadata for the shift
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeTrackingShiftMetaSchema {
   public static final String SERIALIZED_NAME_START = "start";
   @SerializedName(SERIALIZED_NAME_START)
+  @javax.annotation.Nonnull
   private TimeTrackingShiftMetaSchemaStart start;
 
   public static final String SERIALIZED_NAME_END = "end";
   @SerializedName(SERIALIZED_NAME_END)
+  @javax.annotation.Nonnull
   private TimeTrackingShiftMetaSchemaEnd end;
 
   public static final String SERIALIZED_NAME_BREAKS = "breaks";
   @SerializedName(SERIALIZED_NAME_BREAKS)
+  @javax.annotation.Nullable
   private List<TimeTrackingShiftMetaSchemaBreaksInner> breaks = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_APPROVAL_DATE = "approval_date";
   @SerializedName(SERIALIZED_NAME_APPROVAL_DATE)
+  @javax.annotation.Nullable
   private String approvalDate;
 
   public TimeTrackingShiftMetaSchema() {
   }
 
-  public TimeTrackingShiftMetaSchema start(TimeTrackingShiftMetaSchemaStart start) {
+  public TimeTrackingShiftMetaSchema start(@javax.annotation.Nonnull TimeTrackingShiftMetaSchemaStart start) {
     this.start = start;
     return this;
   }
@@ -88,12 +92,12 @@ public class TimeTrackingShiftMetaSchema {
     return start;
   }
 
-  public void setStart(TimeTrackingShiftMetaSchemaStart start) {
+  public void setStart(@javax.annotation.Nonnull TimeTrackingShiftMetaSchemaStart start) {
     this.start = start;
   }
 
 
-  public TimeTrackingShiftMetaSchema end(TimeTrackingShiftMetaSchemaEnd end) {
+  public TimeTrackingShiftMetaSchema end(@javax.annotation.Nonnull TimeTrackingShiftMetaSchemaEnd end) {
     this.end = end;
     return this;
   }
@@ -107,12 +111,12 @@ public class TimeTrackingShiftMetaSchema {
     return end;
   }
 
-  public void setEnd(TimeTrackingShiftMetaSchemaEnd end) {
+  public void setEnd(@javax.annotation.Nonnull TimeTrackingShiftMetaSchemaEnd end) {
     this.end = end;
   }
 
 
-  public TimeTrackingShiftMetaSchema breaks(List<TimeTrackingShiftMetaSchemaBreaksInner> breaks) {
+  public TimeTrackingShiftMetaSchema breaks(@javax.annotation.Nullable List<TimeTrackingShiftMetaSchemaBreaksInner> breaks) {
     this.breaks = breaks;
     return this;
   }
@@ -134,12 +138,12 @@ public class TimeTrackingShiftMetaSchema {
     return breaks;
   }
 
-  public void setBreaks(List<TimeTrackingShiftMetaSchemaBreaksInner> breaks) {
+  public void setBreaks(@javax.annotation.Nullable List<TimeTrackingShiftMetaSchemaBreaksInner> breaks) {
     this.breaks = breaks;
   }
 
 
-  public TimeTrackingShiftMetaSchema approvalDate(String approvalDate) {
+  public TimeTrackingShiftMetaSchema approvalDate(@javax.annotation.Nullable String approvalDate) {
     this.approvalDate = approvalDate;
     return this;
   }
@@ -153,7 +157,7 @@ public class TimeTrackingShiftMetaSchema {
     return approvalDate;
   }
 
-  public void setApprovalDate(String approvalDate) {
+  public void setApprovalDate(@javax.annotation.Nullable String approvalDate) {
     this.approvalDate = approvalDate;
   }
 

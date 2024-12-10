@@ -54,14 +54,16 @@ import org.openapitools.client.JSON;
 /**
  * GetPaymentList200ResponseDataRowsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPaymentList200ResponseDataRowsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private BigDecimal id;
 
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nullable
   private String label;
 
   /**
@@ -118,32 +120,38 @@ public class GetPaymentList200ResponseDataRowsInner {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_PAID_AT = "paid_at";
   @SerializedName(SERIALIZED_NAME_PAID_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime paidAt;
 
   public static final String SERIALIZED_NAME_WORKERS = "workers";
   @SerializedName(SERIALIZED_NAME_WORKERS)
+  @javax.annotation.Nullable
   private List<TheWorkerForThePayment> workers = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private String createdAt;
 
   public static final String SERIALIZED_NAME_PAYMENT_METHOD = "payment_method";
   @SerializedName(SERIALIZED_NAME_PAYMENT_METHOD)
+  @javax.annotation.Nullable
   private GetPaymentList200ResponseDataRowsInnerPaymentMethod paymentMethod;
 
   public static final String SERIALIZED_NAME_PAYMENT_CURRENCY = "payment_currency";
   @SerializedName(SERIALIZED_NAME_PAYMENT_CURRENCY)
+  @javax.annotation.Nullable
   private String paymentCurrency;
 
   public GetPaymentList200ResponseDataRowsInner() {
   }
 
-  public GetPaymentList200ResponseDataRowsInner id(BigDecimal id) {
+  public GetPaymentList200ResponseDataRowsInner id(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
     return this;
   }
@@ -157,12 +165,12 @@ public class GetPaymentList200ResponseDataRowsInner {
     return id;
   }
 
-  public void setId(BigDecimal id) {
+  public void setId(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
   }
 
 
-  public GetPaymentList200ResponseDataRowsInner label(String label) {
+  public GetPaymentList200ResponseDataRowsInner label(@javax.annotation.Nullable String label) {
     this.label = label;
     return this;
   }
@@ -176,12 +184,12 @@ public class GetPaymentList200ResponseDataRowsInner {
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nullable String label) {
     this.label = label;
   }
 
 
-  public GetPaymentList200ResponseDataRowsInner status(StatusEnum status) {
+  public GetPaymentList200ResponseDataRowsInner status(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -195,12 +203,12 @@ public class GetPaymentList200ResponseDataRowsInner {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
   }
 
 
-  public GetPaymentList200ResponseDataRowsInner paidAt(OffsetDateTime paidAt) {
+  public GetPaymentList200ResponseDataRowsInner paidAt(@javax.annotation.Nullable OffsetDateTime paidAt) {
     this.paidAt = paidAt;
     return this;
   }
@@ -214,12 +222,12 @@ public class GetPaymentList200ResponseDataRowsInner {
     return paidAt;
   }
 
-  public void setPaidAt(OffsetDateTime paidAt) {
+  public void setPaidAt(@javax.annotation.Nullable OffsetDateTime paidAt) {
     this.paidAt = paidAt;
   }
 
 
-  public GetPaymentList200ResponseDataRowsInner workers(List<TheWorkerForThePayment> workers) {
+  public GetPaymentList200ResponseDataRowsInner workers(@javax.annotation.Nullable List<TheWorkerForThePayment> workers) {
     this.workers = workers;
     return this;
   }
@@ -241,12 +249,12 @@ public class GetPaymentList200ResponseDataRowsInner {
     return workers;
   }
 
-  public void setWorkers(List<TheWorkerForThePayment> workers) {
+  public void setWorkers(@javax.annotation.Nullable List<TheWorkerForThePayment> workers) {
     this.workers = workers;
   }
 
 
-  public GetPaymentList200ResponseDataRowsInner createdAt(String createdAt) {
+  public GetPaymentList200ResponseDataRowsInner createdAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -260,12 +268,12 @@ public class GetPaymentList200ResponseDataRowsInner {
     return createdAt;
   }
 
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public GetPaymentList200ResponseDataRowsInner paymentMethod(GetPaymentList200ResponseDataRowsInnerPaymentMethod paymentMethod) {
+  public GetPaymentList200ResponseDataRowsInner paymentMethod(@javax.annotation.Nullable GetPaymentList200ResponseDataRowsInnerPaymentMethod paymentMethod) {
     this.paymentMethod = paymentMethod;
     return this;
   }
@@ -279,12 +287,12 @@ public class GetPaymentList200ResponseDataRowsInner {
     return paymentMethod;
   }
 
-  public void setPaymentMethod(GetPaymentList200ResponseDataRowsInnerPaymentMethod paymentMethod) {
+  public void setPaymentMethod(@javax.annotation.Nullable GetPaymentList200ResponseDataRowsInnerPaymentMethod paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
 
 
-  public GetPaymentList200ResponseDataRowsInner paymentCurrency(String paymentCurrency) {
+  public GetPaymentList200ResponseDataRowsInner paymentCurrency(@javax.annotation.Nullable String paymentCurrency) {
     this.paymentCurrency = paymentCurrency;
     return this;
   }
@@ -298,7 +306,7 @@ public class GetPaymentList200ResponseDataRowsInner {
     return paymentCurrency;
   }
 
-  public void setPaymentCurrency(String paymentCurrency) {
+  public void setPaymentCurrency(@javax.annotation.Nullable String paymentCurrency) {
     this.paymentCurrency = paymentCurrency;
   }
 

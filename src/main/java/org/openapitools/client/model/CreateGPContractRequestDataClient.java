@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * CreateGPContractRequestDataClient
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateGPContractRequestDataClient {
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
+  @javax.annotation.Nonnull
   private CreateGPContractRequestDataClientTeam team;
 
   public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
+  @javax.annotation.Nonnull
   private CreateGPContractRequestDataClientLegalEntity legalEntity;
 
   public CreateGPContractRequestDataClient() {
   }
 
-  public CreateGPContractRequestDataClient team(CreateGPContractRequestDataClientTeam team) {
+  public CreateGPContractRequestDataClient team(@javax.annotation.Nonnull CreateGPContractRequestDataClientTeam team) {
     this.team = team;
     return this;
   }
@@ -77,12 +79,12 @@ public class CreateGPContractRequestDataClient {
     return team;
   }
 
-  public void setTeam(CreateGPContractRequestDataClientTeam team) {
+  public void setTeam(@javax.annotation.Nonnull CreateGPContractRequestDataClientTeam team) {
     this.team = team;
   }
 
 
-  public CreateGPContractRequestDataClient legalEntity(CreateGPContractRequestDataClientLegalEntity legalEntity) {
+  public CreateGPContractRequestDataClient legalEntity(@javax.annotation.Nonnull CreateGPContractRequestDataClientLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
     return this;
   }
@@ -96,7 +98,7 @@ public class CreateGPContractRequestDataClient {
     return legalEntity;
   }
 
-  public void setLegalEntity(CreateGPContractRequestDataClientLegalEntity legalEntity) {
+  public void setLegalEntity(@javax.annotation.Nonnull CreateGPContractRequestDataClientLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
   }
 

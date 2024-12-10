@@ -52,32 +52,37 @@ import org.openapitools.client.JSON;
 /**
  * PremiumResultAdded
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PremiumResultAdded {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_CALCULATED_PREMIUM = "calculated_premium";
   @SerializedName(SERIALIZED_NAME_CALCULATED_PREMIUM)
+  @javax.annotation.Nonnull
   private BigDecimal calculatedPremium;
 
   public static final String SERIALIZED_NAME_MISCLASSIFICATION_GUARANTEE = "misclassification_guarantee";
   @SerializedName(SERIALIZED_NAME_MISCLASSIFICATION_GUARANTEE)
+  @javax.annotation.Nonnull
   private PremiumResultAddedMisclassificationGuarantee misclassificationGuarantee;
 
   public static final String SERIALIZED_NAME_PENALTIES = "penalties";
   @SerializedName(SERIALIZED_NAME_PENALTIES)
+  @javax.annotation.Nonnull
   private PremiumResultAddedPenalties penalties;
 
   public static final String SERIALIZED_NAME_THIRD_PARTY_LIABILITIES = "third_party_liabilities";
   @SerializedName(SERIALIZED_NAME_THIRD_PARTY_LIABILITIES)
+  @javax.annotation.Nonnull
   private PremiumResultAddedThirdPartyLiabilities thirdPartyLiabilities;
 
   public PremiumResultAdded() {
   }
 
-  public PremiumResultAdded id(String id) {
+  public PremiumResultAdded id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -91,12 +96,12 @@ public class PremiumResultAdded {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public PremiumResultAdded calculatedPremium(BigDecimal calculatedPremium) {
+  public PremiumResultAdded calculatedPremium(@javax.annotation.Nonnull BigDecimal calculatedPremium) {
     this.calculatedPremium = calculatedPremium;
     return this;
   }
@@ -110,12 +115,12 @@ public class PremiumResultAdded {
     return calculatedPremium;
   }
 
-  public void setCalculatedPremium(BigDecimal calculatedPremium) {
+  public void setCalculatedPremium(@javax.annotation.Nonnull BigDecimal calculatedPremium) {
     this.calculatedPremium = calculatedPremium;
   }
 
 
-  public PremiumResultAdded misclassificationGuarantee(PremiumResultAddedMisclassificationGuarantee misclassificationGuarantee) {
+  public PremiumResultAdded misclassificationGuarantee(@javax.annotation.Nonnull PremiumResultAddedMisclassificationGuarantee misclassificationGuarantee) {
     this.misclassificationGuarantee = misclassificationGuarantee;
     return this;
   }
@@ -129,12 +134,12 @@ public class PremiumResultAdded {
     return misclassificationGuarantee;
   }
 
-  public void setMisclassificationGuarantee(PremiumResultAddedMisclassificationGuarantee misclassificationGuarantee) {
+  public void setMisclassificationGuarantee(@javax.annotation.Nonnull PremiumResultAddedMisclassificationGuarantee misclassificationGuarantee) {
     this.misclassificationGuarantee = misclassificationGuarantee;
   }
 
 
-  public PremiumResultAdded penalties(PremiumResultAddedPenalties penalties) {
+  public PremiumResultAdded penalties(@javax.annotation.Nonnull PremiumResultAddedPenalties penalties) {
     this.penalties = penalties;
     return this;
   }
@@ -148,12 +153,12 @@ public class PremiumResultAdded {
     return penalties;
   }
 
-  public void setPenalties(PremiumResultAddedPenalties penalties) {
+  public void setPenalties(@javax.annotation.Nonnull PremiumResultAddedPenalties penalties) {
     this.penalties = penalties;
   }
 
 
-  public PremiumResultAdded thirdPartyLiabilities(PremiumResultAddedThirdPartyLiabilities thirdPartyLiabilities) {
+  public PremiumResultAdded thirdPartyLiabilities(@javax.annotation.Nonnull PremiumResultAddedThirdPartyLiabilities thirdPartyLiabilities) {
     this.thirdPartyLiabilities = thirdPartyLiabilities;
     return this;
   }
@@ -167,7 +172,7 @@ public class PremiumResultAdded {
     return thirdPartyLiabilities;
   }
 
-  public void setThirdPartyLiabilities(PremiumResultAddedThirdPartyLiabilities thirdPartyLiabilities) {
+  public void setThirdPartyLiabilities(@javax.annotation.Nonnull PremiumResultAddedThirdPartyLiabilities thirdPartyLiabilities) {
     this.thirdPartyLiabilities = thirdPartyLiabilities;
   }
 

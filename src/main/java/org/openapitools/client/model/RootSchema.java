@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * RootSchema
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class RootSchema {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_IS_VERIFIED = "isVerified";
   @SerializedName(SERIALIZED_NAME_IS_VERIFIED)
+  @javax.annotation.Nonnull
   private Boolean isVerified;
 
   public RootSchema() {
   }
 
-  public RootSchema email(String email) {
+  public RootSchema email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -75,12 +77,12 @@ public class RootSchema {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public RootSchema isVerified(Boolean isVerified) {
+  public RootSchema isVerified(@javax.annotation.Nonnull Boolean isVerified) {
     this.isVerified = isVerified;
     return this;
   }
@@ -94,7 +96,7 @@ public class RootSchema {
     return isVerified;
   }
 
-  public void setIsVerified(Boolean isVerified) {
+  public void setIsVerified(@javax.annotation.Nonnull Boolean isVerified) {
     this.isVerified = isVerified;
   }
 

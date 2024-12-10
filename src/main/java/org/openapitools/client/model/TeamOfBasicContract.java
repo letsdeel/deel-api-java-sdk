@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * TeamOfBasicContract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TeamOfBasicContract {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public TeamOfBasicContract() {
   }
 
-  public TeamOfBasicContract id(UUID id) {
+  public TeamOfBasicContract id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -76,12 +78,12 @@ public class TeamOfBasicContract {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public TeamOfBasicContract name(String name) {
+  public TeamOfBasicContract name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -95,7 +97,7 @@ public class TeamOfBasicContract {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 

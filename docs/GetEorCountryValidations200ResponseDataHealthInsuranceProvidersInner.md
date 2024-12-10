@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**id** | [**GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInnerId**](GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInnerId.md) |  |  [optional] |
+|**id** | **UUID** |  |  [optional] |
 |**name** | **String** | Provider name. |  [optional] |
 
 

@@ -50,52 +50,62 @@ import org.openapitools.client.JSON;
 /**
  * Details of candidate to update
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CandidateToPatch {
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private CandidateStatusEnum status;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private LocalDate startDate;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nullable
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_LINK = "link";
   @SerializedName(SERIALIZED_NAME_LINK)
+  @javax.annotation.Nullable
   private String link;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_NATIONALITY = "nationality";
   @SerializedName(SERIALIZED_NAME_NATIONALITY)
+  @javax.annotation.Nullable
   private String nationality;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public CandidateToPatch() {
   }
 
-  public CandidateToPatch firstName(String firstName) {
+  public CandidateToPatch firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -109,12 +119,12 @@ public class CandidateToPatch {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public CandidateToPatch lastName(String lastName) {
+  public CandidateToPatch lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -128,12 +138,12 @@ public class CandidateToPatch {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
 
-  public CandidateToPatch status(CandidateStatusEnum status) {
+  public CandidateToPatch status(@javax.annotation.Nonnull CandidateStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -147,12 +157,12 @@ public class CandidateToPatch {
     return status;
   }
 
-  public void setStatus(CandidateStatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull CandidateStatusEnum status) {
     this.status = status;
   }
 
 
-  public CandidateToPatch startDate(LocalDate startDate) {
+  public CandidateToPatch startDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -166,12 +176,12 @@ public class CandidateToPatch {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public CandidateToPatch jobTitle(String jobTitle) {
+  public CandidateToPatch jobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -185,12 +195,12 @@ public class CandidateToPatch {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public CandidateToPatch link(String link) {
+  public CandidateToPatch link(@javax.annotation.Nullable String link) {
     this.link = link;
     return this;
   }
@@ -204,12 +214,12 @@ public class CandidateToPatch {
     return link;
   }
 
-  public void setLink(String link) {
+  public void setLink(@javax.annotation.Nullable String link) {
     this.link = link;
   }
 
 
-  public CandidateToPatch email(String email) {
+  public CandidateToPatch email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -223,12 +233,12 @@ public class CandidateToPatch {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public CandidateToPatch nationality(String nationality) {
+  public CandidateToPatch nationality(@javax.annotation.Nullable String nationality) {
     this.nationality = nationality;
     return this;
   }
@@ -242,12 +252,12 @@ public class CandidateToPatch {
     return nationality;
   }
 
-  public void setNationality(String nationality) {
+  public void setNationality(@javax.annotation.Nullable String nationality) {
     this.nationality = nationality;
   }
 
 
-  public CandidateToPatch country(String country) {
+  public CandidateToPatch country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -261,12 +271,12 @@ public class CandidateToPatch {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public CandidateToPatch state(String state) {
+  public CandidateToPatch state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -280,7 +290,7 @@ public class CandidateToPatch {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 

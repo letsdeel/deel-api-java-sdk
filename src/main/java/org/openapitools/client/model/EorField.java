@@ -50,32 +50,37 @@ import org.openapitools.client.JSON;
 /**
  * Mandatory EOR field.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorField {
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nullable
   private String label;
 
   public static final String SERIALIZED_NAME_PROPERTY_NAME = "property_name";
   @SerializedName(SERIALIZED_NAME_PROPERTY_NAME)
+  @javax.annotation.Nullable
   private String propertyName;
 
   public static final String SERIALIZED_NAME_INPUT_TYPE = "input_type";
   @SerializedName(SERIALIZED_NAME_INPUT_TYPE)
+  @javax.annotation.Nullable
   private String inputType;
 
   public static final String SERIALIZED_NAME_IS_OPTIONAL = "is_optional";
   @SerializedName(SERIALIZED_NAME_IS_OPTIONAL)
+  @javax.annotation.Nullable
   private Boolean isOptional;
 
   public static final String SERIALIZED_NAME_OPTIONS = "options";
   @SerializedName(SERIALIZED_NAME_OPTIONS)
+  @javax.annotation.Nullable
   private List<String> options = new ArrayList<>();
 
   public EorField() {
   }
 
-  public EorField label(String label) {
+  public EorField label(@javax.annotation.Nullable String label) {
     this.label = label;
     return this;
   }
@@ -89,12 +94,12 @@ public class EorField {
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nullable String label) {
     this.label = label;
   }
 
 
-  public EorField propertyName(String propertyName) {
+  public EorField propertyName(@javax.annotation.Nullable String propertyName) {
     this.propertyName = propertyName;
     return this;
   }
@@ -108,12 +113,12 @@ public class EorField {
     return propertyName;
   }
 
-  public void setPropertyName(String propertyName) {
+  public void setPropertyName(@javax.annotation.Nullable String propertyName) {
     this.propertyName = propertyName;
   }
 
 
-  public EorField inputType(String inputType) {
+  public EorField inputType(@javax.annotation.Nullable String inputType) {
     this.inputType = inputType;
     return this;
   }
@@ -127,12 +132,12 @@ public class EorField {
     return inputType;
   }
 
-  public void setInputType(String inputType) {
+  public void setInputType(@javax.annotation.Nullable String inputType) {
     this.inputType = inputType;
   }
 
 
-  public EorField isOptional(Boolean isOptional) {
+  public EorField isOptional(@javax.annotation.Nullable Boolean isOptional) {
     this.isOptional = isOptional;
     return this;
   }
@@ -146,12 +151,12 @@ public class EorField {
     return isOptional;
   }
 
-  public void setIsOptional(Boolean isOptional) {
+  public void setIsOptional(@javax.annotation.Nullable Boolean isOptional) {
     this.isOptional = isOptional;
   }
 
 
-  public EorField options(List<String> options) {
+  public EorField options(@javax.annotation.Nullable List<String> options) {
     this.options = options;
     return this;
   }
@@ -173,7 +178,7 @@ public class EorField {
     return options;
   }
 
-  public void setOptions(List<String> options) {
+  public void setOptions(@javax.annotation.Nullable List<String> options) {
     this.options = options;
   }
 

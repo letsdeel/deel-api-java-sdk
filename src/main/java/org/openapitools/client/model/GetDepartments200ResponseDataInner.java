@@ -50,24 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * GetDepartments200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetDepartments200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private BigDecimal id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_PARENT = "parent";
   @SerializedName(SERIALIZED_NAME_PARENT)
+  @javax.annotation.Nullable
   private String parent;
 
   public GetDepartments200ResponseDataInner() {
   }
 
-  public GetDepartments200ResponseDataInner id(BigDecimal id) {
+  public GetDepartments200ResponseDataInner id(@javax.annotation.Nonnull BigDecimal id) {
     this.id = id;
     return this;
   }
@@ -81,12 +84,12 @@ public class GetDepartments200ResponseDataInner {
     return id;
   }
 
-  public void setId(BigDecimal id) {
+  public void setId(@javax.annotation.Nonnull BigDecimal id) {
     this.id = id;
   }
 
 
-  public GetDepartments200ResponseDataInner name(String name) {
+  public GetDepartments200ResponseDataInner name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -100,12 +103,12 @@ public class GetDepartments200ResponseDataInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public GetDepartments200ResponseDataInner parent(String parent) {
+  public GetDepartments200ResponseDataInner parent(@javax.annotation.Nullable String parent) {
     this.parent = parent;
     return this;
   }
@@ -119,7 +122,7 @@ public class GetDepartments200ResponseDataInner {
     return parent;
   }
 
-  public void setParent(String parent) {
+  public void setParent(@javax.annotation.Nullable String parent) {
     this.parent = parent;
   }
 

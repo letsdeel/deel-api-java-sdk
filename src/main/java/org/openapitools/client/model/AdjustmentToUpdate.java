@@ -50,28 +50,32 @@ import org.openapitools.client.JSON;
 /**
  * Details of adjustment to update
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class AdjustmentToUpdate {
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private CreateAdjustmentRequestDataAmount amount;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nullable
   private String title;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_FILE = "file";
   @SerializedName(SERIALIZED_NAME_FILE)
+  @javax.annotation.Nullable
   private File _file;
 
   public AdjustmentToUpdate() {
   }
 
-  public AdjustmentToUpdate amount(CreateAdjustmentRequestDataAmount amount) {
+  public AdjustmentToUpdate amount(@javax.annotation.Nullable CreateAdjustmentRequestDataAmount amount) {
     this.amount = amount;
     return this;
   }
@@ -85,12 +89,12 @@ public class AdjustmentToUpdate {
     return amount;
   }
 
-  public void setAmount(CreateAdjustmentRequestDataAmount amount) {
+  public void setAmount(@javax.annotation.Nullable CreateAdjustmentRequestDataAmount amount) {
     this.amount = amount;
   }
 
 
-  public AdjustmentToUpdate title(String title) {
+  public AdjustmentToUpdate title(@javax.annotation.Nullable String title) {
     this.title = title;
     return this;
   }
@@ -104,12 +108,12 @@ public class AdjustmentToUpdate {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nullable String title) {
     this.title = title;
   }
 
 
-  public AdjustmentToUpdate description(String description) {
+  public AdjustmentToUpdate description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -123,12 +127,12 @@ public class AdjustmentToUpdate {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public AdjustmentToUpdate _file(File _file) {
+  public AdjustmentToUpdate _file(@javax.annotation.Nullable File _file) {
     this._file = _file;
     return this;
   }
@@ -142,7 +146,7 @@ public class AdjustmentToUpdate {
     return _file;
   }
 
-  public void setFile(File _file) {
+  public void setFile(@javax.annotation.Nullable File _file) {
     this._file = _file;
   }
 

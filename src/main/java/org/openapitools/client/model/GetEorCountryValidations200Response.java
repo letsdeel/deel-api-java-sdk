@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * GetEorCountryValidations200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetEorCountryValidations200Response {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nullable
   private GetEorCountryValidations200ResponseData data;
 
   public GetEorCountryValidations200Response() {
   }
 
-  public GetEorCountryValidations200Response data(GetEorCountryValidations200ResponseData data) {
+  public GetEorCountryValidations200Response data(@javax.annotation.Nullable GetEorCountryValidations200ResponseData data) {
     this.data = data;
     return this;
   }
@@ -72,7 +73,7 @@ public class GetEorCountryValidations200Response {
     return data;
   }
 
-  public void setData(GetEorCountryValidations200ResponseData data) {
+  public void setData(@javax.annotation.Nullable GetEorCountryValidations200ResponseData data) {
     this.data = data;
   }
 

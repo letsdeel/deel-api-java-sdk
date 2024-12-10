@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseDataInvitations
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataInvitations {
   public static final String SERIALIZED_NAME_CLIENT_EMAIL = "client_email";
   @SerializedName(SERIALIZED_NAME_CLIENT_EMAIL)
+  @javax.annotation.Nullable
   private String clientEmail;
 
   public static final String SERIALIZED_NAME_WORKER_EMAIL = "worker_email";
   @SerializedName(SERIALIZED_NAME_WORKER_EMAIL)
+  @javax.annotation.Nullable
   private String workerEmail;
 
   public CreateContract201ResponseDataInvitations() {
   }
 
-  public CreateContract201ResponseDataInvitations clientEmail(String clientEmail) {
+  public CreateContract201ResponseDataInvitations clientEmail(@javax.annotation.Nullable String clientEmail) {
     this.clientEmail = clientEmail;
     return this;
   }
@@ -76,12 +78,12 @@ public class CreateContract201ResponseDataInvitations {
     return clientEmail;
   }
 
-  public void setClientEmail(String clientEmail) {
+  public void setClientEmail(@javax.annotation.Nullable String clientEmail) {
     this.clientEmail = clientEmail;
   }
 
 
-  public CreateContract201ResponseDataInvitations workerEmail(String workerEmail) {
+  public CreateContract201ResponseDataInvitations workerEmail(@javax.annotation.Nullable String workerEmail) {
     this.workerEmail = workerEmail;
     return this;
   }
@@ -95,7 +97,7 @@ public class CreateContract201ResponseDataInvitations {
     return workerEmail;
   }
 
-  public void setWorkerEmail(String workerEmail) {
+  public void setWorkerEmail(@javax.annotation.Nullable String workerEmail) {
     this.workerEmail = workerEmail;
   }
 

@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * ClientOfBasicContract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ClientOfBasicContract {
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
+  @javax.annotation.Nullable
   private TeamOfBasicContract team;
 
   public ClientOfBasicContract() {
   }
 
-  public ClientOfBasicContract team(TeamOfBasicContract team) {
+  public ClientOfBasicContract team(@javax.annotation.Nullable TeamOfBasicContract team) {
     this.team = team;
     return this;
   }
@@ -72,7 +73,7 @@ public class ClientOfBasicContract {
     return team;
   }
 
-  public void setTeam(TeamOfBasicContract team) {
+  public void setTeam(@javax.annotation.Nullable TeamOfBasicContract team) {
     this.team = team;
   }
 

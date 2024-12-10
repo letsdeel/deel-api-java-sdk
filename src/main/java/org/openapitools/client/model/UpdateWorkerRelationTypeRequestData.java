@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * UpdateWorkerRelationTypeRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateWorkerRelationTypeRequestData {
   public static final String SERIALIZED_NAME_CHILD_NAME = "child_name";
   @SerializedName(SERIALIZED_NAME_CHILD_NAME)
+  @javax.annotation.Nullable
   private String childName;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_PARENT_NAME = "parent_name";
   @SerializedName(SERIALIZED_NAME_PARENT_NAME)
+  @javax.annotation.Nullable
   private String parentName;
 
   public UpdateWorkerRelationTypeRequestData() {
   }
 
-  public UpdateWorkerRelationTypeRequestData childName(String childName) {
+  public UpdateWorkerRelationTypeRequestData childName(@javax.annotation.Nullable String childName) {
     this.childName = childName;
     return this;
   }
@@ -79,12 +82,12 @@ public class UpdateWorkerRelationTypeRequestData {
     return childName;
   }
 
-  public void setChildName(String childName) {
+  public void setChildName(@javax.annotation.Nullable String childName) {
     this.childName = childName;
   }
 
 
-  public UpdateWorkerRelationTypeRequestData externalId(String externalId) {
+  public UpdateWorkerRelationTypeRequestData externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -98,12 +101,12 @@ public class UpdateWorkerRelationTypeRequestData {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public UpdateWorkerRelationTypeRequestData parentName(String parentName) {
+  public UpdateWorkerRelationTypeRequestData parentName(@javax.annotation.Nullable String parentName) {
     this.parentName = parentName;
     return this;
   }
@@ -117,7 +120,7 @@ public class UpdateWorkerRelationTypeRequestData {
     return parentName;
   }
 
-  public void setParentName(String parentName) {
+  public void setParentName(@javax.annotation.Nullable String parentName) {
     this.parentName = parentName;
   }
 

@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * GetEorCountryValidations200ResponseDataHealthInsurance
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetEorCountryValidations200ResponseDataHealthInsurance {
   /**
    * Health insurance status.
@@ -109,16 +109,18 @@ public class GetEorCountryValidations200ResponseDataHealthInsurance {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_PROVIDERS = "providers";
   @SerializedName(SERIALIZED_NAME_PROVIDERS)
+  @javax.annotation.Nullable
   private List<GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner> providers = new ArrayList<>();
 
   public GetEorCountryValidations200ResponseDataHealthInsurance() {
   }
 
-  public GetEorCountryValidations200ResponseDataHealthInsurance status(StatusEnum status) {
+  public GetEorCountryValidations200ResponseDataHealthInsurance status(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -132,12 +134,12 @@ public class GetEorCountryValidations200ResponseDataHealthInsurance {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
   }
 
 
-  public GetEorCountryValidations200ResponseDataHealthInsurance providers(List<GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner> providers) {
+  public GetEorCountryValidations200ResponseDataHealthInsurance providers(@javax.annotation.Nullable List<GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner> providers) {
     this.providers = providers;
     return this;
   }
@@ -159,7 +161,7 @@ public class GetEorCountryValidations200ResponseDataHealthInsurance {
     return providers;
   }
 
-  public void setProviders(List<GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner> providers) {
+  public void setProviders(@javax.annotation.Nullable List<GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner> providers) {
     this.providers = providers;
   }
 

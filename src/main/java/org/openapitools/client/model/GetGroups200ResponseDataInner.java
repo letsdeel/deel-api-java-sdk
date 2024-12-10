@@ -50,36 +50,42 @@ import org.openapitools.client.JSON;
 /**
  * GetGroups200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetGroups200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime updatedAt;
 
   public static final String SERIALIZED_NAME_ARCHIVED_AT = "archived_at";
   @SerializedName(SERIALIZED_NAME_ARCHIVED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime archivedAt;
 
   public static final String SERIALIZED_NAME_EXTERNAL_METADATA = "external_metadata";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_METADATA)
+  @javax.annotation.Nullable
   private Object externalMetadata;
 
   public GetGroups200ResponseDataInner() {
   }
 
-  public GetGroups200ResponseDataInner id(String id) {
+  public GetGroups200ResponseDataInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -93,12 +99,12 @@ public class GetGroups200ResponseDataInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public GetGroups200ResponseDataInner name(String name) {
+  public GetGroups200ResponseDataInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -112,12 +118,12 @@ public class GetGroups200ResponseDataInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetGroups200ResponseDataInner createdAt(OffsetDateTime createdAt) {
+  public GetGroups200ResponseDataInner createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -131,12 +137,12 @@ public class GetGroups200ResponseDataInner {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public GetGroups200ResponseDataInner updatedAt(OffsetDateTime updatedAt) {
+  public GetGroups200ResponseDataInner updatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -150,12 +156,12 @@ public class GetGroups200ResponseDataInner {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public GetGroups200ResponseDataInner archivedAt(OffsetDateTime archivedAt) {
+  public GetGroups200ResponseDataInner archivedAt(@javax.annotation.Nullable OffsetDateTime archivedAt) {
     this.archivedAt = archivedAt;
     return this;
   }
@@ -169,12 +175,12 @@ public class GetGroups200ResponseDataInner {
     return archivedAt;
   }
 
-  public void setArchivedAt(OffsetDateTime archivedAt) {
+  public void setArchivedAt(@javax.annotation.Nullable OffsetDateTime archivedAt) {
     this.archivedAt = archivedAt;
   }
 
 
-  public GetGroups200ResponseDataInner externalMetadata(Object externalMetadata) {
+  public GetGroups200ResponseDataInner externalMetadata(@javax.annotation.Nullable Object externalMetadata) {
     this.externalMetadata = externalMetadata;
     return this;
   }
@@ -188,7 +194,7 @@ public class GetGroups200ResponseDataInner {
     return externalMetadata;
   }
 
-  public void setExternalMetadata(Object externalMetadata) {
+  public void setExternalMetadata(@javax.annotation.Nullable Object externalMetadata) {
     this.externalMetadata = externalMetadata;
   }
 

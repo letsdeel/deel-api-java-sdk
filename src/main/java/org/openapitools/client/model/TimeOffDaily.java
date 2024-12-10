@@ -51,22 +51,26 @@ import org.openapitools.client.JSON;
 /**
  * TimeOffDaily
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeOffDaily {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_TIME_OFF_ID = "time_off_id";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_ID)
+  @javax.annotation.Nonnull
   private UUID timeOffId;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private Float amount;
 
   public static final String SERIALIZED_NAME_DATE = "date";
   @SerializedName(SERIALIZED_NAME_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime date;
 
   /**
@@ -125,24 +129,28 @@ public class TimeOffDaily {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime updatedAt;
 
   public TimeOffDaily() {
   }
 
-  public TimeOffDaily id(UUID id) {
+  public TimeOffDaily id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -156,12 +164,12 @@ public class TimeOffDaily {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public TimeOffDaily timeOffId(UUID timeOffId) {
+  public TimeOffDaily timeOffId(@javax.annotation.Nonnull UUID timeOffId) {
     this.timeOffId = timeOffId;
     return this;
   }
@@ -175,12 +183,12 @@ public class TimeOffDaily {
     return timeOffId;
   }
 
-  public void setTimeOffId(UUID timeOffId) {
+  public void setTimeOffId(@javax.annotation.Nonnull UUID timeOffId) {
     this.timeOffId = timeOffId;
   }
 
 
-  public TimeOffDaily amount(Float amount) {
+  public TimeOffDaily amount(@javax.annotation.Nonnull Float amount) {
     this.amount = amount;
     return this;
   }
@@ -194,12 +202,12 @@ public class TimeOffDaily {
     return amount;
   }
 
-  public void setAmount(Float amount) {
+  public void setAmount(@javax.annotation.Nonnull Float amount) {
     this.amount = amount;
   }
 
 
-  public TimeOffDaily date(OffsetDateTime date) {
+  public TimeOffDaily date(@javax.annotation.Nonnull OffsetDateTime date) {
     this.date = date;
     return this;
   }
@@ -213,12 +221,12 @@ public class TimeOffDaily {
     return date;
   }
 
-  public void setDate(OffsetDateTime date) {
+  public void setDate(@javax.annotation.Nonnull OffsetDateTime date) {
     this.date = date;
   }
 
 
-  public TimeOffDaily type(TypeEnum type) {
+  public TimeOffDaily type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -232,12 +240,12 @@ public class TimeOffDaily {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public TimeOffDaily description(String description) {
+  public TimeOffDaily description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -251,12 +259,12 @@ public class TimeOffDaily {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public TimeOffDaily createdAt(OffsetDateTime createdAt) {
+  public TimeOffDaily createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -270,12 +278,12 @@ public class TimeOffDaily {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public TimeOffDaily updatedAt(OffsetDateTime updatedAt) {
+  public TimeOffDaily updatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -289,7 +297,7 @@ public class TimeOffDaily {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 

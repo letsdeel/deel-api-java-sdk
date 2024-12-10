@@ -51,16 +51,17 @@ import org.openapitools.client.JSON;
 /**
  * GetAdjustments200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetAdjustments200Response {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private List<CreateAdjustment201ResponseData> data = new ArrayList<>();
 
   public GetAdjustments200Response() {
   }
 
-  public GetAdjustments200Response data(List<CreateAdjustment201ResponseData> data) {
+  public GetAdjustments200Response data(@javax.annotation.Nonnull List<CreateAdjustment201ResponseData> data) {
     this.data = data;
     return this;
   }
@@ -82,7 +83,7 @@ public class GetAdjustments200Response {
     return data;
   }
 
-  public void setData(List<CreateAdjustment201ResponseData> data) {
+  public void setData(@javax.annotation.Nonnull List<CreateAdjustment201ResponseData> data) {
     this.data = data;
   }
 

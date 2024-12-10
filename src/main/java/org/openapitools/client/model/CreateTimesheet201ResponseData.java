@@ -51,10 +51,11 @@ import org.openapitools.client.JSON;
 /**
  * Details of invoice adjustment created.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateTimesheet201ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private CreateEorContractRequestClientTeamId id;
 
   /**
@@ -119,20 +120,23 @@ public class CreateTimesheet201ResponseData {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_CREATED = "created";
   @SerializedName(SERIALIZED_NAME_CREATED)
+  @javax.annotation.Nonnull
   private Boolean created;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public CreateTimesheet201ResponseData() {
   }
 
-  public CreateTimesheet201ResponseData id(CreateEorContractRequestClientTeamId id) {
+  public CreateTimesheet201ResponseData id(@javax.annotation.Nullable CreateEorContractRequestClientTeamId id) {
     this.id = id;
     return this;
   }
@@ -146,12 +150,12 @@ public class CreateTimesheet201ResponseData {
     return id;
   }
 
-  public void setId(CreateEorContractRequestClientTeamId id) {
+  public void setId(@javax.annotation.Nullable CreateEorContractRequestClientTeamId id) {
     this.id = id;
   }
 
 
-  public CreateTimesheet201ResponseData status(StatusEnum status) {
+  public CreateTimesheet201ResponseData status(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -165,12 +169,12 @@ public class CreateTimesheet201ResponseData {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
   }
 
 
-  public CreateTimesheet201ResponseData created(Boolean created) {
+  public CreateTimesheet201ResponseData created(@javax.annotation.Nonnull Boolean created) {
     this.created = created;
     return this;
   }
@@ -184,12 +188,12 @@ public class CreateTimesheet201ResponseData {
     return created;
   }
 
-  public void setCreated(Boolean created) {
+  public void setCreated(@javax.annotation.Nonnull Boolean created) {
     this.created = created;
   }
 
 
-  public CreateTimesheet201ResponseData createdAt(OffsetDateTime createdAt) {
+  public CreateTimesheet201ResponseData createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -203,7 +207,7 @@ public class CreateTimesheet201ResponseData {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 

@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * GetPaymentList200ResponseDataRowsInnerPaymentMethod
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPaymentList200ResponseDataRowsInnerPaymentMethod {
   /**
    * Type of payment method used for the transaction.
@@ -128,12 +128,13 @@ public class GetPaymentList200ResponseDataRowsInnerPaymentMethod {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private TypeEnum type;
 
   public GetPaymentList200ResponseDataRowsInnerPaymentMethod() {
   }
 
-  public GetPaymentList200ResponseDataRowsInnerPaymentMethod type(TypeEnum type) {
+  public GetPaymentList200ResponseDataRowsInnerPaymentMethod type(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -147,7 +148,7 @@ public class GetPaymentList200ResponseDataRowsInnerPaymentMethod {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 

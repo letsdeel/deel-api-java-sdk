@@ -52,28 +52,32 @@ import org.openapitools.client.JSON;
 /**
  * CreateDirectEmployee201ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateDirectEmployee201ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_EMPLOYEE = "employee";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE)
+  @javax.annotation.Nonnull
   private CreateDirectEmployee201ResponseDataEmployee employee;
 
   public static final String SERIALIZED_NAME_EMPLOYMENT = "employment";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT)
+  @javax.annotation.Nonnull
   private CreateDirectEmployee201ResponseDataEmployment employment;
 
   public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
   @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
+  @javax.annotation.Nonnull
   private CreateDirectEmployee201ResponseDataCompensationDetails compensationDetails;
 
   public CreateDirectEmployee201ResponseData() {
   }
 
-  public CreateDirectEmployee201ResponseData id(UUID id) {
+  public CreateDirectEmployee201ResponseData id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -87,12 +91,12 @@ public class CreateDirectEmployee201ResponseData {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public CreateDirectEmployee201ResponseData employee(CreateDirectEmployee201ResponseDataEmployee employee) {
+  public CreateDirectEmployee201ResponseData employee(@javax.annotation.Nonnull CreateDirectEmployee201ResponseDataEmployee employee) {
     this.employee = employee;
     return this;
   }
@@ -106,12 +110,12 @@ public class CreateDirectEmployee201ResponseData {
     return employee;
   }
 
-  public void setEmployee(CreateDirectEmployee201ResponseDataEmployee employee) {
+  public void setEmployee(@javax.annotation.Nonnull CreateDirectEmployee201ResponseDataEmployee employee) {
     this.employee = employee;
   }
 
 
-  public CreateDirectEmployee201ResponseData employment(CreateDirectEmployee201ResponseDataEmployment employment) {
+  public CreateDirectEmployee201ResponseData employment(@javax.annotation.Nonnull CreateDirectEmployee201ResponseDataEmployment employment) {
     this.employment = employment;
     return this;
   }
@@ -125,12 +129,12 @@ public class CreateDirectEmployee201ResponseData {
     return employment;
   }
 
-  public void setEmployment(CreateDirectEmployee201ResponseDataEmployment employment) {
+  public void setEmployment(@javax.annotation.Nonnull CreateDirectEmployee201ResponseDataEmployment employment) {
     this.employment = employment;
   }
 
 
-  public CreateDirectEmployee201ResponseData compensationDetails(CreateDirectEmployee201ResponseDataCompensationDetails compensationDetails) {
+  public CreateDirectEmployee201ResponseData compensationDetails(@javax.annotation.Nonnull CreateDirectEmployee201ResponseDataCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
     return this;
   }
@@ -144,7 +148,7 @@ public class CreateDirectEmployee201ResponseData {
     return compensationDetails;
   }
 
-  public void setCompensationDetails(CreateDirectEmployee201ResponseDataCompensationDetails compensationDetails) {
+  public void setCompensationDetails(@javax.annotation.Nonnull CreateDirectEmployee201ResponseDataCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
   }
 

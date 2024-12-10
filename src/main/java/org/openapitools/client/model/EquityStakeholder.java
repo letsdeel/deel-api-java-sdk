@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * EquityStakeholder
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EquityStakeholder {
   public static final String SERIALIZED_NAME_STAKEHOLDER_ID = "stakeholder_id";
   @SerializedName(SERIALIZED_NAME_STAKEHOLDER_ID)
+  @javax.annotation.Nullable
   private String stakeholderId;
 
   public static final String SERIALIZED_NAME_WORKER_ID = "worker_id";
   @SerializedName(SERIALIZED_NAME_WORKER_ID)
+  @javax.annotation.Nullable
   private String workerId;
 
   public EquityStakeholder() {
   }
 
-  public EquityStakeholder stakeholderId(String stakeholderId) {
+  public EquityStakeholder stakeholderId(@javax.annotation.Nullable String stakeholderId) {
     this.stakeholderId = stakeholderId;
     return this;
   }
@@ -75,12 +77,12 @@ public class EquityStakeholder {
     return stakeholderId;
   }
 
-  public void setStakeholderId(String stakeholderId) {
+  public void setStakeholderId(@javax.annotation.Nullable String stakeholderId) {
     this.stakeholderId = stakeholderId;
   }
 
 
-  public EquityStakeholder workerId(String workerId) {
+  public EquityStakeholder workerId(@javax.annotation.Nullable String workerId) {
     this.workerId = workerId;
     return this;
   }
@@ -94,7 +96,7 @@ public class EquityStakeholder {
     return workerId;
   }
 
-  public void setWorkerId(String workerId) {
+  public void setWorkerId(@javax.annotation.Nullable String workerId) {
     this.workerId = workerId;
   }
 

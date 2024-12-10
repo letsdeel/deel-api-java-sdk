@@ -54,60 +54,72 @@ import org.openapitools.client.JSON;
 /**
  * WorkerOfContract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class WorkerOfContract {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nullable
   private String fullName;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_ALTERNATE_EMAIL = "alternate_email";
   @SerializedName(SERIALIZED_NAME_ALTERNATE_EMAIL)
+  @javax.annotation.Nullable
   private List<AlternateEmailItem> alternateEmail = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NATIONALITY = "nationality";
   @SerializedName(SERIALIZED_NAME_NATIONALITY)
+  @javax.annotation.Nullable
   private String nationality;
 
   public static final String SERIALIZED_NAME_IMAGE = "image";
   @SerializedName(SERIALIZED_NAME_IMAGE)
+  @javax.annotation.Nullable
   private String image;
 
   public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
+  @javax.annotation.Nullable
   private WorkerLegalEntity legalEntity;
 
   public static final String SERIALIZED_NAME_DATE_OF_BIRTH = "date_of_birth";
   @SerializedName(SERIALIZED_NAME_DATE_OF_BIRTH)
+  @javax.annotation.Nullable
   private OffsetDateTime dateOfBirth;
 
   public static final String SERIALIZED_NAME_EXPECTED_EMAIL = "expected_email";
   @SerializedName(SERIALIZED_NAME_EXPECTED_EMAIL)
+  @javax.annotation.Nullable
   private String expectedEmail;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public WorkerOfContract() {
   }
 
-  public WorkerOfContract id(String id) {
+  public WorkerOfContract id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -121,12 +133,12 @@ public class WorkerOfContract {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public WorkerOfContract fullName(String fullName) {
+  public WorkerOfContract fullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -140,12 +152,12 @@ public class WorkerOfContract {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
   }
 
 
-  public WorkerOfContract email(String email) {
+  public WorkerOfContract email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -159,12 +171,12 @@ public class WorkerOfContract {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public WorkerOfContract alternateEmail(List<AlternateEmailItem> alternateEmail) {
+  public WorkerOfContract alternateEmail(@javax.annotation.Nullable List<AlternateEmailItem> alternateEmail) {
     this.alternateEmail = alternateEmail;
     return this;
   }
@@ -186,12 +198,12 @@ public class WorkerOfContract {
     return alternateEmail;
   }
 
-  public void setAlternateEmail(List<AlternateEmailItem> alternateEmail) {
+  public void setAlternateEmail(@javax.annotation.Nullable List<AlternateEmailItem> alternateEmail) {
     this.alternateEmail = alternateEmail;
   }
 
 
-  public WorkerOfContract nationality(String nationality) {
+  public WorkerOfContract nationality(@javax.annotation.Nullable String nationality) {
     this.nationality = nationality;
     return this;
   }
@@ -205,12 +217,12 @@ public class WorkerOfContract {
     return nationality;
   }
 
-  public void setNationality(String nationality) {
+  public void setNationality(@javax.annotation.Nullable String nationality) {
     this.nationality = nationality;
   }
 
 
-  public WorkerOfContract image(String image) {
+  public WorkerOfContract image(@javax.annotation.Nullable String image) {
     this.image = image;
     return this;
   }
@@ -224,12 +236,12 @@ public class WorkerOfContract {
     return image;
   }
 
-  public void setImage(String image) {
+  public void setImage(@javax.annotation.Nullable String image) {
     this.image = image;
   }
 
 
-  public WorkerOfContract legalEntity(WorkerLegalEntity legalEntity) {
+  public WorkerOfContract legalEntity(@javax.annotation.Nullable WorkerLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
     return this;
   }
@@ -243,12 +255,12 @@ public class WorkerOfContract {
     return legalEntity;
   }
 
-  public void setLegalEntity(WorkerLegalEntity legalEntity) {
+  public void setLegalEntity(@javax.annotation.Nullable WorkerLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
   }
 
 
-  public WorkerOfContract dateOfBirth(OffsetDateTime dateOfBirth) {
+  public WorkerOfContract dateOfBirth(@javax.annotation.Nullable OffsetDateTime dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
     return this;
   }
@@ -262,12 +274,12 @@ public class WorkerOfContract {
     return dateOfBirth;
   }
 
-  public void setDateOfBirth(OffsetDateTime dateOfBirth) {
+  public void setDateOfBirth(@javax.annotation.Nullable OffsetDateTime dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
   }
 
 
-  public WorkerOfContract expectedEmail(String expectedEmail) {
+  public WorkerOfContract expectedEmail(@javax.annotation.Nullable String expectedEmail) {
     this.expectedEmail = expectedEmail;
     return this;
   }
@@ -281,12 +293,12 @@ public class WorkerOfContract {
     return expectedEmail;
   }
 
-  public void setExpectedEmail(String expectedEmail) {
+  public void setExpectedEmail(@javax.annotation.Nullable String expectedEmail) {
     this.expectedEmail = expectedEmail;
   }
 
 
-  public WorkerOfContract firstName(String firstName) {
+  public WorkerOfContract firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -300,12 +312,12 @@ public class WorkerOfContract {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public WorkerOfContract lastName(String lastName) {
+  public WorkerOfContract lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -319,12 +331,12 @@ public class WorkerOfContract {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
 
-  public WorkerOfContract country(String country) {
+  public WorkerOfContract country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -338,7 +350,7 @@ public class WorkerOfContract {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 

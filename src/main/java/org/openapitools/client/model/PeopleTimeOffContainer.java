@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * PeopleTimeOffContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PeopleTimeOffContainer {
   /**
    * Time off type.
@@ -107,28 +107,33 @@ public class PeopleTimeOffContainer {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private String startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private String endDate;
 
   public static final String SERIALIZED_NAME_REASON = "reason";
   @SerializedName(SERIALIZED_NAME_REASON)
+  @javax.annotation.Nullable
   private String reason;
 
   public static final String SERIALIZED_NAME_ATTACHMENTS = "attachments";
   @SerializedName(SERIALIZED_NAME_ATTACHMENTS)
+  @javax.annotation.Nullable
   private File attachments;
 
   public PeopleTimeOffContainer() {
   }
 
-  public PeopleTimeOffContainer type(TypeEnum type) {
+  public PeopleTimeOffContainer type(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -142,12 +147,12 @@ public class PeopleTimeOffContainer {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
 
-  public PeopleTimeOffContainer startDate(String startDate) {
+  public PeopleTimeOffContainer startDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -161,12 +166,12 @@ public class PeopleTimeOffContainer {
     return startDate;
   }
 
-  public void setStartDate(String startDate) {
+  public void setStartDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
   }
 
 
-  public PeopleTimeOffContainer endDate(String endDate) {
+  public PeopleTimeOffContainer endDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -180,12 +185,12 @@ public class PeopleTimeOffContainer {
     return endDate;
   }
 
-  public void setEndDate(String endDate) {
+  public void setEndDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
   }
 
 
-  public PeopleTimeOffContainer reason(String reason) {
+  public PeopleTimeOffContainer reason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
     return this;
   }
@@ -199,12 +204,12 @@ public class PeopleTimeOffContainer {
     return reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
   }
 
 
-  public PeopleTimeOffContainer attachments(File attachments) {
+  public PeopleTimeOffContainer attachments(@javax.annotation.Nullable File attachments) {
     this.attachments = attachments;
     return this;
   }
@@ -218,7 +223,7 @@ public class PeopleTimeOffContainer {
     return attachments;
   }
 
-  public void setAttachments(File attachments) {
+  public void setAttachments(@javax.annotation.Nullable File attachments) {
     this.attachments = attachments;
   }
 

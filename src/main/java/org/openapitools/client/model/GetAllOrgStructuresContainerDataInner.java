@@ -52,48 +52,57 @@ import org.openapitools.client.JSON;
 /**
  * GetAllOrgStructuresContainerDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetAllOrgStructuresContainerDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private UUID id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_ROLES = "roles";
   @SerializedName(SERIALIZED_NAME_ROLES)
+  @javax.annotation.Nullable
   private List<GetAllOrgStructuresContainerDataInnerRolesInner> roles = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TEAMS = "teams";
   @SerializedName(SERIALIZED_NAME_TEAMS)
+  @javax.annotation.Nullable
   private List<Object> teams = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_TEAMS_COUNT = "teams_count";
   @SerializedName(SERIALIZED_NAME_TEAMS_COUNT)
+  @javax.annotation.Nullable
   private Integer teamsCount;
 
   public static final String SERIALIZED_NAME_ENABLE_ROLES = "enable_roles";
   @SerializedName(SERIALIZED_NAME_ENABLE_ROLES)
+  @javax.annotation.Nullable
   private Boolean enableRoles;
 
   public static final String SERIALIZED_NAME_IS_MULTISELECT = "is_multiselect";
   @SerializedName(SERIALIZED_NAME_IS_MULTISELECT)
+  @javax.annotation.Nullable
   private Boolean isMultiselect;
 
   public GetAllOrgStructuresContainerDataInner() {
   }
 
-  public GetAllOrgStructuresContainerDataInner id(UUID id) {
+  public GetAllOrgStructuresContainerDataInner id(@javax.annotation.Nullable UUID id) {
     this.id = id;
     return this;
   }
@@ -107,12 +116,12 @@ public class GetAllOrgStructuresContainerDataInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nullable UUID id) {
     this.id = id;
   }
 
 
-  public GetAllOrgStructuresContainerDataInner name(String name) {
+  public GetAllOrgStructuresContainerDataInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -126,12 +135,12 @@ public class GetAllOrgStructuresContainerDataInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetAllOrgStructuresContainerDataInner type(String type) {
+  public GetAllOrgStructuresContainerDataInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -145,12 +154,12 @@ public class GetAllOrgStructuresContainerDataInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public GetAllOrgStructuresContainerDataInner roles(List<GetAllOrgStructuresContainerDataInnerRolesInner> roles) {
+  public GetAllOrgStructuresContainerDataInner roles(@javax.annotation.Nullable List<GetAllOrgStructuresContainerDataInnerRolesInner> roles) {
     this.roles = roles;
     return this;
   }
@@ -172,12 +181,12 @@ public class GetAllOrgStructuresContainerDataInner {
     return roles;
   }
 
-  public void setRoles(List<GetAllOrgStructuresContainerDataInnerRolesInner> roles) {
+  public void setRoles(@javax.annotation.Nullable List<GetAllOrgStructuresContainerDataInnerRolesInner> roles) {
     this.roles = roles;
   }
 
 
-  public GetAllOrgStructuresContainerDataInner teams(List<Object> teams) {
+  public GetAllOrgStructuresContainerDataInner teams(@javax.annotation.Nullable List<Object> teams) {
     this.teams = teams;
     return this;
   }
@@ -199,12 +208,12 @@ public class GetAllOrgStructuresContainerDataInner {
     return teams;
   }
 
-  public void setTeams(List<Object> teams) {
+  public void setTeams(@javax.annotation.Nullable List<Object> teams) {
     this.teams = teams;
   }
 
 
-  public GetAllOrgStructuresContainerDataInner externalId(String externalId) {
+  public GetAllOrgStructuresContainerDataInner externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -218,12 +227,12 @@ public class GetAllOrgStructuresContainerDataInner {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public GetAllOrgStructuresContainerDataInner teamsCount(Integer teamsCount) {
+  public GetAllOrgStructuresContainerDataInner teamsCount(@javax.annotation.Nullable Integer teamsCount) {
     this.teamsCount = teamsCount;
     return this;
   }
@@ -237,12 +246,12 @@ public class GetAllOrgStructuresContainerDataInner {
     return teamsCount;
   }
 
-  public void setTeamsCount(Integer teamsCount) {
+  public void setTeamsCount(@javax.annotation.Nullable Integer teamsCount) {
     this.teamsCount = teamsCount;
   }
 
 
-  public GetAllOrgStructuresContainerDataInner enableRoles(Boolean enableRoles) {
+  public GetAllOrgStructuresContainerDataInner enableRoles(@javax.annotation.Nullable Boolean enableRoles) {
     this.enableRoles = enableRoles;
     return this;
   }
@@ -256,12 +265,12 @@ public class GetAllOrgStructuresContainerDataInner {
     return enableRoles;
   }
 
-  public void setEnableRoles(Boolean enableRoles) {
+  public void setEnableRoles(@javax.annotation.Nullable Boolean enableRoles) {
     this.enableRoles = enableRoles;
   }
 
 
-  public GetAllOrgStructuresContainerDataInner isMultiselect(Boolean isMultiselect) {
+  public GetAllOrgStructuresContainerDataInner isMultiselect(@javax.annotation.Nullable Boolean isMultiselect) {
     this.isMultiselect = isMultiselect;
     return this;
   }
@@ -275,7 +284,7 @@ public class GetAllOrgStructuresContainerDataInner {
     return isMultiselect;
   }
 
-  public void setIsMultiselect(Boolean isMultiselect) {
+  public void setIsMultiselect(@javax.annotation.Nullable Boolean isMultiselect) {
     this.isMultiselect = isMultiselect;
   }
 

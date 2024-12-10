@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * ValidationType
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ValidationType {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private ValidationTypeEnum type;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private ValidationTypeValue value;
 
   public ValidationType() {
   }
 
-  public ValidationType type(ValidationTypeEnum type) {
+  public ValidationType type(@javax.annotation.Nullable ValidationTypeEnum type) {
     this.type = type;
     return this;
   }
@@ -77,12 +79,12 @@ public class ValidationType {
     return type;
   }
 
-  public void setType(ValidationTypeEnum type) {
+  public void setType(@javax.annotation.Nullable ValidationTypeEnum type) {
     this.type = type;
   }
 
 
-  public ValidationType value(ValidationTypeValue value) {
+  public ValidationType value(@javax.annotation.Nullable ValidationTypeValue value) {
     this.value = value;
     return this;
   }
@@ -96,7 +98,7 @@ public class ValidationType {
     return value;
   }
 
-  public void setValue(ValidationTypeValue value) {
+  public void setValue(@javax.annotation.Nullable ValidationTypeValue value) {
     this.value = value;
   }
 

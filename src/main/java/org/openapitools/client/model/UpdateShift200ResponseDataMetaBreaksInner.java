@@ -50,24 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * UpdateShift200ResponseDataMetaBreaksInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateShift200ResponseDataMetaBreaksInner {
   public static final String SERIALIZED_NAME_END = "end";
   @SerializedName(SERIALIZED_NAME_END)
+  @javax.annotation.Nullable
   private UpdateShift200ResponseDataMetaBreaksInnerEnd end;
 
   public static final String SERIALIZED_NAME_START = "start";
   @SerializedName(SERIALIZED_NAME_START)
+  @javax.annotation.Nullable
   private UpdateShift200ResponseDataMetaBreaksInnerStart start;
 
   public static final String SERIALIZED_NAME_IS_PAID = "is_paid";
   @SerializedName(SERIALIZED_NAME_IS_PAID)
+  @javax.annotation.Nullable
   private Boolean isPaid;
 
   public UpdateShift200ResponseDataMetaBreaksInner() {
   }
 
-  public UpdateShift200ResponseDataMetaBreaksInner end(UpdateShift200ResponseDataMetaBreaksInnerEnd end) {
+  public UpdateShift200ResponseDataMetaBreaksInner end(@javax.annotation.Nullable UpdateShift200ResponseDataMetaBreaksInnerEnd end) {
     this.end = end;
     return this;
   }
@@ -81,12 +84,12 @@ public class UpdateShift200ResponseDataMetaBreaksInner {
     return end;
   }
 
-  public void setEnd(UpdateShift200ResponseDataMetaBreaksInnerEnd end) {
+  public void setEnd(@javax.annotation.Nullable UpdateShift200ResponseDataMetaBreaksInnerEnd end) {
     this.end = end;
   }
 
 
-  public UpdateShift200ResponseDataMetaBreaksInner start(UpdateShift200ResponseDataMetaBreaksInnerStart start) {
+  public UpdateShift200ResponseDataMetaBreaksInner start(@javax.annotation.Nullable UpdateShift200ResponseDataMetaBreaksInnerStart start) {
     this.start = start;
     return this;
   }
@@ -100,12 +103,12 @@ public class UpdateShift200ResponseDataMetaBreaksInner {
     return start;
   }
 
-  public void setStart(UpdateShift200ResponseDataMetaBreaksInnerStart start) {
+  public void setStart(@javax.annotation.Nullable UpdateShift200ResponseDataMetaBreaksInnerStart start) {
     this.start = start;
   }
 
 
-  public UpdateShift200ResponseDataMetaBreaksInner isPaid(Boolean isPaid) {
+  public UpdateShift200ResponseDataMetaBreaksInner isPaid(@javax.annotation.Nullable Boolean isPaid) {
     this.isPaid = isPaid;
     return this;
   }
@@ -119,7 +122,7 @@ public class UpdateShift200ResponseDataMetaBreaksInner {
     return isPaid;
   }
 
-  public void setIsPaid(Boolean isPaid) {
+  public void setIsPaid(@javax.annotation.Nullable Boolean isPaid) {
     this.isPaid = isPaid;
   }
 

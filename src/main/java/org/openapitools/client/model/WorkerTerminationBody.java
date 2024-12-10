@@ -50,32 +50,37 @@ import org.openapitools.client.JSON;
 /**
  * WorkerTerminationBody
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class WorkerTerminationBody {
   public static final String SERIALIZED_NAME_DESIRED_END_DATE = "desired_end_date";
   @SerializedName(SERIALIZED_NAME_DESIRED_END_DATE)
+  @javax.annotation.Nonnull
   private LocalDate desiredEndDate;
 
   public static final String SERIALIZED_NAME_LAST_DATE_OF_WORK = "last_date_of_work";
   @SerializedName(SERIALIZED_NAME_LAST_DATE_OF_WORK)
+  @javax.annotation.Nonnull
   private LocalDate lastDateOfWork;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nonnull
   private String message;
 
   public static final String SERIALIZED_NAME_IS_VOLUNTARY = "is_voluntary";
   @SerializedName(SERIALIZED_NAME_IS_VOLUNTARY)
+  @javax.annotation.Nonnull
   private Boolean isVoluntary;
 
   public static final String SERIALIZED_NAME_SEVERANCE = "severance";
   @SerializedName(SERIALIZED_NAME_SEVERANCE)
+  @javax.annotation.Nonnull
   private WorkerTerminationBodySeverance severance;
 
   public WorkerTerminationBody() {
   }
 
-  public WorkerTerminationBody desiredEndDate(LocalDate desiredEndDate) {
+  public WorkerTerminationBody desiredEndDate(@javax.annotation.Nonnull LocalDate desiredEndDate) {
     this.desiredEndDate = desiredEndDate;
     return this;
   }
@@ -89,12 +94,12 @@ public class WorkerTerminationBody {
     return desiredEndDate;
   }
 
-  public void setDesiredEndDate(LocalDate desiredEndDate) {
+  public void setDesiredEndDate(@javax.annotation.Nonnull LocalDate desiredEndDate) {
     this.desiredEndDate = desiredEndDate;
   }
 
 
-  public WorkerTerminationBody lastDateOfWork(LocalDate lastDateOfWork) {
+  public WorkerTerminationBody lastDateOfWork(@javax.annotation.Nonnull LocalDate lastDateOfWork) {
     this.lastDateOfWork = lastDateOfWork;
     return this;
   }
@@ -108,12 +113,12 @@ public class WorkerTerminationBody {
     return lastDateOfWork;
   }
 
-  public void setLastDateOfWork(LocalDate lastDateOfWork) {
+  public void setLastDateOfWork(@javax.annotation.Nonnull LocalDate lastDateOfWork) {
     this.lastDateOfWork = lastDateOfWork;
   }
 
 
-  public WorkerTerminationBody message(String message) {
+  public WorkerTerminationBody message(@javax.annotation.Nonnull String message) {
     this.message = message;
     return this;
   }
@@ -127,12 +132,12 @@ public class WorkerTerminationBody {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nonnull String message) {
     this.message = message;
   }
 
 
-  public WorkerTerminationBody isVoluntary(Boolean isVoluntary) {
+  public WorkerTerminationBody isVoluntary(@javax.annotation.Nonnull Boolean isVoluntary) {
     this.isVoluntary = isVoluntary;
     return this;
   }
@@ -146,12 +151,12 @@ public class WorkerTerminationBody {
     return isVoluntary;
   }
 
-  public void setIsVoluntary(Boolean isVoluntary) {
+  public void setIsVoluntary(@javax.annotation.Nonnull Boolean isVoluntary) {
     this.isVoluntary = isVoluntary;
   }
 
 
-  public WorkerTerminationBody severance(WorkerTerminationBodySeverance severance) {
+  public WorkerTerminationBody severance(@javax.annotation.Nonnull WorkerTerminationBodySeverance severance) {
     this.severance = severance;
     return this;
   }
@@ -165,7 +170,7 @@ public class WorkerTerminationBody {
     return severance;
   }
 
-  public void setSeverance(WorkerTerminationBodySeverance severance) {
+  public void setSeverance(@javax.annotation.Nonnull WorkerTerminationBodySeverance severance) {
     this.severance = severance;
   }
 

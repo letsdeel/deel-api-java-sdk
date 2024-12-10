@@ -52,104 +52,127 @@ import org.openapitools.client.JSON;
 /**
  * EOR quote approved by Deel
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorQuoteBase {
   public static final String SERIALIZED_NAME_ANNUAL_SALARY = "annual_salary";
   @SerializedName(SERIALIZED_NAME_ANNUAL_SALARY)
+  @javax.annotation.Nullable
   private BigDecimal annualSalary;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_BREAKDOWN_COSTS = "breakdown_costs";
   @SerializedName(SERIALIZED_NAME_BREAKDOWN_COSTS)
+  @javax.annotation.Nullable
   private BreakdownCostsQuote breakdownCosts;
 
   public static final String SERIALIZED_NAME_SEVERANCE_ACCRUAL_TOTAL = "severance_accrual_total";
   @SerializedName(SERIALIZED_NAME_SEVERANCE_ACCRUAL_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal severanceAccrualTotal;
 
   public static final String SERIALIZED_NAME_SEVERANCE_ACCRUAL_TOTAL_USD = "severance_accrual_total_usd";
   @SerializedName(SERIALIZED_NAME_SEVERANCE_ACCRUAL_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal severanceAccrualTotalUsd;
 
   public static final String SERIALIZED_NAME_RECURRING_ALLOWANCE_TOTAL = "recurring_allowance_total";
   @SerializedName(SERIALIZED_NAME_RECURRING_ALLOWANCE_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal recurringAllowanceTotal;
 
   public static final String SERIALIZED_NAME_RECURRING_ALLOWANCE_TOTAL_USD = "recurring_allowance_total_usd";
   @SerializedName(SERIALIZED_NAME_RECURRING_ALLOWANCE_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal recurringAllowanceTotalUsd;
 
   public static final String SERIALIZED_NAME_SALARY_TOTAL = "salary_total";
   @SerializedName(SERIALIZED_NAME_SALARY_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal salaryTotal;
 
   public static final String SERIALIZED_NAME_SALARY_TOTAL_USD = "salary_total_usd";
   @SerializedName(SERIALIZED_NAME_SALARY_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal salaryTotalUsd;
 
   public static final String SERIALIZED_NAME_EMPLOYER_COST_TOTAL = "employer_cost_total";
   @SerializedName(SERIALIZED_NAME_EMPLOYER_COST_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal employerCostTotal;
 
   public static final String SERIALIZED_NAME_EMPLOYER_COST_TOTAL_USD = "employer_cost_total_usd";
   @SerializedName(SERIALIZED_NAME_EMPLOYER_COST_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal employerCostTotalUsd;
 
   public static final String SERIALIZED_NAME_PLATFORM_FEE_TOTAL = "platform_fee_total";
   @SerializedName(SERIALIZED_NAME_PLATFORM_FEE_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal platformFeeTotal;
 
   public static final String SERIALIZED_NAME_PLATFORM_FEE_TOTAL_USD = "platform_fee_total_usd";
   @SerializedName(SERIALIZED_NAME_PLATFORM_FEE_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal platformFeeTotalUsd;
 
   public static final String SERIALIZED_NAME_MOBILITY_FEE_TOTAL = "mobility_fee_total";
   @SerializedName(SERIALIZED_NAME_MOBILITY_FEE_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal mobilityFeeTotal;
 
   public static final String SERIALIZED_NAME_MOBILITY_FEE_TOTAL_USD = "mobility_fee_total_usd";
   @SerializedName(SERIALIZED_NAME_MOBILITY_FEE_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal mobilityFeeTotalUsd;
 
   public static final String SERIALIZED_NAME_MONTHLY_COST_TOTAL = "monthly_cost_total";
   @SerializedName(SERIALIZED_NAME_MONTHLY_COST_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal monthlyCostTotal;
 
   public static final String SERIALIZED_NAME_MONTHLY_COST_TOTAL_USD = "monthly_cost_total_usd";
   @SerializedName(SERIALIZED_NAME_MONTHLY_COST_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal monthlyCostTotalUsd;
 
   public static final String SERIALIZED_NAME_GROSS_SALARY_TOTAL = "gross_salary_total";
   @SerializedName(SERIALIZED_NAME_GROSS_SALARY_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal grossSalaryTotal;
 
   public static final String SERIALIZED_NAME_GROSS_SALARY_TOTAL_USD = "gross_salary_total_usd";
   @SerializedName(SERIALIZED_NAME_GROSS_SALARY_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal grossSalaryTotalUsd;
 
   public static final String SERIALIZED_NAME_CBA_TOTAL = "cba_total";
   @SerializedName(SERIALIZED_NAME_CBA_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal cbaTotal;
 
   public static final String SERIALIZED_NAME_CBA_TOTAL_USD = "cba_total_usd";
   @SerializedName(SERIALIZED_NAME_CBA_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal cbaTotalUsd;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime updatedAt;
 
   public EorQuoteBase() {
   }
 
-  public EorQuoteBase annualSalary(BigDecimal annualSalary) {
+  public EorQuoteBase annualSalary(@javax.annotation.Nullable BigDecimal annualSalary) {
     this.annualSalary = annualSalary;
     return this;
   }
@@ -163,12 +186,12 @@ public class EorQuoteBase {
     return annualSalary;
   }
 
-  public void setAnnualSalary(BigDecimal annualSalary) {
+  public void setAnnualSalary(@javax.annotation.Nullable BigDecimal annualSalary) {
     this.annualSalary = annualSalary;
   }
 
 
-  public EorQuoteBase currency(String currency) {
+  public EorQuoteBase currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -182,12 +205,12 @@ public class EorQuoteBase {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public EorQuoteBase breakdownCosts(BreakdownCostsQuote breakdownCosts) {
+  public EorQuoteBase breakdownCosts(@javax.annotation.Nullable BreakdownCostsQuote breakdownCosts) {
     this.breakdownCosts = breakdownCosts;
     return this;
   }
@@ -201,12 +224,12 @@ public class EorQuoteBase {
     return breakdownCosts;
   }
 
-  public void setBreakdownCosts(BreakdownCostsQuote breakdownCosts) {
+  public void setBreakdownCosts(@javax.annotation.Nullable BreakdownCostsQuote breakdownCosts) {
     this.breakdownCosts = breakdownCosts;
   }
 
 
-  public EorQuoteBase severanceAccrualTotal(BigDecimal severanceAccrualTotal) {
+  public EorQuoteBase severanceAccrualTotal(@javax.annotation.Nullable BigDecimal severanceAccrualTotal) {
     this.severanceAccrualTotal = severanceAccrualTotal;
     return this;
   }
@@ -220,12 +243,12 @@ public class EorQuoteBase {
     return severanceAccrualTotal;
   }
 
-  public void setSeveranceAccrualTotal(BigDecimal severanceAccrualTotal) {
+  public void setSeveranceAccrualTotal(@javax.annotation.Nullable BigDecimal severanceAccrualTotal) {
     this.severanceAccrualTotal = severanceAccrualTotal;
   }
 
 
-  public EorQuoteBase severanceAccrualTotalUsd(BigDecimal severanceAccrualTotalUsd) {
+  public EorQuoteBase severanceAccrualTotalUsd(@javax.annotation.Nullable BigDecimal severanceAccrualTotalUsd) {
     this.severanceAccrualTotalUsd = severanceAccrualTotalUsd;
     return this;
   }
@@ -239,12 +262,12 @@ public class EorQuoteBase {
     return severanceAccrualTotalUsd;
   }
 
-  public void setSeveranceAccrualTotalUsd(BigDecimal severanceAccrualTotalUsd) {
+  public void setSeveranceAccrualTotalUsd(@javax.annotation.Nullable BigDecimal severanceAccrualTotalUsd) {
     this.severanceAccrualTotalUsd = severanceAccrualTotalUsd;
   }
 
 
-  public EorQuoteBase recurringAllowanceTotal(BigDecimal recurringAllowanceTotal) {
+  public EorQuoteBase recurringAllowanceTotal(@javax.annotation.Nullable BigDecimal recurringAllowanceTotal) {
     this.recurringAllowanceTotal = recurringAllowanceTotal;
     return this;
   }
@@ -258,12 +281,12 @@ public class EorQuoteBase {
     return recurringAllowanceTotal;
   }
 
-  public void setRecurringAllowanceTotal(BigDecimal recurringAllowanceTotal) {
+  public void setRecurringAllowanceTotal(@javax.annotation.Nullable BigDecimal recurringAllowanceTotal) {
     this.recurringAllowanceTotal = recurringAllowanceTotal;
   }
 
 
-  public EorQuoteBase recurringAllowanceTotalUsd(BigDecimal recurringAllowanceTotalUsd) {
+  public EorQuoteBase recurringAllowanceTotalUsd(@javax.annotation.Nullable BigDecimal recurringAllowanceTotalUsd) {
     this.recurringAllowanceTotalUsd = recurringAllowanceTotalUsd;
     return this;
   }
@@ -277,12 +300,12 @@ public class EorQuoteBase {
     return recurringAllowanceTotalUsd;
   }
 
-  public void setRecurringAllowanceTotalUsd(BigDecimal recurringAllowanceTotalUsd) {
+  public void setRecurringAllowanceTotalUsd(@javax.annotation.Nullable BigDecimal recurringAllowanceTotalUsd) {
     this.recurringAllowanceTotalUsd = recurringAllowanceTotalUsd;
   }
 
 
-  public EorQuoteBase salaryTotal(BigDecimal salaryTotal) {
+  public EorQuoteBase salaryTotal(@javax.annotation.Nullable BigDecimal salaryTotal) {
     this.salaryTotal = salaryTotal;
     return this;
   }
@@ -296,12 +319,12 @@ public class EorQuoteBase {
     return salaryTotal;
   }
 
-  public void setSalaryTotal(BigDecimal salaryTotal) {
+  public void setSalaryTotal(@javax.annotation.Nullable BigDecimal salaryTotal) {
     this.salaryTotal = salaryTotal;
   }
 
 
-  public EorQuoteBase salaryTotalUsd(BigDecimal salaryTotalUsd) {
+  public EorQuoteBase salaryTotalUsd(@javax.annotation.Nullable BigDecimal salaryTotalUsd) {
     this.salaryTotalUsd = salaryTotalUsd;
     return this;
   }
@@ -315,12 +338,12 @@ public class EorQuoteBase {
     return salaryTotalUsd;
   }
 
-  public void setSalaryTotalUsd(BigDecimal salaryTotalUsd) {
+  public void setSalaryTotalUsd(@javax.annotation.Nullable BigDecimal salaryTotalUsd) {
     this.salaryTotalUsd = salaryTotalUsd;
   }
 
 
-  public EorQuoteBase employerCostTotal(BigDecimal employerCostTotal) {
+  public EorQuoteBase employerCostTotal(@javax.annotation.Nullable BigDecimal employerCostTotal) {
     this.employerCostTotal = employerCostTotal;
     return this;
   }
@@ -334,12 +357,12 @@ public class EorQuoteBase {
     return employerCostTotal;
   }
 
-  public void setEmployerCostTotal(BigDecimal employerCostTotal) {
+  public void setEmployerCostTotal(@javax.annotation.Nullable BigDecimal employerCostTotal) {
     this.employerCostTotal = employerCostTotal;
   }
 
 
-  public EorQuoteBase employerCostTotalUsd(BigDecimal employerCostTotalUsd) {
+  public EorQuoteBase employerCostTotalUsd(@javax.annotation.Nullable BigDecimal employerCostTotalUsd) {
     this.employerCostTotalUsd = employerCostTotalUsd;
     return this;
   }
@@ -353,12 +376,12 @@ public class EorQuoteBase {
     return employerCostTotalUsd;
   }
 
-  public void setEmployerCostTotalUsd(BigDecimal employerCostTotalUsd) {
+  public void setEmployerCostTotalUsd(@javax.annotation.Nullable BigDecimal employerCostTotalUsd) {
     this.employerCostTotalUsd = employerCostTotalUsd;
   }
 
 
-  public EorQuoteBase platformFeeTotal(BigDecimal platformFeeTotal) {
+  public EorQuoteBase platformFeeTotal(@javax.annotation.Nullable BigDecimal platformFeeTotal) {
     this.platformFeeTotal = platformFeeTotal;
     return this;
   }
@@ -372,12 +395,12 @@ public class EorQuoteBase {
     return platformFeeTotal;
   }
 
-  public void setPlatformFeeTotal(BigDecimal platformFeeTotal) {
+  public void setPlatformFeeTotal(@javax.annotation.Nullable BigDecimal platformFeeTotal) {
     this.platformFeeTotal = platformFeeTotal;
   }
 
 
-  public EorQuoteBase platformFeeTotalUsd(BigDecimal platformFeeTotalUsd) {
+  public EorQuoteBase platformFeeTotalUsd(@javax.annotation.Nullable BigDecimal platformFeeTotalUsd) {
     this.platformFeeTotalUsd = platformFeeTotalUsd;
     return this;
   }
@@ -391,12 +414,12 @@ public class EorQuoteBase {
     return platformFeeTotalUsd;
   }
 
-  public void setPlatformFeeTotalUsd(BigDecimal platformFeeTotalUsd) {
+  public void setPlatformFeeTotalUsd(@javax.annotation.Nullable BigDecimal platformFeeTotalUsd) {
     this.platformFeeTotalUsd = platformFeeTotalUsd;
   }
 
 
-  public EorQuoteBase mobilityFeeTotal(BigDecimal mobilityFeeTotal) {
+  public EorQuoteBase mobilityFeeTotal(@javax.annotation.Nullable BigDecimal mobilityFeeTotal) {
     this.mobilityFeeTotal = mobilityFeeTotal;
     return this;
   }
@@ -410,12 +433,12 @@ public class EorQuoteBase {
     return mobilityFeeTotal;
   }
 
-  public void setMobilityFeeTotal(BigDecimal mobilityFeeTotal) {
+  public void setMobilityFeeTotal(@javax.annotation.Nullable BigDecimal mobilityFeeTotal) {
     this.mobilityFeeTotal = mobilityFeeTotal;
   }
 
 
-  public EorQuoteBase mobilityFeeTotalUsd(BigDecimal mobilityFeeTotalUsd) {
+  public EorQuoteBase mobilityFeeTotalUsd(@javax.annotation.Nullable BigDecimal mobilityFeeTotalUsd) {
     this.mobilityFeeTotalUsd = mobilityFeeTotalUsd;
     return this;
   }
@@ -429,12 +452,12 @@ public class EorQuoteBase {
     return mobilityFeeTotalUsd;
   }
 
-  public void setMobilityFeeTotalUsd(BigDecimal mobilityFeeTotalUsd) {
+  public void setMobilityFeeTotalUsd(@javax.annotation.Nullable BigDecimal mobilityFeeTotalUsd) {
     this.mobilityFeeTotalUsd = mobilityFeeTotalUsd;
   }
 
 
-  public EorQuoteBase monthlyCostTotal(BigDecimal monthlyCostTotal) {
+  public EorQuoteBase monthlyCostTotal(@javax.annotation.Nullable BigDecimal monthlyCostTotal) {
     this.monthlyCostTotal = monthlyCostTotal;
     return this;
   }
@@ -448,12 +471,12 @@ public class EorQuoteBase {
     return monthlyCostTotal;
   }
 
-  public void setMonthlyCostTotal(BigDecimal monthlyCostTotal) {
+  public void setMonthlyCostTotal(@javax.annotation.Nullable BigDecimal monthlyCostTotal) {
     this.monthlyCostTotal = monthlyCostTotal;
   }
 
 
-  public EorQuoteBase monthlyCostTotalUsd(BigDecimal monthlyCostTotalUsd) {
+  public EorQuoteBase monthlyCostTotalUsd(@javax.annotation.Nullable BigDecimal monthlyCostTotalUsd) {
     this.monthlyCostTotalUsd = monthlyCostTotalUsd;
     return this;
   }
@@ -467,12 +490,12 @@ public class EorQuoteBase {
     return monthlyCostTotalUsd;
   }
 
-  public void setMonthlyCostTotalUsd(BigDecimal monthlyCostTotalUsd) {
+  public void setMonthlyCostTotalUsd(@javax.annotation.Nullable BigDecimal monthlyCostTotalUsd) {
     this.monthlyCostTotalUsd = monthlyCostTotalUsd;
   }
 
 
-  public EorQuoteBase grossSalaryTotal(BigDecimal grossSalaryTotal) {
+  public EorQuoteBase grossSalaryTotal(@javax.annotation.Nullable BigDecimal grossSalaryTotal) {
     this.grossSalaryTotal = grossSalaryTotal;
     return this;
   }
@@ -486,12 +509,12 @@ public class EorQuoteBase {
     return grossSalaryTotal;
   }
 
-  public void setGrossSalaryTotal(BigDecimal grossSalaryTotal) {
+  public void setGrossSalaryTotal(@javax.annotation.Nullable BigDecimal grossSalaryTotal) {
     this.grossSalaryTotal = grossSalaryTotal;
   }
 
 
-  public EorQuoteBase grossSalaryTotalUsd(BigDecimal grossSalaryTotalUsd) {
+  public EorQuoteBase grossSalaryTotalUsd(@javax.annotation.Nullable BigDecimal grossSalaryTotalUsd) {
     this.grossSalaryTotalUsd = grossSalaryTotalUsd;
     return this;
   }
@@ -505,12 +528,12 @@ public class EorQuoteBase {
     return grossSalaryTotalUsd;
   }
 
-  public void setGrossSalaryTotalUsd(BigDecimal grossSalaryTotalUsd) {
+  public void setGrossSalaryTotalUsd(@javax.annotation.Nullable BigDecimal grossSalaryTotalUsd) {
     this.grossSalaryTotalUsd = grossSalaryTotalUsd;
   }
 
 
-  public EorQuoteBase cbaTotal(BigDecimal cbaTotal) {
+  public EorQuoteBase cbaTotal(@javax.annotation.Nullable BigDecimal cbaTotal) {
     this.cbaTotal = cbaTotal;
     return this;
   }
@@ -524,12 +547,12 @@ public class EorQuoteBase {
     return cbaTotal;
   }
 
-  public void setCbaTotal(BigDecimal cbaTotal) {
+  public void setCbaTotal(@javax.annotation.Nullable BigDecimal cbaTotal) {
     this.cbaTotal = cbaTotal;
   }
 
 
-  public EorQuoteBase cbaTotalUsd(BigDecimal cbaTotalUsd) {
+  public EorQuoteBase cbaTotalUsd(@javax.annotation.Nullable BigDecimal cbaTotalUsd) {
     this.cbaTotalUsd = cbaTotalUsd;
     return this;
   }
@@ -543,12 +566,12 @@ public class EorQuoteBase {
     return cbaTotalUsd;
   }
 
-  public void setCbaTotalUsd(BigDecimal cbaTotalUsd) {
+  public void setCbaTotalUsd(@javax.annotation.Nullable BigDecimal cbaTotalUsd) {
     this.cbaTotalUsd = cbaTotalUsd;
   }
 
 
-  public EorQuoteBase createdAt(OffsetDateTime createdAt) {
+  public EorQuoteBase createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -562,12 +585,12 @@ public class EorQuoteBase {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public EorQuoteBase updatedAt(OffsetDateTime updatedAt) {
+  public EorQuoteBase updatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -581,7 +604,7 @@ public class EorQuoteBase {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 

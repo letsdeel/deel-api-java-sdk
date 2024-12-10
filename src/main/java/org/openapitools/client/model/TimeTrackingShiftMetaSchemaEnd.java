@@ -48,28 +48,32 @@ import org.openapitools.client.JSON;
 /**
  * End details of the shift
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeTrackingShiftMetaSchemaEnd {
   public static final String SERIALIZED_NAME_DATE = "date";
   @SerializedName(SERIALIZED_NAME_DATE)
+  @javax.annotation.Nonnull
   private String date;
 
   public static final String SERIALIZED_NAME_TIME = "time";
   @SerializedName(SERIALIZED_NAME_TIME)
+  @javax.annotation.Nonnull
   private String time;
 
   public static final String SERIALIZED_NAME_IS_REST_DAY = "is_rest_day";
   @SerializedName(SERIALIZED_NAME_IS_REST_DAY)
+  @javax.annotation.Nonnull
   private Boolean isRestDay;
 
   public static final String SERIALIZED_NAME_IS_PUBLIC_HOLIDAY = "is_public_holiday";
   @SerializedName(SERIALIZED_NAME_IS_PUBLIC_HOLIDAY)
+  @javax.annotation.Nonnull
   private Boolean isPublicHoliday;
 
   public TimeTrackingShiftMetaSchemaEnd() {
   }
 
-  public TimeTrackingShiftMetaSchemaEnd date(String date) {
+  public TimeTrackingShiftMetaSchemaEnd date(@javax.annotation.Nonnull String date) {
     this.date = date;
     return this;
   }
@@ -83,12 +87,12 @@ public class TimeTrackingShiftMetaSchemaEnd {
     return date;
   }
 
-  public void setDate(String date) {
+  public void setDate(@javax.annotation.Nonnull String date) {
     this.date = date;
   }
 
 
-  public TimeTrackingShiftMetaSchemaEnd time(String time) {
+  public TimeTrackingShiftMetaSchemaEnd time(@javax.annotation.Nonnull String time) {
     this.time = time;
     return this;
   }
@@ -102,12 +106,12 @@ public class TimeTrackingShiftMetaSchemaEnd {
     return time;
   }
 
-  public void setTime(String time) {
+  public void setTime(@javax.annotation.Nonnull String time) {
     this.time = time;
   }
 
 
-  public TimeTrackingShiftMetaSchemaEnd isRestDay(Boolean isRestDay) {
+  public TimeTrackingShiftMetaSchemaEnd isRestDay(@javax.annotation.Nonnull Boolean isRestDay) {
     this.isRestDay = isRestDay;
     return this;
   }
@@ -121,12 +125,12 @@ public class TimeTrackingShiftMetaSchemaEnd {
     return isRestDay;
   }
 
-  public void setIsRestDay(Boolean isRestDay) {
+  public void setIsRestDay(@javax.annotation.Nonnull Boolean isRestDay) {
     this.isRestDay = isRestDay;
   }
 
 
-  public TimeTrackingShiftMetaSchemaEnd isPublicHoliday(Boolean isPublicHoliday) {
+  public TimeTrackingShiftMetaSchemaEnd isPublicHoliday(@javax.annotation.Nonnull Boolean isPublicHoliday) {
     this.isPublicHoliday = isPublicHoliday;
     return this;
   }
@@ -140,7 +144,7 @@ public class TimeTrackingShiftMetaSchemaEnd {
     return isPublicHoliday;
   }
 
-  public void setIsPublicHoliday(Boolean isPublicHoliday) {
+  public void setIsPublicHoliday(@javax.annotation.Nonnull Boolean isPublicHoliday) {
     this.isPublicHoliday = isPublicHoliday;
   }
 

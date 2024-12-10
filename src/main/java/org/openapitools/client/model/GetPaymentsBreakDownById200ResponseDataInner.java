@@ -48,124 +48,152 @@ import org.openapitools.client.JSON;
 /**
  * GetPaymentsBreakDownById200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPaymentsBreakDownById200ResponseDataInner {
   public static final String SERIALIZED_NAME_DATE = "date";
   @SerializedName(SERIALIZED_NAME_DATE)
+  @javax.annotation.Nullable
   private String date;
 
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
+  @javax.annotation.Nullable
   private String team;
 
   public static final String SERIALIZED_NAME_WORK = "work";
   @SerializedName(SERIALIZED_NAME_WORK)
+  @javax.annotation.Nullable
   private String work;
 
   public static final String SERIALIZED_NAME_BONUS = "bonus";
   @SerializedName(SERIALIZED_NAME_BONUS)
+  @javax.annotation.Nullable
   private String bonus;
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
+  @javax.annotation.Nullable
   private String total;
 
   public static final String SERIALIZED_NAME_OTHERS = "others";
   @SerializedName(SERIALIZED_NAME_OTHERS)
+  @javax.annotation.Nullable
   private String others;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_EXPENSES = "expenses";
   @SerializedName(SERIALIZED_NAME_EXPENSES)
+  @javax.annotation.Nullable
   private String expenses;
 
   public static final String SERIALIZED_NAME_OVERTIME = "overtime";
   @SerializedName(SERIALIZED_NAME_OVERTIME)
+  @javax.annotation.Nullable
   private String overtime;
 
   public static final String SERIALIZED_NAME_PRO_RATA = "pro_rata";
   @SerializedName(SERIALIZED_NAME_PRO_RATA)
+  @javax.annotation.Nullable
   private String proRata;
 
   public static final String SERIALIZED_NAME_APPROVERS = "approvers";
   @SerializedName(SERIALIZED_NAME_APPROVERS)
+  @javax.annotation.Nullable
   private String approvers;
 
   public static final String SERIALIZED_NAME_FREQUENCY = "frequency";
   @SerializedName(SERIALIZED_NAME_FREQUENCY)
+  @javax.annotation.Nullable
   private String frequency;
 
   public static final String SERIALIZED_NAME_ADJUSTMENT = "adjustment";
   @SerializedName(SERIALIZED_NAME_ADJUSTMENT)
+  @javax.annotation.Nullable
   private String adjustment;
 
   public static final String SERIALIZED_NAME_DEDUCTIONS = "deductions";
   @SerializedName(SERIALIZED_NAME_DEDUCTIONS)
+  @javax.annotation.Nullable
   private String deductions;
 
   public static final String SERIALIZED_NAME_COMMISSIONS = "commissions";
   @SerializedName(SERIALIZED_NAME_COMMISSIONS)
+  @javax.annotation.Nullable
   private String commissions;
 
   public static final String SERIALIZED_NAME_APPROVE_DATE = "approve_date";
   @SerializedName(SERIALIZED_NAME_APPROVE_DATE)
+  @javax.annotation.Nullable
   private String approveDate;
 
   public static final String SERIALIZED_NAME_PAYMENT_DATE = "payment_date";
   @SerializedName(SERIALIZED_NAME_PAYMENT_DATE)
+  @javax.annotation.Nullable
   private String paymentDate;
 
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoice_number";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
+  @javax.annotation.Nullable
   private String invoiceNumber;
 
   public static final String SERIALIZED_NAME_PROCESSING_FEE = "processing_fee";
   @SerializedName(SERIALIZED_NAME_PROCESSING_FEE)
+  @javax.annotation.Nullable
   private String processingFee;
 
   public static final String SERIALIZED_NAME_RECEIPT_NUMBER = "receipt_number";
   @SerializedName(SERIALIZED_NAME_RECEIPT_NUMBER)
+  @javax.annotation.Nullable
   private String receiptNumber;
 
   public static final String SERIALIZED_NAME_CONTRACT_COUNTRY = "contract_country";
   @SerializedName(SERIALIZED_NAME_CONTRACT_COUNTRY)
+  @javax.annotation.Nullable
   private String contractCountry;
 
   public static final String SERIALIZED_NAME_CONTRACTOR_EMAIL = "contractor_email";
   @SerializedName(SERIALIZED_NAME_CONTRACTOR_EMAIL)
+  @javax.annotation.Nullable
   private String contractorEmail;
 
   public static final String SERIALIZED_NAME_PAYMENT_CURRENCY = "payment_currency";
   @SerializedName(SERIALIZED_NAME_PAYMENT_CURRENCY)
+  @javax.annotation.Nullable
   private String paymentCurrency;
 
   public static final String SERIALIZED_NAME_CONTRACT_START_DATE = "contract_start_date";
   @SerializedName(SERIALIZED_NAME_CONTRACT_START_DATE)
+  @javax.annotation.Nullable
   private String contractStartDate;
 
   public static final String SERIALIZED_NAME_GENERAL_LEDGER_ACCOUNT = "general_ledger_account";
   @SerializedName(SERIALIZED_NAME_GENERAL_LEDGER_ACCOUNT)
+  @javax.annotation.Nullable
   private String generalLedgerAccount;
 
   public static final String SERIALIZED_NAME_TOTAL_PAYMENT_CURRENCY = "total_payment_currency";
   @SerializedName(SERIALIZED_NAME_TOTAL_PAYMENT_CURRENCY)
+  @javax.annotation.Nullable
   private String totalPaymentCurrency;
 
   public static final String SERIALIZED_NAME_CONTRACTOR_EMPLOYEE_NAME = "contractor_employee_name";
   @SerializedName(SERIALIZED_NAME_CONTRACTOR_EMPLOYEE_NAME)
+  @javax.annotation.Nullable
   private String contractorEmployeeName;
 
   public static final String SERIALIZED_NAME_CONTRACTOR_UNIQUE_IDENTIFIER = "contractor_unique_identifier";
   @SerializedName(SERIALIZED_NAME_CONTRACTOR_UNIQUE_IDENTIFIER)
+  @javax.annotation.Nullable
   private String contractorUniqueIdentifier;
 
   public GetPaymentsBreakDownById200ResponseDataInner() {
   }
 
-  public GetPaymentsBreakDownById200ResponseDataInner date(String date) {
+  public GetPaymentsBreakDownById200ResponseDataInner date(@javax.annotation.Nullable String date) {
     this.date = date;
     return this;
   }
@@ -179,12 +207,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return date;
   }
 
-  public void setDate(String date) {
+  public void setDate(@javax.annotation.Nullable String date) {
     this.date = date;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner team(String team) {
+  public GetPaymentsBreakDownById200ResponseDataInner team(@javax.annotation.Nullable String team) {
     this.team = team;
     return this;
   }
@@ -198,12 +226,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return team;
   }
 
-  public void setTeam(String team) {
+  public void setTeam(@javax.annotation.Nullable String team) {
     this.team = team;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner work(String work) {
+  public GetPaymentsBreakDownById200ResponseDataInner work(@javax.annotation.Nullable String work) {
     this.work = work;
     return this;
   }
@@ -217,12 +245,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return work;
   }
 
-  public void setWork(String work) {
+  public void setWork(@javax.annotation.Nullable String work) {
     this.work = work;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner bonus(String bonus) {
+  public GetPaymentsBreakDownById200ResponseDataInner bonus(@javax.annotation.Nullable String bonus) {
     this.bonus = bonus;
     return this;
   }
@@ -236,12 +264,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return bonus;
   }
 
-  public void setBonus(String bonus) {
+  public void setBonus(@javax.annotation.Nullable String bonus) {
     this.bonus = bonus;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner total(String total) {
+  public GetPaymentsBreakDownById200ResponseDataInner total(@javax.annotation.Nullable String total) {
     this.total = total;
     return this;
   }
@@ -255,12 +283,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return total;
   }
 
-  public void setTotal(String total) {
+  public void setTotal(@javax.annotation.Nullable String total) {
     this.total = total;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner others(String others) {
+  public GetPaymentsBreakDownById200ResponseDataInner others(@javax.annotation.Nullable String others) {
     this.others = others;
     return this;
   }
@@ -274,12 +302,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return others;
   }
 
-  public void setOthers(String others) {
+  public void setOthers(@javax.annotation.Nullable String others) {
     this.others = others;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner currency(String currency) {
+  public GetPaymentsBreakDownById200ResponseDataInner currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -293,12 +321,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner expenses(String expenses) {
+  public GetPaymentsBreakDownById200ResponseDataInner expenses(@javax.annotation.Nullable String expenses) {
     this.expenses = expenses;
     return this;
   }
@@ -312,12 +340,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return expenses;
   }
 
-  public void setExpenses(String expenses) {
+  public void setExpenses(@javax.annotation.Nullable String expenses) {
     this.expenses = expenses;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner overtime(String overtime) {
+  public GetPaymentsBreakDownById200ResponseDataInner overtime(@javax.annotation.Nullable String overtime) {
     this.overtime = overtime;
     return this;
   }
@@ -331,12 +359,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return overtime;
   }
 
-  public void setOvertime(String overtime) {
+  public void setOvertime(@javax.annotation.Nullable String overtime) {
     this.overtime = overtime;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner proRata(String proRata) {
+  public GetPaymentsBreakDownById200ResponseDataInner proRata(@javax.annotation.Nullable String proRata) {
     this.proRata = proRata;
     return this;
   }
@@ -350,12 +378,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return proRata;
   }
 
-  public void setProRata(String proRata) {
+  public void setProRata(@javax.annotation.Nullable String proRata) {
     this.proRata = proRata;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner approvers(String approvers) {
+  public GetPaymentsBreakDownById200ResponseDataInner approvers(@javax.annotation.Nullable String approvers) {
     this.approvers = approvers;
     return this;
   }
@@ -369,12 +397,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return approvers;
   }
 
-  public void setApprovers(String approvers) {
+  public void setApprovers(@javax.annotation.Nullable String approvers) {
     this.approvers = approvers;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner frequency(String frequency) {
+  public GetPaymentsBreakDownById200ResponseDataInner frequency(@javax.annotation.Nullable String frequency) {
     this.frequency = frequency;
     return this;
   }
@@ -388,12 +416,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return frequency;
   }
 
-  public void setFrequency(String frequency) {
+  public void setFrequency(@javax.annotation.Nullable String frequency) {
     this.frequency = frequency;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner adjustment(String adjustment) {
+  public GetPaymentsBreakDownById200ResponseDataInner adjustment(@javax.annotation.Nullable String adjustment) {
     this.adjustment = adjustment;
     return this;
   }
@@ -407,12 +435,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return adjustment;
   }
 
-  public void setAdjustment(String adjustment) {
+  public void setAdjustment(@javax.annotation.Nullable String adjustment) {
     this.adjustment = adjustment;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner deductions(String deductions) {
+  public GetPaymentsBreakDownById200ResponseDataInner deductions(@javax.annotation.Nullable String deductions) {
     this.deductions = deductions;
     return this;
   }
@@ -426,12 +454,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return deductions;
   }
 
-  public void setDeductions(String deductions) {
+  public void setDeductions(@javax.annotation.Nullable String deductions) {
     this.deductions = deductions;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner commissions(String commissions) {
+  public GetPaymentsBreakDownById200ResponseDataInner commissions(@javax.annotation.Nullable String commissions) {
     this.commissions = commissions;
     return this;
   }
@@ -445,12 +473,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return commissions;
   }
 
-  public void setCommissions(String commissions) {
+  public void setCommissions(@javax.annotation.Nullable String commissions) {
     this.commissions = commissions;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner approveDate(String approveDate) {
+  public GetPaymentsBreakDownById200ResponseDataInner approveDate(@javax.annotation.Nullable String approveDate) {
     this.approveDate = approveDate;
     return this;
   }
@@ -464,12 +492,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return approveDate;
   }
 
-  public void setApproveDate(String approveDate) {
+  public void setApproveDate(@javax.annotation.Nullable String approveDate) {
     this.approveDate = approveDate;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner paymentDate(String paymentDate) {
+  public GetPaymentsBreakDownById200ResponseDataInner paymentDate(@javax.annotation.Nullable String paymentDate) {
     this.paymentDate = paymentDate;
     return this;
   }
@@ -483,12 +511,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return paymentDate;
   }
 
-  public void setPaymentDate(String paymentDate) {
+  public void setPaymentDate(@javax.annotation.Nullable String paymentDate) {
     this.paymentDate = paymentDate;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner invoiceNumber(String invoiceNumber) {
+  public GetPaymentsBreakDownById200ResponseDataInner invoiceNumber(@javax.annotation.Nullable String invoiceNumber) {
     this.invoiceNumber = invoiceNumber;
     return this;
   }
@@ -502,12 +530,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return invoiceNumber;
   }
 
-  public void setInvoiceNumber(String invoiceNumber) {
+  public void setInvoiceNumber(@javax.annotation.Nullable String invoiceNumber) {
     this.invoiceNumber = invoiceNumber;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner processingFee(String processingFee) {
+  public GetPaymentsBreakDownById200ResponseDataInner processingFee(@javax.annotation.Nullable String processingFee) {
     this.processingFee = processingFee;
     return this;
   }
@@ -521,12 +549,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return processingFee;
   }
 
-  public void setProcessingFee(String processingFee) {
+  public void setProcessingFee(@javax.annotation.Nullable String processingFee) {
     this.processingFee = processingFee;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner receiptNumber(String receiptNumber) {
+  public GetPaymentsBreakDownById200ResponseDataInner receiptNumber(@javax.annotation.Nullable String receiptNumber) {
     this.receiptNumber = receiptNumber;
     return this;
   }
@@ -540,12 +568,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return receiptNumber;
   }
 
-  public void setReceiptNumber(String receiptNumber) {
+  public void setReceiptNumber(@javax.annotation.Nullable String receiptNumber) {
     this.receiptNumber = receiptNumber;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner contractCountry(String contractCountry) {
+  public GetPaymentsBreakDownById200ResponseDataInner contractCountry(@javax.annotation.Nullable String contractCountry) {
     this.contractCountry = contractCountry;
     return this;
   }
@@ -559,12 +587,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return contractCountry;
   }
 
-  public void setContractCountry(String contractCountry) {
+  public void setContractCountry(@javax.annotation.Nullable String contractCountry) {
     this.contractCountry = contractCountry;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner contractorEmail(String contractorEmail) {
+  public GetPaymentsBreakDownById200ResponseDataInner contractorEmail(@javax.annotation.Nullable String contractorEmail) {
     this.contractorEmail = contractorEmail;
     return this;
   }
@@ -578,12 +606,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return contractorEmail;
   }
 
-  public void setContractorEmail(String contractorEmail) {
+  public void setContractorEmail(@javax.annotation.Nullable String contractorEmail) {
     this.contractorEmail = contractorEmail;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner paymentCurrency(String paymentCurrency) {
+  public GetPaymentsBreakDownById200ResponseDataInner paymentCurrency(@javax.annotation.Nullable String paymentCurrency) {
     this.paymentCurrency = paymentCurrency;
     return this;
   }
@@ -597,12 +625,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return paymentCurrency;
   }
 
-  public void setPaymentCurrency(String paymentCurrency) {
+  public void setPaymentCurrency(@javax.annotation.Nullable String paymentCurrency) {
     this.paymentCurrency = paymentCurrency;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner contractStartDate(String contractStartDate) {
+  public GetPaymentsBreakDownById200ResponseDataInner contractStartDate(@javax.annotation.Nullable String contractStartDate) {
     this.contractStartDate = contractStartDate;
     return this;
   }
@@ -616,12 +644,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return contractStartDate;
   }
 
-  public void setContractStartDate(String contractStartDate) {
+  public void setContractStartDate(@javax.annotation.Nullable String contractStartDate) {
     this.contractStartDate = contractStartDate;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner generalLedgerAccount(String generalLedgerAccount) {
+  public GetPaymentsBreakDownById200ResponseDataInner generalLedgerAccount(@javax.annotation.Nullable String generalLedgerAccount) {
     this.generalLedgerAccount = generalLedgerAccount;
     return this;
   }
@@ -635,12 +663,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return generalLedgerAccount;
   }
 
-  public void setGeneralLedgerAccount(String generalLedgerAccount) {
+  public void setGeneralLedgerAccount(@javax.annotation.Nullable String generalLedgerAccount) {
     this.generalLedgerAccount = generalLedgerAccount;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner totalPaymentCurrency(String totalPaymentCurrency) {
+  public GetPaymentsBreakDownById200ResponseDataInner totalPaymentCurrency(@javax.annotation.Nullable String totalPaymentCurrency) {
     this.totalPaymentCurrency = totalPaymentCurrency;
     return this;
   }
@@ -654,12 +682,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return totalPaymentCurrency;
   }
 
-  public void setTotalPaymentCurrency(String totalPaymentCurrency) {
+  public void setTotalPaymentCurrency(@javax.annotation.Nullable String totalPaymentCurrency) {
     this.totalPaymentCurrency = totalPaymentCurrency;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner contractorEmployeeName(String contractorEmployeeName) {
+  public GetPaymentsBreakDownById200ResponseDataInner contractorEmployeeName(@javax.annotation.Nullable String contractorEmployeeName) {
     this.contractorEmployeeName = contractorEmployeeName;
     return this;
   }
@@ -673,12 +701,12 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return contractorEmployeeName;
   }
 
-  public void setContractorEmployeeName(String contractorEmployeeName) {
+  public void setContractorEmployeeName(@javax.annotation.Nullable String contractorEmployeeName) {
     this.contractorEmployeeName = contractorEmployeeName;
   }
 
 
-  public GetPaymentsBreakDownById200ResponseDataInner contractorUniqueIdentifier(String contractorUniqueIdentifier) {
+  public GetPaymentsBreakDownById200ResponseDataInner contractorUniqueIdentifier(@javax.annotation.Nullable String contractorUniqueIdentifier) {
     this.contractorUniqueIdentifier = contractorUniqueIdentifier;
     return this;
   }
@@ -692,7 +720,7 @@ public class GetPaymentsBreakDownById200ResponseDataInner {
     return contractorUniqueIdentifier;
   }
 
-  public void setContractorUniqueIdentifier(String contractorUniqueIdentifier) {
+  public void setContractorUniqueIdentifier(@javax.annotation.Nullable String contractorUniqueIdentifier) {
     this.contractorUniqueIdentifier = contractorUniqueIdentifier;
   }
 

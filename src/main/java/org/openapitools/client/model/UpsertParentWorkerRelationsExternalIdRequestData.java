@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * UpsertParentWorkerRelationsExternalIdRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertParentWorkerRelationsExternalIdRequestData {
   public static final String SERIALIZED_NAME_RELATION_EXTERNAL_ID = "relation_external_id";
   @SerializedName(SERIALIZED_NAME_RELATION_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String relationExternalId;
 
   public static final String SERIALIZED_NAME_PARENT_PROFILE_EXTERNAL_ID = "parent_profile_external_id";
   @SerializedName(SERIALIZED_NAME_PARENT_PROFILE_EXTERNAL_ID)
+  @javax.annotation.Nonnull
   private String parentProfileExternalId;
 
   public static final String SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_EXTERNAL_ID = "hris_relationship_type_external_id";
   @SerializedName(SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_EXTERNAL_ID)
+  @javax.annotation.Nonnull
   private String hrisRelationshipTypeExternalId;
 
   public UpsertParentWorkerRelationsExternalIdRequestData() {
   }
 
-  public UpsertParentWorkerRelationsExternalIdRequestData relationExternalId(String relationExternalId) {
+  public UpsertParentWorkerRelationsExternalIdRequestData relationExternalId(@javax.annotation.Nullable String relationExternalId) {
     this.relationExternalId = relationExternalId;
     return this;
   }
@@ -79,12 +82,12 @@ public class UpsertParentWorkerRelationsExternalIdRequestData {
     return relationExternalId;
   }
 
-  public void setRelationExternalId(String relationExternalId) {
+  public void setRelationExternalId(@javax.annotation.Nullable String relationExternalId) {
     this.relationExternalId = relationExternalId;
   }
 
 
-  public UpsertParentWorkerRelationsExternalIdRequestData parentProfileExternalId(String parentProfileExternalId) {
+  public UpsertParentWorkerRelationsExternalIdRequestData parentProfileExternalId(@javax.annotation.Nonnull String parentProfileExternalId) {
     this.parentProfileExternalId = parentProfileExternalId;
     return this;
   }
@@ -98,12 +101,12 @@ public class UpsertParentWorkerRelationsExternalIdRequestData {
     return parentProfileExternalId;
   }
 
-  public void setParentProfileExternalId(String parentProfileExternalId) {
+  public void setParentProfileExternalId(@javax.annotation.Nonnull String parentProfileExternalId) {
     this.parentProfileExternalId = parentProfileExternalId;
   }
 
 
-  public UpsertParentWorkerRelationsExternalIdRequestData hrisRelationshipTypeExternalId(String hrisRelationshipTypeExternalId) {
+  public UpsertParentWorkerRelationsExternalIdRequestData hrisRelationshipTypeExternalId(@javax.annotation.Nonnull String hrisRelationshipTypeExternalId) {
     this.hrisRelationshipTypeExternalId = hrisRelationshipTypeExternalId;
     return this;
   }
@@ -117,7 +120,7 @@ public class UpsertParentWorkerRelationsExternalIdRequestData {
     return hrisRelationshipTypeExternalId;
   }
 
-  public void setHrisRelationshipTypeExternalId(String hrisRelationshipTypeExternalId) {
+  public void setHrisRelationshipTypeExternalId(@javax.annotation.Nonnull String hrisRelationshipTypeExternalId) {
     this.hrisRelationshipTypeExternalId = hrisRelationshipTypeExternalId;
   }
 

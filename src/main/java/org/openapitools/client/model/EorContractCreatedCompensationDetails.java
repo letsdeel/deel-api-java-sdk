@@ -50,28 +50,32 @@ import org.openapitools.client.JSON;
 /**
  * EorContractCreatedCompensationDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorContractCreatedCompensationDetails {
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
+  @javax.annotation.Nullable
   private BigDecimal salary;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_VARIABLE_COMPENSATION = "variable_compensation";
   @SerializedName(SERIALIZED_NAME_VARIABLE_COMPENSATION)
+  @javax.annotation.Nullable
   private String variableCompensation;
 
   public static final String SERIALIZED_NAME_VARIABLE_COMPENSATION_TYPE = "variable_compensation_type";
   @SerializedName(SERIALIZED_NAME_VARIABLE_COMPENSATION_TYPE)
+  @javax.annotation.Nullable
   private String variableCompensationType;
 
   public EorContractCreatedCompensationDetails() {
   }
 
-  public EorContractCreatedCompensationDetails salary(BigDecimal salary) {
+  public EorContractCreatedCompensationDetails salary(@javax.annotation.Nullable BigDecimal salary) {
     this.salary = salary;
     return this;
   }
@@ -85,12 +89,12 @@ public class EorContractCreatedCompensationDetails {
     return salary;
   }
 
-  public void setSalary(BigDecimal salary) {
+  public void setSalary(@javax.annotation.Nullable BigDecimal salary) {
     this.salary = salary;
   }
 
 
-  public EorContractCreatedCompensationDetails currency(String currency) {
+  public EorContractCreatedCompensationDetails currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -104,12 +108,12 @@ public class EorContractCreatedCompensationDetails {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public EorContractCreatedCompensationDetails variableCompensation(String variableCompensation) {
+  public EorContractCreatedCompensationDetails variableCompensation(@javax.annotation.Nullable String variableCompensation) {
     this.variableCompensation = variableCompensation;
     return this;
   }
@@ -123,12 +127,12 @@ public class EorContractCreatedCompensationDetails {
     return variableCompensation;
   }
 
-  public void setVariableCompensation(String variableCompensation) {
+  public void setVariableCompensation(@javax.annotation.Nullable String variableCompensation) {
     this.variableCompensation = variableCompensation;
   }
 
 
-  public EorContractCreatedCompensationDetails variableCompensationType(String variableCompensationType) {
+  public EorContractCreatedCompensationDetails variableCompensationType(@javax.annotation.Nullable String variableCompensationType) {
     this.variableCompensationType = variableCompensationType;
     return this;
   }
@@ -142,7 +146,7 @@ public class EorContractCreatedCompensationDetails {
     return variableCompensationType;
   }
 
-  public void setVariableCompensationType(String variableCompensationType) {
+  public void setVariableCompensationType(@javax.annotation.Nullable String variableCompensationType) {
     this.variableCompensationType = variableCompensationType;
   }
 

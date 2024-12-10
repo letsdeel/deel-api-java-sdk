@@ -52,24 +52,27 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseDataQuoteBreakdownCostsMonthly
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataQuoteBreakdownCostsMonthly {
   public static final String SERIALIZED_NAME_COSTS = "costs";
   @SerializedName(SERIALIZED_NAME_COSTS)
+  @javax.annotation.Nullable
   private List<CreateContract201ResponseDataQuoteBreakdownCostsMonthlyCostsInner> costs = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal total;
 
   public static final String SERIALIZED_NAME_TOTAL_USD = "total_usd";
   @SerializedName(SERIALIZED_NAME_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal totalUsd;
 
   public CreateContract201ResponseDataQuoteBreakdownCostsMonthly() {
   }
 
-  public CreateContract201ResponseDataQuoteBreakdownCostsMonthly costs(List<CreateContract201ResponseDataQuoteBreakdownCostsMonthlyCostsInner> costs) {
+  public CreateContract201ResponseDataQuoteBreakdownCostsMonthly costs(@javax.annotation.Nullable List<CreateContract201ResponseDataQuoteBreakdownCostsMonthlyCostsInner> costs) {
     this.costs = costs;
     return this;
   }
@@ -91,12 +94,12 @@ public class CreateContract201ResponseDataQuoteBreakdownCostsMonthly {
     return costs;
   }
 
-  public void setCosts(List<CreateContract201ResponseDataQuoteBreakdownCostsMonthlyCostsInner> costs) {
+  public void setCosts(@javax.annotation.Nullable List<CreateContract201ResponseDataQuoteBreakdownCostsMonthlyCostsInner> costs) {
     this.costs = costs;
   }
 
 
-  public CreateContract201ResponseDataQuoteBreakdownCostsMonthly total(BigDecimal total) {
+  public CreateContract201ResponseDataQuoteBreakdownCostsMonthly total(@javax.annotation.Nullable BigDecimal total) {
     this.total = total;
     return this;
   }
@@ -110,12 +113,12 @@ public class CreateContract201ResponseDataQuoteBreakdownCostsMonthly {
     return total;
   }
 
-  public void setTotal(BigDecimal total) {
+  public void setTotal(@javax.annotation.Nullable BigDecimal total) {
     this.total = total;
   }
 
 
-  public CreateContract201ResponseDataQuoteBreakdownCostsMonthly totalUsd(BigDecimal totalUsd) {
+  public CreateContract201ResponseDataQuoteBreakdownCostsMonthly totalUsd(@javax.annotation.Nullable BigDecimal totalUsd) {
     this.totalUsd = totalUsd;
     return this;
   }
@@ -129,7 +132,7 @@ public class CreateContract201ResponseDataQuoteBreakdownCostsMonthly {
     return totalUsd;
   }
 
-  public void setTotalUsd(BigDecimal totalUsd) {
+  public void setTotalUsd(@javax.annotation.Nullable BigDecimal totalUsd) {
     this.totalUsd = totalUsd;
   }
 

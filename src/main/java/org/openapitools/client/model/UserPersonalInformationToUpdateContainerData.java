@@ -53,40 +53,47 @@ import org.openapitools.client.JSON;
 /**
  * UserPersonalInformationToUpdateContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UserPersonalInformationToUpdateContainerData {
   public static final String SERIALIZED_NAME_LEGAL_FIRST_NAME = "legal_first_name";
   @SerializedName(SERIALIZED_NAME_LEGAL_FIRST_NAME)
+  @javax.annotation.Nullable
   private String legalFirstName;
 
   public static final String SERIALIZED_NAME_LEGAL_LAST_NAME = "legal_last_name";
   @SerializedName(SERIALIZED_NAME_LEGAL_LAST_NAME)
+  @javax.annotation.Nullable
   private String legalLastName;
 
   public static final String SERIALIZED_NAME_PREFERRED_NAME = "preferred_name";
   @SerializedName(SERIALIZED_NAME_PREFERRED_NAME)
+  @javax.annotation.Nullable
   private String preferredName;
 
   public static final String SERIALIZED_NAME_PERSONAL_EMAIL = "personal_email";
   @SerializedName(SERIALIZED_NAME_PERSONAL_EMAIL)
+  @javax.annotation.Nullable
   private String personalEmail;
 
   public static final String SERIALIZED_NAME_WORK_EMAIL = "work_email";
   @SerializedName(SERIALIZED_NAME_WORK_EMAIL)
+  @javax.annotation.Nullable
   private String workEmail;
 
   public static final String SERIALIZED_NAME_DATE_OF_BIRTH = "date_of_birth";
   @SerializedName(SERIALIZED_NAME_DATE_OF_BIRTH)
+  @javax.annotation.Nullable
   private LocalDate dateOfBirth;
 
   public static final String SERIALIZED_NAME_PHONE_NUMBERS = "phone_numbers";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBERS)
+  @javax.annotation.Nullable
   private List<PeoplePersonalContainerDataPhoneNumbersInner> phoneNumbers = new ArrayList<>();
 
   public UserPersonalInformationToUpdateContainerData() {
   }
 
-  public UserPersonalInformationToUpdateContainerData legalFirstName(String legalFirstName) {
+  public UserPersonalInformationToUpdateContainerData legalFirstName(@javax.annotation.Nullable String legalFirstName) {
     this.legalFirstName = legalFirstName;
     return this;
   }
@@ -100,12 +107,12 @@ public class UserPersonalInformationToUpdateContainerData {
     return legalFirstName;
   }
 
-  public void setLegalFirstName(String legalFirstName) {
+  public void setLegalFirstName(@javax.annotation.Nullable String legalFirstName) {
     this.legalFirstName = legalFirstName;
   }
 
 
-  public UserPersonalInformationToUpdateContainerData legalLastName(String legalLastName) {
+  public UserPersonalInformationToUpdateContainerData legalLastName(@javax.annotation.Nullable String legalLastName) {
     this.legalLastName = legalLastName;
     return this;
   }
@@ -119,12 +126,12 @@ public class UserPersonalInformationToUpdateContainerData {
     return legalLastName;
   }
 
-  public void setLegalLastName(String legalLastName) {
+  public void setLegalLastName(@javax.annotation.Nullable String legalLastName) {
     this.legalLastName = legalLastName;
   }
 
 
-  public UserPersonalInformationToUpdateContainerData preferredName(String preferredName) {
+  public UserPersonalInformationToUpdateContainerData preferredName(@javax.annotation.Nullable String preferredName) {
     this.preferredName = preferredName;
     return this;
   }
@@ -138,12 +145,12 @@ public class UserPersonalInformationToUpdateContainerData {
     return preferredName;
   }
 
-  public void setPreferredName(String preferredName) {
+  public void setPreferredName(@javax.annotation.Nullable String preferredName) {
     this.preferredName = preferredName;
   }
 
 
-  public UserPersonalInformationToUpdateContainerData personalEmail(String personalEmail) {
+  public UserPersonalInformationToUpdateContainerData personalEmail(@javax.annotation.Nullable String personalEmail) {
     this.personalEmail = personalEmail;
     return this;
   }
@@ -157,12 +164,12 @@ public class UserPersonalInformationToUpdateContainerData {
     return personalEmail;
   }
 
-  public void setPersonalEmail(String personalEmail) {
+  public void setPersonalEmail(@javax.annotation.Nullable String personalEmail) {
     this.personalEmail = personalEmail;
   }
 
 
-  public UserPersonalInformationToUpdateContainerData workEmail(String workEmail) {
+  public UserPersonalInformationToUpdateContainerData workEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
     return this;
   }
@@ -176,12 +183,12 @@ public class UserPersonalInformationToUpdateContainerData {
     return workEmail;
   }
 
-  public void setWorkEmail(String workEmail) {
+  public void setWorkEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
   }
 
 
-  public UserPersonalInformationToUpdateContainerData dateOfBirth(LocalDate dateOfBirth) {
+  public UserPersonalInformationToUpdateContainerData dateOfBirth(@javax.annotation.Nullable LocalDate dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
     return this;
   }
@@ -195,12 +202,12 @@ public class UserPersonalInformationToUpdateContainerData {
     return dateOfBirth;
   }
 
-  public void setDateOfBirth(LocalDate dateOfBirth) {
+  public void setDateOfBirth(@javax.annotation.Nullable LocalDate dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
   }
 
 
-  public UserPersonalInformationToUpdateContainerData phoneNumbers(List<PeoplePersonalContainerDataPhoneNumbersInner> phoneNumbers) {
+  public UserPersonalInformationToUpdateContainerData phoneNumbers(@javax.annotation.Nullable List<PeoplePersonalContainerDataPhoneNumbersInner> phoneNumbers) {
     this.phoneNumbers = phoneNumbers;
     return this;
   }
@@ -222,7 +229,7 @@ public class UserPersonalInformationToUpdateContainerData {
     return phoneNumbers;
   }
 
-  public void setPhoneNumbers(List<PeoplePersonalContainerDataPhoneNumbersInner> phoneNumbers) {
+  public void setPhoneNumbers(@javax.annotation.Nullable List<PeoplePersonalContainerDataPhoneNumbersInner> phoneNumbers) {
     this.phoneNumbers = phoneNumbers;
   }
 

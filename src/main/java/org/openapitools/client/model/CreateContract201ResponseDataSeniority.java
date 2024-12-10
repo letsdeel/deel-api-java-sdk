@@ -22,7 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.Arrays;
-import org.openapitools.client.model.CreateContractRequestAnyOfAllOfClientTeamId;
+import org.openapitools.client.model.PAYASYOUGOTIMEBASEDAllOfClientTeamId;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -51,24 +51,27 @@ import org.openapitools.client.JSON;
 /**
  * Seniority describes level of expertise at a job e.g. junior
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataSeniority {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
-  private CreateContractRequestAnyOfAllOfClientTeamId id;
+  @javax.annotation.Nonnull
+  private PAYASYOUGOTIMEBASEDAllOfClientTeamId id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_LEVEL = "level";
   @SerializedName(SERIALIZED_NAME_LEVEL)
+  @javax.annotation.Nullable
   private BigDecimal level;
 
   public CreateContract201ResponseDataSeniority() {
   }
 
-  public CreateContract201ResponseDataSeniority id(CreateContractRequestAnyOfAllOfClientTeamId id) {
+  public CreateContract201ResponseDataSeniority id(@javax.annotation.Nonnull PAYASYOUGOTIMEBASEDAllOfClientTeamId id) {
     this.id = id;
     return this;
   }
@@ -78,16 +81,16 @@ public class CreateContract201ResponseDataSeniority {
    * @return id
    */
   @javax.annotation.Nonnull
-  public CreateContractRequestAnyOfAllOfClientTeamId getId() {
+  public PAYASYOUGOTIMEBASEDAllOfClientTeamId getId() {
     return id;
   }
 
-  public void setId(CreateContractRequestAnyOfAllOfClientTeamId id) {
+  public void setId(@javax.annotation.Nonnull PAYASYOUGOTIMEBASEDAllOfClientTeamId id) {
     this.id = id;
   }
 
 
-  public CreateContract201ResponseDataSeniority name(String name) {
+  public CreateContract201ResponseDataSeniority name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -101,12 +104,12 @@ public class CreateContract201ResponseDataSeniority {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public CreateContract201ResponseDataSeniority level(BigDecimal level) {
+  public CreateContract201ResponseDataSeniority level(@javax.annotation.Nullable BigDecimal level) {
     this.level = level;
     return this;
   }
@@ -120,7 +123,7 @@ public class CreateContract201ResponseDataSeniority {
     return level;
   }
 
-  public void setLevel(BigDecimal level) {
+  public void setLevel(@javax.annotation.Nullable BigDecimal level) {
     this.level = level;
   }
 
@@ -224,7 +227,7 @@ public class CreateContract201ResponseDataSeniority {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the required field `id`
-      CreateContractRequestAnyOfAllOfClientTeamId.validateJsonElement(jsonObj.get("id"));
+      PAYASYOUGOTIMEBASEDAllOfClientTeamId.validateJsonElement(jsonObj.get("id"));
       if (!jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }

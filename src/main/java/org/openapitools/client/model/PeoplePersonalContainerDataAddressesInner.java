@@ -49,10 +49,11 @@ import org.openapitools.client.JSON;
 /**
  * PeoplePersonalContainerDataAddressesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PeoplePersonalContainerDataAddressesInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   /**
@@ -109,32 +110,38 @@ public class PeoplePersonalContainerDataAddressesInner {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_STREET = "street";
   @SerializedName(SERIALIZED_NAME_STREET)
+  @javax.annotation.Nonnull
   private String street;
 
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nonnull
   private String city;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nonnull
   private String country;
 
   public static final String SERIALIZED_NAME_ZIP = "zip";
   @SerializedName(SERIALIZED_NAME_ZIP)
+  @javax.annotation.Nonnull
   private String zip;
 
   public PeoplePersonalContainerDataAddressesInner() {
   }
 
-  public PeoplePersonalContainerDataAddressesInner id(UUID id) {
+  public PeoplePersonalContainerDataAddressesInner id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -148,12 +155,12 @@ public class PeoplePersonalContainerDataAddressesInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public PeoplePersonalContainerDataAddressesInner type(TypeEnum type) {
+  public PeoplePersonalContainerDataAddressesInner type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -167,12 +174,12 @@ public class PeoplePersonalContainerDataAddressesInner {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public PeoplePersonalContainerDataAddressesInner street(String street) {
+  public PeoplePersonalContainerDataAddressesInner street(@javax.annotation.Nonnull String street) {
     this.street = street;
     return this;
   }
@@ -186,12 +193,12 @@ public class PeoplePersonalContainerDataAddressesInner {
     return street;
   }
 
-  public void setStreet(String street) {
+  public void setStreet(@javax.annotation.Nonnull String street) {
     this.street = street;
   }
 
 
-  public PeoplePersonalContainerDataAddressesInner city(String city) {
+  public PeoplePersonalContainerDataAddressesInner city(@javax.annotation.Nonnull String city) {
     this.city = city;
     return this;
   }
@@ -205,12 +212,12 @@ public class PeoplePersonalContainerDataAddressesInner {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nonnull String city) {
     this.city = city;
   }
 
 
-  public PeoplePersonalContainerDataAddressesInner state(String state) {
+  public PeoplePersonalContainerDataAddressesInner state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -224,12 +231,12 @@ public class PeoplePersonalContainerDataAddressesInner {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public PeoplePersonalContainerDataAddressesInner country(String country) {
+  public PeoplePersonalContainerDataAddressesInner country(@javax.annotation.Nonnull String country) {
     this.country = country;
     return this;
   }
@@ -243,12 +250,12 @@ public class PeoplePersonalContainerDataAddressesInner {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nonnull String country) {
     this.country = country;
   }
 
 
-  public PeoplePersonalContainerDataAddressesInner zip(String zip) {
+  public PeoplePersonalContainerDataAddressesInner zip(@javax.annotation.Nonnull String zip) {
     this.zip = zip;
     return this;
   }
@@ -262,7 +269,7 @@ public class PeoplePersonalContainerDataAddressesInner {
     return zip;
   }
 
-  public void setZip(String zip) {
+  public void setZip(@javax.annotation.Nonnull String zip) {
     this.zip = zip;
   }
 

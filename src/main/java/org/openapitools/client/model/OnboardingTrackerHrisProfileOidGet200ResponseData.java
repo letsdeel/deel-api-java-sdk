@@ -57,44 +57,52 @@ import org.openapitools.client.JSON;
 /**
  * OnboardingTrackerHrisProfileOidGet200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OnboardingTrackerHrisProfileOidGet200ResponseData {
   public static final String SERIALIZED_NAME_PROFILE = "profile";
   @SerializedName(SERIALIZED_NAME_PROFILE)
+  @javax.annotation.Nullable
   private OnboardingTrackerHrisProfileOidGet200ResponseDataProfile profile;
 
   public static final String SERIALIZED_NAME_STEPPER = "stepper";
   @SerializedName(SERIALIZED_NAME_STEPPER)
+  @javax.annotation.Nullable
   private List<OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner> stepper = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
+  @javax.annotation.Nullable
   private List<OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner> summary = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CONTRACT = "contract";
   @SerializedName(SERIALIZED_NAME_CONTRACT)
+  @javax.annotation.Nullable
   private OnboardingTrackerHrisProfileOidGet200ResponseDataContract contract;
 
   public static final String SERIALIZED_NAME_PROGRESS = "progress";
   @SerializedName(SERIALIZED_NAME_PROGRESS)
+  @javax.annotation.Nullable
   private OnboardingTrackerHrisProfileOidGet200ResponseDataProgress progress;
 
   public static final String SERIALIZED_NAME_CHECKLIST = "checklist";
   @SerializedName(SERIALIZED_NAME_CHECKLIST)
+  @javax.annotation.Nullable
   private OnboardingTrackerHrisProfileOidGet200ResponseDataChecklist checklist;
 
   public static final String SERIALIZED_NAME_HIRING_TYPE = "hiring_type";
   @SerializedName(SERIALIZED_NAME_HIRING_TYPE)
+  @javax.annotation.Nullable
   private String hiringType;
 
   public static final String SERIALIZED_NAME_HRIS_PROFILE = "hris_profile";
   @SerializedName(SERIALIZED_NAME_HRIS_PROFILE)
+  @javax.annotation.Nullable
   private OnboardingTrackerHrisProfileOidGet200ResponseDataHrisProfile hrisProfile;
 
   public OnboardingTrackerHrisProfileOidGet200ResponseData() {
   }
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseData profile(OnboardingTrackerHrisProfileOidGet200ResponseDataProfile profile) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseData profile(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataProfile profile) {
     this.profile = profile;
     return this;
   }
@@ -108,12 +116,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseData {
     return profile;
   }
 
-  public void setProfile(OnboardingTrackerHrisProfileOidGet200ResponseDataProfile profile) {
+  public void setProfile(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataProfile profile) {
     this.profile = profile;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseData stepper(List<OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner> stepper) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseData stepper(@javax.annotation.Nullable List<OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner> stepper) {
     this.stepper = stepper;
     return this;
   }
@@ -135,12 +143,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseData {
     return stepper;
   }
 
-  public void setStepper(List<OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner> stepper) {
+  public void setStepper(@javax.annotation.Nullable List<OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner> stepper) {
     this.stepper = stepper;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseData summary(List<OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner> summary) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseData summary(@javax.annotation.Nullable List<OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner> summary) {
     this.summary = summary;
     return this;
   }
@@ -162,12 +170,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseData {
     return summary;
   }
 
-  public void setSummary(List<OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner> summary) {
+  public void setSummary(@javax.annotation.Nullable List<OnboardingTrackerHrisProfileOidGet200ResponseDataSummaryInner> summary) {
     this.summary = summary;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseData contract(OnboardingTrackerHrisProfileOidGet200ResponseDataContract contract) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseData contract(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataContract contract) {
     this.contract = contract;
     return this;
   }
@@ -181,12 +189,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseData {
     return contract;
   }
 
-  public void setContract(OnboardingTrackerHrisProfileOidGet200ResponseDataContract contract) {
+  public void setContract(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataContract contract) {
     this.contract = contract;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseData progress(OnboardingTrackerHrisProfileOidGet200ResponseDataProgress progress) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseData progress(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataProgress progress) {
     this.progress = progress;
     return this;
   }
@@ -200,12 +208,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseData {
     return progress;
   }
 
-  public void setProgress(OnboardingTrackerHrisProfileOidGet200ResponseDataProgress progress) {
+  public void setProgress(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataProgress progress) {
     this.progress = progress;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseData checklist(OnboardingTrackerHrisProfileOidGet200ResponseDataChecklist checklist) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseData checklist(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataChecklist checklist) {
     this.checklist = checklist;
     return this;
   }
@@ -219,12 +227,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseData {
     return checklist;
   }
 
-  public void setChecklist(OnboardingTrackerHrisProfileOidGet200ResponseDataChecklist checklist) {
+  public void setChecklist(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataChecklist checklist) {
     this.checklist = checklist;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseData hiringType(String hiringType) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseData hiringType(@javax.annotation.Nullable String hiringType) {
     this.hiringType = hiringType;
     return this;
   }
@@ -238,12 +246,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseData {
     return hiringType;
   }
 
-  public void setHiringType(String hiringType) {
+  public void setHiringType(@javax.annotation.Nullable String hiringType) {
     this.hiringType = hiringType;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseData hrisProfile(OnboardingTrackerHrisProfileOidGet200ResponseDataHrisProfile hrisProfile) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseData hrisProfile(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataHrisProfile hrisProfile) {
     this.hrisProfile = hrisProfile;
     return this;
   }
@@ -257,7 +265,7 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseData {
     return hrisProfile;
   }
 
-  public void setHrisProfile(OnboardingTrackerHrisProfileOidGet200ResponseDataHrisProfile hrisProfile) {
+  public void setHrisProfile(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataHrisProfile hrisProfile) {
     this.hrisProfile = hrisProfile;
   }
 

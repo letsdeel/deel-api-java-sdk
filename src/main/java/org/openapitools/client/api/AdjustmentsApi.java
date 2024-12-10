@@ -33,9 +33,7 @@ import org.openapitools.client.model.CreateAdjustmentRequestData;
 import org.openapitools.client.model.DeleteAdjustment200Response;
 import org.openapitools.client.model.GetAdjustments200Response;
 import org.openapitools.client.model.GetCategories200Response;
-import org.openapitools.client.model.InputToCreateFileRef;
 import java.time.LocalDate;
-import org.openapitools.client.model.OutputToCreateFileRefContainer;
 import org.openapitools.client.model.UpdateAdjustment200Response;
 import org.openapitools.client.model.UpdateAdjustmentRequestData;
 
@@ -170,7 +168,8 @@ public class AdjustmentsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -188,7 +187,8 @@ public class AdjustmentsApi {
          * @return CreateAdjustment201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -207,7 +207,8 @@ public class AdjustmentsApi {
          * @return ApiResponse&lt;CreateAdjustment201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -226,7 +227,8 @@ public class AdjustmentsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -246,7 +248,8 @@ public class AdjustmentsApi {
      * @param data  (required)
      * @return APIcreateAdjustmentRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -257,188 +260,6 @@ public class AdjustmentsApi {
      */
     public APIcreateAdjustmentRequest createAdjustment(CreateAdjustmentRequestData data) {
         return new APIcreateAdjustmentRequest(data);
-    }
-    private okhttp3.Call createFileRefCall(InputToCreateFileRef inputToCreateFileRef, final ApiCallback _callback) throws ApiException {
-        String basePath = null;
-        // Operation Servers
-        String[] localBasePaths = new String[] {  };
-
-        // Determine Base Path to Use
-        if (localCustomBaseUrl != null){
-            basePath = localCustomBaseUrl;
-        } else if ( localBasePaths.length > 0 ) {
-            basePath = localBasePaths[localHostIndex];
-        } else {
-            basePath = null;
-        }
-
-        Object localVarPostBody = inputToCreateFileRef;
-
-        // create path and map variables
-        String localVarPath = "/attachments";
-
-        List<Pair> localVarQueryParams = new ArrayList<Pair>();
-        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-        Map<String, String> localVarCookieParams = new HashMap<String, String>();
-        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-        final String[] localVarAccepts = {
-            "application/json"
-        };
-        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-        if (localVarAccept != null) {
-            localVarHeaderParams.put("Accept", localVarAccept);
-        }
-
-        final String[] localVarContentTypes = {
-            "application/json"
-        };
-        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-        if (localVarContentType != null) {
-            localVarHeaderParams.put("Content-Type", localVarContentType);
-        }
-
-        String[] localVarAuthNames = new String[] { "deelToken", "oauth2" };
-        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-    }
-
-    @SuppressWarnings("rawtypes")
-    private okhttp3.Call createFileRefValidateBeforeCall(InputToCreateFileRef inputToCreateFileRef, final ApiCallback _callback) throws ApiException {
-        // verify the required parameter 'inputToCreateFileRef' is set
-        if (inputToCreateFileRef == null) {
-            throw new ApiException("Missing the required parameter 'inputToCreateFileRef' when calling createFileRef(Async)");
-        }
-
-        return createFileRefCall(inputToCreateFileRef, _callback);
-
-    }
-
-
-    private ApiResponse<OutputToCreateFileRefContainer> createFileRefWithHttpInfo(InputToCreateFileRef inputToCreateFileRef) throws ApiException {
-        okhttp3.Call localVarCall = createFileRefValidateBeforeCall(inputToCreateFileRef, null);
-        Type localVarReturnType = new TypeToken<OutputToCreateFileRefContainer>(){}.getType();
-        return localVarApiClient.execute(localVarCall, localVarReturnType);
-    }
-
-    private okhttp3.Call createFileRefAsync(InputToCreateFileRef inputToCreateFileRef, final ApiCallback<OutputToCreateFileRefContainer> _callback) throws ApiException {
-
-        okhttp3.Call localVarCall = createFileRefValidateBeforeCall(inputToCreateFileRef, _callback);
-        Type localVarReturnType = new TypeToken<OutputToCreateFileRefContainer>(){}.getType();
-        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-        return localVarCall;
-    }
-
-    public class APIcreateFileRefRequest {
-        private final InputToCreateFileRef inputToCreateFileRef;
-
-        private APIcreateFileRefRequest(InputToCreateFileRef inputToCreateFileRef) {
-            this.inputToCreateFileRef = inputToCreateFileRef;
-        }
-
-        /**
-         * Build call for createFileRef
-         * @param _callback ApiCallback API callback
-         * @return Call to execute
-         * @throws ApiException If fail to serialize the request body object
-         * @http.response.details
-         <table summary="Response Details" border="1">
-            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-            <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
-            <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 403 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 404 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 405 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 429 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 500 </td><td> Operation failed. </td><td>  -  </td></tr>
-         </table>
-         */
-        public okhttp3.Call buildCall(final ApiCallback _callback) throws ApiException {
-            return createFileRefCall(inputToCreateFileRef, _callback);
-        }
-
-        /**
-         * Execute createFileRef request
-         * @return OutputToCreateFileRefContainer
-         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-         * @http.response.details
-         <table summary="Response Details" border="1">
-            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-            <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
-            <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 403 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 404 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 405 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 429 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 500 </td><td> Operation failed. </td><td>  -  </td></tr>
-         </table>
-         */
-        public OutputToCreateFileRefContainer execute() throws ApiException {
-            ApiResponse<OutputToCreateFileRefContainer> localVarResp = createFileRefWithHttpInfo(inputToCreateFileRef);
-            return localVarResp.getData();
-        }
-
-        /**
-         * Execute createFileRef request with HTTP info returned
-         * @return ApiResponse&lt;OutputToCreateFileRefContainer&gt;
-         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-         * @http.response.details
-         <table summary="Response Details" border="1">
-            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-            <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
-            <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 403 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 404 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 405 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 429 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 500 </td><td> Operation failed. </td><td>  -  </td></tr>
-         </table>
-         */
-        public ApiResponse<OutputToCreateFileRefContainer> executeWithHttpInfo() throws ApiException {
-            return createFileRefWithHttpInfo(inputToCreateFileRef);
-        }
-
-        /**
-         * Execute createFileRef request (asynchronously)
-         * @param _callback The callback to be executed when the API call finishes
-         * @return The request call
-         * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-         * @http.response.details
-         <table summary="Response Details" border="1">
-            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-            <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
-            <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 403 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 404 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 405 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 429 </td><td> Operation failed. </td><td>  -  </td></tr>
-            <tr><td> 500 </td><td> Operation failed. </td><td>  -  </td></tr>
-         </table>
-         */
-        public okhttp3.Call executeAsync(final ApiCallback<OutputToCreateFileRefContainer> _callback) throws ApiException {
-            return createFileRefAsync(inputToCreateFileRef, _callback);
-        }
-    }
-
-    /**
-     * Upload file to Deel
-     * Upload file to Deel storage to use the file attachment feature for other endpoints.
-     * @param inputToCreateFileRef File info object that needs to be created. (required)
-     * @return APIcreateFileRefRequest
-     * @http.response.details
-     <table summary="Response Details" border="1">
-        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> Operation failed. </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> Operation failed. </td><td>  -  </td></tr>
-        <tr><td> 405 </td><td> Operation failed. </td><td>  -  </td></tr>
-        <tr><td> 429 </td><td> Operation failed. </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> Operation failed. </td><td>  -  </td></tr>
-     </table>
-     */
-    public APIcreateFileRefRequest createFileRef(InputToCreateFileRef inputToCreateFileRef) {
-        return new APIcreateFileRefRequest(inputToCreateFileRef);
     }
     private okhttp3.Call deleteAdjustmentCall(String id, final ApiCallback _callback) throws ApiException {
         String basePath = null;
@@ -524,7 +345,8 @@ public class AdjustmentsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -542,7 +364,8 @@ public class AdjustmentsApi {
          * @return DeleteAdjustment200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -561,7 +384,8 @@ public class AdjustmentsApi {
          * @return ApiResponse&lt;DeleteAdjustment200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -580,7 +404,8 @@ public class AdjustmentsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -600,7 +425,8 @@ public class AdjustmentsApi {
      * @param id Deel adjustment id. (required)
      * @return APIdeleteAdjustmentRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -726,7 +552,8 @@ public class AdjustmentsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -744,7 +571,8 @@ public class AdjustmentsApi {
          * @return GetAdjustments200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -763,7 +591,8 @@ public class AdjustmentsApi {
          * @return ApiResponse&lt;GetAdjustments200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -782,7 +611,8 @@ public class AdjustmentsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -802,7 +632,8 @@ public class AdjustmentsApi {
      * @param contractId Deel adjustment id. (required)
      * @return APIgetAdjustmentsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -898,7 +729,8 @@ public class AdjustmentsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -916,7 +748,8 @@ public class AdjustmentsApi {
          * @return CreateAdjustment201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -935,7 +768,8 @@ public class AdjustmentsApi {
          * @return ApiResponse&lt;CreateAdjustment201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -954,7 +788,8 @@ public class AdjustmentsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -974,7 +809,8 @@ public class AdjustmentsApi {
      * @param id Deel adjustment id. (required)
      * @return APIgetAdjustmentsByIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1062,7 +898,8 @@ public class AdjustmentsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1080,7 +917,8 @@ public class AdjustmentsApi {
          * @return GetCategories200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1099,7 +937,8 @@ public class AdjustmentsApi {
          * @return ApiResponse&lt;GetCategories200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1118,7 +957,8 @@ public class AdjustmentsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1137,7 +977,8 @@ public class AdjustmentsApi {
      * Get all categories for your organization.
      * @return APIgetCategoriesRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1245,7 +1086,8 @@ public class AdjustmentsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1263,7 +1105,8 @@ public class AdjustmentsApi {
          * @return UpdateAdjustment200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1282,7 +1125,8 @@ public class AdjustmentsApi {
          * @return ApiResponse&lt;UpdateAdjustment200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1301,7 +1145,8 @@ public class AdjustmentsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -1322,7 +1167,8 @@ public class AdjustmentsApi {
      * @param data  (required)
      * @return APIupdateAdjustmentRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 401 </td><td> Operation failed. </td><td>  -  </td></tr>

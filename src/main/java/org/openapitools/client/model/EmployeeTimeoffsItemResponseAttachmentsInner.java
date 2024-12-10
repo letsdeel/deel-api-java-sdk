@@ -48,32 +48,37 @@ import org.openapitools.client.JSON;
 /**
  * EmployeeTimeoffsItemResponseAttachmentsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EmployeeTimeoffsItemResponseAttachmentsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_TIME_OFF_ID = "time_off_id";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_ID)
+  @javax.annotation.Nullable
   private String timeOffId;
 
   public static final String SERIALIZED_NAME_FILENAME = "filename";
   @SerializedName(SERIALIZED_NAME_FILENAME)
+  @javax.annotation.Nullable
   private String filename;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private String createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private String updatedAt;
 
   public EmployeeTimeoffsItemResponseAttachmentsInner() {
   }
 
-  public EmployeeTimeoffsItemResponseAttachmentsInner id(String id) {
+  public EmployeeTimeoffsItemResponseAttachmentsInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -87,12 +92,12 @@ public class EmployeeTimeoffsItemResponseAttachmentsInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public EmployeeTimeoffsItemResponseAttachmentsInner timeOffId(String timeOffId) {
+  public EmployeeTimeoffsItemResponseAttachmentsInner timeOffId(@javax.annotation.Nullable String timeOffId) {
     this.timeOffId = timeOffId;
     return this;
   }
@@ -106,12 +111,12 @@ public class EmployeeTimeoffsItemResponseAttachmentsInner {
     return timeOffId;
   }
 
-  public void setTimeOffId(String timeOffId) {
+  public void setTimeOffId(@javax.annotation.Nullable String timeOffId) {
     this.timeOffId = timeOffId;
   }
 
 
-  public EmployeeTimeoffsItemResponseAttachmentsInner filename(String filename) {
+  public EmployeeTimeoffsItemResponseAttachmentsInner filename(@javax.annotation.Nullable String filename) {
     this.filename = filename;
     return this;
   }
@@ -125,12 +130,12 @@ public class EmployeeTimeoffsItemResponseAttachmentsInner {
     return filename;
   }
 
-  public void setFilename(String filename) {
+  public void setFilename(@javax.annotation.Nullable String filename) {
     this.filename = filename;
   }
 
 
-  public EmployeeTimeoffsItemResponseAttachmentsInner createdAt(String createdAt) {
+  public EmployeeTimeoffsItemResponseAttachmentsInner createdAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -144,12 +149,12 @@ public class EmployeeTimeoffsItemResponseAttachmentsInner {
     return createdAt;
   }
 
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public EmployeeTimeoffsItemResponseAttachmentsInner updatedAt(String updatedAt) {
+  public EmployeeTimeoffsItemResponseAttachmentsInner updatedAt(@javax.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -163,7 +168,7 @@ public class EmployeeTimeoffsItemResponseAttachmentsInner {
     return updatedAt;
   }
 
-  public void setUpdatedAt(String updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
   }
 

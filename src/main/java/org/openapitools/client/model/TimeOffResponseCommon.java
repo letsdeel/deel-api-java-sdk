@@ -55,38 +55,46 @@ import org.openapitools.client.JSON;
 /**
  * TimeOffResponseCommon
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeOffResponseCommon {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_RECIPIENT_PROFILE = "recipient_profile";
   @SerializedName(SERIALIZED_NAME_RECIPIENT_PROFILE)
+  @javax.annotation.Nullable
   private ProfileReference recipientProfile;
 
   public static final String SERIALIZED_NAME_REQUESTER_PROFILE = "requester_profile";
   @SerializedName(SERIALIZED_NAME_REQUESTER_PROFILE)
+  @javax.annotation.Nullable
   private ProfileReference requesterProfile;
 
   public static final String SERIALIZED_NAME_TIME_OFF_TYPE_ID = "time_off_type_id";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_TYPE_ID)
+  @javax.annotation.Nonnull
   private String timeOffTypeId;
 
   public static final String SERIALIZED_NAME_REQUESTED_AT = "requested_at";
   @SerializedName(SERIALIZED_NAME_REQUESTED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime requestedAt;
 
   public static final String SERIALIZED_NAME_OTHER_TYPE_DESCRIPTION = "other_type_description";
   @SerializedName(SERIALIZED_NAME_OTHER_TYPE_DESCRIPTION)
+  @javax.annotation.Nullable
   private String otherTypeDescription;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_REASON = "reason";
   @SerializedName(SERIALIZED_NAME_REASON)
+  @javax.annotation.Nullable
   private String reason;
 
   /**
@@ -149,68 +157,83 @@ public class TimeOffResponseCommon {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime endDate;
 
   public static final String SERIALIZED_NAME_DEDUCTION_AMOUNT = "deduction_amount";
   @SerializedName(SERIALIZED_NAME_DEDUCTION_AMOUNT)
+  @javax.annotation.Nullable
   private Float deductionAmount;
 
   public static final String SERIALIZED_NAME_IS_PAID = "is_paid";
   @SerializedName(SERIALIZED_NAME_IS_PAID)
+  @javax.annotation.Nonnull
   private Boolean isPaid;
 
   public static final String SERIALIZED_NAME_HALF_START_DATE = "half_start_date";
   @SerializedName(SERIALIZED_NAME_HALF_START_DATE)
+  @javax.annotation.Nonnull
   private Boolean halfStartDate;
 
   public static final String SERIALIZED_NAME_HALF_END_DATE = "half_end_date";
   @SerializedName(SERIALIZED_NAME_HALF_END_DATE)
+  @javax.annotation.Nonnull
   private Boolean halfEndDate;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private Float amount;
 
   public static final String SERIALIZED_NAME_CONTRACT_OID = "contract_oid";
   @SerializedName(SERIALIZED_NAME_CONTRACT_OID)
+  @javax.annotation.Nullable
   private String contractOid;
 
   public static final String SERIALIZED_NAME_APPROVED_AT = "approved_at";
   @SerializedName(SERIALIZED_NAME_APPROVED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime approvedAt;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime updatedAt;
 
   public static final String SERIALIZED_NAME_TIME_OFF_DAILIES = "time_off_dailies";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_DAILIES)
+  @javax.annotation.Nullable
   private List<TimeOffDaily> timeOffDailies = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TIME_OFF_PERCENTAGE = "time_off_percentage";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_PERCENTAGE)
+  @javax.annotation.Nullable
   private Float timeOffPercentage;
 
   public static final String SERIALIZED_NAME_IS_END_DATE_ESTIMATED = "is_end_date_estimated";
   @SerializedName(SERIALIZED_NAME_IS_END_DATE_ESTIMATED)
+  @javax.annotation.Nullable
   private Boolean isEndDateEstimated;
 
   public TimeOffResponseCommon() {
   }
 
-  public TimeOffResponseCommon id(UUID id) {
+  public TimeOffResponseCommon id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -224,12 +247,12 @@ public class TimeOffResponseCommon {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public TimeOffResponseCommon recipientProfile(ProfileReference recipientProfile) {
+  public TimeOffResponseCommon recipientProfile(@javax.annotation.Nullable ProfileReference recipientProfile) {
     this.recipientProfile = recipientProfile;
     return this;
   }
@@ -243,12 +266,12 @@ public class TimeOffResponseCommon {
     return recipientProfile;
   }
 
-  public void setRecipientProfile(ProfileReference recipientProfile) {
+  public void setRecipientProfile(@javax.annotation.Nullable ProfileReference recipientProfile) {
     this.recipientProfile = recipientProfile;
   }
 
 
-  public TimeOffResponseCommon requesterProfile(ProfileReference requesterProfile) {
+  public TimeOffResponseCommon requesterProfile(@javax.annotation.Nullable ProfileReference requesterProfile) {
     this.requesterProfile = requesterProfile;
     return this;
   }
@@ -262,12 +285,12 @@ public class TimeOffResponseCommon {
     return requesterProfile;
   }
 
-  public void setRequesterProfile(ProfileReference requesterProfile) {
+  public void setRequesterProfile(@javax.annotation.Nullable ProfileReference requesterProfile) {
     this.requesterProfile = requesterProfile;
   }
 
 
-  public TimeOffResponseCommon timeOffTypeId(String timeOffTypeId) {
+  public TimeOffResponseCommon timeOffTypeId(@javax.annotation.Nonnull String timeOffTypeId) {
     this.timeOffTypeId = timeOffTypeId;
     return this;
   }
@@ -281,12 +304,12 @@ public class TimeOffResponseCommon {
     return timeOffTypeId;
   }
 
-  public void setTimeOffTypeId(String timeOffTypeId) {
+  public void setTimeOffTypeId(@javax.annotation.Nonnull String timeOffTypeId) {
     this.timeOffTypeId = timeOffTypeId;
   }
 
 
-  public TimeOffResponseCommon requestedAt(OffsetDateTime requestedAt) {
+  public TimeOffResponseCommon requestedAt(@javax.annotation.Nonnull OffsetDateTime requestedAt) {
     this.requestedAt = requestedAt;
     return this;
   }
@@ -300,12 +323,12 @@ public class TimeOffResponseCommon {
     return requestedAt;
   }
 
-  public void setRequestedAt(OffsetDateTime requestedAt) {
+  public void setRequestedAt(@javax.annotation.Nonnull OffsetDateTime requestedAt) {
     this.requestedAt = requestedAt;
   }
 
 
-  public TimeOffResponseCommon otherTypeDescription(String otherTypeDescription) {
+  public TimeOffResponseCommon otherTypeDescription(@javax.annotation.Nullable String otherTypeDescription) {
     this.otherTypeDescription = otherTypeDescription;
     return this;
   }
@@ -319,12 +342,12 @@ public class TimeOffResponseCommon {
     return otherTypeDescription;
   }
 
-  public void setOtherTypeDescription(String otherTypeDescription) {
+  public void setOtherTypeDescription(@javax.annotation.Nullable String otherTypeDescription) {
     this.otherTypeDescription = otherTypeDescription;
   }
 
 
-  public TimeOffResponseCommon description(String description) {
+  public TimeOffResponseCommon description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -338,12 +361,12 @@ public class TimeOffResponseCommon {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public TimeOffResponseCommon reason(String reason) {
+  public TimeOffResponseCommon reason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
     return this;
   }
@@ -357,12 +380,12 @@ public class TimeOffResponseCommon {
     return reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
   }
 
 
-  public TimeOffResponseCommon status(StatusEnum status) {
+  public TimeOffResponseCommon status(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -376,12 +399,12 @@ public class TimeOffResponseCommon {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
   }
 
 
-  public TimeOffResponseCommon startDate(OffsetDateTime startDate) {
+  public TimeOffResponseCommon startDate(@javax.annotation.Nonnull OffsetDateTime startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -395,12 +418,12 @@ public class TimeOffResponseCommon {
     return startDate;
   }
 
-  public void setStartDate(OffsetDateTime startDate) {
+  public void setStartDate(@javax.annotation.Nonnull OffsetDateTime startDate) {
     this.startDate = startDate;
   }
 
 
-  public TimeOffResponseCommon endDate(OffsetDateTime endDate) {
+  public TimeOffResponseCommon endDate(@javax.annotation.Nonnull OffsetDateTime endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -414,12 +437,12 @@ public class TimeOffResponseCommon {
     return endDate;
   }
 
-  public void setEndDate(OffsetDateTime endDate) {
+  public void setEndDate(@javax.annotation.Nonnull OffsetDateTime endDate) {
     this.endDate = endDate;
   }
 
 
-  public TimeOffResponseCommon deductionAmount(Float deductionAmount) {
+  public TimeOffResponseCommon deductionAmount(@javax.annotation.Nullable Float deductionAmount) {
     this.deductionAmount = deductionAmount;
     return this;
   }
@@ -433,12 +456,12 @@ public class TimeOffResponseCommon {
     return deductionAmount;
   }
 
-  public void setDeductionAmount(Float deductionAmount) {
+  public void setDeductionAmount(@javax.annotation.Nullable Float deductionAmount) {
     this.deductionAmount = deductionAmount;
   }
 
 
-  public TimeOffResponseCommon isPaid(Boolean isPaid) {
+  public TimeOffResponseCommon isPaid(@javax.annotation.Nonnull Boolean isPaid) {
     this.isPaid = isPaid;
     return this;
   }
@@ -452,12 +475,12 @@ public class TimeOffResponseCommon {
     return isPaid;
   }
 
-  public void setIsPaid(Boolean isPaid) {
+  public void setIsPaid(@javax.annotation.Nonnull Boolean isPaid) {
     this.isPaid = isPaid;
   }
 
 
-  public TimeOffResponseCommon halfStartDate(Boolean halfStartDate) {
+  public TimeOffResponseCommon halfStartDate(@javax.annotation.Nonnull Boolean halfStartDate) {
     this.halfStartDate = halfStartDate;
     return this;
   }
@@ -471,12 +494,12 @@ public class TimeOffResponseCommon {
     return halfStartDate;
   }
 
-  public void setHalfStartDate(Boolean halfStartDate) {
+  public void setHalfStartDate(@javax.annotation.Nonnull Boolean halfStartDate) {
     this.halfStartDate = halfStartDate;
   }
 
 
-  public TimeOffResponseCommon halfEndDate(Boolean halfEndDate) {
+  public TimeOffResponseCommon halfEndDate(@javax.annotation.Nonnull Boolean halfEndDate) {
     this.halfEndDate = halfEndDate;
     return this;
   }
@@ -490,12 +513,12 @@ public class TimeOffResponseCommon {
     return halfEndDate;
   }
 
-  public void setHalfEndDate(Boolean halfEndDate) {
+  public void setHalfEndDate(@javax.annotation.Nonnull Boolean halfEndDate) {
     this.halfEndDate = halfEndDate;
   }
 
 
-  public TimeOffResponseCommon amount(Float amount) {
+  public TimeOffResponseCommon amount(@javax.annotation.Nonnull Float amount) {
     this.amount = amount;
     return this;
   }
@@ -509,12 +532,12 @@ public class TimeOffResponseCommon {
     return amount;
   }
 
-  public void setAmount(Float amount) {
+  public void setAmount(@javax.annotation.Nonnull Float amount) {
     this.amount = amount;
   }
 
 
-  public TimeOffResponseCommon contractOid(String contractOid) {
+  public TimeOffResponseCommon contractOid(@javax.annotation.Nullable String contractOid) {
     this.contractOid = contractOid;
     return this;
   }
@@ -528,12 +551,12 @@ public class TimeOffResponseCommon {
     return contractOid;
   }
 
-  public void setContractOid(String contractOid) {
+  public void setContractOid(@javax.annotation.Nullable String contractOid) {
     this.contractOid = contractOid;
   }
 
 
-  public TimeOffResponseCommon approvedAt(OffsetDateTime approvedAt) {
+  public TimeOffResponseCommon approvedAt(@javax.annotation.Nullable OffsetDateTime approvedAt) {
     this.approvedAt = approvedAt;
     return this;
   }
@@ -547,12 +570,12 @@ public class TimeOffResponseCommon {
     return approvedAt;
   }
 
-  public void setApprovedAt(OffsetDateTime approvedAt) {
+  public void setApprovedAt(@javax.annotation.Nullable OffsetDateTime approvedAt) {
     this.approvedAt = approvedAt;
   }
 
 
-  public TimeOffResponseCommon createdAt(OffsetDateTime createdAt) {
+  public TimeOffResponseCommon createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -566,12 +589,12 @@ public class TimeOffResponseCommon {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public TimeOffResponseCommon updatedAt(OffsetDateTime updatedAt) {
+  public TimeOffResponseCommon updatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -585,12 +608,12 @@ public class TimeOffResponseCommon {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public TimeOffResponseCommon timeOffDailies(List<TimeOffDaily> timeOffDailies) {
+  public TimeOffResponseCommon timeOffDailies(@javax.annotation.Nullable List<TimeOffDaily> timeOffDailies) {
     this.timeOffDailies = timeOffDailies;
     return this;
   }
@@ -612,12 +635,12 @@ public class TimeOffResponseCommon {
     return timeOffDailies;
   }
 
-  public void setTimeOffDailies(List<TimeOffDaily> timeOffDailies) {
+  public void setTimeOffDailies(@javax.annotation.Nullable List<TimeOffDaily> timeOffDailies) {
     this.timeOffDailies = timeOffDailies;
   }
 
 
-  public TimeOffResponseCommon timeOffPercentage(Float timeOffPercentage) {
+  public TimeOffResponseCommon timeOffPercentage(@javax.annotation.Nullable Float timeOffPercentage) {
     this.timeOffPercentage = timeOffPercentage;
     return this;
   }
@@ -631,12 +654,12 @@ public class TimeOffResponseCommon {
     return timeOffPercentage;
   }
 
-  public void setTimeOffPercentage(Float timeOffPercentage) {
+  public void setTimeOffPercentage(@javax.annotation.Nullable Float timeOffPercentage) {
     this.timeOffPercentage = timeOffPercentage;
   }
 
 
-  public TimeOffResponseCommon isEndDateEstimated(Boolean isEndDateEstimated) {
+  public TimeOffResponseCommon isEndDateEstimated(@javax.annotation.Nullable Boolean isEndDateEstimated) {
     this.isEndDateEstimated = isEndDateEstimated;
     return this;
   }
@@ -650,7 +673,7 @@ public class TimeOffResponseCommon {
     return isEndDateEstimated;
   }
 
-  public void setIsEndDateEstimated(Boolean isEndDateEstimated) {
+  public void setIsEndDateEstimated(@javax.annotation.Nullable Boolean isEndDateEstimated) {
     this.isEndDateEstimated = isEndDateEstimated;
   }
 

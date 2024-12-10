@@ -51,28 +51,32 @@ import org.openapitools.client.JSON;
 /**
  * GetEORContractBenefits200ResponseDataInnerEnrollmentDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetEORContractBenefits200ResponseDataInnerEnrollmentDetails {
   public static final String SERIALIZED_NAME_PLAN = "plan";
   @SerializedName(SERIALIZED_NAME_PLAN)
+  @javax.annotation.Nullable
   private GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsPlan plan;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_CURRENT = "current";
   @SerializedName(SERIALIZED_NAME_CURRENT)
+  @javax.annotation.Nullable
   private GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsCurrent current;
 
   public static final String SERIALIZED_NAME_STANDARD = "standard";
   @SerializedName(SERIALIZED_NAME_STANDARD)
+  @javax.annotation.Nullable
   private GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsStandard standard;
 
   public GetEORContractBenefits200ResponseDataInnerEnrollmentDetails() {
   }
 
-  public GetEORContractBenefits200ResponseDataInnerEnrollmentDetails plan(GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsPlan plan) {
+  public GetEORContractBenefits200ResponseDataInnerEnrollmentDetails plan(@javax.annotation.Nullable GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsPlan plan) {
     this.plan = plan;
     return this;
   }
@@ -86,12 +90,12 @@ public class GetEORContractBenefits200ResponseDataInnerEnrollmentDetails {
     return plan;
   }
 
-  public void setPlan(GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsPlan plan) {
+  public void setPlan(@javax.annotation.Nullable GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsPlan plan) {
     this.plan = plan;
   }
 
 
-  public GetEORContractBenefits200ResponseDataInnerEnrollmentDetails status(String status) {
+  public GetEORContractBenefits200ResponseDataInnerEnrollmentDetails status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -105,12 +109,12 @@ public class GetEORContractBenefits200ResponseDataInnerEnrollmentDetails {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public GetEORContractBenefits200ResponseDataInnerEnrollmentDetails current(GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsCurrent current) {
+  public GetEORContractBenefits200ResponseDataInnerEnrollmentDetails current(@javax.annotation.Nullable GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsCurrent current) {
     this.current = current;
     return this;
   }
@@ -124,12 +128,12 @@ public class GetEORContractBenefits200ResponseDataInnerEnrollmentDetails {
     return current;
   }
 
-  public void setCurrent(GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsCurrent current) {
+  public void setCurrent(@javax.annotation.Nullable GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsCurrent current) {
     this.current = current;
   }
 
 
-  public GetEORContractBenefits200ResponseDataInnerEnrollmentDetails standard(GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsStandard standard) {
+  public GetEORContractBenefits200ResponseDataInnerEnrollmentDetails standard(@javax.annotation.Nullable GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsStandard standard) {
     this.standard = standard;
     return this;
   }
@@ -143,7 +147,7 @@ public class GetEORContractBenefits200ResponseDataInnerEnrollmentDetails {
     return standard;
   }
 
-  public void setStandard(GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsStandard standard) {
+  public void setStandard(@javax.annotation.Nullable GetEORContractBenefits200ResponseDataInnerEnrollmentDetailsStandard standard) {
     this.standard = standard;
   }
 

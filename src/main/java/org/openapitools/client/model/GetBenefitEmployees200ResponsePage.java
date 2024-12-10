@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * GetBenefitEmployees200ResponsePage
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBenefitEmployees200ResponsePage {
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
+  @javax.annotation.Nullable
   private Integer offset;
 
   public static final String SERIALIZED_NAME_TOTAL_ROWS = "total_rows";
   @SerializedName(SERIALIZED_NAME_TOTAL_ROWS)
+  @javax.annotation.Nullable
   private Integer totalRows;
 
   public static final String SERIALIZED_NAME_ITEMS_PER_PAGE = "items_per_page";
   @SerializedName(SERIALIZED_NAME_ITEMS_PER_PAGE)
+  @javax.annotation.Nullable
   private Integer itemsPerPage;
 
   public GetBenefitEmployees200ResponsePage() {
   }
 
-  public GetBenefitEmployees200ResponsePage offset(Integer offset) {
+  public GetBenefitEmployees200ResponsePage offset(@javax.annotation.Nullable Integer offset) {
     this.offset = offset;
     return this;
   }
@@ -79,12 +82,12 @@ public class GetBenefitEmployees200ResponsePage {
     return offset;
   }
 
-  public void setOffset(Integer offset) {
+  public void setOffset(@javax.annotation.Nullable Integer offset) {
     this.offset = offset;
   }
 
 
-  public GetBenefitEmployees200ResponsePage totalRows(Integer totalRows) {
+  public GetBenefitEmployees200ResponsePage totalRows(@javax.annotation.Nullable Integer totalRows) {
     this.totalRows = totalRows;
     return this;
   }
@@ -98,12 +101,12 @@ public class GetBenefitEmployees200ResponsePage {
     return totalRows;
   }
 
-  public void setTotalRows(Integer totalRows) {
+  public void setTotalRows(@javax.annotation.Nullable Integer totalRows) {
     this.totalRows = totalRows;
   }
 
 
-  public GetBenefitEmployees200ResponsePage itemsPerPage(Integer itemsPerPage) {
+  public GetBenefitEmployees200ResponsePage itemsPerPage(@javax.annotation.Nullable Integer itemsPerPage) {
     this.itemsPerPage = itemsPerPage;
     return this;
   }
@@ -117,7 +120,7 @@ public class GetBenefitEmployees200ResponsePage {
     return itemsPerPage;
   }
 
-  public void setItemsPerPage(Integer itemsPerPage) {
+  public void setItemsPerPage(@javax.annotation.Nullable Integer itemsPerPage) {
     this.itemsPerPage = itemsPerPage;
   }
 

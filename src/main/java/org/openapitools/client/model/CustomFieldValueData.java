@@ -51,36 +51,42 @@ import org.openapitools.client.JSON;
 /**
  * CustomFieldValueData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CustomFieldValueData {
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private String value;
 
   public static final String SERIALIZED_NAME_TEXT = "text";
   @SerializedName(SERIALIZED_NAME_TEXT)
+  @javax.annotation.Nullable
   private String text;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_OPTIONS = "options";
   @SerializedName(SERIALIZED_NAME_OPTIONS)
+  @javax.annotation.Nullable
   private List<String> options = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_OPTION = "option";
   @SerializedName(SERIALIZED_NAME_OPTION)
+  @javax.annotation.Nullable
   private String option;
 
   public CustomFieldValueData() {
   }
 
-  public CustomFieldValueData value(String value) {
+  public CustomFieldValueData value(@javax.annotation.Nullable String value) {
     this.value = value;
     return this;
   }
@@ -94,12 +100,12 @@ public class CustomFieldValueData {
     return value;
   }
 
-  public void setValue(String value) {
+  public void setValue(@javax.annotation.Nullable String value) {
     this.value = value;
   }
 
 
-  public CustomFieldValueData text(String text) {
+  public CustomFieldValueData text(@javax.annotation.Nullable String text) {
     this.text = text;
     return this;
   }
@@ -113,12 +119,12 @@ public class CustomFieldValueData {
     return text;
   }
 
-  public void setText(String text) {
+  public void setText(@javax.annotation.Nullable String text) {
     this.text = text;
   }
 
 
-  public CustomFieldValueData amount(BigDecimal amount) {
+  public CustomFieldValueData amount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -132,12 +138,12 @@ public class CustomFieldValueData {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public CustomFieldValueData currency(String currency) {
+  public CustomFieldValueData currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -151,12 +157,12 @@ public class CustomFieldValueData {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public CustomFieldValueData options(List<String> options) {
+  public CustomFieldValueData options(@javax.annotation.Nullable List<String> options) {
     this.options = options;
     return this;
   }
@@ -178,12 +184,12 @@ public class CustomFieldValueData {
     return options;
   }
 
-  public void setOptions(List<String> options) {
+  public void setOptions(@javax.annotation.Nullable List<String> options) {
     this.options = options;
   }
 
 
-  public CustomFieldValueData option(String option) {
+  public CustomFieldValueData option(@javax.annotation.Nullable String option) {
     this.option = option;
     return this;
   }
@@ -197,7 +203,7 @@ public class CustomFieldValueData {
     return option;
   }
 
-  public void setOption(String option) {
+  public void setOption(@javax.annotation.Nullable String option) {
     this.option = option;
   }
 

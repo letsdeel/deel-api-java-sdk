@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * BankAccountToAddInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BankAccountToAddInner {
   public static final String SERIALIZED_NAME_KEY = "key";
   @SerializedName(SERIALIZED_NAME_KEY)
+  @javax.annotation.Nonnull
   private String key;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nonnull
   private String value;
 
   public BankAccountToAddInner() {
   }
 
-  public BankAccountToAddInner key(String key) {
+  public BankAccountToAddInner key(@javax.annotation.Nonnull String key) {
     this.key = key;
     return this;
   }
@@ -75,12 +77,12 @@ public class BankAccountToAddInner {
     return key;
   }
 
-  public void setKey(String key) {
+  public void setKey(@javax.annotation.Nonnull String key) {
     this.key = key;
   }
 
 
-  public BankAccountToAddInner value(String value) {
+  public BankAccountToAddInner value(@javax.annotation.Nonnull String value) {
     this.value = value;
     return this;
   }
@@ -94,7 +96,7 @@ public class BankAccountToAddInner {
     return value;
   }
 
-  public void setValue(String value) {
+  public void setValue(@javax.annotation.Nonnull String value) {
     this.value = value;
   }
 

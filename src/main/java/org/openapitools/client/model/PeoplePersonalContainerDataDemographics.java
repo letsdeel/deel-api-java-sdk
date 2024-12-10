@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * PeoplePersonalContainerDataDemographics
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PeoplePersonalContainerDataDemographics {
   public static final String SERIALIZED_NAME_GENDER = "gender";
   @SerializedName(SERIALIZED_NAME_GENDER)
+  @javax.annotation.Nullable
   private PeoplePersonalContainerDataDemographicsGender gender;
 
   public static final String SERIALIZED_NAME_ETHNICITY = "ethnicity";
   @SerializedName(SERIALIZED_NAME_ETHNICITY)
+  @javax.annotation.Nullable
   private PeoplePersonalContainerDataDemographicsEthnicity ethnicity;
 
   public PeoplePersonalContainerDataDemographics() {
   }
 
-  public PeoplePersonalContainerDataDemographics gender(PeoplePersonalContainerDataDemographicsGender gender) {
+  public PeoplePersonalContainerDataDemographics gender(@javax.annotation.Nullable PeoplePersonalContainerDataDemographicsGender gender) {
     this.gender = gender;
     return this;
   }
@@ -77,12 +79,12 @@ public class PeoplePersonalContainerDataDemographics {
     return gender;
   }
 
-  public void setGender(PeoplePersonalContainerDataDemographicsGender gender) {
+  public void setGender(@javax.annotation.Nullable PeoplePersonalContainerDataDemographicsGender gender) {
     this.gender = gender;
   }
 
 
-  public PeoplePersonalContainerDataDemographics ethnicity(PeoplePersonalContainerDataDemographicsEthnicity ethnicity) {
+  public PeoplePersonalContainerDataDemographics ethnicity(@javax.annotation.Nullable PeoplePersonalContainerDataDemographicsEthnicity ethnicity) {
     this.ethnicity = ethnicity;
     return this;
   }
@@ -96,7 +98,7 @@ public class PeoplePersonalContainerDataDemographics {
     return ethnicity;
   }
 
-  public void setEthnicity(PeoplePersonalContainerDataDemographicsEthnicity ethnicity) {
+  public void setEthnicity(@javax.annotation.Nullable PeoplePersonalContainerDataDemographicsEthnicity ethnicity) {
     this.ethnicity = ethnicity;
   }
 

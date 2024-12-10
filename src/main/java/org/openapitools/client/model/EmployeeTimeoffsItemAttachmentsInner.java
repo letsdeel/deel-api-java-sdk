@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * EmployeeTimeoffsItemAttachmentsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EmployeeTimeoffsItemAttachmentsInner {
   public static final String SERIALIZED_NAME_ATTACHMENT_ID = "attachment_id";
   @SerializedName(SERIALIZED_NAME_ATTACHMENT_ID)
+  @javax.annotation.Nullable
   private String attachmentId;
 
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nullable
   private String label;
 
   public static final String SERIALIZED_NAME_FILE_EXTENSION = "file_extension";
   @SerializedName(SERIALIZED_NAME_FILE_EXTENSION)
+  @javax.annotation.Nullable
   private String fileExtension;
 
   public EmployeeTimeoffsItemAttachmentsInner() {
   }
 
-  public EmployeeTimeoffsItemAttachmentsInner attachmentId(String attachmentId) {
+  public EmployeeTimeoffsItemAttachmentsInner attachmentId(@javax.annotation.Nullable String attachmentId) {
     this.attachmentId = attachmentId;
     return this;
   }
@@ -79,12 +82,12 @@ public class EmployeeTimeoffsItemAttachmentsInner {
     return attachmentId;
   }
 
-  public void setAttachmentId(String attachmentId) {
+  public void setAttachmentId(@javax.annotation.Nullable String attachmentId) {
     this.attachmentId = attachmentId;
   }
 
 
-  public EmployeeTimeoffsItemAttachmentsInner label(String label) {
+  public EmployeeTimeoffsItemAttachmentsInner label(@javax.annotation.Nullable String label) {
     this.label = label;
     return this;
   }
@@ -98,12 +101,12 @@ public class EmployeeTimeoffsItemAttachmentsInner {
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nullable String label) {
     this.label = label;
   }
 
 
-  public EmployeeTimeoffsItemAttachmentsInner fileExtension(String fileExtension) {
+  public EmployeeTimeoffsItemAttachmentsInner fileExtension(@javax.annotation.Nullable String fileExtension) {
     this.fileExtension = fileExtension;
     return this;
   }
@@ -117,7 +120,7 @@ public class EmployeeTimeoffsItemAttachmentsInner {
     return fileExtension;
   }
 
-  public void setFileExtension(String fileExtension) {
+  public void setFileExtension(@javax.annotation.Nullable String fileExtension) {
     this.fileExtension = fileExtension;
   }
 

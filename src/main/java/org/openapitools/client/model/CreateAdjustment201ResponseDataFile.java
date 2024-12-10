@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * CreateAdjustment201ResponseDataFile
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateAdjustment201ResponseDataFile {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_FILE_TYPE = "fileType";
   @SerializedName(SERIALIZED_NAME_FILE_TYPE)
+  @javax.annotation.Nullable
   private String fileType;
 
   public CreateAdjustment201ResponseDataFile() {
   }
 
-  public CreateAdjustment201ResponseDataFile id(String id) {
+  public CreateAdjustment201ResponseDataFile id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -79,12 +82,12 @@ public class CreateAdjustment201ResponseDataFile {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public CreateAdjustment201ResponseDataFile name(String name) {
+  public CreateAdjustment201ResponseDataFile name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -98,12 +101,12 @@ public class CreateAdjustment201ResponseDataFile {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public CreateAdjustment201ResponseDataFile fileType(String fileType) {
+  public CreateAdjustment201ResponseDataFile fileType(@javax.annotation.Nullable String fileType) {
     this.fileType = fileType;
     return this;
   }
@@ -117,7 +120,7 @@ public class CreateAdjustment201ResponseDataFile {
     return fileType;
   }
 
-  public void setFileType(String fileType) {
+  public void setFileType(@javax.annotation.Nullable String fileType) {
     this.fileType = fileType;
   }
 

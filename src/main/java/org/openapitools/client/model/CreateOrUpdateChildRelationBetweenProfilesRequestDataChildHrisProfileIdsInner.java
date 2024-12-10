@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * CreateOrUpdateChildRelationBetweenProfilesRequestDataChildHrisProfileIdsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateOrUpdateChildRelationBetweenProfilesRequestDataChildHrisProfileIdsInner {
   public static final String SERIALIZED_NAME_RELATION_EXTERNAL_ID = "relation_external_id";
   @SerializedName(SERIALIZED_NAME_RELATION_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String relationExternalId;
 
   public static final String SERIALIZED_NAME_EXTERNAL_HRIS_PROFILE_ID = "external_hris_profile_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_HRIS_PROFILE_ID)
+  @javax.annotation.Nullable
   private String externalHrisProfileId;
 
   public CreateOrUpdateChildRelationBetweenProfilesRequestDataChildHrisProfileIdsInner() {
   }
 
-  public CreateOrUpdateChildRelationBetweenProfilesRequestDataChildHrisProfileIdsInner relationExternalId(String relationExternalId) {
+  public CreateOrUpdateChildRelationBetweenProfilesRequestDataChildHrisProfileIdsInner relationExternalId(@javax.annotation.Nullable String relationExternalId) {
     this.relationExternalId = relationExternalId;
     return this;
   }
@@ -75,12 +77,12 @@ public class CreateOrUpdateChildRelationBetweenProfilesRequestDataChildHrisProfi
     return relationExternalId;
   }
 
-  public void setRelationExternalId(String relationExternalId) {
+  public void setRelationExternalId(@javax.annotation.Nullable String relationExternalId) {
     this.relationExternalId = relationExternalId;
   }
 
 
-  public CreateOrUpdateChildRelationBetweenProfilesRequestDataChildHrisProfileIdsInner externalHrisProfileId(String externalHrisProfileId) {
+  public CreateOrUpdateChildRelationBetweenProfilesRequestDataChildHrisProfileIdsInner externalHrisProfileId(@javax.annotation.Nullable String externalHrisProfileId) {
     this.externalHrisProfileId = externalHrisProfileId;
     return this;
   }
@@ -94,7 +96,7 @@ public class CreateOrUpdateChildRelationBetweenProfilesRequestDataChildHrisProfi
     return externalHrisProfileId;
   }
 
-  public void setExternalHrisProfileId(String externalHrisProfileId) {
+  public void setExternalHrisProfileId(@javax.annotation.Nullable String externalHrisProfileId) {
     this.externalHrisProfileId = externalHrisProfileId;
   }
 

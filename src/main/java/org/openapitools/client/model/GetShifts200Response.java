@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * GetShifts200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetShifts200Response {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private List<GetShifts200ResponseDataInner> data = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAGE = "page";
   @SerializedName(SERIALIZED_NAME_PAGE)
+  @javax.annotation.Nonnull
   private GetShifts200ResponsePage page;
 
   public GetShifts200Response() {
   }
 
-  public GetShifts200Response data(List<GetShifts200ResponseDataInner> data) {
+  public GetShifts200Response data(@javax.annotation.Nonnull List<GetShifts200ResponseDataInner> data) {
     this.data = data;
     return this;
   }
@@ -87,12 +89,12 @@ public class GetShifts200Response {
     return data;
   }
 
-  public void setData(List<GetShifts200ResponseDataInner> data) {
+  public void setData(@javax.annotation.Nonnull List<GetShifts200ResponseDataInner> data) {
     this.data = data;
   }
 
 
-  public GetShifts200Response page(GetShifts200ResponsePage page) {
+  public GetShifts200Response page(@javax.annotation.Nonnull GetShifts200ResponsePage page) {
     this.page = page;
     return this;
   }
@@ -106,7 +108,7 @@ public class GetShifts200Response {
     return page;
   }
 
-  public void setPage(GetShifts200ResponsePage page) {
+  public void setPage(@javax.annotation.Nonnull GetShifts200ResponsePage page) {
     this.page = page;
   }
 

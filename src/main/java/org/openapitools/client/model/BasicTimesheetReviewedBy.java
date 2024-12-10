@@ -48,28 +48,32 @@ import org.openapitools.client.JSON;
 /**
  * BasicTimesheetReviewedBy
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BasicTimesheetReviewedBy {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nonnull
   private String fullName;
 
   public static final String SERIALIZED_NAME_REVIEWED_AT = "reviewed_at";
   @SerializedName(SERIALIZED_NAME_REVIEWED_AT)
+  @javax.annotation.Nonnull
   private String reviewedAt;
 
   public static final String SERIALIZED_NAME_REMARKS = "remarks";
   @SerializedName(SERIALIZED_NAME_REMARKS)
+  @javax.annotation.Nonnull
   private String remarks;
 
   public BasicTimesheetReviewedBy() {
   }
 
-  public BasicTimesheetReviewedBy id(String id) {
+  public BasicTimesheetReviewedBy id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -83,12 +87,12 @@ public class BasicTimesheetReviewedBy {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public BasicTimesheetReviewedBy fullName(String fullName) {
+  public BasicTimesheetReviewedBy fullName(@javax.annotation.Nonnull String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -102,12 +106,12 @@ public class BasicTimesheetReviewedBy {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nonnull String fullName) {
     this.fullName = fullName;
   }
 
 
-  public BasicTimesheetReviewedBy reviewedAt(String reviewedAt) {
+  public BasicTimesheetReviewedBy reviewedAt(@javax.annotation.Nonnull String reviewedAt) {
     this.reviewedAt = reviewedAt;
     return this;
   }
@@ -121,12 +125,12 @@ public class BasicTimesheetReviewedBy {
     return reviewedAt;
   }
 
-  public void setReviewedAt(String reviewedAt) {
+  public void setReviewedAt(@javax.annotation.Nonnull String reviewedAt) {
     this.reviewedAt = reviewedAt;
   }
 
 
-  public BasicTimesheetReviewedBy remarks(String remarks) {
+  public BasicTimesheetReviewedBy remarks(@javax.annotation.Nonnull String remarks) {
     this.remarks = remarks;
     return this;
   }
@@ -140,7 +144,7 @@ public class BasicTimesheetReviewedBy {
     return remarks;
   }
 
-  public void setRemarks(String remarks) {
+  public void setRemarks(@javax.annotation.Nonnull String remarks) {
     this.remarks = remarks;
   }
 

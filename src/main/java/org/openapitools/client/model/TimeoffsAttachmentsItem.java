@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * A item in attachments array. 2022-09-08 FE only allows for \&quot;SICK LEAVE\&quot;
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeoffsAttachmentsItem {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nullable
   private String label;
 
   public static final String SERIALIZED_NAME_FILE_EXTENSION = "file_extension";
   @SerializedName(SERIALIZED_NAME_FILE_EXTENSION)
+  @javax.annotation.Nullable
   private String fileExtension;
 
   public TimeoffsAttachmentsItem() {
   }
 
-  public TimeoffsAttachmentsItem id(String id) {
+  public TimeoffsAttachmentsItem id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -79,12 +82,12 @@ public class TimeoffsAttachmentsItem {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public TimeoffsAttachmentsItem label(String label) {
+  public TimeoffsAttachmentsItem label(@javax.annotation.Nullable String label) {
     this.label = label;
     return this;
   }
@@ -98,12 +101,12 @@ public class TimeoffsAttachmentsItem {
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nullable String label) {
     this.label = label;
   }
 
 
-  public TimeoffsAttachmentsItem fileExtension(String fileExtension) {
+  public TimeoffsAttachmentsItem fileExtension(@javax.annotation.Nullable String fileExtension) {
     this.fileExtension = fileExtension;
     return this;
   }
@@ -117,7 +120,7 @@ public class TimeoffsAttachmentsItem {
     return fileExtension;
   }
 
-  public void setFileExtension(String fileExtension) {
+  public void setFileExtension(@javax.annotation.Nullable String fileExtension) {
     this.fileExtension = fileExtension;
   }
 

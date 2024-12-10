@@ -49,40 +49,47 @@ import org.openapitools.client.JSON;
 /**
  * ApiErrorRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ApiErrorRequest {
   public static final String SERIALIZED_NAME_METHOD = "method";
   @SerializedName(SERIALIZED_NAME_METHOD)
+  @javax.annotation.Nullable
   private String method;
 
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
+  @javax.annotation.Nullable
   private String url;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private BigDecimal status;
 
   public static final String SERIALIZED_NAME_API_REQ_ID = "api_req_id";
   @SerializedName(SERIALIZED_NAME_API_REQ_ID)
+  @javax.annotation.Nullable
   private String apiReqId;
 
   public static final String SERIALIZED_NAME_DOCS = "docs";
   @SerializedName(SERIALIZED_NAME_DOCS)
+  @javax.annotation.Nullable
   private String docs;
 
   public static final String SERIALIZED_NAME_SOURCE = "source";
   @SerializedName(SERIALIZED_NAME_SOURCE)
+  @javax.annotation.Nullable
   private String source;
 
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
+  @javax.annotation.Nullable
   private BigDecimal code;
 
   public ApiErrorRequest() {
   }
 
-  public ApiErrorRequest method(String method) {
+  public ApiErrorRequest method(@javax.annotation.Nullable String method) {
     this.method = method;
     return this;
   }
@@ -96,12 +103,12 @@ public class ApiErrorRequest {
     return method;
   }
 
-  public void setMethod(String method) {
+  public void setMethod(@javax.annotation.Nullable String method) {
     this.method = method;
   }
 
 
-  public ApiErrorRequest url(String url) {
+  public ApiErrorRequest url(@javax.annotation.Nullable String url) {
     this.url = url;
     return this;
   }
@@ -115,12 +122,12 @@ public class ApiErrorRequest {
     return url;
   }
 
-  public void setUrl(String url) {
+  public void setUrl(@javax.annotation.Nullable String url) {
     this.url = url;
   }
 
 
-  public ApiErrorRequest status(BigDecimal status) {
+  public ApiErrorRequest status(@javax.annotation.Nullable BigDecimal status) {
     this.status = status;
     return this;
   }
@@ -134,12 +141,12 @@ public class ApiErrorRequest {
     return status;
   }
 
-  public void setStatus(BigDecimal status) {
+  public void setStatus(@javax.annotation.Nullable BigDecimal status) {
     this.status = status;
   }
 
 
-  public ApiErrorRequest apiReqId(String apiReqId) {
+  public ApiErrorRequest apiReqId(@javax.annotation.Nullable String apiReqId) {
     this.apiReqId = apiReqId;
     return this;
   }
@@ -153,12 +160,12 @@ public class ApiErrorRequest {
     return apiReqId;
   }
 
-  public void setApiReqId(String apiReqId) {
+  public void setApiReqId(@javax.annotation.Nullable String apiReqId) {
     this.apiReqId = apiReqId;
   }
 
 
-  public ApiErrorRequest docs(String docs) {
+  public ApiErrorRequest docs(@javax.annotation.Nullable String docs) {
     this.docs = docs;
     return this;
   }
@@ -172,12 +179,12 @@ public class ApiErrorRequest {
     return docs;
   }
 
-  public void setDocs(String docs) {
+  public void setDocs(@javax.annotation.Nullable String docs) {
     this.docs = docs;
   }
 
 
-  public ApiErrorRequest source(String source) {
+  public ApiErrorRequest source(@javax.annotation.Nullable String source) {
     this.source = source;
     return this;
   }
@@ -191,12 +198,12 @@ public class ApiErrorRequest {
     return source;
   }
 
-  public void setSource(String source) {
+  public void setSource(@javax.annotation.Nullable String source) {
     this.source = source;
   }
 
 
-  public ApiErrorRequest code(BigDecimal code) {
+  public ApiErrorRequest code(@javax.annotation.Nullable BigDecimal code) {
     this.code = code;
     return this;
   }
@@ -210,7 +217,7 @@ public class ApiErrorRequest {
     return code;
   }
 
-  public void setCode(BigDecimal code) {
+  public void setCode(@javax.annotation.Nullable BigDecimal code) {
     this.code = code;
   }
 

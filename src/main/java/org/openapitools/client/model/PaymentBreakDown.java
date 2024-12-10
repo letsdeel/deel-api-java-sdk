@@ -48,124 +48,152 @@ import org.openapitools.client.JSON;
 /**
  * PaymentBreakDown
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PaymentBreakDown {
   public static final String SERIALIZED_NAME_DATE = "date";
   @SerializedName(SERIALIZED_NAME_DATE)
+  @javax.annotation.Nullable
   private String date;
 
   public static final String SERIALIZED_NAME_GENERAL_LEDGER_ACCOUNT = "general_ledger_account";
   @SerializedName(SERIALIZED_NAME_GENERAL_LEDGER_ACCOUNT)
+  @javax.annotation.Nullable
   private String generalLedgerAccount;
 
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
+  @javax.annotation.Nullable
   private String team;
 
   public static final String SERIALIZED_NAME_CONTRACTOR_UNIQUE_IDENTIFIER = "contractor_unique_identifier";
   @SerializedName(SERIALIZED_NAME_CONTRACTOR_UNIQUE_IDENTIFIER)
+  @javax.annotation.Nullable
   private String contractorUniqueIdentifier;
 
   public static final String SERIALIZED_NAME_CONTRACTOR_EMPLOYEE_NAME = "contractor_employee_name";
   @SerializedName(SERIALIZED_NAME_CONTRACTOR_EMPLOYEE_NAME)
+  @javax.annotation.Nullable
   private String contractorEmployeeName;
 
   public static final String SERIALIZED_NAME_CONTRACTOR_EMAIL = "contractor_email";
   @SerializedName(SERIALIZED_NAME_CONTRACTOR_EMAIL)
+  @javax.annotation.Nullable
   private String contractorEmail;
 
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoice_number";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
+  @javax.annotation.Nullable
   private String invoiceNumber;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_PAYMENT_CURRENCY = "payment_currency";
   @SerializedName(SERIALIZED_NAME_PAYMENT_CURRENCY)
+  @javax.annotation.Nullable
   private String paymentCurrency;
 
   public static final String SERIALIZED_NAME_RECEIPT_NUMBER = "receipt_number";
   @SerializedName(SERIALIZED_NAME_RECEIPT_NUMBER)
+  @javax.annotation.Nullable
   private String receiptNumber;
 
   public static final String SERIALIZED_NAME_WORK = "work";
   @SerializedName(SERIALIZED_NAME_WORK)
+  @javax.annotation.Nullable
   private String work;
 
   public static final String SERIALIZED_NAME_BONUS = "bonus";
   @SerializedName(SERIALIZED_NAME_BONUS)
+  @javax.annotation.Nullable
   private String bonus;
 
   public static final String SERIALIZED_NAME_EXPENSES = "expenses";
   @SerializedName(SERIALIZED_NAME_EXPENSES)
+  @javax.annotation.Nullable
   private String expenses;
 
   public static final String SERIALIZED_NAME_COMMISSIONS = "commissions";
   @SerializedName(SERIALIZED_NAME_COMMISSIONS)
+  @javax.annotation.Nullable
   private String commissions;
 
   public static final String SERIALIZED_NAME_DEDUCTIONS = "deductions";
   @SerializedName(SERIALIZED_NAME_DEDUCTIONS)
+  @javax.annotation.Nullable
   private String deductions;
 
   public static final String SERIALIZED_NAME_OVERTIME = "overtime";
   @SerializedName(SERIALIZED_NAME_OVERTIME)
+  @javax.annotation.Nullable
   private String overtime;
 
   public static final String SERIALIZED_NAME_PRO_RATA = "pro_rata";
   @SerializedName(SERIALIZED_NAME_PRO_RATA)
+  @javax.annotation.Nullable
   private String proRata;
 
   public static final String SERIALIZED_NAME_OTHERS = "others";
   @SerializedName(SERIALIZED_NAME_OTHERS)
+  @javax.annotation.Nullable
   private String others;
 
   public static final String SERIALIZED_NAME_PROCESSING_FEE = "processing_fee";
   @SerializedName(SERIALIZED_NAME_PROCESSING_FEE)
+  @javax.annotation.Nullable
   private String processingFee;
 
   public static final String SERIALIZED_NAME_ADJUSTMENT = "adjustment";
   @SerializedName(SERIALIZED_NAME_ADJUSTMENT)
+  @javax.annotation.Nullable
   private String adjustment;
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
+  @javax.annotation.Nullable
   private String total;
 
   public static final String SERIALIZED_NAME_TOTAL_PAYMENT_CURRENCY = "total_payment_currency";
   @SerializedName(SERIALIZED_NAME_TOTAL_PAYMENT_CURRENCY)
+  @javax.annotation.Nullable
   private String totalPaymentCurrency;
 
   public static final String SERIALIZED_NAME_PAYMENT_DATE = "payment_date";
   @SerializedName(SERIALIZED_NAME_PAYMENT_DATE)
+  @javax.annotation.Nullable
   private String paymentDate;
 
   public static final String SERIALIZED_NAME_FREQUENCY = "frequency";
   @SerializedName(SERIALIZED_NAME_FREQUENCY)
+  @javax.annotation.Nullable
   private String frequency;
 
   public static final String SERIALIZED_NAME_CONTRACT_COUNTRY = "contract_country";
   @SerializedName(SERIALIZED_NAME_CONTRACT_COUNTRY)
+  @javax.annotation.Nullable
   private String contractCountry;
 
   public static final String SERIALIZED_NAME_CONTRACT_START_DATE = "contract_start_date";
   @SerializedName(SERIALIZED_NAME_CONTRACT_START_DATE)
+  @javax.annotation.Nullable
   private String contractStartDate;
 
   public static final String SERIALIZED_NAME_APPROVERS = "approvers";
   @SerializedName(SERIALIZED_NAME_APPROVERS)
+  @javax.annotation.Nullable
   private String approvers;
 
   public static final String SERIALIZED_NAME_APPROVE_DATE = "approve_date";
   @SerializedName(SERIALIZED_NAME_APPROVE_DATE)
+  @javax.annotation.Nullable
   private String approveDate;
 
   public PaymentBreakDown() {
   }
 
-  public PaymentBreakDown date(String date) {
+  public PaymentBreakDown date(@javax.annotation.Nullable String date) {
     this.date = date;
     return this;
   }
@@ -179,12 +207,12 @@ public class PaymentBreakDown {
     return date;
   }
 
-  public void setDate(String date) {
+  public void setDate(@javax.annotation.Nullable String date) {
     this.date = date;
   }
 
 
-  public PaymentBreakDown generalLedgerAccount(String generalLedgerAccount) {
+  public PaymentBreakDown generalLedgerAccount(@javax.annotation.Nullable String generalLedgerAccount) {
     this.generalLedgerAccount = generalLedgerAccount;
     return this;
   }
@@ -198,12 +226,12 @@ public class PaymentBreakDown {
     return generalLedgerAccount;
   }
 
-  public void setGeneralLedgerAccount(String generalLedgerAccount) {
+  public void setGeneralLedgerAccount(@javax.annotation.Nullable String generalLedgerAccount) {
     this.generalLedgerAccount = generalLedgerAccount;
   }
 
 
-  public PaymentBreakDown team(String team) {
+  public PaymentBreakDown team(@javax.annotation.Nullable String team) {
     this.team = team;
     return this;
   }
@@ -217,12 +245,12 @@ public class PaymentBreakDown {
     return team;
   }
 
-  public void setTeam(String team) {
+  public void setTeam(@javax.annotation.Nullable String team) {
     this.team = team;
   }
 
 
-  public PaymentBreakDown contractorUniqueIdentifier(String contractorUniqueIdentifier) {
+  public PaymentBreakDown contractorUniqueIdentifier(@javax.annotation.Nullable String contractorUniqueIdentifier) {
     this.contractorUniqueIdentifier = contractorUniqueIdentifier;
     return this;
   }
@@ -236,12 +264,12 @@ public class PaymentBreakDown {
     return contractorUniqueIdentifier;
   }
 
-  public void setContractorUniqueIdentifier(String contractorUniqueIdentifier) {
+  public void setContractorUniqueIdentifier(@javax.annotation.Nullable String contractorUniqueIdentifier) {
     this.contractorUniqueIdentifier = contractorUniqueIdentifier;
   }
 
 
-  public PaymentBreakDown contractorEmployeeName(String contractorEmployeeName) {
+  public PaymentBreakDown contractorEmployeeName(@javax.annotation.Nullable String contractorEmployeeName) {
     this.contractorEmployeeName = contractorEmployeeName;
     return this;
   }
@@ -255,12 +283,12 @@ public class PaymentBreakDown {
     return contractorEmployeeName;
   }
 
-  public void setContractorEmployeeName(String contractorEmployeeName) {
+  public void setContractorEmployeeName(@javax.annotation.Nullable String contractorEmployeeName) {
     this.contractorEmployeeName = contractorEmployeeName;
   }
 
 
-  public PaymentBreakDown contractorEmail(String contractorEmail) {
+  public PaymentBreakDown contractorEmail(@javax.annotation.Nullable String contractorEmail) {
     this.contractorEmail = contractorEmail;
     return this;
   }
@@ -274,12 +302,12 @@ public class PaymentBreakDown {
     return contractorEmail;
   }
 
-  public void setContractorEmail(String contractorEmail) {
+  public void setContractorEmail(@javax.annotation.Nullable String contractorEmail) {
     this.contractorEmail = contractorEmail;
   }
 
 
-  public PaymentBreakDown invoiceNumber(String invoiceNumber) {
+  public PaymentBreakDown invoiceNumber(@javax.annotation.Nullable String invoiceNumber) {
     this.invoiceNumber = invoiceNumber;
     return this;
   }
@@ -293,12 +321,12 @@ public class PaymentBreakDown {
     return invoiceNumber;
   }
 
-  public void setInvoiceNumber(String invoiceNumber) {
+  public void setInvoiceNumber(@javax.annotation.Nullable String invoiceNumber) {
     this.invoiceNumber = invoiceNumber;
   }
 
 
-  public PaymentBreakDown currency(String currency) {
+  public PaymentBreakDown currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -312,12 +340,12 @@ public class PaymentBreakDown {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public PaymentBreakDown paymentCurrency(String paymentCurrency) {
+  public PaymentBreakDown paymentCurrency(@javax.annotation.Nullable String paymentCurrency) {
     this.paymentCurrency = paymentCurrency;
     return this;
   }
@@ -331,12 +359,12 @@ public class PaymentBreakDown {
     return paymentCurrency;
   }
 
-  public void setPaymentCurrency(String paymentCurrency) {
+  public void setPaymentCurrency(@javax.annotation.Nullable String paymentCurrency) {
     this.paymentCurrency = paymentCurrency;
   }
 
 
-  public PaymentBreakDown receiptNumber(String receiptNumber) {
+  public PaymentBreakDown receiptNumber(@javax.annotation.Nullable String receiptNumber) {
     this.receiptNumber = receiptNumber;
     return this;
   }
@@ -350,12 +378,12 @@ public class PaymentBreakDown {
     return receiptNumber;
   }
 
-  public void setReceiptNumber(String receiptNumber) {
+  public void setReceiptNumber(@javax.annotation.Nullable String receiptNumber) {
     this.receiptNumber = receiptNumber;
   }
 
 
-  public PaymentBreakDown work(String work) {
+  public PaymentBreakDown work(@javax.annotation.Nullable String work) {
     this.work = work;
     return this;
   }
@@ -369,12 +397,12 @@ public class PaymentBreakDown {
     return work;
   }
 
-  public void setWork(String work) {
+  public void setWork(@javax.annotation.Nullable String work) {
     this.work = work;
   }
 
 
-  public PaymentBreakDown bonus(String bonus) {
+  public PaymentBreakDown bonus(@javax.annotation.Nullable String bonus) {
     this.bonus = bonus;
     return this;
   }
@@ -388,12 +416,12 @@ public class PaymentBreakDown {
     return bonus;
   }
 
-  public void setBonus(String bonus) {
+  public void setBonus(@javax.annotation.Nullable String bonus) {
     this.bonus = bonus;
   }
 
 
-  public PaymentBreakDown expenses(String expenses) {
+  public PaymentBreakDown expenses(@javax.annotation.Nullable String expenses) {
     this.expenses = expenses;
     return this;
   }
@@ -407,12 +435,12 @@ public class PaymentBreakDown {
     return expenses;
   }
 
-  public void setExpenses(String expenses) {
+  public void setExpenses(@javax.annotation.Nullable String expenses) {
     this.expenses = expenses;
   }
 
 
-  public PaymentBreakDown commissions(String commissions) {
+  public PaymentBreakDown commissions(@javax.annotation.Nullable String commissions) {
     this.commissions = commissions;
     return this;
   }
@@ -426,12 +454,12 @@ public class PaymentBreakDown {
     return commissions;
   }
 
-  public void setCommissions(String commissions) {
+  public void setCommissions(@javax.annotation.Nullable String commissions) {
     this.commissions = commissions;
   }
 
 
-  public PaymentBreakDown deductions(String deductions) {
+  public PaymentBreakDown deductions(@javax.annotation.Nullable String deductions) {
     this.deductions = deductions;
     return this;
   }
@@ -445,12 +473,12 @@ public class PaymentBreakDown {
     return deductions;
   }
 
-  public void setDeductions(String deductions) {
+  public void setDeductions(@javax.annotation.Nullable String deductions) {
     this.deductions = deductions;
   }
 
 
-  public PaymentBreakDown overtime(String overtime) {
+  public PaymentBreakDown overtime(@javax.annotation.Nullable String overtime) {
     this.overtime = overtime;
     return this;
   }
@@ -464,12 +492,12 @@ public class PaymentBreakDown {
     return overtime;
   }
 
-  public void setOvertime(String overtime) {
+  public void setOvertime(@javax.annotation.Nullable String overtime) {
     this.overtime = overtime;
   }
 
 
-  public PaymentBreakDown proRata(String proRata) {
+  public PaymentBreakDown proRata(@javax.annotation.Nullable String proRata) {
     this.proRata = proRata;
     return this;
   }
@@ -483,12 +511,12 @@ public class PaymentBreakDown {
     return proRata;
   }
 
-  public void setProRata(String proRata) {
+  public void setProRata(@javax.annotation.Nullable String proRata) {
     this.proRata = proRata;
   }
 
 
-  public PaymentBreakDown others(String others) {
+  public PaymentBreakDown others(@javax.annotation.Nullable String others) {
     this.others = others;
     return this;
   }
@@ -502,12 +530,12 @@ public class PaymentBreakDown {
     return others;
   }
 
-  public void setOthers(String others) {
+  public void setOthers(@javax.annotation.Nullable String others) {
     this.others = others;
   }
 
 
-  public PaymentBreakDown processingFee(String processingFee) {
+  public PaymentBreakDown processingFee(@javax.annotation.Nullable String processingFee) {
     this.processingFee = processingFee;
     return this;
   }
@@ -521,12 +549,12 @@ public class PaymentBreakDown {
     return processingFee;
   }
 
-  public void setProcessingFee(String processingFee) {
+  public void setProcessingFee(@javax.annotation.Nullable String processingFee) {
     this.processingFee = processingFee;
   }
 
 
-  public PaymentBreakDown adjustment(String adjustment) {
+  public PaymentBreakDown adjustment(@javax.annotation.Nullable String adjustment) {
     this.adjustment = adjustment;
     return this;
   }
@@ -540,12 +568,12 @@ public class PaymentBreakDown {
     return adjustment;
   }
 
-  public void setAdjustment(String adjustment) {
+  public void setAdjustment(@javax.annotation.Nullable String adjustment) {
     this.adjustment = adjustment;
   }
 
 
-  public PaymentBreakDown total(String total) {
+  public PaymentBreakDown total(@javax.annotation.Nullable String total) {
     this.total = total;
     return this;
   }
@@ -559,12 +587,12 @@ public class PaymentBreakDown {
     return total;
   }
 
-  public void setTotal(String total) {
+  public void setTotal(@javax.annotation.Nullable String total) {
     this.total = total;
   }
 
 
-  public PaymentBreakDown totalPaymentCurrency(String totalPaymentCurrency) {
+  public PaymentBreakDown totalPaymentCurrency(@javax.annotation.Nullable String totalPaymentCurrency) {
     this.totalPaymentCurrency = totalPaymentCurrency;
     return this;
   }
@@ -578,12 +606,12 @@ public class PaymentBreakDown {
     return totalPaymentCurrency;
   }
 
-  public void setTotalPaymentCurrency(String totalPaymentCurrency) {
+  public void setTotalPaymentCurrency(@javax.annotation.Nullable String totalPaymentCurrency) {
     this.totalPaymentCurrency = totalPaymentCurrency;
   }
 
 
-  public PaymentBreakDown paymentDate(String paymentDate) {
+  public PaymentBreakDown paymentDate(@javax.annotation.Nullable String paymentDate) {
     this.paymentDate = paymentDate;
     return this;
   }
@@ -597,12 +625,12 @@ public class PaymentBreakDown {
     return paymentDate;
   }
 
-  public void setPaymentDate(String paymentDate) {
+  public void setPaymentDate(@javax.annotation.Nullable String paymentDate) {
     this.paymentDate = paymentDate;
   }
 
 
-  public PaymentBreakDown frequency(String frequency) {
+  public PaymentBreakDown frequency(@javax.annotation.Nullable String frequency) {
     this.frequency = frequency;
     return this;
   }
@@ -616,12 +644,12 @@ public class PaymentBreakDown {
     return frequency;
   }
 
-  public void setFrequency(String frequency) {
+  public void setFrequency(@javax.annotation.Nullable String frequency) {
     this.frequency = frequency;
   }
 
 
-  public PaymentBreakDown contractCountry(String contractCountry) {
+  public PaymentBreakDown contractCountry(@javax.annotation.Nullable String contractCountry) {
     this.contractCountry = contractCountry;
     return this;
   }
@@ -635,12 +663,12 @@ public class PaymentBreakDown {
     return contractCountry;
   }
 
-  public void setContractCountry(String contractCountry) {
+  public void setContractCountry(@javax.annotation.Nullable String contractCountry) {
     this.contractCountry = contractCountry;
   }
 
 
-  public PaymentBreakDown contractStartDate(String contractStartDate) {
+  public PaymentBreakDown contractStartDate(@javax.annotation.Nullable String contractStartDate) {
     this.contractStartDate = contractStartDate;
     return this;
   }
@@ -654,12 +682,12 @@ public class PaymentBreakDown {
     return contractStartDate;
   }
 
-  public void setContractStartDate(String contractStartDate) {
+  public void setContractStartDate(@javax.annotation.Nullable String contractStartDate) {
     this.contractStartDate = contractStartDate;
   }
 
 
-  public PaymentBreakDown approvers(String approvers) {
+  public PaymentBreakDown approvers(@javax.annotation.Nullable String approvers) {
     this.approvers = approvers;
     return this;
   }
@@ -673,12 +701,12 @@ public class PaymentBreakDown {
     return approvers;
   }
 
-  public void setApprovers(String approvers) {
+  public void setApprovers(@javax.annotation.Nullable String approvers) {
     this.approvers = approvers;
   }
 
 
-  public PaymentBreakDown approveDate(String approveDate) {
+  public PaymentBreakDown approveDate(@javax.annotation.Nullable String approveDate) {
     this.approveDate = approveDate;
     return this;
   }
@@ -692,7 +720,7 @@ public class PaymentBreakDown {
     return approveDate;
   }
 
-  public void setApproveDate(String approveDate) {
+  public void setApproveDate(@javax.annotation.Nullable String approveDate) {
     this.approveDate = approveDate;
   }
 

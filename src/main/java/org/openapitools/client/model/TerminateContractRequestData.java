@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * TerminateContractRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TerminateContractRequestData {
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nullable
   private String message;
 
   public static final String SERIALIZED_NAME_TERMINATE_NOW = "terminate_now";
   @SerializedName(SERIALIZED_NAME_TERMINATE_NOW)
+  @javax.annotation.Nullable
   private Boolean terminateNow = false;
 
   public static final String SERIALIZED_NAME_COMPLETION_DATE = "completion_date";
   @SerializedName(SERIALIZED_NAME_COMPLETION_DATE)
+  @javax.annotation.Nullable
   private LocalDate completionDate;
 
   public TerminateContractRequestData() {
   }
 
-  public TerminateContractRequestData message(String message) {
+  public TerminateContractRequestData message(@javax.annotation.Nullable String message) {
     this.message = message;
     return this;
   }
@@ -80,12 +83,12 @@ public class TerminateContractRequestData {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nullable String message) {
     this.message = message;
   }
 
 
-  public TerminateContractRequestData terminateNow(Boolean terminateNow) {
+  public TerminateContractRequestData terminateNow(@javax.annotation.Nullable Boolean terminateNow) {
     this.terminateNow = terminateNow;
     return this;
   }
@@ -99,12 +102,12 @@ public class TerminateContractRequestData {
     return terminateNow;
   }
 
-  public void setTerminateNow(Boolean terminateNow) {
+  public void setTerminateNow(@javax.annotation.Nullable Boolean terminateNow) {
     this.terminateNow = terminateNow;
   }
 
 
-  public TerminateContractRequestData completionDate(LocalDate completionDate) {
+  public TerminateContractRequestData completionDate(@javax.annotation.Nullable LocalDate completionDate) {
     this.completionDate = completionDate;
     return this;
   }
@@ -118,7 +121,7 @@ public class TerminateContractRequestData {
     return completionDate;
   }
 
-  public void setCompletionDate(LocalDate completionDate) {
+  public void setCompletionDate(@javax.annotation.Nullable LocalDate completionDate) {
     this.completionDate = completionDate;
   }
 

@@ -50,28 +50,32 @@ import org.openapitools.client.JSON;
 /**
  * TimesheetToCreate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimesheetToCreate {
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nonnull
   private String contractId;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description = "";
 
   public static final String SERIALIZED_NAME_DATE_SUBMITTED = "date_submitted";
   @SerializedName(SERIALIZED_NAME_DATE_SUBMITTED)
+  @javax.annotation.Nonnull
   private LocalDate dateSubmitted;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nonnull
   private BigDecimal quantity;
 
   public TimesheetToCreate() {
   }
 
-  public TimesheetToCreate contractId(String contractId) {
+  public TimesheetToCreate contractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -85,12 +89,12 @@ public class TimesheetToCreate {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
   }
 
 
-  public TimesheetToCreate description(String description) {
+  public TimesheetToCreate description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -104,12 +108,12 @@ public class TimesheetToCreate {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public TimesheetToCreate dateSubmitted(LocalDate dateSubmitted) {
+  public TimesheetToCreate dateSubmitted(@javax.annotation.Nonnull LocalDate dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
     return this;
   }
@@ -123,12 +127,12 @@ public class TimesheetToCreate {
     return dateSubmitted;
   }
 
-  public void setDateSubmitted(LocalDate dateSubmitted) {
+  public void setDateSubmitted(@javax.annotation.Nonnull LocalDate dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
   }
 
 
-  public TimesheetToCreate quantity(BigDecimal quantity) {
+  public TimesheetToCreate quantity(@javax.annotation.Nonnull BigDecimal quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -143,7 +147,7 @@ public class TimesheetToCreate {
     return quantity;
   }
 
-  public void setQuantity(BigDecimal quantity) {
+  public void setQuantity(@javax.annotation.Nonnull BigDecimal quantity) {
     this.quantity = quantity;
   }
 

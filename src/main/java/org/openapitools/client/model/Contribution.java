@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * Pension contribution.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Contribution {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private BenefitContributionTypeEnum type;
 
   public static final String SERIALIZED_NAME_MINIMUM = "minimum";
   @SerializedName(SERIALIZED_NAME_MINIMUM)
+  @javax.annotation.Nullable
   private String minimum;
 
   public static final String SERIALIZED_NAME_MAXIMUM = "maximum";
   @SerializedName(SERIALIZED_NAME_MAXIMUM)
+  @javax.annotation.Nullable
   private String maximum;
 
   public Contribution() {
   }
 
-  public Contribution type(BenefitContributionTypeEnum type) {
+  public Contribution type(@javax.annotation.Nullable BenefitContributionTypeEnum type) {
     this.type = type;
     return this;
   }
@@ -80,12 +83,12 @@ public class Contribution {
     return type;
   }
 
-  public void setType(BenefitContributionTypeEnum type) {
+  public void setType(@javax.annotation.Nullable BenefitContributionTypeEnum type) {
     this.type = type;
   }
 
 
-  public Contribution minimum(String minimum) {
+  public Contribution minimum(@javax.annotation.Nullable String minimum) {
     this.minimum = minimum;
     return this;
   }
@@ -99,12 +102,12 @@ public class Contribution {
     return minimum;
   }
 
-  public void setMinimum(String minimum) {
+  public void setMinimum(@javax.annotation.Nullable String minimum) {
     this.minimum = minimum;
   }
 
 
-  public Contribution maximum(String maximum) {
+  public Contribution maximum(@javax.annotation.Nullable String maximum) {
     this.maximum = maximum;
     return this;
   }
@@ -118,7 +121,7 @@ public class Contribution {
     return maximum;
   }
 
-  public void setMaximum(String maximum) {
+  public void setMaximum(@javax.annotation.Nullable String maximum) {
     this.maximum = maximum;
   }
 

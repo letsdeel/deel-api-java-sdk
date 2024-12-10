@@ -49,18 +49,21 @@ import org.openapitools.client.JSON;
 /**
  * UpdateTimeOffRequestDataDatesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateTimeOffRequestDataDatesInner {
   public static final String SERIALIZED_NAME_DATE = "date";
   @SerializedName(SERIALIZED_NAME_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime date;
 
   public static final String SERIALIZED_NAME_HOURS = "hours";
   @SerializedName(SERIALIZED_NAME_HOURS)
+  @javax.annotation.Nullable
   private Float hours;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private Float amount;
 
   /**
@@ -117,12 +120,13 @@ public class UpdateTimeOffRequestDataDatesInner {
 
   public static final String SERIALIZED_NAME_DAY_TYPE = "day_type";
   @SerializedName(SERIALIZED_NAME_DAY_TYPE)
+  @javax.annotation.Nullable
   private DayTypeEnum dayType;
 
   public UpdateTimeOffRequestDataDatesInner() {
   }
 
-  public UpdateTimeOffRequestDataDatesInner date(OffsetDateTime date) {
+  public UpdateTimeOffRequestDataDatesInner date(@javax.annotation.Nonnull OffsetDateTime date) {
     this.date = date;
     return this;
   }
@@ -136,12 +140,12 @@ public class UpdateTimeOffRequestDataDatesInner {
     return date;
   }
 
-  public void setDate(OffsetDateTime date) {
+  public void setDate(@javax.annotation.Nonnull OffsetDateTime date) {
     this.date = date;
   }
 
 
-  public UpdateTimeOffRequestDataDatesInner hours(Float hours) {
+  public UpdateTimeOffRequestDataDatesInner hours(@javax.annotation.Nullable Float hours) {
     this.hours = hours;
     return this;
   }
@@ -155,12 +159,12 @@ public class UpdateTimeOffRequestDataDatesInner {
     return hours;
   }
 
-  public void setHours(Float hours) {
+  public void setHours(@javax.annotation.Nullable Float hours) {
     this.hours = hours;
   }
 
 
-  public UpdateTimeOffRequestDataDatesInner amount(Float amount) {
+  public UpdateTimeOffRequestDataDatesInner amount(@javax.annotation.Nullable Float amount) {
     this.amount = amount;
     return this;
   }
@@ -174,12 +178,12 @@ public class UpdateTimeOffRequestDataDatesInner {
     return amount;
   }
 
-  public void setAmount(Float amount) {
+  public void setAmount(@javax.annotation.Nullable Float amount) {
     this.amount = amount;
   }
 
 
-  public UpdateTimeOffRequestDataDatesInner dayType(DayTypeEnum dayType) {
+  public UpdateTimeOffRequestDataDatesInner dayType(@javax.annotation.Nullable DayTypeEnum dayType) {
     this.dayType = dayType;
     return this;
   }
@@ -193,7 +197,7 @@ public class UpdateTimeOffRequestDataDatesInner {
     return dayType;
   }
 
-  public void setDayType(DayTypeEnum dayType) {
+  public void setDayType(@javax.annotation.Nullable DayTypeEnum dayType) {
     this.dayType = dayType;
   }
 

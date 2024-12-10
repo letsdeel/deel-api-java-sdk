@@ -51,36 +51,42 @@ import org.openapitools.client.JSON;
 /**
  * Country
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Country {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
+  @javax.annotation.Nonnull
   private String code;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_VISA_SUPPORT = "visa_support";
   @SerializedName(SERIALIZED_NAME_VISA_SUPPORT)
+  @javax.annotation.Nonnull
   private Boolean visaSupport;
 
   public static final String SERIALIZED_NAME_EOR_SUPPORT = "eor_support";
   @SerializedName(SERIALIZED_NAME_EOR_SUPPORT)
+  @javax.annotation.Nonnull
   private Boolean eorSupport;
 
   public static final String SERIALIZED_NAME_STATE_TYPE = "state_type";
   @SerializedName(SERIALIZED_NAME_STATE_TYPE)
+  @javax.annotation.Nullable
   private String stateType;
 
   public static final String SERIALIZED_NAME_STATES = "states";
   @SerializedName(SERIALIZED_NAME_STATES)
+  @javax.annotation.Nonnull
   private List<StateOfCountry> states = new ArrayList<>();
 
   public Country() {
   }
 
-  public Country code(String code) {
+  public Country code(@javax.annotation.Nonnull String code) {
     this.code = code;
     return this;
   }
@@ -94,12 +100,12 @@ public class Country {
     return code;
   }
 
-  public void setCode(String code) {
+  public void setCode(@javax.annotation.Nonnull String code) {
     this.code = code;
   }
 
 
-  public Country name(String name) {
+  public Country name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -113,12 +119,12 @@ public class Country {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public Country visaSupport(Boolean visaSupport) {
+  public Country visaSupport(@javax.annotation.Nonnull Boolean visaSupport) {
     this.visaSupport = visaSupport;
     return this;
   }
@@ -132,12 +138,12 @@ public class Country {
     return visaSupport;
   }
 
-  public void setVisaSupport(Boolean visaSupport) {
+  public void setVisaSupport(@javax.annotation.Nonnull Boolean visaSupport) {
     this.visaSupport = visaSupport;
   }
 
 
-  public Country eorSupport(Boolean eorSupport) {
+  public Country eorSupport(@javax.annotation.Nonnull Boolean eorSupport) {
     this.eorSupport = eorSupport;
     return this;
   }
@@ -151,12 +157,12 @@ public class Country {
     return eorSupport;
   }
 
-  public void setEorSupport(Boolean eorSupport) {
+  public void setEorSupport(@javax.annotation.Nonnull Boolean eorSupport) {
     this.eorSupport = eorSupport;
   }
 
 
-  public Country stateType(String stateType) {
+  public Country stateType(@javax.annotation.Nullable String stateType) {
     this.stateType = stateType;
     return this;
   }
@@ -170,12 +176,12 @@ public class Country {
     return stateType;
   }
 
-  public void setStateType(String stateType) {
+  public void setStateType(@javax.annotation.Nullable String stateType) {
     this.stateType = stateType;
   }
 
 
-  public Country states(List<StateOfCountry> states) {
+  public Country states(@javax.annotation.Nonnull List<StateOfCountry> states) {
     this.states = states;
     return this;
   }
@@ -197,7 +203,7 @@ public class Country {
     return states;
   }
 
-  public void setStates(List<StateOfCountry> states) {
+  public void setStates(@javax.annotation.Nonnull List<StateOfCountry> states) {
     this.states = states;
   }
 

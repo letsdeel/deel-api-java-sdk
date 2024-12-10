@@ -53,36 +53,42 @@ import org.openapitools.client.JSON;
 /**
  * HrisDirectEmployeeToCreateContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisDirectEmployeeToCreateContainerData {
   public static final String SERIALIZED_NAME_EMPLOYEE = "employee";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE)
+  @javax.annotation.Nonnull
   private HrisDirectEmployeeToCreateContainerDataEmployee employee;
 
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
+  @javax.annotation.Nonnull
   private HrisDirectEmployeeToCreateContainerDataClient client;
 
   public static final String SERIALIZED_NAME_EMPLOYMENT = "employment";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT)
+  @javax.annotation.Nonnull
   private HrisDirectEmployeeToCreateContainerDataEmployment employment;
 
   public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
   @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
+  @javax.annotation.Nonnull
   private HrisDirectEmployeeToCreateContainerDataCompensationDetails compensationDetails;
 
   public static final String SERIALIZED_NAME_SENIORITY = "seniority";
   @SerializedName(SERIALIZED_NAME_SENIORITY)
+  @javax.annotation.Nonnull
   private HrisDirectEmployeeToCreateContainerDataSeniority seniority;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nonnull
   private HrisDirectEmployeeToCreateContainerDataSeniority jobTitle;
 
   public HrisDirectEmployeeToCreateContainerData() {
   }
 
-  public HrisDirectEmployeeToCreateContainerData employee(HrisDirectEmployeeToCreateContainerDataEmployee employee) {
+  public HrisDirectEmployeeToCreateContainerData employee(@javax.annotation.Nonnull HrisDirectEmployeeToCreateContainerDataEmployee employee) {
     this.employee = employee;
     return this;
   }
@@ -96,12 +102,12 @@ public class HrisDirectEmployeeToCreateContainerData {
     return employee;
   }
 
-  public void setEmployee(HrisDirectEmployeeToCreateContainerDataEmployee employee) {
+  public void setEmployee(@javax.annotation.Nonnull HrisDirectEmployeeToCreateContainerDataEmployee employee) {
     this.employee = employee;
   }
 
 
-  public HrisDirectEmployeeToCreateContainerData client(HrisDirectEmployeeToCreateContainerDataClient client) {
+  public HrisDirectEmployeeToCreateContainerData client(@javax.annotation.Nonnull HrisDirectEmployeeToCreateContainerDataClient client) {
     this.client = client;
     return this;
   }
@@ -115,12 +121,12 @@ public class HrisDirectEmployeeToCreateContainerData {
     return client;
   }
 
-  public void setClient(HrisDirectEmployeeToCreateContainerDataClient client) {
+  public void setClient(@javax.annotation.Nonnull HrisDirectEmployeeToCreateContainerDataClient client) {
     this.client = client;
   }
 
 
-  public HrisDirectEmployeeToCreateContainerData employment(HrisDirectEmployeeToCreateContainerDataEmployment employment) {
+  public HrisDirectEmployeeToCreateContainerData employment(@javax.annotation.Nonnull HrisDirectEmployeeToCreateContainerDataEmployment employment) {
     this.employment = employment;
     return this;
   }
@@ -134,12 +140,12 @@ public class HrisDirectEmployeeToCreateContainerData {
     return employment;
   }
 
-  public void setEmployment(HrisDirectEmployeeToCreateContainerDataEmployment employment) {
+  public void setEmployment(@javax.annotation.Nonnull HrisDirectEmployeeToCreateContainerDataEmployment employment) {
     this.employment = employment;
   }
 
 
-  public HrisDirectEmployeeToCreateContainerData compensationDetails(HrisDirectEmployeeToCreateContainerDataCompensationDetails compensationDetails) {
+  public HrisDirectEmployeeToCreateContainerData compensationDetails(@javax.annotation.Nonnull HrisDirectEmployeeToCreateContainerDataCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
     return this;
   }
@@ -153,12 +159,12 @@ public class HrisDirectEmployeeToCreateContainerData {
     return compensationDetails;
   }
 
-  public void setCompensationDetails(HrisDirectEmployeeToCreateContainerDataCompensationDetails compensationDetails) {
+  public void setCompensationDetails(@javax.annotation.Nonnull HrisDirectEmployeeToCreateContainerDataCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
   }
 
 
-  public HrisDirectEmployeeToCreateContainerData seniority(HrisDirectEmployeeToCreateContainerDataSeniority seniority) {
+  public HrisDirectEmployeeToCreateContainerData seniority(@javax.annotation.Nonnull HrisDirectEmployeeToCreateContainerDataSeniority seniority) {
     this.seniority = seniority;
     return this;
   }
@@ -172,12 +178,12 @@ public class HrisDirectEmployeeToCreateContainerData {
     return seniority;
   }
 
-  public void setSeniority(HrisDirectEmployeeToCreateContainerDataSeniority seniority) {
+  public void setSeniority(@javax.annotation.Nonnull HrisDirectEmployeeToCreateContainerDataSeniority seniority) {
     this.seniority = seniority;
   }
 
 
-  public HrisDirectEmployeeToCreateContainerData jobTitle(HrisDirectEmployeeToCreateContainerDataSeniority jobTitle) {
+  public HrisDirectEmployeeToCreateContainerData jobTitle(@javax.annotation.Nonnull HrisDirectEmployeeToCreateContainerDataSeniority jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -191,7 +197,7 @@ public class HrisDirectEmployeeToCreateContainerData {
     return jobTitle;
   }
 
-  public void setJobTitle(HrisDirectEmployeeToCreateContainerDataSeniority jobTitle) {
+  public void setJobTitle(@javax.annotation.Nonnull HrisDirectEmployeeToCreateContainerDataSeniority jobTitle) {
     this.jobTitle = jobTitle;
   }
 

@@ -53,32 +53,37 @@ import org.openapitools.client.JSON;
 /**
  * GetEorCountryValidations200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetEorCountryValidations200ResponseData {
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
+  @javax.annotation.Nullable
   private GetEorCountryValidations200ResponseDataSalary salary;
 
   public static final String SERIALIZED_NAME_HOLIDAY = "holiday";
   @SerializedName(SERIALIZED_NAME_HOLIDAY)
+  @javax.annotation.Nullable
   private GetEorCountryValidations200ResponseDataHoliday holiday;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_PROBATION = "probation";
   @SerializedName(SERIALIZED_NAME_PROBATION)
+  @javax.annotation.Nullable
   private GetEorCountryValidations200ResponseDataProbation probation;
 
   public static final String SERIALIZED_NAME_HEALTH_INSURANCE = "health_insurance";
   @SerializedName(SERIALIZED_NAME_HEALTH_INSURANCE)
+  @javax.annotation.Nullable
   private GetEorCountryValidations200ResponseDataHealthInsurance healthInsurance;
 
   public GetEorCountryValidations200ResponseData() {
   }
 
-  public GetEorCountryValidations200ResponseData salary(GetEorCountryValidations200ResponseDataSalary salary) {
+  public GetEorCountryValidations200ResponseData salary(@javax.annotation.Nullable GetEorCountryValidations200ResponseDataSalary salary) {
     this.salary = salary;
     return this;
   }
@@ -92,12 +97,12 @@ public class GetEorCountryValidations200ResponseData {
     return salary;
   }
 
-  public void setSalary(GetEorCountryValidations200ResponseDataSalary salary) {
+  public void setSalary(@javax.annotation.Nullable GetEorCountryValidations200ResponseDataSalary salary) {
     this.salary = salary;
   }
 
 
-  public GetEorCountryValidations200ResponseData holiday(GetEorCountryValidations200ResponseDataHoliday holiday) {
+  public GetEorCountryValidations200ResponseData holiday(@javax.annotation.Nullable GetEorCountryValidations200ResponseDataHoliday holiday) {
     this.holiday = holiday;
     return this;
   }
@@ -111,12 +116,12 @@ public class GetEorCountryValidations200ResponseData {
     return holiday;
   }
 
-  public void setHoliday(GetEorCountryValidations200ResponseDataHoliday holiday) {
+  public void setHoliday(@javax.annotation.Nullable GetEorCountryValidations200ResponseDataHoliday holiday) {
     this.holiday = holiday;
   }
 
 
-  public GetEorCountryValidations200ResponseData currency(String currency) {
+  public GetEorCountryValidations200ResponseData currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -130,12 +135,12 @@ public class GetEorCountryValidations200ResponseData {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public GetEorCountryValidations200ResponseData probation(GetEorCountryValidations200ResponseDataProbation probation) {
+  public GetEorCountryValidations200ResponseData probation(@javax.annotation.Nullable GetEorCountryValidations200ResponseDataProbation probation) {
     this.probation = probation;
     return this;
   }
@@ -149,12 +154,12 @@ public class GetEorCountryValidations200ResponseData {
     return probation;
   }
 
-  public void setProbation(GetEorCountryValidations200ResponseDataProbation probation) {
+  public void setProbation(@javax.annotation.Nullable GetEorCountryValidations200ResponseDataProbation probation) {
     this.probation = probation;
   }
 
 
-  public GetEorCountryValidations200ResponseData healthInsurance(GetEorCountryValidations200ResponseDataHealthInsurance healthInsurance) {
+  public GetEorCountryValidations200ResponseData healthInsurance(@javax.annotation.Nullable GetEorCountryValidations200ResponseDataHealthInsurance healthInsurance) {
     this.healthInsurance = healthInsurance;
     return this;
   }
@@ -168,7 +173,7 @@ public class GetEorCountryValidations200ResponseData {
     return healthInsurance;
   }
 
-  public void setHealthInsurance(GetEorCountryValidations200ResponseDataHealthInsurance healthInsurance) {
+  public void setHealthInsurance(@javax.annotation.Nullable GetEorCountryValidations200ResponseDataHealthInsurance healthInsurance) {
     this.healthInsurance = healthInsurance;
   }
 

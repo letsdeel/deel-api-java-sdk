@@ -5,7 +5,6 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**createAdjustment**](AdjustmentsApi.md#createAdjustment) | **POST** /adjustments | Create a new adjustment |
-| [**createFileRef**](AdjustmentsApi.md#createFileRef) | **POST** /attachments | Upload file to Deel |
 | [**deleteAdjustment**](AdjustmentsApi.md#deleteAdjustment) | **DELETE** /adjustments/{id} | Delete an adjustment |
 | [**getAdjustments**](AdjustmentsApi.md#getAdjustments) | **GET** /contracts/{contract_id}/adjustments | Retrieve adjustments |
 | [**getAdjustmentsById**](AdjustmentsApi.md#getAdjustmentsById) | **GET** /adjustments/{id} | Retrieve an adjustment |
@@ -87,84 +86,6 @@ public class Example {
 | **401** | Operation failed. |  -  |
 | **403** | Operation failed. |  -  |
 | **404** | Operation failed. |  -  |
-| **500** | Operation failed. |  -  |
-
-<a id="createFileRef"></a>
-# **createFileRef**
-> OutputToCreateFileRefContainer createFileRef(inputToCreateFileRef).execute();
-
-Upload file to Deel
-
-Upload file to Deel storage to use the file attachment feature for other endpoints.
-
-### Example
-```java
-// Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.AdjustmentsApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.letsdeel.com/rest/v2");
-    
-    // Configure HTTP bearer authorization: deelToken
-    HttpBearerAuth deelToken = (HttpBearerAuth) defaultClient.getAuthentication("deelToken");
-    deelToken.setBearerToken("BEARER TOKEN");
-
-    // Configure OAuth2 access token for authorization: oauth2
-    OAuth oauth2 = (OAuth) defaultClient.getAuthentication("oauth2");
-    oauth2.setAccessToken("YOUR ACCESS TOKEN");
-
-    AdjustmentsApi apiInstance = new AdjustmentsApi(defaultClient);
-    InputToCreateFileRef inputToCreateFileRef = new InputToCreateFileRef(); // InputToCreateFileRef | File info object that needs to be created.
-    try {
-      OutputToCreateFileRefContainer result = apiInstance.createFileRef(inputToCreateFileRef)
-            .execute();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AdjustmentsApi#createFileRef");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **inputToCreateFileRef** | [**InputToCreateFileRef**](InputToCreateFileRef.md)| File info object that needs to be created. | |
-
-### Return type
-
-[**OutputToCreateFileRefContainer**](OutputToCreateFileRefContainer.md)
-
-### Authorization
-
-[deelToken](../README.md#deelToken), [oauth2](../README.md#oauth2)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation. |  -  |
-| **401** | Operation failed. |  -  |
-| **403** | Operation failed. |  -  |
-| **404** | Operation failed. |  -  |
-| **405** | Operation failed. |  -  |
-| **429** | Operation failed. |  -  |
 | **500** | Operation failed. |  -  |
 
 <a id="deleteAdjustment"></a>

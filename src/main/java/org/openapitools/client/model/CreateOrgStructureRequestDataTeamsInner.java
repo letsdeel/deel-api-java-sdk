@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * CreateOrgStructureRequestDataTeamsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateOrgStructureRequestDataTeamsInner {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public CreateOrgStructureRequestDataTeamsInner() {
   }
 
-  public CreateOrgStructureRequestDataTeamsInner name(String name) {
+  public CreateOrgStructureRequestDataTeamsInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -75,12 +77,12 @@ public class CreateOrgStructureRequestDataTeamsInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public CreateOrgStructureRequestDataTeamsInner externalId(String externalId) {
+  public CreateOrgStructureRequestDataTeamsInner externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -94,7 +96,7 @@ public class CreateOrgStructureRequestDataTeamsInner {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 

@@ -25,6 +25,7 @@ import org.openapitools.client.model.ContractSearchFormWithoutCursorCurrencies;
 import org.openapitools.client.model.ContractSearchFormWithoutCursorStatuses;
 import org.openapitools.client.model.ContractSearchFormWithoutCursorTypes;
 import org.openapitools.client.model.ContractsSortByEnum;
+import org.openapitools.client.model.IdentifierValueForFilter;
 import org.openapitools.client.model.SortDirEnum;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

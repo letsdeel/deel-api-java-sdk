@@ -50,44 +50,52 @@ import org.openapitools.client.JSON;
 /**
  * CreateShifts201ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateShifts201ResponseDataInner {
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
+  @javax.annotation.Nullable
   private CreateShifts201ResponseDataInnerMeta meta;
 
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
+  @javax.annotation.Nonnull
   private CreateShifts201ResponseDataInnerSummary summary;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private String createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private String updatedAt;
 
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nonnull
   private String contractId;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nonnull
   private String externalId;
 
   public static final String SERIALIZED_NAME_DATE_OF_WORK = "date_of_work";
   @SerializedName(SERIALIZED_NAME_DATE_OF_WORK)
+  @javax.annotation.Nonnull
   private String dateOfWork;
 
   public CreateShifts201ResponseDataInner() {
   }
 
-  public CreateShifts201ResponseDataInner meta(CreateShifts201ResponseDataInnerMeta meta) {
+  public CreateShifts201ResponseDataInner meta(@javax.annotation.Nullable CreateShifts201ResponseDataInnerMeta meta) {
     this.meta = meta;
     return this;
   }
@@ -101,12 +109,12 @@ public class CreateShifts201ResponseDataInner {
     return meta;
   }
 
-  public void setMeta(CreateShifts201ResponseDataInnerMeta meta) {
+  public void setMeta(@javax.annotation.Nullable CreateShifts201ResponseDataInnerMeta meta) {
     this.meta = meta;
   }
 
 
-  public CreateShifts201ResponseDataInner summary(CreateShifts201ResponseDataInnerSummary summary) {
+  public CreateShifts201ResponseDataInner summary(@javax.annotation.Nonnull CreateShifts201ResponseDataInnerSummary summary) {
     this.summary = summary;
     return this;
   }
@@ -120,12 +128,12 @@ public class CreateShifts201ResponseDataInner {
     return summary;
   }
 
-  public void setSummary(CreateShifts201ResponseDataInnerSummary summary) {
+  public void setSummary(@javax.annotation.Nonnull CreateShifts201ResponseDataInnerSummary summary) {
     this.summary = summary;
   }
 
 
-  public CreateShifts201ResponseDataInner createdAt(String createdAt) {
+  public CreateShifts201ResponseDataInner createdAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -139,12 +147,12 @@ public class CreateShifts201ResponseDataInner {
     return createdAt;
   }
 
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public CreateShifts201ResponseDataInner updatedAt(String updatedAt) {
+  public CreateShifts201ResponseDataInner updatedAt(@javax.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -158,12 +166,12 @@ public class CreateShifts201ResponseDataInner {
     return updatedAt;
   }
 
-  public void setUpdatedAt(String updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public CreateShifts201ResponseDataInner contractId(String contractId) {
+  public CreateShifts201ResponseDataInner contractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -177,12 +185,12 @@ public class CreateShifts201ResponseDataInner {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
   }
 
 
-  public CreateShifts201ResponseDataInner description(String description) {
+  public CreateShifts201ResponseDataInner description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -196,12 +204,12 @@ public class CreateShifts201ResponseDataInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public CreateShifts201ResponseDataInner externalId(String externalId) {
+  public CreateShifts201ResponseDataInner externalId(@javax.annotation.Nonnull String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -215,12 +223,12 @@ public class CreateShifts201ResponseDataInner {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nonnull String externalId) {
     this.externalId = externalId;
   }
 
 
-  public CreateShifts201ResponseDataInner dateOfWork(String dateOfWork) {
+  public CreateShifts201ResponseDataInner dateOfWork(@javax.annotation.Nonnull String dateOfWork) {
     this.dateOfWork = dateOfWork;
     return this;
   }
@@ -234,7 +242,7 @@ public class CreateShifts201ResponseDataInner {
     return dateOfWork;
   }
 
-  public void setDateOfWork(String dateOfWork) {
+  public void setDateOfWork(@javax.annotation.Nonnull String dateOfWork) {
     this.dateOfWork = dateOfWork;
   }
 

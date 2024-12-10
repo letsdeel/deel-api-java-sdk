@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * GetInvoiceAdjustments200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetInvoiceAdjustments200Response {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private List<GetInvoiceAdjustmentsByContractId200ResponseDataInner> data = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAGE = "page";
   @SerializedName(SERIALIZED_NAME_PAGE)
+  @javax.annotation.Nonnull
   private GetInvoiceAdjustments200ResponsePage page;
 
   public GetInvoiceAdjustments200Response() {
   }
 
-  public GetInvoiceAdjustments200Response data(List<GetInvoiceAdjustmentsByContractId200ResponseDataInner> data) {
+  public GetInvoiceAdjustments200Response data(@javax.annotation.Nonnull List<GetInvoiceAdjustmentsByContractId200ResponseDataInner> data) {
     this.data = data;
     return this;
   }
@@ -87,12 +89,12 @@ public class GetInvoiceAdjustments200Response {
     return data;
   }
 
-  public void setData(List<GetInvoiceAdjustmentsByContractId200ResponseDataInner> data) {
+  public void setData(@javax.annotation.Nonnull List<GetInvoiceAdjustmentsByContractId200ResponseDataInner> data) {
     this.data = data;
   }
 
 
-  public GetInvoiceAdjustments200Response page(GetInvoiceAdjustments200ResponsePage page) {
+  public GetInvoiceAdjustments200Response page(@javax.annotation.Nonnull GetInvoiceAdjustments200ResponsePage page) {
     this.page = page;
     return this;
   }
@@ -106,7 +108,7 @@ public class GetInvoiceAdjustments200Response {
     return page;
   }
 
-  public void setPage(GetInvoiceAdjustments200ResponsePage page) {
+  public void setPage(@javax.annotation.Nonnull GetInvoiceAdjustments200ResponsePage page) {
     this.page = page;
   }
 

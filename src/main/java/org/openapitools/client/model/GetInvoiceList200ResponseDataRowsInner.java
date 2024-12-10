@@ -51,30 +51,36 @@ import org.openapitools.client.JSON;
 /**
  * GetInvoiceList200ResponseDataRowsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetInvoiceList200ResponseDataRowsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_FEE = "fee";
   @SerializedName(SERIALIZED_NAME_FEE)
+  @javax.annotation.Nullable
   private String fee;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nonnull
   private String label;
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
+  @javax.annotation.Nonnull
   private String total;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private String amount;
 
   /**
@@ -141,108 +147,133 @@ public class GetInvoiceList200ResponseDataRowsInner {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_VAT_ID = "vat_id";
   @SerializedName(SERIALIZED_NAME_VAT_ID)
+  @javax.annotation.Nullable
   private String vatId;
 
   public static final String SERIALIZED_NAME_PAID_AT = "paid_at";
   @SerializedName(SERIALIZED_NAME_PAID_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime paidAt;
 
   public static final String SERIALIZED_NAME_CONTRACT = "contract";
   @SerializedName(SERIALIZED_NAME_CONTRACT)
+  @javax.annotation.Nonnull
   private GetInvoiceList200ResponseDataRowsInnerContract contract;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nonnull
   private String currency;
 
   public static final String SERIALIZED_NAME_DEEL_FEE = "deel_fee";
   @SerializedName(SERIALIZED_NAME_DEEL_FEE)
+  @javax.annotation.Nullable
   private String deelFee;
 
   public static final String SERIALIZED_NAME_DUE_DATE = "due_date";
   @SerializedName(SERIALIZED_NAME_DUE_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime dueDate;
 
   public static final String SERIALIZED_NAME_IS_SEALED = "is_sealed";
   @SerializedName(SERIALIZED_NAME_IS_SEALED)
+  @javax.annotation.Nullable
   private Boolean isSealed;
 
   public static final String SERIALIZED_NAME_ISSUED_AT = "issued_at";
   @SerializedName(SERIALIZED_NAME_ISSUED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime issuedAt;
 
   public static final String SERIALIZED_NAME_VAT_TOTAL = "vat_total";
   @SerializedName(SERIALIZED_NAME_VAT_TOTAL)
+  @javax.annotation.Nullable
   private String vatTotal;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_IS_OVERDUE = "is_overdue";
   @SerializedName(SERIALIZED_NAME_IS_OVERDUE)
+  @javax.annotation.Nullable
   private Boolean isOverdue;
 
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nonnull
   private String contractId;
 
   public static final String SERIALIZED_NAME_IS_OFFCYCLE = "is_offcycle";
   @SerializedName(SERIALIZED_NAME_IS_OFFCYCLE)
+  @javax.annotation.Nullable
   private Boolean isOffcycle;
 
   public static final String SERIALIZED_NAME_EXCHANGE_FEE = "exchange_fee";
   @SerializedName(SERIALIZED_NAME_EXCHANGE_FEE)
+  @javax.annotation.Nullable
   private String exchangeFee;
 
   public static final String SERIALIZED_NAME_PROCESSED_AT = "processed_at";
   @SerializedName(SERIALIZED_NAME_PROCESSED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime processedAt;
 
   public static final String SERIALIZED_NAME_HAS_BREAKDOWN = "has_breakdown";
   @SerializedName(SERIALIZED_NAME_HAS_BREAKDOWN)
+  @javax.annotation.Nullable
   private Boolean hasBreakdown;
 
   public static final String SERIALIZED_NAME_IS_EARLY_PAID = "is_early_paid";
   @SerializedName(SERIALIZED_NAME_IS_EARLY_PAID)
+  @javax.annotation.Nullable
   private Boolean isEarlyPaid;
 
   public static final String SERIALIZED_NAME_PAYMENT_METHOD = "payment_method";
   @SerializedName(SERIALIZED_NAME_PAYMENT_METHOD)
+  @javax.annotation.Nullable
   private String paymentMethod;
 
   public static final String SERIALIZED_NAME_VAT_PERCENTAGE = "vat_percentage";
   @SerializedName(SERIALIZED_NAME_VAT_PERCENTAGE)
+  @javax.annotation.Nullable
   private String vatPercentage;
 
   public static final String SERIALIZED_NAME_EARLY_PAYOUT_FEE = "early_payout_fee";
   @SerializedName(SERIALIZED_NAME_EARLY_PAYOUT_FEE)
+  @javax.annotation.Nullable
   private String earlyPayoutFee;
 
   public static final String SERIALIZED_NAME_PAYMENT_CURRENCY = "payment_currency";
   @SerializedName(SERIALIZED_NAME_PAYMENT_CURRENCY)
+  @javax.annotation.Nullable
   private String paymentCurrency;
 
   public static final String SERIALIZED_NAME_MONEY_RECEIVED_AT = "money_received_at";
   @SerializedName(SERIALIZED_NAME_MONEY_RECEIVED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime moneyReceivedAt;
 
   public static final String SERIALIZED_NAME_PAYMENT_PROCESSED_AT = "payment_processed_at";
   @SerializedName(SERIALIZED_NAME_PAYMENT_PROCESSED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime paymentProcessedAt;
 
   public static final String SERIALIZED_NAME_IS_PAID_TO_CONTRACTOR = "is_paid_to_contractor";
   @SerializedName(SERIALIZED_NAME_IS_PAID_TO_CONTRACTOR)
+  @javax.annotation.Nullable
   private Boolean isPaidToContractor;
 
   public GetInvoiceList200ResponseDataRowsInner() {
   }
 
-  public GetInvoiceList200ResponseDataRowsInner id(String id) {
+  public GetInvoiceList200ResponseDataRowsInner id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -256,12 +287,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner fee(String fee) {
+  public GetInvoiceList200ResponseDataRowsInner fee(@javax.annotation.Nullable String fee) {
     this.fee = fee;
     return this;
   }
@@ -275,12 +306,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return fee;
   }
 
-  public void setFee(String fee) {
+  public void setFee(@javax.annotation.Nullable String fee) {
     this.fee = fee;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner type(String type) {
+  public GetInvoiceList200ResponseDataRowsInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -294,12 +325,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner label(String label) {
+  public GetInvoiceList200ResponseDataRowsInner label(@javax.annotation.Nonnull String label) {
     this.label = label;
     return this;
   }
@@ -313,12 +344,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nonnull String label) {
     this.label = label;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner total(String total) {
+  public GetInvoiceList200ResponseDataRowsInner total(@javax.annotation.Nonnull String total) {
     this.total = total;
     return this;
   }
@@ -332,12 +363,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return total;
   }
 
-  public void setTotal(String total) {
+  public void setTotal(@javax.annotation.Nonnull String total) {
     this.total = total;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner amount(String amount) {
+  public GetInvoiceList200ResponseDataRowsInner amount(@javax.annotation.Nullable String amount) {
     this.amount = amount;
     return this;
   }
@@ -351,12 +382,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return amount;
   }
 
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nullable String amount) {
     this.amount = amount;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner status(StatusEnum status) {
+  public GetInvoiceList200ResponseDataRowsInner status(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -370,12 +401,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner vatId(String vatId) {
+  public GetInvoiceList200ResponseDataRowsInner vatId(@javax.annotation.Nullable String vatId) {
     this.vatId = vatId;
     return this;
   }
@@ -389,12 +420,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return vatId;
   }
 
-  public void setVatId(String vatId) {
+  public void setVatId(@javax.annotation.Nullable String vatId) {
     this.vatId = vatId;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner paidAt(OffsetDateTime paidAt) {
+  public GetInvoiceList200ResponseDataRowsInner paidAt(@javax.annotation.Nullable OffsetDateTime paidAt) {
     this.paidAt = paidAt;
     return this;
   }
@@ -408,12 +439,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return paidAt;
   }
 
-  public void setPaidAt(OffsetDateTime paidAt) {
+  public void setPaidAt(@javax.annotation.Nullable OffsetDateTime paidAt) {
     this.paidAt = paidAt;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner contract(GetInvoiceList200ResponseDataRowsInnerContract contract) {
+  public GetInvoiceList200ResponseDataRowsInner contract(@javax.annotation.Nonnull GetInvoiceList200ResponseDataRowsInnerContract contract) {
     this.contract = contract;
     return this;
   }
@@ -427,12 +458,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return contract;
   }
 
-  public void setContract(GetInvoiceList200ResponseDataRowsInnerContract contract) {
+  public void setContract(@javax.annotation.Nonnull GetInvoiceList200ResponseDataRowsInnerContract contract) {
     this.contract = contract;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner currency(String currency) {
+  public GetInvoiceList200ResponseDataRowsInner currency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
     return this;
   }
@@ -446,12 +477,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner deelFee(String deelFee) {
+  public GetInvoiceList200ResponseDataRowsInner deelFee(@javax.annotation.Nullable String deelFee) {
     this.deelFee = deelFee;
     return this;
   }
@@ -465,12 +496,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return deelFee;
   }
 
-  public void setDeelFee(String deelFee) {
+  public void setDeelFee(@javax.annotation.Nullable String deelFee) {
     this.deelFee = deelFee;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner dueDate(OffsetDateTime dueDate) {
+  public GetInvoiceList200ResponseDataRowsInner dueDate(@javax.annotation.Nullable OffsetDateTime dueDate) {
     this.dueDate = dueDate;
     return this;
   }
@@ -484,12 +515,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return dueDate;
   }
 
-  public void setDueDate(OffsetDateTime dueDate) {
+  public void setDueDate(@javax.annotation.Nullable OffsetDateTime dueDate) {
     this.dueDate = dueDate;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner isSealed(Boolean isSealed) {
+  public GetInvoiceList200ResponseDataRowsInner isSealed(@javax.annotation.Nullable Boolean isSealed) {
     this.isSealed = isSealed;
     return this;
   }
@@ -503,12 +534,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return isSealed;
   }
 
-  public void setIsSealed(Boolean isSealed) {
+  public void setIsSealed(@javax.annotation.Nullable Boolean isSealed) {
     this.isSealed = isSealed;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner issuedAt(OffsetDateTime issuedAt) {
+  public GetInvoiceList200ResponseDataRowsInner issuedAt(@javax.annotation.Nullable OffsetDateTime issuedAt) {
     this.issuedAt = issuedAt;
     return this;
   }
@@ -522,12 +553,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return issuedAt;
   }
 
-  public void setIssuedAt(OffsetDateTime issuedAt) {
+  public void setIssuedAt(@javax.annotation.Nullable OffsetDateTime issuedAt) {
     this.issuedAt = issuedAt;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner vatTotal(String vatTotal) {
+  public GetInvoiceList200ResponseDataRowsInner vatTotal(@javax.annotation.Nullable String vatTotal) {
     this.vatTotal = vatTotal;
     return this;
   }
@@ -541,12 +572,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return vatTotal;
   }
 
-  public void setVatTotal(String vatTotal) {
+  public void setVatTotal(@javax.annotation.Nullable String vatTotal) {
     this.vatTotal = vatTotal;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner createdAt(OffsetDateTime createdAt) {
+  public GetInvoiceList200ResponseDataRowsInner createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -560,12 +591,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner isOverdue(Boolean isOverdue) {
+  public GetInvoiceList200ResponseDataRowsInner isOverdue(@javax.annotation.Nullable Boolean isOverdue) {
     this.isOverdue = isOverdue;
     return this;
   }
@@ -579,12 +610,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return isOverdue;
   }
 
-  public void setIsOverdue(Boolean isOverdue) {
+  public void setIsOverdue(@javax.annotation.Nullable Boolean isOverdue) {
     this.isOverdue = isOverdue;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner contractId(String contractId) {
+  public GetInvoiceList200ResponseDataRowsInner contractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -598,12 +629,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner isOffcycle(Boolean isOffcycle) {
+  public GetInvoiceList200ResponseDataRowsInner isOffcycle(@javax.annotation.Nullable Boolean isOffcycle) {
     this.isOffcycle = isOffcycle;
     return this;
   }
@@ -617,12 +648,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return isOffcycle;
   }
 
-  public void setIsOffcycle(Boolean isOffcycle) {
+  public void setIsOffcycle(@javax.annotation.Nullable Boolean isOffcycle) {
     this.isOffcycle = isOffcycle;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner exchangeFee(String exchangeFee) {
+  public GetInvoiceList200ResponseDataRowsInner exchangeFee(@javax.annotation.Nullable String exchangeFee) {
     this.exchangeFee = exchangeFee;
     return this;
   }
@@ -636,12 +667,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return exchangeFee;
   }
 
-  public void setExchangeFee(String exchangeFee) {
+  public void setExchangeFee(@javax.annotation.Nullable String exchangeFee) {
     this.exchangeFee = exchangeFee;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner processedAt(OffsetDateTime processedAt) {
+  public GetInvoiceList200ResponseDataRowsInner processedAt(@javax.annotation.Nullable OffsetDateTime processedAt) {
     this.processedAt = processedAt;
     return this;
   }
@@ -655,12 +686,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return processedAt;
   }
 
-  public void setProcessedAt(OffsetDateTime processedAt) {
+  public void setProcessedAt(@javax.annotation.Nullable OffsetDateTime processedAt) {
     this.processedAt = processedAt;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner hasBreakdown(Boolean hasBreakdown) {
+  public GetInvoiceList200ResponseDataRowsInner hasBreakdown(@javax.annotation.Nullable Boolean hasBreakdown) {
     this.hasBreakdown = hasBreakdown;
     return this;
   }
@@ -674,12 +705,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return hasBreakdown;
   }
 
-  public void setHasBreakdown(Boolean hasBreakdown) {
+  public void setHasBreakdown(@javax.annotation.Nullable Boolean hasBreakdown) {
     this.hasBreakdown = hasBreakdown;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner isEarlyPaid(Boolean isEarlyPaid) {
+  public GetInvoiceList200ResponseDataRowsInner isEarlyPaid(@javax.annotation.Nullable Boolean isEarlyPaid) {
     this.isEarlyPaid = isEarlyPaid;
     return this;
   }
@@ -693,12 +724,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return isEarlyPaid;
   }
 
-  public void setIsEarlyPaid(Boolean isEarlyPaid) {
+  public void setIsEarlyPaid(@javax.annotation.Nullable Boolean isEarlyPaid) {
     this.isEarlyPaid = isEarlyPaid;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner paymentMethod(String paymentMethod) {
+  public GetInvoiceList200ResponseDataRowsInner paymentMethod(@javax.annotation.Nullable String paymentMethod) {
     this.paymentMethod = paymentMethod;
     return this;
   }
@@ -712,12 +743,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return paymentMethod;
   }
 
-  public void setPaymentMethod(String paymentMethod) {
+  public void setPaymentMethod(@javax.annotation.Nullable String paymentMethod) {
     this.paymentMethod = paymentMethod;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner vatPercentage(String vatPercentage) {
+  public GetInvoiceList200ResponseDataRowsInner vatPercentage(@javax.annotation.Nullable String vatPercentage) {
     this.vatPercentage = vatPercentage;
     return this;
   }
@@ -731,12 +762,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return vatPercentage;
   }
 
-  public void setVatPercentage(String vatPercentage) {
+  public void setVatPercentage(@javax.annotation.Nullable String vatPercentage) {
     this.vatPercentage = vatPercentage;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner earlyPayoutFee(String earlyPayoutFee) {
+  public GetInvoiceList200ResponseDataRowsInner earlyPayoutFee(@javax.annotation.Nullable String earlyPayoutFee) {
     this.earlyPayoutFee = earlyPayoutFee;
     return this;
   }
@@ -750,12 +781,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return earlyPayoutFee;
   }
 
-  public void setEarlyPayoutFee(String earlyPayoutFee) {
+  public void setEarlyPayoutFee(@javax.annotation.Nullable String earlyPayoutFee) {
     this.earlyPayoutFee = earlyPayoutFee;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner paymentCurrency(String paymentCurrency) {
+  public GetInvoiceList200ResponseDataRowsInner paymentCurrency(@javax.annotation.Nullable String paymentCurrency) {
     this.paymentCurrency = paymentCurrency;
     return this;
   }
@@ -769,12 +800,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return paymentCurrency;
   }
 
-  public void setPaymentCurrency(String paymentCurrency) {
+  public void setPaymentCurrency(@javax.annotation.Nullable String paymentCurrency) {
     this.paymentCurrency = paymentCurrency;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner moneyReceivedAt(OffsetDateTime moneyReceivedAt) {
+  public GetInvoiceList200ResponseDataRowsInner moneyReceivedAt(@javax.annotation.Nullable OffsetDateTime moneyReceivedAt) {
     this.moneyReceivedAt = moneyReceivedAt;
     return this;
   }
@@ -788,12 +819,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return moneyReceivedAt;
   }
 
-  public void setMoneyReceivedAt(OffsetDateTime moneyReceivedAt) {
+  public void setMoneyReceivedAt(@javax.annotation.Nullable OffsetDateTime moneyReceivedAt) {
     this.moneyReceivedAt = moneyReceivedAt;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner paymentProcessedAt(OffsetDateTime paymentProcessedAt) {
+  public GetInvoiceList200ResponseDataRowsInner paymentProcessedAt(@javax.annotation.Nullable OffsetDateTime paymentProcessedAt) {
     this.paymentProcessedAt = paymentProcessedAt;
     return this;
   }
@@ -807,12 +838,12 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return paymentProcessedAt;
   }
 
-  public void setPaymentProcessedAt(OffsetDateTime paymentProcessedAt) {
+  public void setPaymentProcessedAt(@javax.annotation.Nullable OffsetDateTime paymentProcessedAt) {
     this.paymentProcessedAt = paymentProcessedAt;
   }
 
 
-  public GetInvoiceList200ResponseDataRowsInner isPaidToContractor(Boolean isPaidToContractor) {
+  public GetInvoiceList200ResponseDataRowsInner isPaidToContractor(@javax.annotation.Nullable Boolean isPaidToContractor) {
     this.isPaidToContractor = isPaidToContractor;
     return this;
   }
@@ -826,7 +857,7 @@ public class GetInvoiceList200ResponseDataRowsInner {
     return isPaidToContractor;
   }
 
-  public void setIsPaidToContractor(Boolean isPaidToContractor) {
+  public void setIsPaidToContractor(@javax.annotation.Nullable Boolean isPaidToContractor) {
     this.isPaidToContractor = isPaidToContractor;
   }
 

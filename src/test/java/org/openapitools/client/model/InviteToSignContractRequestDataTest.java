@@ -46,6 +46,14 @@ public class InviteToSignContractRequestDataTest {
     }
 
     /**
+     * Test the property 'locale'
+     */
+    @Test
+    public void localeTest() {
+        // TODO: test locale
+    }
+
+    /**
      * Test the property 'message'
      */
     @Test

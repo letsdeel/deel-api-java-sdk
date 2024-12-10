@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * UpdateWorkerWorkingLocation
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateWorkerWorkingLocation {
   public static final String SERIALIZED_NAME_WORKING_LOCATION_ID = "working_location_id";
   @SerializedName(SERIALIZED_NAME_WORKING_LOCATION_ID)
+  @javax.annotation.Nonnull
   private String workingLocationId;
 
   public UpdateWorkerWorkingLocation() {
   }
 
-  public UpdateWorkerWorkingLocation workingLocationId(String workingLocationId) {
+  public UpdateWorkerWorkingLocation workingLocationId(@javax.annotation.Nonnull String workingLocationId) {
     this.workingLocationId = workingLocationId;
     return this;
   }
@@ -71,7 +72,7 @@ public class UpdateWorkerWorkingLocation {
     return workingLocationId;
   }
 
-  public void setWorkingLocationId(String workingLocationId) {
+  public void setWorkingLocationId(@javax.annotation.Nonnull String workingLocationId) {
     this.workingLocationId = workingLocationId;
   }
 

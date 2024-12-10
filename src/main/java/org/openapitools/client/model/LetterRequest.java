@@ -48,14 +48,16 @@ import org.openapitools.client.JSON;
 /**
  * LetterRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class LetterRequest {
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_INCLUDE_Q_R_CODE = "includeQRCode";
   @SerializedName(SERIALIZED_NAME_INCLUDE_Q_R_CODE)
+  @javax.annotation.Nullable
   private Boolean includeQRCode;
 
   /**
@@ -120,12 +122,13 @@ public class LetterRequest {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public LetterRequest() {
   }
 
-  public LetterRequest description(String description) {
+  public LetterRequest description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -139,12 +142,12 @@ public class LetterRequest {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public LetterRequest includeQRCode(Boolean includeQRCode) {
+  public LetterRequest includeQRCode(@javax.annotation.Nullable Boolean includeQRCode) {
     this.includeQRCode = includeQRCode;
     return this;
   }
@@ -158,12 +161,12 @@ public class LetterRequest {
     return includeQRCode;
   }
 
-  public void setIncludeQRCode(Boolean includeQRCode) {
+  public void setIncludeQRCode(@javax.annotation.Nullable Boolean includeQRCode) {
     this.includeQRCode = includeQRCode;
   }
 
 
-  public LetterRequest type(TypeEnum type) {
+  public LetterRequest type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -177,7 +180,7 @@ public class LetterRequest {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 

@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * OffboardingTrackerGetPaginationParameter
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffboardingTrackerGetPaginationParameter {
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contractId";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nullable
   private String contractId;
 
   public static final String SERIALIZED_NAME_EFFECTIVE_DATE = "effectiveDate";
   @SerializedName(SERIALIZED_NAME_EFFECTIVE_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime effectiveDate;
 
   public static final String SERIALIZED_NAME_REFERENCE_DATE = "referenceDate";
   @SerializedName(SERIALIZED_NAME_REFERENCE_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime referenceDate;
 
   public static final String SERIALIZED_NAME_PROGRESS_STATUS_WEIGHT = "progressStatusWeight";
   @SerializedName(SERIALIZED_NAME_PROGRESS_STATUS_WEIGHT)
+  @javax.annotation.Nullable
   private Integer progressStatusWeight;
 
   public OffboardingTrackerGetPaginationParameter() {
   }
 
-  public OffboardingTrackerGetPaginationParameter contractId(String contractId) {
+  public OffboardingTrackerGetPaginationParameter contractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -84,12 +88,12 @@ public class OffboardingTrackerGetPaginationParameter {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
   }
 
 
-  public OffboardingTrackerGetPaginationParameter effectiveDate(OffsetDateTime effectiveDate) {
+  public OffboardingTrackerGetPaginationParameter effectiveDate(@javax.annotation.Nullable OffsetDateTime effectiveDate) {
     this.effectiveDate = effectiveDate;
     return this;
   }
@@ -103,12 +107,12 @@ public class OffboardingTrackerGetPaginationParameter {
     return effectiveDate;
   }
 
-  public void setEffectiveDate(OffsetDateTime effectiveDate) {
+  public void setEffectiveDate(@javax.annotation.Nullable OffsetDateTime effectiveDate) {
     this.effectiveDate = effectiveDate;
   }
 
 
-  public OffboardingTrackerGetPaginationParameter referenceDate(OffsetDateTime referenceDate) {
+  public OffboardingTrackerGetPaginationParameter referenceDate(@javax.annotation.Nullable OffsetDateTime referenceDate) {
     this.referenceDate = referenceDate;
     return this;
   }
@@ -122,12 +126,12 @@ public class OffboardingTrackerGetPaginationParameter {
     return referenceDate;
   }
 
-  public void setReferenceDate(OffsetDateTime referenceDate) {
+  public void setReferenceDate(@javax.annotation.Nullable OffsetDateTime referenceDate) {
     this.referenceDate = referenceDate;
   }
 
 
-  public OffboardingTrackerGetPaginationParameter progressStatusWeight(Integer progressStatusWeight) {
+  public OffboardingTrackerGetPaginationParameter progressStatusWeight(@javax.annotation.Nullable Integer progressStatusWeight) {
     this.progressStatusWeight = progressStatusWeight;
     return this;
   }
@@ -141,7 +145,7 @@ public class OffboardingTrackerGetPaginationParameter {
     return progressStatusWeight;
   }
 
-  public void setProgressStatusWeight(Integer progressStatusWeight) {
+  public void setProgressStatusWeight(@javax.annotation.Nullable Integer progressStatusWeight) {
     this.progressStatusWeight = progressStatusWeight;
   }
 

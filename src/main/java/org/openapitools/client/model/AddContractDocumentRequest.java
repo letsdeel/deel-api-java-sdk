@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * This is the file you will upload in a multi-part form.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class AddContractDocumentRequest {
   public static final String SERIALIZED_NAME_FILE = "file";
   @SerializedName(SERIALIZED_NAME_FILE)
+  @javax.annotation.Nullable
   private File _file;
 
   public AddContractDocumentRequest() {
   }
 
-  public AddContractDocumentRequest _file(File _file) {
+  public AddContractDocumentRequest _file(@javax.annotation.Nullable File _file) {
     this._file = _file;
     return this;
   }
@@ -72,7 +73,7 @@ public class AddContractDocumentRequest {
     return _file;
   }
 
-  public void setFile(File _file) {
+  public void setFile(@javax.annotation.Nullable File _file) {
     this._file = _file;
   }
 

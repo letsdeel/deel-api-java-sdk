@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * OffboardingTrackerIdGet200ResponseDataSummaryInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffboardingTrackerIdGet200ResponseDataSummaryInner {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nullable
   private OffboardingTrackerIdGet200ResponseDataSummaryInnerData data;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private String value;
 
   public OffboardingTrackerIdGet200ResponseDataSummaryInner() {
   }
 
-  public OffboardingTrackerIdGet200ResponseDataSummaryInner data(OffboardingTrackerIdGet200ResponseDataSummaryInnerData data) {
+  public OffboardingTrackerIdGet200ResponseDataSummaryInner data(@javax.annotation.Nullable OffboardingTrackerIdGet200ResponseDataSummaryInnerData data) {
     this.data = data;
     return this;
   }
@@ -84,12 +88,12 @@ public class OffboardingTrackerIdGet200ResponseDataSummaryInner {
     return data;
   }
 
-  public void setData(OffboardingTrackerIdGet200ResponseDataSummaryInnerData data) {
+  public void setData(@javax.annotation.Nullable OffboardingTrackerIdGet200ResponseDataSummaryInnerData data) {
     this.data = data;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataSummaryInner name(String name) {
+  public OffboardingTrackerIdGet200ResponseDataSummaryInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -103,12 +107,12 @@ public class OffboardingTrackerIdGet200ResponseDataSummaryInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataSummaryInner type(String type) {
+  public OffboardingTrackerIdGet200ResponseDataSummaryInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -122,12 +126,12 @@ public class OffboardingTrackerIdGet200ResponseDataSummaryInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataSummaryInner value(String value) {
+  public OffboardingTrackerIdGet200ResponseDataSummaryInner value(@javax.annotation.Nullable String value) {
     this.value = value;
     return this;
   }
@@ -141,7 +145,7 @@ public class OffboardingTrackerIdGet200ResponseDataSummaryInner {
     return value;
   }
 
-  public void setValue(String value) {
+  public void setValue(@javax.annotation.Nullable String value) {
     this.value = value;
   }
 

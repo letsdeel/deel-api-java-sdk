@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * AdjustmentsContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class AdjustmentsContainer {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private List<PayrollAdjustment> data = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAGE = "page";
   @SerializedName(SERIALIZED_NAME_PAGE)
+  @javax.annotation.Nullable
   private AdjustmentsContainerPage page;
 
   public AdjustmentsContainer() {
   }
 
-  public AdjustmentsContainer data(List<PayrollAdjustment> data) {
+  public AdjustmentsContainer data(@javax.annotation.Nonnull List<PayrollAdjustment> data) {
     this.data = data;
     return this;
   }
@@ -87,12 +89,12 @@ public class AdjustmentsContainer {
     return data;
   }
 
-  public void setData(List<PayrollAdjustment> data) {
+  public void setData(@javax.annotation.Nonnull List<PayrollAdjustment> data) {
     this.data = data;
   }
 
 
-  public AdjustmentsContainer page(AdjustmentsContainerPage page) {
+  public AdjustmentsContainer page(@javax.annotation.Nullable AdjustmentsContainerPage page) {
     this.page = page;
     return this;
   }
@@ -106,7 +108,7 @@ public class AdjustmentsContainer {
     return page;
   }
 
-  public void setPage(AdjustmentsContainerPage page) {
+  public void setPage(@javax.annotation.Nullable AdjustmentsContainerPage page) {
     this.page = page;
   }
 

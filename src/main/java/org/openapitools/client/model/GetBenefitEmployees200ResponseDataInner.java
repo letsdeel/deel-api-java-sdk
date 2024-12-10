@@ -55,38 +55,46 @@ import org.openapitools.client.JSON;
 /**
  * GetBenefitEmployees200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBenefitEmployees200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_PHONES = "phones";
   @SerializedName(SERIALIZED_NAME_PHONES)
+  @javax.annotation.Nullable
   private List<GetBenefitEmployees200ResponseDataInnerPhonesInner> phones = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_ADDRESSES = "addresses";
   @SerializedName(SERIALIZED_NAME_ADDRESSES)
+  @javax.annotation.Nullable
   private List<GetBenefitEmployee200ResponseAddressesInner> addresses = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CONTRACTS = "contracts";
   @SerializedName(SERIALIZED_NAME_CONTRACTS)
+  @javax.annotation.Nullable
   private List<GetBenefitEmployee200ResponseContractsInner> contracts = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_HIRE_DATE = "hire_date";
   @SerializedName(SERIALIZED_NAME_HIRE_DATE)
+  @javax.annotation.Nullable
   private String hireDate;
 
   public static final String SERIALIZED_NAME_WORK_EMAIL = "work_email";
   @SerializedName(SERIALIZED_NAME_WORK_EMAIL)
+  @javax.annotation.Nullable
   private String workEmail;
 
   public static final String SERIALIZED_NAME_DATE_OF_BIRTH = "date_of_birth";
   @SerializedName(SERIALIZED_NAME_DATE_OF_BIRTH)
+  @javax.annotation.Nullable
   private String dateOfBirth;
 
   /**
@@ -153,40 +161,48 @@ public class GetBenefitEmployees200ResponseDataInner {
 
   public static final String SERIALIZED_NAME_MARITAL_STATUS = "marital_status";
   @SerializedName(SERIALIZED_NAME_MARITAL_STATUS)
+  @javax.annotation.Nullable
   private MaritalStatusEnum maritalStatus;
 
   public static final String SERIALIZED_NAME_PERSONAL_EMAIL = "personal_email";
   @SerializedName(SERIALIZED_NAME_PERSONAL_EMAIL)
+  @javax.annotation.Nullable
   private String personalEmail;
 
   public static final String SERIALIZED_NAME_DOCUMENT_NUMBER = "document_number";
   @SerializedName(SERIALIZED_NAME_DOCUMENT_NUMBER)
+  @javax.annotation.Nullable
   private String documentNumber;
 
   public static final String SERIALIZED_NAME_LEGAL_LAST_NAME = "legal_last_name";
   @SerializedName(SERIALIZED_NAME_LEGAL_LAST_NAME)
+  @javax.annotation.Nullable
   private String legalLastName;
 
   public static final String SERIALIZED_NAME_LEGAL_FIRST_NAME = "legal_first_name";
   @SerializedName(SERIALIZED_NAME_LEGAL_FIRST_NAME)
+  @javax.annotation.Nullable
   private String legalFirstName;
 
   public static final String SERIALIZED_NAME_LEGAL_MIDDLE_NAME = "legal_middle_name";
   @SerializedName(SERIALIZED_NAME_LEGAL_MIDDLE_NAME)
+  @javax.annotation.Nullable
   private String legalMiddleName;
 
   public static final String SERIALIZED_NAME_TAKES_OWNERS_DRAW = "takes_owners_draw";
   @SerializedName(SERIALIZED_NAME_TAKES_OWNERS_DRAW)
+  @javax.annotation.Nullable
   private Boolean takesOwnersDraw;
 
   public static final String SERIALIZED_NAME_OWNERSHIP_PERCENTAGE = "ownership_percentage";
   @SerializedName(SERIALIZED_NAME_OWNERSHIP_PERCENTAGE)
+  @javax.annotation.Nullable
   private BigDecimal ownershipPercentage;
 
   public GetBenefitEmployees200ResponseDataInner() {
   }
 
-  public GetBenefitEmployees200ResponseDataInner id(String id) {
+  public GetBenefitEmployees200ResponseDataInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -200,12 +216,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner phones(List<GetBenefitEmployees200ResponseDataInnerPhonesInner> phones) {
+  public GetBenefitEmployees200ResponseDataInner phones(@javax.annotation.Nullable List<GetBenefitEmployees200ResponseDataInnerPhonesInner> phones) {
     this.phones = phones;
     return this;
   }
@@ -227,12 +243,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return phones;
   }
 
-  public void setPhones(List<GetBenefitEmployees200ResponseDataInnerPhonesInner> phones) {
+  public void setPhones(@javax.annotation.Nullable List<GetBenefitEmployees200ResponseDataInnerPhonesInner> phones) {
     this.phones = phones;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner status(String status) {
+  public GetBenefitEmployees200ResponseDataInner status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -246,12 +262,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner addresses(List<GetBenefitEmployee200ResponseAddressesInner> addresses) {
+  public GetBenefitEmployees200ResponseDataInner addresses(@javax.annotation.Nullable List<GetBenefitEmployee200ResponseAddressesInner> addresses) {
     this.addresses = addresses;
     return this;
   }
@@ -273,12 +289,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return addresses;
   }
 
-  public void setAddresses(List<GetBenefitEmployee200ResponseAddressesInner> addresses) {
+  public void setAddresses(@javax.annotation.Nullable List<GetBenefitEmployee200ResponseAddressesInner> addresses) {
     this.addresses = addresses;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner contracts(List<GetBenefitEmployee200ResponseContractsInner> contracts) {
+  public GetBenefitEmployees200ResponseDataInner contracts(@javax.annotation.Nullable List<GetBenefitEmployee200ResponseContractsInner> contracts) {
     this.contracts = contracts;
     return this;
   }
@@ -300,12 +316,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return contracts;
   }
 
-  public void setContracts(List<GetBenefitEmployee200ResponseContractsInner> contracts) {
+  public void setContracts(@javax.annotation.Nullable List<GetBenefitEmployee200ResponseContractsInner> contracts) {
     this.contracts = contracts;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner hireDate(String hireDate) {
+  public GetBenefitEmployees200ResponseDataInner hireDate(@javax.annotation.Nullable String hireDate) {
     this.hireDate = hireDate;
     return this;
   }
@@ -319,12 +335,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return hireDate;
   }
 
-  public void setHireDate(String hireDate) {
+  public void setHireDate(@javax.annotation.Nullable String hireDate) {
     this.hireDate = hireDate;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner workEmail(String workEmail) {
+  public GetBenefitEmployees200ResponseDataInner workEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
     return this;
   }
@@ -338,12 +354,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return workEmail;
   }
 
-  public void setWorkEmail(String workEmail) {
+  public void setWorkEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner dateOfBirth(String dateOfBirth) {
+  public GetBenefitEmployees200ResponseDataInner dateOfBirth(@javax.annotation.Nullable String dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
     return this;
   }
@@ -357,12 +373,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return dateOfBirth;
   }
 
-  public void setDateOfBirth(String dateOfBirth) {
+  public void setDateOfBirth(@javax.annotation.Nullable String dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner maritalStatus(MaritalStatusEnum maritalStatus) {
+  public GetBenefitEmployees200ResponseDataInner maritalStatus(@javax.annotation.Nullable MaritalStatusEnum maritalStatus) {
     this.maritalStatus = maritalStatus;
     return this;
   }
@@ -376,12 +392,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return maritalStatus;
   }
 
-  public void setMaritalStatus(MaritalStatusEnum maritalStatus) {
+  public void setMaritalStatus(@javax.annotation.Nullable MaritalStatusEnum maritalStatus) {
     this.maritalStatus = maritalStatus;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner personalEmail(String personalEmail) {
+  public GetBenefitEmployees200ResponseDataInner personalEmail(@javax.annotation.Nullable String personalEmail) {
     this.personalEmail = personalEmail;
     return this;
   }
@@ -395,12 +411,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return personalEmail;
   }
 
-  public void setPersonalEmail(String personalEmail) {
+  public void setPersonalEmail(@javax.annotation.Nullable String personalEmail) {
     this.personalEmail = personalEmail;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner documentNumber(String documentNumber) {
+  public GetBenefitEmployees200ResponseDataInner documentNumber(@javax.annotation.Nullable String documentNumber) {
     this.documentNumber = documentNumber;
     return this;
   }
@@ -414,12 +430,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return documentNumber;
   }
 
-  public void setDocumentNumber(String documentNumber) {
+  public void setDocumentNumber(@javax.annotation.Nullable String documentNumber) {
     this.documentNumber = documentNumber;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner legalLastName(String legalLastName) {
+  public GetBenefitEmployees200ResponseDataInner legalLastName(@javax.annotation.Nullable String legalLastName) {
     this.legalLastName = legalLastName;
     return this;
   }
@@ -433,12 +449,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return legalLastName;
   }
 
-  public void setLegalLastName(String legalLastName) {
+  public void setLegalLastName(@javax.annotation.Nullable String legalLastName) {
     this.legalLastName = legalLastName;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner legalFirstName(String legalFirstName) {
+  public GetBenefitEmployees200ResponseDataInner legalFirstName(@javax.annotation.Nullable String legalFirstName) {
     this.legalFirstName = legalFirstName;
     return this;
   }
@@ -452,12 +468,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return legalFirstName;
   }
 
-  public void setLegalFirstName(String legalFirstName) {
+  public void setLegalFirstName(@javax.annotation.Nullable String legalFirstName) {
     this.legalFirstName = legalFirstName;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner legalMiddleName(String legalMiddleName) {
+  public GetBenefitEmployees200ResponseDataInner legalMiddleName(@javax.annotation.Nullable String legalMiddleName) {
     this.legalMiddleName = legalMiddleName;
     return this;
   }
@@ -471,12 +487,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return legalMiddleName;
   }
 
-  public void setLegalMiddleName(String legalMiddleName) {
+  public void setLegalMiddleName(@javax.annotation.Nullable String legalMiddleName) {
     this.legalMiddleName = legalMiddleName;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner takesOwnersDraw(Boolean takesOwnersDraw) {
+  public GetBenefitEmployees200ResponseDataInner takesOwnersDraw(@javax.annotation.Nullable Boolean takesOwnersDraw) {
     this.takesOwnersDraw = takesOwnersDraw;
     return this;
   }
@@ -490,12 +506,12 @@ public class GetBenefitEmployees200ResponseDataInner {
     return takesOwnersDraw;
   }
 
-  public void setTakesOwnersDraw(Boolean takesOwnersDraw) {
+  public void setTakesOwnersDraw(@javax.annotation.Nullable Boolean takesOwnersDraw) {
     this.takesOwnersDraw = takesOwnersDraw;
   }
 
 
-  public GetBenefitEmployees200ResponseDataInner ownershipPercentage(BigDecimal ownershipPercentage) {
+  public GetBenefitEmployees200ResponseDataInner ownershipPercentage(@javax.annotation.Nullable BigDecimal ownershipPercentage) {
     this.ownershipPercentage = ownershipPercentage;
     return this;
   }
@@ -509,7 +525,7 @@ public class GetBenefitEmployees200ResponseDataInner {
     return ownershipPercentage;
   }
 
-  public void setOwnershipPercentage(BigDecimal ownershipPercentage) {
+  public void setOwnershipPercentage(@javax.annotation.Nullable BigDecimal ownershipPercentage) {
     this.ownershipPercentage = ownershipPercentage;
   }
 

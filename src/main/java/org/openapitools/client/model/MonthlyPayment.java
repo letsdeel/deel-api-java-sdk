@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * Monthly payment details for the user
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class MonthlyPayment {
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
+  @javax.annotation.Nullable
   private Integer count;
 
   public MonthlyPayment() {
   }
 
-  public MonthlyPayment count(Integer count) {
+  public MonthlyPayment count(@javax.annotation.Nullable Integer count) {
     this.count = count;
     return this;
   }
@@ -71,7 +72,7 @@ public class MonthlyPayment {
     return count;
   }
 
-  public void setCount(Integer count) {
+  public void setCount(@javax.annotation.Nullable Integer count) {
     this.count = count;
   }
 

@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * Customized attributes on contracts (Employee ID, Project code, etc).
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataCustomFieldsInner {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private String value;
 
   public CreateContract201ResponseDataCustomFieldsInner() {
   }
 
-  public CreateContract201ResponseDataCustomFieldsInner name(String name) {
+  public CreateContract201ResponseDataCustomFieldsInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -75,12 +77,12 @@ public class CreateContract201ResponseDataCustomFieldsInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public CreateContract201ResponseDataCustomFieldsInner value(String value) {
+  public CreateContract201ResponseDataCustomFieldsInner value(@javax.annotation.Nullable String value) {
     this.value = value;
     return this;
   }
@@ -94,7 +96,7 @@ public class CreateContract201ResponseDataCustomFieldsInner {
     return value;
   }
 
-  public void setValue(String value) {
+  public void setValue(@javax.annotation.Nullable String value) {
     this.value = value;
   }
 

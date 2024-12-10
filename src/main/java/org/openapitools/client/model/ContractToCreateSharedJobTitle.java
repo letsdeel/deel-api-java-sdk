@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * Worker&#39;s job title. You can enter a custom job title or use a pre-defiled job title using the Id retrieved in job-titles endpoint.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ContractToCreateSharedJobTitle {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public ContractToCreateSharedJobTitle() {
   }
 
-  public ContractToCreateSharedJobTitle id(String id) {
+  public ContractToCreateSharedJobTitle id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -76,12 +78,12 @@ public class ContractToCreateSharedJobTitle {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public ContractToCreateSharedJobTitle name(String name) {
+  public ContractToCreateSharedJobTitle name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -95,7 +97,7 @@ public class ContractToCreateSharedJobTitle {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 

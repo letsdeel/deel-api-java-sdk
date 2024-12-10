@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * HrisTeamInformation
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisTeamInformation {
   public static final String SERIALIZED_NAME_TEAM_ID = "team_id";
   @SerializedName(SERIALIZED_NAME_TEAM_ID)
+  @javax.annotation.Nonnull
   private BigDecimal teamId;
 
   public static final String SERIALIZED_NAME_LEGAL_ENTITY_ID = "legal_entity_id";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY_ID)
+  @javax.annotation.Nonnull
   private BigDecimal legalEntityId;
 
   public HrisTeamInformation() {
   }
 
-  public HrisTeamInformation teamId(BigDecimal teamId) {
+  public HrisTeamInformation teamId(@javax.annotation.Nonnull BigDecimal teamId) {
     this.teamId = teamId;
     return this;
   }
@@ -76,12 +78,12 @@ public class HrisTeamInformation {
     return teamId;
   }
 
-  public void setTeamId(BigDecimal teamId) {
+  public void setTeamId(@javax.annotation.Nonnull BigDecimal teamId) {
     this.teamId = teamId;
   }
 
 
-  public HrisTeamInformation legalEntityId(BigDecimal legalEntityId) {
+  public HrisTeamInformation legalEntityId(@javax.annotation.Nonnull BigDecimal legalEntityId) {
     this.legalEntityId = legalEntityId;
     return this;
   }
@@ -95,7 +97,7 @@ public class HrisTeamInformation {
     return legalEntityId;
   }
 
-  public void setLegalEntityId(BigDecimal legalEntityId) {
+  public void setLegalEntityId(@javax.annotation.Nonnull BigDecimal legalEntityId) {
     this.legalEntityId = legalEntityId;
   }
 

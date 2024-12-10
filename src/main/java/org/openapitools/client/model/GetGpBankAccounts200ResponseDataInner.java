@@ -49,120 +49,147 @@ import org.openapitools.client.JSON;
 /**
  * GetGpBankAccounts200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetGpBankAccounts200ResponseDataInner {
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nullable
   private String city;
 
   public static final String SERIALIZED_NAME_IBAN = "iban";
   @SerializedName(SERIALIZED_NAME_IBAN)
+  @javax.annotation.Nullable
   private String iban;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_PHONE = "phone";
   @SerializedName(SERIALIZED_NAME_PHONE)
+  @javax.annotation.Nullable
   private String phone;
 
   public static final String SERIALIZED_NAME_POSTAL = "postal";
   @SerializedName(SERIALIZED_NAME_POSTAL)
+  @javax.annotation.Nullable
   private String postal;
 
   public static final String SERIALIZED_NAME_TAX_ID = "tax_id";
   @SerializedName(SERIALIZED_NAME_TAX_ID)
+  @javax.annotation.Nullable
   private String taxId;
 
   public static final String SERIALIZED_NAME_BANK_CODE = "bank_code";
   @SerializedName(SERIALIZED_NAME_BANK_CODE)
+  @javax.annotation.Nullable
   private String bankCode;
 
   public static final String SERIALIZED_NAME_BANK_NAME = "bank_name";
   @SerializedName(SERIALIZED_NAME_BANK_NAME)
+  @javax.annotation.Nullable
   private String bankName;
 
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nullable
   private String fullName;
 
   public static final String SERIALIZED_NAME_SWIFT_BIC = "swift_bic";
   @SerializedName(SERIALIZED_NAME_SWIFT_BIC)
+  @javax.annotation.Nullable
   private String swiftBic;
 
   public static final String SERIALIZED_NAME_RIB_NUMBER = "rib_number";
   @SerializedName(SERIALIZED_NAME_RIB_NUMBER)
+  @javax.annotation.Nullable
   private String ribNumber;
 
   public static final String SERIALIZED_NAME_BRANCH_CODE = "branch_code";
   @SerializedName(SERIALIZED_NAME_BRANCH_CODE)
+  @javax.annotation.Nullable
   private String branchCode;
 
   public static final String SERIALIZED_NAME_ACCOUNT_TYPE = "account_type";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_TYPE)
+  @javax.annotation.Nullable
   private String accountType;
 
   public static final String SERIALIZED_NAME_COUNTRY_CODE = "country_code";
   @SerializedName(SERIALIZED_NAME_COUNTRY_CODE)
+  @javax.annotation.Nullable
   private String countryCode;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE1 = "address_line1";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE1)
+  @javax.annotation.Nullable
   private String addressLine1;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE2 = "address_line2";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE2)
+  @javax.annotation.Nullable
   private String addressLine2;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currency_code";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_ORIGINAL_NAME = "original_name";
   @SerializedName(SERIALIZED_NAME_ORIGINAL_NAME)
+  @javax.annotation.Nullable
   private String originalName;
 
   public static final String SERIALIZED_NAME_ACCOUNT_NUMBER = "account_number";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_NUMBER)
+  @javax.annotation.Nullable
   private String accountNumber;
 
   public static final String SERIALIZED_NAME_PROVINCE_STATE = "province_state";
   @SerializedName(SERIALIZED_NAME_PROVINCE_STATE)
+  @javax.annotation.Nullable
   private String provinceState;
 
   public static final String SERIALIZED_NAME_BANK_BRANCH_NAME = "bank_branch_name";
   @SerializedName(SERIALIZED_NAME_BANK_BRANCH_NAME)
+  @javax.annotation.Nullable
   private String bankBranchName;
 
   public static final String SERIALIZED_NAME_BANK_COUNTRY_CODE = "bank_country_code";
   @SerializedName(SERIALIZED_NAME_BANK_COUNTRY_CODE)
+  @javax.annotation.Nullable
   private String bankCountryCode;
 
   public static final String SERIALIZED_NAME_ACH_ROUTING_NUMBER = "ach_routing_number";
   @SerializedName(SERIALIZED_NAME_ACH_ROUTING_NUMBER)
+  @javax.annotation.Nullable
   private String achRoutingNumber;
 
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime updatedAt;
 
   public GetGpBankAccounts200ResponseDataInner() {
   }
 
-  public GetGpBankAccounts200ResponseDataInner city(String city) {
+  public GetGpBankAccounts200ResponseDataInner city(@javax.annotation.Nullable String city) {
     this.city = city;
     return this;
   }
@@ -176,12 +203,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nullable String city) {
     this.city = city;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner iban(String iban) {
+  public GetGpBankAccounts200ResponseDataInner iban(@javax.annotation.Nullable String iban) {
     this.iban = iban;
     return this;
   }
@@ -195,12 +222,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return iban;
   }
 
-  public void setIban(String iban) {
+  public void setIban(@javax.annotation.Nullable String iban) {
     this.iban = iban;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner email(String email) {
+  public GetGpBankAccounts200ResponseDataInner email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -214,12 +241,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner phone(String phone) {
+  public GetGpBankAccounts200ResponseDataInner phone(@javax.annotation.Nullable String phone) {
     this.phone = phone;
     return this;
   }
@@ -233,12 +260,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return phone;
   }
 
-  public void setPhone(String phone) {
+  public void setPhone(@javax.annotation.Nullable String phone) {
     this.phone = phone;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner postal(String postal) {
+  public GetGpBankAccounts200ResponseDataInner postal(@javax.annotation.Nullable String postal) {
     this.postal = postal;
     return this;
   }
@@ -252,12 +279,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return postal;
   }
 
-  public void setPostal(String postal) {
+  public void setPostal(@javax.annotation.Nullable String postal) {
     this.postal = postal;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner taxId(String taxId) {
+  public GetGpBankAccounts200ResponseDataInner taxId(@javax.annotation.Nullable String taxId) {
     this.taxId = taxId;
     return this;
   }
@@ -271,12 +298,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return taxId;
   }
 
-  public void setTaxId(String taxId) {
+  public void setTaxId(@javax.annotation.Nullable String taxId) {
     this.taxId = taxId;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner bankCode(String bankCode) {
+  public GetGpBankAccounts200ResponseDataInner bankCode(@javax.annotation.Nullable String bankCode) {
     this.bankCode = bankCode;
     return this;
   }
@@ -290,12 +317,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return bankCode;
   }
 
-  public void setBankCode(String bankCode) {
+  public void setBankCode(@javax.annotation.Nullable String bankCode) {
     this.bankCode = bankCode;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner bankName(String bankName) {
+  public GetGpBankAccounts200ResponseDataInner bankName(@javax.annotation.Nullable String bankName) {
     this.bankName = bankName;
     return this;
   }
@@ -309,12 +336,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return bankName;
   }
 
-  public void setBankName(String bankName) {
+  public void setBankName(@javax.annotation.Nullable String bankName) {
     this.bankName = bankName;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner fullName(String fullName) {
+  public GetGpBankAccounts200ResponseDataInner fullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -328,12 +355,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner swiftBic(String swiftBic) {
+  public GetGpBankAccounts200ResponseDataInner swiftBic(@javax.annotation.Nullable String swiftBic) {
     this.swiftBic = swiftBic;
     return this;
   }
@@ -347,12 +374,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return swiftBic;
   }
 
-  public void setSwiftBic(String swiftBic) {
+  public void setSwiftBic(@javax.annotation.Nullable String swiftBic) {
     this.swiftBic = swiftBic;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner ribNumber(String ribNumber) {
+  public GetGpBankAccounts200ResponseDataInner ribNumber(@javax.annotation.Nullable String ribNumber) {
     this.ribNumber = ribNumber;
     return this;
   }
@@ -366,12 +393,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return ribNumber;
   }
 
-  public void setRibNumber(String ribNumber) {
+  public void setRibNumber(@javax.annotation.Nullable String ribNumber) {
     this.ribNumber = ribNumber;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner branchCode(String branchCode) {
+  public GetGpBankAccounts200ResponseDataInner branchCode(@javax.annotation.Nullable String branchCode) {
     this.branchCode = branchCode;
     return this;
   }
@@ -385,12 +412,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return branchCode;
   }
 
-  public void setBranchCode(String branchCode) {
+  public void setBranchCode(@javax.annotation.Nullable String branchCode) {
     this.branchCode = branchCode;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner accountType(String accountType) {
+  public GetGpBankAccounts200ResponseDataInner accountType(@javax.annotation.Nullable String accountType) {
     this.accountType = accountType;
     return this;
   }
@@ -404,12 +431,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return accountType;
   }
 
-  public void setAccountType(String accountType) {
+  public void setAccountType(@javax.annotation.Nullable String accountType) {
     this.accountType = accountType;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner countryCode(String countryCode) {
+  public GetGpBankAccounts200ResponseDataInner countryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -423,12 +450,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner addressLine1(String addressLine1) {
+  public GetGpBankAccounts200ResponseDataInner addressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
     return this;
   }
@@ -442,12 +469,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return addressLine1;
   }
 
-  public void setAddressLine1(String addressLine1) {
+  public void setAddressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner addressLine2(String addressLine2) {
+  public GetGpBankAccounts200ResponseDataInner addressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
     return this;
   }
@@ -461,12 +488,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return addressLine2;
   }
 
-  public void setAddressLine2(String addressLine2) {
+  public void setAddressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner currencyCode(String currencyCode) {
+  public GetGpBankAccounts200ResponseDataInner currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -480,12 +507,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner originalName(String originalName) {
+  public GetGpBankAccounts200ResponseDataInner originalName(@javax.annotation.Nullable String originalName) {
     this.originalName = originalName;
     return this;
   }
@@ -499,12 +526,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return originalName;
   }
 
-  public void setOriginalName(String originalName) {
+  public void setOriginalName(@javax.annotation.Nullable String originalName) {
     this.originalName = originalName;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner accountNumber(String accountNumber) {
+  public GetGpBankAccounts200ResponseDataInner accountNumber(@javax.annotation.Nullable String accountNumber) {
     this.accountNumber = accountNumber;
     return this;
   }
@@ -518,12 +545,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return accountNumber;
   }
 
-  public void setAccountNumber(String accountNumber) {
+  public void setAccountNumber(@javax.annotation.Nullable String accountNumber) {
     this.accountNumber = accountNumber;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner provinceState(String provinceState) {
+  public GetGpBankAccounts200ResponseDataInner provinceState(@javax.annotation.Nullable String provinceState) {
     this.provinceState = provinceState;
     return this;
   }
@@ -537,12 +564,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return provinceState;
   }
 
-  public void setProvinceState(String provinceState) {
+  public void setProvinceState(@javax.annotation.Nullable String provinceState) {
     this.provinceState = provinceState;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner bankBranchName(String bankBranchName) {
+  public GetGpBankAccounts200ResponseDataInner bankBranchName(@javax.annotation.Nullable String bankBranchName) {
     this.bankBranchName = bankBranchName;
     return this;
   }
@@ -556,12 +583,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return bankBranchName;
   }
 
-  public void setBankBranchName(String bankBranchName) {
+  public void setBankBranchName(@javax.annotation.Nullable String bankBranchName) {
     this.bankBranchName = bankBranchName;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner bankCountryCode(String bankCountryCode) {
+  public GetGpBankAccounts200ResponseDataInner bankCountryCode(@javax.annotation.Nullable String bankCountryCode) {
     this.bankCountryCode = bankCountryCode;
     return this;
   }
@@ -575,12 +602,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return bankCountryCode;
   }
 
-  public void setBankCountryCode(String bankCountryCode) {
+  public void setBankCountryCode(@javax.annotation.Nullable String bankCountryCode) {
     this.bankCountryCode = bankCountryCode;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner achRoutingNumber(String achRoutingNumber) {
+  public GetGpBankAccounts200ResponseDataInner achRoutingNumber(@javax.annotation.Nullable String achRoutingNumber) {
     this.achRoutingNumber = achRoutingNumber;
     return this;
   }
@@ -594,12 +621,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return achRoutingNumber;
   }
 
-  public void setAchRoutingNumber(String achRoutingNumber) {
+  public void setAchRoutingNumber(@javax.annotation.Nullable String achRoutingNumber) {
     this.achRoutingNumber = achRoutingNumber;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner id(String id) {
+  public GetGpBankAccounts200ResponseDataInner id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -613,12 +640,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner status(String status) {
+  public GetGpBankAccounts200ResponseDataInner status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -632,12 +659,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner createdAt(OffsetDateTime createdAt) {
+  public GetGpBankAccounts200ResponseDataInner createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -651,12 +678,12 @@ public class GetGpBankAccounts200ResponseDataInner {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public GetGpBankAccounts200ResponseDataInner updatedAt(OffsetDateTime updatedAt) {
+  public GetGpBankAccounts200ResponseDataInner updatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -670,7 +697,7 @@ public class GetGpBankAccounts200ResponseDataInner {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 

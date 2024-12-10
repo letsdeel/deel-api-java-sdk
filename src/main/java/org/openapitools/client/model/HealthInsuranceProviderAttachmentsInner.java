@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * HealthInsuranceProviderAttachmentsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HealthInsuranceProviderAttachmentsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nullable
   private String label;
 
   public HealthInsuranceProviderAttachmentsInner() {
   }
 
-  public HealthInsuranceProviderAttachmentsInner id(String id) {
+  public HealthInsuranceProviderAttachmentsInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -75,12 +77,12 @@ public class HealthInsuranceProviderAttachmentsInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public HealthInsuranceProviderAttachmentsInner label(String label) {
+  public HealthInsuranceProviderAttachmentsInner label(@javax.annotation.Nullable String label) {
     this.label = label;
     return this;
   }
@@ -94,7 +96,7 @@ public class HealthInsuranceProviderAttachmentsInner {
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nullable String label) {
     this.label = label;
   }
 

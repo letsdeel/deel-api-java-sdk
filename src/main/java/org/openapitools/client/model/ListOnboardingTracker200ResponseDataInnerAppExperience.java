@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * ListOnboardingTracker200ResponseDataInnerAppExperience
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ListOnboardingTracker200ResponseDataInnerAppExperience {
   public static final String SERIALIZED_NAME_IS_MINIMAL_REQUIREMENTS = "is_minimal_requirements";
   @SerializedName(SERIALIZED_NAME_IS_MINIMAL_REQUIREMENTS)
+  @javax.annotation.Nullable
   private Boolean isMinimalRequirements;
 
   public ListOnboardingTracker200ResponseDataInnerAppExperience() {
   }
 
-  public ListOnboardingTracker200ResponseDataInnerAppExperience isMinimalRequirements(Boolean isMinimalRequirements) {
+  public ListOnboardingTracker200ResponseDataInnerAppExperience isMinimalRequirements(@javax.annotation.Nullable Boolean isMinimalRequirements) {
     this.isMinimalRequirements = isMinimalRequirements;
     return this;
   }
@@ -71,7 +72,7 @@ public class ListOnboardingTracker200ResponseDataInnerAppExperience {
     return isMinimalRequirements;
   }
 
-  public void setIsMinimalRequirements(Boolean isMinimalRequirements) {
+  public void setIsMinimalRequirements(@javax.annotation.Nullable Boolean isMinimalRequirements) {
     this.isMinimalRequirements = isMinimalRequirements;
   }
 

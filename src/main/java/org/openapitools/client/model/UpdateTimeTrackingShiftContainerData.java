@@ -50,28 +50,32 @@ import org.openapitools.client.JSON;
 /**
  * Data for the shift
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateTimeTrackingShiftContainerData {
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_DATE_OF_WORK = "date_of_work";
   @SerializedName(SERIALIZED_NAME_DATE_OF_WORK)
+  @javax.annotation.Nullable
   private String dateOfWork;
 
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
+  @javax.annotation.Nullable
   private TimeTrackingShiftMetaSchema meta;
 
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
+  @javax.annotation.Nullable
   private TimeTrackingShiftSummarySchema summary;
 
   public UpdateTimeTrackingShiftContainerData() {
   }
 
-  public UpdateTimeTrackingShiftContainerData description(String description) {
+  public UpdateTimeTrackingShiftContainerData description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -85,12 +89,12 @@ public class UpdateTimeTrackingShiftContainerData {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public UpdateTimeTrackingShiftContainerData dateOfWork(String dateOfWork) {
+  public UpdateTimeTrackingShiftContainerData dateOfWork(@javax.annotation.Nullable String dateOfWork) {
     this.dateOfWork = dateOfWork;
     return this;
   }
@@ -104,12 +108,12 @@ public class UpdateTimeTrackingShiftContainerData {
     return dateOfWork;
   }
 
-  public void setDateOfWork(String dateOfWork) {
+  public void setDateOfWork(@javax.annotation.Nullable String dateOfWork) {
     this.dateOfWork = dateOfWork;
   }
 
 
-  public UpdateTimeTrackingShiftContainerData meta(TimeTrackingShiftMetaSchema meta) {
+  public UpdateTimeTrackingShiftContainerData meta(@javax.annotation.Nullable TimeTrackingShiftMetaSchema meta) {
     this.meta = meta;
     return this;
   }
@@ -123,12 +127,12 @@ public class UpdateTimeTrackingShiftContainerData {
     return meta;
   }
 
-  public void setMeta(TimeTrackingShiftMetaSchema meta) {
+  public void setMeta(@javax.annotation.Nullable TimeTrackingShiftMetaSchema meta) {
     this.meta = meta;
   }
 
 
-  public UpdateTimeTrackingShiftContainerData summary(TimeTrackingShiftSummarySchema summary) {
+  public UpdateTimeTrackingShiftContainerData summary(@javax.annotation.Nullable TimeTrackingShiftSummarySchema summary) {
     this.summary = summary;
     return this;
   }
@@ -142,7 +146,7 @@ public class UpdateTimeTrackingShiftContainerData {
     return summary;
   }
 
-  public void setSummary(TimeTrackingShiftSummarySchema summary) {
+  public void setSummary(@javax.annotation.Nullable TimeTrackingShiftSummarySchema summary) {
     this.summary = summary;
   }
 

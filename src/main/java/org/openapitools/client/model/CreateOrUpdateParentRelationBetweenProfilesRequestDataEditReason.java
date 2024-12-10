@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason {
   public static final String SERIALIZED_NAME_REASON_OID = "reason_oid";
   @SerializedName(SERIALIZED_NAME_REASON_OID)
+  @javax.annotation.Nonnull
   private UUID reasonOid;
 
   public static final String SERIALIZED_NAME_ADDITIONAL_INFO = "additional_info";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_INFO)
+  @javax.annotation.Nullable
   private String additionalInfo;
 
   public CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason() {
   }
 
-  public CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason reasonOid(UUID reasonOid) {
+  public CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason reasonOid(@javax.annotation.Nonnull UUID reasonOid) {
     this.reasonOid = reasonOid;
     return this;
   }
@@ -76,12 +78,12 @@ public class CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason {
     return reasonOid;
   }
 
-  public void setReasonOid(UUID reasonOid) {
+  public void setReasonOid(@javax.annotation.Nonnull UUID reasonOid) {
     this.reasonOid = reasonOid;
   }
 
 
-  public CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason additionalInfo(String additionalInfo) {
+  public CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason additionalInfo(@javax.annotation.Nullable String additionalInfo) {
     this.additionalInfo = additionalInfo;
     return this;
   }
@@ -95,7 +97,7 @@ public class CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason {
     return additionalInfo;
   }
 
-  public void setAdditionalInfo(String additionalInfo) {
+  public void setAdditionalInfo(@javax.annotation.Nullable String additionalInfo) {
     this.additionalInfo = additionalInfo;
   }
 

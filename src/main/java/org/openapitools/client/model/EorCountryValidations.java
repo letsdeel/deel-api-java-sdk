@@ -63,76 +63,92 @@ import org.openapitools.client.JSON;
 /**
  * EorCountryValidations
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorCountryValidations {
   public static final String SERIALIZED_NAME_HOLIDAY = "holiday";
   @SerializedName(SERIALIZED_NAME_HOLIDAY)
+  @javax.annotation.Nullable
   private EorCountryValidationsHoliday holiday;
 
   public static final String SERIALIZED_NAME_PART_TIME_HOLIDAY = "part_time_holiday";
   @SerializedName(SERIALIZED_NAME_PART_TIME_HOLIDAY)
+  @javax.annotation.Nullable
   private EorCountryValidationsPartTimeHoliday partTimeHoliday;
 
   public static final String SERIALIZED_NAME_SICK_DAYS = "sick_days";
   @SerializedName(SERIALIZED_NAME_SICK_DAYS)
+  @javax.annotation.Nullable
   private EorCountryValidationsSickDays sickDays;
 
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
+  @javax.annotation.Nullable
   private EorCountryValidationsSalary salary;
 
   public static final String SERIALIZED_NAME_PROBATION = "probation";
   @SerializedName(SERIALIZED_NAME_PROBATION)
+  @javax.annotation.Nullable
   private EorCountryValidationsProbation probation;
 
   public static final String SERIALIZED_NAME_PART_TIME_PROBATION = "part_time_probation";
   @SerializedName(SERIALIZED_NAME_PART_TIME_PROBATION)
+  @javax.annotation.Nullable
   private EorCountryValidationsPartTimeProbation partTimeProbation;
 
   public static final String SERIALIZED_NAME_WORK_SCHEDULE = "work_schedule";
   @SerializedName(SERIALIZED_NAME_WORK_SCHEDULE)
+  @javax.annotation.Nullable
   private EorCountryValidationsWorkSchedule workSchedule;
 
   public static final String SERIALIZED_NAME_INSURANCE_FEE = "insurance_fee";
   @SerializedName(SERIALIZED_NAME_INSURANCE_FEE)
+  @javax.annotation.Nullable
   private String insuranceFee;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_HIRING_GUIDE_COUNTRY_NAME = "hiring_guide_country_name";
   @SerializedName(SERIALIZED_NAME_HIRING_GUIDE_COUNTRY_NAME)
+  @javax.annotation.Nullable
   private String hiringGuideCountryName;
 
   public static final String SERIALIZED_NAME_START_DATE_BUFFER = "start_date_buffer";
   @SerializedName(SERIALIZED_NAME_START_DATE_BUFFER)
+  @javax.annotation.Nullable
   private BigDecimal startDateBuffer;
 
   public static final String SERIALIZED_NAME_DEFINITE_CONTRACT = "definite_contract";
   @SerializedName(SERIALIZED_NAME_DEFINITE_CONTRACT)
+  @javax.annotation.Nullable
   private EorCountryValidationsDefiniteContract definiteContract;
 
   public static final String SERIALIZED_NAME_ADJUSTMENTS_INFORMATION_BOX = "adjustments_information_box";
   @SerializedName(SERIALIZED_NAME_ADJUSTMENTS_INFORMATION_BOX)
+  @javax.annotation.Nullable
   private String adjustmentsInformationBox;
 
   public static final String SERIALIZED_NAME_HEALTH_INSURANCE = "health_insurance";
   @SerializedName(SERIALIZED_NAME_HEALTH_INSURANCE)
+  @javax.annotation.Nullable
   private EorCountryValidationsHealthInsurance healthInsurance;
 
   public static final String SERIALIZED_NAME_PENSION = "pension";
   @SerializedName(SERIALIZED_NAME_PENSION)
+  @javax.annotation.Nullable
   private EorCountryValidationsPension pension;
 
   public static final String SERIALIZED_NAME_MANDATORY_FIELDS = "mandatory_fields";
   @SerializedName(SERIALIZED_NAME_MANDATORY_FIELDS)
+  @javax.annotation.Nullable
   private List<EorField> mandatoryFields = new ArrayList<>();
 
   public EorCountryValidations() {
   }
 
-  public EorCountryValidations holiday(EorCountryValidationsHoliday holiday) {
+  public EorCountryValidations holiday(@javax.annotation.Nullable EorCountryValidationsHoliday holiday) {
     this.holiday = holiday;
     return this;
   }
@@ -146,12 +162,12 @@ public class EorCountryValidations {
     return holiday;
   }
 
-  public void setHoliday(EorCountryValidationsHoliday holiday) {
+  public void setHoliday(@javax.annotation.Nullable EorCountryValidationsHoliday holiday) {
     this.holiday = holiday;
   }
 
 
-  public EorCountryValidations partTimeHoliday(EorCountryValidationsPartTimeHoliday partTimeHoliday) {
+  public EorCountryValidations partTimeHoliday(@javax.annotation.Nullable EorCountryValidationsPartTimeHoliday partTimeHoliday) {
     this.partTimeHoliday = partTimeHoliday;
     return this;
   }
@@ -165,12 +181,12 @@ public class EorCountryValidations {
     return partTimeHoliday;
   }
 
-  public void setPartTimeHoliday(EorCountryValidationsPartTimeHoliday partTimeHoliday) {
+  public void setPartTimeHoliday(@javax.annotation.Nullable EorCountryValidationsPartTimeHoliday partTimeHoliday) {
     this.partTimeHoliday = partTimeHoliday;
   }
 
 
-  public EorCountryValidations sickDays(EorCountryValidationsSickDays sickDays) {
+  public EorCountryValidations sickDays(@javax.annotation.Nullable EorCountryValidationsSickDays sickDays) {
     this.sickDays = sickDays;
     return this;
   }
@@ -184,12 +200,12 @@ public class EorCountryValidations {
     return sickDays;
   }
 
-  public void setSickDays(EorCountryValidationsSickDays sickDays) {
+  public void setSickDays(@javax.annotation.Nullable EorCountryValidationsSickDays sickDays) {
     this.sickDays = sickDays;
   }
 
 
-  public EorCountryValidations salary(EorCountryValidationsSalary salary) {
+  public EorCountryValidations salary(@javax.annotation.Nullable EorCountryValidationsSalary salary) {
     this.salary = salary;
     return this;
   }
@@ -203,12 +219,12 @@ public class EorCountryValidations {
     return salary;
   }
 
-  public void setSalary(EorCountryValidationsSalary salary) {
+  public void setSalary(@javax.annotation.Nullable EorCountryValidationsSalary salary) {
     this.salary = salary;
   }
 
 
-  public EorCountryValidations probation(EorCountryValidationsProbation probation) {
+  public EorCountryValidations probation(@javax.annotation.Nullable EorCountryValidationsProbation probation) {
     this.probation = probation;
     return this;
   }
@@ -222,12 +238,12 @@ public class EorCountryValidations {
     return probation;
   }
 
-  public void setProbation(EorCountryValidationsProbation probation) {
+  public void setProbation(@javax.annotation.Nullable EorCountryValidationsProbation probation) {
     this.probation = probation;
   }
 
 
-  public EorCountryValidations partTimeProbation(EorCountryValidationsPartTimeProbation partTimeProbation) {
+  public EorCountryValidations partTimeProbation(@javax.annotation.Nullable EorCountryValidationsPartTimeProbation partTimeProbation) {
     this.partTimeProbation = partTimeProbation;
     return this;
   }
@@ -241,12 +257,12 @@ public class EorCountryValidations {
     return partTimeProbation;
   }
 
-  public void setPartTimeProbation(EorCountryValidationsPartTimeProbation partTimeProbation) {
+  public void setPartTimeProbation(@javax.annotation.Nullable EorCountryValidationsPartTimeProbation partTimeProbation) {
     this.partTimeProbation = partTimeProbation;
   }
 
 
-  public EorCountryValidations workSchedule(EorCountryValidationsWorkSchedule workSchedule) {
+  public EorCountryValidations workSchedule(@javax.annotation.Nullable EorCountryValidationsWorkSchedule workSchedule) {
     this.workSchedule = workSchedule;
     return this;
   }
@@ -260,12 +276,12 @@ public class EorCountryValidations {
     return workSchedule;
   }
 
-  public void setWorkSchedule(EorCountryValidationsWorkSchedule workSchedule) {
+  public void setWorkSchedule(@javax.annotation.Nullable EorCountryValidationsWorkSchedule workSchedule) {
     this.workSchedule = workSchedule;
   }
 
 
-  public EorCountryValidations insuranceFee(String insuranceFee) {
+  public EorCountryValidations insuranceFee(@javax.annotation.Nullable String insuranceFee) {
     this.insuranceFee = insuranceFee;
     return this;
   }
@@ -279,12 +295,12 @@ public class EorCountryValidations {
     return insuranceFee;
   }
 
-  public void setInsuranceFee(String insuranceFee) {
+  public void setInsuranceFee(@javax.annotation.Nullable String insuranceFee) {
     this.insuranceFee = insuranceFee;
   }
 
 
-  public EorCountryValidations currency(String currency) {
+  public EorCountryValidations currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -298,12 +314,12 @@ public class EorCountryValidations {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public EorCountryValidations hiringGuideCountryName(String hiringGuideCountryName) {
+  public EorCountryValidations hiringGuideCountryName(@javax.annotation.Nullable String hiringGuideCountryName) {
     this.hiringGuideCountryName = hiringGuideCountryName;
     return this;
   }
@@ -317,12 +333,12 @@ public class EorCountryValidations {
     return hiringGuideCountryName;
   }
 
-  public void setHiringGuideCountryName(String hiringGuideCountryName) {
+  public void setHiringGuideCountryName(@javax.annotation.Nullable String hiringGuideCountryName) {
     this.hiringGuideCountryName = hiringGuideCountryName;
   }
 
 
-  public EorCountryValidations startDateBuffer(BigDecimal startDateBuffer) {
+  public EorCountryValidations startDateBuffer(@javax.annotation.Nullable BigDecimal startDateBuffer) {
     this.startDateBuffer = startDateBuffer;
     return this;
   }
@@ -336,12 +352,12 @@ public class EorCountryValidations {
     return startDateBuffer;
   }
 
-  public void setStartDateBuffer(BigDecimal startDateBuffer) {
+  public void setStartDateBuffer(@javax.annotation.Nullable BigDecimal startDateBuffer) {
     this.startDateBuffer = startDateBuffer;
   }
 
 
-  public EorCountryValidations definiteContract(EorCountryValidationsDefiniteContract definiteContract) {
+  public EorCountryValidations definiteContract(@javax.annotation.Nullable EorCountryValidationsDefiniteContract definiteContract) {
     this.definiteContract = definiteContract;
     return this;
   }
@@ -355,12 +371,12 @@ public class EorCountryValidations {
     return definiteContract;
   }
 
-  public void setDefiniteContract(EorCountryValidationsDefiniteContract definiteContract) {
+  public void setDefiniteContract(@javax.annotation.Nullable EorCountryValidationsDefiniteContract definiteContract) {
     this.definiteContract = definiteContract;
   }
 
 
-  public EorCountryValidations adjustmentsInformationBox(String adjustmentsInformationBox) {
+  public EorCountryValidations adjustmentsInformationBox(@javax.annotation.Nullable String adjustmentsInformationBox) {
     this.adjustmentsInformationBox = adjustmentsInformationBox;
     return this;
   }
@@ -374,12 +390,12 @@ public class EorCountryValidations {
     return adjustmentsInformationBox;
   }
 
-  public void setAdjustmentsInformationBox(String adjustmentsInformationBox) {
+  public void setAdjustmentsInformationBox(@javax.annotation.Nullable String adjustmentsInformationBox) {
     this.adjustmentsInformationBox = adjustmentsInformationBox;
   }
 
 
-  public EorCountryValidations healthInsurance(EorCountryValidationsHealthInsurance healthInsurance) {
+  public EorCountryValidations healthInsurance(@javax.annotation.Nullable EorCountryValidationsHealthInsurance healthInsurance) {
     this.healthInsurance = healthInsurance;
     return this;
   }
@@ -393,12 +409,12 @@ public class EorCountryValidations {
     return healthInsurance;
   }
 
-  public void setHealthInsurance(EorCountryValidationsHealthInsurance healthInsurance) {
+  public void setHealthInsurance(@javax.annotation.Nullable EorCountryValidationsHealthInsurance healthInsurance) {
     this.healthInsurance = healthInsurance;
   }
 
 
-  public EorCountryValidations pension(EorCountryValidationsPension pension) {
+  public EorCountryValidations pension(@javax.annotation.Nullable EorCountryValidationsPension pension) {
     this.pension = pension;
     return this;
   }
@@ -412,12 +428,12 @@ public class EorCountryValidations {
     return pension;
   }
 
-  public void setPension(EorCountryValidationsPension pension) {
+  public void setPension(@javax.annotation.Nullable EorCountryValidationsPension pension) {
     this.pension = pension;
   }
 
 
-  public EorCountryValidations mandatoryFields(List<EorField> mandatoryFields) {
+  public EorCountryValidations mandatoryFields(@javax.annotation.Nullable List<EorField> mandatoryFields) {
     this.mandatoryFields = mandatoryFields;
     return this;
   }
@@ -439,7 +455,7 @@ public class EorCountryValidations {
     return mandatoryFields;
   }
 
-  public void setMandatoryFields(List<EorField> mandatoryFields) {
+  public void setMandatoryFields(@javax.annotation.Nullable List<EorField> mandatoryFields) {
     this.mandatoryFields = mandatoryFields;
   }
 

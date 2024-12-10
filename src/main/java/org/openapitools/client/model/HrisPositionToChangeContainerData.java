@@ -54,28 +54,32 @@ import org.openapitools.client.JSON;
 /**
  * HrisPositionToChangeContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisPositionToChangeContainerData {
   public static final String SERIALIZED_NAME_ADD = "add";
   @SerializedName(SERIALIZED_NAME_ADD)
+  @javax.annotation.Nullable
   private List<HrisPositionToChangeContainerDataAddInner> add = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_EDIT = "edit";
   @SerializedName(SERIALIZED_NAME_EDIT)
+  @javax.annotation.Nullable
   private List<HrisPositionToChangeContainerDataEditInner> edit = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_DELETE = "delete";
   @SerializedName(SERIALIZED_NAME_DELETE)
+  @javax.annotation.Nullable
   private List<CreateDirectEmployeeRequestClientDepartment> delete = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PROFILE_ID = "profile_id";
   @SerializedName(SERIALIZED_NAME_PROFILE_ID)
+  @javax.annotation.Nonnull
   private UUID profileId;
 
   public HrisPositionToChangeContainerData() {
   }
 
-  public HrisPositionToChangeContainerData add(List<HrisPositionToChangeContainerDataAddInner> add) {
+  public HrisPositionToChangeContainerData add(@javax.annotation.Nullable List<HrisPositionToChangeContainerDataAddInner> add) {
     this.add = add;
     return this;
   }
@@ -97,12 +101,12 @@ public class HrisPositionToChangeContainerData {
     return add;
   }
 
-  public void setAdd(List<HrisPositionToChangeContainerDataAddInner> add) {
+  public void setAdd(@javax.annotation.Nullable List<HrisPositionToChangeContainerDataAddInner> add) {
     this.add = add;
   }
 
 
-  public HrisPositionToChangeContainerData edit(List<HrisPositionToChangeContainerDataEditInner> edit) {
+  public HrisPositionToChangeContainerData edit(@javax.annotation.Nullable List<HrisPositionToChangeContainerDataEditInner> edit) {
     this.edit = edit;
     return this;
   }
@@ -124,12 +128,12 @@ public class HrisPositionToChangeContainerData {
     return edit;
   }
 
-  public void setEdit(List<HrisPositionToChangeContainerDataEditInner> edit) {
+  public void setEdit(@javax.annotation.Nullable List<HrisPositionToChangeContainerDataEditInner> edit) {
     this.edit = edit;
   }
 
 
-  public HrisPositionToChangeContainerData delete(List<CreateDirectEmployeeRequestClientDepartment> delete) {
+  public HrisPositionToChangeContainerData delete(@javax.annotation.Nullable List<CreateDirectEmployeeRequestClientDepartment> delete) {
     this.delete = delete;
     return this;
   }
@@ -151,12 +155,12 @@ public class HrisPositionToChangeContainerData {
     return delete;
   }
 
-  public void setDelete(List<CreateDirectEmployeeRequestClientDepartment> delete) {
+  public void setDelete(@javax.annotation.Nullable List<CreateDirectEmployeeRequestClientDepartment> delete) {
     this.delete = delete;
   }
 
 
-  public HrisPositionToChangeContainerData profileId(UUID profileId) {
+  public HrisPositionToChangeContainerData profileId(@javax.annotation.Nonnull UUID profileId) {
     this.profileId = profileId;
     return this;
   }
@@ -170,7 +174,7 @@ public class HrisPositionToChangeContainerData {
     return profileId;
   }
 
-  public void setProfileId(UUID profileId) {
+  public void setProfileId(@javax.annotation.Nonnull UUID profileId) {
     this.profileId = profileId;
   }
 

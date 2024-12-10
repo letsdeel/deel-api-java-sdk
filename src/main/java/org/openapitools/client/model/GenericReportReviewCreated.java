@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * GenericReportReviewCreated
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GenericReportReviewCreated {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private InvoiceAdjustmentStatusEnum status;
 
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public GenericReportReviewCreated() {
   }
 
-  public GenericReportReviewCreated status(InvoiceAdjustmentStatusEnum status) {
+  public GenericReportReviewCreated status(@javax.annotation.Nullable InvoiceAdjustmentStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -76,12 +78,12 @@ public class GenericReportReviewCreated {
     return status;
   }
 
-  public void setStatus(InvoiceAdjustmentStatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable InvoiceAdjustmentStatusEnum status) {
     this.status = status;
   }
 
 
-  public GenericReportReviewCreated id(String id) {
+  public GenericReportReviewCreated id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -95,7 +97,7 @@ public class GenericReportReviewCreated {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 

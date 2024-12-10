@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * PgoTaskReviewsByIdToCreate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PgoTaskReviewsByIdToCreate {
   /**
    * Review status.
@@ -105,16 +105,18 @@ public class PgoTaskReviewsByIdToCreate {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_REASON = "reason";
   @SerializedName(SERIALIZED_NAME_REASON)
+  @javax.annotation.Nullable
   private String reason;
 
   public PgoTaskReviewsByIdToCreate() {
   }
 
-  public PgoTaskReviewsByIdToCreate status(StatusEnum status) {
+  public PgoTaskReviewsByIdToCreate status(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -128,12 +130,12 @@ public class PgoTaskReviewsByIdToCreate {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 
 
-  public PgoTaskReviewsByIdToCreate reason(String reason) {
+  public PgoTaskReviewsByIdToCreate reason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
     return this;
   }
@@ -147,7 +149,7 @@ public class PgoTaskReviewsByIdToCreate {
     return reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
   }
 

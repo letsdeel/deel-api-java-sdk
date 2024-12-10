@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * PaymentsDetailedReportContainerDataInnerContract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PaymentsDetailedReportContainerDataInnerContract {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
+  @javax.annotation.Nullable
   private String legalEntity;
 
   public PaymentsDetailedReportContainerDataInnerContract() {
   }
 
-  public PaymentsDetailedReportContainerDataInnerContract id(String id) {
+  public PaymentsDetailedReportContainerDataInnerContract id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -79,12 +82,12 @@ public class PaymentsDetailedReportContainerDataInnerContract {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public PaymentsDetailedReportContainerDataInnerContract name(String name) {
+  public PaymentsDetailedReportContainerDataInnerContract name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -98,12 +101,12 @@ public class PaymentsDetailedReportContainerDataInnerContract {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public PaymentsDetailedReportContainerDataInnerContract legalEntity(String legalEntity) {
+  public PaymentsDetailedReportContainerDataInnerContract legalEntity(@javax.annotation.Nullable String legalEntity) {
     this.legalEntity = legalEntity;
     return this;
   }
@@ -117,7 +120,7 @@ public class PaymentsDetailedReportContainerDataInnerContract {
     return legalEntity;
   }
 
-  public void setLegalEntity(String legalEntity) {
+  public void setLegalEntity(@javax.annotation.Nullable String legalEntity) {
     this.legalEntity = legalEntity;
   }
 

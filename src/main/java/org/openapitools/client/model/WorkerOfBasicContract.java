@@ -53,32 +53,37 @@ import org.openapitools.client.JSON;
 /**
  * WorkerOfBasicContract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class WorkerOfBasicContract {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nonnull
   private String fullName;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_ALTERNATE_EMAIL = "alternate_email";
   @SerializedName(SERIALIZED_NAME_ALTERNATE_EMAIL)
+  @javax.annotation.Nullable
   private List<AlternateEmailItem> alternateEmail = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_IMAGE = "image";
   @SerializedName(SERIALIZED_NAME_IMAGE)
+  @javax.annotation.Nullable
   private URI image;
 
   public WorkerOfBasicContract() {
   }
 
-  public WorkerOfBasicContract id(String id) {
+  public WorkerOfBasicContract id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -92,12 +97,12 @@ public class WorkerOfBasicContract {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public WorkerOfBasicContract fullName(String fullName) {
+  public WorkerOfBasicContract fullName(@javax.annotation.Nonnull String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -111,12 +116,12 @@ public class WorkerOfBasicContract {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nonnull String fullName) {
     this.fullName = fullName;
   }
 
 
-  public WorkerOfBasicContract email(String email) {
+  public WorkerOfBasicContract email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -130,12 +135,12 @@ public class WorkerOfBasicContract {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public WorkerOfBasicContract alternateEmail(List<AlternateEmailItem> alternateEmail) {
+  public WorkerOfBasicContract alternateEmail(@javax.annotation.Nullable List<AlternateEmailItem> alternateEmail) {
     this.alternateEmail = alternateEmail;
     return this;
   }
@@ -157,12 +162,12 @@ public class WorkerOfBasicContract {
     return alternateEmail;
   }
 
-  public void setAlternateEmail(List<AlternateEmailItem> alternateEmail) {
+  public void setAlternateEmail(@javax.annotation.Nullable List<AlternateEmailItem> alternateEmail) {
     this.alternateEmail = alternateEmail;
   }
 
 
-  public WorkerOfBasicContract image(URI image) {
+  public WorkerOfBasicContract image(@javax.annotation.Nullable URI image) {
     this.image = image;
     return this;
   }
@@ -176,7 +181,7 @@ public class WorkerOfBasicContract {
     return image;
   }
 
-  public void setImage(URI image) {
+  public void setImage(@javax.annotation.Nullable URI image) {
     this.image = image;
   }
 

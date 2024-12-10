@@ -58,76 +58,92 @@ import org.openapitools.client.JSON;
 /**
  * BasicContract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BasicContract {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nonnull
   private String title;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private ContractTypeEnum type;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private ContractStatusEnum status;
 
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
+  @javax.annotation.Nonnull
   private ClientOfBasicContract client;
 
   public static final String SERIALIZED_NAME_WORKER = "worker";
   @SerializedName(SERIALIZED_NAME_WORKER)
+  @javax.annotation.Nullable
   private WorkerOfBasicContract worker;
 
   public static final String SERIALIZED_NAME_INVITATIONS = "invitations";
   @SerializedName(SERIALIZED_NAME_INVITATIONS)
+  @javax.annotation.Nonnull
   private InvitationsOfBasicContract invitations;
 
   public static final String SERIALIZED_NAME_SIGNATURES = "signatures";
   @SerializedName(SERIALIZED_NAME_SIGNATURES)
+  @javax.annotation.Nonnull
   private SignaturesOfBasicContract signatures;
 
   public static final String SERIALIZED_NAME_IS_SHIELDED = "is_shielded";
   @SerializedName(SERIALIZED_NAME_IS_SHIELDED)
+  @javax.annotation.Nonnull
   private Boolean isShielded;
 
   public static final String SERIALIZED_NAME_IS_ARCHIVED = "is_archived";
   @SerializedName(SERIALIZED_NAME_IS_ARCHIVED)
+  @javax.annotation.Nonnull
   private Boolean isArchived;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_TERMINATION_DATE = "termination_date";
   @SerializedName(SERIALIZED_NAME_TERMINATION_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime terminationDate;
 
   public static final String SERIALIZED_NAME_NOTICE_PERIOD = "notice_period";
   @SerializedName(SERIALIZED_NAME_NOTICE_PERIOD)
+  @javax.annotation.Nullable
   private BigDecimal noticePeriod = new BigDecimal("0");
 
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nullable
   private String scale;
 
   public static final String SERIALIZED_NAME_WHO_REPORTS = "who_reports";
   @SerializedName(SERIALIZED_NAME_WHO_REPORTS)
+  @javax.annotation.Nullable
   private ContractWhoReportsEnum whoReports;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public BasicContract() {
   }
 
-  public BasicContract id(String id) {
+  public BasicContract id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -141,12 +157,12 @@ public class BasicContract {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public BasicContract title(String title) {
+  public BasicContract title(@javax.annotation.Nonnull String title) {
     this.title = title;
     return this;
   }
@@ -160,12 +176,12 @@ public class BasicContract {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nonnull String title) {
     this.title = title;
   }
 
 
-  public BasicContract type(ContractTypeEnum type) {
+  public BasicContract type(@javax.annotation.Nonnull ContractTypeEnum type) {
     this.type = type;
     return this;
   }
@@ -179,12 +195,12 @@ public class BasicContract {
     return type;
   }
 
-  public void setType(ContractTypeEnum type) {
+  public void setType(@javax.annotation.Nonnull ContractTypeEnum type) {
     this.type = type;
   }
 
 
-  public BasicContract status(ContractStatusEnum status) {
+  public BasicContract status(@javax.annotation.Nonnull ContractStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -198,12 +214,12 @@ public class BasicContract {
     return status;
   }
 
-  public void setStatus(ContractStatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull ContractStatusEnum status) {
     this.status = status;
   }
 
 
-  public BasicContract client(ClientOfBasicContract client) {
+  public BasicContract client(@javax.annotation.Nonnull ClientOfBasicContract client) {
     this.client = client;
     return this;
   }
@@ -217,12 +233,12 @@ public class BasicContract {
     return client;
   }
 
-  public void setClient(ClientOfBasicContract client) {
+  public void setClient(@javax.annotation.Nonnull ClientOfBasicContract client) {
     this.client = client;
   }
 
 
-  public BasicContract worker(WorkerOfBasicContract worker) {
+  public BasicContract worker(@javax.annotation.Nullable WorkerOfBasicContract worker) {
     this.worker = worker;
     return this;
   }
@@ -236,12 +252,12 @@ public class BasicContract {
     return worker;
   }
 
-  public void setWorker(WorkerOfBasicContract worker) {
+  public void setWorker(@javax.annotation.Nullable WorkerOfBasicContract worker) {
     this.worker = worker;
   }
 
 
-  public BasicContract invitations(InvitationsOfBasicContract invitations) {
+  public BasicContract invitations(@javax.annotation.Nonnull InvitationsOfBasicContract invitations) {
     this.invitations = invitations;
     return this;
   }
@@ -255,12 +271,12 @@ public class BasicContract {
     return invitations;
   }
 
-  public void setInvitations(InvitationsOfBasicContract invitations) {
+  public void setInvitations(@javax.annotation.Nonnull InvitationsOfBasicContract invitations) {
     this.invitations = invitations;
   }
 
 
-  public BasicContract signatures(SignaturesOfBasicContract signatures) {
+  public BasicContract signatures(@javax.annotation.Nonnull SignaturesOfBasicContract signatures) {
     this.signatures = signatures;
     return this;
   }
@@ -274,12 +290,12 @@ public class BasicContract {
     return signatures;
   }
 
-  public void setSignatures(SignaturesOfBasicContract signatures) {
+  public void setSignatures(@javax.annotation.Nonnull SignaturesOfBasicContract signatures) {
     this.signatures = signatures;
   }
 
 
-  public BasicContract isShielded(Boolean isShielded) {
+  public BasicContract isShielded(@javax.annotation.Nonnull Boolean isShielded) {
     this.isShielded = isShielded;
     return this;
   }
@@ -293,12 +309,12 @@ public class BasicContract {
     return isShielded;
   }
 
-  public void setIsShielded(Boolean isShielded) {
+  public void setIsShielded(@javax.annotation.Nonnull Boolean isShielded) {
     this.isShielded = isShielded;
   }
 
 
-  public BasicContract isArchived(Boolean isArchived) {
+  public BasicContract isArchived(@javax.annotation.Nonnull Boolean isArchived) {
     this.isArchived = isArchived;
     return this;
   }
@@ -312,12 +328,12 @@ public class BasicContract {
     return isArchived;
   }
 
-  public void setIsArchived(Boolean isArchived) {
+  public void setIsArchived(@javax.annotation.Nonnull Boolean isArchived) {
     this.isArchived = isArchived;
   }
 
 
-  public BasicContract createdAt(OffsetDateTime createdAt) {
+  public BasicContract createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -331,12 +347,12 @@ public class BasicContract {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public BasicContract terminationDate(OffsetDateTime terminationDate) {
+  public BasicContract terminationDate(@javax.annotation.Nullable OffsetDateTime terminationDate) {
     this.terminationDate = terminationDate;
     return this;
   }
@@ -350,12 +366,12 @@ public class BasicContract {
     return terminationDate;
   }
 
-  public void setTerminationDate(OffsetDateTime terminationDate) {
+  public void setTerminationDate(@javax.annotation.Nullable OffsetDateTime terminationDate) {
     this.terminationDate = terminationDate;
   }
 
 
-  public BasicContract noticePeriod(BigDecimal noticePeriod) {
+  public BasicContract noticePeriod(@javax.annotation.Nullable BigDecimal noticePeriod) {
     this.noticePeriod = noticePeriod;
     return this;
   }
@@ -370,12 +386,12 @@ public class BasicContract {
     return noticePeriod;
   }
 
-  public void setNoticePeriod(BigDecimal noticePeriod) {
+  public void setNoticePeriod(@javax.annotation.Nullable BigDecimal noticePeriod) {
     this.noticePeriod = noticePeriod;
   }
 
 
-  public BasicContract scale(String scale) {
+  public BasicContract scale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
     return this;
   }
@@ -389,12 +405,12 @@ public class BasicContract {
     return scale;
   }
 
-  public void setScale(String scale) {
+  public void setScale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
   }
 
 
-  public BasicContract whoReports(ContractWhoReportsEnum whoReports) {
+  public BasicContract whoReports(@javax.annotation.Nullable ContractWhoReportsEnum whoReports) {
     this.whoReports = whoReports;
     return this;
   }
@@ -408,12 +424,12 @@ public class BasicContract {
     return whoReports;
   }
 
-  public void setWhoReports(ContractWhoReportsEnum whoReports) {
+  public void setWhoReports(@javax.annotation.Nullable ContractWhoReportsEnum whoReports) {
     this.whoReports = whoReports;
   }
 
 
-  public BasicContract externalId(String externalId) {
+  public BasicContract externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -427,7 +443,7 @@ public class BasicContract {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 

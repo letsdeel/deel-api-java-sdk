@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * CreateMilestoneRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateMilestoneRequest {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nonnull
   private String title;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private CreateMilestoneRequestAmount amount;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public CreateMilestoneRequest() {
   }
 
-  public CreateMilestoneRequest title(String title) {
+  public CreateMilestoneRequest title(@javax.annotation.Nonnull String title) {
     this.title = title;
     return this;
   }
@@ -80,12 +83,12 @@ public class CreateMilestoneRequest {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nonnull String title) {
     this.title = title;
   }
 
 
-  public CreateMilestoneRequest amount(CreateMilestoneRequestAmount amount) {
+  public CreateMilestoneRequest amount(@javax.annotation.Nonnull CreateMilestoneRequestAmount amount) {
     this.amount = amount;
     return this;
   }
@@ -99,12 +102,12 @@ public class CreateMilestoneRequest {
     return amount;
   }
 
-  public void setAmount(CreateMilestoneRequestAmount amount) {
+  public void setAmount(@javax.annotation.Nonnull CreateMilestoneRequestAmount amount) {
     this.amount = amount;
   }
 
 
-  public CreateMilestoneRequest description(String description) {
+  public CreateMilestoneRequest description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -118,7 +121,7 @@ public class CreateMilestoneRequest {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 

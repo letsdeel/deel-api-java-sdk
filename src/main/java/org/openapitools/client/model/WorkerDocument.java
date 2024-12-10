@@ -49,32 +49,37 @@ import org.openapitools.client.JSON;
 /**
  * WorkerDocument
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class WorkerDocument {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_CONTRACTOR_SIGNED_AT = "contractor_signed_at";
   @SerializedName(SERIALIZED_NAME_CONTRACTOR_SIGNED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime contractorSignedAt;
 
   public static final String SERIALIZED_NAME_CLIENT_SIGNED_AT = "client_signed_at";
   @SerializedName(SERIALIZED_NAME_CLIENT_SIGNED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime clientSignedAt;
 
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nullable
   private String label;
 
   public WorkerDocument() {
   }
 
-  public WorkerDocument id(String id) {
+  public WorkerDocument id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -88,12 +93,12 @@ public class WorkerDocument {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public WorkerDocument type(String type) {
+  public WorkerDocument type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -107,12 +112,12 @@ public class WorkerDocument {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public WorkerDocument contractorSignedAt(OffsetDateTime contractorSignedAt) {
+  public WorkerDocument contractorSignedAt(@javax.annotation.Nullable OffsetDateTime contractorSignedAt) {
     this.contractorSignedAt = contractorSignedAt;
     return this;
   }
@@ -126,12 +131,12 @@ public class WorkerDocument {
     return contractorSignedAt;
   }
 
-  public void setContractorSignedAt(OffsetDateTime contractorSignedAt) {
+  public void setContractorSignedAt(@javax.annotation.Nullable OffsetDateTime contractorSignedAt) {
     this.contractorSignedAt = contractorSignedAt;
   }
 
 
-  public WorkerDocument clientSignedAt(OffsetDateTime clientSignedAt) {
+  public WorkerDocument clientSignedAt(@javax.annotation.Nullable OffsetDateTime clientSignedAt) {
     this.clientSignedAt = clientSignedAt;
     return this;
   }
@@ -145,12 +150,12 @@ public class WorkerDocument {
     return clientSignedAt;
   }
 
-  public void setClientSignedAt(OffsetDateTime clientSignedAt) {
+  public void setClientSignedAt(@javax.annotation.Nullable OffsetDateTime clientSignedAt) {
     this.clientSignedAt = clientSignedAt;
   }
 
 
-  public WorkerDocument label(String label) {
+  public WorkerDocument label(@javax.annotation.Nullable String label) {
     this.label = label;
     return this;
   }
@@ -164,7 +169,7 @@ public class WorkerDocument {
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nullable String label) {
     this.label = label;
   }
 

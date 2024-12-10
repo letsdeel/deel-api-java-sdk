@@ -51,32 +51,37 @@ import org.openapitools.client.JSON;
 /**
  * UpdatedRoleContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdatedRoleContainer {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private BigDecimal id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_SCOPE = "scope";
   @SerializedName(SERIALIZED_NAME_SCOPE)
+  @javax.annotation.Nullable
   private String scope;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_PERMISSION_SETS = "permissionSets";
   @SerializedName(SERIALIZED_NAME_PERMISSION_SETS)
+  @javax.annotation.Nullable
   private List<String> permissionSets = new ArrayList<>();
 
   public UpdatedRoleContainer() {
   }
 
-  public UpdatedRoleContainer id(BigDecimal id) {
+  public UpdatedRoleContainer id(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
     return this;
   }
@@ -90,12 +95,12 @@ public class UpdatedRoleContainer {
     return id;
   }
 
-  public void setId(BigDecimal id) {
+  public void setId(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
   }
 
 
-  public UpdatedRoleContainer name(String name) {
+  public UpdatedRoleContainer name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -109,12 +114,12 @@ public class UpdatedRoleContainer {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public UpdatedRoleContainer scope(String scope) {
+  public UpdatedRoleContainer scope(@javax.annotation.Nullable String scope) {
     this.scope = scope;
     return this;
   }
@@ -128,12 +133,12 @@ public class UpdatedRoleContainer {
     return scope;
   }
 
-  public void setScope(String scope) {
+  public void setScope(@javax.annotation.Nullable String scope) {
     this.scope = scope;
   }
 
 
-  public UpdatedRoleContainer description(String description) {
+  public UpdatedRoleContainer description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -147,12 +152,12 @@ public class UpdatedRoleContainer {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public UpdatedRoleContainer permissionSets(List<String> permissionSets) {
+  public UpdatedRoleContainer permissionSets(@javax.annotation.Nullable List<String> permissionSets) {
     this.permissionSets = permissionSets;
     return this;
   }
@@ -174,7 +179,7 @@ public class UpdatedRoleContainer {
     return permissionSets;
   }
 
-  public void setPermissionSets(List<String> permissionSets) {
+  public void setPermissionSets(@javax.annotation.Nullable List<String> permissionSets) {
     this.permissionSets = permissionSets;
   }
 

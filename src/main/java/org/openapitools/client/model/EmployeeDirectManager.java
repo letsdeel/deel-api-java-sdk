@@ -48,32 +48,37 @@ import org.openapitools.client.JSON;
 /**
  * The direct manager of the employee.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EmployeeDirectManager {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_WORK_EMAIL = "work_email";
   @SerializedName(SERIALIZED_NAME_WORK_EMAIL)
+  @javax.annotation.Nullable
   private String workEmail;
 
   public static final String SERIALIZED_NAME_WORKER_ID = "worker_id";
   @SerializedName(SERIALIZED_NAME_WORKER_ID)
+  @javax.annotation.Nullable
   private String workerId;
 
   public EmployeeDirectManager() {
   }
 
-  public EmployeeDirectManager id(String id) {
+  public EmployeeDirectManager id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -87,12 +92,12 @@ public class EmployeeDirectManager {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public EmployeeDirectManager lastName(String lastName) {
+  public EmployeeDirectManager lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -106,12 +111,12 @@ public class EmployeeDirectManager {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
 
-  public EmployeeDirectManager firstName(String firstName) {
+  public EmployeeDirectManager firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -125,12 +130,12 @@ public class EmployeeDirectManager {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public EmployeeDirectManager workEmail(String workEmail) {
+  public EmployeeDirectManager workEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
     return this;
   }
@@ -144,12 +149,12 @@ public class EmployeeDirectManager {
     return workEmail;
   }
 
-  public void setWorkEmail(String workEmail) {
+  public void setWorkEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
   }
 
 
-  public EmployeeDirectManager workerId(String workerId) {
+  public EmployeeDirectManager workerId(@javax.annotation.Nullable String workerId) {
     this.workerId = workerId;
     return this;
   }
@@ -163,7 +168,7 @@ public class EmployeeDirectManager {
     return workerId;
   }
 
-  public void setWorkerId(String workerId) {
+  public void setWorkerId(@javax.annotation.Nullable String workerId) {
     this.workerId = workerId;
   }
 

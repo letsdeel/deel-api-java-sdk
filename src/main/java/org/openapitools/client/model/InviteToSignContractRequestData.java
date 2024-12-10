@@ -48,26 +48,111 @@ import org.openapitools.client.JSON;
 /**
  * InviteToSignContractRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class InviteToSignContractRequestData {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
+
+  /**
+   * Locale of the email
+   */
+  @JsonAdapter(LocaleEnum.Adapter.class)
+  public enum LocaleEnum {
+    EN("en"),
+    
+    ES("es"),
+    
+    FR("fr"),
+    
+    DE("de"),
+    
+    IT("it"),
+    
+    PT("pt"),
+    
+    PL("pl"),
+    
+    NN("nn"),
+    
+    NL("nl"),
+    
+    DA("da"),
+    
+    DE_AT("deAT"),
+    
+    FI("fi"),
+    
+    SV("sv"),
+    
+    NL_BE("nlBE"),
+    
+    JA("ja");
+
+    private String value;
+
+    LocaleEnum(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static LocaleEnum fromValue(String value) {
+      for (LocaleEnum b : LocaleEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+    }
+
+    public static class Adapter extends TypeAdapter<LocaleEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final LocaleEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public LocaleEnum read(final JsonReader jsonReader) throws IOException {
+        String value =  jsonReader.nextString();
+        return LocaleEnum.fromValue(value);
+      }
+    }
+
+    public static void validateJsonElement(JsonElement jsonElement) throws IOException {
+      String value = jsonElement.getAsString();
+      LocaleEnum.fromValue(value);
+    }
+  }
+
+  public static final String SERIALIZED_NAME_LOCALE = "locale";
+  @SerializedName(SERIALIZED_NAME_LOCALE)
+  @javax.annotation.Nullable
+  private LocaleEnum locale = LocaleEnum.EN;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nullable
   private String message;
 
   public InviteToSignContractRequestData() {
   }
 
-  public InviteToSignContractRequestData email(String email) {
+  public InviteToSignContractRequestData email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
 
   /**
-   * Get email
+   * Worker email
    * @return email
    */
   @javax.annotation.Nullable
@@ -75,18 +160,37 @@ public class InviteToSignContractRequestData {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public InviteToSignContractRequestData message(String message) {
+  public InviteToSignContractRequestData locale(@javax.annotation.Nullable LocaleEnum locale) {
+    this.locale = locale;
+    return this;
+  }
+
+  /**
+   * Locale of the email
+   * @return locale
+   */
+  @javax.annotation.Nullable
+  public LocaleEnum getLocale() {
+    return locale;
+  }
+
+  public void setLocale(@javax.annotation.Nullable LocaleEnum locale) {
+    this.locale = locale;
+  }
+
+
+  public InviteToSignContractRequestData message(@javax.annotation.Nullable String message) {
     this.message = message;
     return this;
   }
 
   /**
-   * Get message
+   * Message to the worker
    * @return message
    */
   @javax.annotation.Nullable
@@ -94,7 +198,7 @@ public class InviteToSignContractRequestData {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nullable String message) {
     this.message = message;
   }
 
@@ -110,12 +214,13 @@ public class InviteToSignContractRequestData {
     }
     InviteToSignContractRequestData inviteToSignContractRequestData = (InviteToSignContractRequestData) o;
     return Objects.equals(this.email, inviteToSignContractRequestData.email) &&
+        Objects.equals(this.locale, inviteToSignContractRequestData.locale) &&
         Objects.equals(this.message, inviteToSignContractRequestData.message);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(email, message);
+    return Objects.hash(email, locale, message);
   }
 
   @Override
@@ -123,6 +228,7 @@ public class InviteToSignContractRequestData {
     StringBuilder sb = new StringBuilder();
     sb.append("class InviteToSignContractRequestData {\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
+    sb.append("    locale: ").append(toIndentedString(locale)).append("\n");
     sb.append("    message: ").append(toIndentedString(message)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -147,6 +253,7 @@ public class InviteToSignContractRequestData {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("email");
+    openapiFields.add("locale");
     openapiFields.add("message");
 
     // a set of required properties/fields (JSON key names)
@@ -176,6 +283,13 @@ public class InviteToSignContractRequestData {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("email") != null && !jsonObj.get("email").isJsonNull()) && !jsonObj.get("email").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("email").toString()));
+      }
+      if ((jsonObj.get("locale") != null && !jsonObj.get("locale").isJsonNull()) && !jsonObj.get("locale").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `locale` to be a primitive type in the JSON string but got `%s`", jsonObj.get("locale").toString()));
+      }
+      // validate the optional field `locale`
+      if (jsonObj.get("locale") != null && !jsonObj.get("locale").isJsonNull()) {
+        LocaleEnum.validateJsonElement(jsonObj.get("locale"));
       }
       if ((jsonObj.get("message") != null && !jsonObj.get("message").isJsonNull()) && !jsonObj.get("message").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `message` to be a primitive type in the JSON string but got `%s`", jsonObj.get("message").toString()));

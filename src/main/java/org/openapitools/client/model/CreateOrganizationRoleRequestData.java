@@ -50,32 +50,37 @@ import org.openapitools.client.JSON;
 /**
  * CreateOrganizationRoleRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateOrganizationRoleRequestData {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_SCOPE = "scope";
   @SerializedName(SERIALIZED_NAME_SCOPE)
+  @javax.annotation.Nonnull
   private String scope;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_PERMISSION_SETS = "permissionSets";
   @SerializedName(SERIALIZED_NAME_PERMISSION_SETS)
+  @javax.annotation.Nonnull
   private List<String> permissionSets = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_HRIS_ORG_STRUCTURE_ID = "hrisOrgStructureId";
   @SerializedName(SERIALIZED_NAME_HRIS_ORG_STRUCTURE_ID)
+  @javax.annotation.Nullable
   private String hrisOrgStructureId;
 
   public CreateOrganizationRoleRequestData() {
   }
 
-  public CreateOrganizationRoleRequestData name(String name) {
+  public CreateOrganizationRoleRequestData name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -89,12 +94,12 @@ public class CreateOrganizationRoleRequestData {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public CreateOrganizationRoleRequestData scope(String scope) {
+  public CreateOrganizationRoleRequestData scope(@javax.annotation.Nonnull String scope) {
     this.scope = scope;
     return this;
   }
@@ -108,12 +113,12 @@ public class CreateOrganizationRoleRequestData {
     return scope;
   }
 
-  public void setScope(String scope) {
+  public void setScope(@javax.annotation.Nonnull String scope) {
     this.scope = scope;
   }
 
 
-  public CreateOrganizationRoleRequestData description(String description) {
+  public CreateOrganizationRoleRequestData description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -127,12 +132,12 @@ public class CreateOrganizationRoleRequestData {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public CreateOrganizationRoleRequestData permissionSets(List<String> permissionSets) {
+  public CreateOrganizationRoleRequestData permissionSets(@javax.annotation.Nonnull List<String> permissionSets) {
     this.permissionSets = permissionSets;
     return this;
   }
@@ -154,12 +159,12 @@ public class CreateOrganizationRoleRequestData {
     return permissionSets;
   }
 
-  public void setPermissionSets(List<String> permissionSets) {
+  public void setPermissionSets(@javax.annotation.Nonnull List<String> permissionSets) {
     this.permissionSets = permissionSets;
   }
 
 
-  public CreateOrganizationRoleRequestData hrisOrgStructureId(String hrisOrgStructureId) {
+  public CreateOrganizationRoleRequestData hrisOrgStructureId(@javax.annotation.Nullable String hrisOrgStructureId) {
     this.hrisOrgStructureId = hrisOrgStructureId;
     return this;
   }
@@ -173,7 +178,7 @@ public class CreateOrganizationRoleRequestData {
     return hrisOrgStructureId;
   }
 
-  public void setHrisOrgStructureId(String hrisOrgStructureId) {
+  public void setHrisOrgStructureId(@javax.annotation.Nullable String hrisOrgStructureId) {
     this.hrisOrgStructureId = hrisOrgStructureId;
   }
 

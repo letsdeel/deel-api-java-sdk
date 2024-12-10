@@ -51,16 +51,17 @@ import org.openapitools.client.JSON;
 /**
  * OnboardingTrackerHrisProfileOidGet200ResponseDataChecklist
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OnboardingTrackerHrisProfileOidGet200ResponseDataChecklist {
   public static final String SERIALIZED_NAME_STEPS = "steps";
   @SerializedName(SERIALIZED_NAME_STEPS)
+  @javax.annotation.Nullable
   private List<OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner> steps = new ArrayList<>();
 
   public OnboardingTrackerHrisProfileOidGet200ResponseDataChecklist() {
   }
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataChecklist steps(List<OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner> steps) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataChecklist steps(@javax.annotation.Nullable List<OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner> steps) {
     this.steps = steps;
     return this;
   }
@@ -82,7 +83,7 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataChecklist {
     return steps;
   }
 
-  public void setSteps(List<OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner> steps) {
+  public void setSteps(@javax.annotation.Nullable List<OnboardingTrackerHrisProfileOidGet200ResponseDataChecklistStepsInner> steps) {
     this.steps = steps;
   }
 

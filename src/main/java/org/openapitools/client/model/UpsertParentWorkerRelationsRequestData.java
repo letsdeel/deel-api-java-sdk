@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * UpsertParentWorkerRelationsRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertParentWorkerRelationsRequestData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_ID = "hris_relationship_type_id";
   @SerializedName(SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_ID)
+  @javax.annotation.Nonnull
   private UUID hrisRelationshipTypeId;
 
   public UpsertParentWorkerRelationsRequestData() {
   }
 
-  public UpsertParentWorkerRelationsRequestData id(UUID id) {
+  public UpsertParentWorkerRelationsRequestData id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -76,12 +78,12 @@ public class UpsertParentWorkerRelationsRequestData {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public UpsertParentWorkerRelationsRequestData hrisRelationshipTypeId(UUID hrisRelationshipTypeId) {
+  public UpsertParentWorkerRelationsRequestData hrisRelationshipTypeId(@javax.annotation.Nonnull UUID hrisRelationshipTypeId) {
     this.hrisRelationshipTypeId = hrisRelationshipTypeId;
     return this;
   }
@@ -95,7 +97,7 @@ public class UpsertParentWorkerRelationsRequestData {
     return hrisRelationshipTypeId;
   }
 
-  public void setHrisRelationshipTypeId(UUID hrisRelationshipTypeId) {
+  public void setHrisRelationshipTypeId(@javax.annotation.Nonnull UUID hrisRelationshipTypeId) {
     this.hrisRelationshipTypeId = hrisRelationshipTypeId;
   }
 

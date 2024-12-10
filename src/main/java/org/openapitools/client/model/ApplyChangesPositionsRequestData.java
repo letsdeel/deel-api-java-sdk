@@ -54,28 +54,32 @@ import org.openapitools.client.JSON;
 /**
  * ApplyChangesPositionsRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ApplyChangesPositionsRequestData {
   public static final String SERIALIZED_NAME_ADD = "add";
   @SerializedName(SERIALIZED_NAME_ADD)
+  @javax.annotation.Nullable
   private List<ApplyChangesPositionsRequestDataAddInner> add = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_EDIT = "edit";
   @SerializedName(SERIALIZED_NAME_EDIT)
+  @javax.annotation.Nullable
   private List<ApplyChangesPositionsRequestDataEditInner> edit = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_DELETE = "delete";
   @SerializedName(SERIALIZED_NAME_DELETE)
+  @javax.annotation.Nullable
   private List<ApplyChangesPositionsRequestDataDeleteInner> delete = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PROFILE_ID = "profile_id";
   @SerializedName(SERIALIZED_NAME_PROFILE_ID)
+  @javax.annotation.Nonnull
   private UUID profileId;
 
   public ApplyChangesPositionsRequestData() {
   }
 
-  public ApplyChangesPositionsRequestData add(List<ApplyChangesPositionsRequestDataAddInner> add) {
+  public ApplyChangesPositionsRequestData add(@javax.annotation.Nullable List<ApplyChangesPositionsRequestDataAddInner> add) {
     this.add = add;
     return this;
   }
@@ -97,12 +101,12 @@ public class ApplyChangesPositionsRequestData {
     return add;
   }
 
-  public void setAdd(List<ApplyChangesPositionsRequestDataAddInner> add) {
+  public void setAdd(@javax.annotation.Nullable List<ApplyChangesPositionsRequestDataAddInner> add) {
     this.add = add;
   }
 
 
-  public ApplyChangesPositionsRequestData edit(List<ApplyChangesPositionsRequestDataEditInner> edit) {
+  public ApplyChangesPositionsRequestData edit(@javax.annotation.Nullable List<ApplyChangesPositionsRequestDataEditInner> edit) {
     this.edit = edit;
     return this;
   }
@@ -124,12 +128,12 @@ public class ApplyChangesPositionsRequestData {
     return edit;
   }
 
-  public void setEdit(List<ApplyChangesPositionsRequestDataEditInner> edit) {
+  public void setEdit(@javax.annotation.Nullable List<ApplyChangesPositionsRequestDataEditInner> edit) {
     this.edit = edit;
   }
 
 
-  public ApplyChangesPositionsRequestData delete(List<ApplyChangesPositionsRequestDataDeleteInner> delete) {
+  public ApplyChangesPositionsRequestData delete(@javax.annotation.Nullable List<ApplyChangesPositionsRequestDataDeleteInner> delete) {
     this.delete = delete;
     return this;
   }
@@ -151,12 +155,12 @@ public class ApplyChangesPositionsRequestData {
     return delete;
   }
 
-  public void setDelete(List<ApplyChangesPositionsRequestDataDeleteInner> delete) {
+  public void setDelete(@javax.annotation.Nullable List<ApplyChangesPositionsRequestDataDeleteInner> delete) {
     this.delete = delete;
   }
 
 
-  public ApplyChangesPositionsRequestData profileId(UUID profileId) {
+  public ApplyChangesPositionsRequestData profileId(@javax.annotation.Nonnull UUID profileId) {
     this.profileId = profileId;
     return this;
   }
@@ -170,7 +174,7 @@ public class ApplyChangesPositionsRequestData {
     return profileId;
   }
 
-  public void setProfileId(UUID profileId) {
+  public void setProfileId(@javax.annotation.Nonnull UUID profileId) {
     this.profileId = profileId;
   }
 

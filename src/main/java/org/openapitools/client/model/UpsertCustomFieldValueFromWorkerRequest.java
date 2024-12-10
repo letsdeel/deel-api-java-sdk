@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * UpsertCustomFieldValueFromWorkerRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertCustomFieldValueFromWorkerRequest {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private UpsertCustomFieldValueFromWorkerRequestData data;
 
   public UpsertCustomFieldValueFromWorkerRequest() {
   }
 
-  public UpsertCustomFieldValueFromWorkerRequest id(UUID id) {
+  public UpsertCustomFieldValueFromWorkerRequest id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -77,12 +79,12 @@ public class UpsertCustomFieldValueFromWorkerRequest {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public UpsertCustomFieldValueFromWorkerRequest data(UpsertCustomFieldValueFromWorkerRequestData data) {
+  public UpsertCustomFieldValueFromWorkerRequest data(@javax.annotation.Nonnull UpsertCustomFieldValueFromWorkerRequestData data) {
     this.data = data;
     return this;
   }
@@ -96,7 +98,7 @@ public class UpsertCustomFieldValueFromWorkerRequest {
     return data;
   }
 
-  public void setData(UpsertCustomFieldValueFromWorkerRequestData data) {
+  public void setData(@javax.annotation.Nonnull UpsertCustomFieldValueFromWorkerRequestData data) {
     this.data = data;
   }
 

@@ -50,14 +50,16 @@ import org.openapitools.client.JSON;
 /**
  * PatchWebhookRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PatchWebhookRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   /**
@@ -114,28 +116,33 @@ public class PatchWebhookRequest {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
+  @javax.annotation.Nonnull
   private String url;
 
   public static final String SERIALIZED_NAME_SIGNING_KEY = "signing_key";
   @SerializedName(SERIALIZED_NAME_SIGNING_KEY)
+  @javax.annotation.Nullable
   private String signingKey;
 
   public static final String SERIALIZED_NAME_API_VERSION = "api_version";
   @SerializedName(SERIALIZED_NAME_API_VERSION)
+  @javax.annotation.Nullable
   private String apiVersion = "v2";
 
   public static final String SERIALIZED_NAME_EVENTS = "events";
   @SerializedName(SERIALIZED_NAME_EVENTS)
+  @javax.annotation.Nonnull
   private List<String> events = new ArrayList<>();
 
   public PatchWebhookRequest() {
   }
 
-  public PatchWebhookRequest name(String name) {
+  public PatchWebhookRequest name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -149,12 +156,12 @@ public class PatchWebhookRequest {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public PatchWebhookRequest description(String description) {
+  public PatchWebhookRequest description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -168,12 +175,12 @@ public class PatchWebhookRequest {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public PatchWebhookRequest status(StatusEnum status) {
+  public PatchWebhookRequest status(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -187,12 +194,12 @@ public class PatchWebhookRequest {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 
 
-  public PatchWebhookRequest url(String url) {
+  public PatchWebhookRequest url(@javax.annotation.Nonnull String url) {
     this.url = url;
     return this;
   }
@@ -206,12 +213,12 @@ public class PatchWebhookRequest {
     return url;
   }
 
-  public void setUrl(String url) {
+  public void setUrl(@javax.annotation.Nonnull String url) {
     this.url = url;
   }
 
 
-  public PatchWebhookRequest signingKey(String signingKey) {
+  public PatchWebhookRequest signingKey(@javax.annotation.Nullable String signingKey) {
     this.signingKey = signingKey;
     return this;
   }
@@ -225,12 +232,12 @@ public class PatchWebhookRequest {
     return signingKey;
   }
 
-  public void setSigningKey(String signingKey) {
+  public void setSigningKey(@javax.annotation.Nullable String signingKey) {
     this.signingKey = signingKey;
   }
 
 
-  public PatchWebhookRequest apiVersion(String apiVersion) {
+  public PatchWebhookRequest apiVersion(@javax.annotation.Nullable String apiVersion) {
     this.apiVersion = apiVersion;
     return this;
   }
@@ -244,12 +251,12 @@ public class PatchWebhookRequest {
     return apiVersion;
   }
 
-  public void setApiVersion(String apiVersion) {
+  public void setApiVersion(@javax.annotation.Nullable String apiVersion) {
     this.apiVersion = apiVersion;
   }
 
 
-  public PatchWebhookRequest events(List<String> events) {
+  public PatchWebhookRequest events(@javax.annotation.Nonnull List<String> events) {
     this.events = events;
     return this;
   }
@@ -271,7 +278,7 @@ public class PatchWebhookRequest {
     return events;
   }
 
-  public void setEvents(List<String> events) {
+  public void setEvents(@javax.annotation.Nonnull List<String> events) {
     this.events = events;
   }
 

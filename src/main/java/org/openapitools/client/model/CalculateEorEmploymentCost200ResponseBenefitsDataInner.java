@@ -48,28 +48,32 @@ import org.openapitools.client.JSON;
 /**
  * CalculateEorEmploymentCost200ResponseBenefitsDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CalculateEorEmploymentCost200ResponseBenefitsDataInner {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_PLAN = "plan";
   @SerializedName(SERIALIZED_NAME_PLAN)
+  @javax.annotation.Nullable
   private String plan;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private String amount;
 
   public static final String SERIALIZED_NAME_FEE_AMOUNT = "fee_amount";
   @SerializedName(SERIALIZED_NAME_FEE_AMOUNT)
+  @javax.annotation.Nullable
   private String feeAmount;
 
   public CalculateEorEmploymentCost200ResponseBenefitsDataInner() {
   }
 
-  public CalculateEorEmploymentCost200ResponseBenefitsDataInner name(String name) {
+  public CalculateEorEmploymentCost200ResponseBenefitsDataInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -83,12 +87,12 @@ public class CalculateEorEmploymentCost200ResponseBenefitsDataInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public CalculateEorEmploymentCost200ResponseBenefitsDataInner plan(String plan) {
+  public CalculateEorEmploymentCost200ResponseBenefitsDataInner plan(@javax.annotation.Nullable String plan) {
     this.plan = plan;
     return this;
   }
@@ -102,12 +106,12 @@ public class CalculateEorEmploymentCost200ResponseBenefitsDataInner {
     return plan;
   }
 
-  public void setPlan(String plan) {
+  public void setPlan(@javax.annotation.Nullable String plan) {
     this.plan = plan;
   }
 
 
-  public CalculateEorEmploymentCost200ResponseBenefitsDataInner amount(String amount) {
+  public CalculateEorEmploymentCost200ResponseBenefitsDataInner amount(@javax.annotation.Nullable String amount) {
     this.amount = amount;
     return this;
   }
@@ -121,12 +125,12 @@ public class CalculateEorEmploymentCost200ResponseBenefitsDataInner {
     return amount;
   }
 
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nullable String amount) {
     this.amount = amount;
   }
 
 
-  public CalculateEorEmploymentCost200ResponseBenefitsDataInner feeAmount(String feeAmount) {
+  public CalculateEorEmploymentCost200ResponseBenefitsDataInner feeAmount(@javax.annotation.Nullable String feeAmount) {
     this.feeAmount = feeAmount;
     return this;
   }
@@ -140,7 +144,7 @@ public class CalculateEorEmploymentCost200ResponseBenefitsDataInner {
     return feeAmount;
   }
 
-  public void setFeeAmount(String feeAmount) {
+  public void setFeeAmount(@javax.annotation.Nullable String feeAmount) {
     this.feeAmount = feeAmount;
   }
 

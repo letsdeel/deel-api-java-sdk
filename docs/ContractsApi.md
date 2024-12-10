@@ -8,7 +8,6 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 | [**approveExerciseEquity**](ContractsApi.md#approveExerciseEquity) | **PATCH** /equity/exercise/{public_id} | Approve an equity exercise |
 | [**archiveContract**](ContractsApi.md#archiveContract) | **PATCH** /contracts/{contract_id}/archive | Archive a contract |
 | [**attachExternalId**](ContractsApi.md#attachExternalId) | **PATCH** /contracts/{contract_id} | External Id |
-| [**calculateFinalPayment**](ContractsApi.md#calculateFinalPayment) | **GET** /contracts/{contract_id}/final-payments | Calculate final payment |
 | [**editContractDocument**](ContractsApi.md#editContractDocument) | **PUT** /contracts/{contract_id}/documents | Edit the file attached to contract document. |
 | [**getAlternateEmailsByContractId**](ContractsApi.md#getAlternateEmailsByContractId) | **GET** /contracts/{contract_id}/alternate_emails | Find contract emails by ID |
 | [**getContractById**](ContractsApi.md#getContractById) | **GET** /contracts/{contract_id} | Retrieve a single contract |
@@ -341,94 +340,6 @@ public class Example {
 | **404** | Operation failed. |  -  |
 | **405** | Operation failed. |  -  |
 | **429** | Operation failed. |  -  |
-| **500** | Operation failed. |  -  |
-
-<a id="calculateFinalPayment"></a>
-# **calculateFinalPayment**
-> FinalPaymentCalculatedContainer calculateFinalPayment(contractId).endDate(endDate).calculationType(calculationType).workweekStart(workweekStart).workweekEnd(workweekEnd).execute();
-
-Calculate final payment
-
-Calculate the final payment due to the contractor when ending the contract.
-
-### Example
-```java
-// Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ContractsApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.letsdeel.com/rest/v2");
-    
-    // Configure HTTP bearer authorization: deelToken
-    HttpBearerAuth deelToken = (HttpBearerAuth) defaultClient.getAuthentication("deelToken");
-    deelToken.setBearerToken("BEARER TOKEN");
-
-    // Configure OAuth2 access token for authorization: oauth2
-    OAuth oauth2 = (OAuth) defaultClient.getAuthentication("oauth2");
-    oauth2.setAccessToken("YOUR ACCESS TOKEN");
-
-    ContractsApi apiInstance = new ContractsApi(defaultClient);
-    String contractId = "37nex2x"; // String | Deel contract id.
-    LocalDate endDate = LocalDate.now(); // LocalDate | The day to end the contract.
-    String calculationType = "CUSTOM_AMOUNT"; // String | The days to calculate.
-    String workweekStart = "workweekStart_example"; // String | The day the work week starts, 0 to 6
-    String workweekEnd = "workweekEnd_example"; // String | The day the work week ends, 0 to 6
-    try {
-      FinalPaymentCalculatedContainer result = apiInstance.calculateFinalPayment(contractId)
-            .endDate(endDate)
-            .calculationType(calculationType)
-            .workweekStart(workweekStart)
-            .workweekEnd(workweekEnd)
-            .execute();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ContractsApi#calculateFinalPayment");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **contractId** | **String**| Deel contract id. | |
-| **endDate** | **LocalDate**| The day to end the contract. | [optional] |
-| **calculationType** | **String**| The days to calculate. | [optional] [enum: CUSTOM_AMOUNT, WORK_DAYS, CALENDAR_DAYS, FULL_AMOUNT] |
-| **workweekStart** | **String**| The day the work week starts, 0 to 6 | [optional] |
-| **workweekEnd** | **String**| The day the work week ends, 0 to 6 | [optional] |
-
-### Return type
-
-[**FinalPaymentCalculatedContainer**](FinalPaymentCalculatedContainer.md)
-
-### Authorization
-
-[deelToken](../README.md#deelToken), [oauth2](../README.md#oauth2)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation. |  -  |
-| **401** | Operation failed. |  -  |
-| **403** | Operation failed. |  -  |
-| **404** | Operation failed. |  -  |
 | **500** | Operation failed. |  -  |
 
 <a id="editContractDocument"></a>

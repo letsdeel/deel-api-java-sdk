@@ -49,10 +49,11 @@ import org.openapitools.client.JSON;
 /**
  * GetYearToDatePay200ResponseEmployeesInnerContributionsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetYearToDatePay200ResponseEmployeesInnerContributionsInner {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   /**
@@ -111,16 +112,18 @@ public class GetYearToDatePay200ResponseEmployeesInnerContributionsInner {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal amount;
 
   public GetYearToDatePay200ResponseEmployeesInnerContributionsInner() {
   }
 
-  public GetYearToDatePay200ResponseEmployeesInnerContributionsInner name(String name) {
+  public GetYearToDatePay200ResponseEmployeesInnerContributionsInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -134,12 +137,12 @@ public class GetYearToDatePay200ResponseEmployeesInnerContributionsInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetYearToDatePay200ResponseEmployeesInnerContributionsInner type(TypeEnum type) {
+  public GetYearToDatePay200ResponseEmployeesInnerContributionsInner type(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -153,12 +156,12 @@ public class GetYearToDatePay200ResponseEmployeesInnerContributionsInner {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
 
-  public GetYearToDatePay200ResponseEmployeesInnerContributionsInner amount(BigDecimal amount) {
+  public GetYearToDatePay200ResponseEmployeesInnerContributionsInner amount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -172,7 +175,7 @@ public class GetYearToDatePay200ResponseEmployeesInnerContributionsInner {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
   }
 

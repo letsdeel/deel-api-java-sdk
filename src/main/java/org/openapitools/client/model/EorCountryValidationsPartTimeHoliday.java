@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * Holiday type and range for part-time contracts.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorCountryValidationsPartTimeHoliday {
   /**
    * Gets or Sets type
@@ -106,20 +106,23 @@ public class EorCountryValidationsPartTimeHoliday {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_MIN = "min";
   @SerializedName(SERIALIZED_NAME_MIN)
+  @javax.annotation.Nullable
   private String min;
 
   public static final String SERIALIZED_NAME_MAX = "max";
   @SerializedName(SERIALIZED_NAME_MAX)
+  @javax.annotation.Nullable
   private String max;
 
   public EorCountryValidationsPartTimeHoliday() {
   }
 
-  public EorCountryValidationsPartTimeHoliday type(TypeEnum type) {
+  public EorCountryValidationsPartTimeHoliday type(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -133,12 +136,12 @@ public class EorCountryValidationsPartTimeHoliday {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
 
-  public EorCountryValidationsPartTimeHoliday min(String min) {
+  public EorCountryValidationsPartTimeHoliday min(@javax.annotation.Nullable String min) {
     this.min = min;
     return this;
   }
@@ -152,12 +155,12 @@ public class EorCountryValidationsPartTimeHoliday {
     return min;
   }
 
-  public void setMin(String min) {
+  public void setMin(@javax.annotation.Nullable String min) {
     this.min = min;
   }
 
 
-  public EorCountryValidationsPartTimeHoliday max(String max) {
+  public EorCountryValidationsPartTimeHoliday max(@javax.annotation.Nullable String max) {
     this.max = max;
     return this;
   }
@@ -171,7 +174,7 @@ public class EorCountryValidationsPartTimeHoliday {
     return max;
   }
 
-  public void setMax(String max) {
+  public void setMax(@javax.annotation.Nullable String max) {
     this.max = max;
   }
 

@@ -51,32 +51,37 @@ import org.openapitools.client.JSON;
 /**
  * Time offs associated to the query
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeOffsQueryResponseSchema {
   public static final String SERIALIZED_NAME_HAS_NEXT_PAGE = "has_next_page";
   @SerializedName(SERIALIZED_NAME_HAS_NEXT_PAGE)
+  @javax.annotation.Nonnull
   private Boolean hasNextPage;
 
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private List<TimeOffResponseCommon> data = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAGE = "page";
   @SerializedName(SERIALIZED_NAME_PAGE)
+  @javax.annotation.Nonnull
   private Integer page;
 
   public static final String SERIALIZED_NAME_PAGE_SIZE = "page_size";
   @SerializedName(SERIALIZED_NAME_PAGE_SIZE)
+  @javax.annotation.Nonnull
   private Integer pageSize;
 
   public static final String SERIALIZED_NAME_NEXT = "next";
   @SerializedName(SERIALIZED_NAME_NEXT)
+  @javax.annotation.Nullable
   private String next;
 
   public TimeOffsQueryResponseSchema() {
   }
 
-  public TimeOffsQueryResponseSchema hasNextPage(Boolean hasNextPage) {
+  public TimeOffsQueryResponseSchema hasNextPage(@javax.annotation.Nonnull Boolean hasNextPage) {
     this.hasNextPage = hasNextPage;
     return this;
   }
@@ -90,12 +95,12 @@ public class TimeOffsQueryResponseSchema {
     return hasNextPage;
   }
 
-  public void setHasNextPage(Boolean hasNextPage) {
+  public void setHasNextPage(@javax.annotation.Nonnull Boolean hasNextPage) {
     this.hasNextPage = hasNextPage;
   }
 
 
-  public TimeOffsQueryResponseSchema data(List<TimeOffResponseCommon> data) {
+  public TimeOffsQueryResponseSchema data(@javax.annotation.Nonnull List<TimeOffResponseCommon> data) {
     this.data = data;
     return this;
   }
@@ -117,12 +122,12 @@ public class TimeOffsQueryResponseSchema {
     return data;
   }
 
-  public void setData(List<TimeOffResponseCommon> data) {
+  public void setData(@javax.annotation.Nonnull List<TimeOffResponseCommon> data) {
     this.data = data;
   }
 
 
-  public TimeOffsQueryResponseSchema page(Integer page) {
+  public TimeOffsQueryResponseSchema page(@javax.annotation.Nonnull Integer page) {
     this.page = page;
     return this;
   }
@@ -138,12 +143,12 @@ public class TimeOffsQueryResponseSchema {
     return page;
   }
 
-  public void setPage(Integer page) {
+  public void setPage(@javax.annotation.Nonnull Integer page) {
     this.page = page;
   }
 
 
-  public TimeOffsQueryResponseSchema pageSize(Integer pageSize) {
+  public TimeOffsQueryResponseSchema pageSize(@javax.annotation.Nonnull Integer pageSize) {
     this.pageSize = pageSize;
     return this;
   }
@@ -159,12 +164,12 @@ public class TimeOffsQueryResponseSchema {
     return pageSize;
   }
 
-  public void setPageSize(Integer pageSize) {
+  public void setPageSize(@javax.annotation.Nonnull Integer pageSize) {
     this.pageSize = pageSize;
   }
 
 
-  public TimeOffsQueryResponseSchema next(String next) {
+  public TimeOffsQueryResponseSchema next(@javax.annotation.Nullable String next) {
     this.next = next;
     return this;
   }
@@ -178,7 +183,7 @@ public class TimeOffsQueryResponseSchema {
     return next;
   }
 
-  public void setNext(String next) {
+  public void setNext(@javax.annotation.Nullable String next) {
     this.next = next;
   }
 

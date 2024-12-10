@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * OffboardingTrackerIdGet200ResponseDataHrisProfile
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffboardingTrackerIdGet200ResponseDataHrisProfile {
   public static final String SERIALIZED_NAME_OID = "oid";
   @SerializedName(SERIALIZED_NAME_OID)
+  @javax.annotation.Nullable
   private String oid;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_WORK_EMAIL = "work_email";
   @SerializedName(SERIALIZED_NAME_WORK_EMAIL)
+  @javax.annotation.Nullable
   private String workEmail;
 
   public OffboardingTrackerIdGet200ResponseDataHrisProfile() {
   }
 
-  public OffboardingTrackerIdGet200ResponseDataHrisProfile oid(String oid) {
+  public OffboardingTrackerIdGet200ResponseDataHrisProfile oid(@javax.annotation.Nullable String oid) {
     this.oid = oid;
     return this;
   }
@@ -79,12 +82,12 @@ public class OffboardingTrackerIdGet200ResponseDataHrisProfile {
     return oid;
   }
 
-  public void setOid(String oid) {
+  public void setOid(@javax.annotation.Nullable String oid) {
     this.oid = oid;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataHrisProfile name(String name) {
+  public OffboardingTrackerIdGet200ResponseDataHrisProfile name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -98,12 +101,12 @@ public class OffboardingTrackerIdGet200ResponseDataHrisProfile {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataHrisProfile workEmail(String workEmail) {
+  public OffboardingTrackerIdGet200ResponseDataHrisProfile workEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
     return this;
   }
@@ -117,7 +120,7 @@ public class OffboardingTrackerIdGet200ResponseDataHrisProfile {
     return workEmail;
   }
 
-  public void setWorkEmail(String workEmail) {
+  public void setWorkEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
   }
 

@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * UpdateGPEmployeeCompensation200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateGPEmployeeCompensation200ResponseData {
   /**
    * The scale to which a given salary applies.
@@ -108,10 +108,12 @@ public class UpdateGPEmployeeCompensation200ResponseData {
 
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nullable
   private ScaleEnum scale;
 
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
+  @javax.annotation.Nullable
   private BigDecimal salary;
 
   /**
@@ -170,16 +172,18 @@ public class UpdateGPEmployeeCompensation200ResponseData {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_EFFECTIVE_DATE = "effective_date";
   @SerializedName(SERIALIZED_NAME_EFFECTIVE_DATE)
+  @javax.annotation.Nullable
   private LocalDate effectiveDate;
 
   public UpdateGPEmployeeCompensation200ResponseData() {
   }
 
-  public UpdateGPEmployeeCompensation200ResponseData scale(ScaleEnum scale) {
+  public UpdateGPEmployeeCompensation200ResponseData scale(@javax.annotation.Nullable ScaleEnum scale) {
     this.scale = scale;
     return this;
   }
@@ -193,12 +197,12 @@ public class UpdateGPEmployeeCompensation200ResponseData {
     return scale;
   }
 
-  public void setScale(ScaleEnum scale) {
+  public void setScale(@javax.annotation.Nullable ScaleEnum scale) {
     this.scale = scale;
   }
 
 
-  public UpdateGPEmployeeCompensation200ResponseData salary(BigDecimal salary) {
+  public UpdateGPEmployeeCompensation200ResponseData salary(@javax.annotation.Nullable BigDecimal salary) {
     this.salary = salary;
     return this;
   }
@@ -212,12 +216,12 @@ public class UpdateGPEmployeeCompensation200ResponseData {
     return salary;
   }
 
-  public void setSalary(BigDecimal salary) {
+  public void setSalary(@javax.annotation.Nullable BigDecimal salary) {
     this.salary = salary;
   }
 
 
-  public UpdateGPEmployeeCompensation200ResponseData status(StatusEnum status) {
+  public UpdateGPEmployeeCompensation200ResponseData status(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -231,12 +235,12 @@ public class UpdateGPEmployeeCompensation200ResponseData {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
   }
 
 
-  public UpdateGPEmployeeCompensation200ResponseData effectiveDate(LocalDate effectiveDate) {
+  public UpdateGPEmployeeCompensation200ResponseData effectiveDate(@javax.annotation.Nullable LocalDate effectiveDate) {
     this.effectiveDate = effectiveDate;
     return this;
   }
@@ -250,7 +254,7 @@ public class UpdateGPEmployeeCompensation200ResponseData {
     return effectiveDate;
   }
 
-  public void setEffectiveDate(LocalDate effectiveDate) {
+  public void setEffectiveDate(@javax.annotation.Nullable LocalDate effectiveDate) {
     this.effectiveDate = effectiveDate;
   }
 

@@ -391,7 +391,8 @@ public class OnboardingApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> A list of onboarding and their details </td><td>  -  </td></tr>
          </table>
@@ -405,7 +406,8 @@ public class OnboardingApi {
          * @return ListOnboardingTracker200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> A list of onboarding and their details </td><td>  -  </td></tr>
          </table>
@@ -420,7 +422,8 @@ public class OnboardingApi {
          * @return ApiResponse&lt;ListOnboardingTracker200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> A list of onboarding and their details </td><td>  -  </td></tr>
          </table>
@@ -435,7 +438,8 @@ public class OnboardingApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> A list of onboarding and their details </td><td>  -  </td></tr>
          </table>
@@ -450,7 +454,8 @@ public class OnboardingApi {
      * List all onboarding
      * @return APIlistOnboardingTrackerRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> A list of onboarding and their details </td><td>  -  </td></tr>
      </table>
@@ -542,7 +547,8 @@ public class OnboardingApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Onboarding overview </td><td>  -  </td></tr>
          </table>
@@ -556,7 +562,8 @@ public class OnboardingApi {
          * @return OnboardingTrackerHrisProfileOidGet200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Onboarding overview </td><td>  -  </td></tr>
          </table>
@@ -571,7 +578,8 @@ public class OnboardingApi {
          * @return ApiResponse&lt;OnboardingTrackerHrisProfileOidGet200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Onboarding overview </td><td>  -  </td></tr>
          </table>
@@ -586,7 +594,8 @@ public class OnboardingApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Onboarding overview </td><td>  -  </td></tr>
          </table>
@@ -602,7 +611,8 @@ public class OnboardingApi {
      * @param oid Unique hris profile oid (required)
      * @return APIonboardingTrackerHrisProfileOidGetRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Onboarding overview </td><td>  -  </td></tr>
      </table>
@@ -694,7 +704,8 @@ public class OnboardingApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Onboarding overview </td><td>  -  </td></tr>
          </table>
@@ -708,7 +719,8 @@ public class OnboardingApi {
          * @return OnboardingTrackerHrisProfileOidGet200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Onboarding overview </td><td>  -  </td></tr>
          </table>
@@ -723,7 +735,8 @@ public class OnboardingApi {
          * @return ApiResponse&lt;OnboardingTrackerHrisProfileOidGet200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Onboarding overview </td><td>  -  </td></tr>
          </table>
@@ -738,7 +751,8 @@ public class OnboardingApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Onboarding overview </td><td>  -  </td></tr>
          </table>
@@ -754,7 +768,8 @@ public class OnboardingApi {
      * @param id Unique onboarding tracker identifier (required)
      * @return APIonboardingTrackerIdGetRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Onboarding overview </td><td>  -  </td></tr>
      </table>

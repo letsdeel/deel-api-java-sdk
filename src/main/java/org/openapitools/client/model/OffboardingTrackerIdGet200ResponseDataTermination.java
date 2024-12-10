@@ -51,48 +51,57 @@ import org.openapitools.client.JSON;
 /**
  * OffboardingTrackerIdGet200ResponseDataTermination
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffboardingTrackerIdGet200ResponseDataTermination {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private String endDate;
 
   public static final String SERIALIZED_NAME_ENDING_TYPE = "ending_type";
   @SerializedName(SERIALIZED_NAME_ENDING_TYPE)
+  @javax.annotation.Nullable
   private String endingType;
 
   public static final String SERIALIZED_NAME_INITIATED_AT = "initiated_at";
   @SerializedName(SERIALIZED_NAME_INITIATED_AT)
+  @javax.annotation.Nullable
   private String initiatedAt;
 
   public static final String SERIALIZED_NAME_INITIATED_BY = "initiated_by";
   @SerializedName(SERIALIZED_NAME_INITIATED_BY)
+  @javax.annotation.Nullable
   private OffboardingTrackerIdGet200ResponseDataTerminationInitiatedBy initiatedBy;
 
   public static final String SERIALIZED_NAME_PUBLIC_MESSAGE = "public_message";
   @SerializedName(SERIALIZED_NAME_PUBLIC_MESSAGE)
+  @javax.annotation.Nullable
   private String publicMessage;
 
   public static final String SERIALIZED_NAME_TERMINATION_IMPACT = "termination_impact";
   @SerializedName(SERIALIZED_NAME_TERMINATION_IMPACT)
+  @javax.annotation.Nullable
   private OffboardingTrackerIdGet200ResponseDataTerminationTerminationImpact terminationImpact;
 
   public static final String SERIALIZED_NAME_ELIGIBLE_FOR_REHIRE = "eligible_for_rehire";
   @SerializedName(SERIALIZED_NAME_ELIGIBLE_FOR_REHIRE)
+  @javax.annotation.Nullable
   private String eligibleForRehire;
 
   public static final String SERIALIZED_NAME_ELIGIBLE_FOR_REHIRE_REASON = "eligible_for_rehire_reason";
   @SerializedName(SERIALIZED_NAME_ELIGIBLE_FOR_REHIRE_REASON)
+  @javax.annotation.Nullable
   private String eligibleForRehireReason;
 
   public OffboardingTrackerIdGet200ResponseDataTermination() {
   }
 
-  public OffboardingTrackerIdGet200ResponseDataTermination id(String id) {
+  public OffboardingTrackerIdGet200ResponseDataTermination id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -106,12 +115,12 @@ public class OffboardingTrackerIdGet200ResponseDataTermination {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataTermination endDate(String endDate) {
+  public OffboardingTrackerIdGet200ResponseDataTermination endDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -125,12 +134,12 @@ public class OffboardingTrackerIdGet200ResponseDataTermination {
     return endDate;
   }
 
-  public void setEndDate(String endDate) {
+  public void setEndDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataTermination endingType(String endingType) {
+  public OffboardingTrackerIdGet200ResponseDataTermination endingType(@javax.annotation.Nullable String endingType) {
     this.endingType = endingType;
     return this;
   }
@@ -144,12 +153,12 @@ public class OffboardingTrackerIdGet200ResponseDataTermination {
     return endingType;
   }
 
-  public void setEndingType(String endingType) {
+  public void setEndingType(@javax.annotation.Nullable String endingType) {
     this.endingType = endingType;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataTermination initiatedAt(String initiatedAt) {
+  public OffboardingTrackerIdGet200ResponseDataTermination initiatedAt(@javax.annotation.Nullable String initiatedAt) {
     this.initiatedAt = initiatedAt;
     return this;
   }
@@ -163,12 +172,12 @@ public class OffboardingTrackerIdGet200ResponseDataTermination {
     return initiatedAt;
   }
 
-  public void setInitiatedAt(String initiatedAt) {
+  public void setInitiatedAt(@javax.annotation.Nullable String initiatedAt) {
     this.initiatedAt = initiatedAt;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataTermination initiatedBy(OffboardingTrackerIdGet200ResponseDataTerminationInitiatedBy initiatedBy) {
+  public OffboardingTrackerIdGet200ResponseDataTermination initiatedBy(@javax.annotation.Nullable OffboardingTrackerIdGet200ResponseDataTerminationInitiatedBy initiatedBy) {
     this.initiatedBy = initiatedBy;
     return this;
   }
@@ -182,12 +191,12 @@ public class OffboardingTrackerIdGet200ResponseDataTermination {
     return initiatedBy;
   }
 
-  public void setInitiatedBy(OffboardingTrackerIdGet200ResponseDataTerminationInitiatedBy initiatedBy) {
+  public void setInitiatedBy(@javax.annotation.Nullable OffboardingTrackerIdGet200ResponseDataTerminationInitiatedBy initiatedBy) {
     this.initiatedBy = initiatedBy;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataTermination publicMessage(String publicMessage) {
+  public OffboardingTrackerIdGet200ResponseDataTermination publicMessage(@javax.annotation.Nullable String publicMessage) {
     this.publicMessage = publicMessage;
     return this;
   }
@@ -201,12 +210,12 @@ public class OffboardingTrackerIdGet200ResponseDataTermination {
     return publicMessage;
   }
 
-  public void setPublicMessage(String publicMessage) {
+  public void setPublicMessage(@javax.annotation.Nullable String publicMessage) {
     this.publicMessage = publicMessage;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataTermination terminationImpact(OffboardingTrackerIdGet200ResponseDataTerminationTerminationImpact terminationImpact) {
+  public OffboardingTrackerIdGet200ResponseDataTermination terminationImpact(@javax.annotation.Nullable OffboardingTrackerIdGet200ResponseDataTerminationTerminationImpact terminationImpact) {
     this.terminationImpact = terminationImpact;
     return this;
   }
@@ -220,12 +229,12 @@ public class OffboardingTrackerIdGet200ResponseDataTermination {
     return terminationImpact;
   }
 
-  public void setTerminationImpact(OffboardingTrackerIdGet200ResponseDataTerminationTerminationImpact terminationImpact) {
+  public void setTerminationImpact(@javax.annotation.Nullable OffboardingTrackerIdGet200ResponseDataTerminationTerminationImpact terminationImpact) {
     this.terminationImpact = terminationImpact;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataTermination eligibleForRehire(String eligibleForRehire) {
+  public OffboardingTrackerIdGet200ResponseDataTermination eligibleForRehire(@javax.annotation.Nullable String eligibleForRehire) {
     this.eligibleForRehire = eligibleForRehire;
     return this;
   }
@@ -239,12 +248,12 @@ public class OffboardingTrackerIdGet200ResponseDataTermination {
     return eligibleForRehire;
   }
 
-  public void setEligibleForRehire(String eligibleForRehire) {
+  public void setEligibleForRehire(@javax.annotation.Nullable String eligibleForRehire) {
     this.eligibleForRehire = eligibleForRehire;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataTermination eligibleForRehireReason(String eligibleForRehireReason) {
+  public OffboardingTrackerIdGet200ResponseDataTermination eligibleForRehireReason(@javax.annotation.Nullable String eligibleForRehireReason) {
     this.eligibleForRehireReason = eligibleForRehireReason;
     return this;
   }
@@ -258,7 +267,7 @@ public class OffboardingTrackerIdGet200ResponseDataTermination {
     return eligibleForRehireReason;
   }
 
-  public void setEligibleForRehireReason(String eligibleForRehireReason) {
+  public void setEligibleForRehireReason(@javax.annotation.Nullable String eligibleForRehireReason) {
     this.eligibleForRehireReason = eligibleForRehireReason;
   }
 

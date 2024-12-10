@@ -49,68 +49,82 @@ import org.openapitools.client.JSON;
 /**
  * GetConsent200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetConsent200ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_SCOPE = "scope";
   @SerializedName(SERIALIZED_NAME_SCOPE)
+  @javax.annotation.Nullable
   private String scope;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_USER_ID = "user_id";
   @SerializedName(SERIALIZED_NAME_USER_ID)
+  @javax.annotation.Nullable
   private String userId;
 
   public static final String SERIALIZED_NAME_CLIENT_ID = "client_id";
   @SerializedName(SERIALIZED_NAME_CLIENT_ID)
+  @javax.annotation.Nullable
   private String clientId;
 
   public static final String SERIALIZED_NAME_USER_NAME = "user_name";
   @SerializedName(SERIALIZED_NAME_USER_NAME)
+  @javax.annotation.Nullable
   private String userName;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private String createdAt;
 
   public static final String SERIALIZED_NAME_EXPIRES_AT = "expires_at";
   @SerializedName(SERIALIZED_NAME_EXPIRES_AT)
+  @javax.annotation.Nullable
   private String expiresAt;
 
   public static final String SERIALIZED_NAME_PROFILE_ID = "profile_id";
   @SerializedName(SERIALIZED_NAME_PROFILE_ID)
+  @javax.annotation.Nullable
   private String profileId;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private String updatedAt;
 
   public static final String SERIALIZED_NAME_USER_EMAIL = "user_email";
   @SerializedName(SERIALIZED_NAME_USER_EMAIL)
+  @javax.annotation.Nullable
   private String userEmail;
 
   public static final String SERIALIZED_NAME_REDIRECT_URI = "redirect_uri";
   @SerializedName(SERIALIZED_NAME_REDIRECT_URI)
+  @javax.annotation.Nullable
   private String redirectUri;
 
   public static final String SERIALIZED_NAME_ORGANIZATION_ID = "organization_id";
   @SerializedName(SERIALIZED_NAME_ORGANIZATION_ID)
+  @javax.annotation.Nullable
   private String organizationId;
 
   public GetConsent200ResponseData() {
   }
 
-  public GetConsent200ResponseData id(String id) {
+  public GetConsent200ResponseData id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -124,12 +138,12 @@ public class GetConsent200ResponseData {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public GetConsent200ResponseData scope(String scope) {
+  public GetConsent200ResponseData scope(@javax.annotation.Nullable String scope) {
     this.scope = scope;
     return this;
   }
@@ -143,12 +157,12 @@ public class GetConsent200ResponseData {
     return scope;
   }
 
-  public void setScope(String scope) {
+  public void setScope(@javax.annotation.Nullable String scope) {
     this.scope = scope;
   }
 
 
-  public GetConsent200ResponseData state(String state) {
+  public GetConsent200ResponseData state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -162,12 +176,12 @@ public class GetConsent200ResponseData {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public GetConsent200ResponseData status(String status) {
+  public GetConsent200ResponseData status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -181,12 +195,12 @@ public class GetConsent200ResponseData {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public GetConsent200ResponseData userId(String userId) {
+  public GetConsent200ResponseData userId(@javax.annotation.Nullable String userId) {
     this.userId = userId;
     return this;
   }
@@ -200,12 +214,12 @@ public class GetConsent200ResponseData {
     return userId;
   }
 
-  public void setUserId(String userId) {
+  public void setUserId(@javax.annotation.Nullable String userId) {
     this.userId = userId;
   }
 
 
-  public GetConsent200ResponseData clientId(String clientId) {
+  public GetConsent200ResponseData clientId(@javax.annotation.Nullable String clientId) {
     this.clientId = clientId;
     return this;
   }
@@ -219,12 +233,12 @@ public class GetConsent200ResponseData {
     return clientId;
   }
 
-  public void setClientId(String clientId) {
+  public void setClientId(@javax.annotation.Nullable String clientId) {
     this.clientId = clientId;
   }
 
 
-  public GetConsent200ResponseData userName(String userName) {
+  public GetConsent200ResponseData userName(@javax.annotation.Nullable String userName) {
     this.userName = userName;
     return this;
   }
@@ -238,12 +252,12 @@ public class GetConsent200ResponseData {
     return userName;
   }
 
-  public void setUserName(String userName) {
+  public void setUserName(@javax.annotation.Nullable String userName) {
     this.userName = userName;
   }
 
 
-  public GetConsent200ResponseData createdAt(String createdAt) {
+  public GetConsent200ResponseData createdAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -257,12 +271,12 @@ public class GetConsent200ResponseData {
     return createdAt;
   }
 
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public GetConsent200ResponseData expiresAt(String expiresAt) {
+  public GetConsent200ResponseData expiresAt(@javax.annotation.Nullable String expiresAt) {
     this.expiresAt = expiresAt;
     return this;
   }
@@ -276,12 +290,12 @@ public class GetConsent200ResponseData {
     return expiresAt;
   }
 
-  public void setExpiresAt(String expiresAt) {
+  public void setExpiresAt(@javax.annotation.Nullable String expiresAt) {
     this.expiresAt = expiresAt;
   }
 
 
-  public GetConsent200ResponseData profileId(String profileId) {
+  public GetConsent200ResponseData profileId(@javax.annotation.Nullable String profileId) {
     this.profileId = profileId;
     return this;
   }
@@ -295,12 +309,12 @@ public class GetConsent200ResponseData {
     return profileId;
   }
 
-  public void setProfileId(String profileId) {
+  public void setProfileId(@javax.annotation.Nullable String profileId) {
     this.profileId = profileId;
   }
 
 
-  public GetConsent200ResponseData updatedAt(String updatedAt) {
+  public GetConsent200ResponseData updatedAt(@javax.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -314,12 +328,12 @@ public class GetConsent200ResponseData {
     return updatedAt;
   }
 
-  public void setUpdatedAt(String updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public GetConsent200ResponseData userEmail(String userEmail) {
+  public GetConsent200ResponseData userEmail(@javax.annotation.Nullable String userEmail) {
     this.userEmail = userEmail;
     return this;
   }
@@ -333,12 +347,12 @@ public class GetConsent200ResponseData {
     return userEmail;
   }
 
-  public void setUserEmail(String userEmail) {
+  public void setUserEmail(@javax.annotation.Nullable String userEmail) {
     this.userEmail = userEmail;
   }
 
 
-  public GetConsent200ResponseData redirectUri(String redirectUri) {
+  public GetConsent200ResponseData redirectUri(@javax.annotation.Nullable String redirectUri) {
     this.redirectUri = redirectUri;
     return this;
   }
@@ -352,12 +366,12 @@ public class GetConsent200ResponseData {
     return redirectUri;
   }
 
-  public void setRedirectUri(String redirectUri) {
+  public void setRedirectUri(@javax.annotation.Nullable String redirectUri) {
     this.redirectUri = redirectUri;
   }
 
 
-  public GetConsent200ResponseData organizationId(String organizationId) {
+  public GetConsent200ResponseData organizationId(@javax.annotation.Nullable String organizationId) {
     this.organizationId = organizationId;
     return this;
   }
@@ -371,7 +385,7 @@ public class GetConsent200ResponseData {
     return organizationId;
   }
 
-  public void setOrganizationId(String organizationId) {
+  public void setOrganizationId(@javax.annotation.Nullable String organizationId) {
     this.organizationId = organizationId;
   }
 

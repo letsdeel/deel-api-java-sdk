@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * PeoplePersonalContainerDataPhoneNumbersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PeoplePersonalContainerDataPhoneNumbersInner {
   /**
    * The type of the phone number.
@@ -106,20 +106,23 @@ public class PeoplePersonalContainerDataPhoneNumbersInner {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_PHONE_NUMBER = "phone_number";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBER)
+  @javax.annotation.Nonnull
   private String phoneNumber;
 
   public static final String SERIALIZED_NAME_DIAL_CODE = "dial_code";
   @SerializedName(SERIALIZED_NAME_DIAL_CODE)
+  @javax.annotation.Nonnull
   private String dialCode;
 
   public PeoplePersonalContainerDataPhoneNumbersInner() {
   }
 
-  public PeoplePersonalContainerDataPhoneNumbersInner type(TypeEnum type) {
+  public PeoplePersonalContainerDataPhoneNumbersInner type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -133,12 +136,12 @@ public class PeoplePersonalContainerDataPhoneNumbersInner {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public PeoplePersonalContainerDataPhoneNumbersInner phoneNumber(String phoneNumber) {
+  public PeoplePersonalContainerDataPhoneNumbersInner phoneNumber(@javax.annotation.Nonnull String phoneNumber) {
     this.phoneNumber = phoneNumber;
     return this;
   }
@@ -152,12 +155,12 @@ public class PeoplePersonalContainerDataPhoneNumbersInner {
     return phoneNumber;
   }
 
-  public void setPhoneNumber(String phoneNumber) {
+  public void setPhoneNumber(@javax.annotation.Nonnull String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 
 
-  public PeoplePersonalContainerDataPhoneNumbersInner dialCode(String dialCode) {
+  public PeoplePersonalContainerDataPhoneNumbersInner dialCode(@javax.annotation.Nonnull String dialCode) {
     this.dialCode = dialCode;
     return this;
   }
@@ -171,7 +174,7 @@ public class PeoplePersonalContainerDataPhoneNumbersInner {
     return dialCode;
   }
 
-  public void setDialCode(String dialCode) {
+  public void setDialCode(@javax.annotation.Nonnull String dialCode) {
     this.dialCode = dialCode;
   }
 

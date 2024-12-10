@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * PayslipDownloadUrl
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PayslipDownloadUrl {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
+  @javax.annotation.Nonnull
   private String url;
 
   public PayslipDownloadUrl() {
   }
 
-  public PayslipDownloadUrl url(String url) {
+  public PayslipDownloadUrl url(@javax.annotation.Nonnull String url) {
     this.url = url;
     return this;
   }
@@ -71,7 +72,7 @@ public class PayslipDownloadUrl {
     return url;
   }
 
-  public void setUrl(String url) {
+  public void setUrl(@javax.annotation.Nonnull String url) {
     this.url = url;
   }
 

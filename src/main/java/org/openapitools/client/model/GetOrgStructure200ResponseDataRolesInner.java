@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * GetOrgStructure200ResponseDataRolesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetOrgStructure200ResponseDataRolesInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private Integer id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public GetOrgStructure200ResponseDataRolesInner() {
   }
 
-  public GetOrgStructure200ResponseDataRolesInner id(Integer id) {
+  public GetOrgStructure200ResponseDataRolesInner id(@javax.annotation.Nullable Integer id) {
     this.id = id;
     return this;
   }
@@ -75,12 +77,12 @@ public class GetOrgStructure200ResponseDataRolesInner {
     return id;
   }
 
-  public void setId(Integer id) {
+  public void setId(@javax.annotation.Nullable Integer id) {
     this.id = id;
   }
 
 
-  public GetOrgStructure200ResponseDataRolesInner name(String name) {
+  public GetOrgStructure200ResponseDataRolesInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -94,7 +96,7 @@ public class GetOrgStructure200ResponseDataRolesInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 

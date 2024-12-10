@@ -48,28 +48,32 @@ import org.openapitools.client.JSON;
 /**
  * OffboardingTrackerGet200ResponseDataInnerProgress
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffboardingTrackerGet200ResponseDataInnerProgress {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_REFERENCE_DATE = "reference_date";
   @SerializedName(SERIALIZED_NAME_REFERENCE_DATE)
+  @javax.annotation.Nullable
   private String referenceDate;
 
   public static final String SERIALIZED_NAME_REFERENCE_DATE_TYPE = "reference_date_type";
   @SerializedName(SERIALIZED_NAME_REFERENCE_DATE_TYPE)
+  @javax.annotation.Nullable
   private String referenceDateType;
 
   public static final String SERIALIZED_NAME_REFERENCE_DATE_TIMEZONE = "reference_date_timezone";
   @SerializedName(SERIALIZED_NAME_REFERENCE_DATE_TIMEZONE)
+  @javax.annotation.Nullable
   private String referenceDateTimezone;
 
   public OffboardingTrackerGet200ResponseDataInnerProgress() {
   }
 
-  public OffboardingTrackerGet200ResponseDataInnerProgress status(String status) {
+  public OffboardingTrackerGet200ResponseDataInnerProgress status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -83,12 +87,12 @@ public class OffboardingTrackerGet200ResponseDataInnerProgress {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public OffboardingTrackerGet200ResponseDataInnerProgress referenceDate(String referenceDate) {
+  public OffboardingTrackerGet200ResponseDataInnerProgress referenceDate(@javax.annotation.Nullable String referenceDate) {
     this.referenceDate = referenceDate;
     return this;
   }
@@ -102,12 +106,12 @@ public class OffboardingTrackerGet200ResponseDataInnerProgress {
     return referenceDate;
   }
 
-  public void setReferenceDate(String referenceDate) {
+  public void setReferenceDate(@javax.annotation.Nullable String referenceDate) {
     this.referenceDate = referenceDate;
   }
 
 
-  public OffboardingTrackerGet200ResponseDataInnerProgress referenceDateType(String referenceDateType) {
+  public OffboardingTrackerGet200ResponseDataInnerProgress referenceDateType(@javax.annotation.Nullable String referenceDateType) {
     this.referenceDateType = referenceDateType;
     return this;
   }
@@ -121,12 +125,12 @@ public class OffboardingTrackerGet200ResponseDataInnerProgress {
     return referenceDateType;
   }
 
-  public void setReferenceDateType(String referenceDateType) {
+  public void setReferenceDateType(@javax.annotation.Nullable String referenceDateType) {
     this.referenceDateType = referenceDateType;
   }
 
 
-  public OffboardingTrackerGet200ResponseDataInnerProgress referenceDateTimezone(String referenceDateTimezone) {
+  public OffboardingTrackerGet200ResponseDataInnerProgress referenceDateTimezone(@javax.annotation.Nullable String referenceDateTimezone) {
     this.referenceDateTimezone = referenceDateTimezone;
     return this;
   }
@@ -140,7 +144,7 @@ public class OffboardingTrackerGet200ResponseDataInnerProgress {
     return referenceDateTimezone;
   }
 
-  public void setReferenceDateTimezone(String referenceDateTimezone) {
+  public void setReferenceDateTimezone(@javax.annotation.Nullable String referenceDateTimezone) {
     this.referenceDateTimezone = referenceDateTimezone;
   }
 

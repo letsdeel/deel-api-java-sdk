@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * ApproveExerciseEquityRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ApproveExerciseEquityRequest {
   public static final String SERIALIZED_NAME_EMPLOYER_APPROVAL = "employer_approval";
   @SerializedName(SERIALIZED_NAME_EMPLOYER_APPROVAL)
+  @javax.annotation.Nonnull
   private String employerApproval;
 
   public ApproveExerciseEquityRequest() {
   }
 
-  public ApproveExerciseEquityRequest employerApproval(String employerApproval) {
+  public ApproveExerciseEquityRequest employerApproval(@javax.annotation.Nonnull String employerApproval) {
     this.employerApproval = employerApproval;
     return this;
   }
@@ -71,7 +72,7 @@ public class ApproveExerciseEquityRequest {
     return employerApproval;
   }
 
-  public void setEmployerApproval(String employerApproval) {
+  public void setEmployerApproval(@javax.annotation.Nonnull String employerApproval) {
     this.employerApproval = employerApproval;
   }
 

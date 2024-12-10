@@ -52,32 +52,37 @@ import org.openapitools.client.JSON;
 /**
  * GPContractToCreate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GPContractToCreate {
   public static final String SERIALIZED_NAME_EMPLOYEE = "employee";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE)
+  @javax.annotation.Nonnull
   private GPContractToCreateEmployee employee;
 
   public static final String SERIALIZED_NAME_EMPLOYMENT = "employment";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT)
+  @javax.annotation.Nonnull
   private GPContractToCreateEmployment employment;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nonnull
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
+  @javax.annotation.Nonnull
   private GPClient client;
 
   public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
   @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
+  @javax.annotation.Nonnull
   private GPContractToCreateCompensationDetails compensationDetails;
 
   public GPContractToCreate() {
   }
 
-  public GPContractToCreate employee(GPContractToCreateEmployee employee) {
+  public GPContractToCreate employee(@javax.annotation.Nonnull GPContractToCreateEmployee employee) {
     this.employee = employee;
     return this;
   }
@@ -91,12 +96,12 @@ public class GPContractToCreate {
     return employee;
   }
 
-  public void setEmployee(GPContractToCreateEmployee employee) {
+  public void setEmployee(@javax.annotation.Nonnull GPContractToCreateEmployee employee) {
     this.employee = employee;
   }
 
 
-  public GPContractToCreate employment(GPContractToCreateEmployment employment) {
+  public GPContractToCreate employment(@javax.annotation.Nonnull GPContractToCreateEmployment employment) {
     this.employment = employment;
     return this;
   }
@@ -110,12 +115,12 @@ public class GPContractToCreate {
     return employment;
   }
 
-  public void setEmployment(GPContractToCreateEmployment employment) {
+  public void setEmployment(@javax.annotation.Nonnull GPContractToCreateEmployment employment) {
     this.employment = employment;
   }
 
 
-  public GPContractToCreate jobTitle(String jobTitle) {
+  public GPContractToCreate jobTitle(@javax.annotation.Nonnull String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -129,12 +134,12 @@ public class GPContractToCreate {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nonnull String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public GPContractToCreate client(GPClient client) {
+  public GPContractToCreate client(@javax.annotation.Nonnull GPClient client) {
     this.client = client;
     return this;
   }
@@ -148,12 +153,12 @@ public class GPContractToCreate {
     return client;
   }
 
-  public void setClient(GPClient client) {
+  public void setClient(@javax.annotation.Nonnull GPClient client) {
     this.client = client;
   }
 
 
-  public GPContractToCreate compensationDetails(GPContractToCreateCompensationDetails compensationDetails) {
+  public GPContractToCreate compensationDetails(@javax.annotation.Nonnull GPContractToCreateCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
     return this;
   }
@@ -167,7 +172,7 @@ public class GPContractToCreate {
     return compensationDetails;
   }
 
-  public void setCompensationDetails(GPContractToCreateCompensationDetails compensationDetails) {
+  public void setCompensationDetails(@javax.annotation.Nonnull GPContractToCreateCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
   }
 

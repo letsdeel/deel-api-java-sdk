@@ -167,7 +167,8 @@ public class TimeTrackingShiftsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -187,7 +188,8 @@ public class TimeTrackingShiftsApi {
          * @return CreateShifts201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -208,7 +210,8 @@ public class TimeTrackingShiftsApi {
          * @return ApiResponse&lt;CreateShifts201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -229,7 +232,8 @@ public class TimeTrackingShiftsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -250,7 +254,8 @@ public class TimeTrackingShiftsApi {
      * Create shifts
      * @return APIcreateShiftsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -346,7 +351,8 @@ public class TimeTrackingShiftsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Shift deleted successfully. No content is returned. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid external ID provided or the request is malformed. </td><td>  -  </td></tr>
@@ -364,7 +370,8 @@ public class TimeTrackingShiftsApi {
          * Execute deleteShiftExternalId request
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Shift deleted successfully. No content is returned. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid external ID provided or the request is malformed. </td><td>  -  </td></tr>
@@ -383,7 +390,8 @@ public class TimeTrackingShiftsApi {
          * @return ApiResponse&lt;Void&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Shift deleted successfully. No content is returned. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid external ID provided or the request is malformed. </td><td>  -  </td></tr>
@@ -403,7 +411,8 @@ public class TimeTrackingShiftsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Shift deleted successfully. No content is returned. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid external ID provided or the request is malformed. </td><td>  -  </td></tr>
@@ -424,7 +433,8 @@ public class TimeTrackingShiftsApi {
      * @param externalId The unique external identifier of the shift to be deleted. (required)
      * @return APIdeleteShiftExternalIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Shift deleted successfully. No content is returned. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid external ID provided or the request is malformed. </td><td>  -  </td></tr>
@@ -521,7 +531,8 @@ public class TimeTrackingShiftsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift details retrieved successfully </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters </td><td>  -  </td></tr>
@@ -540,7 +551,8 @@ public class TimeTrackingShiftsApi {
          * @return GetShiftDetails200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift details retrieved successfully </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters </td><td>  -  </td></tr>
@@ -560,7 +572,8 @@ public class TimeTrackingShiftsApi {
          * @return ApiResponse&lt;GetShiftDetails200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift details retrieved successfully </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters </td><td>  -  </td></tr>
@@ -580,7 +593,8 @@ public class TimeTrackingShiftsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift details retrieved successfully </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters </td><td>  -  </td></tr>
@@ -601,7 +615,8 @@ public class TimeTrackingShiftsApi {
      * @param externalId  (required)
      * @return APIgetShiftDetailsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Shift details retrieved successfully </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid request parameters </td><td>  -  </td></tr>
@@ -720,7 +735,8 @@ public class TimeTrackingShiftsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful response with paginated shifts. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -738,7 +754,8 @@ public class TimeTrackingShiftsApi {
          * @return GetShifts200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful response with paginated shifts. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -757,7 +774,8 @@ public class TimeTrackingShiftsApi {
          * @return ApiResponse&lt;GetShifts200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful response with paginated shifts. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -776,7 +794,8 @@ public class TimeTrackingShiftsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful response with paginated shifts. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -795,7 +814,8 @@ public class TimeTrackingShiftsApi {
      * Retrieve a paginated list of shifts with details such as start and end times, breaks, metadata, and summary metrics. Supports pagination through &#x60;limit&#x60; and &#x60;offset&#x60; query parameters.
      * @return APIgetShiftsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful response with paginated shifts. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -899,7 +919,8 @@ public class TimeTrackingShiftsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift updated successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -919,7 +940,8 @@ public class TimeTrackingShiftsApi {
          * @return UpdateShift200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift updated successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -940,7 +962,8 @@ public class TimeTrackingShiftsApi {
          * @return ApiResponse&lt;UpdateShift200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift updated successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -961,7 +984,8 @@ public class TimeTrackingShiftsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift updated successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -984,7 +1008,8 @@ public class TimeTrackingShiftsApi {
      * @param updateShiftRequest  (required)
      * @return APIupdateShiftRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Shift updated successfully. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>

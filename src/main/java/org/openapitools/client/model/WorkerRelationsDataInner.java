@@ -53,36 +53,42 @@ import org.openapitools.client.JSON;
 /**
  * WorkerRelationsDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class WorkerRelationsDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private UUID id;
 
   public static final String SERIALIZED_NAME_IS_PARENT = "is_parent";
   @SerializedName(SERIALIZED_NAME_IS_PARENT)
+  @javax.annotation.Nullable
   private Boolean isParent;
 
   public static final String SERIALIZED_NAME_IS_DEFAULT = "is_default";
   @SerializedName(SERIALIZED_NAME_IS_DEFAULT)
+  @javax.annotation.Nullable
   private Boolean isDefault;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_PARENT_RELATIONSHIP = "parent_relationship";
   @SerializedName(SERIALIZED_NAME_PARENT_RELATIONSHIP)
+  @javax.annotation.Nullable
   private WorkerRelationsDataInnerParentRelationship parentRelationship;
 
   public static final String SERIALIZED_NAME_CHILD_RELATIONSHIPS = "child_relationships";
   @SerializedName(SERIALIZED_NAME_CHILD_RELATIONSHIPS)
+  @javax.annotation.Nullable
   private List<WorkerRelationsDataInnerChildRelationshipsInner> childRelationships = new ArrayList<>();
 
   public WorkerRelationsDataInner() {
   }
 
-  public WorkerRelationsDataInner id(UUID id) {
+  public WorkerRelationsDataInner id(@javax.annotation.Nullable UUID id) {
     this.id = id;
     return this;
   }
@@ -96,12 +102,12 @@ public class WorkerRelationsDataInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nullable UUID id) {
     this.id = id;
   }
 
 
-  public WorkerRelationsDataInner isParent(Boolean isParent) {
+  public WorkerRelationsDataInner isParent(@javax.annotation.Nullable Boolean isParent) {
     this.isParent = isParent;
     return this;
   }
@@ -115,12 +121,12 @@ public class WorkerRelationsDataInner {
     return isParent;
   }
 
-  public void setIsParent(Boolean isParent) {
+  public void setIsParent(@javax.annotation.Nullable Boolean isParent) {
     this.isParent = isParent;
   }
 
 
-  public WorkerRelationsDataInner isDefault(Boolean isDefault) {
+  public WorkerRelationsDataInner isDefault(@javax.annotation.Nullable Boolean isDefault) {
     this.isDefault = isDefault;
     return this;
   }
@@ -134,12 +140,12 @@ public class WorkerRelationsDataInner {
     return isDefault;
   }
 
-  public void setIsDefault(Boolean isDefault) {
+  public void setIsDefault(@javax.annotation.Nullable Boolean isDefault) {
     this.isDefault = isDefault;
   }
 
 
-  public WorkerRelationsDataInner name(String name) {
+  public WorkerRelationsDataInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -153,12 +159,12 @@ public class WorkerRelationsDataInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public WorkerRelationsDataInner parentRelationship(WorkerRelationsDataInnerParentRelationship parentRelationship) {
+  public WorkerRelationsDataInner parentRelationship(@javax.annotation.Nullable WorkerRelationsDataInnerParentRelationship parentRelationship) {
     this.parentRelationship = parentRelationship;
     return this;
   }
@@ -172,12 +178,12 @@ public class WorkerRelationsDataInner {
     return parentRelationship;
   }
 
-  public void setParentRelationship(WorkerRelationsDataInnerParentRelationship parentRelationship) {
+  public void setParentRelationship(@javax.annotation.Nullable WorkerRelationsDataInnerParentRelationship parentRelationship) {
     this.parentRelationship = parentRelationship;
   }
 
 
-  public WorkerRelationsDataInner childRelationships(List<WorkerRelationsDataInnerChildRelationshipsInner> childRelationships) {
+  public WorkerRelationsDataInner childRelationships(@javax.annotation.Nullable List<WorkerRelationsDataInnerChildRelationshipsInner> childRelationships) {
     this.childRelationships = childRelationships;
     return this;
   }
@@ -199,7 +205,7 @@ public class WorkerRelationsDataInner {
     return childRelationships;
   }
 
-  public void setChildRelationships(List<WorkerRelationsDataInnerChildRelationshipsInner> childRelationships) {
+  public void setChildRelationships(@javax.annotation.Nullable List<WorkerRelationsDataInnerChildRelationshipsInner> childRelationships) {
     this.childRelationships = childRelationships;
   }
 

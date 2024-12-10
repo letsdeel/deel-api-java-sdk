@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * CostQuote
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CostQuote {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
+  @javax.annotation.Nullable
   private BigDecimal total;
 
   public static final String SERIALIZED_NAME_TOTAL_USD = "total_usd";
   @SerializedName(SERIALIZED_NAME_TOTAL_USD)
+  @javax.annotation.Nullable
   private BigDecimal totalUsd;
 
   public CostQuote() {
   }
 
-  public CostQuote name(String name) {
+  public CostQuote name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -84,12 +88,12 @@ public class CostQuote {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public CostQuote currency(String currency) {
+  public CostQuote currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -103,12 +107,12 @@ public class CostQuote {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public CostQuote total(BigDecimal total) {
+  public CostQuote total(@javax.annotation.Nullable BigDecimal total) {
     this.total = total;
     return this;
   }
@@ -122,12 +126,12 @@ public class CostQuote {
     return total;
   }
 
-  public void setTotal(BigDecimal total) {
+  public void setTotal(@javax.annotation.Nullable BigDecimal total) {
     this.total = total;
   }
 
 
-  public CostQuote totalUsd(BigDecimal totalUsd) {
+  public CostQuote totalUsd(@javax.annotation.Nullable BigDecimal totalUsd) {
     this.totalUsd = totalUsd;
     return this;
   }
@@ -141,7 +145,7 @@ public class CostQuote {
     return totalUsd;
   }
 
-  public void setTotalUsd(BigDecimal totalUsd) {
+  public void setTotalUsd(@javax.annotation.Nullable BigDecimal totalUsd) {
     this.totalUsd = totalUsd;
   }
 

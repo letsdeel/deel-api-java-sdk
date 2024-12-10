@@ -50,48 +50,57 @@ import org.openapitools.client.JSON;
 /**
  * GetEmployeeComplianceDocumentsContainerDataDocumentsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetEmployeeComplianceDocumentsContainerDataDocumentsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_HAS_TEMPLATE = "has_template";
   @SerializedName(SERIALIZED_NAME_HAS_TEMPLATE)
+  @javax.annotation.Nullable
   private Boolean hasTemplate;
 
   public static final String SERIALIZED_NAME_FILLABLE = "fillable";
   @SerializedName(SERIALIZED_NAME_FILLABLE)
+  @javax.annotation.Nullable
   private Boolean fillable;
 
   public static final String SERIALIZED_NAME_IS_OPTIONAL = "is_optional";
   @SerializedName(SERIALIZED_NAME_IS_OPTIONAL)
+  @javax.annotation.Nullable
   private Boolean isOptional;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_UPLOADED_AT = "uploaded_at";
   @SerializedName(SERIALIZED_NAME_UPLOADED_AT)
+  @javax.annotation.Nullable
   private String uploadedAt;
 
   public static final String SERIALIZED_NAME_FILENAMES = "filenames";
   @SerializedName(SERIALIZED_NAME_FILENAMES)
+  @javax.annotation.Nullable
   private List<String> filenames = new ArrayList<>();
 
   public GetEmployeeComplianceDocumentsContainerDataDocumentsInner() {
   }
 
-  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner id(String id) {
+  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -105,12 +114,12 @@ public class GetEmployeeComplianceDocumentsContainerDataDocumentsInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner name(String name) {
+  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -124,12 +133,12 @@ public class GetEmployeeComplianceDocumentsContainerDataDocumentsInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner description(String description) {
+  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -143,12 +152,12 @@ public class GetEmployeeComplianceDocumentsContainerDataDocumentsInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner hasTemplate(Boolean hasTemplate) {
+  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner hasTemplate(@javax.annotation.Nullable Boolean hasTemplate) {
     this.hasTemplate = hasTemplate;
     return this;
   }
@@ -162,12 +171,12 @@ public class GetEmployeeComplianceDocumentsContainerDataDocumentsInner {
     return hasTemplate;
   }
 
-  public void setHasTemplate(Boolean hasTemplate) {
+  public void setHasTemplate(@javax.annotation.Nullable Boolean hasTemplate) {
     this.hasTemplate = hasTemplate;
   }
 
 
-  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner fillable(Boolean fillable) {
+  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner fillable(@javax.annotation.Nullable Boolean fillable) {
     this.fillable = fillable;
     return this;
   }
@@ -181,12 +190,12 @@ public class GetEmployeeComplianceDocumentsContainerDataDocumentsInner {
     return fillable;
   }
 
-  public void setFillable(Boolean fillable) {
+  public void setFillable(@javax.annotation.Nullable Boolean fillable) {
     this.fillable = fillable;
   }
 
 
-  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner isOptional(Boolean isOptional) {
+  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner isOptional(@javax.annotation.Nullable Boolean isOptional) {
     this.isOptional = isOptional;
     return this;
   }
@@ -200,12 +209,12 @@ public class GetEmployeeComplianceDocumentsContainerDataDocumentsInner {
     return isOptional;
   }
 
-  public void setIsOptional(Boolean isOptional) {
+  public void setIsOptional(@javax.annotation.Nullable Boolean isOptional) {
     this.isOptional = isOptional;
   }
 
 
-  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner country(String country) {
+  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -219,12 +228,12 @@ public class GetEmployeeComplianceDocumentsContainerDataDocumentsInner {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner uploadedAt(String uploadedAt) {
+  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner uploadedAt(@javax.annotation.Nullable String uploadedAt) {
     this.uploadedAt = uploadedAt;
     return this;
   }
@@ -238,12 +247,12 @@ public class GetEmployeeComplianceDocumentsContainerDataDocumentsInner {
     return uploadedAt;
   }
 
-  public void setUploadedAt(String uploadedAt) {
+  public void setUploadedAt(@javax.annotation.Nullable String uploadedAt) {
     this.uploadedAt = uploadedAt;
   }
 
 
-  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner filenames(List<String> filenames) {
+  public GetEmployeeComplianceDocumentsContainerDataDocumentsInner filenames(@javax.annotation.Nullable List<String> filenames) {
     this.filenames = filenames;
     return this;
   }
@@ -265,7 +274,7 @@ public class GetEmployeeComplianceDocumentsContainerDataDocumentsInner {
     return filenames;
   }
 
-  public void setFilenames(List<String> filenames) {
+  public void setFilenames(@javax.annotation.Nullable List<String> filenames) {
     this.filenames = filenames;
   }
 

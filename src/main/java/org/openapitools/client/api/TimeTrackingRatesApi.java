@@ -167,7 +167,8 @@ public class TimeTrackingRatesApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Shift rate created successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid input provided for the shift rate creation. </td><td>  -  </td></tr>
@@ -188,7 +189,8 @@ public class TimeTrackingRatesApi {
          * @return CreateShiftRate201Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Shift rate created successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid input provided for the shift rate creation. </td><td>  -  </td></tr>
@@ -210,7 +212,8 @@ public class TimeTrackingRatesApi {
          * @return ApiResponse&lt;CreateShiftRate201Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Shift rate created successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid input provided for the shift rate creation. </td><td>  -  </td></tr>
@@ -232,7 +235,8 @@ public class TimeTrackingRatesApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 201 </td><td> Shift rate created successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid input provided for the shift rate creation. </td><td>  -  </td></tr>
@@ -254,7 +258,8 @@ public class TimeTrackingRatesApi {
      * Create a new shift rate with the specified attributes such as name, type, value, and a unique external identifier.
      * @return APIcreateShiftRateRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> Shift rate created successfully. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid input provided for the shift rate creation. </td><td>  -  </td></tr>
@@ -351,7 +356,8 @@ public class TimeTrackingRatesApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -369,7 +375,8 @@ public class TimeTrackingRatesApi {
          * Execute deleteShiftRateExternalId request
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -388,7 +395,8 @@ public class TimeTrackingRatesApi {
          * @return ApiResponse&lt;Void&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -408,7 +416,8 @@ public class TimeTrackingRatesApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -429,7 +438,8 @@ public class TimeTrackingRatesApi {
      * @param externalId external ID (required)
      * @return APIdeleteShiftRateExternalIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Successfully deleted </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -526,7 +536,8 @@ public class TimeTrackingRatesApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift rate retrieved successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid external ID provided or the request is malformed. </td><td>  -  </td></tr>
@@ -545,7 +556,8 @@ public class TimeTrackingRatesApi {
          * @return GetShiftRate200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift rate retrieved successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid external ID provided or the request is malformed. </td><td>  -  </td></tr>
@@ -565,7 +577,8 @@ public class TimeTrackingRatesApi {
          * @return ApiResponse&lt;GetShiftRate200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift rate retrieved successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid external ID provided or the request is malformed. </td><td>  -  </td></tr>
@@ -585,7 +598,8 @@ public class TimeTrackingRatesApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift rate retrieved successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid external ID provided or the request is malformed. </td><td>  -  </td></tr>
@@ -606,7 +620,8 @@ public class TimeTrackingRatesApi {
      * @param externalId The unique external identifier of the shift rate to retrieve. (required)
      * @return APIgetShiftRateRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Shift rate retrieved successfully. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid external ID provided or the request is malformed. </td><td>  -  </td></tr>
@@ -725,7 +740,8 @@ public class TimeTrackingRatesApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Paginated list of shift rates retrieved successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid query parameters provided (e.g., non-numeric limit or offset). </td><td>  -  </td></tr>
@@ -743,7 +759,8 @@ public class TimeTrackingRatesApi {
          * @return GetShiftRates200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Paginated list of shift rates retrieved successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid query parameters provided (e.g., non-numeric limit or offset). </td><td>  -  </td></tr>
@@ -762,7 +779,8 @@ public class TimeTrackingRatesApi {
          * @return ApiResponse&lt;GetShiftRates200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Paginated list of shift rates retrieved successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid query parameters provided (e.g., non-numeric limit or offset). </td><td>  -  </td></tr>
@@ -781,7 +799,8 @@ public class TimeTrackingRatesApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Paginated list of shift rates retrieved successfully. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid query parameters provided (e.g., non-numeric limit or offset). </td><td>  -  </td></tr>
@@ -800,7 +819,8 @@ public class TimeTrackingRatesApi {
      * Retrieve a paginated list of shift rates, including details such as rate name, type, value, and timestamps. Pagination parameters can be used to control the size and position of the result set.
      * @return APIgetShiftRatesRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Paginated list of shift rates retrieved successfully. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid query parameters provided (e.g., non-numeric limit or offset). </td><td>  -  </td></tr>
@@ -904,7 +924,8 @@ public class TimeTrackingRatesApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift rate updated successfully </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request payload </td><td>  -  </td></tr>
@@ -924,7 +945,8 @@ public class TimeTrackingRatesApi {
          * @return UpdateShiftRate200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift rate updated successfully </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request payload </td><td>  -  </td></tr>
@@ -945,7 +967,8 @@ public class TimeTrackingRatesApi {
          * @return ApiResponse&lt;UpdateShiftRate200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift rate updated successfully </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request payload </td><td>  -  </td></tr>
@@ -966,7 +989,8 @@ public class TimeTrackingRatesApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Shift rate updated successfully </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request payload </td><td>  -  </td></tr>
@@ -989,7 +1013,8 @@ public class TimeTrackingRatesApi {
      * @param updateShiftRateRequest  (required)
      * @return APIupdateShiftRateRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Shift rate updated successfully </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid request payload </td><td>  -  </td></tr>

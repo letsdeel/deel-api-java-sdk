@@ -50,36 +50,42 @@ import org.openapitools.client.JSON;
 /**
  * DeelInvoice
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class DeelInvoice {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nonnull
   private String label;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private InvoiceStatusEnum status;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nonnull
   private String currency;
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
+  @javax.annotation.Nonnull
   private String total;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public DeelInvoice() {
   }
 
-  public DeelInvoice id(String id) {
+  public DeelInvoice id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -93,12 +99,12 @@ public class DeelInvoice {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public DeelInvoice label(String label) {
+  public DeelInvoice label(@javax.annotation.Nonnull String label) {
     this.label = label;
     return this;
   }
@@ -112,12 +118,12 @@ public class DeelInvoice {
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nonnull String label) {
     this.label = label;
   }
 
 
-  public DeelInvoice status(InvoiceStatusEnum status) {
+  public DeelInvoice status(@javax.annotation.Nonnull InvoiceStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -131,12 +137,12 @@ public class DeelInvoice {
     return status;
   }
 
-  public void setStatus(InvoiceStatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull InvoiceStatusEnum status) {
     this.status = status;
   }
 
 
-  public DeelInvoice currency(String currency) {
+  public DeelInvoice currency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
     return this;
   }
@@ -150,12 +156,12 @@ public class DeelInvoice {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
   }
 
 
-  public DeelInvoice total(String total) {
+  public DeelInvoice total(@javax.annotation.Nonnull String total) {
     this.total = total;
     return this;
   }
@@ -169,12 +175,12 @@ public class DeelInvoice {
     return total;
   }
 
-  public void setTotal(String total) {
+  public void setTotal(@javax.annotation.Nonnull String total) {
     this.total = total;
   }
 
 
-  public DeelInvoice createdAt(OffsetDateTime createdAt) {
+  public DeelInvoice createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -188,7 +194,7 @@ public class DeelInvoice {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 

@@ -49,10 +49,11 @@ import org.openapitools.client.JSON;
 /**
  * CreateTaskReviewByIdRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateTaskReviewByIdRequestData {
   public static final String SERIALIZED_NAME_REASON = "reason";
   @SerializedName(SERIALIZED_NAME_REASON)
+  @javax.annotation.Nullable
   private String reason;
 
   /**
@@ -109,12 +110,13 @@ public class CreateTaskReviewByIdRequestData {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private StatusEnum status;
 
   public CreateTaskReviewByIdRequestData() {
   }
 
-  public CreateTaskReviewByIdRequestData reason(String reason) {
+  public CreateTaskReviewByIdRequestData reason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
     return this;
   }
@@ -128,12 +130,12 @@ public class CreateTaskReviewByIdRequestData {
     return reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
   }
 
 
-  public CreateTaskReviewByIdRequestData status(StatusEnum status) {
+  public CreateTaskReviewByIdRequestData status(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -147,7 +149,7 @@ public class CreateTaskReviewByIdRequestData {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 

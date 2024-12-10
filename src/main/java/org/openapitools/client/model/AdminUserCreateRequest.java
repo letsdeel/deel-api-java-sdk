@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * AdminUserCreateRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class AdminUserCreateRequest {
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nonnull
   private String firstName;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nonnull
   private String lastName;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nonnull
   private String email;
 
   public AdminUserCreateRequest() {
   }
 
-  public AdminUserCreateRequest firstName(String firstName) {
+  public AdminUserCreateRequest firstName(@javax.annotation.Nonnull String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -79,12 +82,12 @@ public class AdminUserCreateRequest {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nonnull String firstName) {
     this.firstName = firstName;
   }
 
 
-  public AdminUserCreateRequest lastName(String lastName) {
+  public AdminUserCreateRequest lastName(@javax.annotation.Nonnull String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -98,12 +101,12 @@ public class AdminUserCreateRequest {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nonnull String lastName) {
     this.lastName = lastName;
   }
 
 
-  public AdminUserCreateRequest email(String email) {
+  public AdminUserCreateRequest email(@javax.annotation.Nonnull String email) {
     this.email = email;
     return this;
   }
@@ -117,7 +120,7 @@ public class AdminUserCreateRequest {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nonnull String email) {
     this.email = email;
   }
 

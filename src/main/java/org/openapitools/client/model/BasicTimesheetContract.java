@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * BasicTimesheetContract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BasicTimesheetContract {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nonnull
   private String title;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private ContractTypeEnum type;
 
   public BasicTimesheetContract() {
   }
 
-  public BasicTimesheetContract id(String id) {
+  public BasicTimesheetContract id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -80,12 +83,12 @@ public class BasicTimesheetContract {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public BasicTimesheetContract title(String title) {
+  public BasicTimesheetContract title(@javax.annotation.Nonnull String title) {
     this.title = title;
     return this;
   }
@@ -99,12 +102,12 @@ public class BasicTimesheetContract {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nonnull String title) {
     this.title = title;
   }
 
 
-  public BasicTimesheetContract type(ContractTypeEnum type) {
+  public BasicTimesheetContract type(@javax.annotation.Nonnull ContractTypeEnum type) {
     this.type = type;
     return this;
   }
@@ -118,7 +121,7 @@ public class BasicTimesheetContract {
     return type;
   }
 
-  public void setType(ContractTypeEnum type) {
+  public void setType(@javax.annotation.Nonnull ContractTypeEnum type) {
     this.type = type;
   }
 

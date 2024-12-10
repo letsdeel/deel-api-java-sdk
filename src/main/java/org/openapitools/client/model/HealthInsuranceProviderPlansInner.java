@@ -49,32 +49,37 @@ import org.openapitools.client.JSON;
 /**
  * HealthInsuranceProviderPlansInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HealthInsuranceProviderPlansInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
+  @javax.annotation.Nullable
   private String price;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_IS_ENABLED = "is_enabled";
   @SerializedName(SERIALIZED_NAME_IS_ENABLED)
+  @javax.annotation.Nullable
   private Boolean isEnabled;
 
   public HealthInsuranceProviderPlansInner() {
   }
 
-  public HealthInsuranceProviderPlansInner id(String id) {
+  public HealthInsuranceProviderPlansInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -88,12 +93,12 @@ public class HealthInsuranceProviderPlansInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public HealthInsuranceProviderPlansInner name(String name) {
+  public HealthInsuranceProviderPlansInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -107,12 +112,12 @@ public class HealthInsuranceProviderPlansInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public HealthInsuranceProviderPlansInner price(String price) {
+  public HealthInsuranceProviderPlansInner price(@javax.annotation.Nullable String price) {
     this.price = price;
     return this;
   }
@@ -126,12 +131,12 @@ public class HealthInsuranceProviderPlansInner {
     return price;
   }
 
-  public void setPrice(String price) {
+  public void setPrice(@javax.annotation.Nullable String price) {
     this.price = price;
   }
 
 
-  public HealthInsuranceProviderPlansInner currency(String currency) {
+  public HealthInsuranceProviderPlansInner currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -145,12 +150,12 @@ public class HealthInsuranceProviderPlansInner {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public HealthInsuranceProviderPlansInner isEnabled(Boolean isEnabled) {
+  public HealthInsuranceProviderPlansInner isEnabled(@javax.annotation.Nullable Boolean isEnabled) {
     this.isEnabled = isEnabled;
     return this;
   }
@@ -164,7 +169,7 @@ public class HealthInsuranceProviderPlansInner {
     return isEnabled;
   }
 
-  public void setIsEnabled(Boolean isEnabled) {
+  public void setIsEnabled(@javax.annotation.Nullable Boolean isEnabled) {
     this.isEnabled = isEnabled;
   }
 

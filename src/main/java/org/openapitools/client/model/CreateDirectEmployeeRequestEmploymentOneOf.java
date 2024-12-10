@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateDirectEmployeeRequestEmploymentOneOf
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateDirectEmployeeRequestEmploymentOneOf {
   /**
    * Gets or Sets type
@@ -104,24 +104,28 @@ public class CreateDirectEmployeeRequestEmploymentOneOf {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private LocalDate endDate;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private LocalDate startDate;
 
   public static final String SERIALIZED_NAME_PART_TIME_PERCENTAGE = "part_time_percentage";
   @SerializedName(SERIALIZED_NAME_PART_TIME_PERCENTAGE)
+  @javax.annotation.Nonnull
   private BigDecimal partTimePercentage;
 
   public CreateDirectEmployeeRequestEmploymentOneOf() {
   }
 
-  public CreateDirectEmployeeRequestEmploymentOneOf type(TypeEnum type) {
+  public CreateDirectEmployeeRequestEmploymentOneOf type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -135,12 +139,12 @@ public class CreateDirectEmployeeRequestEmploymentOneOf {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public CreateDirectEmployeeRequestEmploymentOneOf endDate(LocalDate endDate) {
+  public CreateDirectEmployeeRequestEmploymentOneOf endDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -154,12 +158,12 @@ public class CreateDirectEmployeeRequestEmploymentOneOf {
     return endDate;
   }
 
-  public void setEndDate(LocalDate endDate) {
+  public void setEndDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
   }
 
 
-  public CreateDirectEmployeeRequestEmploymentOneOf startDate(LocalDate startDate) {
+  public CreateDirectEmployeeRequestEmploymentOneOf startDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -173,12 +177,12 @@ public class CreateDirectEmployeeRequestEmploymentOneOf {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public CreateDirectEmployeeRequestEmploymentOneOf partTimePercentage(BigDecimal partTimePercentage) {
+  public CreateDirectEmployeeRequestEmploymentOneOf partTimePercentage(@javax.annotation.Nonnull BigDecimal partTimePercentage) {
     this.partTimePercentage = partTimePercentage;
     return this;
   }
@@ -194,7 +198,7 @@ public class CreateDirectEmployeeRequestEmploymentOneOf {
     return partTimePercentage;
   }
 
-  public void setPartTimePercentage(BigDecimal partTimePercentage) {
+  public void setPartTimePercentage(@javax.annotation.Nonnull BigDecimal partTimePercentage) {
     this.partTimePercentage = partTimePercentage;
   }
 

@@ -54,66 +54,81 @@ import org.openapitools.client.JSON;
 /**
  * Entitlements
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Entitlements {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_TRACKING_PERIOD = "tracking_period";
   @SerializedName(SERIALIZED_NAME_TRACKING_PERIOD)
+  @javax.annotation.Nullable
   private String trackingPeriod;
 
   public static final String SERIALIZED_NAME_TRACKING_PERIOD_END_DATE = "tracking_period_end_date";
   @SerializedName(SERIALIZED_NAME_TRACKING_PERIOD_END_DATE)
+  @javax.annotation.Nullable
   private String trackingPeriodEndDate;
 
   public static final String SERIALIZED_NAME_ACCRUED = "accrued";
   @SerializedName(SERIALIZED_NAME_ACCRUED)
+  @javax.annotation.Nullable
   private String accrued;
 
   public static final String SERIALIZED_NAME_BALANCE_ADJUSTED = "balance_adjusted";
   @SerializedName(SERIALIZED_NAME_BALANCE_ADJUSTED)
+  @javax.annotation.Nullable
   private String balanceAdjusted;
 
   public static final String SERIALIZED_NAME_ALLOWANCE = "allowance";
   @SerializedName(SERIALIZED_NAME_ALLOWANCE)
+  @javax.annotation.Nullable
   private String allowance;
 
   public static final String SERIALIZED_NAME_AVAILABLE = "available";
   @SerializedName(SERIALIZED_NAME_AVAILABLE)
+  @javax.annotation.Nullable
   private String available;
 
   public static final String SERIALIZED_NAME_APPROVED = "approved";
   @SerializedName(SERIALIZED_NAME_APPROVED)
+  @javax.annotation.Nullable
   private String approved;
 
   public static final String SERIALIZED_NAME_EXPIRED = "expired";
   @SerializedName(SERIALIZED_NAME_EXPIRED)
+  @javax.annotation.Nullable
   private String expired;
 
   public static final String SERIALIZED_NAME_REQUESTED = "requested";
   @SerializedName(SERIALIZED_NAME_REQUESTED)
+  @javax.annotation.Nullable
   private String requested;
 
   public static final String SERIALIZED_NAME_ROLLOVERS = "rollovers";
   @SerializedName(SERIALIZED_NAME_ROLLOVERS)
+  @javax.annotation.Nullable
   private List<EntitlementsRolloversInner> rollovers;
 
   public static final String SERIALIZED_NAME_USED = "used";
   @SerializedName(SERIALIZED_NAME_USED)
+  @javax.annotation.Nullable
   private String used;
 
   public static final String SERIALIZED_NAME_TOTAL_ENTITLEMENTS = "total_entitlements";
   @SerializedName(SERIALIZED_NAME_TOTAL_ENTITLEMENTS)
+  @javax.annotation.Nullable
   private String totalEntitlements;
 
   public static final String SERIALIZED_NAME_UPCOMING_ACCRUALS = "upcoming_accruals";
   @SerializedName(SERIALIZED_NAME_UPCOMING_ACCRUALS)
+  @javax.annotation.Nullable
   private String upcomingAccruals;
 
   public static final String SERIALIZED_NAME_ACCRUAL_AMOUNT = "accrual_amount";
   @SerializedName(SERIALIZED_NAME_ACCRUAL_AMOUNT)
+  @javax.annotation.Nullable
   private String accrualAmount;
 
   /**
@@ -178,28 +193,33 @@ public class Entitlements {
 
   public static final String SERIALIZED_NAME_ACCRUAL_UNIT = "accrual_unit";
   @SerializedName(SERIALIZED_NAME_ACCRUAL_UNIT)
+  @javax.annotation.Nullable
   private AccrualUnitEnum accrualUnit;
 
   public static final String SERIALIZED_NAME_PAST_TRACKING_PERIODS = "past_tracking_periods";
   @SerializedName(SERIALIZED_NAME_PAST_TRACKING_PERIODS)
+  @javax.annotation.Nullable
   private List<String> pastTrackingPeriods = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TIME_OFF_EVENT_ID = "time_off_event_id";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_EVENT_ID)
+  @javax.annotation.Nullable
   private String timeOffEventId;
 
   public static final String SERIALIZED_NAME_POLICY = "policy";
   @SerializedName(SERIALIZED_NAME_POLICY)
+  @javax.annotation.Nullable
   private EntitlementsPolicy policy;
 
   public static final String SERIALIZED_NAME_FUTURE_EVENTS = "future_events";
   @SerializedName(SERIALIZED_NAME_FUTURE_EVENTS)
+  @javax.annotation.Nullable
   private List<EntitlementsFutureEventsInner> futureEvents = new ArrayList<>();
 
   public Entitlements() {
   }
 
-  public Entitlements id(String id) {
+  public Entitlements id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -213,12 +233,12 @@ public class Entitlements {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public Entitlements trackingPeriod(String trackingPeriod) {
+  public Entitlements trackingPeriod(@javax.annotation.Nullable String trackingPeriod) {
     this.trackingPeriod = trackingPeriod;
     return this;
   }
@@ -232,12 +252,12 @@ public class Entitlements {
     return trackingPeriod;
   }
 
-  public void setTrackingPeriod(String trackingPeriod) {
+  public void setTrackingPeriod(@javax.annotation.Nullable String trackingPeriod) {
     this.trackingPeriod = trackingPeriod;
   }
 
 
-  public Entitlements trackingPeriodEndDate(String trackingPeriodEndDate) {
+  public Entitlements trackingPeriodEndDate(@javax.annotation.Nullable String trackingPeriodEndDate) {
     this.trackingPeriodEndDate = trackingPeriodEndDate;
     return this;
   }
@@ -251,12 +271,12 @@ public class Entitlements {
     return trackingPeriodEndDate;
   }
 
-  public void setTrackingPeriodEndDate(String trackingPeriodEndDate) {
+  public void setTrackingPeriodEndDate(@javax.annotation.Nullable String trackingPeriodEndDate) {
     this.trackingPeriodEndDate = trackingPeriodEndDate;
   }
 
 
-  public Entitlements accrued(String accrued) {
+  public Entitlements accrued(@javax.annotation.Nullable String accrued) {
     this.accrued = accrued;
     return this;
   }
@@ -270,12 +290,12 @@ public class Entitlements {
     return accrued;
   }
 
-  public void setAccrued(String accrued) {
+  public void setAccrued(@javax.annotation.Nullable String accrued) {
     this.accrued = accrued;
   }
 
 
-  public Entitlements balanceAdjusted(String balanceAdjusted) {
+  public Entitlements balanceAdjusted(@javax.annotation.Nullable String balanceAdjusted) {
     this.balanceAdjusted = balanceAdjusted;
     return this;
   }
@@ -289,12 +309,12 @@ public class Entitlements {
     return balanceAdjusted;
   }
 
-  public void setBalanceAdjusted(String balanceAdjusted) {
+  public void setBalanceAdjusted(@javax.annotation.Nullable String balanceAdjusted) {
     this.balanceAdjusted = balanceAdjusted;
   }
 
 
-  public Entitlements allowance(String allowance) {
+  public Entitlements allowance(@javax.annotation.Nullable String allowance) {
     this.allowance = allowance;
     return this;
   }
@@ -308,12 +328,12 @@ public class Entitlements {
     return allowance;
   }
 
-  public void setAllowance(String allowance) {
+  public void setAllowance(@javax.annotation.Nullable String allowance) {
     this.allowance = allowance;
   }
 
 
-  public Entitlements available(String available) {
+  public Entitlements available(@javax.annotation.Nullable String available) {
     this.available = available;
     return this;
   }
@@ -327,12 +347,12 @@ public class Entitlements {
     return available;
   }
 
-  public void setAvailable(String available) {
+  public void setAvailable(@javax.annotation.Nullable String available) {
     this.available = available;
   }
 
 
-  public Entitlements approved(String approved) {
+  public Entitlements approved(@javax.annotation.Nullable String approved) {
     this.approved = approved;
     return this;
   }
@@ -346,12 +366,12 @@ public class Entitlements {
     return approved;
   }
 
-  public void setApproved(String approved) {
+  public void setApproved(@javax.annotation.Nullable String approved) {
     this.approved = approved;
   }
 
 
-  public Entitlements expired(String expired) {
+  public Entitlements expired(@javax.annotation.Nullable String expired) {
     this.expired = expired;
     return this;
   }
@@ -365,12 +385,12 @@ public class Entitlements {
     return expired;
   }
 
-  public void setExpired(String expired) {
+  public void setExpired(@javax.annotation.Nullable String expired) {
     this.expired = expired;
   }
 
 
-  public Entitlements requested(String requested) {
+  public Entitlements requested(@javax.annotation.Nullable String requested) {
     this.requested = requested;
     return this;
   }
@@ -384,12 +404,12 @@ public class Entitlements {
     return requested;
   }
 
-  public void setRequested(String requested) {
+  public void setRequested(@javax.annotation.Nullable String requested) {
     this.requested = requested;
   }
 
 
-  public Entitlements rollovers(List<EntitlementsRolloversInner> rollovers) {
+  public Entitlements rollovers(@javax.annotation.Nullable List<EntitlementsRolloversInner> rollovers) {
     this.rollovers = rollovers;
     return this;
   }
@@ -411,12 +431,12 @@ public class Entitlements {
     return rollovers;
   }
 
-  public void setRollovers(List<EntitlementsRolloversInner> rollovers) {
+  public void setRollovers(@javax.annotation.Nullable List<EntitlementsRolloversInner> rollovers) {
     this.rollovers = rollovers;
   }
 
 
-  public Entitlements used(String used) {
+  public Entitlements used(@javax.annotation.Nullable String used) {
     this.used = used;
     return this;
   }
@@ -430,12 +450,12 @@ public class Entitlements {
     return used;
   }
 
-  public void setUsed(String used) {
+  public void setUsed(@javax.annotation.Nullable String used) {
     this.used = used;
   }
 
 
-  public Entitlements totalEntitlements(String totalEntitlements) {
+  public Entitlements totalEntitlements(@javax.annotation.Nullable String totalEntitlements) {
     this.totalEntitlements = totalEntitlements;
     return this;
   }
@@ -449,12 +469,12 @@ public class Entitlements {
     return totalEntitlements;
   }
 
-  public void setTotalEntitlements(String totalEntitlements) {
+  public void setTotalEntitlements(@javax.annotation.Nullable String totalEntitlements) {
     this.totalEntitlements = totalEntitlements;
   }
 
 
-  public Entitlements upcomingAccruals(String upcomingAccruals) {
+  public Entitlements upcomingAccruals(@javax.annotation.Nullable String upcomingAccruals) {
     this.upcomingAccruals = upcomingAccruals;
     return this;
   }
@@ -468,12 +488,12 @@ public class Entitlements {
     return upcomingAccruals;
   }
 
-  public void setUpcomingAccruals(String upcomingAccruals) {
+  public void setUpcomingAccruals(@javax.annotation.Nullable String upcomingAccruals) {
     this.upcomingAccruals = upcomingAccruals;
   }
 
 
-  public Entitlements accrualAmount(String accrualAmount) {
+  public Entitlements accrualAmount(@javax.annotation.Nullable String accrualAmount) {
     this.accrualAmount = accrualAmount;
     return this;
   }
@@ -487,12 +507,12 @@ public class Entitlements {
     return accrualAmount;
   }
 
-  public void setAccrualAmount(String accrualAmount) {
+  public void setAccrualAmount(@javax.annotation.Nullable String accrualAmount) {
     this.accrualAmount = accrualAmount;
   }
 
 
-  public Entitlements accrualUnit(AccrualUnitEnum accrualUnit) {
+  public Entitlements accrualUnit(@javax.annotation.Nullable AccrualUnitEnum accrualUnit) {
     this.accrualUnit = accrualUnit;
     return this;
   }
@@ -506,12 +526,12 @@ public class Entitlements {
     return accrualUnit;
   }
 
-  public void setAccrualUnit(AccrualUnitEnum accrualUnit) {
+  public void setAccrualUnit(@javax.annotation.Nullable AccrualUnitEnum accrualUnit) {
     this.accrualUnit = accrualUnit;
   }
 
 
-  public Entitlements pastTrackingPeriods(List<String> pastTrackingPeriods) {
+  public Entitlements pastTrackingPeriods(@javax.annotation.Nullable List<String> pastTrackingPeriods) {
     this.pastTrackingPeriods = pastTrackingPeriods;
     return this;
   }
@@ -533,12 +553,12 @@ public class Entitlements {
     return pastTrackingPeriods;
   }
 
-  public void setPastTrackingPeriods(List<String> pastTrackingPeriods) {
+  public void setPastTrackingPeriods(@javax.annotation.Nullable List<String> pastTrackingPeriods) {
     this.pastTrackingPeriods = pastTrackingPeriods;
   }
 
 
-  public Entitlements timeOffEventId(String timeOffEventId) {
+  public Entitlements timeOffEventId(@javax.annotation.Nullable String timeOffEventId) {
     this.timeOffEventId = timeOffEventId;
     return this;
   }
@@ -552,12 +572,12 @@ public class Entitlements {
     return timeOffEventId;
   }
 
-  public void setTimeOffEventId(String timeOffEventId) {
+  public void setTimeOffEventId(@javax.annotation.Nullable String timeOffEventId) {
     this.timeOffEventId = timeOffEventId;
   }
 
 
-  public Entitlements policy(EntitlementsPolicy policy) {
+  public Entitlements policy(@javax.annotation.Nullable EntitlementsPolicy policy) {
     this.policy = policy;
     return this;
   }
@@ -571,12 +591,12 @@ public class Entitlements {
     return policy;
   }
 
-  public void setPolicy(EntitlementsPolicy policy) {
+  public void setPolicy(@javax.annotation.Nullable EntitlementsPolicy policy) {
     this.policy = policy;
   }
 
 
-  public Entitlements futureEvents(List<EntitlementsFutureEventsInner> futureEvents) {
+  public Entitlements futureEvents(@javax.annotation.Nullable List<EntitlementsFutureEventsInner> futureEvents) {
     this.futureEvents = futureEvents;
     return this;
   }
@@ -598,7 +618,7 @@ public class Entitlements {
     return futureEvents;
   }
 
-  public void setFutureEvents(List<EntitlementsFutureEventsInner> futureEvents) {
+  public void setFutureEvents(@javax.annotation.Nullable List<EntitlementsFutureEventsInner> futureEvents) {
     this.futureEvents = futureEvents;
   }
 

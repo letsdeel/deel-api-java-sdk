@@ -51,36 +51,42 @@ import org.openapitools.client.JSON;
 /**
  * GetBackgroundChecksOptions200ResponseDataPackagesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBackgroundChecksOptions200ResponseDataPackagesInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal price;
 
   public static final String SERIALIZED_NAME_CHECKS = "checks";
   @SerializedName(SERIALIZED_NAME_CHECKS)
+  @javax.annotation.Nullable
   private List<String> checks = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_IS_AVAILABLE = "is_available";
   @SerializedName(SERIALIZED_NAME_IS_AVAILABLE)
+  @javax.annotation.Nullable
   private Boolean isAvailable;
 
   public GetBackgroundChecksOptions200ResponseDataPackagesInner() {
   }
 
-  public GetBackgroundChecksOptions200ResponseDataPackagesInner id(String id) {
+  public GetBackgroundChecksOptions200ResponseDataPackagesInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -94,12 +100,12 @@ public class GetBackgroundChecksOptions200ResponseDataPackagesInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public GetBackgroundChecksOptions200ResponseDataPackagesInner name(String name) {
+  public GetBackgroundChecksOptions200ResponseDataPackagesInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -113,12 +119,12 @@ public class GetBackgroundChecksOptions200ResponseDataPackagesInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetBackgroundChecksOptions200ResponseDataPackagesInner price(BigDecimal price) {
+  public GetBackgroundChecksOptions200ResponseDataPackagesInner price(@javax.annotation.Nullable BigDecimal price) {
     this.price = price;
     return this;
   }
@@ -132,12 +138,12 @@ public class GetBackgroundChecksOptions200ResponseDataPackagesInner {
     return price;
   }
 
-  public void setPrice(BigDecimal price) {
+  public void setPrice(@javax.annotation.Nullable BigDecimal price) {
     this.price = price;
   }
 
 
-  public GetBackgroundChecksOptions200ResponseDataPackagesInner checks(List<String> checks) {
+  public GetBackgroundChecksOptions200ResponseDataPackagesInner checks(@javax.annotation.Nullable List<String> checks) {
     this.checks = checks;
     return this;
   }
@@ -159,12 +165,12 @@ public class GetBackgroundChecksOptions200ResponseDataPackagesInner {
     return checks;
   }
 
-  public void setChecks(List<String> checks) {
+  public void setChecks(@javax.annotation.Nullable List<String> checks) {
     this.checks = checks;
   }
 
 
-  public GetBackgroundChecksOptions200ResponseDataPackagesInner currency(String currency) {
+  public GetBackgroundChecksOptions200ResponseDataPackagesInner currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -178,12 +184,12 @@ public class GetBackgroundChecksOptions200ResponseDataPackagesInner {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public GetBackgroundChecksOptions200ResponseDataPackagesInner isAvailable(Boolean isAvailable) {
+  public GetBackgroundChecksOptions200ResponseDataPackagesInner isAvailable(@javax.annotation.Nullable Boolean isAvailable) {
     this.isAvailable = isAvailable;
     return this;
   }
@@ -197,7 +203,7 @@ public class GetBackgroundChecksOptions200ResponseDataPackagesInner {
     return isAvailable;
   }
 
-  public void setIsAvailable(Boolean isAvailable) {
+  public void setIsAvailable(@javax.annotation.Nullable Boolean isAvailable) {
     this.isAvailable = isAvailable;
   }
 

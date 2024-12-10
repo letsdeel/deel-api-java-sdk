@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * The last payment cycle.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class FinalPaymentCalculatedLastCycle {
   public static final String SERIALIZED_NAME_START = "start";
   @SerializedName(SERIALIZED_NAME_START)
+  @javax.annotation.Nullable
   private OffsetDateTime start;
 
   public static final String SERIALIZED_NAME_END = "end";
   @SerializedName(SERIALIZED_NAME_END)
+  @javax.annotation.Nullable
   private OffsetDateTime end;
 
   public static final String SERIALIZED_NAME_COMPLETION_DATE = "completion_date";
   @SerializedName(SERIALIZED_NAME_COMPLETION_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime completionDate;
 
   public FinalPaymentCalculatedLastCycle() {
   }
 
-  public FinalPaymentCalculatedLastCycle start(OffsetDateTime start) {
+  public FinalPaymentCalculatedLastCycle start(@javax.annotation.Nullable OffsetDateTime start) {
     this.start = start;
     return this;
   }
@@ -80,12 +83,12 @@ public class FinalPaymentCalculatedLastCycle {
     return start;
   }
 
-  public void setStart(OffsetDateTime start) {
+  public void setStart(@javax.annotation.Nullable OffsetDateTime start) {
     this.start = start;
   }
 
 
-  public FinalPaymentCalculatedLastCycle end(OffsetDateTime end) {
+  public FinalPaymentCalculatedLastCycle end(@javax.annotation.Nullable OffsetDateTime end) {
     this.end = end;
     return this;
   }
@@ -99,12 +102,12 @@ public class FinalPaymentCalculatedLastCycle {
     return end;
   }
 
-  public void setEnd(OffsetDateTime end) {
+  public void setEnd(@javax.annotation.Nullable OffsetDateTime end) {
     this.end = end;
   }
 
 
-  public FinalPaymentCalculatedLastCycle completionDate(OffsetDateTime completionDate) {
+  public FinalPaymentCalculatedLastCycle completionDate(@javax.annotation.Nullable OffsetDateTime completionDate) {
     this.completionDate = completionDate;
     return this;
   }
@@ -118,7 +121,7 @@ public class FinalPaymentCalculatedLastCycle {
     return completionDate;
   }
 
-  public void setCompletionDate(OffsetDateTime completionDate) {
+  public void setCompletionDate(@javax.annotation.Nullable OffsetDateTime completionDate) {
     this.completionDate = completionDate;
   }
 

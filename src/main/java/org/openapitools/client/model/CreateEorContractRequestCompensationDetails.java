@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * CreateEorContractRequestCompensationDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateEorContractRequestCompensationDetails {
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
+  @javax.annotation.Nullable
   private BigDecimal salary;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nonnull
   private String currency;
 
   public CreateEorContractRequestCompensationDetails() {
   }
 
-  public CreateEorContractRequestCompensationDetails salary(BigDecimal salary) {
+  public CreateEorContractRequestCompensationDetails salary(@javax.annotation.Nullable BigDecimal salary) {
     this.salary = salary;
     return this;
   }
@@ -76,12 +78,12 @@ public class CreateEorContractRequestCompensationDetails {
     return salary;
   }
 
-  public void setSalary(BigDecimal salary) {
+  public void setSalary(@javax.annotation.Nullable BigDecimal salary) {
     this.salary = salary;
   }
 
 
-  public CreateEorContractRequestCompensationDetails currency(String currency) {
+  public CreateEorContractRequestCompensationDetails currency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
     return this;
   }
@@ -95,7 +97,7 @@ public class CreateEorContractRequestCompensationDetails {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
   }
 

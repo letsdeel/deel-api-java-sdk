@@ -49,32 +49,37 @@ import org.openapitools.client.JSON;
 /**
  * EmployeeTaxDocumentsList
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EmployeeTaxDocumentsList {
   public static final String SERIALIZED_NAME_YEAR = "year";
   @SerializedName(SERIALIZED_NAME_YEAR)
+  @javax.annotation.Nullable
   private BigDecimal year;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
+  @javax.annotation.Nullable
   private String url;
 
   public EmployeeTaxDocumentsList() {
   }
 
-  public EmployeeTaxDocumentsList year(BigDecimal year) {
+  public EmployeeTaxDocumentsList year(@javax.annotation.Nullable BigDecimal year) {
     this.year = year;
     return this;
   }
@@ -88,12 +93,12 @@ public class EmployeeTaxDocumentsList {
     return year;
   }
 
-  public void setYear(BigDecimal year) {
+  public void setYear(@javax.annotation.Nullable BigDecimal year) {
     this.year = year;
   }
 
 
-  public EmployeeTaxDocumentsList type(String type) {
+  public EmployeeTaxDocumentsList type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -107,12 +112,12 @@ public class EmployeeTaxDocumentsList {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public EmployeeTaxDocumentsList country(String country) {
+  public EmployeeTaxDocumentsList country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -126,12 +131,12 @@ public class EmployeeTaxDocumentsList {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public EmployeeTaxDocumentsList id(String id) {
+  public EmployeeTaxDocumentsList id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -145,12 +150,12 @@ public class EmployeeTaxDocumentsList {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public EmployeeTaxDocumentsList url(String url) {
+  public EmployeeTaxDocumentsList url(@javax.annotation.Nullable String url) {
     this.url = url;
     return this;
   }
@@ -164,7 +169,7 @@ public class EmployeeTaxDocumentsList {
     return url;
   }
 
-  public void setUrl(String url) {
+  public void setUrl(@javax.annotation.Nullable String url) {
     this.url = url;
   }
 

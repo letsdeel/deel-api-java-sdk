@@ -48,28 +48,32 @@ import org.openapitools.client.JSON;
 /**
  * CreateShifts201ResponseDataInnerMetaEnd
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateShifts201ResponseDataInnerMetaEnd {
   public static final String SERIALIZED_NAME_DATE = "date";
   @SerializedName(SERIALIZED_NAME_DATE)
+  @javax.annotation.Nullable
   private String date;
 
   public static final String SERIALIZED_NAME_TIME = "time";
   @SerializedName(SERIALIZED_NAME_TIME)
+  @javax.annotation.Nullable
   private String time;
 
   public static final String SERIALIZED_NAME_IS_REST_DAY = "is_rest_day";
   @SerializedName(SERIALIZED_NAME_IS_REST_DAY)
+  @javax.annotation.Nullable
   private Boolean isRestDay;
 
   public static final String SERIALIZED_NAME_IS_PUBLIC_HOLIDAY = "is_public_holiday";
   @SerializedName(SERIALIZED_NAME_IS_PUBLIC_HOLIDAY)
+  @javax.annotation.Nullable
   private Boolean isPublicHoliday;
 
   public CreateShifts201ResponseDataInnerMetaEnd() {
   }
 
-  public CreateShifts201ResponseDataInnerMetaEnd date(String date) {
+  public CreateShifts201ResponseDataInnerMetaEnd date(@javax.annotation.Nullable String date) {
     this.date = date;
     return this;
   }
@@ -83,12 +87,12 @@ public class CreateShifts201ResponseDataInnerMetaEnd {
     return date;
   }
 
-  public void setDate(String date) {
+  public void setDate(@javax.annotation.Nullable String date) {
     this.date = date;
   }
 
 
-  public CreateShifts201ResponseDataInnerMetaEnd time(String time) {
+  public CreateShifts201ResponseDataInnerMetaEnd time(@javax.annotation.Nullable String time) {
     this.time = time;
     return this;
   }
@@ -102,12 +106,12 @@ public class CreateShifts201ResponseDataInnerMetaEnd {
     return time;
   }
 
-  public void setTime(String time) {
+  public void setTime(@javax.annotation.Nullable String time) {
     this.time = time;
   }
 
 
-  public CreateShifts201ResponseDataInnerMetaEnd isRestDay(Boolean isRestDay) {
+  public CreateShifts201ResponseDataInnerMetaEnd isRestDay(@javax.annotation.Nullable Boolean isRestDay) {
     this.isRestDay = isRestDay;
     return this;
   }
@@ -121,12 +125,12 @@ public class CreateShifts201ResponseDataInnerMetaEnd {
     return isRestDay;
   }
 
-  public void setIsRestDay(Boolean isRestDay) {
+  public void setIsRestDay(@javax.annotation.Nullable Boolean isRestDay) {
     this.isRestDay = isRestDay;
   }
 
 
-  public CreateShifts201ResponseDataInnerMetaEnd isPublicHoliday(Boolean isPublicHoliday) {
+  public CreateShifts201ResponseDataInnerMetaEnd isPublicHoliday(@javax.annotation.Nullable Boolean isPublicHoliday) {
     this.isPublicHoliday = isPublicHoliday;
     return this;
   }
@@ -140,7 +144,7 @@ public class CreateShifts201ResponseDataInnerMetaEnd {
     return isPublicHoliday;
   }
 
-  public void setIsPublicHoliday(Boolean isPublicHoliday) {
+  public void setIsPublicHoliday(@javax.annotation.Nullable Boolean isPublicHoliday) {
     this.isPublicHoliday = isPublicHoliday;
   }
 

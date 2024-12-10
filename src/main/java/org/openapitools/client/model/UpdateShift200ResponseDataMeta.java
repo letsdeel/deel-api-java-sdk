@@ -53,28 +53,32 @@ import org.openapitools.client.JSON;
 /**
  * UpdateShift200ResponseDataMeta
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateShift200ResponseDataMeta {
   public static final String SERIALIZED_NAME_END = "end";
   @SerializedName(SERIALIZED_NAME_END)
+  @javax.annotation.Nullable
   private UpdateShift200ResponseDataMetaEnd end;
 
   public static final String SERIALIZED_NAME_START = "start";
   @SerializedName(SERIALIZED_NAME_START)
+  @javax.annotation.Nullable
   private UpdateShift200ResponseDataMetaStart start;
 
   public static final String SERIALIZED_NAME_BREAKS = "breaks";
   @SerializedName(SERIALIZED_NAME_BREAKS)
+  @javax.annotation.Nullable
   private List<UpdateShift200ResponseDataMetaBreaksInner> breaks = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_APPROVAL_DATE = "approval_date";
   @SerializedName(SERIALIZED_NAME_APPROVAL_DATE)
+  @javax.annotation.Nullable
   private String approvalDate;
 
   public UpdateShift200ResponseDataMeta() {
   }
 
-  public UpdateShift200ResponseDataMeta end(UpdateShift200ResponseDataMetaEnd end) {
+  public UpdateShift200ResponseDataMeta end(@javax.annotation.Nullable UpdateShift200ResponseDataMetaEnd end) {
     this.end = end;
     return this;
   }
@@ -88,12 +92,12 @@ public class UpdateShift200ResponseDataMeta {
     return end;
   }
 
-  public void setEnd(UpdateShift200ResponseDataMetaEnd end) {
+  public void setEnd(@javax.annotation.Nullable UpdateShift200ResponseDataMetaEnd end) {
     this.end = end;
   }
 
 
-  public UpdateShift200ResponseDataMeta start(UpdateShift200ResponseDataMetaStart start) {
+  public UpdateShift200ResponseDataMeta start(@javax.annotation.Nullable UpdateShift200ResponseDataMetaStart start) {
     this.start = start;
     return this;
   }
@@ -107,12 +111,12 @@ public class UpdateShift200ResponseDataMeta {
     return start;
   }
 
-  public void setStart(UpdateShift200ResponseDataMetaStart start) {
+  public void setStart(@javax.annotation.Nullable UpdateShift200ResponseDataMetaStart start) {
     this.start = start;
   }
 
 
-  public UpdateShift200ResponseDataMeta breaks(List<UpdateShift200ResponseDataMetaBreaksInner> breaks) {
+  public UpdateShift200ResponseDataMeta breaks(@javax.annotation.Nullable List<UpdateShift200ResponseDataMetaBreaksInner> breaks) {
     this.breaks = breaks;
     return this;
   }
@@ -134,12 +138,12 @@ public class UpdateShift200ResponseDataMeta {
     return breaks;
   }
 
-  public void setBreaks(List<UpdateShift200ResponseDataMetaBreaksInner> breaks) {
+  public void setBreaks(@javax.annotation.Nullable List<UpdateShift200ResponseDataMetaBreaksInner> breaks) {
     this.breaks = breaks;
   }
 
 
-  public UpdateShift200ResponseDataMeta approvalDate(String approvalDate) {
+  public UpdateShift200ResponseDataMeta approvalDate(@javax.annotation.Nullable String approvalDate) {
     this.approvalDate = approvalDate;
     return this;
   }
@@ -153,7 +157,7 @@ public class UpdateShift200ResponseDataMeta {
     return approvalDate;
   }
 
-  public void setApprovalDate(String approvalDate) {
+  public void setApprovalDate(@javax.annotation.Nullable String approvalDate) {
     this.approvalDate = approvalDate;
   }
 

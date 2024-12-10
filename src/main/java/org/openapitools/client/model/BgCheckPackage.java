@@ -51,36 +51,42 @@ import org.openapitools.client.JSON;
 /**
  * BgCheckPackage
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BgCheckPackage {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_CHECKS = "checks";
   @SerializedName(SERIALIZED_NAME_CHECKS)
+  @javax.annotation.Nullable
   private List<String> checks = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_IS_AVAILABLE = "is_available";
   @SerializedName(SERIALIZED_NAME_IS_AVAILABLE)
+  @javax.annotation.Nullable
   private Boolean isAvailable;
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
+  @javax.annotation.Nullable
   private BigDecimal price;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public BgCheckPackage() {
   }
 
-  public BgCheckPackage id(String id) {
+  public BgCheckPackage id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -94,12 +100,12 @@ public class BgCheckPackage {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public BgCheckPackage name(String name) {
+  public BgCheckPackage name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -113,12 +119,12 @@ public class BgCheckPackage {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public BgCheckPackage checks(List<String> checks) {
+  public BgCheckPackage checks(@javax.annotation.Nullable List<String> checks) {
     this.checks = checks;
     return this;
   }
@@ -140,12 +146,12 @@ public class BgCheckPackage {
     return checks;
   }
 
-  public void setChecks(List<String> checks) {
+  public void setChecks(@javax.annotation.Nullable List<String> checks) {
     this.checks = checks;
   }
 
 
-  public BgCheckPackage isAvailable(Boolean isAvailable) {
+  public BgCheckPackage isAvailable(@javax.annotation.Nullable Boolean isAvailable) {
     this.isAvailable = isAvailable;
     return this;
   }
@@ -159,12 +165,12 @@ public class BgCheckPackage {
     return isAvailable;
   }
 
-  public void setIsAvailable(Boolean isAvailable) {
+  public void setIsAvailable(@javax.annotation.Nullable Boolean isAvailable) {
     this.isAvailable = isAvailable;
   }
 
 
-  public BgCheckPackage price(BigDecimal price) {
+  public BgCheckPackage price(@javax.annotation.Nullable BigDecimal price) {
     this.price = price;
     return this;
   }
@@ -178,12 +184,12 @@ public class BgCheckPackage {
     return price;
   }
 
-  public void setPrice(BigDecimal price) {
+  public void setPrice(@javax.annotation.Nullable BigDecimal price) {
     this.price = price;
   }
 
 
-  public BgCheckPackage currency(String currency) {
+  public BgCheckPackage currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -197,7 +203,7 @@ public class BgCheckPackage {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 

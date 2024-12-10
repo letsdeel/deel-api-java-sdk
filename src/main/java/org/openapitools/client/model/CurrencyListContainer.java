@@ -51,16 +51,17 @@ import org.openapitools.client.JSON;
 /**
  * CurrencyListContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CurrencyListContainer {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private List<Currency> data = new ArrayList<>();
 
   public CurrencyListContainer() {
   }
 
-  public CurrencyListContainer data(List<Currency> data) {
+  public CurrencyListContainer data(@javax.annotation.Nonnull List<Currency> data) {
     this.data = data;
     return this;
   }
@@ -82,7 +83,7 @@ public class CurrencyListContainer {
     return data;
   }
 
-  public void setData(List<Currency> data) {
+  public void setData(@javax.annotation.Nonnull List<Currency> data) {
     this.data = data;
   }
 

@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * PgoTaskToDelete
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PgoTaskToDelete {
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_DELETE_RECURRING_REPORT = "delete_recurring_report";
   @SerializedName(SERIALIZED_NAME_DELETE_RECURRING_REPORT)
+  @javax.annotation.Nullable
   private Boolean deleteRecurringReport;
 
   public PgoTaskToDelete() {
   }
 
-  public PgoTaskToDelete description(String description) {
+  public PgoTaskToDelete description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -76,12 +78,12 @@ public class PgoTaskToDelete {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public PgoTaskToDelete deleteRecurringReport(Boolean deleteRecurringReport) {
+  public PgoTaskToDelete deleteRecurringReport(@javax.annotation.Nullable Boolean deleteRecurringReport) {
     this.deleteRecurringReport = deleteRecurringReport;
     return this;
   }
@@ -95,7 +97,7 @@ public class PgoTaskToDelete {
     return deleteRecurringReport;
   }
 
-  public void setDeleteRecurringReport(Boolean deleteRecurringReport) {
+  public void setDeleteRecurringReport(@javax.annotation.Nullable Boolean deleteRecurringReport) {
     this.deleteRecurringReport = deleteRecurringReport;
   }
 

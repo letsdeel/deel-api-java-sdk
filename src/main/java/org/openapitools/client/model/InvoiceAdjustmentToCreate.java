@@ -52,36 +52,42 @@ import org.openapitools.client.JSON;
 /**
  * Details of invoice adjustment to create.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class InvoiceAdjustmentToCreate {
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nonnull
   private String contractId;
 
   public static final String SERIALIZED_NAME_DATE_SUBMITTED = "date_submitted";
   @SerializedName(SERIALIZED_NAME_DATE_SUBMITTED)
+  @javax.annotation.Nonnull
   private LocalDate dateSubmitted;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private InvoiceAdjustmentTypeToCreateEnum type;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_PAYMENT_CYCLE_ID = "paymentCycleId";
   @SerializedName(SERIALIZED_NAME_PAYMENT_CYCLE_ID)
+  @javax.annotation.Nullable
   private BigDecimal paymentCycleId;
 
   public InvoiceAdjustmentToCreate() {
   }
 
-  public InvoiceAdjustmentToCreate contractId(String contractId) {
+  public InvoiceAdjustmentToCreate contractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -95,12 +101,12 @@ public class InvoiceAdjustmentToCreate {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
   }
 
 
-  public InvoiceAdjustmentToCreate dateSubmitted(LocalDate dateSubmitted) {
+  public InvoiceAdjustmentToCreate dateSubmitted(@javax.annotation.Nonnull LocalDate dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
     return this;
   }
@@ -114,12 +120,12 @@ public class InvoiceAdjustmentToCreate {
     return dateSubmitted;
   }
 
-  public void setDateSubmitted(LocalDate dateSubmitted) {
+  public void setDateSubmitted(@javax.annotation.Nonnull LocalDate dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
   }
 
 
-  public InvoiceAdjustmentToCreate type(InvoiceAdjustmentTypeToCreateEnum type) {
+  public InvoiceAdjustmentToCreate type(@javax.annotation.Nonnull InvoiceAdjustmentTypeToCreateEnum type) {
     this.type = type;
     return this;
   }
@@ -133,12 +139,12 @@ public class InvoiceAdjustmentToCreate {
     return type;
   }
 
-  public void setType(InvoiceAdjustmentTypeToCreateEnum type) {
+  public void setType(@javax.annotation.Nonnull InvoiceAdjustmentTypeToCreateEnum type) {
     this.type = type;
   }
 
 
-  public InvoiceAdjustmentToCreate amount(BigDecimal amount) {
+  public InvoiceAdjustmentToCreate amount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -153,12 +159,12 @@ public class InvoiceAdjustmentToCreate {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public InvoiceAdjustmentToCreate description(String description) {
+  public InvoiceAdjustmentToCreate description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -172,12 +178,12 @@ public class InvoiceAdjustmentToCreate {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public InvoiceAdjustmentToCreate paymentCycleId(BigDecimal paymentCycleId) {
+  public InvoiceAdjustmentToCreate paymentCycleId(@javax.annotation.Nullable BigDecimal paymentCycleId) {
     this.paymentCycleId = paymentCycleId;
     return this;
   }
@@ -191,7 +197,7 @@ public class InvoiceAdjustmentToCreate {
     return paymentCycleId;
   }
 
-  public void setPaymentCycleId(BigDecimal paymentCycleId) {
+  public void setPaymentCycleId(@javax.annotation.Nullable BigDecimal paymentCycleId) {
     this.paymentCycleId = paymentCycleId;
   }
 

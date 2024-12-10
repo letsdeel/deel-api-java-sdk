@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * The individual that initiated the termination.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffboardingTrackerIdGet200ResponseDataTerminationInitiatedBy {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_PROFILE_TYPE = "profile_type";
   @SerializedName(SERIALIZED_NAME_PROFILE_TYPE)
+  @javax.annotation.Nullable
   private String profileType;
 
   public OffboardingTrackerIdGet200ResponseDataTerminationInitiatedBy() {
   }
 
-  public OffboardingTrackerIdGet200ResponseDataTerminationInitiatedBy name(String name) {
+  public OffboardingTrackerIdGet200ResponseDataTerminationInitiatedBy name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -75,12 +77,12 @@ public class OffboardingTrackerIdGet200ResponseDataTerminationInitiatedBy {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public OffboardingTrackerIdGet200ResponseDataTerminationInitiatedBy profileType(String profileType) {
+  public OffboardingTrackerIdGet200ResponseDataTerminationInitiatedBy profileType(@javax.annotation.Nullable String profileType) {
     this.profileType = profileType;
     return this;
   }
@@ -94,7 +96,7 @@ public class OffboardingTrackerIdGet200ResponseDataTerminationInitiatedBy {
     return profileType;
   }
 
-  public void setProfileType(String profileType) {
+  public void setProfileType(@javax.annotation.Nullable String profileType) {
     this.profileType = profileType;
   }
 

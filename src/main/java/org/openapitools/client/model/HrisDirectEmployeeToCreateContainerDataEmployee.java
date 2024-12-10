@@ -48,40 +48,47 @@ import org.openapitools.client.JSON;
 /**
  * HrisDirectEmployeeToCreateContainerDataEmployee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisDirectEmployeeToCreateContainerDataEmployee {
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nonnull
   private String firstName;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nonnull
   private String lastName;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nonnull
   private String email;
 
   public static final String SERIALIZED_NAME_WORK_EMAIL = "work_email";
   @SerializedName(SERIALIZED_NAME_WORK_EMAIL)
+  @javax.annotation.Nullable
   private String workEmail;
 
   public static final String SERIALIZED_NAME_NATIONALITY = "nationality";
   @SerializedName(SERIALIZED_NAME_NATIONALITY)
+  @javax.annotation.Nonnull
   private String nationality;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nonnull
   private String country;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
   private String state;
 
   public HrisDirectEmployeeToCreateContainerDataEmployee() {
   }
 
-  public HrisDirectEmployeeToCreateContainerDataEmployee firstName(String firstName) {
+  public HrisDirectEmployeeToCreateContainerDataEmployee firstName(@javax.annotation.Nonnull String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -95,12 +102,12 @@ public class HrisDirectEmployeeToCreateContainerDataEmployee {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nonnull String firstName) {
     this.firstName = firstName;
   }
 
 
-  public HrisDirectEmployeeToCreateContainerDataEmployee lastName(String lastName) {
+  public HrisDirectEmployeeToCreateContainerDataEmployee lastName(@javax.annotation.Nonnull String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -114,12 +121,12 @@ public class HrisDirectEmployeeToCreateContainerDataEmployee {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nonnull String lastName) {
     this.lastName = lastName;
   }
 
 
-  public HrisDirectEmployeeToCreateContainerDataEmployee email(String email) {
+  public HrisDirectEmployeeToCreateContainerDataEmployee email(@javax.annotation.Nonnull String email) {
     this.email = email;
     return this;
   }
@@ -133,12 +140,12 @@ public class HrisDirectEmployeeToCreateContainerDataEmployee {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nonnull String email) {
     this.email = email;
   }
 
 
-  public HrisDirectEmployeeToCreateContainerDataEmployee workEmail(String workEmail) {
+  public HrisDirectEmployeeToCreateContainerDataEmployee workEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
     return this;
   }
@@ -152,12 +159,12 @@ public class HrisDirectEmployeeToCreateContainerDataEmployee {
     return workEmail;
   }
 
-  public void setWorkEmail(String workEmail) {
+  public void setWorkEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
   }
 
 
-  public HrisDirectEmployeeToCreateContainerDataEmployee nationality(String nationality) {
+  public HrisDirectEmployeeToCreateContainerDataEmployee nationality(@javax.annotation.Nonnull String nationality) {
     this.nationality = nationality;
     return this;
   }
@@ -171,12 +178,12 @@ public class HrisDirectEmployeeToCreateContainerDataEmployee {
     return nationality;
   }
 
-  public void setNationality(String nationality) {
+  public void setNationality(@javax.annotation.Nonnull String nationality) {
     this.nationality = nationality;
   }
 
 
-  public HrisDirectEmployeeToCreateContainerDataEmployee country(String country) {
+  public HrisDirectEmployeeToCreateContainerDataEmployee country(@javax.annotation.Nonnull String country) {
     this.country = country;
     return this;
   }
@@ -190,12 +197,12 @@ public class HrisDirectEmployeeToCreateContainerDataEmployee {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nonnull String country) {
     this.country = country;
   }
 
 
-  public HrisDirectEmployeeToCreateContainerDataEmployee state(String state) {
+  public HrisDirectEmployeeToCreateContainerDataEmployee state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -209,7 +216,7 @@ public class HrisDirectEmployeeToCreateContainerDataEmployee {
     return state;
   }
 
-  public void setState(String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 

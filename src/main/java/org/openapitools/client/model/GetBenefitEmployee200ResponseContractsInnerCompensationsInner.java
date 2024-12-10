@@ -50,10 +50,11 @@ import org.openapitools.client.JSON;
 /**
  * Details about the compensations.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBenefitEmployee200ResponseContractsInnerCompensationsInner {
   public static final String SERIALIZED_NAME_RATE = "rate";
   @SerializedName(SERIALIZED_NAME_RATE)
+  @javax.annotation.Nullable
   private BigDecimal rate;
 
   /**
@@ -110,18 +111,22 @@ public class GetBenefitEmployee200ResponseContractsInnerCompensationsInner {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nullable
   private String scale;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public static final String SERIALIZED_NAME_CYCLE_SCALE = "cycle_scale";
   @SerializedName(SERIALIZED_NAME_CYCLE_SCALE)
+  @javax.annotation.Nullable
   private String cycleScale;
 
   /**
@@ -178,12 +183,13 @@ public class GetBenefitEmployee200ResponseContractsInnerCompensationsInner {
 
   public static final String SERIALIZED_NAME_VARIABLE_COMPENSATION_TYPE = "variable_compensation_type";
   @SerializedName(SERIALIZED_NAME_VARIABLE_COMPENSATION_TYPE)
+  @javax.annotation.Nullable
   private VariableCompensationTypeEnum variableCompensationType;
 
   public GetBenefitEmployee200ResponseContractsInnerCompensationsInner() {
   }
 
-  public GetBenefitEmployee200ResponseContractsInnerCompensationsInner rate(BigDecimal rate) {
+  public GetBenefitEmployee200ResponseContractsInnerCompensationsInner rate(@javax.annotation.Nullable BigDecimal rate) {
     this.rate = rate;
     return this;
   }
@@ -197,12 +203,12 @@ public class GetBenefitEmployee200ResponseContractsInnerCompensationsInner {
     return rate;
   }
 
-  public void setRate(BigDecimal rate) {
+  public void setRate(@javax.annotation.Nullable BigDecimal rate) {
     this.rate = rate;
   }
 
 
-  public GetBenefitEmployee200ResponseContractsInnerCompensationsInner type(TypeEnum type) {
+  public GetBenefitEmployee200ResponseContractsInnerCompensationsInner type(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -216,12 +222,12 @@ public class GetBenefitEmployee200ResponseContractsInnerCompensationsInner {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
 
-  public GetBenefitEmployee200ResponseContractsInnerCompensationsInner scale(String scale) {
+  public GetBenefitEmployee200ResponseContractsInnerCompensationsInner scale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
     return this;
   }
@@ -235,12 +241,12 @@ public class GetBenefitEmployee200ResponseContractsInnerCompensationsInner {
     return scale;
   }
 
-  public void setScale(String scale) {
+  public void setScale(@javax.annotation.Nullable String scale) {
     this.scale = scale;
   }
 
 
-  public GetBenefitEmployee200ResponseContractsInnerCompensationsInner currency(String currency) {
+  public GetBenefitEmployee200ResponseContractsInnerCompensationsInner currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -254,12 +260,12 @@ public class GetBenefitEmployee200ResponseContractsInnerCompensationsInner {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 
 
-  public GetBenefitEmployee200ResponseContractsInnerCompensationsInner cycleScale(String cycleScale) {
+  public GetBenefitEmployee200ResponseContractsInnerCompensationsInner cycleScale(@javax.annotation.Nullable String cycleScale) {
     this.cycleScale = cycleScale;
     return this;
   }
@@ -273,12 +279,12 @@ public class GetBenefitEmployee200ResponseContractsInnerCompensationsInner {
     return cycleScale;
   }
 
-  public void setCycleScale(String cycleScale) {
+  public void setCycleScale(@javax.annotation.Nullable String cycleScale) {
     this.cycleScale = cycleScale;
   }
 
 
-  public GetBenefitEmployee200ResponseContractsInnerCompensationsInner variableCompensationType(VariableCompensationTypeEnum variableCompensationType) {
+  public GetBenefitEmployee200ResponseContractsInnerCompensationsInner variableCompensationType(@javax.annotation.Nullable VariableCompensationTypeEnum variableCompensationType) {
     this.variableCompensationType = variableCompensationType;
     return this;
   }
@@ -292,7 +298,7 @@ public class GetBenefitEmployee200ResponseContractsInnerCompensationsInner {
     return variableCompensationType;
   }
 
-  public void setVariableCompensationType(VariableCompensationTypeEnum variableCompensationType) {
+  public void setVariableCompensationType(@javax.annotation.Nullable VariableCompensationTypeEnum variableCompensationType) {
     this.variableCompensationType = variableCompensationType;
   }
 

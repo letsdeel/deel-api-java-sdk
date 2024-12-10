@@ -67,7 +67,7 @@ import com.google.gson.JsonParseException;
 
 import org.openapitools.client.JSON;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetCustomFieldValuesFromWorker200ResponseDataInnerData extends AbstractOpenApiSchema {
     private static final Logger log = Logger.getLogger(GetCustomFieldValuesFromWorker200ResponseDataInnerData.class.getName());
 
@@ -342,6 +342,7 @@ public class GetCustomFieldValuesFromWorker200ResponseDataInnerData extends Abst
     public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf getGetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf() throws ClassCastException {
         return (GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf1`. If the actual instance is not `GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf1`,
      * the ClassCastException will be thrown.
@@ -352,6 +353,7 @@ public class GetCustomFieldValuesFromWorker200ResponseDataInnerData extends Abst
     public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf1 getGetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf1() throws ClassCastException {
         return (GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf1)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2`. If the actual instance is not `GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2`,
      * the ClassCastException will be thrown.
@@ -362,6 +364,7 @@ public class GetCustomFieldValuesFromWorker200ResponseDataInnerData extends Abst
     public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2 getGetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2() throws ClassCastException {
         return (GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf3`. If the actual instance is not `GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf3`,
      * the ClassCastException will be thrown.
@@ -372,6 +375,7 @@ public class GetCustomFieldValuesFromWorker200ResponseDataInnerData extends Abst
     public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf3 getGetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf3() throws ClassCastException {
         return (GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf3)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf4`. If the actual instance is not `GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf4`,
      * the ClassCastException will be thrown.
@@ -382,6 +386,7 @@ public class GetCustomFieldValuesFromWorker200ResponseDataInnerData extends Abst
     public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf4 getGetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf4() throws ClassCastException {
         return (GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf4)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf5`. If the actual instance is not `GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf5`,
      * the ClassCastException will be thrown.
@@ -392,6 +397,7 @@ public class GetCustomFieldValuesFromWorker200ResponseDataInnerData extends Abst
     public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf5 getGetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf5() throws ClassCastException {
         return (GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf5)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf6`. If the actual instance is not `GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf6`,
      * the ClassCastException will be thrown.

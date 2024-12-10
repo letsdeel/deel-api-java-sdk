@@ -51,36 +51,42 @@ import org.openapitools.client.JSON;
 /**
  * Agreement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Agreement {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_AGREEMENT_TITLE = "agreement_title";
   @SerializedName(SERIALIZED_NAME_AGREEMENT_TITLE)
+  @javax.annotation.Nonnull
   private String agreementTitle;
 
   public static final String SERIALIZED_NAME_AGREEMENT_TYPE = "agreement_type";
   @SerializedName(SERIALIZED_NAME_AGREEMENT_TYPE)
+  @javax.annotation.Nonnull
   private String agreementType;
 
   public static final String SERIALIZED_NAME_MSA = "msa";
   @SerializedName(SERIALIZED_NAME_MSA)
+  @javax.annotation.Nonnull
   private AgreementMsa msa;
 
   public static final String SERIALIZED_NAME_CLIENT_LEGAL_ENTITY = "client_legal_entity";
   @SerializedName(SERIALIZED_NAME_CLIENT_LEGAL_ENTITY)
+  @javax.annotation.Nonnull
   private AgreementClientLegalEntity clientLegalEntity;
 
   public static final String SERIALIZED_NAME_PROVIDER_LEGAL_ENTITY = "provider_legal_entity";
   @SerializedName(SERIALIZED_NAME_PROVIDER_LEGAL_ENTITY)
+  @javax.annotation.Nonnull
   private AgreementProviderLegalEntity providerLegalEntity;
 
   public Agreement() {
   }
 
-  public Agreement id(String id) {
+  public Agreement id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -94,12 +100,12 @@ public class Agreement {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public Agreement agreementTitle(String agreementTitle) {
+  public Agreement agreementTitle(@javax.annotation.Nonnull String agreementTitle) {
     this.agreementTitle = agreementTitle;
     return this;
   }
@@ -113,12 +119,12 @@ public class Agreement {
     return agreementTitle;
   }
 
-  public void setAgreementTitle(String agreementTitle) {
+  public void setAgreementTitle(@javax.annotation.Nonnull String agreementTitle) {
     this.agreementTitle = agreementTitle;
   }
 
 
-  public Agreement agreementType(String agreementType) {
+  public Agreement agreementType(@javax.annotation.Nonnull String agreementType) {
     this.agreementType = agreementType;
     return this;
   }
@@ -132,12 +138,12 @@ public class Agreement {
     return agreementType;
   }
 
-  public void setAgreementType(String agreementType) {
+  public void setAgreementType(@javax.annotation.Nonnull String agreementType) {
     this.agreementType = agreementType;
   }
 
 
-  public Agreement msa(AgreementMsa msa) {
+  public Agreement msa(@javax.annotation.Nonnull AgreementMsa msa) {
     this.msa = msa;
     return this;
   }
@@ -151,12 +157,12 @@ public class Agreement {
     return msa;
   }
 
-  public void setMsa(AgreementMsa msa) {
+  public void setMsa(@javax.annotation.Nonnull AgreementMsa msa) {
     this.msa = msa;
   }
 
 
-  public Agreement clientLegalEntity(AgreementClientLegalEntity clientLegalEntity) {
+  public Agreement clientLegalEntity(@javax.annotation.Nonnull AgreementClientLegalEntity clientLegalEntity) {
     this.clientLegalEntity = clientLegalEntity;
     return this;
   }
@@ -170,12 +176,12 @@ public class Agreement {
     return clientLegalEntity;
   }
 
-  public void setClientLegalEntity(AgreementClientLegalEntity clientLegalEntity) {
+  public void setClientLegalEntity(@javax.annotation.Nonnull AgreementClientLegalEntity clientLegalEntity) {
     this.clientLegalEntity = clientLegalEntity;
   }
 
 
-  public Agreement providerLegalEntity(AgreementProviderLegalEntity providerLegalEntity) {
+  public Agreement providerLegalEntity(@javax.annotation.Nonnull AgreementProviderLegalEntity providerLegalEntity) {
     this.providerLegalEntity = providerLegalEntity;
     return this;
   }
@@ -189,7 +195,7 @@ public class Agreement {
     return providerLegalEntity;
   }
 
-  public void setProviderLegalEntity(AgreementProviderLegalEntity providerLegalEntity) {
+  public void setProviderLegalEntity(@javax.annotation.Nonnull AgreementProviderLegalEntity providerLegalEntity) {
     this.providerLegalEntity = providerLegalEntity;
   }
 

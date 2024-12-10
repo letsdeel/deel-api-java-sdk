@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * Details of invoice adjustment to update.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class InvoiceAdjustmentToUpdate {
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal amount;
 
   public InvoiceAdjustmentToUpdate() {
   }
 
-  public InvoiceAdjustmentToUpdate description(String description) {
+  public InvoiceAdjustmentToUpdate description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -76,12 +78,12 @@ public class InvoiceAdjustmentToUpdate {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public InvoiceAdjustmentToUpdate amount(BigDecimal amount) {
+  public InvoiceAdjustmentToUpdate amount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -96,7 +98,7 @@ public class InvoiceAdjustmentToUpdate {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
   }
 

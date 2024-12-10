@@ -51,36 +51,42 @@ import org.openapitools.client.JSON;
 /**
  * CreatedRoleContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreatedRoleContainer {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private BigDecimal id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_SCOPE = "scope";
   @SerializedName(SERIALIZED_NAME_SCOPE)
+  @javax.annotation.Nullable
   private String scope;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_PERMISSION_SETS = "permissionSets";
   @SerializedName(SERIALIZED_NAME_PERMISSION_SETS)
+  @javax.annotation.Nullable
   private List<String> permissionSets = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_HRIS_ORG_STRUCTURE_ID = "hrisOrgStructureId";
   @SerializedName(SERIALIZED_NAME_HRIS_ORG_STRUCTURE_ID)
+  @javax.annotation.Nullable
   private String hrisOrgStructureId;
 
   public CreatedRoleContainer() {
   }
 
-  public CreatedRoleContainer id(BigDecimal id) {
+  public CreatedRoleContainer id(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
     return this;
   }
@@ -94,12 +100,12 @@ public class CreatedRoleContainer {
     return id;
   }
 
-  public void setId(BigDecimal id) {
+  public void setId(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
   }
 
 
-  public CreatedRoleContainer name(String name) {
+  public CreatedRoleContainer name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -113,12 +119,12 @@ public class CreatedRoleContainer {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public CreatedRoleContainer scope(String scope) {
+  public CreatedRoleContainer scope(@javax.annotation.Nullable String scope) {
     this.scope = scope;
     return this;
   }
@@ -132,12 +138,12 @@ public class CreatedRoleContainer {
     return scope;
   }
 
-  public void setScope(String scope) {
+  public void setScope(@javax.annotation.Nullable String scope) {
     this.scope = scope;
   }
 
 
-  public CreatedRoleContainer description(String description) {
+  public CreatedRoleContainer description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -151,12 +157,12 @@ public class CreatedRoleContainer {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public CreatedRoleContainer permissionSets(List<String> permissionSets) {
+  public CreatedRoleContainer permissionSets(@javax.annotation.Nullable List<String> permissionSets) {
     this.permissionSets = permissionSets;
     return this;
   }
@@ -178,12 +184,12 @@ public class CreatedRoleContainer {
     return permissionSets;
   }
 
-  public void setPermissionSets(List<String> permissionSets) {
+  public void setPermissionSets(@javax.annotation.Nullable List<String> permissionSets) {
     this.permissionSets = permissionSets;
   }
 
 
-  public CreatedRoleContainer hrisOrgStructureId(String hrisOrgStructureId) {
+  public CreatedRoleContainer hrisOrgStructureId(@javax.annotation.Nullable String hrisOrgStructureId) {
     this.hrisOrgStructureId = hrisOrgStructureId;
     return this;
   }
@@ -197,7 +203,7 @@ public class CreatedRoleContainer {
     return hrisOrgStructureId;
   }
 
-  public void setHrisOrgStructureId(String hrisOrgStructureId) {
+  public void setHrisOrgStructureId(@javax.annotation.Nullable String hrisOrgStructureId) {
     this.hrisOrgStructureId = hrisOrgStructureId;
   }
 

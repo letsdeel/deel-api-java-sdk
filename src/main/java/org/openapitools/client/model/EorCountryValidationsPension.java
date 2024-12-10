@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * If it is there, you must specify the pension benefit when creating an EOR contract.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorCountryValidationsPension {
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private BenefitStatusEnum status;
 
   public static final String SERIALIZED_NAME_PROVIDERS = "providers";
   @SerializedName(SERIALIZED_NAME_PROVIDERS)
+  @javax.annotation.Nullable
   private List<PensionProvider> providers = new ArrayList<>();
 
   public EorCountryValidationsPension() {
   }
 
-  public EorCountryValidationsPension status(BenefitStatusEnum status) {
+  public EorCountryValidationsPension status(@javax.annotation.Nullable BenefitStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -79,12 +81,12 @@ public class EorCountryValidationsPension {
     return status;
   }
 
-  public void setStatus(BenefitStatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable BenefitStatusEnum status) {
     this.status = status;
   }
 
 
-  public EorCountryValidationsPension providers(List<PensionProvider> providers) {
+  public EorCountryValidationsPension providers(@javax.annotation.Nullable List<PensionProvider> providers) {
     this.providers = providers;
     return this;
   }
@@ -106,7 +108,7 @@ public class EorCountryValidationsPension {
     return providers;
   }
 
-  public void setProviders(List<PensionProvider> providers) {
+  public void setProviders(@javax.annotation.Nullable List<PensionProvider> providers) {
     this.providers = providers;
   }
 

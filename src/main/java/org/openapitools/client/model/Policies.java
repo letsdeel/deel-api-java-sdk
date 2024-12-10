@@ -51,16 +51,17 @@ import org.openapitools.client.JSON;
 /**
  * Policies
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Policies {
   public static final String SERIALIZED_NAME_POLICIES = "policies";
   @SerializedName(SERIALIZED_NAME_POLICIES)
+  @javax.annotation.Nullable
   private List<Policy> policies = new ArrayList<>();
 
   public Policies() {
   }
 
-  public Policies policies(List<Policy> policies) {
+  public Policies policies(@javax.annotation.Nullable List<Policy> policies) {
     this.policies = policies;
     return this;
   }
@@ -82,7 +83,7 @@ public class Policies {
     return policies;
   }
 
-  public void setPolicies(List<Policy> policies) {
+  public void setPolicies(@javax.annotation.Nullable List<Policy> policies) {
     this.policies = policies;
   }
 

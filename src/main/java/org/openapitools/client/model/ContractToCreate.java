@@ -72,7 +72,7 @@ import com.google.gson.JsonParseException;
 
 import org.openapitools.client.JSON;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ContractToCreate extends AbstractOpenApiSchema {
     private static final Logger log = Logger.getLogger(ContractToCreate.class.getName());
 
@@ -272,6 +272,7 @@ public class ContractToCreate extends AbstractOpenApiSchema {
     public ContractToCreatePayAsYouGoTimeBased getContractToCreatePayAsYouGoTimeBased() throws ClassCastException {
         return (ContractToCreatePayAsYouGoTimeBased)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `ContractToCreatePaygTasks`. If the actual instance is not `ContractToCreatePaygTasks`,
      * the ClassCastException will be thrown.
@@ -282,6 +283,7 @@ public class ContractToCreate extends AbstractOpenApiSchema {
     public ContractToCreatePaygTasks getContractToCreatePaygTasks() throws ClassCastException {
         return (ContractToCreatePaygTasks)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `ContractToCreatePaygMilestones`. If the actual instance is not `ContractToCreatePaygMilestones`,
      * the ClassCastException will be thrown.
@@ -292,6 +294,7 @@ public class ContractToCreate extends AbstractOpenApiSchema {
     public ContractToCreatePaygMilestones getContractToCreatePaygMilestones() throws ClassCastException {
         return (ContractToCreatePaygMilestones)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `ContractToCreateOngoingTimeBased`. If the actual instance is not `ContractToCreateOngoingTimeBased`,
      * the ClassCastException will be thrown.

@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * GetCurrencies200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetCurrencies200ResponseDataInner {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
+  @javax.annotation.Nonnull
   private String code;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public GetCurrencies200ResponseDataInner() {
   }
 
-  public GetCurrencies200ResponseDataInner code(String code) {
+  public GetCurrencies200ResponseDataInner code(@javax.annotation.Nonnull String code) {
     this.code = code;
     return this;
   }
@@ -76,12 +78,12 @@ public class GetCurrencies200ResponseDataInner {
     return code;
   }
 
-  public void setCode(String code) {
+  public void setCode(@javax.annotation.Nonnull String code) {
     this.code = code;
   }
 
 
-  public GetCurrencies200ResponseDataInner name(String name) {
+  public GetCurrencies200ResponseDataInner name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -95,7 +97,7 @@ public class GetCurrencies200ResponseDataInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 

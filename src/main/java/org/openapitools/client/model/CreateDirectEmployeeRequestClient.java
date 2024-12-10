@@ -50,24 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * The entity that is hiring the employee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateDirectEmployeeRequestClient {
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
+  @javax.annotation.Nonnull
   private CreateDirectEmployeeRequestClientTeam team;
 
   public static final String SERIALIZED_NAME_DEPARTMENT = "department";
   @SerializedName(SERIALIZED_NAME_DEPARTMENT)
+  @javax.annotation.Nullable
   private CreateDirectEmployeeRequestClientDepartment department;
 
   public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
+  @javax.annotation.Nonnull
   private CreateDirectEmployeeRequestClientDepartment legalEntity;
 
   public CreateDirectEmployeeRequestClient() {
   }
 
-  public CreateDirectEmployeeRequestClient team(CreateDirectEmployeeRequestClientTeam team) {
+  public CreateDirectEmployeeRequestClient team(@javax.annotation.Nonnull CreateDirectEmployeeRequestClientTeam team) {
     this.team = team;
     return this;
   }
@@ -81,12 +84,12 @@ public class CreateDirectEmployeeRequestClient {
     return team;
   }
 
-  public void setTeam(CreateDirectEmployeeRequestClientTeam team) {
+  public void setTeam(@javax.annotation.Nonnull CreateDirectEmployeeRequestClientTeam team) {
     this.team = team;
   }
 
 
-  public CreateDirectEmployeeRequestClient department(CreateDirectEmployeeRequestClientDepartment department) {
+  public CreateDirectEmployeeRequestClient department(@javax.annotation.Nullable CreateDirectEmployeeRequestClientDepartment department) {
     this.department = department;
     return this;
   }
@@ -100,12 +103,12 @@ public class CreateDirectEmployeeRequestClient {
     return department;
   }
 
-  public void setDepartment(CreateDirectEmployeeRequestClientDepartment department) {
+  public void setDepartment(@javax.annotation.Nullable CreateDirectEmployeeRequestClientDepartment department) {
     this.department = department;
   }
 
 
-  public CreateDirectEmployeeRequestClient legalEntity(CreateDirectEmployeeRequestClientDepartment legalEntity) {
+  public CreateDirectEmployeeRequestClient legalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestClientDepartment legalEntity) {
     this.legalEntity = legalEntity;
     return this;
   }
@@ -119,7 +122,7 @@ public class CreateDirectEmployeeRequestClient {
     return legalEntity;
   }
 
-  public void setLegalEntity(CreateDirectEmployeeRequestClientDepartment legalEntity) {
+  public void setLegalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestClientDepartment legalEntity) {
     this.legalEntity = legalEntity;
   }
 

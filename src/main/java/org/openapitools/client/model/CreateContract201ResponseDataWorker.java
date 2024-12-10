@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.openapitools.client.model.CreateContract201ResponseDataWorkerLegalEntity;
-import org.openapitools.client.model.CreateContractRequestAnyOfAllOfClientTeamId;
+import org.openapitools.client.model.PAYASYOUGOTIMEBASEDAllOfClientTeamId;
 import org.openapitools.client.model.RootSchema1;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -55,60 +55,72 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseDataWorker
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataWorker {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
-  private CreateContractRequestAnyOfAllOfClientTeamId id;
+  @javax.annotation.Nullable
+  private PAYASYOUGOTIMEBASEDAllOfClientTeamId id;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_IMAGE = "image";
   @SerializedName(SERIALIZED_NAME_IMAGE)
+  @javax.annotation.Nullable
   private String image;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nullable
   private String fullName;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_NATIONALITY = "nationality";
   @SerializedName(SERIALIZED_NAME_NATIONALITY)
+  @javax.annotation.Nullable
   private String nationality;
 
   public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
+  @javax.annotation.Nullable
   private CreateContract201ResponseDataWorkerLegalEntity legalEntity;
 
   public static final String SERIALIZED_NAME_DATE_OF_BIRTH = "date_of_birth";
   @SerializedName(SERIALIZED_NAME_DATE_OF_BIRTH)
+  @javax.annotation.Nullable
   private OffsetDateTime dateOfBirth;
 
   public static final String SERIALIZED_NAME_EXPECTED_EMAIL = "expected_email";
   @SerializedName(SERIALIZED_NAME_EXPECTED_EMAIL)
+  @javax.annotation.Nullable
   private String expectedEmail;
 
   public static final String SERIALIZED_NAME_ALTERNATE_EMAIL = "alternate_email";
   @SerializedName(SERIALIZED_NAME_ALTERNATE_EMAIL)
+  @javax.annotation.Nullable
   private List<RootSchema1> alternateEmail = new ArrayList<>();
 
   public CreateContract201ResponseDataWorker() {
   }
 
-  public CreateContract201ResponseDataWorker id(CreateContractRequestAnyOfAllOfClientTeamId id) {
+  public CreateContract201ResponseDataWorker id(@javax.annotation.Nullable PAYASYOUGOTIMEBASEDAllOfClientTeamId id) {
     this.id = id;
     return this;
   }
@@ -118,16 +130,16 @@ public class CreateContract201ResponseDataWorker {
    * @return id
    */
   @javax.annotation.Nullable
-  public CreateContractRequestAnyOfAllOfClientTeamId getId() {
+  public PAYASYOUGOTIMEBASEDAllOfClientTeamId getId() {
     return id;
   }
 
-  public void setId(CreateContractRequestAnyOfAllOfClientTeamId id) {
+  public void setId(@javax.annotation.Nullable PAYASYOUGOTIMEBASEDAllOfClientTeamId id) {
     this.id = id;
   }
 
 
-  public CreateContract201ResponseDataWorker email(String email) {
+  public CreateContract201ResponseDataWorker email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -141,12 +153,12 @@ public class CreateContract201ResponseDataWorker {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public CreateContract201ResponseDataWorker image(String image) {
+  public CreateContract201ResponseDataWorker image(@javax.annotation.Nullable String image) {
     this.image = image;
     return this;
   }
@@ -160,12 +172,12 @@ public class CreateContract201ResponseDataWorker {
     return image;
   }
 
-  public void setImage(String image) {
+  public void setImage(@javax.annotation.Nullable String image) {
     this.image = image;
   }
 
 
-  public CreateContract201ResponseDataWorker country(String country) {
+  public CreateContract201ResponseDataWorker country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -179,12 +191,12 @@ public class CreateContract201ResponseDataWorker {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public CreateContract201ResponseDataWorker fullName(String fullName) {
+  public CreateContract201ResponseDataWorker fullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -198,12 +210,12 @@ public class CreateContract201ResponseDataWorker {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
   }
 
 
-  public CreateContract201ResponseDataWorker lastName(String lastName) {
+  public CreateContract201ResponseDataWorker lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -217,12 +229,12 @@ public class CreateContract201ResponseDataWorker {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
 
-  public CreateContract201ResponseDataWorker firstName(String firstName) {
+  public CreateContract201ResponseDataWorker firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -236,12 +248,12 @@ public class CreateContract201ResponseDataWorker {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public CreateContract201ResponseDataWorker nationality(String nationality) {
+  public CreateContract201ResponseDataWorker nationality(@javax.annotation.Nullable String nationality) {
     this.nationality = nationality;
     return this;
   }
@@ -255,12 +267,12 @@ public class CreateContract201ResponseDataWorker {
     return nationality;
   }
 
-  public void setNationality(String nationality) {
+  public void setNationality(@javax.annotation.Nullable String nationality) {
     this.nationality = nationality;
   }
 
 
-  public CreateContract201ResponseDataWorker legalEntity(CreateContract201ResponseDataWorkerLegalEntity legalEntity) {
+  public CreateContract201ResponseDataWorker legalEntity(@javax.annotation.Nullable CreateContract201ResponseDataWorkerLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
     return this;
   }
@@ -274,12 +286,12 @@ public class CreateContract201ResponseDataWorker {
     return legalEntity;
   }
 
-  public void setLegalEntity(CreateContract201ResponseDataWorkerLegalEntity legalEntity) {
+  public void setLegalEntity(@javax.annotation.Nullable CreateContract201ResponseDataWorkerLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
   }
 
 
-  public CreateContract201ResponseDataWorker dateOfBirth(OffsetDateTime dateOfBirth) {
+  public CreateContract201ResponseDataWorker dateOfBirth(@javax.annotation.Nullable OffsetDateTime dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
     return this;
   }
@@ -293,12 +305,12 @@ public class CreateContract201ResponseDataWorker {
     return dateOfBirth;
   }
 
-  public void setDateOfBirth(OffsetDateTime dateOfBirth) {
+  public void setDateOfBirth(@javax.annotation.Nullable OffsetDateTime dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
   }
 
 
-  public CreateContract201ResponseDataWorker expectedEmail(String expectedEmail) {
+  public CreateContract201ResponseDataWorker expectedEmail(@javax.annotation.Nullable String expectedEmail) {
     this.expectedEmail = expectedEmail;
     return this;
   }
@@ -312,12 +324,12 @@ public class CreateContract201ResponseDataWorker {
     return expectedEmail;
   }
 
-  public void setExpectedEmail(String expectedEmail) {
+  public void setExpectedEmail(@javax.annotation.Nullable String expectedEmail) {
     this.expectedEmail = expectedEmail;
   }
 
 
-  public CreateContract201ResponseDataWorker alternateEmail(List<RootSchema1> alternateEmail) {
+  public CreateContract201ResponseDataWorker alternateEmail(@javax.annotation.Nullable List<RootSchema1> alternateEmail) {
     this.alternateEmail = alternateEmail;
     return this;
   }
@@ -339,7 +351,7 @@ public class CreateContract201ResponseDataWorker {
     return alternateEmail;
   }
 
-  public void setAlternateEmail(List<RootSchema1> alternateEmail) {
+  public void setAlternateEmail(@javax.annotation.Nullable List<RootSchema1> alternateEmail) {
     this.alternateEmail = alternateEmail;
   }
 
@@ -462,7 +474,7 @@ public class CreateContract201ResponseDataWorker {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `id`
       if (jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) {
-        CreateContractRequestAnyOfAllOfClientTeamId.validateJsonElement(jsonObj.get("id"));
+        PAYASYOUGOTIMEBASEDAllOfClientTeamId.validateJsonElement(jsonObj.get("id"));
       }
       if ((jsonObj.get("email") != null && !jsonObj.get("email").isJsonNull()) && !jsonObj.get("email").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("email").toString()));

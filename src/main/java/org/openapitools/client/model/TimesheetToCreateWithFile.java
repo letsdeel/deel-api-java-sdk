@@ -51,32 +51,37 @@ import org.openapitools.client.JSON;
 /**
  * TimesheetToCreateWithFile
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimesheetToCreateWithFile {
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nonnull
   private String contractId;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description = "";
 
   public static final String SERIALIZED_NAME_DATE_SUBMITTED = "date_submitted";
   @SerializedName(SERIALIZED_NAME_DATE_SUBMITTED)
+  @javax.annotation.Nonnull
   private LocalDate dateSubmitted;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nonnull
   private BigDecimal quantity;
 
   public static final String SERIALIZED_NAME_FILE = "file";
   @SerializedName(SERIALIZED_NAME_FILE)
+  @javax.annotation.Nullable
   private File _file;
 
   public TimesheetToCreateWithFile() {
   }
 
-  public TimesheetToCreateWithFile contractId(String contractId) {
+  public TimesheetToCreateWithFile contractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -90,12 +95,12 @@ public class TimesheetToCreateWithFile {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
   }
 
 
-  public TimesheetToCreateWithFile description(String description) {
+  public TimesheetToCreateWithFile description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -109,12 +114,12 @@ public class TimesheetToCreateWithFile {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public TimesheetToCreateWithFile dateSubmitted(LocalDate dateSubmitted) {
+  public TimesheetToCreateWithFile dateSubmitted(@javax.annotation.Nonnull LocalDate dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
     return this;
   }
@@ -128,12 +133,12 @@ public class TimesheetToCreateWithFile {
     return dateSubmitted;
   }
 
-  public void setDateSubmitted(LocalDate dateSubmitted) {
+  public void setDateSubmitted(@javax.annotation.Nonnull LocalDate dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
   }
 
 
-  public TimesheetToCreateWithFile quantity(BigDecimal quantity) {
+  public TimesheetToCreateWithFile quantity(@javax.annotation.Nonnull BigDecimal quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -148,12 +153,12 @@ public class TimesheetToCreateWithFile {
     return quantity;
   }
 
-  public void setQuantity(BigDecimal quantity) {
+  public void setQuantity(@javax.annotation.Nonnull BigDecimal quantity) {
     this.quantity = quantity;
   }
 
 
-  public TimesheetToCreateWithFile _file(File _file) {
+  public TimesheetToCreateWithFile _file(@javax.annotation.Nullable File _file) {
     this._file = _file;
     return this;
   }
@@ -167,7 +172,7 @@ public class TimesheetToCreateWithFile {
     return _file;
   }
 
-  public void setFile(File _file) {
+  public void setFile(@javax.annotation.Nullable File _file) {
     this._file = _file;
   }
 

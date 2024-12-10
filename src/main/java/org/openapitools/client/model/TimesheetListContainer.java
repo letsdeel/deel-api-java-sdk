@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * TimesheetListContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimesheetListContainer {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private List<BasicTimesheet> data = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAGE = "page";
   @SerializedName(SERIALIZED_NAME_PAGE)
+  @javax.annotation.Nonnull
   private PageInfoWithoutCursor page;
 
   public TimesheetListContainer() {
   }
 
-  public TimesheetListContainer data(List<BasicTimesheet> data) {
+  public TimesheetListContainer data(@javax.annotation.Nonnull List<BasicTimesheet> data) {
     this.data = data;
     return this;
   }
@@ -87,12 +89,12 @@ public class TimesheetListContainer {
     return data;
   }
 
-  public void setData(List<BasicTimesheet> data) {
+  public void setData(@javax.annotation.Nonnull List<BasicTimesheet> data) {
     this.data = data;
   }
 
 
-  public TimesheetListContainer page(PageInfoWithoutCursor page) {
+  public TimesheetListContainer page(@javax.annotation.Nonnull PageInfoWithoutCursor page) {
     this.page = page;
     return this;
   }
@@ -106,7 +108,7 @@ public class TimesheetListContainer {
     return page;
   }
 
-  public void setPage(PageInfoWithoutCursor page) {
+  public void setPage(@javax.annotation.Nonnull PageInfoWithoutCursor page) {
     this.page = page;
   }
 

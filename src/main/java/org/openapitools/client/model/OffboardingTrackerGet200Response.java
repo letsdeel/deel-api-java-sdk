@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * OffboardingTrackerGet200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffboardingTrackerGet200Response {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nullable
   private List<OffboardingTrackerGet200ResponseDataInner> data = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAGE = "page";
   @SerializedName(SERIALIZED_NAME_PAGE)
+  @javax.annotation.Nullable
   private OffboardingTrackerGet200ResponsePage page;
 
   public OffboardingTrackerGet200Response() {
   }
 
-  public OffboardingTrackerGet200Response data(List<OffboardingTrackerGet200ResponseDataInner> data) {
+  public OffboardingTrackerGet200Response data(@javax.annotation.Nullable List<OffboardingTrackerGet200ResponseDataInner> data) {
     this.data = data;
     return this;
   }
@@ -87,12 +89,12 @@ public class OffboardingTrackerGet200Response {
     return data;
   }
 
-  public void setData(List<OffboardingTrackerGet200ResponseDataInner> data) {
+  public void setData(@javax.annotation.Nullable List<OffboardingTrackerGet200ResponseDataInner> data) {
     this.data = data;
   }
 
 
-  public OffboardingTrackerGet200Response page(OffboardingTrackerGet200ResponsePage page) {
+  public OffboardingTrackerGet200Response page(@javax.annotation.Nullable OffboardingTrackerGet200ResponsePage page) {
     this.page = page;
     return this;
   }
@@ -106,7 +108,7 @@ public class OffboardingTrackerGet200Response {
     return page;
   }
 
-  public void setPage(OffboardingTrackerGet200ResponsePage page) {
+  public void setPage(@javax.annotation.Nullable OffboardingTrackerGet200ResponsePage page) {
     this.page = page;
   }
 

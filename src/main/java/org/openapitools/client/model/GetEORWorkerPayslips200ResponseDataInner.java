@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * GetEORWorkerPayslips200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetEORWorkerPayslips200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_TO = "to";
   @SerializedName(SERIALIZED_NAME_TO)
+  @javax.annotation.Nonnull
   private OffsetDateTime to;
 
   public static final String SERIALIZED_NAME_FROM = "from";
   @SerializedName(SERIALIZED_NAME_FROM)
+  @javax.annotation.Nonnull
   private OffsetDateTime from;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private String status;
 
   public GetEORWorkerPayslips200ResponseDataInner() {
   }
 
-  public GetEORWorkerPayslips200ResponseDataInner id(String id) {
+  public GetEORWorkerPayslips200ResponseDataInner id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -84,12 +88,12 @@ public class GetEORWorkerPayslips200ResponseDataInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public GetEORWorkerPayslips200ResponseDataInner to(OffsetDateTime to) {
+  public GetEORWorkerPayslips200ResponseDataInner to(@javax.annotation.Nonnull OffsetDateTime to) {
     this.to = to;
     return this;
   }
@@ -103,12 +107,12 @@ public class GetEORWorkerPayslips200ResponseDataInner {
     return to;
   }
 
-  public void setTo(OffsetDateTime to) {
+  public void setTo(@javax.annotation.Nonnull OffsetDateTime to) {
     this.to = to;
   }
 
 
-  public GetEORWorkerPayslips200ResponseDataInner from(OffsetDateTime from) {
+  public GetEORWorkerPayslips200ResponseDataInner from(@javax.annotation.Nonnull OffsetDateTime from) {
     this.from = from;
     return this;
   }
@@ -122,12 +126,12 @@ public class GetEORWorkerPayslips200ResponseDataInner {
     return from;
   }
 
-  public void setFrom(OffsetDateTime from) {
+  public void setFrom(@javax.annotation.Nonnull OffsetDateTime from) {
     this.from = from;
   }
 
 
-  public GetEORWorkerPayslips200ResponseDataInner status(String status) {
+  public GetEORWorkerPayslips200ResponseDataInner status(@javax.annotation.Nonnull String status) {
     this.status = status;
     return this;
   }
@@ -141,7 +145,7 @@ public class GetEORWorkerPayslips200ResponseDataInner {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nonnull String status) {
     this.status = status;
   }
 

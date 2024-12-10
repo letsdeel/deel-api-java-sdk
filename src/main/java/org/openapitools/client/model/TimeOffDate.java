@@ -49,10 +49,11 @@ import org.openapitools.client.JSON;
 /**
  * TimeOffDate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeOffDate {
   public static final String SERIALIZED_NAME_DATE = "date";
   @SerializedName(SERIALIZED_NAME_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime date;
 
   /**
@@ -109,20 +110,23 @@ public class TimeOffDate {
 
   public static final String SERIALIZED_NAME_DAY_TYPE = "day_type";
   @SerializedName(SERIALIZED_NAME_DAY_TYPE)
+  @javax.annotation.Nullable
   private DayTypeEnum dayType;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private Float amount;
 
   public static final String SERIALIZED_NAME_HOURS = "hours";
   @SerializedName(SERIALIZED_NAME_HOURS)
+  @javax.annotation.Nullable
   private Float hours;
 
   public TimeOffDate() {
   }
 
-  public TimeOffDate date(OffsetDateTime date) {
+  public TimeOffDate date(@javax.annotation.Nonnull OffsetDateTime date) {
     this.date = date;
     return this;
   }
@@ -136,12 +140,12 @@ public class TimeOffDate {
     return date;
   }
 
-  public void setDate(OffsetDateTime date) {
+  public void setDate(@javax.annotation.Nonnull OffsetDateTime date) {
     this.date = date;
   }
 
 
-  public TimeOffDate dayType(DayTypeEnum dayType) {
+  public TimeOffDate dayType(@javax.annotation.Nullable DayTypeEnum dayType) {
     this.dayType = dayType;
     return this;
   }
@@ -155,12 +159,12 @@ public class TimeOffDate {
     return dayType;
   }
 
-  public void setDayType(DayTypeEnum dayType) {
+  public void setDayType(@javax.annotation.Nullable DayTypeEnum dayType) {
     this.dayType = dayType;
   }
 
 
-  public TimeOffDate amount(Float amount) {
+  public TimeOffDate amount(@javax.annotation.Nullable Float amount) {
     this.amount = amount;
     return this;
   }
@@ -174,12 +178,12 @@ public class TimeOffDate {
     return amount;
   }
 
-  public void setAmount(Float amount) {
+  public void setAmount(@javax.annotation.Nullable Float amount) {
     this.amount = amount;
   }
 
 
-  public TimeOffDate hours(Float hours) {
+  public TimeOffDate hours(@javax.annotation.Nullable Float hours) {
     this.hours = hours;
     return this;
   }
@@ -193,7 +197,7 @@ public class TimeOffDate {
     return hours;
   }
 
-  public void setHours(Float hours) {
+  public void setHours(@javax.annotation.Nullable Float hours) {
     this.hours = hours;
   }
 

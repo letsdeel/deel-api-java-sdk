@@ -50,96 +50,117 @@ import org.openapitools.client.JSON;
 /**
  * ExerciseEquityToCreateContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ExerciseEquityToCreateContainer {
   public static final String SERIALIZED_NAME_FMV = "fmv";
   @SerializedName(SERIALIZED_NAME_FMV)
+  @javax.annotation.Nonnull
   private String fmv;
 
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
+  @javax.annotation.Nonnull
   private Double quantity;
 
   public static final String SERIALIZED_NAME_ISSUER_ID = "issuer_id";
   @SerializedName(SERIALIZED_NAME_ISSUER_ID)
+  @javax.annotation.Nonnull
   private String issuerId;
 
   public static final String SERIALIZED_NAME_WORKER_ID = "worker_id";
   @SerializedName(SERIALIZED_NAME_WORKER_ID)
+  @javax.annotation.Nonnull
   private String workerId;
 
   public static final String SERIALIZED_NAME_ADDRESS_ZIP = "address_zip";
   @SerializedName(SERIALIZED_NAME_ADDRESS_ZIP)
+  @javax.annotation.Nonnull
   private String addressZip;
 
   public static final String SERIALIZED_NAME_EXERCISE_ID = "exercise_id";
   @SerializedName(SERIALIZED_NAME_EXERCISE_ID)
+  @javax.annotation.Nonnull
   private UUID exerciseId;
 
   public static final String SERIALIZED_NAME_ADDRESS_CITY = "address_city";
   @SerializedName(SERIALIZED_NAME_ADDRESS_CITY)
+  @javax.annotation.Nonnull
   private String addressCity;
 
   public static final String SERIALIZED_NAME_ADDRESS_STATE = "address_state";
   @SerializedName(SERIALIZED_NAME_ADDRESS_STATE)
+  @javax.annotation.Nonnull
   private String addressState;
 
   public static final String SERIALIZED_NAME_ADDRESS_STREET = "address_street";
   @SerializedName(SERIALIZED_NAME_ADDRESS_STREET)
+  @javax.annotation.Nonnull
   private String addressStreet;
 
   public static final String SERIALIZED_NAME_STAKEHOLDER_ID = "stakeholder_id";
   @SerializedName(SERIALIZED_NAME_STAKEHOLDER_ID)
+  @javax.annotation.Nonnull
   private String stakeholderId;
 
   public static final String SERIALIZED_NAME_ADDRESS_COUNTRY = "address_country";
   @SerializedName(SERIALIZED_NAME_ADDRESS_COUNTRY)
+  @javax.annotation.Nonnull
   private String addressCountry;
 
   public static final String SERIALIZED_NAME_OPTION_GRANT_ID = "option_grant_id";
   @SerializedName(SERIALIZED_NAME_OPTION_GRANT_ID)
+  @javax.annotation.Nonnull
   private String optionGrantId;
 
   public static final String SERIALIZED_NAME_FMV_CURRENCY_CODE = "fmv_currency_code";
   @SerializedName(SERIALIZED_NAME_FMV_CURRENCY_CODE)
+  @javax.annotation.Nonnull
   private String fmvCurrencyCode;
 
   public static final String SERIALIZED_NAME_STAKEHOLDER_EMAIL = "stakeholder_email";
   @SerializedName(SERIALIZED_NAME_STAKEHOLDER_EMAIL)
+  @javax.annotation.Nonnull
   private String stakeholderEmail;
 
   public static final String SERIALIZED_NAME_OPTION_GRANT_ISSUE = "option_grant_issue";
   @SerializedName(SERIALIZED_NAME_OPTION_GRANT_ISSUE)
+  @javax.annotation.Nonnull
   private String optionGrantIssue;
 
   public static final String SERIALIZED_NAME_OPTION_GRANT_LABEL = "option_grant_label";
   @SerializedName(SERIALIZED_NAME_OPTION_GRANT_LABEL)
+  @javax.annotation.Nonnull
   private String optionGrantLabel;
 
   public static final String SERIALIZED_NAME_OPTION_GRANT_CURRENCY = "option_grant_currency";
   @SerializedName(SERIALIZED_NAME_OPTION_GRANT_CURRENCY)
+  @javax.annotation.Nonnull
   private String optionGrantCurrency;
 
   public static final String SERIALIZED_NAME_OPTION_GRANT_ISSUE_DATE = "option_grant_issue_date";
   @SerializedName(SERIALIZED_NAME_OPTION_GRANT_ISSUE_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime optionGrantIssueDate;
 
   public static final String SERIALIZED_NAME_OPTION_GRANT_EXPIRY_DATE = "option_grant_expiry_date";
   @SerializedName(SERIALIZED_NAME_OPTION_GRANT_EXPIRY_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime optionGrantExpiryDate;
 
   public static final String SERIALIZED_NAME_STAKEHOLDER_RELATIONSHIP = "stakeholder_relationship";
   @SerializedName(SERIALIZED_NAME_STAKEHOLDER_RELATIONSHIP)
+  @javax.annotation.Nonnull
   private String stakeholderRelationship;
 
   public static final String SERIALIZED_NAME_OPTION_GRANT_STRIKE_PRICE = "option_grant_strike_price";
   @SerializedName(SERIALIZED_NAME_OPTION_GRANT_STRIKE_PRICE)
+  @javax.annotation.Nonnull
   private String optionGrantStrikePrice;
 
   public ExerciseEquityToCreateContainer() {
   }
 
-  public ExerciseEquityToCreateContainer fmv(String fmv) {
+  public ExerciseEquityToCreateContainer fmv(@javax.annotation.Nonnull String fmv) {
     this.fmv = fmv;
     return this;
   }
@@ -153,12 +174,12 @@ public class ExerciseEquityToCreateContainer {
     return fmv;
   }
 
-  public void setFmv(String fmv) {
+  public void setFmv(@javax.annotation.Nonnull String fmv) {
     this.fmv = fmv;
   }
 
 
-  public ExerciseEquityToCreateContainer quantity(Double quantity) {
+  public ExerciseEquityToCreateContainer quantity(@javax.annotation.Nonnull Double quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -172,12 +193,12 @@ public class ExerciseEquityToCreateContainer {
     return quantity;
   }
 
-  public void setQuantity(Double quantity) {
+  public void setQuantity(@javax.annotation.Nonnull Double quantity) {
     this.quantity = quantity;
   }
 
 
-  public ExerciseEquityToCreateContainer issuerId(String issuerId) {
+  public ExerciseEquityToCreateContainer issuerId(@javax.annotation.Nonnull String issuerId) {
     this.issuerId = issuerId;
     return this;
   }
@@ -191,12 +212,12 @@ public class ExerciseEquityToCreateContainer {
     return issuerId;
   }
 
-  public void setIssuerId(String issuerId) {
+  public void setIssuerId(@javax.annotation.Nonnull String issuerId) {
     this.issuerId = issuerId;
   }
 
 
-  public ExerciseEquityToCreateContainer workerId(String workerId) {
+  public ExerciseEquityToCreateContainer workerId(@javax.annotation.Nonnull String workerId) {
     this.workerId = workerId;
     return this;
   }
@@ -210,12 +231,12 @@ public class ExerciseEquityToCreateContainer {
     return workerId;
   }
 
-  public void setWorkerId(String workerId) {
+  public void setWorkerId(@javax.annotation.Nonnull String workerId) {
     this.workerId = workerId;
   }
 
 
-  public ExerciseEquityToCreateContainer addressZip(String addressZip) {
+  public ExerciseEquityToCreateContainer addressZip(@javax.annotation.Nonnull String addressZip) {
     this.addressZip = addressZip;
     return this;
   }
@@ -229,12 +250,12 @@ public class ExerciseEquityToCreateContainer {
     return addressZip;
   }
 
-  public void setAddressZip(String addressZip) {
+  public void setAddressZip(@javax.annotation.Nonnull String addressZip) {
     this.addressZip = addressZip;
   }
 
 
-  public ExerciseEquityToCreateContainer exerciseId(UUID exerciseId) {
+  public ExerciseEquityToCreateContainer exerciseId(@javax.annotation.Nonnull UUID exerciseId) {
     this.exerciseId = exerciseId;
     return this;
   }
@@ -248,12 +269,12 @@ public class ExerciseEquityToCreateContainer {
     return exerciseId;
   }
 
-  public void setExerciseId(UUID exerciseId) {
+  public void setExerciseId(@javax.annotation.Nonnull UUID exerciseId) {
     this.exerciseId = exerciseId;
   }
 
 
-  public ExerciseEquityToCreateContainer addressCity(String addressCity) {
+  public ExerciseEquityToCreateContainer addressCity(@javax.annotation.Nonnull String addressCity) {
     this.addressCity = addressCity;
     return this;
   }
@@ -267,12 +288,12 @@ public class ExerciseEquityToCreateContainer {
     return addressCity;
   }
 
-  public void setAddressCity(String addressCity) {
+  public void setAddressCity(@javax.annotation.Nonnull String addressCity) {
     this.addressCity = addressCity;
   }
 
 
-  public ExerciseEquityToCreateContainer addressState(String addressState) {
+  public ExerciseEquityToCreateContainer addressState(@javax.annotation.Nonnull String addressState) {
     this.addressState = addressState;
     return this;
   }
@@ -286,12 +307,12 @@ public class ExerciseEquityToCreateContainer {
     return addressState;
   }
 
-  public void setAddressState(String addressState) {
+  public void setAddressState(@javax.annotation.Nonnull String addressState) {
     this.addressState = addressState;
   }
 
 
-  public ExerciseEquityToCreateContainer addressStreet(String addressStreet) {
+  public ExerciseEquityToCreateContainer addressStreet(@javax.annotation.Nonnull String addressStreet) {
     this.addressStreet = addressStreet;
     return this;
   }
@@ -305,12 +326,12 @@ public class ExerciseEquityToCreateContainer {
     return addressStreet;
   }
 
-  public void setAddressStreet(String addressStreet) {
+  public void setAddressStreet(@javax.annotation.Nonnull String addressStreet) {
     this.addressStreet = addressStreet;
   }
 
 
-  public ExerciseEquityToCreateContainer stakeholderId(String stakeholderId) {
+  public ExerciseEquityToCreateContainer stakeholderId(@javax.annotation.Nonnull String stakeholderId) {
     this.stakeholderId = stakeholderId;
     return this;
   }
@@ -324,12 +345,12 @@ public class ExerciseEquityToCreateContainer {
     return stakeholderId;
   }
 
-  public void setStakeholderId(String stakeholderId) {
+  public void setStakeholderId(@javax.annotation.Nonnull String stakeholderId) {
     this.stakeholderId = stakeholderId;
   }
 
 
-  public ExerciseEquityToCreateContainer addressCountry(String addressCountry) {
+  public ExerciseEquityToCreateContainer addressCountry(@javax.annotation.Nonnull String addressCountry) {
     this.addressCountry = addressCountry;
     return this;
   }
@@ -343,12 +364,12 @@ public class ExerciseEquityToCreateContainer {
     return addressCountry;
   }
 
-  public void setAddressCountry(String addressCountry) {
+  public void setAddressCountry(@javax.annotation.Nonnull String addressCountry) {
     this.addressCountry = addressCountry;
   }
 
 
-  public ExerciseEquityToCreateContainer optionGrantId(String optionGrantId) {
+  public ExerciseEquityToCreateContainer optionGrantId(@javax.annotation.Nonnull String optionGrantId) {
     this.optionGrantId = optionGrantId;
     return this;
   }
@@ -362,12 +383,12 @@ public class ExerciseEquityToCreateContainer {
     return optionGrantId;
   }
 
-  public void setOptionGrantId(String optionGrantId) {
+  public void setOptionGrantId(@javax.annotation.Nonnull String optionGrantId) {
     this.optionGrantId = optionGrantId;
   }
 
 
-  public ExerciseEquityToCreateContainer fmvCurrencyCode(String fmvCurrencyCode) {
+  public ExerciseEquityToCreateContainer fmvCurrencyCode(@javax.annotation.Nonnull String fmvCurrencyCode) {
     this.fmvCurrencyCode = fmvCurrencyCode;
     return this;
   }
@@ -381,12 +402,12 @@ public class ExerciseEquityToCreateContainer {
     return fmvCurrencyCode;
   }
 
-  public void setFmvCurrencyCode(String fmvCurrencyCode) {
+  public void setFmvCurrencyCode(@javax.annotation.Nonnull String fmvCurrencyCode) {
     this.fmvCurrencyCode = fmvCurrencyCode;
   }
 
 
-  public ExerciseEquityToCreateContainer stakeholderEmail(String stakeholderEmail) {
+  public ExerciseEquityToCreateContainer stakeholderEmail(@javax.annotation.Nonnull String stakeholderEmail) {
     this.stakeholderEmail = stakeholderEmail;
     return this;
   }
@@ -400,12 +421,12 @@ public class ExerciseEquityToCreateContainer {
     return stakeholderEmail;
   }
 
-  public void setStakeholderEmail(String stakeholderEmail) {
+  public void setStakeholderEmail(@javax.annotation.Nonnull String stakeholderEmail) {
     this.stakeholderEmail = stakeholderEmail;
   }
 
 
-  public ExerciseEquityToCreateContainer optionGrantIssue(String optionGrantIssue) {
+  public ExerciseEquityToCreateContainer optionGrantIssue(@javax.annotation.Nonnull String optionGrantIssue) {
     this.optionGrantIssue = optionGrantIssue;
     return this;
   }
@@ -419,12 +440,12 @@ public class ExerciseEquityToCreateContainer {
     return optionGrantIssue;
   }
 
-  public void setOptionGrantIssue(String optionGrantIssue) {
+  public void setOptionGrantIssue(@javax.annotation.Nonnull String optionGrantIssue) {
     this.optionGrantIssue = optionGrantIssue;
   }
 
 
-  public ExerciseEquityToCreateContainer optionGrantLabel(String optionGrantLabel) {
+  public ExerciseEquityToCreateContainer optionGrantLabel(@javax.annotation.Nonnull String optionGrantLabel) {
     this.optionGrantLabel = optionGrantLabel;
     return this;
   }
@@ -438,12 +459,12 @@ public class ExerciseEquityToCreateContainer {
     return optionGrantLabel;
   }
 
-  public void setOptionGrantLabel(String optionGrantLabel) {
+  public void setOptionGrantLabel(@javax.annotation.Nonnull String optionGrantLabel) {
     this.optionGrantLabel = optionGrantLabel;
   }
 
 
-  public ExerciseEquityToCreateContainer optionGrantCurrency(String optionGrantCurrency) {
+  public ExerciseEquityToCreateContainer optionGrantCurrency(@javax.annotation.Nonnull String optionGrantCurrency) {
     this.optionGrantCurrency = optionGrantCurrency;
     return this;
   }
@@ -457,12 +478,12 @@ public class ExerciseEquityToCreateContainer {
     return optionGrantCurrency;
   }
 
-  public void setOptionGrantCurrency(String optionGrantCurrency) {
+  public void setOptionGrantCurrency(@javax.annotation.Nonnull String optionGrantCurrency) {
     this.optionGrantCurrency = optionGrantCurrency;
   }
 
 
-  public ExerciseEquityToCreateContainer optionGrantIssueDate(OffsetDateTime optionGrantIssueDate) {
+  public ExerciseEquityToCreateContainer optionGrantIssueDate(@javax.annotation.Nonnull OffsetDateTime optionGrantIssueDate) {
     this.optionGrantIssueDate = optionGrantIssueDate;
     return this;
   }
@@ -476,12 +497,12 @@ public class ExerciseEquityToCreateContainer {
     return optionGrantIssueDate;
   }
 
-  public void setOptionGrantIssueDate(OffsetDateTime optionGrantIssueDate) {
+  public void setOptionGrantIssueDate(@javax.annotation.Nonnull OffsetDateTime optionGrantIssueDate) {
     this.optionGrantIssueDate = optionGrantIssueDate;
   }
 
 
-  public ExerciseEquityToCreateContainer optionGrantExpiryDate(OffsetDateTime optionGrantExpiryDate) {
+  public ExerciseEquityToCreateContainer optionGrantExpiryDate(@javax.annotation.Nonnull OffsetDateTime optionGrantExpiryDate) {
     this.optionGrantExpiryDate = optionGrantExpiryDate;
     return this;
   }
@@ -495,12 +516,12 @@ public class ExerciseEquityToCreateContainer {
     return optionGrantExpiryDate;
   }
 
-  public void setOptionGrantExpiryDate(OffsetDateTime optionGrantExpiryDate) {
+  public void setOptionGrantExpiryDate(@javax.annotation.Nonnull OffsetDateTime optionGrantExpiryDate) {
     this.optionGrantExpiryDate = optionGrantExpiryDate;
   }
 
 
-  public ExerciseEquityToCreateContainer stakeholderRelationship(String stakeholderRelationship) {
+  public ExerciseEquityToCreateContainer stakeholderRelationship(@javax.annotation.Nonnull String stakeholderRelationship) {
     this.stakeholderRelationship = stakeholderRelationship;
     return this;
   }
@@ -514,12 +535,12 @@ public class ExerciseEquityToCreateContainer {
     return stakeholderRelationship;
   }
 
-  public void setStakeholderRelationship(String stakeholderRelationship) {
+  public void setStakeholderRelationship(@javax.annotation.Nonnull String stakeholderRelationship) {
     this.stakeholderRelationship = stakeholderRelationship;
   }
 
 
-  public ExerciseEquityToCreateContainer optionGrantStrikePrice(String optionGrantStrikePrice) {
+  public ExerciseEquityToCreateContainer optionGrantStrikePrice(@javax.annotation.Nonnull String optionGrantStrikePrice) {
     this.optionGrantStrikePrice = optionGrantStrikePrice;
     return this;
   }
@@ -533,7 +554,7 @@ public class ExerciseEquityToCreateContainer {
     return optionGrantStrikePrice;
   }
 
-  public void setOptionGrantStrikePrice(String optionGrantStrikePrice) {
+  public void setOptionGrantStrikePrice(@javax.annotation.Nonnull String optionGrantStrikePrice) {
     this.optionGrantStrikePrice = optionGrantStrikePrice;
   }
 

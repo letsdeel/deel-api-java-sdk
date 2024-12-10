@@ -51,16 +51,17 @@ import org.openapitools.client.JSON;
 /**
  * GetAllOrgStructures200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetAllOrgStructures200Response {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nullable
   private List<GetAllOrgStructures200ResponseDataInner> data = new ArrayList<>();
 
   public GetAllOrgStructures200Response() {
   }
 
-  public GetAllOrgStructures200Response data(List<GetAllOrgStructures200ResponseDataInner> data) {
+  public GetAllOrgStructures200Response data(@javax.annotation.Nullable List<GetAllOrgStructures200ResponseDataInner> data) {
     this.data = data;
     return this;
   }
@@ -82,7 +83,7 @@ public class GetAllOrgStructures200Response {
     return data;
   }
 
-  public void setData(List<GetAllOrgStructures200ResponseDataInner> data) {
+  public void setData(@javax.annotation.Nullable List<GetAllOrgStructures200ResponseDataInner> data) {
     this.data = data;
   }
 

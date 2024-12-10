@@ -49,32 +49,37 @@ import org.openapitools.client.JSON;
 /**
  * CreateWorkerRelationType201ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateWorkerRelationType201ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private UUID id;
 
   public static final String SERIALIZED_NAME_CHILD_NAME = "child_name";
   @SerializedName(SERIALIZED_NAME_CHILD_NAME)
+  @javax.annotation.Nullable
   private String childName;
 
   public static final String SERIALIZED_NAME_IS_DEFAULT = "is_default";
   @SerializedName(SERIALIZED_NAME_IS_DEFAULT)
+  @javax.annotation.Nullable
   private Boolean isDefault;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_PARENT_NAME = "parent_name";
   @SerializedName(SERIALIZED_NAME_PARENT_NAME)
+  @javax.annotation.Nullable
   private String parentName;
 
   public CreateWorkerRelationType201ResponseData() {
   }
 
-  public CreateWorkerRelationType201ResponseData id(UUID id) {
+  public CreateWorkerRelationType201ResponseData id(@javax.annotation.Nullable UUID id) {
     this.id = id;
     return this;
   }
@@ -88,12 +93,12 @@ public class CreateWorkerRelationType201ResponseData {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nullable UUID id) {
     this.id = id;
   }
 
 
-  public CreateWorkerRelationType201ResponseData childName(String childName) {
+  public CreateWorkerRelationType201ResponseData childName(@javax.annotation.Nullable String childName) {
     this.childName = childName;
     return this;
   }
@@ -107,12 +112,12 @@ public class CreateWorkerRelationType201ResponseData {
     return childName;
   }
 
-  public void setChildName(String childName) {
+  public void setChildName(@javax.annotation.Nullable String childName) {
     this.childName = childName;
   }
 
 
-  public CreateWorkerRelationType201ResponseData isDefault(Boolean isDefault) {
+  public CreateWorkerRelationType201ResponseData isDefault(@javax.annotation.Nullable Boolean isDefault) {
     this.isDefault = isDefault;
     return this;
   }
@@ -126,12 +131,12 @@ public class CreateWorkerRelationType201ResponseData {
     return isDefault;
   }
 
-  public void setIsDefault(Boolean isDefault) {
+  public void setIsDefault(@javax.annotation.Nullable Boolean isDefault) {
     this.isDefault = isDefault;
   }
 
 
-  public CreateWorkerRelationType201ResponseData externalId(String externalId) {
+  public CreateWorkerRelationType201ResponseData externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -145,12 +150,12 @@ public class CreateWorkerRelationType201ResponseData {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public CreateWorkerRelationType201ResponseData parentName(String parentName) {
+  public CreateWorkerRelationType201ResponseData parentName(@javax.annotation.Nullable String parentName) {
     this.parentName = parentName;
     return this;
   }
@@ -164,7 +169,7 @@ public class CreateWorkerRelationType201ResponseData {
     return parentName;
   }
 
-  public void setParentName(String parentName) {
+  public void setParentName(@javax.annotation.Nullable String parentName) {
     this.parentName = parentName;
   }
 

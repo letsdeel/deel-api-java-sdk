@@ -50,16 +50,17 @@ import org.openapitools.client.JSON;
 /**
  * Textual notes describing important additional data regarding the employement process or costs.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorEmployeeCostCalculationResponseAdditionalData {
   public static final String SERIALIZED_NAME_ADDITIONAL_NOTES = "additional_notes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_NOTES)
+  @javax.annotation.Nullable
   private List<String> additionalNotes = new ArrayList<>();
 
   public EorEmployeeCostCalculationResponseAdditionalData() {
   }
 
-  public EorEmployeeCostCalculationResponseAdditionalData additionalNotes(List<String> additionalNotes) {
+  public EorEmployeeCostCalculationResponseAdditionalData additionalNotes(@javax.annotation.Nullable List<String> additionalNotes) {
     this.additionalNotes = additionalNotes;
     return this;
   }
@@ -81,7 +82,7 @@ public class EorEmployeeCostCalculationResponseAdditionalData {
     return additionalNotes;
   }
 
-  public void setAdditionalNotes(List<String> additionalNotes) {
+  public void setAdditionalNotes(@javax.annotation.Nullable List<String> additionalNotes) {
     this.additionalNotes = additionalNotes;
   }
 

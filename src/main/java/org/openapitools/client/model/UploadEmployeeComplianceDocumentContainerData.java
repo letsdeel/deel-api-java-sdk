@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * UploadEmployeeComplianceDocumentContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UploadEmployeeComplianceDocumentContainerData {
   public static final String SERIALIZED_NAME_SUCCESS = "success";
   @SerializedName(SERIALIZED_NAME_SUCCESS)
+  @javax.annotation.Nullable
   private Boolean success;
 
   public UploadEmployeeComplianceDocumentContainerData() {
   }
 
-  public UploadEmployeeComplianceDocumentContainerData success(Boolean success) {
+  public UploadEmployeeComplianceDocumentContainerData success(@javax.annotation.Nullable Boolean success) {
     this.success = success;
     return this;
   }
@@ -71,7 +72,7 @@ public class UploadEmployeeComplianceDocumentContainerData {
     return success;
   }
 
-  public void setSuccess(Boolean success) {
+  public void setSuccess(@javax.annotation.Nullable Boolean success) {
     this.success = success;
   }
 

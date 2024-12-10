@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * Currency type
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertCustomFieldValueFromWorkerRequestDataOneOf4 {
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public UpsertCustomFieldValueFromWorkerRequestDataOneOf4() {
   }
 
-  public UpsertCustomFieldValueFromWorkerRequestDataOneOf4 amount(BigDecimal amount) {
+  public UpsertCustomFieldValueFromWorkerRequestDataOneOf4 amount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -76,12 +78,12 @@ public class UpsertCustomFieldValueFromWorkerRequestDataOneOf4 {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public UpsertCustomFieldValueFromWorkerRequestDataOneOf4 currency(String currency) {
+  public UpsertCustomFieldValueFromWorkerRequestDataOneOf4 currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -95,7 +97,7 @@ public class UpsertCustomFieldValueFromWorkerRequestDataOneOf4 {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 

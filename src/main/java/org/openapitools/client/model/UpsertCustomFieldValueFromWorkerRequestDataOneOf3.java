@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * Percentage type
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertCustomFieldValueFromWorkerRequestDataOneOf3 {
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private BigDecimal value;
 
   public UpsertCustomFieldValueFromWorkerRequestDataOneOf3() {
   }
 
-  public UpsertCustomFieldValueFromWorkerRequestDataOneOf3 value(BigDecimal value) {
+  public UpsertCustomFieldValueFromWorkerRequestDataOneOf3 value(@javax.annotation.Nullable BigDecimal value) {
     this.value = value;
     return this;
   }
@@ -72,7 +73,7 @@ public class UpsertCustomFieldValueFromWorkerRequestDataOneOf3 {
     return value;
   }
 
-  public void setValue(BigDecimal value) {
+  public void setValue(@javax.annotation.Nullable BigDecimal value) {
     this.value = value;
   }
 

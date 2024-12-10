@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * Percentage type
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf3 {
   public static final String SERIALIZED_NAME_TEXT = "text";
   @SerializedName(SERIALIZED_NAME_TEXT)
+  @javax.annotation.Nullable
   private String text;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private BigDecimal value;
 
   public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf3() {
   }
 
-  public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf3 text(String text) {
+  public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf3 text(@javax.annotation.Nullable String text) {
     this.text = text;
     return this;
   }
@@ -76,12 +78,12 @@ public class GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf3 {
     return text;
   }
 
-  public void setText(String text) {
+  public void setText(@javax.annotation.Nullable String text) {
     this.text = text;
   }
 
 
-  public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf3 value(BigDecimal value) {
+  public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf3 value(@javax.annotation.Nullable BigDecimal value) {
     this.value = value;
     return this;
   }
@@ -95,7 +97,7 @@ public class GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf3 {
     return value;
   }
 
-  public void setValue(BigDecimal value) {
+  public void setValue(@javax.annotation.Nullable BigDecimal value) {
     this.value = value;
   }
 

@@ -49,32 +49,37 @@ import org.openapitools.client.JSON;
 /**
  * BasicLegalEntity
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BasicLegalEntity {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_ENTITY_TYPE = "entity_type";
   @SerializedName(SERIALIZED_NAME_ENTITY_TYPE)
+  @javax.annotation.Nonnull
   private LegalEntityType entityType;
 
   public static final String SERIALIZED_NAME_ENTITY_SUBTYPE = "entity_subtype";
   @SerializedName(SERIALIZED_NAME_ENTITY_SUBTYPE)
+  @javax.annotation.Nonnull
   private String entitySubtype;
 
   public BasicLegalEntity() {
   }
 
-  public BasicLegalEntity id(String id) {
+  public BasicLegalEntity id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -88,12 +93,12 @@ public class BasicLegalEntity {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public BasicLegalEntity name(String name) {
+  public BasicLegalEntity name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -107,12 +112,12 @@ public class BasicLegalEntity {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public BasicLegalEntity country(String country) {
+  public BasicLegalEntity country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -126,12 +131,12 @@ public class BasicLegalEntity {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public BasicLegalEntity entityType(LegalEntityType entityType) {
+  public BasicLegalEntity entityType(@javax.annotation.Nonnull LegalEntityType entityType) {
     this.entityType = entityType;
     return this;
   }
@@ -145,12 +150,12 @@ public class BasicLegalEntity {
     return entityType;
   }
 
-  public void setEntityType(LegalEntityType entityType) {
+  public void setEntityType(@javax.annotation.Nonnull LegalEntityType entityType) {
     this.entityType = entityType;
   }
 
 
-  public BasicLegalEntity entitySubtype(String entitySubtype) {
+  public BasicLegalEntity entitySubtype(@javax.annotation.Nonnull String entitySubtype) {
     this.entitySubtype = entitySubtype;
     return this;
   }
@@ -164,7 +169,7 @@ public class BasicLegalEntity {
     return entitySubtype;
   }
 
-  public void setEntitySubtype(String entitySubtype) {
+  public void setEntitySubtype(@javax.annotation.Nonnull String entitySubtype) {
     this.entitySubtype = entitySubtype;
   }
 

@@ -54,22 +54,26 @@ import org.openapitools.client.JSON;
 /**
  * Policy
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Policy {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_POLICY_TYPE_ID = "policy_type_id";
   @SerializedName(SERIALIZED_NAME_POLICY_TYPE_ID)
+  @javax.annotation.Nullable
   private UUID policyTypeId;
 
   /**
@@ -134,10 +138,12 @@ public class Policy {
 
   public static final String SERIALIZED_NAME_TRACKING_UNIT = "tracking_unit";
   @SerializedName(SERIALIZED_NAME_TRACKING_UNIT)
+  @javax.annotation.Nullable
   private TrackingUnitEnum trackingUnit;
 
   public static final String SERIALIZED_NAME_TRACKING_UNIT_AMOUNT = "tracking_unit_amount";
   @SerializedName(SERIALIZED_NAME_TRACKING_UNIT_AMOUNT)
+  @javax.annotation.Nullable
   private Float trackingUnitAmount;
 
   /**
@@ -194,18 +200,22 @@ public class Policy {
 
   public static final String SERIALIZED_NAME_TRACKING_CADENCE = "tracking_cadence";
   @SerializedName(SERIALIZED_NAME_TRACKING_CADENCE)
+  @javax.annotation.Nullable
   private TrackingCadenceEnum trackingCadence;
 
   public static final String SERIALIZED_NAME_TRACKING_START_DATE = "tracking_start_date";
   @SerializedName(SERIALIZED_NAME_TRACKING_START_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime trackingStartDate;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime updatedAt;
 
   /**
@@ -262,20 +272,23 @@ public class Policy {
 
   public static final String SERIALIZED_NAME_LEAVE_TYPE = "leave_type";
   @SerializedName(SERIALIZED_NAME_LEAVE_TYPE)
+  @javax.annotation.Nullable
   private LeaveTypeEnum leaveType;
 
   public static final String SERIALIZED_NAME_TIME_OFF_TYPES = "time_off_types";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_TYPES)
+  @javax.annotation.Nullable
   private List<TimeOffType> timeOffTypes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_POLICY_TYPE = "policy_type";
   @SerializedName(SERIALIZED_NAME_POLICY_TYPE)
+  @javax.annotation.Nullable
   private GetPoliciesForProfile200ResponsePoliciesInnerPolicyType policyType;
 
   public Policy() {
   }
 
-  public Policy id(UUID id) {
+  public Policy id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -289,12 +302,12 @@ public class Policy {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public Policy name(String name) {
+  public Policy name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -308,12 +321,12 @@ public class Policy {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public Policy description(String description) {
+  public Policy description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -327,12 +340,12 @@ public class Policy {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public Policy policyTypeId(UUID policyTypeId) {
+  public Policy policyTypeId(@javax.annotation.Nullable UUID policyTypeId) {
     this.policyTypeId = policyTypeId;
     return this;
   }
@@ -346,12 +359,12 @@ public class Policy {
     return policyTypeId;
   }
 
-  public void setPolicyTypeId(UUID policyTypeId) {
+  public void setPolicyTypeId(@javax.annotation.Nullable UUID policyTypeId) {
     this.policyTypeId = policyTypeId;
   }
 
 
-  public Policy trackingUnit(TrackingUnitEnum trackingUnit) {
+  public Policy trackingUnit(@javax.annotation.Nullable TrackingUnitEnum trackingUnit) {
     this.trackingUnit = trackingUnit;
     return this;
   }
@@ -365,12 +378,12 @@ public class Policy {
     return trackingUnit;
   }
 
-  public void setTrackingUnit(TrackingUnitEnum trackingUnit) {
+  public void setTrackingUnit(@javax.annotation.Nullable TrackingUnitEnum trackingUnit) {
     this.trackingUnit = trackingUnit;
   }
 
 
-  public Policy trackingUnitAmount(Float trackingUnitAmount) {
+  public Policy trackingUnitAmount(@javax.annotation.Nullable Float trackingUnitAmount) {
     this.trackingUnitAmount = trackingUnitAmount;
     return this;
   }
@@ -384,12 +397,12 @@ public class Policy {
     return trackingUnitAmount;
   }
 
-  public void setTrackingUnitAmount(Float trackingUnitAmount) {
+  public void setTrackingUnitAmount(@javax.annotation.Nullable Float trackingUnitAmount) {
     this.trackingUnitAmount = trackingUnitAmount;
   }
 
 
-  public Policy trackingCadence(TrackingCadenceEnum trackingCadence) {
+  public Policy trackingCadence(@javax.annotation.Nullable TrackingCadenceEnum trackingCadence) {
     this.trackingCadence = trackingCadence;
     return this;
   }
@@ -403,12 +416,12 @@ public class Policy {
     return trackingCadence;
   }
 
-  public void setTrackingCadence(TrackingCadenceEnum trackingCadence) {
+  public void setTrackingCadence(@javax.annotation.Nullable TrackingCadenceEnum trackingCadence) {
     this.trackingCadence = trackingCadence;
   }
 
 
-  public Policy trackingStartDate(OffsetDateTime trackingStartDate) {
+  public Policy trackingStartDate(@javax.annotation.Nullable OffsetDateTime trackingStartDate) {
     this.trackingStartDate = trackingStartDate;
     return this;
   }
@@ -422,12 +435,12 @@ public class Policy {
     return trackingStartDate;
   }
 
-  public void setTrackingStartDate(OffsetDateTime trackingStartDate) {
+  public void setTrackingStartDate(@javax.annotation.Nullable OffsetDateTime trackingStartDate) {
     this.trackingStartDate = trackingStartDate;
   }
 
 
-  public Policy createdAt(OffsetDateTime createdAt) {
+  public Policy createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -441,12 +454,12 @@ public class Policy {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public Policy updatedAt(OffsetDateTime updatedAt) {
+  public Policy updatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -460,12 +473,12 @@ public class Policy {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public Policy leaveType(LeaveTypeEnum leaveType) {
+  public Policy leaveType(@javax.annotation.Nullable LeaveTypeEnum leaveType) {
     this.leaveType = leaveType;
     return this;
   }
@@ -479,12 +492,12 @@ public class Policy {
     return leaveType;
   }
 
-  public void setLeaveType(LeaveTypeEnum leaveType) {
+  public void setLeaveType(@javax.annotation.Nullable LeaveTypeEnum leaveType) {
     this.leaveType = leaveType;
   }
 
 
-  public Policy timeOffTypes(List<TimeOffType> timeOffTypes) {
+  public Policy timeOffTypes(@javax.annotation.Nullable List<TimeOffType> timeOffTypes) {
     this.timeOffTypes = timeOffTypes;
     return this;
   }
@@ -506,12 +519,12 @@ public class Policy {
     return timeOffTypes;
   }
 
-  public void setTimeOffTypes(List<TimeOffType> timeOffTypes) {
+  public void setTimeOffTypes(@javax.annotation.Nullable List<TimeOffType> timeOffTypes) {
     this.timeOffTypes = timeOffTypes;
   }
 
 
-  public Policy policyType(GetPoliciesForProfile200ResponsePoliciesInnerPolicyType policyType) {
+  public Policy policyType(@javax.annotation.Nullable GetPoliciesForProfile200ResponsePoliciesInnerPolicyType policyType) {
     this.policyType = policyType;
     return this;
   }
@@ -525,7 +538,7 @@ public class Policy {
     return policyType;
   }
 
-  public void setPolicyType(GetPoliciesForProfile200ResponsePoliciesInnerPolicyType policyType) {
+  public void setPolicyType(@javax.annotation.Nullable GetPoliciesForProfile200ResponsePoliciesInnerPolicyType policyType) {
     this.policyType = policyType;
   }
 

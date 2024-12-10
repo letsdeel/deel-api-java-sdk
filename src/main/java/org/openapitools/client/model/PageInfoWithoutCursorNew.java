@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * PageInfoWithoutCursorNew
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PageInfoWithoutCursorNew {
   public static final String SERIALIZED_NAME_TOTAL_ROWS = "total_rows";
   @SerializedName(SERIALIZED_NAME_TOTAL_ROWS)
+  @javax.annotation.Nonnull
   private BigDecimal totalRows;
 
   public static final String SERIALIZED_NAME_ITEMS_PER_PAGE = "items_per_page";
   @SerializedName(SERIALIZED_NAME_ITEMS_PER_PAGE)
+  @javax.annotation.Nonnull
   private BigDecimal itemsPerPage;
 
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
+  @javax.annotation.Nonnull
   private BigDecimal offset;
 
   public PageInfoWithoutCursorNew() {
   }
 
-  public PageInfoWithoutCursorNew totalRows(BigDecimal totalRows) {
+  public PageInfoWithoutCursorNew totalRows(@javax.annotation.Nonnull BigDecimal totalRows) {
     this.totalRows = totalRows;
     return this;
   }
@@ -80,12 +83,12 @@ public class PageInfoWithoutCursorNew {
     return totalRows;
   }
 
-  public void setTotalRows(BigDecimal totalRows) {
+  public void setTotalRows(@javax.annotation.Nonnull BigDecimal totalRows) {
     this.totalRows = totalRows;
   }
 
 
-  public PageInfoWithoutCursorNew itemsPerPage(BigDecimal itemsPerPage) {
+  public PageInfoWithoutCursorNew itemsPerPage(@javax.annotation.Nonnull BigDecimal itemsPerPage) {
     this.itemsPerPage = itemsPerPage;
     return this;
   }
@@ -101,12 +104,12 @@ public class PageInfoWithoutCursorNew {
     return itemsPerPage;
   }
 
-  public void setItemsPerPage(BigDecimal itemsPerPage) {
+  public void setItemsPerPage(@javax.annotation.Nonnull BigDecimal itemsPerPage) {
     this.itemsPerPage = itemsPerPage;
   }
 
 
-  public PageInfoWithoutCursorNew offset(BigDecimal offset) {
+  public PageInfoWithoutCursorNew offset(@javax.annotation.Nonnull BigDecimal offset) {
     this.offset = offset;
     return this;
   }
@@ -122,7 +125,7 @@ public class PageInfoWithoutCursorNew {
     return offset;
   }
 
-  public void setOffset(BigDecimal offset) {
+  public void setOffset(@javax.annotation.Nonnull BigDecimal offset) {
     this.offset = offset;
   }
 

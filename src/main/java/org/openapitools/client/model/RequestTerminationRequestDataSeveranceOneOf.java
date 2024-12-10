@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * RequestTerminationRequestDataSeveranceOneOf
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class RequestTerminationRequestDataSeveranceOneOf {
   /**
    * The type of severance, either in time off.
@@ -103,14 +103,17 @@ public class RequestTerminationRequestDataSeveranceOneOf {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nonnull
   private String currency;
 
   /**
@@ -169,12 +172,13 @@ public class RequestTerminationRequestDataSeveranceOneOf {
 
   public static final String SERIALIZED_NAME_TIME_UNIT = "time_unit";
   @SerializedName(SERIALIZED_NAME_TIME_UNIT)
+  @javax.annotation.Nonnull
   private TimeUnitEnum timeUnit;
 
   public RequestTerminationRequestDataSeveranceOneOf() {
   }
 
-  public RequestTerminationRequestDataSeveranceOneOf type(TypeEnum type) {
+  public RequestTerminationRequestDataSeveranceOneOf type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -188,12 +192,12 @@ public class RequestTerminationRequestDataSeveranceOneOf {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public RequestTerminationRequestDataSeveranceOneOf amount(BigDecimal amount) {
+  public RequestTerminationRequestDataSeveranceOneOf amount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -207,12 +211,12 @@ public class RequestTerminationRequestDataSeveranceOneOf {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public RequestTerminationRequestDataSeveranceOneOf currency(String currency) {
+  public RequestTerminationRequestDataSeveranceOneOf currency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
     return this;
   }
@@ -226,12 +230,12 @@ public class RequestTerminationRequestDataSeveranceOneOf {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
   }
 
 
-  public RequestTerminationRequestDataSeveranceOneOf timeUnit(TimeUnitEnum timeUnit) {
+  public RequestTerminationRequestDataSeveranceOneOf timeUnit(@javax.annotation.Nonnull TimeUnitEnum timeUnit) {
     this.timeUnit = timeUnit;
     return this;
   }
@@ -245,7 +249,7 @@ public class RequestTerminationRequestDataSeveranceOneOf {
     return timeUnit;
   }
 
-  public void setTimeUnit(TimeUnitEnum timeUnit) {
+  public void setTimeUnit(@javax.annotation.Nonnull TimeUnitEnum timeUnit) {
     this.timeUnit = timeUnit;
   }
 

@@ -53,24 +53,27 @@ import org.openapitools.client.JSON;
 /**
  * CreateOrUpdateChildRelationBetweenProfilesRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateOrUpdateChildRelationBetweenProfilesRequestData {
   public static final String SERIALIZED_NAME_EDIT_REASON = "edit_reason";
   @SerializedName(SERIALIZED_NAME_EDIT_REASON)
+  @javax.annotation.Nullable
   private CreateOrUpdateChildRelationBetweenProfilesRequestDataEditReason editReason;
 
   public static final String SERIALIZED_NAME_CHILD_HRIS_PROFILE_IDS = "child_hris_profile_ids";
   @SerializedName(SERIALIZED_NAME_CHILD_HRIS_PROFILE_IDS)
+  @javax.annotation.Nullable
   private List<CreateOrUpdateChildRelationBetweenProfilesRequestDataChildHrisProfileIdsInner> childHrisProfileIds = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_EXTERNAL_ID = "hris_relationship_type_external_id";
   @SerializedName(SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private UUID hrisRelationshipTypeExternalId;
 
   public CreateOrUpdateChildRelationBetweenProfilesRequestData() {
   }
 
-  public CreateOrUpdateChildRelationBetweenProfilesRequestData editReason(CreateOrUpdateChildRelationBetweenProfilesRequestDataEditReason editReason) {
+  public CreateOrUpdateChildRelationBetweenProfilesRequestData editReason(@javax.annotation.Nullable CreateOrUpdateChildRelationBetweenProfilesRequestDataEditReason editReason) {
     this.editReason = editReason;
     return this;
   }
@@ -84,12 +87,12 @@ public class CreateOrUpdateChildRelationBetweenProfilesRequestData {
     return editReason;
   }
 
-  public void setEditReason(CreateOrUpdateChildRelationBetweenProfilesRequestDataEditReason editReason) {
+  public void setEditReason(@javax.annotation.Nullable CreateOrUpdateChildRelationBetweenProfilesRequestDataEditReason editReason) {
     this.editReason = editReason;
   }
 
 
-  public CreateOrUpdateChildRelationBetweenProfilesRequestData childHrisProfileIds(List<CreateOrUpdateChildRelationBetweenProfilesRequestDataChildHrisProfileIdsInner> childHrisProfileIds) {
+  public CreateOrUpdateChildRelationBetweenProfilesRequestData childHrisProfileIds(@javax.annotation.Nullable List<CreateOrUpdateChildRelationBetweenProfilesRequestDataChildHrisProfileIdsInner> childHrisProfileIds) {
     this.childHrisProfileIds = childHrisProfileIds;
     return this;
   }
@@ -111,12 +114,12 @@ public class CreateOrUpdateChildRelationBetweenProfilesRequestData {
     return childHrisProfileIds;
   }
 
-  public void setChildHrisProfileIds(List<CreateOrUpdateChildRelationBetweenProfilesRequestDataChildHrisProfileIdsInner> childHrisProfileIds) {
+  public void setChildHrisProfileIds(@javax.annotation.Nullable List<CreateOrUpdateChildRelationBetweenProfilesRequestDataChildHrisProfileIdsInner> childHrisProfileIds) {
     this.childHrisProfileIds = childHrisProfileIds;
   }
 
 
-  public CreateOrUpdateChildRelationBetweenProfilesRequestData hrisRelationshipTypeExternalId(UUID hrisRelationshipTypeExternalId) {
+  public CreateOrUpdateChildRelationBetweenProfilesRequestData hrisRelationshipTypeExternalId(@javax.annotation.Nullable UUID hrisRelationshipTypeExternalId) {
     this.hrisRelationshipTypeExternalId = hrisRelationshipTypeExternalId;
     return this;
   }
@@ -130,7 +133,7 @@ public class CreateOrUpdateChildRelationBetweenProfilesRequestData {
     return hrisRelationshipTypeExternalId;
   }
 
-  public void setHrisRelationshipTypeExternalId(UUID hrisRelationshipTypeExternalId) {
+  public void setHrisRelationshipTypeExternalId(@javax.annotation.Nullable UUID hrisRelationshipTypeExternalId) {
     this.hrisRelationshipTypeExternalId = hrisRelationshipTypeExternalId;
   }
 

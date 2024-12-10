@@ -52,30 +52,36 @@ import org.openapitools.client.JSON;
 /**
  * EmployeeTimeoffsItemResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EmployeeTimeoffsItemResponse {
   public static final String SERIALIZED_NAME_TIME_OFF_ID = "time_off_id";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_ID)
+  @javax.annotation.Nullable
   private String timeOffId;
 
   public static final String SERIALIZED_NAME_TIME_OFF_TYPE_ID = "time_off_type_id";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_TYPE_ID)
+  @javax.annotation.Nullable
   private String timeOffTypeId;
 
   public static final String SERIALIZED_NAME_POLICY_ID = "policy_id";
   @SerializedName(SERIALIZED_NAME_POLICY_ID)
+  @javax.annotation.Nullable
   private String policyId;
 
   public static final String SERIALIZED_NAME_POLICY_NAME = "policy_name";
   @SerializedName(SERIALIZED_NAME_POLICY_NAME)
+  @javax.annotation.Nullable
   private String policyName;
 
   public static final String SERIALIZED_NAME_POLICY_TYPE_NAME = "policy_type_name";
   @SerializedName(SERIALIZED_NAME_POLICY_TYPE_NAME)
+  @javax.annotation.Nullable
   private String policyTypeName;
 
   public static final String SERIALIZED_NAME_REASON = "reason";
   @SerializedName(SERIALIZED_NAME_REASON)
+  @javax.annotation.Nullable
   private String reason;
 
   /**
@@ -134,92 +140,113 @@ public class EmployeeTimeoffsItemResponse {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_REQUESTED_AT = "requested_at";
   @SerializedName(SERIALIZED_NAME_REQUESTED_AT)
+  @javax.annotation.Nullable
   private String requestedAt;
 
   public static final String SERIALIZED_NAME_REVIEWED_AT = "reviewed_at";
   @SerializedName(SERIALIZED_NAME_REVIEWED_AT)
+  @javax.annotation.Nullable
   private String reviewedAt;
 
   public static final String SERIALIZED_NAME_WITH_MULTIPLE_DATES = "with_multiple_dates";
   @SerializedName(SERIALIZED_NAME_WITH_MULTIPLE_DATES)
+  @javax.annotation.Nullable
   private Boolean withMultipleDates;
 
   public static final String SERIALIZED_NAME_SINGLE_DATE = "single_date";
   @SerializedName(SERIALIZED_NAME_SINGLE_DATE)
+  @javax.annotation.Nullable
   private String singleDate;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private String createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nullable
   private String updatedAt;
 
   public static final String SERIALIZED_NAME_DENIAL_REASON = "denial_reason";
   @SerializedName(SERIALIZED_NAME_DENIAL_REASON)
+  @javax.annotation.Nullable
   private Boolean denialReason;
 
   public static final String SERIALIZED_NAME_REQUESTER = "requester";
   @SerializedName(SERIALIZED_NAME_REQUESTER)
+  @javax.annotation.Nullable
   private RequesterTimeOff requester;
 
   public static final String SERIALIZED_NAME_DAYS_USED_START_YEAR = "days_used_start_year";
   @SerializedName(SERIALIZED_NAME_DAYS_USED_START_YEAR)
+  @javax.annotation.Nullable
   private String daysUsedStartYear;
 
   public static final String SERIALIZED_NAME_DAYS_USED_END_YEAR = "days_used_end_year";
   @SerializedName(SERIALIZED_NAME_DAYS_USED_END_YEAR)
+  @javax.annotation.Nullable
   private String daysUsedEndYear;
 
   public static final String SERIALIZED_NAME_DAYS_USED = "days_used";
   @SerializedName(SERIALIZED_NAME_DAYS_USED)
+  @javax.annotation.Nullable
   private String daysUsed;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private String startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private String endDate;
 
   public static final String SERIALIZED_NAME_IS_START_DATE_HALF_DAY = "is_start_date_half_day";
   @SerializedName(SERIALIZED_NAME_IS_START_DATE_HALF_DAY)
+  @javax.annotation.Nullable
   private Boolean isStartDateHalfDay;
 
   public static final String SERIALIZED_NAME_IS_END_DATE_HALF_DAY = "is_end_date_half_day";
   @SerializedName(SERIALIZED_NAME_IS_END_DATE_HALF_DAY)
+  @javax.annotation.Nullable
   private Boolean isEndDateHalfDay;
 
   public static final String SERIALIZED_NAME_ATTACHMENTS = "attachments";
   @SerializedName(SERIALIZED_NAME_ATTACHMENTS)
+  @javax.annotation.Nullable
   private List<EmployeeTimeoffsItemResponseAttachmentsInner> attachments = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CHANGE_REQUEST = "change_request";
   @SerializedName(SERIALIZED_NAME_CHANGE_REQUEST)
+  @javax.annotation.Nullable
   private String changeRequest;
 
   public static final String SERIALIZED_NAME_IS_UPDATED = "is_updated";
   @SerializedName(SERIALIZED_NAME_IS_UPDATED)
+  @javax.annotation.Nullable
   private Boolean isUpdated;
 
   public static final String SERIALIZED_NAME_APPLIED_CHANGES = "applied_changes";
   @SerializedName(SERIALIZED_NAME_APPLIED_CHANGES)
+  @javax.annotation.Nullable
   private List<Object> appliedChanges = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CAN_REQUEST_CHANGES = "can_request_changes";
   @SerializedName(SERIALIZED_NAME_CAN_REQUEST_CHANGES)
+  @javax.annotation.Nullable
   private Boolean canRequestChanges;
 
   public EmployeeTimeoffsItemResponse() {
   }
 
-  public EmployeeTimeoffsItemResponse timeOffId(String timeOffId) {
+  public EmployeeTimeoffsItemResponse timeOffId(@javax.annotation.Nullable String timeOffId) {
     this.timeOffId = timeOffId;
     return this;
   }
@@ -233,12 +260,12 @@ public class EmployeeTimeoffsItemResponse {
     return timeOffId;
   }
 
-  public void setTimeOffId(String timeOffId) {
+  public void setTimeOffId(@javax.annotation.Nullable String timeOffId) {
     this.timeOffId = timeOffId;
   }
 
 
-  public EmployeeTimeoffsItemResponse timeOffTypeId(String timeOffTypeId) {
+  public EmployeeTimeoffsItemResponse timeOffTypeId(@javax.annotation.Nullable String timeOffTypeId) {
     this.timeOffTypeId = timeOffTypeId;
     return this;
   }
@@ -252,12 +279,12 @@ public class EmployeeTimeoffsItemResponse {
     return timeOffTypeId;
   }
 
-  public void setTimeOffTypeId(String timeOffTypeId) {
+  public void setTimeOffTypeId(@javax.annotation.Nullable String timeOffTypeId) {
     this.timeOffTypeId = timeOffTypeId;
   }
 
 
-  public EmployeeTimeoffsItemResponse policyId(String policyId) {
+  public EmployeeTimeoffsItemResponse policyId(@javax.annotation.Nullable String policyId) {
     this.policyId = policyId;
     return this;
   }
@@ -271,12 +298,12 @@ public class EmployeeTimeoffsItemResponse {
     return policyId;
   }
 
-  public void setPolicyId(String policyId) {
+  public void setPolicyId(@javax.annotation.Nullable String policyId) {
     this.policyId = policyId;
   }
 
 
-  public EmployeeTimeoffsItemResponse policyName(String policyName) {
+  public EmployeeTimeoffsItemResponse policyName(@javax.annotation.Nullable String policyName) {
     this.policyName = policyName;
     return this;
   }
@@ -290,12 +317,12 @@ public class EmployeeTimeoffsItemResponse {
     return policyName;
   }
 
-  public void setPolicyName(String policyName) {
+  public void setPolicyName(@javax.annotation.Nullable String policyName) {
     this.policyName = policyName;
   }
 
 
-  public EmployeeTimeoffsItemResponse policyTypeName(String policyTypeName) {
+  public EmployeeTimeoffsItemResponse policyTypeName(@javax.annotation.Nullable String policyTypeName) {
     this.policyTypeName = policyTypeName;
     return this;
   }
@@ -309,12 +336,12 @@ public class EmployeeTimeoffsItemResponse {
     return policyTypeName;
   }
 
-  public void setPolicyTypeName(String policyTypeName) {
+  public void setPolicyTypeName(@javax.annotation.Nullable String policyTypeName) {
     this.policyTypeName = policyTypeName;
   }
 
 
-  public EmployeeTimeoffsItemResponse reason(String reason) {
+  public EmployeeTimeoffsItemResponse reason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
     return this;
   }
@@ -328,12 +355,12 @@ public class EmployeeTimeoffsItemResponse {
     return reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
   }
 
 
-  public EmployeeTimeoffsItemResponse type(TypeEnum type) {
+  public EmployeeTimeoffsItemResponse type(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -347,12 +374,12 @@ public class EmployeeTimeoffsItemResponse {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
 
-  public EmployeeTimeoffsItemResponse requestedAt(String requestedAt) {
+  public EmployeeTimeoffsItemResponse requestedAt(@javax.annotation.Nullable String requestedAt) {
     this.requestedAt = requestedAt;
     return this;
   }
@@ -366,12 +393,12 @@ public class EmployeeTimeoffsItemResponse {
     return requestedAt;
   }
 
-  public void setRequestedAt(String requestedAt) {
+  public void setRequestedAt(@javax.annotation.Nullable String requestedAt) {
     this.requestedAt = requestedAt;
   }
 
 
-  public EmployeeTimeoffsItemResponse reviewedAt(String reviewedAt) {
+  public EmployeeTimeoffsItemResponse reviewedAt(@javax.annotation.Nullable String reviewedAt) {
     this.reviewedAt = reviewedAt;
     return this;
   }
@@ -385,12 +412,12 @@ public class EmployeeTimeoffsItemResponse {
     return reviewedAt;
   }
 
-  public void setReviewedAt(String reviewedAt) {
+  public void setReviewedAt(@javax.annotation.Nullable String reviewedAt) {
     this.reviewedAt = reviewedAt;
   }
 
 
-  public EmployeeTimeoffsItemResponse withMultipleDates(Boolean withMultipleDates) {
+  public EmployeeTimeoffsItemResponse withMultipleDates(@javax.annotation.Nullable Boolean withMultipleDates) {
     this.withMultipleDates = withMultipleDates;
     return this;
   }
@@ -404,12 +431,12 @@ public class EmployeeTimeoffsItemResponse {
     return withMultipleDates;
   }
 
-  public void setWithMultipleDates(Boolean withMultipleDates) {
+  public void setWithMultipleDates(@javax.annotation.Nullable Boolean withMultipleDates) {
     this.withMultipleDates = withMultipleDates;
   }
 
 
-  public EmployeeTimeoffsItemResponse singleDate(String singleDate) {
+  public EmployeeTimeoffsItemResponse singleDate(@javax.annotation.Nullable String singleDate) {
     this.singleDate = singleDate;
     return this;
   }
@@ -423,12 +450,12 @@ public class EmployeeTimeoffsItemResponse {
     return singleDate;
   }
 
-  public void setSingleDate(String singleDate) {
+  public void setSingleDate(@javax.annotation.Nullable String singleDate) {
     this.singleDate = singleDate;
   }
 
 
-  public EmployeeTimeoffsItemResponse createdAt(String createdAt) {
+  public EmployeeTimeoffsItemResponse createdAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -442,12 +469,12 @@ public class EmployeeTimeoffsItemResponse {
     return createdAt;
   }
 
-  public void setCreatedAt(String createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable String createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public EmployeeTimeoffsItemResponse updatedAt(String updatedAt) {
+  public EmployeeTimeoffsItemResponse updatedAt(@javax.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -461,12 +488,12 @@ public class EmployeeTimeoffsItemResponse {
     return updatedAt;
   }
 
-  public void setUpdatedAt(String updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nullable String updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public EmployeeTimeoffsItemResponse denialReason(Boolean denialReason) {
+  public EmployeeTimeoffsItemResponse denialReason(@javax.annotation.Nullable Boolean denialReason) {
     this.denialReason = denialReason;
     return this;
   }
@@ -480,12 +507,12 @@ public class EmployeeTimeoffsItemResponse {
     return denialReason;
   }
 
-  public void setDenialReason(Boolean denialReason) {
+  public void setDenialReason(@javax.annotation.Nullable Boolean denialReason) {
     this.denialReason = denialReason;
   }
 
 
-  public EmployeeTimeoffsItemResponse requester(RequesterTimeOff requester) {
+  public EmployeeTimeoffsItemResponse requester(@javax.annotation.Nullable RequesterTimeOff requester) {
     this.requester = requester;
     return this;
   }
@@ -499,12 +526,12 @@ public class EmployeeTimeoffsItemResponse {
     return requester;
   }
 
-  public void setRequester(RequesterTimeOff requester) {
+  public void setRequester(@javax.annotation.Nullable RequesterTimeOff requester) {
     this.requester = requester;
   }
 
 
-  public EmployeeTimeoffsItemResponse daysUsedStartYear(String daysUsedStartYear) {
+  public EmployeeTimeoffsItemResponse daysUsedStartYear(@javax.annotation.Nullable String daysUsedStartYear) {
     this.daysUsedStartYear = daysUsedStartYear;
     return this;
   }
@@ -518,12 +545,12 @@ public class EmployeeTimeoffsItemResponse {
     return daysUsedStartYear;
   }
 
-  public void setDaysUsedStartYear(String daysUsedStartYear) {
+  public void setDaysUsedStartYear(@javax.annotation.Nullable String daysUsedStartYear) {
     this.daysUsedStartYear = daysUsedStartYear;
   }
 
 
-  public EmployeeTimeoffsItemResponse daysUsedEndYear(String daysUsedEndYear) {
+  public EmployeeTimeoffsItemResponse daysUsedEndYear(@javax.annotation.Nullable String daysUsedEndYear) {
     this.daysUsedEndYear = daysUsedEndYear;
     return this;
   }
@@ -537,12 +564,12 @@ public class EmployeeTimeoffsItemResponse {
     return daysUsedEndYear;
   }
 
-  public void setDaysUsedEndYear(String daysUsedEndYear) {
+  public void setDaysUsedEndYear(@javax.annotation.Nullable String daysUsedEndYear) {
     this.daysUsedEndYear = daysUsedEndYear;
   }
 
 
-  public EmployeeTimeoffsItemResponse daysUsed(String daysUsed) {
+  public EmployeeTimeoffsItemResponse daysUsed(@javax.annotation.Nullable String daysUsed) {
     this.daysUsed = daysUsed;
     return this;
   }
@@ -556,12 +583,12 @@ public class EmployeeTimeoffsItemResponse {
     return daysUsed;
   }
 
-  public void setDaysUsed(String daysUsed) {
+  public void setDaysUsed(@javax.annotation.Nullable String daysUsed) {
     this.daysUsed = daysUsed;
   }
 
 
-  public EmployeeTimeoffsItemResponse startDate(String startDate) {
+  public EmployeeTimeoffsItemResponse startDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -575,12 +602,12 @@ public class EmployeeTimeoffsItemResponse {
     return startDate;
   }
 
-  public void setStartDate(String startDate) {
+  public void setStartDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
   }
 
 
-  public EmployeeTimeoffsItemResponse endDate(String endDate) {
+  public EmployeeTimeoffsItemResponse endDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -594,12 +621,12 @@ public class EmployeeTimeoffsItemResponse {
     return endDate;
   }
 
-  public void setEndDate(String endDate) {
+  public void setEndDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
   }
 
 
-  public EmployeeTimeoffsItemResponse isStartDateHalfDay(Boolean isStartDateHalfDay) {
+  public EmployeeTimeoffsItemResponse isStartDateHalfDay(@javax.annotation.Nullable Boolean isStartDateHalfDay) {
     this.isStartDateHalfDay = isStartDateHalfDay;
     return this;
   }
@@ -613,12 +640,12 @@ public class EmployeeTimeoffsItemResponse {
     return isStartDateHalfDay;
   }
 
-  public void setIsStartDateHalfDay(Boolean isStartDateHalfDay) {
+  public void setIsStartDateHalfDay(@javax.annotation.Nullable Boolean isStartDateHalfDay) {
     this.isStartDateHalfDay = isStartDateHalfDay;
   }
 
 
-  public EmployeeTimeoffsItemResponse isEndDateHalfDay(Boolean isEndDateHalfDay) {
+  public EmployeeTimeoffsItemResponse isEndDateHalfDay(@javax.annotation.Nullable Boolean isEndDateHalfDay) {
     this.isEndDateHalfDay = isEndDateHalfDay;
     return this;
   }
@@ -632,12 +659,12 @@ public class EmployeeTimeoffsItemResponse {
     return isEndDateHalfDay;
   }
 
-  public void setIsEndDateHalfDay(Boolean isEndDateHalfDay) {
+  public void setIsEndDateHalfDay(@javax.annotation.Nullable Boolean isEndDateHalfDay) {
     this.isEndDateHalfDay = isEndDateHalfDay;
   }
 
 
-  public EmployeeTimeoffsItemResponse attachments(List<EmployeeTimeoffsItemResponseAttachmentsInner> attachments) {
+  public EmployeeTimeoffsItemResponse attachments(@javax.annotation.Nullable List<EmployeeTimeoffsItemResponseAttachmentsInner> attachments) {
     this.attachments = attachments;
     return this;
   }
@@ -659,12 +686,12 @@ public class EmployeeTimeoffsItemResponse {
     return attachments;
   }
 
-  public void setAttachments(List<EmployeeTimeoffsItemResponseAttachmentsInner> attachments) {
+  public void setAttachments(@javax.annotation.Nullable List<EmployeeTimeoffsItemResponseAttachmentsInner> attachments) {
     this.attachments = attachments;
   }
 
 
-  public EmployeeTimeoffsItemResponse changeRequest(String changeRequest) {
+  public EmployeeTimeoffsItemResponse changeRequest(@javax.annotation.Nullable String changeRequest) {
     this.changeRequest = changeRequest;
     return this;
   }
@@ -678,12 +705,12 @@ public class EmployeeTimeoffsItemResponse {
     return changeRequest;
   }
 
-  public void setChangeRequest(String changeRequest) {
+  public void setChangeRequest(@javax.annotation.Nullable String changeRequest) {
     this.changeRequest = changeRequest;
   }
 
 
-  public EmployeeTimeoffsItemResponse isUpdated(Boolean isUpdated) {
+  public EmployeeTimeoffsItemResponse isUpdated(@javax.annotation.Nullable Boolean isUpdated) {
     this.isUpdated = isUpdated;
     return this;
   }
@@ -697,12 +724,12 @@ public class EmployeeTimeoffsItemResponse {
     return isUpdated;
   }
 
-  public void setIsUpdated(Boolean isUpdated) {
+  public void setIsUpdated(@javax.annotation.Nullable Boolean isUpdated) {
     this.isUpdated = isUpdated;
   }
 
 
-  public EmployeeTimeoffsItemResponse appliedChanges(List<Object> appliedChanges) {
+  public EmployeeTimeoffsItemResponse appliedChanges(@javax.annotation.Nullable List<Object> appliedChanges) {
     this.appliedChanges = appliedChanges;
     return this;
   }
@@ -724,12 +751,12 @@ public class EmployeeTimeoffsItemResponse {
     return appliedChanges;
   }
 
-  public void setAppliedChanges(List<Object> appliedChanges) {
+  public void setAppliedChanges(@javax.annotation.Nullable List<Object> appliedChanges) {
     this.appliedChanges = appliedChanges;
   }
 
 
-  public EmployeeTimeoffsItemResponse canRequestChanges(Boolean canRequestChanges) {
+  public EmployeeTimeoffsItemResponse canRequestChanges(@javax.annotation.Nullable Boolean canRequestChanges) {
     this.canRequestChanges = canRequestChanges;
     return this;
   }
@@ -743,7 +770,7 @@ public class EmployeeTimeoffsItemResponse {
     return canRequestChanges;
   }
 
-  public void setCanRequestChanges(Boolean canRequestChanges) {
+  public void setCanRequestChanges(@javax.annotation.Nullable Boolean canRequestChanges) {
     this.canRequestChanges = canRequestChanges;
   }
 

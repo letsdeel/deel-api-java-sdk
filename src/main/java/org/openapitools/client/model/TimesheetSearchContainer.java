@@ -54,56 +54,67 @@ import org.openapitools.client.JSON;
 /**
  * This is a model to make it easier to understand and restrict search parameters
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimesheetSearchContainer {
   public static final String SERIALIZED_NAME_LIMIT = "limit";
   @SerializedName(SERIALIZED_NAME_LIMIT)
+  @javax.annotation.Nullable
   private String limit = "10";
 
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
+  @javax.annotation.Nullable
   private String offset = "10";
 
   public static final String SERIALIZED_NAME_ORDER_DIRECTION = "order_direction";
   @SerializedName(SERIALIZED_NAME_ORDER_DIRECTION)
+  @javax.annotation.Nullable
   private SortDirEnum orderDirection;
 
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nullable
   private String contractId;
 
   public static final String SERIALIZED_NAME_INVOICE_ID = "invoice_id";
   @SerializedName(SERIALIZED_NAME_INVOICE_ID)
+  @javax.annotation.Nullable
   private String invoiceId;
 
   public static final String SERIALIZED_NAME_REPORTER_ID = "reporter_id";
   @SerializedName(SERIALIZED_NAME_REPORTER_ID)
+  @javax.annotation.Nullable
   private String reporterId;
 
   public static final String SERIALIZED_NAME_CONTRACT_TYPES = "contract_types";
   @SerializedName(SERIALIZED_NAME_CONTRACT_TYPES)
+  @javax.annotation.Nullable
   private InvoiceAdjustmentSearchContainerContractTypes contractTypes;
 
   public static final String SERIALIZED_NAME_TYPES = "types";
   @SerializedName(SERIALIZED_NAME_TYPES)
+  @javax.annotation.Nullable
   private TimesheetSearchContainerTypes types;
 
   public static final String SERIALIZED_NAME_STATUSES = "statuses";
   @SerializedName(SERIALIZED_NAME_STATUSES)
+  @javax.annotation.Nullable
   private TimesheetSearchContainerStatuses statuses;
 
   public static final String SERIALIZED_NAME_DATE_FROM = "date_from";
   @SerializedName(SERIALIZED_NAME_DATE_FROM)
+  @javax.annotation.Nullable
   private LocalDate dateFrom;
 
   public static final String SERIALIZED_NAME_DATE_TO = "date_to";
   @SerializedName(SERIALIZED_NAME_DATE_TO)
+  @javax.annotation.Nullable
   private LocalDate dateTo;
 
   public TimesheetSearchContainer() {
   }
 
-  public TimesheetSearchContainer limit(String limit) {
+  public TimesheetSearchContainer limit(@javax.annotation.Nullable String limit) {
     this.limit = limit;
     return this;
   }
@@ -117,12 +128,12 @@ public class TimesheetSearchContainer {
     return limit;
   }
 
-  public void setLimit(String limit) {
+  public void setLimit(@javax.annotation.Nullable String limit) {
     this.limit = limit;
   }
 
 
-  public TimesheetSearchContainer offset(String offset) {
+  public TimesheetSearchContainer offset(@javax.annotation.Nullable String offset) {
     this.offset = offset;
     return this;
   }
@@ -136,12 +147,12 @@ public class TimesheetSearchContainer {
     return offset;
   }
 
-  public void setOffset(String offset) {
+  public void setOffset(@javax.annotation.Nullable String offset) {
     this.offset = offset;
   }
 
 
-  public TimesheetSearchContainer orderDirection(SortDirEnum orderDirection) {
+  public TimesheetSearchContainer orderDirection(@javax.annotation.Nullable SortDirEnum orderDirection) {
     this.orderDirection = orderDirection;
     return this;
   }
@@ -155,12 +166,12 @@ public class TimesheetSearchContainer {
     return orderDirection;
   }
 
-  public void setOrderDirection(SortDirEnum orderDirection) {
+  public void setOrderDirection(@javax.annotation.Nullable SortDirEnum orderDirection) {
     this.orderDirection = orderDirection;
   }
 
 
-  public TimesheetSearchContainer contractId(String contractId) {
+  public TimesheetSearchContainer contractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -174,12 +185,12 @@ public class TimesheetSearchContainer {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
   }
 
 
-  public TimesheetSearchContainer invoiceId(String invoiceId) {
+  public TimesheetSearchContainer invoiceId(@javax.annotation.Nullable String invoiceId) {
     this.invoiceId = invoiceId;
     return this;
   }
@@ -193,12 +204,12 @@ public class TimesheetSearchContainer {
     return invoiceId;
   }
 
-  public void setInvoiceId(String invoiceId) {
+  public void setInvoiceId(@javax.annotation.Nullable String invoiceId) {
     this.invoiceId = invoiceId;
   }
 
 
-  public TimesheetSearchContainer reporterId(String reporterId) {
+  public TimesheetSearchContainer reporterId(@javax.annotation.Nullable String reporterId) {
     this.reporterId = reporterId;
     return this;
   }
@@ -212,12 +223,12 @@ public class TimesheetSearchContainer {
     return reporterId;
   }
 
-  public void setReporterId(String reporterId) {
+  public void setReporterId(@javax.annotation.Nullable String reporterId) {
     this.reporterId = reporterId;
   }
 
 
-  public TimesheetSearchContainer contractTypes(InvoiceAdjustmentSearchContainerContractTypes contractTypes) {
+  public TimesheetSearchContainer contractTypes(@javax.annotation.Nullable InvoiceAdjustmentSearchContainerContractTypes contractTypes) {
     this.contractTypes = contractTypes;
     return this;
   }
@@ -231,12 +242,12 @@ public class TimesheetSearchContainer {
     return contractTypes;
   }
 
-  public void setContractTypes(InvoiceAdjustmentSearchContainerContractTypes contractTypes) {
+  public void setContractTypes(@javax.annotation.Nullable InvoiceAdjustmentSearchContainerContractTypes contractTypes) {
     this.contractTypes = contractTypes;
   }
 
 
-  public TimesheetSearchContainer types(TimesheetSearchContainerTypes types) {
+  public TimesheetSearchContainer types(@javax.annotation.Nullable TimesheetSearchContainerTypes types) {
     this.types = types;
     return this;
   }
@@ -250,12 +261,12 @@ public class TimesheetSearchContainer {
     return types;
   }
 
-  public void setTypes(TimesheetSearchContainerTypes types) {
+  public void setTypes(@javax.annotation.Nullable TimesheetSearchContainerTypes types) {
     this.types = types;
   }
 
 
-  public TimesheetSearchContainer statuses(TimesheetSearchContainerStatuses statuses) {
+  public TimesheetSearchContainer statuses(@javax.annotation.Nullable TimesheetSearchContainerStatuses statuses) {
     this.statuses = statuses;
     return this;
   }
@@ -269,12 +280,12 @@ public class TimesheetSearchContainer {
     return statuses;
   }
 
-  public void setStatuses(TimesheetSearchContainerStatuses statuses) {
+  public void setStatuses(@javax.annotation.Nullable TimesheetSearchContainerStatuses statuses) {
     this.statuses = statuses;
   }
 
 
-  public TimesheetSearchContainer dateFrom(LocalDate dateFrom) {
+  public TimesheetSearchContainer dateFrom(@javax.annotation.Nullable LocalDate dateFrom) {
     this.dateFrom = dateFrom;
     return this;
   }
@@ -288,12 +299,12 @@ public class TimesheetSearchContainer {
     return dateFrom;
   }
 
-  public void setDateFrom(LocalDate dateFrom) {
+  public void setDateFrom(@javax.annotation.Nullable LocalDate dateFrom) {
     this.dateFrom = dateFrom;
   }
 
 
-  public TimesheetSearchContainer dateTo(LocalDate dateTo) {
+  public TimesheetSearchContainer dateTo(@javax.annotation.Nullable LocalDate dateTo) {
     this.dateTo = dateTo;
     return this;
   }
@@ -307,7 +318,7 @@ public class TimesheetSearchContainer {
     return dateTo;
   }
 
-  public void setDateTo(LocalDate dateTo) {
+  public void setDateTo(@javax.annotation.Nullable LocalDate dateTo) {
     this.dateTo = dateTo;
   }
 

@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**id** | [**CreateContractRequestAnyOfAllOfClientTeamId**](CreateContractRequestAnyOfAllOfClientTeamId.md) |  |  [optional] |
+|**id** | [**PAYASYOUGOTIMEBASEDAllOfClientTeamId**](PAYASYOUGOTIMEBASEDAllOfClientTeamId.md) |  |  [optional] |
 |**email** | **String** | User&#39;s email address. |  [optional] |
 |**image** | **String** | URL to worker&#39;s image |  [optional] |
 |**country** | **String** | Worker&#39;s country (location not nationality) |  [optional] |

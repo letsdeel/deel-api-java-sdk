@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * InvoiceAdjustmentApprover
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class InvoiceAdjustmentApprover {
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nonnull
   private String fullName;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nonnull
   private String email;
 
   public static final String SERIALIZED_NAME_APPROVED = "approved";
   @SerializedName(SERIALIZED_NAME_APPROVED)
+  @javax.annotation.Nonnull
   private Boolean approved;
 
   public InvoiceAdjustmentApprover() {
   }
 
-  public InvoiceAdjustmentApprover fullName(String fullName) {
+  public InvoiceAdjustmentApprover fullName(@javax.annotation.Nonnull String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -79,12 +82,12 @@ public class InvoiceAdjustmentApprover {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nonnull String fullName) {
     this.fullName = fullName;
   }
 
 
-  public InvoiceAdjustmentApprover email(String email) {
+  public InvoiceAdjustmentApprover email(@javax.annotation.Nonnull String email) {
     this.email = email;
     return this;
   }
@@ -98,12 +101,12 @@ public class InvoiceAdjustmentApprover {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nonnull String email) {
     this.email = email;
   }
 
 
-  public InvoiceAdjustmentApprover approved(Boolean approved) {
+  public InvoiceAdjustmentApprover approved(@javax.annotation.Nonnull Boolean approved) {
     this.approved = approved;
     return this;
   }
@@ -117,7 +120,7 @@ public class InvoiceAdjustmentApprover {
     return approved;
   }
 
-  public void setApproved(Boolean approved) {
+  public void setApproved(@javax.annotation.Nonnull Boolean approved) {
     this.approved = approved;
   }
 

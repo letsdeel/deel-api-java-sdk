@@ -53,40 +53,47 @@ import org.openapitools.client.JSON;
 /**
  * UpdatePeoplePersonalInformationByIdRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdatePeoplePersonalInformationByIdRequestData {
   public static final String SERIALIZED_NAME_WORK_EMAIL = "work_email";
   @SerializedName(SERIALIZED_NAME_WORK_EMAIL)
+  @javax.annotation.Nullable
   private String workEmail;
 
   public static final String SERIALIZED_NAME_DATE_OF_BIRTH = "date_of_birth";
   @SerializedName(SERIALIZED_NAME_DATE_OF_BIRTH)
+  @javax.annotation.Nullable
   private LocalDate dateOfBirth;
 
   public static final String SERIALIZED_NAME_PHONE_NUMBERS = "phone_numbers";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBERS)
+  @javax.annotation.Nullable
   private List<UpdatePeoplePersonalInformationByIdRequestDataPhoneNumbersInner> phoneNumbers = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PERSONAL_EMAIL = "personal_email";
   @SerializedName(SERIALIZED_NAME_PERSONAL_EMAIL)
+  @javax.annotation.Nullable
   private String personalEmail;
 
   public static final String SERIALIZED_NAME_PREFERRED_NAME = "preferred_name";
   @SerializedName(SERIALIZED_NAME_PREFERRED_NAME)
+  @javax.annotation.Nullable
   private String preferredName;
 
   public static final String SERIALIZED_NAME_LEGAL_LAST_NAME = "legal_last_name";
   @SerializedName(SERIALIZED_NAME_LEGAL_LAST_NAME)
+  @javax.annotation.Nullable
   private String legalLastName;
 
   public static final String SERIALIZED_NAME_LEGAL_FIRST_NAME = "legal_first_name";
   @SerializedName(SERIALIZED_NAME_LEGAL_FIRST_NAME)
+  @javax.annotation.Nullable
   private String legalFirstName;
 
   public UpdatePeoplePersonalInformationByIdRequestData() {
   }
 
-  public UpdatePeoplePersonalInformationByIdRequestData workEmail(String workEmail) {
+  public UpdatePeoplePersonalInformationByIdRequestData workEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
     return this;
   }
@@ -100,12 +107,12 @@ public class UpdatePeoplePersonalInformationByIdRequestData {
     return workEmail;
   }
 
-  public void setWorkEmail(String workEmail) {
+  public void setWorkEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
   }
 
 
-  public UpdatePeoplePersonalInformationByIdRequestData dateOfBirth(LocalDate dateOfBirth) {
+  public UpdatePeoplePersonalInformationByIdRequestData dateOfBirth(@javax.annotation.Nullable LocalDate dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
     return this;
   }
@@ -119,12 +126,12 @@ public class UpdatePeoplePersonalInformationByIdRequestData {
     return dateOfBirth;
   }
 
-  public void setDateOfBirth(LocalDate dateOfBirth) {
+  public void setDateOfBirth(@javax.annotation.Nullable LocalDate dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
   }
 
 
-  public UpdatePeoplePersonalInformationByIdRequestData phoneNumbers(List<UpdatePeoplePersonalInformationByIdRequestDataPhoneNumbersInner> phoneNumbers) {
+  public UpdatePeoplePersonalInformationByIdRequestData phoneNumbers(@javax.annotation.Nullable List<UpdatePeoplePersonalInformationByIdRequestDataPhoneNumbersInner> phoneNumbers) {
     this.phoneNumbers = phoneNumbers;
     return this;
   }
@@ -146,12 +153,12 @@ public class UpdatePeoplePersonalInformationByIdRequestData {
     return phoneNumbers;
   }
 
-  public void setPhoneNumbers(List<UpdatePeoplePersonalInformationByIdRequestDataPhoneNumbersInner> phoneNumbers) {
+  public void setPhoneNumbers(@javax.annotation.Nullable List<UpdatePeoplePersonalInformationByIdRequestDataPhoneNumbersInner> phoneNumbers) {
     this.phoneNumbers = phoneNumbers;
   }
 
 
-  public UpdatePeoplePersonalInformationByIdRequestData personalEmail(String personalEmail) {
+  public UpdatePeoplePersonalInformationByIdRequestData personalEmail(@javax.annotation.Nullable String personalEmail) {
     this.personalEmail = personalEmail;
     return this;
   }
@@ -165,12 +172,12 @@ public class UpdatePeoplePersonalInformationByIdRequestData {
     return personalEmail;
   }
 
-  public void setPersonalEmail(String personalEmail) {
+  public void setPersonalEmail(@javax.annotation.Nullable String personalEmail) {
     this.personalEmail = personalEmail;
   }
 
 
-  public UpdatePeoplePersonalInformationByIdRequestData preferredName(String preferredName) {
+  public UpdatePeoplePersonalInformationByIdRequestData preferredName(@javax.annotation.Nullable String preferredName) {
     this.preferredName = preferredName;
     return this;
   }
@@ -184,12 +191,12 @@ public class UpdatePeoplePersonalInformationByIdRequestData {
     return preferredName;
   }
 
-  public void setPreferredName(String preferredName) {
+  public void setPreferredName(@javax.annotation.Nullable String preferredName) {
     this.preferredName = preferredName;
   }
 
 
-  public UpdatePeoplePersonalInformationByIdRequestData legalLastName(String legalLastName) {
+  public UpdatePeoplePersonalInformationByIdRequestData legalLastName(@javax.annotation.Nullable String legalLastName) {
     this.legalLastName = legalLastName;
     return this;
   }
@@ -203,12 +210,12 @@ public class UpdatePeoplePersonalInformationByIdRequestData {
     return legalLastName;
   }
 
-  public void setLegalLastName(String legalLastName) {
+  public void setLegalLastName(@javax.annotation.Nullable String legalLastName) {
     this.legalLastName = legalLastName;
   }
 
 
-  public UpdatePeoplePersonalInformationByIdRequestData legalFirstName(String legalFirstName) {
+  public UpdatePeoplePersonalInformationByIdRequestData legalFirstName(@javax.annotation.Nullable String legalFirstName) {
     this.legalFirstName = legalFirstName;
     return this;
   }
@@ -222,7 +229,7 @@ public class UpdatePeoplePersonalInformationByIdRequestData {
     return legalFirstName;
   }
 
-  public void setLegalFirstName(String legalFirstName) {
+  public void setLegalFirstName(@javax.annotation.Nullable String legalFirstName) {
     this.legalFirstName = legalFirstName;
   }
 

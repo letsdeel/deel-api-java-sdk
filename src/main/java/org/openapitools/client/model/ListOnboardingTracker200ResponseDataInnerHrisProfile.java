@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * ListOnboardingTracker200ResponseDataInnerHrisProfile
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ListOnboardingTracker200ResponseDataInnerHrisProfile {
   public static final String SERIALIZED_NAME_OID = "oid";
   @SerializedName(SERIALIZED_NAME_OID)
+  @javax.annotation.Nullable
   private String oid;
 
   public static final String SERIALIZED_NAME_WORK_EMAIL = "work_email";
   @SerializedName(SERIALIZED_NAME_WORK_EMAIL)
+  @javax.annotation.Nullable
   private String workEmail;
 
   public ListOnboardingTracker200ResponseDataInnerHrisProfile() {
   }
 
-  public ListOnboardingTracker200ResponseDataInnerHrisProfile oid(String oid) {
+  public ListOnboardingTracker200ResponseDataInnerHrisProfile oid(@javax.annotation.Nullable String oid) {
     this.oid = oid;
     return this;
   }
@@ -75,12 +77,12 @@ public class ListOnboardingTracker200ResponseDataInnerHrisProfile {
     return oid;
   }
 
-  public void setOid(String oid) {
+  public void setOid(@javax.annotation.Nullable String oid) {
     this.oid = oid;
   }
 
 
-  public ListOnboardingTracker200ResponseDataInnerHrisProfile workEmail(String workEmail) {
+  public ListOnboardingTracker200ResponseDataInnerHrisProfile workEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
     return this;
   }
@@ -94,7 +96,7 @@ public class ListOnboardingTracker200ResponseDataInnerHrisProfile {
     return workEmail;
   }
 
-  public void setWorkEmail(String workEmail) {
+  public void setWorkEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
   }
 

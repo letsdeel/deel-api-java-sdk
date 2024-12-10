@@ -62,7 +62,7 @@ import com.google.gson.JsonParseException;
 
 import org.openapitools.client.JSON;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CustomFieldsObjectType extends AbstractOpenApiSchema {
     private static final Logger log = Logger.getLogger(CustomFieldsObjectType.class.getName());
 
@@ -237,6 +237,7 @@ public class CustomFieldsObjectType extends AbstractOpenApiSchema {
     public CustomFieldsObjectTypeOneOf getCustomFieldsObjectTypeOneOf() throws ClassCastException {
         return (CustomFieldsObjectTypeOneOf)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `CustomFieldsObjectTypeOneOf1`. If the actual instance is not `CustomFieldsObjectTypeOneOf1`,
      * the ClassCastException will be thrown.
@@ -247,6 +248,7 @@ public class CustomFieldsObjectType extends AbstractOpenApiSchema {
     public CustomFieldsObjectTypeOneOf1 getCustomFieldsObjectTypeOneOf1() throws ClassCastException {
         return (CustomFieldsObjectTypeOneOf1)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `CustomFieldsObjectTypeOneOf2`. If the actual instance is not `CustomFieldsObjectTypeOneOf2`,
      * the ClassCastException will be thrown.

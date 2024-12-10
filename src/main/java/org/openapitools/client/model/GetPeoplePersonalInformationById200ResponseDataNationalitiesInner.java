@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * GetPeoplePersonalInformationById200ResponseDataNationalitiesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPeoplePersonalInformationById200ResponseDataNationalitiesInner {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
+  @javax.annotation.Nonnull
   private String code;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public GetPeoplePersonalInformationById200ResponseDataNationalitiesInner() {
   }
 
-  public GetPeoplePersonalInformationById200ResponseDataNationalitiesInner code(String code) {
+  public GetPeoplePersonalInformationById200ResponseDataNationalitiesInner code(@javax.annotation.Nonnull String code) {
     this.code = code;
     return this;
   }
@@ -75,12 +77,12 @@ public class GetPeoplePersonalInformationById200ResponseDataNationalitiesInner {
     return code;
   }
 
-  public void setCode(String code) {
+  public void setCode(@javax.annotation.Nonnull String code) {
     this.code = code;
   }
 
 
-  public GetPeoplePersonalInformationById200ResponseDataNationalitiesInner name(String name) {
+  public GetPeoplePersonalInformationById200ResponseDataNationalitiesInner name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -94,7 +96,7 @@ public class GetPeoplePersonalInformationById200ResponseDataNationalitiesInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 

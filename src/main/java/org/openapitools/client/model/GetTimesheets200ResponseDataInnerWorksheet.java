@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * GetTimesheets200ResponseDataInnerWorksheet
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetTimesheets200ResponseDataInnerWorksheet {
   public static final String SERIALIZED_NAME_DAYS = "days";
   @SerializedName(SERIALIZED_NAME_DAYS)
+  @javax.annotation.Nonnull
   private BigDecimal days;
 
   public static final String SERIALIZED_NAME_HOURS = "hours";
   @SerializedName(SERIALIZED_NAME_HOURS)
+  @javax.annotation.Nonnull
   private BigDecimal hours;
 
   public static final String SERIALIZED_NAME_WEEKS = "weeks";
   @SerializedName(SERIALIZED_NAME_WEEKS)
+  @javax.annotation.Nonnull
   private BigDecimal weeks;
 
   public static final String SERIALIZED_NAME_MINUTES = "minutes";
   @SerializedName(SERIALIZED_NAME_MINUTES)
+  @javax.annotation.Nonnull
   private BigDecimal minutes;
 
   public GetTimesheets200ResponseDataInnerWorksheet() {
   }
 
-  public GetTimesheets200ResponseDataInnerWorksheet days(BigDecimal days) {
+  public GetTimesheets200ResponseDataInnerWorksheet days(@javax.annotation.Nonnull BigDecimal days) {
     this.days = days;
     return this;
   }
@@ -85,12 +89,12 @@ public class GetTimesheets200ResponseDataInnerWorksheet {
     return days;
   }
 
-  public void setDays(BigDecimal days) {
+  public void setDays(@javax.annotation.Nonnull BigDecimal days) {
     this.days = days;
   }
 
 
-  public GetTimesheets200ResponseDataInnerWorksheet hours(BigDecimal hours) {
+  public GetTimesheets200ResponseDataInnerWorksheet hours(@javax.annotation.Nonnull BigDecimal hours) {
     this.hours = hours;
     return this;
   }
@@ -105,12 +109,12 @@ public class GetTimesheets200ResponseDataInnerWorksheet {
     return hours;
   }
 
-  public void setHours(BigDecimal hours) {
+  public void setHours(@javax.annotation.Nonnull BigDecimal hours) {
     this.hours = hours;
   }
 
 
-  public GetTimesheets200ResponseDataInnerWorksheet weeks(BigDecimal weeks) {
+  public GetTimesheets200ResponseDataInnerWorksheet weeks(@javax.annotation.Nonnull BigDecimal weeks) {
     this.weeks = weeks;
     return this;
   }
@@ -125,12 +129,12 @@ public class GetTimesheets200ResponseDataInnerWorksheet {
     return weeks;
   }
 
-  public void setWeeks(BigDecimal weeks) {
+  public void setWeeks(@javax.annotation.Nonnull BigDecimal weeks) {
     this.weeks = weeks;
   }
 
 
-  public GetTimesheets200ResponseDataInnerWorksheet minutes(BigDecimal minutes) {
+  public GetTimesheets200ResponseDataInnerWorksheet minutes(@javax.annotation.Nonnull BigDecimal minutes) {
     this.minutes = minutes;
     return this;
   }
@@ -145,7 +149,7 @@ public class GetTimesheets200ResponseDataInnerWorksheet {
     return minutes;
   }
 
-  public void setMinutes(BigDecimal minutes) {
+  public void setMinutes(@javax.annotation.Nonnull BigDecimal minutes) {
     this.minutes = minutes;
   }
 

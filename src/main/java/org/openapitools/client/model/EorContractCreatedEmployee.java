@@ -48,28 +48,32 @@ import org.openapitools.client.JSON;
 /**
  * EorContractCreatedEmployee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorContractCreatedEmployee {
   public static final String SERIALIZED_NAME_LEGAL_NAME = "legal_name";
   @SerializedName(SERIALIZED_NAME_LEGAL_NAME)
+  @javax.annotation.Nullable
   private String legalName;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public EorContractCreatedEmployee() {
   }
 
-  public EorContractCreatedEmployee legalName(String legalName) {
+  public EorContractCreatedEmployee legalName(@javax.annotation.Nullable String legalName) {
     this.legalName = legalName;
     return this;
   }
@@ -83,12 +87,12 @@ public class EorContractCreatedEmployee {
     return legalName;
   }
 
-  public void setLegalName(String legalName) {
+  public void setLegalName(@javax.annotation.Nullable String legalName) {
     this.legalName = legalName;
   }
 
 
-  public EorContractCreatedEmployee firstName(String firstName) {
+  public EorContractCreatedEmployee firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -102,12 +106,12 @@ public class EorContractCreatedEmployee {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public EorContractCreatedEmployee lastName(String lastName) {
+  public EorContractCreatedEmployee lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -121,12 +125,12 @@ public class EorContractCreatedEmployee {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
 
-  public EorContractCreatedEmployee email(String email) {
+  public EorContractCreatedEmployee email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -140,7 +144,7 @@ public class EorContractCreatedEmployee {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 

@@ -58,62 +58,76 @@ import org.openapitools.client.JSON;
 /**
  * ContractToCreatePayAsYouGoTimeBased
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ContractToCreatePayAsYouGoTimeBased {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nonnull
   private String title;
 
   public static final String SERIALIZED_NAME_COUNTRY_CODE = "country_code";
   @SerializedName(SERIALIZED_NAME_COUNTRY_CODE)
+  @javax.annotation.Nullable
   private String countryCode;
 
   public static final String SERIALIZED_NAME_STATE_CODE = "state_code";
   @SerializedName(SERIALIZED_NAME_STATE_CODE)
+  @javax.annotation.Nullable
   private String stateCode;
 
   public static final String SERIALIZED_NAME_SCOPE_OF_WORK = "scope_of_work";
   @SerializedName(SERIALIZED_NAME_SCOPE_OF_WORK)
+  @javax.annotation.Nullable
   private String scopeOfWork;
 
   public static final String SERIALIZED_NAME_SPECIAL_CLAUSE = "special_clause";
   @SerializedName(SERIALIZED_NAME_SPECIAL_CLAUSE)
+  @javax.annotation.Nullable
   private String specialClause;
 
   public static final String SERIALIZED_NAME_TERMINATION_DATE = "termination_date";
   @SerializedName(SERIALIZED_NAME_TERMINATION_DATE)
+  @javax.annotation.Nullable
   private LocalDate terminationDate;
 
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
+  @javax.annotation.Nonnull
   private ContractToCreateSharedClient client;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nonnull
   private ContractToCreateSharedJobTitle jobTitle;
 
   public static final String SERIALIZED_NAME_SENIORITY = "seniority";
   @SerializedName(SERIALIZED_NAME_SENIORITY)
+  @javax.annotation.Nullable
   private ContractToCreateSharedSeniority seniority;
 
   public static final String SERIALIZED_NAME_NOTICE_PERIOD = "notice_period";
   @SerializedName(SERIALIZED_NAME_NOTICE_PERIOD)
+  @javax.annotation.Nullable
   private BigDecimal noticePeriod = new BigDecimal("0");
 
   public static final String SERIALIZED_NAME_WHO_REPORTS = "who_reports";
   @SerializedName(SERIALIZED_NAME_WHO_REPORTS)
+  @javax.annotation.Nullable
   private ContractWhoReportsEnum whoReports;
 
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
+  @javax.annotation.Nonnull
   private MetaDataOfContractToCreate meta;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_WORKER = "worker";
   @SerializedName(SERIALIZED_NAME_WORKER)
+  @javax.annotation.Nullable
   private ContractToCreateSharedWorker worker;
 
   /**
@@ -168,20 +182,23 @@ public class ContractToCreatePayAsYouGoTimeBased {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private LocalDate startDate;
 
   public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
   @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
+  @javax.annotation.Nonnull
   private ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails compensationDetails;
 
   public ContractToCreatePayAsYouGoTimeBased() {
   }
 
-  public ContractToCreatePayAsYouGoTimeBased title(String title) {
+  public ContractToCreatePayAsYouGoTimeBased title(@javax.annotation.Nonnull String title) {
     this.title = title;
     return this;
   }
@@ -195,12 +212,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nonnull String title) {
     this.title = title;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased countryCode(String countryCode) {
+  public ContractToCreatePayAsYouGoTimeBased countryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -214,12 +231,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased stateCode(String stateCode) {
+  public ContractToCreatePayAsYouGoTimeBased stateCode(@javax.annotation.Nullable String stateCode) {
     this.stateCode = stateCode;
     return this;
   }
@@ -233,12 +250,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return stateCode;
   }
 
-  public void setStateCode(String stateCode) {
+  public void setStateCode(@javax.annotation.Nullable String stateCode) {
     this.stateCode = stateCode;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased scopeOfWork(String scopeOfWork) {
+  public ContractToCreatePayAsYouGoTimeBased scopeOfWork(@javax.annotation.Nullable String scopeOfWork) {
     this.scopeOfWork = scopeOfWork;
     return this;
   }
@@ -252,12 +269,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return scopeOfWork;
   }
 
-  public void setScopeOfWork(String scopeOfWork) {
+  public void setScopeOfWork(@javax.annotation.Nullable String scopeOfWork) {
     this.scopeOfWork = scopeOfWork;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased specialClause(String specialClause) {
+  public ContractToCreatePayAsYouGoTimeBased specialClause(@javax.annotation.Nullable String specialClause) {
     this.specialClause = specialClause;
     return this;
   }
@@ -271,12 +288,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return specialClause;
   }
 
-  public void setSpecialClause(String specialClause) {
+  public void setSpecialClause(@javax.annotation.Nullable String specialClause) {
     this.specialClause = specialClause;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased terminationDate(LocalDate terminationDate) {
+  public ContractToCreatePayAsYouGoTimeBased terminationDate(@javax.annotation.Nullable LocalDate terminationDate) {
     this.terminationDate = terminationDate;
     return this;
   }
@@ -290,12 +307,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return terminationDate;
   }
 
-  public void setTerminationDate(LocalDate terminationDate) {
+  public void setTerminationDate(@javax.annotation.Nullable LocalDate terminationDate) {
     this.terminationDate = terminationDate;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased client(ContractToCreateSharedClient client) {
+  public ContractToCreatePayAsYouGoTimeBased client(@javax.annotation.Nonnull ContractToCreateSharedClient client) {
     this.client = client;
     return this;
   }
@@ -309,12 +326,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return client;
   }
 
-  public void setClient(ContractToCreateSharedClient client) {
+  public void setClient(@javax.annotation.Nonnull ContractToCreateSharedClient client) {
     this.client = client;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased jobTitle(ContractToCreateSharedJobTitle jobTitle) {
+  public ContractToCreatePayAsYouGoTimeBased jobTitle(@javax.annotation.Nonnull ContractToCreateSharedJobTitle jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -328,12 +345,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return jobTitle;
   }
 
-  public void setJobTitle(ContractToCreateSharedJobTitle jobTitle) {
+  public void setJobTitle(@javax.annotation.Nonnull ContractToCreateSharedJobTitle jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased seniority(ContractToCreateSharedSeniority seniority) {
+  public ContractToCreatePayAsYouGoTimeBased seniority(@javax.annotation.Nullable ContractToCreateSharedSeniority seniority) {
     this.seniority = seniority;
     return this;
   }
@@ -347,12 +364,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return seniority;
   }
 
-  public void setSeniority(ContractToCreateSharedSeniority seniority) {
+  public void setSeniority(@javax.annotation.Nullable ContractToCreateSharedSeniority seniority) {
     this.seniority = seniority;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased noticePeriod(BigDecimal noticePeriod) {
+  public ContractToCreatePayAsYouGoTimeBased noticePeriod(@javax.annotation.Nullable BigDecimal noticePeriod) {
     this.noticePeriod = noticePeriod;
     return this;
   }
@@ -367,12 +384,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return noticePeriod;
   }
 
-  public void setNoticePeriod(BigDecimal noticePeriod) {
+  public void setNoticePeriod(@javax.annotation.Nullable BigDecimal noticePeriod) {
     this.noticePeriod = noticePeriod;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased whoReports(ContractWhoReportsEnum whoReports) {
+  public ContractToCreatePayAsYouGoTimeBased whoReports(@javax.annotation.Nullable ContractWhoReportsEnum whoReports) {
     this.whoReports = whoReports;
     return this;
   }
@@ -386,12 +403,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return whoReports;
   }
 
-  public void setWhoReports(ContractWhoReportsEnum whoReports) {
+  public void setWhoReports(@javax.annotation.Nullable ContractWhoReportsEnum whoReports) {
     this.whoReports = whoReports;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased meta(MetaDataOfContractToCreate meta) {
+  public ContractToCreatePayAsYouGoTimeBased meta(@javax.annotation.Nonnull MetaDataOfContractToCreate meta) {
     this.meta = meta;
     return this;
   }
@@ -405,12 +422,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return meta;
   }
 
-  public void setMeta(MetaDataOfContractToCreate meta) {
+  public void setMeta(@javax.annotation.Nonnull MetaDataOfContractToCreate meta) {
     this.meta = meta;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased externalId(String externalId) {
+  public ContractToCreatePayAsYouGoTimeBased externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -424,12 +441,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased worker(ContractToCreateSharedWorker worker) {
+  public ContractToCreatePayAsYouGoTimeBased worker(@javax.annotation.Nullable ContractToCreateSharedWorker worker) {
     this.worker = worker;
     return this;
   }
@@ -443,12 +460,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return worker;
   }
 
-  public void setWorker(ContractToCreateSharedWorker worker) {
+  public void setWorker(@javax.annotation.Nullable ContractToCreateSharedWorker worker) {
     this.worker = worker;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased type(TypeEnum type) {
+  public ContractToCreatePayAsYouGoTimeBased type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -462,12 +479,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased startDate(LocalDate startDate) {
+  public ContractToCreatePayAsYouGoTimeBased startDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -481,12 +498,12 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBased compensationDetails(ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails compensationDetails) {
+  public ContractToCreatePayAsYouGoTimeBased compensationDetails(@javax.annotation.Nonnull ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
     return this;
   }
@@ -500,7 +517,7 @@ public class ContractToCreatePayAsYouGoTimeBased {
     return compensationDetails;
   }
 
-  public void setCompensationDetails(ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails compensationDetails) {
+  public void setCompensationDetails(@javax.annotation.Nonnull ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
   }
 

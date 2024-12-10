@@ -50,18 +50,21 @@ import org.openapitools.client.JSON;
 /**
  * CustomFieldValuesContainerDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CustomFieldValuesContainerDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nullable
   private CustomFieldValuesContainerDataInnerData data;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   /**
@@ -128,12 +131,13 @@ public class CustomFieldValuesContainerDataInner {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public CustomFieldValuesContainerDataInner() {
   }
 
-  public CustomFieldValuesContainerDataInner id(UUID id) {
+  public CustomFieldValuesContainerDataInner id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -147,12 +151,12 @@ public class CustomFieldValuesContainerDataInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public CustomFieldValuesContainerDataInner data(CustomFieldValuesContainerDataInnerData data) {
+  public CustomFieldValuesContainerDataInner data(@javax.annotation.Nullable CustomFieldValuesContainerDataInnerData data) {
     this.data = data;
     return this;
   }
@@ -166,12 +170,12 @@ public class CustomFieldValuesContainerDataInner {
     return data;
   }
 
-  public void setData(CustomFieldValuesContainerDataInnerData data) {
+  public void setData(@javax.annotation.Nullable CustomFieldValuesContainerDataInnerData data) {
     this.data = data;
   }
 
 
-  public CustomFieldValuesContainerDataInner name(String name) {
+  public CustomFieldValuesContainerDataInner name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -185,12 +189,12 @@ public class CustomFieldValuesContainerDataInner {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public CustomFieldValuesContainerDataInner type(TypeEnum type) {
+  public CustomFieldValuesContainerDataInner type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -204,7 +208,7 @@ public class CustomFieldValuesContainerDataInner {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 

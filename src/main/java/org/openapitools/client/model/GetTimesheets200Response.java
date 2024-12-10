@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * GetTimesheets200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetTimesheets200Response {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private List<GetTimesheets200ResponseDataInner> data = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAGE = "page";
   @SerializedName(SERIALIZED_NAME_PAGE)
+  @javax.annotation.Nonnull
   private GetTimesheets200ResponsePage page;
 
   public GetTimesheets200Response() {
   }
 
-  public GetTimesheets200Response data(List<GetTimesheets200ResponseDataInner> data) {
+  public GetTimesheets200Response data(@javax.annotation.Nonnull List<GetTimesheets200ResponseDataInner> data) {
     this.data = data;
     return this;
   }
@@ -87,12 +89,12 @@ public class GetTimesheets200Response {
     return data;
   }
 
-  public void setData(List<GetTimesheets200ResponseDataInner> data) {
+  public void setData(@javax.annotation.Nonnull List<GetTimesheets200ResponseDataInner> data) {
     this.data = data;
   }
 
 
-  public GetTimesheets200Response page(GetTimesheets200ResponsePage page) {
+  public GetTimesheets200Response page(@javax.annotation.Nonnull GetTimesheets200ResponsePage page) {
     this.page = page;
     return this;
   }
@@ -106,7 +108,7 @@ public class GetTimesheets200Response {
     return page;
   }
 
-  public void setPage(GetTimesheets200ResponsePage page) {
+  public void setPage(@javax.annotation.Nonnull GetTimesheets200ResponsePage page) {
     this.page = page;
   }
 

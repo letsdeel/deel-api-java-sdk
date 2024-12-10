@@ -49,64 +49,77 @@ import org.openapitools.client.JSON;
 /**
  * EmployeePayslipsList
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EmployeePayslipsList {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_FROM = "from";
   @SerializedName(SERIALIZED_NAME_FROM)
+  @javax.annotation.Nonnull
   private OffsetDateTime from;
 
   public static final String SERIALIZED_NAME_TO = "to";
   @SerializedName(SERIALIZED_NAME_TO)
+  @javax.annotation.Nonnull
   private OffsetDateTime to;
 
   public static final String SERIALIZED_NAME_FILENAME = "filename";
   @SerializedName(SERIALIZED_NAME_FILENAME)
+  @javax.annotation.Nonnull
   private String filename;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private String status;
 
   public static final String SERIALIZED_NAME_REJECTED_AT = "rejected_at";
   @SerializedName(SERIALIZED_NAME_REJECTED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime rejectedAt;
 
   public static final String SERIALIZED_NAME_REJECT_REASON = "reject_reason";
   @SerializedName(SERIALIZED_NAME_REJECT_REASON)
+  @javax.annotation.Nonnull
   private String rejectReason;
 
   public static final String SERIALIZED_NAME_UPLOADED_AT = "uploaded_at";
   @SerializedName(SERIALIZED_NAME_UPLOADED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime uploadedAt;
 
   public static final String SERIALIZED_NAME_PUBLISHED_AT = "published_at";
   @SerializedName(SERIALIZED_NAME_PUBLISHED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime publishedAt;
 
   public static final String SERIALIZED_NAME_SCHEDULE_PUBLISHING_DATE = "schedule_publishing_date";
   @SerializedName(SERIALIZED_NAME_SCHEDULE_PUBLISHING_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime schedulePublishingDate;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime updatedAt;
 
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
+  @javax.annotation.Nonnull
   private String url;
 
   public EmployeePayslipsList() {
   }
 
-  public EmployeePayslipsList id(String id) {
+  public EmployeePayslipsList id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -120,12 +133,12 @@ public class EmployeePayslipsList {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public EmployeePayslipsList from(OffsetDateTime from) {
+  public EmployeePayslipsList from(@javax.annotation.Nonnull OffsetDateTime from) {
     this.from = from;
     return this;
   }
@@ -139,12 +152,12 @@ public class EmployeePayslipsList {
     return from;
   }
 
-  public void setFrom(OffsetDateTime from) {
+  public void setFrom(@javax.annotation.Nonnull OffsetDateTime from) {
     this.from = from;
   }
 
 
-  public EmployeePayslipsList to(OffsetDateTime to) {
+  public EmployeePayslipsList to(@javax.annotation.Nonnull OffsetDateTime to) {
     this.to = to;
     return this;
   }
@@ -158,12 +171,12 @@ public class EmployeePayslipsList {
     return to;
   }
 
-  public void setTo(OffsetDateTime to) {
+  public void setTo(@javax.annotation.Nonnull OffsetDateTime to) {
     this.to = to;
   }
 
 
-  public EmployeePayslipsList filename(String filename) {
+  public EmployeePayslipsList filename(@javax.annotation.Nonnull String filename) {
     this.filename = filename;
     return this;
   }
@@ -177,12 +190,12 @@ public class EmployeePayslipsList {
     return filename;
   }
 
-  public void setFilename(String filename) {
+  public void setFilename(@javax.annotation.Nonnull String filename) {
     this.filename = filename;
   }
 
 
-  public EmployeePayslipsList status(String status) {
+  public EmployeePayslipsList status(@javax.annotation.Nonnull String status) {
     this.status = status;
     return this;
   }
@@ -196,12 +209,12 @@ public class EmployeePayslipsList {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nonnull String status) {
     this.status = status;
   }
 
 
-  public EmployeePayslipsList rejectedAt(OffsetDateTime rejectedAt) {
+  public EmployeePayslipsList rejectedAt(@javax.annotation.Nonnull OffsetDateTime rejectedAt) {
     this.rejectedAt = rejectedAt;
     return this;
   }
@@ -215,12 +228,12 @@ public class EmployeePayslipsList {
     return rejectedAt;
   }
 
-  public void setRejectedAt(OffsetDateTime rejectedAt) {
+  public void setRejectedAt(@javax.annotation.Nonnull OffsetDateTime rejectedAt) {
     this.rejectedAt = rejectedAt;
   }
 
 
-  public EmployeePayslipsList rejectReason(String rejectReason) {
+  public EmployeePayslipsList rejectReason(@javax.annotation.Nonnull String rejectReason) {
     this.rejectReason = rejectReason;
     return this;
   }
@@ -234,12 +247,12 @@ public class EmployeePayslipsList {
     return rejectReason;
   }
 
-  public void setRejectReason(String rejectReason) {
+  public void setRejectReason(@javax.annotation.Nonnull String rejectReason) {
     this.rejectReason = rejectReason;
   }
 
 
-  public EmployeePayslipsList uploadedAt(OffsetDateTime uploadedAt) {
+  public EmployeePayslipsList uploadedAt(@javax.annotation.Nonnull OffsetDateTime uploadedAt) {
     this.uploadedAt = uploadedAt;
     return this;
   }
@@ -253,12 +266,12 @@ public class EmployeePayslipsList {
     return uploadedAt;
   }
 
-  public void setUploadedAt(OffsetDateTime uploadedAt) {
+  public void setUploadedAt(@javax.annotation.Nonnull OffsetDateTime uploadedAt) {
     this.uploadedAt = uploadedAt;
   }
 
 
-  public EmployeePayslipsList publishedAt(OffsetDateTime publishedAt) {
+  public EmployeePayslipsList publishedAt(@javax.annotation.Nonnull OffsetDateTime publishedAt) {
     this.publishedAt = publishedAt;
     return this;
   }
@@ -272,12 +285,12 @@ public class EmployeePayslipsList {
     return publishedAt;
   }
 
-  public void setPublishedAt(OffsetDateTime publishedAt) {
+  public void setPublishedAt(@javax.annotation.Nonnull OffsetDateTime publishedAt) {
     this.publishedAt = publishedAt;
   }
 
 
-  public EmployeePayslipsList schedulePublishingDate(OffsetDateTime schedulePublishingDate) {
+  public EmployeePayslipsList schedulePublishingDate(@javax.annotation.Nonnull OffsetDateTime schedulePublishingDate) {
     this.schedulePublishingDate = schedulePublishingDate;
     return this;
   }
@@ -291,12 +304,12 @@ public class EmployeePayslipsList {
     return schedulePublishingDate;
   }
 
-  public void setSchedulePublishingDate(OffsetDateTime schedulePublishingDate) {
+  public void setSchedulePublishingDate(@javax.annotation.Nonnull OffsetDateTime schedulePublishingDate) {
     this.schedulePublishingDate = schedulePublishingDate;
   }
 
 
-  public EmployeePayslipsList createdAt(OffsetDateTime createdAt) {
+  public EmployeePayslipsList createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -310,12 +323,12 @@ public class EmployeePayslipsList {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public EmployeePayslipsList updatedAt(OffsetDateTime updatedAt) {
+  public EmployeePayslipsList updatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -329,12 +342,12 @@ public class EmployeePayslipsList {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public EmployeePayslipsList url(String url) {
+  public EmployeePayslipsList url(@javax.annotation.Nonnull String url) {
     this.url = url;
     return this;
   }
@@ -348,7 +361,7 @@ public class EmployeePayslipsList {
     return url;
   }
 
-  public void setUrl(String url) {
+  public void setUrl(@javax.annotation.Nonnull String url) {
     this.url = url;
   }
 

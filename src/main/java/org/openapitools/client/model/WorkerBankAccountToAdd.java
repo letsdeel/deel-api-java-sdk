@@ -48,104 +48,127 @@ import org.openapitools.client.JSON;
 /**
  * WorkerBankAccountToAdd
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class WorkerBankAccountToAdd {
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nullable
   private String fullName;
 
   public static final String SERIALIZED_NAME_PHONE = "phone";
   @SerializedName(SERIALIZED_NAME_PHONE)
+  @javax.annotation.Nullable
   private String phone;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE1 = "address_line1";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE1)
+  @javax.annotation.Nullable
   private String addressLine1;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE2 = "address_line2";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE2)
+  @javax.annotation.Nullable
   private String addressLine2;
 
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
+  @javax.annotation.Nullable
   private String city;
 
   public static final String SERIALIZED_NAME_PROVINCE_STATE = "province_state";
   @SerializedName(SERIALIZED_NAME_PROVINCE_STATE)
+  @javax.annotation.Nullable
   private String provinceState;
 
   public static final String SERIALIZED_NAME_POSTAL = "postal";
   @SerializedName(SERIALIZED_NAME_POSTAL)
+  @javax.annotation.Nullable
   private String postal;
 
   public static final String SERIALIZED_NAME_BANK_NAME = "bank_name";
   @SerializedName(SERIALIZED_NAME_BANK_NAME)
+  @javax.annotation.Nullable
   private String bankName;
 
   public static final String SERIALIZED_NAME_COUNTRY_CODE = "country_code";
   @SerializedName(SERIALIZED_NAME_COUNTRY_CODE)
+  @javax.annotation.Nullable
   private String countryCode;
 
   public static final String SERIALIZED_NAME_BANK_COUNTRY_CODE = "bank_country_code";
   @SerializedName(SERIALIZED_NAME_BANK_COUNTRY_CODE)
+  @javax.annotation.Nullable
   private String bankCountryCode;
 
   public static final String SERIALIZED_NAME_SWIFT_BIC = "swift_bic";
   @SerializedName(SERIALIZED_NAME_SWIFT_BIC)
+  @javax.annotation.Nullable
   private String swiftBic;
 
   public static final String SERIALIZED_NAME_ACCOUNT_NUMBER = "account_number";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_NUMBER)
+  @javax.annotation.Nullable
   private String accountNumber;
 
   public static final String SERIALIZED_NAME_BANK_CODE = "bank_code";
   @SerializedName(SERIALIZED_NAME_BANK_CODE)
+  @javax.annotation.Nullable
   private String bankCode;
 
   public static final String SERIALIZED_NAME_ORIGINAL_NAME = "original_name";
   @SerializedName(SERIALIZED_NAME_ORIGINAL_NAME)
+  @javax.annotation.Nullable
   private String originalName;
 
   public static final String SERIALIZED_NAME_TAX_ID = "tax_id";
   @SerializedName(SERIALIZED_NAME_TAX_ID)
+  @javax.annotation.Nullable
   private String taxId;
 
   public static final String SERIALIZED_NAME_BRANCH_CODE = "branch_code";
   @SerializedName(SERIALIZED_NAME_BRANCH_CODE)
+  @javax.annotation.Nullable
   private String branchCode;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currency_code";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nullable
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_BANK_BRANCH_NAME = "bank_branch_name";
   @SerializedName(SERIALIZED_NAME_BANK_BRANCH_NAME)
+  @javax.annotation.Nullable
   private String bankBranchName;
 
   public static final String SERIALIZED_NAME_IBAN = "iban";
   @SerializedName(SERIALIZED_NAME_IBAN)
+  @javax.annotation.Nullable
   private String iban;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_RIB_NUMBER = "rib_number";
   @SerializedName(SERIALIZED_NAME_RIB_NUMBER)
+  @javax.annotation.Nullable
   private String ribNumber;
 
   public static final String SERIALIZED_NAME_ACCOUNT_TYPE = "account_type";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_TYPE)
+  @javax.annotation.Nullable
   private String accountType;
 
   public static final String SERIALIZED_NAME_ACH_ROUTING_NUMBER = "ach_routing_number";
   @SerializedName(SERIALIZED_NAME_ACH_ROUTING_NUMBER)
+  @javax.annotation.Nullable
   private String achRoutingNumber;
 
   public WorkerBankAccountToAdd() {
   }
 
-  public WorkerBankAccountToAdd fullName(String fullName) {
+  public WorkerBankAccountToAdd fullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -159,12 +182,12 @@ public class WorkerBankAccountToAdd {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
   }
 
 
-  public WorkerBankAccountToAdd phone(String phone) {
+  public WorkerBankAccountToAdd phone(@javax.annotation.Nullable String phone) {
     this.phone = phone;
     return this;
   }
@@ -178,12 +201,12 @@ public class WorkerBankAccountToAdd {
     return phone;
   }
 
-  public void setPhone(String phone) {
+  public void setPhone(@javax.annotation.Nullable String phone) {
     this.phone = phone;
   }
 
 
-  public WorkerBankAccountToAdd addressLine1(String addressLine1) {
+  public WorkerBankAccountToAdd addressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
     return this;
   }
@@ -197,12 +220,12 @@ public class WorkerBankAccountToAdd {
     return addressLine1;
   }
 
-  public void setAddressLine1(String addressLine1) {
+  public void setAddressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
   }
 
 
-  public WorkerBankAccountToAdd addressLine2(String addressLine2) {
+  public WorkerBankAccountToAdd addressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
     return this;
   }
@@ -216,12 +239,12 @@ public class WorkerBankAccountToAdd {
     return addressLine2;
   }
 
-  public void setAddressLine2(String addressLine2) {
+  public void setAddressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
   }
 
 
-  public WorkerBankAccountToAdd city(String city) {
+  public WorkerBankAccountToAdd city(@javax.annotation.Nullable String city) {
     this.city = city;
     return this;
   }
@@ -235,12 +258,12 @@ public class WorkerBankAccountToAdd {
     return city;
   }
 
-  public void setCity(String city) {
+  public void setCity(@javax.annotation.Nullable String city) {
     this.city = city;
   }
 
 
-  public WorkerBankAccountToAdd provinceState(String provinceState) {
+  public WorkerBankAccountToAdd provinceState(@javax.annotation.Nullable String provinceState) {
     this.provinceState = provinceState;
     return this;
   }
@@ -254,12 +277,12 @@ public class WorkerBankAccountToAdd {
     return provinceState;
   }
 
-  public void setProvinceState(String provinceState) {
+  public void setProvinceState(@javax.annotation.Nullable String provinceState) {
     this.provinceState = provinceState;
   }
 
 
-  public WorkerBankAccountToAdd postal(String postal) {
+  public WorkerBankAccountToAdd postal(@javax.annotation.Nullable String postal) {
     this.postal = postal;
     return this;
   }
@@ -273,12 +296,12 @@ public class WorkerBankAccountToAdd {
     return postal;
   }
 
-  public void setPostal(String postal) {
+  public void setPostal(@javax.annotation.Nullable String postal) {
     this.postal = postal;
   }
 
 
-  public WorkerBankAccountToAdd bankName(String bankName) {
+  public WorkerBankAccountToAdd bankName(@javax.annotation.Nullable String bankName) {
     this.bankName = bankName;
     return this;
   }
@@ -292,12 +315,12 @@ public class WorkerBankAccountToAdd {
     return bankName;
   }
 
-  public void setBankName(String bankName) {
+  public void setBankName(@javax.annotation.Nullable String bankName) {
     this.bankName = bankName;
   }
 
 
-  public WorkerBankAccountToAdd countryCode(String countryCode) {
+  public WorkerBankAccountToAdd countryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
@@ -311,12 +334,12 @@ public class WorkerBankAccountToAdd {
     return countryCode;
   }
 
-  public void setCountryCode(String countryCode) {
+  public void setCountryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
   }
 
 
-  public WorkerBankAccountToAdd bankCountryCode(String bankCountryCode) {
+  public WorkerBankAccountToAdd bankCountryCode(@javax.annotation.Nullable String bankCountryCode) {
     this.bankCountryCode = bankCountryCode;
     return this;
   }
@@ -330,12 +353,12 @@ public class WorkerBankAccountToAdd {
     return bankCountryCode;
   }
 
-  public void setBankCountryCode(String bankCountryCode) {
+  public void setBankCountryCode(@javax.annotation.Nullable String bankCountryCode) {
     this.bankCountryCode = bankCountryCode;
   }
 
 
-  public WorkerBankAccountToAdd swiftBic(String swiftBic) {
+  public WorkerBankAccountToAdd swiftBic(@javax.annotation.Nullable String swiftBic) {
     this.swiftBic = swiftBic;
     return this;
   }
@@ -349,12 +372,12 @@ public class WorkerBankAccountToAdd {
     return swiftBic;
   }
 
-  public void setSwiftBic(String swiftBic) {
+  public void setSwiftBic(@javax.annotation.Nullable String swiftBic) {
     this.swiftBic = swiftBic;
   }
 
 
-  public WorkerBankAccountToAdd accountNumber(String accountNumber) {
+  public WorkerBankAccountToAdd accountNumber(@javax.annotation.Nullable String accountNumber) {
     this.accountNumber = accountNumber;
     return this;
   }
@@ -368,12 +391,12 @@ public class WorkerBankAccountToAdd {
     return accountNumber;
   }
 
-  public void setAccountNumber(String accountNumber) {
+  public void setAccountNumber(@javax.annotation.Nullable String accountNumber) {
     this.accountNumber = accountNumber;
   }
 
 
-  public WorkerBankAccountToAdd bankCode(String bankCode) {
+  public WorkerBankAccountToAdd bankCode(@javax.annotation.Nullable String bankCode) {
     this.bankCode = bankCode;
     return this;
   }
@@ -387,12 +410,12 @@ public class WorkerBankAccountToAdd {
     return bankCode;
   }
 
-  public void setBankCode(String bankCode) {
+  public void setBankCode(@javax.annotation.Nullable String bankCode) {
     this.bankCode = bankCode;
   }
 
 
-  public WorkerBankAccountToAdd originalName(String originalName) {
+  public WorkerBankAccountToAdd originalName(@javax.annotation.Nullable String originalName) {
     this.originalName = originalName;
     return this;
   }
@@ -406,12 +429,12 @@ public class WorkerBankAccountToAdd {
     return originalName;
   }
 
-  public void setOriginalName(String originalName) {
+  public void setOriginalName(@javax.annotation.Nullable String originalName) {
     this.originalName = originalName;
   }
 
 
-  public WorkerBankAccountToAdd taxId(String taxId) {
+  public WorkerBankAccountToAdd taxId(@javax.annotation.Nullable String taxId) {
     this.taxId = taxId;
     return this;
   }
@@ -425,12 +448,12 @@ public class WorkerBankAccountToAdd {
     return taxId;
   }
 
-  public void setTaxId(String taxId) {
+  public void setTaxId(@javax.annotation.Nullable String taxId) {
     this.taxId = taxId;
   }
 
 
-  public WorkerBankAccountToAdd branchCode(String branchCode) {
+  public WorkerBankAccountToAdd branchCode(@javax.annotation.Nullable String branchCode) {
     this.branchCode = branchCode;
     return this;
   }
@@ -444,12 +467,12 @@ public class WorkerBankAccountToAdd {
     return branchCode;
   }
 
-  public void setBranchCode(String branchCode) {
+  public void setBranchCode(@javax.annotation.Nullable String branchCode) {
     this.branchCode = branchCode;
   }
 
 
-  public WorkerBankAccountToAdd currencyCode(String currencyCode) {
+  public WorkerBankAccountToAdd currencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -463,12 +486,12 @@ public class WorkerBankAccountToAdd {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nullable String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public WorkerBankAccountToAdd bankBranchName(String bankBranchName) {
+  public WorkerBankAccountToAdd bankBranchName(@javax.annotation.Nullable String bankBranchName) {
     this.bankBranchName = bankBranchName;
     return this;
   }
@@ -482,12 +505,12 @@ public class WorkerBankAccountToAdd {
     return bankBranchName;
   }
 
-  public void setBankBranchName(String bankBranchName) {
+  public void setBankBranchName(@javax.annotation.Nullable String bankBranchName) {
     this.bankBranchName = bankBranchName;
   }
 
 
-  public WorkerBankAccountToAdd iban(String iban) {
+  public WorkerBankAccountToAdd iban(@javax.annotation.Nullable String iban) {
     this.iban = iban;
     return this;
   }
@@ -501,12 +524,12 @@ public class WorkerBankAccountToAdd {
     return iban;
   }
 
-  public void setIban(String iban) {
+  public void setIban(@javax.annotation.Nullable String iban) {
     this.iban = iban;
   }
 
 
-  public WorkerBankAccountToAdd email(String email) {
+  public WorkerBankAccountToAdd email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -520,12 +543,12 @@ public class WorkerBankAccountToAdd {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public WorkerBankAccountToAdd ribNumber(String ribNumber) {
+  public WorkerBankAccountToAdd ribNumber(@javax.annotation.Nullable String ribNumber) {
     this.ribNumber = ribNumber;
     return this;
   }
@@ -539,12 +562,12 @@ public class WorkerBankAccountToAdd {
     return ribNumber;
   }
 
-  public void setRibNumber(String ribNumber) {
+  public void setRibNumber(@javax.annotation.Nullable String ribNumber) {
     this.ribNumber = ribNumber;
   }
 
 
-  public WorkerBankAccountToAdd accountType(String accountType) {
+  public WorkerBankAccountToAdd accountType(@javax.annotation.Nullable String accountType) {
     this.accountType = accountType;
     return this;
   }
@@ -558,12 +581,12 @@ public class WorkerBankAccountToAdd {
     return accountType;
   }
 
-  public void setAccountType(String accountType) {
+  public void setAccountType(@javax.annotation.Nullable String accountType) {
     this.accountType = accountType;
   }
 
 
-  public WorkerBankAccountToAdd achRoutingNumber(String achRoutingNumber) {
+  public WorkerBankAccountToAdd achRoutingNumber(@javax.annotation.Nullable String achRoutingNumber) {
     this.achRoutingNumber = achRoutingNumber;
     return this;
   }
@@ -577,7 +600,7 @@ public class WorkerBankAccountToAdd {
     return achRoutingNumber;
   }
 
-  public void setAchRoutingNumber(String achRoutingNumber) {
+  public void setAchRoutingNumber(@javax.annotation.Nullable String achRoutingNumber) {
     this.achRoutingNumber = achRoutingNumber;
   }
 

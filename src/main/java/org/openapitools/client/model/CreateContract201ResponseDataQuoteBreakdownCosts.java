@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseDataQuoteBreakdownCosts
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataQuoteBreakdownCosts {
   public static final String SERIALIZED_NAME_MONTHLY = "monthly";
   @SerializedName(SERIALIZED_NAME_MONTHLY)
+  @javax.annotation.Nullable
   private CreateContract201ResponseDataQuoteBreakdownCostsMonthly monthly;
 
   public CreateContract201ResponseDataQuoteBreakdownCosts() {
   }
 
-  public CreateContract201ResponseDataQuoteBreakdownCosts monthly(CreateContract201ResponseDataQuoteBreakdownCostsMonthly monthly) {
+  public CreateContract201ResponseDataQuoteBreakdownCosts monthly(@javax.annotation.Nullable CreateContract201ResponseDataQuoteBreakdownCostsMonthly monthly) {
     this.monthly = monthly;
     return this;
   }
@@ -72,7 +73,7 @@ public class CreateContract201ResponseDataQuoteBreakdownCosts {
     return monthly;
   }
 
-  public void setMonthly(CreateContract201ResponseDataQuoteBreakdownCostsMonthly monthly) {
+  public void setMonthly(@javax.annotation.Nullable CreateContract201ResponseDataQuoteBreakdownCostsMonthly monthly) {
     this.monthly = monthly;
   }
 

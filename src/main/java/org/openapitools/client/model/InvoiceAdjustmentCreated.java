@@ -51,28 +51,32 @@ import org.openapitools.client.JSON;
 /**
  * Details of invoice adjustment created.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class InvoiceAdjustmentCreated {
   public static final String SERIALIZED_NAME_CREATED = "created";
   @SerializedName(SERIALIZED_NAME_CREATED)
+  @javax.annotation.Nonnull
   private Boolean created;
 
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private InvoiceAdjustmentStatusEnum status;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public InvoiceAdjustmentCreated() {
   }
 
-  public InvoiceAdjustmentCreated created(Boolean created) {
+  public InvoiceAdjustmentCreated created(@javax.annotation.Nonnull Boolean created) {
     this.created = created;
     return this;
   }
@@ -86,12 +90,12 @@ public class InvoiceAdjustmentCreated {
     return created;
   }
 
-  public void setCreated(Boolean created) {
+  public void setCreated(@javax.annotation.Nonnull Boolean created) {
     this.created = created;
   }
 
 
-  public InvoiceAdjustmentCreated id(String id) {
+  public InvoiceAdjustmentCreated id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -105,12 +109,12 @@ public class InvoiceAdjustmentCreated {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public InvoiceAdjustmentCreated status(InvoiceAdjustmentStatusEnum status) {
+  public InvoiceAdjustmentCreated status(@javax.annotation.Nullable InvoiceAdjustmentStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -124,12 +128,12 @@ public class InvoiceAdjustmentCreated {
     return status;
   }
 
-  public void setStatus(InvoiceAdjustmentStatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable InvoiceAdjustmentStatusEnum status) {
     this.status = status;
   }
 
 
-  public InvoiceAdjustmentCreated createdAt(OffsetDateTime createdAt) {
+  public InvoiceAdjustmentCreated createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -143,7 +147,7 @@ public class InvoiceAdjustmentCreated {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 

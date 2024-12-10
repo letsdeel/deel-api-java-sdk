@@ -49,32 +49,37 @@ import org.openapitools.client.JSON;
 /**
  * GPPayrollEventReportsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GPPayrollEventReportsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private String status;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime startDate;
 
   public static final String SERIALIZED_NAME_LOCK_DATE = "lock_date";
   @SerializedName(SERIALIZED_NAME_LOCK_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime lockDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nonnull
   private OffsetDateTime endDate;
 
   public GPPayrollEventReportsInner() {
   }
 
-  public GPPayrollEventReportsInner id(String id) {
+  public GPPayrollEventReportsInner id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -88,12 +93,12 @@ public class GPPayrollEventReportsInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public GPPayrollEventReportsInner status(String status) {
+  public GPPayrollEventReportsInner status(@javax.annotation.Nonnull String status) {
     this.status = status;
     return this;
   }
@@ -107,12 +112,12 @@ public class GPPayrollEventReportsInner {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nonnull String status) {
     this.status = status;
   }
 
 
-  public GPPayrollEventReportsInner startDate(OffsetDateTime startDate) {
+  public GPPayrollEventReportsInner startDate(@javax.annotation.Nonnull OffsetDateTime startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -126,12 +131,12 @@ public class GPPayrollEventReportsInner {
     return startDate;
   }
 
-  public void setStartDate(OffsetDateTime startDate) {
+  public void setStartDate(@javax.annotation.Nonnull OffsetDateTime startDate) {
     this.startDate = startDate;
   }
 
 
-  public GPPayrollEventReportsInner lockDate(OffsetDateTime lockDate) {
+  public GPPayrollEventReportsInner lockDate(@javax.annotation.Nonnull OffsetDateTime lockDate) {
     this.lockDate = lockDate;
     return this;
   }
@@ -145,12 +150,12 @@ public class GPPayrollEventReportsInner {
     return lockDate;
   }
 
-  public void setLockDate(OffsetDateTime lockDate) {
+  public void setLockDate(@javax.annotation.Nonnull OffsetDateTime lockDate) {
     this.lockDate = lockDate;
   }
 
 
-  public GPPayrollEventReportsInner endDate(OffsetDateTime endDate) {
+  public GPPayrollEventReportsInner endDate(@javax.annotation.Nonnull OffsetDateTime endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -164,7 +169,7 @@ public class GPPayrollEventReportsInner {
     return endDate;
   }
 
-  public void setEndDate(OffsetDateTime endDate) {
+  public void setEndDate(@javax.annotation.Nonnull OffsetDateTime endDate) {
     this.endDate = endDate;
   }
 

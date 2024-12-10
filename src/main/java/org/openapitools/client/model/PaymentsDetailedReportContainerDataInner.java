@@ -52,28 +52,32 @@ import org.openapitools.client.JSON;
 /**
  * PaymentsDetailedReportContainerDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PaymentsDetailedReportContainerDataInner {
   public static final String SERIALIZED_NAME_INVOICE = "invoice";
   @SerializedName(SERIALIZED_NAME_INVOICE)
+  @javax.annotation.Nullable
   private PaymentsDetailedReportContainerDataInnerInvoice invoice;
 
   public static final String SERIALIZED_NAME_LINE_ITEM = "line_item";
   @SerializedName(SERIALIZED_NAME_LINE_ITEM)
+  @javax.annotation.Nullable
   private PaymentsDetailedReportContainerDataInnerLineItem lineItem;
 
   public static final String SERIALIZED_NAME_PAYMENT = "payment";
   @SerializedName(SERIALIZED_NAME_PAYMENT)
+  @javax.annotation.Nullable
   private PaymentsDetailedReportContainerDataInnerPayment payment;
 
   public static final String SERIALIZED_NAME_CONTRACT = "contract";
   @SerializedName(SERIALIZED_NAME_CONTRACT)
+  @javax.annotation.Nullable
   private PaymentsDetailedReportContainerDataInnerContract contract;
 
   public PaymentsDetailedReportContainerDataInner() {
   }
 
-  public PaymentsDetailedReportContainerDataInner invoice(PaymentsDetailedReportContainerDataInnerInvoice invoice) {
+  public PaymentsDetailedReportContainerDataInner invoice(@javax.annotation.Nullable PaymentsDetailedReportContainerDataInnerInvoice invoice) {
     this.invoice = invoice;
     return this;
   }
@@ -87,12 +91,12 @@ public class PaymentsDetailedReportContainerDataInner {
     return invoice;
   }
 
-  public void setInvoice(PaymentsDetailedReportContainerDataInnerInvoice invoice) {
+  public void setInvoice(@javax.annotation.Nullable PaymentsDetailedReportContainerDataInnerInvoice invoice) {
     this.invoice = invoice;
   }
 
 
-  public PaymentsDetailedReportContainerDataInner lineItem(PaymentsDetailedReportContainerDataInnerLineItem lineItem) {
+  public PaymentsDetailedReportContainerDataInner lineItem(@javax.annotation.Nullable PaymentsDetailedReportContainerDataInnerLineItem lineItem) {
     this.lineItem = lineItem;
     return this;
   }
@@ -106,12 +110,12 @@ public class PaymentsDetailedReportContainerDataInner {
     return lineItem;
   }
 
-  public void setLineItem(PaymentsDetailedReportContainerDataInnerLineItem lineItem) {
+  public void setLineItem(@javax.annotation.Nullable PaymentsDetailedReportContainerDataInnerLineItem lineItem) {
     this.lineItem = lineItem;
   }
 
 
-  public PaymentsDetailedReportContainerDataInner payment(PaymentsDetailedReportContainerDataInnerPayment payment) {
+  public PaymentsDetailedReportContainerDataInner payment(@javax.annotation.Nullable PaymentsDetailedReportContainerDataInnerPayment payment) {
     this.payment = payment;
     return this;
   }
@@ -125,12 +129,12 @@ public class PaymentsDetailedReportContainerDataInner {
     return payment;
   }
 
-  public void setPayment(PaymentsDetailedReportContainerDataInnerPayment payment) {
+  public void setPayment(@javax.annotation.Nullable PaymentsDetailedReportContainerDataInnerPayment payment) {
     this.payment = payment;
   }
 
 
-  public PaymentsDetailedReportContainerDataInner contract(PaymentsDetailedReportContainerDataInnerContract contract) {
+  public PaymentsDetailedReportContainerDataInner contract(@javax.annotation.Nullable PaymentsDetailedReportContainerDataInnerContract contract) {
     this.contract = contract;
     return this;
   }
@@ -144,7 +148,7 @@ public class PaymentsDetailedReportContainerDataInner {
     return contract;
   }
 
-  public void setContract(PaymentsDetailedReportContainerDataInnerContract contract) {
+  public void setContract(@javax.annotation.Nullable PaymentsDetailedReportContainerDataInnerContract contract) {
     this.contract = contract;
   }
 

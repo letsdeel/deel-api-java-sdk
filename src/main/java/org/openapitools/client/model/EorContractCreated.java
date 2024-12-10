@@ -58,56 +58,67 @@ import org.openapitools.client.JSON;
 /**
  * EorContractCreated
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorContractCreated {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private ContractTypeEnum type;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private ContractStatusEnum status;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nullable
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_EMPLOYMENT = "employment";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT)
+  @javax.annotation.Nullable
   private EorContractCreatedEmployment employment;
 
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
+  @javax.annotation.Nullable
   private CreateGPContract201ResponseDataClient client;
 
   public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
   @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
+  @javax.annotation.Nullable
   private EorContractCreatedCompensationDetails compensationDetails;
 
   public static final String SERIALIZED_NAME_EMPLOYEE = "employee";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE)
+  @javax.annotation.Nullable
   private EorContractCreatedEmployee employee;
 
   public static final String SERIALIZED_NAME_HEALTH_PLAN = "health_plan";
   @SerializedName(SERIALIZED_NAME_HEALTH_PLAN)
+  @javax.annotation.Nullable
   private EorContractCreatedHealthPlan healthPlan;
 
   public static final String SERIALIZED_NAME_SENIORITY = "seniority";
   @SerializedName(SERIALIZED_NAME_SENIORITY)
+  @javax.annotation.Nullable
   private Seniority seniority;
 
   public EorContractCreated() {
   }
 
-  public EorContractCreated id(String id) {
+  public EorContractCreated id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -121,12 +132,12 @@ public class EorContractCreated {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public EorContractCreated type(ContractTypeEnum type) {
+  public EorContractCreated type(@javax.annotation.Nullable ContractTypeEnum type) {
     this.type = type;
     return this;
   }
@@ -140,12 +151,12 @@ public class EorContractCreated {
     return type;
   }
 
-  public void setType(ContractTypeEnum type) {
+  public void setType(@javax.annotation.Nullable ContractTypeEnum type) {
     this.type = type;
   }
 
 
-  public EorContractCreated createdAt(OffsetDateTime createdAt) {
+  public EorContractCreated createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -159,12 +170,12 @@ public class EorContractCreated {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public EorContractCreated status(ContractStatusEnum status) {
+  public EorContractCreated status(@javax.annotation.Nullable ContractStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -178,12 +189,12 @@ public class EorContractCreated {
     return status;
   }
 
-  public void setStatus(ContractStatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable ContractStatusEnum status) {
     this.status = status;
   }
 
 
-  public EorContractCreated jobTitle(String jobTitle) {
+  public EorContractCreated jobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -197,12 +208,12 @@ public class EorContractCreated {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public EorContractCreated employment(EorContractCreatedEmployment employment) {
+  public EorContractCreated employment(@javax.annotation.Nullable EorContractCreatedEmployment employment) {
     this.employment = employment;
     return this;
   }
@@ -216,12 +227,12 @@ public class EorContractCreated {
     return employment;
   }
 
-  public void setEmployment(EorContractCreatedEmployment employment) {
+  public void setEmployment(@javax.annotation.Nullable EorContractCreatedEmployment employment) {
     this.employment = employment;
   }
 
 
-  public EorContractCreated client(CreateGPContract201ResponseDataClient client) {
+  public EorContractCreated client(@javax.annotation.Nullable CreateGPContract201ResponseDataClient client) {
     this.client = client;
     return this;
   }
@@ -235,12 +246,12 @@ public class EorContractCreated {
     return client;
   }
 
-  public void setClient(CreateGPContract201ResponseDataClient client) {
+  public void setClient(@javax.annotation.Nullable CreateGPContract201ResponseDataClient client) {
     this.client = client;
   }
 
 
-  public EorContractCreated compensationDetails(EorContractCreatedCompensationDetails compensationDetails) {
+  public EorContractCreated compensationDetails(@javax.annotation.Nullable EorContractCreatedCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
     return this;
   }
@@ -254,12 +265,12 @@ public class EorContractCreated {
     return compensationDetails;
   }
 
-  public void setCompensationDetails(EorContractCreatedCompensationDetails compensationDetails) {
+  public void setCompensationDetails(@javax.annotation.Nullable EorContractCreatedCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
   }
 
 
-  public EorContractCreated employee(EorContractCreatedEmployee employee) {
+  public EorContractCreated employee(@javax.annotation.Nullable EorContractCreatedEmployee employee) {
     this.employee = employee;
     return this;
   }
@@ -273,12 +284,12 @@ public class EorContractCreated {
     return employee;
   }
 
-  public void setEmployee(EorContractCreatedEmployee employee) {
+  public void setEmployee(@javax.annotation.Nullable EorContractCreatedEmployee employee) {
     this.employee = employee;
   }
 
 
-  public EorContractCreated healthPlan(EorContractCreatedHealthPlan healthPlan) {
+  public EorContractCreated healthPlan(@javax.annotation.Nullable EorContractCreatedHealthPlan healthPlan) {
     this.healthPlan = healthPlan;
     return this;
   }
@@ -292,12 +303,12 @@ public class EorContractCreated {
     return healthPlan;
   }
 
-  public void setHealthPlan(EorContractCreatedHealthPlan healthPlan) {
+  public void setHealthPlan(@javax.annotation.Nullable EorContractCreatedHealthPlan healthPlan) {
     this.healthPlan = healthPlan;
   }
 
 
-  public EorContractCreated seniority(Seniority seniority) {
+  public EorContractCreated seniority(@javax.annotation.Nullable Seniority seniority) {
     this.seniority = seniority;
     return this;
   }
@@ -311,7 +322,7 @@ public class EorContractCreated {
     return seniority;
   }
 
-  public void setSeniority(Seniority seniority) {
+  public void setSeniority(@javax.annotation.Nullable Seniority seniority) {
     this.seniority = seniority;
   }
 

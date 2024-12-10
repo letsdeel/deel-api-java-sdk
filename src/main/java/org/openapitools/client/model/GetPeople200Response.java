@@ -50,46 +50,56 @@ import org.openapitools.client.JSON;
 /**
  * People object representing a Deel
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPeople200Response {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private BigDecimal id;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_USER_ID = "user_id";
   @SerializedName(SERIALIZED_NAME_USER_ID)
+  @javax.annotation.Nullable
   private BigDecimal userId;
 
   public static final String SERIALIZED_NAME_USERNAME = "username";
   @SerializedName(SERIALIZED_NAME_USERNAME)
+  @javax.annotation.Nullable
   private String username;
 
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nullable
   private String fullName;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public static final String SERIALIZED_NAME_AVATAR_URL = "avatar_url";
   @SerializedName(SERIALIZED_NAME_AVATAR_URL)
+  @javax.annotation.Nullable
   private String avatarUrl;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_MIDDLE_NAME = "middle_name";
   @SerializedName(SERIALIZED_NAME_MIDDLE_NAME)
+  @javax.annotation.Nullable
   private String middleName;
 
   public static final String SERIALIZED_NAME_HRIS_ENABLED = "hris_enabled";
   @SerializedName(SERIALIZED_NAME_HRIS_ENABLED)
+  @javax.annotation.Nullable
   private Boolean hrisEnabled;
 
   /**
@@ -154,36 +164,43 @@ public class GetPeople200Response {
 
   public static final String SERIALIZED_NAME_PROFILE_TYPE = "profile_type";
   @SerializedName(SERIALIZED_NAME_PROFILE_TYPE)
+  @javax.annotation.Nullable
   private ProfileTypeEnum profileType;
 
   public static final String SERIALIZED_NAME_SLACK_TEAM_ID = "slack_team_id";
   @SerializedName(SERIALIZED_NAME_SLACK_TEAM_ID)
+  @javax.annotation.Nullable
   private String slackTeamId;
 
   public static final String SERIALIZED_NAME_SLACK_USER_ID = "slack_user_id";
   @SerializedName(SERIALIZED_NAME_SLACK_USER_ID)
+  @javax.annotation.Nullable
   private String slackUserId;
 
   public static final String SERIALIZED_NAME_CLIENT_COUNTRY = "client_country";
   @SerializedName(SERIALIZED_NAME_CLIENT_COUNTRY)
+  @javax.annotation.Nullable
   private String clientCountry;
 
   public static final String SERIALIZED_NAME_ORGANIZATION_ID = "organization_id";
   @SerializedName(SERIALIZED_NAME_ORGANIZATION_ID)
+  @javax.annotation.Nullable
   private BigDecimal organizationId;
 
   public static final String SERIALIZED_NAME_ORGANIZATION_NAME = "organization_name";
   @SerializedName(SERIALIZED_NAME_ORGANIZATION_NAME)
+  @javax.annotation.Nullable
   private String organizationName;
 
   public static final String SERIALIZED_NAME_CONTRACTOR_COUNTRY = "contractor_country";
   @SerializedName(SERIALIZED_NAME_CONTRACTOR_COUNTRY)
+  @javax.annotation.Nullable
   private String contractorCountry;
 
   public GetPeople200Response() {
   }
 
-  public GetPeople200Response id(BigDecimal id) {
+  public GetPeople200Response id(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
     return this;
   }
@@ -197,12 +214,12 @@ public class GetPeople200Response {
     return id;
   }
 
-  public void setId(BigDecimal id) {
+  public void setId(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
   }
 
 
-  public GetPeople200Response email(String email) {
+  public GetPeople200Response email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -216,12 +233,12 @@ public class GetPeople200Response {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public GetPeople200Response userId(BigDecimal userId) {
+  public GetPeople200Response userId(@javax.annotation.Nullable BigDecimal userId) {
     this.userId = userId;
     return this;
   }
@@ -235,12 +252,12 @@ public class GetPeople200Response {
     return userId;
   }
 
-  public void setUserId(BigDecimal userId) {
+  public void setUserId(@javax.annotation.Nullable BigDecimal userId) {
     this.userId = userId;
   }
 
 
-  public GetPeople200Response username(String username) {
+  public GetPeople200Response username(@javax.annotation.Nullable String username) {
     this.username = username;
     return this;
   }
@@ -254,12 +271,12 @@ public class GetPeople200Response {
     return username;
   }
 
-  public void setUsername(String username) {
+  public void setUsername(@javax.annotation.Nullable String username) {
     this.username = username;
   }
 
 
-  public GetPeople200Response fullName(String fullName) {
+  public GetPeople200Response fullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -273,12 +290,12 @@ public class GetPeople200Response {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
   }
 
 
-  public GetPeople200Response lastName(String lastName) {
+  public GetPeople200Response lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -292,12 +309,12 @@ public class GetPeople200Response {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
 
-  public GetPeople200Response avatarUrl(String avatarUrl) {
+  public GetPeople200Response avatarUrl(@javax.annotation.Nullable String avatarUrl) {
     this.avatarUrl = avatarUrl;
     return this;
   }
@@ -311,12 +328,12 @@ public class GetPeople200Response {
     return avatarUrl;
   }
 
-  public void setAvatarUrl(String avatarUrl) {
+  public void setAvatarUrl(@javax.annotation.Nullable String avatarUrl) {
     this.avatarUrl = avatarUrl;
   }
 
 
-  public GetPeople200Response firstName(String firstName) {
+  public GetPeople200Response firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -330,12 +347,12 @@ public class GetPeople200Response {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public GetPeople200Response middleName(String middleName) {
+  public GetPeople200Response middleName(@javax.annotation.Nullable String middleName) {
     this.middleName = middleName;
     return this;
   }
@@ -349,12 +366,12 @@ public class GetPeople200Response {
     return middleName;
   }
 
-  public void setMiddleName(String middleName) {
+  public void setMiddleName(@javax.annotation.Nullable String middleName) {
     this.middleName = middleName;
   }
 
 
-  public GetPeople200Response hrisEnabled(Boolean hrisEnabled) {
+  public GetPeople200Response hrisEnabled(@javax.annotation.Nullable Boolean hrisEnabled) {
     this.hrisEnabled = hrisEnabled;
     return this;
   }
@@ -368,12 +385,12 @@ public class GetPeople200Response {
     return hrisEnabled;
   }
 
-  public void setHrisEnabled(Boolean hrisEnabled) {
+  public void setHrisEnabled(@javax.annotation.Nullable Boolean hrisEnabled) {
     this.hrisEnabled = hrisEnabled;
   }
 
 
-  public GetPeople200Response profileType(ProfileTypeEnum profileType) {
+  public GetPeople200Response profileType(@javax.annotation.Nullable ProfileTypeEnum profileType) {
     this.profileType = profileType;
     return this;
   }
@@ -387,12 +404,12 @@ public class GetPeople200Response {
     return profileType;
   }
 
-  public void setProfileType(ProfileTypeEnum profileType) {
+  public void setProfileType(@javax.annotation.Nullable ProfileTypeEnum profileType) {
     this.profileType = profileType;
   }
 
 
-  public GetPeople200Response slackTeamId(String slackTeamId) {
+  public GetPeople200Response slackTeamId(@javax.annotation.Nullable String slackTeamId) {
     this.slackTeamId = slackTeamId;
     return this;
   }
@@ -406,12 +423,12 @@ public class GetPeople200Response {
     return slackTeamId;
   }
 
-  public void setSlackTeamId(String slackTeamId) {
+  public void setSlackTeamId(@javax.annotation.Nullable String slackTeamId) {
     this.slackTeamId = slackTeamId;
   }
 
 
-  public GetPeople200Response slackUserId(String slackUserId) {
+  public GetPeople200Response slackUserId(@javax.annotation.Nullable String slackUserId) {
     this.slackUserId = slackUserId;
     return this;
   }
@@ -425,12 +442,12 @@ public class GetPeople200Response {
     return slackUserId;
   }
 
-  public void setSlackUserId(String slackUserId) {
+  public void setSlackUserId(@javax.annotation.Nullable String slackUserId) {
     this.slackUserId = slackUserId;
   }
 
 
-  public GetPeople200Response clientCountry(String clientCountry) {
+  public GetPeople200Response clientCountry(@javax.annotation.Nullable String clientCountry) {
     this.clientCountry = clientCountry;
     return this;
   }
@@ -444,12 +461,12 @@ public class GetPeople200Response {
     return clientCountry;
   }
 
-  public void setClientCountry(String clientCountry) {
+  public void setClientCountry(@javax.annotation.Nullable String clientCountry) {
     this.clientCountry = clientCountry;
   }
 
 
-  public GetPeople200Response organizationId(BigDecimal organizationId) {
+  public GetPeople200Response organizationId(@javax.annotation.Nullable BigDecimal organizationId) {
     this.organizationId = organizationId;
     return this;
   }
@@ -463,12 +480,12 @@ public class GetPeople200Response {
     return organizationId;
   }
 
-  public void setOrganizationId(BigDecimal organizationId) {
+  public void setOrganizationId(@javax.annotation.Nullable BigDecimal organizationId) {
     this.organizationId = organizationId;
   }
 
 
-  public GetPeople200Response organizationName(String organizationName) {
+  public GetPeople200Response organizationName(@javax.annotation.Nullable String organizationName) {
     this.organizationName = organizationName;
     return this;
   }
@@ -482,12 +499,12 @@ public class GetPeople200Response {
     return organizationName;
   }
 
-  public void setOrganizationName(String organizationName) {
+  public void setOrganizationName(@javax.annotation.Nullable String organizationName) {
     this.organizationName = organizationName;
   }
 
 
-  public GetPeople200Response contractorCountry(String contractorCountry) {
+  public GetPeople200Response contractorCountry(@javax.annotation.Nullable String contractorCountry) {
     this.contractorCountry = contractorCountry;
     return this;
   }
@@ -501,7 +518,7 @@ public class GetPeople200Response {
     return contractorCountry;
   }
 
-  public void setContractorCountry(String contractorCountry) {
+  public void setContractorCountry(@javax.annotation.Nullable String contractorCountry) {
     this.contractorCountry = contractorCountry;
   }
 

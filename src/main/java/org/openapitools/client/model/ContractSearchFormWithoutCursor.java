@@ -26,6 +26,7 @@ import org.openapitools.client.model.ContractSearchFormWithoutCursorCurrencies;
 import org.openapitools.client.model.ContractSearchFormWithoutCursorStatuses;
 import org.openapitools.client.model.ContractSearchFormWithoutCursorTypes;
 import org.openapitools.client.model.ContractsSortByEnum;
+import org.openapitools.client.model.IdentifierValueForFilter;
 import org.openapitools.client.model.SortDirEnum;
 
 import com.google.gson.Gson;
@@ -54,52 +55,62 @@ import org.openapitools.client.JSON;
 /**
  * This is a model to make it easier to understand and restrict search parameters
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ContractSearchFormWithoutCursor {
   public static final String SERIALIZED_NAME_LIMIT = "limit";
   @SerializedName(SERIALIZED_NAME_LIMIT)
+  @javax.annotation.Nullable
   private String limit = "10";
 
   public static final String SERIALIZED_NAME_ORDER_DIRECTION = "order_direction";
   @SerializedName(SERIALIZED_NAME_ORDER_DIRECTION)
+  @javax.annotation.Nullable
   private SortDirEnum orderDirection;
 
   public static final String SERIALIZED_NAME_TYPES = "types";
   @SerializedName(SERIALIZED_NAME_TYPES)
+  @javax.annotation.Nullable
   private ContractSearchFormWithoutCursorTypes types;
 
   public static final String SERIALIZED_NAME_STATUSES = "statuses";
   @SerializedName(SERIALIZED_NAME_STATUSES)
+  @javax.annotation.Nullable
   private ContractSearchFormWithoutCursorStatuses statuses;
 
   public static final String SERIALIZED_NAME_TEAM_ID = "team_id";
   @SerializedName(SERIALIZED_NAME_TEAM_ID)
-  private String teamId;
+  @javax.annotation.Nullable
+  private IdentifierValueForFilter teamId;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_COUNTRIES = "countries";
   @SerializedName(SERIALIZED_NAME_COUNTRIES)
+  @javax.annotation.Nullable
   private ContractSearchFormWithoutCursorCountries countries;
 
   public static final String SERIALIZED_NAME_CURRENCIES = "currencies";
   @SerializedName(SERIALIZED_NAME_CURRENCIES)
+  @javax.annotation.Nullable
   private ContractSearchFormWithoutCursorCurrencies currencies;
 
   public static final String SERIALIZED_NAME_SEARCH = "search";
   @SerializedName(SERIALIZED_NAME_SEARCH)
+  @javax.annotation.Nullable
   private String search;
 
   public static final String SERIALIZED_NAME_SORT_BY = "sort_by";
   @SerializedName(SERIALIZED_NAME_SORT_BY)
+  @javax.annotation.Nullable
   private ContractsSortByEnum sortBy;
 
   public ContractSearchFormWithoutCursor() {
   }
 
-  public ContractSearchFormWithoutCursor limit(String limit) {
+  public ContractSearchFormWithoutCursor limit(@javax.annotation.Nullable String limit) {
     this.limit = limit;
     return this;
   }
@@ -113,12 +124,12 @@ public class ContractSearchFormWithoutCursor {
     return limit;
   }
 
-  public void setLimit(String limit) {
+  public void setLimit(@javax.annotation.Nullable String limit) {
     this.limit = limit;
   }
 
 
-  public ContractSearchFormWithoutCursor orderDirection(SortDirEnum orderDirection) {
+  public ContractSearchFormWithoutCursor orderDirection(@javax.annotation.Nullable SortDirEnum orderDirection) {
     this.orderDirection = orderDirection;
     return this;
   }
@@ -132,12 +143,12 @@ public class ContractSearchFormWithoutCursor {
     return orderDirection;
   }
 
-  public void setOrderDirection(SortDirEnum orderDirection) {
+  public void setOrderDirection(@javax.annotation.Nullable SortDirEnum orderDirection) {
     this.orderDirection = orderDirection;
   }
 
 
-  public ContractSearchFormWithoutCursor types(ContractSearchFormWithoutCursorTypes types) {
+  public ContractSearchFormWithoutCursor types(@javax.annotation.Nullable ContractSearchFormWithoutCursorTypes types) {
     this.types = types;
     return this;
   }
@@ -151,12 +162,12 @@ public class ContractSearchFormWithoutCursor {
     return types;
   }
 
-  public void setTypes(ContractSearchFormWithoutCursorTypes types) {
+  public void setTypes(@javax.annotation.Nullable ContractSearchFormWithoutCursorTypes types) {
     this.types = types;
   }
 
 
-  public ContractSearchFormWithoutCursor statuses(ContractSearchFormWithoutCursorStatuses statuses) {
+  public ContractSearchFormWithoutCursor statuses(@javax.annotation.Nullable ContractSearchFormWithoutCursorStatuses statuses) {
     this.statuses = statuses;
     return this;
   }
@@ -170,31 +181,31 @@ public class ContractSearchFormWithoutCursor {
     return statuses;
   }
 
-  public void setStatuses(ContractSearchFormWithoutCursorStatuses statuses) {
+  public void setStatuses(@javax.annotation.Nullable ContractSearchFormWithoutCursorStatuses statuses) {
     this.statuses = statuses;
   }
 
 
-  public ContractSearchFormWithoutCursor teamId(String teamId) {
+  public ContractSearchFormWithoutCursor teamId(@javax.annotation.Nullable IdentifierValueForFilter teamId) {
     this.teamId = teamId;
     return this;
   }
 
   /**
-   * Unique identifier of this resource.
+   * Get teamId
    * @return teamId
    */
   @javax.annotation.Nullable
-  public String getTeamId() {
+  public IdentifierValueForFilter getTeamId() {
     return teamId;
   }
 
-  public void setTeamId(String teamId) {
+  public void setTeamId(@javax.annotation.Nullable IdentifierValueForFilter teamId) {
     this.teamId = teamId;
   }
 
 
-  public ContractSearchFormWithoutCursor externalId(String externalId) {
+  public ContractSearchFormWithoutCursor externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -208,12 +219,12 @@ public class ContractSearchFormWithoutCursor {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public ContractSearchFormWithoutCursor countries(ContractSearchFormWithoutCursorCountries countries) {
+  public ContractSearchFormWithoutCursor countries(@javax.annotation.Nullable ContractSearchFormWithoutCursorCountries countries) {
     this.countries = countries;
     return this;
   }
@@ -227,12 +238,12 @@ public class ContractSearchFormWithoutCursor {
     return countries;
   }
 
-  public void setCountries(ContractSearchFormWithoutCursorCountries countries) {
+  public void setCountries(@javax.annotation.Nullable ContractSearchFormWithoutCursorCountries countries) {
     this.countries = countries;
   }
 
 
-  public ContractSearchFormWithoutCursor currencies(ContractSearchFormWithoutCursorCurrencies currencies) {
+  public ContractSearchFormWithoutCursor currencies(@javax.annotation.Nullable ContractSearchFormWithoutCursorCurrencies currencies) {
     this.currencies = currencies;
     return this;
   }
@@ -246,12 +257,12 @@ public class ContractSearchFormWithoutCursor {
     return currencies;
   }
 
-  public void setCurrencies(ContractSearchFormWithoutCursorCurrencies currencies) {
+  public void setCurrencies(@javax.annotation.Nullable ContractSearchFormWithoutCursorCurrencies currencies) {
     this.currencies = currencies;
   }
 
 
-  public ContractSearchFormWithoutCursor search(String search) {
+  public ContractSearchFormWithoutCursor search(@javax.annotation.Nullable String search) {
     this.search = search;
     return this;
   }
@@ -265,12 +276,12 @@ public class ContractSearchFormWithoutCursor {
     return search;
   }
 
-  public void setSearch(String search) {
+  public void setSearch(@javax.annotation.Nullable String search) {
     this.search = search;
   }
 
 
-  public ContractSearchFormWithoutCursor sortBy(ContractsSortByEnum sortBy) {
+  public ContractSearchFormWithoutCursor sortBy(@javax.annotation.Nullable ContractsSortByEnum sortBy) {
     this.sortBy = sortBy;
     return this;
   }
@@ -284,7 +295,7 @@ public class ContractSearchFormWithoutCursor {
     return sortBy;
   }
 
-  public void setSortBy(ContractsSortByEnum sortBy) {
+  public void setSortBy(@javax.annotation.Nullable ContractsSortByEnum sortBy) {
     this.sortBy = sortBy;
   }
 
@@ -403,8 +414,9 @@ public class ContractSearchFormWithoutCursor {
       if (jsonObj.get("statuses") != null && !jsonObj.get("statuses").isJsonNull()) {
         ContractSearchFormWithoutCursorStatuses.validateJsonElement(jsonObj.get("statuses"));
       }
-      if ((jsonObj.get("team_id") != null && !jsonObj.get("team_id").isJsonNull()) && !jsonObj.get("team_id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `team_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("team_id").toString()));
+      // validate the optional field `team_id`
+      if (jsonObj.get("team_id") != null && !jsonObj.get("team_id").isJsonNull()) {
+        IdentifierValueForFilter.validateJsonElement(jsonObj.get("team_id"));
       }
       if ((jsonObj.get("external_id") != null && !jsonObj.get("external_id").isJsonNull()) && !jsonObj.get("external_id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `external_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("external_id").toString()));

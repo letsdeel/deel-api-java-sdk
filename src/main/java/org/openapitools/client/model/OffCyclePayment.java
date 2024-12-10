@@ -51,44 +51,52 @@ import org.openapitools.client.JSON;
 /**
  * OffCyclePayment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffCyclePayment {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private InvoiceAdjustmentStatusEnum status;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_DATE_SUBMITTED = "date_submitted";
   @SerializedName(SERIALIZED_NAME_DATE_SUBMITTED)
+  @javax.annotation.Nonnull
   private OffsetDateTime dateSubmitted;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currency_code";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nonnull
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private String amount;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_REPORTED_BY = "reported_by";
   @SerializedName(SERIALIZED_NAME_REPORTED_BY)
+  @javax.annotation.Nonnull
   private OffCyclePaymentReportedBy reportedBy;
 
   public OffCyclePayment() {
   }
 
-  public OffCyclePayment id(String id) {
+  public OffCyclePayment id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -102,12 +110,12 @@ public class OffCyclePayment {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public OffCyclePayment status(InvoiceAdjustmentStatusEnum status) {
+  public OffCyclePayment status(@javax.annotation.Nullable InvoiceAdjustmentStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -121,12 +129,12 @@ public class OffCyclePayment {
     return status;
   }
 
-  public void setStatus(InvoiceAdjustmentStatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable InvoiceAdjustmentStatusEnum status) {
     this.status = status;
   }
 
 
-  public OffCyclePayment description(String description) {
+  public OffCyclePayment description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -140,12 +148,12 @@ public class OffCyclePayment {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public OffCyclePayment dateSubmitted(OffsetDateTime dateSubmitted) {
+  public OffCyclePayment dateSubmitted(@javax.annotation.Nonnull OffsetDateTime dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
     return this;
   }
@@ -159,12 +167,12 @@ public class OffCyclePayment {
     return dateSubmitted;
   }
 
-  public void setDateSubmitted(OffsetDateTime dateSubmitted) {
+  public void setDateSubmitted(@javax.annotation.Nonnull OffsetDateTime dateSubmitted) {
     this.dateSubmitted = dateSubmitted;
   }
 
 
-  public OffCyclePayment currencyCode(String currencyCode) {
+  public OffCyclePayment currencyCode(@javax.annotation.Nonnull String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -178,12 +186,12 @@ public class OffCyclePayment {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nonnull String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public OffCyclePayment amount(String amount) {
+  public OffCyclePayment amount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
     return this;
   }
@@ -197,12 +205,12 @@ public class OffCyclePayment {
     return amount;
   }
 
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
   }
 
 
-  public OffCyclePayment createdAt(OffsetDateTime createdAt) {
+  public OffCyclePayment createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -216,12 +224,12 @@ public class OffCyclePayment {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public OffCyclePayment reportedBy(OffCyclePaymentReportedBy reportedBy) {
+  public OffCyclePayment reportedBy(@javax.annotation.Nonnull OffCyclePaymentReportedBy reportedBy) {
     this.reportedBy = reportedBy;
     return this;
   }
@@ -235,7 +243,7 @@ public class OffCyclePayment {
     return reportedBy;
   }
 
-  public void setReportedBy(OffCyclePaymentReportedBy reportedBy) {
+  public void setReportedBy(@javax.annotation.Nonnull OffCyclePaymentReportedBy reportedBy) {
     this.reportedBy = reportedBy;
   }
 

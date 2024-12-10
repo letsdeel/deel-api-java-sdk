@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.client.model.CreateContract201ResponseDataClientLegalEntity;
 import org.openapitools.client.model.CreateContract201ResponseDataClientTeam;
-import org.openapitools.client.model.CreateContractRequestAnyOfAllOfClientTeamId;
+import org.openapitools.client.model.PAYASYOUGOTIMEBASEDAllOfClientTeamId;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -52,32 +52,37 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseDataClient
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataClient {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
-  private CreateContractRequestAnyOfAllOfClientTeamId id;
+  @javax.annotation.Nullable
+  private PAYASYOUGOTIMEBASEDAllOfClientTeamId id;
 
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
+  @javax.annotation.Nonnull
   private CreateContract201ResponseDataClientTeam team;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nullable
   private String fullName;
 
   public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
+  @javax.annotation.Nullable
   private CreateContract201ResponseDataClientLegalEntity legalEntity;
 
   public CreateContract201ResponseDataClient() {
   }
 
-  public CreateContract201ResponseDataClient id(CreateContractRequestAnyOfAllOfClientTeamId id) {
+  public CreateContract201ResponseDataClient id(@javax.annotation.Nullable PAYASYOUGOTIMEBASEDAllOfClientTeamId id) {
     this.id = id;
     return this;
   }
@@ -87,16 +92,16 @@ public class CreateContract201ResponseDataClient {
    * @return id
    */
   @javax.annotation.Nullable
-  public CreateContractRequestAnyOfAllOfClientTeamId getId() {
+  public PAYASYOUGOTIMEBASEDAllOfClientTeamId getId() {
     return id;
   }
 
-  public void setId(CreateContractRequestAnyOfAllOfClientTeamId id) {
+  public void setId(@javax.annotation.Nullable PAYASYOUGOTIMEBASEDAllOfClientTeamId id) {
     this.id = id;
   }
 
 
-  public CreateContract201ResponseDataClient team(CreateContract201ResponseDataClientTeam team) {
+  public CreateContract201ResponseDataClient team(@javax.annotation.Nonnull CreateContract201ResponseDataClientTeam team) {
     this.team = team;
     return this;
   }
@@ -110,12 +115,12 @@ public class CreateContract201ResponseDataClient {
     return team;
   }
 
-  public void setTeam(CreateContract201ResponseDataClientTeam team) {
+  public void setTeam(@javax.annotation.Nonnull CreateContract201ResponseDataClientTeam team) {
     this.team = team;
   }
 
 
-  public CreateContract201ResponseDataClient email(String email) {
+  public CreateContract201ResponseDataClient email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -129,12 +134,12 @@ public class CreateContract201ResponseDataClient {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public CreateContract201ResponseDataClient fullName(String fullName) {
+  public CreateContract201ResponseDataClient fullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -148,12 +153,12 @@ public class CreateContract201ResponseDataClient {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
   }
 
 
-  public CreateContract201ResponseDataClient legalEntity(CreateContract201ResponseDataClientLegalEntity legalEntity) {
+  public CreateContract201ResponseDataClient legalEntity(@javax.annotation.Nullable CreateContract201ResponseDataClientLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
     return this;
   }
@@ -167,7 +172,7 @@ public class CreateContract201ResponseDataClient {
     return legalEntity;
   }
 
-  public void setLegalEntity(CreateContract201ResponseDataClientLegalEntity legalEntity) {
+  public void setLegalEntity(@javax.annotation.Nullable CreateContract201ResponseDataClientLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
   }
 
@@ -278,7 +283,7 @@ public class CreateContract201ResponseDataClient {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `id`
       if (jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) {
-        CreateContractRequestAnyOfAllOfClientTeamId.validateJsonElement(jsonObj.get("id"));
+        PAYASYOUGOTIMEBASEDAllOfClientTeamId.validateJsonElement(jsonObj.get("id"));
       }
       // validate the required field `team`
       CreateContract201ResponseDataClientTeam.validateJsonElement(jsonObj.get("team"));

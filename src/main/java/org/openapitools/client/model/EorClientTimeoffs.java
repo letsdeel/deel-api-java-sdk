@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * EorClientTimeoffs
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorClientTimeoffs {
   public static final String SERIALIZED_NAME_EMPLOYEES = "employees";
   @SerializedName(SERIALIZED_NAME_EMPLOYEES)
+  @javax.annotation.Nonnull
   private List<EorTimeoffsEmployeeItem> employees = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_TOTAL_REQUESTS = "total_requests";
   @SerializedName(SERIALIZED_NAME_TOTAL_REQUESTS)
+  @javax.annotation.Nonnull
   private BigDecimal totalRequests;
 
   public EorClientTimeoffs() {
   }
 
-  public EorClientTimeoffs employees(List<EorTimeoffsEmployeeItem> employees) {
+  public EorClientTimeoffs employees(@javax.annotation.Nonnull List<EorTimeoffsEmployeeItem> employees) {
     this.employees = employees;
     return this;
   }
@@ -87,12 +89,12 @@ public class EorClientTimeoffs {
     return employees;
   }
 
-  public void setEmployees(List<EorTimeoffsEmployeeItem> employees) {
+  public void setEmployees(@javax.annotation.Nonnull List<EorTimeoffsEmployeeItem> employees) {
     this.employees = employees;
   }
 
 
-  public EorClientTimeoffs totalRequests(BigDecimal totalRequests) {
+  public EorClientTimeoffs totalRequests(@javax.annotation.Nonnull BigDecimal totalRequests) {
     this.totalRequests = totalRequests;
     return this;
   }
@@ -106,7 +108,7 @@ public class EorClientTimeoffs {
     return totalRequests;
   }
 
-  public void setTotalRequests(BigDecimal totalRequests) {
+  public void setTotalRequests(@javax.annotation.Nonnull BigDecimal totalRequests) {
     this.totalRequests = totalRequests;
   }
 

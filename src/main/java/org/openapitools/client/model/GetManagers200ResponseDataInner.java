@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * GetManagers200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetManagers200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nonnull
   private String email;
 
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nonnull
   private String lastName;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nonnull
   private String firstName;
 
   public GetManagers200ResponseDataInner() {
   }
 
-  public GetManagers200ResponseDataInner id(UUID id) {
+  public GetManagers200ResponseDataInner id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -84,12 +88,12 @@ public class GetManagers200ResponseDataInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public GetManagers200ResponseDataInner email(String email) {
+  public GetManagers200ResponseDataInner email(@javax.annotation.Nonnull String email) {
     this.email = email;
     return this;
   }
@@ -103,12 +107,12 @@ public class GetManagers200ResponseDataInner {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nonnull String email) {
     this.email = email;
   }
 
 
-  public GetManagers200ResponseDataInner lastName(String lastName) {
+  public GetManagers200ResponseDataInner lastName(@javax.annotation.Nonnull String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -122,12 +126,12 @@ public class GetManagers200ResponseDataInner {
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nonnull String lastName) {
     this.lastName = lastName;
   }
 
 
-  public GetManagers200ResponseDataInner firstName(String firstName) {
+  public GetManagers200ResponseDataInner firstName(@javax.annotation.Nonnull String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -141,7 +145,7 @@ public class GetManagers200ResponseDataInner {
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nonnull String firstName) {
     this.firstName = firstName;
   }
 

@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * GetEorCountryValidations200ResponseDataHoliday
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetEorCountryValidations200ResponseDataHoliday {
   public static final String SERIALIZED_NAME_MAX = "max";
   @SerializedName(SERIALIZED_NAME_MAX)
+  @javax.annotation.Nullable
   private String max;
 
   public static final String SERIALIZED_NAME_MIN = "min";
   @SerializedName(SERIALIZED_NAME_MIN)
+  @javax.annotation.Nullable
   private String min;
 
   public static final String SERIALIZED_NAME_MOST_COMMON = "mostCommon";
   @SerializedName(SERIALIZED_NAME_MOST_COMMON)
+  @javax.annotation.Nullable
   private String mostCommon;
 
   public GetEorCountryValidations200ResponseDataHoliday() {
   }
 
-  public GetEorCountryValidations200ResponseDataHoliday max(String max) {
+  public GetEorCountryValidations200ResponseDataHoliday max(@javax.annotation.Nullable String max) {
     this.max = max;
     return this;
   }
@@ -79,12 +82,12 @@ public class GetEorCountryValidations200ResponseDataHoliday {
     return max;
   }
 
-  public void setMax(String max) {
+  public void setMax(@javax.annotation.Nullable String max) {
     this.max = max;
   }
 
 
-  public GetEorCountryValidations200ResponseDataHoliday min(String min) {
+  public GetEorCountryValidations200ResponseDataHoliday min(@javax.annotation.Nullable String min) {
     this.min = min;
     return this;
   }
@@ -98,12 +101,12 @@ public class GetEorCountryValidations200ResponseDataHoliday {
     return min;
   }
 
-  public void setMin(String min) {
+  public void setMin(@javax.annotation.Nullable String min) {
     this.min = min;
   }
 
 
-  public GetEorCountryValidations200ResponseDataHoliday mostCommon(String mostCommon) {
+  public GetEorCountryValidations200ResponseDataHoliday mostCommon(@javax.annotation.Nullable String mostCommon) {
     this.mostCommon = mostCommon;
     return this;
   }
@@ -117,7 +120,7 @@ public class GetEorCountryValidations200ResponseDataHoliday {
     return mostCommon;
   }
 
-  public void setMostCommon(String mostCommon) {
+  public void setMostCommon(@javax.annotation.Nullable String mostCommon) {
     this.mostCommon = mostCommon;
   }
 

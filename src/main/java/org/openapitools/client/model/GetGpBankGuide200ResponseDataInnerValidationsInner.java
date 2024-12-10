@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * GetGpBankGuide200ResponseDataInnerValidationsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetGpBankGuide200ResponseDataInnerValidationsInner {
   /**
    * The type of validation applied to the field.
@@ -107,16 +107,18 @@ public class GetGpBankGuide200ResponseDataInnerValidationsInner {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private GetGpBankGuide200ResponseDataInnerValidationsInnerValue value;
 
   public GetGpBankGuide200ResponseDataInnerValidationsInner() {
   }
 
-  public GetGpBankGuide200ResponseDataInnerValidationsInner type(TypeEnum type) {
+  public GetGpBankGuide200ResponseDataInnerValidationsInner type(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -130,12 +132,12 @@ public class GetGpBankGuide200ResponseDataInnerValidationsInner {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
 
-  public GetGpBankGuide200ResponseDataInnerValidationsInner value(GetGpBankGuide200ResponseDataInnerValidationsInnerValue value) {
+  public GetGpBankGuide200ResponseDataInnerValidationsInner value(@javax.annotation.Nullable GetGpBankGuide200ResponseDataInnerValidationsInnerValue value) {
     this.value = value;
     return this;
   }
@@ -149,7 +151,7 @@ public class GetGpBankGuide200ResponseDataInnerValidationsInner {
     return value;
   }
 
-  public void setValue(GetGpBankGuide200ResponseDataInnerValidationsInnerValue value) {
+  public void setValue(@javax.annotation.Nullable GetGpBankGuide200ResponseDataInnerValidationsInnerValue value) {
     this.value = value;
   }
 

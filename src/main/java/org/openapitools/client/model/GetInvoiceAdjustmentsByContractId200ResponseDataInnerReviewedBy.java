@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private CreateEorContractRequestClientTeamId id;
 
   public static final String SERIALIZED_NAME_REMARKS = "remarks";
   @SerializedName(SERIALIZED_NAME_REMARKS)
+  @javax.annotation.Nonnull
   private String remarks;
 
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nonnull
   private String fullName;
 
   public static final String SERIALIZED_NAME_REVIEWED_AT = "reviewed_at";
   @SerializedName(SERIALIZED_NAME_REVIEWED_AT)
+  @javax.annotation.Nonnull
   private String reviewedAt;
 
   public GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy() {
   }
 
-  public GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy id(CreateEorContractRequestClientTeamId id) {
+  public GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy id(@javax.annotation.Nonnull CreateEorContractRequestClientTeamId id) {
     this.id = id;
     return this;
   }
@@ -84,12 +88,12 @@ public class GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy {
     return id;
   }
 
-  public void setId(CreateEorContractRequestClientTeamId id) {
+  public void setId(@javax.annotation.Nonnull CreateEorContractRequestClientTeamId id) {
     this.id = id;
   }
 
 
-  public GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy remarks(String remarks) {
+  public GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy remarks(@javax.annotation.Nonnull String remarks) {
     this.remarks = remarks;
     return this;
   }
@@ -103,12 +107,12 @@ public class GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy {
     return remarks;
   }
 
-  public void setRemarks(String remarks) {
+  public void setRemarks(@javax.annotation.Nonnull String remarks) {
     this.remarks = remarks;
   }
 
 
-  public GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy fullName(String fullName) {
+  public GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy fullName(@javax.annotation.Nonnull String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -122,12 +126,12 @@ public class GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nonnull String fullName) {
     this.fullName = fullName;
   }
 
 
-  public GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy reviewedAt(String reviewedAt) {
+  public GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy reviewedAt(@javax.annotation.Nonnull String reviewedAt) {
     this.reviewedAt = reviewedAt;
     return this;
   }
@@ -141,7 +145,7 @@ public class GetInvoiceAdjustmentsByContractId200ResponseDataInnerReviewedBy {
     return reviewedAt;
   }
 
-  public void setReviewedAt(String reviewedAt) {
+  public void setReviewedAt(@javax.annotation.Nonnull String reviewedAt) {
     this.reviewedAt = reviewedAt;
   }
 

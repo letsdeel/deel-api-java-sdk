@@ -52,20 +52,22 @@ import org.openapitools.client.JSON;
 /**
  * AgreementListContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class AgreementListContainer {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private List<Agreement> data = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAGE = "page";
   @SerializedName(SERIALIZED_NAME_PAGE)
+  @javax.annotation.Nullable
   private PageInfoWithoutCursor page;
 
   public AgreementListContainer() {
   }
 
-  public AgreementListContainer data(List<Agreement> data) {
+  public AgreementListContainer data(@javax.annotation.Nonnull List<Agreement> data) {
     this.data = data;
     return this;
   }
@@ -87,12 +89,12 @@ public class AgreementListContainer {
     return data;
   }
 
-  public void setData(List<Agreement> data) {
+  public void setData(@javax.annotation.Nonnull List<Agreement> data) {
     this.data = data;
   }
 
 
-  public AgreementListContainer page(PageInfoWithoutCursor page) {
+  public AgreementListContainer page(@javax.annotation.Nullable PageInfoWithoutCursor page) {
     this.page = page;
     return this;
   }
@@ -106,7 +108,7 @@ public class AgreementListContainer {
     return page;
   }
 
-  public void setPage(PageInfoWithoutCursor page) {
+  public void setPage(@javax.annotation.Nullable PageInfoWithoutCursor page) {
     this.page = page;
   }
 

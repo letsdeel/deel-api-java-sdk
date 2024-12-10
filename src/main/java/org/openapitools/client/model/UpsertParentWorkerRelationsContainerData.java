@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * UpsertParentWorkerRelationsContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertParentWorkerRelationsContainerData {
   public static final String SERIALIZED_NAME_PARENT_HRIS_PROFILE_ID = "parent_hris_profile_id";
   @SerializedName(SERIALIZED_NAME_PARENT_HRIS_PROFILE_ID)
+  @javax.annotation.Nullable
   private UUID parentHrisProfileId;
 
   public static final String SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_ID = "hris_relationship_type_id";
   @SerializedName(SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_ID)
+  @javax.annotation.Nullable
   private UUID hrisRelationshipTypeId;
 
   public UpsertParentWorkerRelationsContainerData() {
   }
 
-  public UpsertParentWorkerRelationsContainerData parentHrisProfileId(UUID parentHrisProfileId) {
+  public UpsertParentWorkerRelationsContainerData parentHrisProfileId(@javax.annotation.Nullable UUID parentHrisProfileId) {
     this.parentHrisProfileId = parentHrisProfileId;
     return this;
   }
@@ -76,12 +78,12 @@ public class UpsertParentWorkerRelationsContainerData {
     return parentHrisProfileId;
   }
 
-  public void setParentHrisProfileId(UUID parentHrisProfileId) {
+  public void setParentHrisProfileId(@javax.annotation.Nullable UUID parentHrisProfileId) {
     this.parentHrisProfileId = parentHrisProfileId;
   }
 
 
-  public UpsertParentWorkerRelationsContainerData hrisRelationshipTypeId(UUID hrisRelationshipTypeId) {
+  public UpsertParentWorkerRelationsContainerData hrisRelationshipTypeId(@javax.annotation.Nullable UUID hrisRelationshipTypeId) {
     this.hrisRelationshipTypeId = hrisRelationshipTypeId;
     return this;
   }
@@ -95,7 +97,7 @@ public class UpsertParentWorkerRelationsContainerData {
     return hrisRelationshipTypeId;
   }
 
-  public void setHrisRelationshipTypeId(UUID hrisRelationshipTypeId) {
+  public void setHrisRelationshipTypeId(@javax.annotation.Nullable UUID hrisRelationshipTypeId) {
     this.hrisRelationshipTypeId = hrisRelationshipTypeId;
   }
 

@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * UpsertCustomFieldValueFromContractsRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertCustomFieldValueFromContractsRequest {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private UpsertCustomFieldValueFromContractsRequestData data;
 
   public UpsertCustomFieldValueFromContractsRequest() {
   }
 
-  public UpsertCustomFieldValueFromContractsRequest id(UUID id) {
+  public UpsertCustomFieldValueFromContractsRequest id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -77,12 +79,12 @@ public class UpsertCustomFieldValueFromContractsRequest {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public UpsertCustomFieldValueFromContractsRequest data(UpsertCustomFieldValueFromContractsRequestData data) {
+  public UpsertCustomFieldValueFromContractsRequest data(@javax.annotation.Nonnull UpsertCustomFieldValueFromContractsRequestData data) {
     this.data = data;
     return this;
   }
@@ -96,7 +98,7 @@ public class UpsertCustomFieldValueFromContractsRequest {
     return data;
   }
 
-  public void setData(UpsertCustomFieldValueFromContractsRequestData data) {
+  public void setData(@javax.annotation.Nonnull UpsertCustomFieldValueFromContractsRequestData data) {
     this.data = data;
   }
 

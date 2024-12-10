@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * ExchangeRates
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ExchangeRates {
   public static final String SERIALIZED_NAME_RISK = "risk";
   @SerializedName(SERIALIZED_NAME_RISK)
+  @javax.annotation.Nullable
   private BigDecimal risk;
 
   public static final String SERIALIZED_NAME_RATES = "rates";
   @SerializedName(SERIALIZED_NAME_RATES)
+  @javax.annotation.Nullable
   private Object rates;
 
   public ExchangeRates() {
   }
 
-  public ExchangeRates risk(BigDecimal risk) {
+  public ExchangeRates risk(@javax.annotation.Nullable BigDecimal risk) {
     this.risk = risk;
     return this;
   }
@@ -76,12 +78,12 @@ public class ExchangeRates {
     return risk;
   }
 
-  public void setRisk(BigDecimal risk) {
+  public void setRisk(@javax.annotation.Nullable BigDecimal risk) {
     this.risk = risk;
   }
 
 
-  public ExchangeRates rates(Object rates) {
+  public ExchangeRates rates(@javax.annotation.Nullable Object rates) {
     this.rates = rates;
     return this;
   }
@@ -95,7 +97,7 @@ public class ExchangeRates {
     return rates;
   }
 
-  public void setRates(Object rates) {
+  public void setRates(@javax.annotation.Nullable Object rates) {
     this.rates = rates;
   }
 

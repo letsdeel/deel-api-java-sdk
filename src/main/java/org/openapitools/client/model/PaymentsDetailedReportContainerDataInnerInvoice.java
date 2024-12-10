@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * PaymentsDetailedReportContainerDataInnerInvoice
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PaymentsDetailedReportContainerDataInnerInvoice {
   public static final String SERIALIZED_NAME_DOCUMENT = "document";
   @SerializedName(SERIALIZED_NAME_DOCUMENT)
+  @javax.annotation.Nullable
   private String document;
 
   public static final String SERIALIZED_NAME_ISSUED_AT = "issued_at";
   @SerializedName(SERIALIZED_NAME_ISSUED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime issuedAt;
 
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public PaymentsDetailedReportContainerDataInnerInvoice() {
   }
 
-  public PaymentsDetailedReportContainerDataInnerInvoice document(String document) {
+  public PaymentsDetailedReportContainerDataInnerInvoice document(@javax.annotation.Nullable String document) {
     this.document = document;
     return this;
   }
@@ -80,12 +83,12 @@ public class PaymentsDetailedReportContainerDataInnerInvoice {
     return document;
   }
 
-  public void setDocument(String document) {
+  public void setDocument(@javax.annotation.Nullable String document) {
     this.document = document;
   }
 
 
-  public PaymentsDetailedReportContainerDataInnerInvoice issuedAt(OffsetDateTime issuedAt) {
+  public PaymentsDetailedReportContainerDataInnerInvoice issuedAt(@javax.annotation.Nullable OffsetDateTime issuedAt) {
     this.issuedAt = issuedAt;
     return this;
   }
@@ -99,12 +102,12 @@ public class PaymentsDetailedReportContainerDataInnerInvoice {
     return issuedAt;
   }
 
-  public void setIssuedAt(OffsetDateTime issuedAt) {
+  public void setIssuedAt(@javax.annotation.Nullable OffsetDateTime issuedAt) {
     this.issuedAt = issuedAt;
   }
 
 
-  public PaymentsDetailedReportContainerDataInnerInvoice id(String id) {
+  public PaymentsDetailedReportContainerDataInnerInvoice id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -118,7 +121,7 @@ public class PaymentsDetailedReportContainerDataInnerInvoice {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 

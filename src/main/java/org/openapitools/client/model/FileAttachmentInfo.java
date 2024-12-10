@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * This object is used for linking file attachments to your records.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class FileAttachmentInfo {
   public static final String SERIALIZED_NAME_FILENAME = "filename";
   @SerializedName(SERIALIZED_NAME_FILENAME)
+  @javax.annotation.Nonnull
   private String filename;
 
   public static final String SERIALIZED_NAME_KEY = "key";
   @SerializedName(SERIALIZED_NAME_KEY)
+  @javax.annotation.Nonnull
   private String key;
 
   public FileAttachmentInfo() {
   }
 
-  public FileAttachmentInfo filename(String filename) {
+  public FileAttachmentInfo filename(@javax.annotation.Nonnull String filename) {
     this.filename = filename;
     return this;
   }
@@ -75,12 +77,12 @@ public class FileAttachmentInfo {
     return filename;
   }
 
-  public void setFilename(String filename) {
+  public void setFilename(@javax.annotation.Nonnull String filename) {
     this.filename = filename;
   }
 
 
-  public FileAttachmentInfo key(String key) {
+  public FileAttachmentInfo key(@javax.annotation.Nonnull String key) {
     this.key = key;
     return this;
   }
@@ -94,7 +96,7 @@ public class FileAttachmentInfo {
     return key;
   }
 
-  public void setKey(String key) {
+  public void setKey(@javax.annotation.Nonnull String key) {
     this.key = key;
   }
 

@@ -51,16 +51,17 @@ import org.openapitools.client.JSON;
 /**
  * GetPoliciesForProfile200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPoliciesForProfile200Response {
   public static final String SERIALIZED_NAME_POLICIES = "policies";
   @SerializedName(SERIALIZED_NAME_POLICIES)
+  @javax.annotation.Nullable
   private List<GetPoliciesForProfile200ResponsePoliciesInner> policies = new ArrayList<>();
 
   public GetPoliciesForProfile200Response() {
   }
 
-  public GetPoliciesForProfile200Response policies(List<GetPoliciesForProfile200ResponsePoliciesInner> policies) {
+  public GetPoliciesForProfile200Response policies(@javax.annotation.Nullable List<GetPoliciesForProfile200ResponsePoliciesInner> policies) {
     this.policies = policies;
     return this;
   }
@@ -82,7 +83,7 @@ public class GetPoliciesForProfile200Response {
     return policies;
   }
 
-  public void setPolicies(List<GetPoliciesForProfile200ResponsePoliciesInner> policies) {
+  public void setPolicies(@javax.annotation.Nullable List<GetPoliciesForProfile200ResponsePoliciesInner> policies) {
     this.policies = policies;
   }
 

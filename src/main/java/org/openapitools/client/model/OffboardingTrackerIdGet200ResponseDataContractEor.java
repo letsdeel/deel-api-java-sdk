@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * Employer of Record (EOR) for the contract, if applicable.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffboardingTrackerIdGet200ResponseDataContractEor {
   public static final String SERIALIZED_NAME_PROBATION_PERIOD = "probation_period";
   @SerializedName(SERIALIZED_NAME_PROBATION_PERIOD)
+  @javax.annotation.Nullable
   private OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod probationPeriod;
 
   public OffboardingTrackerIdGet200ResponseDataContractEor() {
   }
 
-  public OffboardingTrackerIdGet200ResponseDataContractEor probationPeriod(OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod probationPeriod) {
+  public OffboardingTrackerIdGet200ResponseDataContractEor probationPeriod(@javax.annotation.Nullable OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod probationPeriod) {
     this.probationPeriod = probationPeriod;
     return this;
   }
@@ -72,7 +73,7 @@ public class OffboardingTrackerIdGet200ResponseDataContractEor {
     return probationPeriod;
   }
 
-  public void setProbationPeriod(OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod probationPeriod) {
+  public void setProbationPeriod(@javax.annotation.Nullable OffboardingTrackerIdGet200ResponseDataContractEorProbationPeriod probationPeriod) {
     this.probationPeriod = probationPeriod;
   }
 

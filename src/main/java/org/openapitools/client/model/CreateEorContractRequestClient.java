@@ -50,20 +50,22 @@ import org.openapitools.client.JSON;
 /**
  * CreateEorContractRequestClient
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateEorContractRequestClient {
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
+  @javax.annotation.Nonnull
   private CreateEorContractRequestClientTeam team;
 
   public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
+  @javax.annotation.Nullable
   private CreateEorContractRequestClientLegalEntity legalEntity;
 
   public CreateEorContractRequestClient() {
   }
 
-  public CreateEorContractRequestClient team(CreateEorContractRequestClientTeam team) {
+  public CreateEorContractRequestClient team(@javax.annotation.Nonnull CreateEorContractRequestClientTeam team) {
     this.team = team;
     return this;
   }
@@ -77,12 +79,12 @@ public class CreateEorContractRequestClient {
     return team;
   }
 
-  public void setTeam(CreateEorContractRequestClientTeam team) {
+  public void setTeam(@javax.annotation.Nonnull CreateEorContractRequestClientTeam team) {
     this.team = team;
   }
 
 
-  public CreateEorContractRequestClient legalEntity(CreateEorContractRequestClientLegalEntity legalEntity) {
+  public CreateEorContractRequestClient legalEntity(@javax.annotation.Nullable CreateEorContractRequestClientLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
     return this;
   }
@@ -96,7 +98,7 @@ public class CreateEorContractRequestClient {
     return legalEntity;
   }
 
-  public void setLegalEntity(CreateEorContractRequestClientLegalEntity legalEntity) {
+  public void setLegalEntity(@javax.annotation.Nullable CreateEorContractRequestClientLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
   }
 

@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * GetGroups400Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetGroups400Response {
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
+  @javax.annotation.Nullable
   private String message;
 
   public GetGroups400Response() {
   }
 
-  public GetGroups400Response message(String message) {
+  public GetGroups400Response message(@javax.annotation.Nullable String message) {
     this.message = message;
     return this;
   }
@@ -71,7 +72,7 @@ public class GetGroups400Response {
     return message;
   }
 
-  public void setMessage(String message) {
+  public void setMessage(@javax.annotation.Nullable String message) {
     this.message = message;
   }
 

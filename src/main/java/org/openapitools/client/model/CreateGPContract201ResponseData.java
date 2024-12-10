@@ -54,10 +54,11 @@ import org.openapitools.client.JSON;
 /**
  * CreateGPContract201ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateGPContract201ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   /**
@@ -138,10 +139,12 @@ public class CreateGPContract201ResponseData {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
+  @javax.annotation.Nullable
   private CreateGPContract201ResponseDataClient client;
 
   /**
@@ -226,32 +229,38 @@ public class CreateGPContract201ResponseData {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_EMPLOYEE = "employee";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE)
+  @javax.annotation.Nullable
   private CreateGPContract201ResponseDataEmployee employee;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nullable
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_EMPLOYMENT = "employment";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT)
+  @javax.annotation.Nullable
   private CreateGPContract201ResponseDataEmployment employment;
 
   public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
   @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
+  @javax.annotation.Nullable
   private CreateGPContract201ResponseDataCompensationDetails compensationDetails;
 
   public CreateGPContract201ResponseData() {
   }
 
-  public CreateGPContract201ResponseData id(String id) {
+  public CreateGPContract201ResponseData id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -265,12 +274,12 @@ public class CreateGPContract201ResponseData {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public CreateGPContract201ResponseData type(TypeEnum type) {
+  public CreateGPContract201ResponseData type(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -284,12 +293,12 @@ public class CreateGPContract201ResponseData {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
 
-  public CreateGPContract201ResponseData client(CreateGPContract201ResponseDataClient client) {
+  public CreateGPContract201ResponseData client(@javax.annotation.Nullable CreateGPContract201ResponseDataClient client) {
     this.client = client;
     return this;
   }
@@ -303,12 +312,12 @@ public class CreateGPContract201ResponseData {
     return client;
   }
 
-  public void setClient(CreateGPContract201ResponseDataClient client) {
+  public void setClient(@javax.annotation.Nullable CreateGPContract201ResponseDataClient client) {
     this.client = client;
   }
 
 
-  public CreateGPContract201ResponseData status(StatusEnum status) {
+  public CreateGPContract201ResponseData status(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -322,12 +331,12 @@ public class CreateGPContract201ResponseData {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nullable StatusEnum status) {
     this.status = status;
   }
 
 
-  public CreateGPContract201ResponseData employee(CreateGPContract201ResponseDataEmployee employee) {
+  public CreateGPContract201ResponseData employee(@javax.annotation.Nullable CreateGPContract201ResponseDataEmployee employee) {
     this.employee = employee;
     return this;
   }
@@ -341,12 +350,12 @@ public class CreateGPContract201ResponseData {
     return employee;
   }
 
-  public void setEmployee(CreateGPContract201ResponseDataEmployee employee) {
+  public void setEmployee(@javax.annotation.Nullable CreateGPContract201ResponseDataEmployee employee) {
     this.employee = employee;
   }
 
 
-  public CreateGPContract201ResponseData jobTitle(String jobTitle) {
+  public CreateGPContract201ResponseData jobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -360,12 +369,12 @@ public class CreateGPContract201ResponseData {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public CreateGPContract201ResponseData createdAt(OffsetDateTime createdAt) {
+  public CreateGPContract201ResponseData createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -379,12 +388,12 @@ public class CreateGPContract201ResponseData {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public CreateGPContract201ResponseData employment(CreateGPContract201ResponseDataEmployment employment) {
+  public CreateGPContract201ResponseData employment(@javax.annotation.Nullable CreateGPContract201ResponseDataEmployment employment) {
     this.employment = employment;
     return this;
   }
@@ -398,12 +407,12 @@ public class CreateGPContract201ResponseData {
     return employment;
   }
 
-  public void setEmployment(CreateGPContract201ResponseDataEmployment employment) {
+  public void setEmployment(@javax.annotation.Nullable CreateGPContract201ResponseDataEmployment employment) {
     this.employment = employment;
   }
 
 
-  public CreateGPContract201ResponseData compensationDetails(CreateGPContract201ResponseDataCompensationDetails compensationDetails) {
+  public CreateGPContract201ResponseData compensationDetails(@javax.annotation.Nullable CreateGPContract201ResponseDataCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
     return this;
   }
@@ -417,7 +426,7 @@ public class CreateGPContract201ResponseData {
     return compensationDetails;
   }
 
-  public void setCompensationDetails(CreateGPContract201ResponseDataCompensationDetails compensationDetails) {
+  public void setCompensationDetails(@javax.annotation.Nullable CreateGPContract201ResponseDataCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
   }
 

@@ -49,32 +49,37 @@ import org.openapitools.client.JSON;
 /**
  * GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner {
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
+  @javax.annotation.Nullable
   private String lastName;
 
   public static final String SERIALIZED_NAME_FIRST_NAME = "first_name";
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
+  @javax.annotation.Nullable
   private String firstName;
 
   public static final String SERIALIZED_NAME_PROFILE_ID = "profile_id";
   @SerializedName(SERIALIZED_NAME_PROFILE_ID)
+  @javax.annotation.Nullable
   private UUID profileId;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_RELATION_ID = "relation_id";
   @SerializedName(SERIALIZED_NAME_RELATION_ID)
+  @javax.annotation.Nullable
   private UUID relationId;
 
   public GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner() {
   }
 
-  public GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner lastName(String lastName) {
+  public GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner lastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -88,12 +93,12 @@ public class GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRela
     return lastName;
   }
 
-  public void setLastName(String lastName) {
+  public void setLastName(@javax.annotation.Nullable String lastName) {
     this.lastName = lastName;
   }
 
 
-  public GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner firstName(String firstName) {
+  public GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner firstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -107,12 +112,12 @@ public class GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRela
     return firstName;
   }
 
-  public void setFirstName(String firstName) {
+  public void setFirstName(@javax.annotation.Nullable String firstName) {
     this.firstName = firstName;
   }
 
 
-  public GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner profileId(UUID profileId) {
+  public GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner profileId(@javax.annotation.Nullable UUID profileId) {
     this.profileId = profileId;
     return this;
   }
@@ -126,12 +131,12 @@ public class GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRela
     return profileId;
   }
 
-  public void setProfileId(UUID profileId) {
+  public void setProfileId(@javax.annotation.Nullable UUID profileId) {
     this.profileId = profileId;
   }
 
 
-  public GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner externalId(String externalId) {
+  public GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -145,12 +150,12 @@ public class GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRela
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner relationId(UUID relationId) {
+  public GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRelationshipsInner relationId(@javax.annotation.Nullable UUID relationId) {
     this.relationId = relationId;
     return this;
   }
@@ -164,7 +169,7 @@ public class GetAllProfileWorkerRelationsExternalId200ResponseDataInnerChildRela
     return relationId;
   }
 
-  public void setRelationId(UUID relationId) {
+  public void setRelationId(@javax.annotation.Nullable UUID relationId) {
     this.relationId = relationId;
   }
 

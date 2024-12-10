@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * Schema for updating a shift rate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateTimeTrackingShiftRateContainer {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private UpdateTimeTrackingShiftRateContainerData data;
 
   public UpdateTimeTrackingShiftRateContainer() {
   }
 
-  public UpdateTimeTrackingShiftRateContainer data(UpdateTimeTrackingShiftRateContainerData data) {
+  public UpdateTimeTrackingShiftRateContainer data(@javax.annotation.Nonnull UpdateTimeTrackingShiftRateContainerData data) {
     this.data = data;
     return this;
   }
@@ -72,7 +73,7 @@ public class UpdateTimeTrackingShiftRateContainer {
     return data;
   }
 
-  public void setData(UpdateTimeTrackingShiftRateContainerData data) {
+  public void setData(@javax.annotation.Nonnull UpdateTimeTrackingShiftRateContainerData data) {
     this.data = data;
   }
 

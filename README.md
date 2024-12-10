@@ -1,9 +1,9 @@
-# openapi-java-client
+# deel-api-java-sdk
 
 Deel REST API
 - API version: 1.25.0
-  - Build date: 2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]
-  - Generator version: 7.9.0
+  - Build date: 2024-12-10T18:53:15.717716351Z[GMT]
+  - Generator version: 7.10.0
 
 Deel REST API
 
@@ -39,8 +39,8 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.openapitools</groupId>
-  <artifactId>openapi-java-client</artifactId>
+  <groupId>com.deel</groupId>
+  <artifactId>deel-api-java-sdk</artifactId>
   <version>1.25.0</version>
   <scope>compile</scope>
 </dependency>
@@ -52,12 +52,12 @@ Add this dependency to your project's build file:
 
 ```groovy
   repositories {
-    mavenCentral()     // Needed if the 'openapi-java-client' jar has been published to maven central.
-    mavenLocal()       // Needed if the 'openapi-java-client' jar has been published to the local maven repo.
+    mavenCentral()     // Needed if the 'deel-api-java-sdk' jar has been published to maven central.
+    mavenLocal()       // Needed if the 'deel-api-java-sdk' jar has been published to the local maven repo.
   }
 
   dependencies {
-     implementation "org.openapitools:openapi-java-client:1.25.0"
+     implementation "com.deel:deel-api-java-sdk:1.25.0"
   }
 ```
 
@@ -71,7 +71,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/openapi-java-client-1.25.0.jar`
+* `target/deel-api-java-sdk-1.25.0.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -131,7 +131,6 @@ Class | Method | HTTP request | Description
 *AccountingApi* | [**getPaymentList**](docs/AccountingApi.md#getPaymentList) | **GET** /payments | Retrieve payment receipts
 *AccountingApi* | [**getPaymentsBreakDownById**](docs/AccountingApi.md#getPaymentsBreakDownById) | **GET** /payments/{payment_id}/breakdown | Retrieve a payment breakdown
 *AdjustmentsApi* | [**createAdjustment**](docs/AdjustmentsApi.md#createAdjustment) | **POST** /adjustments | Create a new adjustment
-*AdjustmentsApi* | [**createFileRef**](docs/AdjustmentsApi.md#createFileRef) | **POST** /attachments | Upload file to Deel
 *AdjustmentsApi* | [**deleteAdjustment**](docs/AdjustmentsApi.md#deleteAdjustment) | **DELETE** /adjustments/{id} | Delete an adjustment
 *AdjustmentsApi* | [**getAdjustments**](docs/AdjustmentsApi.md#getAdjustments) | **GET** /contracts/{contract_id}/adjustments | Retrieve adjustments
 *AdjustmentsApi* | [**getAdjustmentsById**](docs/AdjustmentsApi.md#getAdjustmentsById) | **GET** /adjustments/{id} | Retrieve an adjustment
@@ -158,7 +157,6 @@ Class | Method | HTTP request | Description
 *ContractsApi* | [**approveExerciseEquity**](docs/ContractsApi.md#approveExerciseEquity) | **PATCH** /equity/exercise/{public_id} | Approve an equity exercise
 *ContractsApi* | [**archiveContract**](docs/ContractsApi.md#archiveContract) | **PATCH** /contracts/{contract_id}/archive | Archive a contract
 *ContractsApi* | [**attachExternalId**](docs/ContractsApi.md#attachExternalId) | **PATCH** /contracts/{contract_id} | External Id
-*ContractsApi* | [**calculateFinalPayment**](docs/ContractsApi.md#calculateFinalPayment) | **GET** /contracts/{contract_id}/final-payments | Calculate final payment
 *ContractsApi* | [**editContractDocument**](docs/ContractsApi.md#editContractDocument) | **PUT** /contracts/{contract_id}/documents | Edit the file attached to contract document.
 *ContractsApi* | [**getAlternateEmailsByContractId**](docs/ContractsApi.md#getAlternateEmailsByContractId) | **GET** /contracts/{contract_id}/alternate_emails | Find contract emails by ID
 *ContractsApi* | [**getContractById**](docs/ContractsApi.md#getContractById) | **GET** /contracts/{contract_id} | Retrieve a single contract
@@ -550,25 +548,7 @@ Class | Method | HTTP request | Description
  - [CreateContractPgoTakRequestData](docs/CreateContractPgoTakRequestData.md)
  - [CreateContractPgoTakRequestDataAttachment](docs/CreateContractPgoTakRequestDataAttachment.md)
  - [CreateContractRequest](docs/CreateContractRequest.md)
- - [CreateContractRequest1](docs/CreateContractRequest1.md)
- - [CreateContractRequest1OneOf](docs/CreateContractRequest1OneOf.md)
- - [CreateContractRequest1OneOf1](docs/CreateContractRequest1OneOf1.md)
- - [CreateContractRequest1OneOf2](docs/CreateContractRequest1OneOf2.md)
- - [CreateContractRequest1OneOf3](docs/CreateContractRequest1OneOf3.md)
- - [CreateContractRequestAnyOf](docs/CreateContractRequestAnyOf.md)
- - [CreateContractRequestAnyOf1](docs/CreateContractRequestAnyOf1.md)
- - [CreateContractRequestAnyOf1AllOfCompensationDetails](docs/CreateContractRequestAnyOf1AllOfCompensationDetails.md)
- - [CreateContractRequestAnyOf2](docs/CreateContractRequestAnyOf2.md)
- - [CreateContractRequestAnyOf3](docs/CreateContractRequestAnyOf3.md)
- - [CreateContractRequestAnyOfAllOfClient](docs/CreateContractRequestAnyOfAllOfClient.md)
- - [CreateContractRequestAnyOfAllOfClientLegalEntity](docs/CreateContractRequestAnyOfAllOfClientLegalEntity.md)
- - [CreateContractRequestAnyOfAllOfClientTeam](docs/CreateContractRequestAnyOfAllOfClientTeam.md)
- - [CreateContractRequestAnyOfAllOfClientTeamId](docs/CreateContractRequestAnyOfAllOfClientTeamId.md)
- - [CreateContractRequestAnyOfAllOfCompensationDetails](docs/CreateContractRequestAnyOfAllOfCompensationDetails.md)
- - [CreateContractRequestAnyOfAllOfJobTitle](docs/CreateContractRequestAnyOfAllOfJobTitle.md)
- - [CreateContractRequestAnyOfAllOfMeta](docs/CreateContractRequestAnyOfAllOfMeta.md)
- - [CreateContractRequestAnyOfAllOfSeniority](docs/CreateContractRequestAnyOfAllOfSeniority.md)
- - [CreateContractRequestAnyOfAllOfWorker](docs/CreateContractRequestAnyOfAllOfWorker.md)
+ - [CreateContractRequestData](docs/CreateContractRequestData.md)
  - [CreateDirectEmployee201Response](docs/CreateDirectEmployee201Response.md)
  - [CreateDirectEmployee201ResponseData](docs/CreateDirectEmployee201ResponseData.md)
  - [CreateDirectEmployee201ResponseDataCompensationDetails](docs/CreateDirectEmployee201ResponseDataCompensationDetails.md)
@@ -898,7 +878,6 @@ Class | Method | HTTP request | Description
  - [FinalPaymentCalculatedLastCycle](docs/FinalPaymentCalculatedLastCycle.md)
  - [GPClient](docs/GPClient.md)
  - [GPClientLegalEntity](docs/GPClientLegalEntity.md)
- - [GPClientTeam](docs/GPClientTeam.md)
  - [GPContractCreated](docs/GPContractCreated.md)
  - [GPContractCreatedCompensationDetails](docs/GPContractCreatedCompensationDetails.md)
  - [GPContractCreatedContainer](docs/GPContractCreatedContainer.md)
@@ -1081,7 +1060,6 @@ Class | Method | HTTP request | Description
  - [GetEorCountryValidations200ResponseData](docs/GetEorCountryValidations200ResponseData.md)
  - [GetEorCountryValidations200ResponseDataHealthInsurance](docs/GetEorCountryValidations200ResponseDataHealthInsurance.md)
  - [GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner](docs/GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner.md)
- - [GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInnerId](docs/GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInnerId.md)
  - [GetEorCountryValidations200ResponseDataHoliday](docs/GetEorCountryValidations200ResponseDataHoliday.md)
  - [GetEorCountryValidations200ResponseDataProbation](docs/GetEorCountryValidations200ResponseDataProbation.md)
  - [GetEorCountryValidations200ResponseDataSalary](docs/GetEorCountryValidations200ResponseDataSalary.md)
@@ -1325,6 +1303,8 @@ Class | Method | HTTP request | Description
  - [HrisPositionToChangeContainerDataAddInner](docs/HrisPositionToChangeContainerDataAddInner.md)
  - [HrisPositionToChangeContainerDataEditInner](docs/HrisPositionToChangeContainerDataEditInner.md)
  - [HrisTeamInformation](docs/HrisTeamInformation.md)
+ - [IdentifierValueForFilter](docs/IdentifierValueForFilter.md)
+ - [InlineObject](docs/InlineObject.md)
  - [InputToCreateFileRef](docs/InputToCreateFileRef.md)
  - [InputToCreateFileRefData](docs/InputToCreateFileRefData.md)
  - [InputToCreatePgoTask](docs/InputToCreatePgoTask.md)
@@ -1401,6 +1381,7 @@ Class | Method | HTTP request | Description
  - [MilestoneToCreateContainer](docs/MilestoneToCreateContainer.md)
  - [MilestoneToCreateFormWithFile](docs/MilestoneToCreateFormWithFile.md)
  - [MonthlyPayment](docs/MonthlyPayment.md)
+ - [ONGOINGTIMEBASED](docs/ONGOINGTIMEBASED.md)
  - [OffCyclePayment](docs/OffCyclePayment.md)
  - [OffCyclePaymentContainer](docs/OffCyclePaymentContainer.md)
  - [OffCyclePaymentListContainer](docs/OffCyclePaymentListContainer.md)
@@ -1449,6 +1430,19 @@ Class | Method | HTTP request | Description
  - [OrganizationListContainer](docs/OrganizationListContainer.md)
  - [OutputToCreateFileRef](docs/OutputToCreateFileRef.md)
  - [OutputToCreateFileRefContainer](docs/OutputToCreateFileRefContainer.md)
+ - [PAYASYOUGOTIMEBASED](docs/PAYASYOUGOTIMEBASED.md)
+ - [PAYASYOUGOTIMEBASEDAllOfClient](docs/PAYASYOUGOTIMEBASEDAllOfClient.md)
+ - [PAYASYOUGOTIMEBASEDAllOfClientLegalEntity](docs/PAYASYOUGOTIMEBASEDAllOfClientLegalEntity.md)
+ - [PAYASYOUGOTIMEBASEDAllOfClientTeam](docs/PAYASYOUGOTIMEBASEDAllOfClientTeam.md)
+ - [PAYASYOUGOTIMEBASEDAllOfClientTeamId](docs/PAYASYOUGOTIMEBASEDAllOfClientTeamId.md)
+ - [PAYASYOUGOTIMEBASEDAllOfCompensationDetails](docs/PAYASYOUGOTIMEBASEDAllOfCompensationDetails.md)
+ - [PAYASYOUGOTIMEBASEDAllOfJobTitle](docs/PAYASYOUGOTIMEBASEDAllOfJobTitle.md)
+ - [PAYASYOUGOTIMEBASEDAllOfMeta](docs/PAYASYOUGOTIMEBASEDAllOfMeta.md)
+ - [PAYASYOUGOTIMEBASEDAllOfSeniority](docs/PAYASYOUGOTIMEBASEDAllOfSeniority.md)
+ - [PAYASYOUGOTIMEBASEDAllOfWorker](docs/PAYASYOUGOTIMEBASEDAllOfWorker.md)
+ - [PAYGMILESTONES](docs/PAYGMILESTONES.md)
+ - [PAYGTASKS](docs/PAYGTASKS.md)
+ - [PAYGTASKSAllOfCompensationDetails](docs/PAYGTASKSAllOfCompensationDetails.md)
  - [PageInfo](docs/PageInfo.md)
  - [PageInfoWithoutCursor](docs/PageInfoWithoutCursor.md)
  - [PageInfoWithoutCursorNew](docs/PageInfoWithoutCursorNew.md)

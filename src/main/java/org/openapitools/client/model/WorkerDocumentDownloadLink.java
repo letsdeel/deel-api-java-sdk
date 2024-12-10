@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * WorkerDocumentDownloadLink
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class WorkerDocumentDownloadLink {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
+  @javax.annotation.Nullable
   private String url;
 
   public static final String SERIALIZED_NAME_EXPIRES_AT = "expires_at";
   @SerializedName(SERIALIZED_NAME_EXPIRES_AT)
+  @javax.annotation.Nullable
   private String expiresAt;
 
   public WorkerDocumentDownloadLink() {
   }
 
-  public WorkerDocumentDownloadLink url(String url) {
+  public WorkerDocumentDownloadLink url(@javax.annotation.Nullable String url) {
     this.url = url;
     return this;
   }
@@ -75,12 +77,12 @@ public class WorkerDocumentDownloadLink {
     return url;
   }
 
-  public void setUrl(String url) {
+  public void setUrl(@javax.annotation.Nullable String url) {
     this.url = url;
   }
 
 
-  public WorkerDocumentDownloadLink expiresAt(String expiresAt) {
+  public WorkerDocumentDownloadLink expiresAt(@javax.annotation.Nullable String expiresAt) {
     this.expiresAt = expiresAt;
     return this;
   }
@@ -94,7 +96,7 @@ public class WorkerDocumentDownloadLink {
     return expiresAt;
   }
 
-  public void setExpiresAt(String expiresAt) {
+  public void setExpiresAt(@javax.annotation.Nullable String expiresAt) {
     this.expiresAt = expiresAt;
   }
 

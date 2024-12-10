@@ -48,10 +48,11 @@ import org.openapitools.client.JSON;
 /**
  * Some countries require additional employee information for employment contracts.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorContractToCreateQuoteAdditionalFields {
   public static final String SERIALIZED_NAME_GENDER = "gender";
   @SerializedName(SERIALIZED_NAME_GENDER)
+  @javax.annotation.Nullable
   private String gender;
 
   /**
@@ -108,16 +109,18 @@ public class EorContractToCreateQuoteAdditionalFields {
 
   public static final String SERIALIZED_NAME_WORKER_TYPE = "worker_type";
   @SerializedName(SERIALIZED_NAME_WORKER_TYPE)
+  @javax.annotation.Nullable
   private WorkerTypeEnum workerType;
 
   public static final String SERIALIZED_NAME_DOB = "dob";
   @SerializedName(SERIALIZED_NAME_DOB)
+  @javax.annotation.Nullable
   private String dob;
 
   public EorContractToCreateQuoteAdditionalFields() {
   }
 
-  public EorContractToCreateQuoteAdditionalFields gender(String gender) {
+  public EorContractToCreateQuoteAdditionalFields gender(@javax.annotation.Nullable String gender) {
     this.gender = gender;
     return this;
   }
@@ -131,12 +134,12 @@ public class EorContractToCreateQuoteAdditionalFields {
     return gender;
   }
 
-  public void setGender(String gender) {
+  public void setGender(@javax.annotation.Nullable String gender) {
     this.gender = gender;
   }
 
 
-  public EorContractToCreateQuoteAdditionalFields workerType(WorkerTypeEnum workerType) {
+  public EorContractToCreateQuoteAdditionalFields workerType(@javax.annotation.Nullable WorkerTypeEnum workerType) {
     this.workerType = workerType;
     return this;
   }
@@ -150,12 +153,12 @@ public class EorContractToCreateQuoteAdditionalFields {
     return workerType;
   }
 
-  public void setWorkerType(WorkerTypeEnum workerType) {
+  public void setWorkerType(@javax.annotation.Nullable WorkerTypeEnum workerType) {
     this.workerType = workerType;
   }
 
 
-  public EorContractToCreateQuoteAdditionalFields dob(String dob) {
+  public EorContractToCreateQuoteAdditionalFields dob(@javax.annotation.Nullable String dob) {
     this.dob = dob;
     return this;
   }
@@ -169,7 +172,7 @@ public class EorContractToCreateQuoteAdditionalFields {
     return dob;
   }
 
-  public void setDob(String dob) {
+  public void setDob(@javax.annotation.Nullable String dob) {
     this.dob = dob;
   }
 

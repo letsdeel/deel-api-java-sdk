@@ -67,7 +67,7 @@ import com.google.gson.JsonParseException;
 
 import org.openapitools.client.JSON;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpenApiSchema {
     private static final Logger log = Logger.getLogger(UpsertCustomFieldValueFromContractsRequestData.class.getName());
 
@@ -342,6 +342,7 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
     public UpsertCustomFieldValueFromContractsRequestDataOneOf getUpsertCustomFieldValueFromContractsRequestDataOneOf() throws ClassCastException {
         return (UpsertCustomFieldValueFromContractsRequestDataOneOf)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `UpsertCustomFieldValueFromContractsRequestDataOneOf1`. If the actual instance is not `UpsertCustomFieldValueFromContractsRequestDataOneOf1`,
      * the ClassCastException will be thrown.
@@ -352,6 +353,7 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
     public UpsertCustomFieldValueFromContractsRequestDataOneOf1 getUpsertCustomFieldValueFromContractsRequestDataOneOf1() throws ClassCastException {
         return (UpsertCustomFieldValueFromContractsRequestDataOneOf1)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2`. If the actual instance is not `GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2`,
      * the ClassCastException will be thrown.
@@ -362,6 +364,7 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
     public GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2 getGetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2() throws ClassCastException {
         return (GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `UpsertCustomFieldValueFromContractsRequestDataOneOf2`. If the actual instance is not `UpsertCustomFieldValueFromContractsRequestDataOneOf2`,
      * the ClassCastException will be thrown.
@@ -372,6 +375,7 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
     public UpsertCustomFieldValueFromContractsRequestDataOneOf2 getUpsertCustomFieldValueFromContractsRequestDataOneOf2() throws ClassCastException {
         return (UpsertCustomFieldValueFromContractsRequestDataOneOf2)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `UpsertCustomFieldValueFromWorkerRequestDataOneOf4`. If the actual instance is not `UpsertCustomFieldValueFromWorkerRequestDataOneOf4`,
      * the ClassCastException will be thrown.
@@ -382,6 +386,7 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
     public UpsertCustomFieldValueFromWorkerRequestDataOneOf4 getUpsertCustomFieldValueFromWorkerRequestDataOneOf4() throws ClassCastException {
         return (UpsertCustomFieldValueFromWorkerRequestDataOneOf4)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `UpsertCustomFieldValueFromContractsRequestDataOneOf3`. If the actual instance is not `UpsertCustomFieldValueFromContractsRequestDataOneOf3`,
      * the ClassCastException will be thrown.
@@ -392,6 +397,7 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
     public UpsertCustomFieldValueFromContractsRequestDataOneOf3 getUpsertCustomFieldValueFromContractsRequestDataOneOf3() throws ClassCastException {
         return (UpsertCustomFieldValueFromContractsRequestDataOneOf3)super.getActualInstance();
     }
+
     /**
      * Get the actual instance of `UpsertCustomFieldValueFromContractsRequestDataOneOf4`. If the actual instance is not `UpsertCustomFieldValueFromContractsRequestDataOneOf4`,
      * the ClassCastException will be thrown.

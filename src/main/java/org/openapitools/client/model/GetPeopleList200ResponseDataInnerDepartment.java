@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * The department of the employee.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPeopleList200ResponseDataInnerDepartment {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private UUID id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_PARENT = "parent";
   @SerializedName(SERIALIZED_NAME_PARENT)
+  @javax.annotation.Nullable
   private String parent;
 
   public GetPeopleList200ResponseDataInnerDepartment() {
   }
 
-  public GetPeopleList200ResponseDataInnerDepartment id(UUID id) {
+  public GetPeopleList200ResponseDataInnerDepartment id(@javax.annotation.Nullable UUID id) {
     this.id = id;
     return this;
   }
@@ -80,12 +83,12 @@ public class GetPeopleList200ResponseDataInnerDepartment {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nullable UUID id) {
     this.id = id;
   }
 
 
-  public GetPeopleList200ResponseDataInnerDepartment name(String name) {
+  public GetPeopleList200ResponseDataInnerDepartment name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -99,12 +102,12 @@ public class GetPeopleList200ResponseDataInnerDepartment {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetPeopleList200ResponseDataInnerDepartment parent(String parent) {
+  public GetPeopleList200ResponseDataInnerDepartment parent(@javax.annotation.Nullable String parent) {
     this.parent = parent;
     return this;
   }
@@ -118,7 +121,7 @@ public class GetPeopleList200ResponseDataInnerDepartment {
     return parent;
   }
 
-  public void setParent(String parent) {
+  public void setParent(@javax.annotation.Nullable String parent) {
     this.parent = parent;
   }
 

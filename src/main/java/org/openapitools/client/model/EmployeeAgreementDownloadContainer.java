@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * EmployeeAgreementDownloadContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EmployeeAgreementDownloadContainer {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private EmployeeAgreementDownloadObject data;
 
   public EmployeeAgreementDownloadContainer() {
   }
 
-  public EmployeeAgreementDownloadContainer data(EmployeeAgreementDownloadObject data) {
+  public EmployeeAgreementDownloadContainer data(@javax.annotation.Nonnull EmployeeAgreementDownloadObject data) {
     this.data = data;
     return this;
   }
@@ -72,7 +73,7 @@ public class EmployeeAgreementDownloadContainer {
     return data;
   }
 
-  public void setData(EmployeeAgreementDownloadObject data) {
+  public void setData(@javax.annotation.Nonnull EmployeeAgreementDownloadObject data) {
     this.data = data;
   }
 

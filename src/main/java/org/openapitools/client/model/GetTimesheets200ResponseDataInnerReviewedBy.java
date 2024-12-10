@@ -50,28 +50,32 @@ import org.openapitools.client.JSON;
 /**
  * GetTimesheets200ResponseDataInnerReviewedBy
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetTimesheets200ResponseDataInnerReviewedBy {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_REMARKS = "remarks";
   @SerializedName(SERIALIZED_NAME_REMARKS)
+  @javax.annotation.Nonnull
   private String remarks;
 
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nonnull
   private String fullName;
 
   public static final String SERIALIZED_NAME_REVIEWED_AT = "reviewed_at";
   @SerializedName(SERIALIZED_NAME_REVIEWED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime reviewedAt;
 
   public GetTimesheets200ResponseDataInnerReviewedBy() {
   }
 
-  public GetTimesheets200ResponseDataInnerReviewedBy id(UUID id) {
+  public GetTimesheets200ResponseDataInnerReviewedBy id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -85,12 +89,12 @@ public class GetTimesheets200ResponseDataInnerReviewedBy {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public GetTimesheets200ResponseDataInnerReviewedBy remarks(String remarks) {
+  public GetTimesheets200ResponseDataInnerReviewedBy remarks(@javax.annotation.Nonnull String remarks) {
     this.remarks = remarks;
     return this;
   }
@@ -104,12 +108,12 @@ public class GetTimesheets200ResponseDataInnerReviewedBy {
     return remarks;
   }
 
-  public void setRemarks(String remarks) {
+  public void setRemarks(@javax.annotation.Nonnull String remarks) {
     this.remarks = remarks;
   }
 
 
-  public GetTimesheets200ResponseDataInnerReviewedBy fullName(String fullName) {
+  public GetTimesheets200ResponseDataInnerReviewedBy fullName(@javax.annotation.Nonnull String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -123,12 +127,12 @@ public class GetTimesheets200ResponseDataInnerReviewedBy {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nonnull String fullName) {
     this.fullName = fullName;
   }
 
 
-  public GetTimesheets200ResponseDataInnerReviewedBy reviewedAt(OffsetDateTime reviewedAt) {
+  public GetTimesheets200ResponseDataInnerReviewedBy reviewedAt(@javax.annotation.Nonnull OffsetDateTime reviewedAt) {
     this.reviewedAt = reviewedAt;
     return this;
   }
@@ -142,7 +146,7 @@ public class GetTimesheets200ResponseDataInnerReviewedBy {
     return reviewedAt;
   }
 
-  public void setReviewedAt(OffsetDateTime reviewedAt) {
+  public void setReviewedAt(@javax.annotation.Nonnull OffsetDateTime reviewedAt) {
     this.reviewedAt = reviewedAt;
   }
 

@@ -50,36 +50,42 @@ import org.openapitools.client.JSON;
 /**
  * EmployeeTimeoffsPoliciesItemEntitlement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EmployeeTimeoffsPoliciesItemEntitlement {
   public static final String SERIALIZED_NAME_ACCRUAL_AMOUNT = "accrual_amount";
   @SerializedName(SERIALIZED_NAME_ACCRUAL_AMOUNT)
+  @javax.annotation.Nullable
   private String accrualAmount;
 
   public static final String SERIALIZED_NAME_ACCRUAL_UNIT = "accrual_unit";
   @SerializedName(SERIALIZED_NAME_ACCRUAL_UNIT)
+  @javax.annotation.Nullable
   private String accrualUnit;
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
+  @javax.annotation.Nullable
   private String total;
 
   public static final String SERIALIZED_NAME_UNIT_AMOUNT = "unit_amount";
   @SerializedName(SERIALIZED_NAME_UNIT_AMOUNT)
+  @javax.annotation.Nullable
   private BigDecimal unitAmount;
 
   public static final String SERIALIZED_NAME_UNIT = "unit";
   @SerializedName(SERIALIZED_NAME_UNIT)
+  @javax.annotation.Nullable
   private String unit;
 
   public static final String SERIALIZED_NAME_ACCRUED = "accrued";
   @SerializedName(SERIALIZED_NAME_ACCRUED)
+  @javax.annotation.Nullable
   private String accrued;
 
   public EmployeeTimeoffsPoliciesItemEntitlement() {
   }
 
-  public EmployeeTimeoffsPoliciesItemEntitlement accrualAmount(String accrualAmount) {
+  public EmployeeTimeoffsPoliciesItemEntitlement accrualAmount(@javax.annotation.Nullable String accrualAmount) {
     this.accrualAmount = accrualAmount;
     return this;
   }
@@ -93,12 +99,12 @@ public class EmployeeTimeoffsPoliciesItemEntitlement {
     return accrualAmount;
   }
 
-  public void setAccrualAmount(String accrualAmount) {
+  public void setAccrualAmount(@javax.annotation.Nullable String accrualAmount) {
     this.accrualAmount = accrualAmount;
   }
 
 
-  public EmployeeTimeoffsPoliciesItemEntitlement accrualUnit(String accrualUnit) {
+  public EmployeeTimeoffsPoliciesItemEntitlement accrualUnit(@javax.annotation.Nullable String accrualUnit) {
     this.accrualUnit = accrualUnit;
     return this;
   }
@@ -112,12 +118,12 @@ public class EmployeeTimeoffsPoliciesItemEntitlement {
     return accrualUnit;
   }
 
-  public void setAccrualUnit(String accrualUnit) {
+  public void setAccrualUnit(@javax.annotation.Nullable String accrualUnit) {
     this.accrualUnit = accrualUnit;
   }
 
 
-  public EmployeeTimeoffsPoliciesItemEntitlement total(String total) {
+  public EmployeeTimeoffsPoliciesItemEntitlement total(@javax.annotation.Nullable String total) {
     this.total = total;
     return this;
   }
@@ -131,12 +137,12 @@ public class EmployeeTimeoffsPoliciesItemEntitlement {
     return total;
   }
 
-  public void setTotal(String total) {
+  public void setTotal(@javax.annotation.Nullable String total) {
     this.total = total;
   }
 
 
-  public EmployeeTimeoffsPoliciesItemEntitlement unitAmount(BigDecimal unitAmount) {
+  public EmployeeTimeoffsPoliciesItemEntitlement unitAmount(@javax.annotation.Nullable BigDecimal unitAmount) {
     this.unitAmount = unitAmount;
     return this;
   }
@@ -150,12 +156,12 @@ public class EmployeeTimeoffsPoliciesItemEntitlement {
     return unitAmount;
   }
 
-  public void setUnitAmount(BigDecimal unitAmount) {
+  public void setUnitAmount(@javax.annotation.Nullable BigDecimal unitAmount) {
     this.unitAmount = unitAmount;
   }
 
 
-  public EmployeeTimeoffsPoliciesItemEntitlement unit(String unit) {
+  public EmployeeTimeoffsPoliciesItemEntitlement unit(@javax.annotation.Nullable String unit) {
     this.unit = unit;
     return this;
   }
@@ -169,12 +175,12 @@ public class EmployeeTimeoffsPoliciesItemEntitlement {
     return unit;
   }
 
-  public void setUnit(String unit) {
+  public void setUnit(@javax.annotation.Nullable String unit) {
     this.unit = unit;
   }
 
 
-  public EmployeeTimeoffsPoliciesItemEntitlement accrued(String accrued) {
+  public EmployeeTimeoffsPoliciesItemEntitlement accrued(@javax.annotation.Nullable String accrued) {
     this.accrued = accrued;
     return this;
   }
@@ -188,7 +194,7 @@ public class EmployeeTimeoffsPoliciesItemEntitlement {
     return accrued;
   }
 
-  public void setAccrued(String accrued) {
+  public void setAccrued(@javax.annotation.Nullable String accrued) {
     this.accrued = accrued;
   }
 

@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * GetContractTemplates200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractTemplates200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private CreateEorContractRequestClientTeamId id;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nonnull
   private String title;
 
   public GetContractTemplates200ResponseDataInner() {
   }
 
-  public GetContractTemplates200ResponseDataInner id(CreateEorContractRequestClientTeamId id) {
+  public GetContractTemplates200ResponseDataInner id(@javax.annotation.Nonnull CreateEorContractRequestClientTeamId id) {
     this.id = id;
     return this;
   }
@@ -76,12 +78,12 @@ public class GetContractTemplates200ResponseDataInner {
     return id;
   }
 
-  public void setId(CreateEorContractRequestClientTeamId id) {
+  public void setId(@javax.annotation.Nonnull CreateEorContractRequestClientTeamId id) {
     this.id = id;
   }
 
 
-  public GetContractTemplates200ResponseDataInner title(String title) {
+  public GetContractTemplates200ResponseDataInner title(@javax.annotation.Nonnull String title) {
     this.title = title;
     return this;
   }
@@ -95,7 +97,7 @@ public class GetContractTemplates200ResponseDataInner {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nonnull String title) {
     this.title = title;
   }
 

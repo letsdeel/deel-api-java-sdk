@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * SignaturesOfBasicContract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class SignaturesOfBasicContract {
   public static final String SERIALIZED_NAME_CLIENT_SIGNED_AT = "client_signed_at";
   @SerializedName(SERIALIZED_NAME_CLIENT_SIGNED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime clientSignedAt;
 
   public static final String SERIALIZED_NAME_WORKER_SIGNATURE = "worker_signature";
   @SerializedName(SERIALIZED_NAME_WORKER_SIGNATURE)
+  @javax.annotation.Nonnull
   private String workerSignature;
 
   public static final String SERIALIZED_NAME_WORKER_SIGNED_AT = "worker_signed_at";
   @SerializedName(SERIALIZED_NAME_WORKER_SIGNED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime workerSignedAt;
 
   public SignaturesOfBasicContract() {
   }
 
-  public SignaturesOfBasicContract clientSignedAt(OffsetDateTime clientSignedAt) {
+  public SignaturesOfBasicContract clientSignedAt(@javax.annotation.Nullable OffsetDateTime clientSignedAt) {
     this.clientSignedAt = clientSignedAt;
     return this;
   }
@@ -80,12 +83,12 @@ public class SignaturesOfBasicContract {
     return clientSignedAt;
   }
 
-  public void setClientSignedAt(OffsetDateTime clientSignedAt) {
+  public void setClientSignedAt(@javax.annotation.Nullable OffsetDateTime clientSignedAt) {
     this.clientSignedAt = clientSignedAt;
   }
 
 
-  public SignaturesOfBasicContract workerSignature(String workerSignature) {
+  public SignaturesOfBasicContract workerSignature(@javax.annotation.Nonnull String workerSignature) {
     this.workerSignature = workerSignature;
     return this;
   }
@@ -99,12 +102,12 @@ public class SignaturesOfBasicContract {
     return workerSignature;
   }
 
-  public void setWorkerSignature(String workerSignature) {
+  public void setWorkerSignature(@javax.annotation.Nonnull String workerSignature) {
     this.workerSignature = workerSignature;
   }
 
 
-  public SignaturesOfBasicContract workerSignedAt(OffsetDateTime workerSignedAt) {
+  public SignaturesOfBasicContract workerSignedAt(@javax.annotation.Nullable OffsetDateTime workerSignedAt) {
     this.workerSignedAt = workerSignedAt;
     return this;
   }
@@ -118,7 +121,7 @@ public class SignaturesOfBasicContract {
     return workerSignedAt;
   }
 
-  public void setWorkerSignedAt(OffsetDateTime workerSignedAt) {
+  public void setWorkerSignedAt(@javax.annotation.Nullable OffsetDateTime workerSignedAt) {
     this.workerSignedAt = workerSignedAt;
   }
 

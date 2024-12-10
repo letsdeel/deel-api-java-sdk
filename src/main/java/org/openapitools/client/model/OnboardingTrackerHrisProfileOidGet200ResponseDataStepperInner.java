@@ -51,24 +51,27 @@ import org.openapitools.client.JSON;
 /**
  * OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nullable
   private OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerData data;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_COMPLETED_AT = "completed_at";
   @SerializedName(SERIALIZED_NAME_COMPLETED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime completedAt;
 
   public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner() {
   }
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner data(OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerData data) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner data(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerData data) {
     this.data = data;
     return this;
   }
@@ -82,12 +85,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner {
     return data;
   }
 
-  public void setData(OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerData data) {
+  public void setData(@javax.annotation.Nullable OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInnerData data) {
     this.data = data;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner type(String type) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -101,12 +104,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner completedAt(OffsetDateTime completedAt) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner completedAt(@javax.annotation.Nullable OffsetDateTime completedAt) {
     this.completedAt = completedAt;
     return this;
   }
@@ -120,7 +123,7 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataStepperInner {
     return completedAt;
   }
 
-  public void setCompletedAt(OffsetDateTime completedAt) {
+  public void setCompletedAt(@javax.annotation.Nullable OffsetDateTime completedAt) {
     this.completedAt = completedAt;
   }
 

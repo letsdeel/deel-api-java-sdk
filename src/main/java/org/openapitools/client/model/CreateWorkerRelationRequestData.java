@@ -51,24 +51,27 @@ import org.openapitools.client.JSON;
 /**
  * CreateWorkerRelationRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateWorkerRelationRequestData {
   public static final String SERIALIZED_NAME_CHILD_HRIS_PROFILE_IDS = "child_hris_profile_ids";
   @SerializedName(SERIALIZED_NAME_CHILD_HRIS_PROFILE_IDS)
+  @javax.annotation.Nonnull
   private List<UUID> childHrisProfileIds = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PARENT_HRIS_PROFILE_ID = "parent_hris_profile_id";
   @SerializedName(SERIALIZED_NAME_PARENT_HRIS_PROFILE_ID)
+  @javax.annotation.Nonnull
   private UUID parentHrisProfileId;
 
   public static final String SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_ID = "hris_relationship_type_id";
   @SerializedName(SERIALIZED_NAME_HRIS_RELATIONSHIP_TYPE_ID)
+  @javax.annotation.Nonnull
   private UUID hrisRelationshipTypeId;
 
   public CreateWorkerRelationRequestData() {
   }
 
-  public CreateWorkerRelationRequestData childHrisProfileIds(List<UUID> childHrisProfileIds) {
+  public CreateWorkerRelationRequestData childHrisProfileIds(@javax.annotation.Nonnull List<UUID> childHrisProfileIds) {
     this.childHrisProfileIds = childHrisProfileIds;
     return this;
   }
@@ -90,12 +93,12 @@ public class CreateWorkerRelationRequestData {
     return childHrisProfileIds;
   }
 
-  public void setChildHrisProfileIds(List<UUID> childHrisProfileIds) {
+  public void setChildHrisProfileIds(@javax.annotation.Nonnull List<UUID> childHrisProfileIds) {
     this.childHrisProfileIds = childHrisProfileIds;
   }
 
 
-  public CreateWorkerRelationRequestData parentHrisProfileId(UUID parentHrisProfileId) {
+  public CreateWorkerRelationRequestData parentHrisProfileId(@javax.annotation.Nonnull UUID parentHrisProfileId) {
     this.parentHrisProfileId = parentHrisProfileId;
     return this;
   }
@@ -109,12 +112,12 @@ public class CreateWorkerRelationRequestData {
     return parentHrisProfileId;
   }
 
-  public void setParentHrisProfileId(UUID parentHrisProfileId) {
+  public void setParentHrisProfileId(@javax.annotation.Nonnull UUID parentHrisProfileId) {
     this.parentHrisProfileId = parentHrisProfileId;
   }
 
 
-  public CreateWorkerRelationRequestData hrisRelationshipTypeId(UUID hrisRelationshipTypeId) {
+  public CreateWorkerRelationRequestData hrisRelationshipTypeId(@javax.annotation.Nonnull UUID hrisRelationshipTypeId) {
     this.hrisRelationshipTypeId = hrisRelationshipTypeId;
     return this;
   }
@@ -128,7 +131,7 @@ public class CreateWorkerRelationRequestData {
     return hrisRelationshipTypeId;
   }
 
-  public void setHrisRelationshipTypeId(UUID hrisRelationshipTypeId) {
+  public void setHrisRelationshipTypeId(@javax.annotation.Nonnull UUID hrisRelationshipTypeId) {
     this.hrisRelationshipTypeId = hrisRelationshipTypeId;
   }
 

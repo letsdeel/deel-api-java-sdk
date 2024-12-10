@@ -51,36 +51,42 @@ import org.openapitools.client.JSON;
 /**
  * Schema for a shift rate response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeTrackingShiftRateResponse {
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nonnull
   private String externalId;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nonnull
   private String name;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TimeTrackingShiftRateType type;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nonnull
   private BigDecimal value;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime updatedAt;
 
   public TimeTrackingShiftRateResponse() {
   }
 
-  public TimeTrackingShiftRateResponse externalId(String externalId) {
+  public TimeTrackingShiftRateResponse externalId(@javax.annotation.Nonnull String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -94,12 +100,12 @@ public class TimeTrackingShiftRateResponse {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nonnull String externalId) {
     this.externalId = externalId;
   }
 
 
-  public TimeTrackingShiftRateResponse name(String name) {
+  public TimeTrackingShiftRateResponse name(@javax.annotation.Nonnull String name) {
     this.name = name;
     return this;
   }
@@ -113,12 +119,12 @@ public class TimeTrackingShiftRateResponse {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
   }
 
 
-  public TimeTrackingShiftRateResponse type(TimeTrackingShiftRateType type) {
+  public TimeTrackingShiftRateResponse type(@javax.annotation.Nonnull TimeTrackingShiftRateType type) {
     this.type = type;
     return this;
   }
@@ -132,12 +138,12 @@ public class TimeTrackingShiftRateResponse {
     return type;
   }
 
-  public void setType(TimeTrackingShiftRateType type) {
+  public void setType(@javax.annotation.Nonnull TimeTrackingShiftRateType type) {
     this.type = type;
   }
 
 
-  public TimeTrackingShiftRateResponse value(BigDecimal value) {
+  public TimeTrackingShiftRateResponse value(@javax.annotation.Nonnull BigDecimal value) {
     this.value = value;
     return this;
   }
@@ -151,12 +157,12 @@ public class TimeTrackingShiftRateResponse {
     return value;
   }
 
-  public void setValue(BigDecimal value) {
+  public void setValue(@javax.annotation.Nonnull BigDecimal value) {
     this.value = value;
   }
 
 
-  public TimeTrackingShiftRateResponse createdAt(OffsetDateTime createdAt) {
+  public TimeTrackingShiftRateResponse createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -170,12 +176,12 @@ public class TimeTrackingShiftRateResponse {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public TimeTrackingShiftRateResponse updatedAt(OffsetDateTime updatedAt) {
+  public TimeTrackingShiftRateResponse updatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -189,7 +195,7 @@ public class TimeTrackingShiftRateResponse {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 

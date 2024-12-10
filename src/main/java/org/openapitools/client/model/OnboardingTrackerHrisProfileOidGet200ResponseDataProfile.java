@@ -49,32 +49,37 @@ import org.openapitools.client.JSON;
 /**
  * OnboardingTrackerHrisProfileOidGet200ResponseDataProfile
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class OnboardingTrackerHrisProfileOidGet200ResponseDataProfile {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nullable
   private String email;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_LAST_LOGIN = "last_login";
   @SerializedName(SERIALIZED_NAME_LAST_LOGIN)
+  @javax.annotation.Nullable
   private OffsetDateTime lastLogin;
 
   public static final String SERIALIZED_NAME_PREVIOUSLY_ONBOARDED = "previously_onboarded";
   @SerializedName(SERIALIZED_NAME_PREVIOUSLY_ONBOARDED)
+  @javax.annotation.Nullable
   private Boolean previouslyOnboarded;
 
   public OnboardingTrackerHrisProfileOidGet200ResponseDataProfile() {
   }
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataProfile name(String name) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataProfile name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -88,12 +93,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataProfile {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataProfile email(String email) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataProfile email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -107,12 +112,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataProfile {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail(@javax.annotation.Nullable String email) {
     this.email = email;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataProfile country(String country) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataProfile country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -126,12 +131,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataProfile {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataProfile lastLogin(OffsetDateTime lastLogin) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataProfile lastLogin(@javax.annotation.Nullable OffsetDateTime lastLogin) {
     this.lastLogin = lastLogin;
     return this;
   }
@@ -145,12 +150,12 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataProfile {
     return lastLogin;
   }
 
-  public void setLastLogin(OffsetDateTime lastLogin) {
+  public void setLastLogin(@javax.annotation.Nullable OffsetDateTime lastLogin) {
     this.lastLogin = lastLogin;
   }
 
 
-  public OnboardingTrackerHrisProfileOidGet200ResponseDataProfile previouslyOnboarded(Boolean previouslyOnboarded) {
+  public OnboardingTrackerHrisProfileOidGet200ResponseDataProfile previouslyOnboarded(@javax.annotation.Nullable Boolean previouslyOnboarded) {
     this.previouslyOnboarded = previouslyOnboarded;
     return this;
   }
@@ -164,7 +169,7 @@ public class OnboardingTrackerHrisProfileOidGet200ResponseDataProfile {
     return previouslyOnboarded;
   }
 
-  public void setPreviouslyOnboarded(Boolean previouslyOnboarded) {
+  public void setPreviouslyOnboarded(@javax.annotation.Nullable Boolean previouslyOnboarded) {
     this.previouslyOnboarded = previouslyOnboarded;
   }
 

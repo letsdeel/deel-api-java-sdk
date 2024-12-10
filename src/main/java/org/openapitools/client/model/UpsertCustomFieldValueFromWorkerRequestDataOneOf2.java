@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * Date type: YYYY-MM-DD
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertCustomFieldValueFromWorkerRequestDataOneOf2 {
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private LocalDate value;
 
   public UpsertCustomFieldValueFromWorkerRequestDataOneOf2() {
   }
 
-  public UpsertCustomFieldValueFromWorkerRequestDataOneOf2 value(LocalDate value) {
+  public UpsertCustomFieldValueFromWorkerRequestDataOneOf2 value(@javax.annotation.Nullable LocalDate value) {
     this.value = value;
     return this;
   }
@@ -72,7 +73,7 @@ public class UpsertCustomFieldValueFromWorkerRequestDataOneOf2 {
     return value;
   }
 
-  public void setValue(LocalDate value) {
+  public void setValue(@javax.annotation.Nullable LocalDate value) {
     this.value = value;
   }
 

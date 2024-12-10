@@ -58,64 +58,77 @@ import org.openapitools.client.JSON;
 /**
  * PeoplePersonalContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PeoplePersonalContainerData {
   public static final String SERIALIZED_NAME_LEGAL_FIRST_NAME = "legal_first_name";
   @SerializedName(SERIALIZED_NAME_LEGAL_FIRST_NAME)
+  @javax.annotation.Nonnull
   private String legalFirstName;
 
   public static final String SERIALIZED_NAME_LEGAL_LAST_NAME = "legal_last_name";
   @SerializedName(SERIALIZED_NAME_LEGAL_LAST_NAME)
+  @javax.annotation.Nonnull
   private String legalLastName;
 
   public static final String SERIALIZED_NAME_PREFERRED_NAME = "preferred_name";
   @SerializedName(SERIALIZED_NAME_PREFERRED_NAME)
+  @javax.annotation.Nonnull
   private String preferredName;
 
   public static final String SERIALIZED_NAME_PERSONAL_EMAIL = "personal_email";
   @SerializedName(SERIALIZED_NAME_PERSONAL_EMAIL)
+  @javax.annotation.Nonnull
   private String personalEmail;
 
   public static final String SERIALIZED_NAME_WORK_EMAIL = "work_email";
   @SerializedName(SERIALIZED_NAME_WORK_EMAIL)
+  @javax.annotation.Nonnull
   private String workEmail;
 
   public static final String SERIALIZED_NAME_DATE_OF_BIRTH = "date_of_birth";
   @SerializedName(SERIALIZED_NAME_DATE_OF_BIRTH)
+  @javax.annotation.Nonnull
   private LocalDate dateOfBirth;
 
   public static final String SERIALIZED_NAME_PHONE_NUMBERS = "phone_numbers";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBERS)
+  @javax.annotation.Nonnull
   private List<PeoplePersonalContainerDataPhoneNumbersInner> phoneNumbers = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NATIONALITIES = "nationalities";
   @SerializedName(SERIALIZED_NAME_NATIONALITIES)
+  @javax.annotation.Nonnull
   private List<PeoplePersonalContainerDataNationalitiesInner> nationalities = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_EMERGENCY_CONTACTS = "emergency_contacts";
   @SerializedName(SERIALIZED_NAME_EMERGENCY_CONTACTS)
+  @javax.annotation.Nonnull
   private List<PeoplePersonalContainerDataEmergencyContactsInner> emergencyContacts = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDRESSES = "addresses";
   @SerializedName(SERIALIZED_NAME_ADDRESSES)
+  @javax.annotation.Nonnull
   private List<PeoplePersonalContainerDataAddressesInner> addresses = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_DEMOGRAPHICS = "demographics";
   @SerializedName(SERIALIZED_NAME_DEMOGRAPHICS)
+  @javax.annotation.Nonnull
   private PeoplePersonalContainerDataDemographics demographics;
 
   public static final String SERIALIZED_NAME_KYC = "kyc";
   @SerializedName(SERIALIZED_NAME_KYC)
+  @javax.annotation.Nullable
   private PeoplePersonalContainerDataKyc kyc;
 
   public static final String SERIALIZED_NAME_OOO = "ooo";
   @SerializedName(SERIALIZED_NAME_OOO)
+  @javax.annotation.Nullable
   private PeoplePersonalContainerDataOoo ooo;
 
   public PeoplePersonalContainerData() {
   }
 
-  public PeoplePersonalContainerData legalFirstName(String legalFirstName) {
+  public PeoplePersonalContainerData legalFirstName(@javax.annotation.Nonnull String legalFirstName) {
     this.legalFirstName = legalFirstName;
     return this;
   }
@@ -129,12 +142,12 @@ public class PeoplePersonalContainerData {
     return legalFirstName;
   }
 
-  public void setLegalFirstName(String legalFirstName) {
+  public void setLegalFirstName(@javax.annotation.Nonnull String legalFirstName) {
     this.legalFirstName = legalFirstName;
   }
 
 
-  public PeoplePersonalContainerData legalLastName(String legalLastName) {
+  public PeoplePersonalContainerData legalLastName(@javax.annotation.Nonnull String legalLastName) {
     this.legalLastName = legalLastName;
     return this;
   }
@@ -148,12 +161,12 @@ public class PeoplePersonalContainerData {
     return legalLastName;
   }
 
-  public void setLegalLastName(String legalLastName) {
+  public void setLegalLastName(@javax.annotation.Nonnull String legalLastName) {
     this.legalLastName = legalLastName;
   }
 
 
-  public PeoplePersonalContainerData preferredName(String preferredName) {
+  public PeoplePersonalContainerData preferredName(@javax.annotation.Nonnull String preferredName) {
     this.preferredName = preferredName;
     return this;
   }
@@ -167,12 +180,12 @@ public class PeoplePersonalContainerData {
     return preferredName;
   }
 
-  public void setPreferredName(String preferredName) {
+  public void setPreferredName(@javax.annotation.Nonnull String preferredName) {
     this.preferredName = preferredName;
   }
 
 
-  public PeoplePersonalContainerData personalEmail(String personalEmail) {
+  public PeoplePersonalContainerData personalEmail(@javax.annotation.Nonnull String personalEmail) {
     this.personalEmail = personalEmail;
     return this;
   }
@@ -186,12 +199,12 @@ public class PeoplePersonalContainerData {
     return personalEmail;
   }
 
-  public void setPersonalEmail(String personalEmail) {
+  public void setPersonalEmail(@javax.annotation.Nonnull String personalEmail) {
     this.personalEmail = personalEmail;
   }
 
 
-  public PeoplePersonalContainerData workEmail(String workEmail) {
+  public PeoplePersonalContainerData workEmail(@javax.annotation.Nonnull String workEmail) {
     this.workEmail = workEmail;
     return this;
   }
@@ -205,12 +218,12 @@ public class PeoplePersonalContainerData {
     return workEmail;
   }
 
-  public void setWorkEmail(String workEmail) {
+  public void setWorkEmail(@javax.annotation.Nonnull String workEmail) {
     this.workEmail = workEmail;
   }
 
 
-  public PeoplePersonalContainerData dateOfBirth(LocalDate dateOfBirth) {
+  public PeoplePersonalContainerData dateOfBirth(@javax.annotation.Nonnull LocalDate dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
     return this;
   }
@@ -224,12 +237,12 @@ public class PeoplePersonalContainerData {
     return dateOfBirth;
   }
 
-  public void setDateOfBirth(LocalDate dateOfBirth) {
+  public void setDateOfBirth(@javax.annotation.Nonnull LocalDate dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
   }
 
 
-  public PeoplePersonalContainerData phoneNumbers(List<PeoplePersonalContainerDataPhoneNumbersInner> phoneNumbers) {
+  public PeoplePersonalContainerData phoneNumbers(@javax.annotation.Nonnull List<PeoplePersonalContainerDataPhoneNumbersInner> phoneNumbers) {
     this.phoneNumbers = phoneNumbers;
     return this;
   }
@@ -251,12 +264,12 @@ public class PeoplePersonalContainerData {
     return phoneNumbers;
   }
 
-  public void setPhoneNumbers(List<PeoplePersonalContainerDataPhoneNumbersInner> phoneNumbers) {
+  public void setPhoneNumbers(@javax.annotation.Nonnull List<PeoplePersonalContainerDataPhoneNumbersInner> phoneNumbers) {
     this.phoneNumbers = phoneNumbers;
   }
 
 
-  public PeoplePersonalContainerData nationalities(List<PeoplePersonalContainerDataNationalitiesInner> nationalities) {
+  public PeoplePersonalContainerData nationalities(@javax.annotation.Nonnull List<PeoplePersonalContainerDataNationalitiesInner> nationalities) {
     this.nationalities = nationalities;
     return this;
   }
@@ -278,12 +291,12 @@ public class PeoplePersonalContainerData {
     return nationalities;
   }
 
-  public void setNationalities(List<PeoplePersonalContainerDataNationalitiesInner> nationalities) {
+  public void setNationalities(@javax.annotation.Nonnull List<PeoplePersonalContainerDataNationalitiesInner> nationalities) {
     this.nationalities = nationalities;
   }
 
 
-  public PeoplePersonalContainerData emergencyContacts(List<PeoplePersonalContainerDataEmergencyContactsInner> emergencyContacts) {
+  public PeoplePersonalContainerData emergencyContacts(@javax.annotation.Nonnull List<PeoplePersonalContainerDataEmergencyContactsInner> emergencyContacts) {
     this.emergencyContacts = emergencyContacts;
     return this;
   }
@@ -305,12 +318,12 @@ public class PeoplePersonalContainerData {
     return emergencyContacts;
   }
 
-  public void setEmergencyContacts(List<PeoplePersonalContainerDataEmergencyContactsInner> emergencyContacts) {
+  public void setEmergencyContacts(@javax.annotation.Nonnull List<PeoplePersonalContainerDataEmergencyContactsInner> emergencyContacts) {
     this.emergencyContacts = emergencyContacts;
   }
 
 
-  public PeoplePersonalContainerData addresses(List<PeoplePersonalContainerDataAddressesInner> addresses) {
+  public PeoplePersonalContainerData addresses(@javax.annotation.Nonnull List<PeoplePersonalContainerDataAddressesInner> addresses) {
     this.addresses = addresses;
     return this;
   }
@@ -332,12 +345,12 @@ public class PeoplePersonalContainerData {
     return addresses;
   }
 
-  public void setAddresses(List<PeoplePersonalContainerDataAddressesInner> addresses) {
+  public void setAddresses(@javax.annotation.Nonnull List<PeoplePersonalContainerDataAddressesInner> addresses) {
     this.addresses = addresses;
   }
 
 
-  public PeoplePersonalContainerData demographics(PeoplePersonalContainerDataDemographics demographics) {
+  public PeoplePersonalContainerData demographics(@javax.annotation.Nonnull PeoplePersonalContainerDataDemographics demographics) {
     this.demographics = demographics;
     return this;
   }
@@ -351,12 +364,12 @@ public class PeoplePersonalContainerData {
     return demographics;
   }
 
-  public void setDemographics(PeoplePersonalContainerDataDemographics demographics) {
+  public void setDemographics(@javax.annotation.Nonnull PeoplePersonalContainerDataDemographics demographics) {
     this.demographics = demographics;
   }
 
 
-  public PeoplePersonalContainerData kyc(PeoplePersonalContainerDataKyc kyc) {
+  public PeoplePersonalContainerData kyc(@javax.annotation.Nullable PeoplePersonalContainerDataKyc kyc) {
     this.kyc = kyc;
     return this;
   }
@@ -370,12 +383,12 @@ public class PeoplePersonalContainerData {
     return kyc;
   }
 
-  public void setKyc(PeoplePersonalContainerDataKyc kyc) {
+  public void setKyc(@javax.annotation.Nullable PeoplePersonalContainerDataKyc kyc) {
     this.kyc = kyc;
   }
 
 
-  public PeoplePersonalContainerData ooo(PeoplePersonalContainerDataOoo ooo) {
+  public PeoplePersonalContainerData ooo(@javax.annotation.Nullable PeoplePersonalContainerDataOoo ooo) {
     this.ooo = ooo;
     return this;
   }
@@ -389,7 +402,7 @@ public class PeoplePersonalContainerData {
     return ooo;
   }
 
-  public void setOoo(PeoplePersonalContainerDataOoo ooo) {
+  public void setOoo(@javax.annotation.Nullable PeoplePersonalContainerDataOoo ooo) {
     this.ooo = ooo;
   }
 

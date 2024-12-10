@@ -20,9 +20,7 @@ import org.openapitools.client.model.CreateAdjustmentRequestData;
 import org.openapitools.client.model.DeleteAdjustment200Response;
 import org.openapitools.client.model.GetAdjustments200Response;
 import org.openapitools.client.model.GetCategories200Response;
-import org.openapitools.client.model.InputToCreateFileRef;
 import java.time.LocalDate;
-import org.openapitools.client.model.OutputToCreateFileRefContainer;
 import org.openapitools.client.model.UpdateAdjustment200Response;
 import org.openapitools.client.model.UpdateAdjustmentRequestData;
 import org.junit.jupiter.api.Disabled;
@@ -52,21 +50,6 @@ public class AdjustmentsApiTest {
     public void createAdjustmentTest() throws ApiException {
         CreateAdjustmentRequestData data = null;
         CreateAdjustment201Response response = api.createAdjustment(data)
-                .execute();
-        // TODO: test validations
-    }
-
-    /**
-     * Upload file to Deel
-     *
-     * Upload file to Deel storage to use the file attachment feature for other endpoints.
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void createFileRefTest() throws ApiException {
-        InputToCreateFileRef inputToCreateFileRef = null;
-        OutputToCreateFileRefContainer response = api.createFileRef(inputToCreateFileRef)
                 .execute();
         // TODO: test validations
     }

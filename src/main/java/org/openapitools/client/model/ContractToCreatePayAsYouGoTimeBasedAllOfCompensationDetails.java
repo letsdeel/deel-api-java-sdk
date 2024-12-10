@@ -55,60 +55,72 @@ import org.openapitools.client.JSON;
 /**
  * ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails {
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private BigDecimal amount;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currency_code";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nonnull
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_FREQUENCY = "frequency";
   @SerializedName(SERIALIZED_NAME_FREQUENCY)
+  @javax.annotation.Nonnull
   private WorkStatementCycleScaleEnum frequency;
 
   public static final String SERIALIZED_NAME_CYCLE_END = "cycle_end";
   @SerializedName(SERIALIZED_NAME_CYCLE_END)
+  @javax.annotation.Nonnull
   private BigDecimal cycleEnd;
 
   public static final String SERIALIZED_NAME_CYCLE_END_TYPE = "cycle_end_type";
   @SerializedName(SERIALIZED_NAME_CYCLE_END_TYPE)
+  @javax.annotation.Nonnull
   private WorkStatementCycleEndTypeEnum cycleEndType;
 
   public static final String SERIALIZED_NAME_PAYMENT_DUE_TYPE = "payment_due_type";
   @SerializedName(SERIALIZED_NAME_PAYMENT_DUE_TYPE)
+  @javax.annotation.Nonnull
   private WorkStatementPaymentDueTypeEnum paymentDueType = WorkStatementPaymentDueTypeEnum.REGULAR;
 
   public static final String SERIALIZED_NAME_PAYMENT_DUE_DAYS = "payment_due_days";
   @SerializedName(SERIALIZED_NAME_PAYMENT_DUE_DAYS)
+  @javax.annotation.Nonnull
   private BigDecimal paymentDueDays;
 
   public static final String SERIALIZED_NAME_PAY_BEFORE_WEEKENDS = "pay_before_weekends";
   @SerializedName(SERIALIZED_NAME_PAY_BEFORE_WEEKENDS)
+  @javax.annotation.Nullable
   private Boolean payBeforeWeekends;
 
   public static final String SERIALIZED_NAME_FIRST_PAYMENT_DATE = "first_payment_date";
   @SerializedName(SERIALIZED_NAME_FIRST_PAYMENT_DATE)
+  @javax.annotation.Nullable
   private LocalDate firstPaymentDate;
 
   public static final String SERIALIZED_NAME_FIRST_PAYMENT = "first_payment";
   @SerializedName(SERIALIZED_NAME_FIRST_PAYMENT)
+  @javax.annotation.Nullable
   private BigDecimal firstPayment = new BigDecimal("0");
 
   public static final String SERIALIZED_NAME_NOTICE_PERIOD = "notice_period";
   @SerializedName(SERIALIZED_NAME_NOTICE_PERIOD)
+  @javax.annotation.Nullable
   private BigDecimal noticePeriod = new BigDecimal("0");
 
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nonnull
   private WorkStatementScaleEnum scale;
 
   public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails() {
   }
 
-  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails amount(BigDecimal amount) {
+  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails amount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
     return this;
   }
@@ -122,12 +134,12 @@ public class ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails {
     return amount;
   }
 
-  public void setAmount(BigDecimal amount) {
+  public void setAmount(@javax.annotation.Nonnull BigDecimal amount) {
     this.amount = amount;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails currencyCode(String currencyCode) {
+  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails currencyCode(@javax.annotation.Nonnull String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -141,12 +153,12 @@ public class ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nonnull String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails frequency(WorkStatementCycleScaleEnum frequency) {
+  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails frequency(@javax.annotation.Nonnull WorkStatementCycleScaleEnum frequency) {
     this.frequency = frequency;
     return this;
   }
@@ -160,12 +172,12 @@ public class ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails {
     return frequency;
   }
 
-  public void setFrequency(WorkStatementCycleScaleEnum frequency) {
+  public void setFrequency(@javax.annotation.Nonnull WorkStatementCycleScaleEnum frequency) {
     this.frequency = frequency;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails cycleEnd(BigDecimal cycleEnd) {
+  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails cycleEnd(@javax.annotation.Nonnull BigDecimal cycleEnd) {
     this.cycleEnd = cycleEnd;
     return this;
   }
@@ -181,12 +193,12 @@ public class ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails {
     return cycleEnd;
   }
 
-  public void setCycleEnd(BigDecimal cycleEnd) {
+  public void setCycleEnd(@javax.annotation.Nonnull BigDecimal cycleEnd) {
     this.cycleEnd = cycleEnd;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails cycleEndType(WorkStatementCycleEndTypeEnum cycleEndType) {
+  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails cycleEndType(@javax.annotation.Nonnull WorkStatementCycleEndTypeEnum cycleEndType) {
     this.cycleEndType = cycleEndType;
     return this;
   }
@@ -200,12 +212,12 @@ public class ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails {
     return cycleEndType;
   }
 
-  public void setCycleEndType(WorkStatementCycleEndTypeEnum cycleEndType) {
+  public void setCycleEndType(@javax.annotation.Nonnull WorkStatementCycleEndTypeEnum cycleEndType) {
     this.cycleEndType = cycleEndType;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails paymentDueType(WorkStatementPaymentDueTypeEnum paymentDueType) {
+  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails paymentDueType(@javax.annotation.Nonnull WorkStatementPaymentDueTypeEnum paymentDueType) {
     this.paymentDueType = paymentDueType;
     return this;
   }
@@ -219,12 +231,12 @@ public class ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails {
     return paymentDueType;
   }
 
-  public void setPaymentDueType(WorkStatementPaymentDueTypeEnum paymentDueType) {
+  public void setPaymentDueType(@javax.annotation.Nonnull WorkStatementPaymentDueTypeEnum paymentDueType) {
     this.paymentDueType = paymentDueType;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails paymentDueDays(BigDecimal paymentDueDays) {
+  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails paymentDueDays(@javax.annotation.Nonnull BigDecimal paymentDueDays) {
     this.paymentDueDays = paymentDueDays;
     return this;
   }
@@ -240,12 +252,12 @@ public class ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails {
     return paymentDueDays;
   }
 
-  public void setPaymentDueDays(BigDecimal paymentDueDays) {
+  public void setPaymentDueDays(@javax.annotation.Nonnull BigDecimal paymentDueDays) {
     this.paymentDueDays = paymentDueDays;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails payBeforeWeekends(Boolean payBeforeWeekends) {
+  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails payBeforeWeekends(@javax.annotation.Nullable Boolean payBeforeWeekends) {
     this.payBeforeWeekends = payBeforeWeekends;
     return this;
   }
@@ -259,12 +271,12 @@ public class ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails {
     return payBeforeWeekends;
   }
 
-  public void setPayBeforeWeekends(Boolean payBeforeWeekends) {
+  public void setPayBeforeWeekends(@javax.annotation.Nullable Boolean payBeforeWeekends) {
     this.payBeforeWeekends = payBeforeWeekends;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails firstPaymentDate(LocalDate firstPaymentDate) {
+  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails firstPaymentDate(@javax.annotation.Nullable LocalDate firstPaymentDate) {
     this.firstPaymentDate = firstPaymentDate;
     return this;
   }
@@ -278,12 +290,12 @@ public class ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails {
     return firstPaymentDate;
   }
 
-  public void setFirstPaymentDate(LocalDate firstPaymentDate) {
+  public void setFirstPaymentDate(@javax.annotation.Nullable LocalDate firstPaymentDate) {
     this.firstPaymentDate = firstPaymentDate;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails firstPayment(BigDecimal firstPayment) {
+  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails firstPayment(@javax.annotation.Nullable BigDecimal firstPayment) {
     this.firstPayment = firstPayment;
     return this;
   }
@@ -298,12 +310,12 @@ public class ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails {
     return firstPayment;
   }
 
-  public void setFirstPayment(BigDecimal firstPayment) {
+  public void setFirstPayment(@javax.annotation.Nullable BigDecimal firstPayment) {
     this.firstPayment = firstPayment;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails noticePeriod(BigDecimal noticePeriod) {
+  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails noticePeriod(@javax.annotation.Nullable BigDecimal noticePeriod) {
     this.noticePeriod = noticePeriod;
     return this;
   }
@@ -318,12 +330,12 @@ public class ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails {
     return noticePeriod;
   }
 
-  public void setNoticePeriod(BigDecimal noticePeriod) {
+  public void setNoticePeriod(@javax.annotation.Nullable BigDecimal noticePeriod) {
     this.noticePeriod = noticePeriod;
   }
 
 
-  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails scale(WorkStatementScaleEnum scale) {
+  public ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails scale(@javax.annotation.Nonnull WorkStatementScaleEnum scale) {
     this.scale = scale;
     return this;
   }
@@ -337,7 +349,7 @@ public class ContractToCreatePayAsYouGoTimeBasedAllOfCompensationDetails {
     return scale;
   }
 
-  public void setScale(WorkStatementScaleEnum scale) {
+  public void setScale(@javax.annotation.Nonnull WorkStatementScaleEnum scale) {
     this.scale = scale;
   }
 

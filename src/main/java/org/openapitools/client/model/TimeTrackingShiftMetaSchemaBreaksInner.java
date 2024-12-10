@@ -50,24 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * TimeTrackingShiftMetaSchemaBreaksInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeTrackingShiftMetaSchemaBreaksInner {
   public static final String SERIALIZED_NAME_START = "start";
   @SerializedName(SERIALIZED_NAME_START)
+  @javax.annotation.Nonnull
   private TimeTrackingShiftMetaSchemaBreaksInnerStart start;
 
   public static final String SERIALIZED_NAME_END = "end";
   @SerializedName(SERIALIZED_NAME_END)
+  @javax.annotation.Nonnull
   private TimeTrackingShiftMetaSchemaBreaksInnerEnd end;
 
   public static final String SERIALIZED_NAME_IS_PAID = "is_paid";
   @SerializedName(SERIALIZED_NAME_IS_PAID)
+  @javax.annotation.Nonnull
   private Boolean isPaid;
 
   public TimeTrackingShiftMetaSchemaBreaksInner() {
   }
 
-  public TimeTrackingShiftMetaSchemaBreaksInner start(TimeTrackingShiftMetaSchemaBreaksInnerStart start) {
+  public TimeTrackingShiftMetaSchemaBreaksInner start(@javax.annotation.Nonnull TimeTrackingShiftMetaSchemaBreaksInnerStart start) {
     this.start = start;
     return this;
   }
@@ -81,12 +84,12 @@ public class TimeTrackingShiftMetaSchemaBreaksInner {
     return start;
   }
 
-  public void setStart(TimeTrackingShiftMetaSchemaBreaksInnerStart start) {
+  public void setStart(@javax.annotation.Nonnull TimeTrackingShiftMetaSchemaBreaksInnerStart start) {
     this.start = start;
   }
 
 
-  public TimeTrackingShiftMetaSchemaBreaksInner end(TimeTrackingShiftMetaSchemaBreaksInnerEnd end) {
+  public TimeTrackingShiftMetaSchemaBreaksInner end(@javax.annotation.Nonnull TimeTrackingShiftMetaSchemaBreaksInnerEnd end) {
     this.end = end;
     return this;
   }
@@ -100,12 +103,12 @@ public class TimeTrackingShiftMetaSchemaBreaksInner {
     return end;
   }
 
-  public void setEnd(TimeTrackingShiftMetaSchemaBreaksInnerEnd end) {
+  public void setEnd(@javax.annotation.Nonnull TimeTrackingShiftMetaSchemaBreaksInnerEnd end) {
     this.end = end;
   }
 
 
-  public TimeTrackingShiftMetaSchemaBreaksInner isPaid(Boolean isPaid) {
+  public TimeTrackingShiftMetaSchemaBreaksInner isPaid(@javax.annotation.Nonnull Boolean isPaid) {
     this.isPaid = isPaid;
     return this;
   }
@@ -119,7 +122,7 @@ public class TimeTrackingShiftMetaSchemaBreaksInner {
     return isPaid;
   }
 
-  public void setIsPaid(Boolean isPaid) {
+  public void setIsPaid(@javax.annotation.Nonnull Boolean isPaid) {
     this.isPaid = isPaid;
   }
 

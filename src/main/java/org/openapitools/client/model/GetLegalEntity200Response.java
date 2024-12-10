@@ -51,38 +51,46 @@ import org.openapitools.client.JSON;
 /**
  * GetLegalEntity200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetLegalEntity200Response {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_PHONE = "phone";
   @SerializedName(SERIALIZED_NAME_PHONE)
+  @javax.annotation.Nullable
   private String phone;
 
   public static final String SERIALIZED_NAME_VAT_ID = "vat_id";
   @SerializedName(SERIALIZED_NAME_VAT_ID)
+  @javax.annotation.Nullable
   private String vatId;
 
   public static final String SERIALIZED_NAME_ADDRESS = "address";
   @SerializedName(SERIALIZED_NAME_ADDRESS)
+  @javax.annotation.Nullable
   private GetLegalEntity200ResponseAddress address;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_NAICS_CODE = "naics_code";
   @SerializedName(SERIALIZED_NAME_NAICS_CODE)
+  @javax.annotation.Nullable
   private String naicsCode;
 
   public static final String SERIALIZED_NAME_ENTITY_TYPE = "entity_type";
   @SerializedName(SERIALIZED_NAME_ENTITY_TYPE)
+  @javax.annotation.Nullable
   private String entityType;
 
   /**
@@ -143,24 +151,28 @@ public class GetLegalEntity200Response {
 
   public static final String SERIALIZED_NAME_EMPLOYMENT_TYPE = "employment_type";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT_TYPE)
+  @javax.annotation.Nullable
   private EmploymentTypeEnum employmentType;
 
   public static final String SERIALIZED_NAME_REGISTRATION_NUMBER = "registration_number";
   @SerializedName(SERIALIZED_NAME_REGISTRATION_NUMBER)
+  @javax.annotation.Nullable
   private String registrationNumber;
 
   public static final String SERIALIZED_NAME_REGISTRATION_ADDRESS = "registration_address";
   @SerializedName(SERIALIZED_NAME_REGISTRATION_ADDRESS)
+  @javax.annotation.Nullable
   private GetLegalEntity200ResponseRegistrationAddress registrationAddress;
 
   public static final String SERIALIZED_NAME_UNION_OR_LEASED_EMPLOYEES = "union_or_leased_employees";
   @SerializedName(SERIALIZED_NAME_UNION_OR_LEASED_EMPLOYEES)
+  @javax.annotation.Nullable
   private Boolean unionOrLeasedEmployees;
 
   public GetLegalEntity200Response() {
   }
 
-  public GetLegalEntity200Response id(String id) {
+  public GetLegalEntity200Response id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -174,12 +186,12 @@ public class GetLegalEntity200Response {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public GetLegalEntity200Response name(String name) {
+  public GetLegalEntity200Response name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -193,12 +205,12 @@ public class GetLegalEntity200Response {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetLegalEntity200Response phone(String phone) {
+  public GetLegalEntity200Response phone(@javax.annotation.Nullable String phone) {
     this.phone = phone;
     return this;
   }
@@ -212,12 +224,12 @@ public class GetLegalEntity200Response {
     return phone;
   }
 
-  public void setPhone(String phone) {
+  public void setPhone(@javax.annotation.Nullable String phone) {
     this.phone = phone;
   }
 
 
-  public GetLegalEntity200Response vatId(String vatId) {
+  public GetLegalEntity200Response vatId(@javax.annotation.Nullable String vatId) {
     this.vatId = vatId;
     return this;
   }
@@ -231,12 +243,12 @@ public class GetLegalEntity200Response {
     return vatId;
   }
 
-  public void setVatId(String vatId) {
+  public void setVatId(@javax.annotation.Nullable String vatId) {
     this.vatId = vatId;
   }
 
 
-  public GetLegalEntity200Response address(GetLegalEntity200ResponseAddress address) {
+  public GetLegalEntity200Response address(@javax.annotation.Nullable GetLegalEntity200ResponseAddress address) {
     this.address = address;
     return this;
   }
@@ -250,12 +262,12 @@ public class GetLegalEntity200Response {
     return address;
   }
 
-  public void setAddress(GetLegalEntity200ResponseAddress address) {
+  public void setAddress(@javax.annotation.Nullable GetLegalEntity200ResponseAddress address) {
     this.address = address;
   }
 
 
-  public GetLegalEntity200Response country(String country) {
+  public GetLegalEntity200Response country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -269,12 +281,12 @@ public class GetLegalEntity200Response {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public GetLegalEntity200Response naicsCode(String naicsCode) {
+  public GetLegalEntity200Response naicsCode(@javax.annotation.Nullable String naicsCode) {
     this.naicsCode = naicsCode;
     return this;
   }
@@ -288,12 +300,12 @@ public class GetLegalEntity200Response {
     return naicsCode;
   }
 
-  public void setNaicsCode(String naicsCode) {
+  public void setNaicsCode(@javax.annotation.Nullable String naicsCode) {
     this.naicsCode = naicsCode;
   }
 
 
-  public GetLegalEntity200Response entityType(String entityType) {
+  public GetLegalEntity200Response entityType(@javax.annotation.Nullable String entityType) {
     this.entityType = entityType;
     return this;
   }
@@ -307,12 +319,12 @@ public class GetLegalEntity200Response {
     return entityType;
   }
 
-  public void setEntityType(String entityType) {
+  public void setEntityType(@javax.annotation.Nullable String entityType) {
     this.entityType = entityType;
   }
 
 
-  public GetLegalEntity200Response employmentType(EmploymentTypeEnum employmentType) {
+  public GetLegalEntity200Response employmentType(@javax.annotation.Nullable EmploymentTypeEnum employmentType) {
     this.employmentType = employmentType;
     return this;
   }
@@ -326,12 +338,12 @@ public class GetLegalEntity200Response {
     return employmentType;
   }
 
-  public void setEmploymentType(EmploymentTypeEnum employmentType) {
+  public void setEmploymentType(@javax.annotation.Nullable EmploymentTypeEnum employmentType) {
     this.employmentType = employmentType;
   }
 
 
-  public GetLegalEntity200Response registrationNumber(String registrationNumber) {
+  public GetLegalEntity200Response registrationNumber(@javax.annotation.Nullable String registrationNumber) {
     this.registrationNumber = registrationNumber;
     return this;
   }
@@ -345,12 +357,12 @@ public class GetLegalEntity200Response {
     return registrationNumber;
   }
 
-  public void setRegistrationNumber(String registrationNumber) {
+  public void setRegistrationNumber(@javax.annotation.Nullable String registrationNumber) {
     this.registrationNumber = registrationNumber;
   }
 
 
-  public GetLegalEntity200Response registrationAddress(GetLegalEntity200ResponseRegistrationAddress registrationAddress) {
+  public GetLegalEntity200Response registrationAddress(@javax.annotation.Nullable GetLegalEntity200ResponseRegistrationAddress registrationAddress) {
     this.registrationAddress = registrationAddress;
     return this;
   }
@@ -364,12 +376,12 @@ public class GetLegalEntity200Response {
     return registrationAddress;
   }
 
-  public void setRegistrationAddress(GetLegalEntity200ResponseRegistrationAddress registrationAddress) {
+  public void setRegistrationAddress(@javax.annotation.Nullable GetLegalEntity200ResponseRegistrationAddress registrationAddress) {
     this.registrationAddress = registrationAddress;
   }
 
 
-  public GetLegalEntity200Response unionOrLeasedEmployees(Boolean unionOrLeasedEmployees) {
+  public GetLegalEntity200Response unionOrLeasedEmployees(@javax.annotation.Nullable Boolean unionOrLeasedEmployees) {
     this.unionOrLeasedEmployees = unionOrLeasedEmployees;
     return this;
   }
@@ -383,7 +395,7 @@ public class GetLegalEntity200Response {
     return unionOrLeasedEmployees;
   }
 
-  public void setUnionOrLeasedEmployees(Boolean unionOrLeasedEmployees) {
+  public void setUnionOrLeasedEmployees(@javax.annotation.Nullable Boolean unionOrLeasedEmployees) {
     this.unionOrLeasedEmployees = unionOrLeasedEmployees;
   }
 

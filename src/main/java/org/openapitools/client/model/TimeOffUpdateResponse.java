@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * TimeOffUpdateResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeOffUpdateResponse {
   public static final String SERIALIZED_NAME_TIME_OFF = "time_off";
   @SerializedName(SERIALIZED_NAME_TIME_OFF)
+  @javax.annotation.Nonnull
   private TimeOffResponseCommon timeOff;
 
   public TimeOffUpdateResponse() {
   }
 
-  public TimeOffUpdateResponse timeOff(TimeOffResponseCommon timeOff) {
+  public TimeOffUpdateResponse timeOff(@javax.annotation.Nonnull TimeOffResponseCommon timeOff) {
     this.timeOff = timeOff;
     return this;
   }
@@ -72,7 +73,7 @@ public class TimeOffUpdateResponse {
     return timeOff;
   }
 
-  public void setTimeOff(TimeOffResponseCommon timeOff) {
+  public void setTimeOff(@javax.annotation.Nonnull TimeOffResponseCommon timeOff) {
     this.timeOff = timeOff;
   }
 

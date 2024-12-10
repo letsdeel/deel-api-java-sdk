@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * GetEmployeeComplianceDocumentTemplateDownloadLinkContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetEmployeeComplianceDocumentTemplateDownloadLinkContainer {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private GetEmployeeComplianceDocumentTemplateDownloadLinkContainerData data;
 
   public GetEmployeeComplianceDocumentTemplateDownloadLinkContainer() {
   }
 
-  public GetEmployeeComplianceDocumentTemplateDownloadLinkContainer data(GetEmployeeComplianceDocumentTemplateDownloadLinkContainerData data) {
+  public GetEmployeeComplianceDocumentTemplateDownloadLinkContainer data(@javax.annotation.Nonnull GetEmployeeComplianceDocumentTemplateDownloadLinkContainerData data) {
     this.data = data;
     return this;
   }
@@ -72,7 +73,7 @@ public class GetEmployeeComplianceDocumentTemplateDownloadLinkContainer {
     return data;
   }
 
-  public void setData(GetEmployeeComplianceDocumentTemplateDownloadLinkContainerData data) {
+  public void setData(@javax.annotation.Nonnull GetEmployeeComplianceDocumentTemplateDownloadLinkContainerData data) {
     this.data = data;
   }
 

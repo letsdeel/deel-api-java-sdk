@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * WorkerTermination
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class WorkerTermination {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_LAST_DATE_OF_WORK = "last_date_of_work";
   @SerializedName(SERIALIZED_NAME_LAST_DATE_OF_WORK)
+  @javax.annotation.Nonnull
   private OffsetDateTime lastDateOfWork;
 
   public WorkerTermination() {
   }
 
-  public WorkerTermination id(String id) {
+  public WorkerTermination id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -76,12 +78,12 @@ public class WorkerTermination {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public WorkerTermination lastDateOfWork(OffsetDateTime lastDateOfWork) {
+  public WorkerTermination lastDateOfWork(@javax.annotation.Nonnull OffsetDateTime lastDateOfWork) {
     this.lastDateOfWork = lastDateOfWork;
     return this;
   }
@@ -95,7 +97,7 @@ public class WorkerTermination {
     return lastDateOfWork;
   }
 
-  public void setLastDateOfWork(OffsetDateTime lastDateOfWork) {
+  public void setLastDateOfWork(@javax.annotation.Nonnull OffsetDateTime lastDateOfWork) {
     this.lastDateOfWork = lastDateOfWork;
   }
 

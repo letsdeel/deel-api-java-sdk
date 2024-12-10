@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.client.model.IdentifierValueForFilter;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,24 +51,27 @@ import org.openapitools.client.JSON;
 /**
  * The background check information for a contract. Either &#x60;individual_check_ids&#x60; or &#x60;package_id&#x60; must be provided, but not both.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class BgCheckForContractToCreate {
   public static final String SERIALIZED_NAME_CONTRACT_IDS = "contract_ids";
   @SerializedName(SERIALIZED_NAME_CONTRACT_IDS)
+  @javax.annotation.Nonnull
   private List<String> contractIds = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_INDIVIDUAL_CHECK_IDS = "individual_check_ids";
   @SerializedName(SERIALIZED_NAME_INDIVIDUAL_CHECK_IDS)
-  private List<String> individualCheckIds = new ArrayList<>();
+  @javax.annotation.Nullable
+  private List<IdentifierValueForFilter> individualCheckIds = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PACKAGE_ID = "package_id";
   @SerializedName(SERIALIZED_NAME_PACKAGE_ID)
-  private String packageId;
+  @javax.annotation.Nullable
+  private IdentifierValueForFilter packageId;
 
   public BgCheckForContractToCreate() {
   }
 
-  public BgCheckForContractToCreate contractIds(List<String> contractIds) {
+  public BgCheckForContractToCreate contractIds(@javax.annotation.Nonnull List<String> contractIds) {
     this.contractIds = contractIds;
     return this;
   }
@@ -89,17 +93,17 @@ public class BgCheckForContractToCreate {
     return contractIds;
   }
 
-  public void setContractIds(List<String> contractIds) {
+  public void setContractIds(@javax.annotation.Nonnull List<String> contractIds) {
     this.contractIds = contractIds;
   }
 
 
-  public BgCheckForContractToCreate individualCheckIds(List<String> individualCheckIds) {
+  public BgCheckForContractToCreate individualCheckIds(@javax.annotation.Nullable List<IdentifierValueForFilter> individualCheckIds) {
     this.individualCheckIds = individualCheckIds;
     return this;
   }
 
-  public BgCheckForContractToCreate addIndividualCheckIdsItem(String individualCheckIdsItem) {
+  public BgCheckForContractToCreate addIndividualCheckIdsItem(IdentifierValueForFilter individualCheckIdsItem) {
     if (this.individualCheckIds == null) {
       this.individualCheckIds = new ArrayList<>();
     }
@@ -112,30 +116,30 @@ public class BgCheckForContractToCreate {
    * @return individualCheckIds
    */
   @javax.annotation.Nullable
-  public List<String> getIndividualCheckIds() {
+  public List<IdentifierValueForFilter> getIndividualCheckIds() {
     return individualCheckIds;
   }
 
-  public void setIndividualCheckIds(List<String> individualCheckIds) {
+  public void setIndividualCheckIds(@javax.annotation.Nullable List<IdentifierValueForFilter> individualCheckIds) {
     this.individualCheckIds = individualCheckIds;
   }
 
 
-  public BgCheckForContractToCreate packageId(String packageId) {
+  public BgCheckForContractToCreate packageId(@javax.annotation.Nullable IdentifierValueForFilter packageId) {
     this.packageId = packageId;
     return this;
   }
 
   /**
-   * Unique identifier of this resource.
+   * Get packageId
    * @return packageId
    */
   @javax.annotation.Nullable
-  public String getPackageId() {
+  public IdentifierValueForFilter getPackageId() {
     return packageId;
   }
 
-  public void setPackageId(String packageId) {
+  public void setPackageId(@javax.annotation.Nullable IdentifierValueForFilter packageId) {
     this.packageId = packageId;
   }
 
@@ -232,12 +236,23 @@ public class BgCheckForContractToCreate {
       } else if (!jsonObj.get("contract_ids").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `contract_ids` to be an array in the JSON string but got `%s`", jsonObj.get("contract_ids").toString()));
       }
-      // ensure the optional json data is an array if present
-      if (jsonObj.get("individual_check_ids") != null && !jsonObj.get("individual_check_ids").isJsonNull() && !jsonObj.get("individual_check_ids").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `individual_check_ids` to be an array in the JSON string but got `%s`", jsonObj.get("individual_check_ids").toString()));
+      if (jsonObj.get("individual_check_ids") != null && !jsonObj.get("individual_check_ids").isJsonNull()) {
+        JsonArray jsonArrayindividualCheckIds = jsonObj.getAsJsonArray("individual_check_ids");
+        if (jsonArrayindividualCheckIds != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("individual_check_ids").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `individual_check_ids` to be an array in the JSON string but got `%s`", jsonObj.get("individual_check_ids").toString()));
+          }
+
+          // validate the optional field `individual_check_ids` (array)
+          for (int i = 0; i < jsonArrayindividualCheckIds.size(); i++) {
+            IdentifierValueForFilter.validateJsonElement(jsonArrayindividualCheckIds.get(i));
+          };
+        }
       }
-      if ((jsonObj.get("package_id") != null && !jsonObj.get("package_id").isJsonNull()) && !jsonObj.get("package_id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `package_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("package_id").toString()));
+      // validate the optional field `package_id`
+      if (jsonObj.get("package_id") != null && !jsonObj.get("package_id").isJsonNull()) {
+        IdentifierValueForFilter.validateJsonElement(jsonObj.get("package_id"));
       }
   }
 

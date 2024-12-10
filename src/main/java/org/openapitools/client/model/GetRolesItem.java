@@ -49,28 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * GetRolesItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetRolesItem {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private BigDecimal id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_SCOPE = "scope";
   @SerializedName(SERIALIZED_NAME_SCOPE)
+  @javax.annotation.Nullable
   private String scope;
 
   public static final String SERIALIZED_NAME_HRIS_ORG_STRUCTURE_ID = "hrisOrgStructureId";
   @SerializedName(SERIALIZED_NAME_HRIS_ORG_STRUCTURE_ID)
+  @javax.annotation.Nullable
   private String hrisOrgStructureId;
 
   public GetRolesItem() {
   }
 
-  public GetRolesItem id(BigDecimal id) {
+  public GetRolesItem id(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
     return this;
   }
@@ -84,12 +88,12 @@ public class GetRolesItem {
     return id;
   }
 
-  public void setId(BigDecimal id) {
+  public void setId(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
   }
 
 
-  public GetRolesItem name(String name) {
+  public GetRolesItem name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -103,12 +107,12 @@ public class GetRolesItem {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetRolesItem scope(String scope) {
+  public GetRolesItem scope(@javax.annotation.Nullable String scope) {
     this.scope = scope;
     return this;
   }
@@ -122,12 +126,12 @@ public class GetRolesItem {
     return scope;
   }
 
-  public void setScope(String scope) {
+  public void setScope(@javax.annotation.Nullable String scope) {
     this.scope = scope;
   }
 
 
-  public GetRolesItem hrisOrgStructureId(String hrisOrgStructureId) {
+  public GetRolesItem hrisOrgStructureId(@javax.annotation.Nullable String hrisOrgStructureId) {
     this.hrisOrgStructureId = hrisOrgStructureId;
     return this;
   }
@@ -141,7 +145,7 @@ public class GetRolesItem {
     return hrisOrgStructureId;
   }
 
-  public void setHrisOrgStructureId(String hrisOrgStructureId) {
+  public void setHrisOrgStructureId(@javax.annotation.Nullable String hrisOrgStructureId) {
     this.hrisOrgStructureId = hrisOrgStructureId;
   }
 

@@ -49,48 +49,57 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseDataCompensationDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataCompensationDetails {
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nonnull
   private String scale;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private String amount;
 
   public static final String SERIALIZED_NAME_FREQUENCY = "frequency";
   @SerializedName(SERIALIZED_NAME_FREQUENCY)
+  @javax.annotation.Nonnull
   private String frequency;
 
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currency_code";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
+  @javax.annotation.Nonnull
   private String currencyCode;
 
   public static final String SERIALIZED_NAME_FIRST_PAYMENT = "first_payment";
   @SerializedName(SERIALIZED_NAME_FIRST_PAYMENT)
+  @javax.annotation.Nonnull
   private String firstPayment;
 
   public static final String SERIALIZED_NAME_FIRST_PAYMENT_DATE = "first_payment_date";
   @SerializedName(SERIALIZED_NAME_FIRST_PAYMENT_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime firstPaymentDate;
 
   public static final String SERIALIZED_NAME_GROSS_ANNUAL_SALARY = "gross_annual_salary";
   @SerializedName(SERIALIZED_NAME_GROSS_ANNUAL_SALARY)
+  @javax.annotation.Nonnull
   private String grossAnnualSalary;
 
   public static final String SERIALIZED_NAME_GROSS_SIGNING_BONUS = "gross_signing_bonus";
   @SerializedName(SERIALIZED_NAME_GROSS_SIGNING_BONUS)
+  @javax.annotation.Nonnull
   private String grossSigningBonus;
 
   public static final String SERIALIZED_NAME_GROSS_VARIABLE_BONUS = "gross_variable_bonus";
   @SerializedName(SERIALIZED_NAME_GROSS_VARIABLE_BONUS)
+  @javax.annotation.Nonnull
   private String grossVariableBonus;
 
   public CreateContract201ResponseDataCompensationDetails() {
   }
 
-  public CreateContract201ResponseDataCompensationDetails scale(String scale) {
+  public CreateContract201ResponseDataCompensationDetails scale(@javax.annotation.Nonnull String scale) {
     this.scale = scale;
     return this;
   }
@@ -104,12 +113,12 @@ public class CreateContract201ResponseDataCompensationDetails {
     return scale;
   }
 
-  public void setScale(String scale) {
+  public void setScale(@javax.annotation.Nonnull String scale) {
     this.scale = scale;
   }
 
 
-  public CreateContract201ResponseDataCompensationDetails amount(String amount) {
+  public CreateContract201ResponseDataCompensationDetails amount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
     return this;
   }
@@ -123,12 +132,12 @@ public class CreateContract201ResponseDataCompensationDetails {
     return amount;
   }
 
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
   }
 
 
-  public CreateContract201ResponseDataCompensationDetails frequency(String frequency) {
+  public CreateContract201ResponseDataCompensationDetails frequency(@javax.annotation.Nonnull String frequency) {
     this.frequency = frequency;
     return this;
   }
@@ -142,12 +151,12 @@ public class CreateContract201ResponseDataCompensationDetails {
     return frequency;
   }
 
-  public void setFrequency(String frequency) {
+  public void setFrequency(@javax.annotation.Nonnull String frequency) {
     this.frequency = frequency;
   }
 
 
-  public CreateContract201ResponseDataCompensationDetails currencyCode(String currencyCode) {
+  public CreateContract201ResponseDataCompensationDetails currencyCode(@javax.annotation.Nonnull String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
   }
@@ -161,12 +170,12 @@ public class CreateContract201ResponseDataCompensationDetails {
     return currencyCode;
   }
 
-  public void setCurrencyCode(String currencyCode) {
+  public void setCurrencyCode(@javax.annotation.Nonnull String currencyCode) {
     this.currencyCode = currencyCode;
   }
 
 
-  public CreateContract201ResponseDataCompensationDetails firstPayment(String firstPayment) {
+  public CreateContract201ResponseDataCompensationDetails firstPayment(@javax.annotation.Nonnull String firstPayment) {
     this.firstPayment = firstPayment;
     return this;
   }
@@ -180,12 +189,12 @@ public class CreateContract201ResponseDataCompensationDetails {
     return firstPayment;
   }
 
-  public void setFirstPayment(String firstPayment) {
+  public void setFirstPayment(@javax.annotation.Nonnull String firstPayment) {
     this.firstPayment = firstPayment;
   }
 
 
-  public CreateContract201ResponseDataCompensationDetails firstPaymentDate(OffsetDateTime firstPaymentDate) {
+  public CreateContract201ResponseDataCompensationDetails firstPaymentDate(@javax.annotation.Nullable OffsetDateTime firstPaymentDate) {
     this.firstPaymentDate = firstPaymentDate;
     return this;
   }
@@ -199,12 +208,12 @@ public class CreateContract201ResponseDataCompensationDetails {
     return firstPaymentDate;
   }
 
-  public void setFirstPaymentDate(OffsetDateTime firstPaymentDate) {
+  public void setFirstPaymentDate(@javax.annotation.Nullable OffsetDateTime firstPaymentDate) {
     this.firstPaymentDate = firstPaymentDate;
   }
 
 
-  public CreateContract201ResponseDataCompensationDetails grossAnnualSalary(String grossAnnualSalary) {
+  public CreateContract201ResponseDataCompensationDetails grossAnnualSalary(@javax.annotation.Nonnull String grossAnnualSalary) {
     this.grossAnnualSalary = grossAnnualSalary;
     return this;
   }
@@ -218,12 +227,12 @@ public class CreateContract201ResponseDataCompensationDetails {
     return grossAnnualSalary;
   }
 
-  public void setGrossAnnualSalary(String grossAnnualSalary) {
+  public void setGrossAnnualSalary(@javax.annotation.Nonnull String grossAnnualSalary) {
     this.grossAnnualSalary = grossAnnualSalary;
   }
 
 
-  public CreateContract201ResponseDataCompensationDetails grossSigningBonus(String grossSigningBonus) {
+  public CreateContract201ResponseDataCompensationDetails grossSigningBonus(@javax.annotation.Nonnull String grossSigningBonus) {
     this.grossSigningBonus = grossSigningBonus;
     return this;
   }
@@ -237,12 +246,12 @@ public class CreateContract201ResponseDataCompensationDetails {
     return grossSigningBonus;
   }
 
-  public void setGrossSigningBonus(String grossSigningBonus) {
+  public void setGrossSigningBonus(@javax.annotation.Nonnull String grossSigningBonus) {
     this.grossSigningBonus = grossSigningBonus;
   }
 
 
-  public CreateContract201ResponseDataCompensationDetails grossVariableBonus(String grossVariableBonus) {
+  public CreateContract201ResponseDataCompensationDetails grossVariableBonus(@javax.annotation.Nonnull String grossVariableBonus) {
     this.grossVariableBonus = grossVariableBonus;
     return this;
   }
@@ -256,7 +265,7 @@ public class CreateContract201ResponseDataCompensationDetails {
     return grossVariableBonus;
   }
 
-  public void setGrossVariableBonus(String grossVariableBonus) {
+  public void setGrossVariableBonus(@javax.annotation.Nonnull String grossVariableBonus) {
     this.grossVariableBonus = grossVariableBonus;
   }
 

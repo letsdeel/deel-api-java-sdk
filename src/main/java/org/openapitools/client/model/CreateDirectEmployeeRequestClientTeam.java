@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * CreateDirectEmployeeRequestClientTeam
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateDirectEmployeeRequestClientTeam {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_DIRECT_MANAGER_ID = "direct_manager_id";
   @SerializedName(SERIALIZED_NAME_DIRECT_MANAGER_ID)
+  @javax.annotation.Nullable
   private UUID directManagerId;
 
   public CreateDirectEmployeeRequestClientTeam() {
   }
 
-  public CreateDirectEmployeeRequestClientTeam id(UUID id) {
+  public CreateDirectEmployeeRequestClientTeam id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -76,12 +78,12 @@ public class CreateDirectEmployeeRequestClientTeam {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public CreateDirectEmployeeRequestClientTeam directManagerId(UUID directManagerId) {
+  public CreateDirectEmployeeRequestClientTeam directManagerId(@javax.annotation.Nullable UUID directManagerId) {
     this.directManagerId = directManagerId;
     return this;
   }
@@ -95,7 +97,7 @@ public class CreateDirectEmployeeRequestClientTeam {
     return directManagerId;
   }
 
-  public void setDirectManagerId(UUID directManagerId) {
+  public void setDirectManagerId(@javax.annotation.Nullable UUID directManagerId) {
     this.directManagerId = directManagerId;
   }
 

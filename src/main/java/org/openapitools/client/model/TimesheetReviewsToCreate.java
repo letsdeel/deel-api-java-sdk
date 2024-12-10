@@ -52,7 +52,7 @@ import org.openapitools.client.JSON;
 /**
  * TimesheetReviewsToCreate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimesheetReviewsToCreate {
   /**
    * Gets or Sets status
@@ -108,20 +108,23 @@ public class TimesheetReviewsToCreate {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private StatusEnum status;
 
   public static final String SERIALIZED_NAME_REASON = "reason";
   @SerializedName(SERIALIZED_NAME_REASON)
+  @javax.annotation.Nullable
   private String reason;
 
   public static final String SERIALIZED_NAME_IDS = "ids";
   @SerializedName(SERIALIZED_NAME_IDS)
+  @javax.annotation.Nonnull
   private List<TimesheetIdItemsInner> ids = new ArrayList<>();
 
   public TimesheetReviewsToCreate() {
   }
 
-  public TimesheetReviewsToCreate status(StatusEnum status) {
+  public TimesheetReviewsToCreate status(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
     return this;
   }
@@ -135,12 +138,12 @@ public class TimesheetReviewsToCreate {
     return status;
   }
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull StatusEnum status) {
     this.status = status;
   }
 
 
-  public TimesheetReviewsToCreate reason(String reason) {
+  public TimesheetReviewsToCreate reason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
     return this;
   }
@@ -154,12 +157,12 @@ public class TimesheetReviewsToCreate {
     return reason;
   }
 
-  public void setReason(String reason) {
+  public void setReason(@javax.annotation.Nullable String reason) {
     this.reason = reason;
   }
 
 
-  public TimesheetReviewsToCreate ids(List<TimesheetIdItemsInner> ids) {
+  public TimesheetReviewsToCreate ids(@javax.annotation.Nonnull List<TimesheetIdItemsInner> ids) {
     this.ids = ids;
     return this;
   }
@@ -181,7 +184,7 @@ public class TimesheetReviewsToCreate {
     return ids;
   }
 
-  public void setIds(List<TimesheetIdItemsInner> ids) {
+  public void setIds(@javax.annotation.Nonnull List<TimesheetIdItemsInner> ids) {
     this.ids = ids;
   }
 

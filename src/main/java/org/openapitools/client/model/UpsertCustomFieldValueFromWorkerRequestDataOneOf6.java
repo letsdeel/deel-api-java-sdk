@@ -50,16 +50,17 @@ import org.openapitools.client.JSON;
 /**
  * Multiselect type
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertCustomFieldValueFromWorkerRequestDataOneOf6 {
   public static final String SERIALIZED_NAME_OPTIONS = "options";
   @SerializedName(SERIALIZED_NAME_OPTIONS)
+  @javax.annotation.Nullable
   private Set<String> options = new LinkedHashSet<>();
 
   public UpsertCustomFieldValueFromWorkerRequestDataOneOf6() {
   }
 
-  public UpsertCustomFieldValueFromWorkerRequestDataOneOf6 options(Set<String> options) {
+  public UpsertCustomFieldValueFromWorkerRequestDataOneOf6 options(@javax.annotation.Nullable Set<String> options) {
     this.options = options;
     return this;
   }
@@ -81,7 +82,7 @@ public class UpsertCustomFieldValueFromWorkerRequestDataOneOf6 {
     return options;
   }
 
-  public void setOptions(Set<String> options) {
+  public void setOptions(@javax.annotation.Nullable Set<String> options) {
     this.options = options;
   }
 

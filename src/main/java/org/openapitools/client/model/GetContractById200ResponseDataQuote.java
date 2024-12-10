@@ -51,20 +51,22 @@ import org.openapitools.client.JSON;
 /**
  * EOR quote approved by Deel.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseDataQuote {
   public static final String SERIALIZED_NAME_BENEFITS = "benefits";
   @SerializedName(SERIALIZED_NAME_BENEFITS)
+  @javax.annotation.Nullable
   private List<GetContractById200ResponseDataQuoteBenefitsInner> benefits = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public GetContractById200ResponseDataQuote() {
   }
 
-  public GetContractById200ResponseDataQuote benefits(List<GetContractById200ResponseDataQuoteBenefitsInner> benefits) {
+  public GetContractById200ResponseDataQuote benefits(@javax.annotation.Nullable List<GetContractById200ResponseDataQuoteBenefitsInner> benefits) {
     this.benefits = benefits;
     return this;
   }
@@ -86,12 +88,12 @@ public class GetContractById200ResponseDataQuote {
     return benefits;
   }
 
-  public void setBenefits(List<GetContractById200ResponseDataQuoteBenefitsInner> benefits) {
+  public void setBenefits(@javax.annotation.Nullable List<GetContractById200ResponseDataQuoteBenefitsInner> benefits) {
     this.benefits = benefits;
   }
 
 
-  public GetContractById200ResponseDataQuote currency(String currency) {
+  public GetContractById200ResponseDataQuote currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -105,7 +107,7 @@ public class GetContractById200ResponseDataQuote {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 

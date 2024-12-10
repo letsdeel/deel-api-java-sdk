@@ -49,16 +49,17 @@ import org.openapitools.client.JSON;
 /**
  * CreateTimesheet201Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateTimesheet201Response {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private CreateTimesheet201ResponseData data;
 
   public CreateTimesheet201Response() {
   }
 
-  public CreateTimesheet201Response data(CreateTimesheet201ResponseData data) {
+  public CreateTimesheet201Response data(@javax.annotation.Nonnull CreateTimesheet201ResponseData data) {
     this.data = data;
     return this;
   }
@@ -72,7 +73,7 @@ public class CreateTimesheet201Response {
     return data;
   }
 
-  public void setData(CreateTimesheet201ResponseData data) {
+  public void setData(@javax.annotation.Nonnull CreateTimesheet201ResponseData data) {
     this.data = data;
   }
 

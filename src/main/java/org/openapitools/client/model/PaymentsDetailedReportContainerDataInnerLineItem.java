@@ -48,28 +48,32 @@ import org.openapitools.client.JSON;
 /**
  * PaymentsDetailedReportContainerDataInnerLineItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PaymentsDetailedReportContainerDataInnerLineItem {
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_CATEGORY = "category";
   @SerializedName(SERIALIZED_NAME_CATEGORY)
+  @javax.annotation.Nullable
   private String category;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nullable
   private String amount;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nullable
   private String currency;
 
   public PaymentsDetailedReportContainerDataInnerLineItem() {
   }
 
-  public PaymentsDetailedReportContainerDataInnerLineItem description(String description) {
+  public PaymentsDetailedReportContainerDataInnerLineItem description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -83,12 +87,12 @@ public class PaymentsDetailedReportContainerDataInnerLineItem {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public PaymentsDetailedReportContainerDataInnerLineItem category(String category) {
+  public PaymentsDetailedReportContainerDataInnerLineItem category(@javax.annotation.Nullable String category) {
     this.category = category;
     return this;
   }
@@ -102,12 +106,12 @@ public class PaymentsDetailedReportContainerDataInnerLineItem {
     return category;
   }
 
-  public void setCategory(String category) {
+  public void setCategory(@javax.annotation.Nullable String category) {
     this.category = category;
   }
 
 
-  public PaymentsDetailedReportContainerDataInnerLineItem amount(String amount) {
+  public PaymentsDetailedReportContainerDataInnerLineItem amount(@javax.annotation.Nullable String amount) {
     this.amount = amount;
     return this;
   }
@@ -121,12 +125,12 @@ public class PaymentsDetailedReportContainerDataInnerLineItem {
     return amount;
   }
 
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nullable String amount) {
     this.amount = amount;
   }
 
 
-  public PaymentsDetailedReportContainerDataInnerLineItem currency(String currency) {
+  public PaymentsDetailedReportContainerDataInnerLineItem currency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
     return this;
   }
@@ -140,7 +144,7 @@ public class PaymentsDetailedReportContainerDataInnerLineItem {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nullable String currency) {
     this.currency = currency;
   }
 

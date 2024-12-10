@@ -59,72 +59,87 @@ import org.openapitools.client.JSON;
 /**
  * GetPeoplePersonalInformationByExternalId200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPeoplePersonalInformationByExternalId200ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_KYC = "kyc";
   @SerializedName(SERIALIZED_NAME_KYC)
+  @javax.annotation.Nullable
   private GetPeoplePersonalInformationById200ResponseDataKyc kyc;
 
   public static final String SERIALIZED_NAME_OOO = "ooo";
   @SerializedName(SERIALIZED_NAME_OOO)
+  @javax.annotation.Nullable
   private GetPeoplePersonalInformationById200ResponseDataOoo ooo;
 
   public static final String SERIALIZED_NAME_ADDRESSES = "addresses";
   @SerializedName(SERIALIZED_NAME_ADDRESSES)
+  @javax.annotation.Nonnull
   private List<GetPeoplePersonalInformationByExternalId200ResponseDataAddressesInner> addresses = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_WORKER_ID = "worker_id";
   @SerializedName(SERIALIZED_NAME_WORKER_ID)
+  @javax.annotation.Nonnull
   private Integer workerId;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_DEMOGRAPHICS = "demographics";
   @SerializedName(SERIALIZED_NAME_DEMOGRAPHICS)
+  @javax.annotation.Nonnull
   private GetPeoplePersonalInformationByExternalId200ResponseDataDemographics demographics;
 
   public static final String SERIALIZED_NAME_DATE_OF_BIRTH = "date_of_birth";
   @SerializedName(SERIALIZED_NAME_DATE_OF_BIRTH)
+  @javax.annotation.Nonnull
   private LocalDate dateOfBirth;
 
   public static final String SERIALIZED_NAME_NATIONALITIES = "nationalities";
   @SerializedName(SERIALIZED_NAME_NATIONALITIES)
+  @javax.annotation.Nonnull
   private List<GetPeoplePersonalInformationById200ResponseDataNationalitiesInner> nationalities = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PHONE_NUMBERS = "phone_numbers";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBERS)
+  @javax.annotation.Nonnull
   private List<GetPeoplePersonalInformationById200ResponseDataPhoneNumbersInner> phoneNumbers = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PERSONAL_EMAIL = "personal_email";
   @SerializedName(SERIALIZED_NAME_PERSONAL_EMAIL)
+  @javax.annotation.Nonnull
   private String personalEmail;
 
   public static final String SERIALIZED_NAME_PREFERRED_NAME = "preferred_name";
   @SerializedName(SERIALIZED_NAME_PREFERRED_NAME)
+  @javax.annotation.Nonnull
   private String preferredName;
 
   public static final String SERIALIZED_NAME_LEGAL_LAST_NAME = "legal_last_name";
   @SerializedName(SERIALIZED_NAME_LEGAL_LAST_NAME)
+  @javax.annotation.Nonnull
   private String legalLastName;
 
   public static final String SERIALIZED_NAME_LEGAL_FIRST_NAME = "legal_first_name";
   @SerializedName(SERIALIZED_NAME_LEGAL_FIRST_NAME)
+  @javax.annotation.Nonnull
   private String legalFirstName;
 
   public static final String SERIALIZED_NAME_EMERGENCY_CONTACTS = "emergency_contacts";
   @SerializedName(SERIALIZED_NAME_EMERGENCY_CONTACTS)
+  @javax.annotation.Nonnull
   private List<GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner> emergencyContacts = new ArrayList<>();
 
   public GetPeoplePersonalInformationByExternalId200ResponseData() {
   }
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData id(UUID id) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -138,12 +153,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData kyc(GetPeoplePersonalInformationById200ResponseDataKyc kyc) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData kyc(@javax.annotation.Nullable GetPeoplePersonalInformationById200ResponseDataKyc kyc) {
     this.kyc = kyc;
     return this;
   }
@@ -157,12 +172,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return kyc;
   }
 
-  public void setKyc(GetPeoplePersonalInformationById200ResponseDataKyc kyc) {
+  public void setKyc(@javax.annotation.Nullable GetPeoplePersonalInformationById200ResponseDataKyc kyc) {
     this.kyc = kyc;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData ooo(GetPeoplePersonalInformationById200ResponseDataOoo ooo) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData ooo(@javax.annotation.Nullable GetPeoplePersonalInformationById200ResponseDataOoo ooo) {
     this.ooo = ooo;
     return this;
   }
@@ -176,12 +191,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return ooo;
   }
 
-  public void setOoo(GetPeoplePersonalInformationById200ResponseDataOoo ooo) {
+  public void setOoo(@javax.annotation.Nullable GetPeoplePersonalInformationById200ResponseDataOoo ooo) {
     this.ooo = ooo;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData addresses(List<GetPeoplePersonalInformationByExternalId200ResponseDataAddressesInner> addresses) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData addresses(@javax.annotation.Nonnull List<GetPeoplePersonalInformationByExternalId200ResponseDataAddressesInner> addresses) {
     this.addresses = addresses;
     return this;
   }
@@ -203,12 +218,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return addresses;
   }
 
-  public void setAddresses(List<GetPeoplePersonalInformationByExternalId200ResponseDataAddressesInner> addresses) {
+  public void setAddresses(@javax.annotation.Nonnull List<GetPeoplePersonalInformationByExternalId200ResponseDataAddressesInner> addresses) {
     this.addresses = addresses;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData workerId(Integer workerId) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData workerId(@javax.annotation.Nonnull Integer workerId) {
     this.workerId = workerId;
     return this;
   }
@@ -222,12 +237,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return workerId;
   }
 
-  public void setWorkerId(Integer workerId) {
+  public void setWorkerId(@javax.annotation.Nonnull Integer workerId) {
     this.workerId = workerId;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData externalId(String externalId) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -241,12 +256,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData demographics(GetPeoplePersonalInformationByExternalId200ResponseDataDemographics demographics) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData demographics(@javax.annotation.Nonnull GetPeoplePersonalInformationByExternalId200ResponseDataDemographics demographics) {
     this.demographics = demographics;
     return this;
   }
@@ -260,12 +275,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return demographics;
   }
 
-  public void setDemographics(GetPeoplePersonalInformationByExternalId200ResponseDataDemographics demographics) {
+  public void setDemographics(@javax.annotation.Nonnull GetPeoplePersonalInformationByExternalId200ResponseDataDemographics demographics) {
     this.demographics = demographics;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData dateOfBirth(LocalDate dateOfBirth) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData dateOfBirth(@javax.annotation.Nonnull LocalDate dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
     return this;
   }
@@ -279,12 +294,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return dateOfBirth;
   }
 
-  public void setDateOfBirth(LocalDate dateOfBirth) {
+  public void setDateOfBirth(@javax.annotation.Nonnull LocalDate dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData nationalities(List<GetPeoplePersonalInformationById200ResponseDataNationalitiesInner> nationalities) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData nationalities(@javax.annotation.Nonnull List<GetPeoplePersonalInformationById200ResponseDataNationalitiesInner> nationalities) {
     this.nationalities = nationalities;
     return this;
   }
@@ -306,12 +321,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return nationalities;
   }
 
-  public void setNationalities(List<GetPeoplePersonalInformationById200ResponseDataNationalitiesInner> nationalities) {
+  public void setNationalities(@javax.annotation.Nonnull List<GetPeoplePersonalInformationById200ResponseDataNationalitiesInner> nationalities) {
     this.nationalities = nationalities;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData phoneNumbers(List<GetPeoplePersonalInformationById200ResponseDataPhoneNumbersInner> phoneNumbers) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData phoneNumbers(@javax.annotation.Nonnull List<GetPeoplePersonalInformationById200ResponseDataPhoneNumbersInner> phoneNumbers) {
     this.phoneNumbers = phoneNumbers;
     return this;
   }
@@ -333,12 +348,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return phoneNumbers;
   }
 
-  public void setPhoneNumbers(List<GetPeoplePersonalInformationById200ResponseDataPhoneNumbersInner> phoneNumbers) {
+  public void setPhoneNumbers(@javax.annotation.Nonnull List<GetPeoplePersonalInformationById200ResponseDataPhoneNumbersInner> phoneNumbers) {
     this.phoneNumbers = phoneNumbers;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData personalEmail(String personalEmail) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData personalEmail(@javax.annotation.Nonnull String personalEmail) {
     this.personalEmail = personalEmail;
     return this;
   }
@@ -352,12 +367,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return personalEmail;
   }
 
-  public void setPersonalEmail(String personalEmail) {
+  public void setPersonalEmail(@javax.annotation.Nonnull String personalEmail) {
     this.personalEmail = personalEmail;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData preferredName(String preferredName) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData preferredName(@javax.annotation.Nonnull String preferredName) {
     this.preferredName = preferredName;
     return this;
   }
@@ -371,12 +386,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return preferredName;
   }
 
-  public void setPreferredName(String preferredName) {
+  public void setPreferredName(@javax.annotation.Nonnull String preferredName) {
     this.preferredName = preferredName;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData legalLastName(String legalLastName) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData legalLastName(@javax.annotation.Nonnull String legalLastName) {
     this.legalLastName = legalLastName;
     return this;
   }
@@ -390,12 +405,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return legalLastName;
   }
 
-  public void setLegalLastName(String legalLastName) {
+  public void setLegalLastName(@javax.annotation.Nonnull String legalLastName) {
     this.legalLastName = legalLastName;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData legalFirstName(String legalFirstName) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData legalFirstName(@javax.annotation.Nonnull String legalFirstName) {
     this.legalFirstName = legalFirstName;
     return this;
   }
@@ -409,12 +424,12 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return legalFirstName;
   }
 
-  public void setLegalFirstName(String legalFirstName) {
+  public void setLegalFirstName(@javax.annotation.Nonnull String legalFirstName) {
     this.legalFirstName = legalFirstName;
   }
 
 
-  public GetPeoplePersonalInformationByExternalId200ResponseData emergencyContacts(List<GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner> emergencyContacts) {
+  public GetPeoplePersonalInformationByExternalId200ResponseData emergencyContacts(@javax.annotation.Nonnull List<GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner> emergencyContacts) {
     this.emergencyContacts = emergencyContacts;
     return this;
   }
@@ -436,7 +451,7 @@ public class GetPeoplePersonalInformationByExternalId200ResponseData {
     return emergencyContacts;
   }
 
-  public void setEmergencyContacts(List<GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner> emergencyContacts) {
+  public void setEmergencyContacts(@javax.annotation.Nonnull List<GetPeoplePersonalInformationByExternalId200ResponseDataEmergencyContactsInner> emergencyContacts) {
     this.emergencyContacts = emergencyContacts;
   }
 

@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * The preferred language in which the emergency contact should be contacted.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PeoplePersonalContainerDataEmergencyContactsInnerPreferredLanguage {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private BigDecimal id;
 
   public static final String SERIALIZED_NAME_LANGUAGE = "language";
   @SerializedName(SERIALIZED_NAME_LANGUAGE)
+  @javax.annotation.Nonnull
   private String language;
 
   public PeoplePersonalContainerDataEmergencyContactsInnerPreferredLanguage() {
   }
 
-  public PeoplePersonalContainerDataEmergencyContactsInnerPreferredLanguage id(BigDecimal id) {
+  public PeoplePersonalContainerDataEmergencyContactsInnerPreferredLanguage id(@javax.annotation.Nonnull BigDecimal id) {
     this.id = id;
     return this;
   }
@@ -76,12 +78,12 @@ public class PeoplePersonalContainerDataEmergencyContactsInnerPreferredLanguage 
     return id;
   }
 
-  public void setId(BigDecimal id) {
+  public void setId(@javax.annotation.Nonnull BigDecimal id) {
     this.id = id;
   }
 
 
-  public PeoplePersonalContainerDataEmergencyContactsInnerPreferredLanguage language(String language) {
+  public PeoplePersonalContainerDataEmergencyContactsInnerPreferredLanguage language(@javax.annotation.Nonnull String language) {
     this.language = language;
     return this;
   }
@@ -95,7 +97,7 @@ public class PeoplePersonalContainerDataEmergencyContactsInnerPreferredLanguage 
     return language;
   }
 
-  public void setLanguage(String language) {
+  public void setLanguage(@javax.annotation.Nonnull String language) {
     this.language = language;
   }
 

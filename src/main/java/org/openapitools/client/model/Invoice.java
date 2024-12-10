@@ -50,76 +50,92 @@ import org.openapitools.client.JSON;
 /**
  * Invoice
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Invoice {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nonnull
   private InvoiceStatusEnum status;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nonnull
   private String currency;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
+  @javax.annotation.Nonnull
   private String total;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private String amount;
 
   public static final String SERIALIZED_NAME_DEEL_FEE = "deel_fee";
   @SerializedName(SERIALIZED_NAME_DEEL_FEE)
+  @javax.annotation.Nonnull
   private String deelFee;
 
   public static final String SERIALIZED_NAME_LABEL = "label";
   @SerializedName(SERIALIZED_NAME_LABEL)
+  @javax.annotation.Nonnull
   private String label;
 
   public static final String SERIALIZED_NAME_PAID_AT = "paid_at";
   @SerializedName(SERIALIZED_NAME_PAID_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime paidAt;
 
   public static final String SERIALIZED_NAME_VAT_TOTAL = "vat_total";
   @SerializedName(SERIALIZED_NAME_VAT_TOTAL)
+  @javax.annotation.Nullable
   private String vatTotal;
 
   public static final String SERIALIZED_NAME_VAT_PERCENTAGE = "vat_percentage";
   @SerializedName(SERIALIZED_NAME_VAT_PERCENTAGE)
+  @javax.annotation.Nullable
   private String vatPercentage;
 
   public static final String SERIALIZED_NAME_IS_OVERDUE = "is_overdue";
   @SerializedName(SERIALIZED_NAME_IS_OVERDUE)
+  @javax.annotation.Nullable
   private Boolean isOverdue;
 
   public static final String SERIALIZED_NAME_ISSUED_AT = "issued_at";
   @SerializedName(SERIALIZED_NAME_ISSUED_AT)
+  @javax.annotation.Nullable
   private OffsetDateTime issuedAt;
 
   public static final String SERIALIZED_NAME_VAT_ID = "vat_id";
   @SerializedName(SERIALIZED_NAME_VAT_ID)
+  @javax.annotation.Nullable
   private String vatId;
 
   public static final String SERIALIZED_NAME_DUE_DATE = "due_date";
   @SerializedName(SERIALIZED_NAME_DUE_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime dueDate;
 
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nonnull
   private String contractId;
 
   public Invoice() {
   }
 
-  public Invoice id(String id) {
+  public Invoice id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -133,12 +149,12 @@ public class Invoice {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public Invoice status(InvoiceStatusEnum status) {
+  public Invoice status(@javax.annotation.Nonnull InvoiceStatusEnum status) {
     this.status = status;
     return this;
   }
@@ -152,12 +168,12 @@ public class Invoice {
     return status;
   }
 
-  public void setStatus(InvoiceStatusEnum status) {
+  public void setStatus(@javax.annotation.Nonnull InvoiceStatusEnum status) {
     this.status = status;
   }
 
 
-  public Invoice currency(String currency) {
+  public Invoice currency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
     return this;
   }
@@ -171,12 +187,12 @@ public class Invoice {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
   }
 
 
-  public Invoice createdAt(OffsetDateTime createdAt) {
+  public Invoice createdAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -190,12 +206,12 @@ public class Invoice {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public Invoice total(String total) {
+  public Invoice total(@javax.annotation.Nonnull String total) {
     this.total = total;
     return this;
   }
@@ -209,12 +225,12 @@ public class Invoice {
     return total;
   }
 
-  public void setTotal(String total) {
+  public void setTotal(@javax.annotation.Nonnull String total) {
     this.total = total;
   }
 
 
-  public Invoice amount(String amount) {
+  public Invoice amount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
     return this;
   }
@@ -228,12 +244,12 @@ public class Invoice {
     return amount;
   }
 
-  public void setAmount(String amount) {
+  public void setAmount(@javax.annotation.Nonnull String amount) {
     this.amount = amount;
   }
 
 
-  public Invoice deelFee(String deelFee) {
+  public Invoice deelFee(@javax.annotation.Nonnull String deelFee) {
     this.deelFee = deelFee;
     return this;
   }
@@ -247,12 +263,12 @@ public class Invoice {
     return deelFee;
   }
 
-  public void setDeelFee(String deelFee) {
+  public void setDeelFee(@javax.annotation.Nonnull String deelFee) {
     this.deelFee = deelFee;
   }
 
 
-  public Invoice label(String label) {
+  public Invoice label(@javax.annotation.Nonnull String label) {
     this.label = label;
     return this;
   }
@@ -266,12 +282,12 @@ public class Invoice {
     return label;
   }
 
-  public void setLabel(String label) {
+  public void setLabel(@javax.annotation.Nonnull String label) {
     this.label = label;
   }
 
 
-  public Invoice paidAt(OffsetDateTime paidAt) {
+  public Invoice paidAt(@javax.annotation.Nullable OffsetDateTime paidAt) {
     this.paidAt = paidAt;
     return this;
   }
@@ -285,12 +301,12 @@ public class Invoice {
     return paidAt;
   }
 
-  public void setPaidAt(OffsetDateTime paidAt) {
+  public void setPaidAt(@javax.annotation.Nullable OffsetDateTime paidAt) {
     this.paidAt = paidAt;
   }
 
 
-  public Invoice vatTotal(String vatTotal) {
+  public Invoice vatTotal(@javax.annotation.Nullable String vatTotal) {
     this.vatTotal = vatTotal;
     return this;
   }
@@ -304,12 +320,12 @@ public class Invoice {
     return vatTotal;
   }
 
-  public void setVatTotal(String vatTotal) {
+  public void setVatTotal(@javax.annotation.Nullable String vatTotal) {
     this.vatTotal = vatTotal;
   }
 
 
-  public Invoice vatPercentage(String vatPercentage) {
+  public Invoice vatPercentage(@javax.annotation.Nullable String vatPercentage) {
     this.vatPercentage = vatPercentage;
     return this;
   }
@@ -323,12 +339,12 @@ public class Invoice {
     return vatPercentage;
   }
 
-  public void setVatPercentage(String vatPercentage) {
+  public void setVatPercentage(@javax.annotation.Nullable String vatPercentage) {
     this.vatPercentage = vatPercentage;
   }
 
 
-  public Invoice isOverdue(Boolean isOverdue) {
+  public Invoice isOverdue(@javax.annotation.Nullable Boolean isOverdue) {
     this.isOverdue = isOverdue;
     return this;
   }
@@ -342,12 +358,12 @@ public class Invoice {
     return isOverdue;
   }
 
-  public void setIsOverdue(Boolean isOverdue) {
+  public void setIsOverdue(@javax.annotation.Nullable Boolean isOverdue) {
     this.isOverdue = isOverdue;
   }
 
 
-  public Invoice issuedAt(OffsetDateTime issuedAt) {
+  public Invoice issuedAt(@javax.annotation.Nullable OffsetDateTime issuedAt) {
     this.issuedAt = issuedAt;
     return this;
   }
@@ -361,12 +377,12 @@ public class Invoice {
     return issuedAt;
   }
 
-  public void setIssuedAt(OffsetDateTime issuedAt) {
+  public void setIssuedAt(@javax.annotation.Nullable OffsetDateTime issuedAt) {
     this.issuedAt = issuedAt;
   }
 
 
-  public Invoice vatId(String vatId) {
+  public Invoice vatId(@javax.annotation.Nullable String vatId) {
     this.vatId = vatId;
     return this;
   }
@@ -380,12 +396,12 @@ public class Invoice {
     return vatId;
   }
 
-  public void setVatId(String vatId) {
+  public void setVatId(@javax.annotation.Nullable String vatId) {
     this.vatId = vatId;
   }
 
 
-  public Invoice dueDate(OffsetDateTime dueDate) {
+  public Invoice dueDate(@javax.annotation.Nullable OffsetDateTime dueDate) {
     this.dueDate = dueDate;
     return this;
   }
@@ -399,18 +415,18 @@ public class Invoice {
     return dueDate;
   }
 
-  public void setDueDate(OffsetDateTime dueDate) {
+  public void setDueDate(@javax.annotation.Nullable OffsetDateTime dueDate) {
     this.dueDate = dueDate;
   }
 
 
-  public Invoice contractId(String contractId) {
+  public Invoice contractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
     return this;
   }
 
   /**
-   * Unique identifier of the contract. #magic___^_^___line
+   * Unique identifier of the contract
    * @return contractId
    */
   @javax.annotation.Nonnull
@@ -418,7 +434,7 @@ public class Invoice {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
   }
 

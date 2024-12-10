@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * UpdateGPEmployeeCompensationRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateGPEmployeeCompensationRequestData {
   /**
    * The scale to which a given salary applies.
@@ -108,20 +108,23 @@ public class UpdateGPEmployeeCompensationRequestData {
 
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nonnull
   private ScaleEnum scale;
 
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
+  @javax.annotation.Nonnull
   private BigDecimal salary;
 
   public static final String SERIALIZED_NAME_EFFECTIVE_DATE = "effective_date";
   @SerializedName(SERIALIZED_NAME_EFFECTIVE_DATE)
+  @javax.annotation.Nonnull
   private LocalDate effectiveDate;
 
   public UpdateGPEmployeeCompensationRequestData() {
   }
 
-  public UpdateGPEmployeeCompensationRequestData scale(ScaleEnum scale) {
+  public UpdateGPEmployeeCompensationRequestData scale(@javax.annotation.Nonnull ScaleEnum scale) {
     this.scale = scale;
     return this;
   }
@@ -135,12 +138,12 @@ public class UpdateGPEmployeeCompensationRequestData {
     return scale;
   }
 
-  public void setScale(ScaleEnum scale) {
+  public void setScale(@javax.annotation.Nonnull ScaleEnum scale) {
     this.scale = scale;
   }
 
 
-  public UpdateGPEmployeeCompensationRequestData salary(BigDecimal salary) {
+  public UpdateGPEmployeeCompensationRequestData salary(@javax.annotation.Nonnull BigDecimal salary) {
     this.salary = salary;
     return this;
   }
@@ -154,12 +157,12 @@ public class UpdateGPEmployeeCompensationRequestData {
     return salary;
   }
 
-  public void setSalary(BigDecimal salary) {
+  public void setSalary(@javax.annotation.Nonnull BigDecimal salary) {
     this.salary = salary;
   }
 
 
-  public UpdateGPEmployeeCompensationRequestData effectiveDate(LocalDate effectiveDate) {
+  public UpdateGPEmployeeCompensationRequestData effectiveDate(@javax.annotation.Nonnull LocalDate effectiveDate) {
     this.effectiveDate = effectiveDate;
     return this;
   }
@@ -173,7 +176,7 @@ public class UpdateGPEmployeeCompensationRequestData {
     return effectiveDate;
   }
 
-  public void setEffectiveDate(LocalDate effectiveDate) {
+  public void setEffectiveDate(@javax.annotation.Nonnull LocalDate effectiveDate) {
     this.effectiveDate = effectiveDate;
   }
 

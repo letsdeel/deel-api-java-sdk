@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * Conditions to make definitive contract.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorCountryValidationsDefiniteContract {
   /**
    * Gets or Sets type
@@ -107,16 +107,18 @@ public class EorCountryValidationsDefiniteContract {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_MAXIMUM_LIMITATION = "maximum_limitation";
   @SerializedName(SERIALIZED_NAME_MAXIMUM_LIMITATION)
+  @javax.annotation.Nullable
   private BigDecimal maximumLimitation;
 
   public EorCountryValidationsDefiniteContract() {
   }
 
-  public EorCountryValidationsDefiniteContract type(TypeEnum type) {
+  public EorCountryValidationsDefiniteContract type(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -130,12 +132,12 @@ public class EorCountryValidationsDefiniteContract {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nullable TypeEnum type) {
     this.type = type;
   }
 
 
-  public EorCountryValidationsDefiniteContract maximumLimitation(BigDecimal maximumLimitation) {
+  public EorCountryValidationsDefiniteContract maximumLimitation(@javax.annotation.Nullable BigDecimal maximumLimitation) {
     this.maximumLimitation = maximumLimitation;
     return this;
   }
@@ -149,7 +151,7 @@ public class EorCountryValidationsDefiniteContract {
     return maximumLimitation;
   }
 
-  public void setMaximumLimitation(BigDecimal maximumLimitation) {
+  public void setMaximumLimitation(@javax.annotation.Nullable BigDecimal maximumLimitation) {
     this.maximumLimitation = maximumLimitation;
   }
 

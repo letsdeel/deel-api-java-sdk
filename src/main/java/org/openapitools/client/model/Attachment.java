@@ -48,28 +48,32 @@ import org.openapitools.client.JSON;
 /**
  * Attachment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Attachment {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_UPLOAD_ID = "upload_id";
   @SerializedName(SERIALIZED_NAME_UPLOAD_ID)
+  @javax.annotation.Nullable
   private String uploadId;
 
   public static final String SERIALIZED_NAME_KEY = "key";
   @SerializedName(SERIALIZED_NAME_KEY)
+  @javax.annotation.Nullable
   private String key;
 
   public static final String SERIALIZED_NAME_FILENAME = "filename";
   @SerializedName(SERIALIZED_NAME_FILENAME)
+  @javax.annotation.Nonnull
   private String filename;
 
   public Attachment() {
   }
 
-  public Attachment id(String id) {
+  public Attachment id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -83,12 +87,12 @@ public class Attachment {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public Attachment uploadId(String uploadId) {
+  public Attachment uploadId(@javax.annotation.Nullable String uploadId) {
     this.uploadId = uploadId;
     return this;
   }
@@ -102,12 +106,12 @@ public class Attachment {
     return uploadId;
   }
 
-  public void setUploadId(String uploadId) {
+  public void setUploadId(@javax.annotation.Nullable String uploadId) {
     this.uploadId = uploadId;
   }
 
 
-  public Attachment key(String key) {
+  public Attachment key(@javax.annotation.Nullable String key) {
     this.key = key;
     return this;
   }
@@ -121,12 +125,12 @@ public class Attachment {
     return key;
   }
 
-  public void setKey(String key) {
+  public void setKey(@javax.annotation.Nullable String key) {
     this.key = key;
   }
 
 
-  public Attachment filename(String filename) {
+  public Attachment filename(@javax.annotation.Nonnull String filename) {
     this.filename = filename;
     return this;
   }
@@ -140,7 +144,7 @@ public class Attachment {
     return filename;
   }
 
-  public void setFilename(String filename) {
+  public void setFilename(@javax.annotation.Nonnull String filename) {
     this.filename = filename;
   }
 

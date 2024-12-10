@@ -52,56 +52,67 @@ import org.openapitools.client.JSON;
 /**
  * Details of adjustment to create
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateAdjustmentRequestData {
   public static final String SERIALIZED_NAME_FILE = "file";
   @SerializedName(SERIALIZED_NAME_FILE)
+  @javax.annotation.Nonnull
   private File _file;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
+  @javax.annotation.Nonnull
   private String title;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private CreateAdjustmentRequestDataAmount amount;
 
   public static final String SERIALIZED_NAME_VENDOR = "vendor";
   @SerializedName(SERIALIZED_NAME_VENDOR)
+  @javax.annotation.Nonnull
   private String vendor;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nonnull
   private String country;
 
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nonnull
   private String contractId;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nonnull
   private String description;
 
   public static final String SERIALIZED_NAME_CYCLE_REFERENCE = "cycle_reference";
   @SerializedName(SERIALIZED_NAME_CYCLE_REFERENCE)
+  @javax.annotation.Nullable
   private String cycleReference;
 
   public static final String SERIALIZED_NAME_MOVE_NEXT_CYCLE = "move_next_cycle";
   @SerializedName(SERIALIZED_NAME_MOVE_NEXT_CYCLE)
+  @javax.annotation.Nullable
   private Boolean moveNextCycle;
 
   public static final String SERIALIZED_NAME_DATE_OF_ADJUSTMENT = "date_of_adjustment";
   @SerializedName(SERIALIZED_NAME_DATE_OF_ADJUSTMENT)
+  @javax.annotation.Nullable
   private LocalDate dateOfAdjustment;
 
   public static final String SERIALIZED_NAME_ADJUSTMENT_CATEGORY_ID = "adjustment_category_id";
   @SerializedName(SERIALIZED_NAME_ADJUSTMENT_CATEGORY_ID)
+  @javax.annotation.Nonnull
   private String adjustmentCategoryId;
 
   public CreateAdjustmentRequestData() {
   }
 
-  public CreateAdjustmentRequestData _file(File _file) {
+  public CreateAdjustmentRequestData _file(@javax.annotation.Nonnull File _file) {
     this._file = _file;
     return this;
   }
@@ -115,12 +126,12 @@ public class CreateAdjustmentRequestData {
     return _file;
   }
 
-  public void setFile(File _file) {
+  public void setFile(@javax.annotation.Nonnull File _file) {
     this._file = _file;
   }
 
 
-  public CreateAdjustmentRequestData title(String title) {
+  public CreateAdjustmentRequestData title(@javax.annotation.Nonnull String title) {
     this.title = title;
     return this;
   }
@@ -134,12 +145,12 @@ public class CreateAdjustmentRequestData {
     return title;
   }
 
-  public void setTitle(String title) {
+  public void setTitle(@javax.annotation.Nonnull String title) {
     this.title = title;
   }
 
 
-  public CreateAdjustmentRequestData amount(CreateAdjustmentRequestDataAmount amount) {
+  public CreateAdjustmentRequestData amount(@javax.annotation.Nonnull CreateAdjustmentRequestDataAmount amount) {
     this.amount = amount;
     return this;
   }
@@ -153,12 +164,12 @@ public class CreateAdjustmentRequestData {
     return amount;
   }
 
-  public void setAmount(CreateAdjustmentRequestDataAmount amount) {
+  public void setAmount(@javax.annotation.Nonnull CreateAdjustmentRequestDataAmount amount) {
     this.amount = amount;
   }
 
 
-  public CreateAdjustmentRequestData vendor(String vendor) {
+  public CreateAdjustmentRequestData vendor(@javax.annotation.Nonnull String vendor) {
     this.vendor = vendor;
     return this;
   }
@@ -172,12 +183,12 @@ public class CreateAdjustmentRequestData {
     return vendor;
   }
 
-  public void setVendor(String vendor) {
+  public void setVendor(@javax.annotation.Nonnull String vendor) {
     this.vendor = vendor;
   }
 
 
-  public CreateAdjustmentRequestData country(String country) {
+  public CreateAdjustmentRequestData country(@javax.annotation.Nonnull String country) {
     this.country = country;
     return this;
   }
@@ -191,12 +202,12 @@ public class CreateAdjustmentRequestData {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nonnull String country) {
     this.country = country;
   }
 
 
-  public CreateAdjustmentRequestData contractId(String contractId) {
+  public CreateAdjustmentRequestData contractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -210,12 +221,12 @@ public class CreateAdjustmentRequestData {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nonnull String contractId) {
     this.contractId = contractId;
   }
 
 
-  public CreateAdjustmentRequestData description(String description) {
+  public CreateAdjustmentRequestData description(@javax.annotation.Nonnull String description) {
     this.description = description;
     return this;
   }
@@ -229,12 +240,12 @@ public class CreateAdjustmentRequestData {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nonnull String description) {
     this.description = description;
   }
 
 
-  public CreateAdjustmentRequestData cycleReference(String cycleReference) {
+  public CreateAdjustmentRequestData cycleReference(@javax.annotation.Nullable String cycleReference) {
     this.cycleReference = cycleReference;
     return this;
   }
@@ -248,12 +259,12 @@ public class CreateAdjustmentRequestData {
     return cycleReference;
   }
 
-  public void setCycleReference(String cycleReference) {
+  public void setCycleReference(@javax.annotation.Nullable String cycleReference) {
     this.cycleReference = cycleReference;
   }
 
 
-  public CreateAdjustmentRequestData moveNextCycle(Boolean moveNextCycle) {
+  public CreateAdjustmentRequestData moveNextCycle(@javax.annotation.Nullable Boolean moveNextCycle) {
     this.moveNextCycle = moveNextCycle;
     return this;
   }
@@ -267,12 +278,12 @@ public class CreateAdjustmentRequestData {
     return moveNextCycle;
   }
 
-  public void setMoveNextCycle(Boolean moveNextCycle) {
+  public void setMoveNextCycle(@javax.annotation.Nullable Boolean moveNextCycle) {
     this.moveNextCycle = moveNextCycle;
   }
 
 
-  public CreateAdjustmentRequestData dateOfAdjustment(LocalDate dateOfAdjustment) {
+  public CreateAdjustmentRequestData dateOfAdjustment(@javax.annotation.Nullable LocalDate dateOfAdjustment) {
     this.dateOfAdjustment = dateOfAdjustment;
     return this;
   }
@@ -286,12 +297,12 @@ public class CreateAdjustmentRequestData {
     return dateOfAdjustment;
   }
 
-  public void setDateOfAdjustment(LocalDate dateOfAdjustment) {
+  public void setDateOfAdjustment(@javax.annotation.Nullable LocalDate dateOfAdjustment) {
     this.dateOfAdjustment = dateOfAdjustment;
   }
 
 
-  public CreateAdjustmentRequestData adjustmentCategoryId(String adjustmentCategoryId) {
+  public CreateAdjustmentRequestData adjustmentCategoryId(@javax.annotation.Nonnull String adjustmentCategoryId) {
     this.adjustmentCategoryId = adjustmentCategoryId;
     return this;
   }
@@ -305,7 +316,7 @@ public class CreateAdjustmentRequestData {
     return adjustmentCategoryId;
   }
 
-  public void setAdjustmentCategoryId(String adjustmentCategoryId) {
+  public void setAdjustmentCategoryId(@javax.annotation.Nonnull String adjustmentCategoryId) {
     this.adjustmentCategoryId = adjustmentCategoryId;
   }
 

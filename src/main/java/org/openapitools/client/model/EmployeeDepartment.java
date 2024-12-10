@@ -48,24 +48,27 @@ import org.openapitools.client.JSON;
 /**
  * The department of the employee.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EmployeeDepartment {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_PARENT = "parent";
   @SerializedName(SERIALIZED_NAME_PARENT)
+  @javax.annotation.Nullable
   private String parent;
 
   public EmployeeDepartment() {
   }
 
-  public EmployeeDepartment id(String id) {
+  public EmployeeDepartment id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -79,12 +82,12 @@ public class EmployeeDepartment {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public EmployeeDepartment name(String name) {
+  public EmployeeDepartment name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -98,12 +101,12 @@ public class EmployeeDepartment {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public EmployeeDepartment parent(String parent) {
+  public EmployeeDepartment parent(@javax.annotation.Nullable String parent) {
     this.parent = parent;
     return this;
   }
@@ -117,7 +120,7 @@ public class EmployeeDepartment {
     return parent;
   }
 
-  public void setParent(String parent) {
+  public void setParent(@javax.annotation.Nullable String parent) {
     this.parent = parent;
   }
 

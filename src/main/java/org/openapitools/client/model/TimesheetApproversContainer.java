@@ -51,16 +51,17 @@ import org.openapitools.client.JSON;
 /**
  * TimesheetApproversContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimesheetApproversContainer {
   public static final String SERIALIZED_NAME_APPROVERS = "approvers";
   @SerializedName(SERIALIZED_NAME_APPROVERS)
+  @javax.annotation.Nonnull
   private List<TimesheetApprover> approvers = new ArrayList<>();
 
   public TimesheetApproversContainer() {
   }
 
-  public TimesheetApproversContainer approvers(List<TimesheetApprover> approvers) {
+  public TimesheetApproversContainer approvers(@javax.annotation.Nonnull List<TimesheetApprover> approvers) {
     this.approvers = approvers;
     return this;
   }
@@ -82,7 +83,7 @@ public class TimesheetApproversContainer {
     return approvers;
   }
 
-  public void setApprovers(List<TimesheetApprover> approvers) {
+  public void setApprovers(@javax.annotation.Nonnull List<TimesheetApprover> approvers) {
     this.approvers = approvers;
   }
 

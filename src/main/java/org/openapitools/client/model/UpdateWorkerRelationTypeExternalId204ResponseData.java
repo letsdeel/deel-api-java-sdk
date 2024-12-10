@@ -48,32 +48,37 @@ import org.openapitools.client.JSON;
 /**
  * UpdateWorkerRelationTypeExternalId204ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateWorkerRelationTypeExternalId204ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private Integer id;
 
   public static final String SERIALIZED_NAME_CHILD_NAME = "child_name";
   @SerializedName(SERIALIZED_NAME_CHILD_NAME)
+  @javax.annotation.Nullable
   private String childName;
 
   public static final String SERIALIZED_NAME_IS_DEFAULT = "is_default";
   @SerializedName(SERIALIZED_NAME_IS_DEFAULT)
+  @javax.annotation.Nullable
   private Boolean isDefault;
 
   public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
   private String externalId;
 
   public static final String SERIALIZED_NAME_PARENT_NAME = "parent_name";
   @SerializedName(SERIALIZED_NAME_PARENT_NAME)
+  @javax.annotation.Nullable
   private String parentName;
 
   public UpdateWorkerRelationTypeExternalId204ResponseData() {
   }
 
-  public UpdateWorkerRelationTypeExternalId204ResponseData id(Integer id) {
+  public UpdateWorkerRelationTypeExternalId204ResponseData id(@javax.annotation.Nullable Integer id) {
     this.id = id;
     return this;
   }
@@ -87,12 +92,12 @@ public class UpdateWorkerRelationTypeExternalId204ResponseData {
     return id;
   }
 
-  public void setId(Integer id) {
+  public void setId(@javax.annotation.Nullable Integer id) {
     this.id = id;
   }
 
 
-  public UpdateWorkerRelationTypeExternalId204ResponseData childName(String childName) {
+  public UpdateWorkerRelationTypeExternalId204ResponseData childName(@javax.annotation.Nullable String childName) {
     this.childName = childName;
     return this;
   }
@@ -106,12 +111,12 @@ public class UpdateWorkerRelationTypeExternalId204ResponseData {
     return childName;
   }
 
-  public void setChildName(String childName) {
+  public void setChildName(@javax.annotation.Nullable String childName) {
     this.childName = childName;
   }
 
 
-  public UpdateWorkerRelationTypeExternalId204ResponseData isDefault(Boolean isDefault) {
+  public UpdateWorkerRelationTypeExternalId204ResponseData isDefault(@javax.annotation.Nullable Boolean isDefault) {
     this.isDefault = isDefault;
     return this;
   }
@@ -125,12 +130,12 @@ public class UpdateWorkerRelationTypeExternalId204ResponseData {
     return isDefault;
   }
 
-  public void setIsDefault(Boolean isDefault) {
+  public void setIsDefault(@javax.annotation.Nullable Boolean isDefault) {
     this.isDefault = isDefault;
   }
 
 
-  public UpdateWorkerRelationTypeExternalId204ResponseData externalId(String externalId) {
+  public UpdateWorkerRelationTypeExternalId204ResponseData externalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
     return this;
   }
@@ -144,12 +149,12 @@ public class UpdateWorkerRelationTypeExternalId204ResponseData {
     return externalId;
   }
 
-  public void setExternalId(String externalId) {
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
     this.externalId = externalId;
   }
 
 
-  public UpdateWorkerRelationTypeExternalId204ResponseData parentName(String parentName) {
+  public UpdateWorkerRelationTypeExternalId204ResponseData parentName(@javax.annotation.Nullable String parentName) {
     this.parentName = parentName;
     return this;
   }
@@ -163,7 +168,7 @@ public class UpdateWorkerRelationTypeExternalId204ResponseData {
     return parentName;
   }
 
-  public void setParentName(String parentName) {
+  public void setParentName(@javax.annotation.Nullable String parentName) {
     this.parentName = parentName;
   }
 

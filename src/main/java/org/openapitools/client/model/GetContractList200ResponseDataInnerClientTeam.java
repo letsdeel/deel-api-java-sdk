@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * GetContractList200ResponseDataInnerClientTeam
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractList200ResponseDataInnerClientTeam {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private GetContractList200ResponseDataInnerClientTeamId id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public GetContractList200ResponseDataInnerClientTeam() {
   }
 
-  public GetContractList200ResponseDataInnerClientTeam id(GetContractList200ResponseDataInnerClientTeamId id) {
+  public GetContractList200ResponseDataInnerClientTeam id(@javax.annotation.Nonnull GetContractList200ResponseDataInnerClientTeamId id) {
     this.id = id;
     return this;
   }
@@ -76,12 +78,12 @@ public class GetContractList200ResponseDataInnerClientTeam {
     return id;
   }
 
-  public void setId(GetContractList200ResponseDataInnerClientTeamId id) {
+  public void setId(@javax.annotation.Nonnull GetContractList200ResponseDataInnerClientTeamId id) {
     this.id = id;
   }
 
 
-  public GetContractList200ResponseDataInnerClientTeam name(String name) {
+  public GetContractList200ResponseDataInnerClientTeam name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -95,7 +97,7 @@ public class GetContractList200ResponseDataInnerClientTeam {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 

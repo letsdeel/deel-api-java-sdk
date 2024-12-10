@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * HrisCompensation
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisCompensation {
   public static final String SERIALIZED_NAME_GROSS_ANNUAL_SALARY = "gross_annual_salary";
   @SerializedName(SERIALIZED_NAME_GROSS_ANNUAL_SALARY)
+  @javax.annotation.Nonnull
   private Float grossAnnualSalary;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
+  @javax.annotation.Nonnull
   private String currency;
 
   public HrisCompensation() {
   }
 
-  public HrisCompensation grossAnnualSalary(Float grossAnnualSalary) {
+  public HrisCompensation grossAnnualSalary(@javax.annotation.Nonnull Float grossAnnualSalary) {
     this.grossAnnualSalary = grossAnnualSalary;
     return this;
   }
@@ -75,12 +77,12 @@ public class HrisCompensation {
     return grossAnnualSalary;
   }
 
-  public void setGrossAnnualSalary(Float grossAnnualSalary) {
+  public void setGrossAnnualSalary(@javax.annotation.Nonnull Float grossAnnualSalary) {
     this.grossAnnualSalary = grossAnnualSalary;
   }
 
 
-  public HrisCompensation currency(String currency) {
+  public HrisCompensation currency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
     return this;
   }
@@ -94,7 +96,7 @@ public class HrisCompensation {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public void setCurrency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
   }
 

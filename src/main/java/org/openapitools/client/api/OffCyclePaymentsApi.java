@@ -170,7 +170,8 @@ public class OffCyclePaymentsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> The off-cycle payment was successfully created. </td><td>  -  </td></tr>
@@ -192,7 +193,8 @@ public class OffCyclePaymentsApi {
          * @return GenericResultCreatedWithId
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> The off-cycle payment was successfully created. </td><td>  -  </td></tr>
@@ -215,7 +217,8 @@ public class OffCyclePaymentsApi {
          * @return ApiResponse&lt;GenericResultCreatedWithId&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> The off-cycle payment was successfully created. </td><td>  -  </td></tr>
@@ -238,7 +241,8 @@ public class OffCyclePaymentsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> The off-cycle payment was successfully created. </td><td>  -  </td></tr>
@@ -263,7 +267,8 @@ public class OffCyclePaymentsApi {
      * @param createOffCyclePaymentRequest Details of the off-cycle payment to be created. (required)
      * @return APIcreateOffCyclePaymentRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 201 </td><td> The off-cycle payment was successfully created. </td><td>  -  </td></tr>
@@ -371,7 +376,8 @@ public class OffCyclePaymentsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -392,7 +398,8 @@ public class OffCyclePaymentsApi {
          * @return GetOffCyclePaymentByContractAndId200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -414,7 +421,8 @@ public class OffCyclePaymentsApi {
          * @return ApiResponse&lt;GetOffCyclePaymentByContractAndId200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -436,7 +444,8 @@ public class OffCyclePaymentsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -460,7 +469,8 @@ public class OffCyclePaymentsApi {
      * @param id Deel off-cycle payment id. (required)
      * @return APIgetOffCyclePaymentByContractAndIdRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Operation failed. </td><td>  -  </td></tr>
@@ -559,7 +569,8 @@ public class OffCyclePaymentsApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of off-cycle payments. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -580,7 +591,8 @@ public class OffCyclePaymentsApi {
          * @return GetOffCyclePaymentsByContract200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of off-cycle payments. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -602,7 +614,8 @@ public class OffCyclePaymentsApi {
          * @return ApiResponse&lt;GetOffCyclePaymentsByContract200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of off-cycle payments. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -624,7 +637,8 @@ public class OffCyclePaymentsApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successful retrieval of off-cycle payments. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
@@ -647,7 +661,8 @@ public class OffCyclePaymentsApi {
      * @param contractId The unique identifier (ID) of the Deel contract for which to retrieve off-cycle payments. (required)
      * @return APIgetOffCyclePaymentsByContractRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successful retrieval of off-cycle payments. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>

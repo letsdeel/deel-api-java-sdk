@@ -50,24 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * HrisPositionToChangeContainerDataEditInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisPositionToChangeContainerDataEditInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   public static final String SERIALIZED_NAME_ROLE_ID = "role_id";
   @SerializedName(SERIALIZED_NAME_ROLE_ID)
+  @javax.annotation.Nullable
   private UUID roleId;
 
   public static final String SERIALIZED_NAME_IS_SUPPORTIVE = "is_supportive";
   @SerializedName(SERIALIZED_NAME_IS_SUPPORTIVE)
+  @javax.annotation.Nullable
   private Boolean isSupportive;
 
   public HrisPositionToChangeContainerDataEditInner() {
   }
 
-  public HrisPositionToChangeContainerDataEditInner id(UUID id) {
+  public HrisPositionToChangeContainerDataEditInner id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -81,12 +84,12 @@ public class HrisPositionToChangeContainerDataEditInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public HrisPositionToChangeContainerDataEditInner roleId(UUID roleId) {
+  public HrisPositionToChangeContainerDataEditInner roleId(@javax.annotation.Nullable UUID roleId) {
     this.roleId = roleId;
     return this;
   }
@@ -100,12 +103,12 @@ public class HrisPositionToChangeContainerDataEditInner {
     return roleId;
   }
 
-  public void setRoleId(UUID roleId) {
+  public void setRoleId(@javax.annotation.Nullable UUID roleId) {
     this.roleId = roleId;
   }
 
 
-  public HrisPositionToChangeContainerDataEditInner isSupportive(Boolean isSupportive) {
+  public HrisPositionToChangeContainerDataEditInner isSupportive(@javax.annotation.Nullable Boolean isSupportive) {
     this.isSupportive = isSupportive;
     return this;
   }
@@ -119,7 +122,7 @@ public class HrisPositionToChangeContainerDataEditInner {
     return isSupportive;
   }
 
-  public void setIsSupportive(Boolean isSupportive) {
+  public void setIsSupportive(@javax.annotation.Nullable Boolean isSupportive) {
     this.isSupportive = isSupportive;
   }
 

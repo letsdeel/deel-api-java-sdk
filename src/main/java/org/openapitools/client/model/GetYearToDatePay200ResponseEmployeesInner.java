@@ -54,36 +54,42 @@ import org.openapitools.client.JSON;
 /**
  * GetYearToDatePay200ResponseEmployeesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetYearToDatePay200ResponseEmployeesInner {
   public static final String SERIALIZED_NAME_GROSS_PAY = "gross_pay";
   @SerializedName(SERIALIZED_NAME_GROSS_PAY)
+  @javax.annotation.Nullable
   private BigDecimal grossPay;
 
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nullable
   private String contractId;
 
   public static final String SERIALIZED_NAME_EMPLOYEE_ID = "employee_id";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE_ID)
+  @javax.annotation.Nullable
   private UUID employeeId;
 
   public static final String SERIALIZED_NAME_HOURS_WORKED = "hours_worked";
   @SerializedName(SERIALIZED_NAME_HOURS_WORKED)
+  @javax.annotation.Nullable
   private BigDecimal hoursWorked;
 
   public static final String SERIALIZED_NAME_CONTRIBUTIONS = "contributions";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTIONS)
+  @javax.annotation.Nullable
   private List<GetYearToDatePay200ResponseEmployeesInnerContributionsInner> contributions = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_EMPLOYER_CONTRIBUTIONS = "employer_contributions";
   @SerializedName(SERIALIZED_NAME_EMPLOYER_CONTRIBUTIONS)
+  @javax.annotation.Nullable
   private List<GetYearToDatePay200ResponseEmployeesInnerEmployerContributionsInner> employerContributions = new ArrayList<>();
 
   public GetYearToDatePay200ResponseEmployeesInner() {
   }
 
-  public GetYearToDatePay200ResponseEmployeesInner grossPay(BigDecimal grossPay) {
+  public GetYearToDatePay200ResponseEmployeesInner grossPay(@javax.annotation.Nullable BigDecimal grossPay) {
     this.grossPay = grossPay;
     return this;
   }
@@ -97,12 +103,12 @@ public class GetYearToDatePay200ResponseEmployeesInner {
     return grossPay;
   }
 
-  public void setGrossPay(BigDecimal grossPay) {
+  public void setGrossPay(@javax.annotation.Nullable BigDecimal grossPay) {
     this.grossPay = grossPay;
   }
 
 
-  public GetYearToDatePay200ResponseEmployeesInner contractId(String contractId) {
+  public GetYearToDatePay200ResponseEmployeesInner contractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
     return this;
   }
@@ -116,12 +122,12 @@ public class GetYearToDatePay200ResponseEmployeesInner {
     return contractId;
   }
 
-  public void setContractId(String contractId) {
+  public void setContractId(@javax.annotation.Nullable String contractId) {
     this.contractId = contractId;
   }
 
 
-  public GetYearToDatePay200ResponseEmployeesInner employeeId(UUID employeeId) {
+  public GetYearToDatePay200ResponseEmployeesInner employeeId(@javax.annotation.Nullable UUID employeeId) {
     this.employeeId = employeeId;
     return this;
   }
@@ -135,12 +141,12 @@ public class GetYearToDatePay200ResponseEmployeesInner {
     return employeeId;
   }
 
-  public void setEmployeeId(UUID employeeId) {
+  public void setEmployeeId(@javax.annotation.Nullable UUID employeeId) {
     this.employeeId = employeeId;
   }
 
 
-  public GetYearToDatePay200ResponseEmployeesInner hoursWorked(BigDecimal hoursWorked) {
+  public GetYearToDatePay200ResponseEmployeesInner hoursWorked(@javax.annotation.Nullable BigDecimal hoursWorked) {
     this.hoursWorked = hoursWorked;
     return this;
   }
@@ -154,12 +160,12 @@ public class GetYearToDatePay200ResponseEmployeesInner {
     return hoursWorked;
   }
 
-  public void setHoursWorked(BigDecimal hoursWorked) {
+  public void setHoursWorked(@javax.annotation.Nullable BigDecimal hoursWorked) {
     this.hoursWorked = hoursWorked;
   }
 
 
-  public GetYearToDatePay200ResponseEmployeesInner contributions(List<GetYearToDatePay200ResponseEmployeesInnerContributionsInner> contributions) {
+  public GetYearToDatePay200ResponseEmployeesInner contributions(@javax.annotation.Nullable List<GetYearToDatePay200ResponseEmployeesInnerContributionsInner> contributions) {
     this.contributions = contributions;
     return this;
   }
@@ -181,12 +187,12 @@ public class GetYearToDatePay200ResponseEmployeesInner {
     return contributions;
   }
 
-  public void setContributions(List<GetYearToDatePay200ResponseEmployeesInnerContributionsInner> contributions) {
+  public void setContributions(@javax.annotation.Nullable List<GetYearToDatePay200ResponseEmployeesInnerContributionsInner> contributions) {
     this.contributions = contributions;
   }
 
 
-  public GetYearToDatePay200ResponseEmployeesInner employerContributions(List<GetYearToDatePay200ResponseEmployeesInnerEmployerContributionsInner> employerContributions) {
+  public GetYearToDatePay200ResponseEmployeesInner employerContributions(@javax.annotation.Nullable List<GetYearToDatePay200ResponseEmployeesInnerEmployerContributionsInner> employerContributions) {
     this.employerContributions = employerContributions;
     return this;
   }
@@ -208,7 +214,7 @@ public class GetYearToDatePay200ResponseEmployeesInner {
     return employerContributions;
   }
 
-  public void setEmployerContributions(List<GetYearToDatePay200ResponseEmployeesInnerEmployerContributionsInner> employerContributions) {
+  public void setEmployerContributions(@javax.annotation.Nullable List<GetYearToDatePay200ResponseEmployeesInnerEmployerContributionsInner> employerContributions) {
     this.employerContributions = employerContributions;
   }
 

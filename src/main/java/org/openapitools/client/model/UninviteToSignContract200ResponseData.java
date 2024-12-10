@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * UninviteToSignContract200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UninviteToSignContract200ResponseData {
   public static final String SERIALIZED_NAME_DELETED = "deleted";
   @SerializedName(SERIALIZED_NAME_DELETED)
+  @javax.annotation.Nonnull
   private Boolean deleted;
 
   public UninviteToSignContract200ResponseData() {
   }
 
-  public UninviteToSignContract200ResponseData deleted(Boolean deleted) {
+  public UninviteToSignContract200ResponseData deleted(@javax.annotation.Nonnull Boolean deleted) {
     this.deleted = deleted;
     return this;
   }
@@ -71,7 +72,7 @@ public class UninviteToSignContract200ResponseData {
     return deleted;
   }
 
-  public void setDeleted(Boolean deleted) {
+  public void setDeleted(@javax.annotation.Nonnull Boolean deleted) {
     this.deleted = deleted;
   }
 

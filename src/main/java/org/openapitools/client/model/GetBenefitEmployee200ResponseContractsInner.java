@@ -52,34 +52,41 @@ import org.openapitools.client.JSON;
 /**
  * GetBenefitEmployee200ResponseContractsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBenefitEmployee200ResponseContractsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private String id;
 
   public static final String SERIALIZED_NAME_FLSA = "flsa";
   @SerializedName(SERIALIZED_NAME_FLSA)
+  @javax.annotation.Nullable
   private Boolean flsa;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
+  @javax.annotation.Nullable
   private String status;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private String endDate;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nullable
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private String startDate;
 
   public static final String SERIALIZED_NAME_COMPENSATIONS = "compensations";
   @SerializedName(SERIALIZED_NAME_COMPENSATIONS)
+  @javax.annotation.Nullable
   private List<GetBenefitEmployee200ResponseContractsInnerCompensationsInner> compensations = new ArrayList<>();
 
   /**
@@ -136,6 +143,7 @@ public class GetBenefitEmployee200ResponseContractsInner {
 
   public static final String SERIALIZED_NAME_CONTRACT_TYPE = "contract_type";
   @SerializedName(SERIALIZED_NAME_CONTRACT_TYPE)
+  @javax.annotation.Nullable
   private ContractTypeEnum contractType;
 
   /**
@@ -192,16 +200,18 @@ public class GetBenefitEmployee200ResponseContractsInner {
 
   public static final String SERIALIZED_NAME_EMPLOYMENT_TYPE = "employment_type";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT_TYPE)
+  @javax.annotation.Nullable
   private EmploymentTypeEnum employmentType;
 
   public static final String SERIALIZED_NAME_ESTIMATED_WEEK_WORKING_HOURS = "estimated_week_working_hours";
   @SerializedName(SERIALIZED_NAME_ESTIMATED_WEEK_WORKING_HOURS)
+  @javax.annotation.Nullable
   private BigDecimal estimatedWeekWorkingHours;
 
   public GetBenefitEmployee200ResponseContractsInner() {
   }
 
-  public GetBenefitEmployee200ResponseContractsInner id(String id) {
+  public GetBenefitEmployee200ResponseContractsInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -215,12 +225,12 @@ public class GetBenefitEmployee200ResponseContractsInner {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
 
-  public GetBenefitEmployee200ResponseContractsInner flsa(Boolean flsa) {
+  public GetBenefitEmployee200ResponseContractsInner flsa(@javax.annotation.Nullable Boolean flsa) {
     this.flsa = flsa;
     return this;
   }
@@ -234,12 +244,12 @@ public class GetBenefitEmployee200ResponseContractsInner {
     return flsa;
   }
 
-  public void setFlsa(Boolean flsa) {
+  public void setFlsa(@javax.annotation.Nullable Boolean flsa) {
     this.flsa = flsa;
   }
 
 
-  public GetBenefitEmployee200ResponseContractsInner status(String status) {
+  public GetBenefitEmployee200ResponseContractsInner status(@javax.annotation.Nullable String status) {
     this.status = status;
     return this;
   }
@@ -253,12 +263,12 @@ public class GetBenefitEmployee200ResponseContractsInner {
     return status;
   }
 
-  public void setStatus(String status) {
+  public void setStatus(@javax.annotation.Nullable String status) {
     this.status = status;
   }
 
 
-  public GetBenefitEmployee200ResponseContractsInner endDate(String endDate) {
+  public GetBenefitEmployee200ResponseContractsInner endDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -272,12 +282,12 @@ public class GetBenefitEmployee200ResponseContractsInner {
     return endDate;
   }
 
-  public void setEndDate(String endDate) {
+  public void setEndDate(@javax.annotation.Nullable String endDate) {
     this.endDate = endDate;
   }
 
 
-  public GetBenefitEmployee200ResponseContractsInner jobTitle(String jobTitle) {
+  public GetBenefitEmployee200ResponseContractsInner jobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -291,12 +301,12 @@ public class GetBenefitEmployee200ResponseContractsInner {
     return jobTitle;
   }
 
-  public void setJobTitle(String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public GetBenefitEmployee200ResponseContractsInner startDate(String startDate) {
+  public GetBenefitEmployee200ResponseContractsInner startDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -310,12 +320,12 @@ public class GetBenefitEmployee200ResponseContractsInner {
     return startDate;
   }
 
-  public void setStartDate(String startDate) {
+  public void setStartDate(@javax.annotation.Nullable String startDate) {
     this.startDate = startDate;
   }
 
 
-  public GetBenefitEmployee200ResponseContractsInner compensations(List<GetBenefitEmployee200ResponseContractsInnerCompensationsInner> compensations) {
+  public GetBenefitEmployee200ResponseContractsInner compensations(@javax.annotation.Nullable List<GetBenefitEmployee200ResponseContractsInnerCompensationsInner> compensations) {
     this.compensations = compensations;
     return this;
   }
@@ -337,12 +347,12 @@ public class GetBenefitEmployee200ResponseContractsInner {
     return compensations;
   }
 
-  public void setCompensations(List<GetBenefitEmployee200ResponseContractsInnerCompensationsInner> compensations) {
+  public void setCompensations(@javax.annotation.Nullable List<GetBenefitEmployee200ResponseContractsInnerCompensationsInner> compensations) {
     this.compensations = compensations;
   }
 
 
-  public GetBenefitEmployee200ResponseContractsInner contractType(ContractTypeEnum contractType) {
+  public GetBenefitEmployee200ResponseContractsInner contractType(@javax.annotation.Nullable ContractTypeEnum contractType) {
     this.contractType = contractType;
     return this;
   }
@@ -356,12 +366,12 @@ public class GetBenefitEmployee200ResponseContractsInner {
     return contractType;
   }
 
-  public void setContractType(ContractTypeEnum contractType) {
+  public void setContractType(@javax.annotation.Nullable ContractTypeEnum contractType) {
     this.contractType = contractType;
   }
 
 
-  public GetBenefitEmployee200ResponseContractsInner employmentType(EmploymentTypeEnum employmentType) {
+  public GetBenefitEmployee200ResponseContractsInner employmentType(@javax.annotation.Nullable EmploymentTypeEnum employmentType) {
     this.employmentType = employmentType;
     return this;
   }
@@ -375,12 +385,12 @@ public class GetBenefitEmployee200ResponseContractsInner {
     return employmentType;
   }
 
-  public void setEmploymentType(EmploymentTypeEnum employmentType) {
+  public void setEmploymentType(@javax.annotation.Nullable EmploymentTypeEnum employmentType) {
     this.employmentType = employmentType;
   }
 
 
-  public GetBenefitEmployee200ResponseContractsInner estimatedWeekWorkingHours(BigDecimal estimatedWeekWorkingHours) {
+  public GetBenefitEmployee200ResponseContractsInner estimatedWeekWorkingHours(@javax.annotation.Nullable BigDecimal estimatedWeekWorkingHours) {
     this.estimatedWeekWorkingHours = estimatedWeekWorkingHours;
     return this;
   }
@@ -394,7 +404,7 @@ public class GetBenefitEmployee200ResponseContractsInner {
     return estimatedWeekWorkingHours;
   }
 
-  public void setEstimatedWeekWorkingHours(BigDecimal estimatedWeekWorkingHours) {
+  public void setEstimatedWeekWorkingHours(@javax.annotation.Nullable BigDecimal estimatedWeekWorkingHours) {
     this.estimatedWeekWorkingHours = estimatedWeekWorkingHours;
   }
 

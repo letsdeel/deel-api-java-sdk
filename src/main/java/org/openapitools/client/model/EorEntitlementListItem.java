@@ -50,80 +50,97 @@ import org.openapitools.client.JSON;
 /**
  * Entitlement Item for a given year.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorEntitlementListItem {
   public static final String SERIALIZED_NAME_YEAR = "year";
   @SerializedName(SERIALIZED_NAME_YEAR)
+  @javax.annotation.Nullable
   private BigDecimal year;
 
   public static final String SERIALIZED_NAME_VACATION_ALLOWED = "vacation_allowed";
   @SerializedName(SERIALIZED_NAME_VACATION_ALLOWED)
+  @javax.annotation.Nullable
   private String vacationAllowed;
 
   public static final String SERIALIZED_NAME_SICK_LEAVE_ALLOWED = "sick_leave_allowed";
   @SerializedName(SERIALIZED_NAME_SICK_LEAVE_ALLOWED)
+  @javax.annotation.Nullable
   private String sickLeaveAllowed;
 
   public static final String SERIALIZED_NAME_VACATION_REQUESTED = "vacation_requested";
   @SerializedName(SERIALIZED_NAME_VACATION_REQUESTED)
+  @javax.annotation.Nullable
   private String vacationRequested;
 
   public static final String SERIALIZED_NAME_VACATION_APPROVED = "vacation_approved";
   @SerializedName(SERIALIZED_NAME_VACATION_APPROVED)
+  @javax.annotation.Nullable
   private String vacationApproved;
 
   public static final String SERIALIZED_NAME_VACATION_USED = "vacation_used";
   @SerializedName(SERIALIZED_NAME_VACATION_USED)
+  @javax.annotation.Nullable
   private String vacationUsed;
 
   public static final String SERIALIZED_NAME_VACATION_TOTAL = "vacation_total";
   @SerializedName(SERIALIZED_NAME_VACATION_TOTAL)
+  @javax.annotation.Nullable
   private String vacationTotal;
 
   public static final String SERIALIZED_NAME_SICK_LEAVE_REQUESTED = "sick_leave_requested";
   @SerializedName(SERIALIZED_NAME_SICK_LEAVE_REQUESTED)
+  @javax.annotation.Nullable
   private String sickLeaveRequested;
 
   public static final String SERIALIZED_NAME_SICK_LEAVE_APPROVED = "sick_leave_approved";
   @SerializedName(SERIALIZED_NAME_SICK_LEAVE_APPROVED)
+  @javax.annotation.Nullable
   private String sickLeaveApproved;
 
   public static final String SERIALIZED_NAME_SICK_LEAVE_USED = "sick_leave_used";
   @SerializedName(SERIALIZED_NAME_SICK_LEAVE_USED)
+  @javax.annotation.Nullable
   private String sickLeaveUsed;
 
   public static final String SERIALIZED_NAME_SICK_LEAVE_TOTAL = "sick_leave_total";
   @SerializedName(SERIALIZED_NAME_SICK_LEAVE_TOTAL)
+  @javax.annotation.Nullable
   private String sickLeaveTotal;
 
   public static final String SERIALIZED_NAME_OTHER_LEAVE_REQUESTED = "other_leave_requested";
   @SerializedName(SERIALIZED_NAME_OTHER_LEAVE_REQUESTED)
+  @javax.annotation.Nullable
   private String otherLeaveRequested;
 
   public static final String SERIALIZED_NAME_OTHER_LEAVE_APPROVED = "other_leave_approved";
   @SerializedName(SERIALIZED_NAME_OTHER_LEAVE_APPROVED)
+  @javax.annotation.Nullable
   private String otherLeaveApproved;
 
   public static final String SERIALIZED_NAME_OTHER_LEAVE_USED = "other_leave_used";
   @SerializedName(SERIALIZED_NAME_OTHER_LEAVE_USED)
+  @javax.annotation.Nullable
   private String otherLeaveUsed;
 
   public static final String SERIALIZED_NAME_OTHER_LEAVE_TOTAL = "other_leave_total";
   @SerializedName(SERIALIZED_NAME_OTHER_LEAVE_TOTAL)
+  @javax.annotation.Nullable
   private String otherLeaveTotal;
 
   public static final String SERIALIZED_NAME_ROLLOVER_TYPE = "rollover_type";
   @SerializedName(SERIALIZED_NAME_ROLLOVER_TYPE)
+  @javax.annotation.Nullable
   private EorHolidaysRolloverType rolloverType;
 
   public static final String SERIALIZED_NAME_MAX_ROLLOVER_YEARLY = "max_rollover_yearly";
   @SerializedName(SERIALIZED_NAME_MAX_ROLLOVER_YEARLY)
+  @javax.annotation.Nullable
   private String maxRolloverYearly;
 
   public EorEntitlementListItem() {
   }
 
-  public EorEntitlementListItem year(BigDecimal year) {
+  public EorEntitlementListItem year(@javax.annotation.Nullable BigDecimal year) {
     this.year = year;
     return this;
   }
@@ -137,12 +154,12 @@ public class EorEntitlementListItem {
     return year;
   }
 
-  public void setYear(BigDecimal year) {
+  public void setYear(@javax.annotation.Nullable BigDecimal year) {
     this.year = year;
   }
 
 
-  public EorEntitlementListItem vacationAllowed(String vacationAllowed) {
+  public EorEntitlementListItem vacationAllowed(@javax.annotation.Nullable String vacationAllowed) {
     this.vacationAllowed = vacationAllowed;
     return this;
   }
@@ -156,12 +173,12 @@ public class EorEntitlementListItem {
     return vacationAllowed;
   }
 
-  public void setVacationAllowed(String vacationAllowed) {
+  public void setVacationAllowed(@javax.annotation.Nullable String vacationAllowed) {
     this.vacationAllowed = vacationAllowed;
   }
 
 
-  public EorEntitlementListItem sickLeaveAllowed(String sickLeaveAllowed) {
+  public EorEntitlementListItem sickLeaveAllowed(@javax.annotation.Nullable String sickLeaveAllowed) {
     this.sickLeaveAllowed = sickLeaveAllowed;
     return this;
   }
@@ -175,12 +192,12 @@ public class EorEntitlementListItem {
     return sickLeaveAllowed;
   }
 
-  public void setSickLeaveAllowed(String sickLeaveAllowed) {
+  public void setSickLeaveAllowed(@javax.annotation.Nullable String sickLeaveAllowed) {
     this.sickLeaveAllowed = sickLeaveAllowed;
   }
 
 
-  public EorEntitlementListItem vacationRequested(String vacationRequested) {
+  public EorEntitlementListItem vacationRequested(@javax.annotation.Nullable String vacationRequested) {
     this.vacationRequested = vacationRequested;
     return this;
   }
@@ -194,12 +211,12 @@ public class EorEntitlementListItem {
     return vacationRequested;
   }
 
-  public void setVacationRequested(String vacationRequested) {
+  public void setVacationRequested(@javax.annotation.Nullable String vacationRequested) {
     this.vacationRequested = vacationRequested;
   }
 
 
-  public EorEntitlementListItem vacationApproved(String vacationApproved) {
+  public EorEntitlementListItem vacationApproved(@javax.annotation.Nullable String vacationApproved) {
     this.vacationApproved = vacationApproved;
     return this;
   }
@@ -213,12 +230,12 @@ public class EorEntitlementListItem {
     return vacationApproved;
   }
 
-  public void setVacationApproved(String vacationApproved) {
+  public void setVacationApproved(@javax.annotation.Nullable String vacationApproved) {
     this.vacationApproved = vacationApproved;
   }
 
 
-  public EorEntitlementListItem vacationUsed(String vacationUsed) {
+  public EorEntitlementListItem vacationUsed(@javax.annotation.Nullable String vacationUsed) {
     this.vacationUsed = vacationUsed;
     return this;
   }
@@ -232,12 +249,12 @@ public class EorEntitlementListItem {
     return vacationUsed;
   }
 
-  public void setVacationUsed(String vacationUsed) {
+  public void setVacationUsed(@javax.annotation.Nullable String vacationUsed) {
     this.vacationUsed = vacationUsed;
   }
 
 
-  public EorEntitlementListItem vacationTotal(String vacationTotal) {
+  public EorEntitlementListItem vacationTotal(@javax.annotation.Nullable String vacationTotal) {
     this.vacationTotal = vacationTotal;
     return this;
   }
@@ -251,12 +268,12 @@ public class EorEntitlementListItem {
     return vacationTotal;
   }
 
-  public void setVacationTotal(String vacationTotal) {
+  public void setVacationTotal(@javax.annotation.Nullable String vacationTotal) {
     this.vacationTotal = vacationTotal;
   }
 
 
-  public EorEntitlementListItem sickLeaveRequested(String sickLeaveRequested) {
+  public EorEntitlementListItem sickLeaveRequested(@javax.annotation.Nullable String sickLeaveRequested) {
     this.sickLeaveRequested = sickLeaveRequested;
     return this;
   }
@@ -270,12 +287,12 @@ public class EorEntitlementListItem {
     return sickLeaveRequested;
   }
 
-  public void setSickLeaveRequested(String sickLeaveRequested) {
+  public void setSickLeaveRequested(@javax.annotation.Nullable String sickLeaveRequested) {
     this.sickLeaveRequested = sickLeaveRequested;
   }
 
 
-  public EorEntitlementListItem sickLeaveApproved(String sickLeaveApproved) {
+  public EorEntitlementListItem sickLeaveApproved(@javax.annotation.Nullable String sickLeaveApproved) {
     this.sickLeaveApproved = sickLeaveApproved;
     return this;
   }
@@ -289,12 +306,12 @@ public class EorEntitlementListItem {
     return sickLeaveApproved;
   }
 
-  public void setSickLeaveApproved(String sickLeaveApproved) {
+  public void setSickLeaveApproved(@javax.annotation.Nullable String sickLeaveApproved) {
     this.sickLeaveApproved = sickLeaveApproved;
   }
 
 
-  public EorEntitlementListItem sickLeaveUsed(String sickLeaveUsed) {
+  public EorEntitlementListItem sickLeaveUsed(@javax.annotation.Nullable String sickLeaveUsed) {
     this.sickLeaveUsed = sickLeaveUsed;
     return this;
   }
@@ -308,12 +325,12 @@ public class EorEntitlementListItem {
     return sickLeaveUsed;
   }
 
-  public void setSickLeaveUsed(String sickLeaveUsed) {
+  public void setSickLeaveUsed(@javax.annotation.Nullable String sickLeaveUsed) {
     this.sickLeaveUsed = sickLeaveUsed;
   }
 
 
-  public EorEntitlementListItem sickLeaveTotal(String sickLeaveTotal) {
+  public EorEntitlementListItem sickLeaveTotal(@javax.annotation.Nullable String sickLeaveTotal) {
     this.sickLeaveTotal = sickLeaveTotal;
     return this;
   }
@@ -327,12 +344,12 @@ public class EorEntitlementListItem {
     return sickLeaveTotal;
   }
 
-  public void setSickLeaveTotal(String sickLeaveTotal) {
+  public void setSickLeaveTotal(@javax.annotation.Nullable String sickLeaveTotal) {
     this.sickLeaveTotal = sickLeaveTotal;
   }
 
 
-  public EorEntitlementListItem otherLeaveRequested(String otherLeaveRequested) {
+  public EorEntitlementListItem otherLeaveRequested(@javax.annotation.Nullable String otherLeaveRequested) {
     this.otherLeaveRequested = otherLeaveRequested;
     return this;
   }
@@ -346,12 +363,12 @@ public class EorEntitlementListItem {
     return otherLeaveRequested;
   }
 
-  public void setOtherLeaveRequested(String otherLeaveRequested) {
+  public void setOtherLeaveRequested(@javax.annotation.Nullable String otherLeaveRequested) {
     this.otherLeaveRequested = otherLeaveRequested;
   }
 
 
-  public EorEntitlementListItem otherLeaveApproved(String otherLeaveApproved) {
+  public EorEntitlementListItem otherLeaveApproved(@javax.annotation.Nullable String otherLeaveApproved) {
     this.otherLeaveApproved = otherLeaveApproved;
     return this;
   }
@@ -365,12 +382,12 @@ public class EorEntitlementListItem {
     return otherLeaveApproved;
   }
 
-  public void setOtherLeaveApproved(String otherLeaveApproved) {
+  public void setOtherLeaveApproved(@javax.annotation.Nullable String otherLeaveApproved) {
     this.otherLeaveApproved = otherLeaveApproved;
   }
 
 
-  public EorEntitlementListItem otherLeaveUsed(String otherLeaveUsed) {
+  public EorEntitlementListItem otherLeaveUsed(@javax.annotation.Nullable String otherLeaveUsed) {
     this.otherLeaveUsed = otherLeaveUsed;
     return this;
   }
@@ -384,12 +401,12 @@ public class EorEntitlementListItem {
     return otherLeaveUsed;
   }
 
-  public void setOtherLeaveUsed(String otherLeaveUsed) {
+  public void setOtherLeaveUsed(@javax.annotation.Nullable String otherLeaveUsed) {
     this.otherLeaveUsed = otherLeaveUsed;
   }
 
 
-  public EorEntitlementListItem otherLeaveTotal(String otherLeaveTotal) {
+  public EorEntitlementListItem otherLeaveTotal(@javax.annotation.Nullable String otherLeaveTotal) {
     this.otherLeaveTotal = otherLeaveTotal;
     return this;
   }
@@ -403,12 +420,12 @@ public class EorEntitlementListItem {
     return otherLeaveTotal;
   }
 
-  public void setOtherLeaveTotal(String otherLeaveTotal) {
+  public void setOtherLeaveTotal(@javax.annotation.Nullable String otherLeaveTotal) {
     this.otherLeaveTotal = otherLeaveTotal;
   }
 
 
-  public EorEntitlementListItem rolloverType(EorHolidaysRolloverType rolloverType) {
+  public EorEntitlementListItem rolloverType(@javax.annotation.Nullable EorHolidaysRolloverType rolloverType) {
     this.rolloverType = rolloverType;
     return this;
   }
@@ -422,12 +439,12 @@ public class EorEntitlementListItem {
     return rolloverType;
   }
 
-  public void setRolloverType(EorHolidaysRolloverType rolloverType) {
+  public void setRolloverType(@javax.annotation.Nullable EorHolidaysRolloverType rolloverType) {
     this.rolloverType = rolloverType;
   }
 
 
-  public EorEntitlementListItem maxRolloverYearly(String maxRolloverYearly) {
+  public EorEntitlementListItem maxRolloverYearly(@javax.annotation.Nullable String maxRolloverYearly) {
     this.maxRolloverYearly = maxRolloverYearly;
     return this;
   }
@@ -441,7 +458,7 @@ public class EorEntitlementListItem {
     return maxRolloverYearly;
   }
 
-  public void setMaxRolloverYearly(String maxRolloverYearly) {
+  public void setMaxRolloverYearly(@javax.annotation.Nullable String maxRolloverYearly) {
     this.maxRolloverYearly = maxRolloverYearly;
   }
 

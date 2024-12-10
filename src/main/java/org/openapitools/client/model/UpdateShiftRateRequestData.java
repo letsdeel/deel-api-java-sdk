@@ -49,24 +49,27 @@ import org.openapitools.client.JSON;
 /**
  * UpdateShiftRateRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateShiftRateRequestData {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private String type;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
+  @javax.annotation.Nullable
   private BigDecimal value;
 
   public UpdateShiftRateRequestData() {
   }
 
-  public UpdateShiftRateRequestData name(String name) {
+  public UpdateShiftRateRequestData name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -80,12 +83,12 @@ public class UpdateShiftRateRequestData {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public UpdateShiftRateRequestData type(String type) {
+  public UpdateShiftRateRequestData type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -99,12 +102,12 @@ public class UpdateShiftRateRequestData {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(@javax.annotation.Nullable String type) {
     this.type = type;
   }
 
 
-  public UpdateShiftRateRequestData value(BigDecimal value) {
+  public UpdateShiftRateRequestData value(@javax.annotation.Nullable BigDecimal value) {
     this.value = value;
     return this;
   }
@@ -118,7 +121,7 @@ public class UpdateShiftRateRequestData {
     return value;
   }
 
-  public void setValue(BigDecimal value) {
+  public void setValue(@javax.annotation.Nullable BigDecimal value) {
     this.value = value;
   }
 

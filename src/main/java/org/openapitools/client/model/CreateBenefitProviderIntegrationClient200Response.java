@@ -48,16 +48,17 @@ import org.openapitools.client.JSON;
 /**
  * CreateBenefitProviderIntegrationClient200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateBenefitProviderIntegrationClient200Response {
   public static final String SERIALIZED_NAME_IS_ACTIVE = "isActive";
   @SerializedName(SERIALIZED_NAME_IS_ACTIVE)
+  @javax.annotation.Nullable
   private Boolean isActive;
 
   public CreateBenefitProviderIntegrationClient200Response() {
   }
 
-  public CreateBenefitProviderIntegrationClient200Response isActive(Boolean isActive) {
+  public CreateBenefitProviderIntegrationClient200Response isActive(@javax.annotation.Nullable Boolean isActive) {
     this.isActive = isActive;
     return this;
   }
@@ -71,7 +72,7 @@ public class CreateBenefitProviderIntegrationClient200Response {
     return isActive;
   }
 
-  public void setIsActive(Boolean isActive) {
+  public void setIsActive(@javax.annotation.Nullable Boolean isActive) {
     this.isActive = isActive;
   }
 

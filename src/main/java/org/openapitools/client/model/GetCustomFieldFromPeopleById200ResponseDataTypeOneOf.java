@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * GetCustomFieldFromPeopleById200ResponseDataTypeOneOf
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetCustomFieldFromPeopleById200ResponseDataTypeOneOf {
   /**
    * List types
@@ -106,16 +106,18 @@ public class GetCustomFieldFromPeopleById200ResponseDataTypeOneOf {
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private NameEnum name;
 
   public static final String SERIALIZED_NAME_OPTIONS = "options";
   @SerializedName(SERIALIZED_NAME_OPTIONS)
+  @javax.annotation.Nullable
   private List<String> options = new ArrayList<>();
 
   public GetCustomFieldFromPeopleById200ResponseDataTypeOneOf() {
   }
 
-  public GetCustomFieldFromPeopleById200ResponseDataTypeOneOf name(NameEnum name) {
+  public GetCustomFieldFromPeopleById200ResponseDataTypeOneOf name(@javax.annotation.Nullable NameEnum name) {
     this.name = name;
     return this;
   }
@@ -129,12 +131,12 @@ public class GetCustomFieldFromPeopleById200ResponseDataTypeOneOf {
     return name;
   }
 
-  public void setName(NameEnum name) {
+  public void setName(@javax.annotation.Nullable NameEnum name) {
     this.name = name;
   }
 
 
-  public GetCustomFieldFromPeopleById200ResponseDataTypeOneOf options(List<String> options) {
+  public GetCustomFieldFromPeopleById200ResponseDataTypeOneOf options(@javax.annotation.Nullable List<String> options) {
     this.options = options;
     return this;
   }
@@ -156,7 +158,7 @@ public class GetCustomFieldFromPeopleById200ResponseDataTypeOneOf {
     return options;
   }
 
-  public void setOptions(List<String> options) {
+  public void setOptions(@javax.annotation.Nullable List<String> options) {
     this.options = options;
   }
 

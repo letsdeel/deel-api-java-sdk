@@ -50,10 +50,11 @@ import org.openapitools.client.JSON;
 /**
  * Put401kEnrollmentsDefinition200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class Put401kEnrollmentsDefinition200Response {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private String id;
 
   /**
@@ -114,10 +115,12 @@ public class Put401kEnrollmentsDefinition200Response {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_DETAILS = "details";
   @SerializedName(SERIALIZED_NAME_DETAILS)
+  @javax.annotation.Nullable
   private Get401kEnrollmentsDefinition200ResponseInnerDetails details;
 
   /**
@@ -174,20 +177,23 @@ public class Put401kEnrollmentsDefinition200Response {
 
   public static final String SERIALIZED_NAME_CONTRIBUTION_TYPE = "contribution_type";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTION_TYPE)
+  @javax.annotation.Nonnull
   private ContributionTypeEnum contributionType;
 
   public static final String SERIALIZED_NAME_CONTRIBUTION_LIMIT = "contribution_limit";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTION_LIMIT)
+  @javax.annotation.Nonnull
   private BigDecimal contributionLimit;
 
   public static final String SERIALIZED_NAME_CONTRIBUTION_VALUE = "contribution_value";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTION_VALUE)
+  @javax.annotation.Nullable
   private BigDecimal contributionValue;
 
   public Put401kEnrollmentsDefinition200Response() {
   }
 
-  public Put401kEnrollmentsDefinition200Response id(String id) {
+  public Put401kEnrollmentsDefinition200Response id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
@@ -201,12 +207,12 @@ public class Put401kEnrollmentsDefinition200Response {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
 
-  public Put401kEnrollmentsDefinition200Response type(TypeEnum type) {
+  public Put401kEnrollmentsDefinition200Response type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -220,12 +226,12 @@ public class Put401kEnrollmentsDefinition200Response {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public Put401kEnrollmentsDefinition200Response details(Get401kEnrollmentsDefinition200ResponseInnerDetails details) {
+  public Put401kEnrollmentsDefinition200Response details(@javax.annotation.Nullable Get401kEnrollmentsDefinition200ResponseInnerDetails details) {
     this.details = details;
     return this;
   }
@@ -239,12 +245,12 @@ public class Put401kEnrollmentsDefinition200Response {
     return details;
   }
 
-  public void setDetails(Get401kEnrollmentsDefinition200ResponseInnerDetails details) {
+  public void setDetails(@javax.annotation.Nullable Get401kEnrollmentsDefinition200ResponseInnerDetails details) {
     this.details = details;
   }
 
 
-  public Put401kEnrollmentsDefinition200Response contributionType(ContributionTypeEnum contributionType) {
+  public Put401kEnrollmentsDefinition200Response contributionType(@javax.annotation.Nonnull ContributionTypeEnum contributionType) {
     this.contributionType = contributionType;
     return this;
   }
@@ -258,12 +264,12 @@ public class Put401kEnrollmentsDefinition200Response {
     return contributionType;
   }
 
-  public void setContributionType(ContributionTypeEnum contributionType) {
+  public void setContributionType(@javax.annotation.Nonnull ContributionTypeEnum contributionType) {
     this.contributionType = contributionType;
   }
 
 
-  public Put401kEnrollmentsDefinition200Response contributionLimit(BigDecimal contributionLimit) {
+  public Put401kEnrollmentsDefinition200Response contributionLimit(@javax.annotation.Nonnull BigDecimal contributionLimit) {
     this.contributionLimit = contributionLimit;
     return this;
   }
@@ -277,12 +283,12 @@ public class Put401kEnrollmentsDefinition200Response {
     return contributionLimit;
   }
 
-  public void setContributionLimit(BigDecimal contributionLimit) {
+  public void setContributionLimit(@javax.annotation.Nonnull BigDecimal contributionLimit) {
     this.contributionLimit = contributionLimit;
   }
 
 
-  public Put401kEnrollmentsDefinition200Response contributionValue(BigDecimal contributionValue) {
+  public Put401kEnrollmentsDefinition200Response contributionValue(@javax.annotation.Nullable BigDecimal contributionValue) {
     this.contributionValue = contributionValue;
     return this;
   }
@@ -296,7 +302,7 @@ public class Put401kEnrollmentsDefinition200Response {
     return contributionValue;
   }
 
-  public void setContributionValue(BigDecimal contributionValue) {
+  public void setContributionValue(@javax.annotation.Nullable BigDecimal contributionValue) {
     this.contributionValue = contributionValue;
   }
 

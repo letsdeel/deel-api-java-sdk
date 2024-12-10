@@ -165,7 +165,8 @@ public class EorApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully calculated employee costs. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. Some required fields are missing or invalid. </td><td>  -  </td></tr>
@@ -184,7 +185,8 @@ public class EorApi {
          * @return CalculateEorEmploymentCost200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully calculated employee costs. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. Some required fields are missing or invalid. </td><td>  -  </td></tr>
@@ -204,7 +206,8 @@ public class EorApi {
          * @return ApiResponse&lt;CalculateEorEmploymentCost200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully calculated employee costs. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. Some required fields are missing or invalid. </td><td>  -  </td></tr>
@@ -224,7 +227,8 @@ public class EorApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully calculated employee costs. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. Some required fields are missing or invalid. </td><td>  -  </td></tr>
@@ -245,7 +249,8 @@ public class EorApi {
      * @param calculateEorEmploymentCostRequest  (required)
      * @return APIcalculateEorEmploymentCostRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successfully calculated employee costs. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid request. Some required fields are missing or invalid. </td><td>  -  </td></tr>
@@ -342,7 +347,8 @@ public class EorApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully created the EOR contract quote. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -362,7 +368,8 @@ public class EorApi {
          * @return CreateEorContract200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully created the EOR contract quote. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -383,7 +390,8 @@ public class EorApi {
          * @return ApiResponse&lt;CreateEorContract200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully created the EOR contract quote. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -404,7 +412,8 @@ public class EorApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully created the EOR contract quote. </td><td>  -  </td></tr>
             <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -426,7 +435,8 @@ public class EorApi {
      * @param createEorContractRequest The details of the Employee (EOR) contract to be created. (required)
      * @return APIcreateEorContractRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successfully created the EOR contract quote. </td><td>  -  </td></tr>
         <tr><td> 201 </td><td> Successful operation. </td><td>  -  </td></tr>
@@ -524,7 +534,8 @@ public class EorApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved the list of EOR contract benefits. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The &#x60;contract_id&#x60; parameter is missing or improperly formatted. </td><td>  -  </td></tr>
@@ -543,7 +554,8 @@ public class EorApi {
          * @return GetEORContractBenefits200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved the list of EOR contract benefits. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The &#x60;contract_id&#x60; parameter is missing or improperly formatted. </td><td>  -  </td></tr>
@@ -563,7 +575,8 @@ public class EorApi {
          * @return ApiResponse&lt;GetEORContractBenefits200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved the list of EOR contract benefits. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The &#x60;contract_id&#x60; parameter is missing or improperly formatted. </td><td>  -  </td></tr>
@@ -583,7 +596,8 @@ public class EorApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved the list of EOR contract benefits. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The &#x60;contract_id&#x60; parameter is missing or improperly formatted. </td><td>  -  </td></tr>
@@ -604,7 +618,8 @@ public class EorApi {
      * @param contractId Deel contract ID. (required)
      * @return APIgetEORContractBenefitsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successfully retrieved the list of EOR contract benefits. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid request. The &#x60;contract_id&#x60; parameter is missing or improperly formatted. </td><td>  -  </td></tr>
@@ -709,7 +724,8 @@ public class EorApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved the payslip download link. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. Either the worker ID or payslip ID is malformed. </td><td>  -  </td></tr>
@@ -728,7 +744,8 @@ public class EorApi {
          * @return GetEORWorkerPayslipDownloadUrl200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved the payslip download link. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. Either the worker ID or payslip ID is malformed. </td><td>  -  </td></tr>
@@ -748,7 +765,8 @@ public class EorApi {
          * @return ApiResponse&lt;GetEORWorkerPayslipDownloadUrl200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved the payslip download link. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. Either the worker ID or payslip ID is malformed. </td><td>  -  </td></tr>
@@ -768,7 +786,8 @@ public class EorApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Successfully retrieved the payslip download link. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. Either the worker ID or payslip ID is malformed. </td><td>  -  </td></tr>
@@ -790,7 +809,8 @@ public class EorApi {
      * @param payslipId The ID of the specific payslip to download. (required)
      * @return APIgetEORWorkerPayslipDownloadUrlRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Successfully retrieved the payslip download link. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid request. Either the worker ID or payslip ID is malformed. </td><td>  -  </td></tr>
@@ -887,7 +907,8 @@ public class EorApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Payslip records successfully retrieved. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The worker ID format is incorrect. </td><td>  -  </td></tr>
@@ -906,7 +927,8 @@ public class EorApi {
          * @return GetEORWorkerPayslips200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Payslip records successfully retrieved. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The worker ID format is incorrect. </td><td>  -  </td></tr>
@@ -926,7 +948,8 @@ public class EorApi {
          * @return ApiResponse&lt;GetEORWorkerPayslips200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Payslip records successfully retrieved. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The worker ID format is incorrect. </td><td>  -  </td></tr>
@@ -946,7 +969,8 @@ public class EorApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> Payslip records successfully retrieved. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The worker ID format is incorrect. </td><td>  -  </td></tr>
@@ -967,7 +991,8 @@ public class EorApi {
      * @param workerId The ID of the worker whose payslips are being retrieved. (required)
      * @return APIgetEORWorkerPayslipsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> Payslip records successfully retrieved. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid request. The worker ID format is incorrect. </td><td>  -  </td></tr>
@@ -1064,7 +1089,8 @@ public class EorApi {
          * @return Call to execute
          * @throws ApiException If fail to serialize the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> The hiring guide data was successfully retrieved. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The provided country code does not match the expected format. </td><td>  -  </td></tr>
@@ -1083,7 +1109,8 @@ public class EorApi {
          * @return GetEorCountryValidations200Response
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> The hiring guide data was successfully retrieved. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The provided country code does not match the expected format. </td><td>  -  </td></tr>
@@ -1103,7 +1130,8 @@ public class EorApi {
          * @return ApiResponse&lt;GetEorCountryValidations200Response&gt;
          * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> The hiring guide data was successfully retrieved. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The provided country code does not match the expected format. </td><td>  -  </td></tr>
@@ -1123,7 +1151,8 @@ public class EorApi {
          * @return The request call
          * @throws ApiException If fail to process the API call, e.g. serializing the request body object
          * @http.response.details
-         <table summary="Response Details" border="1">
+         <table border="1">
+       <caption>Response Details</caption>
             <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
             <tr><td> 200 </td><td> The hiring guide data was successfully retrieved. </td><td>  -  </td></tr>
             <tr><td> 400 </td><td> Invalid request. The provided country code does not match the expected format. </td><td>  -  </td></tr>
@@ -1144,7 +1173,8 @@ public class EorApi {
      * @param countryCode The two-letter ISO code of the country for which to retrieve the hiring guide. (required)
      * @return APIgetEorCountryValidationsRequest
      * @http.response.details
-     <table summary="Response Details" border="1">
+     <table border="1">
+       <caption>Response Details</caption>
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> The hiring guide data was successfully retrieved. </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Invalid request. The provided country code does not match the expected format. </td><td>  -  </td></tr>

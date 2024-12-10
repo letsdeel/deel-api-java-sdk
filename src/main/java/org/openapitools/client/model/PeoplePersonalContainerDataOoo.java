@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * PeoplePersonalContainerDataOoo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class PeoplePersonalContainerDataOoo {
   /**
    * The type of leave.
@@ -105,24 +105,28 @@ public class PeoplePersonalContainerDataOoo {
 
   public static final String SERIALIZED_NAME_LEAVE_TYPE = "leave_type";
   @SerializedName(SERIALIZED_NAME_LEAVE_TYPE)
+  @javax.annotation.Nullable
   private LeaveTypeEnum leaveType;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nullable
   private LocalDate startDate;
 
   public static final String SERIALIZED_NAME_END_DATE = "end_date";
   @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
   private LocalDate endDate;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public PeoplePersonalContainerDataOoo() {
   }
 
-  public PeoplePersonalContainerDataOoo leaveType(LeaveTypeEnum leaveType) {
+  public PeoplePersonalContainerDataOoo leaveType(@javax.annotation.Nullable LeaveTypeEnum leaveType) {
     this.leaveType = leaveType;
     return this;
   }
@@ -136,12 +140,12 @@ public class PeoplePersonalContainerDataOoo {
     return leaveType;
   }
 
-  public void setLeaveType(LeaveTypeEnum leaveType) {
+  public void setLeaveType(@javax.annotation.Nullable LeaveTypeEnum leaveType) {
     this.leaveType = leaveType;
   }
 
 
-  public PeoplePersonalContainerDataOoo startDate(LocalDate startDate) {
+  public PeoplePersonalContainerDataOoo startDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -155,12 +159,12 @@ public class PeoplePersonalContainerDataOoo {
     return startDate;
   }
 
-  public void setStartDate(LocalDate startDate) {
+  public void setStartDate(@javax.annotation.Nullable LocalDate startDate) {
     this.startDate = startDate;
   }
 
 
-  public PeoplePersonalContainerDataOoo endDate(LocalDate endDate) {
+  public PeoplePersonalContainerDataOoo endDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -174,12 +178,12 @@ public class PeoplePersonalContainerDataOoo {
     return endDate;
   }
 
-  public void setEndDate(LocalDate endDate) {
+  public void setEndDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
   }
 
 
-  public PeoplePersonalContainerDataOoo name(String name) {
+  public PeoplePersonalContainerDataOoo name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -193,7 +197,7 @@ public class PeoplePersonalContainerDataOoo {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 

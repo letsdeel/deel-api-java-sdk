@@ -52,22 +52,26 @@ import org.openapitools.client.JSON;
 /**
  * GetCustomFieldsFromContracts200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetCustomFieldsFromContracts200ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nullable
   private UUID id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
   private GetCustomFieldsFromPeople200ResponseDataType type;
 
   public static final String SERIALIZED_NAME_SETTINGS = "settings";
   @SerializedName(SERIALIZED_NAME_SETTINGS)
+  @javax.annotation.Nullable
   private GetCustomFieldsFromContracts200ResponseDataSettings settings;
 
   /**
@@ -124,20 +128,23 @@ public class GetCustomFieldsFromContracts200ResponseData {
 
   public static final String SERIALIZED_NAME_PLACEMENT = "placement";
   @SerializedName(SERIALIZED_NAME_PLACEMENT)
+  @javax.annotation.Nullable
   private PlacementEnum placement;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nullable
   private LocalDate createdAt;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public GetCustomFieldsFromContracts200ResponseData() {
   }
 
-  public GetCustomFieldsFromContracts200ResponseData id(UUID id) {
+  public GetCustomFieldsFromContracts200ResponseData id(@javax.annotation.Nullable UUID id) {
     this.id = id;
     return this;
   }
@@ -151,12 +158,12 @@ public class GetCustomFieldsFromContracts200ResponseData {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nullable UUID id) {
     this.id = id;
   }
 
 
-  public GetCustomFieldsFromContracts200ResponseData name(String name) {
+  public GetCustomFieldsFromContracts200ResponseData name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -170,12 +177,12 @@ public class GetCustomFieldsFromContracts200ResponseData {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
 
-  public GetCustomFieldsFromContracts200ResponseData type(GetCustomFieldsFromPeople200ResponseDataType type) {
+  public GetCustomFieldsFromContracts200ResponseData type(@javax.annotation.Nullable GetCustomFieldsFromPeople200ResponseDataType type) {
     this.type = type;
     return this;
   }
@@ -189,12 +196,12 @@ public class GetCustomFieldsFromContracts200ResponseData {
     return type;
   }
 
-  public void setType(GetCustomFieldsFromPeople200ResponseDataType type) {
+  public void setType(@javax.annotation.Nullable GetCustomFieldsFromPeople200ResponseDataType type) {
     this.type = type;
   }
 
 
-  public GetCustomFieldsFromContracts200ResponseData settings(GetCustomFieldsFromContracts200ResponseDataSettings settings) {
+  public GetCustomFieldsFromContracts200ResponseData settings(@javax.annotation.Nullable GetCustomFieldsFromContracts200ResponseDataSettings settings) {
     this.settings = settings;
     return this;
   }
@@ -208,12 +215,12 @@ public class GetCustomFieldsFromContracts200ResponseData {
     return settings;
   }
 
-  public void setSettings(GetCustomFieldsFromContracts200ResponseDataSettings settings) {
+  public void setSettings(@javax.annotation.Nullable GetCustomFieldsFromContracts200ResponseDataSettings settings) {
     this.settings = settings;
   }
 
 
-  public GetCustomFieldsFromContracts200ResponseData placement(PlacementEnum placement) {
+  public GetCustomFieldsFromContracts200ResponseData placement(@javax.annotation.Nullable PlacementEnum placement) {
     this.placement = placement;
     return this;
   }
@@ -227,12 +234,12 @@ public class GetCustomFieldsFromContracts200ResponseData {
     return placement;
   }
 
-  public void setPlacement(PlacementEnum placement) {
+  public void setPlacement(@javax.annotation.Nullable PlacementEnum placement) {
     this.placement = placement;
   }
 
 
-  public GetCustomFieldsFromContracts200ResponseData createdAt(LocalDate createdAt) {
+  public GetCustomFieldsFromContracts200ResponseData createdAt(@javax.annotation.Nullable LocalDate createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -246,12 +253,12 @@ public class GetCustomFieldsFromContracts200ResponseData {
     return createdAt;
   }
 
-  public void setCreatedAt(LocalDate createdAt) {
+  public void setCreatedAt(@javax.annotation.Nullable LocalDate createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public GetCustomFieldsFromContracts200ResponseData description(String description) {
+  public GetCustomFieldsFromContracts200ResponseData description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -265,7 +272,7 @@ public class GetCustomFieldsFromContracts200ResponseData {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 

@@ -54,36 +54,42 @@ import org.openapitools.client.JSON;
 /**
  * CreateDirectEmployeeRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateDirectEmployeeRequest {
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
+  @javax.annotation.Nonnull
   private CreateDirectEmployeeRequestClient client;
 
   public static final String SERIALIZED_NAME_EMPLOYEE = "employee";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE)
+  @javax.annotation.Nonnull
   private CreateDirectEmployeeRequestEmployee employee;
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nonnull
   private CreateDirectEmployeeRequestJobTitle jobTitle;
 
   public static final String SERIALIZED_NAME_SENIORITY = "seniority";
   @SerializedName(SERIALIZED_NAME_SENIORITY)
+  @javax.annotation.Nonnull
   private CreateDirectEmployeeRequestSeniority seniority;
 
   public static final String SERIALIZED_NAME_EMPLOYMENT = "employment";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT)
+  @javax.annotation.Nonnull
   private CreateDirectEmployeeRequestEmployment employment;
 
   public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
   @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
+  @javax.annotation.Nonnull
   private CreateDirectEmployeeRequestCompensationDetails compensationDetails;
 
   public CreateDirectEmployeeRequest() {
   }
 
-  public CreateDirectEmployeeRequest client(CreateDirectEmployeeRequestClient client) {
+  public CreateDirectEmployeeRequest client(@javax.annotation.Nonnull CreateDirectEmployeeRequestClient client) {
     this.client = client;
     return this;
   }
@@ -97,12 +103,12 @@ public class CreateDirectEmployeeRequest {
     return client;
   }
 
-  public void setClient(CreateDirectEmployeeRequestClient client) {
+  public void setClient(@javax.annotation.Nonnull CreateDirectEmployeeRequestClient client) {
     this.client = client;
   }
 
 
-  public CreateDirectEmployeeRequest employee(CreateDirectEmployeeRequestEmployee employee) {
+  public CreateDirectEmployeeRequest employee(@javax.annotation.Nonnull CreateDirectEmployeeRequestEmployee employee) {
     this.employee = employee;
     return this;
   }
@@ -116,12 +122,12 @@ public class CreateDirectEmployeeRequest {
     return employee;
   }
 
-  public void setEmployee(CreateDirectEmployeeRequestEmployee employee) {
+  public void setEmployee(@javax.annotation.Nonnull CreateDirectEmployeeRequestEmployee employee) {
     this.employee = employee;
   }
 
 
-  public CreateDirectEmployeeRequest jobTitle(CreateDirectEmployeeRequestJobTitle jobTitle) {
+  public CreateDirectEmployeeRequest jobTitle(@javax.annotation.Nonnull CreateDirectEmployeeRequestJobTitle jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -135,12 +141,12 @@ public class CreateDirectEmployeeRequest {
     return jobTitle;
   }
 
-  public void setJobTitle(CreateDirectEmployeeRequestJobTitle jobTitle) {
+  public void setJobTitle(@javax.annotation.Nonnull CreateDirectEmployeeRequestJobTitle jobTitle) {
     this.jobTitle = jobTitle;
   }
 
 
-  public CreateDirectEmployeeRequest seniority(CreateDirectEmployeeRequestSeniority seniority) {
+  public CreateDirectEmployeeRequest seniority(@javax.annotation.Nonnull CreateDirectEmployeeRequestSeniority seniority) {
     this.seniority = seniority;
     return this;
   }
@@ -154,12 +160,12 @@ public class CreateDirectEmployeeRequest {
     return seniority;
   }
 
-  public void setSeniority(CreateDirectEmployeeRequestSeniority seniority) {
+  public void setSeniority(@javax.annotation.Nonnull CreateDirectEmployeeRequestSeniority seniority) {
     this.seniority = seniority;
   }
 
 
-  public CreateDirectEmployeeRequest employment(CreateDirectEmployeeRequestEmployment employment) {
+  public CreateDirectEmployeeRequest employment(@javax.annotation.Nonnull CreateDirectEmployeeRequestEmployment employment) {
     this.employment = employment;
     return this;
   }
@@ -173,12 +179,12 @@ public class CreateDirectEmployeeRequest {
     return employment;
   }
 
-  public void setEmployment(CreateDirectEmployeeRequestEmployment employment) {
+  public void setEmployment(@javax.annotation.Nonnull CreateDirectEmployeeRequestEmployment employment) {
     this.employment = employment;
   }
 
 
-  public CreateDirectEmployeeRequest compensationDetails(CreateDirectEmployeeRequestCompensationDetails compensationDetails) {
+  public CreateDirectEmployeeRequest compensationDetails(@javax.annotation.Nonnull CreateDirectEmployeeRequestCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
     return this;
   }
@@ -192,7 +198,7 @@ public class CreateDirectEmployeeRequest {
     return compensationDetails;
   }
 
-  public void setCompensationDetails(CreateDirectEmployeeRequestCompensationDetails compensationDetails) {
+  public void setCompensationDetails(@javax.annotation.Nonnull CreateDirectEmployeeRequestCompensationDetails compensationDetails) {
     this.compensationDetails = compensationDetails;
   }
 

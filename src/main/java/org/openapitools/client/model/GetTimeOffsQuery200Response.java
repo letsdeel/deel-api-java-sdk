@@ -51,32 +51,37 @@ import org.openapitools.client.JSON;
 /**
  * Time offs associated to the query
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetTimeOffsQuery200Response {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
+  @javax.annotation.Nonnull
   private List<GetTimeOffsQuery200ResponseDataInner> data = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NEXT = "next";
   @SerializedName(SERIALIZED_NAME_NEXT)
+  @javax.annotation.Nullable
   private String next;
 
   public static final String SERIALIZED_NAME_PAGE = "page";
   @SerializedName(SERIALIZED_NAME_PAGE)
+  @javax.annotation.Nonnull
   private Integer page;
 
   public static final String SERIALIZED_NAME_PAGE_SIZE = "page_size";
   @SerializedName(SERIALIZED_NAME_PAGE_SIZE)
+  @javax.annotation.Nonnull
   private Integer pageSize;
 
   public static final String SERIALIZED_NAME_HAS_NEXT_PAGE = "has_next_page";
   @SerializedName(SERIALIZED_NAME_HAS_NEXT_PAGE)
+  @javax.annotation.Nonnull
   private Boolean hasNextPage;
 
   public GetTimeOffsQuery200Response() {
   }
 
-  public GetTimeOffsQuery200Response data(List<GetTimeOffsQuery200ResponseDataInner> data) {
+  public GetTimeOffsQuery200Response data(@javax.annotation.Nonnull List<GetTimeOffsQuery200ResponseDataInner> data) {
     this.data = data;
     return this;
   }
@@ -98,12 +103,12 @@ public class GetTimeOffsQuery200Response {
     return data;
   }
 
-  public void setData(List<GetTimeOffsQuery200ResponseDataInner> data) {
+  public void setData(@javax.annotation.Nonnull List<GetTimeOffsQuery200ResponseDataInner> data) {
     this.data = data;
   }
 
 
-  public GetTimeOffsQuery200Response next(String next) {
+  public GetTimeOffsQuery200Response next(@javax.annotation.Nullable String next) {
     this.next = next;
     return this;
   }
@@ -117,12 +122,12 @@ public class GetTimeOffsQuery200Response {
     return next;
   }
 
-  public void setNext(String next) {
+  public void setNext(@javax.annotation.Nullable String next) {
     this.next = next;
   }
 
 
-  public GetTimeOffsQuery200Response page(Integer page) {
+  public GetTimeOffsQuery200Response page(@javax.annotation.Nonnull Integer page) {
     this.page = page;
     return this;
   }
@@ -138,12 +143,12 @@ public class GetTimeOffsQuery200Response {
     return page;
   }
 
-  public void setPage(Integer page) {
+  public void setPage(@javax.annotation.Nonnull Integer page) {
     this.page = page;
   }
 
 
-  public GetTimeOffsQuery200Response pageSize(Integer pageSize) {
+  public GetTimeOffsQuery200Response pageSize(@javax.annotation.Nonnull Integer pageSize) {
     this.pageSize = pageSize;
     return this;
   }
@@ -159,12 +164,12 @@ public class GetTimeOffsQuery200Response {
     return pageSize;
   }
 
-  public void setPageSize(Integer pageSize) {
+  public void setPageSize(@javax.annotation.Nonnull Integer pageSize) {
     this.pageSize = pageSize;
   }
 
 
-  public GetTimeOffsQuery200Response hasNextPage(Boolean hasNextPage) {
+  public GetTimeOffsQuery200Response hasNextPage(@javax.annotation.Nonnull Boolean hasNextPage) {
     this.hasNextPage = hasNextPage;
     return this;
   }
@@ -178,7 +183,7 @@ public class GetTimeOffsQuery200Response {
     return hasNextPage;
   }
 
-  public void setHasNextPage(Boolean hasNextPage) {
+  public void setHasNextPage(@javax.annotation.Nonnull Boolean hasNextPage) {
     this.hasNextPage = hasNextPage;
   }
 

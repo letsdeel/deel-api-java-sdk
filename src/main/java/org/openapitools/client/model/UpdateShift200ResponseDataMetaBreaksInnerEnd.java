@@ -48,20 +48,22 @@ import org.openapitools.client.JSON;
 /**
  * UpdateShift200ResponseDataMetaBreaksInnerEnd
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateShift200ResponseDataMetaBreaksInnerEnd {
   public static final String SERIALIZED_NAME_DATE = "date";
   @SerializedName(SERIALIZED_NAME_DATE)
+  @javax.annotation.Nullable
   private String date;
 
   public static final String SERIALIZED_NAME_TIME = "time";
   @SerializedName(SERIALIZED_NAME_TIME)
+  @javax.annotation.Nullable
   private String time;
 
   public UpdateShift200ResponseDataMetaBreaksInnerEnd() {
   }
 
-  public UpdateShift200ResponseDataMetaBreaksInnerEnd date(String date) {
+  public UpdateShift200ResponseDataMetaBreaksInnerEnd date(@javax.annotation.Nullable String date) {
     this.date = date;
     return this;
   }
@@ -75,12 +77,12 @@ public class UpdateShift200ResponseDataMetaBreaksInnerEnd {
     return date;
   }
 
-  public void setDate(String date) {
+  public void setDate(@javax.annotation.Nullable String date) {
     this.date = date;
   }
 
 
-  public UpdateShift200ResponseDataMetaBreaksInnerEnd time(String time) {
+  public UpdateShift200ResponseDataMetaBreaksInnerEnd time(@javax.annotation.Nullable String time) {
     this.time = time;
     return this;
   }
@@ -94,7 +96,7 @@ public class UpdateShift200ResponseDataMetaBreaksInnerEnd {
     return time;
   }
 
-  public void setTime(String time) {
+  public void setTime(@javax.annotation.Nullable String time) {
     this.time = time;
   }
 

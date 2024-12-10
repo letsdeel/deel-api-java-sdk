@@ -48,32 +48,37 @@ import org.openapitools.client.JSON;
 /**
  * GetPeopleList200ResponseDataInnerAddressesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPeopleList200ResponseDataInnerAddressesInner {
   public static final String SERIALIZED_NAME_REGION = "region";
   @SerializedName(SERIALIZED_NAME_REGION)
+  @javax.annotation.Nullable
   private String region;
 
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
   private String country;
 
   public static final String SERIALIZED_NAME_LOCALITY = "locality";
   @SerializedName(SERIALIZED_NAME_LOCALITY)
+  @javax.annotation.Nullable
   private String locality;
 
   public static final String SERIALIZED_NAME_POSTAL_CODE = "postalCode";
   @SerializedName(SERIALIZED_NAME_POSTAL_CODE)
+  @javax.annotation.Nullable
   private String postalCode;
 
   public static final String SERIALIZED_NAME_STREET_ADDRESS = "streetAddress";
   @SerializedName(SERIALIZED_NAME_STREET_ADDRESS)
+  @javax.annotation.Nullable
   private String streetAddress;
 
   public GetPeopleList200ResponseDataInnerAddressesInner() {
   }
 
-  public GetPeopleList200ResponseDataInnerAddressesInner region(String region) {
+  public GetPeopleList200ResponseDataInnerAddressesInner region(@javax.annotation.Nullable String region) {
     this.region = region;
     return this;
   }
@@ -87,12 +92,12 @@ public class GetPeopleList200ResponseDataInnerAddressesInner {
     return region;
   }
 
-  public void setRegion(String region) {
+  public void setRegion(@javax.annotation.Nullable String region) {
     this.region = region;
   }
 
 
-  public GetPeopleList200ResponseDataInnerAddressesInner country(String country) {
+  public GetPeopleList200ResponseDataInnerAddressesInner country(@javax.annotation.Nullable String country) {
     this.country = country;
     return this;
   }
@@ -106,12 +111,12 @@ public class GetPeopleList200ResponseDataInnerAddressesInner {
     return country;
   }
 
-  public void setCountry(String country) {
+  public void setCountry(@javax.annotation.Nullable String country) {
     this.country = country;
   }
 
 
-  public GetPeopleList200ResponseDataInnerAddressesInner locality(String locality) {
+  public GetPeopleList200ResponseDataInnerAddressesInner locality(@javax.annotation.Nullable String locality) {
     this.locality = locality;
     return this;
   }
@@ -125,12 +130,12 @@ public class GetPeopleList200ResponseDataInnerAddressesInner {
     return locality;
   }
 
-  public void setLocality(String locality) {
+  public void setLocality(@javax.annotation.Nullable String locality) {
     this.locality = locality;
   }
 
 
-  public GetPeopleList200ResponseDataInnerAddressesInner postalCode(String postalCode) {
+  public GetPeopleList200ResponseDataInnerAddressesInner postalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
     return this;
   }
@@ -144,12 +149,12 @@ public class GetPeopleList200ResponseDataInnerAddressesInner {
     return postalCode;
   }
 
-  public void setPostalCode(String postalCode) {
+  public void setPostalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
   }
 
 
-  public GetPeopleList200ResponseDataInnerAddressesInner streetAddress(String streetAddress) {
+  public GetPeopleList200ResponseDataInnerAddressesInner streetAddress(@javax.annotation.Nullable String streetAddress) {
     this.streetAddress = streetAddress;
     return this;
   }
@@ -163,7 +168,7 @@ public class GetPeopleList200ResponseDataInnerAddressesInner {
     return streetAddress;
   }
 
-  public void setStreetAddress(String streetAddress) {
+  public void setStreetAddress(@javax.annotation.Nullable String streetAddress) {
     this.streetAddress = streetAddress;
   }
 

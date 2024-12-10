@@ -49,20 +49,22 @@ import org.openapitools.client.JSON;
 /**
  * Reviewer&#39;s information.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetMilestonesByContractAndId200ResponseDataReviewedBy {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private CreateEorContractRequestClientTeamId id;
 
   public static final String SERIALIZED_NAME_FULL_NAME = "full_name";
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
+  @javax.annotation.Nonnull
   private String fullName;
 
   public GetMilestonesByContractAndId200ResponseDataReviewedBy() {
   }
 
-  public GetMilestonesByContractAndId200ResponseDataReviewedBy id(CreateEorContractRequestClientTeamId id) {
+  public GetMilestonesByContractAndId200ResponseDataReviewedBy id(@javax.annotation.Nonnull CreateEorContractRequestClientTeamId id) {
     this.id = id;
     return this;
   }
@@ -76,12 +78,12 @@ public class GetMilestonesByContractAndId200ResponseDataReviewedBy {
     return id;
   }
 
-  public void setId(CreateEorContractRequestClientTeamId id) {
+  public void setId(@javax.annotation.Nonnull CreateEorContractRequestClientTeamId id) {
     this.id = id;
   }
 
 
-  public GetMilestonesByContractAndId200ResponseDataReviewedBy fullName(String fullName) {
+  public GetMilestonesByContractAndId200ResponseDataReviewedBy fullName(@javax.annotation.Nonnull String fullName) {
     this.fullName = fullName;
     return this;
   }
@@ -95,7 +97,7 @@ public class GetMilestonesByContractAndId200ResponseDataReviewedBy {
     return fullName;
   }
 
-  public void setFullName(String fullName) {
+  public void setFullName(@javax.annotation.Nonnull String fullName) {
     this.fullName = fullName;
   }
 

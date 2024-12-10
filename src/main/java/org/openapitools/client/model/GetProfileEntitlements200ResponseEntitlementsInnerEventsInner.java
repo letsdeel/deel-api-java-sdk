@@ -50,10 +50,11 @@ import org.openapitools.client.JSON;
 /**
  * GetProfileEntitlements200ResponseEntitlementsInnerEventsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-04T12:37:40.520952+01:00[Europe/Warsaw]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T18:53:15.717716351Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
+  @javax.annotation.Nonnull
   private UUID id;
 
   /**
@@ -130,60 +131,73 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
+  @javax.annotation.Nonnull
   private Float amount;
 
   public static final String SERIALIZED_NAME_POLICY_ID = "policy_id";
   @SerializedName(SERIALIZED_NAME_POLICY_ID)
+  @javax.annotation.Nonnull
   private UUID policyId;
 
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime createdAt;
 
   public static final String SERIALIZED_NAME_EVENT_DATE = "event_date";
   @SerializedName(SERIALIZED_NAME_EVENT_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime eventDate;
 
   public static final String SERIALIZED_NAME_PROFILE_ID = "profile_id";
   @SerializedName(SERIALIZED_NAME_PROFILE_ID)
+  @javax.annotation.Nonnull
   private UUID profileId;
 
   public static final String SERIALIZED_NAME_UPDATED_AT = "updated_at";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT)
+  @javax.annotation.Nonnull
   private OffsetDateTime updatedAt;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  @javax.annotation.Nullable
   private String description;
 
   public static final String SERIALIZED_NAME_TIME_OFF_ID = "time_off_id";
   @SerializedName(SERIALIZED_NAME_TIME_OFF_ID)
+  @javax.annotation.Nullable
   private UUID timeOffId;
 
   public static final String SERIALIZED_NAME_ACCRUAL_DATE = "accrual_date";
   @SerializedName(SERIALIZED_NAME_ACCRUAL_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime accrualDate;
 
   public static final String SERIALIZED_NAME_EXPIRATION_DATE = "expiration_date";
   @SerializedName(SERIALIZED_NAME_EXPIRATION_DATE)
+  @javax.annotation.Nullable
   private OffsetDateTime expirationDate;
 
   public static final String SERIALIZED_NAME_TRACKING_PERIOD = "tracking_period";
   @SerializedName(SERIALIZED_NAME_TRACKING_PERIOD)
+  @javax.annotation.Nonnull
   private OffsetDateTime trackingPeriod;
 
   public static final String SERIALIZED_NAME_ROLLOVER_TRACKING_PERIOD = "rollover_tracking_period";
   @SerializedName(SERIALIZED_NAME_ROLLOVER_TRACKING_PERIOD)
+  @javax.annotation.Nullable
   private OffsetDateTime rolloverTrackingPeriod;
 
   public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner() {
   }
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner id(UUID id) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -197,12 +211,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
     return id;
   }
 
-  public void setId(UUID id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner type(TypeEnum type) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -216,12 +230,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
     return type;
   }
 
-  public void setType(TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner amount(Float amount) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner amount(@javax.annotation.Nonnull Float amount) {
     this.amount = amount;
     return this;
   }
@@ -235,12 +249,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
     return amount;
   }
 
-  public void setAmount(Float amount) {
+  public void setAmount(@javax.annotation.Nonnull Float amount) {
     this.amount = amount;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner policyId(UUID policyId) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner policyId(@javax.annotation.Nonnull UUID policyId) {
     this.policyId = policyId;
     return this;
   }
@@ -254,12 +268,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
     return policyId;
   }
 
-  public void setPolicyId(UUID policyId) {
+  public void setPolicyId(@javax.annotation.Nonnull UUID policyId) {
     this.policyId = policyId;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner createdAt(OffsetDateTime createdAt) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
     return this;
   }
@@ -273,12 +287,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
     this.createdAt = createdAt;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner eventDate(OffsetDateTime eventDate) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner eventDate(@javax.annotation.Nullable OffsetDateTime eventDate) {
     this.eventDate = eventDate;
     return this;
   }
@@ -292,12 +306,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
     return eventDate;
   }
 
-  public void setEventDate(OffsetDateTime eventDate) {
+  public void setEventDate(@javax.annotation.Nullable OffsetDateTime eventDate) {
     this.eventDate = eventDate;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner profileId(UUID profileId) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner profileId(@javax.annotation.Nonnull UUID profileId) {
     this.profileId = profileId;
     return this;
   }
@@ -311,12 +325,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
     return profileId;
   }
 
-  public void setProfileId(UUID profileId) {
+  public void setProfileId(@javax.annotation.Nonnull UUID profileId) {
     this.profileId = profileId;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner updatedAt(OffsetDateTime updatedAt) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner updatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
     return this;
   }
@@ -330,12 +344,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
+  public void setUpdatedAt(@javax.annotation.Nonnull OffsetDateTime updatedAt) {
     this.updatedAt = updatedAt;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner description(String description) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner description(@javax.annotation.Nullable String description) {
     this.description = description;
     return this;
   }
@@ -349,12 +363,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
     return description;
   }
 
-  public void setDescription(String description) {
+  public void setDescription(@javax.annotation.Nullable String description) {
     this.description = description;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner timeOffId(UUID timeOffId) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner timeOffId(@javax.annotation.Nullable UUID timeOffId) {
     this.timeOffId = timeOffId;
     return this;
   }
@@ -368,12 +382,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
     return timeOffId;
   }
 
-  public void setTimeOffId(UUID timeOffId) {
+  public void setTimeOffId(@javax.annotation.Nullable UUID timeOffId) {
     this.timeOffId = timeOffId;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner accrualDate(OffsetDateTime accrualDate) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner accrualDate(@javax.annotation.Nullable OffsetDateTime accrualDate) {
     this.accrualDate = accrualDate;
     return this;
   }
@@ -387,12 +401,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
     return accrualDate;
   }
 
-  public void setAccrualDate(OffsetDateTime accrualDate) {
+  public void setAccrualDate(@javax.annotation.Nullable OffsetDateTime accrualDate) {
     this.accrualDate = accrualDate;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner expirationDate(OffsetDateTime expirationDate) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner expirationDate(@javax.annotation.Nullable OffsetDateTime expirationDate) {
     this.expirationDate = expirationDate;
     return this;
   }
@@ -406,12 +420,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
     return expirationDate;
   }
 
-  public void setExpirationDate(OffsetDateTime expirationDate) {
+  public void setExpirationDate(@javax.annotation.Nullable OffsetDateTime expirationDate) {
     this.expirationDate = expirationDate;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner trackingPeriod(OffsetDateTime trackingPeriod) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner trackingPeriod(@javax.annotation.Nonnull OffsetDateTime trackingPeriod) {
     this.trackingPeriod = trackingPeriod;
     return this;
   }
@@ -425,12 +439,12 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
     return trackingPeriod;
   }
 
-  public void setTrackingPeriod(OffsetDateTime trackingPeriod) {
+  public void setTrackingPeriod(@javax.annotation.Nonnull OffsetDateTime trackingPeriod) {
     this.trackingPeriod = trackingPeriod;
   }
 
 
-  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner rolloverTrackingPeriod(OffsetDateTime rolloverTrackingPeriod) {
+  public GetProfileEntitlements200ResponseEntitlementsInnerEventsInner rolloverTrackingPeriod(@javax.annotation.Nullable OffsetDateTime rolloverTrackingPeriod) {
     this.rolloverTrackingPeriod = rolloverTrackingPeriod;
     return this;
   }
@@ -444,7 +458,7 @@ public class GetProfileEntitlements200ResponseEntitlementsInnerEventsInner {
     return rolloverTrackingPeriod;
   }
 
-  public void setRolloverTrackingPeriod(OffsetDateTime rolloverTrackingPeriod) {
+  public void setRolloverTrackingPeriod(@javax.annotation.Nullable OffsetDateTime rolloverTrackingPeriod) {
     this.rolloverTrackingPeriod = rolloverTrackingPeriod;
   }
 
