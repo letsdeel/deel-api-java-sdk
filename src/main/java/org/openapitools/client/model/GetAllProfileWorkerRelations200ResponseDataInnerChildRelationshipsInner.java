@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * GetAllProfileWorkerRelations200ResponseDataInnerChildRelationshipsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T19:31:34.541358368Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T20:12:16.895242729Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetAllProfileWorkerRelations200ResponseDataInnerChildRelationshipsInner {
   public static final String SERIALIZED_NAME_LAST_NAME = "last_name";
   @SerializedName(SERIALIZED_NAME_LAST_NAME)
