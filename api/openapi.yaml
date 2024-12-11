@@ -36495,10 +36495,10 @@ components:
     getEorCountryValidations_200_response_data_health_insurance_providers_inner:
       example:
         name: name
-        id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+        id: id
       properties:
         id:
-          format: uuid
+          description: Provider ID.
           type: string
         name:
           description: Provider name.
@@ -36508,9 +36508,9 @@ components:
       example:
         providers:
         - name: name
-          id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+          id: id
         - name: name
-          id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+          id: id
         status: REQUIRED
       nullable: true
       properties:
@@ -36531,9 +36531,9 @@ components:
         health_insurance:
           providers:
           - name: name
-            id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            id: id
           - name: name
-            id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+            id: id
           status: REQUIRED
         probation:
           min: min
@@ -36566,9 +36566,9 @@ components:
           health_insurance:
             providers:
             - name: name
-              id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+              id: id
             - name: name
-              id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
+              id: id
             status: REQUIRED
           probation:
             min: min

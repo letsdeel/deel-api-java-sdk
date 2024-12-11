@@ -21,7 +21,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.UUID;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -49,12 +48,12 @@ import org.openapitools.client.JSON;
 /**
  * GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T19:18:25.377714672Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T19:31:34.541358368Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
   @javax.annotation.Nullable
-  private UUID id;
+  private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -64,21 +63,21 @@ public class GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInne
   public GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner() {
   }
 
-  public GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner id(@javax.annotation.Nullable UUID id) {
+  public GetEorCountryValidations200ResponseDataHealthInsuranceProvidersInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
 
   /**
-   * Get id
+   * Provider ID.
    * @return id
    */
   @javax.annotation.Nullable
-  public UUID getId() {
+  public String getId() {
     return id;
   }
 
-  public void setId(@javax.annotation.Nullable UUID id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 

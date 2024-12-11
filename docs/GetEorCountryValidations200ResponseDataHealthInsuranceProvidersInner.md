@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**id** | **UUID** |  |  [optional] |
+|**id** | **String** | Provider ID. |  [optional] |
 |**name** | **String** | Provider name. |  [optional] |
 
 
