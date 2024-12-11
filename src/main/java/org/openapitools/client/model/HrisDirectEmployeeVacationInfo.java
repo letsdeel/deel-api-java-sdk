@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * HrisDirectEmployeeVacationInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T22:20:01.055724240Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T22:44:17.413238492Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisDirectEmployeeVacationInfo {
   public static final String SERIALIZED_NAME_VACATION_ACCRUAL_START_DATE = "vacation_accrual_start_date";
   @SerializedName(SERIALIZED_NAME_VACATION_ACCRUAL_START_DATE)
