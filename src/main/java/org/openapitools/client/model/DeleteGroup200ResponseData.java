@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * DeleteGroup200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T23:06:48.603230199Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T23:39:46.997965815Z[GMT]", comments = "Generator version: 7.10.0")
 public class DeleteGroup200ResponseData {
   public static final String SERIALIZED_NAME_ARCHIVED_AT = "archived_at";
   @SerializedName(SERIALIZED_NAME_ARCHIVED_AT)
