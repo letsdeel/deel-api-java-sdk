@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * PremiumToAdd
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T18:19:15.469015129Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T19:18:25.377714672Z[GMT]", comments = "Generator version: 7.10.0")
 public class PremiumToAdd {
   public static final String SERIALIZED_NAME_AGREEMENT_REFLECTS_RELATION = "agreement_reflects_relation";
   @SerializedName(SERIALIZED_NAME_AGREEMENT_REFLECTS_RELATION)

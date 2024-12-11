@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * Get401kPlansDefinition200ResponseInnerContributionValueForMatchRateInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T18:19:15.469015129Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T19:18:25.377714672Z[GMT]", comments = "Generator version: 7.10.0")
 public class Get401kPlansDefinition200ResponseInnerContributionValueForMatchRateInner {
   public static final String SERIALIZED_NAME_RATE = "rate";
   @SerializedName(SERIALIZED_NAME_RATE)
