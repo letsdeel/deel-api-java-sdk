@@ -54,7 +54,7 @@ import org.openapitools.client.JSON;
 /**
  * GetYearToDatePay200ResponseEmployeesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T19:12:08.356438549Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T18:19:15.469015129Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetYearToDatePay200ResponseEmployeesInner {
   public static final String SERIALIZED_NAME_GROSS_PAY = "gross_pay";
   @SerializedName(SERIALIZED_NAME_GROSS_PAY)

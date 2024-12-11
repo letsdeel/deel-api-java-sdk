@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * UpsertParentWorkerRelationsExternalIdContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T19:12:08.356438549Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T18:19:15.469015129Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertParentWorkerRelationsExternalIdContainerData {
   public static final String SERIALIZED_NAME_PARENT_PROFILE_EXTERNAL_ID = "parent_profile_external_id";
   @SerializedName(SERIALIZED_NAME_PARENT_PROFILE_EXTERNAL_ID)
