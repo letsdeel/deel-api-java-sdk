@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * UpdateGPEmployeePtoRequestData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T22:11:44.252131062Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T22:20:01.055724240Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateGPEmployeePtoRequestData {
   public static final String SERIALIZED_NAME_YEARLY_ALLOWANCE = "yearly_allowance";
   @SerializedName(SERIALIZED_NAME_YEARLY_ALLOWANCE)
