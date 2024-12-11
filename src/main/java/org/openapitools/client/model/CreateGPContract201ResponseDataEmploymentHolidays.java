@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateGPContract201ResponseDataEmploymentHolidays
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T22:44:17.413238492Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T23:06:48.603230199Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateGPContract201ResponseDataEmploymentHolidays {
   public static final String SERIALIZED_NAME_ALLOWANCE = "allowance";
   @SerializedName(SERIALIZED_NAME_ALLOWANCE)

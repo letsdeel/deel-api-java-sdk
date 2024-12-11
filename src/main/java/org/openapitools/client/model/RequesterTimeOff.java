@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * RequesterTimeOff
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T22:44:17.413238492Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T23:06:48.603230199Z[GMT]", comments = "Generator version: 7.10.0")
 public class RequesterTimeOff {
   public static final String SERIALIZED_NAME_IS_PART_TIME = "is_part_time";
   @SerializedName(SERIALIZED_NAME_IS_PART_TIME)
