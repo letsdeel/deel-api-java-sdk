@@ -2,7 +2,7 @@
 
 Deel REST API
 - API version: 1.25.0
-  - Build date: 2024-12-12T10:53:39.811706390Z[GMT]
+  - Build date: 2024-12-12T13:30:33.173921421Z[GMT]
   - Generator version: 7.10.0
 
 Deel REST API
@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.deel</groupId>
   <artifactId>deel-api-java-sdk</artifactId>
-  <version>1.25.0</version>
+  <version>2.1.20</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -57,7 +57,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.deel:deel-api-java-sdk:1.25.0"
+     implementation "com.deel:deel-api-java-sdk:2.1.20"
   }
 ```
 
@@ -71,7 +71,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/deel-api-java-sdk-1.25.0.jar`
+* `target/deel-api-java-sdk-2.1.20.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
