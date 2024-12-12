@@ -7,11 +7,11 @@
     <name>deel-api-java-sdk</name>
     <version>1.25.0</version>
     <url>https://github.com/letsdeel/deel-api-java-sdk</url>
-    <description>OpenAPI Java</description>
+    <description>Java</description>
     <scm>
-        <connection>scm:git:git@github.com:openapitools/openapi-generator.git</connection>
-        <developerConnection>scm:git:git@github.com:openapitools/openapi-generator.git</developerConnection>
-        <url>https://github.com/openapitools/openapi-generator</url>
+        <connection>scm:git:git@github.com:letsdeel/deel-api-java-sdk.git</connection>
+        <developerConnection>scm:git:git@github.com:letsdeel/deel-api-java-sdk.git</developerConnection>
+        <url>https://github.com/letsdeel/deel-api-java-sdk</url>
     </scm>
 
     <licenses>

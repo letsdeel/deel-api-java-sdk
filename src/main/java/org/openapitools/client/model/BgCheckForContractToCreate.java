@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * The background check information for a contract. Either &#x60;individual_check_ids&#x60; or &#x60;package_id&#x60; must be provided, but not both.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-11T23:39:46.997965815Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-12T00:01:04.080474088Z[GMT]", comments = "Generator version: 7.10.0")
 public class BgCheckForContractToCreate {
   public static final String SERIALIZED_NAME_CONTRACT_IDS = "contract_ids";
   @SerializedName(SERIALIZED_NAME_CONTRACT_IDS)
