@@ -217,7 +217,7 @@ public class LegalEntitiesApi {
 
     /**
      * Get legal entity data from organization integrated with external benefits vendor
-     * Get legal entity data from organization integrated with external benefits vendor
+     * Get legal entity data from organization integrated with external benefits vendor  **Token scopes**: &#x60;organizations:read&#x60;
      * @param id Id from the legal entity to fetch data (required)
      * @return APIgetLegalEntityRequest
      * @http.response.details
@@ -374,7 +374,7 @@ public class LegalEntitiesApi {
 
     /**
      * Get legal entity payroll settings from organization integrated with external benefits vendor
-     * Get legal entity payroll settings from organization integrated with external benefits vendor
+     * Get legal entity payroll settings from organization integrated with external benefits vendor  **Token scopes**: &#x60;organizations:read&#x60;
      * @param id Id from the legal entity to fetch data (required)
      * @return APIgetLegalEntityPayrollSettingsRequest
      * @http.response.details

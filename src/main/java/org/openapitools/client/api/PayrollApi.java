@@ -292,7 +292,7 @@ public class PayrollApi {
 
     /**
      * Get pay stub from employees from organization integrated with external benefits vendor
-     * Get pay stub from employees from organization integrated with external benefits vendor
+     * Get pay stub from employees from organization integrated with external benefits vendor  **Token scopes**: &#x60;organizations:read&#x60;
      * @param id Id from the legal entity to fetch data (required)
      * @return APIgetPayStubRequest
      * @http.response.details
@@ -471,7 +471,7 @@ public class PayrollApi {
 
     /**
      * Get year to date payment for benefits 401k.
-     * Get year to date from employees from organization integrated with external benefits vendor
+     * Get year to date from employees from organization integrated with external benefits vendor  **Token scopes**: &#x60;organizations:read&#x60;
      * @param id Id from the legal entity to fetch data (required)
      * @param dateStart Start date to fetch aggregated pay data (required)
      * @param dateEnd End date to fetch aggregated pay data (required)

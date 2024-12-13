@@ -16,7 +16,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Delete enrollment settings from an employee in a 401k plan
 
-Delete enrollment settings from an employee in a 401k plan
+Delete enrollment settings from an employee in a 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
 
 ### Example
 ```java
@@ -94,7 +94,7 @@ public class Example {
 
 Get enrollment settings from an employee in a 401k plan
 
-Get enrollment settings from an employee in a 401k plan
+Get enrollment settings from an employee in a 401k plan  **Token scopes**: &#x60;benefits:read&#x60;
 
 ### Example
 ```java
@@ -170,7 +170,7 @@ public class Example {
 
 Enroll an employee in a 401k plan
 
-Enroll an employee in a 401k plan
+Enroll an employee in a 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
 
 ### Example
 ```java
@@ -248,7 +248,7 @@ public class Example {
 
 Change enrollment settings from an employee in a 401k plan
 
-Change enrollment settings from an employee in a 401k plan
+Change enrollment settings from an employee in a 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
 
 ### Example
 ```java

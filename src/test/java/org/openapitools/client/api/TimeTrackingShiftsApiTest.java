@@ -41,7 +41,7 @@ public class TimeTrackingShiftsApiTest {
     /**
      * Create shifts
      *
-     * Create shifts
+     * Create shifts  **Token scopes**: &#x60;time-tracking:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -57,7 +57,7 @@ public class TimeTrackingShiftsApiTest {
     /**
      * Delete a Shift by External ID
      *
-     * This endpoint deletes a shift using its external ID. Once deleted, the shift will no longer be retrievable or editable.
+     * This endpoint deletes a shift using its external ID. Once deleted, the shift will no longer be retrievable or editable.  **Token scopes**: &#x60;time-tracking:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -72,7 +72,7 @@ public class TimeTrackingShiftsApiTest {
     /**
      * Get shift details
      *
-     * Retrieve details of a specific shift by external ID.
+     * Retrieve details of a specific shift by external ID.  **Token scopes**: &#x60;time-tracking:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -87,7 +87,7 @@ public class TimeTrackingShiftsApiTest {
     /**
      * List of shifts
      *
-     * Retrieve a paginated list of shifts with details such as start and end times, breaks, metadata, and summary metrics. Supports pagination through &#x60;limit&#x60; and &#x60;offset&#x60; query parameters.
+     * Retrieve a paginated list of shifts with details such as start and end times, breaks, metadata, and summary metrics. Supports pagination through &#x60;limit&#x60; and &#x60;offset&#x60; query parameters.  **Token scopes**: &#x60;time-tracking:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -105,7 +105,7 @@ public class TimeTrackingShiftsApiTest {
     /**
      * Update a shift
      *
-     * Update specific fields of an existing shift by its unique &#x60;external_id&#x60;. This includes shift metadata (start and end times, breaks, and approval dates) and associated summary details.
+     * Update specific fields of an existing shift by its unique &#x60;external_id&#x60;. This includes shift metadata (start and end times, breaks, and approval dates) and associated summary details.  **Token scopes**: &#x60;time-tracking:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */

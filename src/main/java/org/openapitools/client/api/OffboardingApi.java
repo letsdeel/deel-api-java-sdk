@@ -330,7 +330,7 @@ public class OffboardingApi {
 
     /**
      * Retrieve offboarding list
-     * Retrieve offboarding list
+     * Retrieve offboarding list  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
      * @return APIoffboardingTrackerGetRequest
      * @http.response.details
      <table border="1">
@@ -486,7 +486,7 @@ public class OffboardingApi {
 
     /**
      * Retrieve termination details
-     * Retrieve termination details by hris profile oid
+     * Retrieve termination details by hris profile oid  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
      * @param oid Unique hris profile oid (required)
      * @return APIoffboardingTrackerHrisProfileOidGetRequest
      * @http.response.details
@@ -643,7 +643,7 @@ public class OffboardingApi {
 
     /**
      * Retrieve termination details
-     * Retrieve termination details by tracker id
+     * Retrieve termination details by tracker id  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
      * @param id Unique onboarding tracker identifier (required)
      * @return APIoffboardingTrackerIdGetRequest
      * @http.response.details

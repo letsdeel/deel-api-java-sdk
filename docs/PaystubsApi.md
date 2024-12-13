@@ -13,7 +13,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Get paystubs from legal entity integrated with external benefits vendor
 
-Get paystubs from legal entity integrated with external benefits vendor
+Get paystubs from legal entity integrated with external benefits vendor  **Token scopes**: &#x60;benefits:read&#x60;
 
 ### Example
 ```java

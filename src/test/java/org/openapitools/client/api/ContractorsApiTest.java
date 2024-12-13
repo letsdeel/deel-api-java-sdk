@@ -61,7 +61,7 @@ public class ContractorsApiTest {
     /**
      * Amend contract
      *
-     * Amend the details of a contract. Please note that if the contract is already signed or active, then the update will have to be approved and re-signed for to take effect.
+     * Amend the details of a contract. Please note that if the contract is already signed or active, then the update will have to be approved and re-signed for to take effect.  **Token scopes**: &#x60;contracts:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -77,7 +77,7 @@ public class ContractorsApiTest {
     /**
      * Create a new contract
      *
-     * Create a new Deel contract.
+     * Create a new Deel contract.  **Token scopes**: &#x60;contracts:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -92,7 +92,7 @@ public class ContractorsApiTest {
     /**
      * Preview a contract agreement
      *
-     * Retrieve an IC and EOR contract agreement content in HTML. If no template is specified, the default or currently assigned template will be used. This endpoint does not support Global Payroll contract type.
+     * Retrieve an IC and EOR contract agreement content in HTML. If no template is specified, the default or currently assigned template will be used. This endpoint does not support Global Payroll contract type.  **Token scopes**: &#x60;contracts:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -126,7 +126,7 @@ public class ContractorsApiTest {
     /**
      * Terminate contract
      *
-     * Terminate contract.
+     * Terminate contract.  **Token scopes**: &#x60;contracts:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */

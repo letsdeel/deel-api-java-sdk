@@ -41,7 +41,7 @@ public class OrganizationStructureApiTest {
     /**
      * Create a new HRIS Organization Structure.
      *
-     * Create a new HRIS Organization Structure.
+     * Create a new HRIS Organization Structure.  **Token scopes**: &#x60;organizations:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -56,7 +56,7 @@ public class OrganizationStructureApiTest {
     /**
      * Delete an Org Structure from the Organization
      *
-     * Delete an Org Structure from the Organization
+     * Delete an Org Structure from the Organization  **Token scopes**: &#x60;organizations:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -71,6 +71,8 @@ public class OrganizationStructureApiTest {
     /**
      * Delete an Org Structure from the Organization by external ID
      *
+     * undefined  **Token scopes**: &#x60;organizations:write&#x60;
+     *
      * @throws ApiException if the Api call fails
      */
     @Test
@@ -84,7 +86,7 @@ public class OrganizationStructureApiTest {
     /**
      * Fetch all Org Structures from the Organization.
      *
-     * Fetch all Org Structures from the Organization.
+     * Fetch all Org Structures from the Organization.  **Token scopes**: &#x60;organizations:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -97,6 +99,8 @@ public class OrganizationStructureApiTest {
 
     /**
      * Fetch an Org Structure from the Organization
+     *
+     * undefined  **Token scopes**: &#x60;organizations:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -111,6 +115,8 @@ public class OrganizationStructureApiTest {
     /**
      * Fetch an Org Structure from the Organization
      *
+     * undefined  **Token scopes**: &#x60;organizations:read&#x60;
+     *
      * @throws ApiException if the Api call fails
      */
     @Test
@@ -124,7 +130,7 @@ public class OrganizationStructureApiTest {
     /**
      * Update an existing HRIS Org Structure
      *
-     * Update an existing HRIS Org Structure
+     * Update an existing HRIS Org Structure  **Token scopes**: &#x60;organizations:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -139,6 +145,8 @@ public class OrganizationStructureApiTest {
 
     /**
      * Update an existing HRIS Org Structure by external ID
+     *
+     * undefined  **Token scopes**: &#x60;organizations:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */

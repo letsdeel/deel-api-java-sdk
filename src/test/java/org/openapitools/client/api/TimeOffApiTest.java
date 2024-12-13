@@ -44,7 +44,7 @@ public class TimeOffApiTest {
     /**
      * Create time-off request
      *
-     * Create time-off request
+     * Create time-off request  **Token scopes**: &#x60;time-off:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -59,7 +59,7 @@ public class TimeOffApiTest {
     /**
      * Delete time-off request
      *
-     * Delete time-off request
+     * Delete time-off request  **Token scopes**: &#x60;time-off:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -74,7 +74,7 @@ public class TimeOffApiTest {
     /**
      * List policies
      *
-     * List policies
+     * List policies  **Token scopes**: &#x60;time-off:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -93,7 +93,7 @@ public class TimeOffApiTest {
     /**
      * Get Profile Entitlements
      *
-     * List time-off entitlements.
+     * List time-off entitlements.  **Token scopes**: &#x60;time-off:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -112,7 +112,7 @@ public class TimeOffApiTest {
     /**
      * List time-off requests
      *
-     * List time-off requests
+     * List time-off requests  **Token scopes**: &#x60;time-off:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -149,7 +149,7 @@ public class TimeOffApiTest {
     /**
      * Update time-off request
      *
-     * Update time-off request
+     * Update time-off request  **Token scopes**: &#x60;time-off:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */

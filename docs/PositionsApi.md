@@ -14,7 +14,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Apply changes to positions.
 
-Apply add, edit, and delete operations to profiles.
+Apply add, edit, and delete operations to profiles.  **Token scopes**: &#x60;profile:write&#x60;
 
 ### Example
 ```java
@@ -89,6 +89,8 @@ null (empty response body)
 > GetHrisPositions200Response getHrisPositions(hrisProfileId).execute();
 
 Fetch HrisPositions from a HrisProfile
+
+undefined  **Token scopes**: &#x60;profile:read&#x60;
 
 ### Example
 ```java

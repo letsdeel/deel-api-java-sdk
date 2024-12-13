@@ -20,7 +20,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Create a new HRIS Organization Structure.
 
-Create a new HRIS Organization Structure.
+Create a new HRIS Organization Structure.  **Token scopes**: &#x60;organizations:write&#x60;
 
 ### Example
 ```java
@@ -97,7 +97,7 @@ public class Example {
 
 Delete an Org Structure from the Organization
 
-Delete an Org Structure from the Organization
+Delete an Org Structure from the Organization  **Token scopes**: &#x60;organizations:write&#x60;
 
 ### Example
 ```java
@@ -173,6 +173,8 @@ null (empty response body)
 
 Delete an Org Structure from the Organization by external ID
 
+undefined  **Token scopes**: &#x60;organizations:write&#x60;
+
 ### Example
 ```java
 // Import classes:
@@ -247,7 +249,7 @@ null (empty response body)
 
 Fetch all Org Structures from the Organization.
 
-Fetch all Org Structures from the Organization.
+Fetch all Org Structures from the Organization.  **Token scopes**: &#x60;organizations:read&#x60;
 
 ### Example
 ```java
@@ -319,6 +321,8 @@ This endpoint does not need any parameter.
 > GetOrgStructure200Response getOrgStructure(hrisOrgStrId).execute();
 
 Fetch an Org Structure from the Organization
+
+undefined  **Token scopes**: &#x60;organizations:read&#x60;
 
 ### Example
 ```java
@@ -395,6 +399,8 @@ public class Example {
 
 Fetch an Org Structure from the Organization
 
+undefined  **Token scopes**: &#x60;organizations:read&#x60;
+
 ### Example
 ```java
 // Import classes:
@@ -470,7 +476,7 @@ public class Example {
 
 Update an existing HRIS Org Structure
 
-Update an existing HRIS Org Structure
+Update an existing HRIS Org Structure  **Token scopes**: &#x60;organizations:write&#x60;
 
 ### Example
 ```java
@@ -547,6 +553,8 @@ null (empty response body)
 > updateOrgStructureByExternalId(externalId, updateOrgStructureByExternalIdRequest).execute();
 
 Update an existing HRIS Org Structure by external ID
+
+undefined  **Token scopes**: &#x60;organizations:write&#x60;
 
 ### Example
 ```java

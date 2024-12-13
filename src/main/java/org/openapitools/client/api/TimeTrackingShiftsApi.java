@@ -251,7 +251,7 @@ public class TimeTrackingShiftsApi {
 
     /**
      * Create shifts
-     * Create shifts
+     * Create shifts  **Token scopes**: &#x60;time-tracking:write&#x60;
      * @return APIcreateShiftsRequest
      * @http.response.details
      <table border="1">
@@ -429,7 +429,7 @@ public class TimeTrackingShiftsApi {
 
     /**
      * Delete a Shift by External ID
-     * This endpoint deletes a shift using its external ID. Once deleted, the shift will no longer be retrievable or editable.
+     * This endpoint deletes a shift using its external ID. Once deleted, the shift will no longer be retrievable or editable.  **Token scopes**: &#x60;time-tracking:write&#x60;
      * @param externalId The unique external identifier of the shift to be deleted. (required)
      * @return APIdeleteShiftExternalIdRequest
      * @http.response.details
@@ -611,7 +611,7 @@ public class TimeTrackingShiftsApi {
 
     /**
      * Get shift details
-     * Retrieve details of a specific shift by external ID.
+     * Retrieve details of a specific shift by external ID.  **Token scopes**: &#x60;time-tracking:read&#x60;
      * @param externalId  (required)
      * @return APIgetShiftDetailsRequest
      * @http.response.details
@@ -811,7 +811,7 @@ public class TimeTrackingShiftsApi {
 
     /**
      * List of shifts
-     * Retrieve a paginated list of shifts with details such as start and end times, breaks, metadata, and summary metrics. Supports pagination through &#x60;limit&#x60; and &#x60;offset&#x60; query parameters.
+     * Retrieve a paginated list of shifts with details such as start and end times, breaks, metadata, and summary metrics. Supports pagination through &#x60;limit&#x60; and &#x60;offset&#x60; query parameters.  **Token scopes**: &#x60;time-tracking:read&#x60;
      * @return APIgetShiftsRequest
      * @http.response.details
      <table border="1">
@@ -1003,7 +1003,7 @@ public class TimeTrackingShiftsApi {
 
     /**
      * Update a shift
-     * Update specific fields of an existing shift by its unique &#x60;external_id&#x60;. This includes shift metadata (start and end times, breaks, and approval dates) and associated summary details.
+     * Update specific fields of an existing shift by its unique &#x60;external_id&#x60;. This includes shift metadata (start and end times, breaks, and approval dates) and associated summary details.  **Token scopes**: &#x60;time-tracking:write&#x60;
      * @param externalId  (required)
      * @param updateShiftRequest  (required)
      * @return APIupdateShiftRequest

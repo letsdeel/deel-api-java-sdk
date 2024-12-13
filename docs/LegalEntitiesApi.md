@@ -14,7 +14,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Get legal entity data from organization integrated with external benefits vendor
 
-Get legal entity data from organization integrated with external benefits vendor
+Get legal entity data from organization integrated with external benefits vendor  **Token scopes**: &#x60;organizations:read&#x60;
 
 ### Example
 ```java
@@ -86,7 +86,7 @@ public class Example {
 
 Get legal entity payroll settings from organization integrated with external benefits vendor
 
-Get legal entity payroll settings from organization integrated with external benefits vendor
+Get legal entity payroll settings from organization integrated with external benefits vendor  **Token scopes**: &#x60;organizations:read&#x60;
 
 ### Example
 ```java

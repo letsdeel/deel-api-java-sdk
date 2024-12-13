@@ -22,7 +22,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Delete Contract custom field by Id
 
-Removes the custom field value from the contract custom field.
+Removes the custom field value from the contract custom field.  **Token scopes**: &#x60;contracts:write&#x60;
 
 ### Example
 ```java
@@ -100,7 +100,7 @@ null (empty response body)
 
 Delete the custom field value from Worker by Id
 
-Delete the custom field value from Worker by Id.
+Delete the custom field value from Worker by Id.  **Token scopes**: &#x60;people:write&#x60;
 
 ### Example
 ```java
@@ -178,7 +178,7 @@ null (empty response body)
 
 Get custom fields from contracts
 
-Get custom field from contract by id
+Get custom field from contract by id  **Token scopes**: &#x60;contracts:read&#x60;
 
 ### Example
 ```java
@@ -255,7 +255,7 @@ public class Example {
 
 Get custom field from people by id
 
-Get custom field from people by id.
+Get custom field from people by id.  **Token scopes**: &#x60;people:read&#x60;
 
 ### Example
 ```java
@@ -332,7 +332,7 @@ public class Example {
 
 Retrieve custom fields for a contract
 
-Retrieve custom fields for a contract.
+Retrieve custom fields for a contract.  **Token scopes**: &#x60;contracts:read&#x60;
 
 ### Example
 ```java
@@ -409,7 +409,7 @@ public class Example {
 
 Retrieve custom fields for a worker
 
-Retrieve custom fields for a worker
+Retrieve custom fields for a worker  **Token scopes**: &#x60;people:read&#x60;
 
 ### Example
 ```java
@@ -486,7 +486,7 @@ public class Example {
 
 List all custom fields
 
-Fetch all custom fields associated with contracts, providing additional data necessary for contract management.
+Fetch all custom fields associated with contracts, providing additional data necessary for contract management.  **Token scopes**: &#x60;contracts:read&#x60;
 
 ### Example
 ```java
@@ -559,7 +559,7 @@ This endpoint does not need any parameter.
 
 List all custom fields
 
-Fetch all custom fields associated with People records, offering additional personalized information.
+Fetch all custom fields associated with People records, offering additional personalized information.  **Token scopes**: &#x60;people:read&#x60;
 
 ### Example
 ```java
@@ -632,7 +632,7 @@ This endpoint does not need any parameter.
 
 Update custom field value
 
-Update custom field value.
+Update custom field value.  **Token scopes**: &#x60;contracts:write&#x60;
 
 ### Example
 ```java
@@ -710,7 +710,7 @@ null (empty response body)
 
 Update custom field value
 
-Update custom field value.
+Update custom field value.  **Token scopes**: &#x60;people:write&#x60;
 
 ### Example
 ```java

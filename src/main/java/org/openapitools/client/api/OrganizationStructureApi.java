@@ -243,7 +243,7 @@ public class OrganizationStructureApi {
 
     /**
      * Create a new HRIS Organization Structure.
-     * Create a new HRIS Organization Structure.
+     * Create a new HRIS Organization Structure.  **Token scopes**: &#x60;organizations:write&#x60;
      * @param createOrgStructureRequest  (required)
      * @return APIcreateOrgStructureRequest
      * @http.response.details
@@ -421,7 +421,7 @@ public class OrganizationStructureApi {
 
     /**
      * Delete an Org Structure from the Organization
-     * Delete an Org Structure from the Organization
+     * Delete an Org Structure from the Organization  **Token scopes**: &#x60;organizations:write&#x60;
      * @param hrisOrgStrId Org Structure (required)
      * @return APIdeleteOrgStructureRequest
      * @http.response.details
@@ -599,7 +599,7 @@ public class OrganizationStructureApi {
 
     /**
      * Delete an Org Structure from the Organization by external ID
-     * 
+     * undefined  **Token scopes**: &#x60;organizations:write&#x60;
      * @param externalId External ID (required)
      * @return APIdeleteOrgStructureByExternalIdRequest
      * @http.response.details
@@ -773,7 +773,7 @@ public class OrganizationStructureApi {
 
     /**
      * Fetch all Org Structures from the Organization.
-     * Fetch all Org Structures from the Organization.
+     * Fetch all Org Structures from the Organization.  **Token scopes**: &#x60;organizations:read&#x60;
      * @return APIgetAllOrgStructuresRequest
      * @http.response.details
      <table border="1">
@@ -954,7 +954,7 @@ public class OrganizationStructureApi {
 
     /**
      * Fetch an Org Structure from the Organization
-     * 
+     * undefined  **Token scopes**: &#x60;organizations:read&#x60;
      * @param hrisOrgStrId HRIS Organization Structure ID (required)
      * @return APIgetOrgStructureRequest
      * @http.response.details
@@ -1136,7 +1136,7 @@ public class OrganizationStructureApi {
 
     /**
      * Fetch an Org Structure from the Organization
-     * 
+     * undefined  **Token scopes**: &#x60;organizations:read&#x60;
      * @param externalId External ID (required)
      * @return APIgetOrgStructureByExternalIdRequest
      * @http.response.details
@@ -1322,7 +1322,7 @@ public class OrganizationStructureApi {
 
     /**
      * Update an existing HRIS Org Structure
-     * Update an existing HRIS Org Structure
+     * Update an existing HRIS Org Structure  **Token scopes**: &#x60;organizations:write&#x60;
      * @param hrisOrgStrId Org Structure (required)
      * @param updateOrgStructureRequest  (required)
      * @return APIupdateOrgStructureRequest
@@ -1509,7 +1509,7 @@ public class OrganizationStructureApi {
 
     /**
      * Update an existing HRIS Org Structure by external ID
-     * 
+     * undefined  **Token scopes**: &#x60;organizations:write&#x60;
      * @param externalId External ID (required)
      * @param updateOrgStructureByExternalIdRequest  (required)
      * @return APIupdateOrgStructureByExternalIdRequest

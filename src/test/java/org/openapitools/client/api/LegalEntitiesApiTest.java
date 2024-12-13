@@ -35,7 +35,7 @@ public class LegalEntitiesApiTest {
     /**
      * Get legal entity data from organization integrated with external benefits vendor
      *
-     * Get legal entity data from organization integrated with external benefits vendor
+     * Get legal entity data from organization integrated with external benefits vendor  **Token scopes**: &#x60;organizations:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -50,7 +50,7 @@ public class LegalEntitiesApiTest {
     /**
      * Get legal entity payroll settings from organization integrated with external benefits vendor
      *
-     * Get legal entity payroll settings from organization integrated with external benefits vendor
+     * Get legal entity payroll settings from organization integrated with external benefits vendor  **Token scopes**: &#x60;organizations:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */

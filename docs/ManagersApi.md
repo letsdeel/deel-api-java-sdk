@@ -14,7 +14,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Create a Manager
 
-Create a new manager for the organization by providing the required user details. This endpoint returns the newly created manager&#39;s information.
+Create a new manager for the organization by providing the required user details. This endpoint returns the newly created manager&#39;s information.  **Token scopes**: &#x60;organizations:write&#x60;
 
 ### Example
 ```java
@@ -92,7 +92,7 @@ public class Example {
 
 Retrieve List of Managers
 
-Retrieve a list of all managers in the organization along with pagination details.
+Retrieve a list of all managers in the organization along with pagination details.  **Token scopes**: &#x60;organizations:read&#x60;
 
 ### Example
 ```java

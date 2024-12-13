@@ -18,7 +18,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Create a Milestone
 
-Add a new milestone to a specific contract. Milestones represent distinct deliverables or phases in the contract and can include additional details such as attachments.
+Add a new milestone to a specific contract. Milestones represent distinct deliverables or phases in the contract and can include additional details such as attachments.  **Token scopes**: &#x60;milestones:write&#x60;
 
 ### Example
 ```java
@@ -265,7 +265,7 @@ public class Example {
 
 Delete a Milestone
 
-Delete a specific milestone associated with a contract. This operation removes the milestone and its data permanently from the system.
+Delete a specific milestone associated with a contract. This operation removes the milestone and its data permanently from the system.  **Token scopes**: &#x60;milestones:write&#x60;
 
 ### Example
 ```java
@@ -346,7 +346,7 @@ public class Example {
 
 Retrieve Milestones by Contract
 
-Retrieve a list of milestones associated with a specific contract. Each milestone includes details such as its title, amount, status, and relevant dates, along with information about the creator and reviewer.
+Retrieve a list of milestones associated with a specific contract. Each milestone includes details such as its title, amount, status, and relevant dates, along with information about the creator and reviewer.  **Token scopes**: &#x60;milestones:read&#x60;
 
 ### Example
 ```java
@@ -425,7 +425,7 @@ public class Example {
 
 Retrieve a single milestone
 
-Retrieve a single milestone.
+Retrieve a single milestone.  **Token scopes**: &#x60;milestones:read&#x60;
 
 ### Example
 ```java

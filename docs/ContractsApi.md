@@ -29,7 +29,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Attach a file to contract
 
-Attach a file to contract document.
+Attach a file to contract document.  **Token scopes**: &#x60;contracts:write&#x60;
 
 ### Example
 ```java
@@ -111,7 +111,7 @@ public class Example {
 
 Approve an equity exercise
 
-Approve an equity exercise.
+Approve an equity exercise.  **Token scopes**: &#x60;contracts:write&#x60;
 
 ### Example
 ```java
@@ -507,7 +507,7 @@ public class Example {
 
 Retrieve a single contract
 
-Retrieve a single contract.
+Retrieve a single contract.  **Token scopes**: &#x60;contracts:read&#x60;
 
 ### Example
 ```java
@@ -586,7 +586,7 @@ public class Example {
 
 List of contracts
 
-Retrieve a list of contracts.
+Retrieve a list of contracts.  **Token scopes**: &#x60;contracts:read&#x60;
 
 ### Example
 ```java
@@ -696,7 +696,7 @@ public class Example {
 
 Retrieve contractor payment dates
 
-Fetches a list of payment dates associated with a specific contract. This endpoint provides information on when contractors are scheduled to be paid, along with the current status of each payment cycle.
+Fetches a list of payment dates associated with a specific contract. This endpoint provides information on when contractors are scheduled to be paid, along with the current status of each payment cycle.  **Token scopes**: &#x60;contracts:read&#x60;
 
 ### Example
 ```java
@@ -771,7 +771,7 @@ public class Example {
 
 Retrieve contract templates
 
-Fetches a collection of contract templates available within your organization. Use this endpoint to retrieve metadata about the templates.
+Fetches a collection of contract templates available within your organization. Use this endpoint to retrieve metadata about the templates.  **Token scopes**: &#x60;contracts:read&#x60;
 
 ### Example
 ```java
@@ -924,7 +924,7 @@ public class Example {
 
 Get worker invite link
 
-Get invite link generated for worker
+Get invite link generated for worker  **Token scopes**: &#x60;contracts:read&#x60;
 
 ### Example
 ```java
@@ -1079,7 +1079,7 @@ public class Example {
 
 Send contract to worker
 
-Invite a worker to sign the contract. Worker will be notified via email
+Invite a worker to sign the contract. Worker will be notified via email  **Token scopes**: &#x60;contracts:write&#x60;
 
 ### Example
 ```java
@@ -1160,7 +1160,7 @@ public class Example {
 
 Create a request to exercise equity.
 
-Create a request to exercise equity.
+Create a request to exercise equity.  **Token scopes**: &#x60;contracts:write&#x60;
 
 ### Example
 ```java
@@ -1237,7 +1237,7 @@ public class Example {
 
 Sign a contract
 
-Sign a contract as a client.
+Sign a contract as a client.  **Token scopes**: &#x60;contracts:write&#x60;
 
 ### Example
 ```java
@@ -1318,7 +1318,7 @@ public class Example {
 
 Remove invite
 
-Remove invite in order to re-invite a worker to sign the contract
+Remove invite in order to re-invite a worker to sign the contract  **Token scopes**: &#x60;contracts:write&#x60;
 
 ### Example
 ```java

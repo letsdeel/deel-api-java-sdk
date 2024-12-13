@@ -17,7 +17,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Create shifts
 
-Create shifts
+Create shifts  **Token scopes**: &#x60;time-tracking:write&#x60;
 
 ### Example
 ```java
@@ -96,7 +96,7 @@ public class Example {
 
 Delete a Shift by External ID
 
-This endpoint deletes a shift using its external ID. Once deleted, the shift will no longer be retrievable or editable.
+This endpoint deletes a shift using its external ID. Once deleted, the shift will no longer be retrievable or editable.  **Token scopes**: &#x60;time-tracking:write&#x60;
 
 ### Example
 ```java
@@ -172,7 +172,7 @@ null (empty response body)
 
 Get shift details
 
-Retrieve details of a specific shift by external ID.
+Retrieve details of a specific shift by external ID.  **Token scopes**: &#x60;time-tracking:read&#x60;
 
 ### Example
 ```java
@@ -249,7 +249,7 @@ public class Example {
 
 List of shifts
 
-Retrieve a paginated list of shifts with details such as start and end times, breaks, metadata, and summary metrics. Supports pagination through &#x60;limit&#x60; and &#x60;offset&#x60; query parameters.
+Retrieve a paginated list of shifts with details such as start and end times, breaks, metadata, and summary metrics. Supports pagination through &#x60;limit&#x60; and &#x60;offset&#x60; query parameters.  **Token scopes**: &#x60;time-tracking:read&#x60;
 
 ### Example
 ```java
@@ -329,7 +329,7 @@ public class Example {
 
 Update a shift
 
-Update specific fields of an existing shift by its unique &#x60;external_id&#x60;. This includes shift metadata (start and end times, breaks, and approval dates) and associated summary details.
+Update specific fields of an existing shift by its unique &#x60;external_id&#x60;. This includes shift metadata (start and end times, breaks, and approval dates) and associated summary details.  **Token scopes**: &#x60;time-tracking:write&#x60;
 
 ### Example
 ```java

@@ -451,7 +451,7 @@ public class OnboardingApi {
 
     /**
      * List onboarding employees
-     * List all onboarding
+     * List all onboarding  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
      * @return APIlistOnboardingTrackerRequest
      * @http.response.details
      <table border="1">
@@ -607,7 +607,7 @@ public class OnboardingApi {
 
     /**
      * Get onboarding details by onboarding hris profile oid
-     * Get onboarding overview
+     * Get onboarding overview  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
      * @param oid Unique hris profile oid (required)
      * @return APIonboardingTrackerHrisProfileOidGetRequest
      * @http.response.details
@@ -764,7 +764,7 @@ public class OnboardingApi {
 
     /**
      * Get onboarding details by onboarding tracker ID
-     * Get onboarding overview
+     * Get onboarding overview  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
      * @param id Unique onboarding tracker identifier (required)
      * @return APIonboardingTrackerIdGetRequest
      * @http.response.details

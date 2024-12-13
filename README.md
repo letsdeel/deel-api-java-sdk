@@ -2,7 +2,7 @@
 
 Deel REST API
 - API version: 1.25.0
-  - Build date: 2024-12-12T13:30:33.173921421Z[GMT]
+  - Build date: 2024-12-13T11:33:27.931295037Z[GMT]
   - Generator version: 7.10.0
 
 Deel REST API
@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.deel</groupId>
   <artifactId>deel-api-java-sdk</artifactId>
-  <version>2.1.20</version>
+  <version>test-1.0.0</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -57,7 +57,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.deel:deel-api-java-sdk:2.1.20"
+     implementation "com.deel:deel-api-java-sdk:test-1.0.0"
   }
 ```
 
@@ -71,7 +71,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/deel-api-java-sdk-2.1.20.jar`
+* `target/deel-api-java-sdk-test-1.0.0.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -211,6 +211,7 @@ Class | Method | HTTP request | Description
 *GroupsApi* | [**deleteGroup**](docs/GroupsApi.md#deleteGroup) | **DELETE** /groups/{id} | Delete a group
 *GroupsApi* | [**editGroup**](docs/GroupsApi.md#editGroup) | **PATCH** /groups/{id} | Edit a group
 *GroupsApi* | [**getGroups**](docs/GroupsApi.md#getGroups) | **GET** /groups | Return list of groups
+*ImmigrationApi* | [**createCase**](docs/ImmigrationApi.md#createCase) | **POST** /immigration/client/cases | Create an immigration case
 *IntegrationsApi* | [**getConsent**](docs/IntegrationsApi.md#getConsent) | **GET** /integrations/consent | Get integration consent
 *InvoicesApi* | [**createInvoiceAdjustment**](docs/InvoicesApi.md#createInvoiceAdjustment) | **POST** /invoice-adjustments | Create an invoice adjustment
 *InvoicesApi* | [**createInvoiceAdjustmentReviews**](docs/InvoicesApi.md#createInvoiceAdjustmentReviews) | **POST** /invoice-adjustments/many/reviews | Bulk review invoice adjustments
@@ -521,6 +522,11 @@ Class | Method | HTTP request | Description
  - [CreateBackgroundCheckForContracts201ResponseData](docs/CreateBackgroundCheckForContracts201ResponseData.md)
  - [CreateBackgroundCheckForContractsRequest](docs/CreateBackgroundCheckForContractsRequest.md)
  - [CreateBenefitProviderIntegrationClient200Response](docs/CreateBenefitProviderIntegrationClient200Response.md)
+ - [CreateCase201Response](docs/CreateCase201Response.md)
+ - [CreateCase201ResponseData](docs/CreateCase201ResponseData.md)
+ - [CreateCase201ResponseDataProcess](docs/CreateCase201ResponseDataProcess.md)
+ - [CreateCaseRequest](docs/CreateCaseRequest.md)
+ - [CreateCaseRequestData](docs/CreateCaseRequestData.md)
  - [CreateContract201Response](docs/CreateContract201Response.md)
  - [CreateContract201ResponseData](docs/CreateContract201ResponseData.md)
  - [CreateContract201ResponseDataClient](docs/CreateContract201ResponseDataClient.md)

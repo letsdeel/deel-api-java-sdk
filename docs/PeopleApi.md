@@ -23,7 +23,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Create a direct employee
 
-Create employee hired under your own entity to Deel HR. Manage your employee through Deel and export a payroll report to your own providers.
+Create employee hired under your own entity to Deel HR. Manage your employee through Deel and export a payroll report to your own providers.  **Token scopes**: &#x60;people:write&#x60;
 
 ### Example
 ```java
@@ -170,7 +170,7 @@ No authorization required
 
 Get my current personal profile
 
-Retrieve the current user&#39;s profile.
+Retrieve the current user&#39;s profile.  **Token scopes**: &#x60;people:read&#x60;
 
 ### Example
 ```java
@@ -324,7 +324,7 @@ public class Example {
 
 List of people
 
-Retrieve a list of People in your organization.
+Retrieve a list of People in your organization.  **Token scopes**: &#x60;people:read&#x60;, &#x60;Users:read&#x60;
 
 ### Example
 ```java
@@ -419,7 +419,7 @@ public class Example {
 
 Get personal information by external id
 
-Get worker&#39;s personal information by using an external identifier.
+Get worker&#39;s personal information by using an external identifier.  **Token scopes**: &#x60;people:read&#x60;
 
 ### Example
 ```java
@@ -498,7 +498,7 @@ public class Example {
 
 Get personal information by id
 
-Get worker&#39;s personal information by using identifier.
+Get worker&#39;s personal information by using identifier.  **Token scopes**: &#x60;people:read&#x60;
 
 ### Example
 ```java
@@ -576,6 +576,8 @@ public class Example {
 > UpdatePeopleDepartment200Response updatePeopleDepartment(id, updatePeopleDepartmentRequest).execute();
 
 Update department
+
+undefined  **Token scopes**: &#x60;people:write&#x60;
 
 ### Example
 ```java
@@ -656,7 +658,7 @@ public class Example {
 
 Update personal information by external id
 
-Update worker&#39;s personal information by using an external identifier.
+Update worker&#39;s personal information by using an external identifier.  **Token scopes**: &#x60;people:write&#x60;
 
 ### Example
 ```java
@@ -735,7 +737,7 @@ null (empty response body)
 
 Update personal information
 
-Update worker&#39;s personal information.
+Update worker&#39;s personal information.  **Token scopes**: &#x60;people:write&#x60;
 
 ### Example
 ```java
@@ -813,6 +815,8 @@ null (empty response body)
 > UpdatePeopleDepartment200Response updatePeopleWorkingLocation(id, updatePeopleWorkingLocationRequest).execute();
 
 Update working location
+
+undefined  **Token scopes**: &#x60;people:write&#x60;
 
 ### Example
 ```java

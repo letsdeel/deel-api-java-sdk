@@ -246,7 +246,7 @@ public class GroupsApi {
 
     /**
      * Create a group
-     * Create a new group within your organization.
+     * Create a new group within your organization.  **Token scopes**: &#x60;groups:read&#x60;, &#x60;groups:write&#x60;
      * @param createGroupRequest  (required)
      * @return APIcreateGroupRequest
      * @http.response.details
@@ -428,7 +428,7 @@ public class GroupsApi {
 
     /**
      * Delete a group
-     * Archive an existing group.
+     * Archive an existing group.  **Token scopes**: &#x60;groups:write&#x60;
      * @param id  (required)
      * @return APIdeleteGroupRequest
      * @http.response.details
@@ -618,7 +618,7 @@ public class GroupsApi {
 
     /**
      * Edit a group
-     * Edit the details of an existing group.
+     * Edit the details of an existing group.  **Token scopes**: &#x60;groups:read&#x60;, &#x60;groups:write&#x60;
      * @param id  (required)
      * @param editGroupRequest  (required)
      * @return APIeditGroupRequest
@@ -868,7 +868,7 @@ public class GroupsApi {
 
     /**
      * Return list of groups
-     * List all the groups in your organization.
+     * List all the groups in your organization.  **Token scopes**: &#x60;groups:read&#x60;
      * @return APIgetGroupsRequest
      * @http.response.details
      <table border="1">

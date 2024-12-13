@@ -35,7 +35,7 @@ public class PayrollApiTest {
     /**
      * Get pay stub from employees from organization integrated with external benefits vendor
      *
-     * Get pay stub from employees from organization integrated with external benefits vendor
+     * Get pay stub from employees from organization integrated with external benefits vendor  **Token scopes**: &#x60;organizations:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -60,7 +60,7 @@ public class PayrollApiTest {
     /**
      * Get year to date payment for benefits 401k.
      *
-     * Get year to date from employees from organization integrated with external benefits vendor
+     * Get year to date from employees from organization integrated with external benefits vendor  **Token scopes**: &#x60;organizations:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */

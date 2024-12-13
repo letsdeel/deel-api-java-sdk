@@ -39,7 +39,7 @@ public class Class401KPlansApiTest {
     /**
      * Activate the 401k integration for the legal entity
      *
-     * Activate the 401k integration for the legal entity
+     * Activate the 401k integration for the legal entity  **Token scopes**: &#x60;benefits:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -54,7 +54,7 @@ public class Class401KPlansApiTest {
     /**
      * Delete a 401k plan
      *
-     * Delete a 401k plan
+     * Delete a 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -70,7 +70,7 @@ public class Class401KPlansApiTest {
     /**
      * Get 401k plans for legal entity
      *
-     * Get 401k plans legal entity
+     * Get 401k plans legal entity  **Token scopes**: &#x60;benefits:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -85,7 +85,7 @@ public class Class401KPlansApiTest {
     /**
      * Create 401k plan for legal entity
      *
-     * Create a new 401k plan for existing provider to legal entity
+     * Create a new 401k plan for existing provider to legal entity  **Token scopes**: &#x60;benefits:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -101,7 +101,7 @@ public class Class401KPlansApiTest {
     /**
      * Update 401k plan
      *
-     * Update 401k plan
+     * Update 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */

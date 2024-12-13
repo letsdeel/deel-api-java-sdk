@@ -255,7 +255,7 @@ public class TimeTrackingRatesApi {
 
     /**
      * Create a New Shift Rate
-     * Create a new shift rate with the specified attributes such as name, type, value, and a unique external identifier.
+     * Create a new shift rate with the specified attributes such as name, type, value, and a unique external identifier.  **Token scopes**: &#x60;time-tracking:write&#x60;
      * @return APIcreateShiftRateRequest
      * @http.response.details
      <table border="1">
@@ -434,7 +434,7 @@ public class TimeTrackingRatesApi {
 
     /**
      * Delete a ShiftRate by external ID
-     * Delete a ShiftRate by external ID
+     * Delete a ShiftRate by external ID  **Token scopes**: &#x60;time-tracking:write&#x60;
      * @param externalId external ID (required)
      * @return APIdeleteShiftRateExternalIdRequest
      * @http.response.details
@@ -616,7 +616,7 @@ public class TimeTrackingRatesApi {
 
     /**
      * Retrieve a Shift Rate by External ID
-     * Retrieve details of a specific shift rate using its external ID. The response includes information such as the name, type, value, and unique identifier of the shift rate.
+     * Retrieve details of a specific shift rate using its external ID. The response includes information such as the name, type, value, and unique identifier of the shift rate.  **Token scopes**: &#x60;time-tracking:read&#x60;
      * @param externalId The unique external identifier of the shift rate to retrieve. (required)
      * @return APIgetShiftRateRequest
      * @http.response.details
@@ -816,7 +816,7 @@ public class TimeTrackingRatesApi {
 
     /**
      * Retrieve a Paginated List of Shift Rates
-     * Retrieve a paginated list of shift rates, including details such as rate name, type, value, and timestamps. Pagination parameters can be used to control the size and position of the result set.
+     * Retrieve a paginated list of shift rates, including details such as rate name, type, value, and timestamps. Pagination parameters can be used to control the size and position of the result set.  **Token scopes**: &#x60;time-tracking:read&#x60;
      * @return APIgetShiftRatesRequest
      * @http.response.details
      <table border="1">
@@ -1008,7 +1008,7 @@ public class TimeTrackingRatesApi {
 
     /**
      * Update a shift rate
-     * Update specific fields of an existing shift rate.
+     * Update specific fields of an existing shift rate.  **Token scopes**: &#x60;time-tracking:write&#x60;
      * @param externalId  (required)
      * @param updateShiftRateRequest  (required)
      * @return APIupdateShiftRateRequest

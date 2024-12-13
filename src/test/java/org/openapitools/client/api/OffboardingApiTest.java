@@ -36,7 +36,7 @@ public class OffboardingApiTest {
     /**
      * Retrieve offboarding list
      *
-     * Retrieve offboarding list
+     * Retrieve offboarding list  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -66,7 +66,7 @@ public class OffboardingApiTest {
     /**
      * Retrieve termination details
      *
-     * Retrieve termination details by hris profile oid
+     * Retrieve termination details by hris profile oid  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -81,7 +81,7 @@ public class OffboardingApiTest {
     /**
      * Retrieve termination details
      *
-     * Retrieve termination details by tracker id
+     * Retrieve termination details by tracker id  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */

@@ -234,7 +234,7 @@ public class PositionsApi {
 
     /**
      * Apply changes to positions.
-     * Apply add, edit, and delete operations to profiles.
+     * Apply add, edit, and delete operations to profiles.  **Token scopes**: &#x60;profile:write&#x60;
      * @param applyChangesPositionsRequest  (required)
      * @return APIapplyChangesPositionsRequest
      * @http.response.details
@@ -416,7 +416,7 @@ public class PositionsApi {
 
     /**
      * Fetch HrisPositions from a HrisProfile
-     * 
+     * undefined  **Token scopes**: &#x60;profile:read&#x60;
      * @param hrisProfileId HRIS Profile ID (required)
      * @return APIgetHrisPositionsRequest
      * @http.response.details

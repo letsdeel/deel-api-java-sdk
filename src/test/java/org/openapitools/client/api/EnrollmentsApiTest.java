@@ -39,7 +39,7 @@ public class EnrollmentsApiTest {
     /**
      * Delete enrollment settings from an employee in a 401k plan
      *
-     * Delete enrollment settings from an employee in a 401k plan
+     * Delete enrollment settings from an employee in a 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -57,7 +57,7 @@ public class EnrollmentsApiTest {
     /**
      * Get enrollment settings from an employee in a 401k plan
      *
-     * Get enrollment settings from an employee in a 401k plan
+     * Get enrollment settings from an employee in a 401k plan  **Token scopes**: &#x60;benefits:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -74,7 +74,7 @@ public class EnrollmentsApiTest {
     /**
      * Enroll an employee in a 401k plan
      *
-     * Enroll an employee in a 401k plan
+     * Enroll an employee in a 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -92,7 +92,7 @@ public class EnrollmentsApiTest {
     /**
      * Change enrollment settings from an employee in a 401k plan
      *
-     * Change enrollment settings from an employee in a 401k plan
+     * Change enrollment settings from an employee in a 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */

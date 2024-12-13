@@ -35,7 +35,7 @@ public class EmployeesApiTest {
     /**
      * Get employee from organization integrated with external benefits vendor
      *
-     * Get employee from organization integrated with external benefits vendor
+     * Get employee from organization integrated with external benefits vendor  **Token scopes**: &#x60;Users:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -53,7 +53,7 @@ public class EmployeesApiTest {
     /**
      * Get employees from organization integrated with external benefits vendor
      *
-     * Get employees from organization integrated with external benefits vendor
+     * Get employees from organization integrated with external benefits vendor  **Token scopes**: &#x60;Users:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */

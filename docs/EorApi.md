@@ -99,7 +99,7 @@ public class Example {
 
 Create an EOR contract
 
-Creates an Employee of Record (EOR) contract quote. This endpoint allows to submit details for an EOR contract. Deel will process the information and return a quote for the requested contract.
+Creates an Employee of Record (EOR) contract quote. This endpoint allows to submit details for an EOR contract. Deel will process the information and return a quote for the requested contract.  **Token scopes**: &#x60;contracts:write&#x60;
 
 ### Example
 ```java
@@ -177,7 +177,7 @@ public class Example {
 
 Retrieve Benefits for EOR Contract
 
-Fetch detailed information about benefits associated with a specific Employee of Record (EOR) contract. The benefits include plan details, provider information, and enrollment statuses.
+Fetch detailed information about benefits associated with a specific Employee of Record (EOR) contract. The benefits include plan details, provider information, and enrollment statuses.  **Token scopes**: &#x60;contracts:read&#x60;
 
 ### Example
 ```java
@@ -254,7 +254,7 @@ public class Example {
 
 Retrieve payslip PDF download link
 
-Retrieve a URL to download a specific payslip PDF for a EoR worker. This endpoint is useful for accessing detailed payment records in a portable document format.
+Retrieve a URL to download a specific payslip PDF for a EoR worker. This endpoint is useful for accessing detailed payment records in a portable document format.  **Token scopes**: &#x60;payslips:read&#x60;
 
 ### Example
 ```java
@@ -333,7 +333,7 @@ public class Example {
 
 Retrieve employee payslip records
 
-Retrieve a list of payslip records for a specific employee, detailing payment periods, status, and associated identifiers.
+Retrieve a list of payslip records for a specific employee, detailing payment periods, status, and associated identifiers.  **Token scopes**: &#x60;payslips:read&#x60;
 
 ### Example
 ```java
@@ -410,7 +410,7 @@ public class Example {
 
 Retrieve detailed hiring guide for a country
 
-Retrieve comprehensive hiring guide data for a specific country. This data can be used in creation and validation of Employee of Record (EOR) contract quotes, providing details on salaries, holidays, insurance, and other employment specifics.
+Retrieve comprehensive hiring guide data for a specific country. This data can be used in creation and validation of Employee of Record (EOR) contract quotes, providing details on salaries, holidays, insurance, and other employment specifics.  **Token scopes**: &#x60;contracts:read&#x60;
 
 ### Example
 ```java

@@ -18,7 +18,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Create a new adjustment
 
-Create a new adjustment.
+Create a new adjustment.  **Token scopes**: &#x60;adjustments:write&#x60;
 
 ### Example
 ```java
@@ -94,7 +94,7 @@ public class Example {
 
 Delete an adjustment
 
-Delete an adjustment.
+Delete an adjustment.  **Token scopes**: &#x60;adjustments:write&#x60;
 
 ### Example
 ```java
@@ -170,7 +170,7 @@ public class Example {
 
 Retrieve adjustments
 
-Get all adjustments for the specific contract.
+Get all adjustments for the specific contract.  **Token scopes**: &#x60;adjustments:read&#x60;
 
 ### Example
 ```java
@@ -252,7 +252,7 @@ public class Example {
 
 Retrieve an adjustment
 
-Retrieve an adjustment.
+Retrieve an adjustment.  **Token scopes**: &#x60;adjustments:read&#x60;
 
 ### Example
 ```java
@@ -328,7 +328,7 @@ public class Example {
 
 Retrieve categories
 
-Get all categories for your organization.
+Get all categories for your organization.  **Token scopes**: &#x60;adjustments:read&#x60;
 
 ### Example
 ```java
@@ -400,7 +400,7 @@ This endpoint does not need any parameter.
 
 Update an adjustment
 
-Update an adjustment.
+Update an adjustment.  **Token scopes**: &#x60;adjustments:write&#x60;
 
 ### Example
 ```java

@@ -264,7 +264,7 @@ public class GlobalPayrollApi {
 
     /**
      * Add bank account
-     * Add a new bank account for an employee.
+     * Add a new bank account for an employee.  **Token scopes**: &#x60;people:write&#x60;
      * @param workerId Unique identifier for a worker in UUID format. (required)
      * @param updateGPEmployeeAddressRequest Request body containing the details of the bank account to be added. (required)
      * @return APIaddGpBankAccountRequest
@@ -442,7 +442,7 @@ public class GlobalPayrollApi {
 
     /**
      * Create a contract
-     * Create a Global Payroll contract.
+     * Create a Global Payroll contract.  **Token scopes**: &#x60;contracts:write&#x60;
      * @param createGPContractRequest Global Payroll (GP) contract object that needs to be created (required)
      * @return APIcreateGPContractRequest
      * @http.response.details
@@ -805,7 +805,7 @@ public class GlobalPayrollApi {
 
     /**
      * Download payslip PDF
-     * Get a pre-signed download URL for a GP payslip PDF.
+     * Get a pre-signed download URL for a GP payslip PDF.  **Token scopes**: &#x60;payslips:read&#x60;
      * @param id Unique identifier for the worker. (required)
      * @param payslipId Unique identifier for the payslip. (required)
      * @return APIgetDownloadUrlForGPPayslipRequest
@@ -998,7 +998,7 @@ public class GlobalPayrollApi {
 
     /**
      * List payroll events by legal entity
-     * Get a list of global payroll events by legal entities.
+     * Get a list of global payroll events by legal entities.  **Token scopes**: &#x60;global-payroll:read&#x60;
      * @param id Unique identifier for the legal entity. (required)
      * @return APIgetGPLegalEntitiesRequest
      * @http.response.details
@@ -1175,7 +1175,7 @@ public class GlobalPayrollApi {
 
     /**
      * Retrieve bank accounts
-     * Retrieve all bank accounts for an employee.
+     * Retrieve all bank accounts for an employee.  **Token scopes**: &#x60;people:read&#x60;
      * @param workerId Unique identifier for a worker. (required)
      * @return APIgetGpBankAccountsRequest
      * @http.response.details
@@ -1352,7 +1352,7 @@ public class GlobalPayrollApi {
 
     /**
      * Retrieve bank guide
-     * Retrieve the bank form guide for an employee.
+     * Retrieve the bank form guide for an employee.  **Token scopes**: &#x60;people:read&#x60;
      * @param workerId Unique identifier for a worker in UUID format. (required)
      * @return APIgetGpBankGuideRequest
      * @http.response.details
@@ -1529,7 +1529,7 @@ public class GlobalPayrollApi {
 
     /**
      * List gross-to-net report
-     * Get a list of global payroll reports detailing gross-to-net calculations.
+     * Get a list of global payroll reports detailing gross-to-net calculations.  **Token scopes**: &#x60;global-payroll:read&#x60;
      * @param id Unique identifier for the payroll report in UUID format. (required)
      * @return APIgetGrossToNetGPReportsRequest
      * @http.response.details
@@ -1706,7 +1706,7 @@ public class GlobalPayrollApi {
 
     /**
      * Retrieve employee payslips
-     * Get a list of payslips for an employee.
+     * Get a list of payslips for an employee.  **Token scopes**: &#x60;payslips:read&#x60;
      * @param id Unique identifier for the worker. (required)
      * @return APIgetWorkerPayslipsRequest
      * @http.response.details
@@ -1903,7 +1903,7 @@ public class GlobalPayrollApi {
 
     /**
      * Modify bank account
-     * Modify bank account for an employee.
+     * Modify bank account for an employee.  **Token scopes**: &#x60;people:write&#x60;
      * @param workerId Unique identifier for a worker in UUID format. (required)
      * @param bankId Unique identifier for the bank account in UUID format. (required)
      * @param updateGPEmployeeAddressRequestData Request body to modify an existing bank account for an employee. (required)
@@ -2091,7 +2091,7 @@ public class GlobalPayrollApi {
 
     /**
      * Request termination
-     * Request a termination for a global payroll employee. A successful call starts the termination process and does not confirm termination.
+     * Request a termination for a global payroll employee. A successful call starts the termination process and does not confirm termination.  **Token scopes**: &#x60;global-payroll:write&#x60;
      * @param workerId Unique identifier for a worker in UUID format. (required)
      * @param requestTerminationRequest Request body to request a termination for an employee. (required)
      * @return APIrequestTerminationRequest
@@ -2281,7 +2281,7 @@ public class GlobalPayrollApi {
 
     /**
      * Update address
-     * Update the address of a Global Payroll employee.
+     * Update the address of a Global Payroll employee.  **Token scopes**: &#x60;people:write&#x60;
      * @param workerId Unique identifier for a worker in UUID format. (required)
      * @param updateGPEmployeeAddressRequest Request body containing the new address and related details. (required)
      * @return APIupdateGPEmployeeAddressRequest
@@ -2468,7 +2468,7 @@ public class GlobalPayrollApi {
 
     /**
      * Update compensation
-     * Update the compensation of a Global Payroll employee. Returns the full compensation history including the update.
+     * Update the compensation of a Global Payroll employee. Returns the full compensation history including the update.  **Token scopes**: &#x60;people:write&#x60;
      * @param workerId Unique identifier for a worker in UUID format. (required)
      * @param updateGPEmployeeCompensationRequest Request body containing the data to update the compensation of the employee. (required)
      * @return APIupdateGPEmployeeCompensationRequest
@@ -2658,7 +2658,7 @@ public class GlobalPayrollApi {
 
     /**
      * Update employee information
-     * Update Global Payroll employee information.
+     * Update Global Payroll employee information.  **Token scopes**: &#x60;people:write&#x60;
      * @param workerId Unique identifier for a worker in UUID format. (required)
      * @param updateGPEmployeeInformationRequest  (required)
      * @return APIupdateGPEmployeeInformationRequest
@@ -2845,7 +2845,7 @@ public class GlobalPayrollApi {
 
     /**
      * Update PTO policy
-     * Update the PTO policy of a Global Payroll employee.
+     * Update the PTO policy of a Global Payroll employee.  **Token scopes**: &#x60;people:write&#x60;
      * @param workerId Unique identifier for a worker in UUID format. (required)
      * @param updateGPEmployeePtoRequest Contract object that needs to be amended. (required)
      * @return APIupdateGPEmployeePtoRequest

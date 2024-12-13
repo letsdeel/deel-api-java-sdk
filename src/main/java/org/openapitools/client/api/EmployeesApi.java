@@ -240,7 +240,7 @@ public class EmployeesApi {
 
     /**
      * Get employee from organization integrated with external benefits vendor
-     * Get employee from organization integrated with external benefits vendor
+     * Get employee from organization integrated with external benefits vendor  **Token scopes**: &#x60;Users:read&#x60;
      * @param id Id from the legal entity to fetch data (required)
      * @param employeeId Employee id from the legal entity to fetch data (required)
      * @return APIgetBenefitEmployeeRequest
@@ -443,7 +443,7 @@ public class EmployeesApi {
 
     /**
      * Get employees from organization integrated with external benefits vendor
-     * Get employees from organization integrated with external benefits vendor
+     * Get employees from organization integrated with external benefits vendor  **Token scopes**: &#x60;Users:read&#x60;
      * @param id Id from the legal entity to fetch data (required)
      * @return APIgetBenefitEmployeesRequest
      * @http.response.details

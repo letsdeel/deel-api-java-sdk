@@ -44,7 +44,7 @@ public class GroupsApiTest {
     /**
      * Create a group
      *
-     * Create a new group within your organization.
+     * Create a new group within your organization.  **Token scopes**: &#x60;groups:read&#x60;, &#x60;groups:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -59,7 +59,7 @@ public class GroupsApiTest {
     /**
      * Delete a group
      *
-     * Archive an existing group.
+     * Archive an existing group.  **Token scopes**: &#x60;groups:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -74,7 +74,7 @@ public class GroupsApiTest {
     /**
      * Edit a group
      *
-     * Edit the details of an existing group.
+     * Edit the details of an existing group.  **Token scopes**: &#x60;groups:read&#x60;, &#x60;groups:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -90,7 +90,7 @@ public class GroupsApiTest {
     /**
      * Return list of groups
      *
-     * List all the groups in your organization.
+     * List all the groups in your organization.  **Token scopes**: &#x60;groups:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */

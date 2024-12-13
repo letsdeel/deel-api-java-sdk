@@ -285,7 +285,7 @@ public class ContractsApi {
 
     /**
      * Attach a file to contract
-     * Attach a file to contract document.
+     * Attach a file to contract document.  **Token scopes**: &#x60;contracts:write&#x60;
      * @param contractId Deel contract id. (required)
      * @return APIaddContractDocumentRequest
      * @http.response.details
@@ -477,7 +477,7 @@ public class ContractsApi {
 
     /**
      * Approve an equity exercise
-     * Approve an equity exercise.
+     * Approve an equity exercise.  **Token scopes**: &#x60;contracts:write&#x60;
      * @param publicId Equity exercise public ID. (required)
      * @param approveExerciseEquityRequest  (required)
      * @return APIapproveExerciseEquityRequest
@@ -1452,7 +1452,7 @@ public class ContractsApi {
 
     /**
      * Retrieve a single contract
-     * Retrieve a single contract.
+     * Retrieve a single contract.  **Token scopes**: &#x60;contracts:read&#x60;
      * @param contractId Deel contract id. (required)
      * @return APIgetContractByIdRequest
      * @http.response.details
@@ -1801,7 +1801,7 @@ public class ContractsApi {
 
     /**
      * List of contracts
-     * Retrieve a list of contracts.
+     * Retrieve a list of contracts.  **Token scopes**: &#x60;contracts:read&#x60;
      * @return APIgetContractListRequest
      * @http.response.details
      <table border="1">
@@ -1976,7 +1976,7 @@ public class ContractsApi {
 
     /**
      * Retrieve contractor payment dates
-     * Fetches a list of payment dates associated with a specific contract. This endpoint provides information on when contractors are scheduled to be paid, along with the current status of each payment cycle.
+     * Fetches a list of payment dates associated with a specific contract. This endpoint provides information on when contractors are scheduled to be paid, along with the current status of each payment cycle.  **Token scopes**: &#x60;contracts:read&#x60;
      * @param contractId The Deel contract ID for which payment dates are being retrieved. (required)
      * @return APIgetContractPaymentDatesRequest
      * @http.response.details
@@ -2156,7 +2156,7 @@ public class ContractsApi {
 
     /**
      * Retrieve contract templates
-     * Fetches a collection of contract templates available within your organization. Use this endpoint to retrieve metadata about the templates.
+     * Fetches a collection of contract templates available within your organization. Use this endpoint to retrieve metadata about the templates.  **Token scopes**: &#x60;contracts:read&#x60;
      * @return APIgetContractTemplatesRequest
      * @http.response.details
      <table border="1">
@@ -2533,7 +2533,7 @@ public class ContractsApi {
 
     /**
      * Get worker invite link
-     * Get invite link generated for worker
+     * Get invite link generated for worker  **Token scopes**: &#x60;contracts:read&#x60;
      * @param contractId Deel contract id. (required)
      * @return APIgetInviteLinkRequest
      * @http.response.details
@@ -2910,7 +2910,7 @@ public class ContractsApi {
 
     /**
      * Send contract to worker
-     * Invite a worker to sign the contract. Worker will be notified via email
+     * Invite a worker to sign the contract. Worker will be notified via email  **Token scopes**: &#x60;contracts:write&#x60;
      * @param contractId Deel contract id. (required)
      * @param inviteToSignContractRequest  (required)
      * @return APIinviteToSignContractRequest
@@ -3095,7 +3095,7 @@ public class ContractsApi {
 
     /**
      * Create a request to exercise equity.
-     * Create a request to exercise equity.
+     * Create a request to exercise equity.  **Token scopes**: &#x60;contracts:write&#x60;
      * @param requestExerciseEquityRequest  (required)
      * @return APIrequestExerciseEquityRequest
      * @http.response.details
@@ -3293,7 +3293,7 @@ public class ContractsApi {
 
     /**
      * Sign a contract
-     * Sign a contract as a client.
+     * Sign a contract as a client.  **Token scopes**: &#x60;contracts:write&#x60;
      * @param contractId Deel contract id. (required)
      * @param signContractRequest  (required)
      * @return APIsignContractRequest
@@ -3486,7 +3486,7 @@ public class ContractsApi {
 
     /**
      * Remove invite
-     * Remove invite in order to re-invite a worker to sign the contract
+     * Remove invite in order to re-invite a worker to sign the contract  **Token scopes**: &#x60;contracts:write&#x60;
      * @param contractId Deel contract id. (required)
      * @return APIuninviteToSignContractRequest
      * @http.response.details

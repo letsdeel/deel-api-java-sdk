@@ -248,7 +248,7 @@ public class BackgroundChecksApi {
 
     /**
      * Create background check
-     * Create background check.
+     * Create background check.  **Token scopes**: &#x60;contracts:write&#x60;
      * @param createBackgroundCheckForContractsRequest Request body to create a background check for one or more contracts. (required)
      * @return APIcreateBackgroundCheckForContractsRequest
      * @http.response.details
@@ -440,7 +440,7 @@ public class BackgroundChecksApi {
 
     /**
      * List background checks by contract
-     * List background checks by contract.
+     * List background checks by contract.  **Token scopes**: &#x60;contracts:read&#x60;
      * @param contractId Deel contract id. (required)
      * @return APIgetBackgroundChecksByContractIdRequest
      * @http.response.details
@@ -654,7 +654,7 @@ public class BackgroundChecksApi {
 
     /**
      * List of background check options
-     * Retrieve the list of background check options.
+     * Retrieve the list of background check options.  **Token scopes**: &#x60;contracts:read&#x60;
      * @return APIgetBackgroundChecksOptionsRequest
      * @http.response.details
      <table border="1">

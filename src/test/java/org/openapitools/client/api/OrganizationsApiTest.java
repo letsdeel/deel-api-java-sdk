@@ -52,7 +52,7 @@ public class OrganizationsApiTest {
     /**
      * Create organization custom role.
      *
-     * Create organization custom role.
+     * Create organization custom role.  **Token scopes**: &#x60;organizations:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -67,7 +67,7 @@ public class OrganizationsApiTest {
     /**
      * Retrieve Departments
      *
-     * Retrieve a list of departments within the organization associated with the authenticated user. Each department contains its unique identifier, name, and optionally, the parent department if applicable.
+     * Retrieve a list of departments within the organization associated with the authenticated user. Each department contains its unique identifier, name, and optionally, the parent department if applicable.  **Token scopes**: &#x60;organizations:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -81,7 +81,7 @@ public class OrganizationsApiTest {
     /**
      * List of legal entities
      *
-     * Retrieve a list of legal entities in your account.
+     * Retrieve a list of legal entities in your account.  **Token scopes**: &#x60;organizations:read&#x60;, &#x60;accounting:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -97,7 +97,7 @@ public class OrganizationsApiTest {
     /**
      * Get the roles of the current organization.
      *
-     * Retrieve a list of roles assigned within the current organization. Each role has a unique identifier, name, scope, and optional HRIS structure ID. This helps determine the types of roles within the organization and their corresponding access levels.
+     * Retrieve a list of roles assigned within the current organization. Each role has a unique identifier, name, scope, and optional HRIS structure ID. This helps determine the types of roles within the organization and their corresponding access levels.  **Token scopes**: &#x60;organizations:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -111,7 +111,7 @@ public class OrganizationsApiTest {
     /**
      * Get Current Organization
      *
-     * Retrieve details of the current organization associated with the authenticated user. The organization is automatically detected based on the authentication token provided in the request.
+     * Retrieve details of the current organization associated with the authenticated user. The organization is automatically detected based on the authentication token provided in the request.  **Token scopes**: &#x60;organizations:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -125,7 +125,7 @@ public class OrganizationsApiTest {
     /**
      * Get Team List
      *
-     * Retrieve a list of teams within the organization associated with the authenticated user. This list provides basic details about each team, including the team ID and name.
+     * Retrieve a list of teams within the organization associated with the authenticated user. This list provides basic details about each team, including the team ID and name.  **Token scopes**: &#x60;organizations:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -152,6 +152,8 @@ public class OrganizationsApiTest {
 
     /**
      * Update organization custom role
+     *
+     * undefined  **Token scopes**: &#x60;organizations:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */

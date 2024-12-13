@@ -13,7 +13,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Create a single deduction loan
 
-Create a single deduction loan
+Create a single deduction loan  **Token scopes**: &#x60;benefits:write&#x60;
 
 ### Example
 ```java

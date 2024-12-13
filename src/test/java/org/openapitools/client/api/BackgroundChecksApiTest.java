@@ -38,7 +38,7 @@ public class BackgroundChecksApiTest {
     /**
      * Create background check
      *
-     * Create background check.
+     * Create background check.  **Token scopes**: &#x60;contracts:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -53,7 +53,7 @@ public class BackgroundChecksApiTest {
     /**
      * List background checks by contract
      *
-     * List background checks by contract.
+     * List background checks by contract.  **Token scopes**: &#x60;contracts:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -68,7 +68,7 @@ public class BackgroundChecksApiTest {
     /**
      * List of background check options
      *
-     * Retrieve the list of background check options.
+     * Retrieve the list of background check options.  **Token scopes**: &#x60;contracts:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */

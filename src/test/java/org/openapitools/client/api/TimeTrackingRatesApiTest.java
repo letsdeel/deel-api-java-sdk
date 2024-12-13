@@ -41,7 +41,7 @@ public class TimeTrackingRatesApiTest {
     /**
      * Create a New Shift Rate
      *
-     * Create a new shift rate with the specified attributes such as name, type, value, and a unique external identifier.
+     * Create a new shift rate with the specified attributes such as name, type, value, and a unique external identifier.  **Token scopes**: &#x60;time-tracking:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -57,7 +57,7 @@ public class TimeTrackingRatesApiTest {
     /**
      * Delete a ShiftRate by external ID
      *
-     * Delete a ShiftRate by external ID
+     * Delete a ShiftRate by external ID  **Token scopes**: &#x60;time-tracking:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -72,7 +72,7 @@ public class TimeTrackingRatesApiTest {
     /**
      * Retrieve a Shift Rate by External ID
      *
-     * Retrieve details of a specific shift rate using its external ID. The response includes information such as the name, type, value, and unique identifier of the shift rate.
+     * Retrieve details of a specific shift rate using its external ID. The response includes information such as the name, type, value, and unique identifier of the shift rate.  **Token scopes**: &#x60;time-tracking:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -87,7 +87,7 @@ public class TimeTrackingRatesApiTest {
     /**
      * Retrieve a Paginated List of Shift Rates
      *
-     * Retrieve a paginated list of shift rates, including details such as rate name, type, value, and timestamps. Pagination parameters can be used to control the size and position of the result set.
+     * Retrieve a paginated list of shift rates, including details such as rate name, type, value, and timestamps. Pagination parameters can be used to control the size and position of the result set.  **Token scopes**: &#x60;time-tracking:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -105,7 +105,7 @@ public class TimeTrackingRatesApiTest {
     /**
      * Update a shift rate
      *
-     * Update specific fields of an existing shift rate.
+     * Update specific fields of an existing shift rate.  **Token scopes**: &#x60;time-tracking:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */

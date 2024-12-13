@@ -17,7 +17,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Create a new task
 
-Create a new task for a contractor associated with a specific Deel contract. A task can include details like amount, description, submission date, and optional attachments.
+Create a new task for a contractor associated with a specific Deel contract. A task can include details like amount, description, submission date, and optional attachments.  **Token scopes**: &#x60;contracts:write&#x60;
 
 ### Example
 ```java
@@ -98,7 +98,7 @@ public class Example {
 
 Review multiple tasks
 
-Review multiple tasks associated with a Deel contract to approve or decline the submitted work. The review includes a status (approved or declined) for each task and an optional reason for declined tasks.
+Review multiple tasks associated with a Deel contract to approve or decline the submitted work. The review includes a status (approved or declined) for each task and an optional reason for declined tasks.  **Token scopes**: &#x60;contracts:write&#x60;
 
 ### Example
 ```java
@@ -179,7 +179,7 @@ public class Example {
 
 Review a single task
 
-Review a specific task associated with a Deel contract to approve or decline the submitted work. The review includes the status (approved or declined) and an optional reason if declined.
+Review a specific task associated with a Deel contract to approve or decline the submitted work. The review includes the status (approved or declined) and an optional reason if declined.  **Token scopes**: &#x60;contracts:write&#x60;
 
 ### Example
 ```java
@@ -262,7 +262,7 @@ public class Example {
 
 Delete task
 
-Delete a specific task associated with the contract. Optionally, a reason can be provided for auditing or documentation purposes.
+Delete a specific task associated with the contract. Optionally, a reason can be provided for auditing or documentation purposes.  **Token scopes**: &#x60;contracts:write&#x60;
 
 ### Example
 ```java
@@ -346,7 +346,7 @@ public class Example {
 
 List of tasks
 
-Retrieve a list of tasks associated with a specific contract. Each task contains details such as its ID, amount, submission date, status, and description. This endpoint is useful for tracking the progress and status of tasks related to contracts.
+Retrieve a list of tasks associated with a specific contract. Each task contains details such as its ID, amount, submission date, status, and description. This endpoint is useful for tracking the progress and status of tasks related to contracts.  **Token scopes**: &#x60;contracts:read&#x60;
 
 ### Example
 ```java

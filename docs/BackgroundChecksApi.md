@@ -15,7 +15,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Create background check
 
-Create background check.
+Create background check.  **Token scopes**: &#x60;contracts:write&#x60;
 
 ### Example
 ```java
@@ -94,7 +94,7 @@ public class Example {
 
 List background checks by contract
 
-List background checks by contract.
+List background checks by contract.  **Token scopes**: &#x60;contracts:read&#x60;
 
 ### Example
 ```java
@@ -173,7 +173,7 @@ public class Example {
 
 List of background check options
 
-Retrieve the list of background check options.
+Retrieve the list of background check options.  **Token scopes**: &#x60;contracts:read&#x60;
 
 ### Example
 ```java

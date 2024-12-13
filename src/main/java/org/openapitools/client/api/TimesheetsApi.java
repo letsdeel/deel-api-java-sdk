@@ -264,7 +264,7 @@ public class TimesheetsApi {
 
     /**
      * Create a timesheet entry
-     * Submit work for a contractor.
+     * Submit work for a contractor.  **Token scopes**: &#x60;timesheets:write&#x60;
      * @param createTimesheetRequest Timesheet object that needs to be created (required)
      * @return APIcreateTimesheetRequest
      * @http.response.details
@@ -464,7 +464,7 @@ public class TimesheetsApi {
 
     /**
      * Review a single timesheet
-     * Review a timesheet to approve or decline submitted work.
+     * Review a timesheet to approve or decline submitted work.  **Token scopes**: &#x60;timesheets:write&#x60;
      * @param id ID of an existing timesheet (required)
      * @param createTimesheetReviewRequest  (required)
      * @return APIcreateTimesheetReviewRequest
@@ -867,7 +867,7 @@ public class TimesheetsApi {
 
     /**
      * Delete a timesheet entry
-     * Delete a single timesheet entry.
+     * Delete a single timesheet entry.  **Token scopes**: &#x60;timesheets:write&#x60;
      * @param id ID of an existing timesheet (required)
      * @return APIdeleteTimesheetByIdRequest
      * @http.response.details
@@ -1059,7 +1059,7 @@ public class TimesheetsApi {
 
     /**
      * Retrieve a single timesheet entry
-     * Retrieve a single timesheet entry by Id.
+     * Retrieve a single timesheet entry by Id.  **Token scopes**: &#x60;timesheets:read&#x60;
      * @param id ID of an existing timesheet (required)
      * @return APIgetTimesheetByIdRequest
      * @http.response.details
@@ -1363,7 +1363,7 @@ public class TimesheetsApi {
 
     /**
      * List of timesheets
-     * Retrieve a list of timesheets in your Deel account. You can filter the list by providing additional paramters e.g. contract_id, contract_type etc.
+     * Retrieve a list of timesheets in your Deel account. You can filter the list by providing additional paramters e.g. contract_id, contract_type etc.  **Token scopes**: &#x60;timesheets:read&#x60;
      * @return APIgetTimesheetsRequest
      * @http.response.details
      <table border="1">
@@ -1659,7 +1659,7 @@ public class TimesheetsApi {
 
     /**
      * List of timesheets by contract
-     * Retrieve a list of timesheets found for a contract.
+     * Retrieve a list of timesheets found for a contract.  **Token scopes**: &#x60;timesheets:read&#x60;
      * @param contractId Deel contract id. (required)
      * @return APIgetTimesheetsByContractRequest
      * @http.response.details
@@ -1863,7 +1863,7 @@ public class TimesheetsApi {
 
     /**
      * Update a timesheet entry
-     * Update a single timesheet entry.
+     * Update a single timesheet entry.  **Token scopes**: &#x60;timesheets:write&#x60;
      * @param id ID of an existing timesheet. (required)
      * @param updateTimesheetByIdRequest  (required)
      * @return APIupdateTimesheetByIdRequest

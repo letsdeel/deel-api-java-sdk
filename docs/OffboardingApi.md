@@ -15,7 +15,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Retrieve offboarding list
 
-Retrieve offboarding list
+Retrieve offboarding list  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
 
 ### Example
 ```java
@@ -109,7 +109,7 @@ public class Example {
 
 Retrieve termination details
 
-Retrieve termination details by hris profile oid
+Retrieve termination details by hris profile oid  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
 
 ### Example
 ```java
@@ -181,7 +181,7 @@ public class Example {
 
 Retrieve termination details
 
-Retrieve termination details by tracker id
+Retrieve termination details by tracker id  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
 
 ### Example
 ```java

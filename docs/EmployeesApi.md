@@ -14,7 +14,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Get employee from organization integrated with external benefits vendor
 
-Get employee from organization integrated with external benefits vendor
+Get employee from organization integrated with external benefits vendor  **Token scopes**: &#x60;Users:read&#x60;
 
 ### Example
 ```java
@@ -91,7 +91,7 @@ public class Example {
 
 Get employees from organization integrated with external benefits vendor
 
-Get employees from organization integrated with external benefits vendor
+Get employees from organization integrated with external benefits vendor  **Token scopes**: &#x60;Users:read&#x60;
 
 ### Example
 ```java

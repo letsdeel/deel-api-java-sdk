@@ -17,7 +17,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Download invoice PDF
 
-Get a link to download the invoice PDF.
+Get a link to download the invoice PDF.  **Token scopes**: &#x60;accounting:read&#x60;
 
 ### Example
 ```java
@@ -177,7 +177,7 @@ public class Example {
 
 Retrieve invoices
 
-Retrieve a list of paid invoices for your workforce.
+Retrieve a list of paid invoices for your workforce.  **Token scopes**: &#x60;accounting:read&#x60;
 
 ### Example
 ```java
@@ -267,7 +267,7 @@ public class Example {
 
 Retrieve payment receipts
 
-Retrieve a list of payments made to Deel, including worker details, payment status, and payment methods.
+Retrieve a list of payments made to Deel, including worker details, payment status, and payment methods.  **Token scopes**: &#x60;accounting:read&#x60;
 
 ### Example
 ```java
@@ -354,7 +354,7 @@ public class Example {
 
 Retrieve a payment breakdown
 
-Get a full breakdown of a payment made to Deel. Breakdown will include individual invoices and Deel fee as line items.
+Get a full breakdown of a payment made to Deel. Breakdown will include individual invoices and Deel fee as line items.  **Token scopes**: &#x60;accounting:read&#x60;
 
 ### Example
 ```java

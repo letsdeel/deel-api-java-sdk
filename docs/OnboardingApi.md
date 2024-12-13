@@ -15,7 +15,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 List onboarding employees
 
-List all onboarding
+List all onboarding  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
 
 ### Example
 ```java
@@ -133,7 +133,7 @@ public class Example {
 
 Get onboarding details by onboarding hris profile oid
 
-Get onboarding overview
+Get onboarding overview  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
 
 ### Example
 ```java
@@ -205,7 +205,7 @@ public class Example {
 
 Get onboarding details by onboarding tracker ID
 
-Get onboarding overview
+Get onboarding overview  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;people:read&#x60;
 
 ### Example
 ```java

@@ -30,7 +30,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Create child worker relation with external Id
 
-Create child worker relation with external Id.
+Create child worker relation with external Id.  **Token scopes**: &#x60;profile:write&#x60;
 
 ### Example
 ```java
@@ -108,7 +108,7 @@ null (empty response body)
 
 Create a parent worker relation with external id
 
-Create a parent worker relation with external id.
+Create a parent worker relation with external id.  **Token scopes**: &#x60;profile:write&#x60;
 
 ### Example
 ```java
@@ -186,7 +186,7 @@ null (empty response body)
 
 Create a worker relation
 
-Create a hierarchical relation between a worker and its subordinates.
+Create a hierarchical relation between a worker and its subordinates.  **Token scopes**: &#x60;profile:write&#x60;
 
 ### Example
 ```java
@@ -262,7 +262,7 @@ null (empty response body)
 
 Create worker relation with external Ids
 
-Create a hierarchical relation between a worker and its subordinates using external IDs to identify them.
+Create a hierarchical relation between a worker and its subordinates using external IDs to identify them.  **Token scopes**: &#x60;profile:write&#x60;
 
 ### Example
 ```java
@@ -338,7 +338,7 @@ null (empty response body)
 
 Create worker relation type
 
-Create worker relation type.
+Create worker relation type.  **Token scopes**: &#x60;organizations:write&#x60;
 
 ### Example
 ```java
@@ -415,7 +415,7 @@ public class Example {
 
 Delete a worker relation
 
-Delete a worker relation.
+Delete a worker relation.  **Token scopes**: &#x60;profile:write&#x60;
 
 ### Example
 ```java
@@ -491,7 +491,7 @@ null (empty response body)
 
 Delete a worker relation by external id
 
-Delete a worker relation by external id.
+Delete a worker relation by external id.  **Token scopes**: &#x60;profile:write&#x60;
 
 ### Example
 ```java
@@ -567,7 +567,7 @@ null (empty response body)
 
 Delete a worker relation type
 
-Delete a worker relation type.
+Delete a worker relation type.  **Token scopes**: &#x60;organizations:write&#x60;
 
 ### Example
 ```java
@@ -643,7 +643,7 @@ null (empty response body)
 
 Delete a worker relation type by external id
 
-Delete a Worker Relation Type by the external ID.
+Delete a Worker Relation Type by the external ID.  **Token scopes**: &#x60;organizations:write&#x60;
 
 ### Example
 ```java
@@ -719,7 +719,7 @@ null (empty response body)
 
 List of worker relations
 
-List of worker relations.
+List of worker relations.  **Token scopes**: &#x60;profile:read&#x60;
 
 ### Example
 ```java
@@ -796,7 +796,7 @@ public class Example {
 
 Fetch Worker Relations of a given HrisProfile by external id
 
-Fetch Worker Relations of a given HrisProfile by external id.
+Fetch Worker Relations of a given HrisProfile by external id.  **Token scopes**: &#x60;profile:read&#x60;
 
 ### Example
 ```java
@@ -873,7 +873,7 @@ public class Example {
 
 Retrieve all worker relation types
 
-Retrieve all worker relation types.
+Retrieve all worker relation types.  **Token scopes**: &#x60;organizations:read&#x60;
 
 ### Example
 ```java
@@ -946,7 +946,7 @@ This endpoint does not need any parameter.
 
 Update a worker relation type
 
-Update a worker relation type.
+Update a worker relation type.  **Token scopes**: &#x60;organizations:write&#x60;
 
 ### Example
 ```java
@@ -1025,7 +1025,7 @@ public class Example {
 
 Update a worker relation type by external id
 
-Update a worker relation type by external id.
+Update a worker relation type by external id.  **Token scopes**: &#x60;organizations:write&#x60;
 
 ### Example
 ```java
@@ -1104,7 +1104,7 @@ public class Example {
 
 Create child worker relation
 
-Create child worker relation.
+Create child worker relation.  **Token scopes**: &#x60;profile:write&#x60;
 
 ### Example
 ```java
@@ -1182,7 +1182,7 @@ null (empty response body)
 
 Create child worker relation with external Id
 
-Create child worker relation with external Id.
+Create child worker relation with external Id.  **Token scopes**: &#x60;profile:write&#x60;
 
 ### Example
 ```java
@@ -1255,7 +1255,7 @@ null (empty response body)
 
 Create a parent worker relation
 
-Create a parent worker relation.
+Create a parent worker relation.  **Token scopes**: &#x60;profile:write&#x60;
 
 ### Example
 ```java
@@ -1333,7 +1333,7 @@ null (empty response body)
 
 Create a parent worker relation with external id
 
-Create a parent worker relation with external id.
+Create a parent worker relation with external id.  **Token scopes**: &#x60;profile:write&#x60;
 
 ### Example
 ```java

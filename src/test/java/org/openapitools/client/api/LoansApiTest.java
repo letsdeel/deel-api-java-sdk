@@ -35,7 +35,7 @@ public class LoansApiTest {
     /**
      * Create a single deduction loan
      *
-     * Create a single deduction loan
+     * Create a single deduction loan  **Token scopes**: &#x60;benefits:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */

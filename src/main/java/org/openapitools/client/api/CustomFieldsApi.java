@@ -248,7 +248,7 @@ public class CustomFieldsApi {
 
     /**
      * Delete Contract custom field by Id
-     * Removes the custom field value from the contract custom field.
+     * Removes the custom field value from the contract custom field.  **Token scopes**: &#x60;contracts:write&#x60;
      * @param id Custom field id. (required)
      * @param contractId Contract id. (required)
      * @return APIdeleteContractCustomFieldRequest
@@ -435,7 +435,7 @@ public class CustomFieldsApi {
 
     /**
      * Delete the custom field value from Worker by Id
-     * Delete the custom field value from Worker by Id.
+     * Delete the custom field value from Worker by Id.  **Token scopes**: &#x60;people:write&#x60;
      * @param id Custom field id. (required)
      * @param workerId Worker id. (required)
      * @return APIdeleteCustomFieldValueFromWorkerRequest
@@ -618,7 +618,7 @@ public class CustomFieldsApi {
 
     /**
      * Get custom fields from contracts
-     * Get custom field from contract by id
+     * Get custom field from contract by id  **Token scopes**: &#x60;contracts:read&#x60;
      * @param id Custom field id. (required)
      * @return APIgetCustomFieldFromContractsByIdRequest
      * @http.response.details
@@ -800,7 +800,7 @@ public class CustomFieldsApi {
 
     /**
      * Get custom field from people by id
-     * Get custom field from people by id.
+     * Get custom field from people by id.  **Token scopes**: &#x60;people:read&#x60;
      * @param id Custom field id. (required)
      * @return APIgetCustomFieldFromPeopleByIdRequest
      * @http.response.details
@@ -982,7 +982,7 @@ public class CustomFieldsApi {
 
     /**
      * Retrieve custom fields for a contract
-     * Retrieve custom fields for a contract.
+     * Retrieve custom fields for a contract.  **Token scopes**: &#x60;contracts:read&#x60;
      * @param contractId Contract Id (required)
      * @return APIgetCustomFieldValuesFromContractRequest
      * @http.response.details
@@ -1164,7 +1164,7 @@ public class CustomFieldsApi {
 
     /**
      * Retrieve custom fields for a worker
-     * Retrieve custom fields for a worker
+     * Retrieve custom fields for a worker  **Token scopes**: &#x60;people:read&#x60;
      * @param workerId Worker id. (required)
      * @return APIgetCustomFieldValuesFromWorkerRequest
      * @http.response.details
@@ -1338,7 +1338,7 @@ public class CustomFieldsApi {
 
     /**
      * List all custom fields
-     * Fetch all custom fields associated with contracts, providing additional data necessary for contract management.
+     * Fetch all custom fields associated with contracts, providing additional data necessary for contract management.  **Token scopes**: &#x60;contracts:read&#x60;
      * @return APIgetCustomFieldsFromContractsRequest
      * @http.response.details
      <table border="1">
@@ -1511,7 +1511,7 @@ public class CustomFieldsApi {
 
     /**
      * List all custom fields
-     * Fetch all custom fields associated with People records, offering additional personalized information.
+     * Fetch all custom fields associated with People records, offering additional personalized information.  **Token scopes**: &#x60;people:read&#x60;
      * @return APIgetCustomFieldsFromPeopleRequest
      * @http.response.details
      <table border="1">
@@ -1696,7 +1696,7 @@ public class CustomFieldsApi {
 
     /**
      * Update custom field value
-     * Update custom field value.
+     * Update custom field value.  **Token scopes**: &#x60;contracts:write&#x60;
      * @param contractId Contract id. (required)
      * @param upsertCustomFieldValueFromContractsRequest  (required)
      * @return APIupsertCustomFieldValueFromContractsRequest
@@ -1883,7 +1883,7 @@ public class CustomFieldsApi {
 
     /**
      * Update custom field value
-     * Update custom field value.
+     * Update custom field value.  **Token scopes**: &#x60;people:write&#x60;
      * @param workerId Worker id. (required)
      * @param upsertCustomFieldValueFromWorkerRequest  (required)
      * @return APIupsertCustomFieldValueFromWorkerRequest

@@ -221,7 +221,7 @@ public class Class401KPlansApi {
 
     /**
      * Activate the 401k integration for the legal entity
-     * Activate the 401k integration for the legal entity
+     * Activate the 401k integration for the legal entity  **Token scopes**: &#x60;benefits:write&#x60;
      * @param id Id from the legal entity to activate 401k integration (required)
      * @return APIcreateBenefitProviderIntegrationClientRequest
      * @http.response.details
@@ -386,7 +386,7 @@ public class Class401KPlansApi {
 
     /**
      * Delete a 401k plan
-     * Delete a 401k plan
+     * Delete a 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
      * @param id Legal entity id which plans belongs (required)
      * @param planId Plan id (required)
      * @return APIdelete401kPlanDefinitionRequest
@@ -544,7 +544,7 @@ public class Class401KPlansApi {
 
     /**
      * Get 401k plans for legal entity
-     * Get 401k plans legal entity
+     * Get 401k plans legal entity  **Token scopes**: &#x60;benefits:read&#x60;
      * @param id Id from the legal entity to fetch 401k plans (required)
      * @return APIget401kPlansDefinitionRequest
      * @http.response.details
@@ -709,7 +709,7 @@ public class Class401KPlansApi {
 
     /**
      * Create 401k plan for legal entity
-     * Create a new 401k plan for existing provider to legal entity
+     * Create a new 401k plan for existing provider to legal entity  **Token scopes**: &#x60;benefits:write&#x60;
      * @param id Id from the legal entity to receive a new 401k plan (required)
      * @param post401kPlansDefinitionRequest  (required)
      * @return APIpost401kPlansDefinitionRequest
@@ -883,7 +883,7 @@ public class Class401KPlansApi {
 
     /**
      * Update 401k plan
-     * Update 401k plan
+     * Update 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
      * @param id Id from the legal entity to update a 401k plan (required)
      * @param planId 401K plan id (required)
      * @param put401kPlansDefinitionRequest  (required)

@@ -53,7 +53,7 @@ public class TimesheetsApiTest {
     /**
      * Create a timesheet entry
      *
-     * Submit work for a contractor.
+     * Submit work for a contractor.  **Token scopes**: &#x60;timesheets:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -68,7 +68,7 @@ public class TimesheetsApiTest {
     /**
      * Review a single timesheet
      *
-     * Review a timesheet to approve or decline submitted work.
+     * Review a timesheet to approve or decline submitted work.  **Token scopes**: &#x60;timesheets:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -100,7 +100,7 @@ public class TimesheetsApiTest {
     /**
      * Delete a timesheet entry
      *
-     * Delete a single timesheet entry.
+     * Delete a single timesheet entry.  **Token scopes**: &#x60;timesheets:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -117,7 +117,7 @@ public class TimesheetsApiTest {
     /**
      * Retrieve a single timesheet entry
      *
-     * Retrieve a single timesheet entry by Id.
+     * Retrieve a single timesheet entry by Id.  **Token scopes**: &#x60;timesheets:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -132,7 +132,7 @@ public class TimesheetsApiTest {
     /**
      * List of timesheets
      *
-     * Retrieve a list of timesheets in your Deel account. You can filter the list by providing additional paramters e.g. contract_id, contract_type etc.
+     * Retrieve a list of timesheets in your Deel account. You can filter the list by providing additional paramters e.g. contract_id, contract_type etc.  **Token scopes**: &#x60;timesheets:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -162,7 +162,7 @@ public class TimesheetsApiTest {
     /**
      * List of timesheets by contract
      *
-     * Retrieve a list of timesheets found for a contract.
+     * Retrieve a list of timesheets found for a contract.  **Token scopes**: &#x60;timesheets:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -191,7 +191,7 @@ public class TimesheetsApiTest {
     /**
      * Update a timesheet entry
      *
-     * Update a single timesheet entry.
+     * Update a single timesheet entry.  **Token scopes**: &#x60;timesheets:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */

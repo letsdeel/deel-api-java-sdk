@@ -245,7 +245,7 @@ public class AccountingApi {
 
     /**
      * Download invoice PDF
-     * Get a link to download the invoice PDF.
+     * Get a link to download the invoice PDF.  **Token scopes**: &#x60;accounting:read&#x60;
      * @param id The invoice ID used to identify the invoice to be downloaded. (required)
      * @return APIgetBillingInvoiceDownloadLinkRequest
      * @http.response.details
@@ -709,7 +709,7 @@ public class AccountingApi {
 
     /**
      * Retrieve invoices
-     * Retrieve a list of paid invoices for your workforce.
+     * Retrieve a list of paid invoices for your workforce.  **Token scopes**: &#x60;accounting:read&#x60;
      * @return APIgetInvoiceListRequest
      * @http.response.details
      <table border="1">
@@ -942,7 +942,7 @@ public class AccountingApi {
 
     /**
      * Retrieve payment receipts
-     * Retrieve a list of payments made to Deel, including worker details, payment status, and payment methods.
+     * Retrieve a list of payments made to Deel, including worker details, payment status, and payment methods.  **Token scopes**: &#x60;accounting:read&#x60;
      * @return APIgetPaymentListRequest
      * @http.response.details
      <table border="1">
@@ -1131,7 +1131,7 @@ public class AccountingApi {
 
     /**
      * Retrieve a payment breakdown
-     * Get a full breakdown of a payment made to Deel. Breakdown will include individual invoices and Deel fee as line items.
+     * Get a full breakdown of a payment made to Deel. Breakdown will include individual invoices and Deel fee as line items.  **Token scopes**: &#x60;accounting:read&#x60;
      * @param paymentId Unique identifier for the payment to retrieve the breakdown. (required)
      * @return APIgetPaymentsBreakDownByIdRequest
      * @http.response.details

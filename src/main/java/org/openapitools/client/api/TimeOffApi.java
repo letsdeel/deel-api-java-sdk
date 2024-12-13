@@ -246,7 +246,7 @@ public class TimeOffApi {
 
     /**
      * Create time-off request
-     * Create time-off request
+     * Create time-off request  **Token scopes**: &#x60;time-off:write&#x60;
      * @param createTimeOffRequest The time off request data (required)
      * @return APIcreateTimeOffRequest
      * @http.response.details
@@ -428,7 +428,7 @@ public class TimeOffApi {
 
     /**
      * Delete time-off request
-     * Delete time-off request
+     * Delete time-off request  **Token scopes**: &#x60;time-off:write&#x60;
      * @param timeOffId Time off request id (required)
      * @return APIdeleteTimeOffRequest
      * @http.response.details
@@ -640,7 +640,7 @@ public class TimeOffApi {
 
     /**
      * List policies
-     * List policies
+     * List policies  **Token scopes**: &#x60;time-off:read&#x60;
      * @param hrisProfileId hrisProfileId id. (required)
      * @return APIgetPoliciesForProfileRequest
      * @http.response.details
@@ -852,7 +852,7 @@ public class TimeOffApi {
 
     /**
      * Get Profile Entitlements
-     * List time-off entitlements.
+     * List time-off entitlements.  **Token scopes**: &#x60;time-off:read&#x60;
      * @param hrisProfileId HRIS profile ID (required)
      * @return APIgetProfileEntitlementsRequest
      * @http.response.details
@@ -1199,7 +1199,7 @@ public class TimeOffApi {
 
     /**
      * List time-off requests
-     * List time-off requests
+     * List time-off requests  **Token scopes**: &#x60;time-off:read&#x60;
      * @param hrisProfileId HRIS profile id (required)
      * @return APIgetTimeOffsQueryRequest
      * @http.response.details
@@ -1389,7 +1389,7 @@ public class TimeOffApi {
 
     /**
      * Update time-off request
-     * Update time-off request
+     * Update time-off request  **Token scopes**: &#x60;time-off:write&#x60;
      * @param timeOffId Time off request id (required)
      * @param updateTimeOffRequest Time off request data (required)
      * @return APIupdateTimeOffRequest

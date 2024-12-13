@@ -14,7 +14,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Get pay stub from employees from organization integrated with external benefits vendor
 
-Get pay stub from employees from organization integrated with external benefits vendor
+Get pay stub from employees from organization integrated with external benefits vendor  **Token scopes**: &#x60;organizations:read&#x60;
 
 ### Example
 ```java
@@ -101,7 +101,7 @@ public class Example {
 
 Get year to date payment for benefits 401k.
 
-Get year to date from employees from organization integrated with external benefits vendor
+Get year to date from employees from organization integrated with external benefits vendor  **Token scopes**: &#x60;organizations:read&#x60;
 
 ### Example
 ```java

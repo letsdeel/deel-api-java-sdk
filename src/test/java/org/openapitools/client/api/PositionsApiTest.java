@@ -36,7 +36,7 @@ public class PositionsApiTest {
     /**
      * Apply changes to positions.
      *
-     * Apply add, edit, and delete operations to profiles.
+     * Apply add, edit, and delete operations to profiles.  **Token scopes**: &#x60;profile:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -50,6 +50,8 @@ public class PositionsApiTest {
 
     /**
      * Fetch HrisPositions from a HrisProfile
+     *
+     * undefined  **Token scopes**: &#x60;profile:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */

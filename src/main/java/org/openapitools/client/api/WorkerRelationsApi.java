@@ -257,7 +257,7 @@ public class WorkerRelationsApi {
 
     /**
      * Create child worker relation with external Id
-     * Create child worker relation with external Id.
+     * Create child worker relation with external Id.  **Token scopes**: &#x60;profile:write&#x60;
      * @param hrisProfileExternalId External Profile id (required)
      * @param createOrUpdateChildRelationBetweenProfilesRequest  (required)
      * @return APIcreateOrUpdateChildRelationBetweenProfilesRequest
@@ -444,7 +444,7 @@ public class WorkerRelationsApi {
 
     /**
      * Create a parent worker relation with external id
-     * Create a parent worker relation with external id.
+     * Create a parent worker relation with external id.  **Token scopes**: &#x60;profile:write&#x60;
      * @param hrisProfileExternalId HRISProfile public id (required)
      * @param createOrUpdateParentRelationBetweenProfilesRequest  (required)
      * @return APIcreateOrUpdateParentRelationBetweenProfilesRequest
@@ -623,7 +623,7 @@ public class WorkerRelationsApi {
 
     /**
      * Create a worker relation
-     * Create a hierarchical relation between a worker and its subordinates.
+     * Create a hierarchical relation between a worker and its subordinates.  **Token scopes**: &#x60;profile:write&#x60;
      * @param createWorkerRelationRequest  (required)
      * @return APIcreateWorkerRelationRequest
      * @http.response.details
@@ -801,7 +801,7 @@ public class WorkerRelationsApi {
 
     /**
      * Create worker relation with external Ids
-     * Create a hierarchical relation between a worker and its subordinates using external IDs to identify them.
+     * Create a hierarchical relation between a worker and its subordinates using external IDs to identify them.  **Token scopes**: &#x60;profile:write&#x60;
      * @param createWorkerRelationExternalIdRequest  (required)
      * @return APIcreateWorkerRelationExternalIdRequest
      * @http.response.details
@@ -983,7 +983,7 @@ public class WorkerRelationsApi {
 
     /**
      * Create worker relation type
-     * Create worker relation type.
+     * Create worker relation type.  **Token scopes**: &#x60;organizations:write&#x60;
      * @param createWorkerRelationTypeRequest  (required)
      * @return APIcreateWorkerRelationTypeRequest
      * @http.response.details
@@ -1161,7 +1161,7 @@ public class WorkerRelationsApi {
 
     /**
      * Delete a worker relation
-     * Delete a worker relation.
+     * Delete a worker relation.  **Token scopes**: &#x60;profile:write&#x60;
      * @param hrisProfileOid Worker Relation ID (required)
      * @return APIdeleteWorkerRelationRequest
      * @http.response.details
@@ -1339,7 +1339,7 @@ public class WorkerRelationsApi {
 
     /**
      * Delete a worker relation by external id
-     * Delete a worker relation by external id.
+     * Delete a worker relation by external id.  **Token scopes**: &#x60;profile:write&#x60;
      * @param profileId Worker Relation external ID (required)
      * @return APIdeleteWorkerRelationExternalIdRequest
      * @http.response.details
@@ -1517,7 +1517,7 @@ public class WorkerRelationsApi {
 
     /**
      * Delete a worker relation type
-     * Delete a worker relation type.
+     * Delete a worker relation type.  **Token scopes**: &#x60;organizations:write&#x60;
      * @param typeId Worker Relation Type ID (required)
      * @return APIdeleteWorkerRelationTypeRequest
      * @http.response.details
@@ -1695,7 +1695,7 @@ public class WorkerRelationsApi {
 
     /**
      * Delete a worker relation type by external id
-     * Delete a Worker Relation Type by the external ID.
+     * Delete a Worker Relation Type by the external ID.  **Token scopes**: &#x60;organizations:write&#x60;
      * @param externalId Worker Relation Type external ID (required)
      * @return APIdeleteWorkerRelationTypeExternalIdRequest
      * @http.response.details
@@ -1877,7 +1877,7 @@ public class WorkerRelationsApi {
 
     /**
      * List of worker relations
-     * List of worker relations.
+     * List of worker relations.  **Token scopes**: &#x60;profile:read&#x60;
      * @param hrisProfileOid HrisProfile ID (required)
      * @return APIgetAllProfileWorkerRelationsRequest
      * @http.response.details
@@ -2059,7 +2059,7 @@ public class WorkerRelationsApi {
 
     /**
      * Fetch Worker Relations of a given HrisProfile by external id
-     * Fetch Worker Relations of a given HrisProfile by external id.
+     * Fetch Worker Relations of a given HrisProfile by external id.  **Token scopes**: &#x60;profile:read&#x60;
      * @param profileId HrisProfile external ID (required)
      * @return APIgetAllProfileWorkerRelationsExternalIdRequest
      * @http.response.details
@@ -2233,7 +2233,7 @@ public class WorkerRelationsApi {
 
     /**
      * Retrieve all worker relation types
-     * Retrieve all worker relation types.
+     * Retrieve all worker relation types.  **Token scopes**: &#x60;organizations:read&#x60;
      * @return APIgetAllWorkerRelationTypesRequest
      * @http.response.details
      <table border="1">
@@ -2422,7 +2422,7 @@ public class WorkerRelationsApi {
 
     /**
      * Update a worker relation type
-     * Update a worker relation type.
+     * Update a worker relation type.  **Token scopes**: &#x60;organizations:write&#x60;
      * @param typeId Worker Relation Type id (required)
      * @param updateWorkerRelationTypeRequest  (required)
      * @return APIupdateWorkerRelationTypeRequest
@@ -2613,7 +2613,7 @@ public class WorkerRelationsApi {
 
     /**
      * Update a worker relation type by external id
-     * Update a worker relation type by external id.
+     * Update a worker relation type by external id.  **Token scopes**: &#x60;organizations:write&#x60;
      * @param externalId Worker Relation Type external ID (required)
      * @param updateWorkerRelationTypeRequest  (required)
      * @return APIupdateWorkerRelationTypeExternalIdRequest
@@ -2800,7 +2800,7 @@ public class WorkerRelationsApi {
 
     /**
      * Create child worker relation
-     * Create child worker relation.
+     * Create child worker relation.  **Token scopes**: &#x60;profile:write&#x60;
      * @param hrisProfileOid HrisProfile ID (required)
      * @param upsertChildWorkerRelationsRequest  (required)
      * @return APIupsertChildWorkerRelationsRequest
@@ -2967,7 +2967,7 @@ public class WorkerRelationsApi {
 
     /**
      * Create child worker relation with external Id
-     * Create child worker relation with external Id.
+     * Create child worker relation with external Id.  **Token scopes**: &#x60;profile:write&#x60;
      * @param profileId HrisProfile external ID (required)
      * @param upsertChildWorkerRelationsExternalIdRequest  (required)
      * @return APIupsertChildWorkerRelationsExternalIdRequest
@@ -3149,7 +3149,7 @@ public class WorkerRelationsApi {
 
     /**
      * Create a parent worker relation
-     * Create a parent worker relation.
+     * Create a parent worker relation.  **Token scopes**: &#x60;profile:write&#x60;
      * @param hrisProfileOid HrisProfile ID (required)
      * @param upsertParentWorkerRelationsRequest  (required)
      * @return APIupsertParentWorkerRelationsRequest
@@ -3316,7 +3316,7 @@ public class WorkerRelationsApi {
 
     /**
      * Create a parent worker relation with external id
-     * Create a parent worker relation with external id.
+     * Create a parent worker relation with external id.  **Token scopes**: &#x60;profile:write&#x60;
      * @param profileId HrisProfile external ID (required)
      * @param upsertParentWorkerRelationsExternalIdRequest  (required)
      * @return APIupsertParentWorkerRelationsExternalIdRequest

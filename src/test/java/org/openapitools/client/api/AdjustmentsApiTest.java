@@ -42,7 +42,7 @@ public class AdjustmentsApiTest {
     /**
      * Create a new adjustment
      *
-     * Create a new adjustment.
+     * Create a new adjustment.  **Token scopes**: &#x60;adjustments:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -57,7 +57,7 @@ public class AdjustmentsApiTest {
     /**
      * Delete an adjustment
      *
-     * Delete an adjustment.
+     * Delete an adjustment.  **Token scopes**: &#x60;adjustments:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -72,7 +72,7 @@ public class AdjustmentsApiTest {
     /**
      * Retrieve adjustments
      *
-     * Get all adjustments for the specific contract.
+     * Get all adjustments for the specific contract.  **Token scopes**: &#x60;adjustments:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -91,7 +91,7 @@ public class AdjustmentsApiTest {
     /**
      * Retrieve an adjustment
      *
-     * Retrieve an adjustment.
+     * Retrieve an adjustment.  **Token scopes**: &#x60;adjustments:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -106,7 +106,7 @@ public class AdjustmentsApiTest {
     /**
      * Retrieve categories
      *
-     * Get all categories for your organization.
+     * Get all categories for your organization.  **Token scopes**: &#x60;adjustments:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -120,7 +120,7 @@ public class AdjustmentsApiTest {
     /**
      * Update an adjustment
      *
-     * Update an adjustment.
+     * Update an adjustment.  **Token scopes**: &#x60;adjustments:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */

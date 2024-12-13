@@ -16,7 +16,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Create a group
 
-Create a new group within your organization.
+Create a new group within your organization.  **Token scopes**: &#x60;groups:read&#x60;, &#x60;groups:write&#x60;
 
 ### Example
 ```java
@@ -89,7 +89,7 @@ public class Example {
 
 Delete a group
 
-Archive an existing group.
+Archive an existing group.  **Token scopes**: &#x60;groups:write&#x60;
 
 ### Example
 ```java
@@ -162,7 +162,7 @@ public class Example {
 
 Edit a group
 
-Edit the details of an existing group.
+Edit the details of an existing group.  **Token scopes**: &#x60;groups:read&#x60;, &#x60;groups:write&#x60;
 
 ### Example
 ```java
@@ -237,7 +237,7 @@ public class Example {
 
 Return list of groups
 
-List all the groups in your organization.
+List all the groups in your organization.  **Token scopes**: &#x60;groups:read&#x60;
 
 ### Example
 ```java

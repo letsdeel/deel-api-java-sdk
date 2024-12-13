@@ -267,7 +267,7 @@ public class MilestonesApi {
 
     /**
      * Create a Milestone
-     * Add a new milestone to a specific contract. Milestones represent distinct deliverables or phases in the contract and can include additional details such as attachments.
+     * Add a new milestone to a specific contract. Milestones represent distinct deliverables or phases in the contract and can include additional details such as attachments.  **Token scopes**: &#x60;milestones:write&#x60;
      * @param contractId The unique identifier of the Deel contract where the milestone will be added. (required)
      * @param createMilestoneRequest The milestone object containing the required details to be added to the contract. (required)
      * @return APIcreateMilestoneRequest
@@ -885,7 +885,7 @@ public class MilestonesApi {
 
     /**
      * Delete a Milestone
-     * Delete a specific milestone associated with a contract. This operation removes the milestone and its data permanently from the system.
+     * Delete a specific milestone associated with a contract. This operation removes the milestone and its data permanently from the system.  **Token scopes**: &#x60;milestones:write&#x60;
      * @param contractId The unique identifier of the Deel contract from which the milestone will be deleted. (required)
      * @param milestoneId The unique identifier of the milestone that is to be deleted. (required)
      * @return APIdeleteMilestoneByIdRequest
@@ -1078,7 +1078,7 @@ public class MilestonesApi {
 
     /**
      * Retrieve Milestones by Contract
-     * Retrieve a list of milestones associated with a specific contract. Each milestone includes details such as its title, amount, status, and relevant dates, along with information about the creator and reviewer.
+     * Retrieve a list of milestones associated with a specific contract. Each milestone includes details such as its title, amount, status, and relevant dates, along with information about the creator and reviewer.  **Token scopes**: &#x60;milestones:read&#x60;
      * @param contractId The unique identifier of the Deel contract for which milestones are being retrieved. (required)
      * @return APIgetMilestonesByContractRequest
      * @http.response.details
@@ -1278,7 +1278,7 @@ public class MilestonesApi {
 
     /**
      * Retrieve a single milestone
-     * Retrieve a single milestone.
+     * Retrieve a single milestone.  **Token scopes**: &#x60;milestones:read&#x60;
      * @param contractId Deel contract id. (required)
      * @param milestoneId ID of milestone to return (required)
      * @return APIgetMilestonesByContractAndIdRequest

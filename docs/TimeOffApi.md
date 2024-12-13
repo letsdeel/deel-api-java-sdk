@@ -18,7 +18,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Create time-off request
 
-Create time-off request
+Create time-off request  **Token scopes**: &#x60;time-off:write&#x60;
 
 ### Example
 ```java
@@ -91,7 +91,7 @@ public class Example {
 
 Delete time-off request
 
-Delete time-off request
+Delete time-off request  **Token scopes**: &#x60;time-off:write&#x60;
 
 ### Example
 ```java
@@ -164,7 +164,7 @@ public class Example {
 
 List policies
 
-List policies
+List policies  **Token scopes**: &#x60;time-off:read&#x60;
 
 ### Example
 ```java
@@ -247,7 +247,7 @@ public class Example {
 
 Get Profile Entitlements
 
-List time-off entitlements.
+List time-off entitlements.  **Token scopes**: &#x60;time-off:read&#x60;
 
 ### Example
 ```java
@@ -330,7 +330,7 @@ public class Example {
 
 List time-off requests
 
-List time-off requests
+List time-off requests  **Token scopes**: &#x60;time-off:read&#x60;
 
 ### Example
 ```java
@@ -440,7 +440,7 @@ public class Example {
 
 Update time-off request
 
-Update time-off request
+Update time-off request  **Token scopes**: &#x60;time-off:write&#x60;
 
 ### Example
 ```java

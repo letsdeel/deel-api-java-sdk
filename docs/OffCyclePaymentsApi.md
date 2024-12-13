@@ -15,7 +15,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Add off-cycle payment
 
-Add a new invoice line-item for the purpose of an off-cycle payment associated with a specific contract. This is typically used for exceptional payments outside the regular payment schedule.
+Add a new invoice line-item for the purpose of an off-cycle payment associated with a specific contract. This is typically used for exceptional payments outside the regular payment schedule.  **Token scopes**: &#x60;off-cycle-payments:write&#x60;
 
 ### Example
 ```java
@@ -97,7 +97,7 @@ public class Example {
 
 Retrieve a single off-cycle payment
 
-Retrieve a single off-cycle payment.
+Retrieve a single off-cycle payment.  **Token scopes**: &#x60;off-cycle-payments:read&#x60;
 
 ### Example
 ```java
@@ -178,7 +178,7 @@ public class Example {
 
 List of off-cycle payments
 
-Retrieve a list of off-cycle payments for the specified contract ID. Off-cycle payments are payments made outside the regular payment schedule, often for exceptional or one-time expenses.
+Retrieve a list of off-cycle payments for the specified contract ID. Off-cycle payments are payments made outside the regular payment schedule, often for exceptional or one-time expenses.  **Token scopes**: &#x60;off-cycle-payments:read&#x60;
 
 ### Example
 ```java

@@ -276,7 +276,7 @@ public class InvoicesApi {
 
     /**
      * Create an invoice adjustment
-     * Create an invoice adjustment using this endpoint. For example, you can add a bonus, commission, VAT %, deduction etc. to an invoice.
+     * Create an invoice adjustment using this endpoint. For example, you can add a bonus, commission, VAT %, deduction etc. to an invoice.  **Token scopes**: &#x60;invoice-adjustments:write&#x60;
      * @param createInvoiceAdjustmentRequest InvoiceAdjustment object that needs to be created (required)
      * @return APIcreateInvoiceAdjustmentRequest
      * @http.response.details
@@ -805,7 +805,7 @@ public class InvoicesApi {
 
     /**
      * List invoice adjustments
-     * Retrieve invoice adjustments. You can filter the list by providing additional parameters e.g. contract_id, contract_type etc.
+     * Retrieve invoice adjustments. You can filter the list by providing additional parameters e.g. contract_id, contract_type etc.  **Token scopes**: &#x60;invoice-adjustments:read&#x60;
      * @return APIgetInvoiceAdjustmentsRequest
      * @http.response.details
      <table border="1">
@@ -1131,7 +1131,7 @@ public class InvoicesApi {
 
     /**
      * Invoice line items by contract
-     * Retrieve invoice line items for a given contract id.
+     * Retrieve invoice line items for a given contract id.  **Token scopes**: &#x60;invoice-adjustments:read&#x60;
      * @param contractId Deel contract id. (required)
      * @return APIgetInvoiceAdjustmentsByContractIdRequest
      * @http.response.details
@@ -1303,7 +1303,7 @@ public class InvoicesApi {
 
     /**
      * Update an invoice adjustment
-     * Update an invoice adjustment.
+     * Update an invoice adjustment.  **Token scopes**: &#x60;adjustments:write&#x60;
      * @param id Invoice adjustment id. (required)
      * @param updateInvoiceAdjustmentRequest  (required)
      * @return APIupdateInvoiceAdjustmentRequest
@@ -1501,7 +1501,7 @@ public class InvoicesApi {
 
     /**
      * Update an invoice adjustment
-     * Update an existing invoice adjustment. It is not possible to update VAT adjustments, we recommend you to delete the existing VAT adjust and create a new one.
+     * Update an existing invoice adjustment. It is not possible to update VAT adjustments, we recommend you to delete the existing VAT adjust and create a new one.  **Token scopes**: &#x60;invoice-adjustments:write&#x60;
      * @param id ID of an existing invoice adjustment. (required)
      * @param updateInvoiceAdjustmentByIdRequest  (required)
      * @return APIupdateInvoiceAdjustmentByIdRequest

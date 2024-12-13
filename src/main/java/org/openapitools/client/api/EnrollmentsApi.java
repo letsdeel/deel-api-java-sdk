@@ -245,7 +245,7 @@ public class EnrollmentsApi {
 
     /**
      * Delete enrollment settings from an employee in a 401k plan
-     * Delete enrollment settings from an employee in a 401k plan
+     * Delete enrollment settings from an employee in a 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
      * @param id Legal entity id which employee/contract belongs (required)
      * @param contractId Contract id from the employee (required)
      * @param planId Plan id to enroll the employee into (required)
@@ -421,7 +421,7 @@ public class EnrollmentsApi {
 
     /**
      * Get enrollment settings from an employee in a 401k plan
-     * Get enrollment settings from an employee in a 401k plan
+     * Get enrollment settings from an employee in a 401k plan  **Token scopes**: &#x60;benefits:read&#x60;
      * @param id Legal entity id which employee/contract belongs (required)
      * @param contractId Contract id from the employee (required)
      * @param planId Plan id to enroll the employee into (required)
@@ -604,7 +604,7 @@ public class EnrollmentsApi {
 
     /**
      * Enroll an employee in a 401k plan
-     * Enroll an employee in a 401k plan
+     * Enroll an employee in a 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
      * @param id Legal entity id which employee/contract belongs (required)
      * @param contractId Contract id from the employee (required)
      * @param planId Plan id to enroll the employee into (required)
@@ -788,7 +788,7 @@ public class EnrollmentsApi {
 
     /**
      * Change enrollment settings from an employee in a 401k plan
-     * Change enrollment settings from an employee in a 401k plan
+     * Change enrollment settings from an employee in a 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
      * @param id Legal entity id which employee/contract belongs (required)
      * @param contractId Contract id from the employee (required)
      * @param planId Plan id to enroll the employee into (required)

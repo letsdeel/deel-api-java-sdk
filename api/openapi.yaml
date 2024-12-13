@@ -179,7 +179,9 @@ tags:
 paths:
   /invoices:
     get:
-      description: Retrieve a list of paid invoices for your workforce.
+      description: |-
+        Retrieve a list of paid invoices for your workforce.
+         **Token scopes**: `accounting:read`
       operationId: getInvoiceList
       parameters:
       - description: Filter invoices issued on or after the specified date.
@@ -369,8 +371,9 @@ paths:
       - application/json
   /people/custom_fields:
     get:
-      description: "Fetch all custom fields associated with People records, offering\
-        \ additional personalized information."
+      description: |-
+        Fetch all custom fields associated with People records, offering additional personalized information.
+         **Token scopes**: `people:read`
       operationId: getCustomFieldsFromPeople
       parameters: []
       responses:
@@ -421,7 +424,9 @@ paths:
       - application/json
   /people/{worker_id}/custom_fields:
     get:
-      description: Retrieve custom fields for a worker
+      description: |-
+        Retrieve custom fields for a worker
+         **Token scopes**: `people:read`
       operationId: GetCustomFieldValuesFromWorker
       parameters:
       - description: Worker id.
@@ -481,7 +486,9 @@ paths:
       x-accepts:
       - application/json
     put:
-      description: Update custom field value.
+      description: |-
+        Update custom field value.
+         **Token scopes**: `people:write`
       operationId: UpsertCustomFieldValueFromWorker
       parameters:
       - description: Worker id.
@@ -541,7 +548,9 @@ paths:
       - application/json
   /people/{worker_id}/personal:
     get:
-      description: Get worker's personal information by using identifier.
+      description: |-
+        Get worker's personal information by using identifier.
+         **Token scopes**: `people:read`
       operationId: getPeoplePersonalInformationById
       parameters:
       - description: Unique identifier for a worker (External ID).
@@ -612,7 +621,9 @@ paths:
       x-accepts:
       - application/json
     patch:
-      description: Update worker's personal information.
+      description: |-
+        Update worker's personal information.
+         **Token scopes**: `people:write`
       operationId: updatePeoplePersonalInformationById
       parameters:
       - description: Unique identifier for a worker.
@@ -675,7 +686,9 @@ paths:
       - application/json
   /people/external/{worker_id}/personal:
     get:
-      description: Get worker's personal information by using an external identifier.
+      description: |-
+        Get worker's personal information by using an external identifier.
+         **Token scopes**: `people:read`
       operationId: getPeoplePersonalInformationByExternalId
       parameters:
       - description: Unique identifier for a worker (External ID).
@@ -746,7 +759,9 @@ paths:
       x-accepts:
       - application/json
     patch:
-      description: Update worker's personal information by using an external identifier.
+      description: |-
+        Update worker's personal information by using an external identifier.
+         **Token scopes**: `people:write`
       operationId: updatePeoplePersonalInformationByExternalId
       parameters:
       - description: Unique identifier for a worker (External ID).
@@ -808,8 +823,9 @@ paths:
       - application/json
   /contracts/custom_fields:
     get:
-      description: "Fetch all custom fields associated with contracts, providing additional\
-        \ data necessary for contract management."
+      description: |-
+        Fetch all custom fields associated with contracts, providing additional data necessary for contract management.
+         **Token scopes**: `contracts:read`
       operationId: getCustomFieldsFromContracts
       parameters: []
       responses:
@@ -860,7 +876,9 @@ paths:
       - application/json
   /contracts/{contract_id}/custom_fields:
     get:
-      description: Retrieve custom fields for a contract.
+      description: |-
+        Retrieve custom fields for a contract.
+         **Token scopes**: `contracts:read`
       operationId: GetCustomFieldValuesFromContract
       parameters:
       - description: Contract Id
@@ -915,7 +933,9 @@ paths:
       x-accepts:
       - application/json
     put:
-      description: Update custom field value.
+      description: |-
+        Update custom field value.
+         **Token scopes**: `contracts:write`
       operationId: UpsertCustomFieldValueFromContracts
       parameters:
       - description: Contract id.
@@ -975,10 +995,9 @@ paths:
       - application/json
   /roles:
     get:
-      description: "Retrieve a list of roles assigned within the current organization.\
-        \ Each role has a unique identifier, name, scope, and optional HRIS structure\
-        \ ID. This helps determine the types of roles within the organization and\
-        \ their corresponding access levels."
+      description: |-
+        Retrieve a list of roles assigned within the current organization. Each role has a unique identifier, name, scope, and optional HRIS structure ID. This helps determine the types of roles within the organization and their corresponding access levels.
+         **Token scopes**: `organizations:read`
       operationId: GetOrganizationRoles
       responses:
         "200":
@@ -1045,7 +1064,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Create organization custom role.
+      description: |-
+        Create organization custom role.
+         **Token scopes**: `organizations:write`
       operationId: CreateOrganizationRole
       parameters: []
       requestBody:
@@ -1103,7 +1124,9 @@ paths:
       - application/json
   /equity/exercise:
     post:
-      description: Create a request to exercise equity.
+      description: |-
+        Create a request to exercise equity.
+         **Token scopes**: `contracts:write`
       operationId: requestExerciseEquity
       requestBody:
         content:
@@ -1160,7 +1183,9 @@ paths:
       - application/json
   /hris/organization_structures:
     get:
-      description: Fetch all Org Structures from the Organization.
+      description: |-
+        Fetch all Org Structures from the Organization.
+         **Token scopes**: `organizations:read`
       operationId: getAllOrgStructures
       responses:
         "200":
@@ -1209,7 +1234,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Create a new HRIS Organization Structure.
+      description: |-
+        Create a new HRIS Organization Structure.
+         **Token scopes**: `organizations:write`
       operationId: createOrgStructure
       requestBody:
         content:
@@ -1266,7 +1293,9 @@ paths:
       - application/json
   /hris/organization_structures/{hrisOrgStr_id}:
     delete:
-      description: Delete an Org Structure from the Organization
+      description: |-
+        Delete an Org Structure from the Organization
+         **Token scopes**: `organizations:write`
       operationId: deleteOrgStructure
       parameters:
       - description: Org Structure
@@ -1323,6 +1352,9 @@ paths:
       x-accepts:
       - application/json
     get:
+      description: |-
+        undefined
+         **Token scopes**: `organizations:read`
       operationId: getOrgStructure
       parameters:
       - description: HRIS Organization Structure ID
@@ -1381,7 +1413,9 @@ paths:
       x-accepts:
       - application/json
     patch:
-      description: Update an existing HRIS Org Structure
+      description: |-
+        Update an existing HRIS Org Structure
+         **Token scopes**: `organizations:write`
       operationId: updateOrgStructure
       parameters:
       - description: Org Structure
@@ -1446,6 +1480,9 @@ paths:
       - application/json
   /hris/organization_structures/external/{external_id}:
     delete:
+      description: |-
+        undefined
+         **Token scopes**: `organizations:write`
       operationId: deleteOrgStructureByExternalId
       parameters:
       - description: External ID
@@ -1502,6 +1539,9 @@ paths:
       x-accepts:
       - application/json
     get:
+      description: |-
+        undefined
+         **Token scopes**: `organizations:read`
       operationId: getOrgStructureByExternalId
       parameters:
       - description: External ID
@@ -1560,6 +1600,9 @@ paths:
       x-accepts:
       - application/json
     patch:
+      description: |-
+        undefined
+         **Token scopes**: `organizations:write`
       operationId: updateOrgStructureByExternalId
       parameters:
       - description: External ID
@@ -1624,7 +1667,9 @@ paths:
       - application/json
   /hris/positions/apply_changes:
     post:
-      description: "Apply add, edit, and delete operations to profiles."
+      description: |-
+        Apply add, edit, and delete operations to profiles.
+         **Token scopes**: `profile:write`
       operationId: applyChangesPositions
       requestBody:
         content:
@@ -1759,7 +1804,9 @@ paths:
       - application/json
   /time_offs/profile/{hris_profile_id}/entitlements:
     get:
-      description: List time-off entitlements.
+      description: |-
+        List time-off entitlements.
+         **Token scopes**: `time-off:read`
       operationId: getProfileEntitlements
       parameters:
       - description: HRIS profile ID
@@ -1874,7 +1921,9 @@ paths:
       - application/json
   /time_offs/profile/{hris_profile_id}/policies:
     get:
-      description: List policies
+      description: |-
+        List policies
+         **Token scopes**: `time-off:read`
       operationId: getPoliciesForProfile
       parameters:
       - description: hrisProfileId id.
@@ -1982,7 +2031,9 @@ paths:
       - application/json
   /time_offs/profile/{hris_profile_id}:
     get:
-      description: List time-off requests
+      description: |-
+        List time-off requests
+         **Token scopes**: `time-off:read`
       operationId: getTimeOffsQuery
       parameters:
       - description: HRIS profile id
@@ -2164,7 +2215,9 @@ paths:
       - application/json
   /time_offs:
     post:
-      description: Create time-off request
+      description: |-
+        Create time-off request
+         **Token scopes**: `time-off:write`
       operationId: createTimeOff
       parameters: []
       requestBody:
@@ -2222,9 +2275,9 @@ paths:
       - application/json
   /time_tracking/shifts:
     get:
-      description: "Retrieve a paginated list of shifts with details such as start\
-        \ and end times, breaks, metadata, and summary metrics. Supports pagination\
-        \ through `limit` and `offset` query parameters."
+      description: |-
+        Retrieve a paginated list of shifts with details such as start and end times, breaks, metadata, and summary metrics. Supports pagination through `limit` and `offset` query parameters.
+         **Token scopes**: `time-tracking:read`
       operationId: getShifts
       parameters:
       - description: Maximum number of records to return.
@@ -2311,7 +2364,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Create shifts
+      description: |-
+        Create shifts
+         **Token scopes**: `time-tracking:write`
       operationId: createShifts
       requestBody:
         content:
@@ -2374,8 +2429,9 @@ paths:
       - application/json
   /time_tracking/shifts/{external_id}:
     delete:
-      description: "This endpoint deletes a shift using its external ID. Once deleted,\
-        \ the shift will no longer be retrievable or editable."
+      description: |-
+        This endpoint deletes a shift using its external ID. Once deleted, the shift will no longer be retrievable or editable.
+         **Token scopes**: `time-tracking:write`
       operationId: deleteShiftExternalId
       parameters:
       - description: The unique external identifier of the shift to be deleted.
@@ -2430,7 +2486,9 @@ paths:
       x-accepts:
       - application/json
     get:
-      description: Retrieve details of a specific shift by external ID.
+      description: |-
+        Retrieve details of a specific shift by external ID.
+         **Token scopes**: `time-tracking:read`
       operationId: getShiftDetails
       parameters:
       - explode: false
@@ -2492,9 +2550,9 @@ paths:
       x-accepts:
       - application/json
     patch:
-      description: "Update specific fields of an existing shift by its unique `external_id`.\
-        \ This includes shift metadata (start and end times, breaks, and approval\
-        \ dates) and associated summary details."
+      description: |-
+        Update specific fields of an existing shift by its unique `external_id`. This includes shift metadata (start and end times, breaks, and approval dates) and associated summary details.
+         **Token scopes**: `time-tracking:write`
       operationId: updateShift
       parameters:
       - example: 12345678g
@@ -2567,9 +2625,9 @@ paths:
       - application/json
   /time_tracking/shift_rates:
     get:
-      description: "Retrieve a paginated list of shift rates, including details such\
-        \ as rate name, type, value, and timestamps. Pagination parameters can be\
-        \ used to control the size and position of the result set."
+      description: |-
+        Retrieve a paginated list of shift rates, including details such as rate name, type, value, and timestamps. Pagination parameters can be used to control the size and position of the result set.
+         **Token scopes**: `time-tracking:read`
       operationId: getShiftRates
       parameters:
       - description: "The maximum number of records to return per page. For example,\
@@ -2646,8 +2704,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: "Create a new shift rate with the specified attributes such as\
-        \ name, type, value, and a unique external identifier."
+      description: |-
+        Create a new shift rate with the specified attributes such as name, type, value, and a unique external identifier.
+         **Token scopes**: `time-tracking:write`
       operationId: createShiftRate
       requestBody:
         content:
@@ -2729,7 +2788,9 @@ paths:
       - application/json
   /time_tracking/shift_rates/{external_id}:
     delete:
-      description: Delete a ShiftRate by external ID
+      description: |-
+        Delete a ShiftRate by external ID
+         **Token scopes**: `time-tracking:write`
       operationId: deleteShiftRateExternalId
       parameters:
       - description: external ID
@@ -2783,9 +2844,9 @@ paths:
       x-accepts:
       - application/json
     get:
-      description: "Retrieve details of a specific shift rate using its external ID.\
-        \ The response includes information such as the name, type, value, and unique\
-        \ identifier of the shift rate."
+      description: |-
+        Retrieve details of a specific shift rate using its external ID. The response includes information such as the name, type, value, and unique identifier of the shift rate.
+         **Token scopes**: `time-tracking:read`
       operationId: getShiftRate
       parameters:
       - description: The unique external identifier of the shift rate to retrieve.
@@ -2849,7 +2910,9 @@ paths:
       x-accepts:
       - application/json
     patch:
-      description: Update specific fields of an existing shift rate.
+      description: |-
+        Update specific fields of an existing shift rate.
+         **Token scopes**: `time-tracking:write`
       operationId: updateShiftRate
       parameters:
       - example: 12345678g
@@ -2922,7 +2985,9 @@ paths:
       - application/json
   /groups:
     get:
-      description: List all the groups in your organization.
+      description: |-
+        List all the groups in your organization.
+         **Token scopes**: `groups:read`
       operationId: getGroups
       parameters:
       - description: The maximum number of groups to return (between 1 and 100)
@@ -3021,7 +3086,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Create a new group within your organization.
+      description: |-
+        Create a new group within your organization.
+         **Token scopes**: `groups:read`, `groups:write`
       operationId: createGroup
       requestBody:
         content:
@@ -3078,7 +3145,9 @@ paths:
       - application/json
   /groups/{id}:
     delete:
-      description: Archive an existing group.
+      description: |-
+        Archive an existing group.
+         **Token scopes**: `groups:write`
       operationId: deleteGroup
       parameters:
       - example: 9e12eb6b-90ea-4543-8ff1-7789e7b8db7e
@@ -3136,7 +3205,9 @@ paths:
       x-accepts:
       - application/json
     patch:
-      description: Edit the details of an existing group.
+      description: |-
+        Edit the details of an existing group.
+         **Token scopes**: `groups:read`, `groups:write`
       operationId: editGroup
       parameters:
       - example: 9e12eb6b-90ea-4543-8ff1-7789e7b8db7e
@@ -3203,7 +3274,9 @@ paths:
       - application/json
   /time_offs/{time_off_id}:
     delete:
-      description: Delete time-off request
+      description: |-
+        Delete time-off request
+         **Token scopes**: `time-off:write`
       operationId: deleteTimeOff
       parameters:
       - description: Time off request id
@@ -3263,7 +3336,9 @@ paths:
       x-accepts:
       - application/json
     patch:
-      description: Update time-off request
+      description: |-
+        Update time-off request
+         **Token scopes**: `time-off:write`
       operationId: updateTimeOff
       parameters:
       - description: Time off request id
@@ -3331,8 +3406,9 @@ paths:
       - application/json
   /managers:
     get:
-      description: Retrieve a list of all managers in the organization along with
-        pagination details.
+      description: |-
+        Retrieve a list of all managers in the organization along with pagination details.
+         **Token scopes**: `organizations:read`
       operationId: getManagers
       parameters:
       - description: The number of records to return in the response.
@@ -3406,8 +3482,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Create a new manager for the organization by providing the required
-        user details. This endpoint returns the newly created manager's information.
+      description: |-
+        Create a new manager for the organization by providing the required user details. This endpoint returns the newly created manager's information.
+         **Token scopes**: `organizations:write`
       operationId: createManager
       requestBody:
         content:
@@ -3523,10 +3600,9 @@ paths:
       - application/json
   /eor/validations/{country_code}:
     get:
-      description: "Retrieve comprehensive hiring guide data for a specific country.\
-        \ This data can be used in creation and validation of Employee of Record (EOR)\
-        \ contract quotes, providing details on salaries, holidays, insurance, and\
-        \ other employment specifics."
+      description: |-
+        Retrieve comprehensive hiring guide data for a specific country. This data can be used in creation and validation of Employee of Record (EOR) contract quotes, providing details on salaries, holidays, insurance, and other employment specifics.
+         **Token scopes**: `contracts:read`
       operationId: getEorCountryValidations
       parameters:
       - description: The two-letter ISO code of the country for which to retrieve
@@ -3620,8 +3696,9 @@ paths:
       - application/json
   /eor/workers/{worker_id}/payslips:
     get:
-      description: "Retrieve a list of payslip records for a specific employee, detailing\
-        \ payment periods, status, and associated identifiers."
+      description: |-
+        Retrieve a list of payslip records for a specific employee, detailing payment periods, status, and associated identifiers.
+         **Token scopes**: `payslips:read`
       operationId: getEORWorkerPayslips
       parameters:
       - description: The ID of the worker whose payslips are being retrieved.
@@ -3702,9 +3779,9 @@ paths:
       - application/json
   /eor/workers/{worker_id}/payslips/{payslip_id}/download:
     get:
-      description: Retrieve a URL to download a specific payslip PDF for a EoR worker.
-        This endpoint is useful for accessing detailed payment records in a portable
-        document format.
+      description: |-
+        Retrieve a URL to download a specific payslip PDF for a EoR worker. This endpoint is useful for accessing detailed payment records in a portable document format.
+         **Token scopes**: `payslips:read`
       operationId: getEORWorkerPayslipDownloadUrl
       parameters:
       - description: The ID of the worker whose payslip download link is being requested.
@@ -3900,9 +3977,9 @@ paths:
       - application/json
   /eor/{contract_id}/benefits:
     get:
-      description: "Fetch detailed information about benefits associated with a specific\
-        \ Employee of Record (EOR) contract. The benefits include plan details, provider\
-        \ information, and enrollment statuses."
+      description: |-
+        Fetch detailed information about benefits associated with a specific Employee of Record (EOR) contract. The benefits include plan details, provider information, and enrollment statuses.
+         **Token scopes**: `contracts:read`
       operationId: getEORContractBenefits
       parameters:
       - description: Deel contract ID.
@@ -4002,9 +4079,9 @@ paths:
       - application/json
   /eor:
     post:
-      description: Creates an Employee of Record (EOR) contract quote. This endpoint
-        allows to submit details for an EOR contract. Deel will process the information
-        and return a quote for the requested contract.
+      description: |-
+        Creates an Employee of Record (EOR) contract quote. This endpoint allows to submit details for an EOR contract. Deel will process the information and return a quote for the requested contract.
+         **Token scopes**: `contracts:write`
       operationId: createEorContract
       requestBody:
         content:
@@ -4087,7 +4164,9 @@ paths:
       - application/json
   /contracts/gp:
     post:
-      description: Create a Global Payroll contract.
+      description: |-
+        Create a Global Payroll contract.
+         **Token scopes**: `contracts:write`
       operationId: createGPContract
       parameters: []
       requestBody:
@@ -4140,7 +4219,9 @@ paths:
       - application/json
   /gp/workers/{worker_id}/address:
     patch:
-      description: Update the address of a Global Payroll employee.
+      description: |-
+        Update the address of a Global Payroll employee.
+         **Token scopes**: `people:write`
       operationId: updateGPEmployeeAddress
       parameters:
       - description: Unique identifier for a worker in UUID format.
@@ -4210,7 +4291,9 @@ paths:
       - application/json
   /gp/workers/{worker_id}/banks:
     get:
-      description: Retrieve all bank accounts for an employee.
+      description: |-
+        Retrieve all bank accounts for an employee.
+         **Token scopes**: `people:read`
       operationId: getGpBankAccounts
       parameters:
       - description: Unique identifier for a worker.
@@ -4264,7 +4347,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Add a new bank account for an employee.
+      description: |-
+        Add a new bank account for an employee.
+         **Token scopes**: `people:write`
       operationId: addGpBankAccount
       parameters:
       - description: Unique identifier for a worker in UUID format.
@@ -4329,7 +4414,9 @@ paths:
       - application/json
   /gp/workers/{worker_id}/banks/{bank_id}:
     patch:
-      description: Modify bank account for an employee.
+      description: |-
+        Modify bank account for an employee.
+         **Token scopes**: `people:write`
       operationId: patchGpBankAccount
       parameters:
       - description: Unique identifier for a worker in UUID format.
@@ -4414,7 +4501,9 @@ paths:
       - application/json
   /gp/workers/{worker_id}/banks/guide:
     get:
-      description: Retrieve the bank form guide for an employee.
+      description: |-
+        Retrieve the bank form guide for an employee.
+         **Token scopes**: `people:read`
       operationId: getGpBankGuide
       parameters:
       - description: Unique identifier for a worker in UUID format.
@@ -4470,8 +4559,9 @@ paths:
       - application/json
   /gp/workers/{worker_id}/compensation:
     patch:
-      description: Update the compensation of a Global Payroll employee. Returns the
-        full compensation history including the update.
+      description: |-
+        Update the compensation of a Global Payroll employee. Returns the full compensation history including the update.
+         **Token scopes**: `people:write`
       operationId: updateGPEmployeeCompensation
       parameters:
       - description: Unique identifier for a worker in UUID format.
@@ -4536,7 +4626,9 @@ paths:
       - application/json
   /gp/workers/{worker_id}/pto-policy:
     patch:
-      description: Update the PTO policy of a Global Payroll employee.
+      description: |-
+        Update the PTO policy of a Global Payroll employee.
+         **Token scopes**: `people:write`
       operationId: updateGPEmployeePto
       parameters:
       - description: Unique identifier for a worker in UUID format.
@@ -4600,7 +4692,9 @@ paths:
       - application/json
   /gp/workers/{worker_id}/employee-information:
     patch:
-      description: Update Global Payroll employee information.
+      description: |-
+        Update Global Payroll employee information.
+         **Token scopes**: `people:write`
       operationId: updateGPEmployeeInformation
       parameters:
       - description: Unique identifier for a worker in UUID format.
@@ -4724,8 +4818,9 @@ paths:
       - text/csv
   /gp/workers/{worker_id}/terminations:
     post:
-      description: Request a termination for a global payroll employee. A successful
-        call starts the termination process and does not confirm termination.
+      description: |-
+        Request a termination for a global payroll employee. A successful call starts the termination process and does not confirm termination.
+         **Token scopes**: `global-payroll:write`
       operationId: requestTermination
       parameters:
       - description: Unique identifier for a worker in UUID format.
@@ -4789,7 +4884,9 @@ paths:
       - application/json
   /adjustments:
     post:
-      description: Create a new adjustment.
+      description: |-
+        Create a new adjustment.
+         **Token scopes**: `adjustments:write`
       operationId: createAdjustment
       requestBody:
         content:
@@ -4841,7 +4938,9 @@ paths:
       - application/json
   /adjustments/{id}:
     delete:
-      description: Delete an adjustment.
+      description: |-
+        Delete an adjustment.
+         **Token scopes**: `adjustments:write`
       operationId: deleteAdjustment
       parameters:
       - description: Deel adjustment id.
@@ -4894,7 +4993,9 @@ paths:
       x-accepts:
       - application/json
     get:
-      description: Retrieve an adjustment.
+      description: |-
+        Retrieve an adjustment.
+         **Token scopes**: `adjustments:read`
       operationId: getAdjustmentsById
       parameters:
       - description: Deel adjustment id.
@@ -4947,7 +5048,9 @@ paths:
       x-accepts:
       - application/json
     patch:
-      description: Update an adjustment.
+      description: |-
+        Update an adjustment.
+         **Token scopes**: `adjustments:write`
       operationId: updateAdjustment
       parameters:
       - description: Deel adjustment id.
@@ -5009,7 +5112,9 @@ paths:
       - application/json
   /adjustments/categories:
     get:
-      description: Get all categories for your organization.
+      description: |-
+        Get all categories for your organization.
+         **Token scopes**: `adjustments:read`
       operationId: getCategories
       responses:
         "200":
@@ -6547,7 +6652,9 @@ paths:
       - application/json
   /contracts:
     get:
-      description: Retrieve a list of contracts.
+      description: |-
+        Retrieve a list of contracts.
+         **Token scopes**: `contracts:read`
       operationId: getContractList
       parameters:
       - description: Return next page of results after the given cursor.
@@ -6751,7 +6858,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Create a new Deel contract.
+      description: |-
+        Create a new Deel contract.
+         **Token scopes**: `contracts:write`
       operationId: createContract
       requestBody:
         content:
@@ -6820,7 +6929,9 @@ paths:
       - application/json
   /contracts/{contract_id}:
     get:
-      description: Retrieve a single contract.
+      description: |-
+        Retrieve a single contract.
+         **Token scopes**: `contracts:read`
       operationId: getContractById
       parameters:
       - description: Deel contract id.
@@ -6968,7 +7079,9 @@ paths:
       - application/json
   /contracts/{contract_id}/documents:
     post:
-      description: Attach a file to contract document.
+      description: |-
+        Attach a file to contract document.
+         **Token scopes**: `contracts:write`
       operationId: addContractDocument
       parameters:
       - description: Deel contract id.
@@ -7122,9 +7235,9 @@ paths:
       - application/json
   /contracts/{contract_id}/preview:
     get:
-      description: "Retrieve an IC and EOR contract agreement content in HTML. If\
-        \ no template is specified, the default or currently assigned template will\
-        \ be used. This endpoint does not support Global Payroll contract type."
+      description: |-
+        Retrieve an IC and EOR contract agreement content in HTML. If no template is specified, the default or currently assigned template will be used. This endpoint does not support Global Payroll contract type.
+         **Token scopes**: `contracts:read`
       operationId: getContractPreview
       parameters:
       - description: Deel contract id.
@@ -7207,10 +7320,9 @@ paths:
       - text/html
   /contracts/{contract_id}/tasks:
     get:
-      description: "Retrieve a list of tasks associated with a specific contract.\
-        \ Each task contains details such as its ID, amount, submission date, status,\
-        \ and description. This endpoint is useful for tracking the progress and status\
-        \ of tasks related to contracts."
+      description: |-
+        Retrieve a list of tasks associated with a specific contract. Each task contains details such as its ID, amount, submission date, status, and description. This endpoint is useful for tracking the progress and status of tasks related to contracts.
+         **Token scopes**: `contracts:read`
       operationId: getTasksByContract
       parameters:
       - description: The unique identifier for the Deel contract.
@@ -7281,9 +7393,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: "Create a new task for a contractor associated with a specific\
-        \ Deel contract. A task can include details like amount, description, submission\
-        \ date, and optional attachments."
+      description: |-
+        Create a new task for a contractor associated with a specific Deel contract. A task can include details like amount, description, submission date, and optional attachments.
+         **Token scopes**: `contracts:write`
       operationId: createContractPgoTak
       parameters:
       - description: The unique Deel contract ID associated with the task.
@@ -7437,9 +7549,9 @@ paths:
       - application/json
   /contracts/{contract_id}/tasks/many/reviews:
     post:
-      description: Review multiple tasks associated with a Deel contract to approve
-        or decline the submitted work. The review includes a status (approved or declined)
-        for each task and an optional reason for declined tasks.
+      description: |-
+        Review multiple tasks associated with a Deel contract to approve or decline the submitted work. The review includes a status (approved or declined) for each task and an optional reason for declined tasks.
+         **Token scopes**: `contracts:write`
       operationId: createTaskManyReview
       parameters:
       - description: The unique Deel contract ID associated with the tasks.
@@ -7543,9 +7655,9 @@ paths:
       - application/json
   /contracts/{contract_id}/tasks/{task_id}/reviews:
     post:
-      description: Review a specific task associated with a Deel contract to approve
-        or decline the submitted work. The review includes the status (approved or
-        declined) and an optional reason if declined.
+      description: |-
+        Review a specific task associated with a Deel contract to approve or decline the submitted work. The review includes the status (approved or declined) and an optional reason if declined.
+         **Token scopes**: `contracts:write`
       operationId: createTaskReviewById
       parameters:
       - description: The unique Deel contract ID associated with the task.
@@ -7648,8 +7760,9 @@ paths:
       - application/json
   /contracts/{contract_id}/tasks/{task_id}:
     delete:
-      description: "Delete a specific task associated with the contract. Optionally,\
-        \ a reason can be provided for auditing or documentation purposes."
+      description: |-
+        Delete a specific task associated with the contract. Optionally, a reason can be provided for auditing or documentation purposes.
+         **Token scopes**: `contracts:write`
       operationId: deleteContractTaskById
       parameters:
       - description: The unique identifier of the Deel contract.
@@ -7730,9 +7843,9 @@ paths:
       - application/json
   /contracts/{contract_id}/amendments:
     post:
-      description: "Amend the details of a contract. Please note that if the contract\
-        \ is already signed or active, then the update will have to be approved and\
-        \ re-signed for to take effect."
+      description: |-
+        Amend the details of a contract. Please note that if the contract is already signed or active, then the update will have to be approved and re-signed for to take effect.
+         **Token scopes**: `contracts:write`
       operationId: amendContractDetails
       parameters:
       - description: Deel contract id.
@@ -7812,7 +7925,9 @@ paths:
       - application/json
   /contracts/{contract_id}/signatures:
     post:
-      description: Sign a contract as a client.
+      description: |-
+        Sign a contract as a client.
+         **Token scopes**: `contracts:write`
       operationId: signContract
       parameters:
       - description: Deel contract id.
@@ -7954,7 +8069,9 @@ paths:
       - application/json
   /contracts/{contract_id}/invitations:
     delete:
-      description: Remove invite in order to re-invite a worker to sign the contract
+      description: |-
+        Remove invite in order to re-invite a worker to sign the contract
+         **Token scopes**: `contracts:write`
       operationId: uninviteToSignContract
       parameters:
       - description: Deel contract id.
@@ -8025,8 +8142,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Invite a worker to sign the contract. Worker will be notified via
-        email
+      description: |-
+        Invite a worker to sign the contract. Worker will be notified via email
+         **Token scopes**: `contracts:write`
       operationId: inviteToSignContract
       parameters:
       - description: Deel contract id.
@@ -8105,7 +8223,9 @@ paths:
       - application/json
   /contracts/{contract_id}/invite:
     get:
-      description: Get invite link generated for worker
+      description: |-
+        Get invite link generated for worker
+         **Token scopes**: `contracts:read`
       operationId: getInviteLink
       parameters:
       - description: Deel contract id.
@@ -8177,7 +8297,9 @@ paths:
       - application/json
   /contracts/{contract_id}/timesheets:
     get:
-      description: Retrieve a list of timesheets found for a contract.
+      description: |-
+        Retrieve a list of timesheets found for a contract.
+         **Token scopes**: `timesheets:read`
       operationId: getTimesheetsByContract
       parameters:
       - description: Deel contract id.
@@ -8323,9 +8445,9 @@ paths:
       - application/json
   /contracts/{contract_id}/milestones:
     get:
-      description: "Retrieve a list of milestones associated with a specific contract.\
-        \ Each milestone includes details such as its title, amount, status, and relevant\
-        \ dates, along with information about the creator and reviewer."
+      description: |-
+        Retrieve a list of milestones associated with a specific contract. Each milestone includes details such as its title, amount, status, and relevant dates, along with information about the creator and reviewer.
+         **Token scopes**: `milestones:read`
       operationId: getMilestonesByContract
       parameters:
       - description: The unique identifier of the Deel contract for which milestones
@@ -8415,9 +8537,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Add a new milestone to a specific contract. Milestones represent
-        distinct deliverables or phases in the contract and can include additional
-        details such as attachments.
+      description: |-
+        Add a new milestone to a specific contract. Milestones represent distinct deliverables or phases in the contract and can include additional details such as attachments.
+         **Token scopes**: `milestones:write`
       operationId: createMilestone
       parameters:
       - description: The unique identifier of the Deel contract where the milestone
@@ -8503,8 +8625,9 @@ paths:
       - application/json
   /contracts/{contract_id}/milestones/{milestone_id}:
     delete:
-      description: Delete a specific milestone associated with a contract. This operation
-        removes the milestone and its data permanently from the system.
+      description: |-
+        Delete a specific milestone associated with a contract. This operation removes the milestone and its data permanently from the system.
+         **Token scopes**: `milestones:write`
       operationId: deleteMilestoneById
       parameters:
       - description: The unique identifier of the Deel contract from which the milestone
@@ -8584,7 +8707,9 @@ paths:
       x-accepts:
       - application/json
     get:
-      description: Retrieve a single milestone.
+      description: |-
+        Retrieve a single milestone.
+         **Token scopes**: `milestones:read`
       operationId: getMilestonesByContractAndId
       parameters:
       - description: Deel contract id.
@@ -8822,9 +8947,9 @@ paths:
       - application/json
   /contracts/{contract_id}/off-cycle-payments:
     get:
-      description: "Retrieve a list of off-cycle payments for the specified contract\
-        \ ID. Off-cycle payments are payments made outside the regular payment schedule,\
-        \ often for exceptional or one-time expenses."
+      description: |-
+        Retrieve a list of off-cycle payments for the specified contract ID. Off-cycle payments are payments made outside the regular payment schedule, often for exceptional or one-time expenses.
+         **Token scopes**: `off-cycle-payments:read`
       operationId: getOffCyclePaymentsByContract
       parameters:
       - description: The unique identifier (ID) of the Deel contract for which to
@@ -8936,9 +9061,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Add a new invoice line-item for the purpose of an off-cycle payment
-        associated with a specific contract. This is typically used for exceptional
-        payments outside the regular payment schedule.
+      description: |-
+        Add a new invoice line-item for the purpose of an off-cycle payment associated with a specific contract. This is typically used for exceptional payments outside the regular payment schedule.
+         **Token scopes**: `off-cycle-payments:write`
       operationId: createOffCyclePayment
       parameters:
       - description: The unique identifier (ID) of the Deel contract for which the
@@ -9192,9 +9317,9 @@ paths:
       - application/json
   /timesheets:
     get:
-      description: "Retrieve a list of timesheets in your Deel account. You can filter\
-        \ the list by providing additional paramters e.g. contract_id, contract_type\
-        \ etc."
+      description: |-
+        Retrieve a list of timesheets in your Deel account. You can filter the list by providing additional paramters e.g. contract_id, contract_type etc.
+         **Token scopes**: `timesheets:read`
       operationId: getTimesheets
       parameters:
       - description: Id of an Deel contract.
@@ -9319,7 +9444,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Submit work for a contractor.
+      description: |-
+        Submit work for a contractor.
+         **Token scopes**: `timesheets:write`
       operationId: createTimesheet
       requestBody:
         content:
@@ -9392,7 +9519,9 @@ paths:
       - application/json
   /timesheets/{id}:
     delete:
-      description: Delete a single timesheet entry.
+      description: |-
+        Delete a single timesheet entry.
+         **Token scopes**: `timesheets:write`
       operationId: deleteTimesheetById
       parameters:
       - description: ID of an existing timesheet
@@ -9472,7 +9601,9 @@ paths:
       x-accepts:
       - application/json
     get:
-      description: Retrieve a single timesheet entry by Id.
+      description: |-
+        Retrieve a single timesheet entry by Id.
+         **Token scopes**: `timesheets:read`
       operationId: getTimesheetById
       parameters:
       - description: ID of an existing timesheet
@@ -9542,7 +9673,9 @@ paths:
       x-accepts:
       - application/json
     patch:
-      description: Update a single timesheet entry.
+      description: |-
+        Update a single timesheet entry.
+         **Token scopes**: `timesheets:write`
       operationId: updateTimesheetById
       parameters:
       - description: ID of an existing timesheet.
@@ -9626,7 +9759,9 @@ paths:
       - application/json
   /timesheets/{id}/reviews:
     post:
-      description: Review a timesheet to approve or decline submitted work.
+      description: |-
+        Review a timesheet to approve or decline submitted work.
+         **Token scopes**: `timesheets:write`
       operationId: createTimesheetReview
       parameters:
       - description: ID of an existing timesheet
@@ -9770,7 +9905,9 @@ paths:
       - application/json
   /contracts/{contract_id}/invoice-adjustments:
     get:
-      description: Retrieve invoice line items for a given contract id.
+      description: |-
+        Retrieve invoice line items for a given contract id.
+         **Token scopes**: `invoice-adjustments:read`
       operationId: getInvoiceAdjustmentsByContractId
       parameters:
       - description: Deel contract id.
@@ -9936,8 +10073,9 @@ paths:
       - application/json
   /invoice-adjustments:
     get:
-      description: "Retrieve invoice adjustments. You can filter the list by providing\
-        \ additional parameters e.g. contract_id, contract_type etc."
+      description: |-
+        Retrieve invoice adjustments. You can filter the list by providing additional parameters e.g. contract_id, contract_type etc.
+         **Token scopes**: `invoice-adjustments:read`
       operationId: getInvoiceAdjustments
       parameters:
       - description: Id of an Deel contract.
@@ -10101,8 +10239,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: "Create an invoice adjustment using this endpoint. For example,\
-        \ you can add a bonus, commission, VAT %, deduction etc. to an invoice."
+      description: |-
+        Create an invoice adjustment using this endpoint. For example, you can add a bonus, commission, VAT %, deduction etc. to an invoice.
+         **Token scopes**: `invoice-adjustments:write`
       operationId: createInvoiceAdjustment
       parameters:
       - description: Add this invoice adjustment as recurring
@@ -10250,7 +10389,9 @@ paths:
       - application/json
   /legal-entities:
     get:
-      description: Retrieve a list of legal entities in your account.
+      description: |-
+        Retrieve a list of legal entities in your account.
+         **Token scopes**: `organizations:read`, `accounting:read`
       operationId: getLegalEntityList
       parameters:
       - description: Fetch only legal entities from a specific country
@@ -10634,9 +10775,9 @@ paths:
       - application/json
   /organizations:
     get:
-      description: Retrieve details of the current organization associated with the
-        authenticated user. The organization is automatically detected based on the
-        authentication token provided in the request.
+      description: |-
+        Retrieve details of the current organization associated with the authenticated user. The organization is automatically detected based on the authentication token provided in the request.
+         **Token scopes**: `organizations:read`
       operationId: getOrganizations
       responses:
         "200":
@@ -10701,9 +10842,9 @@ paths:
       - application/json
   /teams:
     get:
-      description: "Retrieve a list of teams within the organization associated with\
-        \ the authenticated user. This list provides basic details about each team,\
-        \ including the team ID and name."
+      description: |-
+        Retrieve a list of teams within the organization associated with the authenticated user. This list provides basic details about each team, including the team ID and name.
+         **Token scopes**: `organizations:read`
       operationId: getTeams
       responses:
         "200":
@@ -10768,8 +10909,9 @@ paths:
       - application/json
   /contract-templates:
     get:
-      description: Fetches a collection of contract templates available within your
-        organization. Use this endpoint to retrieve metadata about the templates.
+      description: |-
+        Fetches a collection of contract templates available within your organization. Use this endpoint to retrieve metadata about the templates.
+         **Token scopes**: `contracts:read`
       operationId: getContractTemplates
       responses:
         "200":
@@ -10850,7 +10992,9 @@ paths:
       - application/json
   /contracts/{contract_id}/adjustments:
     get:
-      description: Get all adjustments for the specific contract.
+      description: |-
+        Get all adjustments for the specific contract.
+         **Token scopes**: `adjustments:read`
       operationId: getAdjustments
       parameters:
       - description: Deel adjustment id.
@@ -10924,8 +11068,9 @@ paths:
       - application/json
   /payments:
     get:
-      description: "Retrieve a list of payments made to Deel, including worker details,\
-        \ payment status, and payment methods."
+      description: |-
+        Retrieve a list of payments made to Deel, including worker details, payment status, and payment methods.
+         **Token scopes**: `accounting:read`
       operationId: getPaymentList
       parameters:
       - description: Filters results to include payments created on or after this
@@ -11021,7 +11166,9 @@ paths:
       - application/json
   /people:
     get:
-      description: Retrieve a list of People in your organization.
+      description: |-
+        Retrieve a list of People in your organization.
+         **Token scopes**: `people:read`, `Users:read`
       operationId: getPeopleList
       parameters:
       - description: Return a page of results with given number of records.
@@ -11165,8 +11312,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Create employee hired under your own entity to Deel HR. Manage
-        your employee through Deel and export a payroll report to your own providers.
+      description: |-
+        Create employee hired under your own entity to Deel HR. Manage your employee through Deel and export a payroll report to your own providers.
+         **Token scopes**: `people:write`
       operationId: createDirectEmployee
       requestBody:
         content:
@@ -11297,7 +11445,9 @@ paths:
       - application/json
   /people/me:
     get:
-      description: Retrieve the current user's profile.
+      description: |-
+        Retrieve the current user's profile.
+         **Token scopes**: `people:read`
       operationId: getPeople
       responses:
         "200":
@@ -11766,8 +11916,9 @@ paths:
       - application/json
   /payments/{payment_id}/breakdown:
     get:
-      description: Get a full breakdown of a payment made to Deel. Breakdown will
-        include individual invoices and Deel fee as line items.
+      description: |-
+        Get a full breakdown of a payment made to Deel. Breakdown will include individual invoices and Deel fee as line items.
+         **Token scopes**: `accounting:read`
       operationId: GetPaymentsBreakDownById
       parameters:
       - description: Unique identifier for the payment to retrieve the breakdown.
@@ -11839,9 +11990,9 @@ paths:
       - application/json
   /departments:
     get:
-      description: "Retrieve a list of departments within the organization associated\
-        \ with the authenticated user. Each department contains its unique identifier,\
-        \ name, and optionally, the parent department if applicable."
+      description: |-
+        Retrieve a list of departments within the organization associated with the authenticated user. Each department contains its unique identifier, name, and optionally, the parent department if applicable.
+         **Token scopes**: `organizations:read`
       operationId: GetDepartments
       responses:
         "200":
@@ -12085,7 +12236,9 @@ paths:
       - application/json
   /hris/worker_relations/types:
     get:
-      description: Retrieve all worker relation types.
+      description: |-
+        Retrieve all worker relation types.
+         **Token scopes**: `organizations:read`
       operationId: getAllWorkerRelationTypes
       responses:
         "200":
@@ -12134,7 +12287,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Create worker relation type.
+      description: |-
+        Create worker relation type.
+         **Token scopes**: `organizations:write`
       operationId: createWorkerRelationType
       requestBody:
         content:
@@ -12191,7 +12346,9 @@ paths:
       - application/json
   /hris/worker_relations/types/{typeId}:
     delete:
-      description: Delete a worker relation type.
+      description: |-
+        Delete a worker relation type.
+         **Token scopes**: `organizations:write`
       operationId: deleteWorkerRelationType
       parameters:
       - description: Worker Relation Type ID
@@ -12247,7 +12404,9 @@ paths:
       x-accepts:
       - application/json
     patch:
-      description: Update a worker relation type.
+      description: |-
+        Update a worker relation type.
+         **Token scopes**: `organizations:write`
       operationId: updateWorkerRelationType
       parameters:
       - description: Worker Relation Type id
@@ -12315,7 +12474,9 @@ paths:
       - application/json
   /hris/worker_relations/types/external/{externalId}:
     delete:
-      description: Delete a Worker Relation Type by the external ID.
+      description: |-
+        Delete a Worker Relation Type by the external ID.
+         **Token scopes**: `organizations:write`
       operationId: deleteWorkerRelationTypeExternalId
       parameters:
       - description: Worker Relation Type external ID
@@ -12372,7 +12533,9 @@ paths:
       x-accepts:
       - application/json
     patch:
-      description: Update a worker relation type by external id.
+      description: |-
+        Update a worker relation type by external id.
+         **Token scopes**: `organizations:write`
       operationId: updateWorkerRelationTypeExternalId
       parameters:
       - description: Worker Relation Type external ID
@@ -12439,7 +12602,9 @@ paths:
       - application/json
   /hris/worker_relations/profile:
     post:
-      description: Create a hierarchical relation between a worker and its subordinates.
+      description: |-
+        Create a hierarchical relation between a worker and its subordinates.
+         **Token scopes**: `profile:write`
       operationId: createWorkerRelation
       requestBody:
         content:
@@ -12494,8 +12659,9 @@ paths:
       - application/json
   /hris/worker_relations/profile/external:
     post:
-      description: Create a hierarchical relation between a worker and its subordinates
-        using external IDs to identify them.
+      description: |-
+        Create a hierarchical relation between a worker and its subordinates using external IDs to identify them.
+         **Token scopes**: `profile:write`
       operationId: createWorkerRelationExternalId
       requestBody:
         content:
@@ -12550,7 +12716,9 @@ paths:
       - application/json
   /hris/worker_relations/profile/{hrisProfileOid}:
     delete:
-      description: Delete a worker relation.
+      description: |-
+        Delete a worker relation.
+         **Token scopes**: `profile:write`
       operationId: deleteWorkerRelation
       parameters:
       - description: Worker Relation ID
@@ -12606,7 +12774,9 @@ paths:
       x-accepts:
       - application/json
     get:
-      description: List of worker relations.
+      description: |-
+        List of worker relations.
+         **Token scopes**: `profile:read`
       operationId: getAllProfileWorkerRelations
       parameters:
       - description: HrisProfile ID
@@ -12667,7 +12837,9 @@ paths:
       - application/json
   /hris/worker_relations/profile/external/{profileId}:
     delete:
-      description: Delete a worker relation by external id.
+      description: |-
+        Delete a worker relation by external id.
+         **Token scopes**: `profile:write`
       operationId: deleteWorkerRelationExternalId
       parameters:
       - description: Worker Relation external ID
@@ -12722,7 +12894,9 @@ paths:
       x-accepts:
       - application/json
     get:
-      description: Fetch Worker Relations of a given HrisProfile by external id.
+      description: |-
+        Fetch Worker Relations of a given HrisProfile by external id.
+         **Token scopes**: `profile:read`
       operationId: getAllProfileWorkerRelationsExternalId
       parameters:
       - description: HrisProfile external ID
@@ -12782,7 +12956,9 @@ paths:
       - application/json
   /hris/worker_relations/profile/{hrisProfileOid}/parent:
     put:
-      description: Create a parent worker relation.
+      description: |-
+        Create a parent worker relation.
+         **Token scopes**: `profile:write`
       operationId: upsertParentWorkerRelations
       parameters:
       - description: HrisProfile ID
@@ -12848,7 +13024,9 @@ paths:
       - application/json
   /hris/worker_relations/profile/{hrisProfileOid}/child:
     put:
-      description: Create child worker relation.
+      description: |-
+        Create child worker relation.
+         **Token scopes**: `profile:write`
       operationId: upsertChildWorkerRelations
       parameters:
       - description: HrisProfile ID
@@ -13043,7 +13221,9 @@ paths:
       - application/json
   /background-checks/options:
     get:
-      description: Retrieve the list of background check options.
+      description: |-
+        Retrieve the list of background check options.
+         **Token scopes**: `contracts:read`
       operationId: getBackgroundChecksOptions
       parameters:
       - description: Country code.
@@ -13132,7 +13312,9 @@ paths:
       - application/json
   /background-checks/regular:
     post:
-      description: Create background check.
+      description: |-
+        Create background check.
+         **Token scopes**: `contracts:write`
       operationId: createBackgroundCheckForContracts
       requestBody:
         content:
@@ -13202,7 +13384,9 @@ paths:
       - application/json
   /background-checks/{contract_id}:
     get:
-      description: List background checks by contract.
+      description: |-
+        List background checks by contract.
+         **Token scopes**: `contracts:read`
       operationId: getBackgroundChecksByContractId
       parameters:
       - description: Deel contract id.
@@ -13294,9 +13478,9 @@ paths:
       - application/json
   /contracts/{contract_id}/payment_cycles:
     get:
-      description: "Fetches a list of payment dates associated with a specific contract.\
-        \ This endpoint provides information on when contractors are scheduled to\
-        \ be paid, along with the current status of each payment cycle."
+      description: |-
+        Fetches a list of payment dates associated with a specific contract. This endpoint provides information on when contractors are scheduled to be paid, along with the current status of each payment cycle.
+         **Token scopes**: `contracts:read`
       operationId: getContractPaymentDates
       parameters:
       - description: The Deel contract ID for which payment dates are being retrieved.
@@ -13370,7 +13554,9 @@ paths:
       - application/json
   /invoices/{id}/download:
     get:
-      description: Get a link to download the invoice PDF.
+      description: |-
+        Get a link to download the invoice PDF.
+         **Token scopes**: `accounting:read`
       operationId: getBillingInvoiceDownloadLink
       parameters:
       - description: The invoice ID used to identify the invoice to be downloaded.
@@ -13430,8 +13616,9 @@ paths:
       - application/json
   /benefits/legal-entities/{id}/employees/{employee_id}:
     get:
-      description: Get employee from organization integrated with external benefits
-        vendor
+      description: |-
+        Get employee from organization integrated with external benefits vendor
+         **Token scopes**: `Users:read`
       operationId: getBenefitEmployee
       parameters:
       - description: Fetch only active contracts for employees
@@ -13480,7 +13667,9 @@ paths:
       - application/json
   /hris/worker_relations/profile/external/{hrisProfileExternalId}/child:
     put:
-      description: Create child worker relation with external Id.
+      description: |-
+        Create child worker relation with external Id.
+         **Token scopes**: `profile:write`
       operationId: createOrUpdateChildRelationBetweenProfiles
       parameters:
       - description: External Profile id
@@ -13545,9 +13734,9 @@ paths:
       - application/json
   /invoice-adjustments/{id}/reviews:
     post:
-      description: "Update an existing invoice adjustment. It is not possible to update\
-        \ VAT adjustments, we recommend you to delete the existing VAT adjust and\
-        \ create a new one."
+      description: |-
+        Update an existing invoice adjustment. It is not possible to update VAT adjustments, we recommend you to delete the existing VAT adjust and create a new one.
+         **Token scopes**: `invoice-adjustments:write`
       operationId: updateInvoiceAdjustmentById
       parameters:
       - description: ID of an existing invoice adjustment.
@@ -13632,8 +13821,9 @@ paths:
       - application/json
   /benefits/legal-entities/{id}:
     get:
-      description: Get legal entity data from organization integrated with external
-        benefits vendor
+      description: |-
+        Get legal entity data from organization integrated with external benefits vendor
+         **Token scopes**: `organizations:read`
       operationId: getLegalEntity
       parameters:
       - description: Id from the legal entity to fetch data
@@ -13664,8 +13854,9 @@ paths:
       - application/json
   /benefits/legal-entities/{id}/employees:
     get:
-      description: Get employees from organization integrated with external benefits
-        vendor
+      description: |-
+        Get employees from organization integrated with external benefits vendor
+         **Token scopes**: `Users:read`
       operationId: getBenefitEmployees
       parameters:
       - description: Fetch only active contracts for employees
@@ -13725,7 +13916,9 @@ paths:
       - application/json
   /hris/worker_relations/profile/external/{hrisProfileExternalId}/parent:
     put:
-      description: Create a parent worker relation with external id.
+      description: |-
+        Create a parent worker relation with external id.
+         **Token scopes**: `profile:write`
       operationId: createOrUpdateParentRelationBetweenProfiles
       parameters:
       - description: HRISProfile public id
@@ -13791,7 +13984,9 @@ paths:
       - application/json
   /benefits/legal-entities/{id}/contracts/{contract_id}/plans/{plan_id}:
     delete:
-      description: Delete enrollment settings from an employee in a 401k plan
+      description: |-
+        Delete enrollment settings from an employee in a 401k plan
+         **Token scopes**: `benefits:write`
       operationId: delete401kEnrollmentsDefinition
       parameters:
       - description: Legal entity id which employee/contract belongs
@@ -13844,7 +14039,9 @@ paths:
       x-accepts:
       - application/json
     get:
-      description: Get enrollment settings from an employee in a 401k plan
+      description: |-
+        Get enrollment settings from an employee in a 401k plan
+         **Token scopes**: `benefits:read`
       operationId: get401kEnrollmentsDefinition
       parameters:
       - description: Legal entity id which employee/contract belongs
@@ -13893,7 +14090,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Enroll an employee in a 401k plan
+      description: |-
+        Enroll an employee in a 401k plan
+         **Token scopes**: `benefits:write`
       operationId: post401kEnrollmentsDefinition
       parameters:
       - description: Legal entity id which employee/contract belongs
@@ -13947,7 +14146,9 @@ paths:
       x-accepts:
       - application/json
     put:
-      description: Change enrollment settings from an employee in a 401k plan
+      description: |-
+        Change enrollment settings from an employee in a 401k plan
+         **Token scopes**: `benefits:write`
       operationId: put401kEnrollmentsDefinition
       parameters:
       - description: Legal entity id which employee/contract belongs
@@ -14002,8 +14203,9 @@ paths:
       - application/json
   /benefits/legal-entities/{id}/year-to-date-pay:
     get:
-      description: Get year to date from employees from organization integrated with
-        external benefits vendor
+      description: |-
+        Get year to date from employees from organization integrated with external benefits vendor
+         **Token scopes**: `organizations:read`
       operationId: getYearToDatePay
       parameters:
       - description: Id from the legal entity to fetch data
@@ -14051,8 +14253,9 @@ paths:
       - application/json
   /benefits/legal-entities/{id}/payroll-settings:
     get:
-      description: Get legal entity payroll settings from organization integrated
-        with external benefits vendor
+      description: |-
+        Get legal entity payroll settings from organization integrated with external benefits vendor
+         **Token scopes**: `organizations:read`
       operationId: getLegalEntityPayrollSettings
       parameters:
       - description: Id from the legal entity to fetch data
@@ -14085,7 +14288,9 @@ paths:
       - application/json
   /benefits/legal-entities/{id}/401k/plans:
     get:
-      description: Get 401k plans legal entity
+      description: |-
+        Get 401k plans legal entity
+         **Token scopes**: `benefits:read`
       operationId: get401kPlansDefinition
       parameters:
       - description: Id from the legal entity to fetch 401k plans
@@ -14117,7 +14322,9 @@ paths:
       x-accepts:
       - application/json
     post:
-      description: Create a new 401k plan for existing provider to legal entity
+      description: |-
+        Create a new 401k plan for existing provider to legal entity
+         **Token scopes**: `benefits:write`
       operationId: post401kPlansDefinition
       parameters:
       - description: Id from the legal entity to receive a new 401k plan
@@ -14154,7 +14361,9 @@ paths:
       - application/json
   /gp/legal-entities/{id}/reports:
     get:
-      description: Get a list of global payroll events by legal entities.
+      description: |-
+        Get a list of global payroll events by legal entities.
+         **Token scopes**: `global-payroll:read`
       operationId: getGPLegalEntities
       parameters:
       - description: Unique identifier for the legal entity.
@@ -14223,7 +14432,9 @@ paths:
       - application/json
   /gp/workers/{id}/payslips/{payslipId}/download:
     get:
-      description: Get a pre-signed download URL for a GP payslip PDF.
+      description: |-
+        Get a pre-signed download URL for a GP payslip PDF.
+         **Token scopes**: `payslips:read`
       operationId: getDownloadUrlForGPPayslip
       parameters:
       - description: Unique identifier for the worker.
@@ -14290,6 +14501,9 @@ paths:
       - application/json
   /people/{id}/department:
     put:
+      description: |-
+        undefined
+         **Token scopes**: `people:write`
       operationId: updatePeopleDepartment
       parameters:
       - description: Hris profile ID
@@ -14368,7 +14582,9 @@ paths:
       - application/json
   /gp/workers/{id}/payslips:
     get:
-      description: Get a list of payslips for an employee.
+      description: |-
+        Get a list of payslips for an employee.
+         **Token scopes**: `payslips:read`
       operationId: getWorkerPayslips
       parameters:
       - description: Unique identifier for the worker.
@@ -14424,7 +14640,9 @@ paths:
       - application/json
   /benefits/legal-entities/{id}/401k/plans/{plan_id}:
     delete:
-      description: Delete a 401k plan
+      description: |-
+        Delete a 401k plan
+         **Token scopes**: `benefits:write`
       operationId: delete401kPlanDefinition
       parameters:
       - description: Legal entity id which plans belongs
@@ -14461,7 +14679,9 @@ paths:
       x-accepts:
       - application/json
     put:
-      description: Update 401k plan
+      description: |-
+        Update 401k plan
+         **Token scopes**: `benefits:write`
       operationId: put401kPlansDefinition
       parameters:
       - description: Id from the legal entity to update a 401k plan
@@ -14507,7 +14727,9 @@ paths:
       - application/json
   /benefits/legal-entities/{id}/benefits/401k/activate:
     post:
-      description: Activate the 401k integration for the legal entity
+      description: |-
+        Activate the 401k integration for the legal entity
+         **Token scopes**: `benefits:write`
       operationId: createBenefitProviderIntegrationClient
       parameters:
       - description: Id from the legal entity to activate 401k integration
@@ -14537,7 +14759,9 @@ paths:
       - application/json
   /contracts/{contractId}/terminations:
     post:
-      description: Terminate contract.
+      description: |-
+        Terminate contract.
+         **Token scopes**: `contracts:write`
       operationId: terminateContract
       parameters:
       - description: Contract id
@@ -14616,7 +14840,9 @@ paths:
       - application/json
   /benefits/legal-entities/{id}/contracts/{contract_id}/plans/{plan_id}/deductions:
     post:
-      description: Create a single deduction loan
+      description: |-
+        Create a single deduction loan
+         **Token scopes**: `benefits:write`
       operationId: post401kSingleDeductionDefinition
       parameters:
       - description: Legal entity id which employee/contract belongs
@@ -14671,7 +14897,9 @@ paths:
       - application/json
   /invoice-adjustments/{id}:
     patch:
-      description: Update an invoice adjustment.
+      description: |-
+        Update an invoice adjustment.
+         **Token scopes**: `adjustments:write`
       operationId: updateInvoiceAdjustment
       parameters:
       - description: Invoice adjustment id.
@@ -14708,7 +14936,9 @@ paths:
       - application/json
   /hris/worker_relations/profile/external/{profileId}/parent:
     put:
-      description: Create a parent worker relation with external id.
+      description: |-
+        Create a parent worker relation with external id.
+         **Token scopes**: `profile:write`
       operationId: upsertParentWorkerRelationsExternalId
       parameters:
       - description: HrisProfile external ID
@@ -14744,6 +14974,9 @@ paths:
       - application/json
   /people/{id}/working-location:
     put:
+      description: |-
+        undefined
+         **Token scopes**: `people:write`
       operationId: updatePeopleWorkingLocation
       parameters:
       - description: Hris profile ID
@@ -14822,7 +15055,9 @@ paths:
       - application/json
   /onboarding/tracker/hris_profile/{oid}:
     get:
-      description: Get onboarding overview
+      description: |-
+        Get onboarding overview
+         **Token scopes**: `contracts:read`, `people:read`
       parameters:
       - description: Unique hris profile oid
         example: 150f635e-fae1-4b9d-9f86-768bbbac3698
@@ -14852,8 +15087,9 @@ paths:
       - application/json
   /benefits/legal-entities/{legalEntityId}/paystubs:
     get:
-      description: Get paystubs from legal entity integrated with external benefits
-        vendor
+      description: |-
+        Get paystubs from legal entity integrated with external benefits vendor
+         **Token scopes**: `benefits:read`
       operationId: getBenefitPaystubs
       parameters:
       - description: Id from the legal entity to fetch data
@@ -14934,7 +15170,9 @@ paths:
       - application/json
   /gp/reports/{id}/gross_to_net:
     get:
-      description: Get a list of global payroll reports detailing gross-to-net calculations.
+      description: |-
+        Get a list of global payroll reports detailing gross-to-net calculations.
+         **Token scopes**: `global-payroll:read`
       operationId: getGrossToNetGPReports
       parameters:
       - description: Unique identifier for the payroll report in UUID format.
@@ -14990,7 +15228,9 @@ paths:
       - application/json
   /contracts/{contract_id}/custom_fields/{id}:
     delete:
-      description: Removes the custom field value from the contract custom field.
+      description: |-
+        Removes the custom field value from the contract custom field.
+         **Token scopes**: `contracts:write`
       operationId: DeleteContractCustomField
       parameters:
       - description: Custom field id.
@@ -15057,7 +15297,9 @@ paths:
       - application/json
   /hris/worker_relations/profile/external/{profileId}/child:
     put:
-      description: Create child worker relation with external Id.
+      description: |-
+        Create child worker relation with external Id.
+         **Token scopes**: `profile:write`
       operationId: upsertChildWorkerRelationsExternalId
       parameters:
       - description: HrisProfile external ID
@@ -15091,8 +15333,9 @@ paths:
       - application/json
   /benefits/legal-entities/{id}/pay-stub:
     get:
-      description: Get pay stub from employees from organization integrated with external
-        benefits vendor
+      description: |-
+        Get pay stub from employees from organization integrated with external benefits vendor
+         **Token scopes**: `organizations:read`
       operationId: getPayStub
       parameters:
       - description: Id from the legal entity to fetch data
@@ -15170,6 +15413,9 @@ paths:
       - application/json
   /hris/positions/profile/{hrisProfileId}:
     get:
+      description: |-
+        undefined
+         **Token scopes**: `profile:read`
       operationId: getHrisPositions
       parameters:
       - description: HRIS Profile ID
@@ -15229,7 +15475,9 @@ paths:
       - application/json
   /onboarding/tracker:
     get:
-      description: List all onboarding
+      description: |-
+        List all onboarding
+         **Token scopes**: `contracts:read`, `people:read`
       operationId: listOnboardingTracker
       parameters:
       - description: Search term to filter contracts by name or other attributes
@@ -15451,7 +15699,9 @@ paths:
       - application/json
   /people/{worker_id}/custom_fields/{id}:
     delete:
-      description: Delete the custom field value from Worker by Id.
+      description: |-
+        Delete the custom field value from Worker by Id.
+         **Token scopes**: `people:write`
       operationId: DeleteCustomFieldValueFromWorker
       parameters:
       - description: Custom field id.
@@ -15514,7 +15764,9 @@ paths:
       - application/json
   /equity/exercise/{public_id}:
     patch:
-      description: Approve an equity exercise.
+      description: |-
+        Approve an equity exercise.
+         **Token scopes**: `contracts:write`
       operationId: approveExerciseEquity
       parameters:
       - description: Equity exercise public ID.
@@ -15582,7 +15834,9 @@ paths:
       - application/json
   /contracts/{contract_id}/off-cycle-payments/{id}:
     get:
-      description: Retrieve a single off-cycle payment.
+      description: |-
+        Retrieve a single off-cycle payment.
+         **Token scopes**: `off-cycle-payments:read`
       operationId: getOffCyclePaymentByContractAndId
       parameters:
       - description: Deel contract id.
@@ -15662,9 +15916,41 @@ paths:
       - Off-cycle Payments
       x-accepts:
       - application/json
+  /immigration/client/cases:
+    post:
+      description: |-
+        Create an immigration case.
+         **Token scopes**: `immigration:write`
+      operationId: createCase
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/createCase_request'
+        required: true
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/createCase_201_response'
+          description: Successful operation.
+      security:
+      - deelToken: []
+      - oauth2:
+        - immigration:write
+      summary: Create an immigration case
+      tags:
+      - Immigration
+      x-content-type: application/json
+      x-accepts:
+      - application/json
   /people/custom_fields/{id}:
     get:
-      description: Get custom field from people by id.
+      description: |-
+        Get custom field from people by id.
+         **Token scopes**: `people:read`
       operationId: getCustomFieldFromPeopleById
       parameters:
       - description: Custom field id.
@@ -15725,7 +16011,9 @@ paths:
       - application/json
   /contracts/custom_fields/{id}:
     get:
-      description: Get custom field from contract by id
+      description: |-
+        Get custom field from contract by id
+         **Token scopes**: `contracts:read`
       operationId: getCustomFieldFromContractsById
       parameters:
       - description: Custom field id.
@@ -15786,6 +16074,9 @@ paths:
       - application/json
   /roles/{roleId}:
     patch:
+      description: |-
+        undefined
+         **Token scopes**: `organizations:write`
       operationId: UpdateOrganizationRole
       parameters:
       - description: ID of the role
@@ -15852,7 +16143,9 @@ paths:
       - application/json
   /onboarding/tracker/{id}:
     get:
-      description: Get onboarding overview
+      description: |-
+        Get onboarding overview
+         **Token scopes**: `contracts:read`, `people:read`
       parameters:
       - description: Unique onboarding tracker identifier
         example: eyJjb250cmFjdE9pZCI6IlB6cFlhcmVuIiwiaGlyaW5nVHlwZSI6ImNvbnRyYWN0b3IiLCJwcm9maWxlSWQiOjE2NzgyMCwidXNlcklkIjoxNDM3ODl9
@@ -15882,7 +16175,9 @@ paths:
       - application/json
   /offboarding/tracker/{id}:
     get:
-      description: Retrieve termination details by tracker id
+      description: |-
+        Retrieve termination details by tracker id
+         **Token scopes**: `contracts:read`, `people:read`
       parameters:
       - description: Unique onboarding tracker identifier
         example: eyJjb250cmFjdE9pZCI6IlB6cFlhcmVuIiwiaGlyaW5nVHlwZSI6ImNvbnRyYWN0b3IiLCJwcm9maWxlSWQiOjE2NzgyMCwidXNlcklkIjoxNDM3ODl9
@@ -15912,7 +16207,9 @@ paths:
       - application/json
   /offboarding/tracker/hris_profile/{oid}:
     get:
-      description: Retrieve termination details by hris profile oid
+      description: |-
+        Retrieve termination details by hris profile oid
+         **Token scopes**: `contracts:read`, `people:read`
       parameters:
       - description: Unique hris profile oid
         example: 150f635e-fae1-4b9d-9f86-768bbbac3698
@@ -15942,7 +16239,9 @@ paths:
       - application/json
   /offboarding/tracker:
     get:
-      description: Retrieve offboarding list
+      description: |-
+        Retrieve offboarding list
+         **Token scopes**: `contracts:read`, `people:read`
       parameters:
       - description: Search term to filter contracts by name or other attributes
         example: John Doe
@@ -51899,6 +52198,140 @@ components:
       properties:
         data:
           $ref: '#/components/schemas/getOffCyclePaymentByContractAndId_200_response_data'
+      required:
+      - data
+      type: object
+    createCase_request_data:
+      properties:
+        team_id:
+          description: The team ID. Required for EOR visa applications. Identifies
+            the team handling the case
+          example: 223e4567-e89b-12d3-a456-426614174000
+          format: uuid
+          type: string
+        case_type:
+          description: The type of immigration case to be created. Determines the
+            workflow and requirements
+          enum:
+          - RIGHT_TO_WORK
+          - EOR_VISA
+          - SPONSORED_VISA
+          - PRE_HIRE_EOR_VISA
+          - PRE_HIRE_SPONSORSHIP_VISA
+          example: SPONSORED_VISA
+          type: string
+        entity_id:
+          description: The unique identifier of the entity sponsoring the visa. Required
+            for sponsored visa applications
+          example: 123e4567-e89b-12d3-a456-426614174000
+          format: uuid
+          type: string
+        contract_id:
+          description: The contract object identifier. Required for document reviews
+            and visa applications
+          example: "12345"
+          maxLength: 20
+          type: string
+        country_code:
+          description: ISO 3166-1 alpha-2 country code where the immigration case
+            needs to be processed
+          example: US
+          maxLength: 2
+          type: string
+      required:
+      - case_type
+      - country_code
+      type: object
+    createCase_request:
+      properties:
+        data:
+          $ref: '#/components/schemas/createCase_request_data'
+      type: object
+    createCase_201_response_data_process:
+      example:
+        status_name: Document Review
+        process_name: Right to Work Verification
+        id: proc_12345
+      properties:
+        id:
+          description: Unique identifier for the immigration process
+          example: proc_12345
+          type: string
+        status_name:
+          description: Human-readable status of the process
+          example: Document Review
+          type: string
+        process_name:
+          description: Name of the immigration process
+          example: Right to Work Verification
+          type: string
+      required:
+      - id
+      - process_name
+      - status_name
+      type: object
+    createCase_201_response_data:
+      example:
+        process:
+          status_name: Document Review
+          process_name: Right to Work Verification
+          id: proc_12345
+        updated_at: 2024-12-10T15:45:00Z
+        created_at: 2024-12-10T14:30:00Z
+        closure_note: All requirements met and visa approved
+        closure_reason: COMPLETED_SUCCESSFULLY
+        status: OPEN
+      properties:
+        status:
+          description: Current status of the immigration case
+          enum:
+          - OPEN
+          - CLOSED
+          - ON_HOLD
+          example: OPEN
+          type: string
+        process:
+          $ref: '#/components/schemas/createCase_201_response_data_process'
+        created_at:
+          description: Timestamp when the case was created
+          example: 2024-12-10T14:30:00Z
+          format: date-time
+          type: string
+        updated_at:
+          description: Timestamp when the case was last updated
+          example: 2024-12-10T15:45:00Z
+          format: date-time
+          type: string
+        closure_note:
+          description: Optional note explaining why the case was closed
+          example: All requirements met and visa approved
+          maxLength: 400
+          type: string
+        closure_reason:
+          description: Standardized reason for case closure
+          example: COMPLETED_SUCCESSFULLY
+          type: string
+      required:
+      - created_at
+      - process
+      - status
+      - updated_at
+      type: object
+    createCase_201_response:
+      example:
+        data:
+          process:
+            status_name: Document Review
+            process_name: Right to Work Verification
+            id: proc_12345
+          updated_at: 2024-12-10T15:45:00Z
+          created_at: 2024-12-10T14:30:00Z
+          closure_note: All requirements met and visa approved
+          closure_reason: COMPLETED_SUCCESSFULLY
+          status: OPEN
+      properties:
+        data:
+          $ref: '#/components/schemas/createCase_201_response_data'
       required:
       - data
       type: object

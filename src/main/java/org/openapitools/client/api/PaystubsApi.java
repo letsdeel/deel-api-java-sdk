@@ -291,7 +291,7 @@ public class PaystubsApi {
 
     /**
      * Get paystubs from legal entity integrated with external benefits vendor
-     * Get paystubs from legal entity integrated with external benefits vendor
+     * Get paystubs from legal entity integrated with external benefits vendor  **Token scopes**: &#x60;benefits:read&#x60;
      * @param legalEntityId Id from the legal entity to fetch data (required)
      * @return APIgetBenefitPaystubsRequest
      * @http.response.details

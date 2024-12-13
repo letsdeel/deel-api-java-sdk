@@ -34,7 +34,7 @@ public class PaystubsApiTest {
     /**
      * Get paystubs from legal entity integrated with external benefits vendor
      *
-     * Get paystubs from legal entity integrated with external benefits vendor
+     * Get paystubs from legal entity integrated with external benefits vendor  **Token scopes**: &#x60;benefits:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */

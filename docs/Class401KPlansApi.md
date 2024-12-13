@@ -17,7 +17,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 Activate the 401k integration for the legal entity
 
-Activate the 401k integration for the legal entity
+Activate the 401k integration for the legal entity  **Token scopes**: &#x60;benefits:write&#x60;
 
 ### Example
 ```java
@@ -89,7 +89,7 @@ public class Example {
 
 Delete a 401k plan
 
-Delete a 401k plan
+Delete a 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
 
 ### Example
 ```java
@@ -163,7 +163,7 @@ public class Example {
 
 Get 401k plans for legal entity
 
-Get 401k plans legal entity
+Get 401k plans legal entity  **Token scopes**: &#x60;benefits:read&#x60;
 
 ### Example
 ```java
@@ -235,7 +235,7 @@ public class Example {
 
 Create 401k plan for legal entity
 
-Create a new 401k plan for existing provider to legal entity
+Create a new 401k plan for existing provider to legal entity  **Token scopes**: &#x60;benefits:write&#x60;
 
 ### Example
 ```java
@@ -309,7 +309,7 @@ public class Example {
 
 Update 401k plan
 
-Update 401k plan
+Update 401k plan  **Token scopes**: &#x60;benefits:write&#x60;
 
 ### Example
 ```java

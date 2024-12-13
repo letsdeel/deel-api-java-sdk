@@ -256,7 +256,7 @@ public class PeopleApi {
 
     /**
      * Create a direct employee
-     * Create employee hired under your own entity to Deel HR. Manage your employee through Deel and export a payroll report to your own providers.
+     * Create employee hired under your own entity to Deel HR. Manage your employee through Deel and export a payroll report to your own providers.  **Token scopes**: &#x60;people:write&#x60;
      * @param createDirectEmployeeRequest  (required)
      * @return APIcreateDirectEmployeeRequest
      * @http.response.details
@@ -626,7 +626,7 @@ public class PeopleApi {
 
     /**
      * Get my current personal profile
-     * Retrieve the current user&#39;s profile.
+     * Retrieve the current user&#39;s profile.  **Token scopes**: &#x60;people:read&#x60;
      * @return APIgetPeopleRequest
      * @http.response.details
      <table border="1">
@@ -1091,7 +1091,7 @@ public class PeopleApi {
 
     /**
      * List of people
-     * Retrieve a list of People in your organization.
+     * Retrieve a list of People in your organization.  **Token scopes**: &#x60;people:read&#x60;, &#x60;Users:read&#x60;
      * @return APIgetPeopleListRequest
      * @http.response.details
      <table border="1">
@@ -1282,7 +1282,7 @@ public class PeopleApi {
 
     /**
      * Get personal information by external id
-     * Get worker&#39;s personal information by using an external identifier.
+     * Get worker&#39;s personal information by using an external identifier.  **Token scopes**: &#x60;people:read&#x60;
      * @param workerId Unique identifier for a worker (External ID). (required)
      * @return APIgetPeoplePersonalInformationByExternalIdRequest
      * @http.response.details
@@ -1474,7 +1474,7 @@ public class PeopleApi {
 
     /**
      * Get personal information by id
-     * Get worker&#39;s personal information by using identifier.
+     * Get worker&#39;s personal information by using identifier.  **Token scopes**: &#x60;people:read&#x60;
      * @param workerId Unique identifier for a worker (External ID). (required)
      * @return APIgetPeoplePersonalInformationByIdRequest
      * @http.response.details
@@ -1674,7 +1674,7 @@ public class PeopleApi {
 
     /**
      * Update department
-     * 
+     * undefined  **Token scopes**: &#x60;people:write&#x60;
      * @param id Hris profile ID (required)
      * @param updatePeopleDepartmentRequest  (required)
      * @return APIupdatePeopleDepartmentRequest
@@ -1867,7 +1867,7 @@ public class PeopleApi {
 
     /**
      * Update personal information by external id
-     * Update worker&#39;s personal information by using an external identifier.
+     * Update worker&#39;s personal information by using an external identifier.  **Token scopes**: &#x60;people:write&#x60;
      * @param workerId Unique identifier for a worker (External ID). (required)
      * @return APIupdatePeoplePersonalInformationByExternalIdRequest
      * @http.response.details
@@ -2057,7 +2057,7 @@ public class PeopleApi {
 
     /**
      * Update personal information
-     * Update worker&#39;s personal information.
+     * Update worker&#39;s personal information.  **Token scopes**: &#x60;people:write&#x60;
      * @param workerId Unique identifier for a worker. (required)
      * @return APIupdatePeoplePersonalInformationByIdRequest
      * @http.response.details
@@ -2255,7 +2255,7 @@ public class PeopleApi {
 
     /**
      * Update working location
-     * 
+     * undefined  **Token scopes**: &#x60;people:write&#x60;
      * @param id Hris profile ID (required)
      * @param updatePeopleWorkingLocationRequest  (required)
      * @return APIupdatePeopleWorkingLocationRequest

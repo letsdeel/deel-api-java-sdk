@@ -58,7 +58,7 @@ public class GlobalPayrollApiTest {
     /**
      * Add bank account
      *
-     * Add a new bank account for an employee.
+     * Add a new bank account for an employee.  **Token scopes**: &#x60;people:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -74,7 +74,7 @@ public class GlobalPayrollApiTest {
     /**
      * Create a contract
      *
-     * Create a Global Payroll contract.
+     * Create a Global Payroll contract.  **Token scopes**: &#x60;contracts:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -104,7 +104,7 @@ public class GlobalPayrollApiTest {
     /**
      * Download payslip PDF
      *
-     * Get a pre-signed download URL for a GP payslip PDF.
+     * Get a pre-signed download URL for a GP payslip PDF.  **Token scopes**: &#x60;payslips:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -120,7 +120,7 @@ public class GlobalPayrollApiTest {
     /**
      * List payroll events by legal entity
      *
-     * Get a list of global payroll events by legal entities.
+     * Get a list of global payroll events by legal entities.  **Token scopes**: &#x60;global-payroll:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -137,7 +137,7 @@ public class GlobalPayrollApiTest {
     /**
      * Retrieve bank accounts
      *
-     * Retrieve all bank accounts for an employee.
+     * Retrieve all bank accounts for an employee.  **Token scopes**: &#x60;people:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -152,7 +152,7 @@ public class GlobalPayrollApiTest {
     /**
      * Retrieve bank guide
      *
-     * Retrieve the bank form guide for an employee.
+     * Retrieve the bank form guide for an employee.  **Token scopes**: &#x60;people:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -167,7 +167,7 @@ public class GlobalPayrollApiTest {
     /**
      * List gross-to-net report
      *
-     * Get a list of global payroll reports detailing gross-to-net calculations.
+     * Get a list of global payroll reports detailing gross-to-net calculations.  **Token scopes**: &#x60;global-payroll:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -182,7 +182,7 @@ public class GlobalPayrollApiTest {
     /**
      * Retrieve employee payslips
      *
-     * Get a list of payslips for an employee.
+     * Get a list of payslips for an employee.  **Token scopes**: &#x60;payslips:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -197,7 +197,7 @@ public class GlobalPayrollApiTest {
     /**
      * Modify bank account
      *
-     * Modify bank account for an employee.
+     * Modify bank account for an employee.  **Token scopes**: &#x60;people:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -214,7 +214,7 @@ public class GlobalPayrollApiTest {
     /**
      * Request termination
      *
-     * Request a termination for a global payroll employee. A successful call starts the termination process and does not confirm termination.
+     * Request a termination for a global payroll employee. A successful call starts the termination process and does not confirm termination.  **Token scopes**: &#x60;global-payroll:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -230,7 +230,7 @@ public class GlobalPayrollApiTest {
     /**
      * Update address
      *
-     * Update the address of a Global Payroll employee.
+     * Update the address of a Global Payroll employee.  **Token scopes**: &#x60;people:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -246,7 +246,7 @@ public class GlobalPayrollApiTest {
     /**
      * Update compensation
      *
-     * Update the compensation of a Global Payroll employee. Returns the full compensation history including the update.
+     * Update the compensation of a Global Payroll employee. Returns the full compensation history including the update.  **Token scopes**: &#x60;people:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -262,7 +262,7 @@ public class GlobalPayrollApiTest {
     /**
      * Update employee information
      *
-     * Update Global Payroll employee information.
+     * Update Global Payroll employee information.  **Token scopes**: &#x60;people:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -278,7 +278,7 @@ public class GlobalPayrollApiTest {
     /**
      * Update PTO policy
      *
-     * Update the PTO policy of a Global Payroll employee.
+     * Update the PTO policy of a Global Payroll employee.  **Token scopes**: &#x60;people:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */

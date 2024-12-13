@@ -244,7 +244,7 @@ public class AdjustmentsApi {
 
     /**
      * Create a new adjustment
-     * Create a new adjustment.
+     * Create a new adjustment.  **Token scopes**: &#x60;adjustments:write&#x60;
      * @param data  (required)
      * @return APIcreateAdjustmentRequest
      * @http.response.details
@@ -421,7 +421,7 @@ public class AdjustmentsApi {
 
     /**
      * Delete an adjustment
-     * Delete an adjustment.
+     * Delete an adjustment.  **Token scopes**: &#x60;adjustments:write&#x60;
      * @param id Deel adjustment id. (required)
      * @return APIdeleteAdjustmentRequest
      * @http.response.details
@@ -628,7 +628,7 @@ public class AdjustmentsApi {
 
     /**
      * Retrieve adjustments
-     * Get all adjustments for the specific contract.
+     * Get all adjustments for the specific contract.  **Token scopes**: &#x60;adjustments:read&#x60;
      * @param contractId Deel adjustment id. (required)
      * @return APIgetAdjustmentsRequest
      * @http.response.details
@@ -805,7 +805,7 @@ public class AdjustmentsApi {
 
     /**
      * Retrieve an adjustment
-     * Retrieve an adjustment.
+     * Retrieve an adjustment.  **Token scopes**: &#x60;adjustments:read&#x60;
      * @param id Deel adjustment id. (required)
      * @return APIgetAdjustmentsByIdRequest
      * @http.response.details
@@ -974,7 +974,7 @@ public class AdjustmentsApi {
 
     /**
      * Retrieve categories
-     * Get all categories for your organization.
+     * Get all categories for your organization.  **Token scopes**: &#x60;adjustments:read&#x60;
      * @return APIgetCategoriesRequest
      * @http.response.details
      <table border="1">
@@ -1162,7 +1162,7 @@ public class AdjustmentsApi {
 
     /**
      * Update an adjustment
-     * Update an adjustment.
+     * Update an adjustment.  **Token scopes**: &#x60;adjustments:write&#x60;
      * @param id Deel adjustment id. (required)
      * @param data  (required)
      * @return APIupdateAdjustmentRequest

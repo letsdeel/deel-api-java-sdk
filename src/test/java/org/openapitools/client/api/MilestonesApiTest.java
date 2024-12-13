@@ -48,7 +48,7 @@ public class MilestonesApiTest {
     /**
      * Create a Milestone
      *
-     * Add a new milestone to a specific contract. Milestones represent distinct deliverables or phases in the contract and can include additional details such as attachments.
+     * Add a new milestone to a specific contract. Milestones represent distinct deliverables or phases in the contract and can include additional details such as attachments.  **Token scopes**: &#x60;milestones:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -99,7 +99,7 @@ public class MilestonesApiTest {
     /**
      * Delete a Milestone
      *
-     * Delete a specific milestone associated with a contract. This operation removes the milestone and its data permanently from the system.
+     * Delete a specific milestone associated with a contract. This operation removes the milestone and its data permanently from the system.  **Token scopes**: &#x60;milestones:write&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -115,7 +115,7 @@ public class MilestonesApiTest {
     /**
      * Retrieve Milestones by Contract
      *
-     * Retrieve a list of milestones associated with a specific contract. Each milestone includes details such as its title, amount, status, and relevant dates, along with information about the creator and reviewer.
+     * Retrieve a list of milestones associated with a specific contract. Each milestone includes details such as its title, amount, status, and relevant dates, along with information about the creator and reviewer.  **Token scopes**: &#x60;milestones:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
@@ -130,7 +130,7 @@ public class MilestonesApiTest {
     /**
      * Retrieve a single milestone
      *
-     * Retrieve a single milestone.
+     * Retrieve a single milestone.  **Token scopes**: &#x60;milestones:read&#x60;
      *
      * @throws ApiException if the Api call fails
      */
