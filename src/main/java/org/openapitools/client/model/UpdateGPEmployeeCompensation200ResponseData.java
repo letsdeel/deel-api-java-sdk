@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * UpdateGPEmployeeCompensation200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T13:47:44.629538829Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T14:46:34.496883852Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpdateGPEmployeeCompensation200ResponseData {
   /**
    * The scale to which a given salary applies.

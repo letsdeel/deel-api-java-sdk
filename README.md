@@ -2,7 +2,7 @@
 
 Deel REST API
 - API version: 1.25.0
-  - Build date: 2024-12-18T13:47:44.629538829Z[GMT]
+  - Build date: 2024-12-18T14:46:34.496883852Z[GMT]
   - Generator version: 7.10.0
 
 Deel REST API
