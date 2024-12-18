@@ -5,9 +5,9 @@
   <artifactId>deel-api-java-sdk</artifactId>
   <packaging>jar</packaging>
   <name>deel-api-java-sdk</name>
-  <version>test-1.0.4</version>
+  <version>test-1.0.5</version>
   <url>https://github.com/letsdeel/deel-api-java-sdk</url>
-  <description>Hello and welcome to the Deel Java SDK package. Please find the SDK documentation here: https://github.com/letsdeel/deel-api-java-sdk and also check our developer documentation at: https://developer.deel.com</description>
+  <description>Java</description>
   <scm>
     <connection>scm:git:git@github.com:letsdeel/deel-api-java-sdk.git</connection>
     <developerConnection>scm:git:git@github.com:letsdeel/deel-api-java-sdk.git</developerConnection>

@@ -13,9 +13,9 @@
 
 package org.openapitools.client;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:04:44.564028033Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:17:35.281321822Z[GMT]", comments = "Generator version: 7.10.0")
 public class Configuration {
-    public static final String VERSION = "test-1.0.4";
+    public static final String VERSION = "test-1.0.5";
 
     private static ApiClient defaultApiClient = new ApiClient();
 

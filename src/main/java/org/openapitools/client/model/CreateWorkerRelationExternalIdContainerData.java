@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateWorkerRelationExternalIdContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:04:44.564028033Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:17:35.281321822Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateWorkerRelationExternalIdContainerData {
   public static final String SERIALIZED_NAME_PARENT_EXTERNAL_HRIS_PROFILE_ID = "parent_external_hris_profile_id";
   @SerializedName(SERIALIZED_NAME_PARENT_EXTERNAL_HRIS_PROFILE_ID)
