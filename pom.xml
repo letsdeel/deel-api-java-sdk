@@ -7,7 +7,7 @@
   <name>deel-api-java-sdk</name>
   <version>test-1.0.5</version>
   <url>https://github.com/letsdeel/deel-api-java-sdk</url>
-  <description>Java</description>
+  <description>Hello and welcome to the Deel Java SDK package. Please find the SDK documentation here: https://github.com/letsdeel/deel-api-java-sdk and also check our developer documentation at: https://developer.deel.com</description>
   <scm>
     <connection>scm:git:git@github.com:letsdeel/deel-api-java-sdk.git</connection>
     <developerConnection>scm:git:git@github.com:letsdeel/deel-api-java-sdk.git</developerConnection>
@@ -337,5 +337,27 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spotless.version>2.43.0</spotless.version>
   </properties>
-  <repositories/>
+  <repositories>
+
+    <repository>
+
+      <id>github</id>
+
+      <url>https://maven.pkg.github.com/letsdeel/deel-api-java-sdk</url>
+
+      <releases>
+
+       <enabled>true</enabled>
+
+      </releases>
+
+      <snapshots>
+
+        <enabled>true</enabled>
+
+      </snapshots>
+
+    </repository>
+
+  </repositories>
 </project>
