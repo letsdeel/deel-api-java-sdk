@@ -14,6 +14,16 @@
 package org.openapitools.client.api;
 
 import org.openapitools.client.ApiException;
+import org.openapitools.client.model.CreateLegalEntity200Response;
+import org.openapitools.client.model.CreateLegalEntity403Response;
+import org.openapitools.client.model.CreateLegalEntityRequest;
+import org.openapitools.client.model.DeleteLegalEntity200Response;
+import org.openapitools.client.model.DeleteLegalEntity400Response;
+import org.openapitools.client.model.DeleteLegalEntity403Response;
+import org.openapitools.client.model.EditLegalEntity200Response;
+import org.openapitools.client.model.EditLegalEntity403Response;
+import org.openapitools.client.model.EditLegalEntityRequest;
+import org.openapitools.client.model.GetGroups400Response;
 import org.openapitools.client.model.GetLegalEntity200Response;
 import org.openapitools.client.model.GetLegalEntityPayrollSettings200ResponseInner;
 import org.junit.jupiter.api.Disabled;
@@ -31,6 +41,53 @@ import java.util.Map;
 public class LegalEntitiesApiTest {
 
     private final LegalEntitiesApi api = new LegalEntitiesApi();
+
+    /**
+     * Create a new legal entity
+     *
+     * Create a new legal entity under an organization.  **Token scopes**: &#x60;legal-entity:write&#x60;, &#x60;legal-entity:read&#x60;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void createLegalEntityTest() throws ApiException {
+        CreateLegalEntityRequest createLegalEntityRequest = null;
+        CreateLegalEntity200Response response = api.createLegalEntity()
+                .createLegalEntityRequest(createLegalEntityRequest)
+                .execute();
+        // TODO: test validations
+    }
+
+    /**
+     * Delete a legal entity
+     *
+     * Archive a legal entity. This marks the entity as inactive but does not permanently remove it.  **Token scopes**: &#x60;legal-entity:read&#x60;, &#x60;legal-entity:write&#x60;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void deleteLegalEntityTest() throws ApiException {
+        String id = null;
+        DeleteLegalEntity200Response response = api.deleteLegalEntity(id)
+                .execute();
+        // TODO: test validations
+    }
+
+    /**
+     * Edit a legal entity
+     *
+     * Update the details of an existing legal entity.  **Token scopes**: &#x60;legal-entity:read&#x60;, &#x60;legal-entity:write&#x60;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void editLegalEntityTest() throws ApiException {
+        String id = null;
+        EditLegalEntityRequest editLegalEntityRequest = null;
+        EditLegalEntity200Response response = api.editLegalEntity(id, editLegalEntityRequest)
+                .execute();
+        // TODO: test validations
+    }
 
     /**
      * Get legal entity data from organization integrated with external benefits vendor

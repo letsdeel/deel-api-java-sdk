@@ -7,6 +7,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 | [**getCountries**](LookupsApi.md#getCountries) | **GET** /lookups/countries | Retrieve Country List |
 | [**getCurrencies**](LookupsApi.md#getCurrencies) | **GET** /lookups/currencies | Retrieve Supported Currency List |
 | [**getJobTitleList**](LookupsApi.md#getJobTitleList) | **GET** /lookups/job-titles | Job titles list |
+| [**getLookups**](LookupsApi.md#getLookups) | **GET** /lookups | Retrieve lookup information for currencies, countries, entity types, etc |
 | [**getSeniorityList**](LookupsApi.md#getSeniorityList) | **GET** /lookups/seniorities | Retrieve Seniority Levels |
 | [**getTimeoffTypeList**](LookupsApi.md#getTimeoffTypeList) | **GET** /lookups/time-off-types | Retrieve Time-Off Types |
 
@@ -243,6 +244,79 @@ This endpoint does not need any parameter.
 | **405** | Operation failed. |  -  |
 | **429** | Operation failed. |  -  |
 | **500** | Operation failed. |  -  |
+
+<a id="getLookups"></a>
+# **getLookups**
+> GetLookups200Response getLookups(documents).execute();
+
+Retrieve lookup information for currencies, countries, entity types, etc
+
+Retrieve lookup information such as currencies, countries, entity types, or SIC numbers. Use the &#x60;type&#x60; query parameter to specify which data to retrieve.  **Token scopes**: &#x60;legal-entity:read&#x60;
+
+### Example
+```java
+// Import classes:
+import org.openapitools.client.ApiClient;
+import org.openapitools.client.ApiException;
+import org.openapitools.client.Configuration;
+import org.openapitools.client.auth.*;
+import org.openapitools.client.models.*;
+import org.openapitools.client.api.LookupsApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.letsdeel.com/rest/v2");
+    
+    // Configure HTTP bearer authorization: deelToken
+    HttpBearerAuth deelToken = (HttpBearerAuth) defaultClient.getAuthentication("deelToken");
+    deelToken.setBearerToken("BEARER TOKEN");
+
+    // Configure OAuth2 access token for authorization: oauth2
+    OAuth oauth2 = (OAuth) defaultClient.getAuthentication("oauth2");
+    oauth2.setAccessToken("YOUR ACCESS TOKEN");
+
+    LookupsApi apiInstance = new LookupsApi(defaultClient);
+    String documents = "sicNumbers"; // String | The type of lookup data to retrieve. Options are `currencies`, `countries`, `entity_types`, and `sic_numbers`.
+    try {
+      GetLookups200Response result = apiInstance.getLookups(documents)
+            .execute();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling LookupsApi#getLookups");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **documents** | **String**| The type of lookup data to retrieve. Options are &#x60;currencies&#x60;, &#x60;countries&#x60;, &#x60;entity_types&#x60;, and &#x60;sic_numbers&#x60;. | [enum: sicNumbers, entityTypes, countries] |
+
+### Return type
+
+[**GetLookups200Response**](GetLookups200Response.md)
+
+### Authorization
+
+[deelToken](../README.md#deelToken), [oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | A list of lookup information based on the requested type. |  -  |
+| **400** | Invalid request parameters. |  -  |
 
 <a id="getSeniorityList"></a>
 # **getSeniorityList**

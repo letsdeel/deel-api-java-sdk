@@ -37,6 +37,21 @@ public class Class401KPlansApiTest {
     private final Class401KPlansApi api = new Class401KPlansApi();
 
     /**
+     * Clean up plan for a given legal entity
+     *
+     * Clean up plan for a given legal entity  **Token scopes**: &#x60;benefits:write&#x60;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void cleanUpPlanTest() throws ApiException {
+        String id = null;
+        api.cleanUpPlan(id)
+                .execute();
+        // TODO: test validations
+    }
+
+    /**
      * Activate the 401k integration for the legal entity
      *
      * Activate the 401k integration for the legal entity  **Token scopes**: &#x60;benefits:write&#x60;

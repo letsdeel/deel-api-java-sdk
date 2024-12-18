@@ -4,12 +4,84 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
+| [**cleanUpPlan**](Class401KPlansApi.md#cleanUpPlan) | **POST** /benefits/legal-entities/{id}/401k/plans/clean-up | Clean up plan for a given legal entity |
 | [**createBenefitProviderIntegrationClient**](Class401KPlansApi.md#createBenefitProviderIntegrationClient) | **POST** /benefits/legal-entities/{id}/benefits/401k/activate | Activate the 401k integration for the legal entity |
 | [**delete401kPlanDefinition**](Class401KPlansApi.md#delete401kPlanDefinition) | **DELETE** /benefits/legal-entities/{id}/401k/plans/{plan_id} | Delete a 401k plan |
 | [**get401kPlansDefinition**](Class401KPlansApi.md#get401kPlansDefinition) | **GET** /benefits/legal-entities/{id}/401k/plans | Get 401k plans for legal entity |
 | [**post401kPlansDefinition**](Class401KPlansApi.md#post401kPlansDefinition) | **POST** /benefits/legal-entities/{id}/401k/plans | Create 401k plan for legal entity |
 | [**put401kPlansDefinition**](Class401KPlansApi.md#put401kPlansDefinition) | **PUT** /benefits/legal-entities/{id}/401k/plans/{plan_id} | Update 401k plan |
 
+
+<a id="cleanUpPlan"></a>
+# **cleanUpPlan**
+> cleanUpPlan(id).execute();
+
+Clean up plan for a given legal entity
+
+Clean up plan for a given legal entity  **Token scopes**: &#x60;benefits:write&#x60;
+
+### Example
+```java
+// Import classes:
+import org.openapitools.client.ApiClient;
+import org.openapitools.client.ApiException;
+import org.openapitools.client.Configuration;
+import org.openapitools.client.auth.*;
+import org.openapitools.client.models.*;
+import org.openapitools.client.api.Class401KPlansApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.letsdeel.com/rest/v2");
+    
+    // Configure HTTP bearer authorization: deelToken
+    HttpBearerAuth deelToken = (HttpBearerAuth) defaultClient.getAuthentication("deelToken");
+    deelToken.setBearerToken("BEARER TOKEN");
+
+    // Configure OAuth2 access token for authorization: oauth2
+    OAuth oauth2 = (OAuth) defaultClient.getAuthentication("oauth2");
+    oauth2.setAccessToken("YOUR ACCESS TOKEN");
+
+    Class401KPlansApi apiInstance = new Class401KPlansApi(defaultClient);
+    String id = "9585241d-2387-4d80-abea-cea4dde4807d"; // String | Id from the legal entity to clean up
+    try {
+      apiInstance.cleanUpPlan(id)
+            .execute();
+    } catch (ApiException e) {
+      System.err.println("Exception when calling Class401KPlansApi#cleanUpPlan");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **String**| Id from the legal entity to clean up | |
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[deelToken](../README.md#deelToken), [oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **204** | Successful operation, no content returned. |  -  |
 
 <a id="createBenefitProviderIntegrationClient"></a>
 # **createBenefitProviderIntegrationClient**

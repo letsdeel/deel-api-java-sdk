@@ -9,8 +9,8 @@
 |------------ | ------------- | ------------- | -------------|
 |**id** | **UUID** | Custom field id |  [optional] |
 |**name** | **String** | Name of the custom field |  [optional] |
-|**type** | [**GetCustomFieldFromPeopleById200ResponseDataType**](GetCustomFieldFromPeopleById200ResponseDataType.md) |  |  [optional] |
-|**settings** | [**GetCustomFieldFromPeopleById200ResponseDataSettings**](GetCustomFieldFromPeopleById200ResponseDataSettings.md) |  |  [optional] |
+|**type** | [**GetCustomFieldFromContractsById200ResponseDataType**](GetCustomFieldFromContractsById200ResponseDataType.md) |  |  [optional] |
+|**settings** | [**GetCustomFieldFromContractsById200ResponseDataSettings**](GetCustomFieldFromContractsById200ResponseDataSettings.md) |  |  [optional] |
 |**placement** | [**PlacementEnum**](#PlacementEnum) | Valid placements for custom field |  [optional] |
 |**createdAt** | **LocalDate** | Creation date of the custom field |  [optional] |
 |**description** | **String** | Description of the custom field |  [optional] |

@@ -23,8 +23,8 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.UUID;
-import org.openapitools.client.model.GetCustomFieldFromPeopleById200ResponseDataSettings;
-import org.openapitools.client.model.GetCustomFieldFromPeopleById200ResponseDataType;
+import org.openapitools.client.model.GetCustomFieldFromContractsById200ResponseDataSettings;
+import org.openapitools.client.model.GetCustomFieldFromContractsById200ResponseDataType;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -52,7 +52,7 @@ import org.openapitools.client.JSON;
 /**
  * GetCustomFieldFromPeopleById200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T11:33:27.931295037Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T13:47:44.629538829Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetCustomFieldFromPeopleById200ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -67,12 +67,12 @@ public class GetCustomFieldFromPeopleById200ResponseData {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
   @javax.annotation.Nullable
-  private GetCustomFieldFromPeopleById200ResponseDataType type;
+  private GetCustomFieldFromContractsById200ResponseDataType type;
 
   public static final String SERIALIZED_NAME_SETTINGS = "settings";
   @SerializedName(SERIALIZED_NAME_SETTINGS)
   @javax.annotation.Nullable
-  private GetCustomFieldFromPeopleById200ResponseDataSettings settings;
+  private GetCustomFieldFromContractsById200ResponseDataSettings settings;
 
   /**
    * Valid placements for custom field
@@ -182,7 +182,7 @@ public class GetCustomFieldFromPeopleById200ResponseData {
   }
 
 
-  public GetCustomFieldFromPeopleById200ResponseData type(@javax.annotation.Nullable GetCustomFieldFromPeopleById200ResponseDataType type) {
+  public GetCustomFieldFromPeopleById200ResponseData type(@javax.annotation.Nullable GetCustomFieldFromContractsById200ResponseDataType type) {
     this.type = type;
     return this;
   }
@@ -192,16 +192,16 @@ public class GetCustomFieldFromPeopleById200ResponseData {
    * @return type
    */
   @javax.annotation.Nullable
-  public GetCustomFieldFromPeopleById200ResponseDataType getType() {
+  public GetCustomFieldFromContractsById200ResponseDataType getType() {
     return type;
   }
 
-  public void setType(@javax.annotation.Nullable GetCustomFieldFromPeopleById200ResponseDataType type) {
+  public void setType(@javax.annotation.Nullable GetCustomFieldFromContractsById200ResponseDataType type) {
     this.type = type;
   }
 
 
-  public GetCustomFieldFromPeopleById200ResponseData settings(@javax.annotation.Nullable GetCustomFieldFromPeopleById200ResponseDataSettings settings) {
+  public GetCustomFieldFromPeopleById200ResponseData settings(@javax.annotation.Nullable GetCustomFieldFromContractsById200ResponseDataSettings settings) {
     this.settings = settings;
     return this;
   }
@@ -211,11 +211,11 @@ public class GetCustomFieldFromPeopleById200ResponseData {
    * @return settings
    */
   @javax.annotation.Nullable
-  public GetCustomFieldFromPeopleById200ResponseDataSettings getSettings() {
+  public GetCustomFieldFromContractsById200ResponseDataSettings getSettings() {
     return settings;
   }
 
-  public void setSettings(@javax.annotation.Nullable GetCustomFieldFromPeopleById200ResponseDataSettings settings) {
+  public void setSettings(@javax.annotation.Nullable GetCustomFieldFromContractsById200ResponseDataSettings settings) {
     this.settings = settings;
   }
 
@@ -375,11 +375,11 @@ public class GetCustomFieldFromPeopleById200ResponseData {
       }
       // validate the optional field `type`
       if (jsonObj.get("type") != null && !jsonObj.get("type").isJsonNull()) {
-        GetCustomFieldFromPeopleById200ResponseDataType.validateJsonElement(jsonObj.get("type"));
+        GetCustomFieldFromContractsById200ResponseDataType.validateJsonElement(jsonObj.get("type"));
       }
       // validate the optional field `settings`
       if (jsonObj.get("settings") != null && !jsonObj.get("settings").isJsonNull()) {
-        GetCustomFieldFromPeopleById200ResponseDataSettings.validateJsonElement(jsonObj.get("settings"));
+        GetCustomFieldFromContractsById200ResponseDataSettings.validateJsonElement(jsonObj.get("settings"));
       }
       if ((jsonObj.get("placement") != null && !jsonObj.get("placement").isJsonNull()) && !jsonObj.get("placement").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `placement` to be a primitive type in the JSON string but got `%s`", jsonObj.get("placement").toString()));

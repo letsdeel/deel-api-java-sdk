@@ -77,6 +77,158 @@ public class Class401KPlansApi {
         this.localCustomBaseUrl = customBaseUrl;
     }
 
+    private okhttp3.Call cleanUpPlanCall(String id, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/benefits/legal-entities/{id}/401k/plans/clean-up"
+            .replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "deelToken", "oauth2" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call cleanUpPlanValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new ApiException("Missing the required parameter 'id' when calling cleanUpPlan(Async)");
+        }
+
+        return cleanUpPlanCall(id, _callback);
+
+    }
+
+
+    private ApiResponse<Void> cleanUpPlanWithHttpInfo(String id) throws ApiException {
+        okhttp3.Call localVarCall = cleanUpPlanValidateBeforeCall(id, null);
+        return localVarApiClient.execute(localVarCall);
+    }
+
+    private okhttp3.Call cleanUpPlanAsync(String id, final ApiCallback<Void> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = cleanUpPlanValidateBeforeCall(id, _callback);
+        localVarApiClient.executeAsync(localVarCall, _callback);
+        return localVarCall;
+    }
+
+    public class APIcleanUpPlanRequest {
+        private final String id;
+
+        private APIcleanUpPlanRequest(String id) {
+            this.id = id;
+        }
+
+        /**
+         * Build call for cleanUpPlan
+         * @param _callback ApiCallback API callback
+         * @return Call to execute
+         * @throws ApiException If fail to serialize the request body object
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 204 </td><td> Successful operation, no content returned. </td><td>  -  </td></tr>
+         </table>
+         */
+        public okhttp3.Call buildCall(final ApiCallback _callback) throws ApiException {
+            return cleanUpPlanCall(id, _callback);
+        }
+
+        /**
+         * Execute cleanUpPlan request
+         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 204 </td><td> Successful operation, no content returned. </td><td>  -  </td></tr>
+         </table>
+         */
+        public void execute() throws ApiException {
+            cleanUpPlanWithHttpInfo(id);
+        }
+
+        /**
+         * Execute cleanUpPlan request with HTTP info returned
+         * @return ApiResponse&lt;Void&gt;
+         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 204 </td><td> Successful operation, no content returned. </td><td>  -  </td></tr>
+         </table>
+         */
+        public ApiResponse<Void> executeWithHttpInfo() throws ApiException {
+            return cleanUpPlanWithHttpInfo(id);
+        }
+
+        /**
+         * Execute cleanUpPlan request (asynchronously)
+         * @param _callback The callback to be executed when the API call finishes
+         * @return The request call
+         * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 204 </td><td> Successful operation, no content returned. </td><td>  -  </td></tr>
+         </table>
+         */
+        public okhttp3.Call executeAsync(final ApiCallback<Void> _callback) throws ApiException {
+            return cleanUpPlanAsync(id, _callback);
+        }
+    }
+
+    /**
+     * Clean up plan for a given legal entity
+     * Clean up plan for a given legal entity  **Token scopes**: &#x60;benefits:write&#x60;
+     * @param id Id from the legal entity to clean up (required)
+     * @return APIcleanUpPlanRequest
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 204 </td><td> Successful operation, no content returned. </td><td>  -  </td></tr>
+     </table>
+     */
+    public APIcleanUpPlanRequest cleanUpPlan(String id) {
+        return new APIcleanUpPlanRequest(id);
+    }
     private okhttp3.Call createBenefitProviderIntegrationClientCall(String id, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers

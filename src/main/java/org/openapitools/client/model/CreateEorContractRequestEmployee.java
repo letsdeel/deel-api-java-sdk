@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateEorContractRequestEmployee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T11:33:27.931295037Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T13:47:44.629538829Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateEorContractRequestEmployee {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -71,6 +71,11 @@ public class CreateEorContractRequestEmployee {
   @SerializedName(SERIALIZED_NAME_FIRST_NAME)
   @javax.annotation.Nonnull
   private String firstName;
+
+  public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
+  @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
+  private String externalId;
 
   public static final String SERIALIZED_NAME_NATIONALITY = "nationality";
   @SerializedName(SERIALIZED_NAME_NATIONALITY)
@@ -156,6 +161,25 @@ public class CreateEorContractRequestEmployee {
   }
 
 
+  public CreateEorContractRequestEmployee externalId(@javax.annotation.Nullable String externalId) {
+    this.externalId = externalId;
+    return this;
+  }
+
+  /**
+   * External identifier of the employee.
+   * @return externalId
+   */
+  @javax.annotation.Nullable
+  public String getExternalId() {
+    return externalId;
+  }
+
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
+    this.externalId = externalId;
+  }
+
+
   public CreateEorContractRequestEmployee nationality(@javax.annotation.Nonnull String nationality) {
     this.nationality = nationality;
     return this;
@@ -189,6 +213,7 @@ public class CreateEorContractRequestEmployee {
         Objects.equals(this.address, createEorContractRequestEmployee.address) &&
         Objects.equals(this.lastName, createEorContractRequestEmployee.lastName) &&
         Objects.equals(this.firstName, createEorContractRequestEmployee.firstName) &&
+        Objects.equals(this.externalId, createEorContractRequestEmployee.externalId) &&
         Objects.equals(this.nationality, createEorContractRequestEmployee.nationality);
   }
 
@@ -198,7 +223,7 @@ public class CreateEorContractRequestEmployee {
 
   @Override
   public int hashCode() {
-    return Objects.hash(email, address, lastName, firstName, nationality);
+    return Objects.hash(email, address, lastName, firstName, externalId, nationality);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -216,6 +241,7 @@ public class CreateEorContractRequestEmployee {
     sb.append("    address: ").append(toIndentedString(address)).append("\n");
     sb.append("    lastName: ").append(toIndentedString(lastName)).append("\n");
     sb.append("    firstName: ").append(toIndentedString(firstName)).append("\n");
+    sb.append("    externalId: ").append(toIndentedString(externalId)).append("\n");
     sb.append("    nationality: ").append(toIndentedString(nationality)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -243,6 +269,7 @@ public class CreateEorContractRequestEmployee {
     openapiFields.add("address");
     openapiFields.add("last_name");
     openapiFields.add("first_name");
+    openapiFields.add("external_id");
     openapiFields.add("nationality");
 
     // a set of required properties/fields (JSON key names)
@@ -292,6 +319,9 @@ public class CreateEorContractRequestEmployee {
       }
       if (!jsonObj.get("first_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `first_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("first_name").toString()));
+      }
+      if ((jsonObj.get("external_id") != null && !jsonObj.get("external_id").isJsonNull()) && !jsonObj.get("external_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `external_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("external_id").toString()));
       }
       if (!jsonObj.get("nationality").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `nationality` to be a primitive type in the JSON string but got `%s`", jsonObj.get("nationality").toString()));

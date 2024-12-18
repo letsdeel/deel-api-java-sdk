@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * Time offs associated to the query
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-13T11:33:27.931295037Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T13:47:44.629538829Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeOffsQueryResponseSchema {
   public static final String SERIALIZED_NAME_HAS_NEXT_PAGE = "has_next_page";
   @SerializedName(SERIALIZED_NAME_HAS_NEXT_PAGE)

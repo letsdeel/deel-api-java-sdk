@@ -15,9 +15,11 @@ package org.openapitools.client.api;
 
 import org.openapitools.client.ApiException;
 import org.openapitools.client.model.ApiErrorContainer;
+import org.openapitools.client.model.DeleteLegalEntity400Response;
 import org.openapitools.client.model.GetCountries200Response;
 import org.openapitools.client.model.GetCurrencies200Response;
 import org.openapitools.client.model.GetJobTitleList200Response;
+import org.openapitools.client.model.GetLookups200Response;
 import org.openapitools.client.model.GetSeniorityList200Response;
 import org.openapitools.client.model.GetTimeoffTypeList200Response;
 import org.junit.jupiter.api.Disabled;
@@ -74,6 +76,21 @@ public class LookupsApiTest {
     @Test
     public void getJobTitleListTest() throws ApiException {
         GetJobTitleList200Response response = api.getJobTitleList()
+                .execute();
+        // TODO: test validations
+    }
+
+    /**
+     * Retrieve lookup information for currencies, countries, entity types, etc
+     *
+     * Retrieve lookup information such as currencies, countries, entity types, or SIC numbers. Use the &#x60;type&#x60; query parameter to specify which data to retrieve.  **Token scopes**: &#x60;legal-entity:read&#x60;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void getLookupsTest() throws ApiException {
+        String documents = null;
+        GetLookups200Response response = api.getLookups(documents)
                 .execute();
         // TODO: test validations
     }

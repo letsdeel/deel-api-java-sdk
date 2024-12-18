@@ -28,9 +28,11 @@ import java.io.IOException;
 
 
 import org.openapitools.client.model.ApiErrorContainer;
+import org.openapitools.client.model.DeleteLegalEntity400Response;
 import org.openapitools.client.model.GetCountries200Response;
 import org.openapitools.client.model.GetCurrencies200Response;
 import org.openapitools.client.model.GetJobTitleList200Response;
+import org.openapitools.client.model.GetLookups200Response;
 import org.openapitools.client.model.GetSeniorityList200Response;
 import org.openapitools.client.model.GetTimeoffTypeList200Response;
 
@@ -625,6 +627,171 @@ public class LookupsApi {
      */
     public APIgetJobTitleListRequest getJobTitleList() {
         return new APIgetJobTitleListRequest();
+    }
+    private okhttp3.Call getLookupsCall(String documents, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/lookups";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        if (documents != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("documents", documents));
+        }
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "deelToken", "oauth2" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call getLookupsValidateBeforeCall(String documents, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'documents' is set
+        if (documents == null) {
+            throw new ApiException("Missing the required parameter 'documents' when calling getLookups(Async)");
+        }
+
+        return getLookupsCall(documents, _callback);
+
+    }
+
+
+    private ApiResponse<GetLookups200Response> getLookupsWithHttpInfo(String documents) throws ApiException {
+        okhttp3.Call localVarCall = getLookupsValidateBeforeCall(documents, null);
+        Type localVarReturnType = new TypeToken<GetLookups200Response>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    private okhttp3.Call getLookupsAsync(String documents, final ApiCallback<GetLookups200Response> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = getLookupsValidateBeforeCall(documents, _callback);
+        Type localVarReturnType = new TypeToken<GetLookups200Response>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+
+    public class APIgetLookupsRequest {
+        private final String documents;
+
+        private APIgetLookupsRequest(String documents) {
+            this.documents = documents;
+        }
+
+        /**
+         * Build call for getLookups
+         * @param _callback ApiCallback API callback
+         * @return Call to execute
+         * @throws ApiException If fail to serialize the request body object
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> A list of lookup information based on the requested type. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+         </table>
+         */
+        public okhttp3.Call buildCall(final ApiCallback _callback) throws ApiException {
+            return getLookupsCall(documents, _callback);
+        }
+
+        /**
+         * Execute getLookups request
+         * @return GetLookups200Response
+         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> A list of lookup information based on the requested type. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+         </table>
+         */
+        public GetLookups200Response execute() throws ApiException {
+            ApiResponse<GetLookups200Response> localVarResp = getLookupsWithHttpInfo(documents);
+            return localVarResp.getData();
+        }
+
+        /**
+         * Execute getLookups request with HTTP info returned
+         * @return ApiResponse&lt;GetLookups200Response&gt;
+         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> A list of lookup information based on the requested type. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+         </table>
+         */
+        public ApiResponse<GetLookups200Response> executeWithHttpInfo() throws ApiException {
+            return getLookupsWithHttpInfo(documents);
+        }
+
+        /**
+         * Execute getLookups request (asynchronously)
+         * @param _callback The callback to be executed when the API call finishes
+         * @return The request call
+         * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> A list of lookup information based on the requested type. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+         </table>
+         */
+        public okhttp3.Call executeAsync(final ApiCallback<GetLookups200Response> _callback) throws ApiException {
+            return getLookupsAsync(documents, _callback);
+        }
+    }
+
+    /**
+     * Retrieve lookup information for currencies, countries, entity types, etc
+     * Retrieve lookup information such as currencies, countries, entity types, or SIC numbers. Use the &#x60;type&#x60; query parameter to specify which data to retrieve.  **Token scopes**: &#x60;legal-entity:read&#x60;
+     * @param documents The type of lookup data to retrieve. Options are &#x60;currencies&#x60;, &#x60;countries&#x60;, &#x60;entity_types&#x60;, and &#x60;sic_numbers&#x60;. (required)
+     * @return APIgetLookupsRequest
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> A list of lookup information based on the requested type. </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+     </table>
+     */
+    public APIgetLookupsRequest getLookups(String documents) {
+        return new APIgetLookupsRequest(documents);
     }
     private okhttp3.Call getSeniorityListCall(final ApiCallback _callback) throws ApiException {
         String basePath = null;

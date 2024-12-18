@@ -22,8 +22,8 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.UUID;
-import org.openapitools.client.model.GetCustomFieldFromPeopleById200ResponseDataSettings;
-import org.openapitools.client.model.GetCustomFieldFromPeopleById200ResponseDataType;
+import org.openapitools.client.model.GetCustomFieldFromContractsById200ResponseDataSettings;
+import org.openapitools.client.model.GetCustomFieldFromContractsById200ResponseDataType;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

@@ -29,7 +29,7 @@ import org.openapitools.client.model.UpsertCustomFieldValueFromContractsRequestD
 import org.openapitools.client.model.UpsertCustomFieldValueFromContractsRequestDataOneOf2;
 import org.openapitools.client.model.UpsertCustomFieldValueFromContractsRequestDataOneOf3;
 import org.openapitools.client.model.UpsertCustomFieldValueFromContractsRequestDataOneOf4;
-import org.openapitools.client.model.UpsertCustomFieldValueFromWorkerRequestDataOneOf4;
+import org.openapitools.client.model.UpsertCustomFieldValueFromWorkerRequestDataAnyOf4;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

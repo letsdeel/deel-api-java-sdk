@@ -4086,6 +4086,36 @@ paths:
       requestBody:
         content:
           application/json:
+            examples:
+              createEorContract:
+                summary: Example request body
+                value:
+                  client:
+                    team:
+                      id: team-12345
+                    legal_entity:
+                      id: entity-67890
+                  employee:
+                    email: john.doe@example.com
+                    address:
+                      zip: "90210"
+                      city: Beverly Hills
+                      state: CA
+                      street: 123 Elm St
+                      country: US
+                    last_name: Doe
+                    first_name: John
+                    external_id: ext-employee-001
+                    nationality: US
+                  job_title: Software Engineer
+                  employment:
+                    country: US
+                    start_date: 2024-01-15
+                    scope_of_work: Develop and maintain software applications
+                    work_visa_required: false
+                  compensation_details:
+                    salary: 120000
+                    currency: USD
             schema:
               $ref: '#/components/schemas/createEorContract_request'
         description: The details of the Employee (EOR) contract to be created.
@@ -10462,6 +10492,46 @@ paths:
       - Organizations
       x-accepts:
       - application/json
+    post:
+      description: |-
+        Create a new legal entity under an organization.
+         **Token scopes**: `legal-entity:write`, `legal-entity:read`
+      operationId: createLegalEntity
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/createLegalEntity_request'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/createLegalEntity_200_response'
+          description: Successfully created legal entity.
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getGroups_400_response'
+          description: Invalid request parameters.
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/createLegalEntity_403_response'
+          description: Permission denied. User must have the `entities.manage` permission.
+      security:
+      - deelToken: []
+      - oauth2:
+        - legal-entity:write
+        - legal-entity:read
+      summary: Create a new legal entity
+      tags:
+      - Legal Entities
+      x-content-type: application/json
+      x-accepts:
+      - application/json
   /lookups/countries:
     get:
       description: "Retrieve a list of countries supported by Deel, along with details\
@@ -13476,6 +13546,64 @@ paths:
       - Integrations
       x-accepts:
       - application/json
+  /gp/workers/{id}/payslips:
+    get:
+      description: |-
+        Get a list of payslips for an employee.
+         **Token scopes**: `payslips:read`
+      operationId: getWorkerPayslips
+      parameters:
+      - description: Unique identifier for the worker.
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          description: Unique identifier for the worker in UUID format.
+          example: 6f50539e-9f62-45d0-a42e-62a62fbb984a
+          format: uuid
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getWorkerPayslips_200_response'
+          description: Successful operation.
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+      security:
+      - deelToken: []
+      - oauth2:
+        - payslips:read
+      summary: Retrieve employee payslips
+      tags:
+      - Global Payroll
+      x-accepts:
+      - application/json
   /contracts/{contract_id}/payment_cycles:
     get:
       description: |-
@@ -13612,6 +13740,75 @@ paths:
       summary: Download invoice PDF
       tags:
       - Accounting
+      x-accepts:
+      - application/json
+  /gp/workers/{id}/payslips/{payslipId}/download:
+    get:
+      description: |-
+        Get a pre-signed download URL for a GP payslip PDF.
+         **Token scopes**: `payslips:read`
+      operationId: getDownloadUrlForGPPayslip
+      parameters:
+      - description: Unique identifier for the worker.
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          description: Unique identifier for the worker in UUID format.
+          example: 6f50539e-9f62-45d0-a42e-62a62fbb984a
+          format: uuid
+          type: string
+        style: simple
+      - description: Unique identifier for the payslip.
+        explode: false
+        in: path
+        name: payslipId
+        required: true
+        schema:
+          description: Unique identifier for the payslip in UUID format.
+          example: 9a55c23e-1234-5678-9101-abcdefabcdef
+          format: uuid
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getDownloadUrlForGPPayslip_200_response'
+          description: Successful operation.
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+      security:
+      - deelToken: []
+      - oauth2:
+        - payslips:read
+      summary: Download payslip PDF
+      tags:
+      - Global Payroll
       x-accepts:
       - application/json
   /benefits/legal-entities/{id}/employees/{employee_id}:
@@ -13817,6 +14014,34 @@ paths:
       tags:
       - Invoices
       x-content-type: application/json
+      x-accepts:
+      - application/json
+  /benefits/legal-entities/{id}/401k/plans/clean-up:
+    post:
+      description: |-
+        Clean up plan for a given legal entity
+         **Token scopes**: `benefits:write`
+      operationId: cleanUpPlan
+      parameters:
+      - description: Id from the legal entity to clean up
+        example: 9585241d-2387-4d80-abea-cea4dde4807d
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "204":
+          description: "Successful operation, no content returned."
+      security:
+      - deelToken: []
+      - oauth2:
+        - benefits:write
+      summary: Clean up plan for a given legal entity
+      tags:
+      - 401K Plans
       x-accepts:
       - application/json
   /benefits/legal-entities/{id}:
@@ -14430,75 +14655,6 @@ paths:
       - Global Payroll
       x-accepts:
       - application/json
-  /gp/workers/{id}/payslips/{payslipId}/download:
-    get:
-      description: |-
-        Get a pre-signed download URL for a GP payslip PDF.
-         **Token scopes**: `payslips:read`
-      operationId: getDownloadUrlForGPPayslip
-      parameters:
-      - description: Unique identifier for the worker.
-        explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          description: Unique identifier for the worker in UUID format.
-          example: 6f50539e-9f62-45d0-a42e-62a62fbb984a
-          format: uuid
-          type: string
-        style: simple
-      - description: Unique identifier for the payslip.
-        explode: false
-        in: path
-        name: payslipId
-        required: true
-        schema:
-          description: Unique identifier for the payslip in UUID format.
-          example: 9a55c23e-1234-5678-9101-abcdefabcdef
-          format: uuid
-          type: string
-        style: simple
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/getDownloadUrlForGPPayslip_200_response'
-          description: Successful operation.
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "404":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-      security:
-      - deelToken: []
-      - oauth2:
-        - payslips:read
-      summary: Download payslip PDF
-      tags:
-      - Global Payroll
-      x-accepts:
-      - application/json
   /people/{id}/department:
     put:
       description: |-
@@ -14578,64 +14734,6 @@ paths:
       tags:
       - People
       x-content-type: application/json
-      x-accepts:
-      - application/json
-  /gp/workers/{id}/payslips:
-    get:
-      description: |-
-        Get a list of payslips for an employee.
-         **Token scopes**: `payslips:read`
-      operationId: getWorkerPayslips
-      parameters:
-      - description: Unique identifier for the worker.
-        explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          description: Unique identifier for the worker in UUID format.
-          example: 6f50539e-9f62-45d0-a42e-62a62fbb984a
-          format: uuid
-          type: string
-        style: simple
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/getWorkerPayslips_200_response'
-          description: Successful operation.
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "404":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-      security:
-      - deelToken: []
-      - oauth2:
-        - payslips:read
-      summary: Retrieve employee payslips
-      tags:
-      - Global Payroll
       x-accepts:
       - application/json
   /benefits/legal-entities/{id}/401k/plans/{plan_id}:
@@ -14899,7 +14997,7 @@ paths:
     patch:
       description: |-
         Update an invoice adjustment.
-         **Token scopes**: `adjustments:write`
+         **Token scopes**: `invoice-adjustments:write`
       operationId: updateInvoiceAdjustment
       parameters:
       - description: Invoice adjustment id.
@@ -14927,7 +15025,7 @@ paths:
       security:
       - deelToken: []
       - oauth2:
-        - adjustments:write
+        - invoice-adjustments:write
       summary: Update an invoice adjustment
       tags:
       - Invoices
@@ -15224,75 +15322,6 @@ paths:
       summary: List gross-to-net report
       tags:
       - Global Payroll
-      x-accepts:
-      - application/json
-  /contracts/{contract_id}/custom_fields/{id}:
-    delete:
-      description: |-
-        Removes the custom field value from the contract custom field.
-         **Token scopes**: `contracts:write`
-      operationId: DeleteContractCustomField
-      parameters:
-      - description: Custom field id.
-        example: d290f1ee-6c54-4b01-90e6-d701748f0851
-        explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          format: uuid
-          type: string
-        style: simple
-      - description: Contract id.
-        example: d290f1ee-6c54-4b01-90e6-d701748f0851
-        explode: false
-        in: path
-        name: contract_id
-        required: true
-        schema:
-          format: uuid
-          type: string
-        style: simple
-      responses:
-        "204":
-          description: Successful response
-        "400":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "404":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-      security:
-      - deelToken: []
-      - oauth2:
-        - contracts:write
-      summary: Delete Contract custom field by Id
-      tags:
-      - Custom Fields
       x-accepts:
       - application/json
   /hris/worker_relations/profile/external/{profileId}/child:
@@ -15697,6 +15726,69 @@ paths:
       - Onboarding
       x-accepts:
       - application/json
+  /contracts/custom_fields/{id}:
+    get:
+      description: |-
+        Get custom field from contract by id
+         **Token scopes**: `contracts:read`
+      operationId: getCustomFieldFromContractsById
+      parameters:
+      - description: Custom field id.
+        example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: uuid
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getCustomFieldFromContractsById_200_response'
+          description: Successful response
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+      security:
+      - deelToken: []
+      - oauth2:
+        - contracts:read
+      summary: Get custom fields from contracts
+      tags:
+      - Custom Fields
+      x-accepts:
+      - application/json
   /people/{worker_id}/custom_fields/{id}:
     delete:
       description: |-
@@ -15829,6 +15921,104 @@ paths:
       summary: Approve an equity exercise
       tags:
       - Contracts
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+  /legal-entities/{id}:
+    delete:
+      description: |-
+        Archive a legal entity. This marks the entity as inactive but does not permanently remove it.
+         **Token scopes**: `legal-entity:read`, `legal-entity:write`
+      operationId: deleteLegalEntity
+      parameters:
+      - description: The ID of the legal entity to archive.
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          description: The unique identifier of the legal entity.
+          example: 123e4567-e89b-12d3-a456-426614174000
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/deleteLegalEntity_200_response'
+          description: Successfully archived the legal entity.
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/deleteLegalEntity_400_response'
+          description: Invalid request parameters.
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/deleteLegalEntity_403_response'
+          description: Permission denied.
+      security:
+      - deelToken: []
+      - oauth2:
+        - legal-entity:read
+        - legal-entity:write
+      summary: Delete a legal entity
+      tags:
+      - Legal Entities
+      x-accepts:
+      - application/json
+    patch:
+      description: |-
+        Update the details of an existing legal entity.
+         **Token scopes**: `legal-entity:read`, `legal-entity:write`
+      operationId: editLegalEntity
+      parameters:
+      - description: The ID of the legal entity to update.
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          description: The unique identifier of the legal entity.
+          example: 123e4567-e89b-12d3-a456-426614174000
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/editLegalEntity_request'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/editLegalEntity_200_response'
+          description: Successfully updated the legal entity.
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/deleteLegalEntity_400_response'
+          description: Invalid request parameters.
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/editLegalEntity_403_response'
+          description: Permission denied.
+      security:
+      - deelToken: []
+      - oauth2:
+        - legal-entity:read
+        - legal-entity:write
+      summary: Edit a legal entity
+      tags:
+      - Legal Entities
       x-content-type: application/json
       x-accepts:
       - application/json
@@ -16009,69 +16199,6 @@ paths:
       - Custom Fields
       x-accepts:
       - application/json
-  /contracts/custom_fields/{id}:
-    get:
-      description: |-
-        Get custom field from contract by id
-         **Token scopes**: `contracts:read`
-      operationId: getCustomFieldFromContractsById
-      parameters:
-      - description: Custom field id.
-        example: d290f1ee-6c54-4b01-90e6-d701748f0851
-        explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          format: uuid
-          type: string
-        style: simple
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/getCustomFieldFromContractsById_200_response'
-          description: Successful response
-        "400":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "404":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-      security:
-      - deelToken: []
-      - oauth2:
-        - contracts:read
-      summary: Get custom fields from contracts
-      tags:
-      - Custom Fields
-      x-accepts:
-      - application/json
   /roles/{roleId}:
     patch:
       description: |-
@@ -16203,6 +16330,50 @@ paths:
       summary: Retrieve termination details
       tags:
       - Offboarding
+      x-accepts:
+      - application/json
+  /lookups:
+    get:
+      description: |-
+        Retrieve lookup information such as currencies, countries, entity types, or SIC numbers. Use the `type` query parameter to specify which data to retrieve.
+         **Token scopes**: `legal-entity:read`
+      operationId: getLookups
+      parameters:
+      - description: "The type of lookup data to retrieve. Options are `currencies`,\
+          \ `countries`, `entity_types`, and `sic_numbers`."
+        example: countries
+        explode: true
+        in: query
+        name: documents
+        required: true
+        schema:
+          enum:
+          - sicNumbers
+          - entityTypes
+          - countries
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getLookups_200_response'
+          description: A list of lookup information based on the requested type.
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/deleteLegalEntity_400_response'
+          description: Invalid request parameters.
+      security:
+      - deelToken: []
+      - oauth2:
+        - legal-entity:read
+      summary: "Retrieve lookup information for currencies, countries, entity types,\
+        \ etc"
+      tags:
+      - Lookups
       x-accepts:
       - application/json
   /offboarding/tracker/hris_profile/{oid}:
@@ -16353,6 +16524,75 @@ paths:
       summary: Retrieve offboarding list
       tags:
       - Offboarding
+      x-accepts:
+      - application/json
+  /contracts/{contract_id}/custom_fields/{id}:
+    delete:
+      description: |-
+        Removes the custom field value from the contract custom field.
+         **Token scopes**: `contracts:write`
+      operationId: DeleteContractCustomField
+      parameters:
+      - description: Custom field id.
+        example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: uuid
+          type: string
+        style: simple
+      - description: Contract id.
+        example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        explode: false
+        in: path
+        name: contract_id
+        required: true
+        schema:
+          format: uuid
+          type: string
+        style: simple
+      responses:
+        "204":
+          description: Successful response
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+      security:
+      - deelToken: []
+      - oauth2:
+        - contracts:write
+      summary: Delete Contract custom field by Id
+      tags:
+      - Custom Fields
       x-accepts:
       - application/json
 components:
@@ -30453,7 +30693,7 @@ components:
       required:
       - data
       type: object
-    UpsertCustomFieldValueFromWorker_request_data_oneOf:
+    UpsertCustomFieldValueFromWorker_request_data_anyOf:
       description: Text type
       properties:
         value:
@@ -30461,7 +30701,7 @@ components:
           example: Some text
           type: string
       type: object
-    UpsertCustomFieldValueFromWorker_request_data_oneOf_1:
+    UpsertCustomFieldValueFromWorker_request_data_anyOf_1:
       description: Number type
       properties:
         value:
@@ -30469,7 +30709,7 @@ components:
           example: 123
           type: number
       type: object
-    UpsertCustomFieldValueFromWorker_request_data_oneOf_2:
+    UpsertCustomFieldValueFromWorker_request_data_anyOf_2:
       description: "Date type: YYYY-MM-DD"
       properties:
         value:
@@ -30478,7 +30718,7 @@ components:
           format: date
           type: string
       type: object
-    UpsertCustomFieldValueFromWorker_request_data_oneOf_3:
+    UpsertCustomFieldValueFromWorker_request_data_anyOf_3:
       description: Percentage type
       properties:
         value:
@@ -30486,7 +30726,7 @@ components:
           example: 1
           type: number
       type: object
-    UpsertCustomFieldValueFromWorker_request_data_oneOf_4:
+    UpsertCustomFieldValueFromWorker_request_data_anyOf_4:
       description: Currency type
       properties:
         amount:
@@ -30499,7 +30739,7 @@ components:
           pattern: "^[A-Z]{3}$"
           type: string
       type: object
-    UpsertCustomFieldValueFromWorker_request_data_oneOf_5:
+    UpsertCustomFieldValueFromWorker_request_data_anyOf_5:
       description: List type
       properties:
         option:
@@ -30507,7 +30747,7 @@ components:
           example: Option 1
           type: string
       type: object
-    UpsertCustomFieldValueFromWorker_request_data_oneOf_6:
+    UpsertCustomFieldValueFromWorker_request_data_anyOf_6:
       description: Multiselect type
       properties:
         options:
@@ -30519,14 +30759,14 @@ components:
           uniqueItems: true
       type: object
     UpsertCustomFieldValueFromWorker_request_data:
-      oneOf:
-      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_oneOf'
-      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_oneOf_1'
-      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_oneOf_2'
-      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_oneOf_3'
-      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_oneOf_4'
-      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_oneOf_5'
-      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_oneOf_6'
+      anyOf:
+      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_anyOf'
+      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_anyOf_1'
+      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_anyOf_2'
+      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_anyOf_3'
+      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_anyOf_4'
+      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_anyOf_5'
+      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_anyOf_6'
     UpsertCustomFieldValueFromWorker_request:
       properties:
         id:
@@ -31786,7 +32026,7 @@ components:
       - $ref: '#/components/schemas/UpsertCustomFieldValueFromContracts_request_data_oneOf_1'
       - $ref: '#/components/schemas/GetCustomFieldValuesFromWorker_200_response_data_inner_data_oneOf_2'
       - $ref: '#/components/schemas/UpsertCustomFieldValueFromContracts_request_data_oneOf_2'
-      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_oneOf_4'
+      - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_anyOf_4'
       - $ref: '#/components/schemas/UpsertCustomFieldValueFromContracts_request_data_oneOf_3'
       - $ref: '#/components/schemas/UpsertCustomFieldValueFromContracts_request_data_oneOf_4'
     UpsertCustomFieldValueFromContracts_request:
@@ -37344,6 +37584,9 @@ components:
           type: string
         first_name:
           description: Employee's first name.
+          type: string
+        external_id:
+          description: External identifier of the employee.
           type: string
         nationality:
           description: Employee's nationality.
@@ -44876,6 +45119,187 @@ components:
             $ref: '#/components/schemas/getLegalEntityList_200_response_data_inner'
           type: array
       type: object
+    createLegalEntity_request_data_address:
+      description: The physical address of the entity.
+      properties:
+        zip:
+          description: Zip code.
+          example: "12345"
+          type: string
+        city:
+          description: City name.
+          example: San Francisco
+          type: string
+        state:
+          description: 'State '
+          example: Texas
+          type: string
+        street:
+          description: Street address.
+          example: 123 Main St
+          type: string
+        country:
+          description: Country code.
+          example: US
+          type: string
+      required:
+      - city
+      - country
+      - state
+      - street
+      - zip
+      type: object
+    createLegalEntity_request_data_company_identifiers:
+      properties:
+        tax_number:
+          description: Tax number of the entity.
+          example: "987654321"
+          type: string
+        registration_number:
+          description: Registration number of the entity.
+          example: "123456789"
+          type: string
+      required:
+      - registration_number
+      - tax_number
+      type: object
+    createLegalEntity_request_data:
+      properties:
+        name:
+          description: The legal name of the entity.
+          example: Acme Corporation
+          type: string
+        phone:
+          description: Contact phone number for the entity.
+          example: +1-800-555-0199
+          type: string
+        address:
+          $ref: '#/components/schemas/createLegalEntity_request_data_address'
+        sic_number:
+          description: The SIC number for the entity.
+          example: "7311"
+          type: string
+        entity_type:
+          description: Type of the entity.
+          example: LLC
+          type: string
+        company_identifiers:
+          $ref: '#/components/schemas/createLegalEntity_request_data_company_identifiers'
+      required:
+      - address
+      - company_identifiers
+      - entity_type
+      - name
+      - phone
+      - sic_number
+      type: object
+    createLegalEntity_request:
+      properties:
+        data:
+          $ref: '#/components/schemas/createLegalEntity_request_data'
+      type: object
+    createLegalEntity_200_response_data_address:
+      description: The entity's address.
+      example:
+        zip: "12345"
+        country: US
+        city: San Francisco
+        street: 123 Main St
+        state: Texas
+      properties:
+        zip:
+          example: "12345"
+          type: string
+        city:
+          example: San Francisco
+          type: string
+        state:
+          example: Texas
+          type: string
+        street:
+          example: 123 Main St
+          type: string
+        country:
+          example: US
+          type: string
+      type: object
+    createLegalEntity_200_response_data:
+      example:
+        address:
+          zip: "12345"
+          country: US
+          city: San Francisco
+          street: 123 Main St
+          state: Texas
+        entity_type: LLC
+        updated_at: 2024-01-02T12:00:00Z
+        phone: +1-800-555-0199
+        sic_number: "1234"
+        name: Acme Corporation
+        created_at: 2024-01-01T12:00:00Z
+        id: le_12345
+      properties:
+        id:
+          description: The unique identifier for the legal entity.
+          example: le_12345
+          type: string
+        name:
+          description: The name of the entity.
+          example: Acme Corporation
+          type: string
+        phone:
+          description: The contact number of the entity.
+          example: +1-800-555-0199
+          type: string
+        address:
+          $ref: '#/components/schemas/createLegalEntity_200_response_data_address'
+        created_at:
+          description: Timestamp when the entity was created.
+          example: 2024-01-01T12:00:00Z
+          format: date-time
+          type: string
+        sic_number:
+          description: The SIC number of the entity.
+          example: "1234"
+          type: string
+        updated_at:
+          description: Timestamp when the entity was last updated.
+          example: 2024-01-02T12:00:00Z
+          format: date-time
+          type: string
+        entity_type:
+          description: Type of the entity.
+          example: LLC
+          type: string
+      type: object
+    createLegalEntity_200_response:
+      example:
+        data:
+          address:
+            zip: "12345"
+            country: US
+            city: San Francisco
+            street: 123 Main St
+            state: Texas
+          entity_type: LLC
+          updated_at: 2024-01-02T12:00:00Z
+          phone: +1-800-555-0199
+          sic_number: "1234"
+          name: Acme Corporation
+          created_at: 2024-01-01T12:00:00Z
+          id: le_12345
+      properties:
+        data:
+          $ref: '#/components/schemas/createLegalEntity_200_response_data'
+      type: object
+    createLegalEntity_403_response:
+      example:
+        message: message
+      properties:
+        message:
+          description: Error message explaining the lack of permission.
+          type: string
+      type: object
     getCountries_200_response_data_inner_states_inner:
       example:
         code: NY
@@ -48144,6 +48568,57 @@ components:
         data:
           $ref: '#/components/schemas/getConsent_200_response_data'
       type: object
+    getWorkerPayslips_200_response_data_inner:
+      example:
+        from: 2023-11-01T00:00:00Z
+        id: 9a55c23e-1234-5678-9101-abcdefabcdef
+        to: 2023-11-30T23:59:59Z
+        status: AVAILABLE
+      properties:
+        id:
+          description: Unique identifier for the payslip.
+          example: 9a55c23e-1234-5678-9101-abcdefabcdef
+          format: uuid
+          type: string
+        to:
+          description: End date of the payslip period in ISO-8601 format.
+          example: 2023-11-30T23:59:59Z
+          format: date-time
+          type: string
+        from:
+          description: Start date of the payslip period in ISO-8601 format.
+          example: 2023-11-01T00:00:00Z
+          format: date-time
+          type: string
+        status:
+          description: "The current status of the payslip (e.g., AVAILABLE, PENDING)."
+          example: AVAILABLE
+          type: string
+      required:
+      - from
+      - id
+      - status
+      - to
+      type: object
+    getWorkerPayslips_200_response:
+      example:
+        data:
+        - from: 2023-11-01T00:00:00Z
+          id: 9a55c23e-1234-5678-9101-abcdefabcdef
+          to: 2023-11-30T23:59:59Z
+          status: AVAILABLE
+        - from: 2023-11-01T00:00:00Z
+          id: 9a55c23e-1234-5678-9101-abcdefabcdef
+          to: 2023-11-30T23:59:59Z
+          status: AVAILABLE
+      properties:
+        data:
+          items:
+            $ref: '#/components/schemas/getWorkerPayslips_200_response_data_inner'
+          type: array
+      required:
+      - data
+      type: object
     getContractPaymentDates_200_response_data_inner:
       example:
         due: 2024-12-07T04:59:59.999Z
@@ -48227,6 +48702,27 @@ components:
       properties:
         data:
           $ref: '#/components/schemas/getBillingInvoiceDownloadLink_200_response_data'
+      required:
+      - data
+      type: object
+    getDownloadUrlForGPPayslip_200_response_data:
+      example:
+        url: https://s3.eu-west-1.amazonaws.com/api-dev-eks.letsdeel.com/employee_payslips/ApdZbLvq0r0E_Payslip_Kulvear_Bowie_2023-12-31.pdf?AWSAccessKeyId=ASIATHF2L5PZ545TTFF7&Expires=1698149134&Signature=DmqwQiXY%2FHmPS%2FYBcB2DOZ9SDVA%3D&x-amz-security-token=zxc
+      properties:
+        url:
+          description: A pre-signed URL to download the payslip PDF.
+          example: https://s3.eu-west-1.amazonaws.com/api-dev-eks.letsdeel.com/employee_payslips/ApdZbLvq0r0E_Payslip_Kulvear_Bowie_2023-12-31.pdf?AWSAccessKeyId=ASIATHF2L5PZ545TTFF7&Expires=1698149134&Signature=DmqwQiXY%2FHmPS%2FYBcB2DOZ9SDVA%3D&x-amz-security-token=zxc
+          type: string
+      required:
+      - url
+      type: object
+    getDownloadUrlForGPPayslip_200_response:
+      example:
+        data:
+          url: https://s3.eu-west-1.amazonaws.com/api-dev-eks.letsdeel.com/employee_payslips/ApdZbLvq0r0E_Payslip_Kulvear_Bowie_2023-12-31.pdf?AWSAccessKeyId=ASIATHF2L5PZ545TTFF7&Expires=1698149134&Signature=DmqwQiXY%2FHmPS%2FYBcB2DOZ9SDVA%3D&x-amz-security-token=zxc
+      properties:
+        data:
+          $ref: '#/components/schemas/getDownloadUrlForGPPayslip_200_response_data'
       required:
       - data
       type: object
@@ -49901,27 +50397,6 @@ components:
       required:
       - data
       type: object
-    getDownloadUrlForGPPayslip_200_response_data:
-      example:
-        url: https://s3.eu-west-1.amazonaws.com/api-dev-eks.letsdeel.com/employee_payslips/ApdZbLvq0r0E_Payslip_Kulvear_Bowie_2023-12-31.pdf?AWSAccessKeyId=ASIATHF2L5PZ545TTFF7&Expires=1698149134&Signature=DmqwQiXY%2FHmPS%2FYBcB2DOZ9SDVA%3D&x-amz-security-token=zxc
-      properties:
-        url:
-          description: A pre-signed URL to download the payslip PDF.
-          example: https://s3.eu-west-1.amazonaws.com/api-dev-eks.letsdeel.com/employee_payslips/ApdZbLvq0r0E_Payslip_Kulvear_Bowie_2023-12-31.pdf?AWSAccessKeyId=ASIATHF2L5PZ545TTFF7&Expires=1698149134&Signature=DmqwQiXY%2FHmPS%2FYBcB2DOZ9SDVA%3D&x-amz-security-token=zxc
-          type: string
-      required:
-      - url
-      type: object
-    getDownloadUrlForGPPayslip_200_response:
-      example:
-        data:
-          url: https://s3.eu-west-1.amazonaws.com/api-dev-eks.letsdeel.com/employee_payslips/ApdZbLvq0r0E_Payslip_Kulvear_Bowie_2023-12-31.pdf?AWSAccessKeyId=ASIATHF2L5PZ545TTFF7&Expires=1698149134&Signature=DmqwQiXY%2FHmPS%2FYBcB2DOZ9SDVA%3D&x-amz-security-token=zxc
-      properties:
-        data:
-          $ref: '#/components/schemas/getDownloadUrlForGPPayslip_200_response_data'
-      required:
-      - data
-      type: object
     updatePeopleDepartment_request_data:
       properties:
         department_id:
@@ -49957,57 +50432,6 @@ components:
       properties:
         data:
           $ref: '#/components/schemas/updatePeopleDepartment_200_response_data'
-      required:
-      - data
-      type: object
-    getWorkerPayslips_200_response_data_inner:
-      example:
-        from: 2023-11-01T00:00:00Z
-        id: 9a55c23e-1234-5678-9101-abcdefabcdef
-        to: 2023-11-30T23:59:59Z
-        status: AVAILABLE
-      properties:
-        id:
-          description: Unique identifier for the payslip.
-          example: 9a55c23e-1234-5678-9101-abcdefabcdef
-          format: uuid
-          type: string
-        to:
-          description: End date of the payslip period in ISO-8601 format.
-          example: 2023-11-30T23:59:59Z
-          format: date-time
-          type: string
-        from:
-          description: Start date of the payslip period in ISO-8601 format.
-          example: 2023-11-01T00:00:00Z
-          format: date-time
-          type: string
-        status:
-          description: "The current status of the payslip (e.g., AVAILABLE, PENDING)."
-          example: AVAILABLE
-          type: string
-      required:
-      - from
-      - id
-      - status
-      - to
-      type: object
-    getWorkerPayslips_200_response:
-      example:
-        data:
-        - from: 2023-11-01T00:00:00Z
-          id: 9a55c23e-1234-5678-9101-abcdefabcdef
-          to: 2023-11-30T23:59:59Z
-          status: AVAILABLE
-        - from: 2023-11-01T00:00:00Z
-          id: 9a55c23e-1234-5678-9101-abcdefabcdef
-          to: 2023-11-30T23:59:59Z
-          status: AVAILABLE
-      properties:
-        data:
-          items:
-            $ref: '#/components/schemas/getWorkerPayslips_200_response_data_inner'
-          type: array
       required:
       - data
       type: object
@@ -52040,6 +52464,182 @@ components:
         page:
           $ref: '#/components/schemas/listOnboardingTracker_200_response_page'
       type: object
+    getCustomFieldFromContractsById_200_response_data_type_oneOf:
+      properties:
+        name:
+          description: List types
+          enum:
+          - list
+          - multiselect
+          example: list
+          type: string
+        options:
+          description: List of options for the custom field
+          items:
+            example: Option 1
+            type: string
+          type: array
+      type: object
+    getCustomFieldFromContractsById_200_response_data_type:
+      oneOf:
+      - $ref: '#/components/schemas/getCustomFieldsFromPeople_200_response_data_type_oneOf'
+      - $ref: '#/components/schemas/getCustomFieldsFromPeople_200_response_data_type_oneOf_1'
+      - $ref: '#/components/schemas/getCustomFieldFromContractsById_200_response_data_type_oneOf'
+    getCustomFieldFromContractsById_200_response_data_settings_access:
+      description: Access settings for the custom field
+      example:
+        is_sensitive: true
+        provided_by:
+        - organization
+        - organization
+      properties:
+        provided_by:
+          description: Entities providing access to the custom field
+          items:
+            enum:
+            - organization
+            - worker
+            example: organization
+            type: string
+          type: array
+        is_sensitive:
+          description: Whether the custom field is sensitive
+          example: true
+          type: boolean
+      type: object
+    getCustomFieldFromContractsById_200_response_data_settings:
+      example:
+        is_enabled: true
+        access:
+          is_sensitive: true
+          provided_by:
+          - organization
+          - organization
+        worker_types:
+        - eor
+        - eor
+        countries:
+        - CA
+        - GB
+        - US
+        required: true
+      properties:
+        access:
+          $ref: '#/components/schemas/getCustomFieldFromContractsById_200_response_data_settings_access'
+        required:
+          description: Whether the custom field is required
+          example: true
+          type: boolean
+        countries:
+          description: Countries for which the custom field is applicable.
+          example:
+          - CA
+          - GB
+          - US
+          items:
+            type: string
+          type: array
+        is_enabled:
+          description: Whether the custom field is enabled
+          example: true
+          type: boolean
+        worker_types:
+          description: Worker types for which the custom field is applicable
+          items:
+            enum:
+            - eor
+            - contractor
+            - hris_direct_employee
+            - direct_employee
+            example: eor
+            type: string
+          type: array
+      type: object
+    getCustomFieldFromContractsById_200_response_data:
+      example:
+        settings:
+          is_enabled: true
+          access:
+            is_sensitive: true
+            provided_by:
+            - organization
+            - organization
+          worker_types:
+          - eor
+          - eor
+          countries:
+          - CA
+          - GB
+          - US
+          required: true
+        name: Custom field name
+        created_at: 2000-01-23
+        description: Custom field description
+        id: d290f1ee-6c54-4b01-90e6-d701748f0851
+        placement: profile
+        type:
+          name: text
+      properties:
+        id:
+          description: Custom field id
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+          format: uuid
+          type: string
+        name:
+          description: Name of the custom field
+          example: Custom field name
+          type: string
+        type:
+          $ref: '#/components/schemas/getCustomFieldFromContractsById_200_response_data_type'
+        settings:
+          $ref: '#/components/schemas/getCustomFieldFromContractsById_200_response_data_settings'
+        placement:
+          description: Valid placements for custom field
+          enum:
+          - profile
+          - contract
+          example: profile
+          type: string
+        created_at:
+          description: Creation date of the custom field
+          format: date
+          type: string
+        description:
+          description: Description of the custom field
+          example: Custom field description
+          type: string
+      type: object
+    getCustomFieldFromContractsById_200_response:
+      example:
+        data:
+          settings:
+            is_enabled: true
+            access:
+              is_sensitive: true
+              provided_by:
+              - organization
+              - organization
+            worker_types:
+            - eor
+            - eor
+            countries:
+            - CA
+            - GB
+            - US
+            required: true
+          name: Custom field name
+          created_at: 2000-01-23
+          description: Custom field description
+          id: d290f1ee-6c54-4b01-90e6-d701748f0851
+          placement: profile
+          type:
+            name: text
+      properties:
+        data:
+          $ref: '#/components/schemas/getCustomFieldFromContractsById_200_response_data'
+      required:
+      - data
+      type: object
     approveExerciseEquity_request:
       properties:
         employer_approval:
@@ -52089,6 +52689,187 @@ components:
       - id
       - status
       - updated_at
+      type: object
+    deleteLegalEntity_200_response:
+      example:
+        archived_at: 2024-11-29T12:00:00Z
+      properties:
+        archived_at:
+          description: The timestamp when the legal entity was archived.
+          example: 2024-11-29T12:00:00Z
+          format: date-time
+          type: string
+      type: object
+    deleteLegalEntity_400_response:
+      example:
+        message: Invalid request parameters.
+      properties:
+        message:
+          description: Error message explaining what went wrong.
+          example: Invalid request parameters.
+          type: string
+      type: object
+    deleteLegalEntity_403_response:
+      example:
+        error: User does not have sufficient permissions to delete this entity.
+      properties:
+        error:
+          description: Error message explaining why access is denied.
+          example: User does not have sufficient permissions to delete this entity.
+          type: string
+      type: object
+    editLegalEntity_request_address:
+      example:
+        country: US
+        city: San Francisco
+        street: 123 Main St
+        state: CA
+      properties:
+        city:
+          description: The city.
+          example: San Francisco
+          type: string
+        state:
+          description: The state.
+          example: CA
+          type: string
+        street:
+          description: The street address.
+          example: 123 Main St
+          type: string
+        country:
+          description: The ISO 2-letter country code.
+          example: US
+          type: string
+      type: object
+    editLegalEntity_request_company_identifiers:
+      description: Identifiers associated with the legal entity.
+      properties:
+        tax_number:
+          description: The tax identification number of the legal entity.
+          example: "123456789"
+          type: string
+        registration_number:
+          description: The registration number of the legal entity.
+          example: "987654321"
+          type: string
+      type: object
+    editLegalEntity_request:
+      properties:
+        name:
+          description: The name of the legal entity.
+          example: Deel Inc.
+          type: string
+        phone:
+          description: The phone number of the legal entity.
+          example: "+18001234567"
+          type: string
+        address:
+          $ref: '#/components/schemas/editLegalEntity_request_address'
+        sic_number:
+          description: The SIC number of the legal entity.
+          example: "1234"
+          type: string
+        entity_type:
+          description: The type of the legal entity.
+          example: Corporation
+          type: string
+        industry_name:
+          description: The industry name of the legal entity.
+          example: Software Development
+          type: string
+        company_identifiers:
+          $ref: '#/components/schemas/editLegalEntity_request_company_identifiers'
+      type: object
+    editLegalEntity_200_response_data_company_identifiers:
+      example:
+        tax_number: "123456789"
+        registration_number: "987654321"
+      properties:
+        tax_number:
+          description: The tax identification number of the legal entity.
+          example: "123456789"
+          type: string
+        registration_number:
+          description: The registration number of the legal entity.
+          example: "987654321"
+          type: string
+      type: object
+    editLegalEntity_200_response_data:
+      example:
+        industry_name: Software Development
+        address:
+          country: US
+          city: San Francisco
+          street: 123 Main St
+          state: CA
+        entity_type: Corporation
+        phone: "+18001234567"
+        sic_number: "1234"
+        name: Deel Inc.
+        company_identifiers:
+          tax_number: "123456789"
+          registration_number: "987654321"
+        id: 123e4567-e89b-12d3-a456-426614174000
+      properties:
+        id:
+          description: The unique identifier of the legal entity.
+          example: 123e4567-e89b-12d3-a456-426614174000
+          type: string
+        name:
+          description: The name of the legal entity.
+          example: Deel Inc.
+          type: string
+        phone:
+          description: The phone number of the legal entity.
+          example: "+18001234567"
+          type: string
+        address:
+          $ref: '#/components/schemas/editLegalEntity_request_address'
+        sic_number:
+          description: The SIC number of the legal entity.
+          example: "1234"
+          type: string
+        entity_type:
+          description: The type of the legal entity.
+          example: Corporation
+          type: string
+        industry_name:
+          description: The industry name of the legal entity.
+          example: Software Development
+          type: string
+        company_identifiers:
+          $ref: '#/components/schemas/editLegalEntity_200_response_data_company_identifiers'
+      type: object
+    editLegalEntity_200_response:
+      example:
+        data:
+          industry_name: Software Development
+          address:
+            country: US
+            city: San Francisco
+            street: 123 Main St
+            state: CA
+          entity_type: Corporation
+          phone: "+18001234567"
+          sic_number: "1234"
+          name: Deel Inc.
+          company_identifiers:
+            tax_number: "123456789"
+            registration_number: "987654321"
+          id: 123e4567-e89b-12d3-a456-426614174000
+      properties:
+        data:
+          $ref: '#/components/schemas/editLegalEntity_200_response_data'
+      type: object
+    editLegalEntity_403_response:
+      example:
+        error: User must be a manager of the organization to update an entity.
+      properties:
+        error:
+          description: Error message explaining why access is denied.
+          example: User must be a manager of the organization to update an entity.
+          type: string
       type: object
     getOffCyclePaymentByContractAndId_200_response_data_reported_by:
       example:
@@ -52335,97 +53116,6 @@ components:
       required:
       - data
       type: object
-    getCustomFieldFromPeopleById_200_response_data_type_oneOf:
-      properties:
-        name:
-          description: List types
-          enum:
-          - list
-          - multiselect
-          example: list
-          type: string
-        options:
-          description: List of options for the custom field
-          items:
-            example: Option 1
-            type: string
-          type: array
-      type: object
-    getCustomFieldFromPeopleById_200_response_data_type:
-      oneOf:
-      - $ref: '#/components/schemas/getCustomFieldsFromPeople_200_response_data_type_oneOf'
-      - $ref: '#/components/schemas/getCustomFieldsFromPeople_200_response_data_type_oneOf_1'
-      - $ref: '#/components/schemas/getCustomFieldFromPeopleById_200_response_data_type_oneOf'
-    getCustomFieldFromPeopleById_200_response_data_settings_access:
-      description: Access settings for the custom field
-      example:
-        is_sensitive: true
-        provided_by:
-        - organization
-        - organization
-      properties:
-        provided_by:
-          description: Entities providing access to the custom field
-          items:
-            enum:
-            - organization
-            - worker
-            example: organization
-            type: string
-          type: array
-        is_sensitive:
-          description: Whether the custom field is sensitive
-          example: true
-          type: boolean
-      type: object
-    getCustomFieldFromPeopleById_200_response_data_settings:
-      example:
-        is_enabled: true
-        access:
-          is_sensitive: true
-          provided_by:
-          - organization
-          - organization
-        worker_types:
-        - eor
-        - eor
-        countries:
-        - CA
-        - GB
-        - US
-        required: true
-      properties:
-        access:
-          $ref: '#/components/schemas/getCustomFieldFromPeopleById_200_response_data_settings_access'
-        required:
-          description: Whether the custom field is required
-          example: true
-          type: boolean
-        countries:
-          description: Countries for which the custom field is applicable.
-          example:
-          - CA
-          - GB
-          - US
-          items:
-            type: string
-          type: array
-        is_enabled:
-          description: Whether the custom field is enabled
-          example: true
-          type: boolean
-        worker_types:
-          description: Worker types for which the custom field is applicable
-          items:
-            enum:
-            - eor
-            - contractor
-            - hris_direct_employee
-            - direct_employee
-            example: eor
-            type: string
-          type: array
-      type: object
     getCustomFieldFromPeopleById_200_response_data:
       example:
         settings:
@@ -52461,9 +53151,9 @@ components:
           example: Custom field name
           type: string
         type:
-          $ref: '#/components/schemas/getCustomFieldFromPeopleById_200_response_data_type'
+          $ref: '#/components/schemas/getCustomFieldFromContractsById_200_response_data_type'
         settings:
-          $ref: '#/components/schemas/getCustomFieldFromPeopleById_200_response_data_settings'
+          $ref: '#/components/schemas/getCustomFieldFromContractsById_200_response_data_settings'
         placement:
           description: Valid placements for custom field
           enum:
@@ -52508,91 +53198,6 @@ components:
       properties:
         data:
           $ref: '#/components/schemas/getCustomFieldFromPeopleById_200_response_data'
-      required:
-      - data
-      type: object
-    getCustomFieldFromContractsById_200_response_data:
-      example:
-        settings:
-          is_enabled: true
-          access:
-            is_sensitive: true
-            provided_by:
-            - organization
-            - organization
-          worker_types:
-          - eor
-          - eor
-          countries:
-          - CA
-          - GB
-          - US
-          required: true
-        name: Custom field name
-        created_at: 2000-01-23
-        description: Custom field description
-        id: d290f1ee-6c54-4b01-90e6-d701748f0851
-        placement: profile
-        type:
-          name: text
-      properties:
-        id:
-          description: Custom field id
-          example: d290f1ee-6c54-4b01-90e6-d701748f0851
-          format: uuid
-          type: string
-        name:
-          description: Name of the custom field
-          example: Custom field name
-          type: string
-        type:
-          $ref: '#/components/schemas/getCustomFieldFromPeopleById_200_response_data_type'
-        settings:
-          $ref: '#/components/schemas/getCustomFieldFromPeopleById_200_response_data_settings'
-        placement:
-          description: Valid placements for custom field
-          enum:
-          - profile
-          - contract
-          example: profile
-          type: string
-        created_at:
-          description: Creation date of the custom field
-          format: date
-          type: string
-        description:
-          description: Description of the custom field
-          example: Custom field description
-          type: string
-      type: object
-    getCustomFieldFromContractsById_200_response:
-      example:
-        data:
-          settings:
-            is_enabled: true
-            access:
-              is_sensitive: true
-              provided_by:
-              - organization
-              - organization
-            worker_types:
-            - eor
-            - eor
-            countries:
-            - CA
-            - GB
-            - US
-            required: true
-          name: Custom field name
-          created_at: 2000-01-23
-          description: Custom field description
-          id: d290f1ee-6c54-4b01-90e6-d701748f0851
-          placement: profile
-          type:
-            name: text
-      properties:
-        data:
-          $ref: '#/components/schemas/getCustomFieldFromContractsById_200_response_data'
       required:
       - data
       type: object
@@ -53029,6 +53634,35 @@ components:
       properties:
         data:
           $ref: '#/components/schemas/_offboarding_tracker__id__get_200_response_data'
+      type: object
+    getLookups_200_response_data_inner:
+      example:
+        label: United States
+        value: US
+      properties:
+        label:
+          description: "The label for the lookup item (e.g., country name, entity\
+            \ type)."
+          example: United States
+          type: string
+        value:
+          description: "The value associated with the lookup item (e.g., ISO code,\
+            \ type identifier)."
+          example: US
+          type: string
+      type: object
+    getLookups_200_response:
+      example:
+        data:
+        - label: United States
+          value: US
+        - label: United States
+          value: US
+      properties:
+        data:
+          items:
+            $ref: '#/components/schemas/getLookups_200_response_data_inner'
+          type: array
       type: object
     _offboarding_tracker_get_pagination_parameter:
       properties:

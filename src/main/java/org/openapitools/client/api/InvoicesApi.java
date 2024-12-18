@@ -1303,7 +1303,7 @@ public class InvoicesApi {
 
     /**
      * Update an invoice adjustment
-     * Update an invoice adjustment.  **Token scopes**: &#x60;adjustments:write&#x60;
+     * Update an invoice adjustment.  **Token scopes**: &#x60;invoice-adjustments:write&#x60;
      * @param id Invoice adjustment id. (required)
      * @param updateInvoiceAdjustmentRequest  (required)
      * @return APIupdateInvoiceAdjustmentRequest

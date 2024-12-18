@@ -27,6 +27,16 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
+import org.openapitools.client.model.CreateLegalEntity200Response;
+import org.openapitools.client.model.CreateLegalEntity403Response;
+import org.openapitools.client.model.CreateLegalEntityRequest;
+import org.openapitools.client.model.DeleteLegalEntity200Response;
+import org.openapitools.client.model.DeleteLegalEntity400Response;
+import org.openapitools.client.model.DeleteLegalEntity403Response;
+import org.openapitools.client.model.EditLegalEntity200Response;
+import org.openapitools.client.model.EditLegalEntity403Response;
+import org.openapitools.client.model.EditLegalEntityRequest;
+import org.openapitools.client.model.GetGroups400Response;
 import org.openapitools.client.model.GetLegalEntity200Response;
 import org.openapitools.client.model.GetLegalEntityPayrollSettings200ResponseInner;
 
@@ -73,6 +83,519 @@ public class LegalEntitiesApi {
         this.localCustomBaseUrl = customBaseUrl;
     }
 
+    private okhttp3.Call createLegalEntityCall(CreateLegalEntityRequest createLegalEntityRequest, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = createLegalEntityRequest;
+
+        // create path and map variables
+        String localVarPath = "/legal-entities";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "deelToken", "oauth2" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call createLegalEntityValidateBeforeCall(CreateLegalEntityRequest createLegalEntityRequest, final ApiCallback _callback) throws ApiException {
+        return createLegalEntityCall(createLegalEntityRequest, _callback);
+
+    }
+
+
+    private ApiResponse<CreateLegalEntity200Response> createLegalEntityWithHttpInfo(CreateLegalEntityRequest createLegalEntityRequest) throws ApiException {
+        okhttp3.Call localVarCall = createLegalEntityValidateBeforeCall(createLegalEntityRequest, null);
+        Type localVarReturnType = new TypeToken<CreateLegalEntity200Response>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    private okhttp3.Call createLegalEntityAsync(CreateLegalEntityRequest createLegalEntityRequest, final ApiCallback<CreateLegalEntity200Response> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = createLegalEntityValidateBeforeCall(createLegalEntityRequest, _callback);
+        Type localVarReturnType = new TypeToken<CreateLegalEntity200Response>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+
+    public class APIcreateLegalEntityRequest {
+        private CreateLegalEntityRequest createLegalEntityRequest;
+
+        private APIcreateLegalEntityRequest() {
+        }
+
+        /**
+         * Set createLegalEntityRequest
+         * @param createLegalEntityRequest  (optional)
+         * @return APIcreateLegalEntityRequest
+         */
+        public APIcreateLegalEntityRequest createLegalEntityRequest(CreateLegalEntityRequest createLegalEntityRequest) {
+            this.createLegalEntityRequest = createLegalEntityRequest;
+            return this;
+        }
+
+        /**
+         * Build call for createLegalEntity
+         * @param _callback ApiCallback API callback
+         * @return Call to execute
+         * @throws ApiException If fail to serialize the request body object
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successfully created legal entity. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+            <tr><td> 403 </td><td> Permission denied. User must have the &#x60;entities.manage&#x60; permission. </td><td>  -  </td></tr>
+         </table>
+         */
+        public okhttp3.Call buildCall(final ApiCallback _callback) throws ApiException {
+            return createLegalEntityCall(createLegalEntityRequest, _callback);
+        }
+
+        /**
+         * Execute createLegalEntity request
+         * @return CreateLegalEntity200Response
+         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successfully created legal entity. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+            <tr><td> 403 </td><td> Permission denied. User must have the &#x60;entities.manage&#x60; permission. </td><td>  -  </td></tr>
+         </table>
+         */
+        public CreateLegalEntity200Response execute() throws ApiException {
+            ApiResponse<CreateLegalEntity200Response> localVarResp = createLegalEntityWithHttpInfo(createLegalEntityRequest);
+            return localVarResp.getData();
+        }
+
+        /**
+         * Execute createLegalEntity request with HTTP info returned
+         * @return ApiResponse&lt;CreateLegalEntity200Response&gt;
+         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successfully created legal entity. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+            <tr><td> 403 </td><td> Permission denied. User must have the &#x60;entities.manage&#x60; permission. </td><td>  -  </td></tr>
+         </table>
+         */
+        public ApiResponse<CreateLegalEntity200Response> executeWithHttpInfo() throws ApiException {
+            return createLegalEntityWithHttpInfo(createLegalEntityRequest);
+        }
+
+        /**
+         * Execute createLegalEntity request (asynchronously)
+         * @param _callback The callback to be executed when the API call finishes
+         * @return The request call
+         * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successfully created legal entity. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+            <tr><td> 403 </td><td> Permission denied. User must have the &#x60;entities.manage&#x60; permission. </td><td>  -  </td></tr>
+         </table>
+         */
+        public okhttp3.Call executeAsync(final ApiCallback<CreateLegalEntity200Response> _callback) throws ApiException {
+            return createLegalEntityAsync(createLegalEntityRequest, _callback);
+        }
+    }
+
+    /**
+     * Create a new legal entity
+     * Create a new legal entity under an organization.  **Token scopes**: &#x60;legal-entity:write&#x60;, &#x60;legal-entity:read&#x60;
+     * @return APIcreateLegalEntityRequest
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successfully created legal entity. </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> Permission denied. User must have the &#x60;entities.manage&#x60; permission. </td><td>  -  </td></tr>
+     </table>
+     */
+    public APIcreateLegalEntityRequest createLegalEntity() {
+        return new APIcreateLegalEntityRequest();
+    }
+    private okhttp3.Call deleteLegalEntityCall(String id, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/legal-entities/{id}"
+            .replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "deelToken", "oauth2" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "DELETE", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call deleteLegalEntityValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new ApiException("Missing the required parameter 'id' when calling deleteLegalEntity(Async)");
+        }
+
+        return deleteLegalEntityCall(id, _callback);
+
+    }
+
+
+    private ApiResponse<DeleteLegalEntity200Response> deleteLegalEntityWithHttpInfo(String id) throws ApiException {
+        okhttp3.Call localVarCall = deleteLegalEntityValidateBeforeCall(id, null);
+        Type localVarReturnType = new TypeToken<DeleteLegalEntity200Response>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    private okhttp3.Call deleteLegalEntityAsync(String id, final ApiCallback<DeleteLegalEntity200Response> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = deleteLegalEntityValidateBeforeCall(id, _callback);
+        Type localVarReturnType = new TypeToken<DeleteLegalEntity200Response>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+
+    public class APIdeleteLegalEntityRequest {
+        private final String id;
+
+        private APIdeleteLegalEntityRequest(String id) {
+            this.id = id;
+        }
+
+        /**
+         * Build call for deleteLegalEntity
+         * @param _callback ApiCallback API callback
+         * @return Call to execute
+         * @throws ApiException If fail to serialize the request body object
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successfully archived the legal entity. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+            <tr><td> 403 </td><td> Permission denied. </td><td>  -  </td></tr>
+         </table>
+         */
+        public okhttp3.Call buildCall(final ApiCallback _callback) throws ApiException {
+            return deleteLegalEntityCall(id, _callback);
+        }
+
+        /**
+         * Execute deleteLegalEntity request
+         * @return DeleteLegalEntity200Response
+         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successfully archived the legal entity. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+            <tr><td> 403 </td><td> Permission denied. </td><td>  -  </td></tr>
+         </table>
+         */
+        public DeleteLegalEntity200Response execute() throws ApiException {
+            ApiResponse<DeleteLegalEntity200Response> localVarResp = deleteLegalEntityWithHttpInfo(id);
+            return localVarResp.getData();
+        }
+
+        /**
+         * Execute deleteLegalEntity request with HTTP info returned
+         * @return ApiResponse&lt;DeleteLegalEntity200Response&gt;
+         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successfully archived the legal entity. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+            <tr><td> 403 </td><td> Permission denied. </td><td>  -  </td></tr>
+         </table>
+         */
+        public ApiResponse<DeleteLegalEntity200Response> executeWithHttpInfo() throws ApiException {
+            return deleteLegalEntityWithHttpInfo(id);
+        }
+
+        /**
+         * Execute deleteLegalEntity request (asynchronously)
+         * @param _callback The callback to be executed when the API call finishes
+         * @return The request call
+         * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successfully archived the legal entity. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+            <tr><td> 403 </td><td> Permission denied. </td><td>  -  </td></tr>
+         </table>
+         */
+        public okhttp3.Call executeAsync(final ApiCallback<DeleteLegalEntity200Response> _callback) throws ApiException {
+            return deleteLegalEntityAsync(id, _callback);
+        }
+    }
+
+    /**
+     * Delete a legal entity
+     * Archive a legal entity. This marks the entity as inactive but does not permanently remove it.  **Token scopes**: &#x60;legal-entity:read&#x60;, &#x60;legal-entity:write&#x60;
+     * @param id The ID of the legal entity to archive. (required)
+     * @return APIdeleteLegalEntityRequest
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successfully archived the legal entity. </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> Permission denied. </td><td>  -  </td></tr>
+     </table>
+     */
+    public APIdeleteLegalEntityRequest deleteLegalEntity(String id) {
+        return new APIdeleteLegalEntityRequest(id);
+    }
+    private okhttp3.Call editLegalEntityCall(String id, EditLegalEntityRequest editLegalEntityRequest, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = editLegalEntityRequest;
+
+        // create path and map variables
+        String localVarPath = "/legal-entities/{id}"
+            .replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "deelToken", "oauth2" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "PATCH", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call editLegalEntityValidateBeforeCall(String id, EditLegalEntityRequest editLegalEntityRequest, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new ApiException("Missing the required parameter 'id' when calling editLegalEntity(Async)");
+        }
+
+        // verify the required parameter 'editLegalEntityRequest' is set
+        if (editLegalEntityRequest == null) {
+            throw new ApiException("Missing the required parameter 'editLegalEntityRequest' when calling editLegalEntity(Async)");
+        }
+
+        return editLegalEntityCall(id, editLegalEntityRequest, _callback);
+
+    }
+
+
+    private ApiResponse<EditLegalEntity200Response> editLegalEntityWithHttpInfo(String id, EditLegalEntityRequest editLegalEntityRequest) throws ApiException {
+        okhttp3.Call localVarCall = editLegalEntityValidateBeforeCall(id, editLegalEntityRequest, null);
+        Type localVarReturnType = new TypeToken<EditLegalEntity200Response>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    private okhttp3.Call editLegalEntityAsync(String id, EditLegalEntityRequest editLegalEntityRequest, final ApiCallback<EditLegalEntity200Response> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = editLegalEntityValidateBeforeCall(id, editLegalEntityRequest, _callback);
+        Type localVarReturnType = new TypeToken<EditLegalEntity200Response>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+
+    public class APIeditLegalEntityRequest {
+        private final String id;
+        private final EditLegalEntityRequest editLegalEntityRequest;
+
+        private APIeditLegalEntityRequest(String id, EditLegalEntityRequest editLegalEntityRequest) {
+            this.id = id;
+            this.editLegalEntityRequest = editLegalEntityRequest;
+        }
+
+        /**
+         * Build call for editLegalEntity
+         * @param _callback ApiCallback API callback
+         * @return Call to execute
+         * @throws ApiException If fail to serialize the request body object
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successfully updated the legal entity. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+            <tr><td> 403 </td><td> Permission denied. </td><td>  -  </td></tr>
+         </table>
+         */
+        public okhttp3.Call buildCall(final ApiCallback _callback) throws ApiException {
+            return editLegalEntityCall(id, editLegalEntityRequest, _callback);
+        }
+
+        /**
+         * Execute editLegalEntity request
+         * @return EditLegalEntity200Response
+         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successfully updated the legal entity. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+            <tr><td> 403 </td><td> Permission denied. </td><td>  -  </td></tr>
+         </table>
+         */
+        public EditLegalEntity200Response execute() throws ApiException {
+            ApiResponse<EditLegalEntity200Response> localVarResp = editLegalEntityWithHttpInfo(id, editLegalEntityRequest);
+            return localVarResp.getData();
+        }
+
+        /**
+         * Execute editLegalEntity request with HTTP info returned
+         * @return ApiResponse&lt;EditLegalEntity200Response&gt;
+         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successfully updated the legal entity. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+            <tr><td> 403 </td><td> Permission denied. </td><td>  -  </td></tr>
+         </table>
+         */
+        public ApiResponse<EditLegalEntity200Response> executeWithHttpInfo() throws ApiException {
+            return editLegalEntityWithHttpInfo(id, editLegalEntityRequest);
+        }
+
+        /**
+         * Execute editLegalEntity request (asynchronously)
+         * @param _callback The callback to be executed when the API call finishes
+         * @return The request call
+         * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successfully updated the legal entity. </td><td>  -  </td></tr>
+            <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+            <tr><td> 403 </td><td> Permission denied. </td><td>  -  </td></tr>
+         </table>
+         */
+        public okhttp3.Call executeAsync(final ApiCallback<EditLegalEntity200Response> _callback) throws ApiException {
+            return editLegalEntityAsync(id, editLegalEntityRequest, _callback);
+        }
+    }
+
+    /**
+     * Edit a legal entity
+     * Update the details of an existing legal entity.  **Token scopes**: &#x60;legal-entity:read&#x60;, &#x60;legal-entity:write&#x60;
+     * @param id The ID of the legal entity to update. (required)
+     * @param editLegalEntityRequest  (required)
+     * @return APIeditLegalEntityRequest
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successfully updated the legal entity. </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Invalid request parameters. </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> Permission denied. </td><td>  -  </td></tr>
+     </table>
+     */
+    public APIeditLegalEntityRequest editLegalEntity(String id, EditLegalEntityRequest editLegalEntityRequest) {
+        return new APIeditLegalEntityRequest(id, editLegalEntityRequest);
+    }
     private okhttp3.Call getLegalEntityCall(String id, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers

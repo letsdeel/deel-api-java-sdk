@@ -2,7 +2,7 @@
 
 Deel REST API
 - API version: 1.25.0
-  - Build date: 2024-12-13T11:33:27.931295037Z[GMT]
+  - Build date: 2024-12-18T13:47:44.629538829Z[GMT]
   - Generator version: 7.10.0
 
 Deel REST API
@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.deel</groupId>
   <artifactId>deel-api-java-sdk</artifactId>
-  <version>test-1.0.0</version>
+  <version>2.1.21</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -57,7 +57,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.deel:deel-api-java-sdk:test-1.0.0"
+     implementation "com.deel:deel-api-java-sdk:2.1.21"
   }
 ```
 
@@ -71,7 +71,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/deel-api-java-sdk-test-1.0.0.jar`
+* `target/deel-api-java-sdk-2.1.21.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -142,6 +142,7 @@ Class | Method | HTTP request | Description
 *CandidatesApi* | [**addCandidate**](docs/CandidatesApi.md#addCandidate) | **POST** /candidates | Add Candidate
 *CandidatesApi* | [**patchCandidate**](docs/CandidatesApi.md#patchCandidate) | **PATCH** /candidates/{candidate_id} | Update Candidate
 *CartaApi* | [**getEquityStakeholders**](docs/CartaApi.md#getEquityStakeholders) | **GET** /equity/stakeholders | Retrieve stakeholders
+*Class401KPlansApi* | [**cleanUpPlan**](docs/Class401KPlansApi.md#cleanUpPlan) | **POST** /benefits/legal-entities/{id}/401k/plans/clean-up | Clean up plan for a given legal entity
 *Class401KPlansApi* | [**createBenefitProviderIntegrationClient**](docs/Class401KPlansApi.md#createBenefitProviderIntegrationClient) | **POST** /benefits/legal-entities/{id}/benefits/401k/activate | Activate the 401k integration for the legal entity
 *Class401KPlansApi* | [**delete401kPlanDefinition**](docs/Class401KPlansApi.md#delete401kPlanDefinition) | **DELETE** /benefits/legal-entities/{id}/401k/plans/{plan_id} | Delete a 401k plan
 *Class401KPlansApi* | [**get401kPlansDefinition**](docs/Class401KPlansApi.md#get401kPlansDefinition) | **GET** /benefits/legal-entities/{id}/401k/plans | Get 401k plans for legal entity
@@ -219,12 +220,16 @@ Class | Method | HTTP request | Description
 *InvoicesApi* | [**getInvoiceAdjustmentsByContractId**](docs/InvoicesApi.md#getInvoiceAdjustmentsByContractId) | **GET** /contracts/{contract_id}/invoice-adjustments | Invoice line items by contract
 *InvoicesApi* | [**updateInvoiceAdjustment**](docs/InvoicesApi.md#updateInvoiceAdjustment) | **PATCH** /invoice-adjustments/{id} | Update an invoice adjustment
 *InvoicesApi* | [**updateInvoiceAdjustmentById**](docs/InvoicesApi.md#updateInvoiceAdjustmentById) | **POST** /invoice-adjustments/{id}/reviews | Update an invoice adjustment
+*LegalEntitiesApi* | [**createLegalEntity**](docs/LegalEntitiesApi.md#createLegalEntity) | **POST** /legal-entities | Create a new legal entity
+*LegalEntitiesApi* | [**deleteLegalEntity**](docs/LegalEntitiesApi.md#deleteLegalEntity) | **DELETE** /legal-entities/{id} | Delete a legal entity
+*LegalEntitiesApi* | [**editLegalEntity**](docs/LegalEntitiesApi.md#editLegalEntity) | **PATCH** /legal-entities/{id} | Edit a legal entity
 *LegalEntitiesApi* | [**getLegalEntity**](docs/LegalEntitiesApi.md#getLegalEntity) | **GET** /benefits/legal-entities/{id} | Get legal entity data from organization integrated with external benefits vendor
 *LegalEntitiesApi* | [**getLegalEntityPayrollSettings**](docs/LegalEntitiesApi.md#getLegalEntityPayrollSettings) | **GET** /benefits/legal-entities/{id}/payroll-settings | Get legal entity payroll settings from organization integrated with external benefits vendor
 *LoansApi* | [**post401kSingleDeductionDefinition**](docs/LoansApi.md#post401kSingleDeductionDefinition) | **POST** /benefits/legal-entities/{id}/contracts/{contract_id}/plans/{plan_id}/deductions | Create a single deduction loan
 *LookupsApi* | [**getCountries**](docs/LookupsApi.md#getCountries) | **GET** /lookups/countries | Retrieve Country List
 *LookupsApi* | [**getCurrencies**](docs/LookupsApi.md#getCurrencies) | **GET** /lookups/currencies | Retrieve Supported Currency List
 *LookupsApi* | [**getJobTitleList**](docs/LookupsApi.md#getJobTitleList) | **GET** /lookups/job-titles | Job titles list
+*LookupsApi* | [**getLookups**](docs/LookupsApi.md#getLookups) | **GET** /lookups | Retrieve lookup information for currencies, countries, entity types, etc
 *LookupsApi* | [**getSeniorityList**](docs/LookupsApi.md#getSeniorityList) | **GET** /lookups/seniorities | Retrieve Seniority Levels
 *LookupsApi* | [**getTimeoffTypeList**](docs/LookupsApi.md#getTimeoffTypeList) | **GET** /lookups/time-off-types | Retrieve Time-Off Types
 *ManagersApi* | [**createManager**](docs/ManagersApi.md#createManager) | **POST** /managers | Create a Manager
@@ -606,6 +611,14 @@ Class | Method | HTTP request | Description
  - [CreateGroupRequestData](docs/CreateGroupRequestData.md)
  - [CreateInvoiceAdjustmentRequest](docs/CreateInvoiceAdjustmentRequest.md)
  - [CreateInvoiceAdjustmentRequest1](docs/CreateInvoiceAdjustmentRequest1.md)
+ - [CreateLegalEntity200Response](docs/CreateLegalEntity200Response.md)
+ - [CreateLegalEntity200ResponseData](docs/CreateLegalEntity200ResponseData.md)
+ - [CreateLegalEntity200ResponseDataAddress](docs/CreateLegalEntity200ResponseDataAddress.md)
+ - [CreateLegalEntity403Response](docs/CreateLegalEntity403Response.md)
+ - [CreateLegalEntityRequest](docs/CreateLegalEntityRequest.md)
+ - [CreateLegalEntityRequestData](docs/CreateLegalEntityRequestData.md)
+ - [CreateLegalEntityRequestDataAddress](docs/CreateLegalEntityRequestDataAddress.md)
+ - [CreateLegalEntityRequestDataCompanyIdentifiers](docs/CreateLegalEntityRequestDataCompanyIdentifiers.md)
  - [CreateManager201Response](docs/CreateManager201Response.md)
  - [CreateManager201ResponseData](docs/CreateManager201ResponseData.md)
  - [CreateManager400Response](docs/CreateManager400Response.md)
@@ -763,6 +776,9 @@ Class | Method | HTTP request | Description
  - [DeleteGroup400Response](docs/DeleteGroup400Response.md)
  - [DeleteGroup404Response](docs/DeleteGroup404Response.md)
  - [DeleteGroup404ResponseError](docs/DeleteGroup404ResponseError.md)
+ - [DeleteLegalEntity200Response](docs/DeleteLegalEntity200Response.md)
+ - [DeleteLegalEntity400Response](docs/DeleteLegalEntity400Response.md)
+ - [DeleteLegalEntity403Response](docs/DeleteLegalEntity403Response.md)
  - [DeleteMilestoneById200Response](docs/DeleteMilestoneById200Response.md)
  - [DeleteMilestoneById200ResponseData](docs/DeleteMilestoneById200ResponseData.md)
  - [DeleteMilestoneById400Response](docs/DeleteMilestoneById400Response.md)
@@ -784,6 +800,13 @@ Class | Method | HTTP request | Description
  - [EditGroup200ResponseData](docs/EditGroup200ResponseData.md)
  - [EditGroupRequest](docs/EditGroupRequest.md)
  - [EditGroupRequestData](docs/EditGroupRequestData.md)
+ - [EditLegalEntity200Response](docs/EditLegalEntity200Response.md)
+ - [EditLegalEntity200ResponseData](docs/EditLegalEntity200ResponseData.md)
+ - [EditLegalEntity200ResponseDataCompanyIdentifiers](docs/EditLegalEntity200ResponseDataCompanyIdentifiers.md)
+ - [EditLegalEntity403Response](docs/EditLegalEntity403Response.md)
+ - [EditLegalEntityRequest](docs/EditLegalEntityRequest.md)
+ - [EditLegalEntityRequestAddress](docs/EditLegalEntityRequestAddress.md)
+ - [EditLegalEntityRequestCompanyIdentifiers](docs/EditLegalEntityRequestCompanyIdentifiers.md)
  - [Email](docs/Email.md)
  - [Employee](docs/Employee.md)
  - [EmployeeAgreementDownloadContainer](docs/EmployeeAgreementDownloadContainer.md)
@@ -1012,12 +1035,12 @@ Class | Method | HTTP request | Description
  - [GetCurrencies200ResponseDataInner](docs/GetCurrencies200ResponseDataInner.md)
  - [GetCustomFieldFromContractsById200Response](docs/GetCustomFieldFromContractsById200Response.md)
  - [GetCustomFieldFromContractsById200ResponseData](docs/GetCustomFieldFromContractsById200ResponseData.md)
+ - [GetCustomFieldFromContractsById200ResponseDataSettings](docs/GetCustomFieldFromContractsById200ResponseDataSettings.md)
+ - [GetCustomFieldFromContractsById200ResponseDataSettingsAccess](docs/GetCustomFieldFromContractsById200ResponseDataSettingsAccess.md)
+ - [GetCustomFieldFromContractsById200ResponseDataType](docs/GetCustomFieldFromContractsById200ResponseDataType.md)
+ - [GetCustomFieldFromContractsById200ResponseDataTypeOneOf](docs/GetCustomFieldFromContractsById200ResponseDataTypeOneOf.md)
  - [GetCustomFieldFromPeopleById200Response](docs/GetCustomFieldFromPeopleById200Response.md)
  - [GetCustomFieldFromPeopleById200ResponseData](docs/GetCustomFieldFromPeopleById200ResponseData.md)
- - [GetCustomFieldFromPeopleById200ResponseDataSettings](docs/GetCustomFieldFromPeopleById200ResponseDataSettings.md)
- - [GetCustomFieldFromPeopleById200ResponseDataSettingsAccess](docs/GetCustomFieldFromPeopleById200ResponseDataSettingsAccess.md)
- - [GetCustomFieldFromPeopleById200ResponseDataType](docs/GetCustomFieldFromPeopleById200ResponseDataType.md)
- - [GetCustomFieldFromPeopleById200ResponseDataTypeOneOf](docs/GetCustomFieldFromPeopleById200ResponseDataTypeOneOf.md)
  - [GetCustomFieldValuesFromWorker200Response](docs/GetCustomFieldValuesFromWorker200Response.md)
  - [GetCustomFieldValuesFromWorker200ResponseDataInner](docs/GetCustomFieldValuesFromWorker200ResponseDataInner.md)
  - [GetCustomFieldValuesFromWorker200ResponseDataInnerData](docs/GetCustomFieldValuesFromWorker200ResponseDataInnerData.md)
@@ -1116,6 +1139,8 @@ Class | Method | HTTP request | Description
  - [GetLegalEntityList200Response](docs/GetLegalEntityList200Response.md)
  - [GetLegalEntityList200ResponseDataInner](docs/GetLegalEntityList200ResponseDataInner.md)
  - [GetLegalEntityPayrollSettings200ResponseInner](docs/GetLegalEntityPayrollSettings200ResponseInner.md)
+ - [GetLookups200Response](docs/GetLookups200Response.md)
+ - [GetLookups200ResponseDataInner](docs/GetLookups200ResponseDataInner.md)
  - [GetManagers200Response](docs/GetManagers200Response.md)
  - [GetManagers200ResponseDataInner](docs/GetManagers200ResponseDataInner.md)
  - [GetManagers200ResponsePage](docs/GetManagers200ResponsePage.md)
@@ -1754,13 +1779,13 @@ Class | Method | HTTP request | Description
  - [UpsertCustomFieldValueFromContractsRequestDataOneOf4](docs/UpsertCustomFieldValueFromContractsRequestDataOneOf4.md)
  - [UpsertCustomFieldValueFromWorkerRequest](docs/UpsertCustomFieldValueFromWorkerRequest.md)
  - [UpsertCustomFieldValueFromWorkerRequestData](docs/UpsertCustomFieldValueFromWorkerRequestData.md)
- - [UpsertCustomFieldValueFromWorkerRequestDataOneOf](docs/UpsertCustomFieldValueFromWorkerRequestDataOneOf.md)
- - [UpsertCustomFieldValueFromWorkerRequestDataOneOf1](docs/UpsertCustomFieldValueFromWorkerRequestDataOneOf1.md)
- - [UpsertCustomFieldValueFromWorkerRequestDataOneOf2](docs/UpsertCustomFieldValueFromWorkerRequestDataOneOf2.md)
- - [UpsertCustomFieldValueFromWorkerRequestDataOneOf3](docs/UpsertCustomFieldValueFromWorkerRequestDataOneOf3.md)
- - [UpsertCustomFieldValueFromWorkerRequestDataOneOf4](docs/UpsertCustomFieldValueFromWorkerRequestDataOneOf4.md)
- - [UpsertCustomFieldValueFromWorkerRequestDataOneOf5](docs/UpsertCustomFieldValueFromWorkerRequestDataOneOf5.md)
- - [UpsertCustomFieldValueFromWorkerRequestDataOneOf6](docs/UpsertCustomFieldValueFromWorkerRequestDataOneOf6.md)
+ - [UpsertCustomFieldValueFromWorkerRequestDataAnyOf](docs/UpsertCustomFieldValueFromWorkerRequestDataAnyOf.md)
+ - [UpsertCustomFieldValueFromWorkerRequestDataAnyOf1](docs/UpsertCustomFieldValueFromWorkerRequestDataAnyOf1.md)
+ - [UpsertCustomFieldValueFromWorkerRequestDataAnyOf2](docs/UpsertCustomFieldValueFromWorkerRequestDataAnyOf2.md)
+ - [UpsertCustomFieldValueFromWorkerRequestDataAnyOf3](docs/UpsertCustomFieldValueFromWorkerRequestDataAnyOf3.md)
+ - [UpsertCustomFieldValueFromWorkerRequestDataAnyOf4](docs/UpsertCustomFieldValueFromWorkerRequestDataAnyOf4.md)
+ - [UpsertCustomFieldValueFromWorkerRequestDataAnyOf5](docs/UpsertCustomFieldValueFromWorkerRequestDataAnyOf5.md)
+ - [UpsertCustomFieldValueFromWorkerRequestDataAnyOf6](docs/UpsertCustomFieldValueFromWorkerRequestDataAnyOf6.md)
  - [UpsertParentWorkerRelationsContainer](docs/UpsertParentWorkerRelationsContainer.md)
  - [UpsertParentWorkerRelationsContainerData](docs/UpsertParentWorkerRelationsContainerData.md)
  - [UpsertParentWorkerRelationsExternalIdContainer](docs/UpsertParentWorkerRelationsExternalIdContainer.md)
