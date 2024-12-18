@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * EquityStakeholder
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:22:04.472468916Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:50:05.582888578Z[GMT]", comments = "Generator version: 7.10.0")
 public class EquityStakeholder {
   public static final String SERIALIZED_NAME_STAKEHOLDER_ID = "stakeholder_id";
   @SerializedName(SERIALIZED_NAME_STAKEHOLDER_ID)
