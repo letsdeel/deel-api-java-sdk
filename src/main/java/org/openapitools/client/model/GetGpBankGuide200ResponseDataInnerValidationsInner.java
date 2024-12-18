@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * GetGpBankGuide200ResponseDataInnerValidationsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:25:45.183107737Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:45:24.021173966Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetGpBankGuide200ResponseDataInnerValidationsInner {
   /**
    * The type of validation applied to the field.
