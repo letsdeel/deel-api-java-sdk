@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateDirectEmployee201ResponseDataEmployment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T14:46:34.496883852Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:22:04.472468916Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateDirectEmployee201ResponseDataEmployment {
   /**
    * Gets or Sets type
@@ -118,6 +118,16 @@ public class CreateDirectEmployee201ResponseDataEmployment {
   @SerializedName(SERIALIZED_NAME_END_DATE)
   @javax.annotation.Nullable
   private LocalDate endDate;
+
+  public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
+  @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nonnull
+  private String jobTitle;
+
+  public static final String SERIALIZED_NAME_SENIORITY = "seniority";
+  @SerializedName(SERIALIZED_NAME_SENIORITY)
+  @javax.annotation.Nonnull
+  private String seniority;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
@@ -194,6 +204,44 @@ public class CreateDirectEmployee201ResponseDataEmployment {
   }
 
 
+  public CreateDirectEmployee201ResponseDataEmployment jobTitle(@javax.annotation.Nonnull String jobTitle) {
+    this.jobTitle = jobTitle;
+    return this;
+  }
+
+  /**
+   * Get jobTitle
+   * @return jobTitle
+   */
+  @javax.annotation.Nonnull
+  public String getJobTitle() {
+    return jobTitle;
+  }
+
+  public void setJobTitle(@javax.annotation.Nonnull String jobTitle) {
+    this.jobTitle = jobTitle;
+  }
+
+
+  public CreateDirectEmployee201ResponseDataEmployment seniority(@javax.annotation.Nonnull String seniority) {
+    this.seniority = seniority;
+    return this;
+  }
+
+  /**
+   * Get seniority
+   * @return seniority
+   */
+  @javax.annotation.Nonnull
+  public String getSeniority() {
+    return seniority;
+  }
+
+  public void setSeniority(@javax.annotation.Nonnull String seniority) {
+    this.seniority = seniority;
+  }
+
+
   public CreateDirectEmployee201ResponseDataEmployment startDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
     return this;
@@ -266,6 +314,8 @@ public class CreateDirectEmployee201ResponseDataEmployment {
     return Objects.equals(this.type, createDirectEmployee201ResponseDataEmployment.type) &&
         Objects.equals(this.country, createDirectEmployee201ResponseDataEmployment.country) &&
         Objects.equals(this.endDate, createDirectEmployee201ResponseDataEmployment.endDate) &&
+        Objects.equals(this.jobTitle, createDirectEmployee201ResponseDataEmployment.jobTitle) &&
+        Objects.equals(this.seniority, createDirectEmployee201ResponseDataEmployment.seniority) &&
         Objects.equals(this.startDate, createDirectEmployee201ResponseDataEmployment.startDate) &&
         Objects.equals(this.contractId, createDirectEmployee201ResponseDataEmployment.contractId) &&
         Objects.equals(this.partTimePercentage, createDirectEmployee201ResponseDataEmployment.partTimePercentage);
@@ -273,7 +323,7 @@ public class CreateDirectEmployee201ResponseDataEmployment {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, country, endDate, startDate, contractId, partTimePercentage);
+    return Objects.hash(type, country, endDate, jobTitle, seniority, startDate, contractId, partTimePercentage);
   }
 
   @Override
@@ -283,6 +333,8 @@ public class CreateDirectEmployee201ResponseDataEmployment {
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    country: ").append(toIndentedString(country)).append("\n");
     sb.append("    endDate: ").append(toIndentedString(endDate)).append("\n");
+    sb.append("    jobTitle: ").append(toIndentedString(jobTitle)).append("\n");
+    sb.append("    seniority: ").append(toIndentedString(seniority)).append("\n");
     sb.append("    startDate: ").append(toIndentedString(startDate)).append("\n");
     sb.append("    contractId: ").append(toIndentedString(contractId)).append("\n");
     sb.append("    partTimePercentage: ").append(toIndentedString(partTimePercentage)).append("\n");
@@ -311,6 +363,8 @@ public class CreateDirectEmployee201ResponseDataEmployment {
     openapiFields.add("type");
     openapiFields.add("country");
     openapiFields.add("end_date");
+    openapiFields.add("job_title");
+    openapiFields.add("seniority");
     openapiFields.add("start_date");
     openapiFields.add("contract_id");
     openapiFields.add("part_time_percentage");
@@ -320,6 +374,8 @@ public class CreateDirectEmployee201ResponseDataEmployment {
     openapiRequiredFields.add("type");
     openapiRequiredFields.add("country");
     openapiRequiredFields.add("end_date");
+    openapiRequiredFields.add("job_title");
+    openapiRequiredFields.add("seniority");
     openapiRequiredFields.add("start_date");
     openapiRequiredFields.add("contract_id");
   }
@@ -359,6 +415,12 @@ public class CreateDirectEmployee201ResponseDataEmployment {
       TypeEnum.validateJsonElement(jsonObj.get("type"));
       if (!jsonObj.get("country").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `country` to be a primitive type in the JSON string but got `%s`", jsonObj.get("country").toString()));
+      }
+      if (!jsonObj.get("job_title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `job_title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("job_title").toString()));
+      }
+      if (!jsonObj.get("seniority").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `seniority` to be a primitive type in the JSON string but got `%s`", jsonObj.get("seniority").toString()));
       }
       if (!jsonObj.get("contract_id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `contract_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("contract_id").toString()));

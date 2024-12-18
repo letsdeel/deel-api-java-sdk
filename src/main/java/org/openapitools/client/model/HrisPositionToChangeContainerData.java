@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
-import org.openapitools.client.model.CreateDirectEmployeeRequestClientDepartment;
+import org.openapitools.client.model.CreateDirectEmployeeRequestDataClientDepartment;
 import org.openapitools.client.model.HrisPositionToChangeContainerDataAddInner;
 import org.openapitools.client.model.HrisPositionToChangeContainerDataEditInner;
 
@@ -54,7 +54,7 @@ import org.openapitools.client.JSON;
 /**
  * HrisPositionToChangeContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T14:46:34.496883852Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:22:04.472468916Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisPositionToChangeContainerData {
   public static final String SERIALIZED_NAME_ADD = "add";
   @SerializedName(SERIALIZED_NAME_ADD)
@@ -69,7 +69,7 @@ public class HrisPositionToChangeContainerData {
   public static final String SERIALIZED_NAME_DELETE = "delete";
   @SerializedName(SERIALIZED_NAME_DELETE)
   @javax.annotation.Nullable
-  private List<CreateDirectEmployeeRequestClientDepartment> delete = new ArrayList<>();
+  private List<CreateDirectEmployeeRequestDataClientDepartment> delete = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PROFILE_ID = "profile_id";
   @SerializedName(SERIALIZED_NAME_PROFILE_ID)
@@ -133,12 +133,12 @@ public class HrisPositionToChangeContainerData {
   }
 
 
-  public HrisPositionToChangeContainerData delete(@javax.annotation.Nullable List<CreateDirectEmployeeRequestClientDepartment> delete) {
+  public HrisPositionToChangeContainerData delete(@javax.annotation.Nullable List<CreateDirectEmployeeRequestDataClientDepartment> delete) {
     this.delete = delete;
     return this;
   }
 
-  public HrisPositionToChangeContainerData addDeleteItem(CreateDirectEmployeeRequestClientDepartment deleteItem) {
+  public HrisPositionToChangeContainerData addDeleteItem(CreateDirectEmployeeRequestDataClientDepartment deleteItem) {
     if (this.delete == null) {
       this.delete = new ArrayList<>();
     }
@@ -151,11 +151,11 @@ public class HrisPositionToChangeContainerData {
    * @return delete
    */
   @javax.annotation.Nullable
-  public List<CreateDirectEmployeeRequestClientDepartment> getDelete() {
+  public List<CreateDirectEmployeeRequestDataClientDepartment> getDelete() {
     return delete;
   }
 
-  public void setDelete(@javax.annotation.Nullable List<CreateDirectEmployeeRequestClientDepartment> delete) {
+  public void setDelete(@javax.annotation.Nullable List<CreateDirectEmployeeRequestDataClientDepartment> delete) {
     this.delete = delete;
   }
 
@@ -306,7 +306,7 @@ public class HrisPositionToChangeContainerData {
 
           // validate the optional field `delete` (array)
           for (int i = 0; i < jsonArraydelete.size(); i++) {
-            CreateDirectEmployeeRequestClientDepartment.validateJsonElement(jsonArraydelete.get(i));
+            CreateDirectEmployeeRequestDataClientDepartment.validateJsonElement(jsonArraydelete.get(i));
           };
         }
       }

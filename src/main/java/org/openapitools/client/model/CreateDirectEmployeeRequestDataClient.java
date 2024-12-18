@@ -21,8 +21,8 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.CreateDirectEmployeeRequestClientDepartment;
-import org.openapitools.client.model.CreateDirectEmployeeRequestClientTeam;
+import org.openapitools.client.model.CreateDirectEmployeeRequestDataClientDepartment;
+import org.openapitools.client.model.CreateDirectEmployeeRequestDataClientTeam;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,27 +50,27 @@ import org.openapitools.client.JSON;
 /**
  * The entity that is hiring the employee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T14:46:34.496883852Z[GMT]", comments = "Generator version: 7.10.0")
-public class CreateDirectEmployeeRequestClient {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:22:04.472468916Z[GMT]", comments = "Generator version: 7.10.0")
+public class CreateDirectEmployeeRequestDataClient {
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
   @javax.annotation.Nonnull
-  private CreateDirectEmployeeRequestClientTeam team;
+  private CreateDirectEmployeeRequestDataClientTeam team;
 
   public static final String SERIALIZED_NAME_DEPARTMENT = "department";
   @SerializedName(SERIALIZED_NAME_DEPARTMENT)
   @javax.annotation.Nullable
-  private CreateDirectEmployeeRequestClientDepartment department;
+  private CreateDirectEmployeeRequestDataClientDepartment department;
 
   public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
   @javax.annotation.Nonnull
-  private CreateDirectEmployeeRequestClientDepartment legalEntity;
+  private CreateDirectEmployeeRequestDataClientDepartment legalEntity;
 
-  public CreateDirectEmployeeRequestClient() {
+  public CreateDirectEmployeeRequestDataClient() {
   }
 
-  public CreateDirectEmployeeRequestClient team(@javax.annotation.Nonnull CreateDirectEmployeeRequestClientTeam team) {
+  public CreateDirectEmployeeRequestDataClient team(@javax.annotation.Nonnull CreateDirectEmployeeRequestDataClientTeam team) {
     this.team = team;
     return this;
   }
@@ -80,16 +80,16 @@ public class CreateDirectEmployeeRequestClient {
    * @return team
    */
   @javax.annotation.Nonnull
-  public CreateDirectEmployeeRequestClientTeam getTeam() {
+  public CreateDirectEmployeeRequestDataClientTeam getTeam() {
     return team;
   }
 
-  public void setTeam(@javax.annotation.Nonnull CreateDirectEmployeeRequestClientTeam team) {
+  public void setTeam(@javax.annotation.Nonnull CreateDirectEmployeeRequestDataClientTeam team) {
     this.team = team;
   }
 
 
-  public CreateDirectEmployeeRequestClient department(@javax.annotation.Nullable CreateDirectEmployeeRequestClientDepartment department) {
+  public CreateDirectEmployeeRequestDataClient department(@javax.annotation.Nullable CreateDirectEmployeeRequestDataClientDepartment department) {
     this.department = department;
     return this;
   }
@@ -99,16 +99,16 @@ public class CreateDirectEmployeeRequestClient {
    * @return department
    */
   @javax.annotation.Nullable
-  public CreateDirectEmployeeRequestClientDepartment getDepartment() {
+  public CreateDirectEmployeeRequestDataClientDepartment getDepartment() {
     return department;
   }
 
-  public void setDepartment(@javax.annotation.Nullable CreateDirectEmployeeRequestClientDepartment department) {
+  public void setDepartment(@javax.annotation.Nullable CreateDirectEmployeeRequestDataClientDepartment department) {
     this.department = department;
   }
 
 
-  public CreateDirectEmployeeRequestClient legalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestClientDepartment legalEntity) {
+  public CreateDirectEmployeeRequestDataClient legalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestDataClientDepartment legalEntity) {
     this.legalEntity = legalEntity;
     return this;
   }
@@ -118,11 +118,11 @@ public class CreateDirectEmployeeRequestClient {
    * @return legalEntity
    */
   @javax.annotation.Nonnull
-  public CreateDirectEmployeeRequestClientDepartment getLegalEntity() {
+  public CreateDirectEmployeeRequestDataClientDepartment getLegalEntity() {
     return legalEntity;
   }
 
-  public void setLegalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestClientDepartment legalEntity) {
+  public void setLegalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestDataClientDepartment legalEntity) {
     this.legalEntity = legalEntity;
   }
 
@@ -136,10 +136,10 @@ public class CreateDirectEmployeeRequestClient {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    CreateDirectEmployeeRequestClient createDirectEmployeeRequestClient = (CreateDirectEmployeeRequestClient) o;
-    return Objects.equals(this.team, createDirectEmployeeRequestClient.team) &&
-        Objects.equals(this.department, createDirectEmployeeRequestClient.department) &&
-        Objects.equals(this.legalEntity, createDirectEmployeeRequestClient.legalEntity);
+    CreateDirectEmployeeRequestDataClient createDirectEmployeeRequestDataClient = (CreateDirectEmployeeRequestDataClient) o;
+    return Objects.equals(this.team, createDirectEmployeeRequestDataClient.team) &&
+        Objects.equals(this.department, createDirectEmployeeRequestDataClient.department) &&
+        Objects.equals(this.legalEntity, createDirectEmployeeRequestDataClient.legalEntity);
   }
 
   @Override
@@ -150,7 +150,7 @@ public class CreateDirectEmployeeRequestClient {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class CreateDirectEmployeeRequestClient {\n");
+    sb.append("class CreateDirectEmployeeRequestDataClient {\n");
     sb.append("    team: ").append(toIndentedString(team)).append("\n");
     sb.append("    department: ").append(toIndentedString(department)).append("\n");
     sb.append("    legalEntity: ").append(toIndentedString(legalEntity)).append("\n");
@@ -190,60 +190,60 @@ public class CreateDirectEmployeeRequestClient {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to CreateDirectEmployeeRequestClient
+   * @throws IOException if the JSON Element is invalid with respect to CreateDirectEmployeeRequestDataClient
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!CreateDirectEmployeeRequestClient.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in CreateDirectEmployeeRequestClient is not found in the empty JSON string", CreateDirectEmployeeRequestClient.openapiRequiredFields.toString()));
+        if (!CreateDirectEmployeeRequestDataClient.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in CreateDirectEmployeeRequestDataClient is not found in the empty JSON string", CreateDirectEmployeeRequestDataClient.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!CreateDirectEmployeeRequestClient.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CreateDirectEmployeeRequestClient` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!CreateDirectEmployeeRequestDataClient.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CreateDirectEmployeeRequestDataClient` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
-      for (String requiredField : CreateDirectEmployeeRequestClient.openapiRequiredFields) {
+      for (String requiredField : CreateDirectEmployeeRequestDataClient.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
           throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the required field `team`
-      CreateDirectEmployeeRequestClientTeam.validateJsonElement(jsonObj.get("team"));
+      CreateDirectEmployeeRequestDataClientTeam.validateJsonElement(jsonObj.get("team"));
       // validate the optional field `department`
       if (jsonObj.get("department") != null && !jsonObj.get("department").isJsonNull()) {
-        CreateDirectEmployeeRequestClientDepartment.validateJsonElement(jsonObj.get("department"));
+        CreateDirectEmployeeRequestDataClientDepartment.validateJsonElement(jsonObj.get("department"));
       }
       // validate the required field `legal_entity`
-      CreateDirectEmployeeRequestClientDepartment.validateJsonElement(jsonObj.get("legal_entity"));
+      CreateDirectEmployeeRequestDataClientDepartment.validateJsonElement(jsonObj.get("legal_entity"));
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!CreateDirectEmployeeRequestClient.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'CreateDirectEmployeeRequestClient' and its subtypes
+       if (!CreateDirectEmployeeRequestDataClient.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'CreateDirectEmployeeRequestDataClient' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<CreateDirectEmployeeRequestClient> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(CreateDirectEmployeeRequestClient.class));
+       final TypeAdapter<CreateDirectEmployeeRequestDataClient> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(CreateDirectEmployeeRequestDataClient.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<CreateDirectEmployeeRequestClient>() {
+       return (TypeAdapter<T>) new TypeAdapter<CreateDirectEmployeeRequestDataClient>() {
            @Override
-           public void write(JsonWriter out, CreateDirectEmployeeRequestClient value) throws IOException {
+           public void write(JsonWriter out, CreateDirectEmployeeRequestDataClient value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public CreateDirectEmployeeRequestClient read(JsonReader in) throws IOException {
+           public CreateDirectEmployeeRequestDataClient read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -254,18 +254,18 @@ public class CreateDirectEmployeeRequestClient {
   }
 
   /**
-   * Create an instance of CreateDirectEmployeeRequestClient given an JSON string
+   * Create an instance of CreateDirectEmployeeRequestDataClient given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of CreateDirectEmployeeRequestClient
-   * @throws IOException if the JSON string is invalid with respect to CreateDirectEmployeeRequestClient
+   * @return An instance of CreateDirectEmployeeRequestDataClient
+   * @throws IOException if the JSON string is invalid with respect to CreateDirectEmployeeRequestDataClient
    */
-  public static CreateDirectEmployeeRequestClient fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, CreateDirectEmployeeRequestClient.class);
+  public static CreateDirectEmployeeRequestDataClient fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, CreateDirectEmployeeRequestDataClient.class);
   }
 
   /**
-   * Convert an instance of CreateDirectEmployeeRequestClient to an JSON string
+   * Convert an instance of CreateDirectEmployeeRequestDataClient to an JSON string
    *
    * @return JSON string
    */

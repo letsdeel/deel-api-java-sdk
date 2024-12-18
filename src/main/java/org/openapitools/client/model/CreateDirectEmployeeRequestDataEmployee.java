@@ -48,8 +48,8 @@ import org.openapitools.client.JSON;
 /**
  * The person that is being hired
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T14:46:34.496883852Z[GMT]", comments = "Generator version: 7.10.0")
-public class CreateDirectEmployeeRequestEmployee {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:22:04.472468916Z[GMT]", comments = "Generator version: 7.10.0")
+public class CreateDirectEmployeeRequestDataEmployee {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
   @javax.annotation.Nonnull
@@ -80,15 +80,20 @@ public class CreateDirectEmployeeRequestEmployee {
   @javax.annotation.Nullable
   private String workEmail;
 
+  public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
+  @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
+  private String externalId;
+
   public static final String SERIALIZED_NAME_NATIONALITY = "nationality";
   @SerializedName(SERIALIZED_NAME_NATIONALITY)
   @javax.annotation.Nonnull
   private String nationality;
 
-  public CreateDirectEmployeeRequestEmployee() {
+  public CreateDirectEmployeeRequestDataEmployee() {
   }
 
-  public CreateDirectEmployeeRequestEmployee email(@javax.annotation.Nonnull String email) {
+  public CreateDirectEmployeeRequestDataEmployee email(@javax.annotation.Nonnull String email) {
     this.email = email;
     return this;
   }
@@ -107,7 +112,7 @@ public class CreateDirectEmployeeRequestEmployee {
   }
 
 
-  public CreateDirectEmployeeRequestEmployee state(@javax.annotation.Nullable String state) {
+  public CreateDirectEmployeeRequestDataEmployee state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -126,7 +131,7 @@ public class CreateDirectEmployeeRequestEmployee {
   }
 
 
-  public CreateDirectEmployeeRequestEmployee country(@javax.annotation.Nonnull String country) {
+  public CreateDirectEmployeeRequestDataEmployee country(@javax.annotation.Nonnull String country) {
     this.country = country;
     return this;
   }
@@ -145,7 +150,7 @@ public class CreateDirectEmployeeRequestEmployee {
   }
 
 
-  public CreateDirectEmployeeRequestEmployee lastName(@javax.annotation.Nonnull String lastName) {
+  public CreateDirectEmployeeRequestDataEmployee lastName(@javax.annotation.Nonnull String lastName) {
     this.lastName = lastName;
     return this;
   }
@@ -164,7 +169,7 @@ public class CreateDirectEmployeeRequestEmployee {
   }
 
 
-  public CreateDirectEmployeeRequestEmployee firstName(@javax.annotation.Nonnull String firstName) {
+  public CreateDirectEmployeeRequestDataEmployee firstName(@javax.annotation.Nonnull String firstName) {
     this.firstName = firstName;
     return this;
   }
@@ -183,7 +188,7 @@ public class CreateDirectEmployeeRequestEmployee {
   }
 
 
-  public CreateDirectEmployeeRequestEmployee workEmail(@javax.annotation.Nullable String workEmail) {
+  public CreateDirectEmployeeRequestDataEmployee workEmail(@javax.annotation.Nullable String workEmail) {
     this.workEmail = workEmail;
     return this;
   }
@@ -202,7 +207,26 @@ public class CreateDirectEmployeeRequestEmployee {
   }
 
 
-  public CreateDirectEmployeeRequestEmployee nationality(@javax.annotation.Nonnull String nationality) {
+  public CreateDirectEmployeeRequestDataEmployee externalId(@javax.annotation.Nullable String externalId) {
+    this.externalId = externalId;
+    return this;
+  }
+
+  /**
+   * Get externalId
+   * @return externalId
+   */
+  @javax.annotation.Nullable
+  public String getExternalId() {
+    return externalId;
+  }
+
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
+    this.externalId = externalId;
+  }
+
+
+  public CreateDirectEmployeeRequestDataEmployee nationality(@javax.annotation.Nonnull String nationality) {
     this.nationality = nationality;
     return this;
   }
@@ -230,31 +254,33 @@ public class CreateDirectEmployeeRequestEmployee {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    CreateDirectEmployeeRequestEmployee createDirectEmployeeRequestEmployee = (CreateDirectEmployeeRequestEmployee) o;
-    return Objects.equals(this.email, createDirectEmployeeRequestEmployee.email) &&
-        Objects.equals(this.state, createDirectEmployeeRequestEmployee.state) &&
-        Objects.equals(this.country, createDirectEmployeeRequestEmployee.country) &&
-        Objects.equals(this.lastName, createDirectEmployeeRequestEmployee.lastName) &&
-        Objects.equals(this.firstName, createDirectEmployeeRequestEmployee.firstName) &&
-        Objects.equals(this.workEmail, createDirectEmployeeRequestEmployee.workEmail) &&
-        Objects.equals(this.nationality, createDirectEmployeeRequestEmployee.nationality);
+    CreateDirectEmployeeRequestDataEmployee createDirectEmployeeRequestDataEmployee = (CreateDirectEmployeeRequestDataEmployee) o;
+    return Objects.equals(this.email, createDirectEmployeeRequestDataEmployee.email) &&
+        Objects.equals(this.state, createDirectEmployeeRequestDataEmployee.state) &&
+        Objects.equals(this.country, createDirectEmployeeRequestDataEmployee.country) &&
+        Objects.equals(this.lastName, createDirectEmployeeRequestDataEmployee.lastName) &&
+        Objects.equals(this.firstName, createDirectEmployeeRequestDataEmployee.firstName) &&
+        Objects.equals(this.workEmail, createDirectEmployeeRequestDataEmployee.workEmail) &&
+        Objects.equals(this.externalId, createDirectEmployeeRequestDataEmployee.externalId) &&
+        Objects.equals(this.nationality, createDirectEmployeeRequestDataEmployee.nationality);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(email, state, country, lastName, firstName, workEmail, nationality);
+    return Objects.hash(email, state, country, lastName, firstName, workEmail, externalId, nationality);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class CreateDirectEmployeeRequestEmployee {\n");
+    sb.append("class CreateDirectEmployeeRequestDataEmployee {\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    state: ").append(toIndentedString(state)).append("\n");
     sb.append("    country: ").append(toIndentedString(country)).append("\n");
     sb.append("    lastName: ").append(toIndentedString(lastName)).append("\n");
     sb.append("    firstName: ").append(toIndentedString(firstName)).append("\n");
     sb.append("    workEmail: ").append(toIndentedString(workEmail)).append("\n");
+    sb.append("    externalId: ").append(toIndentedString(externalId)).append("\n");
     sb.append("    nationality: ").append(toIndentedString(nationality)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -284,6 +310,7 @@ public class CreateDirectEmployeeRequestEmployee {
     openapiFields.add("last_name");
     openapiFields.add("first_name");
     openapiFields.add("work_email");
+    openapiFields.add("external_id");
     openapiFields.add("nationality");
 
     // a set of required properties/fields (JSON key names)
@@ -299,25 +326,25 @@ public class CreateDirectEmployeeRequestEmployee {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to CreateDirectEmployeeRequestEmployee
+   * @throws IOException if the JSON Element is invalid with respect to CreateDirectEmployeeRequestDataEmployee
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!CreateDirectEmployeeRequestEmployee.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in CreateDirectEmployeeRequestEmployee is not found in the empty JSON string", CreateDirectEmployeeRequestEmployee.openapiRequiredFields.toString()));
+        if (!CreateDirectEmployeeRequestDataEmployee.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in CreateDirectEmployeeRequestDataEmployee is not found in the empty JSON string", CreateDirectEmployeeRequestDataEmployee.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!CreateDirectEmployeeRequestEmployee.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CreateDirectEmployeeRequestEmployee` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!CreateDirectEmployeeRequestDataEmployee.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CreateDirectEmployeeRequestDataEmployee` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
-      for (String requiredField : CreateDirectEmployeeRequestEmployee.openapiRequiredFields) {
+      for (String requiredField : CreateDirectEmployeeRequestDataEmployee.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
           throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
@@ -341,6 +368,9 @@ public class CreateDirectEmployeeRequestEmployee {
       if ((jsonObj.get("work_email") != null && !jsonObj.get("work_email").isJsonNull()) && !jsonObj.get("work_email").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `work_email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("work_email").toString()));
       }
+      if ((jsonObj.get("external_id") != null && !jsonObj.get("external_id").isJsonNull()) && !jsonObj.get("external_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `external_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("external_id").toString()));
+      }
       if (!jsonObj.get("nationality").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `nationality` to be a primitive type in the JSON string but got `%s`", jsonObj.get("nationality").toString()));
       }
@@ -350,22 +380,22 @@ public class CreateDirectEmployeeRequestEmployee {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!CreateDirectEmployeeRequestEmployee.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'CreateDirectEmployeeRequestEmployee' and its subtypes
+       if (!CreateDirectEmployeeRequestDataEmployee.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'CreateDirectEmployeeRequestDataEmployee' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<CreateDirectEmployeeRequestEmployee> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(CreateDirectEmployeeRequestEmployee.class));
+       final TypeAdapter<CreateDirectEmployeeRequestDataEmployee> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(CreateDirectEmployeeRequestDataEmployee.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<CreateDirectEmployeeRequestEmployee>() {
+       return (TypeAdapter<T>) new TypeAdapter<CreateDirectEmployeeRequestDataEmployee>() {
            @Override
-           public void write(JsonWriter out, CreateDirectEmployeeRequestEmployee value) throws IOException {
+           public void write(JsonWriter out, CreateDirectEmployeeRequestDataEmployee value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public CreateDirectEmployeeRequestEmployee read(JsonReader in) throws IOException {
+           public CreateDirectEmployeeRequestDataEmployee read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -376,18 +406,18 @@ public class CreateDirectEmployeeRequestEmployee {
   }
 
   /**
-   * Create an instance of CreateDirectEmployeeRequestEmployee given an JSON string
+   * Create an instance of CreateDirectEmployeeRequestDataEmployee given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of CreateDirectEmployeeRequestEmployee
-   * @throws IOException if the JSON string is invalid with respect to CreateDirectEmployeeRequestEmployee
+   * @return An instance of CreateDirectEmployeeRequestDataEmployee
+   * @throws IOException if the JSON string is invalid with respect to CreateDirectEmployeeRequestDataEmployee
    */
-  public static CreateDirectEmployeeRequestEmployee fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, CreateDirectEmployeeRequestEmployee.class);
+  public static CreateDirectEmployeeRequestDataEmployee fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, CreateDirectEmployeeRequestDataEmployee.class);
   }
 
   /**
-   * Convert an instance of CreateDirectEmployeeRequestEmployee to an JSON string
+   * Convert an instance of CreateDirectEmployeeRequestDataEmployee to an JSON string
    *
    * @return JSON string
    */

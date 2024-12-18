@@ -47,10 +47,10 @@ import java.util.Set;
 import org.openapitools.client.JSON;
 
 /**
- * CreateDirectEmployeeRequestEmploymentOneOf1
+ * CreateDirectEmployeeRequestDataEmploymentOneOf1
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T14:46:34.496883852Z[GMT]", comments = "Generator version: 7.10.0")
-public class CreateDirectEmployeeRequestEmploymentOneOf1 {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:22:04.472468916Z[GMT]", comments = "Generator version: 7.10.0")
+public class CreateDirectEmployeeRequestDataEmploymentOneOf1 {
   /**
    * Gets or Sets type
    */
@@ -111,15 +111,25 @@ public class CreateDirectEmployeeRequestEmploymentOneOf1 {
   @javax.annotation.Nullable
   private LocalDate endDate;
 
+  public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
+  @SerializedName(SERIALIZED_NAME_JOB_TITLE)
+  @javax.annotation.Nonnull
+  private String jobTitle;
+
+  public static final String SERIALIZED_NAME_SENIORITY = "seniority";
+  @SerializedName(SERIALIZED_NAME_SENIORITY)
+  @javax.annotation.Nonnull
+  private String seniority;
+
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
   @javax.annotation.Nonnull
   private LocalDate startDate;
 
-  public CreateDirectEmployeeRequestEmploymentOneOf1() {
+  public CreateDirectEmployeeRequestDataEmploymentOneOf1() {
   }
 
-  public CreateDirectEmployeeRequestEmploymentOneOf1 type(@javax.annotation.Nonnull TypeEnum type) {
+  public CreateDirectEmployeeRequestDataEmploymentOneOf1 type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -138,7 +148,7 @@ public class CreateDirectEmployeeRequestEmploymentOneOf1 {
   }
 
 
-  public CreateDirectEmployeeRequestEmploymentOneOf1 endDate(@javax.annotation.Nullable LocalDate endDate) {
+  public CreateDirectEmployeeRequestDataEmploymentOneOf1 endDate(@javax.annotation.Nullable LocalDate endDate) {
     this.endDate = endDate;
     return this;
   }
@@ -157,7 +167,45 @@ public class CreateDirectEmployeeRequestEmploymentOneOf1 {
   }
 
 
-  public CreateDirectEmployeeRequestEmploymentOneOf1 startDate(@javax.annotation.Nonnull LocalDate startDate) {
+  public CreateDirectEmployeeRequestDataEmploymentOneOf1 jobTitle(@javax.annotation.Nonnull String jobTitle) {
+    this.jobTitle = jobTitle;
+    return this;
+  }
+
+  /**
+   * Get jobTitle
+   * @return jobTitle
+   */
+  @javax.annotation.Nonnull
+  public String getJobTitle() {
+    return jobTitle;
+  }
+
+  public void setJobTitle(@javax.annotation.Nonnull String jobTitle) {
+    this.jobTitle = jobTitle;
+  }
+
+
+  public CreateDirectEmployeeRequestDataEmploymentOneOf1 seniority(@javax.annotation.Nonnull String seniority) {
+    this.seniority = seniority;
+    return this;
+  }
+
+  /**
+   * Get seniority
+   * @return seniority
+   */
+  @javax.annotation.Nonnull
+  public String getSeniority() {
+    return seniority;
+  }
+
+  public void setSeniority(@javax.annotation.Nonnull String seniority) {
+    this.seniority = seniority;
+  }
+
+
+  public CreateDirectEmployeeRequestDataEmploymentOneOf1 startDate(@javax.annotation.Nonnull LocalDate startDate) {
     this.startDate = startDate;
     return this;
   }
@@ -185,23 +233,27 @@ public class CreateDirectEmployeeRequestEmploymentOneOf1 {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    CreateDirectEmployeeRequestEmploymentOneOf1 createDirectEmployeeRequestEmploymentOneOf1 = (CreateDirectEmployeeRequestEmploymentOneOf1) o;
-    return Objects.equals(this.type, createDirectEmployeeRequestEmploymentOneOf1.type) &&
-        Objects.equals(this.endDate, createDirectEmployeeRequestEmploymentOneOf1.endDate) &&
-        Objects.equals(this.startDate, createDirectEmployeeRequestEmploymentOneOf1.startDate);
+    CreateDirectEmployeeRequestDataEmploymentOneOf1 createDirectEmployeeRequestDataEmploymentOneOf1 = (CreateDirectEmployeeRequestDataEmploymentOneOf1) o;
+    return Objects.equals(this.type, createDirectEmployeeRequestDataEmploymentOneOf1.type) &&
+        Objects.equals(this.endDate, createDirectEmployeeRequestDataEmploymentOneOf1.endDate) &&
+        Objects.equals(this.jobTitle, createDirectEmployeeRequestDataEmploymentOneOf1.jobTitle) &&
+        Objects.equals(this.seniority, createDirectEmployeeRequestDataEmploymentOneOf1.seniority) &&
+        Objects.equals(this.startDate, createDirectEmployeeRequestDataEmploymentOneOf1.startDate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, endDate, startDate);
+    return Objects.hash(type, endDate, jobTitle, seniority, startDate);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class CreateDirectEmployeeRequestEmploymentOneOf1 {\n");
+    sb.append("class CreateDirectEmployeeRequestDataEmploymentOneOf1 {\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    endDate: ").append(toIndentedString(endDate)).append("\n");
+    sb.append("    jobTitle: ").append(toIndentedString(jobTitle)).append("\n");
+    sb.append("    seniority: ").append(toIndentedString(seniority)).append("\n");
     sb.append("    startDate: ").append(toIndentedString(startDate)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -227,11 +279,15 @@ public class CreateDirectEmployeeRequestEmploymentOneOf1 {
     openapiFields = new HashSet<String>();
     openapiFields.add("type");
     openapiFields.add("end_date");
+    openapiFields.add("job_title");
+    openapiFields.add("seniority");
     openapiFields.add("start_date");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
     openapiRequiredFields.add("type");
+    openapiRequiredFields.add("job_title");
+    openapiRequiredFields.add("seniority");
     openapiRequiredFields.add("start_date");
   }
 
@@ -239,25 +295,25 @@ public class CreateDirectEmployeeRequestEmploymentOneOf1 {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to CreateDirectEmployeeRequestEmploymentOneOf1
+   * @throws IOException if the JSON Element is invalid with respect to CreateDirectEmployeeRequestDataEmploymentOneOf1
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!CreateDirectEmployeeRequestEmploymentOneOf1.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in CreateDirectEmployeeRequestEmploymentOneOf1 is not found in the empty JSON string", CreateDirectEmployeeRequestEmploymentOneOf1.openapiRequiredFields.toString()));
+        if (!CreateDirectEmployeeRequestDataEmploymentOneOf1.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in CreateDirectEmployeeRequestDataEmploymentOneOf1 is not found in the empty JSON string", CreateDirectEmployeeRequestDataEmploymentOneOf1.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!CreateDirectEmployeeRequestEmploymentOneOf1.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CreateDirectEmployeeRequestEmploymentOneOf1` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!CreateDirectEmployeeRequestDataEmploymentOneOf1.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CreateDirectEmployeeRequestDataEmploymentOneOf1` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
-      for (String requiredField : CreateDirectEmployeeRequestEmploymentOneOf1.openapiRequiredFields) {
+      for (String requiredField : CreateDirectEmployeeRequestDataEmploymentOneOf1.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
           throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
@@ -268,28 +324,34 @@ public class CreateDirectEmployeeRequestEmploymentOneOf1 {
       }
       // validate the required field `type`
       TypeEnum.validateJsonElement(jsonObj.get("type"));
+      if (!jsonObj.get("job_title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `job_title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("job_title").toString()));
+      }
+      if (!jsonObj.get("seniority").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `seniority` to be a primitive type in the JSON string but got `%s`", jsonObj.get("seniority").toString()));
+      }
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!CreateDirectEmployeeRequestEmploymentOneOf1.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'CreateDirectEmployeeRequestEmploymentOneOf1' and its subtypes
+       if (!CreateDirectEmployeeRequestDataEmploymentOneOf1.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'CreateDirectEmployeeRequestDataEmploymentOneOf1' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<CreateDirectEmployeeRequestEmploymentOneOf1> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(CreateDirectEmployeeRequestEmploymentOneOf1.class));
+       final TypeAdapter<CreateDirectEmployeeRequestDataEmploymentOneOf1> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(CreateDirectEmployeeRequestDataEmploymentOneOf1.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<CreateDirectEmployeeRequestEmploymentOneOf1>() {
+       return (TypeAdapter<T>) new TypeAdapter<CreateDirectEmployeeRequestDataEmploymentOneOf1>() {
            @Override
-           public void write(JsonWriter out, CreateDirectEmployeeRequestEmploymentOneOf1 value) throws IOException {
+           public void write(JsonWriter out, CreateDirectEmployeeRequestDataEmploymentOneOf1 value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public CreateDirectEmployeeRequestEmploymentOneOf1 read(JsonReader in) throws IOException {
+           public CreateDirectEmployeeRequestDataEmploymentOneOf1 read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -300,18 +362,18 @@ public class CreateDirectEmployeeRequestEmploymentOneOf1 {
   }
 
   /**
-   * Create an instance of CreateDirectEmployeeRequestEmploymentOneOf1 given an JSON string
+   * Create an instance of CreateDirectEmployeeRequestDataEmploymentOneOf1 given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of CreateDirectEmployeeRequestEmploymentOneOf1
-   * @throws IOException if the JSON string is invalid with respect to CreateDirectEmployeeRequestEmploymentOneOf1
+   * @return An instance of CreateDirectEmployeeRequestDataEmploymentOneOf1
+   * @throws IOException if the JSON string is invalid with respect to CreateDirectEmployeeRequestDataEmploymentOneOf1
    */
-  public static CreateDirectEmployeeRequestEmploymentOneOf1 fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, CreateDirectEmployeeRequestEmploymentOneOf1.class);
+  public static CreateDirectEmployeeRequestDataEmploymentOneOf1 fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, CreateDirectEmployeeRequestDataEmploymentOneOf1.class);
   }
 
   /**
-   * Convert an instance of CreateDirectEmployeeRequestEmploymentOneOf1 to an JSON string
+   * Convert an instance of CreateDirectEmployeeRequestDataEmploymentOneOf1 to an JSON string
    *
    * @return JSON string
    */

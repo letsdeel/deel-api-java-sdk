@@ -1,6 +1,6 @@
 
 
-# CreateDirectEmployeeRequestClientDepartment
+# CreateDirectEmployeeRequestDataClientDepartment
 
 
 ## Properties

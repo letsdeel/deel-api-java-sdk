@@ -2,7 +2,7 @@
 
 Deel REST API
 - API version: 1.25.0
-  - Build date: 2024-12-18T14:46:34.496883852Z[GMT]
+  - Build date: 2024-12-18T15:22:04.472468916Z[GMT]
   - Generator version: 7.10.0
 
 Deel REST API
@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.deel</groupId>
   <artifactId>deel-api-java-sdk</artifactId>
-  <version>2.1.21</version>
+  <version>test-1.0.2</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -57,7 +57,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.deel:deel-api-java-sdk:2.1.21"
+     implementation "com.deel:deel-api-java-sdk:test-1.0.2"
   }
 ```
 
@@ -71,7 +71,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/deel-api-java-sdk-2.1.21.jar`
+* `target/deel-api-java-sdk-test-1.0.2.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -566,16 +566,15 @@ Class | Method | HTTP request | Description
  - [CreateDirectEmployee201ResponseDataEmployee](docs/CreateDirectEmployee201ResponseDataEmployee.md)
  - [CreateDirectEmployee201ResponseDataEmployment](docs/CreateDirectEmployee201ResponseDataEmployment.md)
  - [CreateDirectEmployeeRequest](docs/CreateDirectEmployeeRequest.md)
- - [CreateDirectEmployeeRequestClient](docs/CreateDirectEmployeeRequestClient.md)
- - [CreateDirectEmployeeRequestClientDepartment](docs/CreateDirectEmployeeRequestClientDepartment.md)
- - [CreateDirectEmployeeRequestClientTeam](docs/CreateDirectEmployeeRequestClientTeam.md)
- - [CreateDirectEmployeeRequestCompensationDetails](docs/CreateDirectEmployeeRequestCompensationDetails.md)
- - [CreateDirectEmployeeRequestEmployee](docs/CreateDirectEmployeeRequestEmployee.md)
- - [CreateDirectEmployeeRequestEmployment](docs/CreateDirectEmployeeRequestEmployment.md)
- - [CreateDirectEmployeeRequestEmploymentOneOf](docs/CreateDirectEmployeeRequestEmploymentOneOf.md)
- - [CreateDirectEmployeeRequestEmploymentOneOf1](docs/CreateDirectEmployeeRequestEmploymentOneOf1.md)
- - [CreateDirectEmployeeRequestJobTitle](docs/CreateDirectEmployeeRequestJobTitle.md)
- - [CreateDirectEmployeeRequestSeniority](docs/CreateDirectEmployeeRequestSeniority.md)
+ - [CreateDirectEmployeeRequestData](docs/CreateDirectEmployeeRequestData.md)
+ - [CreateDirectEmployeeRequestDataClient](docs/CreateDirectEmployeeRequestDataClient.md)
+ - [CreateDirectEmployeeRequestDataClientDepartment](docs/CreateDirectEmployeeRequestDataClientDepartment.md)
+ - [CreateDirectEmployeeRequestDataClientTeam](docs/CreateDirectEmployeeRequestDataClientTeam.md)
+ - [CreateDirectEmployeeRequestDataCompensationDetails](docs/CreateDirectEmployeeRequestDataCompensationDetails.md)
+ - [CreateDirectEmployeeRequestDataEmployee](docs/CreateDirectEmployeeRequestDataEmployee.md)
+ - [CreateDirectEmployeeRequestDataEmployment](docs/CreateDirectEmployeeRequestDataEmployment.md)
+ - [CreateDirectEmployeeRequestDataEmploymentOneOf](docs/CreateDirectEmployeeRequestDataEmploymentOneOf.md)
+ - [CreateDirectEmployeeRequestDataEmploymentOneOf1](docs/CreateDirectEmployeeRequestDataEmploymentOneOf1.md)
  - [CreateEorContract200Response](docs/CreateEorContract200Response.md)
  - [CreateEorContract200ResponseData](docs/CreateEorContract200ResponseData.md)
  - [CreateEorContractRequest](docs/CreateEorContractRequest.md)

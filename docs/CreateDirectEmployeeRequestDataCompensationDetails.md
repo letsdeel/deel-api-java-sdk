@@ -1,6 +1,6 @@
 
 
-# CreateDirectEmployeeRequestCompensationDetails
+# CreateDirectEmployeeRequestDataCompensationDetails
 
 The compensation details of the employee
 

@@ -24,17 +24,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for CreateDirectEmployeeRequestEmployee
+ * Model tests for CreateDirectEmployeeRequestDataEmployee
  */
-public class CreateDirectEmployeeRequestEmployeeTest {
-    private final CreateDirectEmployeeRequestEmployee model = new CreateDirectEmployeeRequestEmployee();
+public class CreateDirectEmployeeRequestDataEmployeeTest {
+    private final CreateDirectEmployeeRequestDataEmployee model = new CreateDirectEmployeeRequestDataEmployee();
 
     /**
-     * Model tests for CreateDirectEmployeeRequestEmployee
+     * Model tests for CreateDirectEmployeeRequestDataEmployee
      */
     @Test
-    public void testCreateDirectEmployeeRequestEmployee() {
-        // TODO: test CreateDirectEmployeeRequestEmployee
+    public void testCreateDirectEmployeeRequestDataEmployee() {
+        // TODO: test CreateDirectEmployeeRequestDataEmployee
     }
 
     /**
@@ -83,6 +83,14 @@ public class CreateDirectEmployeeRequestEmployeeTest {
     @Test
     public void workEmailTest() {
         // TODO: test workEmail
+    }
+
+    /**
+     * Test the property 'externalId'
+     */
+    @Test
+    public void externalIdTest() {
+        // TODO: test externalId
     }
 
     /**

@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * Additional custom info about a contract
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T14:46:34.496883852Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:22:04.472468916Z[GMT]", comments = "Generator version: 7.10.0")
 public class PAYASYOUGOTIMEBASEDAllOfMeta {
   public static final String SERIALIZED_NAME_IS_MAIN_INCOME = "is_main_income";
   @SerializedName(SERIALIZED_NAME_IS_MAIN_INCOME)

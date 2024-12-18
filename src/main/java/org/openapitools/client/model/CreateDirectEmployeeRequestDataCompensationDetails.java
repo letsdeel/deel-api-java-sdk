@@ -48,8 +48,8 @@ import org.openapitools.client.JSON;
 /**
  * The compensation details of the employee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T14:46:34.496883852Z[GMT]", comments = "Generator version: 7.10.0")
-public class CreateDirectEmployeeRequestCompensationDetails {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:22:04.472468916Z[GMT]", comments = "Generator version: 7.10.0")
+public class CreateDirectEmployeeRequestDataCompensationDetails {
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
   @javax.annotation.Nonnull
@@ -60,10 +60,10 @@ public class CreateDirectEmployeeRequestCompensationDetails {
   @javax.annotation.Nonnull
   private String currency;
 
-  public CreateDirectEmployeeRequestCompensationDetails() {
+  public CreateDirectEmployeeRequestDataCompensationDetails() {
   }
 
-  public CreateDirectEmployeeRequestCompensationDetails salary(@javax.annotation.Nonnull Float salary) {
+  public CreateDirectEmployeeRequestDataCompensationDetails salary(@javax.annotation.Nonnull Float salary) {
     this.salary = salary;
     return this;
   }
@@ -83,7 +83,7 @@ public class CreateDirectEmployeeRequestCompensationDetails {
   }
 
 
-  public CreateDirectEmployeeRequestCompensationDetails currency(@javax.annotation.Nonnull String currency) {
+  public CreateDirectEmployeeRequestDataCompensationDetails currency(@javax.annotation.Nonnull String currency) {
     this.currency = currency;
     return this;
   }
@@ -111,9 +111,9 @@ public class CreateDirectEmployeeRequestCompensationDetails {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    CreateDirectEmployeeRequestCompensationDetails createDirectEmployeeRequestCompensationDetails = (CreateDirectEmployeeRequestCompensationDetails) o;
-    return Objects.equals(this.salary, createDirectEmployeeRequestCompensationDetails.salary) &&
-        Objects.equals(this.currency, createDirectEmployeeRequestCompensationDetails.currency);
+    CreateDirectEmployeeRequestDataCompensationDetails createDirectEmployeeRequestDataCompensationDetails = (CreateDirectEmployeeRequestDataCompensationDetails) o;
+    return Objects.equals(this.salary, createDirectEmployeeRequestDataCompensationDetails.salary) &&
+        Objects.equals(this.currency, createDirectEmployeeRequestDataCompensationDetails.currency);
   }
 
   @Override
@@ -124,7 +124,7 @@ public class CreateDirectEmployeeRequestCompensationDetails {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class CreateDirectEmployeeRequestCompensationDetails {\n");
+    sb.append("class CreateDirectEmployeeRequestDataCompensationDetails {\n");
     sb.append("    salary: ").append(toIndentedString(salary)).append("\n");
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
     sb.append("}");
@@ -162,25 +162,25 @@ public class CreateDirectEmployeeRequestCompensationDetails {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to CreateDirectEmployeeRequestCompensationDetails
+   * @throws IOException if the JSON Element is invalid with respect to CreateDirectEmployeeRequestDataCompensationDetails
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!CreateDirectEmployeeRequestCompensationDetails.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in CreateDirectEmployeeRequestCompensationDetails is not found in the empty JSON string", CreateDirectEmployeeRequestCompensationDetails.openapiRequiredFields.toString()));
+        if (!CreateDirectEmployeeRequestDataCompensationDetails.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in CreateDirectEmployeeRequestDataCompensationDetails is not found in the empty JSON string", CreateDirectEmployeeRequestDataCompensationDetails.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!CreateDirectEmployeeRequestCompensationDetails.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CreateDirectEmployeeRequestCompensationDetails` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!CreateDirectEmployeeRequestDataCompensationDetails.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CreateDirectEmployeeRequestDataCompensationDetails` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
-      for (String requiredField : CreateDirectEmployeeRequestCompensationDetails.openapiRequiredFields) {
+      for (String requiredField : CreateDirectEmployeeRequestDataCompensationDetails.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
           throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
@@ -195,22 +195,22 @@ public class CreateDirectEmployeeRequestCompensationDetails {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!CreateDirectEmployeeRequestCompensationDetails.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'CreateDirectEmployeeRequestCompensationDetails' and its subtypes
+       if (!CreateDirectEmployeeRequestDataCompensationDetails.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'CreateDirectEmployeeRequestDataCompensationDetails' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<CreateDirectEmployeeRequestCompensationDetails> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(CreateDirectEmployeeRequestCompensationDetails.class));
+       final TypeAdapter<CreateDirectEmployeeRequestDataCompensationDetails> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(CreateDirectEmployeeRequestDataCompensationDetails.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<CreateDirectEmployeeRequestCompensationDetails>() {
+       return (TypeAdapter<T>) new TypeAdapter<CreateDirectEmployeeRequestDataCompensationDetails>() {
            @Override
-           public void write(JsonWriter out, CreateDirectEmployeeRequestCompensationDetails value) throws IOException {
+           public void write(JsonWriter out, CreateDirectEmployeeRequestDataCompensationDetails value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public CreateDirectEmployeeRequestCompensationDetails read(JsonReader in) throws IOException {
+           public CreateDirectEmployeeRequestDataCompensationDetails read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -221,18 +221,18 @@ public class CreateDirectEmployeeRequestCompensationDetails {
   }
 
   /**
-   * Create an instance of CreateDirectEmployeeRequestCompensationDetails given an JSON string
+   * Create an instance of CreateDirectEmployeeRequestDataCompensationDetails given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of CreateDirectEmployeeRequestCompensationDetails
-   * @throws IOException if the JSON string is invalid with respect to CreateDirectEmployeeRequestCompensationDetails
+   * @return An instance of CreateDirectEmployeeRequestDataCompensationDetails
+   * @throws IOException if the JSON string is invalid with respect to CreateDirectEmployeeRequestDataCompensationDetails
    */
-  public static CreateDirectEmployeeRequestCompensationDetails fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, CreateDirectEmployeeRequestCompensationDetails.class);
+  public static CreateDirectEmployeeRequestDataCompensationDetails fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, CreateDirectEmployeeRequestDataCompensationDetails.class);
   }
 
   /**
-   * Convert an instance of CreateDirectEmployeeRequestCompensationDetails to an JSON string
+   * Convert an instance of CreateDirectEmployeeRequestDataCompensationDetails to an JSON string
    *
    * @return JSON string
    */

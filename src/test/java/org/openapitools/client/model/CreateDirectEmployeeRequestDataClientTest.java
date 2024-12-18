@@ -20,23 +20,23 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.CreateDirectEmployeeRequestClientDepartment;
-import org.openapitools.client.model.CreateDirectEmployeeRequestClientTeam;
+import org.openapitools.client.model.CreateDirectEmployeeRequestDataClientDepartment;
+import org.openapitools.client.model.CreateDirectEmployeeRequestDataClientTeam;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for CreateDirectEmployeeRequestClient
+ * Model tests for CreateDirectEmployeeRequestDataClient
  */
-public class CreateDirectEmployeeRequestClientTest {
-    private final CreateDirectEmployeeRequestClient model = new CreateDirectEmployeeRequestClient();
+public class CreateDirectEmployeeRequestDataClientTest {
+    private final CreateDirectEmployeeRequestDataClient model = new CreateDirectEmployeeRequestDataClient();
 
     /**
-     * Model tests for CreateDirectEmployeeRequestClient
+     * Model tests for CreateDirectEmployeeRequestDataClient
      */
     @Test
-    public void testCreateDirectEmployeeRequestClient() {
-        // TODO: test CreateDirectEmployeeRequestClient
+    public void testCreateDirectEmployeeRequestDataClient() {
+        // TODO: test CreateDirectEmployeeRequestDataClient
     }
 
     /**

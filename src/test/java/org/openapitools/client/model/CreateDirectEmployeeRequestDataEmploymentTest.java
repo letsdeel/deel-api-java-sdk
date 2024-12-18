@@ -22,23 +22,23 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Arrays;
-import org.openapitools.client.model.CreateDirectEmployeeRequestEmploymentOneOf;
-import org.openapitools.client.model.CreateDirectEmployeeRequestEmploymentOneOf1;
+import org.openapitools.client.model.CreateDirectEmployeeRequestDataEmploymentOneOf;
+import org.openapitools.client.model.CreateDirectEmployeeRequestDataEmploymentOneOf1;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for CreateDirectEmployeeRequestEmployment
+ * Model tests for CreateDirectEmployeeRequestDataEmployment
  */
-public class CreateDirectEmployeeRequestEmploymentTest {
-    private final CreateDirectEmployeeRequestEmployment model = new CreateDirectEmployeeRequestEmployment();
+public class CreateDirectEmployeeRequestDataEmploymentTest {
+    private final CreateDirectEmployeeRequestDataEmployment model = new CreateDirectEmployeeRequestDataEmployment();
 
     /**
-     * Model tests for CreateDirectEmployeeRequestEmployment
+     * Model tests for CreateDirectEmployeeRequestDataEmployment
      */
     @Test
-    public void testCreateDirectEmployeeRequestEmployment() {
-        // TODO: test CreateDirectEmployeeRequestEmployment
+    public void testCreateDirectEmployeeRequestDataEmployment() {
+        // TODO: test CreateDirectEmployeeRequestDataEmployment
     }
 
     /**
@@ -55,6 +55,22 @@ public class CreateDirectEmployeeRequestEmploymentTest {
     @Test
     public void endDateTest() {
         // TODO: test endDate
+    }
+
+    /**
+     * Test the property 'jobTitle'
+     */
+    @Test
+    public void jobTitleTest() {
+        // TODO: test jobTitle
+    }
+
+    /**
+     * Test the property 'seniority'
+     */
+    @Test
+    public void seniorityTest() {
+        // TODO: test seniority
     }
 
     /**

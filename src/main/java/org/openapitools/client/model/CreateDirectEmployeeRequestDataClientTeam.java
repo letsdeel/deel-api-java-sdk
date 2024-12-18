@@ -47,19 +47,24 @@ import java.util.Set;
 import org.openapitools.client.JSON;
 
 /**
- * CreateDirectEmployeeRequestClientDepartment
+ * CreateDirectEmployeeRequestDataClientTeam
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T14:46:34.496883852Z[GMT]", comments = "Generator version: 7.10.0")
-public class CreateDirectEmployeeRequestClientDepartment {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:22:04.472468916Z[GMT]", comments = "Generator version: 7.10.0")
+public class CreateDirectEmployeeRequestDataClientTeam {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
   @javax.annotation.Nonnull
   private UUID id;
 
-  public CreateDirectEmployeeRequestClientDepartment() {
+  public static final String SERIALIZED_NAME_DIRECT_MANAGER_ID = "direct_manager_id";
+  @SerializedName(SERIALIZED_NAME_DIRECT_MANAGER_ID)
+  @javax.annotation.Nullable
+  private UUID directManagerId;
+
+  public CreateDirectEmployeeRequestDataClientTeam() {
   }
 
-  public CreateDirectEmployeeRequestClientDepartment id(@javax.annotation.Nonnull UUID id) {
+  public CreateDirectEmployeeRequestDataClientTeam id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
@@ -78,6 +83,25 @@ public class CreateDirectEmployeeRequestClientDepartment {
   }
 
 
+  public CreateDirectEmployeeRequestDataClientTeam directManagerId(@javax.annotation.Nullable UUID directManagerId) {
+    this.directManagerId = directManagerId;
+    return this;
+  }
+
+  /**
+   * Get directManagerId
+   * @return directManagerId
+   */
+  @javax.annotation.Nullable
+  public UUID getDirectManagerId() {
+    return directManagerId;
+  }
+
+  public void setDirectManagerId(@javax.annotation.Nullable UUID directManagerId) {
+    this.directManagerId = directManagerId;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -87,20 +111,22 @@ public class CreateDirectEmployeeRequestClientDepartment {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    CreateDirectEmployeeRequestClientDepartment createDirectEmployeeRequestClientDepartment = (CreateDirectEmployeeRequestClientDepartment) o;
-    return Objects.equals(this.id, createDirectEmployeeRequestClientDepartment.id);
+    CreateDirectEmployeeRequestDataClientTeam createDirectEmployeeRequestDataClientTeam = (CreateDirectEmployeeRequestDataClientTeam) o;
+    return Objects.equals(this.id, createDirectEmployeeRequestDataClientTeam.id) &&
+        Objects.equals(this.directManagerId, createDirectEmployeeRequestDataClientTeam.directManagerId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id);
+    return Objects.hash(id, directManagerId);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class CreateDirectEmployeeRequestClientDepartment {\n");
+    sb.append("class CreateDirectEmployeeRequestDataClientTeam {\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    directManagerId: ").append(toIndentedString(directManagerId)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -124,6 +150,7 @@ public class CreateDirectEmployeeRequestClientDepartment {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("id");
+    openapiFields.add("direct_manager_id");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -134,25 +161,25 @@ public class CreateDirectEmployeeRequestClientDepartment {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to CreateDirectEmployeeRequestClientDepartment
+   * @throws IOException if the JSON Element is invalid with respect to CreateDirectEmployeeRequestDataClientTeam
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!CreateDirectEmployeeRequestClientDepartment.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in CreateDirectEmployeeRequestClientDepartment is not found in the empty JSON string", CreateDirectEmployeeRequestClientDepartment.openapiRequiredFields.toString()));
+        if (!CreateDirectEmployeeRequestDataClientTeam.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in CreateDirectEmployeeRequestDataClientTeam is not found in the empty JSON string", CreateDirectEmployeeRequestDataClientTeam.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!CreateDirectEmployeeRequestClientDepartment.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CreateDirectEmployeeRequestClientDepartment` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!CreateDirectEmployeeRequestDataClientTeam.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CreateDirectEmployeeRequestDataClientTeam` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
-      for (String requiredField : CreateDirectEmployeeRequestClientDepartment.openapiRequiredFields) {
+      for (String requiredField : CreateDirectEmployeeRequestDataClientTeam.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
           throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
@@ -161,28 +188,31 @@ public class CreateDirectEmployeeRequestClientDepartment {
       if (!jsonObj.get("id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
       }
+      if ((jsonObj.get("direct_manager_id") != null && !jsonObj.get("direct_manager_id").isJsonNull()) && !jsonObj.get("direct_manager_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `direct_manager_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("direct_manager_id").toString()));
+      }
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!CreateDirectEmployeeRequestClientDepartment.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'CreateDirectEmployeeRequestClientDepartment' and its subtypes
+       if (!CreateDirectEmployeeRequestDataClientTeam.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'CreateDirectEmployeeRequestDataClientTeam' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<CreateDirectEmployeeRequestClientDepartment> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(CreateDirectEmployeeRequestClientDepartment.class));
+       final TypeAdapter<CreateDirectEmployeeRequestDataClientTeam> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(CreateDirectEmployeeRequestDataClientTeam.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<CreateDirectEmployeeRequestClientDepartment>() {
+       return (TypeAdapter<T>) new TypeAdapter<CreateDirectEmployeeRequestDataClientTeam>() {
            @Override
-           public void write(JsonWriter out, CreateDirectEmployeeRequestClientDepartment value) throws IOException {
+           public void write(JsonWriter out, CreateDirectEmployeeRequestDataClientTeam value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public CreateDirectEmployeeRequestClientDepartment read(JsonReader in) throws IOException {
+           public CreateDirectEmployeeRequestDataClientTeam read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -193,18 +223,18 @@ public class CreateDirectEmployeeRequestClientDepartment {
   }
 
   /**
-   * Create an instance of CreateDirectEmployeeRequestClientDepartment given an JSON string
+   * Create an instance of CreateDirectEmployeeRequestDataClientTeam given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of CreateDirectEmployeeRequestClientDepartment
-   * @throws IOException if the JSON string is invalid with respect to CreateDirectEmployeeRequestClientDepartment
+   * @return An instance of CreateDirectEmployeeRequestDataClientTeam
+   * @throws IOException if the JSON string is invalid with respect to CreateDirectEmployeeRequestDataClientTeam
    */
-  public static CreateDirectEmployeeRequestClientDepartment fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, CreateDirectEmployeeRequestClientDepartment.class);
+  public static CreateDirectEmployeeRequestDataClientTeam fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, CreateDirectEmployeeRequestDataClientTeam.class);
   }
 
   /**
-   * Convert an instance of CreateDirectEmployeeRequestClientDepartment to an JSON string
+   * Convert an instance of CreateDirectEmployeeRequestDataClientTeam to an JSON string
    *
    * @return JSON string
    */

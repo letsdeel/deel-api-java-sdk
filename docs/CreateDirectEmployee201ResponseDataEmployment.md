@@ -10,6 +10,8 @@
 |**type** | [**TypeEnum**](#TypeEnum) |  |  |
 |**country** | **String** |  |  |
 |**endDate** | **LocalDate** |  |  |
+|**jobTitle** | **String** |  |  |
+|**seniority** | **String** |  |  |
 |**startDate** | **LocalDate** |  |  |
 |**contractId** | **String** |  |  |
 |**partTimePercentage** | **BigDecimal** |  |  [optional] |

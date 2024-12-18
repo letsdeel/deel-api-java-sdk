@@ -20,12 +20,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.CreateDirectEmployeeRequestClient;
-import org.openapitools.client.model.CreateDirectEmployeeRequestCompensationDetails;
-import org.openapitools.client.model.CreateDirectEmployeeRequestEmployee;
-import org.openapitools.client.model.CreateDirectEmployeeRequestEmployment;
-import org.openapitools.client.model.CreateDirectEmployeeRequestJobTitle;
-import org.openapitools.client.model.CreateDirectEmployeeRequestSeniority;
+import org.openapitools.client.model.CreateDirectEmployeeRequestData;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -44,51 +39,11 @@ public class CreateDirectEmployeeRequestTest {
     }
 
     /**
-     * Test the property 'client'
+     * Test the property 'data'
      */
     @Test
-    public void clientTest() {
-        // TODO: test client
-    }
-
-    /**
-     * Test the property 'employee'
-     */
-    @Test
-    public void employeeTest() {
-        // TODO: test employee
-    }
-
-    /**
-     * Test the property 'jobTitle'
-     */
-    @Test
-    public void jobTitleTest() {
-        // TODO: test jobTitle
-    }
-
-    /**
-     * Test the property 'seniority'
-     */
-    @Test
-    public void seniorityTest() {
-        // TODO: test seniority
-    }
-
-    /**
-     * Test the property 'employment'
-     */
-    @Test
-    public void employmentTest() {
-        // TODO: test employment
-    }
-
-    /**
-     * Test the property 'compensationDetails'
-     */
-    @Test
-    public void compensationDetailsTest() {
-        // TODO: test compensationDetails
+    public void dataTest() {
+        // TODO: test data
     }
 
 }

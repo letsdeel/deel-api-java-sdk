@@ -46828,7 +46828,7 @@ components:
       required:
       - data
       type: object
-    createDirectEmployee_request_client_team:
+    createDirectEmployee_request_data_client_team:
       properties:
         id:
           format: uuid
@@ -46839,7 +46839,7 @@ components:
       required:
       - id
       type: object
-    createDirectEmployee_request_client_department:
+    createDirectEmployee_request_data_client_department:
       properties:
         id:
           format: uuid
@@ -46847,20 +46847,20 @@ components:
       required:
       - id
       type: object
-    createDirectEmployee_request_client:
+    createDirectEmployee_request_data_client:
       description: The entity that is hiring the employee
       properties:
         team:
-          $ref: '#/components/schemas/createDirectEmployee_request_client_team'
+          $ref: '#/components/schemas/createDirectEmployee_request_data_client_team'
         department:
-          $ref: '#/components/schemas/createDirectEmployee_request_client_department'
+          $ref: '#/components/schemas/createDirectEmployee_request_data_client_department'
         legal_entity:
-          $ref: '#/components/schemas/createDirectEmployee_request_client_department'
+          $ref: '#/components/schemas/createDirectEmployee_request_data_client_department'
       required:
       - legal_entity
       - team
       type: object
-    createDirectEmployee_request_employee:
+    createDirectEmployee_request_data_employee:
       description: The person that is being hired
       properties:
         email:
@@ -46889,6 +46889,8 @@ components:
           maxLength: 255
           minLength: 3
           type: string
+        external_id:
+          type: string
         nationality:
           maxLength: 2
           minLength: 2
@@ -46900,23 +46902,7 @@ components:
       - last_name
       - nationality
       type: object
-    createDirectEmployee_request_job_title:
-      description: The position that the employee is being hired for
-      properties:
-        id:
-          type: integer
-      required:
-      - id
-      type: object
-    createDirectEmployee_request_seniority:
-      description: The seniority level of the employee
-      properties:
-        id:
-          type: integer
-      required:
-      - id
-      type: object
-    createDirectEmployee_request_employment_oneOf:
+    createDirectEmployee_request_data_employment_oneOf:
       properties:
         type:
           enum:
@@ -46924,6 +46910,10 @@ components:
           type: string
         end_date:
           format: date
+          type: string
+        job_title:
+          type: string
+        seniority:
           type: string
         start_date:
           format: date
@@ -46933,11 +46923,13 @@ components:
           minimum: 1
           type: number
       required:
+      - job_title
       - part_time_percentage
+      - seniority
       - start_date
       - type
       type: object
-    createDirectEmployee_request_employment_oneOf_1:
+    createDirectEmployee_request_data_employment_oneOf_1:
       properties:
         type:
           enum:
@@ -46946,18 +46938,24 @@ components:
         end_date:
           format: date
           type: string
+        job_title:
+          type: string
+        seniority:
+          type: string
         start_date:
           format: date
           type: string
       required:
+      - job_title
+      - seniority
       - start_date
       - type
       type: object
-    createDirectEmployee_request_employment:
+    createDirectEmployee_request_data_employment:
       oneOf:
-      - $ref: '#/components/schemas/createDirectEmployee_request_employment_oneOf'
-      - $ref: '#/components/schemas/createDirectEmployee_request_employment_oneOf_1'
-    createDirectEmployee_request_compensation_details:
+      - $ref: '#/components/schemas/createDirectEmployee_request_data_employment_oneOf'
+      - $ref: '#/components/schemas/createDirectEmployee_request_data_employment_oneOf_1'
+    createDirectEmployee_request_data_compensation_details:
       description: The compensation details of the employee
       properties:
         salary:
@@ -46972,33 +46970,35 @@ components:
       - currency
       - salary
       type: object
-    createDirectEmployee_request:
+    createDirectEmployee_request_data:
       properties:
         client:
-          $ref: '#/components/schemas/createDirectEmployee_request_client'
+          $ref: '#/components/schemas/createDirectEmployee_request_data_client'
         employee:
-          $ref: '#/components/schemas/createDirectEmployee_request_employee'
-        job_title:
-          $ref: '#/components/schemas/createDirectEmployee_request_job_title'
-        seniority:
-          $ref: '#/components/schemas/createDirectEmployee_request_seniority'
+          $ref: '#/components/schemas/createDirectEmployee_request_data_employee'
         employment:
-          $ref: '#/components/schemas/createDirectEmployee_request_employment'
+          $ref: '#/components/schemas/createDirectEmployee_request_data_employment'
         compensation_details:
-          $ref: '#/components/schemas/createDirectEmployee_request_compensation_details'
+          $ref: '#/components/schemas/createDirectEmployee_request_data_compensation_details'
       required:
       - client
       - compensation_details
       - employee
       - employment
-      - job_title
-      - seniority
+      type: object
+    createDirectEmployee_request:
+      properties:
+        data:
+          $ref: '#/components/schemas/createDirectEmployee_request_data'
+      required:
+      - data
       type: object
     createDirectEmployee_201_response_data_employee:
       example:
         work_email: work_email
         nationality: nationality
         last_name: last_name
+        external_id: external_id
         first_name: first_name
         email: email
       properties:
@@ -47011,6 +47011,9 @@ components:
           type: string
         work_email:
           format: email
+          type: string
+        external_id:
+          nullable: true
           type: string
         nationality:
           maxLength: 2
@@ -47028,7 +47031,9 @@ components:
         country: country
         contract_id: contract_id
         type: Full-time
+        job_title: job_title
         part_time_percentage: 8.848116266517913
+        seniority: seniority
         start_date: 2000-01-23
       properties:
         type:
@@ -47044,6 +47049,10 @@ components:
           format: date
           nullable: true
           type: string
+        job_title:
+          type: string
+        seniority:
+          type: string
         start_date:
           format: date
           type: string
@@ -47057,6 +47066,8 @@ components:
       - contract_id
       - country
       - end_date
+      - job_title
+      - seniority
       - start_date
       - type
       type: object
@@ -47087,12 +47098,15 @@ components:
           country: country
           contract_id: contract_id
           type: Full-time
+          job_title: job_title
           part_time_percentage: 8.848116266517913
+          seniority: seniority
           start_date: 2000-01-23
         employee:
           work_email: work_email
           nationality: nationality
           last_name: last_name
+          external_id: external_id
           first_name: first_name
           email: email
       properties:
@@ -47123,12 +47137,15 @@ components:
             country: country
             contract_id: contract_id
             type: Full-time
+            job_title: job_title
             part_time_percentage: 8.848116266517913
+            seniority: seniority
             start_date: 2000-01-23
           employee:
             work_email: work_email
             nationality: nationality
             last_name: last_name
+            external_id: external_id
             first_name: first_name
             email: email
       properties:
@@ -54001,11 +54018,11 @@ components:
     HrisDirectEmployeeToCreateContainer_data_client:
       properties:
         legal_entity:
-          $ref: '#/components/schemas/createDirectEmployee_request_client_department'
+          $ref: '#/components/schemas/createDirectEmployee_request_data_client_department'
         team:
           $ref: '#/components/schemas/HrisDirectEmployeeToCreateContainer_data_client_team'
         department:
-          $ref: '#/components/schemas/createDirectEmployee_request_client_department'
+          $ref: '#/components/schemas/createDirectEmployee_request_data_client_department'
       required:
       - legal_entity
       - team
@@ -57522,7 +57539,7 @@ components:
           type: array
         delete:
           items:
-            $ref: '#/components/schemas/createDirectEmployee_request_client_department'
+            $ref: '#/components/schemas/createDirectEmployee_request_data_client_department'
           type: array
         profile_id:
           format: uuid

@@ -20,30 +20,37 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.UUID;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for CreateDirectEmployeeRequestClientDepartment
+ * Model tests for CreateDirectEmployeeRequestDataCompensationDetails
  */
-public class CreateDirectEmployeeRequestClientDepartmentTest {
-    private final CreateDirectEmployeeRequestClientDepartment model = new CreateDirectEmployeeRequestClientDepartment();
+public class CreateDirectEmployeeRequestDataCompensationDetailsTest {
+    private final CreateDirectEmployeeRequestDataCompensationDetails model = new CreateDirectEmployeeRequestDataCompensationDetails();
 
     /**
-     * Model tests for CreateDirectEmployeeRequestClientDepartment
+     * Model tests for CreateDirectEmployeeRequestDataCompensationDetails
      */
     @Test
-    public void testCreateDirectEmployeeRequestClientDepartment() {
-        // TODO: test CreateDirectEmployeeRequestClientDepartment
+    public void testCreateDirectEmployeeRequestDataCompensationDetails() {
+        // TODO: test CreateDirectEmployeeRequestDataCompensationDetails
     }
 
     /**
-     * Test the property 'id'
+     * Test the property 'salary'
      */
     @Test
-    public void idTest() {
-        // TODO: test id
+    public void salaryTest() {
+        // TODO: test salary
+    }
+
+    /**
+     * Test the property 'currency'
+     */
+    @Test
+    public void currencyTest() {
+        // TODO: test currency
     }
 
 }

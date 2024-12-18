@@ -1,6 +1,6 @@
 
 
-# CreateDirectEmployeeRequestEmployment
+# CreateDirectEmployeeRequestDataEmploymentOneOf
 
 
 ## Properties
@@ -9,6 +9,8 @@
 |------------ | ------------- | ------------- | -------------|
 |**type** | [**TypeEnum**](#TypeEnum) |  |  |
 |**endDate** | **LocalDate** |  |  [optional] |
+|**jobTitle** | **String** |  |  |
+|**seniority** | **String** |  |  |
 |**startDate** | **LocalDate** |  |  |
 |**partTimePercentage** | **BigDecimal** |  |  |
 
@@ -19,7 +21,6 @@
 | Name | Value |
 |---- | -----|
 | PART_TIME | &quot;Part-time&quot; |
-| FULL_TIME | &quot;Full-time&quot; |
 
 
 

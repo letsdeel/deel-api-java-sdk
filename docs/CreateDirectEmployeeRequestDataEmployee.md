@@ -1,6 +1,6 @@
 
 
-# CreateDirectEmployeeRequestEmployee
+# CreateDirectEmployeeRequestDataEmployee
 
 The person that is being hired
 
@@ -14,6 +14,7 @@ The person that is being hired
 |**lastName** | **String** |  |  |
 |**firstName** | **String** |  |  |
 |**workEmail** | **String** |  |  [optional] |
+|**externalId** | **String** |  |  [optional] |
 |**nationality** | **String** |  |  |
 
 

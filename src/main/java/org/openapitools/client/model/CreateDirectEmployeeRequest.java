@@ -21,12 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.CreateDirectEmployeeRequestClient;
-import org.openapitools.client.model.CreateDirectEmployeeRequestCompensationDetails;
-import org.openapitools.client.model.CreateDirectEmployeeRequestEmployee;
-import org.openapitools.client.model.CreateDirectEmployeeRequestEmployment;
-import org.openapitools.client.model.CreateDirectEmployeeRequestJobTitle;
-import org.openapitools.client.model.CreateDirectEmployeeRequestSeniority;
+import org.openapitools.client.model.CreateDirectEmployeeRequestData;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -54,152 +49,32 @@ import org.openapitools.client.JSON;
 /**
  * CreateDirectEmployeeRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T14:46:34.496883852Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:22:04.472468916Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateDirectEmployeeRequest {
-  public static final String SERIALIZED_NAME_CLIENT = "client";
-  @SerializedName(SERIALIZED_NAME_CLIENT)
+  public static final String SERIALIZED_NAME_DATA = "data";
+  @SerializedName(SERIALIZED_NAME_DATA)
   @javax.annotation.Nonnull
-  private CreateDirectEmployeeRequestClient client;
-
-  public static final String SERIALIZED_NAME_EMPLOYEE = "employee";
-  @SerializedName(SERIALIZED_NAME_EMPLOYEE)
-  @javax.annotation.Nonnull
-  private CreateDirectEmployeeRequestEmployee employee;
-
-  public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
-  @SerializedName(SERIALIZED_NAME_JOB_TITLE)
-  @javax.annotation.Nonnull
-  private CreateDirectEmployeeRequestJobTitle jobTitle;
-
-  public static final String SERIALIZED_NAME_SENIORITY = "seniority";
-  @SerializedName(SERIALIZED_NAME_SENIORITY)
-  @javax.annotation.Nonnull
-  private CreateDirectEmployeeRequestSeniority seniority;
-
-  public static final String SERIALIZED_NAME_EMPLOYMENT = "employment";
-  @SerializedName(SERIALIZED_NAME_EMPLOYMENT)
-  @javax.annotation.Nonnull
-  private CreateDirectEmployeeRequestEmployment employment;
-
-  public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
-  @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
-  @javax.annotation.Nonnull
-  private CreateDirectEmployeeRequestCompensationDetails compensationDetails;
+  private CreateDirectEmployeeRequestData data;
 
   public CreateDirectEmployeeRequest() {
   }
 
-  public CreateDirectEmployeeRequest client(@javax.annotation.Nonnull CreateDirectEmployeeRequestClient client) {
-    this.client = client;
+  public CreateDirectEmployeeRequest data(@javax.annotation.Nonnull CreateDirectEmployeeRequestData data) {
+    this.data = data;
     return this;
   }
 
   /**
-   * Get client
-   * @return client
+   * Get data
+   * @return data
    */
   @javax.annotation.Nonnull
-  public CreateDirectEmployeeRequestClient getClient() {
-    return client;
+  public CreateDirectEmployeeRequestData getData() {
+    return data;
   }
 
-  public void setClient(@javax.annotation.Nonnull CreateDirectEmployeeRequestClient client) {
-    this.client = client;
-  }
-
-
-  public CreateDirectEmployeeRequest employee(@javax.annotation.Nonnull CreateDirectEmployeeRequestEmployee employee) {
-    this.employee = employee;
-    return this;
-  }
-
-  /**
-   * Get employee
-   * @return employee
-   */
-  @javax.annotation.Nonnull
-  public CreateDirectEmployeeRequestEmployee getEmployee() {
-    return employee;
-  }
-
-  public void setEmployee(@javax.annotation.Nonnull CreateDirectEmployeeRequestEmployee employee) {
-    this.employee = employee;
-  }
-
-
-  public CreateDirectEmployeeRequest jobTitle(@javax.annotation.Nonnull CreateDirectEmployeeRequestJobTitle jobTitle) {
-    this.jobTitle = jobTitle;
-    return this;
-  }
-
-  /**
-   * Get jobTitle
-   * @return jobTitle
-   */
-  @javax.annotation.Nonnull
-  public CreateDirectEmployeeRequestJobTitle getJobTitle() {
-    return jobTitle;
-  }
-
-  public void setJobTitle(@javax.annotation.Nonnull CreateDirectEmployeeRequestJobTitle jobTitle) {
-    this.jobTitle = jobTitle;
-  }
-
-
-  public CreateDirectEmployeeRequest seniority(@javax.annotation.Nonnull CreateDirectEmployeeRequestSeniority seniority) {
-    this.seniority = seniority;
-    return this;
-  }
-
-  /**
-   * Get seniority
-   * @return seniority
-   */
-  @javax.annotation.Nonnull
-  public CreateDirectEmployeeRequestSeniority getSeniority() {
-    return seniority;
-  }
-
-  public void setSeniority(@javax.annotation.Nonnull CreateDirectEmployeeRequestSeniority seniority) {
-    this.seniority = seniority;
-  }
-
-
-  public CreateDirectEmployeeRequest employment(@javax.annotation.Nonnull CreateDirectEmployeeRequestEmployment employment) {
-    this.employment = employment;
-    return this;
-  }
-
-  /**
-   * Get employment
-   * @return employment
-   */
-  @javax.annotation.Nonnull
-  public CreateDirectEmployeeRequestEmployment getEmployment() {
-    return employment;
-  }
-
-  public void setEmployment(@javax.annotation.Nonnull CreateDirectEmployeeRequestEmployment employment) {
-    this.employment = employment;
-  }
-
-
-  public CreateDirectEmployeeRequest compensationDetails(@javax.annotation.Nonnull CreateDirectEmployeeRequestCompensationDetails compensationDetails) {
-    this.compensationDetails = compensationDetails;
-    return this;
-  }
-
-  /**
-   * Get compensationDetails
-   * @return compensationDetails
-   */
-  @javax.annotation.Nonnull
-  public CreateDirectEmployeeRequestCompensationDetails getCompensationDetails() {
-    return compensationDetails;
-  }
-
-  public void setCompensationDetails(@javax.annotation.Nonnull CreateDirectEmployeeRequestCompensationDetails compensationDetails) {
-    this.compensationDetails = compensationDetails;
+  public void setData(@javax.annotation.Nonnull CreateDirectEmployeeRequestData data) {
+    this.data = data;
   }
 
 
@@ -213,29 +88,19 @@ public class CreateDirectEmployeeRequest {
       return false;
     }
     CreateDirectEmployeeRequest createDirectEmployeeRequest = (CreateDirectEmployeeRequest) o;
-    return Objects.equals(this.client, createDirectEmployeeRequest.client) &&
-        Objects.equals(this.employee, createDirectEmployeeRequest.employee) &&
-        Objects.equals(this.jobTitle, createDirectEmployeeRequest.jobTitle) &&
-        Objects.equals(this.seniority, createDirectEmployeeRequest.seniority) &&
-        Objects.equals(this.employment, createDirectEmployeeRequest.employment) &&
-        Objects.equals(this.compensationDetails, createDirectEmployeeRequest.compensationDetails);
+    return Objects.equals(this.data, createDirectEmployeeRequest.data);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(client, employee, jobTitle, seniority, employment, compensationDetails);
+    return Objects.hash(data);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CreateDirectEmployeeRequest {\n");
-    sb.append("    client: ").append(toIndentedString(client)).append("\n");
-    sb.append("    employee: ").append(toIndentedString(employee)).append("\n");
-    sb.append("    jobTitle: ").append(toIndentedString(jobTitle)).append("\n");
-    sb.append("    seniority: ").append(toIndentedString(seniority)).append("\n");
-    sb.append("    employment: ").append(toIndentedString(employment)).append("\n");
-    sb.append("    compensationDetails: ").append(toIndentedString(compensationDetails)).append("\n");
+    sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -258,21 +123,11 @@ public class CreateDirectEmployeeRequest {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("client");
-    openapiFields.add("employee");
-    openapiFields.add("job_title");
-    openapiFields.add("seniority");
-    openapiFields.add("employment");
-    openapiFields.add("compensation_details");
+    openapiFields.add("data");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("client");
-    openapiRequiredFields.add("employee");
-    openapiRequiredFields.add("job_title");
-    openapiRequiredFields.add("seniority");
-    openapiRequiredFields.add("employment");
-    openapiRequiredFields.add("compensation_details");
+    openapiRequiredFields.add("data");
   }
 
   /**
@@ -303,18 +158,8 @@ public class CreateDirectEmployeeRequest {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the required field `client`
-      CreateDirectEmployeeRequestClient.validateJsonElement(jsonObj.get("client"));
-      // validate the required field `employee`
-      CreateDirectEmployeeRequestEmployee.validateJsonElement(jsonObj.get("employee"));
-      // validate the required field `job_title`
-      CreateDirectEmployeeRequestJobTitle.validateJsonElement(jsonObj.get("job_title"));
-      // validate the required field `seniority`
-      CreateDirectEmployeeRequestSeniority.validateJsonElement(jsonObj.get("seniority"));
-      // validate the required field `employment`
-      CreateDirectEmployeeRequestEmployment.validateJsonElement(jsonObj.get("employment"));
-      // validate the required field `compensation_details`
-      CreateDirectEmployeeRequestCompensationDetails.validateJsonElement(jsonObj.get("compensation_details"));
+      // validate the required field `data`
+      CreateDirectEmployeeRequestData.validateJsonElement(jsonObj.get("data"));
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

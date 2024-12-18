@@ -64,6 +64,22 @@ public class CreateDirectEmployee201ResponseDataEmploymentTest {
     }
 
     /**
+     * Test the property 'jobTitle'
+     */
+    @Test
+    public void jobTitleTest() {
+        // TODO: test jobTitle
+    }
+
+    /**
+     * Test the property 'seniority'
+     */
+    @Test
+    public void seniorityTest() {
+        // TODO: test seniority
+    }
+
+    /**
      * Test the property 'startDate'
      */
     @Test

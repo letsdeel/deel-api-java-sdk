@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * UpsertParentWorkerRelationsContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T14:46:34.496883852Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:22:04.472468916Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertParentWorkerRelationsContainerData {
   public static final String SERIALIZED_NAME_PARENT_HRIS_PROFILE_ID = "parent_hris_profile_id";
   @SerializedName(SERIALIZED_NAME_PARENT_HRIS_PROFILE_ID)

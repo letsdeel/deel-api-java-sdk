@@ -11,6 +11,7 @@
 |**lastName** | **String** |  |  |
 |**firstName** | **String** |  |  |
 |**workEmail** | **String** |  |  [optional] |
+|**externalId** | **String** |  |  [optional] |
 |**nationality** | **String** |  |  |
 
 

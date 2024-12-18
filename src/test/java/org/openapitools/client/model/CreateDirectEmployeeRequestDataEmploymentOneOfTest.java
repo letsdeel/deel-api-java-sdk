@@ -19,23 +19,24 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Arrays;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for CreateDirectEmployeeRequestEmploymentOneOf1
+ * Model tests for CreateDirectEmployeeRequestDataEmploymentOneOf
  */
-public class CreateDirectEmployeeRequestEmploymentOneOf1Test {
-    private final CreateDirectEmployeeRequestEmploymentOneOf1 model = new CreateDirectEmployeeRequestEmploymentOneOf1();
+public class CreateDirectEmployeeRequestDataEmploymentOneOfTest {
+    private final CreateDirectEmployeeRequestDataEmploymentOneOf model = new CreateDirectEmployeeRequestDataEmploymentOneOf();
 
     /**
-     * Model tests for CreateDirectEmployeeRequestEmploymentOneOf1
+     * Model tests for CreateDirectEmployeeRequestDataEmploymentOneOf
      */
     @Test
-    public void testCreateDirectEmployeeRequestEmploymentOneOf1() {
-        // TODO: test CreateDirectEmployeeRequestEmploymentOneOf1
+    public void testCreateDirectEmployeeRequestDataEmploymentOneOf() {
+        // TODO: test CreateDirectEmployeeRequestDataEmploymentOneOf
     }
 
     /**
@@ -55,11 +56,35 @@ public class CreateDirectEmployeeRequestEmploymentOneOf1Test {
     }
 
     /**
+     * Test the property 'jobTitle'
+     */
+    @Test
+    public void jobTitleTest() {
+        // TODO: test jobTitle
+    }
+
+    /**
+     * Test the property 'seniority'
+     */
+    @Test
+    public void seniorityTest() {
+        // TODO: test seniority
+    }
+
+    /**
      * Test the property 'startDate'
      */
     @Test
     public void startDateTest() {
         // TODO: test startDate
+    }
+
+    /**
+     * Test the property 'partTimePercentage'
+     */
+    @Test
+    public void partTimePercentageTest() {
+        // TODO: test partTimePercentage
     }
 
 }

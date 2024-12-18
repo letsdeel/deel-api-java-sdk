@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.CreateDirectEmployeeRequestClientDepartment;
+import org.openapitools.client.model.CreateDirectEmployeeRequestDataClientDepartment;
 import org.openapitools.client.model.HrisDirectEmployeeToCreateContainerDataClientTeam;
 
 import com.google.gson.Gson;
@@ -50,12 +50,12 @@ import org.openapitools.client.JSON;
 /**
  * HrisDirectEmployeeToCreateContainerDataClient
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T14:46:34.496883852Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:22:04.472468916Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisDirectEmployeeToCreateContainerDataClient {
   public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
   @javax.annotation.Nonnull
-  private CreateDirectEmployeeRequestClientDepartment legalEntity;
+  private CreateDirectEmployeeRequestDataClientDepartment legalEntity;
 
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
@@ -65,12 +65,12 @@ public class HrisDirectEmployeeToCreateContainerDataClient {
   public static final String SERIALIZED_NAME_DEPARTMENT = "department";
   @SerializedName(SERIALIZED_NAME_DEPARTMENT)
   @javax.annotation.Nullable
-  private CreateDirectEmployeeRequestClientDepartment department;
+  private CreateDirectEmployeeRequestDataClientDepartment department;
 
   public HrisDirectEmployeeToCreateContainerDataClient() {
   }
 
-  public HrisDirectEmployeeToCreateContainerDataClient legalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestClientDepartment legalEntity) {
+  public HrisDirectEmployeeToCreateContainerDataClient legalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestDataClientDepartment legalEntity) {
     this.legalEntity = legalEntity;
     return this;
   }
@@ -80,11 +80,11 @@ public class HrisDirectEmployeeToCreateContainerDataClient {
    * @return legalEntity
    */
   @javax.annotation.Nonnull
-  public CreateDirectEmployeeRequestClientDepartment getLegalEntity() {
+  public CreateDirectEmployeeRequestDataClientDepartment getLegalEntity() {
     return legalEntity;
   }
 
-  public void setLegalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestClientDepartment legalEntity) {
+  public void setLegalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestDataClientDepartment legalEntity) {
     this.legalEntity = legalEntity;
   }
 
@@ -108,7 +108,7 @@ public class HrisDirectEmployeeToCreateContainerDataClient {
   }
 
 
-  public HrisDirectEmployeeToCreateContainerDataClient department(@javax.annotation.Nullable CreateDirectEmployeeRequestClientDepartment department) {
+  public HrisDirectEmployeeToCreateContainerDataClient department(@javax.annotation.Nullable CreateDirectEmployeeRequestDataClientDepartment department) {
     this.department = department;
     return this;
   }
@@ -118,11 +118,11 @@ public class HrisDirectEmployeeToCreateContainerDataClient {
    * @return department
    */
   @javax.annotation.Nullable
-  public CreateDirectEmployeeRequestClientDepartment getDepartment() {
+  public CreateDirectEmployeeRequestDataClientDepartment getDepartment() {
     return department;
   }
 
-  public void setDepartment(@javax.annotation.Nullable CreateDirectEmployeeRequestClientDepartment department) {
+  public void setDepartment(@javax.annotation.Nullable CreateDirectEmployeeRequestDataClientDepartment department) {
     this.department = department;
   }
 
@@ -215,12 +215,12 @@ public class HrisDirectEmployeeToCreateContainerDataClient {
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the required field `legal_entity`
-      CreateDirectEmployeeRequestClientDepartment.validateJsonElement(jsonObj.get("legal_entity"));
+      CreateDirectEmployeeRequestDataClientDepartment.validateJsonElement(jsonObj.get("legal_entity"));
       // validate the required field `team`
       HrisDirectEmployeeToCreateContainerDataClientTeam.validateJsonElement(jsonObj.get("team"));
       // validate the optional field `department`
       if (jsonObj.get("department") != null && !jsonObj.get("department").isJsonNull()) {
-        CreateDirectEmployeeRequestClientDepartment.validateJsonElement(jsonObj.get("department"));
+        CreateDirectEmployeeRequestDataClientDepartment.validateJsonElement(jsonObj.get("department"));
       }
   }
 

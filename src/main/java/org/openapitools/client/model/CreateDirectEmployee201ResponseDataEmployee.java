@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -48,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateDirectEmployee201ResponseDataEmployee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T14:46:34.496883852Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:22:04.472468916Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateDirectEmployee201ResponseDataEmployee {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -69,6 +70,11 @@ public class CreateDirectEmployee201ResponseDataEmployee {
   @SerializedName(SERIALIZED_NAME_WORK_EMAIL)
   @javax.annotation.Nullable
   private String workEmail;
+
+  public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
+  @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
+  private String externalId;
 
   public static final String SERIALIZED_NAME_NATIONALITY = "nationality";
   @SerializedName(SERIALIZED_NAME_NATIONALITY)
@@ -154,6 +160,25 @@ public class CreateDirectEmployee201ResponseDataEmployee {
   }
 
 
+  public CreateDirectEmployee201ResponseDataEmployee externalId(@javax.annotation.Nullable String externalId) {
+    this.externalId = externalId;
+    return this;
+  }
+
+  /**
+   * Get externalId
+   * @return externalId
+   */
+  @javax.annotation.Nullable
+  public String getExternalId() {
+    return externalId;
+  }
+
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
+    this.externalId = externalId;
+  }
+
+
   public CreateDirectEmployee201ResponseDataEmployee nationality(@javax.annotation.Nonnull String nationality) {
     this.nationality = nationality;
     return this;
@@ -187,12 +212,24 @@ public class CreateDirectEmployee201ResponseDataEmployee {
         Objects.equals(this.lastName, createDirectEmployee201ResponseDataEmployee.lastName) &&
         Objects.equals(this.firstName, createDirectEmployee201ResponseDataEmployee.firstName) &&
         Objects.equals(this.workEmail, createDirectEmployee201ResponseDataEmployee.workEmail) &&
+        Objects.equals(this.externalId, createDirectEmployee201ResponseDataEmployee.externalId) &&
         Objects.equals(this.nationality, createDirectEmployee201ResponseDataEmployee.nationality);
+  }
+
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(email, lastName, firstName, workEmail, nationality);
+    return Objects.hash(email, lastName, firstName, workEmail, externalId, nationality);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -203,6 +240,7 @@ public class CreateDirectEmployee201ResponseDataEmployee {
     sb.append("    lastName: ").append(toIndentedString(lastName)).append("\n");
     sb.append("    firstName: ").append(toIndentedString(firstName)).append("\n");
     sb.append("    workEmail: ").append(toIndentedString(workEmail)).append("\n");
+    sb.append("    externalId: ").append(toIndentedString(externalId)).append("\n");
     sb.append("    nationality: ").append(toIndentedString(nationality)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -230,6 +268,7 @@ public class CreateDirectEmployee201ResponseDataEmployee {
     openapiFields.add("last_name");
     openapiFields.add("first_name");
     openapiFields.add("work_email");
+    openapiFields.add("external_id");
     openapiFields.add("nationality");
 
     // a set of required properties/fields (JSON key names)
@@ -279,6 +318,9 @@ public class CreateDirectEmployee201ResponseDataEmployee {
       }
       if ((jsonObj.get("work_email") != null && !jsonObj.get("work_email").isJsonNull()) && !jsonObj.get("work_email").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `work_email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("work_email").toString()));
+      }
+      if ((jsonObj.get("external_id") != null && !jsonObj.get("external_id").isJsonNull()) && !jsonObj.get("external_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `external_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("external_id").toString()));
       }
       if (!jsonObj.get("nationality").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `nationality` to be a primitive type in the JSON string but got `%s`", jsonObj.get("nationality").toString()));

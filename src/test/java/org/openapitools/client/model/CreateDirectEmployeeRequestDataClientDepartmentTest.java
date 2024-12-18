@@ -20,21 +20,22 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.UUID;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for CreateDirectEmployeeRequestSeniority
+ * Model tests for CreateDirectEmployeeRequestDataClientDepartment
  */
-public class CreateDirectEmployeeRequestSeniorityTest {
-    private final CreateDirectEmployeeRequestSeniority model = new CreateDirectEmployeeRequestSeniority();
+public class CreateDirectEmployeeRequestDataClientDepartmentTest {
+    private final CreateDirectEmployeeRequestDataClientDepartment model = new CreateDirectEmployeeRequestDataClientDepartment();
 
     /**
-     * Model tests for CreateDirectEmployeeRequestSeniority
+     * Model tests for CreateDirectEmployeeRequestDataClientDepartment
      */
     @Test
-    public void testCreateDirectEmployeeRequestSeniority() {
-        // TODO: test CreateDirectEmployeeRequestSeniority
+    public void testCreateDirectEmployeeRequestDataClientDepartment() {
+        // TODO: test CreateDirectEmployeeRequestDataClientDepartment
     }
 
     /**
