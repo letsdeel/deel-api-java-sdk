@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * ApproveExerciseEquityRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T15:50:05.582888578Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:04:44.564028033Z[GMT]", comments = "Generator version: 7.10.0")
 public class ApproveExerciseEquityRequest {
   public static final String SERIALIZED_NAME_EMPLOYER_APPROVAL = "employer_approval";
   @SerializedName(SERIALIZED_NAME_EMPLOYER_APPROVAL)
