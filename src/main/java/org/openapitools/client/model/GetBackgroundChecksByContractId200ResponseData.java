@@ -52,7 +52,7 @@ import org.openapitools.client.JSON;
 /**
  * GetBackgroundChecksByContractId200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:45:24.021173966Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBackgroundChecksByContractId200ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -63,6 +63,63 @@ public class GetBackgroundChecksByContractId200ResponseData {
   @SerializedName(SERIALIZED_NAME_NAME)
   @javax.annotation.Nullable
   private String name;
+
+  /**
+   * The result of the background check.
+   */
+  @JsonAdapter(ResultEnum.Adapter.class)
+  public enum ResultEnum {
+    CLEARED("CLEARED"),
+    
+    REVIEW("REVIEW");
+
+    private String value;
+
+    ResultEnum(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static ResultEnum fromValue(String value) {
+      for (ResultEnum b : ResultEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<ResultEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final ResultEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public ResultEnum read(final JsonReader jsonReader) throws IOException {
+        String value =  jsonReader.nextString();
+        return ResultEnum.fromValue(value);
+      }
+    }
+
+    public static void validateJsonElement(JsonElement jsonElement) throws IOException {
+      String value = jsonElement.getAsString();
+      ResultEnum.fromValue(value);
+    }
+  }
+
+  public static final String SERIALIZED_NAME_RESULT = "result";
+  @SerializedName(SERIALIZED_NAME_RESULT)
+  @javax.annotation.Nullable
+  private ResultEnum result;
 
   /**
    * The status of the background check.
@@ -141,6 +198,11 @@ public class GetBackgroundChecksByContractId200ResponseData {
   @javax.annotation.Nullable
   private OffsetDateTime createdAt;
 
+  public static final String SERIALIZED_NAME_CONTRACT_ID = "contract_id";
+  @SerializedName(SERIALIZED_NAME_CONTRACT_ID)
+  @javax.annotation.Nullable
+  private String contractId;
+
   public static final String SERIALIZED_NAME_IS_COMPLETE = "is_complete";
   @SerializedName(SERIALIZED_NAME_IS_COMPLETE)
   @javax.annotation.Nullable
@@ -150,6 +212,11 @@ public class GetBackgroundChecksByContractId200ResponseData {
   @SerializedName(SERIALIZED_NAME_COMPLETED_AT)
   @javax.annotation.Nullable
   private OffsetDateTime completedAt;
+
+  public static final String SERIALIZED_NAME_CANDIDATE_EMAIL = "candidate_email";
+  @SerializedName(SERIALIZED_NAME_CANDIDATE_EMAIL)
+  @javax.annotation.Nullable
+  private String candidateEmail;
 
   public static final String SERIALIZED_NAME_THIRD_PARTY_NAME = "third_party_name";
   @SerializedName(SERIALIZED_NAME_THIRD_PARTY_NAME)
@@ -194,6 +261,25 @@ public class GetBackgroundChecksByContractId200ResponseData {
 
   public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
+  }
+
+
+  public GetBackgroundChecksByContractId200ResponseData result(@javax.annotation.Nullable ResultEnum result) {
+    this.result = result;
+    return this;
+  }
+
+  /**
+   * The result of the background check.
+   * @return result
+   */
+  @javax.annotation.Nullable
+  public ResultEnum getResult() {
+    return result;
+  }
+
+  public void setResult(@javax.annotation.Nullable ResultEnum result) {
+    this.result = result;
   }
 
 
@@ -254,6 +340,25 @@ public class GetBackgroundChecksByContractId200ResponseData {
   }
 
 
+  public GetBackgroundChecksByContractId200ResponseData contractId(@javax.annotation.Nullable String contractId) {
+    this.contractId = contractId;
+    return this;
+  }
+
+  /**
+   * ID of the contract
+   * @return contractId
+   */
+  @javax.annotation.Nullable
+  public String getContractId() {
+    return contractId;
+  }
+
+  public void setContractId(@javax.annotation.Nullable String contractId) {
+    this.contractId = contractId;
+  }
+
+
   public GetBackgroundChecksByContractId200ResponseData isComplete(@javax.annotation.Nullable Boolean isComplete) {
     this.isComplete = isComplete;
     return this;
@@ -292,6 +397,25 @@ public class GetBackgroundChecksByContractId200ResponseData {
   }
 
 
+  public GetBackgroundChecksByContractId200ResponseData candidateEmail(@javax.annotation.Nullable String candidateEmail) {
+    this.candidateEmail = candidateEmail;
+    return this;
+  }
+
+  /**
+   * Email of worker
+   * @return candidateEmail
+   */
+  @javax.annotation.Nullable
+  public String getCandidateEmail() {
+    return candidateEmail;
+  }
+
+  public void setCandidateEmail(@javax.annotation.Nullable String candidateEmail) {
+    this.candidateEmail = candidateEmail;
+  }
+
+
   public GetBackgroundChecksByContractId200ResponseData thirdPartyName(@javax.annotation.Nullable String thirdPartyName) {
     this.thirdPartyName = thirdPartyName;
     return this;
@@ -323,11 +447,14 @@ public class GetBackgroundChecksByContractId200ResponseData {
     GetBackgroundChecksByContractId200ResponseData getBackgroundChecksByContractId200ResponseData = (GetBackgroundChecksByContractId200ResponseData) o;
     return Objects.equals(this.id, getBackgroundChecksByContractId200ResponseData.id) &&
         Objects.equals(this.name, getBackgroundChecksByContractId200ResponseData.name) &&
+        Objects.equals(this.result, getBackgroundChecksByContractId200ResponseData.result) &&
         Objects.equals(this.status, getBackgroundChecksByContractId200ResponseData.status) &&
         Objects.equals(this._package, getBackgroundChecksByContractId200ResponseData._package) &&
         Objects.equals(this.createdAt, getBackgroundChecksByContractId200ResponseData.createdAt) &&
+        Objects.equals(this.contractId, getBackgroundChecksByContractId200ResponseData.contractId) &&
         Objects.equals(this.isComplete, getBackgroundChecksByContractId200ResponseData.isComplete) &&
         Objects.equals(this.completedAt, getBackgroundChecksByContractId200ResponseData.completedAt) &&
+        Objects.equals(this.candidateEmail, getBackgroundChecksByContractId200ResponseData.candidateEmail) &&
         Objects.equals(this.thirdPartyName, getBackgroundChecksByContractId200ResponseData.thirdPartyName);
   }
 
@@ -337,7 +464,7 @@ public class GetBackgroundChecksByContractId200ResponseData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, status, _package, createdAt, isComplete, completedAt, thirdPartyName);
+    return Objects.hash(id, name, result, status, _package, createdAt, contractId, isComplete, completedAt, candidateEmail, thirdPartyName);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -353,11 +480,14 @@ public class GetBackgroundChecksByContractId200ResponseData {
     sb.append("class GetBackgroundChecksByContractId200ResponseData {\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    result: ").append(toIndentedString(result)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    _package: ").append(toIndentedString(_package)).append("\n");
     sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
+    sb.append("    contractId: ").append(toIndentedString(contractId)).append("\n");
     sb.append("    isComplete: ").append(toIndentedString(isComplete)).append("\n");
     sb.append("    completedAt: ").append(toIndentedString(completedAt)).append("\n");
+    sb.append("    candidateEmail: ").append(toIndentedString(candidateEmail)).append("\n");
     sb.append("    thirdPartyName: ").append(toIndentedString(thirdPartyName)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -383,11 +513,14 @@ public class GetBackgroundChecksByContractId200ResponseData {
     openapiFields = new HashSet<String>();
     openapiFields.add("id");
     openapiFields.add("name");
+    openapiFields.add("result");
     openapiFields.add("status");
     openapiFields.add("package");
     openapiFields.add("created_at");
+    openapiFields.add("contract_id");
     openapiFields.add("is_complete");
     openapiFields.add("completed_at");
+    openapiFields.add("candidate_email");
     openapiFields.add("third_party_name");
 
     // a set of required properties/fields (JSON key names)
@@ -421,6 +554,13 @@ public class GetBackgroundChecksByContractId200ResponseData {
       if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }
+      if ((jsonObj.get("result") != null && !jsonObj.get("result").isJsonNull()) && !jsonObj.get("result").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `result` to be a primitive type in the JSON string but got `%s`", jsonObj.get("result").toString()));
+      }
+      // validate the optional field `result`
+      if (jsonObj.get("result") != null && !jsonObj.get("result").isJsonNull()) {
+        ResultEnum.validateJsonElement(jsonObj.get("result"));
+      }
       if ((jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) && !jsonObj.get("status").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
       }
@@ -431,6 +571,12 @@ public class GetBackgroundChecksByContractId200ResponseData {
       // validate the optional field `package`
       if (jsonObj.get("package") != null && !jsonObj.get("package").isJsonNull()) {
         GetBackgroundChecksByContractId200ResponseDataPackage.validateJsonElement(jsonObj.get("package"));
+      }
+      if ((jsonObj.get("contract_id") != null && !jsonObj.get("contract_id").isJsonNull()) && !jsonObj.get("contract_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `contract_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("contract_id").toString()));
+      }
+      if ((jsonObj.get("candidate_email") != null && !jsonObj.get("candidate_email").isJsonNull()) && !jsonObj.get("candidate_email").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `candidate_email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("candidate_email").toString()));
       }
       if ((jsonObj.get("third_party_name") != null && !jsonObj.get("third_party_name").isJsonNull()) && !jsonObj.get("third_party_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `third_party_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("third_party_name").toString()));

@@ -11,6 +11,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 | [**editContractDocument**](ContractsApi.md#editContractDocument) | **PUT** /contracts/{contract_id}/documents | Edit the file attached to contract document. |
 | [**getAlternateEmailsByContractId**](ContractsApi.md#getAlternateEmailsByContractId) | **GET** /contracts/{contract_id}/alternate_emails | Find contract emails by ID |
 | [**getContractById**](ContractsApi.md#getContractById) | **GET** /contracts/{contract_id} | Retrieve a single contract |
+| [**getContractEquityWithholdingAmount**](ContractsApi.md#getContractEquityWithholdingAmount) | **GET** /contracts/{contract_id}/equity_withholding_estimate | Get an estimate of equity withholding amount. |
 | [**getContractList**](ContractsApi.md#getContractList) | **GET** /contracts | List of contracts |
 | [**getContractPaymentDates**](ContractsApi.md#getContractPaymentDates) | **GET** /contracts/{contract_id}/payment_cycles | Retrieve contractor payment dates |
 | [**getContractTemplates**](ContractsApi.md#getContractTemplates) | **GET** /contract-templates | Retrieve contract templates |
@@ -579,6 +580,82 @@ public class Example {
 | **405** | Operation failed. |  -  |
 | **429** | Operation failed. |  -  |
 | **500** | Operation failed. |  -  |
+
+<a id="getContractEquityWithholdingAmount"></a>
+# **getContractEquityWithholdingAmount**
+> GetContractEquityWithholdingAmount200Response getContractEquityWithholdingAmount(contractId, eventValue, eventCurrency).execute();
+
+Get an estimate of equity withholding amount.
+
+Get an estimate of the withholding amount required as well as the assumptions behind the estimate, given a contract id, event amount and currency code.  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;global-payroll:read&#x60;
+
+### Example
+```java
+// Import classes:
+import org.openapitools.client.ApiClient;
+import org.openapitools.client.ApiException;
+import org.openapitools.client.Configuration;
+import org.openapitools.client.auth.*;
+import org.openapitools.client.models.*;
+import org.openapitools.client.api.ContractsApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.letsdeel.com/rest/v2");
+    
+    // Configure HTTP bearer authorization: deelToken
+    HttpBearerAuth deelToken = (HttpBearerAuth) defaultClient.getAuthentication("deelToken");
+    deelToken.setBearerToken("BEARER TOKEN");
+
+    // Configure OAuth2 access token for authorization: oauth2
+    OAuth oauth2 = (OAuth) defaultClient.getAuthentication("oauth2");
+    oauth2.setAccessToken("YOUR ACCESS TOKEN");
+
+    ContractsApi apiInstance = new ContractsApi(defaultClient);
+    String contractId = "37nex2x"; // String | Deel contract id.
+    String eventValue = "10000.00"; // String | The monetary value of the equity event.
+    String eventCurrency = "USD"; // String | Three-letter currency code for the payment, following ISO 4217.
+    try {
+      GetContractEquityWithholdingAmount200Response result = apiInstance.getContractEquityWithholdingAmount(contractId, eventValue, eventCurrency)
+            .execute();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling ContractsApi#getContractEquityWithholdingAmount");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **contractId** | **String**| Deel contract id. | |
+| **eventValue** | **String**| The monetary value of the equity event. | |
+| **eventCurrency** | **String**| Three-letter currency code for the payment, following ISO 4217. | |
+
+### Return type
+
+[**GetContractEquityWithholdingAmount200Response**](GetContractEquityWithholdingAmount200Response.md)
+
+### Authorization
+
+[deelToken](../README.md#deelToken), [oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation. |  -  |
 
 <a id="getContractList"></a>
 # **getContractList**

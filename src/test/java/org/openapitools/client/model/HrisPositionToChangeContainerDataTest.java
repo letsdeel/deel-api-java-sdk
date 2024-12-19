@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
-import org.openapitools.client.model.CreateDirectEmployeeRequestDataClientDepartment;
+import org.openapitools.client.model.HrisDirectEmployeeToCreateContainerDataClientLegalEntity;
 import org.openapitools.client.model.HrisPositionToChangeContainerDataAddInner;
 import org.openapitools.client.model.HrisPositionToChangeContainerDataEditInner;
 import org.junit.jupiter.api.Disabled;

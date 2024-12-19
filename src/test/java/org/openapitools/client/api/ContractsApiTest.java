@@ -26,6 +26,7 @@ import java.io.File;
 import org.openapitools.client.model.GenericResultCreated;
 import org.openapitools.client.model.GenericResultUpdated;
 import org.openapitools.client.model.GetContractById200Response;
+import org.openapitools.client.model.GetContractEquityWithholdingAmount200Response;
 import org.openapitools.client.model.GetContractList200Response;
 import org.openapitools.client.model.GetContractListCurrenciesParameter;
 import org.openapitools.client.model.GetContractPaymentDates200Response;
@@ -163,6 +164,23 @@ public class ContractsApiTest {
     public void getContractByIdTest() throws ApiException {
         String contractId = null;
         GetContractById200Response response = api.getContractById(contractId)
+                .execute();
+        // TODO: test validations
+    }
+
+    /**
+     * Get an estimate of equity withholding amount.
+     *
+     * Get an estimate of the withholding amount required as well as the assumptions behind the estimate, given a contract id, event amount and currency code.  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;global-payroll:read&#x60;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void getContractEquityWithholdingAmountTest() throws ApiException {
+        String contractId = null;
+        String eventValue = null;
+        String eventCurrency = null;
+        GetContractEquityWithholdingAmount200Response response = api.getContractEquityWithholdingAmount(contractId, eventValue, eventCurrency)
                 .execute();
         // TODO: test validations
     }

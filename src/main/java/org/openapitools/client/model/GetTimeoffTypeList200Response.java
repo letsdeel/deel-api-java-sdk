@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * GetTimeoffTypeList200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:45:24.021173966Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetTimeoffTypeList200Response {
   /**
    * Predefined time-off types. Possible values include &#39;VACATION&#39;, &#39;SICK_LEAVE&#39;, and &#39;OTHER&#39;.

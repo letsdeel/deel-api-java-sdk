@@ -39,6 +39,7 @@ import java.io.File;
 import org.openapitools.client.model.GenericResultCreated;
 import org.openapitools.client.model.GenericResultUpdated;
 import org.openapitools.client.model.GetContractById200Response;
+import org.openapitools.client.model.GetContractEquityWithholdingAmount200Response;
 import org.openapitools.client.model.GetContractList200Response;
 import org.openapitools.client.model.GetContractListCurrenciesParameter;
 import org.openapitools.client.model.GetContractPaymentDates200Response;
@@ -1471,6 +1472,187 @@ public class ContractsApi {
      */
     public APIgetContractByIdRequest getContractById(String contractId) {
         return new APIgetContractByIdRequest(contractId);
+    }
+    private okhttp3.Call getContractEquityWithholdingAmountCall(String contractId, String eventValue, String eventCurrency, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/contracts/{contract_id}/equity_withholding_estimate"
+            .replace("{" + "contract_id" + "}", localVarApiClient.escapeString(contractId.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        if (eventValue != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("event_value", eventValue));
+        }
+
+        if (eventCurrency != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("event_currency", eventCurrency));
+        }
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "deelToken", "oauth2" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call getContractEquityWithholdingAmountValidateBeforeCall(String contractId, String eventValue, String eventCurrency, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'contractId' is set
+        if (contractId == null) {
+            throw new ApiException("Missing the required parameter 'contractId' when calling getContractEquityWithholdingAmount(Async)");
+        }
+
+        // verify the required parameter 'eventValue' is set
+        if (eventValue == null) {
+            throw new ApiException("Missing the required parameter 'eventValue' when calling getContractEquityWithholdingAmount(Async)");
+        }
+
+        // verify the required parameter 'eventCurrency' is set
+        if (eventCurrency == null) {
+            throw new ApiException("Missing the required parameter 'eventCurrency' when calling getContractEquityWithholdingAmount(Async)");
+        }
+
+        return getContractEquityWithholdingAmountCall(contractId, eventValue, eventCurrency, _callback);
+
+    }
+
+
+    private ApiResponse<GetContractEquityWithholdingAmount200Response> getContractEquityWithholdingAmountWithHttpInfo(String contractId, String eventValue, String eventCurrency) throws ApiException {
+        okhttp3.Call localVarCall = getContractEquityWithholdingAmountValidateBeforeCall(contractId, eventValue, eventCurrency, null);
+        Type localVarReturnType = new TypeToken<GetContractEquityWithholdingAmount200Response>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    private okhttp3.Call getContractEquityWithholdingAmountAsync(String contractId, String eventValue, String eventCurrency, final ApiCallback<GetContractEquityWithholdingAmount200Response> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = getContractEquityWithholdingAmountValidateBeforeCall(contractId, eventValue, eventCurrency, _callback);
+        Type localVarReturnType = new TypeToken<GetContractEquityWithholdingAmount200Response>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+
+    public class APIgetContractEquityWithholdingAmountRequest {
+        private final String contractId;
+        private final String eventValue;
+        private final String eventCurrency;
+
+        private APIgetContractEquityWithholdingAmountRequest(String contractId, String eventValue, String eventCurrency) {
+            this.contractId = contractId;
+            this.eventValue = eventValue;
+            this.eventCurrency = eventCurrency;
+        }
+
+        /**
+         * Build call for getContractEquityWithholdingAmount
+         * @param _callback ApiCallback API callback
+         * @return Call to execute
+         * @throws ApiException If fail to serialize the request body object
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
+         </table>
+         */
+        public okhttp3.Call buildCall(final ApiCallback _callback) throws ApiException {
+            return getContractEquityWithholdingAmountCall(contractId, eventValue, eventCurrency, _callback);
+        }
+
+        /**
+         * Execute getContractEquityWithholdingAmount request
+         * @return GetContractEquityWithholdingAmount200Response
+         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
+         </table>
+         */
+        public GetContractEquityWithholdingAmount200Response execute() throws ApiException {
+            ApiResponse<GetContractEquityWithholdingAmount200Response> localVarResp = getContractEquityWithholdingAmountWithHttpInfo(contractId, eventValue, eventCurrency);
+            return localVarResp.getData();
+        }
+
+        /**
+         * Execute getContractEquityWithholdingAmount request with HTTP info returned
+         * @return ApiResponse&lt;GetContractEquityWithholdingAmount200Response&gt;
+         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
+         </table>
+         */
+        public ApiResponse<GetContractEquityWithholdingAmount200Response> executeWithHttpInfo() throws ApiException {
+            return getContractEquityWithholdingAmountWithHttpInfo(contractId, eventValue, eventCurrency);
+        }
+
+        /**
+         * Execute getContractEquityWithholdingAmount request (asynchronously)
+         * @param _callback The callback to be executed when the API call finishes
+         * @return The request call
+         * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
+         </table>
+         */
+        public okhttp3.Call executeAsync(final ApiCallback<GetContractEquityWithholdingAmount200Response> _callback) throws ApiException {
+            return getContractEquityWithholdingAmountAsync(contractId, eventValue, eventCurrency, _callback);
+        }
+    }
+
+    /**
+     * Get an estimate of equity withholding amount.
+     * Get an estimate of the withholding amount required as well as the assumptions behind the estimate, given a contract id, event amount and currency code.  **Token scopes**: &#x60;contracts:read&#x60;, &#x60;global-payroll:read&#x60;
+     * @param contractId Deel contract id. (required)
+     * @param eventValue The monetary value of the equity event. (required)
+     * @param eventCurrency Three-letter currency code for the payment, following ISO 4217. (required)
+     * @return APIgetContractEquityWithholdingAmountRequest
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation. </td><td>  -  </td></tr>
+     </table>
+     */
+    public APIgetContractEquityWithholdingAmountRequest getContractEquityWithholdingAmount(String contractId, String eventValue, String eventCurrency) {
+        return new APIgetContractEquityWithholdingAmountRequest(contractId, eventValue, eventCurrency);
     }
     private okhttp3.Call getContractListCall(String afterCursor, String limit, String orderDirection, List<String> types, List<String> statuses, String teamId, String externalId, List<String> countries, GetContractListCurrenciesParameter currencies, String search, String sortBy, final ApiCallback _callback) throws ApiException {
         String basePath = null;

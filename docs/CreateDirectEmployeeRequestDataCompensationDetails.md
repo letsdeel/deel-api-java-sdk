@@ -8,8 +8,8 @@ The compensation details of the employee
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**salary** | **Float** |  |  |
-|**currency** | **String** |  |  |
+|**salary** | **Float** | The salary of the employee |  |
+|**currency** | **String** | The currency of the salary |  |
 
 
 

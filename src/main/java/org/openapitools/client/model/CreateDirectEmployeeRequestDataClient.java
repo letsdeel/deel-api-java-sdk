@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.client.model.CreateDirectEmployeeRequestDataClientDepartment;
+import org.openapitools.client.model.CreateDirectEmployeeRequestDataClientLegalEntity;
 import org.openapitools.client.model.CreateDirectEmployeeRequestDataClientTeam;
 
 import com.google.gson.Gson;
@@ -50,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * The entity that is hiring the employee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:45:24.021173966Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateDirectEmployeeRequestDataClient {
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
@@ -65,7 +66,7 @@ public class CreateDirectEmployeeRequestDataClient {
   public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
   @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
   @javax.annotation.Nonnull
-  private CreateDirectEmployeeRequestDataClientDepartment legalEntity;
+  private CreateDirectEmployeeRequestDataClientLegalEntity legalEntity;
 
   public CreateDirectEmployeeRequestDataClient() {
   }
@@ -108,7 +109,7 @@ public class CreateDirectEmployeeRequestDataClient {
   }
 
 
-  public CreateDirectEmployeeRequestDataClient legalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestDataClientDepartment legalEntity) {
+  public CreateDirectEmployeeRequestDataClient legalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestDataClientLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
     return this;
   }
@@ -118,11 +119,11 @@ public class CreateDirectEmployeeRequestDataClient {
    * @return legalEntity
    */
   @javax.annotation.Nonnull
-  public CreateDirectEmployeeRequestDataClientDepartment getLegalEntity() {
+  public CreateDirectEmployeeRequestDataClientLegalEntity getLegalEntity() {
     return legalEntity;
   }
 
-  public void setLegalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestDataClientDepartment legalEntity) {
+  public void setLegalEntity(@javax.annotation.Nonnull CreateDirectEmployeeRequestDataClientLegalEntity legalEntity) {
     this.legalEntity = legalEntity;
   }
 
@@ -221,7 +222,7 @@ public class CreateDirectEmployeeRequestDataClient {
         CreateDirectEmployeeRequestDataClientDepartment.validateJsonElement(jsonObj.get("department"));
       }
       // validate the required field `legal_entity`
-      CreateDirectEmployeeRequestDataClientDepartment.validateJsonElement(jsonObj.get("legal_entity"));
+      CreateDirectEmployeeRequestDataClientLegalEntity.validateJsonElement(jsonObj.get("legal_entity"));
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
-import org.openapitools.client.model.CreateDirectEmployeeRequestDataClientDepartment;
+import org.openapitools.client.model.HrisDirectEmployeeToCreateContainerDataClientLegalEntity;
 import org.openapitools.client.model.HrisPositionToChangeContainerDataAddInner;
 import org.openapitools.client.model.HrisPositionToChangeContainerDataEditInner;
 
@@ -54,7 +54,7 @@ import org.openapitools.client.JSON;
 /**
  * HrisPositionToChangeContainerData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:45:24.021173966Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
 public class HrisPositionToChangeContainerData {
   public static final String SERIALIZED_NAME_ADD = "add";
   @SerializedName(SERIALIZED_NAME_ADD)
@@ -69,7 +69,7 @@ public class HrisPositionToChangeContainerData {
   public static final String SERIALIZED_NAME_DELETE = "delete";
   @SerializedName(SERIALIZED_NAME_DELETE)
   @javax.annotation.Nullable
-  private List<CreateDirectEmployeeRequestDataClientDepartment> delete = new ArrayList<>();
+  private List<HrisDirectEmployeeToCreateContainerDataClientLegalEntity> delete = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PROFILE_ID = "profile_id";
   @SerializedName(SERIALIZED_NAME_PROFILE_ID)
@@ -133,12 +133,12 @@ public class HrisPositionToChangeContainerData {
   }
 
 
-  public HrisPositionToChangeContainerData delete(@javax.annotation.Nullable List<CreateDirectEmployeeRequestDataClientDepartment> delete) {
+  public HrisPositionToChangeContainerData delete(@javax.annotation.Nullable List<HrisDirectEmployeeToCreateContainerDataClientLegalEntity> delete) {
     this.delete = delete;
     return this;
   }
 
-  public HrisPositionToChangeContainerData addDeleteItem(CreateDirectEmployeeRequestDataClientDepartment deleteItem) {
+  public HrisPositionToChangeContainerData addDeleteItem(HrisDirectEmployeeToCreateContainerDataClientLegalEntity deleteItem) {
     if (this.delete == null) {
       this.delete = new ArrayList<>();
     }
@@ -151,11 +151,11 @@ public class HrisPositionToChangeContainerData {
    * @return delete
    */
   @javax.annotation.Nullable
-  public List<CreateDirectEmployeeRequestDataClientDepartment> getDelete() {
+  public List<HrisDirectEmployeeToCreateContainerDataClientLegalEntity> getDelete() {
     return delete;
   }
 
-  public void setDelete(@javax.annotation.Nullable List<CreateDirectEmployeeRequestDataClientDepartment> delete) {
+  public void setDelete(@javax.annotation.Nullable List<HrisDirectEmployeeToCreateContainerDataClientLegalEntity> delete) {
     this.delete = delete;
   }
 
@@ -306,7 +306,7 @@ public class HrisPositionToChangeContainerData {
 
           // validate the optional field `delete` (array)
           for (int i = 0; i < jsonArraydelete.size(); i++) {
-            CreateDirectEmployeeRequestDataClientDepartment.validateJsonElement(jsonArraydelete.get(i));
+            HrisDirectEmployeeToCreateContainerDataClientLegalEntity.validateJsonElement(jsonArraydelete.get(i));
           };
         }
       }

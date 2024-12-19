@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateDirectEmployeeRequestDataClientTeam
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:45:24.021173966Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateDirectEmployeeRequestDataClientTeam {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -70,7 +70,7 @@ public class CreateDirectEmployeeRequestDataClientTeam {
   }
 
   /**
-   * Get id
+   * The team that the employee is part of
    * @return id
    */
   @javax.annotation.Nonnull
@@ -89,7 +89,7 @@ public class CreateDirectEmployeeRequestDataClientTeam {
   }
 
   /**
-   * Get directManagerId
+   * The direct manager of the employee
    * @return directManagerId
    */
   @javax.annotation.Nullable

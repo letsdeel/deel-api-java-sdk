@@ -2,6 +2,7 @@
 
 # CreateDirectEmployee201ResponseDataCompensationDetails
 
+The compensation details of the employee
 
 ## Properties
 

@@ -7,9 +7,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**legalEntity** | [**CreateDirectEmployeeRequestDataClientDepartment**](CreateDirectEmployeeRequestDataClientDepartment.md) |  |  |
+|**legalEntity** | [**HrisDirectEmployeeToCreateContainerDataClientLegalEntity**](HrisDirectEmployeeToCreateContainerDataClientLegalEntity.md) |  |  |
 |**team** | [**HrisDirectEmployeeToCreateContainerDataClientTeam**](HrisDirectEmployeeToCreateContainerDataClientTeam.md) |  |  |
-|**department** | [**CreateDirectEmployeeRequestDataClientDepartment**](CreateDirectEmployeeRequestDataClientDepartment.md) |  |  [optional] |
+|**department** | [**HrisDirectEmployeeToCreateContainerDataClientLegalEntity**](HrisDirectEmployeeToCreateContainerDataClientLegalEntity.md) |  |  [optional] |
 
 
 

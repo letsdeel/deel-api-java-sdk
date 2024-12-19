@@ -47,9 +47,9 @@ import java.util.Set;
 import org.openapitools.client.JSON;
 
 /**
- * CreateDirectEmployee201ResponseDataEmployee
+ * The person that is being hired
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:45:24.021173966Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateDirectEmployee201ResponseDataEmployee {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -90,7 +90,7 @@ public class CreateDirectEmployee201ResponseDataEmployee {
   }
 
   /**
-   * Get email
+   * The personal email of the person being hired
    * @return email
    */
   @javax.annotation.Nonnull
@@ -109,7 +109,7 @@ public class CreateDirectEmployee201ResponseDataEmployee {
   }
 
   /**
-   * Get lastName
+   * The last name of the person being hired
    * @return lastName
    */
   @javax.annotation.Nonnull
@@ -128,7 +128,7 @@ public class CreateDirectEmployee201ResponseDataEmployee {
   }
 
   /**
-   * Get firstName
+   * The first name of the person being hired
    * @return firstName
    */
   @javax.annotation.Nonnull
@@ -147,7 +147,7 @@ public class CreateDirectEmployee201ResponseDataEmployee {
   }
 
   /**
-   * Get workEmail
+   * The work email of the person being hired
    * @return workEmail
    */
   @javax.annotation.Nullable
@@ -166,7 +166,7 @@ public class CreateDirectEmployee201ResponseDataEmployee {
   }
 
   /**
-   * Get externalId
+   * An external identifier for the person being hired
    * @return externalId
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class CreateDirectEmployee201ResponseDataEmployee {
   }
 
   /**
-   * Get nationality
+   * The nationality of the person being hired
    * @return nationality
    */
   @javax.annotation.Nonnull

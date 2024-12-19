@@ -10,7 +10,7 @@ The entity that is hiring the employee
 |------------ | ------------- | ------------- | -------------|
 |**team** | [**CreateDirectEmployeeRequestDataClientTeam**](CreateDirectEmployeeRequestDataClientTeam.md) |  |  |
 |**department** | [**CreateDirectEmployeeRequestDataClientDepartment**](CreateDirectEmployeeRequestDataClientDepartment.md) |  |  [optional] |
-|**legalEntity** | [**CreateDirectEmployeeRequestDataClientDepartment**](CreateDirectEmployeeRequestDataClientDepartment.md) |  |  |
+|**legalEntity** | [**CreateDirectEmployeeRequestDataClientLegalEntity**](CreateDirectEmployeeRequestDataClientLegalEntity.md) |  |  |
 
 
 

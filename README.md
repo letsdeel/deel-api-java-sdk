@@ -2,7 +2,7 @@
 
 Deel REST API
 - API version: 1.25.0
-  - Build date: 2024-12-18T16:45:24.021173966Z[GMT]
+  - Build date: 2024-12-19T15:39:23.803918573Z[GMT]
   - Generator version: 7.10.0
 
 Deel REST API
@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.deel</groupId>
   <artifactId>deel-api-java-sdk</artifactId>
-  <version>test-1.0.6</version>
+  <version>2.1.23</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -57,7 +57,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.deel:deel-api-java-sdk:test-1.0.6"
+     implementation "com.deel:deel-api-java-sdk:2.1.23"
   }
 ```
 
@@ -71,7 +71,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/deel-api-java-sdk-test-1.0.6.jar`
+* `target/deel-api-java-sdk-2.1.23.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -161,6 +161,7 @@ Class | Method | HTTP request | Description
 *ContractsApi* | [**editContractDocument**](docs/ContractsApi.md#editContractDocument) | **PUT** /contracts/{contract_id}/documents | Edit the file attached to contract document.
 *ContractsApi* | [**getAlternateEmailsByContractId**](docs/ContractsApi.md#getAlternateEmailsByContractId) | **GET** /contracts/{contract_id}/alternate_emails | Find contract emails by ID
 *ContractsApi* | [**getContractById**](docs/ContractsApi.md#getContractById) | **GET** /contracts/{contract_id} | Retrieve a single contract
+*ContractsApi* | [**getContractEquityWithholdingAmount**](docs/ContractsApi.md#getContractEquityWithholdingAmount) | **GET** /contracts/{contract_id}/equity_withholding_estimate | Get an estimate of equity withholding amount.
 *ContractsApi* | [**getContractList**](docs/ContractsApi.md#getContractList) | **GET** /contracts | List of contracts
 *ContractsApi* | [**getContractPaymentDates**](docs/ContractsApi.md#getContractPaymentDates) | **GET** /contracts/{contract_id}/payment_cycles | Retrieve contractor payment dates
 *ContractsApi* | [**getContractTemplates**](docs/ContractsApi.md#getContractTemplates) | **GET** /contract-templates | Retrieve contract templates
@@ -569,6 +570,7 @@ Class | Method | HTTP request | Description
  - [CreateDirectEmployeeRequestData](docs/CreateDirectEmployeeRequestData.md)
  - [CreateDirectEmployeeRequestDataClient](docs/CreateDirectEmployeeRequestDataClient.md)
  - [CreateDirectEmployeeRequestDataClientDepartment](docs/CreateDirectEmployeeRequestDataClientDepartment.md)
+ - [CreateDirectEmployeeRequestDataClientLegalEntity](docs/CreateDirectEmployeeRequestDataClientLegalEntity.md)
  - [CreateDirectEmployeeRequestDataClientTeam](docs/CreateDirectEmployeeRequestDataClientTeam.md)
  - [CreateDirectEmployeeRequestDataCompensationDetails](docs/CreateDirectEmployeeRequestDataCompensationDetails.md)
  - [CreateDirectEmployeeRequestDataEmployee](docs/CreateDirectEmployeeRequestDataEmployee.md)
@@ -1013,6 +1015,9 @@ Class | Method | HTTP request | Description
  - [GetContractById200ResponseDataQuoteBenefitsInner](docs/GetContractById200ResponseDataQuoteBenefitsInner.md)
  - [GetContractById200ResponseDataSeniority](docs/GetContractById200ResponseDataSeniority.md)
  - [GetContractById200ResponseDataSeniorityId](docs/GetContractById200ResponseDataSeniorityId.md)
+ - [GetContractEquityWithholdingAmount200Response](docs/GetContractEquityWithholdingAmount200Response.md)
+ - [GetContractEquityWithholdingAmount200ResponseData](docs/GetContractEquityWithholdingAmount200ResponseData.md)
+ - [GetContractEquityWithholdingAmount200ResponseDataBreakdownInner](docs/GetContractEquityWithholdingAmount200ResponseDataBreakdownInner.md)
  - [GetContractList200Response](docs/GetContractList200Response.md)
  - [GetContractList200ResponseDataInner](docs/GetContractList200ResponseDataInner.md)
  - [GetContractList200ResponseDataInnerClient](docs/GetContractList200ResponseDataInnerClient.md)
@@ -1319,6 +1324,7 @@ Class | Method | HTTP request | Description
  - [HrisDirectEmployeeToCreateContainer](docs/HrisDirectEmployeeToCreateContainer.md)
  - [HrisDirectEmployeeToCreateContainerData](docs/HrisDirectEmployeeToCreateContainerData.md)
  - [HrisDirectEmployeeToCreateContainerDataClient](docs/HrisDirectEmployeeToCreateContainerDataClient.md)
+ - [HrisDirectEmployeeToCreateContainerDataClientLegalEntity](docs/HrisDirectEmployeeToCreateContainerDataClientLegalEntity.md)
  - [HrisDirectEmployeeToCreateContainerDataClientTeam](docs/HrisDirectEmployeeToCreateContainerDataClientTeam.md)
  - [HrisDirectEmployeeToCreateContainerDataCompensationDetails](docs/HrisDirectEmployeeToCreateContainerDataCompensationDetails.md)
  - [HrisDirectEmployeeToCreateContainerDataEmployee](docs/HrisDirectEmployeeToCreateContainerDataEmployee.md)

@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * The compensation details of the employee
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:45:24.021173966Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateDirectEmployeeRequestDataCompensationDetails {
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
@@ -69,7 +69,7 @@ public class CreateDirectEmployeeRequestDataCompensationDetails {
   }
 
   /**
-   * Get salary
+   * The salary of the employee
    * minimum: 0
    * @return salary
    */
@@ -89,7 +89,7 @@ public class CreateDirectEmployeeRequestDataCompensationDetails {
   }
 
   /**
-   * Get currency
+   * The currency of the salary
    * @return currency
    */
   @javax.annotation.Nonnull

@@ -58,6 +58,14 @@ public class GetBackgroundChecksByContractId200ResponseDataTest {
     }
 
     /**
+     * Test the property 'result'
+     */
+    @Test
+    public void resultTest() {
+        // TODO: test result
+    }
+
+    /**
      * Test the property 'status'
      */
     @Test
@@ -82,6 +90,14 @@ public class GetBackgroundChecksByContractId200ResponseDataTest {
     }
 
     /**
+     * Test the property 'contractId'
+     */
+    @Test
+    public void contractIdTest() {
+        // TODO: test contractId
+    }
+
+    /**
      * Test the property 'isComplete'
      */
     @Test
@@ -95,6 +111,14 @@ public class GetBackgroundChecksByContractId200ResponseDataTest {
     @Test
     public void completedAtTest() {
         // TODO: test completedAt
+    }
+
+    /**
+     * Test the property 'candidateEmail'
+     */
+    @Test
+    public void candidateEmailTest() {
+        // TODO: test candidateEmail
     }
 
     /**

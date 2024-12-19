@@ -50,14 +50,14 @@ import org.openapitools.client.JSON;
 /**
  * CreateDirectEmployeeRequestDataEmploymentOneOf
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-18T16:45:24.021173966Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateDirectEmployeeRequestDataEmploymentOneOf {
   /**
-   * Gets or Sets type
+   * The type of employment
    */
   @JsonAdapter(TypeEnum.Adapter.class)
   public enum TypeEnum {
-    PART_TIME("Part-time");
+    PART_TIME("PART_TIME");
 
     private String value;
 
@@ -141,7 +141,7 @@ public class CreateDirectEmployeeRequestDataEmploymentOneOf {
   }
 
   /**
-   * Get type
+   * The type of employment
    * @return type
    */
   @javax.annotation.Nonnull
@@ -160,7 +160,7 @@ public class CreateDirectEmployeeRequestDataEmploymentOneOf {
   }
 
   /**
-   * Get endDate
+   * The end date of the employment
    * @return endDate
    */
   @javax.annotation.Nullable
@@ -179,7 +179,7 @@ public class CreateDirectEmployeeRequestDataEmploymentOneOf {
   }
 
   /**
-   * Get jobTitle
+   * The job title of the employment
    * @return jobTitle
    */
   @javax.annotation.Nonnull
@@ -198,7 +198,7 @@ public class CreateDirectEmployeeRequestDataEmploymentOneOf {
   }
 
   /**
-   * Get seniority
+   * The seniority of the employment
    * @return seniority
    */
   @javax.annotation.Nonnull
@@ -217,7 +217,7 @@ public class CreateDirectEmployeeRequestDataEmploymentOneOf {
   }
 
   /**
-   * Get startDate
+   * The start date of the employment
    * @return startDate
    */
   @javax.annotation.Nonnull
@@ -236,7 +236,7 @@ public class CreateDirectEmployeeRequestDataEmploymentOneOf {
   }
 
   /**
-   * Get partTimePercentage
+   * The percentage of PART_TIME employment
    * minimum: 1
    * maximum: 99
    * @return partTimePercentage

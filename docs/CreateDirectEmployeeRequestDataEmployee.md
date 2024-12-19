@@ -8,14 +8,14 @@ The person that is being hired
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**email** | **String** |  |  |
-|**state** | **String** |  |  [optional] |
-|**country** | **String** |  |  |
-|**lastName** | **String** |  |  |
-|**firstName** | **String** |  |  |
-|**workEmail** | **String** |  |  [optional] |
-|**externalId** | **String** |  |  [optional] |
-|**nationality** | **String** |  |  |
+|**email** | **String** | The personal email of the person being hired |  |
+|**state** | **String** | The state of the person being hired |  [optional] |
+|**country** | **String** | The country of the person being hired |  |
+|**lastName** | **String** | The last name of the person being hired |  |
+|**firstName** | **String** | The first name of the person being hired |  |
+|**workEmail** | **String** | The work email of the person being hired |  [optional] |
+|**externalId** | **String** | An external identifier for the person being hired |  [optional] |
+|**nationality** | **String** | The nationality of the person being hired |  |
 
 
 

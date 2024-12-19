@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.client.model.CreateDirectEmployeeRequestDataClientDepartment;
+import org.openapitools.client.model.CreateDirectEmployeeRequestDataClientLegalEntity;
 import org.openapitools.client.model.CreateDirectEmployeeRequestDataClientTeam;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**id** | **UUID** |  |  |
+|**id** | **UUID** | The department that the employee is part of |  |
 
 
 

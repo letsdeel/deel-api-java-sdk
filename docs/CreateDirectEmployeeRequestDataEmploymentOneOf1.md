@@ -8,10 +8,10 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**type** | [**TypeEnum**](#TypeEnum) |  |  |
-|**endDate** | **LocalDate** |  |  [optional] |
-|**jobTitle** | **String** |  |  |
-|**seniority** | **String** |  |  |
-|**startDate** | **LocalDate** |  |  |
+|**endDate** | **LocalDate** | The end date of the employment |  [optional] |
+|**jobTitle** | **String** | The job title of the employment |  |
+|**seniority** | **String** | The seniority of the employment |  |
+|**startDate** | **LocalDate** | The start date of the employment |  |
 
 
 
@@ -19,7 +19,7 @@
 
 | Name | Value |
 |---- | -----|
-| FULL_TIME | &quot;Full-time&quot; |
+| FULL_TIME | &quot;FULL_TIME&quot; |
 
 
 

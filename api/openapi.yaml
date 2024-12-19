@@ -13526,26 +13526,6 @@ paths:
       - Background Checks
       x-accepts:
       - application/json
-  /integrations/consent:
-    get:
-      description: Retrieve the consent for the authenticated user or organization.
-      operationId: getConsent
-      parameters: []
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/getConsent_200_response'
-          description: Successful operation.
-      security:
-      - deelToken: []
-      - oauth2: []
-      summary: Get integration consent
-      tags:
-      - Integrations
-      x-accepts:
-      - application/json
   /gp/workers/{id}/payslips:
     get:
       description: |-
@@ -13926,93 +13906,6 @@ paths:
       summary: Create child worker relation with external Id
       tags:
       - Worker Relations
-      x-content-type: application/json
-      x-accepts:
-      - application/json
-  /invoice-adjustments/{id}/reviews:
-    post:
-      description: |-
-        Update an existing invoice adjustment. It is not possible to update VAT adjustments, we recommend you to delete the existing VAT adjust and create a new one.
-         **Token scopes**: `invoice-adjustments:write`
-      operationId: updateInvoiceAdjustmentById
-      parameters:
-      - description: ID of an existing invoice adjustment.
-        example: 5f4e3f3b-4b8b-4b1b-8e0b-1b1b1b1b1b1b
-        explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/updateInvoiceAdjustmentById_request'
-        required: true
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/updateAdjustment_200_response'
-          description: Successful operation.
-        "201":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/GenericResultCreated'
-          description: Successful operation.
-        "400":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "404":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "405":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "429":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-      security:
-      - deelToken: []
-      - oauth2:
-        - invoice-adjustments:write
-      summary: Update an invoice adjustment
-      tags:
-      - Invoices
       x-content-type: application/json
       x-accepts:
       - application/json
@@ -14993,45 +14886,6 @@ paths:
       x-content-type: application/json
       x-accepts:
       - application/json
-  /invoice-adjustments/{id}:
-    patch:
-      description: |-
-        Update an invoice adjustment.
-         **Token scopes**: `invoice-adjustments:write`
-      operationId: updateInvoiceAdjustment
-      parameters:
-      - description: Invoice adjustment id.
-        example: 123e4567-e89b-12d3-a456-426614174000
-        explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/updateInvoiceAdjustment_request'
-        required: true
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/updateInvoiceAdjustment_200_response'
-          description: Successful operation.
-      security:
-      - deelToken: []
-      - oauth2:
-        - invoice-adjustments:write
-      summary: Update an invoice adjustment
-      tags:
-      - Invoices
-      x-content-type: application/json
-      x-accepts:
-      - application/json
   /hris/worker_relations/profile/external/{profileId}/parent:
     put:
       description: |-
@@ -15854,6 +15708,62 @@ paths:
       - Custom Fields
       x-accepts:
       - application/json
+  /contracts/{contract_id}/equity_withholding_estimate:
+    get:
+      description: |-
+        Get an estimate of the withholding amount required as well as the assumptions behind the estimate, given a contract id, event amount and currency code.
+         **Token scopes**: `contracts:read`, `global-payroll:read`
+      operationId: getContractEquityWithholdingAmount
+      parameters:
+      - description: Deel contract id.
+        example: 37nex2x
+        explode: false
+        in: path
+        name: contract_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      - description: The monetary value of the equity event.
+        example: "10000.00"
+        explode: true
+        in: query
+        name: event_value
+        required: true
+        schema:
+          maxLength: 50
+          minLength: 1
+          type: string
+        style: form
+      - description: "Three-letter currency code for the payment, following ISO 4217."
+        example: USD
+        explode: true
+        in: query
+        name: event_currency
+        required: true
+        schema:
+          maxLength: 3
+          minLength: 3
+          pattern: "^[A-Z]{3}$"
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getContractEquityWithholdingAmount_200_response'
+          description: Successful operation.
+      security:
+      - deelToken: []
+      - oauth2:
+        - contracts:read
+        - global-payroll:read
+      summary: Get an estimate of equity withholding amount.
+      tags:
+      - Contracts
+      x-accepts:
+      - application/json
   /equity/exercise/{public_id}:
     patch:
       description: |-
@@ -16022,90 +15932,6 @@ paths:
       x-content-type: application/json
       x-accepts:
       - application/json
-  /contracts/{contract_id}/off-cycle-payments/{id}:
-    get:
-      description: |-
-        Retrieve a single off-cycle payment.
-         **Token scopes**: `off-cycle-payments:read`
-      operationId: getOffCyclePaymentByContractAndId
-      parameters:
-      - description: Deel contract id.
-        example: mqj9gkr
-        explode: false
-        in: path
-        name: contract_id
-        required: true
-        schema:
-          type: string
-        style: simple
-      - description: Deel off-cycle payment id.
-        example: f47ac10b-58cc-4372-a567-0e02b2c3d479
-        explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          format: uuid
-          type: string
-        style: simple
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/getOffCyclePaymentByContractAndId_200_response'
-          description: Successful operation.
-        "400":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "404":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "405":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "429":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-      security:
-      - deelToken: []
-      - oauth2:
-        - off-cycle-payments:read
-      summary: Retrieve a single off-cycle payment
-      tags:
-      - Off-cycle Payments
-      x-accepts:
-      - application/json
   /immigration/client/cases:
     post:
       description: |-
@@ -16134,6 +15960,26 @@ paths:
       tags:
       - Immigration
       x-content-type: application/json
+      x-accepts:
+      - application/json
+  /integrations/consent:
+    get:
+      description: Retrieve the consent for the authenticated user or organization.
+      operationId: getConsent
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getConsent_200_response'
+          description: Successful operation.
+      security:
+      - deelToken: []
+      - oauth2: []
+      summary: Get integration consent
+      tags:
+      - Integrations
       x-accepts:
       - application/json
   /people/custom_fields/{id}:
@@ -16197,6 +16043,45 @@ paths:
       summary: Get custom field from people by id
       tags:
       - Custom Fields
+      x-accepts:
+      - application/json
+  /invoice-adjustments/{id}:
+    patch:
+      description: |-
+        Update an invoice adjustment.
+         **Token scopes**: `invoice-adjustments:write`
+      operationId: updateInvoiceAdjustment
+      parameters:
+      - description: Invoice adjustment id.
+        example: 123e4567-e89b-12d3-a456-426614174000
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/updateInvoiceAdjustment_request'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/updateInvoiceAdjustment_200_response'
+          description: Successful operation.
+      security:
+      - deelToken: []
+      - oauth2:
+        - invoice-adjustments:write
+      summary: Update an invoice adjustment
+      tags:
+      - Invoices
+      x-content-type: application/json
       x-accepts:
       - application/json
   /roles/{roleId}:
@@ -16265,6 +16150,93 @@ paths:
       summary: Update organization custom role
       tags:
       - Organizations
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+  /invoice-adjustments/{id}/reviews:
+    post:
+      description: |-
+        Update an existing invoice adjustment. It is not possible to update VAT adjustments, we recommend you to delete the existing VAT adjust and create a new one.
+         **Token scopes**: `invoice-adjustments:write`
+      operationId: updateInvoiceAdjustmentById
+      parameters:
+      - description: ID of an existing invoice adjustment.
+        example: 5f4e3f3b-4b8b-4b1b-8e0b-1b1b1b1b1b1b
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/updateInvoiceAdjustmentById_request'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/updateAdjustment_200_response'
+          description: Successful operation.
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenericResultCreated'
+          description: Successful operation.
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "405":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "429":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+      security:
+      - deelToken: []
+      - oauth2:
+        - invoice-adjustments:write
+      summary: Update an invoice adjustment
+      tags:
+      - Invoices
       x-content-type: application/json
       x-accepts:
       - application/json
@@ -16593,6 +16565,90 @@ paths:
       summary: Delete Contract custom field by Id
       tags:
       - Custom Fields
+      x-accepts:
+      - application/json
+  /contracts/{contract_id}/off-cycle-payments/{id}:
+    get:
+      description: |-
+        Retrieve a single off-cycle payment.
+         **Token scopes**: `off-cycle-payments:read`
+      operationId: getOffCyclePaymentByContractAndId
+      parameters:
+      - description: Deel contract id.
+        example: mqj9gkr
+        explode: false
+        in: path
+        name: contract_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      - description: Deel off-cycle payment id.
+        example: f47ac10b-58cc-4372-a567-0e02b2c3d479
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: uuid
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getOffCyclePaymentByContractAndId_200_response'
+          description: Successful operation.
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "405":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "429":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+      security:
+      - deelToken: []
+      - oauth2:
+        - off-cycle-payments:read
+      summary: Retrieve a single off-cycle payment
+      tags:
+      - Off-cycle Payments
       x-accepts:
       - application/json
 components:
@@ -46831,9 +46887,13 @@ components:
     createDirectEmployee_request_data_client_team:
       properties:
         id:
+          description: The team that the employee is part of
+          example: cbb25647-31e0-485d-9d5f-bdd48296aa1e
           format: uuid
           type: string
         direct_manager_id:
+          description: The direct manager of the employee
+          example: 0d60f277-f66f-4fca-a5c8-c5c642924505
           format: uuid
           type: string
       required:
@@ -46842,6 +46902,18 @@ components:
     createDirectEmployee_request_data_client_department:
       properties:
         id:
+          description: The department that the employee is part of
+          example: 518c6bee-d798-4785-930f-535f09f3453d
+          format: uuid
+          type: string
+      required:
+      - id
+      type: object
+    createDirectEmployee_request_data_client_legal_entity:
+      properties:
+        id:
+          description: The legal entity that the employee is part of
+          example: cfebc769-abe9-4646-83b9-28cf79f23a0d
           format: uuid
           type: string
       required:
@@ -46855,7 +46927,7 @@ components:
         department:
           $ref: '#/components/schemas/createDirectEmployee_request_data_client_department'
         legal_entity:
-          $ref: '#/components/schemas/createDirectEmployee_request_data_client_department'
+          $ref: '#/components/schemas/createDirectEmployee_request_data_client_legal_entity'
       required:
       - legal_entity
       - team
@@ -46864,34 +46936,50 @@ components:
       description: The person that is being hired
       properties:
         email:
+          description: The personal email of the person being hired
+          example: email@email.com
           format: email
           maxLength: 255
           minLength: 3
           type: string
         state:
+          description: The state of the person being hired
+          example: CA
           maxLength: 50
           minLength: 1
           type: string
         country:
+          description: The country of the person being hired
+          example: US
           maxLength: 2
           minLength: 2
           type: string
         last_name:
+          description: The last name of the person being hired
+          example: Doe
           maxLength: 100
           minLength: 3
           type: string
         first_name:
+          description: The first name of the person being hired
+          example: John
           maxLength: 100
           minLength: 3
           type: string
         work_email:
+          description: The work email of the person being hired
+          example: work@email.com
           format: email
           maxLength: 255
           minLength: 3
           type: string
         external_id:
+          description: An external identifier for the person being hired
+          example: "1234"
           type: string
         nationality:
+          description: The nationality of the person being hired
+          example: BR
           maxLength: 2
           minLength: 2
           type: string
@@ -46905,20 +46993,31 @@ components:
     createDirectEmployee_request_data_employment_oneOf:
       properties:
         type:
+          description: The type of employment
           enum:
-          - Part-time
+          - PART_TIME
           type: string
         end_date:
+          description: The end date of the employment
+          example: 2029-01-01
           format: date
           type: string
         job_title:
+          description: The job title of the employment
+          example: Software Engineer
           type: string
         seniority:
+          description: The seniority of the employment
+          example: Senior
           type: string
         start_date:
+          description: The start date of the employment
+          example: 2020-01-01
           format: date
           type: string
         part_time_percentage:
+          description: The percentage of PART_TIME employment
+          example: 23
           maximum: 99
           minimum: 1
           type: number
@@ -46933,16 +47032,24 @@ components:
       properties:
         type:
           enum:
-          - Full-time
+          - FULL_TIME
           type: string
         end_date:
+          description: The end date of the employment
+          example: 2029-01-01
           format: date
           type: string
         job_title:
+          description: The job title of the employment
+          example: Software Engineer
           type: string
         seniority:
+          description: The seniority of the employment
+          example: Senior
           type: string
         start_date:
+          description: The start date of the employment
+          example: 2020-01-01
           format: date
           type: string
       required:
@@ -46952,6 +47059,7 @@ components:
       - type
       type: object
     createDirectEmployee_request_data_employment:
+      description: The employment details of the employee
       oneOf:
       - $ref: '#/components/schemas/createDirectEmployee_request_data_employment_oneOf'
       - $ref: '#/components/schemas/createDirectEmployee_request_data_employment_oneOf_1'
@@ -46959,10 +47067,14 @@ components:
       description: The compensation details of the employee
       properties:
         salary:
+          description: The salary of the employee
+          example: 10000
           format: float
           minimum: 0
           type: number
         currency:
+          description: The currency of the salary
+          example: USD
           maxLength: 3
           minLength: 3
           type: string
@@ -46994,28 +47106,41 @@ components:
       - data
       type: object
     createDirectEmployee_201_response_data_employee:
+      description: The person that is being hired
       example:
-        work_email: work_email
-        nationality: nationality
-        last_name: last_name
-        external_id: external_id
-        first_name: first_name
-        email: email
+        work_email: work@email.com
+        nationality: BR
+        last_name: Doe
+        external_id: "1234"
+        first_name: John
+        email: email@email.com
       properties:
         email:
+          description: The personal email of the person being hired
+          example: email@email.com
           format: email
           type: string
         last_name:
+          description: The last name of the person being hired
+          example: Doe
           type: string
         first_name:
+          description: The first name of the person being hired
+          example: John
           type: string
         work_email:
+          description: The work email of the person being hired
+          example: work@email.com
           format: email
           type: string
         external_id:
+          description: An external identifier for the person being hired
+          example: "1234"
           nullable: true
           type: string
         nationality:
+          description: The nationality of the person being hired
+          example: BR
           maxLength: 2
           minLength: 2
           type: string
@@ -47026,39 +47151,53 @@ components:
       - nationality
       type: object
     createDirectEmployee_201_response_data_employment:
+      description: The employment details of the employee
       example:
-        end_date: 2000-01-23
-        country: country
+        end_date: 2029-01-01
+        country: US
         contract_id: contract_id
-        type: Full-time
-        job_title: job_title
-        part_time_percentage: 8.848116266517913
-        seniority: seniority
-        start_date: 2000-01-23
+        type: FULL_TIME
+        job_title: Software Engineer
+        part_time_percentage: 23
+        seniority: Senior
+        start_date: 2020-01-01
       properties:
         type:
           enum:
-          - Full-time
-          - Part-time
+          - FULL_TIME
+          - PART_TIME
           type: string
         country:
+          description: The country of the employment
+          example: US
           maxLength: 2
           minLength: 2
           type: string
         end_date:
+          description: The end date of the employment
+          example: 2029-01-01
           format: date
           nullable: true
           type: string
         job_title:
+          description: The job title of the employment
+          example: Software Engineer
           type: string
         seniority:
+          description: The seniority of the employment
+          example: Senior
           type: string
         start_date:
+          description: The start date of the employment
+          example: 2020-01-01
           format: date
           type: string
         contract_id:
+          description: The contract id of the employment
           type: string
         part_time_percentage:
+          description: The percentage of PART_TIME employment
+          example: 23
           maximum: 99
           minimum: 1
           type: number
@@ -47072,9 +47211,10 @@ components:
       - type
       type: object
     createDirectEmployee_201_response_data_compensation_details:
+      description: The compensation details of the employee
       example:
         currency: currency
-        salary: 6.0274563
+        salary: 0.8008282
       properties:
         salary:
           format: float
@@ -47091,26 +47231,27 @@ components:
       example:
         compensation_details:
           currency: currency
-          salary: 6.0274563
+          salary: 0.8008282
         id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
         employment:
-          end_date: 2000-01-23
-          country: country
+          end_date: 2029-01-01
+          country: US
           contract_id: contract_id
-          type: Full-time
-          job_title: job_title
-          part_time_percentage: 8.848116266517913
-          seniority: seniority
-          start_date: 2000-01-23
+          type: FULL_TIME
+          job_title: Software Engineer
+          part_time_percentage: 23
+          seniority: Senior
+          start_date: 2020-01-01
         employee:
-          work_email: work_email
-          nationality: nationality
-          last_name: last_name
-          external_id: external_id
-          first_name: first_name
-          email: email
+          work_email: work@email.com
+          nationality: BR
+          last_name: Doe
+          external_id: "1234"
+          first_name: John
+          email: email@email.com
       properties:
         id:
+          description: The id of the employee
           format: uuid
           type: string
         employee:
@@ -47130,24 +47271,24 @@ components:
         data:
           compensation_details:
             currency: currency
-            salary: 6.0274563
+            salary: 0.8008282
           id: 046b6c7f-0b8a-43b9-b35d-6489e6daee91
           employment:
-            end_date: 2000-01-23
-            country: country
+            end_date: 2029-01-01
+            country: US
             contract_id: contract_id
-            type: Full-time
-            job_title: job_title
-            part_time_percentage: 8.848116266517913
-            seniority: seniority
-            start_date: 2000-01-23
+            type: FULL_TIME
+            job_title: Software Engineer
+            part_time_percentage: 23
+            seniority: Senior
+            start_date: 2020-01-01
           employee:
-            work_email: work_email
-            nationality: nationality
-            last_name: last_name
-            external_id: external_id
-            first_name: first_name
-            email: email
+            work_email: work@email.com
+            nationality: BR
+            last_name: Doe
+            external_id: "1234"
+            first_name: John
+            email: email@email.com
       properties:
         data:
           $ref: '#/components/schemas/createDirectEmployee_201_response_data'
@@ -48413,13 +48554,16 @@ components:
       type: object
     getBackgroundChecksByContractId_200_response_data:
       example:
+        result: CLEARED
         completed_at: 2022-05-24T09:38:46.235Z
         package:
           name: Standard Employment Check
+        contract_id: m98757x
         name: Education Verification
         created_at: 2022-05-24T09:38:46.235Z
         id: 6f50539e-9f62-45d0-a42e-62a62fbb984a
         is_complete: false
+        candidate_email: john.doe@example.com
         third_party_name: request_employment_verification
         status: REQUESTED
       properties:
@@ -48433,6 +48577,14 @@ components:
           description: Name of the background check.
           example: Education Verification
           nullable: false
+          type: string
+        result:
+          description: The result of the background check.
+          enum:
+          - CLEARED
+          - REVIEW
+          example: CLEARED
+          nullable: true
           type: string
         status:
           description: The status of the background check.
@@ -48455,6 +48607,11 @@ components:
           format: date-time
           nullable: false
           type: string
+        contract_id:
+          description: ID of the contract
+          example: m98757x
+          nullable: false
+          type: string
         is_complete:
           description: Whether the background check is complete.
           example: false
@@ -48466,6 +48623,11 @@ components:
           format: date-time
           nullable: false
           type: string
+        candidate_email:
+          description: Email of worker
+          example: john.doe@example.com
+          format: email
+          type: string
         third_party_name:
           description: Third-party name of the background check.
           example: request_employment_verification
@@ -48475,13 +48637,16 @@ components:
     getBackgroundChecksByContractId_200_response:
       example:
         data:
+          result: CLEARED
           completed_at: 2022-05-24T09:38:46.235Z
           package:
             name: Standard Employment Check
+          contract_id: m98757x
           name: Education Verification
           created_at: 2022-05-24T09:38:46.235Z
           id: 6f50539e-9f62-45d0-a42e-62a62fbb984a
           is_complete: false
+          candidate_email: john.doe@example.com
           third_party_name: request_employment_verification
           status: REQUESTED
       properties:
@@ -48489,101 +48654,6 @@ components:
           $ref: '#/components/schemas/getBackgroundChecksByContractId_200_response_data'
       required:
       - data
-      type: object
-    getConsent_200_response_data:
-      example:
-        user_email: user_email
-        user_name: user_name
-        created_at: created_at
-        client_id: client_id
-        expires_at: expires_at
-        updated_at: updated_at
-        user_id: user_id
-        profile_id: profile_id
-        scope: scope
-        organization_id: organization_id
-        id: id
-        state: state
-        redirect_uri: redirect_uri
-        status: status
-      properties:
-        id:
-          description: Unique identifier for the consent.
-          nullable: false
-          type: string
-        scope:
-          description: Scope of the consent.
-          nullable: false
-          type: string
-        state:
-          description: State of the consent.
-          nullable: false
-          type: string
-        status:
-          description: Status of the consent.
-          nullable: false
-          type: string
-        user_id:
-          description: User ID associated with the consent.
-          nullable: true
-          type: string
-        client_id:
-          description: Client ID associated with the consent.
-          nullable: false
-          type: string
-        user_name:
-          description: User name associated with the consent.
-          nullable: true
-          type: string
-        created_at:
-          description: Creation date for the consent.
-          nullable: false
-          type: string
-        expires_at:
-          description: Expiration date for the consent.
-          nullable: false
-          type: string
-        profile_id:
-          description: Profile ID associated with the consent.
-          nullable: true
-          type: string
-        updated_at:
-          description: Update date for the consent.
-          nullable: false
-          type: string
-        user_email:
-          description: User email associated with the consent.
-          nullable: true
-          type: string
-        redirect_uri:
-          description: Redirect URI for the consent.
-          nullable: false
-          type: string
-        organization_id:
-          description: Organization ID associated with the consent.
-          nullable: true
-          type: string
-      type: object
-    getConsent_200_response:
-      example:
-        data:
-          user_email: user_email
-          user_name: user_name
-          created_at: created_at
-          client_id: client_id
-          expires_at: expires_at
-          updated_at: updated_at
-          user_id: user_id
-          profile_id: profile_id
-          scope: scope
-          organization_id: organization_id
-          id: id
-          state: state
-          redirect_uri: redirect_uri
-          status: status
-      properties:
-        data:
-          $ref: '#/components/schemas/getConsent_200_response_data'
       type: object
     getWorkerPayslips_200_response_data_inner:
       example:
@@ -49155,24 +49225,6 @@ components:
       properties:
         data:
           $ref: '#/components/schemas/createOrUpdateChildRelationBetweenProfiles_request_data'
-      type: object
-    updateInvoiceAdjustmentById_request:
-      properties:
-        reason:
-          description: The reason for the adjustment update.
-          example: Wrong amount
-          maxLength: 200
-          nullable: true
-          type: string
-        status:
-          description: The status of the adjustment.
-          enum:
-          - approved
-          - declined
-          nullable: false
-          type: string
-      required:
-      - status
       type: object
     getLegalEntity_200_response_address:
       description: Address of the legal entity.
@@ -50692,44 +50744,6 @@ components:
           description: Identifier for the payroll report column related to this item.
           example: 3f4b5f6e8
           type: string
-      type: object
-    updateInvoiceAdjustment_request:
-      description: Details of adjustment to update
-      properties:
-        title:
-          description: Title of adjustment.
-          example: Your title here
-          type: string
-        amount:
-          description: Amount of adjustment.
-          example: 100.25
-          type: number
-        description:
-          description: Description of adjustment.
-          example: Your description here
-          type: string
-      type: object
-    updateInvoiceAdjustment_200_response_data:
-      example:
-        updated: true
-      properties:
-        updated:
-          description: Confirms the update.
-          example: true
-          nullable: false
-          type: boolean
-      required:
-      - updated
-      type: object
-    updateInvoiceAdjustment_200_response:
-      example:
-        data:
-          updated: true
-      properties:
-        data:
-          $ref: '#/components/schemas/updateInvoiceAdjustment_200_response_data'
-      required:
-      - data
       type: object
     upsertParentWorkerRelationsExternalId_request_data:
       properties:
@@ -52657,6 +52671,72 @@ components:
       required:
       - data
       type: object
+    getContractEquityWithholdingAmount_200_response_data_breakdown_inner:
+      example:
+        amount: "550.00"
+        rate: "0.055"
+        tax: Solidarity tax
+      properties:
+        tax:
+          description: Name of tax.
+          example: Solidarity tax
+          type: string
+        rate:
+          description: Tax rate as a percentage.
+          example: "0.055"
+          type: string
+        amount:
+          description: Tax amount.
+          example: "550.00"
+          type: string
+      type: object
+    getContractEquityWithholdingAmount_200_response_data:
+      example:
+        aggregate_rate: "0.15"
+        overall_withholding_amount: "1500.00"
+        breakdown:
+        - amount: "550.00"
+          rate: "0.055"
+          tax: Solidarity tax
+        - amount: "550.00"
+          rate: "0.055"
+          tax: Solidarity tax
+        oid: 37nex2x
+      properties:
+        oid:
+          description: Deel contract id.
+          example: 37nex2x
+          type: string
+        breakdown:
+          items:
+            $ref: '#/components/schemas/getContractEquityWithholdingAmount_200_response_data_breakdown_inner'
+          type: array
+        aggregate_rate:
+          description: Aggregate withholding rate as a percentage.
+          example: "0.15"
+          type: string
+        overall_withholding_amount:
+          description: Total withholding amount.
+          example: "1500.00"
+          type: string
+      type: object
+    getContractEquityWithholdingAmount_200_response:
+      example:
+        data:
+          aggregate_rate: "0.15"
+          overall_withholding_amount: "1500.00"
+          breakdown:
+          - amount: "550.00"
+            rate: "0.055"
+            tax: Solidarity tax
+          - amount: "550.00"
+            rate: "0.055"
+            tax: Solidarity tax
+          oid: 37nex2x
+      properties:
+        data:
+          $ref: '#/components/schemas/getContractEquityWithholdingAmount_200_response_data'
+      type: object
     approveExerciseEquity_request:
       properties:
         employer_approval:
@@ -52888,117 +52968,6 @@ components:
           example: User must be a manager of the organization to update an entity.
           type: string
       type: object
-    getOffCyclePaymentByContractAndId_200_response_data_reported_by:
-      example:
-        full_name: John Doe
-        id: 123e4567-e89b-12d3-a456-426614174000
-      nullable: false
-      properties:
-        id:
-          description: Unique identifier of the reporter.
-          example: 123e4567-e89b-12d3-a456-426614174000
-          format: uuid
-          type: string
-        full_name:
-          description: Full name of the person who reported the payment.
-          example: John Doe
-          nullable: false
-          type: string
-      required:
-      - full_name
-      - id
-      type: object
-    getOffCyclePaymentByContractAndId_200_response_data:
-      example:
-        date_submitted: 2023-11-25T08:00:00Z
-        amount: "1500.00"
-        created_at: 2023-11-25T12:34:56Z
-        description: Bonus payment for Q3
-        reported_by:
-          full_name: John Doe
-          id: 123e4567-e89b-12d3-a456-426614174000
-        id: f47ac10b-58cc-4372-a567-0e02b2c3d479
-        currency_code: USD
-        status: approved
-      properties:
-        id:
-          description: Unique identifier for the off-cycle payment.
-          example: f47ac10b-58cc-4372-a567-0e02b2c3d479
-          format: uuid
-          type: string
-        amount:
-          description: Amount of the off-cycle payment.
-          example: "1500.00"
-          nullable: false
-          type: string
-        status:
-          description: Current status of the off-cycle payment.
-          enum:
-          - approved
-          - declined
-          - not_payable
-          - paid
-          - pending
-          - processing
-          - null
-          example: approved
-          nullable: true
-          type: string
-        created_at:
-          description: Timestamp of when the off-cycle payment was created.
-          example: 2023-11-25T12:34:56Z
-          format: date-time
-          nullable: false
-          type: string
-        description:
-          description: Description of the off-cycle payment.
-          example: Bonus payment for Q3
-          nullable: false
-          type: string
-        reported_by:
-          $ref: '#/components/schemas/getOffCyclePaymentByContractAndId_200_response_data_reported_by'
-        currency_code:
-          description: ISO 4217 currency code of the payment.
-          example: USD
-          maxLength: 3
-          minLength: 3
-          pattern: "^[A-Z]{3}$"
-          type: string
-        date_submitted:
-          description: Timestamp of when the payment was submitted.
-          example: 2023-11-25T08:00:00Z
-          format: date-time
-          nullable: false
-          type: string
-      required:
-      - amount
-      - created_at
-      - currency_code
-      - date_submitted
-      - description
-      - id
-      - reported_by
-      - status
-      type: object
-    getOffCyclePaymentByContractAndId_200_response:
-      example:
-        data:
-          date_submitted: 2023-11-25T08:00:00Z
-          amount: "1500.00"
-          created_at: 2023-11-25T12:34:56Z
-          description: Bonus payment for Q3
-          reported_by:
-            full_name: John Doe
-            id: 123e4567-e89b-12d3-a456-426614174000
-          id: f47ac10b-58cc-4372-a567-0e02b2c3d479
-          currency_code: USD
-          status: approved
-      properties:
-        data:
-          $ref: '#/components/schemas/getOffCyclePaymentByContractAndId_200_response_data'
-      required:
-      - data
-      type: object
     createCase_request_data:
       properties:
         team_id:
@@ -53133,6 +53102,101 @@ components:
       required:
       - data
       type: object
+    getConsent_200_response_data:
+      example:
+        user_email: user_email
+        user_name: user_name
+        created_at: created_at
+        client_id: client_id
+        expires_at: expires_at
+        updated_at: updated_at
+        user_id: user_id
+        profile_id: profile_id
+        scope: scope
+        organization_id: organization_id
+        id: id
+        state: state
+        redirect_uri: redirect_uri
+        status: status
+      properties:
+        id:
+          description: Unique identifier for the consent.
+          nullable: false
+          type: string
+        scope:
+          description: Scope of the consent.
+          nullable: false
+          type: string
+        state:
+          description: State of the consent.
+          nullable: false
+          type: string
+        status:
+          description: Status of the consent.
+          nullable: false
+          type: string
+        user_id:
+          description: User ID associated with the consent.
+          nullable: true
+          type: string
+        client_id:
+          description: Client ID associated with the consent.
+          nullable: false
+          type: string
+        user_name:
+          description: User name associated with the consent.
+          nullable: true
+          type: string
+        created_at:
+          description: Creation date for the consent.
+          nullable: false
+          type: string
+        expires_at:
+          description: Expiration date for the consent.
+          nullable: false
+          type: string
+        profile_id:
+          description: Profile ID associated with the consent.
+          nullable: true
+          type: string
+        updated_at:
+          description: Update date for the consent.
+          nullable: false
+          type: string
+        user_email:
+          description: User email associated with the consent.
+          nullable: true
+          type: string
+        redirect_uri:
+          description: Redirect URI for the consent.
+          nullable: false
+          type: string
+        organization_id:
+          description: Organization ID associated with the consent.
+          nullable: true
+          type: string
+      type: object
+    getConsent_200_response:
+      example:
+        data:
+          user_email: user_email
+          user_name: user_name
+          created_at: created_at
+          client_id: client_id
+          expires_at: expires_at
+          updated_at: updated_at
+          user_id: user_id
+          profile_id: profile_id
+          scope: scope
+          organization_id: organization_id
+          id: id
+          state: state
+          redirect_uri: redirect_uri
+          status: status
+      properties:
+        data:
+          $ref: '#/components/schemas/getConsent_200_response_data'
+      type: object
     getCustomFieldFromPeopleById_200_response_data:
       example:
         settings:
@@ -53218,6 +53282,44 @@ components:
       required:
       - data
       type: object
+    updateInvoiceAdjustment_request:
+      description: Details of adjustment to update
+      properties:
+        title:
+          description: Title of adjustment.
+          example: Your title here
+          type: string
+        amount:
+          description: Amount of adjustment.
+          example: 100.25
+          type: number
+        description:
+          description: Description of adjustment.
+          example: Your description here
+          type: string
+      type: object
+    updateInvoiceAdjustment_200_response_data:
+      example:
+        updated: true
+      properties:
+        updated:
+          description: Confirms the update.
+          example: true
+          nullable: false
+          type: boolean
+      required:
+      - updated
+      type: object
+    updateInvoiceAdjustment_200_response:
+      example:
+        data:
+          updated: true
+      properties:
+        data:
+          $ref: '#/components/schemas/updateInvoiceAdjustment_200_response_data'
+      required:
+      - data
+      type: object
     UpdateOrganizationRole_request_data:
       properties:
         name:
@@ -53272,6 +53374,24 @@ components:
             example: manageUsers
             type: string
           type: array
+      type: object
+    updateInvoiceAdjustmentById_request:
+      properties:
+        reason:
+          description: The reason for the adjustment update.
+          example: Wrong amount
+          maxLength: 200
+          nullable: true
+          type: string
+        status:
+          description: The status of the adjustment.
+          enum:
+          - approved
+          - declined
+          nullable: false
+          type: string
+      required:
+      - status
       type: object
     _offboarding_tracker__id__get_200_response_data_summary_inner_data:
       example:
@@ -53855,6 +53975,117 @@ components:
         page:
           $ref: '#/components/schemas/_offboarding_tracker_get_200_response_page'
       type: object
+    getOffCyclePaymentByContractAndId_200_response_data_reported_by:
+      example:
+        full_name: John Doe
+        id: 123e4567-e89b-12d3-a456-426614174000
+      nullable: false
+      properties:
+        id:
+          description: Unique identifier of the reporter.
+          example: 123e4567-e89b-12d3-a456-426614174000
+          format: uuid
+          type: string
+        full_name:
+          description: Full name of the person who reported the payment.
+          example: John Doe
+          nullable: false
+          type: string
+      required:
+      - full_name
+      - id
+      type: object
+    getOffCyclePaymentByContractAndId_200_response_data:
+      example:
+        date_submitted: 2023-11-25T08:00:00Z
+        amount: "1500.00"
+        created_at: 2023-11-25T12:34:56Z
+        description: Bonus payment for Q3
+        reported_by:
+          full_name: John Doe
+          id: 123e4567-e89b-12d3-a456-426614174000
+        id: f47ac10b-58cc-4372-a567-0e02b2c3d479
+        currency_code: USD
+        status: approved
+      properties:
+        id:
+          description: Unique identifier for the off-cycle payment.
+          example: f47ac10b-58cc-4372-a567-0e02b2c3d479
+          format: uuid
+          type: string
+        amount:
+          description: Amount of the off-cycle payment.
+          example: "1500.00"
+          nullable: false
+          type: string
+        status:
+          description: Current status of the off-cycle payment.
+          enum:
+          - approved
+          - declined
+          - not_payable
+          - paid
+          - pending
+          - processing
+          - null
+          example: approved
+          nullable: true
+          type: string
+        created_at:
+          description: Timestamp of when the off-cycle payment was created.
+          example: 2023-11-25T12:34:56Z
+          format: date-time
+          nullable: false
+          type: string
+        description:
+          description: Description of the off-cycle payment.
+          example: Bonus payment for Q3
+          nullable: false
+          type: string
+        reported_by:
+          $ref: '#/components/schemas/getOffCyclePaymentByContractAndId_200_response_data_reported_by'
+        currency_code:
+          description: ISO 4217 currency code of the payment.
+          example: USD
+          maxLength: 3
+          minLength: 3
+          pattern: "^[A-Z]{3}$"
+          type: string
+        date_submitted:
+          description: Timestamp of when the payment was submitted.
+          example: 2023-11-25T08:00:00Z
+          format: date-time
+          nullable: false
+          type: string
+      required:
+      - amount
+      - created_at
+      - currency_code
+      - date_submitted
+      - description
+      - id
+      - reported_by
+      - status
+      type: object
+    getOffCyclePaymentByContractAndId_200_response:
+      example:
+        data:
+          date_submitted: 2023-11-25T08:00:00Z
+          amount: "1500.00"
+          created_at: 2023-11-25T12:34:56Z
+          description: Bonus payment for Q3
+          reported_by:
+            full_name: John Doe
+            id: 123e4567-e89b-12d3-a456-426614174000
+          id: f47ac10b-58cc-4372-a567-0e02b2c3d479
+          currency_code: USD
+          status: approved
+      properties:
+        data:
+          $ref: '#/components/schemas/getOffCyclePaymentByContractAndId_200_response_data'
+      required:
+      - data
+      type: object
     CreatedHrisDirectEmployeeContainer_data_employment:
       properties:
         contract_id:
@@ -54001,6 +54232,14 @@ components:
       - last_name
       - nationality
       type: object
+    HrisDirectEmployeeToCreateContainer_data_client_legal_entity:
+      properties:
+        id:
+          format: uuid
+          type: string
+      required:
+      - id
+      type: object
     HrisDirectEmployeeToCreateContainer_data_client_team:
       properties:
         id:
@@ -54018,11 +54257,11 @@ components:
     HrisDirectEmployeeToCreateContainer_data_client:
       properties:
         legal_entity:
-          $ref: '#/components/schemas/createDirectEmployee_request_data_client_department'
+          $ref: '#/components/schemas/HrisDirectEmployeeToCreateContainer_data_client_legal_entity'
         team:
           $ref: '#/components/schemas/HrisDirectEmployeeToCreateContainer_data_client_team'
         department:
-          $ref: '#/components/schemas/createDirectEmployee_request_data_client_department'
+          $ref: '#/components/schemas/HrisDirectEmployeeToCreateContainer_data_client_legal_entity'
       required:
       - legal_entity
       - team
@@ -57539,7 +57778,7 @@ components:
           type: array
         delete:
           items:
-            $ref: '#/components/schemas/createDirectEmployee_request_data_client_department'
+            $ref: '#/components/schemas/HrisDirectEmployeeToCreateContainer_data_client_legal_entity'
           type: array
         profile_id:
           format: uuid

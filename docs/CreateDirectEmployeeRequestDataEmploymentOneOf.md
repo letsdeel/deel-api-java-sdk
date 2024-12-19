@@ -7,12 +7,12 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**type** | [**TypeEnum**](#TypeEnum) |  |  |
-|**endDate** | **LocalDate** |  |  [optional] |
-|**jobTitle** | **String** |  |  |
-|**seniority** | **String** |  |  |
-|**startDate** | **LocalDate** |  |  |
-|**partTimePercentage** | **BigDecimal** |  |  |
+|**type** | [**TypeEnum**](#TypeEnum) | The type of employment |  |
+|**endDate** | **LocalDate** | The end date of the employment |  [optional] |
+|**jobTitle** | **String** | The job title of the employment |  |
+|**seniority** | **String** | The seniority of the employment |  |
+|**startDate** | **LocalDate** | The start date of the employment |  |
+|**partTimePercentage** | **BigDecimal** | The percentage of PART_TIME employment |  |
 
 
 
@@ -20,7 +20,7 @@
 
 | Name | Value |
 |---- | -----|
-| PART_TIME | &quot;Part-time&quot; |
+| PART_TIME | &quot;PART_TIME&quot; |
 
 
 
