@@ -55,7 +55,7 @@ import org.openapitools.client.JSON;
 /**
  * GetContractList200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T12:32:05.400762149Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T13:30:34.884345844Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractList200ResponseDataInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -761,7 +761,6 @@ public class GetContractList200ResponseDataInner {
     openapiRequiredFields.add("title");
     openapiRequiredFields.add("client");
     openapiRequiredFields.add("status");
-    openapiRequiredFields.add("worker");
     openapiRequiredFields.add("created_at");
     openapiRequiredFields.add("signatures");
     openapiRequiredFields.add("invitations");
@@ -819,8 +818,10 @@ public class GetContractList200ResponseDataInner {
       }
       // validate the required field `status`
       StatusEnum.validateJsonElement(jsonObj.get("status"));
-      // validate the required field `worker`
-      GetContractList200ResponseDataInnerWorker.validateJsonElement(jsonObj.get("worker"));
+      // validate the optional field `worker`
+      if (jsonObj.get("worker") != null && !jsonObj.get("worker").isJsonNull()) {
+        GetContractList200ResponseDataInnerWorker.validateJsonElement(jsonObj.get("worker"));
+      }
       // validate the required field `signatures`
       GetContractList200ResponseDataInnerSignatures.validateJsonElement(jsonObj.get("signatures"));
       if ((jsonObj.get("external_id") != null && !jsonObj.get("external_id").isJsonNull()) && !jsonObj.get("external_id").isJsonPrimitive()) {

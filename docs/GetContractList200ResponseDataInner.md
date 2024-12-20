@@ -13,7 +13,7 @@
 |**title** | **String** | Title of the contract. |  |
 |**client** | [**GetContractList200ResponseDataInnerClient**](GetContractList200ResponseDataInnerClient.md) |  |  |
 |**status** | [**StatusEnum**](#StatusEnum) | Status of a contract in Deel workflow. |  |
-|**worker** | [**GetContractList200ResponseDataInnerWorker**](GetContractList200ResponseDataInnerWorker.md) |  |  |
+|**worker** | [**GetContractList200ResponseDataInnerWorker**](GetContractList200ResponseDataInnerWorker.md) |  |  [optional] |
 |**createdAt** | **OffsetDateTime** | Timestamp when the contract was created, in ISO-8601 format. |  |
 |**signatures** | [**GetContractList200ResponseDataInnerSignatures**](GetContractList200ResponseDataInnerSignatures.md) |  |  |
 |**externalId** | **String** | A unique identifier for the object provided by an external system. |  [optional] |

@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseDataInvitations
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T12:32:05.400762149Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T13:30:34.884345844Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataInvitations {
   public static final String SERIALIZED_NAME_CLIENT_EMAIL = "client_email";
   @SerializedName(SERIALIZED_NAME_CLIENT_EMAIL)

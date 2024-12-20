@@ -5,7 +5,7 @@
     <artifactId>deel-api-java-sdk</artifactId>
     <packaging>jar</packaging>
     <name>deel-api-java-sdk</name>
-    <version>alpha-0.0.1</version>
+    <version>alpha-0.0.2</version>
     <url>https://github.com/letsdeel/deel-api-java-sdk</url>
     <description>Java</description>
     <scm>

@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * Holiday type and range for part-time contracts.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T12:32:05.400762149Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T13:30:34.884345844Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorCountryValidationsPartTimeHoliday {
   /**
    * Gets or Sets type

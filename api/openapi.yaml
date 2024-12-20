@@ -39742,7 +39742,6 @@ components:
       - termination_date
       - title
       - type
-      - worker
       type: object
     getContractList_200_response_page:
       example:
