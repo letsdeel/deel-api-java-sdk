@@ -47,19 +47,19 @@ import java.util.Set;
 import org.openapitools.client.JSON;
 
 /**
- * Number type
+ * Percentage type
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
-public class UpsertCustomFieldValueFromContractsRequestDataOneOf1 {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T12:32:05.400762149Z[GMT]", comments = "Generator version: 7.10.0")
+public class UpsertCustomFieldValueFromContractsRequestDataAnyOf2 {
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
   @javax.annotation.Nullable
   private BigDecimal value;
 
-  public UpsertCustomFieldValueFromContractsRequestDataOneOf1() {
+  public UpsertCustomFieldValueFromContractsRequestDataAnyOf2() {
   }
 
-  public UpsertCustomFieldValueFromContractsRequestDataOneOf1 value(@javax.annotation.Nullable BigDecimal value) {
+  public UpsertCustomFieldValueFromContractsRequestDataAnyOf2 value(@javax.annotation.Nullable BigDecimal value) {
     this.value = value;
     return this;
   }
@@ -87,8 +87,8 @@ public class UpsertCustomFieldValueFromContractsRequestDataOneOf1 {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    UpsertCustomFieldValueFromContractsRequestDataOneOf1 upsertCustomFieldValueFromContractsRequestDataOneOf1 = (UpsertCustomFieldValueFromContractsRequestDataOneOf1) o;
-    return Objects.equals(this.value, upsertCustomFieldValueFromContractsRequestDataOneOf1.value);
+    UpsertCustomFieldValueFromContractsRequestDataAnyOf2 upsertCustomFieldValueFromContractsRequestDataAnyOf2 = (UpsertCustomFieldValueFromContractsRequestDataAnyOf2) o;
+    return Objects.equals(this.value, upsertCustomFieldValueFromContractsRequestDataAnyOf2.value);
   }
 
   @Override
@@ -99,7 +99,7 @@ public class UpsertCustomFieldValueFromContractsRequestDataOneOf1 {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class UpsertCustomFieldValueFromContractsRequestDataOneOf1 {\n");
+    sb.append("class UpsertCustomFieldValueFromContractsRequestDataAnyOf2 {\n");
     sb.append("    value: ").append(toIndentedString(value)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -133,20 +133,20 @@ public class UpsertCustomFieldValueFromContractsRequestDataOneOf1 {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to UpsertCustomFieldValueFromContractsRequestDataOneOf1
+   * @throws IOException if the JSON Element is invalid with respect to UpsertCustomFieldValueFromContractsRequestDataAnyOf2
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!UpsertCustomFieldValueFromContractsRequestDataOneOf1.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in UpsertCustomFieldValueFromContractsRequestDataOneOf1 is not found in the empty JSON string", UpsertCustomFieldValueFromContractsRequestDataOneOf1.openapiRequiredFields.toString()));
+        if (!UpsertCustomFieldValueFromContractsRequestDataAnyOf2.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in UpsertCustomFieldValueFromContractsRequestDataAnyOf2 is not found in the empty JSON string", UpsertCustomFieldValueFromContractsRequestDataAnyOf2.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!UpsertCustomFieldValueFromContractsRequestDataOneOf1.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `UpsertCustomFieldValueFromContractsRequestDataOneOf1` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!UpsertCustomFieldValueFromContractsRequestDataAnyOf2.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `UpsertCustomFieldValueFromContractsRequestDataAnyOf2` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -156,22 +156,22 @@ public class UpsertCustomFieldValueFromContractsRequestDataOneOf1 {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!UpsertCustomFieldValueFromContractsRequestDataOneOf1.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'UpsertCustomFieldValueFromContractsRequestDataOneOf1' and its subtypes
+       if (!UpsertCustomFieldValueFromContractsRequestDataAnyOf2.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'UpsertCustomFieldValueFromContractsRequestDataAnyOf2' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<UpsertCustomFieldValueFromContractsRequestDataOneOf1> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(UpsertCustomFieldValueFromContractsRequestDataOneOf1.class));
+       final TypeAdapter<UpsertCustomFieldValueFromContractsRequestDataAnyOf2> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(UpsertCustomFieldValueFromContractsRequestDataAnyOf2.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<UpsertCustomFieldValueFromContractsRequestDataOneOf1>() {
+       return (TypeAdapter<T>) new TypeAdapter<UpsertCustomFieldValueFromContractsRequestDataAnyOf2>() {
            @Override
-           public void write(JsonWriter out, UpsertCustomFieldValueFromContractsRequestDataOneOf1 value) throws IOException {
+           public void write(JsonWriter out, UpsertCustomFieldValueFromContractsRequestDataAnyOf2 value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public UpsertCustomFieldValueFromContractsRequestDataOneOf1 read(JsonReader in) throws IOException {
+           public UpsertCustomFieldValueFromContractsRequestDataAnyOf2 read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -182,18 +182,18 @@ public class UpsertCustomFieldValueFromContractsRequestDataOneOf1 {
   }
 
   /**
-   * Create an instance of UpsertCustomFieldValueFromContractsRequestDataOneOf1 given an JSON string
+   * Create an instance of UpsertCustomFieldValueFromContractsRequestDataAnyOf2 given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of UpsertCustomFieldValueFromContractsRequestDataOneOf1
-   * @throws IOException if the JSON string is invalid with respect to UpsertCustomFieldValueFromContractsRequestDataOneOf1
+   * @return An instance of UpsertCustomFieldValueFromContractsRequestDataAnyOf2
+   * @throws IOException if the JSON string is invalid with respect to UpsertCustomFieldValueFromContractsRequestDataAnyOf2
    */
-  public static UpsertCustomFieldValueFromContractsRequestDataOneOf1 fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, UpsertCustomFieldValueFromContractsRequestDataOneOf1.class);
+  public static UpsertCustomFieldValueFromContractsRequestDataAnyOf2 fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, UpsertCustomFieldValueFromContractsRequestDataAnyOf2.class);
   }
 
   /**
-   * Convert an instance of UpsertCustomFieldValueFromContractsRequestDataOneOf1 to an JSON string
+   * Convert an instance of UpsertCustomFieldValueFromContractsRequestDataAnyOf2 to an JSON string
    *
    * @return JSON string
    */

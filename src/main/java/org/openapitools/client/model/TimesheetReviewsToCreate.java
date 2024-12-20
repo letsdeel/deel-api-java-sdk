@@ -52,7 +52,7 @@ import org.openapitools.client.JSON;
 /**
  * TimesheetReviewsToCreate
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T12:32:05.400762149Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimesheetReviewsToCreate {
   /**
    * Gets or Sets status

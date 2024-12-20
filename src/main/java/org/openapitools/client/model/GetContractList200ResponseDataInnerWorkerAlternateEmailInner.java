@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -46,10 +47,10 @@ import java.util.Set;
 import org.openapitools.client.JSON;
 
 /**
- * RootSchema1
+ * GetContractList200ResponseDataInnerWorkerAlternateEmailInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
-public class RootSchema1 {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T12:32:05.400762149Z[GMT]", comments = "Generator version: 7.10.0")
+public class GetContractList200ResponseDataInnerWorkerAlternateEmailInner {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
   @javax.annotation.Nullable
@@ -57,13 +58,13 @@ public class RootSchema1 {
 
   public static final String SERIALIZED_NAME_IS_VERIFIED = "isVerified";
   @SerializedName(SERIALIZED_NAME_IS_VERIFIED)
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   private Boolean isVerified;
 
-  public RootSchema1() {
+  public GetContractList200ResponseDataInnerWorkerAlternateEmailInner() {
   }
 
-  public RootSchema1 email(@javax.annotation.Nullable String email) {
+  public GetContractList200ResponseDataInnerWorkerAlternateEmailInner email(@javax.annotation.Nullable String email) {
     this.email = email;
     return this;
   }
@@ -82,21 +83,21 @@ public class RootSchema1 {
   }
 
 
-  public RootSchema1 isVerified(@javax.annotation.Nonnull Boolean isVerified) {
+  public GetContractList200ResponseDataInnerWorkerAlternateEmailInner isVerified(@javax.annotation.Nullable Boolean isVerified) {
     this.isVerified = isVerified;
     return this;
   }
 
   /**
-   * True if email has been verified
+   * Indicates whether the alternate email address is verified.
    * @return isVerified
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   public Boolean getIsVerified() {
     return isVerified;
   }
 
-  public void setIsVerified(@javax.annotation.Nonnull Boolean isVerified) {
+  public void setIsVerified(@javax.annotation.Nullable Boolean isVerified) {
     this.isVerified = isVerified;
   }
 
@@ -110,9 +111,13 @@ public class RootSchema1 {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    RootSchema1 rootSchema1 = (RootSchema1) o;
-    return Objects.equals(this.email, rootSchema1.email) &&
-        Objects.equals(this.isVerified, rootSchema1.isVerified);
+    GetContractList200ResponseDataInnerWorkerAlternateEmailInner getContractList200ResponseDataInnerWorkerAlternateEmailInner = (GetContractList200ResponseDataInnerWorkerAlternateEmailInner) o;
+    return Objects.equals(this.email, getContractList200ResponseDataInnerWorkerAlternateEmailInner.email) &&
+        Objects.equals(this.isVerified, getContractList200ResponseDataInnerWorkerAlternateEmailInner.isVerified);
+  }
+
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
   }
 
   @Override
@@ -120,10 +125,17 @@ public class RootSchema1 {
     return Objects.hash(email, isVerified);
   }
 
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
+
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class RootSchema1 {\n");
+    sb.append("class GetContractList200ResponseDataInnerWorkerAlternateEmailInner {\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    isVerified: ").append(toIndentedString(isVerified)).append("\n");
     sb.append("}");
@@ -153,35 +165,26 @@ public class RootSchema1 {
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("email");
-    openapiRequiredFields.add("isVerified");
   }
 
   /**
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to RootSchema1
+   * @throws IOException if the JSON Element is invalid with respect to GetContractList200ResponseDataInnerWorkerAlternateEmailInner
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!RootSchema1.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in RootSchema1 is not found in the empty JSON string", RootSchema1.openapiRequiredFields.toString()));
+        if (!GetContractList200ResponseDataInnerWorkerAlternateEmailInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in GetContractList200ResponseDataInnerWorkerAlternateEmailInner is not found in the empty JSON string", GetContractList200ResponseDataInnerWorkerAlternateEmailInner.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!RootSchema1.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `RootSchema1` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
-        }
-      }
-
-      // check to make sure all required properties/fields are present in the JSON string
-      for (String requiredField : RootSchema1.openapiRequiredFields) {
-        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
-          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+        if (!GetContractList200ResponseDataInnerWorkerAlternateEmailInner.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `GetContractList200ResponseDataInnerWorkerAlternateEmailInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -194,22 +197,22 @@ public class RootSchema1 {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!RootSchema1.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'RootSchema1' and its subtypes
+       if (!GetContractList200ResponseDataInnerWorkerAlternateEmailInner.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'GetContractList200ResponseDataInnerWorkerAlternateEmailInner' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<RootSchema1> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(RootSchema1.class));
+       final TypeAdapter<GetContractList200ResponseDataInnerWorkerAlternateEmailInner> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(GetContractList200ResponseDataInnerWorkerAlternateEmailInner.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<RootSchema1>() {
+       return (TypeAdapter<T>) new TypeAdapter<GetContractList200ResponseDataInnerWorkerAlternateEmailInner>() {
            @Override
-           public void write(JsonWriter out, RootSchema1 value) throws IOException {
+           public void write(JsonWriter out, GetContractList200ResponseDataInnerWorkerAlternateEmailInner value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public RootSchema1 read(JsonReader in) throws IOException {
+           public GetContractList200ResponseDataInnerWorkerAlternateEmailInner read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -220,18 +223,18 @@ public class RootSchema1 {
   }
 
   /**
-   * Create an instance of RootSchema1 given an JSON string
+   * Create an instance of GetContractList200ResponseDataInnerWorkerAlternateEmailInner given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of RootSchema1
-   * @throws IOException if the JSON string is invalid with respect to RootSchema1
+   * @return An instance of GetContractList200ResponseDataInnerWorkerAlternateEmailInner
+   * @throws IOException if the JSON string is invalid with respect to GetContractList200ResponseDataInnerWorkerAlternateEmailInner
    */
-  public static RootSchema1 fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, RootSchema1.class);
+  public static GetContractList200ResponseDataInnerWorkerAlternateEmailInner fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, GetContractList200ResponseDataInnerWorkerAlternateEmailInner.class);
   }
 
   /**
-   * Convert an instance of RootSchema1 to an JSON string
+   * Convert an instance of GetContractList200ResponseDataInnerWorkerAlternateEmailInner to an JSON string
    *
    * @return JSON string
    */

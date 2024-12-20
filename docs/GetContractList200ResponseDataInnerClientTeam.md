@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**id** | [**GetContractList200ResponseDataInnerClientTeamId**](GetContractList200ResponseDataInnerClientTeamId.md) |  |  |
+|**id** | **String** | Unique identifier of this resource. |  |
 |**name** | **String** | Name of a team. |  |
 
 

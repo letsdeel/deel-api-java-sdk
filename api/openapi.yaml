@@ -32038,35 +32038,35 @@ components:
       required:
       - data
       type: object
-    UpsertCustomFieldValueFromContracts_request_data_oneOf:
+    UpsertCustomFieldValueFromContracts_request_data_anyOf:
       description: Text type
       properties:
         value:
           example: text
           type: string
       type: object
-    UpsertCustomFieldValueFromContracts_request_data_oneOf_1:
+    UpsertCustomFieldValueFromContracts_request_data_anyOf_1:
       description: Number type
       properties:
         value:
           example: 1
           type: number
       type: object
-    UpsertCustomFieldValueFromContracts_request_data_oneOf_2:
+    UpsertCustomFieldValueFromContracts_request_data_anyOf_2:
       description: Percentage type
       properties:
         value:
           example: 1
           type: number
       type: object
-    UpsertCustomFieldValueFromContracts_request_data_oneOf_3:
+    UpsertCustomFieldValueFromContracts_request_data_anyOf_3:
       description: List type
       properties:
         option:
           example: option
           type: string
       type: object
-    UpsertCustomFieldValueFromContracts_request_data_oneOf_4:
+    UpsertCustomFieldValueFromContracts_request_data_anyOf_4:
       description: Multiselect type
       properties:
         options:
@@ -32077,14 +32077,14 @@ components:
           uniqueItems: true
       type: object
     UpsertCustomFieldValueFromContracts_request_data:
-      oneOf:
-      - $ref: '#/components/schemas/UpsertCustomFieldValueFromContracts_request_data_oneOf'
-      - $ref: '#/components/schemas/UpsertCustomFieldValueFromContracts_request_data_oneOf_1'
+      anyOf:
+      - $ref: '#/components/schemas/UpsertCustomFieldValueFromContracts_request_data_anyOf'
+      - $ref: '#/components/schemas/UpsertCustomFieldValueFromContracts_request_data_anyOf_1'
       - $ref: '#/components/schemas/GetCustomFieldValuesFromWorker_200_response_data_inner_data_oneOf_2'
-      - $ref: '#/components/schemas/UpsertCustomFieldValueFromContracts_request_data_oneOf_2'
+      - $ref: '#/components/schemas/UpsertCustomFieldValueFromContracts_request_data_anyOf_2'
       - $ref: '#/components/schemas/UpsertCustomFieldValueFromWorker_request_data_anyOf_4'
-      - $ref: '#/components/schemas/UpsertCustomFieldValueFromContracts_request_data_oneOf_3'
-      - $ref: '#/components/schemas/UpsertCustomFieldValueFromContracts_request_data_oneOf_4'
+      - $ref: '#/components/schemas/UpsertCustomFieldValueFromContracts_request_data_anyOf_3'
+      - $ref: '#/components/schemas/UpsertCustomFieldValueFromContracts_request_data_anyOf_4'
     UpsertCustomFieldValueFromContracts_request:
       properties:
         id:
@@ -39453,20 +39453,18 @@ components:
         minLength: 3
         pattern: "^[A-Z]{3}$"
         type: string
-    getContractList_200_response_data_inner_client_team_id:
-      description: Unique identifier of this resource.
-      oneOf:
-      - type: string
-      - type: number
     getContractList_200_response_data_inner_client_team:
       example:
-        name: name
-        id: getContractList_200_response_data_inner_client_team_id
+        name: Ken
+        id: d0377f58-f152-413a-aa9f-997bdfc61fc2
       properties:
         id:
-          $ref: '#/components/schemas/getContractList_200_response_data_inner_client_team_id'
+          description: Unique identifier of this resource.
+          example: d0377f58-f152-413a-aa9f-997bdfc61fc2
+          type: string
         name:
           description: Name of a team.
+          example: Ken
           nullable: true
           type: string
       required:
@@ -39476,68 +39474,70 @@ components:
     getContractList_200_response_data_inner_client:
       example:
         team:
-          name: name
-          id: getContractList_200_response_data_inner_client_team_id
+          name: Ken
+          id: d0377f58-f152-413a-aa9f-997bdfc61fc2
       properties:
         team:
           $ref: '#/components/schemas/getContractList_200_response_data_inner_client_team'
       type: object
-    Root_Schema:
+    getContractList_200_response_data_inner_worker_alternate_email_inner:
       example:
         isVerified: true
-        email: email
+        email: test@example.com
       properties:
         email:
           description: User's email address.
+          example: test@example.com
           format: email
           minLength: 5
           nullable: true
           type: string
         isVerified:
           description: Indicates whether the alternate email address is verified.
-          title: True if email has been verified
+          example: true
           type: boolean
-      required:
-      - email
-      - isVerified
-      title: Root Schema
       type: object
     getContractList_200_response_data_inner_worker:
       example:
-        image: https://openapi-generator.tech
-        full_name: full_name
-        id: null
+        image: https://example.com/image.jpg
+        full_name: John Doe
+        id: 28da9a07-102c-4a69-9781-3182a514f669
         alternate_email:
         - isVerified: true
-          email: email
+          email: test@example.com
         - isVerified: true
-          email: email
-        email: email
+          email: test@example.com
+        email: test@example.com
       nullable: true
       properties:
         id:
-          $ref: '#/components/schemas/getContractList_200_response_data_inner_client_team_id'
+          description: Unique identifier of this resource.
+          example: 28da9a07-102c-4a69-9781-3182a514f669
+          type: string
         email:
           description: User's email address.
+          example: test@example.com
           format: email
           minLength: 5
           nullable: true
           type: string
         image:
           description: URL of the worker's profile image.
+          example: https://example.com/image.jpg
           format: uri
           minLength: 5
           nullable: true
           type: string
         full_name:
           description: Full name of the worker.
+          example: John Doe
           minLength: 1
           nullable: false
           type: string
         alternate_email:
           description: List of alternate email addresses.
           items:
-            $ref: '#/components/schemas/Root_Schema'
+            $ref: '#/components/schemas/getContractList_200_response_data_inner_worker_alternate_email_inner'
           type: array
       required:
       - email
@@ -39546,23 +39546,26 @@ components:
       type: object
     getContractList_200_response_data_inner_signatures:
       example:
-        worker_signed_at: 2000-01-23T04:56:07.000+00:00
-        worker_signature: worker_signature
-        client_signed_at: 2000-01-23T04:56:07.000+00:00
+        worker_signed_at: 2019-03-21T13:45:07.515Z
+        worker_signature: John Doe
+        client_signed_at: 2019-03-21T13:45:07.515Z
       properties:
         client_signed_at:
           description: "Timestamp when the client signed the contract, in ISO-8601\
             \ format."
+          example: 2019-03-21T13:45:07.515Z
           format: date-time
           nullable: true
           type: string
         worker_signature:
           description: Worker's signature.
-          nullable: false
+          example: John Doe
+          nullable: true
           type: string
         worker_signed_at:
           description: "Timestamp when the worker signed the contract, in ISO-8601\
             \ format."
+          example: 2019-03-21T13:45:07.515Z
           format: date-time
           nullable: true
           type: string
@@ -39574,60 +39577,59 @@ components:
     getContractList_200_response_data_inner_invitations:
       description: Details of invitations sent for signing the contract.
       example:
-        client_email: client_email
-        worker_email: worker_email
+        client_email: test@example.com
+        worker_email: test@example.com
       properties:
         client_email:
           description: Email address of the client to invite.
-          format: email
-          minLength: 5
+          example: test@example.com
           nullable: true
           type: string
         worker_email:
           description: Email address of the worker to invite.
-          format: email
-          minLength: 5
+          example: test@example.com
           nullable: true
           type: string
       type: object
     getContractList_200_response_data_inner:
       example:
         who_reports: both
-        scale: scale
-        created_at: 2000-01-23T04:56:07.000+00:00
-        external_id: external_id
+        scale: weekly
+        created_at: 2019-03-21T13:45:07.515Z
+        external_id: "123456"
         type: ongoing_time_based
-        title: title
+        title: Ken
         signatures:
-          worker_signed_at: 2000-01-23T04:56:07.000+00:00
-          worker_signature: worker_signature
-          client_signed_at: 2000-01-23T04:56:07.000+00:00
-        is_shielded: true
-        is_archived: true
+          worker_signed_at: 2019-03-21T13:45:07.515Z
+          worker_signature: John Doe
+          client_signed_at: 2019-03-21T13:45:07.515Z
+        is_shielded: false
+        is_archived: false
         invitations:
-          client_email: client_email
-          worker_email: worker_email
-        termination_date: 2000-01-23T04:56:07.000+00:00
+          client_email: test@example.com
+          worker_email: test@example.com
+        termination_date: 2022-10-21T09:33:12.256Z
         client:
           team:
-            name: name
-            id: getContractList_200_response_data_inner_client_team_id
-        id: id
+            name: Ken
+            id: d0377f58-f152-413a-aa9f-997bdfc61fc2
+        id: d0377f58-f152-413a-aa9f-997bdfc61fc2
         worker:
-          image: https://openapi-generator.tech
-          full_name: full_name
-          id: null
+          image: https://example.com/image.jpg
+          full_name: John Doe
+          id: 28da9a07-102c-4a69-9781-3182a514f669
           alternate_email:
           - isVerified: true
-            email: email
+            email: test@example.com
           - isVerified: true
-            email: email
-          email: email
-        notice_period: 0.08008281904610115
+            email: test@example.com
+          email: test@example.com
+        notice_period: 30
         status: new
       properties:
         id:
           description: UUID of the contract.
+          example: d0377f58-f152-413a-aa9f-997bdfc61fc2
           minLength: 1
           nullable: false
           type: string
@@ -39650,10 +39652,12 @@ components:
           type: string
         scale:
           description: "The payment scale (e.g., hourly, weekly, monthly, etc.)."
+          example: weekly
           nullable: true
           type: string
         title:
           description: Title of the contract.
+          example: Ken
           minLength: 1
           nullable: false
           type: string
@@ -39683,6 +39687,7 @@ components:
           $ref: '#/components/schemas/getContractList_200_response_data_inner_worker'
         created_at:
           description: "Timestamp when the contract was created, in ISO-8601 format."
+          example: 2019-03-21T13:45:07.515Z
           format: date-time
           nullable: true
           type: string
@@ -39691,15 +39696,18 @@ components:
         external_id:
           description: A unique identifier for the object provided by an external
             system.
+          example: "123456"
           nullable: true
           type: string
         invitations:
           $ref: '#/components/schemas/getContractList_200_response_data_inner_invitations'
         is_archived:
           description: Indicates whether the contract is archived.
+          example: false
           type: boolean
         is_shielded:
           description: Indicates whether the contract is shielded.
+          example: false
           type: boolean
         who_reports:
           description: Indicates who is responsible for providing regular reports.
@@ -39707,15 +39715,18 @@ components:
           - both
           - client
           - contractor
+          example: both
           type: string
         notice_period:
           default: 0
           description: Number of days required to give notice before terminating the
             contract.
+          example: 30
           minimum: 0
           type: number
         termination_date:
           description: "Date when the contract is terminated, in ISO-8601 format."
+          example: 2022-10-21T09:33:12.256Z
           format: date-time
           nullable: true
           type: string
@@ -39735,15 +39746,17 @@ components:
       type: object
     getContractList_200_response_page:
       example:
-        cursor: cursor
-        total_rows: 6.027456183070403
+        cursor: eyJ0eXBlIjoiY29udGV4dCIsInN0YXR1cyI6Im5ldyJ9
+        total_rows: 100
       properties:
         cursor:
           description: Cursor for paginated results.
+          example: eyJ0eXBlIjoiY29udGV4dCIsInN0YXR1cyI6Im5ldyJ9
           nullable: false
           type: string
         total_rows:
           description: Total number of rows in the result set.
+          example: 100
           nullable: false
           type: number
       required:
@@ -39754,74 +39767,74 @@ components:
       example:
         data:
         - who_reports: both
-          scale: scale
-          created_at: 2000-01-23T04:56:07.000+00:00
-          external_id: external_id
+          scale: weekly
+          created_at: 2019-03-21T13:45:07.515Z
+          external_id: "123456"
           type: ongoing_time_based
-          title: title
+          title: Ken
           signatures:
-            worker_signed_at: 2000-01-23T04:56:07.000+00:00
-            worker_signature: worker_signature
-            client_signed_at: 2000-01-23T04:56:07.000+00:00
-          is_shielded: true
-          is_archived: true
+            worker_signed_at: 2019-03-21T13:45:07.515Z
+            worker_signature: John Doe
+            client_signed_at: 2019-03-21T13:45:07.515Z
+          is_shielded: false
+          is_archived: false
           invitations:
-            client_email: client_email
-            worker_email: worker_email
-          termination_date: 2000-01-23T04:56:07.000+00:00
+            client_email: test@example.com
+            worker_email: test@example.com
+          termination_date: 2022-10-21T09:33:12.256Z
           client:
             team:
-              name: name
-              id: getContractList_200_response_data_inner_client_team_id
-          id: id
+              name: Ken
+              id: d0377f58-f152-413a-aa9f-997bdfc61fc2
+          id: d0377f58-f152-413a-aa9f-997bdfc61fc2
           worker:
-            image: https://openapi-generator.tech
-            full_name: full_name
-            id: null
+            image: https://example.com/image.jpg
+            full_name: John Doe
+            id: 28da9a07-102c-4a69-9781-3182a514f669
             alternate_email:
             - isVerified: true
-              email: email
+              email: test@example.com
             - isVerified: true
-              email: email
-            email: email
-          notice_period: 0.08008281904610115
+              email: test@example.com
+            email: test@example.com
+          notice_period: 30
           status: new
         - who_reports: both
-          scale: scale
-          created_at: 2000-01-23T04:56:07.000+00:00
-          external_id: external_id
+          scale: weekly
+          created_at: 2019-03-21T13:45:07.515Z
+          external_id: "123456"
           type: ongoing_time_based
-          title: title
+          title: Ken
           signatures:
-            worker_signed_at: 2000-01-23T04:56:07.000+00:00
-            worker_signature: worker_signature
-            client_signed_at: 2000-01-23T04:56:07.000+00:00
-          is_shielded: true
-          is_archived: true
+            worker_signed_at: 2019-03-21T13:45:07.515Z
+            worker_signature: John Doe
+            client_signed_at: 2019-03-21T13:45:07.515Z
+          is_shielded: false
+          is_archived: false
           invitations:
-            client_email: client_email
-            worker_email: worker_email
-          termination_date: 2000-01-23T04:56:07.000+00:00
+            client_email: test@example.com
+            worker_email: test@example.com
+          termination_date: 2022-10-21T09:33:12.256Z
           client:
             team:
-              name: name
-              id: getContractList_200_response_data_inner_client_team_id
-          id: id
+              name: Ken
+              id: d0377f58-f152-413a-aa9f-997bdfc61fc2
+          id: d0377f58-f152-413a-aa9f-997bdfc61fc2
           worker:
-            image: https://openapi-generator.tech
-            full_name: full_name
-            id: null
+            image: https://example.com/image.jpg
+            full_name: John Doe
+            id: 28da9a07-102c-4a69-9781-3182a514f669
             alternate_email:
             - isVerified: true
-              email: email
+              email: test@example.com
             - isVerified: true
-              email: email
-            email: email
-          notice_period: 0.08008281904610115
+              email: test@example.com
+            email: test@example.com
+          notice_period: 30
           status: new
         page:
-          cursor: cursor
-          total_rows: 6.027456183070403
+          cursor: eyJ0eXBlIjoiY29udGV4dCIsInN0YXR1cyI6Im5ldyJ9
+          total_rows: 100
       properties:
         data:
           items:
@@ -40967,7 +40980,7 @@ components:
       - registration_number
       - type
       type: object
-    Root_Schema_1:
+    Root_Schema:
       example:
         isVerified: true
         email: test@example.com
@@ -41074,7 +41087,7 @@ components:
         alternate_email:
           description: List of alternate email addresses.
           items:
-            $ref: '#/components/schemas/Root_Schema_1'
+            $ref: '#/components/schemas/Root_Schema'
           type: array
       type: object
     createContract_201_response_data_seniority:

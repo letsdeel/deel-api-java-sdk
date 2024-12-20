@@ -26,7 +26,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.openapitools.client.model.CreateContract201ResponseDataWorkerLegalEntity;
 import org.openapitools.client.model.PAYASYOUGOTIMEBASEDAllOfClientTeamId;
-import org.openapitools.client.model.RootSchema1;
+import org.openapitools.client.model.RootSchema;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -55,7 +55,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseDataWorker
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T12:32:05.400762149Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataWorker {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -115,7 +115,7 @@ public class CreateContract201ResponseDataWorker {
   public static final String SERIALIZED_NAME_ALTERNATE_EMAIL = "alternate_email";
   @SerializedName(SERIALIZED_NAME_ALTERNATE_EMAIL)
   @javax.annotation.Nullable
-  private List<RootSchema1> alternateEmail = new ArrayList<>();
+  private List<RootSchema> alternateEmail = new ArrayList<>();
 
   public CreateContract201ResponseDataWorker() {
   }
@@ -329,12 +329,12 @@ public class CreateContract201ResponseDataWorker {
   }
 
 
-  public CreateContract201ResponseDataWorker alternateEmail(@javax.annotation.Nullable List<RootSchema1> alternateEmail) {
+  public CreateContract201ResponseDataWorker alternateEmail(@javax.annotation.Nullable List<RootSchema> alternateEmail) {
     this.alternateEmail = alternateEmail;
     return this;
   }
 
-  public CreateContract201ResponseDataWorker addAlternateEmailItem(RootSchema1 alternateEmailItem) {
+  public CreateContract201ResponseDataWorker addAlternateEmailItem(RootSchema alternateEmailItem) {
     if (this.alternateEmail == null) {
       this.alternateEmail = new ArrayList<>();
     }
@@ -347,11 +347,11 @@ public class CreateContract201ResponseDataWorker {
    * @return alternateEmail
    */
   @javax.annotation.Nullable
-  public List<RootSchema1> getAlternateEmail() {
+  public List<RootSchema> getAlternateEmail() {
     return alternateEmail;
   }
 
-  public void setAlternateEmail(@javax.annotation.Nullable List<RootSchema1> alternateEmail) {
+  public void setAlternateEmail(@javax.annotation.Nullable List<RootSchema> alternateEmail) {
     this.alternateEmail = alternateEmail;
   }
 
@@ -514,7 +514,7 @@ public class CreateContract201ResponseDataWorker {
 
           // validate the optional field `alternate_email` (array)
           for (int i = 0; i < jsonArrayalternateEmail.size(); i++) {
-            RootSchema1.validateJsonElement(jsonArrayalternateEmail.get(i));
+            RootSchema.validateJsonElement(jsonArrayalternateEmail.get(i));
           };
         }
       }

@@ -20,37 +20,31 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for RootSchema1
+ * Model tests for UpsertCustomFieldValueFromContractsRequestDataAnyOf4
  */
-public class RootSchema1Test {
-    private final RootSchema1 model = new RootSchema1();
+public class UpsertCustomFieldValueFromContractsRequestDataAnyOf4Test {
+    private final UpsertCustomFieldValueFromContractsRequestDataAnyOf4 model = new UpsertCustomFieldValueFromContractsRequestDataAnyOf4();
 
     /**
-     * Model tests for RootSchema1
+     * Model tests for UpsertCustomFieldValueFromContractsRequestDataAnyOf4
      */
     @Test
-    public void testRootSchema1() {
-        // TODO: test RootSchema1
+    public void testUpsertCustomFieldValueFromContractsRequestDataAnyOf4() {
+        // TODO: test UpsertCustomFieldValueFromContractsRequestDataAnyOf4
     }
 
     /**
-     * Test the property 'email'
+     * Test the property 'options'
      */
     @Test
-    public void emailTest() {
-        // TODO: test email
-    }
-
-    /**
-     * Test the property 'isVerified'
-     */
-    @Test
-    public void isVerifiedTest() {
-        // TODO: test isVerified
+    public void optionsTest() {
+        // TODO: test options
     }
 
 }

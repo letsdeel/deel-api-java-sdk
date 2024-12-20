@@ -19,32 +19,31 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
-import java.util.LinkedHashSet;
-import java.util.Set;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for UpsertCustomFieldValueFromContractsRequestDataOneOf4
+ * Model tests for UpsertCustomFieldValueFromContractsRequestDataAnyOf1
  */
-public class UpsertCustomFieldValueFromContractsRequestDataOneOf4Test {
-    private final UpsertCustomFieldValueFromContractsRequestDataOneOf4 model = new UpsertCustomFieldValueFromContractsRequestDataOneOf4();
+public class UpsertCustomFieldValueFromContractsRequestDataAnyOf1Test {
+    private final UpsertCustomFieldValueFromContractsRequestDataAnyOf1 model = new UpsertCustomFieldValueFromContractsRequestDataAnyOf1();
 
     /**
-     * Model tests for UpsertCustomFieldValueFromContractsRequestDataOneOf4
+     * Model tests for UpsertCustomFieldValueFromContractsRequestDataAnyOf1
      */
     @Test
-    public void testUpsertCustomFieldValueFromContractsRequestDataOneOf4() {
-        // TODO: test UpsertCustomFieldValueFromContractsRequestDataOneOf4
+    public void testUpsertCustomFieldValueFromContractsRequestDataAnyOf1() {
+        // TODO: test UpsertCustomFieldValueFromContractsRequestDataAnyOf1
     }
 
     /**
-     * Test the property 'options'
+     * Test the property 'value'
      */
     @Test
-    public void optionsTest() {
-        // TODO: test options
+    public void valueTest() {
+        // TODO: test value
     }
 
 }

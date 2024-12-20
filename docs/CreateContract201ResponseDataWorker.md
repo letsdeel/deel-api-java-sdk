@@ -18,7 +18,7 @@
 |**legalEntity** | [**CreateContract201ResponseDataWorkerLegalEntity**](CreateContract201ResponseDataWorkerLegalEntity.md) |  |  [optional] |
 |**dateOfBirth** | **OffsetDateTime** | Long date-time format following ISO-8601 |  [optional] |
 |**expectedEmail** | **String** | Worker&#39;s email address. |  [optional] |
-|**alternateEmail** | [**List&lt;RootSchema1&gt;**](RootSchema1.md) | List of alternate email addresses. |  [optional] |
+|**alternateEmail** | [**List&lt;RootSchema&gt;**](RootSchema.md) | List of alternate email addresses. |  [optional] |
 
 
 

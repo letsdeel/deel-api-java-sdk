@@ -24,8 +24,7 @@ import java.net.URI;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.openapitools.client.model.GetContractList200ResponseDataInnerClientTeamId;
-import org.openapitools.client.model.RootSchema;
+import org.openapitools.client.model.GetContractList200ResponseDataInnerWorkerAlternateEmailInner;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -54,12 +53,12 @@ import org.openapitools.client.JSON;
 /**
  * GetContractList200ResponseDataInnerWorker
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T12:32:05.400762149Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractList200ResponseDataInnerWorker {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
   @javax.annotation.Nonnull
-  private GetContractList200ResponseDataInnerClientTeamId id;
+  private String id;
 
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -79,26 +78,26 @@ public class GetContractList200ResponseDataInnerWorker {
   public static final String SERIALIZED_NAME_ALTERNATE_EMAIL = "alternate_email";
   @SerializedName(SERIALIZED_NAME_ALTERNATE_EMAIL)
   @javax.annotation.Nullable
-  private List<RootSchema> alternateEmail = new ArrayList<>();
+  private List<GetContractList200ResponseDataInnerWorkerAlternateEmailInner> alternateEmail = new ArrayList<>();
 
   public GetContractList200ResponseDataInnerWorker() {
   }
 
-  public GetContractList200ResponseDataInnerWorker id(@javax.annotation.Nonnull GetContractList200ResponseDataInnerClientTeamId id) {
+  public GetContractList200ResponseDataInnerWorker id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
 
   /**
-   * Get id
+   * Unique identifier of this resource.
    * @return id
    */
   @javax.annotation.Nonnull
-  public GetContractList200ResponseDataInnerClientTeamId getId() {
+  public String getId() {
     return id;
   }
 
-  public void setId(@javax.annotation.Nonnull GetContractList200ResponseDataInnerClientTeamId id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
@@ -160,12 +159,12 @@ public class GetContractList200ResponseDataInnerWorker {
   }
 
 
-  public GetContractList200ResponseDataInnerWorker alternateEmail(@javax.annotation.Nullable List<RootSchema> alternateEmail) {
+  public GetContractList200ResponseDataInnerWorker alternateEmail(@javax.annotation.Nullable List<GetContractList200ResponseDataInnerWorkerAlternateEmailInner> alternateEmail) {
     this.alternateEmail = alternateEmail;
     return this;
   }
 
-  public GetContractList200ResponseDataInnerWorker addAlternateEmailItem(RootSchema alternateEmailItem) {
+  public GetContractList200ResponseDataInnerWorker addAlternateEmailItem(GetContractList200ResponseDataInnerWorkerAlternateEmailInner alternateEmailItem) {
     if (this.alternateEmail == null) {
       this.alternateEmail = new ArrayList<>();
     }
@@ -178,11 +177,11 @@ public class GetContractList200ResponseDataInnerWorker {
    * @return alternateEmail
    */
   @javax.annotation.Nullable
-  public List<RootSchema> getAlternateEmail() {
+  public List<GetContractList200ResponseDataInnerWorkerAlternateEmailInner> getAlternateEmail() {
     return alternateEmail;
   }
 
-  public void setAlternateEmail(@javax.annotation.Nullable List<RootSchema> alternateEmail) {
+  public void setAlternateEmail(@javax.annotation.Nullable List<GetContractList200ResponseDataInnerWorkerAlternateEmailInner> alternateEmail) {
     this.alternateEmail = alternateEmail;
   }
 
@@ -292,8 +291,9 @@ public class GetContractList200ResponseDataInnerWorker {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the required field `id`
-      GetContractList200ResponseDataInnerClientTeamId.validateJsonElement(jsonObj.get("id"));
+      if (!jsonObj.get("id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
+      }
       if ((jsonObj.get("email") != null && !jsonObj.get("email").isJsonNull()) && !jsonObj.get("email").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("email").toString()));
       }
@@ -313,7 +313,7 @@ public class GetContractList200ResponseDataInnerWorker {
 
           // validate the optional field `alternate_email` (array)
           for (int i = 0; i < jsonArrayalternateEmail.size(); i++) {
-            RootSchema.validateJsonElement(jsonArrayalternateEmail.get(i));
+            GetContractList200ResponseDataInnerWorkerAlternateEmailInner.validateJsonElement(jsonArrayalternateEmail.get(i));
           };
         }
       }

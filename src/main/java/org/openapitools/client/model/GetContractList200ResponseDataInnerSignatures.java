@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * GetContractList200ResponseDataInnerSignatures
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T12:32:05.400762149Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractList200ResponseDataInnerSignatures {
   public static final String SERIALIZED_NAME_CLIENT_SIGNED_AT = "client_signed_at";
   @SerializedName(SERIALIZED_NAME_CLIENT_SIGNED_AT)
@@ -58,7 +58,7 @@ public class GetContractList200ResponseDataInnerSignatures {
 
   public static final String SERIALIZED_NAME_WORKER_SIGNATURE = "worker_signature";
   @SerializedName(SERIALIZED_NAME_WORKER_SIGNATURE)
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   private String workerSignature;
 
   public static final String SERIALIZED_NAME_WORKER_SIGNED_AT = "worker_signed_at";
@@ -88,7 +88,7 @@ public class GetContractList200ResponseDataInnerSignatures {
   }
 
 
-  public GetContractList200ResponseDataInnerSignatures workerSignature(@javax.annotation.Nonnull String workerSignature) {
+  public GetContractList200ResponseDataInnerSignatures workerSignature(@javax.annotation.Nullable String workerSignature) {
     this.workerSignature = workerSignature;
     return this;
   }
@@ -97,12 +97,12 @@ public class GetContractList200ResponseDataInnerSignatures {
    * Worker&#39;s signature.
    * @return workerSignature
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   public String getWorkerSignature() {
     return workerSignature;
   }
 
-  public void setWorkerSignature(@javax.annotation.Nonnull String workerSignature) {
+  public void setWorkerSignature(@javax.annotation.Nullable String workerSignature) {
     this.workerSignature = workerSignature;
   }
 
@@ -214,7 +214,7 @@ public class GetContractList200ResponseDataInnerSignatures {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if (!jsonObj.get("worker_signature").isJsonPrimitive()) {
+      if ((jsonObj.get("worker_signature") != null && !jsonObj.get("worker_signature").isJsonNull()) && !jsonObj.get("worker_signature").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `worker_signature` to be a primitive type in the JSON string but got `%s`", jsonObj.get("worker_signature").toString()));
       }
   }

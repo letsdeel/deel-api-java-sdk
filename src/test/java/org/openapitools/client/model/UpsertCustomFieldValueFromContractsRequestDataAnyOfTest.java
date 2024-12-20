@@ -24,17 +24,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for UpsertCustomFieldValueFromContractsRequestDataOneOf
+ * Model tests for UpsertCustomFieldValueFromContractsRequestDataAnyOf
  */
-public class UpsertCustomFieldValueFromContractsRequestDataOneOfTest {
-    private final UpsertCustomFieldValueFromContractsRequestDataOneOf model = new UpsertCustomFieldValueFromContractsRequestDataOneOf();
+public class UpsertCustomFieldValueFromContractsRequestDataAnyOfTest {
+    private final UpsertCustomFieldValueFromContractsRequestDataAnyOf model = new UpsertCustomFieldValueFromContractsRequestDataAnyOf();
 
     /**
-     * Model tests for UpsertCustomFieldValueFromContractsRequestDataOneOf
+     * Model tests for UpsertCustomFieldValueFromContractsRequestDataAnyOf
      */
     @Test
-    public void testUpsertCustomFieldValueFromContractsRequestDataOneOf() {
-        // TODO: test UpsertCustomFieldValueFromContractsRequestDataOneOf
+    public void testUpsertCustomFieldValueFromContractsRequestDataAnyOf() {
+        // TODO: test UpsertCustomFieldValueFromContractsRequestDataAnyOf
     }
 
     /**

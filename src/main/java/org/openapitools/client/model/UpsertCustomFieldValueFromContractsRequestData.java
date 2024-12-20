@@ -25,11 +25,11 @@ import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import org.openapitools.client.model.GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2;
-import org.openapitools.client.model.UpsertCustomFieldValueFromContractsRequestDataOneOf;
-import org.openapitools.client.model.UpsertCustomFieldValueFromContractsRequestDataOneOf1;
-import org.openapitools.client.model.UpsertCustomFieldValueFromContractsRequestDataOneOf2;
-import org.openapitools.client.model.UpsertCustomFieldValueFromContractsRequestDataOneOf3;
-import org.openapitools.client.model.UpsertCustomFieldValueFromContractsRequestDataOneOf4;
+import org.openapitools.client.model.UpsertCustomFieldValueFromContractsRequestDataAnyOf;
+import org.openapitools.client.model.UpsertCustomFieldValueFromContractsRequestDataAnyOf1;
+import org.openapitools.client.model.UpsertCustomFieldValueFromContractsRequestDataAnyOf2;
+import org.openapitools.client.model.UpsertCustomFieldValueFromContractsRequestDataAnyOf3;
+import org.openapitools.client.model.UpsertCustomFieldValueFromContractsRequestDataAnyOf4;
 import org.openapitools.client.model.UpsertCustomFieldValueFromWorkerRequestDataAnyOf4;
 
 
@@ -67,7 +67,7 @@ import com.google.gson.JsonParseException;
 
 import org.openapitools.client.JSON;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-19T15:39:23.803918573Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T12:32:05.400762149Z[GMT]", comments = "Generator version: 7.10.0")
 public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpenApiSchema {
     private static final Logger log = Logger.getLogger(UpsertCustomFieldValueFromContractsRequestData.class.getName());
 
@@ -79,13 +79,13 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
                 return null; // this class only serializes 'UpsertCustomFieldValueFromContractsRequestData' and its subtypes
             }
             final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-            final TypeAdapter<UpsertCustomFieldValueFromContractsRequestDataOneOf> adapterUpsertCustomFieldValueFromContractsRequestDataOneOf = gson.getDelegateAdapter(this, TypeToken.get(UpsertCustomFieldValueFromContractsRequestDataOneOf.class));
-            final TypeAdapter<UpsertCustomFieldValueFromContractsRequestDataOneOf1> adapterUpsertCustomFieldValueFromContractsRequestDataOneOf1 = gson.getDelegateAdapter(this, TypeToken.get(UpsertCustomFieldValueFromContractsRequestDataOneOf1.class));
+            final TypeAdapter<UpsertCustomFieldValueFromContractsRequestDataAnyOf> adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf = gson.getDelegateAdapter(this, TypeToken.get(UpsertCustomFieldValueFromContractsRequestDataAnyOf.class));
+            final TypeAdapter<UpsertCustomFieldValueFromContractsRequestDataAnyOf1> adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf1 = gson.getDelegateAdapter(this, TypeToken.get(UpsertCustomFieldValueFromContractsRequestDataAnyOf1.class));
             final TypeAdapter<GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2> adapterGetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2 = gson.getDelegateAdapter(this, TypeToken.get(GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2.class));
-            final TypeAdapter<UpsertCustomFieldValueFromContractsRequestDataOneOf2> adapterUpsertCustomFieldValueFromContractsRequestDataOneOf2 = gson.getDelegateAdapter(this, TypeToken.get(UpsertCustomFieldValueFromContractsRequestDataOneOf2.class));
+            final TypeAdapter<UpsertCustomFieldValueFromContractsRequestDataAnyOf2> adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf2 = gson.getDelegateAdapter(this, TypeToken.get(UpsertCustomFieldValueFromContractsRequestDataAnyOf2.class));
             final TypeAdapter<UpsertCustomFieldValueFromWorkerRequestDataAnyOf4> adapterUpsertCustomFieldValueFromWorkerRequestDataAnyOf4 = gson.getDelegateAdapter(this, TypeToken.get(UpsertCustomFieldValueFromWorkerRequestDataAnyOf4.class));
-            final TypeAdapter<UpsertCustomFieldValueFromContractsRequestDataOneOf3> adapterUpsertCustomFieldValueFromContractsRequestDataOneOf3 = gson.getDelegateAdapter(this, TypeToken.get(UpsertCustomFieldValueFromContractsRequestDataOneOf3.class));
-            final TypeAdapter<UpsertCustomFieldValueFromContractsRequestDataOneOf4> adapterUpsertCustomFieldValueFromContractsRequestDataOneOf4 = gson.getDelegateAdapter(this, TypeToken.get(UpsertCustomFieldValueFromContractsRequestDataOneOf4.class));
+            final TypeAdapter<UpsertCustomFieldValueFromContractsRequestDataAnyOf3> adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf3 = gson.getDelegateAdapter(this, TypeToken.get(UpsertCustomFieldValueFromContractsRequestDataAnyOf3.class));
+            final TypeAdapter<UpsertCustomFieldValueFromContractsRequestDataAnyOf4> adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf4 = gson.getDelegateAdapter(this, TypeToken.get(UpsertCustomFieldValueFromContractsRequestDataAnyOf4.class));
 
             return (TypeAdapter<T>) new TypeAdapter<UpsertCustomFieldValueFromContractsRequestData>() {
                 @Override
@@ -95,15 +95,15 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
                         return;
                     }
 
-                    // check if the actual instance is of the type `UpsertCustomFieldValueFromContractsRequestDataOneOf`
-                    if (value.getActualInstance() instanceof UpsertCustomFieldValueFromContractsRequestDataOneOf) {
-                        JsonElement element = adapterUpsertCustomFieldValueFromContractsRequestDataOneOf.toJsonTree((UpsertCustomFieldValueFromContractsRequestDataOneOf)value.getActualInstance());
+                    // check if the actual instance is of the type `UpsertCustomFieldValueFromContractsRequestDataAnyOf`
+                    if (value.getActualInstance() instanceof UpsertCustomFieldValueFromContractsRequestDataAnyOf) {
+                        JsonElement element = adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf.toJsonTree((UpsertCustomFieldValueFromContractsRequestDataAnyOf)value.getActualInstance());
                         elementAdapter.write(out, element);
                         return;
                     }
-                    // check if the actual instance is of the type `UpsertCustomFieldValueFromContractsRequestDataOneOf1`
-                    if (value.getActualInstance() instanceof UpsertCustomFieldValueFromContractsRequestDataOneOf1) {
-                        JsonElement element = adapterUpsertCustomFieldValueFromContractsRequestDataOneOf1.toJsonTree((UpsertCustomFieldValueFromContractsRequestDataOneOf1)value.getActualInstance());
+                    // check if the actual instance is of the type `UpsertCustomFieldValueFromContractsRequestDataAnyOf1`
+                    if (value.getActualInstance() instanceof UpsertCustomFieldValueFromContractsRequestDataAnyOf1) {
+                        JsonElement element = adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf1.toJsonTree((UpsertCustomFieldValueFromContractsRequestDataAnyOf1)value.getActualInstance());
                         elementAdapter.write(out, element);
                         return;
                     }
@@ -113,9 +113,9 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
                         elementAdapter.write(out, element);
                         return;
                     }
-                    // check if the actual instance is of the type `UpsertCustomFieldValueFromContractsRequestDataOneOf2`
-                    if (value.getActualInstance() instanceof UpsertCustomFieldValueFromContractsRequestDataOneOf2) {
-                        JsonElement element = adapterUpsertCustomFieldValueFromContractsRequestDataOneOf2.toJsonTree((UpsertCustomFieldValueFromContractsRequestDataOneOf2)value.getActualInstance());
+                    // check if the actual instance is of the type `UpsertCustomFieldValueFromContractsRequestDataAnyOf2`
+                    if (value.getActualInstance() instanceof UpsertCustomFieldValueFromContractsRequestDataAnyOf2) {
+                        JsonElement element = adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf2.toJsonTree((UpsertCustomFieldValueFromContractsRequestDataAnyOf2)value.getActualInstance());
                         elementAdapter.write(out, element);
                         return;
                     }
@@ -125,19 +125,19 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
                         elementAdapter.write(out, element);
                         return;
                     }
-                    // check if the actual instance is of the type `UpsertCustomFieldValueFromContractsRequestDataOneOf3`
-                    if (value.getActualInstance() instanceof UpsertCustomFieldValueFromContractsRequestDataOneOf3) {
-                        JsonElement element = adapterUpsertCustomFieldValueFromContractsRequestDataOneOf3.toJsonTree((UpsertCustomFieldValueFromContractsRequestDataOneOf3)value.getActualInstance());
+                    // check if the actual instance is of the type `UpsertCustomFieldValueFromContractsRequestDataAnyOf3`
+                    if (value.getActualInstance() instanceof UpsertCustomFieldValueFromContractsRequestDataAnyOf3) {
+                        JsonElement element = adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf3.toJsonTree((UpsertCustomFieldValueFromContractsRequestDataAnyOf3)value.getActualInstance());
                         elementAdapter.write(out, element);
                         return;
                     }
-                    // check if the actual instance is of the type `UpsertCustomFieldValueFromContractsRequestDataOneOf4`
-                    if (value.getActualInstance() instanceof UpsertCustomFieldValueFromContractsRequestDataOneOf4) {
-                        JsonElement element = adapterUpsertCustomFieldValueFromContractsRequestDataOneOf4.toJsonTree((UpsertCustomFieldValueFromContractsRequestDataOneOf4)value.getActualInstance());
+                    // check if the actual instance is of the type `UpsertCustomFieldValueFromContractsRequestDataAnyOf4`
+                    if (value.getActualInstance() instanceof UpsertCustomFieldValueFromContractsRequestDataAnyOf4) {
+                        JsonElement element = adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf4.toJsonTree((UpsertCustomFieldValueFromContractsRequestDataAnyOf4)value.getActualInstance());
                         elementAdapter.write(out, element);
                         return;
                     }
-                    throw new IOException("Failed to serialize as the type doesn't match oneOf schemas: GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataOneOf, UpsertCustomFieldValueFromContractsRequestDataOneOf1, UpsertCustomFieldValueFromContractsRequestDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataOneOf3, UpsertCustomFieldValueFromContractsRequestDataOneOf4, UpsertCustomFieldValueFromWorkerRequestDataAnyOf4");
+                    throw new IOException("Failed to serialize as the type doesn't match anyOf schemas: GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataAnyOf, UpsertCustomFieldValueFromContractsRequestDataAnyOf1, UpsertCustomFieldValueFromContractsRequestDataAnyOf2, UpsertCustomFieldValueFromContractsRequestDataAnyOf3, UpsertCustomFieldValueFromContractsRequestDataAnyOf4, UpsertCustomFieldValueFromWorkerRequestDataAnyOf4");
                 }
 
                 @Override
@@ -145,127 +145,127 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
                     Object deserialized = null;
                     JsonElement jsonElement = elementAdapter.read(in);
 
-                    int match = 0;
                     ArrayList<String> errorMessages = new ArrayList<>();
                     TypeAdapter actualAdapter = elementAdapter;
 
-                    // deserialize UpsertCustomFieldValueFromContractsRequestDataOneOf
+                    // deserialize UpsertCustomFieldValueFromContractsRequestDataAnyOf
                     try {
                         // validate the JSON object to see if any exception is thrown
-                        UpsertCustomFieldValueFromContractsRequestDataOneOf.validateJsonElement(jsonElement);
-                        actualAdapter = adapterUpsertCustomFieldValueFromContractsRequestDataOneOf;
-                        match++;
-                        log.log(Level.FINER, "Input data matches schema 'UpsertCustomFieldValueFromContractsRequestDataOneOf'");
+                        UpsertCustomFieldValueFromContractsRequestDataAnyOf.validateJsonElement(jsonElement);
+                        actualAdapter = adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf;
+                        UpsertCustomFieldValueFromContractsRequestData ret = new UpsertCustomFieldValueFromContractsRequestData();
+                        ret.setActualInstance(actualAdapter.fromJsonTree(jsonElement));
+                        return ret;
                     } catch (Exception e) {
                         // deserialization failed, continue
-                        errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataOneOf failed with `%s`.", e.getMessage()));
-                        log.log(Level.FINER, "Input data does not match schema 'UpsertCustomFieldValueFromContractsRequestDataOneOf'", e);
+                        errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataAnyOf failed with `%s`.", e.getMessage()));
+                        log.log(Level.FINER, "Input data does not match schema 'UpsertCustomFieldValueFromContractsRequestDataAnyOf'", e);
                     }
-                    // deserialize UpsertCustomFieldValueFromContractsRequestDataOneOf1
+                    // deserialize UpsertCustomFieldValueFromContractsRequestDataAnyOf1
                     try {
                         // validate the JSON object to see if any exception is thrown
-                        UpsertCustomFieldValueFromContractsRequestDataOneOf1.validateJsonElement(jsonElement);
-                        actualAdapter = adapterUpsertCustomFieldValueFromContractsRequestDataOneOf1;
-                        match++;
-                        log.log(Level.FINER, "Input data matches schema 'UpsertCustomFieldValueFromContractsRequestDataOneOf1'");
+                        UpsertCustomFieldValueFromContractsRequestDataAnyOf1.validateJsonElement(jsonElement);
+                        actualAdapter = adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf1;
+                        UpsertCustomFieldValueFromContractsRequestData ret = new UpsertCustomFieldValueFromContractsRequestData();
+                        ret.setActualInstance(actualAdapter.fromJsonTree(jsonElement));
+                        return ret;
                     } catch (Exception e) {
                         // deserialization failed, continue
-                        errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataOneOf1 failed with `%s`.", e.getMessage()));
-                        log.log(Level.FINER, "Input data does not match schema 'UpsertCustomFieldValueFromContractsRequestDataOneOf1'", e);
+                        errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataAnyOf1 failed with `%s`.", e.getMessage()));
+                        log.log(Level.FINER, "Input data does not match schema 'UpsertCustomFieldValueFromContractsRequestDataAnyOf1'", e);
                     }
                     // deserialize GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2
                     try {
                         // validate the JSON object to see if any exception is thrown
                         GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2.validateJsonElement(jsonElement);
                         actualAdapter = adapterGetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2;
-                        match++;
-                        log.log(Level.FINER, "Input data matches schema 'GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2'");
+                        UpsertCustomFieldValueFromContractsRequestData ret = new UpsertCustomFieldValueFromContractsRequestData();
+                        ret.setActualInstance(actualAdapter.fromJsonTree(jsonElement));
+                        return ret;
                     } catch (Exception e) {
                         // deserialization failed, continue
                         errorMessages.add(String.format("Deserialization for GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2 failed with `%s`.", e.getMessage()));
                         log.log(Level.FINER, "Input data does not match schema 'GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2'", e);
                     }
-                    // deserialize UpsertCustomFieldValueFromContractsRequestDataOneOf2
+                    // deserialize UpsertCustomFieldValueFromContractsRequestDataAnyOf2
                     try {
                         // validate the JSON object to see if any exception is thrown
-                        UpsertCustomFieldValueFromContractsRequestDataOneOf2.validateJsonElement(jsonElement);
-                        actualAdapter = adapterUpsertCustomFieldValueFromContractsRequestDataOneOf2;
-                        match++;
-                        log.log(Level.FINER, "Input data matches schema 'UpsertCustomFieldValueFromContractsRequestDataOneOf2'");
+                        UpsertCustomFieldValueFromContractsRequestDataAnyOf2.validateJsonElement(jsonElement);
+                        actualAdapter = adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf2;
+                        UpsertCustomFieldValueFromContractsRequestData ret = new UpsertCustomFieldValueFromContractsRequestData();
+                        ret.setActualInstance(actualAdapter.fromJsonTree(jsonElement));
+                        return ret;
                     } catch (Exception e) {
                         // deserialization failed, continue
-                        errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataOneOf2 failed with `%s`.", e.getMessage()));
-                        log.log(Level.FINER, "Input data does not match schema 'UpsertCustomFieldValueFromContractsRequestDataOneOf2'", e);
+                        errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataAnyOf2 failed with `%s`.", e.getMessage()));
+                        log.log(Level.FINER, "Input data does not match schema 'UpsertCustomFieldValueFromContractsRequestDataAnyOf2'", e);
                     }
                     // deserialize UpsertCustomFieldValueFromWorkerRequestDataAnyOf4
                     try {
                         // validate the JSON object to see if any exception is thrown
                         UpsertCustomFieldValueFromWorkerRequestDataAnyOf4.validateJsonElement(jsonElement);
                         actualAdapter = adapterUpsertCustomFieldValueFromWorkerRequestDataAnyOf4;
-                        match++;
-                        log.log(Level.FINER, "Input data matches schema 'UpsertCustomFieldValueFromWorkerRequestDataAnyOf4'");
+                        UpsertCustomFieldValueFromContractsRequestData ret = new UpsertCustomFieldValueFromContractsRequestData();
+                        ret.setActualInstance(actualAdapter.fromJsonTree(jsonElement));
+                        return ret;
                     } catch (Exception e) {
                         // deserialization failed, continue
                         errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromWorkerRequestDataAnyOf4 failed with `%s`.", e.getMessage()));
                         log.log(Level.FINER, "Input data does not match schema 'UpsertCustomFieldValueFromWorkerRequestDataAnyOf4'", e);
                     }
-                    // deserialize UpsertCustomFieldValueFromContractsRequestDataOneOf3
+                    // deserialize UpsertCustomFieldValueFromContractsRequestDataAnyOf3
                     try {
                         // validate the JSON object to see if any exception is thrown
-                        UpsertCustomFieldValueFromContractsRequestDataOneOf3.validateJsonElement(jsonElement);
-                        actualAdapter = adapterUpsertCustomFieldValueFromContractsRequestDataOneOf3;
-                        match++;
-                        log.log(Level.FINER, "Input data matches schema 'UpsertCustomFieldValueFromContractsRequestDataOneOf3'");
-                    } catch (Exception e) {
-                        // deserialization failed, continue
-                        errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataOneOf3 failed with `%s`.", e.getMessage()));
-                        log.log(Level.FINER, "Input data does not match schema 'UpsertCustomFieldValueFromContractsRequestDataOneOf3'", e);
-                    }
-                    // deserialize UpsertCustomFieldValueFromContractsRequestDataOneOf4
-                    try {
-                        // validate the JSON object to see if any exception is thrown
-                        UpsertCustomFieldValueFromContractsRequestDataOneOf4.validateJsonElement(jsonElement);
-                        actualAdapter = adapterUpsertCustomFieldValueFromContractsRequestDataOneOf4;
-                        match++;
-                        log.log(Level.FINER, "Input data matches schema 'UpsertCustomFieldValueFromContractsRequestDataOneOf4'");
-                    } catch (Exception e) {
-                        // deserialization failed, continue
-                        errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataOneOf4 failed with `%s`.", e.getMessage()));
-                        log.log(Level.FINER, "Input data does not match schema 'UpsertCustomFieldValueFromContractsRequestDataOneOf4'", e);
-                    }
-
-                    if (match == 1) {
+                        UpsertCustomFieldValueFromContractsRequestDataAnyOf3.validateJsonElement(jsonElement);
+                        actualAdapter = adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf3;
                         UpsertCustomFieldValueFromContractsRequestData ret = new UpsertCustomFieldValueFromContractsRequestData();
                         ret.setActualInstance(actualAdapter.fromJsonTree(jsonElement));
                         return ret;
+                    } catch (Exception e) {
+                        // deserialization failed, continue
+                        errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataAnyOf3 failed with `%s`.", e.getMessage()));
+                        log.log(Level.FINER, "Input data does not match schema 'UpsertCustomFieldValueFromContractsRequestDataAnyOf3'", e);
+                    }
+                    // deserialize UpsertCustomFieldValueFromContractsRequestDataAnyOf4
+                    try {
+                        // validate the JSON object to see if any exception is thrown
+                        UpsertCustomFieldValueFromContractsRequestDataAnyOf4.validateJsonElement(jsonElement);
+                        actualAdapter = adapterUpsertCustomFieldValueFromContractsRequestDataAnyOf4;
+                        UpsertCustomFieldValueFromContractsRequestData ret = new UpsertCustomFieldValueFromContractsRequestData();
+                        ret.setActualInstance(actualAdapter.fromJsonTree(jsonElement));
+                        return ret;
+                    } catch (Exception e) {
+                        // deserialization failed, continue
+                        errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataAnyOf4 failed with `%s`.", e.getMessage()));
+                        log.log(Level.FINER, "Input data does not match schema 'UpsertCustomFieldValueFromContractsRequestDataAnyOf4'", e);
                     }
 
-                    throw new IOException(String.format("Failed deserialization for UpsertCustomFieldValueFromContractsRequestData: %d classes match result, expected 1. Detailed failure message for oneOf schemas: %s. JSON: %s", match, errorMessages, jsonElement.toString()));
+                    throw new IOException(String.format("Failed deserialization for UpsertCustomFieldValueFromContractsRequestData: no class matches result, expected at least 1. Detailed failure message for anyOf schemas: %s. JSON: %s", errorMessages, jsonElement.toString()));
                 }
             }.nullSafe();
         }
     }
 
-    // store a list of schema names defined in oneOf
+    // store a list of schema names defined in anyOf
     public static final Map<String, Class<?>> schemas = new HashMap<String, Class<?>>();
 
     public UpsertCustomFieldValueFromContractsRequestData() {
-        super("oneOf", Boolean.FALSE);
+        super("anyOf", Boolean.FALSE);
     }
 
     public UpsertCustomFieldValueFromContractsRequestData(Object o) {
-        super("oneOf", Boolean.FALSE);
+        super("anyOf", Boolean.FALSE);
         setActualInstance(o);
     }
 
     static {
-        schemas.put("UpsertCustomFieldValueFromContractsRequestDataOneOf", UpsertCustomFieldValueFromContractsRequestDataOneOf.class);
-        schemas.put("UpsertCustomFieldValueFromContractsRequestDataOneOf1", UpsertCustomFieldValueFromContractsRequestDataOneOf1.class);
+        schemas.put("UpsertCustomFieldValueFromContractsRequestDataAnyOf", UpsertCustomFieldValueFromContractsRequestDataAnyOf.class);
+        schemas.put("UpsertCustomFieldValueFromContractsRequestDataAnyOf1", UpsertCustomFieldValueFromContractsRequestDataAnyOf1.class);
         schemas.put("GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2", GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2.class);
-        schemas.put("UpsertCustomFieldValueFromContractsRequestDataOneOf2", UpsertCustomFieldValueFromContractsRequestDataOneOf2.class);
+        schemas.put("UpsertCustomFieldValueFromContractsRequestDataAnyOf2", UpsertCustomFieldValueFromContractsRequestDataAnyOf2.class);
         schemas.put("UpsertCustomFieldValueFromWorkerRequestDataAnyOf4", UpsertCustomFieldValueFromWorkerRequestDataAnyOf4.class);
-        schemas.put("UpsertCustomFieldValueFromContractsRequestDataOneOf3", UpsertCustomFieldValueFromContractsRequestDataOneOf3.class);
-        schemas.put("UpsertCustomFieldValueFromContractsRequestDataOneOf4", UpsertCustomFieldValueFromContractsRequestDataOneOf4.class);
+        schemas.put("UpsertCustomFieldValueFromContractsRequestDataAnyOf3", UpsertCustomFieldValueFromContractsRequestDataAnyOf3.class);
+        schemas.put("UpsertCustomFieldValueFromContractsRequestDataAnyOf4", UpsertCustomFieldValueFromContractsRequestDataAnyOf4.class);
     }
 
     @Override
@@ -274,20 +274,20 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
     }
 
     /**
-     * Set the instance that matches the oneOf child schema, check
-     * the instance parameter is valid against the oneOf child schemas:
-     * GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataOneOf, UpsertCustomFieldValueFromContractsRequestDataOneOf1, UpsertCustomFieldValueFromContractsRequestDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataOneOf3, UpsertCustomFieldValueFromContractsRequestDataOneOf4, UpsertCustomFieldValueFromWorkerRequestDataAnyOf4
+     * Set the instance that matches the anyOf child schema, check
+     * the instance parameter is valid against the anyOf child schemas:
+     * GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataAnyOf, UpsertCustomFieldValueFromContractsRequestDataAnyOf1, UpsertCustomFieldValueFromContractsRequestDataAnyOf2, UpsertCustomFieldValueFromContractsRequestDataAnyOf3, UpsertCustomFieldValueFromContractsRequestDataAnyOf4, UpsertCustomFieldValueFromWorkerRequestDataAnyOf4
      *
-     * It could be an instance of the 'oneOf' schemas.
+     * It could be an instance of the 'anyOf' schemas.
      */
     @Override
     public void setActualInstance(Object instance) {
-        if (instance instanceof UpsertCustomFieldValueFromContractsRequestDataOneOf) {
+        if (instance instanceof UpsertCustomFieldValueFromContractsRequestDataAnyOf) {
             super.setActualInstance(instance);
             return;
         }
 
-        if (instance instanceof UpsertCustomFieldValueFromContractsRequestDataOneOf1) {
+        if (instance instanceof UpsertCustomFieldValueFromContractsRequestDataAnyOf1) {
             super.setActualInstance(instance);
             return;
         }
@@ -297,7 +297,7 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
             return;
         }
 
-        if (instance instanceof UpsertCustomFieldValueFromContractsRequestDataOneOf2) {
+        if (instance instanceof UpsertCustomFieldValueFromContractsRequestDataAnyOf2) {
             super.setActualInstance(instance);
             return;
         }
@@ -307,24 +307,24 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
             return;
         }
 
-        if (instance instanceof UpsertCustomFieldValueFromContractsRequestDataOneOf3) {
+        if (instance instanceof UpsertCustomFieldValueFromContractsRequestDataAnyOf3) {
             super.setActualInstance(instance);
             return;
         }
 
-        if (instance instanceof UpsertCustomFieldValueFromContractsRequestDataOneOf4) {
+        if (instance instanceof UpsertCustomFieldValueFromContractsRequestDataAnyOf4) {
             super.setActualInstance(instance);
             return;
         }
 
-        throw new RuntimeException("Invalid instance type. Must be GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataOneOf, UpsertCustomFieldValueFromContractsRequestDataOneOf1, UpsertCustomFieldValueFromContractsRequestDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataOneOf3, UpsertCustomFieldValueFromContractsRequestDataOneOf4, UpsertCustomFieldValueFromWorkerRequestDataAnyOf4");
+        throw new RuntimeException("Invalid instance type. Must be GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataAnyOf, UpsertCustomFieldValueFromContractsRequestDataAnyOf1, UpsertCustomFieldValueFromContractsRequestDataAnyOf2, UpsertCustomFieldValueFromContractsRequestDataAnyOf3, UpsertCustomFieldValueFromContractsRequestDataAnyOf4, UpsertCustomFieldValueFromWorkerRequestDataAnyOf4");
     }
 
     /**
      * Get the actual instance, which can be the following:
-     * GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataOneOf, UpsertCustomFieldValueFromContractsRequestDataOneOf1, UpsertCustomFieldValueFromContractsRequestDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataOneOf3, UpsertCustomFieldValueFromContractsRequestDataOneOf4, UpsertCustomFieldValueFromWorkerRequestDataAnyOf4
+     * GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataAnyOf, UpsertCustomFieldValueFromContractsRequestDataAnyOf1, UpsertCustomFieldValueFromContractsRequestDataAnyOf2, UpsertCustomFieldValueFromContractsRequestDataAnyOf3, UpsertCustomFieldValueFromContractsRequestDataAnyOf4, UpsertCustomFieldValueFromWorkerRequestDataAnyOf4
      *
-     * @return The actual instance (GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataOneOf, UpsertCustomFieldValueFromContractsRequestDataOneOf1, UpsertCustomFieldValueFromContractsRequestDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataOneOf3, UpsertCustomFieldValueFromContractsRequestDataOneOf4, UpsertCustomFieldValueFromWorkerRequestDataAnyOf4)
+     * @return The actual instance (GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataAnyOf, UpsertCustomFieldValueFromContractsRequestDataAnyOf1, UpsertCustomFieldValueFromContractsRequestDataAnyOf2, UpsertCustomFieldValueFromContractsRequestDataAnyOf3, UpsertCustomFieldValueFromContractsRequestDataAnyOf4, UpsertCustomFieldValueFromWorkerRequestDataAnyOf4)
      */
     @SuppressWarnings("unchecked")
     @Override
@@ -333,25 +333,25 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
     }
 
     /**
-     * Get the actual instance of `UpsertCustomFieldValueFromContractsRequestDataOneOf`. If the actual instance is not `UpsertCustomFieldValueFromContractsRequestDataOneOf`,
+     * Get the actual instance of `UpsertCustomFieldValueFromContractsRequestDataAnyOf`. If the actual instance is not `UpsertCustomFieldValueFromContractsRequestDataAnyOf`,
      * the ClassCastException will be thrown.
      *
-     * @return The actual instance of `UpsertCustomFieldValueFromContractsRequestDataOneOf`
-     * @throws ClassCastException if the instance is not `UpsertCustomFieldValueFromContractsRequestDataOneOf`
+     * @return The actual instance of `UpsertCustomFieldValueFromContractsRequestDataAnyOf`
+     * @throws ClassCastException if the instance is not `UpsertCustomFieldValueFromContractsRequestDataAnyOf`
      */
-    public UpsertCustomFieldValueFromContractsRequestDataOneOf getUpsertCustomFieldValueFromContractsRequestDataOneOf() throws ClassCastException {
-        return (UpsertCustomFieldValueFromContractsRequestDataOneOf)super.getActualInstance();
+    public UpsertCustomFieldValueFromContractsRequestDataAnyOf getUpsertCustomFieldValueFromContractsRequestDataAnyOf() throws ClassCastException {
+        return (UpsertCustomFieldValueFromContractsRequestDataAnyOf)super.getActualInstance();
     }
 
     /**
-     * Get the actual instance of `UpsertCustomFieldValueFromContractsRequestDataOneOf1`. If the actual instance is not `UpsertCustomFieldValueFromContractsRequestDataOneOf1`,
+     * Get the actual instance of `UpsertCustomFieldValueFromContractsRequestDataAnyOf1`. If the actual instance is not `UpsertCustomFieldValueFromContractsRequestDataAnyOf1`,
      * the ClassCastException will be thrown.
      *
-     * @return The actual instance of `UpsertCustomFieldValueFromContractsRequestDataOneOf1`
-     * @throws ClassCastException if the instance is not `UpsertCustomFieldValueFromContractsRequestDataOneOf1`
+     * @return The actual instance of `UpsertCustomFieldValueFromContractsRequestDataAnyOf1`
+     * @throws ClassCastException if the instance is not `UpsertCustomFieldValueFromContractsRequestDataAnyOf1`
      */
-    public UpsertCustomFieldValueFromContractsRequestDataOneOf1 getUpsertCustomFieldValueFromContractsRequestDataOneOf1() throws ClassCastException {
-        return (UpsertCustomFieldValueFromContractsRequestDataOneOf1)super.getActualInstance();
+    public UpsertCustomFieldValueFromContractsRequestDataAnyOf1 getUpsertCustomFieldValueFromContractsRequestDataAnyOf1() throws ClassCastException {
+        return (UpsertCustomFieldValueFromContractsRequestDataAnyOf1)super.getActualInstance();
     }
 
     /**
@@ -366,14 +366,14 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
     }
 
     /**
-     * Get the actual instance of `UpsertCustomFieldValueFromContractsRequestDataOneOf2`. If the actual instance is not `UpsertCustomFieldValueFromContractsRequestDataOneOf2`,
+     * Get the actual instance of `UpsertCustomFieldValueFromContractsRequestDataAnyOf2`. If the actual instance is not `UpsertCustomFieldValueFromContractsRequestDataAnyOf2`,
      * the ClassCastException will be thrown.
      *
-     * @return The actual instance of `UpsertCustomFieldValueFromContractsRequestDataOneOf2`
-     * @throws ClassCastException if the instance is not `UpsertCustomFieldValueFromContractsRequestDataOneOf2`
+     * @return The actual instance of `UpsertCustomFieldValueFromContractsRequestDataAnyOf2`
+     * @throws ClassCastException if the instance is not `UpsertCustomFieldValueFromContractsRequestDataAnyOf2`
      */
-    public UpsertCustomFieldValueFromContractsRequestDataOneOf2 getUpsertCustomFieldValueFromContractsRequestDataOneOf2() throws ClassCastException {
-        return (UpsertCustomFieldValueFromContractsRequestDataOneOf2)super.getActualInstance();
+    public UpsertCustomFieldValueFromContractsRequestDataAnyOf2 getUpsertCustomFieldValueFromContractsRequestDataAnyOf2() throws ClassCastException {
+        return (UpsertCustomFieldValueFromContractsRequestDataAnyOf2)super.getActualInstance();
     }
 
     /**
@@ -388,25 +388,25 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
     }
 
     /**
-     * Get the actual instance of `UpsertCustomFieldValueFromContractsRequestDataOneOf3`. If the actual instance is not `UpsertCustomFieldValueFromContractsRequestDataOneOf3`,
+     * Get the actual instance of `UpsertCustomFieldValueFromContractsRequestDataAnyOf3`. If the actual instance is not `UpsertCustomFieldValueFromContractsRequestDataAnyOf3`,
      * the ClassCastException will be thrown.
      *
-     * @return The actual instance of `UpsertCustomFieldValueFromContractsRequestDataOneOf3`
-     * @throws ClassCastException if the instance is not `UpsertCustomFieldValueFromContractsRequestDataOneOf3`
+     * @return The actual instance of `UpsertCustomFieldValueFromContractsRequestDataAnyOf3`
+     * @throws ClassCastException if the instance is not `UpsertCustomFieldValueFromContractsRequestDataAnyOf3`
      */
-    public UpsertCustomFieldValueFromContractsRequestDataOneOf3 getUpsertCustomFieldValueFromContractsRequestDataOneOf3() throws ClassCastException {
-        return (UpsertCustomFieldValueFromContractsRequestDataOneOf3)super.getActualInstance();
+    public UpsertCustomFieldValueFromContractsRequestDataAnyOf3 getUpsertCustomFieldValueFromContractsRequestDataAnyOf3() throws ClassCastException {
+        return (UpsertCustomFieldValueFromContractsRequestDataAnyOf3)super.getActualInstance();
     }
 
     /**
-     * Get the actual instance of `UpsertCustomFieldValueFromContractsRequestDataOneOf4`. If the actual instance is not `UpsertCustomFieldValueFromContractsRequestDataOneOf4`,
+     * Get the actual instance of `UpsertCustomFieldValueFromContractsRequestDataAnyOf4`. If the actual instance is not `UpsertCustomFieldValueFromContractsRequestDataAnyOf4`,
      * the ClassCastException will be thrown.
      *
-     * @return The actual instance of `UpsertCustomFieldValueFromContractsRequestDataOneOf4`
-     * @throws ClassCastException if the instance is not `UpsertCustomFieldValueFromContractsRequestDataOneOf4`
+     * @return The actual instance of `UpsertCustomFieldValueFromContractsRequestDataAnyOf4`
+     * @throws ClassCastException if the instance is not `UpsertCustomFieldValueFromContractsRequestDataAnyOf4`
      */
-    public UpsertCustomFieldValueFromContractsRequestDataOneOf4 getUpsertCustomFieldValueFromContractsRequestDataOneOf4() throws ClassCastException {
-        return (UpsertCustomFieldValueFromContractsRequestDataOneOf4)super.getActualInstance();
+    public UpsertCustomFieldValueFromContractsRequestDataAnyOf4 getUpsertCustomFieldValueFromContractsRequestDataAnyOf4() throws ClassCastException {
+        return (UpsertCustomFieldValueFromContractsRequestDataAnyOf4)super.getActualInstance();
     }
 
     /**
@@ -416,68 +416,65 @@ public class UpsertCustomFieldValueFromContractsRequestData extends AbstractOpen
      * @throws IOException if the JSON Element is invalid with respect to UpsertCustomFieldValueFromContractsRequestData
      */
     public static void validateJsonElement(JsonElement jsonElement) throws IOException {
-        // validate oneOf schemas one by one
-        int validCount = 0;
+        // validate anyOf schemas one by one
         ArrayList<String> errorMessages = new ArrayList<>();
-        // validate the json string with UpsertCustomFieldValueFromContractsRequestDataOneOf
+        // validate the json string with UpsertCustomFieldValueFromContractsRequestDataAnyOf
         try {
-            UpsertCustomFieldValueFromContractsRequestDataOneOf.validateJsonElement(jsonElement);
-            validCount++;
+            UpsertCustomFieldValueFromContractsRequestDataAnyOf.validateJsonElement(jsonElement);
+            return;
         } catch (Exception e) {
-            errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataOneOf failed with `%s`.", e.getMessage()));
+            errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataAnyOf failed with `%s`.", e.getMessage()));
             // continue to the next one
         }
-        // validate the json string with UpsertCustomFieldValueFromContractsRequestDataOneOf1
+        // validate the json string with UpsertCustomFieldValueFromContractsRequestDataAnyOf1
         try {
-            UpsertCustomFieldValueFromContractsRequestDataOneOf1.validateJsonElement(jsonElement);
-            validCount++;
+            UpsertCustomFieldValueFromContractsRequestDataAnyOf1.validateJsonElement(jsonElement);
+            return;
         } catch (Exception e) {
-            errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataOneOf1 failed with `%s`.", e.getMessage()));
+            errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataAnyOf1 failed with `%s`.", e.getMessage()));
             // continue to the next one
         }
         // validate the json string with GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2
         try {
             GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2.validateJsonElement(jsonElement);
-            validCount++;
+            return;
         } catch (Exception e) {
             errorMessages.add(String.format("Deserialization for GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2 failed with `%s`.", e.getMessage()));
             // continue to the next one
         }
-        // validate the json string with UpsertCustomFieldValueFromContractsRequestDataOneOf2
+        // validate the json string with UpsertCustomFieldValueFromContractsRequestDataAnyOf2
         try {
-            UpsertCustomFieldValueFromContractsRequestDataOneOf2.validateJsonElement(jsonElement);
-            validCount++;
+            UpsertCustomFieldValueFromContractsRequestDataAnyOf2.validateJsonElement(jsonElement);
+            return;
         } catch (Exception e) {
-            errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataOneOf2 failed with `%s`.", e.getMessage()));
+            errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataAnyOf2 failed with `%s`.", e.getMessage()));
             // continue to the next one
         }
         // validate the json string with UpsertCustomFieldValueFromWorkerRequestDataAnyOf4
         try {
             UpsertCustomFieldValueFromWorkerRequestDataAnyOf4.validateJsonElement(jsonElement);
-            validCount++;
+            return;
         } catch (Exception e) {
             errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromWorkerRequestDataAnyOf4 failed with `%s`.", e.getMessage()));
             // continue to the next one
         }
-        // validate the json string with UpsertCustomFieldValueFromContractsRequestDataOneOf3
+        // validate the json string with UpsertCustomFieldValueFromContractsRequestDataAnyOf3
         try {
-            UpsertCustomFieldValueFromContractsRequestDataOneOf3.validateJsonElement(jsonElement);
-            validCount++;
+            UpsertCustomFieldValueFromContractsRequestDataAnyOf3.validateJsonElement(jsonElement);
+            return;
         } catch (Exception e) {
-            errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataOneOf3 failed with `%s`.", e.getMessage()));
+            errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataAnyOf3 failed with `%s`.", e.getMessage()));
             // continue to the next one
         }
-        // validate the json string with UpsertCustomFieldValueFromContractsRequestDataOneOf4
+        // validate the json string with UpsertCustomFieldValueFromContractsRequestDataAnyOf4
         try {
-            UpsertCustomFieldValueFromContractsRequestDataOneOf4.validateJsonElement(jsonElement);
-            validCount++;
+            UpsertCustomFieldValueFromContractsRequestDataAnyOf4.validateJsonElement(jsonElement);
+            return;
         } catch (Exception e) {
-            errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataOneOf4 failed with `%s`.", e.getMessage()));
+            errorMessages.add(String.format("Deserialization for UpsertCustomFieldValueFromContractsRequestDataAnyOf4 failed with `%s`.", e.getMessage()));
             // continue to the next one
         }
-        if (validCount != 1) {
-            throw new IOException(String.format("The JSON string is invalid for UpsertCustomFieldValueFromContractsRequestData with oneOf schemas: GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataOneOf, UpsertCustomFieldValueFromContractsRequestDataOneOf1, UpsertCustomFieldValueFromContractsRequestDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataOneOf3, UpsertCustomFieldValueFromContractsRequestDataOneOf4, UpsertCustomFieldValueFromWorkerRequestDataAnyOf4. %d class(es) match the result, expected 1. Detailed failure message for oneOf schemas: %s. JSON: %s", validCount, errorMessages, jsonElement.toString()));
-        }
+        throw new IOException(String.format("The JSON string is invalid for UpsertCustomFieldValueFromContractsRequestData with anyOf schemas: GetCustomFieldValuesFromWorker200ResponseDataInnerDataOneOf2, UpsertCustomFieldValueFromContractsRequestDataAnyOf, UpsertCustomFieldValueFromContractsRequestDataAnyOf1, UpsertCustomFieldValueFromContractsRequestDataAnyOf2, UpsertCustomFieldValueFromContractsRequestDataAnyOf3, UpsertCustomFieldValueFromContractsRequestDataAnyOf4, UpsertCustomFieldValueFromWorkerRequestDataAnyOf4. no class match the result, expected at least 1. Detailed failure message for anyOf schemas: %s. JSON: %s", errorMessages, jsonElement.toString()));
     }
 
     /**

@@ -25,7 +25,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.openapitools.client.model.CreateContract201ResponseDataWorkerLegalEntity;
 import org.openapitools.client.model.PAYASYOUGOTIMEBASEDAllOfClientTeamId;
-import org.openapitools.client.model.RootSchema1;
+import org.openapitools.client.model.RootSchema;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

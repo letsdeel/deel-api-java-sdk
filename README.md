@@ -2,7 +2,7 @@
 
 Deel REST API
 - API version: 1.25.0
-  - Build date: 2024-12-19T15:39:23.803918573Z[GMT]
+  - Build date: 2024-12-20T12:32:05.400762149Z[GMT]
   - Generator version: 7.10.0
 
 Deel REST API
@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.deel</groupId>
   <artifactId>deel-api-java-sdk</artifactId>
-  <version>2.1.23</version>
+  <version>alpha-0.0.1</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -57,7 +57,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.deel:deel-api-java-sdk:2.1.23"
+     implementation "com.deel:deel-api-java-sdk:alpha-0.0.1"
   }
 ```
 
@@ -71,7 +71,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/deel-api-java-sdk-2.1.23.jar`
+* `target/deel-api-java-sdk-alpha-0.0.1.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -1022,10 +1022,10 @@ Class | Method | HTTP request | Description
  - [GetContractList200ResponseDataInner](docs/GetContractList200ResponseDataInner.md)
  - [GetContractList200ResponseDataInnerClient](docs/GetContractList200ResponseDataInnerClient.md)
  - [GetContractList200ResponseDataInnerClientTeam](docs/GetContractList200ResponseDataInnerClientTeam.md)
- - [GetContractList200ResponseDataInnerClientTeamId](docs/GetContractList200ResponseDataInnerClientTeamId.md)
  - [GetContractList200ResponseDataInnerInvitations](docs/GetContractList200ResponseDataInnerInvitations.md)
  - [GetContractList200ResponseDataInnerSignatures](docs/GetContractList200ResponseDataInnerSignatures.md)
  - [GetContractList200ResponseDataInnerWorker](docs/GetContractList200ResponseDataInnerWorker.md)
+ - [GetContractList200ResponseDataInnerWorkerAlternateEmailInner](docs/GetContractList200ResponseDataInnerWorkerAlternateEmailInner.md)
  - [GetContractList200ResponsePage](docs/GetContractList200ResponsePage.md)
  - [GetContractListCurrenciesParameter](docs/GetContractListCurrenciesParameter.md)
  - [GetContractPaymentDates200Response](docs/GetContractPaymentDates200Response.md)
@@ -1580,7 +1580,6 @@ Class | Method | HTTP request | Description
  - [RoleToUpdateContainer](docs/RoleToUpdateContainer.md)
  - [RoleToUpdateContainerData](docs/RoleToUpdateContainerData.md)
  - [RootSchema](docs/RootSchema.md)
- - [RootSchema1](docs/RootSchema1.md)
  - [SalaryFrequencyScaleEnum](docs/SalaryFrequencyScaleEnum.md)
  - [Seniority](docs/Seniority.md)
  - [SeniorityListContainer](docs/SeniorityListContainer.md)
@@ -1777,11 +1776,11 @@ Class | Method | HTTP request | Description
  - [UpsertChildWorkerRelationsRequestData](docs/UpsertChildWorkerRelationsRequestData.md)
  - [UpsertCustomFieldValueFromContractsRequest](docs/UpsertCustomFieldValueFromContractsRequest.md)
  - [UpsertCustomFieldValueFromContractsRequestData](docs/UpsertCustomFieldValueFromContractsRequestData.md)
- - [UpsertCustomFieldValueFromContractsRequestDataOneOf](docs/UpsertCustomFieldValueFromContractsRequestDataOneOf.md)
- - [UpsertCustomFieldValueFromContractsRequestDataOneOf1](docs/UpsertCustomFieldValueFromContractsRequestDataOneOf1.md)
- - [UpsertCustomFieldValueFromContractsRequestDataOneOf2](docs/UpsertCustomFieldValueFromContractsRequestDataOneOf2.md)
- - [UpsertCustomFieldValueFromContractsRequestDataOneOf3](docs/UpsertCustomFieldValueFromContractsRequestDataOneOf3.md)
- - [UpsertCustomFieldValueFromContractsRequestDataOneOf4](docs/UpsertCustomFieldValueFromContractsRequestDataOneOf4.md)
+ - [UpsertCustomFieldValueFromContractsRequestDataAnyOf](docs/UpsertCustomFieldValueFromContractsRequestDataAnyOf.md)
+ - [UpsertCustomFieldValueFromContractsRequestDataAnyOf1](docs/UpsertCustomFieldValueFromContractsRequestDataAnyOf1.md)
+ - [UpsertCustomFieldValueFromContractsRequestDataAnyOf2](docs/UpsertCustomFieldValueFromContractsRequestDataAnyOf2.md)
+ - [UpsertCustomFieldValueFromContractsRequestDataAnyOf3](docs/UpsertCustomFieldValueFromContractsRequestDataAnyOf3.md)
+ - [UpsertCustomFieldValueFromContractsRequestDataAnyOf4](docs/UpsertCustomFieldValueFromContractsRequestDataAnyOf4.md)
  - [UpsertCustomFieldValueFromWorkerRequest](docs/UpsertCustomFieldValueFromWorkerRequest.md)
  - [UpsertCustomFieldValueFromWorkerRequestData](docs/UpsertCustomFieldValueFromWorkerRequestData.md)
  - [UpsertCustomFieldValueFromWorkerRequestDataAnyOf](docs/UpsertCustomFieldValueFromWorkerRequestDataAnyOf.md)
