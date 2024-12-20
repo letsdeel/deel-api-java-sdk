@@ -39645,6 +39645,7 @@ components:
           - payg_tasks
           - eor
           - unknown
+          - peo
           - employee
           - global_payroll
           - shield_msa

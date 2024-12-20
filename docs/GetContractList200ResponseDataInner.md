@@ -39,6 +39,7 @@
 | PAYG_TASKS | &quot;payg_tasks&quot; |
 | EOR | &quot;eor&quot; |
 | UNKNOWN | &quot;unknown&quot; |
+| PEO | &quot;peo&quot; |
 | EMPLOYEE | &quot;employee&quot; |
 | GLOBAL_PAYROLL | &quot;global_payroll&quot; |
 | SHIELD_MSA | &quot;shield_msa&quot; |
