@@ -50,11 +50,11 @@ import org.openapitools.client.JSON;
 /**
  * Seniority describes level of expertise at a job e.g. junior.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T17:16:06.545846627Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T17:29:26.705508686Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseDataSeniority {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   private BigDecimal id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
@@ -70,7 +70,7 @@ public class GetContractById200ResponseDataSeniority {
   public GetContractById200ResponseDataSeniority() {
   }
 
-  public GetContractById200ResponseDataSeniority id(@javax.annotation.Nonnull BigDecimal id) {
+  public GetContractById200ResponseDataSeniority id(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
     return this;
   }
@@ -79,12 +79,12 @@ public class GetContractById200ResponseDataSeniority {
    * Unique identifier of this resource.
    * @return id
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   public BigDecimal getId() {
     return id;
   }
 
-  public void setId(@javax.annotation.Nonnull BigDecimal id) {
+  public void setId(@javax.annotation.Nullable BigDecimal id) {
     this.id = id;
   }
 
@@ -193,8 +193,6 @@ public class GetContractById200ResponseDataSeniority {
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("id");
-    openapiRequiredFields.add("name");
   }
 
   /**
@@ -215,13 +213,6 @@ public class GetContractById200ResponseDataSeniority {
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!GetContractById200ResponseDataSeniority.openapiFields.contains(entry.getKey())) {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `GetContractById200ResponseDataSeniority` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
-        }
-      }
-
-      // check to make sure all required properties/fields are present in the JSON string
-      for (String requiredField : GetContractById200ResponseDataSeniority.openapiRequiredFields) {
-        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
-          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();

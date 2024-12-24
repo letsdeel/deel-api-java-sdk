@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * ListOnboardingTracker200ResponseDataInnerAppExperience
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T17:16:06.545846627Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T17:29:26.705508686Z[GMT]", comments = "Generator version: 7.10.0")
 public class ListOnboardingTracker200ResponseDataInnerAppExperience {
   public static final String SERIALIZED_NAME_IS_MINIMAL_REQUIREMENTS = "is_minimal_requirements";
   @SerializedName(SERIALIZED_NAME_IS_MINIMAL_REQUIREMENTS)

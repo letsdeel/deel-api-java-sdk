@@ -42126,9 +42126,6 @@ components:
           example: 2
           nullable: true
           type: number
-      required:
-      - id
-      - name
       type: object
     getContractById_200_response_data_signatures:
       example:
