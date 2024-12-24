@@ -71,11 +71,11 @@ public class GetContractById200ResponseDataClientLegalEntityTest {
     }
 
     /**
-     * Test the property 'subType'
+     * Test the property 'subtype'
      */
     @Test
-    public void subTypeTest() {
-        // TODO: test subType
+    public void subtypeTest() {
+        // TODO: test subtype
     }
 
     /**

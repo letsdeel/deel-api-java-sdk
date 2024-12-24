@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * GetContractById200ResponseDataClientLegalEntity
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T17:05:54.444639311Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T17:16:06.545846627Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseDataClientLegalEntity {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -71,10 +71,10 @@ public class GetContractById200ResponseDataClientLegalEntity {
   @javax.annotation.Nullable
   private String email;
 
-  public static final String SERIALIZED_NAME_SUB_TYPE = "sub-type";
-  @SerializedName(SERIALIZED_NAME_SUB_TYPE)
+  public static final String SERIALIZED_NAME_SUBTYPE = "subtype";
+  @SerializedName(SERIALIZED_NAME_SUBTYPE)
   @javax.annotation.Nullable
-  private String subType;
+  private String subtype;
 
   public static final String SERIALIZED_NAME_VAT_NUMBER = "vat_number";
   @SerializedName(SERIALIZED_NAME_VAT_NUMBER)
@@ -165,22 +165,22 @@ public class GetContractById200ResponseDataClientLegalEntity {
   }
 
 
-  public GetContractById200ResponseDataClientLegalEntity subType(@javax.annotation.Nullable String subType) {
-    this.subType = subType;
+  public GetContractById200ResponseDataClientLegalEntity subtype(@javax.annotation.Nullable String subtype) {
+    this.subtype = subtype;
     return this;
   }
 
   /**
    * Sub-type of the legal entity.
-   * @return subType
+   * @return subtype
    */
   @javax.annotation.Nullable
-  public String getSubType() {
-    return subType;
+  public String getSubtype() {
+    return subtype;
   }
 
-  public void setSubType(@javax.annotation.Nullable String subType) {
-    this.subType = subType;
+  public void setSubtype(@javax.annotation.Nullable String subtype) {
+    this.subtype = subtype;
   }
 
 
@@ -236,7 +236,7 @@ public class GetContractById200ResponseDataClientLegalEntity {
         Objects.equals(this.name, getContractById200ResponseDataClientLegalEntity.name) &&
         Objects.equals(this.type, getContractById200ResponseDataClientLegalEntity.type) &&
         Objects.equals(this.email, getContractById200ResponseDataClientLegalEntity.email) &&
-        Objects.equals(this.subType, getContractById200ResponseDataClientLegalEntity.subType) &&
+        Objects.equals(this.subtype, getContractById200ResponseDataClientLegalEntity.subtype) &&
         Objects.equals(this.vatNumber, getContractById200ResponseDataClientLegalEntity.vatNumber) &&
         Objects.equals(this.registrationNumber, getContractById200ResponseDataClientLegalEntity.registrationNumber);
   }
@@ -247,7 +247,7 @@ public class GetContractById200ResponseDataClientLegalEntity {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, type, email, subType, vatNumber, registrationNumber);
+    return Objects.hash(id, name, type, email, subtype, vatNumber, registrationNumber);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -265,7 +265,7 @@ public class GetContractById200ResponseDataClientLegalEntity {
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
-    sb.append("    subType: ").append(toIndentedString(subType)).append("\n");
+    sb.append("    subtype: ").append(toIndentedString(subtype)).append("\n");
     sb.append("    vatNumber: ").append(toIndentedString(vatNumber)).append("\n");
     sb.append("    registrationNumber: ").append(toIndentedString(registrationNumber)).append("\n");
     sb.append("}");
@@ -294,7 +294,7 @@ public class GetContractById200ResponseDataClientLegalEntity {
     openapiFields.add("name");
     openapiFields.add("type");
     openapiFields.add("email");
-    openapiFields.add("sub-type");
+    openapiFields.add("subtype");
     openapiFields.add("vat_number");
     openapiFields.add("registration_number");
 
@@ -335,8 +335,8 @@ public class GetContractById200ResponseDataClientLegalEntity {
       if ((jsonObj.get("email") != null && !jsonObj.get("email").isJsonNull()) && !jsonObj.get("email").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("email").toString()));
       }
-      if ((jsonObj.get("sub-type") != null && !jsonObj.get("sub-type").isJsonNull()) && !jsonObj.get("sub-type").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `sub-type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("sub-type").toString()));
+      if ((jsonObj.get("subtype") != null && !jsonObj.get("subtype").isJsonNull()) && !jsonObj.get("subtype").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `subtype` to be a primitive type in the JSON string but got `%s`", jsonObj.get("subtype").toString()));
       }
       if ((jsonObj.get("vat_number") != null && !jsonObj.get("vat_number").isJsonNull()) && !jsonObj.get("vat_number").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `vat_number` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vat_number").toString()));

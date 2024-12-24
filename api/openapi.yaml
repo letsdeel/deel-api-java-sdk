@@ -41941,12 +41941,12 @@ components:
       type: object
     getContractById_200_response_data_client_legal_entity:
       example:
+        subtype: general-partnership
         vat_number: "123456789"
         registration_number: "123456789"
         name: Engineering Team
         id: team-xyz789
         type: company
-        sub-type: general-partnership
         email: test@example.com
       properties:
         id:
@@ -41968,7 +41968,7 @@ components:
           example: test@example.com
           nullable: true
           type: string
-        sub-type:
+        subtype:
           description: Sub-type of the legal entity.
           example: general-partnership
           nullable: true
@@ -41988,12 +41988,12 @@ components:
       example:
         full_name: Acme Corp
         legal_entity:
+          subtype: general-partnership
           vat_number: "123456789"
           registration_number: "123456789"
           name: Engineering Team
           id: team-xyz789
           type: company
-          sub-type: general-partnership
           email: test@example.com
         id: team-abc123
         team:
@@ -42322,12 +42322,12 @@ components:
         client:
           full_name: Acme Corp
           legal_entity:
+            subtype: general-partnership
             vat_number: "123456789"
             registration_number: "123456789"
             name: Engineering Team
             id: team-xyz789
             type: company
-            sub-type: general-partnership
             email: test@example.com
           id: team-abc123
           team:
@@ -42557,12 +42557,12 @@ components:
           client:
             full_name: Acme Corp
             legal_entity:
+              subtype: general-partnership
               vat_number: "123456789"
               registration_number: "123456789"
               name: Engineering Team
               id: team-xyz789
               type: company
-              sub-type: general-partnership
               email: test@example.com
             id: team-abc123
             team:
