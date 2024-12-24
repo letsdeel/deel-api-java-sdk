@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T17:29:26.705508686Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T18:03:48.437639881Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateOrUpdateParentRelationBetweenProfilesRequestDataEditReason {
   public static final String SERIALIZED_NAME_REASON_OID = "reason_oid";
   @SerializedName(SERIALIZED_NAME_REASON_OID)

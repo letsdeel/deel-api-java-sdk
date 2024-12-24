@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * Textual notes describing important additional data regarding the employement process or costs.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T17:29:26.705508686Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T18:03:48.437639881Z[GMT]", comments = "Generator version: 7.10.0")
 public class EorEmployeeCostCalculationResponseAdditionalData {
   public static final String SERIALIZED_NAME_ADDITIONAL_NOTES = "additional_notes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_NOTES)

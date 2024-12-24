@@ -42114,6 +42114,7 @@ components:
         id:
           description: Unique identifier of this resource.
           example: 1
+          nullable: true
           type: number
         name:
           description: Name of seniority level e.g. Mid (Individual Contributor Level
@@ -42496,7 +42497,6 @@ components:
       - id
       - invitations
       - is_archived
-      - seniority
       - signatures
       - special_clause
       - start_date

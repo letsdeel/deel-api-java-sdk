@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * Access settings for the custom field
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T17:29:26.705508686Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T18:03:48.437639881Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetCustomFieldsFromContracts200ResponseDataSettingsAccess {
   /**
    * Entities providing access to the custom field

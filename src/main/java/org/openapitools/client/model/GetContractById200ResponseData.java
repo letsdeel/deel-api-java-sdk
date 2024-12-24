@@ -63,7 +63,7 @@ import org.openapitools.client.JSON;
 /**
  * GetContractById200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T17:29:26.705508686Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T18:03:48.437639881Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -939,7 +939,6 @@ public class GetContractById200ResponseData {
     openapiRequiredFields.add("client");
     openapiRequiredFields.add("status");
     openapiRequiredFields.add("worker");
-    openapiRequiredFields.add("seniority");
     openapiRequiredFields.add("created_at");
     openapiRequiredFields.add("signatures");
     openapiRequiredFields.add("start_date");
@@ -1006,8 +1005,10 @@ public class GetContractById200ResponseData {
       if ((jsonObj.get("job_title") != null && !jsonObj.get("job_title").isJsonNull()) && !jsonObj.get("job_title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `job_title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("job_title").toString()));
       }
-      // validate the required field `seniority`
-      GetContractById200ResponseDataSeniority.validateJsonElement(jsonObj.get("seniority"));
+      // validate the optional field `seniority`
+      if (jsonObj.get("seniority") != null && !jsonObj.get("seniority").isJsonNull()) {
+        GetContractById200ResponseDataSeniority.validateJsonElement(jsonObj.get("seniority"));
+      }
       // validate the required field `signatures`
       GetContractById200ResponseDataSignatures.validateJsonElement(jsonObj.get("signatures"));
       if ((jsonObj.get("external_id") != null && !jsonObj.get("external_id").isJsonNull()) && !jsonObj.get("external_id").isJsonPrimitive()) {
