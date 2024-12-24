@@ -55,7 +55,7 @@ import org.openapitools.client.JSON;
 /**
  * EOR quote approved by Deel
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T18:40:51.396070831Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T18:53:24.509445193Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataQuote {
   public static final String SERIALIZED_NAME_BENEFITS = "benefits";
   @SerializedName(SERIALIZED_NAME_BENEFITS)

@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * WorkerTerminationBody
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T18:40:51.396070831Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T18:53:24.509445193Z[GMT]", comments = "Generator version: 7.10.0")
 public class WorkerTerminationBody {
   public static final String SERIALIZED_NAME_DESIRED_END_DATE = "desired_end_date";
   @SerializedName(SERIALIZED_NAME_DESIRED_END_DATE)

@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * GetContractById200ResponseDataCompensationDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T18:40:51.396070831Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T18:53:24.509445193Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseDataCompensationDetails {
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
@@ -76,7 +76,7 @@ public class GetContractById200ResponseDataCompensationDetails {
   public static final String SERIALIZED_NAME_FIRST_PAYMENT = "first_payment";
   @SerializedName(SERIALIZED_NAME_FIRST_PAYMENT)
   @javax.annotation.Nullable
-  private BigDecimal firstPayment;
+  private String firstPayment;
 
   public static final String SERIALIZED_NAME_FIRST_PAYMENT_DATE = "first_payment_date";
   @SerializedName(SERIALIZED_NAME_FIRST_PAYMENT_DATE)
@@ -177,7 +177,7 @@ public class GetContractById200ResponseDataCompensationDetails {
   }
 
 
-  public GetContractById200ResponseDataCompensationDetails firstPayment(@javax.annotation.Nullable BigDecimal firstPayment) {
+  public GetContractById200ResponseDataCompensationDetails firstPayment(@javax.annotation.Nullable String firstPayment) {
     this.firstPayment = firstPayment;
     return this;
   }
@@ -187,11 +187,11 @@ public class GetContractById200ResponseDataCompensationDetails {
    * @return firstPayment
    */
   @javax.annotation.Nullable
-  public BigDecimal getFirstPayment() {
+  public String getFirstPayment() {
     return firstPayment;
   }
 
-  public void setFirstPayment(@javax.annotation.Nullable BigDecimal firstPayment) {
+  public void setFirstPayment(@javax.annotation.Nullable String firstPayment) {
     this.firstPayment = firstPayment;
   }
 
@@ -387,6 +387,9 @@ public class GetContractById200ResponseDataCompensationDetails {
       }
       if ((jsonObj.get("currency_code") != null && !jsonObj.get("currency_code").isJsonNull()) && !jsonObj.get("currency_code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `currency_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currency_code").toString()));
+      }
+      if ((jsonObj.get("first_payment") != null && !jsonObj.get("first_payment").isJsonNull()) && !jsonObj.get("first_payment").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `first_payment` to be a primitive type in the JSON string but got `%s`", jsonObj.get("first_payment").toString()));
       }
       if ((jsonObj.get("gross_annual_salary") != null && !jsonObj.get("gross_annual_salary").isJsonNull()) && !jsonObj.get("gross_annual_salary").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `gross_annual_salary` to be a primitive type in the JSON string but got `%s`", jsonObj.get("gross_annual_salary").toString()));

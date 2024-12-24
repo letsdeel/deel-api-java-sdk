@@ -42227,7 +42227,7 @@ components:
     getContractById_200_response_data_compensation_details:
       example:
         amount: 100
-        first_payment: 500
+        first_payment: "500"
         scale: hourly
         gross_annual_salary: "50000"
         first_payment_date: 2022-01-01
@@ -42259,9 +42259,9 @@ components:
           type: string
         first_payment:
           description: First payment amount.
-          example: 500
+          example: "500"
           nullable: true
-          type: number
+          type: string
         first_payment_date:
           description: First payment date.
           example: 2022-01-01
@@ -42295,7 +42295,7 @@ components:
         created_at: 2022-01-01T00:00:00Z
         compensation_details:
           amount: 100
-          first_payment: 500
+          first_payment: "500"
           scale: hourly
           gross_annual_salary: "50000"
           first_payment_date: 2022-01-01
@@ -42530,7 +42530,7 @@ components:
           created_at: 2022-01-01T00:00:00Z
           compensation_details:
             amount: 100
-            first_payment: 500
+            first_payment: "500"
             scale: hourly
             gross_annual_salary: "50000"
             first_payment_date: 2022-01-01
