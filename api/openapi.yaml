@@ -42492,7 +42492,6 @@ components:
         termination_date:
           description: Date and time when the contract ends.
           example: 2022-01-01T00:00:00Z
-          format: date-time
           nullable: true
           type: string
         contract_template:

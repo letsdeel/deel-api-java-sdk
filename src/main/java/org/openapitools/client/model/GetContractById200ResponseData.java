@@ -63,7 +63,7 @@ import org.openapitools.client.JSON;
 /**
  * GetContractById200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T19:15:13.914237102Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T19:29:34.997576605Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -320,7 +320,7 @@ public class GetContractById200ResponseData {
   public static final String SERIALIZED_NAME_TERMINATION_DATE = "termination_date";
   @SerializedName(SERIALIZED_NAME_TERMINATION_DATE)
   @javax.annotation.Nullable
-  private OffsetDateTime terminationDate;
+  private String terminationDate;
 
   public static final String SERIALIZED_NAME_CONTRACT_TEMPLATE = "contract_template";
   @SerializedName(SERIALIZED_NAME_CONTRACT_TEMPLATE)
@@ -728,7 +728,7 @@ public class GetContractById200ResponseData {
   }
 
 
-  public GetContractById200ResponseData terminationDate(@javax.annotation.Nullable OffsetDateTime terminationDate) {
+  public GetContractById200ResponseData terminationDate(@javax.annotation.Nullable String terminationDate) {
     this.terminationDate = terminationDate;
     return this;
   }
@@ -738,11 +738,11 @@ public class GetContractById200ResponseData {
    * @return terminationDate
    */
   @javax.annotation.Nullable
-  public OffsetDateTime getTerminationDate() {
+  public String getTerminationDate() {
     return terminationDate;
   }
 
-  public void setTerminationDate(@javax.annotation.Nullable OffsetDateTime terminationDate) {
+  public void setTerminationDate(@javax.annotation.Nullable String terminationDate) {
     this.terminationDate = terminationDate;
   }
 
@@ -1038,6 +1038,9 @@ public class GetContractById200ResponseData {
       }
       if ((jsonObj.get("special_clause") != null && !jsonObj.get("special_clause").isJsonNull()) && !jsonObj.get("special_clause").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `special_clause` to be a primitive type in the JSON string but got `%s`", jsonObj.get("special_clause").toString()));
+      }
+      if ((jsonObj.get("termination_date") != null && !jsonObj.get("termination_date").isJsonNull()) && !jsonObj.get("termination_date").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `termination_date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("termination_date").toString()));
       }
       // validate the optional field `contract_template`
       if (jsonObj.get("contract_template") != null && !jsonObj.get("contract_template").isJsonNull()) {

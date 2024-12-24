@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * Summary of the shift
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T19:15:13.914237102Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T19:29:34.997576605Z[GMT]", comments = "Generator version: 7.10.0")
 public class TimeTrackingShiftSummarySchema {
   public static final String SERIALIZED_NAME_SHIFT_RATE_EXTERNAL_ID = "shift_rate_external_id";
   @SerializedName(SERIALIZED_NAME_SHIFT_RATE_EXTERNAL_ID)

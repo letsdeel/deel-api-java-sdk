@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * GlobalPayrollG2NReport
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T19:15:13.914237102Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T19:29:34.997576605Z[GMT]", comments = "Generator version: 7.10.0")
 public class GlobalPayrollG2NReport {
   public static final String SERIALIZED_NAME_NET_PAY = "net_pay";
   @SerializedName(SERIALIZED_NAME_NET_PAY)

@@ -27,7 +27,7 @@
 |**noticePeriod** | **BigDecimal** | Notice period in days. |  [optional] |
 |**scopeOfWork** | **String** | Scope of work of the contract. |  [optional] |
 |**specialClause** | **String** | Special clause of the contract. |  |
-|**terminationDate** | **OffsetDateTime** | Date and time when the contract ends. |  |
+|**terminationDate** | **String** | Date and time when the contract ends. |  |
 |**contractTemplate** | [**GetContractById200ResponseDataContractTemplate**](GetContractById200ResponseDataContractTemplate.md) |  |  [optional] |
 |**employmentDetails** | [**GetContractById200ResponseDataEmploymentDetails**](GetContractById200ResponseDataEmploymentDetails.md) |  |  |
 |**compensationDetails** | [**GetContractById200ResponseDataCompensationDetails**](GetContractById200ResponseDataCompensationDetails.md) |  |  |
