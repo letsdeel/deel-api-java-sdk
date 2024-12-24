@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * GPContractToCreateCompensationDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T18:53:24.509445193Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T19:15:13.914237102Z[GMT]", comments = "Generator version: 7.10.0")
 public class GPContractToCreateCompensationDetails {
   /**
    * Defines the scale at which the salary is paid.

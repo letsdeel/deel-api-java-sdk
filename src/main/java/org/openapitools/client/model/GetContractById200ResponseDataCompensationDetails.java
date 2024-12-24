@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.time.LocalDate;
+import java.time.OffsetDateTime;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * GetContractById200ResponseDataCompensationDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T18:53:24.509445193Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T19:15:13.914237102Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseDataCompensationDetails {
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
@@ -81,7 +81,7 @@ public class GetContractById200ResponseDataCompensationDetails {
   public static final String SERIALIZED_NAME_FIRST_PAYMENT_DATE = "first_payment_date";
   @SerializedName(SERIALIZED_NAME_FIRST_PAYMENT_DATE)
   @javax.annotation.Nullable
-  private LocalDate firstPaymentDate;
+  private OffsetDateTime firstPaymentDate;
 
   public static final String SERIALIZED_NAME_GROSS_ANNUAL_SALARY = "gross_annual_salary";
   @SerializedName(SERIALIZED_NAME_GROSS_ANNUAL_SALARY)
@@ -196,7 +196,7 @@ public class GetContractById200ResponseDataCompensationDetails {
   }
 
 
-  public GetContractById200ResponseDataCompensationDetails firstPaymentDate(@javax.annotation.Nullable LocalDate firstPaymentDate) {
+  public GetContractById200ResponseDataCompensationDetails firstPaymentDate(@javax.annotation.Nullable OffsetDateTime firstPaymentDate) {
     this.firstPaymentDate = firstPaymentDate;
     return this;
   }
@@ -206,11 +206,11 @@ public class GetContractById200ResponseDataCompensationDetails {
    * @return firstPaymentDate
    */
   @javax.annotation.Nullable
-  public LocalDate getFirstPaymentDate() {
+  public OffsetDateTime getFirstPaymentDate() {
     return firstPaymentDate;
   }
 
-  public void setFirstPaymentDate(@javax.annotation.Nullable LocalDate firstPaymentDate) {
+  public void setFirstPaymentDate(@javax.annotation.Nullable OffsetDateTime firstPaymentDate) {
     this.firstPaymentDate = firstPaymentDate;
   }
 
