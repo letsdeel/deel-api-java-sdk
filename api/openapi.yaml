@@ -42228,6 +42228,7 @@ components:
       example:
         amount: 100
         first_payment: 500
+        scale: hourly
         gross_annual_salary: "50000"
         first_payment_date: 2022-01-01
         currency_code: GBP
@@ -42235,6 +42236,11 @@ components:
         frequency: monthly
         gross_signing_bonus: "5000"
       properties:
+        scale:
+          description: Scale of the payment.
+          example: hourly
+          nullable: true
+          type: string
         amount:
           description: Amount to be paid. This field can be excluded when creating
             a Pay-as-you-go task-based or Milestone contracts.
@@ -42254,23 +42260,28 @@ components:
         first_payment:
           description: First payment amount.
           example: 500
+          nullable: true
           type: number
         first_payment_date:
           description: First payment date.
           example: 2022-01-01
           format: date
+          nullable: true
           type: string
         gross_annual_salary:
           description: Gross annual salary.
           example: "50000"
+          nullable: true
           type: string
         gross_signing_bonus:
           description: Gross signing bonus.
           example: "5000"
+          nullable: true
           type: string
         gross_variable_bonus:
           description: Gross variable bonus.
           example: "5000"
+          nullable: true
           type: string
       type: object
     getContractById_200_response_data:
@@ -42285,6 +42296,7 @@ components:
         compensation_details:
           amount: 100
           first_payment: 500
+          scale: hourly
           gross_annual_salary: "50000"
           first_payment_date: 2022-01-01
           currency_code: GBP
@@ -42519,6 +42531,7 @@ components:
           compensation_details:
             amount: 100
             first_payment: 500
+            scale: hourly
             gross_annual_salary: "50000"
             first_payment_date: 2022-01-01
             currency_code: GBP

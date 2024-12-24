@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Arrays;
+import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,8 +51,13 @@ import org.openapitools.client.JSON;
 /**
  * GetContractById200ResponseDataCompensationDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T18:03:48.437639881Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T18:40:51.396070831Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseDataCompensationDetails {
+  public static final String SERIALIZED_NAME_SCALE = "scale";
+  @SerializedName(SERIALIZED_NAME_SCALE)
+  @javax.annotation.Nullable
+  private String scale;
+
   public static final String SERIALIZED_NAME_AMOUNT = "amount";
   @SerializedName(SERIALIZED_NAME_AMOUNT)
   @javax.annotation.Nullable
@@ -94,6 +100,25 @@ public class GetContractById200ResponseDataCompensationDetails {
 
   public GetContractById200ResponseDataCompensationDetails() {
   }
+
+  public GetContractById200ResponseDataCompensationDetails scale(@javax.annotation.Nullable String scale) {
+    this.scale = scale;
+    return this;
+  }
+
+  /**
+   * Scale of the payment.
+   * @return scale
+   */
+  @javax.annotation.Nullable
+  public String getScale() {
+    return scale;
+  }
+
+  public void setScale(@javax.annotation.Nullable String scale) {
+    this.scale = scale;
+  }
+
 
   public GetContractById200ResponseDataCompensationDetails amount(@javax.annotation.Nullable BigDecimal amount) {
     this.amount = amount;
@@ -257,7 +282,8 @@ public class GetContractById200ResponseDataCompensationDetails {
       return false;
     }
     GetContractById200ResponseDataCompensationDetails getContractById200ResponseDataCompensationDetails = (GetContractById200ResponseDataCompensationDetails) o;
-    return Objects.equals(this.amount, getContractById200ResponseDataCompensationDetails.amount) &&
+    return Objects.equals(this.scale, getContractById200ResponseDataCompensationDetails.scale) &&
+        Objects.equals(this.amount, getContractById200ResponseDataCompensationDetails.amount) &&
         Objects.equals(this.frequency, getContractById200ResponseDataCompensationDetails.frequency) &&
         Objects.equals(this.currencyCode, getContractById200ResponseDataCompensationDetails.currencyCode) &&
         Objects.equals(this.firstPayment, getContractById200ResponseDataCompensationDetails.firstPayment) &&
@@ -267,15 +293,27 @@ public class GetContractById200ResponseDataCompensationDetails {
         Objects.equals(this.grossVariableBonus, getContractById200ResponseDataCompensationDetails.grossVariableBonus);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
-    return Objects.hash(amount, frequency, currencyCode, firstPayment, firstPaymentDate, grossAnnualSalary, grossSigningBonus, grossVariableBonus);
+    return Objects.hash(scale, amount, frequency, currencyCode, firstPayment, firstPaymentDate, grossAnnualSalary, grossSigningBonus, grossVariableBonus);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GetContractById200ResponseDataCompensationDetails {\n");
+    sb.append("    scale: ").append(toIndentedString(scale)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("    frequency: ").append(toIndentedString(frequency)).append("\n");
     sb.append("    currencyCode: ").append(toIndentedString(currencyCode)).append("\n");
@@ -306,6 +344,7 @@ public class GetContractById200ResponseDataCompensationDetails {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
+    openapiFields.add("scale");
     openapiFields.add("amount");
     openapiFields.add("frequency");
     openapiFields.add("currency_code");
@@ -340,6 +379,9 @@ public class GetContractById200ResponseDataCompensationDetails {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("scale") != null && !jsonObj.get("scale").isJsonNull()) && !jsonObj.get("scale").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `scale` to be a primitive type in the JSON string but got `%s`", jsonObj.get("scale").toString()));
+      }
       if ((jsonObj.get("frequency") != null && !jsonObj.get("frequency").isJsonNull()) && !jsonObj.get("frequency").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `frequency` to be a primitive type in the JSON string but got `%s`", jsonObj.get("frequency").toString()));
       }

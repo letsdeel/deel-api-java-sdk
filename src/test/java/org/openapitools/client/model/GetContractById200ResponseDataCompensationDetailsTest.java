@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Arrays;
+import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -37,6 +38,14 @@ public class GetContractById200ResponseDataCompensationDetailsTest {
     @Test
     public void testGetContractById200ResponseDataCompensationDetails() {
         // TODO: test GetContractById200ResponseDataCompensationDetails
+    }
+
+    /**
+     * Test the property 'scale'
+     */
+    @Test
+    public void scaleTest() {
+        // TODO: test scale
     }
 
     /**
