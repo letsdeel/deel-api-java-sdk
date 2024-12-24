@@ -20,7 +20,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.GetContractById200ResponseDataClientId;
+import org.openapitools.client.model.GetContractById200ResponseDataClientLegalEntity;
 import org.openapitools.client.model.GetContractById200ResponseDataClientTeam;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -70,6 +70,14 @@ public class GetContractById200ResponseDataClientTest {
     @Test
     public void fullNameTest() {
         // TODO: test fullName
+    }
+
+    /**
+     * Test the property 'legalEntity'
+     */
+    @Test
+    public void legalEntityTest() {
+        // TODO: test legalEntity
     }
 
 }

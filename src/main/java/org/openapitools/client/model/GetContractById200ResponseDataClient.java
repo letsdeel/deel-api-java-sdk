@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.GetContractById200ResponseDataClientId;
+import org.openapitools.client.model.GetContractById200ResponseDataClientLegalEntity;
 import org.openapitools.client.model.GetContractById200ResponseDataClientTeam;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -51,12 +51,12 @@ import org.openapitools.client.JSON;
 /**
  * GetContractById200ResponseDataClient
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T14:19:15.487453130Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T15:41:11.686012113Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseDataClient {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
   @javax.annotation.Nullable
-  private GetContractById200ResponseDataClientId id;
+  private String id;
 
   public static final String SERIALIZED_NAME_TEAM = "team";
   @SerializedName(SERIALIZED_NAME_TEAM)
@@ -73,24 +73,29 @@ public class GetContractById200ResponseDataClient {
   @javax.annotation.Nullable
   private String fullName;
 
+  public static final String SERIALIZED_NAME_LEGAL_ENTITY = "legal_entity";
+  @SerializedName(SERIALIZED_NAME_LEGAL_ENTITY)
+  @javax.annotation.Nonnull
+  private GetContractById200ResponseDataClientLegalEntity legalEntity;
+
   public GetContractById200ResponseDataClient() {
   }
 
-  public GetContractById200ResponseDataClient id(@javax.annotation.Nullable GetContractById200ResponseDataClientId id) {
+  public GetContractById200ResponseDataClient id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
 
   /**
-   * Get id
+   * Unique identifier of this resource.
    * @return id
    */
   @javax.annotation.Nullable
-  public GetContractById200ResponseDataClientId getId() {
+  public String getId() {
     return id;
   }
 
-  public void setId(@javax.annotation.Nullable GetContractById200ResponseDataClientId id) {
+  public void setId(@javax.annotation.Nullable String id) {
     this.id = id;
   }
 
@@ -152,6 +157,25 @@ public class GetContractById200ResponseDataClient {
   }
 
 
+  public GetContractById200ResponseDataClient legalEntity(@javax.annotation.Nonnull GetContractById200ResponseDataClientLegalEntity legalEntity) {
+    this.legalEntity = legalEntity;
+    return this;
+  }
+
+  /**
+   * Get legalEntity
+   * @return legalEntity
+   */
+  @javax.annotation.Nonnull
+  public GetContractById200ResponseDataClientLegalEntity getLegalEntity() {
+    return legalEntity;
+  }
+
+  public void setLegalEntity(@javax.annotation.Nonnull GetContractById200ResponseDataClientLegalEntity legalEntity) {
+    this.legalEntity = legalEntity;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -165,7 +189,8 @@ public class GetContractById200ResponseDataClient {
     return Objects.equals(this.id, getContractById200ResponseDataClient.id) &&
         Objects.equals(this.team, getContractById200ResponseDataClient.team) &&
         Objects.equals(this.email, getContractById200ResponseDataClient.email) &&
-        Objects.equals(this.fullName, getContractById200ResponseDataClient.fullName);
+        Objects.equals(this.fullName, getContractById200ResponseDataClient.fullName) &&
+        Objects.equals(this.legalEntity, getContractById200ResponseDataClient.legalEntity);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -174,7 +199,7 @@ public class GetContractById200ResponseDataClient {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, team, email, fullName);
+    return Objects.hash(id, team, email, fullName, legalEntity);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -192,6 +217,7 @@ public class GetContractById200ResponseDataClient {
     sb.append("    team: ").append(toIndentedString(team)).append("\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    fullName: ").append(toIndentedString(fullName)).append("\n");
+    sb.append("    legalEntity: ").append(toIndentedString(legalEntity)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -218,10 +244,12 @@ public class GetContractById200ResponseDataClient {
     openapiFields.add("team");
     openapiFields.add("email");
     openapiFields.add("full_name");
+    openapiFields.add("legal_entity");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
     openapiRequiredFields.add("team");
+    openapiRequiredFields.add("legal_entity");
   }
 
   /**
@@ -252,9 +280,8 @@ public class GetContractById200ResponseDataClient {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the optional field `id`
-      if (jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) {
-        GetContractById200ResponseDataClientId.validateJsonElement(jsonObj.get("id"));
+      if ((jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) && !jsonObj.get("id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
       }
       // validate the required field `team`
       GetContractById200ResponseDataClientTeam.validateJsonElement(jsonObj.get("team"));
@@ -264,6 +291,8 @@ public class GetContractById200ResponseDataClient {
       if ((jsonObj.get("full_name") != null && !jsonObj.get("full_name").isJsonNull()) && !jsonObj.get("full_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `full_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("full_name").toString()));
       }
+      // validate the required field `legal_entity`
+      GetContractById200ResponseDataClientLegalEntity.validateJsonElement(jsonObj.get("legal_entity"));
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

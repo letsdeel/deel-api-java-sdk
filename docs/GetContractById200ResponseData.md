@@ -13,8 +13,23 @@
 |**title** | **String** | Title of the contract. |  |
 |**client** | [**GetContractById200ResponseDataClient**](GetContractById200ResponseDataClient.md) |  |  |
 |**status** | [**StatusEnum**](#StatusEnum) | Status of a contract in Deel workflow. |  |
+|**worker** | [**GetContractById200ResponseDataWorker**](GetContractById200ResponseDataWorker.md) |  |  |
 |**jobTitle** | **String** | Job title associated with the contract. |  |
 |**seniority** | [**GetContractById200ResponseDataSeniority**](GetContractById200ResponseDataSeniority.md) |  |  |
+|**createdAt** | **OffsetDateTime** | Date and time when the contract was created. |  |
+|**signatures** | [**GetContractById200ResponseDataSignatures**](GetContractById200ResponseDataSignatures.md) |  |  |
+|**startDate** | **OffsetDateTime** | Date and time when the contract starts. |  |
+|**externalId** | **String** | External identifier of the contract. |  [optional] |
+|**invitations** | [**GetContractById200ResponseDataInvitations**](GetContractById200ResponseDataInvitations.md) |  |  |
+|**isArchived** | **Boolean** | Flag to indicate if the contract is archived. |  |
+|**customFields** | [**List&lt;CreateContract201ResponseDataCustomFieldsInner&gt;**](CreateContract201ResponseDataCustomFieldsInner.md) |  |  [optional] |
+|**noticePeriod** | **BigDecimal** | Notice period in days. |  [optional] |
+|**scopeOfWork** | **String** | Scope of work of the contract. |  [optional] |
+|**specialClause** | **String** | Special clause of the contract. |  |
+|**terminationDate** | **OffsetDateTime** | Date and time when the contract ends. |  |
+|**contractTemplate** | [**GetContractById200ResponseDataContractTemplate**](GetContractById200ResponseDataContractTemplate.md) |  |  [optional] |
+|**employmentDetails** | [**GetContractById200ResponseDataEmploymentDetails**](GetContractById200ResponseDataEmploymentDetails.md) |  |  |
+|**compensationDetails** | [**GetContractById200ResponseDataCompensationDetails**](GetContractById200ResponseDataCompensationDetails.md) |  |  |
 
 
 

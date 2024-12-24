@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.Arrays;
+import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -49,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateEorContractRequestCompensationDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T14:19:15.487453130Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T15:41:11.686012113Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateEorContractRequestCompensationDetails {
   public static final String SERIALIZED_NAME_SALARY = "salary";
   @SerializedName(SERIALIZED_NAME_SALARY)
@@ -60,6 +61,68 @@ public class CreateEorContractRequestCompensationDetails {
   @SerializedName(SERIALIZED_NAME_CURRENCY)
   @javax.annotation.Nonnull
   private String currency;
+
+  public static final String SERIALIZED_NAME_VARIABLE_COMPENSATION = "variable_compensation";
+  @SerializedName(SERIALIZED_NAME_VARIABLE_COMPENSATION)
+  @javax.annotation.Nullable
+  private BigDecimal variableCompensation;
+
+  /**
+   * Should be set only if variable_compensation is set. It can be PERCENTAGE or FIXED.
+   */
+  @JsonAdapter(VariableCompensationTypeEnum.Adapter.class)
+  public enum VariableCompensationTypeEnum {
+    PERCENTAGE("PERCENTAGE"),
+    
+    FIXED("FIXED");
+
+    private String value;
+
+    VariableCompensationTypeEnum(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static VariableCompensationTypeEnum fromValue(String value) {
+      for (VariableCompensationTypeEnum b : VariableCompensationTypeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<VariableCompensationTypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final VariableCompensationTypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public VariableCompensationTypeEnum read(final JsonReader jsonReader) throws IOException {
+        String value =  jsonReader.nextString();
+        return VariableCompensationTypeEnum.fromValue(value);
+      }
+    }
+
+    public static void validateJsonElement(JsonElement jsonElement) throws IOException {
+      String value = jsonElement.getAsString();
+      VariableCompensationTypeEnum.fromValue(value);
+    }
+  }
+
+  public static final String SERIALIZED_NAME_VARIABLE_COMPENSATION_TYPE = "variable_compensation_type";
+  @SerializedName(SERIALIZED_NAME_VARIABLE_COMPENSATION_TYPE)
+  @javax.annotation.Nullable
+  private VariableCompensationTypeEnum variableCompensationType;
 
   public CreateEorContractRequestCompensationDetails() {
   }
@@ -102,6 +165,44 @@ public class CreateEorContractRequestCompensationDetails {
   }
 
 
+  public CreateEorContractRequestCompensationDetails variableCompensation(@javax.annotation.Nullable BigDecimal variableCompensation) {
+    this.variableCompensation = variableCompensation;
+    return this;
+  }
+
+  /**
+   * Variable compensation. For example, if the person will earn 5% of the gross annual salary as the variable compensation, enter 5.
+   * @return variableCompensation
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getVariableCompensation() {
+    return variableCompensation;
+  }
+
+  public void setVariableCompensation(@javax.annotation.Nullable BigDecimal variableCompensation) {
+    this.variableCompensation = variableCompensation;
+  }
+
+
+  public CreateEorContractRequestCompensationDetails variableCompensationType(@javax.annotation.Nullable VariableCompensationTypeEnum variableCompensationType) {
+    this.variableCompensationType = variableCompensationType;
+    return this;
+  }
+
+  /**
+   * Should be set only if variable_compensation is set. It can be PERCENTAGE or FIXED.
+   * @return variableCompensationType
+   */
+  @javax.annotation.Nullable
+  public VariableCompensationTypeEnum getVariableCompensationType() {
+    return variableCompensationType;
+  }
+
+  public void setVariableCompensationType(@javax.annotation.Nullable VariableCompensationTypeEnum variableCompensationType) {
+    this.variableCompensationType = variableCompensationType;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -113,12 +214,25 @@ public class CreateEorContractRequestCompensationDetails {
     }
     CreateEorContractRequestCompensationDetails createEorContractRequestCompensationDetails = (CreateEorContractRequestCompensationDetails) o;
     return Objects.equals(this.salary, createEorContractRequestCompensationDetails.salary) &&
-        Objects.equals(this.currency, createEorContractRequestCompensationDetails.currency);
+        Objects.equals(this.currency, createEorContractRequestCompensationDetails.currency) &&
+        Objects.equals(this.variableCompensation, createEorContractRequestCompensationDetails.variableCompensation) &&
+        Objects.equals(this.variableCompensationType, createEorContractRequestCompensationDetails.variableCompensationType);
+  }
+
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(salary, currency);
+    return Objects.hash(salary, currency, variableCompensation, variableCompensationType);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -127,6 +241,8 @@ public class CreateEorContractRequestCompensationDetails {
     sb.append("class CreateEorContractRequestCompensationDetails {\n");
     sb.append("    salary: ").append(toIndentedString(salary)).append("\n");
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
+    sb.append("    variableCompensation: ").append(toIndentedString(variableCompensation)).append("\n");
+    sb.append("    variableCompensationType: ").append(toIndentedString(variableCompensationType)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -151,6 +267,8 @@ public class CreateEorContractRequestCompensationDetails {
     openapiFields = new HashSet<String>();
     openapiFields.add("salary");
     openapiFields.add("currency");
+    openapiFields.add("variable_compensation");
+    openapiFields.add("variable_compensation_type");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -187,6 +305,13 @@ public class CreateEorContractRequestCompensationDetails {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("currency").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `currency` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currency").toString()));
+      }
+      if ((jsonObj.get("variable_compensation_type") != null && !jsonObj.get("variable_compensation_type").isJsonNull()) && !jsonObj.get("variable_compensation_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `variable_compensation_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("variable_compensation_type").toString()));
+      }
+      // validate the optional field `variable_compensation_type`
+      if (jsonObj.get("variable_compensation_type") != null && !jsonObj.get("variable_compensation_type").isJsonNull()) {
+        VariableCompensationTypeEnum.validateJsonElement(jsonObj.get("variable_compensation_type"));
       }
   }
 

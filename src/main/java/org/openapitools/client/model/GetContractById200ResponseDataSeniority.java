@@ -22,7 +22,6 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.Arrays;
-import org.openapitools.client.model.GetContractById200ResponseDataSeniorityId;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -51,16 +50,16 @@ import org.openapitools.client.JSON;
 /**
  * Seniority describes level of expertise at a job e.g. junior.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T14:19:15.487453130Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T15:41:11.686012113Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseDataSeniority {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
   @javax.annotation.Nonnull
-  private GetContractById200ResponseDataSeniorityId id;
+  private BigDecimal id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   private String name;
 
   public static final String SERIALIZED_NAME_LEVEL = "level";
@@ -71,26 +70,26 @@ public class GetContractById200ResponseDataSeniority {
   public GetContractById200ResponseDataSeniority() {
   }
 
-  public GetContractById200ResponseDataSeniority id(@javax.annotation.Nonnull GetContractById200ResponseDataSeniorityId id) {
+  public GetContractById200ResponseDataSeniority id(@javax.annotation.Nonnull BigDecimal id) {
     this.id = id;
     return this;
   }
 
   /**
-   * Get id
+   * Unique identifier of this resource.
    * @return id
    */
   @javax.annotation.Nonnull
-  public GetContractById200ResponseDataSeniorityId getId() {
+  public BigDecimal getId() {
     return id;
   }
 
-  public void setId(@javax.annotation.Nonnull GetContractById200ResponseDataSeniorityId id) {
+  public void setId(@javax.annotation.Nonnull BigDecimal id) {
     this.id = id;
   }
 
 
-  public GetContractById200ResponseDataSeniority name(@javax.annotation.Nonnull String name) {
+  public GetContractById200ResponseDataSeniority name(@javax.annotation.Nullable String name) {
     this.name = name;
     return this;
   }
@@ -99,12 +98,12 @@ public class GetContractById200ResponseDataSeniority {
    * Name of seniority level e.g. Mid (Individual Contributor Level 2).
    * @return name
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   public String getName() {
     return name;
   }
 
-  public void setName(@javax.annotation.Nonnull String name) {
+  public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
   }
 
@@ -226,9 +225,7 @@ public class GetContractById200ResponseDataSeniority {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the required field `id`
-      GetContractById200ResponseDataSeniorityId.validateJsonElement(jsonObj.get("id"));
-      if (!jsonObj.get("name").isJsonPrimitive()) {
+      if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }
   }

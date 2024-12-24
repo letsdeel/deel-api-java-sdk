@@ -20,8 +20,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Arrays;
+import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -49,12 +51,84 @@ import org.openapitools.client.JSON;
 /**
  * CreateEorContractRequestEmployment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T14:19:15.487453130Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T15:41:11.686012113Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateEorContractRequestEmployment {
+  /**
+   * Is it a full-time contract or a part-time contract?
+   */
+  @JsonAdapter(TypeEnum.Adapter.class)
+  public enum TypeEnum {
+    FULL_TIME("Full-time"),
+    
+    PART_TIME("Part-time");
+
+    private String value;
+
+    TypeEnum(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static TypeEnum fromValue(String value) {
+      for (TypeEnum b : TypeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+    }
+
+    public static class Adapter extends TypeAdapter<TypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final TypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public TypeEnum read(final JsonReader jsonReader) throws IOException {
+        String value =  jsonReader.nextString();
+        return TypeEnum.fromValue(value);
+      }
+    }
+
+    public static void validateJsonElement(JsonElement jsonElement) throws IOException {
+      String value = jsonElement.getAsString();
+      TypeEnum.fromValue(value);
+    }
+  }
+
+  public static final String SERIALIZED_NAME_TYPE = "type";
+  @SerializedName(SERIALIZED_NAME_TYPE)
+  @javax.annotation.Nullable
+  private TypeEnum type;
+
+  public static final String SERIALIZED_NAME_STATE = "state";
+  @SerializedName(SERIALIZED_NAME_STATE)
+  @javax.annotation.Nullable
+  private String state;
+
   public static final String SERIALIZED_NAME_COUNTRY = "country";
   @SerializedName(SERIALIZED_NAME_COUNTRY)
   @javax.annotation.Nonnull
   private String country;
+
+  public static final String SERIALIZED_NAME_END_DATE = "end_date";
+  @SerializedName(SERIALIZED_NAME_END_DATE)
+  @javax.annotation.Nullable
+  private LocalDate endDate;
+
+  public static final String SERIALIZED_NAME_HOLIDAYS = "holidays";
+  @SerializedName(SERIALIZED_NAME_HOLIDAYS)
+  @javax.annotation.Nullable
+  private BigDecimal holidays;
 
   public static final String SERIALIZED_NAME_START_DATE = "start_date";
   @SerializedName(SERIALIZED_NAME_START_DATE)
@@ -66,6 +140,68 @@ public class CreateEorContractRequestEmployment {
   @javax.annotation.Nullable
   private String scopeOfWork;
 
+  /**
+   * If you want to use standard number of holidays for this employee, choose \&quot;STANDARD\&quot;. If you want to enter a specific number of holidays, choose \&quot;SPECIFIC\&quot; and enter the number of days in the holidays field.
+   */
+  @JsonAdapter(TimeOffTypeEnum.Adapter.class)
+  public enum TimeOffTypeEnum {
+    STANDARD("STANDARD"),
+    
+    SPECIFIC("SPECIFIC");
+
+    private String value;
+
+    TimeOffTypeEnum(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static TimeOffTypeEnum fromValue(String value) {
+      for (TimeOffTypeEnum b : TimeOffTypeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+    }
+
+    public static class Adapter extends TypeAdapter<TimeOffTypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final TimeOffTypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public TimeOffTypeEnum read(final JsonReader jsonReader) throws IOException {
+        String value =  jsonReader.nextString();
+        return TimeOffTypeEnum.fromValue(value);
+      }
+    }
+
+    public static void validateJsonElement(JsonElement jsonElement) throws IOException {
+      String value = jsonElement.getAsString();
+      TimeOffTypeEnum.fromValue(value);
+    }
+  }
+
+  public static final String SERIALIZED_NAME_TIME_OFF_TYPE = "time_off_type";
+  @SerializedName(SERIALIZED_NAME_TIME_OFF_TYPE)
+  @javax.annotation.Nullable
+  private TimeOffTypeEnum timeOffType;
+
+  public static final String SERIALIZED_NAME_PROBATION_PERIOD = "probation_period";
+  @SerializedName(SERIALIZED_NAME_PROBATION_PERIOD)
+  @javax.annotation.Nullable
+  private BigDecimal probationPeriod;
+
   public static final String SERIALIZED_NAME_WORK_VISA_REQUIRED = "work_visa_required";
   @SerializedName(SERIALIZED_NAME_WORK_VISA_REQUIRED)
   @javax.annotation.Nonnull
@@ -73,6 +209,44 @@ public class CreateEorContractRequestEmployment {
 
   public CreateEorContractRequestEmployment() {
   }
+
+  public CreateEorContractRequestEmployment type(@javax.annotation.Nullable TypeEnum type) {
+    this.type = type;
+    return this;
+  }
+
+  /**
+   * Is it a full-time contract or a part-time contract?
+   * @return type
+   */
+  @javax.annotation.Nullable
+  public TypeEnum getType() {
+    return type;
+  }
+
+  public void setType(@javax.annotation.Nullable TypeEnum type) {
+    this.type = type;
+  }
+
+
+  public CreateEorContractRequestEmployment state(@javax.annotation.Nullable String state) {
+    this.state = state;
+    return this;
+  }
+
+  /**
+   * State code of the state/province where the this person will be employed.
+   * @return state
+   */
+  @javax.annotation.Nullable
+  public String getState() {
+    return state;
+  }
+
+  public void setState(@javax.annotation.Nullable String state) {
+    this.state = state;
+  }
+
 
   public CreateEorContractRequestEmployment country(@javax.annotation.Nonnull String country) {
     this.country = country;
@@ -90,6 +264,44 @@ public class CreateEorContractRequestEmployment {
 
   public void setCountry(@javax.annotation.Nonnull String country) {
     this.country = country;
+  }
+
+
+  public CreateEorContractRequestEmployment endDate(@javax.annotation.Nullable LocalDate endDate) {
+    this.endDate = endDate;
+    return this;
+  }
+
+  /**
+   * End date in ISO-8601 format (YYYY-MM-DD).
+   * @return endDate
+   */
+  @javax.annotation.Nullable
+  public LocalDate getEndDate() {
+    return endDate;
+  }
+
+  public void setEndDate(@javax.annotation.Nullable LocalDate endDate) {
+    this.endDate = endDate;
+  }
+
+
+  public CreateEorContractRequestEmployment holidays(@javax.annotation.Nullable BigDecimal holidays) {
+    this.holidays = holidays;
+    return this;
+  }
+
+  /**
+   * Enter the number of holidays. Leave this field blank if you are chooseing \&quot;STANDARD\&quot; time_off_type.
+   * @return holidays
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getHolidays() {
+    return holidays;
+  }
+
+  public void setHolidays(@javax.annotation.Nullable BigDecimal holidays) {
+    this.holidays = holidays;
   }
 
 
@@ -131,13 +343,51 @@ public class CreateEorContractRequestEmployment {
   }
 
 
+  public CreateEorContractRequestEmployment timeOffType(@javax.annotation.Nullable TimeOffTypeEnum timeOffType) {
+    this.timeOffType = timeOffType;
+    return this;
+  }
+
+  /**
+   * If you want to use standard number of holidays for this employee, choose \&quot;STANDARD\&quot;. If you want to enter a specific number of holidays, choose \&quot;SPECIFIC\&quot; and enter the number of days in the holidays field.
+   * @return timeOffType
+   */
+  @javax.annotation.Nullable
+  public TimeOffTypeEnum getTimeOffType() {
+    return timeOffType;
+  }
+
+  public void setTimeOffType(@javax.annotation.Nullable TimeOffTypeEnum timeOffType) {
+    this.timeOffType = timeOffType;
+  }
+
+
+  public CreateEorContractRequestEmployment probationPeriod(@javax.annotation.Nullable BigDecimal probationPeriod) {
+    this.probationPeriod = probationPeriod;
+    return this;
+  }
+
+  /**
+   * Number of probation days.
+   * @return probationPeriod
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getProbationPeriod() {
+    return probationPeriod;
+  }
+
+  public void setProbationPeriod(@javax.annotation.Nullable BigDecimal probationPeriod) {
+    this.probationPeriod = probationPeriod;
+  }
+
+
   public CreateEorContractRequestEmployment workVisaRequired(@javax.annotation.Nonnull Boolean workVisaRequired) {
     this.workVisaRequired = workVisaRequired;
     return this;
   }
 
   /**
-   * Indicates if a work visa is required.
+   * Do you require Deel to apply for work visa for this person?
    * @return workVisaRequired
    */
   @javax.annotation.Nonnull
@@ -160,24 +410,47 @@ public class CreateEorContractRequestEmployment {
       return false;
     }
     CreateEorContractRequestEmployment createEorContractRequestEmployment = (CreateEorContractRequestEmployment) o;
-    return Objects.equals(this.country, createEorContractRequestEmployment.country) &&
+    return Objects.equals(this.type, createEorContractRequestEmployment.type) &&
+        Objects.equals(this.state, createEorContractRequestEmployment.state) &&
+        Objects.equals(this.country, createEorContractRequestEmployment.country) &&
+        Objects.equals(this.endDate, createEorContractRequestEmployment.endDate) &&
+        Objects.equals(this.holidays, createEorContractRequestEmployment.holidays) &&
         Objects.equals(this.startDate, createEorContractRequestEmployment.startDate) &&
         Objects.equals(this.scopeOfWork, createEorContractRequestEmployment.scopeOfWork) &&
+        Objects.equals(this.timeOffType, createEorContractRequestEmployment.timeOffType) &&
+        Objects.equals(this.probationPeriod, createEorContractRequestEmployment.probationPeriod) &&
         Objects.equals(this.workVisaRequired, createEorContractRequestEmployment.workVisaRequired);
+  }
+
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(country, startDate, scopeOfWork, workVisaRequired);
+    return Objects.hash(type, state, country, endDate, holidays, startDate, scopeOfWork, timeOffType, probationPeriod, workVisaRequired);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CreateEorContractRequestEmployment {\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    state: ").append(toIndentedString(state)).append("\n");
     sb.append("    country: ").append(toIndentedString(country)).append("\n");
+    sb.append("    endDate: ").append(toIndentedString(endDate)).append("\n");
+    sb.append("    holidays: ").append(toIndentedString(holidays)).append("\n");
     sb.append("    startDate: ").append(toIndentedString(startDate)).append("\n");
     sb.append("    scopeOfWork: ").append(toIndentedString(scopeOfWork)).append("\n");
+    sb.append("    timeOffType: ").append(toIndentedString(timeOffType)).append("\n");
+    sb.append("    probationPeriod: ").append(toIndentedString(probationPeriod)).append("\n");
     sb.append("    workVisaRequired: ").append(toIndentedString(workVisaRequired)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -201,9 +474,15 @@ public class CreateEorContractRequestEmployment {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
+    openapiFields.add("type");
+    openapiFields.add("state");
     openapiFields.add("country");
+    openapiFields.add("end_date");
+    openapiFields.add("holidays");
     openapiFields.add("start_date");
     openapiFields.add("scope_of_work");
+    openapiFields.add("time_off_type");
+    openapiFields.add("probation_period");
     openapiFields.add("work_visa_required");
 
     // a set of required properties/fields (JSON key names)
@@ -241,11 +520,28 @@ public class CreateEorContractRequestEmployment {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("type") != null && !jsonObj.get("type").isJsonNull()) && !jsonObj.get("type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("type").toString()));
+      }
+      // validate the optional field `type`
+      if (jsonObj.get("type") != null && !jsonObj.get("type").isJsonNull()) {
+        TypeEnum.validateJsonElement(jsonObj.get("type"));
+      }
+      if ((jsonObj.get("state") != null && !jsonObj.get("state").isJsonNull()) && !jsonObj.get("state").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `state` to be a primitive type in the JSON string but got `%s`", jsonObj.get("state").toString()));
+      }
       if (!jsonObj.get("country").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `country` to be a primitive type in the JSON string but got `%s`", jsonObj.get("country").toString()));
       }
       if ((jsonObj.get("scope_of_work") != null && !jsonObj.get("scope_of_work").isJsonNull()) && !jsonObj.get("scope_of_work").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `scope_of_work` to be a primitive type in the JSON string but got `%s`", jsonObj.get("scope_of_work").toString()));
+      }
+      if ((jsonObj.get("time_off_type") != null && !jsonObj.get("time_off_type").isJsonNull()) && !jsonObj.get("time_off_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `time_off_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("time_off_type").toString()));
+      }
+      // validate the optional field `time_off_type`
+      if (jsonObj.get("time_off_type") != null && !jsonObj.get("time_off_type").isJsonNull()) {
+        TimeOffTypeEnum.validateJsonElement(jsonObj.get("time_off_type"));
       }
   }
 

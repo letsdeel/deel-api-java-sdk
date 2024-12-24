@@ -52,7 +52,7 @@ import com.google.gson.JsonParseException;
 
 import org.openapitools.client.JSON;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T14:19:15.487453130Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T15:41:11.686012113Z[GMT]", comments = "Generator version: 7.10.0")
 public class InvoiceAdjustmentSearchContainerStatuses extends AbstractOpenApiSchema {
     private static final Logger log = Logger.getLogger(InvoiceAdjustmentSearchContainerStatuses.class.getName());
 

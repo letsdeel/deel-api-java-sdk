@@ -8,7 +8,7 @@ Seniority describes level of expertise at a job e.g. junior.
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**id** | [**GetContractById200ResponseDataSeniorityId**](GetContractById200ResponseDataSeniorityId.md) |  |  |
+|**id** | **BigDecimal** | Unique identifier of this resource. |  |
 |**name** | **String** | Name of seniority level e.g. Mid (Individual Contributor Level 2). |  |
 |**level** | **BigDecimal** | Level of seniority level e.g. 2. |  [optional] |
 

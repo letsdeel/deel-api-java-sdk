@@ -21,7 +21,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.GetContractById200ResponseDataClientTeamId;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -49,12 +48,12 @@ import org.openapitools.client.JSON;
 /**
  * GetContractById200ResponseDataClientTeam
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T14:19:15.487453130Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T15:41:11.686012113Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseDataClientTeam {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
   @javax.annotation.Nonnull
-  private GetContractById200ResponseDataClientTeamId id;
+  private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -64,21 +63,21 @@ public class GetContractById200ResponseDataClientTeam {
   public GetContractById200ResponseDataClientTeam() {
   }
 
-  public GetContractById200ResponseDataClientTeam id(@javax.annotation.Nonnull GetContractById200ResponseDataClientTeamId id) {
+  public GetContractById200ResponseDataClientTeam id(@javax.annotation.Nonnull String id) {
     this.id = id;
     return this;
   }
 
   /**
-   * Get id
+   * Unique identifier of this resource.
    * @return id
    */
   @javax.annotation.Nonnull
-  public GetContractById200ResponseDataClientTeamId getId() {
+  public String getId() {
     return id;
   }
 
-  public void setId(@javax.annotation.Nonnull GetContractById200ResponseDataClientTeamId id) {
+  public void setId(@javax.annotation.Nonnull String id) {
     this.id = id;
   }
 
@@ -186,8 +185,9 @@ public class GetContractById200ResponseDataClientTeam {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the required field `id`
-      GetContractById200ResponseDataClientTeamId.validateJsonElement(jsonObj.get("id"));
+      if (!jsonObj.get("id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
+      }
       if (!jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }

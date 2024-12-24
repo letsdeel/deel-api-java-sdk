@@ -19,8 +19,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Arrays;
+import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -39,11 +41,43 @@ public class CreateEorContractRequestEmploymentTest {
     }
 
     /**
+     * Test the property 'type'
+     */
+    @Test
+    public void typeTest() {
+        // TODO: test type
+    }
+
+    /**
+     * Test the property 'state'
+     */
+    @Test
+    public void stateTest() {
+        // TODO: test state
+    }
+
+    /**
      * Test the property 'country'
      */
     @Test
     public void countryTest() {
         // TODO: test country
+    }
+
+    /**
+     * Test the property 'endDate'
+     */
+    @Test
+    public void endDateTest() {
+        // TODO: test endDate
+    }
+
+    /**
+     * Test the property 'holidays'
+     */
+    @Test
+    public void holidaysTest() {
+        // TODO: test holidays
     }
 
     /**
@@ -60,6 +94,22 @@ public class CreateEorContractRequestEmploymentTest {
     @Test
     public void scopeOfWorkTest() {
         // TODO: test scopeOfWork
+    }
+
+    /**
+     * Test the property 'timeOffType'
+     */
+    @Test
+    public void timeOffTypeTest() {
+        // TODO: test timeOffType
+    }
+
+    /**
+     * Test the property 'probationPeriod'
+     */
+    @Test
+    public void probationPeriodTest() {
+        // TODO: test probationPeriod
     }
 
     /**

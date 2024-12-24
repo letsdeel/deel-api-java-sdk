@@ -22,9 +22,13 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.client.model.CreateEorContractRequestClient;
+import org.openapitools.client.model.CreateEorContractRequestClientLegalEntity;
 import org.openapitools.client.model.CreateEorContractRequestCompensationDetails;
 import org.openapitools.client.model.CreateEorContractRequestEmployee;
 import org.openapitools.client.model.CreateEorContractRequestEmployment;
+import org.openapitools.client.model.CreateEorContractRequestPension;
+import org.openapitools.client.model.CreateEorContractRequestQuoteAdditionalFields;
+import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -52,12 +56,17 @@ import org.openapitools.client.JSON;
 /**
  * CreateEorContractRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T14:19:15.487453130Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T15:41:11.686012113Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateEorContractRequest {
   public static final String SERIALIZED_NAME_CLIENT = "client";
   @SerializedName(SERIALIZED_NAME_CLIENT)
   @javax.annotation.Nonnull
   private CreateEorContractRequestClient client;
+
+  public static final String SERIALIZED_NAME_PENSION = "pension";
+  @SerializedName(SERIALIZED_NAME_PENSION)
+  @javax.annotation.Nullable
+  private CreateEorContractRequestPension pension;
 
   public static final String SERIALIZED_NAME_EMPLOYEE = "employee";
   @SerializedName(SERIALIZED_NAME_EMPLOYEE)
@@ -69,15 +78,30 @@ public class CreateEorContractRequest {
   @javax.annotation.Nonnull
   private String jobTitle;
 
+  public static final String SERIALIZED_NAME_SENIORITY = "seniority";
+  @SerializedName(SERIALIZED_NAME_SENIORITY)
+  @javax.annotation.Nonnull
+  private CreateEorContractRequestClientLegalEntity seniority;
+
   public static final String SERIALIZED_NAME_EMPLOYMENT = "employment";
   @SerializedName(SERIALIZED_NAME_EMPLOYMENT)
   @javax.annotation.Nonnull
   private CreateEorContractRequestEmployment employment;
 
+  public static final String SERIALIZED_NAME_HEALTH_PLAN_ID = "health_plan_id";
+  @SerializedName(SERIALIZED_NAME_HEALTH_PLAN_ID)
+  @javax.annotation.Nullable
+  private String healthPlanId;
+
   public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
   @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
   @javax.annotation.Nonnull
   private CreateEorContractRequestCompensationDetails compensationDetails;
+
+  public static final String SERIALIZED_NAME_QUOTE_ADDITIONAL_FIELDS = "quote_additional_fields";
+  @SerializedName(SERIALIZED_NAME_QUOTE_ADDITIONAL_FIELDS)
+  @javax.annotation.Nullable
+  private CreateEorContractRequestQuoteAdditionalFields quoteAdditionalFields;
 
   public CreateEorContractRequest() {
   }
@@ -98,6 +122,25 @@ public class CreateEorContractRequest {
 
   public void setClient(@javax.annotation.Nonnull CreateEorContractRequestClient client) {
     this.client = client;
+  }
+
+
+  public CreateEorContractRequest pension(@javax.annotation.Nullable CreateEorContractRequestPension pension) {
+    this.pension = pension;
+    return this;
+  }
+
+  /**
+   * Get pension
+   * @return pension
+   */
+  @javax.annotation.Nullable
+  public CreateEorContractRequestPension getPension() {
+    return pension;
+  }
+
+  public void setPension(@javax.annotation.Nullable CreateEorContractRequestPension pension) {
+    this.pension = pension;
   }
 
 
@@ -139,6 +182,25 @@ public class CreateEorContractRequest {
   }
 
 
+  public CreateEorContractRequest seniority(@javax.annotation.Nonnull CreateEorContractRequestClientLegalEntity seniority) {
+    this.seniority = seniority;
+    return this;
+  }
+
+  /**
+   * Get seniority
+   * @return seniority
+   */
+  @javax.annotation.Nonnull
+  public CreateEorContractRequestClientLegalEntity getSeniority() {
+    return seniority;
+  }
+
+  public void setSeniority(@javax.annotation.Nonnull CreateEorContractRequestClientLegalEntity seniority) {
+    this.seniority = seniority;
+  }
+
+
   public CreateEorContractRequest employment(@javax.annotation.Nonnull CreateEorContractRequestEmployment employment) {
     this.employment = employment;
     return this;
@@ -155,6 +217,25 @@ public class CreateEorContractRequest {
 
   public void setEmployment(@javax.annotation.Nonnull CreateEorContractRequestEmployment employment) {
     this.employment = employment;
+  }
+
+
+  public CreateEorContractRequest healthPlanId(@javax.annotation.Nullable String healthPlanId) {
+    this.healthPlanId = healthPlanId;
+    return this;
+  }
+
+  /**
+   * Healthcare plan id. You can see available healthcare plans in the country guide endpoint.
+   * @return healthPlanId
+   */
+  @javax.annotation.Nullable
+  public String getHealthPlanId() {
+    return healthPlanId;
+  }
+
+  public void setHealthPlanId(@javax.annotation.Nullable String healthPlanId) {
+    this.healthPlanId = healthPlanId;
   }
 
 
@@ -177,6 +258,25 @@ public class CreateEorContractRequest {
   }
 
 
+  public CreateEorContractRequest quoteAdditionalFields(@javax.annotation.Nullable CreateEorContractRequestQuoteAdditionalFields quoteAdditionalFields) {
+    this.quoteAdditionalFields = quoteAdditionalFields;
+    return this;
+  }
+
+  /**
+   * Get quoteAdditionalFields
+   * @return quoteAdditionalFields
+   */
+  @javax.annotation.Nullable
+  public CreateEorContractRequestQuoteAdditionalFields getQuoteAdditionalFields() {
+    return quoteAdditionalFields;
+  }
+
+  public void setQuoteAdditionalFields(@javax.annotation.Nullable CreateEorContractRequestQuoteAdditionalFields quoteAdditionalFields) {
+    this.quoteAdditionalFields = quoteAdditionalFields;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -188,15 +288,30 @@ public class CreateEorContractRequest {
     }
     CreateEorContractRequest createEorContractRequest = (CreateEorContractRequest) o;
     return Objects.equals(this.client, createEorContractRequest.client) &&
+        Objects.equals(this.pension, createEorContractRequest.pension) &&
         Objects.equals(this.employee, createEorContractRequest.employee) &&
         Objects.equals(this.jobTitle, createEorContractRequest.jobTitle) &&
+        Objects.equals(this.seniority, createEorContractRequest.seniority) &&
         Objects.equals(this.employment, createEorContractRequest.employment) &&
-        Objects.equals(this.compensationDetails, createEorContractRequest.compensationDetails);
+        Objects.equals(this.healthPlanId, createEorContractRequest.healthPlanId) &&
+        Objects.equals(this.compensationDetails, createEorContractRequest.compensationDetails) &&
+        Objects.equals(this.quoteAdditionalFields, createEorContractRequest.quoteAdditionalFields);
+  }
+
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(client, employee, jobTitle, employment, compensationDetails);
+    return Objects.hash(client, pension, employee, jobTitle, seniority, employment, healthPlanId, compensationDetails, quoteAdditionalFields);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -204,10 +319,14 @@ public class CreateEorContractRequest {
     StringBuilder sb = new StringBuilder();
     sb.append("class CreateEorContractRequest {\n");
     sb.append("    client: ").append(toIndentedString(client)).append("\n");
+    sb.append("    pension: ").append(toIndentedString(pension)).append("\n");
     sb.append("    employee: ").append(toIndentedString(employee)).append("\n");
     sb.append("    jobTitle: ").append(toIndentedString(jobTitle)).append("\n");
+    sb.append("    seniority: ").append(toIndentedString(seniority)).append("\n");
     sb.append("    employment: ").append(toIndentedString(employment)).append("\n");
+    sb.append("    healthPlanId: ").append(toIndentedString(healthPlanId)).append("\n");
     sb.append("    compensationDetails: ").append(toIndentedString(compensationDetails)).append("\n");
+    sb.append("    quoteAdditionalFields: ").append(toIndentedString(quoteAdditionalFields)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -231,16 +350,21 @@ public class CreateEorContractRequest {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("client");
+    openapiFields.add("pension");
     openapiFields.add("employee");
     openapiFields.add("job_title");
+    openapiFields.add("seniority");
     openapiFields.add("employment");
+    openapiFields.add("health_plan_id");
     openapiFields.add("compensation_details");
+    openapiFields.add("quote_additional_fields");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
     openapiRequiredFields.add("client");
     openapiRequiredFields.add("employee");
     openapiRequiredFields.add("job_title");
+    openapiRequiredFields.add("seniority");
     openapiRequiredFields.add("employment");
     openapiRequiredFields.add("compensation_details");
   }
@@ -275,15 +399,28 @@ public class CreateEorContractRequest {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the required field `client`
       CreateEorContractRequestClient.validateJsonElement(jsonObj.get("client"));
+      // validate the optional field `pension`
+      if (jsonObj.get("pension") != null && !jsonObj.get("pension").isJsonNull()) {
+        CreateEorContractRequestPension.validateJsonElement(jsonObj.get("pension"));
+      }
       // validate the required field `employee`
       CreateEorContractRequestEmployee.validateJsonElement(jsonObj.get("employee"));
       if (!jsonObj.get("job_title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `job_title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("job_title").toString()));
       }
+      // validate the required field `seniority`
+      CreateEorContractRequestClientLegalEntity.validateJsonElement(jsonObj.get("seniority"));
       // validate the required field `employment`
       CreateEorContractRequestEmployment.validateJsonElement(jsonObj.get("employment"));
+      if ((jsonObj.get("health_plan_id") != null && !jsonObj.get("health_plan_id").isJsonNull()) && !jsonObj.get("health_plan_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `health_plan_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("health_plan_id").toString()));
+      }
       // validate the required field `compensation_details`
       CreateEorContractRequestCompensationDetails.validateJsonElement(jsonObj.get("compensation_details"));
+      // validate the optional field `quote_additional_fields`
+      if (jsonObj.get("quote_additional_fields") != null && !jsonObj.get("quote_additional_fields").isJsonNull()) {
+        CreateEorContractRequestQuoteAdditionalFields.validateJsonElement(jsonObj.get("quote_additional_fields"));
+      }
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

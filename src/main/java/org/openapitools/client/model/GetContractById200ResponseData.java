@@ -20,10 +20,22 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.time.OffsetDateTime;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import org.openapitools.client.model.CreateContract201ResponseDataCustomFieldsInner;
 import org.openapitools.client.model.GetContractById200ResponseDataClient;
+import org.openapitools.client.model.GetContractById200ResponseDataCompensationDetails;
+import org.openapitools.client.model.GetContractById200ResponseDataContractTemplate;
+import org.openapitools.client.model.GetContractById200ResponseDataEmploymentDetails;
+import org.openapitools.client.model.GetContractById200ResponseDataInvitations;
 import org.openapitools.client.model.GetContractById200ResponseDataQuote;
 import org.openapitools.client.model.GetContractById200ResponseDataSeniority;
+import org.openapitools.client.model.GetContractById200ResponseDataSignatures;
+import org.openapitools.client.model.GetContractById200ResponseDataWorker;
+import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -51,7 +63,7 @@ import org.openapitools.client.JSON;
 /**
  * GetContractById200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-20T14:19:15.487453130Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T15:41:11.686012113Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -235,6 +247,11 @@ public class GetContractById200ResponseData {
   @javax.annotation.Nonnull
   private StatusEnum status;
 
+  public static final String SERIALIZED_NAME_WORKER = "worker";
+  @SerializedName(SERIALIZED_NAME_WORKER)
+  @javax.annotation.Nullable
+  private GetContractById200ResponseDataWorker worker;
+
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
   @javax.annotation.Nonnull
@@ -244,6 +261,76 @@ public class GetContractById200ResponseData {
   @SerializedName(SERIALIZED_NAME_SENIORITY)
   @javax.annotation.Nullable
   private GetContractById200ResponseDataSeniority seniority;
+
+  public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
+  @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
+  private OffsetDateTime createdAt;
+
+  public static final String SERIALIZED_NAME_SIGNATURES = "signatures";
+  @SerializedName(SERIALIZED_NAME_SIGNATURES)
+  @javax.annotation.Nonnull
+  private GetContractById200ResponseDataSignatures signatures;
+
+  public static final String SERIALIZED_NAME_START_DATE = "start_date";
+  @SerializedName(SERIALIZED_NAME_START_DATE)
+  @javax.annotation.Nonnull
+  private OffsetDateTime startDate;
+
+  public static final String SERIALIZED_NAME_EXTERNAL_ID = "external_id";
+  @SerializedName(SERIALIZED_NAME_EXTERNAL_ID)
+  @javax.annotation.Nullable
+  private String externalId;
+
+  public static final String SERIALIZED_NAME_INVITATIONS = "invitations";
+  @SerializedName(SERIALIZED_NAME_INVITATIONS)
+  @javax.annotation.Nonnull
+  private GetContractById200ResponseDataInvitations invitations;
+
+  public static final String SERIALIZED_NAME_IS_ARCHIVED = "is_archived";
+  @SerializedName(SERIALIZED_NAME_IS_ARCHIVED)
+  @javax.annotation.Nullable
+  private Boolean isArchived;
+
+  public static final String SERIALIZED_NAME_CUSTOM_FIELDS = "custom_fields";
+  @SerializedName(SERIALIZED_NAME_CUSTOM_FIELDS)
+  @javax.annotation.Nullable
+  private List<CreateContract201ResponseDataCustomFieldsInner> customFields;
+
+  public static final String SERIALIZED_NAME_NOTICE_PERIOD = "notice_period";
+  @SerializedName(SERIALIZED_NAME_NOTICE_PERIOD)
+  @javax.annotation.Nullable
+  private BigDecimal noticePeriod;
+
+  public static final String SERIALIZED_NAME_SCOPE_OF_WORK = "scope_of_work";
+  @SerializedName(SERIALIZED_NAME_SCOPE_OF_WORK)
+  @javax.annotation.Nullable
+  private String scopeOfWork;
+
+  public static final String SERIALIZED_NAME_SPECIAL_CLAUSE = "special_clause";
+  @SerializedName(SERIALIZED_NAME_SPECIAL_CLAUSE)
+  @javax.annotation.Nullable
+  private String specialClause;
+
+  public static final String SERIALIZED_NAME_TERMINATION_DATE = "termination_date";
+  @SerializedName(SERIALIZED_NAME_TERMINATION_DATE)
+  @javax.annotation.Nullable
+  private OffsetDateTime terminationDate;
+
+  public static final String SERIALIZED_NAME_CONTRACT_TEMPLATE = "contract_template";
+  @SerializedName(SERIALIZED_NAME_CONTRACT_TEMPLATE)
+  @javax.annotation.Nullable
+  private GetContractById200ResponseDataContractTemplate contractTemplate;
+
+  public static final String SERIALIZED_NAME_EMPLOYMENT_DETAILS = "employment_details";
+  @SerializedName(SERIALIZED_NAME_EMPLOYMENT_DETAILS)
+  @javax.annotation.Nonnull
+  private GetContractById200ResponseDataEmploymentDetails employmentDetails;
+
+  public static final String SERIALIZED_NAME_COMPENSATION_DETAILS = "compensation_details";
+  @SerializedName(SERIALIZED_NAME_COMPENSATION_DETAILS)
+  @javax.annotation.Nonnull
+  private GetContractById200ResponseDataCompensationDetails compensationDetails;
 
   public GetContractById200ResponseData() {
   }
@@ -362,6 +449,25 @@ public class GetContractById200ResponseData {
   }
 
 
+  public GetContractById200ResponseData worker(@javax.annotation.Nullable GetContractById200ResponseDataWorker worker) {
+    this.worker = worker;
+    return this;
+  }
+
+  /**
+   * Get worker
+   * @return worker
+   */
+  @javax.annotation.Nullable
+  public GetContractById200ResponseDataWorker getWorker() {
+    return worker;
+  }
+
+  public void setWorker(@javax.annotation.Nullable GetContractById200ResponseDataWorker worker) {
+    this.worker = worker;
+  }
+
+
   public GetContractById200ResponseData jobTitle(@javax.annotation.Nonnull String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
@@ -400,6 +506,280 @@ public class GetContractById200ResponseData {
   }
 
 
+  public GetContractById200ResponseData createdAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
+    this.createdAt = createdAt;
+    return this;
+  }
+
+  /**
+   * Date and time when the contract was created.
+   * @return createdAt
+   */
+  @javax.annotation.Nonnull
+  public OffsetDateTime getCreatedAt() {
+    return createdAt;
+  }
+
+  public void setCreatedAt(@javax.annotation.Nonnull OffsetDateTime createdAt) {
+    this.createdAt = createdAt;
+  }
+
+
+  public GetContractById200ResponseData signatures(@javax.annotation.Nonnull GetContractById200ResponseDataSignatures signatures) {
+    this.signatures = signatures;
+    return this;
+  }
+
+  /**
+   * Get signatures
+   * @return signatures
+   */
+  @javax.annotation.Nonnull
+  public GetContractById200ResponseDataSignatures getSignatures() {
+    return signatures;
+  }
+
+  public void setSignatures(@javax.annotation.Nonnull GetContractById200ResponseDataSignatures signatures) {
+    this.signatures = signatures;
+  }
+
+
+  public GetContractById200ResponseData startDate(@javax.annotation.Nonnull OffsetDateTime startDate) {
+    this.startDate = startDate;
+    return this;
+  }
+
+  /**
+   * Date and time when the contract starts.
+   * @return startDate
+   */
+  @javax.annotation.Nonnull
+  public OffsetDateTime getStartDate() {
+    return startDate;
+  }
+
+  public void setStartDate(@javax.annotation.Nonnull OffsetDateTime startDate) {
+    this.startDate = startDate;
+  }
+
+
+  public GetContractById200ResponseData externalId(@javax.annotation.Nullable String externalId) {
+    this.externalId = externalId;
+    return this;
+  }
+
+  /**
+   * External identifier of the contract.
+   * @return externalId
+   */
+  @javax.annotation.Nullable
+  public String getExternalId() {
+    return externalId;
+  }
+
+  public void setExternalId(@javax.annotation.Nullable String externalId) {
+    this.externalId = externalId;
+  }
+
+
+  public GetContractById200ResponseData invitations(@javax.annotation.Nonnull GetContractById200ResponseDataInvitations invitations) {
+    this.invitations = invitations;
+    return this;
+  }
+
+  /**
+   * Get invitations
+   * @return invitations
+   */
+  @javax.annotation.Nonnull
+  public GetContractById200ResponseDataInvitations getInvitations() {
+    return invitations;
+  }
+
+  public void setInvitations(@javax.annotation.Nonnull GetContractById200ResponseDataInvitations invitations) {
+    this.invitations = invitations;
+  }
+
+
+  public GetContractById200ResponseData isArchived(@javax.annotation.Nullable Boolean isArchived) {
+    this.isArchived = isArchived;
+    return this;
+  }
+
+  /**
+   * Flag to indicate if the contract is archived.
+   * @return isArchived
+   */
+  @javax.annotation.Nullable
+  public Boolean getIsArchived() {
+    return isArchived;
+  }
+
+  public void setIsArchived(@javax.annotation.Nullable Boolean isArchived) {
+    this.isArchived = isArchived;
+  }
+
+
+  public GetContractById200ResponseData customFields(@javax.annotation.Nullable List<CreateContract201ResponseDataCustomFieldsInner> customFields) {
+    this.customFields = customFields;
+    return this;
+  }
+
+  public GetContractById200ResponseData addCustomFieldsItem(CreateContract201ResponseDataCustomFieldsInner customFieldsItem) {
+    if (this.customFields == null) {
+      this.customFields = new ArrayList<>();
+    }
+    this.customFields.add(customFieldsItem);
+    return this;
+  }
+
+  /**
+   * Get customFields
+   * @return customFields
+   */
+  @javax.annotation.Nullable
+  public List<CreateContract201ResponseDataCustomFieldsInner> getCustomFields() {
+    return customFields;
+  }
+
+  public void setCustomFields(@javax.annotation.Nullable List<CreateContract201ResponseDataCustomFieldsInner> customFields) {
+    this.customFields = customFields;
+  }
+
+
+  public GetContractById200ResponseData noticePeriod(@javax.annotation.Nullable BigDecimal noticePeriod) {
+    this.noticePeriod = noticePeriod;
+    return this;
+  }
+
+  /**
+   * Notice period in days.
+   * @return noticePeriod
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getNoticePeriod() {
+    return noticePeriod;
+  }
+
+  public void setNoticePeriod(@javax.annotation.Nullable BigDecimal noticePeriod) {
+    this.noticePeriod = noticePeriod;
+  }
+
+
+  public GetContractById200ResponseData scopeOfWork(@javax.annotation.Nullable String scopeOfWork) {
+    this.scopeOfWork = scopeOfWork;
+    return this;
+  }
+
+  /**
+   * Scope of work of the contract.
+   * @return scopeOfWork
+   */
+  @javax.annotation.Nullable
+  public String getScopeOfWork() {
+    return scopeOfWork;
+  }
+
+  public void setScopeOfWork(@javax.annotation.Nullable String scopeOfWork) {
+    this.scopeOfWork = scopeOfWork;
+  }
+
+
+  public GetContractById200ResponseData specialClause(@javax.annotation.Nullable String specialClause) {
+    this.specialClause = specialClause;
+    return this;
+  }
+
+  /**
+   * Special clause of the contract.
+   * @return specialClause
+   */
+  @javax.annotation.Nullable
+  public String getSpecialClause() {
+    return specialClause;
+  }
+
+  public void setSpecialClause(@javax.annotation.Nullable String specialClause) {
+    this.specialClause = specialClause;
+  }
+
+
+  public GetContractById200ResponseData terminationDate(@javax.annotation.Nullable OffsetDateTime terminationDate) {
+    this.terminationDate = terminationDate;
+    return this;
+  }
+
+  /**
+   * Date and time when the contract ends.
+   * @return terminationDate
+   */
+  @javax.annotation.Nullable
+  public OffsetDateTime getTerminationDate() {
+    return terminationDate;
+  }
+
+  public void setTerminationDate(@javax.annotation.Nullable OffsetDateTime terminationDate) {
+    this.terminationDate = terminationDate;
+  }
+
+
+  public GetContractById200ResponseData contractTemplate(@javax.annotation.Nullable GetContractById200ResponseDataContractTemplate contractTemplate) {
+    this.contractTemplate = contractTemplate;
+    return this;
+  }
+
+  /**
+   * Get contractTemplate
+   * @return contractTemplate
+   */
+  @javax.annotation.Nullable
+  public GetContractById200ResponseDataContractTemplate getContractTemplate() {
+    return contractTemplate;
+  }
+
+  public void setContractTemplate(@javax.annotation.Nullable GetContractById200ResponseDataContractTemplate contractTemplate) {
+    this.contractTemplate = contractTemplate;
+  }
+
+
+  public GetContractById200ResponseData employmentDetails(@javax.annotation.Nonnull GetContractById200ResponseDataEmploymentDetails employmentDetails) {
+    this.employmentDetails = employmentDetails;
+    return this;
+  }
+
+  /**
+   * Get employmentDetails
+   * @return employmentDetails
+   */
+  @javax.annotation.Nonnull
+  public GetContractById200ResponseDataEmploymentDetails getEmploymentDetails() {
+    return employmentDetails;
+  }
+
+  public void setEmploymentDetails(@javax.annotation.Nonnull GetContractById200ResponseDataEmploymentDetails employmentDetails) {
+    this.employmentDetails = employmentDetails;
+  }
+
+
+  public GetContractById200ResponseData compensationDetails(@javax.annotation.Nonnull GetContractById200ResponseDataCompensationDetails compensationDetails) {
+    this.compensationDetails = compensationDetails;
+    return this;
+  }
+
+  /**
+   * Get compensationDetails
+   * @return compensationDetails
+   */
+  @javax.annotation.Nonnull
+  public GetContractById200ResponseDataCompensationDetails getCompensationDetails() {
+    return compensationDetails;
+  }
+
+  public void setCompensationDetails(@javax.annotation.Nonnull GetContractById200ResponseDataCompensationDetails compensationDetails) {
+    this.compensationDetails = compensationDetails;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -416,13 +796,39 @@ public class GetContractById200ResponseData {
         Objects.equals(this.title, getContractById200ResponseData.title) &&
         Objects.equals(this.client, getContractById200ResponseData.client) &&
         Objects.equals(this.status, getContractById200ResponseData.status) &&
+        Objects.equals(this.worker, getContractById200ResponseData.worker) &&
         Objects.equals(this.jobTitle, getContractById200ResponseData.jobTitle) &&
-        Objects.equals(this.seniority, getContractById200ResponseData.seniority);
+        Objects.equals(this.seniority, getContractById200ResponseData.seniority) &&
+        Objects.equals(this.createdAt, getContractById200ResponseData.createdAt) &&
+        Objects.equals(this.signatures, getContractById200ResponseData.signatures) &&
+        Objects.equals(this.startDate, getContractById200ResponseData.startDate) &&
+        Objects.equals(this.externalId, getContractById200ResponseData.externalId) &&
+        Objects.equals(this.invitations, getContractById200ResponseData.invitations) &&
+        Objects.equals(this.isArchived, getContractById200ResponseData.isArchived) &&
+        Objects.equals(this.customFields, getContractById200ResponseData.customFields) &&
+        Objects.equals(this.noticePeriod, getContractById200ResponseData.noticePeriod) &&
+        Objects.equals(this.scopeOfWork, getContractById200ResponseData.scopeOfWork) &&
+        Objects.equals(this.specialClause, getContractById200ResponseData.specialClause) &&
+        Objects.equals(this.terminationDate, getContractById200ResponseData.terminationDate) &&
+        Objects.equals(this.contractTemplate, getContractById200ResponseData.contractTemplate) &&
+        Objects.equals(this.employmentDetails, getContractById200ResponseData.employmentDetails) &&
+        Objects.equals(this.compensationDetails, getContractById200ResponseData.compensationDetails);
+  }
+
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, type, quote, title, client, status, jobTitle, seniority);
+    return Objects.hash(id, type, quote, title, client, status, worker, jobTitle, seniority, createdAt, signatures, startDate, externalId, invitations, isArchived, customFields, noticePeriod, scopeOfWork, specialClause, terminationDate, contractTemplate, employmentDetails, compensationDetails);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -435,8 +841,23 @@ public class GetContractById200ResponseData {
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    client: ").append(toIndentedString(client)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
+    sb.append("    worker: ").append(toIndentedString(worker)).append("\n");
     sb.append("    jobTitle: ").append(toIndentedString(jobTitle)).append("\n");
     sb.append("    seniority: ").append(toIndentedString(seniority)).append("\n");
+    sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
+    sb.append("    signatures: ").append(toIndentedString(signatures)).append("\n");
+    sb.append("    startDate: ").append(toIndentedString(startDate)).append("\n");
+    sb.append("    externalId: ").append(toIndentedString(externalId)).append("\n");
+    sb.append("    invitations: ").append(toIndentedString(invitations)).append("\n");
+    sb.append("    isArchived: ").append(toIndentedString(isArchived)).append("\n");
+    sb.append("    customFields: ").append(toIndentedString(customFields)).append("\n");
+    sb.append("    noticePeriod: ").append(toIndentedString(noticePeriod)).append("\n");
+    sb.append("    scopeOfWork: ").append(toIndentedString(scopeOfWork)).append("\n");
+    sb.append("    specialClause: ").append(toIndentedString(specialClause)).append("\n");
+    sb.append("    terminationDate: ").append(toIndentedString(terminationDate)).append("\n");
+    sb.append("    contractTemplate: ").append(toIndentedString(contractTemplate)).append("\n");
+    sb.append("    employmentDetails: ").append(toIndentedString(employmentDetails)).append("\n");
+    sb.append("    compensationDetails: ").append(toIndentedString(compensationDetails)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -465,8 +886,23 @@ public class GetContractById200ResponseData {
     openapiFields.add("title");
     openapiFields.add("client");
     openapiFields.add("status");
+    openapiFields.add("worker");
     openapiFields.add("job_title");
     openapiFields.add("seniority");
+    openapiFields.add("created_at");
+    openapiFields.add("signatures");
+    openapiFields.add("start_date");
+    openapiFields.add("external_id");
+    openapiFields.add("invitations");
+    openapiFields.add("is_archived");
+    openapiFields.add("custom_fields");
+    openapiFields.add("notice_period");
+    openapiFields.add("scope_of_work");
+    openapiFields.add("special_clause");
+    openapiFields.add("termination_date");
+    openapiFields.add("contract_template");
+    openapiFields.add("employment_details");
+    openapiFields.add("compensation_details");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -475,8 +911,18 @@ public class GetContractById200ResponseData {
     openapiRequiredFields.add("title");
     openapiRequiredFields.add("client");
     openapiRequiredFields.add("status");
+    openapiRequiredFields.add("worker");
     openapiRequiredFields.add("job_title");
     openapiRequiredFields.add("seniority");
+    openapiRequiredFields.add("created_at");
+    openapiRequiredFields.add("signatures");
+    openapiRequiredFields.add("start_date");
+    openapiRequiredFields.add("invitations");
+    openapiRequiredFields.add("is_archived");
+    openapiRequiredFields.add("special_clause");
+    openapiRequiredFields.add("termination_date");
+    openapiRequiredFields.add("employment_details");
+    openapiRequiredFields.add("compensation_details");
   }
 
   /**
@@ -529,11 +975,48 @@ public class GetContractById200ResponseData {
       }
       // validate the required field `status`
       StatusEnum.validateJsonElement(jsonObj.get("status"));
+      // validate the required field `worker`
+      GetContractById200ResponseDataWorker.validateJsonElement(jsonObj.get("worker"));
       if (!jsonObj.get("job_title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `job_title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("job_title").toString()));
       }
       // validate the required field `seniority`
       GetContractById200ResponseDataSeniority.validateJsonElement(jsonObj.get("seniority"));
+      // validate the required field `signatures`
+      GetContractById200ResponseDataSignatures.validateJsonElement(jsonObj.get("signatures"));
+      if ((jsonObj.get("external_id") != null && !jsonObj.get("external_id").isJsonNull()) && !jsonObj.get("external_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `external_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("external_id").toString()));
+      }
+      // validate the required field `invitations`
+      GetContractById200ResponseDataInvitations.validateJsonElement(jsonObj.get("invitations"));
+      if (jsonObj.get("custom_fields") != null && !jsonObj.get("custom_fields").isJsonNull()) {
+        JsonArray jsonArraycustomFields = jsonObj.getAsJsonArray("custom_fields");
+        if (jsonArraycustomFields != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("custom_fields").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `custom_fields` to be an array in the JSON string but got `%s`", jsonObj.get("custom_fields").toString()));
+          }
+
+          // validate the optional field `custom_fields` (array)
+          for (int i = 0; i < jsonArraycustomFields.size(); i++) {
+            CreateContract201ResponseDataCustomFieldsInner.validateJsonElement(jsonArraycustomFields.get(i));
+          };
+        }
+      }
+      if ((jsonObj.get("scope_of_work") != null && !jsonObj.get("scope_of_work").isJsonNull()) && !jsonObj.get("scope_of_work").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `scope_of_work` to be a primitive type in the JSON string but got `%s`", jsonObj.get("scope_of_work").toString()));
+      }
+      if ((jsonObj.get("special_clause") != null && !jsonObj.get("special_clause").isJsonNull()) && !jsonObj.get("special_clause").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `special_clause` to be a primitive type in the JSON string but got `%s`", jsonObj.get("special_clause").toString()));
+      }
+      // validate the optional field `contract_template`
+      if (jsonObj.get("contract_template") != null && !jsonObj.get("contract_template").isJsonNull()) {
+        GetContractById200ResponseDataContractTemplate.validateJsonElement(jsonObj.get("contract_template"));
+      }
+      // validate the required field `employment_details`
+      GetContractById200ResponseDataEmploymentDetails.validateJsonElement(jsonObj.get("employment_details"));
+      // validate the required field `compensation_details`
+      GetContractById200ResponseDataCompensationDetails.validateJsonElement(jsonObj.get("compensation_details"));
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

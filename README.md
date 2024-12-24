@@ -2,7 +2,7 @@
 
 Deel REST API
 - API version: 1.25.0
-  - Build date: 2024-12-20T14:19:15.487453130Z[GMT]
+  - Build date: 2024-12-24T15:41:11.686012113Z[GMT]
   - Generator version: 7.10.0
 
 Deel REST API
@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.deel</groupId>
   <artifactId>deel-api-java-sdk</artifactId>
-  <version>alpha-0.0.3</version>
+  <version>alpha-0.0.4</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -57,7 +57,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.deel:deel-api-java-sdk:alpha-0.0.3"
+     implementation "com.deel:deel-api-java-sdk:alpha-0.0.4"
   }
 ```
 
@@ -71,7 +71,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/deel-api-java-sdk-alpha-0.0.3.jar`
+* `target/deel-api-java-sdk-alpha-0.0.4.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -588,6 +588,8 @@ Class | Method | HTTP request | Description
  - [CreateEorContractRequestEmployee](docs/CreateEorContractRequestEmployee.md)
  - [CreateEorContractRequestEmployeeAddress](docs/CreateEorContractRequestEmployeeAddress.md)
  - [CreateEorContractRequestEmployment](docs/CreateEorContractRequestEmployment.md)
+ - [CreateEorContractRequestPension](docs/CreateEorContractRequestPension.md)
+ - [CreateEorContractRequestQuoteAdditionalFields](docs/CreateEorContractRequestQuoteAdditionalFields.md)
  - [CreateGPContract201Response](docs/CreateGPContract201Response.md)
  - [CreateGPContract201ResponseData](docs/CreateGPContract201ResponseData.md)
  - [CreateGPContract201ResponseDataClient](docs/CreateGPContract201ResponseDataClient.md)
@@ -1008,13 +1010,17 @@ Class | Method | HTTP request | Description
  - [GetContractById200Response](docs/GetContractById200Response.md)
  - [GetContractById200ResponseData](docs/GetContractById200ResponseData.md)
  - [GetContractById200ResponseDataClient](docs/GetContractById200ResponseDataClient.md)
- - [GetContractById200ResponseDataClientId](docs/GetContractById200ResponseDataClientId.md)
+ - [GetContractById200ResponseDataClientLegalEntity](docs/GetContractById200ResponseDataClientLegalEntity.md)
  - [GetContractById200ResponseDataClientTeam](docs/GetContractById200ResponseDataClientTeam.md)
- - [GetContractById200ResponseDataClientTeamId](docs/GetContractById200ResponseDataClientTeamId.md)
+ - [GetContractById200ResponseDataCompensationDetails](docs/GetContractById200ResponseDataCompensationDetails.md)
+ - [GetContractById200ResponseDataContractTemplate](docs/GetContractById200ResponseDataContractTemplate.md)
+ - [GetContractById200ResponseDataEmploymentDetails](docs/GetContractById200ResponseDataEmploymentDetails.md)
+ - [GetContractById200ResponseDataInvitations](docs/GetContractById200ResponseDataInvitations.md)
  - [GetContractById200ResponseDataQuote](docs/GetContractById200ResponseDataQuote.md)
  - [GetContractById200ResponseDataQuoteBenefitsInner](docs/GetContractById200ResponseDataQuoteBenefitsInner.md)
  - [GetContractById200ResponseDataSeniority](docs/GetContractById200ResponseDataSeniority.md)
- - [GetContractById200ResponseDataSeniorityId](docs/GetContractById200ResponseDataSeniorityId.md)
+ - [GetContractById200ResponseDataSignatures](docs/GetContractById200ResponseDataSignatures.md)
+ - [GetContractById200ResponseDataWorker](docs/GetContractById200ResponseDataWorker.md)
  - [GetContractEquityWithholdingAmount200Response](docs/GetContractEquityWithholdingAmount200Response.md)
  - [GetContractEquityWithholdingAmount200ResponseData](docs/GetContractEquityWithholdingAmount200ResponseData.md)
  - [GetContractEquityWithholdingAmount200ResponseDataBreakdownInner](docs/GetContractEquityWithholdingAmount200ResponseDataBreakdownInner.md)
@@ -1580,6 +1586,7 @@ Class | Method | HTTP request | Description
  - [RoleToUpdateContainer](docs/RoleToUpdateContainer.md)
  - [RoleToUpdateContainerData](docs/RoleToUpdateContainerData.md)
  - [RootSchema](docs/RootSchema.md)
+ - [RootSchema1](docs/RootSchema1.md)
  - [SalaryFrequencyScaleEnum](docs/SalaryFrequencyScaleEnum.md)
  - [Seniority](docs/Seniority.md)
  - [SeniorityListContainer](docs/SeniorityListContainer.md)

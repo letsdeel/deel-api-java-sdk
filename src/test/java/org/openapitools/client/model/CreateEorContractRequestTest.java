@@ -21,9 +21,13 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.client.model.CreateEorContractRequestClient;
+import org.openapitools.client.model.CreateEorContractRequestClientLegalEntity;
 import org.openapitools.client.model.CreateEorContractRequestCompensationDetails;
 import org.openapitools.client.model.CreateEorContractRequestEmployee;
 import org.openapitools.client.model.CreateEorContractRequestEmployment;
+import org.openapitools.client.model.CreateEorContractRequestPension;
+import org.openapitools.client.model.CreateEorContractRequestQuoteAdditionalFields;
+import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -50,6 +54,14 @@ public class CreateEorContractRequestTest {
     }
 
     /**
+     * Test the property 'pension'
+     */
+    @Test
+    public void pensionTest() {
+        // TODO: test pension
+    }
+
+    /**
      * Test the property 'employee'
      */
     @Test
@@ -66,6 +78,14 @@ public class CreateEorContractRequestTest {
     }
 
     /**
+     * Test the property 'seniority'
+     */
+    @Test
+    public void seniorityTest() {
+        // TODO: test seniority
+    }
+
+    /**
      * Test the property 'employment'
      */
     @Test
@@ -74,11 +94,27 @@ public class CreateEorContractRequestTest {
     }
 
     /**
+     * Test the property 'healthPlanId'
+     */
+    @Test
+    public void healthPlanIdTest() {
+        // TODO: test healthPlanId
+    }
+
+    /**
      * Test the property 'compensationDetails'
      */
     @Test
     public void compensationDetailsTest() {
         // TODO: test compensationDetails
+    }
+
+    /**
+     * Test the property 'quoteAdditionalFields'
+     */
+    @Test
+    public void quoteAdditionalFieldsTest() {
+        // TODO: test quoteAdditionalFields
     }
 
 }

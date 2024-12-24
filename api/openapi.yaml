@@ -10031,6 +10031,7 @@ paths:
         name: limit
         required: false
         schema:
+          pattern: "^[1-9][0-9]?$|^100$"
           type: string
         style: form
       - description: "Return a page of results after given index of row; NOTE: technically\
@@ -10198,6 +10199,7 @@ paths:
         name: limit
         required: false
         schema:
+          pattern: "^[1-9][0-9]?$|^100$"
           type: string
         style: form
       - description: "Return a page of results after given index of row; NOTE: technically\
@@ -15643,6 +15645,75 @@ paths:
       - Custom Fields
       x-accepts:
       - application/json
+  /roles/{roleId}:
+    patch:
+      description: |-
+        undefined
+         **Token scopes**: `organizations:write`
+      operationId: UpdateOrganizationRole
+      parameters:
+      - description: ID of the role
+        example: "1"
+        explode: false
+        in: path
+        name: roleId
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateOrganizationRole_request'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateOrganizationRole_200_response'
+          description: Successful operation
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+      security:
+      - deelToken: []
+      - oauth2:
+        - organizations:write
+      summary: Update organization custom role
+      tags:
+      - Organizations
+      x-content-type: application/json
+      x-accepts:
+      - application/json
   /people/{worker_id}/custom_fields/{id}:
     delete:
       description: |-
@@ -16081,75 +16152,6 @@ paths:
       summary: Update an invoice adjustment
       tags:
       - Invoices
-      x-content-type: application/json
-      x-accepts:
-      - application/json
-  /roles/{roleId}:
-    patch:
-      description: |-
-        undefined
-         **Token scopes**: `organizations:write`
-      operationId: UpdateOrganizationRole
-      parameters:
-      - description: ID of the role
-        example: "1"
-        explode: false
-        in: path
-        name: roleId
-        required: true
-        schema:
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/UpdateOrganizationRole_request'
-        required: true
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/UpdateOrganizationRole_200_response'
-          description: Successful operation
-        "400":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "404":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-      security:
-      - deelToken: []
-      - oauth2:
-        - organizations:write
-      summary: Update organization custom role
-      tags:
-      - Organizations
       x-content-type: application/json
       x-accepts:
       - application/json
@@ -37605,24 +37607,43 @@ components:
       required:
       - team
       type: object
+    createEorContract_request_pension:
+      description: Some countries required a pension benefit.
+      properties:
+        id:
+          description: Pension provider id. You can see available pension providers
+            in the country guide endpoint.
+          type: string
+        contribution:
+          description: Enter the value of pension contribution. You should send this
+            value only if the contribution object is available in the country guide
+            endpoint and the value should be there between minimum and maximum values
+            indicated.
+          type: string
+      type: object
     createEorContract_request_employee_address:
       nullable: true
       properties:
         zip:
           description: Zip code.
+          example: "44000"
           type: string
         city:
           description: City name.
+          example: Denver
           type: string
         state:
           description: State code.
+          example: CO
           nullable: true
           type: string
         street:
           description: Street and number.
+          example: Deel Street 500
           type: string
         country:
           description: Country code.
+          example: US
           maxLength: 2
           minLength: 2
           pattern: "^[A-Z]{2}$"
@@ -37632,20 +37653,25 @@ components:
       properties:
         email:
           description: Employee's email address.
+          example: employee@email.com
           type: string
         address:
           $ref: '#/components/schemas/createEorContract_request_employee_address'
         last_name:
           description: Employee's last name.
+          example: Doe
           type: string
         first_name:
           description: Employee's first name.
+          example: Jane
           type: string
         external_id:
           description: External identifier of the employee.
+          example: ext-employee-001
           type: string
         nationality:
           description: Employee's nationality.
+          example: US
           type: string
       required:
       - first_name
@@ -37654,22 +37680,58 @@ components:
       type: object
     createEorContract_request_employment:
       properties:
+        type:
+          description: Is it a full-time contract or a part-time contract?
+          enum:
+          - Full-time
+          - Part-time
+          type: string
+        state:
+          description: State code of the state/province where the this person will
+            be employed.
+          nullable: true
+          type: string
         country:
           description: Country code of employment.
+          example: US
           maxLength: 2
           minLength: 2
           pattern: "^[A-Z]{2}$"
           type: string
+        end_date:
+          description: End date in ISO-8601 format (YYYY-MM-DD).
+          example: 2024-12-31
+          format: date
+          nullable: true
+          type: string
+        holidays:
+          description: Enter the number of holidays. Leave this field blank if you
+            are chooseing "STANDARD" time_off_type.
+          nullable: true
+          type: number
         start_date:
           description: Start date in ISO-8601 format (YYYY-MM-DD).
+          example: 2024-01-15
           format: date
           type: string
         scope_of_work:
           description: Scope of work description.
           type: string
+        time_off_type:
+          description: "If you want to use standard number of holidays for this employee,\
+            \ choose \"STANDARD\". If you want to enter a specific number of holidays,\
+            \ choose \"SPECIFIC\" and enter the number of days in the holidays field."
+          enum:
+          - STANDARD
+          - SPECIFIC
+          type: string
+        probation_period:
+          description: Number of probation days.
+          nullable: true
+          type: number
         work_visa_required:
           default: false
-          description: Indicates if a work visa is required.
+          description: Do you require Deel to apply for work visa for this person?
           type: boolean
       required:
       - country
@@ -37684,22 +37746,64 @@ components:
         currency:
           description: Salary currency.
           type: string
+        variable_compensation:
+          description: "Variable compensation. For example, if the person will earn\
+            \ 5% of the gross annual salary as the variable compensation, enter 5."
+          nullable: true
+          type: number
+        variable_compensation_type:
+          description: Should be set only if variable_compensation is set. It can
+            be PERCENTAGE or FIXED.
+          enum:
+          - PERCENTAGE
+          - FIXED
+          - null
+          nullable: true
+          type: string
       required:
       - currency
+      type: object
+    createEorContract_request_quote_additional_fields:
+      description: Some countries require additional employee information for employment
+        contracts.
+      nullable: true
+      properties:
+        dob:
+          description: Employee's date of birth.
+          type: string
+        gender:
+          description: Employee's gender.
+          type: string
+        worker_type:
+          description: Type of worker.
+          enum:
+          - Skilled
+          - Unskilled
+          type: string
       type: object
     createEorContract_request:
       properties:
         client:
           $ref: '#/components/schemas/createEorContract_request_client'
+        pension:
+          $ref: '#/components/schemas/createEorContract_request_pension'
         employee:
           $ref: '#/components/schemas/createEorContract_request_employee'
         job_title:
           description: Employee's job title.
           type: string
+        seniority:
+          $ref: '#/components/schemas/createEorContract_request_client_legal_entity'
         employment:
           $ref: '#/components/schemas/createEorContract_request_employment'
+        health_plan_id:
+          description: Healthcare plan id. You can see available healthcare plans
+            in the country guide endpoint.
+          type: string
         compensation_details:
           $ref: '#/components/schemas/createEorContract_request_compensation_details'
+        quote_additional_fields:
+          $ref: '#/components/schemas/createEorContract_request_quote_additional_fields'
       required:
       - client
       - compensation_details
@@ -41817,25 +41921,15 @@ components:
           pattern: "^[A-Z]{3}$"
           type: string
       type: object
-    getContractById_200_response_data_client_id:
-      description: Unique identifier of this resource.
-      example: team-abc123
-      oneOf:
-      - type: string
-      - type: number
-    getContractById_200_response_data_client_team_id:
-      description: Unique identifier of this resource.
-      example: team-xyz789
-      oneOf:
-      - type: string
-      - type: number
     getContractById_200_response_data_client_team:
       example:
         name: Engineering Team
         id: team-xyz789
       properties:
         id:
-          $ref: '#/components/schemas/getContractById_200_response_data_client_team_id'
+          description: Unique identifier of this resource.
+          example: team-xyz789
+          type: string
         name:
           description: Name of a team.
           example: Engineering Team
@@ -41845,9 +41939,62 @@ components:
       - id
       - name
       type: object
+    getContractById_200_response_data_client_legal_entity:
+      example:
+        vat_number: "123456789"
+        registration_number: "123456789"
+        name: Engineering Team
+        id: team-xyz789
+        type: company
+        sub-type: general-partnership
+        email: test@example.com
+      properties:
+        id:
+          description: Unique identifier of this resource.
+          example: team-xyz789
+          type: string
+        name:
+          description: Name of a team.
+          example: Engineering Team
+          nullable: false
+          type: string
+        type:
+          description: Type of the legal entity.
+          example: company
+          nullable: true
+          type: string
+        email:
+          description: Email address of the legal entity.
+          example: test@example.com
+          nullable: true
+          type: string
+        sub-type:
+          description: Sub-type of the legal entity.
+          example: general-partnership
+          nullable: true
+          type: string
+        vat_number:
+          description: VAT number of the legal entity.
+          example: "123456789"
+          nullable: true
+          type: string
+        registration_number:
+          description: Registration number of the legal entity.
+          example: "123456789"
+          nullable: true
+          type: string
+      type: object
     getContractById_200_response_data_client:
       example:
         full_name: Acme Corp
+        legal_entity:
+          vat_number: "123456789"
+          registration_number: "123456789"
+          name: Engineering Team
+          id: team-xyz789
+          type: company
+          sub-type: general-partnership
+          email: test@example.com
         id: team-abc123
         team:
           name: Engineering Team
@@ -41856,7 +42003,9 @@ components:
       nullable: true
       properties:
         id:
-          $ref: '#/components/schemas/getContractById_200_response_data_client_id'
+          description: Unique identifier of this resource.
+          example: team-abc123
+          type: string
         team:
           $ref: '#/components/schemas/getContractById_200_response_data_client_team'
         email:
@@ -41870,32 +42019,107 @@ components:
           description: Full name of the client.
           example: Acme Corp
           type: string
+        legal_entity:
+          $ref: '#/components/schemas/getContractById_200_response_data_client_legal_entity'
       required:
       - legal_entity
       - team
       type: object
-    getContractById_200_response_data_seniority_id:
-      description: Unique identifier of this resource.
-      example: seniority-level-2
-      oneOf:
-      - type: string
-      - type: number
+    Root_Schema_1:
+      example:
+        isVerified: true
+        email: test@example.com
+      properties:
+        email:
+          description: Email address of the worker.
+          example: test@example.com
+          type: string
+        isVerified:
+          title: True if email has been verified
+          type: boolean
+      title: Root Schema
+      type: object
+    getContractById_200_response_data_worker:
+      example:
+        country: US
+        full_name: Acme Corp
+        nationality: US
+        date_of_birth: 1990-01-01
+        last_name: Doe
+        expected_email: test@example.com
+        id: team-abc123
+        first_name: John
+        alternate_email:
+        - isVerified: true
+          email: test@example.com
+        - isVerified: true
+          email: test@example.com
+        email: client@example.com
+      nullable: true
+      properties:
+        id:
+          description: Unique identifier of this resource.
+          example: team-abc123
+          type: string
+        email:
+          description: User's email address.
+          example: client@example.com
+          format: email
+          minLength: 5
+          nullable: true
+          type: string
+        country:
+          description: Country of the worker.
+          example: US
+          type: string
+        full_name:
+          description: Full name of the client.
+          example: Acme Corp
+          type: string
+        last_name:
+          description: Last name of the worker.
+          example: Doe
+          type: string
+        first_name:
+          description: First name of the worker.
+          example: John
+          type: string
+        nationality:
+          description: Nationality of the worker.
+          example: US
+          type: string
+        date_of_birth:
+          description: Date of birth of the worker.
+          example: 1990-01-01
+          format: date
+          type: string
+        expected_email:
+          example: test@example.com
+          type: string
+        alternate_email:
+          description: List of alternate email addresses.
+          items:
+            $ref: '#/components/schemas/Root_Schema_1'
+          nullable: true
+          type: array
+      type: object
     getContractById_200_response_data_seniority:
       description: Seniority describes level of expertise at a job e.g. junior.
       example:
         level: 2
         name: Mid (Individual Contributor Level 2)
-        id: seniority-level-2
+        id: 1
       nullable: true
       properties:
         id:
-          $ref: '#/components/schemas/getContractById_200_response_data_seniority_id'
+          description: Unique identifier of this resource.
+          example: 1
+          type: number
         name:
           description: Name of seniority level e.g. Mid (Individual Contributor Level
             2).
           example: Mid (Individual Contributor Level 2)
-          minLength: 1
-          nullable: false
+          nullable: true
           type: string
         level:
           description: Level of seniority level e.g. 2.
@@ -41906,8 +42130,178 @@ components:
       - id
       - name
       type: object
+    getContractById_200_response_data_signatures:
+      example:
+        worker_signed_at: 2022-01-01T00:00:00Z
+        worker_signature: Jane Doe
+        client_signature: Jane Doe
+        signed_at: 2022-01-01T00:00:00Z
+        client_signed_at: 2022-01-01T00:00:00Z
+      properties:
+        signed_at:
+          description: Date and time when the contract was signed.
+          example: 2022-01-01T00:00:00Z
+          format: date-time
+          type: string
+        client_signature:
+          description: Worker's signature.
+          example: Jane Doe
+          nullable: false
+          type: string
+        client_signed_at:
+          description: Date and time when the client signed the contract.
+          example: 2022-01-01T00:00:00Z
+          format: date-time
+          type: string
+        worker_signature:
+          description: Worker's signature.
+          example: Jane Doe
+          nullable: false
+          type: string
+        worker_signed_at:
+          description: Date and time when the worker signed the contract.
+          example: 2022-01-01T00:00:00Z
+          format: date-time
+          type: string
+      type: object
+    getContractById_200_response_data_invitations:
+      example:
+        client_email: client@example.com
+        worker_email: worker@example.com
+      properties:
+        client_email:
+          description: User's email address.
+          example: client@example.com
+          nullable: true
+          type: string
+        worker_email:
+          description: User's email address.
+          example: worker@example.com
+          nullable: true
+          type: string
+      type: object
+    getContractById_200_response_data_contract_template:
+      description: Contract template details.
+      example:
+        id: 37nex2x
+        title: UK Employment Contract 2022.
+      nullable: true
+      properties:
+        id:
+          description: Unique identifier of a contract template.
+          example: 37nex2x
+          type: string
+        title:
+          description: Title of a contract template
+          example: UK Employment Contract 2022.
+          type: string
+      type: object
+    getContractById_200_response_data_employment_details:
+      example:
+        days_per_week: 5
+        hours_per_day: 8
+        paid_vacation_days: 20
+        probation_period: 30
+        type: full_time
+      properties:
+        type:
+          description: Type of employment.
+          example: full_time
+          type: string
+        days_per_week:
+          description: Number of days per week.
+          example: 5
+          type: number
+        hours_per_day:
+          description: Number of hours per day.
+          example: 8
+          type: number
+        probation_period:
+          description: Probation period in days.
+          example: 30
+          nullable: true
+          type: number
+        paid_vacation_days:
+          description: Number of paid vacation days.
+          example: 20
+          type: number
+      type: object
+    getContractById_200_response_data_compensation_details:
+      example:
+        amount: 100
+        first_payment: 500
+        gross_annual_salary: "50000"
+        first_payment_date: 2022-01-01
+        currency_code: GBP
+        gross_variable_bonus: "5000"
+        frequency: monthly
+        gross_signing_bonus: "5000"
+      properties:
+        amount:
+          description: Amount to be paid. This field can be excluded when creating
+            a Pay-as-you-go task-based or Milestone contracts.
+          example: 100
+          type: number
+        frequency:
+          description: Scale of the invoice cycle.
+          example: monthly
+          type: string
+        currency_code:
+          description: Currency code.
+          example: GBP
+          maxLength: 3
+          minLength: 3
+          pattern: "^[A-Z]{3}$"
+          type: string
+        first_payment:
+          description: First payment amount.
+          example: 500
+          type: number
+        first_payment_date:
+          description: First payment date.
+          example: 2022-01-01
+          format: date
+          type: string
+        gross_annual_salary:
+          description: Gross annual salary.
+          example: "50000"
+          type: string
+        gross_signing_bonus:
+          description: Gross signing bonus.
+          example: "5000"
+          type: string
+        gross_variable_bonus:
+          description: Gross variable bonus.
+          example: "5000"
+          type: string
+      type: object
     getContractById_200_response_data:
       example:
+        custom_fields:
+        - name: Employee ID
+          value: "54234"
+        - name: Employee ID
+          value: "54234"
+        created_at: 2022-01-01T00:00:00Z
+        compensation_details:
+          amount: 100
+          first_payment: 500
+          gross_annual_salary: "50000"
+          first_payment_date: 2022-01-01
+          currency_code: GBP
+          gross_variable_bonus: "5000"
+          frequency: monthly
+          gross_signing_bonus: "5000"
+        external_id: external_id
+        type: ongoing_time_based
+        title: Software Development Contract
+        signatures:
+          worker_signed_at: 2022-01-01T00:00:00Z
+          worker_signature: Jane Doe
+          client_signature: Jane Doe
+          signed_at: 2022-01-01T00:00:00Z
+          client_signed_at: 2022-01-01T00:00:00Z
+        special_clause: Special clause
         quote:
           benefits:
           - fee: 200.5
@@ -41918,22 +42312,60 @@ components:
             currency: USD
             price_usd: 170.5
           currency: USD
+        scope_of_work: Scope of work
+        is_archived: false
+        invitations:
+          client_email: client@example.com
+          worker_email: worker@example.com
+        termination_date: 2022-01-01T00:00:00Z
         client:
           full_name: Acme Corp
+          legal_entity:
+            vat_number: "123456789"
+            registration_number: "123456789"
+            name: Engineering Team
+            id: team-xyz789
+            type: company
+            sub-type: general-partnership
+            email: test@example.com
           id: team-abc123
           team:
             name: Engineering Team
             id: team-xyz789
           email: client@example.com
         id: 123e4567-e89b-12d3-a456-426614174000
-        type: ongoing_time_based
-        title: Software Development Contract
+        worker:
+          country: US
+          full_name: Acme Corp
+          nationality: US
+          date_of_birth: 1990-01-01
+          last_name: Doe
+          expected_email: test@example.com
+          id: team-abc123
+          first_name: John
+          alternate_email:
+          - isVerified: true
+            email: test@example.com
+          - isVerified: true
+            email: test@example.com
+          email: client@example.com
+        notice_period: 30
+        employment_details:
+          days_per_week: 5
+          hours_per_day: 8
+          paid_vacation_days: 20
+          probation_period: 30
+          type: full_time
         job_title: Backend Developer
         seniority:
           level: 2
           name: Mid (Individual Contributor Level 2)
-          id: seniority-level-2
+          id: 1
         status: in_progress
+        start_date: 2022-01-01T00:00:00Z
+        contract_template:
+          id: 37nex2x
+          title: UK Employment Contract 2022.
       properties:
         id:
           description: Unique identifier for the contract.
@@ -41990,12 +42422,70 @@ components:
           example: in_progress
           nullable: false
           type: string
+        worker:
+          $ref: '#/components/schemas/getContractById_200_response_data_worker'
         job_title:
           description: Job title associated with the contract.
           example: Backend Developer
           type: string
         seniority:
           $ref: '#/components/schemas/getContractById_200_response_data_seniority'
+        created_at:
+          description: Date and time when the contract was created.
+          example: 2022-01-01T00:00:00Z
+          format: date-time
+          type: string
+        signatures:
+          $ref: '#/components/schemas/getContractById_200_response_data_signatures'
+        start_date:
+          description: Date and time when the contract starts.
+          example: 2022-01-01T00:00:00Z
+          format: date-time
+          type: string
+        external_id:
+          description: External identifier of the contract.
+          example: external_id
+          nullable: true
+          type: string
+        invitations:
+          $ref: '#/components/schemas/getContractById_200_response_data_invitations'
+        is_archived:
+          description: Flag to indicate if the contract is archived.
+          example: false
+          nullable: true
+          type: boolean
+        custom_fields:
+          items:
+            $ref: '#/components/schemas/createContract_201_response_data_custom_fields_inner'
+          nullable: true
+          type: array
+        notice_period:
+          description: Notice period in days.
+          example: 30
+          nullable: true
+          type: number
+        scope_of_work:
+          description: Scope of work of the contract.
+          example: Scope of work
+          nullable: true
+          type: string
+        special_clause:
+          description: Special clause of the contract.
+          example: Special clause
+          nullable: true
+          type: string
+        termination_date:
+          description: Date and time when the contract ends.
+          example: 2022-01-01T00:00:00Z
+          format: date-time
+          nullable: true
+          type: string
+        contract_template:
+          $ref: '#/components/schemas/getContractById_200_response_data_contract_template'
+        employment_details:
+          $ref: '#/components/schemas/getContractById_200_response_data_employment_details'
+        compensation_details:
+          $ref: '#/components/schemas/getContractById_200_response_data_compensation_details'
       required:
       - client
       - compensation_details
@@ -42018,6 +42508,31 @@ components:
     getContractById_200_response:
       example:
         data:
+          custom_fields:
+          - name: Employee ID
+            value: "54234"
+          - name: Employee ID
+            value: "54234"
+          created_at: 2022-01-01T00:00:00Z
+          compensation_details:
+            amount: 100
+            first_payment: 500
+            gross_annual_salary: "50000"
+            first_payment_date: 2022-01-01
+            currency_code: GBP
+            gross_variable_bonus: "5000"
+            frequency: monthly
+            gross_signing_bonus: "5000"
+          external_id: external_id
+          type: ongoing_time_based
+          title: Software Development Contract
+          signatures:
+            worker_signed_at: 2022-01-01T00:00:00Z
+            worker_signature: Jane Doe
+            client_signature: Jane Doe
+            signed_at: 2022-01-01T00:00:00Z
+            client_signed_at: 2022-01-01T00:00:00Z
+          special_clause: Special clause
           quote:
             benefits:
             - fee: 200.5
@@ -42028,22 +42543,60 @@ components:
               currency: USD
               price_usd: 170.5
             currency: USD
+          scope_of_work: Scope of work
+          is_archived: false
+          invitations:
+            client_email: client@example.com
+            worker_email: worker@example.com
+          termination_date: 2022-01-01T00:00:00Z
           client:
             full_name: Acme Corp
+            legal_entity:
+              vat_number: "123456789"
+              registration_number: "123456789"
+              name: Engineering Team
+              id: team-xyz789
+              type: company
+              sub-type: general-partnership
+              email: test@example.com
             id: team-abc123
             team:
               name: Engineering Team
               id: team-xyz789
             email: client@example.com
           id: 123e4567-e89b-12d3-a456-426614174000
-          type: ongoing_time_based
-          title: Software Development Contract
+          worker:
+            country: US
+            full_name: Acme Corp
+            nationality: US
+            date_of_birth: 1990-01-01
+            last_name: Doe
+            expected_email: test@example.com
+            id: team-abc123
+            first_name: John
+            alternate_email:
+            - isVerified: true
+              email: test@example.com
+            - isVerified: true
+              email: test@example.com
+            email: client@example.com
+          notice_period: 30
+          employment_details:
+            days_per_week: 5
+            hours_per_day: 8
+            paid_vacation_days: 20
+            probation_period: 30
+            type: full_time
           job_title: Backend Developer
           seniority:
             level: 2
             name: Mid (Individual Contributor Level 2)
-            id: seniority-level-2
+            id: 1
           status: in_progress
+          start_date: 2022-01-01T00:00:00Z
+          contract_template:
+            id: 37nex2x
+            title: UK Employment Contract 2022.
       properties:
         data:
           $ref: '#/components/schemas/getContractById_200_response_data'
@@ -52684,6 +53237,61 @@ components:
       required:
       - data
       type: object
+    UpdateOrganizationRole_request_data:
+      properties:
+        name:
+          description: Name of the role
+          example: Admin
+          type: string
+        description:
+          description: Description of the role
+          example: Admin role
+          type: string
+        permissionSets:
+          items:
+            description: Permission set
+            example: manageUsers
+            type: string
+          type: array
+      type: object
+    UpdateOrganizationRole_request:
+      properties:
+        data:
+          $ref: '#/components/schemas/UpdateOrganizationRole_request_data'
+      type: object
+    UpdateOrganizationRole_200_response:
+      example:
+        scope: organization
+        permissionSets:
+        - manageUsers
+        - manageUsers
+        name: Admin
+        description: Admin role
+        id: 1
+      properties:
+        id:
+          description: ID of the role
+          example: 1
+          type: number
+        name:
+          description: Name of the role
+          example: Admin
+          type: string
+        scope:
+          description: Scope of the role
+          example: organization
+          type: string
+        description:
+          description: Description of the role
+          example: Admin role
+          type: string
+        permissionSets:
+          items:
+            description: Permission set
+            example: manageUsers
+            type: string
+          type: array
+      type: object
     getContractEquityWithholdingAmount_200_response_data_breakdown_inner:
       example:
         amount: "550.00"
@@ -53332,61 +53940,6 @@ components:
           $ref: '#/components/schemas/updateInvoiceAdjustment_200_response_data'
       required:
       - data
-      type: object
-    UpdateOrganizationRole_request_data:
-      properties:
-        name:
-          description: Name of the role
-          example: Admin
-          type: string
-        description:
-          description: Description of the role
-          example: Admin role
-          type: string
-        permissionSets:
-          items:
-            description: Permission set
-            example: manageUsers
-            type: string
-          type: array
-      type: object
-    UpdateOrganizationRole_request:
-      properties:
-        data:
-          $ref: '#/components/schemas/UpdateOrganizationRole_request_data'
-      type: object
-    UpdateOrganizationRole_200_response:
-      example:
-        scope: organization
-        permissionSets:
-        - manageUsers
-        - manageUsers
-        name: Admin
-        description: Admin role
-        id: 1
-      properties:
-        id:
-          description: ID of the role
-          example: 1
-          type: number
-        name:
-          description: Name of the role
-          example: Admin
-          type: string
-        scope:
-          description: Scope of the role
-          example: organization
-          type: string
-        description:
-          description: Description of the role
-          example: Admin role
-          type: string
-        permissionSets:
-          items:
-            description: Permission set
-            example: manageUsers
-            type: string
-          type: array
       type: object
     updateInvoiceAdjustmentById_request:
       properties:

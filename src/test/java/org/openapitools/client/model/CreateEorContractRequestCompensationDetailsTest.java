@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.Arrays;
+import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -52,6 +53,22 @@ public class CreateEorContractRequestCompensationDetailsTest {
     @Test
     public void currencyTest() {
         // TODO: test currency
+    }
+
+    /**
+     * Test the property 'variableCompensation'
+     */
+    @Test
+    public void variableCompensationTest() {
+        // TODO: test variableCompensation
+    }
+
+    /**
+     * Test the property 'variableCompensationType'
+     */
+    @Test
+    public void variableCompensationTypeTest() {
+        // TODO: test variableCompensationType
     }
 
 }
