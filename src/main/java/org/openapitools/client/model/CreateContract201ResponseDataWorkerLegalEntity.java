@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * CreateContract201ResponseDataWorkerLegalEntity
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T15:41:11.686012113Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T16:45:23.308834949Z[GMT]", comments = "Generator version: 7.10.0")
 public class CreateContract201ResponseDataWorkerLegalEntity {
   /**
    * Type of a legal entity

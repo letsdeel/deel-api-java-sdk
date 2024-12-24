@@ -54,7 +54,7 @@ import org.openapitools.client.JSON;
 /**
  * GetBenefitPaystubs200ResponseDataInnerEmployeesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T15:41:11.686012113Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T16:45:23.308834949Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetBenefitPaystubs200ResponseDataInnerEmployeesInner {
   public static final String SERIALIZED_NAME_GROSS_PAY = "gross_pay";
   @SerializedName(SERIALIZED_NAME_GROSS_PAY)

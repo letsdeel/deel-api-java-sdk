@@ -42277,6 +42277,7 @@ components:
       type: object
     getContractById_200_response_data:
       example:
+        who_reports: client
         custom_fields:
         - name: Employee ID
           value: "54234"
@@ -42454,6 +42455,10 @@ components:
           example: false
           nullable: true
           type: boolean
+        who_reports:
+          description: Who reports the hours.
+          example: client
+          type: string
         custom_fields:
           items:
             $ref: '#/components/schemas/createContract_201_response_data_custom_fields_inner'
@@ -42508,6 +42513,7 @@ components:
     getContractById_200_response:
       example:
         data:
+          who_reports: client
           custom_fields:
           - name: Employee ID
             value: "54234"

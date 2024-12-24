@@ -63,7 +63,7 @@ import org.openapitools.client.JSON;
 /**
  * GetContractById200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T15:41:11.686012113Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T16:45:23.308834949Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -291,6 +291,11 @@ public class GetContractById200ResponseData {
   @SerializedName(SERIALIZED_NAME_IS_ARCHIVED)
   @javax.annotation.Nullable
   private Boolean isArchived;
+
+  public static final String SERIALIZED_NAME_WHO_REPORTS = "who_reports";
+  @SerializedName(SERIALIZED_NAME_WHO_REPORTS)
+  @javax.annotation.Nullable
+  private String whoReports;
 
   public static final String SERIALIZED_NAME_CUSTOM_FIELDS = "custom_fields";
   @SerializedName(SERIALIZED_NAME_CUSTOM_FIELDS)
@@ -620,6 +625,25 @@ public class GetContractById200ResponseData {
   }
 
 
+  public GetContractById200ResponseData whoReports(@javax.annotation.Nullable String whoReports) {
+    this.whoReports = whoReports;
+    return this;
+  }
+
+  /**
+   * Who reports the hours.
+   * @return whoReports
+   */
+  @javax.annotation.Nullable
+  public String getWhoReports() {
+    return whoReports;
+  }
+
+  public void setWhoReports(@javax.annotation.Nullable String whoReports) {
+    this.whoReports = whoReports;
+  }
+
+
   public GetContractById200ResponseData customFields(@javax.annotation.Nullable List<CreateContract201ResponseDataCustomFieldsInner> customFields) {
     this.customFields = customFields;
     return this;
@@ -805,6 +829,7 @@ public class GetContractById200ResponseData {
         Objects.equals(this.externalId, getContractById200ResponseData.externalId) &&
         Objects.equals(this.invitations, getContractById200ResponseData.invitations) &&
         Objects.equals(this.isArchived, getContractById200ResponseData.isArchived) &&
+        Objects.equals(this.whoReports, getContractById200ResponseData.whoReports) &&
         Objects.equals(this.customFields, getContractById200ResponseData.customFields) &&
         Objects.equals(this.noticePeriod, getContractById200ResponseData.noticePeriod) &&
         Objects.equals(this.scopeOfWork, getContractById200ResponseData.scopeOfWork) &&
@@ -821,7 +846,7 @@ public class GetContractById200ResponseData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, type, quote, title, client, status, worker, jobTitle, seniority, createdAt, signatures, startDate, externalId, invitations, isArchived, customFields, noticePeriod, scopeOfWork, specialClause, terminationDate, contractTemplate, employmentDetails, compensationDetails);
+    return Objects.hash(id, type, quote, title, client, status, worker, jobTitle, seniority, createdAt, signatures, startDate, externalId, invitations, isArchived, whoReports, customFields, noticePeriod, scopeOfWork, specialClause, terminationDate, contractTemplate, employmentDetails, compensationDetails);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -850,6 +875,7 @@ public class GetContractById200ResponseData {
     sb.append("    externalId: ").append(toIndentedString(externalId)).append("\n");
     sb.append("    invitations: ").append(toIndentedString(invitations)).append("\n");
     sb.append("    isArchived: ").append(toIndentedString(isArchived)).append("\n");
+    sb.append("    whoReports: ").append(toIndentedString(whoReports)).append("\n");
     sb.append("    customFields: ").append(toIndentedString(customFields)).append("\n");
     sb.append("    noticePeriod: ").append(toIndentedString(noticePeriod)).append("\n");
     sb.append("    scopeOfWork: ").append(toIndentedString(scopeOfWork)).append("\n");
@@ -895,6 +921,7 @@ public class GetContractById200ResponseData {
     openapiFields.add("external_id");
     openapiFields.add("invitations");
     openapiFields.add("is_archived");
+    openapiFields.add("who_reports");
     openapiFields.add("custom_fields");
     openapiFields.add("notice_period");
     openapiFields.add("scope_of_work");
@@ -989,6 +1016,9 @@ public class GetContractById200ResponseData {
       }
       // validate the required field `invitations`
       GetContractById200ResponseDataInvitations.validateJsonElement(jsonObj.get("invitations"));
+      if ((jsonObj.get("who_reports") != null && !jsonObj.get("who_reports").isJsonNull()) && !jsonObj.get("who_reports").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `who_reports` to be a primitive type in the JSON string but got `%s`", jsonObj.get("who_reports").toString()));
+      }
       if (jsonObj.get("custom_fields") != null && !jsonObj.get("custom_fields").isJsonNull()) {
         JsonArray jsonArraycustomFields = jsonObj.getAsJsonArray("custom_fields");
         if (jsonArraycustomFields != null) {

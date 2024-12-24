@@ -173,6 +173,14 @@ public class GetContractById200ResponseDataTest {
     }
 
     /**
+     * Test the property 'whoReports'
+     */
+    @Test
+    public void whoReportsTest() {
+        // TODO: test whoReports
+    }
+
+    /**
      * Test the property 'customFields'
      */
     @Test

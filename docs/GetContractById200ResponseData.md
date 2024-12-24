@@ -22,6 +22,7 @@
 |**externalId** | **String** | External identifier of the contract. |  [optional] |
 |**invitations** | [**GetContractById200ResponseDataInvitations**](GetContractById200ResponseDataInvitations.md) |  |  |
 |**isArchived** | **Boolean** | Flag to indicate if the contract is archived. |  |
+|**whoReports** | **String** | Who reports the hours. |  [optional] |
 |**customFields** | [**List&lt;CreateContract201ResponseDataCustomFieldsInner&gt;**](CreateContract201ResponseDataCustomFieldsInner.md) |  |  [optional] |
 |**noticePeriod** | **BigDecimal** | Notice period in days. |  [optional] |
 |**scopeOfWork** | **String** | Scope of work of the contract. |  [optional] |
