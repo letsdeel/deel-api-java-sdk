@@ -63,7 +63,7 @@ import org.openapitools.client.JSON;
 /**
  * GetContractById200ResponseData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T16:45:23.308834949Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T17:05:54.444639311Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -254,7 +254,7 @@ public class GetContractById200ResponseData {
 
   public static final String SERIALIZED_NAME_JOB_TITLE = "job_title";
   @SerializedName(SERIALIZED_NAME_JOB_TITLE)
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   private String jobTitle;
 
   public static final String SERIALIZED_NAME_SENIORITY = "seniority";
@@ -473,7 +473,7 @@ public class GetContractById200ResponseData {
   }
 
 
-  public GetContractById200ResponseData jobTitle(@javax.annotation.Nonnull String jobTitle) {
+  public GetContractById200ResponseData jobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
     return this;
   }
@@ -482,12 +482,12 @@ public class GetContractById200ResponseData {
    * Job title associated with the contract.
    * @return jobTitle
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   public String getJobTitle() {
     return jobTitle;
   }
 
-  public void setJobTitle(@javax.annotation.Nonnull String jobTitle) {
+  public void setJobTitle(@javax.annotation.Nullable String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
@@ -939,7 +939,6 @@ public class GetContractById200ResponseData {
     openapiRequiredFields.add("client");
     openapiRequiredFields.add("status");
     openapiRequiredFields.add("worker");
-    openapiRequiredFields.add("job_title");
     openapiRequiredFields.add("seniority");
     openapiRequiredFields.add("created_at");
     openapiRequiredFields.add("signatures");
@@ -1004,7 +1003,7 @@ public class GetContractById200ResponseData {
       StatusEnum.validateJsonElement(jsonObj.get("status"));
       // validate the required field `worker`
       GetContractById200ResponseDataWorker.validateJsonElement(jsonObj.get("worker"));
-      if (!jsonObj.get("job_title").isJsonPrimitive()) {
+      if ((jsonObj.get("job_title") != null && !jsonObj.get("job_title").isJsonNull()) && !jsonObj.get("job_title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `job_title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("job_title").toString()));
       }
       // validate the required field `seniority`

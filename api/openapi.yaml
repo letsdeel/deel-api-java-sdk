@@ -42499,7 +42499,6 @@ components:
       - id
       - invitations
       - is_archived
-      - job_title
       - seniority
       - signatures
       - special_clause

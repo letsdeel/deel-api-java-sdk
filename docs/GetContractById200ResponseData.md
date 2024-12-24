@@ -14,7 +14,7 @@
 |**client** | [**GetContractById200ResponseDataClient**](GetContractById200ResponseDataClient.md) |  |  |
 |**status** | [**StatusEnum**](#StatusEnum) | Status of a contract in Deel workflow. |  |
 |**worker** | [**GetContractById200ResponseDataWorker**](GetContractById200ResponseDataWorker.md) |  |  |
-|**jobTitle** | **String** | Job title associated with the contract. |  |
+|**jobTitle** | **String** | Job title associated with the contract. |  [optional] |
 |**seniority** | [**GetContractById200ResponseDataSeniority**](GetContractById200ResponseDataSeniority.md) |  |  |
 |**createdAt** | **OffsetDateTime** | Date and time when the contract was created. |  |
 |**signatures** | [**GetContractById200ResponseDataSignatures**](GetContractById200ResponseDataSignatures.md) |  |  |
