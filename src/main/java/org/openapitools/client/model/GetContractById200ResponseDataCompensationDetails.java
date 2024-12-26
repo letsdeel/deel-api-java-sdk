@@ -21,7 +21,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.time.OffsetDateTime;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -51,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * GetContractById200ResponseDataCompensationDetails
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-24T19:29:34.997576605Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-26T12:33:56.604502650Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetContractById200ResponseDataCompensationDetails {
   public static final String SERIALIZED_NAME_SCALE = "scale";
   @SerializedName(SERIALIZED_NAME_SCALE)
@@ -81,7 +80,7 @@ public class GetContractById200ResponseDataCompensationDetails {
   public static final String SERIALIZED_NAME_FIRST_PAYMENT_DATE = "first_payment_date";
   @SerializedName(SERIALIZED_NAME_FIRST_PAYMENT_DATE)
   @javax.annotation.Nullable
-  private OffsetDateTime firstPaymentDate;
+  private String firstPaymentDate;
 
   public static final String SERIALIZED_NAME_GROSS_ANNUAL_SALARY = "gross_annual_salary";
   @SerializedName(SERIALIZED_NAME_GROSS_ANNUAL_SALARY)
@@ -196,7 +195,7 @@ public class GetContractById200ResponseDataCompensationDetails {
   }
 
 
-  public GetContractById200ResponseDataCompensationDetails firstPaymentDate(@javax.annotation.Nullable OffsetDateTime firstPaymentDate) {
+  public GetContractById200ResponseDataCompensationDetails firstPaymentDate(@javax.annotation.Nullable String firstPaymentDate) {
     this.firstPaymentDate = firstPaymentDate;
     return this;
   }
@@ -206,11 +205,11 @@ public class GetContractById200ResponseDataCompensationDetails {
    * @return firstPaymentDate
    */
   @javax.annotation.Nullable
-  public OffsetDateTime getFirstPaymentDate() {
+  public String getFirstPaymentDate() {
     return firstPaymentDate;
   }
 
-  public void setFirstPaymentDate(@javax.annotation.Nullable OffsetDateTime firstPaymentDate) {
+  public void setFirstPaymentDate(@javax.annotation.Nullable String firstPaymentDate) {
     this.firstPaymentDate = firstPaymentDate;
   }
 
@@ -390,6 +389,9 @@ public class GetContractById200ResponseDataCompensationDetails {
       }
       if ((jsonObj.get("first_payment") != null && !jsonObj.get("first_payment").isJsonNull()) && !jsonObj.get("first_payment").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `first_payment` to be a primitive type in the JSON string but got `%s`", jsonObj.get("first_payment").toString()));
+      }
+      if ((jsonObj.get("first_payment_date") != null && !jsonObj.get("first_payment_date").isJsonNull()) && !jsonObj.get("first_payment_date").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `first_payment_date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("first_payment_date").toString()));
       }
       if ((jsonObj.get("gross_annual_salary") != null && !jsonObj.get("gross_annual_salary").isJsonNull()) && !jsonObj.get("gross_annual_salary").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `gross_annual_salary` to be a primitive type in the JSON string but got `%s`", jsonObj.get("gross_annual_salary").toString()));

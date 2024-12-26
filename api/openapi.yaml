@@ -42230,7 +42230,7 @@ components:
         first_payment: "500"
         scale: hourly
         gross_annual_salary: "50000"
-        first_payment_date: 2024-08-30T20:59:59.999Z
+        first_payment_date: 2024-08-30T20:59:59.999+00:00
         currency_code: GBP
         gross_variable_bonus: "5000"
         frequency: monthly
@@ -42264,8 +42264,7 @@ components:
           type: string
         first_payment_date:
           description: First payment date.
-          example: 2024-08-30T20:59:59.999Z
-          format: date-time
+          example: 2024-08-30T20:59:59.999+00:00
           nullable: true
           type: string
         gross_annual_salary:
@@ -42298,7 +42297,7 @@ components:
           first_payment: "500"
           scale: hourly
           gross_annual_salary: "50000"
-          first_payment_date: 2024-08-30T20:59:59.999Z
+          first_payment_date: 2024-08-30T20:59:59.999+00:00
           currency_code: GBP
           gross_variable_bonus: "5000"
           frequency: monthly
@@ -42532,7 +42531,7 @@ components:
             first_payment: "500"
             scale: hourly
             gross_annual_salary: "50000"
-            first_payment_date: 2024-08-30T20:59:59.999Z
+            first_payment_date: 2024-08-30T20:59:59.999+00:00
             currency_code: GBP
             gross_variable_bonus: "5000"
             frequency: monthly
