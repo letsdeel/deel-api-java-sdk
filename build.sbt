@@ -2,7 +2,7 @@ lazy val root = (project in file(".")).
   settings(
     organization := "com.deel",
     name := "deel-api-java-sdk",
-    version := "alpha-0.0.14",
+    version := "2.1.23",
     scalaVersion := "2.11.4",
     scalacOptions ++= Seq("-feature"),
     javacOptions in compile ++= Seq("-Xlint:deprecation"),

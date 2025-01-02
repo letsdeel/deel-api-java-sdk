@@ -13844,73 +13844,6 @@ paths:
       - Employees
       x-accepts:
       - application/json
-  /hris/worker_relations/profile/external/{hrisProfileExternalId}/child:
-    put:
-      description: |-
-        Create child worker relation with external Id.
-         **Token scopes**: `profile:write`
-      operationId: createOrUpdateChildRelationBetweenProfiles
-      parameters:
-      - description: External Profile id
-        example: 8a7fbb1c-0cdb-4edd-98f8-9fffcc4b78d8
-        explode: false
-        in: path
-        name: hrisProfileExternalId
-        required: true
-        schema:
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/createOrUpdateChildRelationBetweenProfiles_request'
-        required: true
-      responses:
-        "204":
-          content:
-            application/json: {}
-          description: Successful operation
-        "400":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "404":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-      security:
-      - deelToken: []
-      - oauth2:
-        - profile:write
-      summary: Create child worker relation with external Id
-      tags:
-      - Worker Relations
-      x-content-type: application/json
-      x-accepts:
-      - application/json
   /benefits/legal-entities/{id}/401k/plans/clean-up:
     post:
       description: |-
@@ -14032,74 +13965,6 @@ paths:
       summary: Get employees from organization integrated with external benefits vendor
       tags:
       - Employees
-      x-accepts:
-      - application/json
-  /hris/worker_relations/profile/external/{hrisProfileExternalId}/parent:
-    put:
-      description: |-
-        Create a parent worker relation with external id.
-         **Token scopes**: `profile:write`
-      operationId: createOrUpdateParentRelationBetweenProfiles
-      parameters:
-      - description: HRISProfile public id
-        example: d290f1ee-6c54-4b01-90e6-d701748f0851
-        explode: false
-        in: path
-        name: hrisProfileExternalId
-        required: true
-        schema:
-          format: uuid
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/createOrUpdateParentRelationBetweenProfiles_request'
-        required: true
-      responses:
-        "204":
-          content:
-            application/json: {}
-          description: Successful operation
-        "400":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "404":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApiErrorContainer'
-          description: Operation failed.
-      security:
-      - deelToken: []
-      - oauth2:
-        - profile:write
-      summary: Create a parent worker relation with external id
-      tags:
-      - Worker Relations
-      x-content-type: application/json
       x-accepts:
       - application/json
   /benefits/legal-entities/{id}/contracts/{contract_id}/plans/{plan_id}:
@@ -14404,6 +14269,74 @@ paths:
         external benefits vendor
       tags:
       - Legal Entities
+      x-accepts:
+      - application/json
+  /hris/worker_relations/profile/external/{hrisProfileExternalId}/parent:
+    put:
+      description: |-
+        Create a parent worker relation with external id.
+         **Token scopes**: `profile:write`
+      operationId: createOrUpdateParentRelationBetweenProfiles
+      parameters:
+      - description: HRISProfile public id
+        example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        explode: false
+        in: path
+        name: hrisProfileExternalId
+        required: true
+        schema:
+          format: uuid
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/createOrUpdateParentRelationBetweenProfiles_request'
+        required: true
+      responses:
+        "204":
+          content:
+            application/json: {}
+          description: Successful operation
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+      security:
+      - deelToken: []
+      - oauth2:
+        - profile:write
+      summary: Create a parent worker relation with external id
+      tags:
+      - Worker Relations
+      x-content-type: application/json
       x-accepts:
       - application/json
   /benefits/legal-entities/{id}/401k/plans:
@@ -14888,44 +14821,6 @@ paths:
       x-content-type: application/json
       x-accepts:
       - application/json
-  /hris/worker_relations/profile/external/{profileId}/parent:
-    put:
-      description: |-
-        Create a parent worker relation with external id.
-         **Token scopes**: `profile:write`
-      operationId: upsertParentWorkerRelationsExternalId
-      parameters:
-      - description: HrisProfile external ID
-        example: e3b6f8e8-1b6b-4e1b-8e0b-6f8e81b6b4e1
-        explode: false
-        in: path
-        name: profileId
-        required: true
-        schema:
-          format: uuid
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/upsertParentWorkerRelationsExternalId_request'
-        required: true
-      responses:
-        "204":
-          content:
-            application/json: {}
-          description: Successful operation
-      security:
-      - deelToken: []
-      - oauth2:
-        - profile:write
-      summary: Create a parent worker relation with external id
-      tags:
-      - Worker Relations
-      x-content-type: application/json
-      x-accepts:
-      - application/json
   /people/{id}/working-location:
     put:
       description: |-
@@ -15180,42 +15075,6 @@ paths:
       - Global Payroll
       x-accepts:
       - application/json
-  /hris/worker_relations/profile/external/{profileId}/child:
-    put:
-      description: |-
-        Create child worker relation with external Id.
-         **Token scopes**: `profile:write`
-      operationId: upsertChildWorkerRelationsExternalId
-      parameters:
-      - description: HrisProfile external ID
-        explode: false
-        in: path
-        name: profileId
-        required: true
-        schema:
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/upsertChildWorkerRelationsExternalId_request'
-        required: true
-      responses:
-        "204":
-          content:
-            application/json: {}
-          description: Successful operation
-      security:
-      - deelToken: []
-      - oauth2:
-        - profile:write
-      summary: Create child worker relation with external Id
-      tags:
-      - Worker Relations
-      x-content-type: application/json
-      x-accepts:
-      - application/json
   /benefits/legal-entities/{id}/pay-stub:
     get:
       description: |-
@@ -15296,28 +15155,32 @@ paths:
       - Payroll
       x-accepts:
       - application/json
-  /hris/positions/profile/{hrisProfileId}:
-    get:
+  /hris/worker_relations/profile/external/{hrisProfileExternalId}/child:
+    put:
       description: |-
-        undefined
-         **Token scopes**: `profile:read`
-      operationId: getHrisPositions
+        Create child worker relation with external Id.
+         **Token scopes**: `profile:write`
+      operationId: createOrUpdateChildRelationBetweenProfiles
       parameters:
-      - description: HRIS Profile ID
-        example: d290f1ee-6c54-4b01-90e6-d701748f0851
+      - description: External Profile id
+        example: 8a7fbb1c-0cdb-4edd-98f8-9fffcc4b78d8
         explode: false
         in: path
-        name: hrisProfileId
+        name: hrisProfileExternalId
         required: true
         schema:
           type: string
         style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/createOrUpdateChildRelationBetweenProfiles_request'
+        required: true
       responses:
-        "200":
+        "204":
           content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/getHrisPositions_200_response'
+            application/json: {}
           description: Successful operation
         "400":
           content:
@@ -15352,10 +15215,11 @@ paths:
       security:
       - deelToken: []
       - oauth2:
-        - profile:read
-      summary: Fetch HrisPositions from a HrisProfile
+        - profile:write
+      summary: Create child worker relation with external Id
       tags:
-      - Positions
+      - Worker Relations
+      x-content-type: application/json
       x-accepts:
       - application/json
   /onboarding/tracker:
@@ -16569,6 +16433,68 @@ paths:
       - Custom Fields
       x-accepts:
       - application/json
+  /hris/positions/profile/{hrisProfileId}:
+    get:
+      description: |-
+        undefined
+         **Token scopes**: `profile:read`
+      operationId: getHrisPositions
+      parameters:
+      - description: HRIS Profile ID
+        example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        explode: false
+        in: path
+        name: hrisProfileId
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getHrisPositions_200_response'
+          description: Successful operation
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "403":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorContainer'
+          description: Operation failed.
+      security:
+      - deelToken: []
+      - oauth2:
+        - profile:read
+      summary: Fetch HrisPositions from a HrisProfile
+      tags:
+      - Positions
+      x-accepts:
+      - application/json
   /contracts/{contract_id}/off-cycle-payments/{id}:
     get:
       description: |-
@@ -16651,6 +16577,42 @@ paths:
       summary: Retrieve a single off-cycle payment
       tags:
       - Off-cycle Payments
+      x-accepts:
+      - application/json
+  /hris/worker_relations/profile/external/{profileId}/child:
+    put:
+      description: |-
+        Create child worker relation with external Id.
+         **Token scopes**: `profile:write`
+      operationId: upsertChildWorkerRelationsExternalId
+      parameters:
+      - description: HrisProfile external ID
+        explode: false
+        in: path
+        name: profileId
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/upsertChildWorkerRelationsExternalId_request'
+        required: true
+      responses:
+        "204":
+          content:
+            application/json: {}
+          description: Successful operation
+      security:
+      - deelToken: []
+      - oauth2:
+        - profile:write
+      summary: Create child worker relation with external Id
+      tags:
+      - Worker Relations
+      x-content-type: application/json
       x-accepts:
       - application/json
 components:
@@ -49755,56 +49717,6 @@ components:
           nullable: false
           type: number
       type: object
-    createOrUpdateChildRelationBetweenProfiles_request_data_edit_reason:
-      properties:
-        reason_oid:
-          description: ID of the reason for the edit
-          example: 8a7fbb1c-0cdb-4edd-98f8-9fffcc4b78d8
-          format: uuid
-          type: string
-        additional_info:
-          description: Additional information about the edit
-          example: Additional information about the edit
-          type: string
-      required:
-      - reason_oid
-      type: object
-    createOrUpdateChildRelationBetweenProfiles_request_data_child_hris_profile_ids_inner:
-      properties:
-        relation_external_id:
-          description: External id of the relation
-          example: 8a7fbb1c-0cdb-4edd-98f8-9fffcc4b78d8
-          maxLength: 100
-          type: string
-        external_hris_profile_id:
-          description: External id of the child profile
-          example: 8a7fbb1c-0cdb-4edd-98f8-9fffcc4b78d8
-          maxLength: 100
-          type: string
-      type: object
-    createOrUpdateChildRelationBetweenProfiles_request_data:
-      properties:
-        edit_reason:
-          $ref: '#/components/schemas/createOrUpdateChildRelationBetweenProfiles_request_data_edit_reason'
-        child_hris_profile_ids:
-          items:
-            $ref: '#/components/schemas/createOrUpdateChildRelationBetweenProfiles_request_data_child_hris_profile_ids_inner'
-          minItems: 1
-          type: array
-        hris_relationship_type_external_id:
-          description: External id of the relationship type
-          example: 8a7fbb1c-0cdb-4edd-98f8-9fffcc4b78d8
-          format: uuid
-          type: string
-      required:
-      - hris_relationship_type_id
-      - parent_hris_profile_id
-      type: object
-    createOrUpdateChildRelationBetweenProfiles_request:
-      properties:
-        data:
-          $ref: '#/components/schemas/createOrUpdateChildRelationBetweenProfiles_request_data'
-      type: object
     getLegalEntity_200_response_address:
       description: Address of the legal entity.
       example:
@@ -50351,48 +50263,6 @@ components:
           type: array
         page:
           $ref: '#/components/schemas/getBenefitEmployees_200_response_page'
-    createOrUpdateParentRelationBetweenProfiles_request_data_edit_reason:
-      properties:
-        reason_oid:
-          description: The reason for the edit
-          example: d290f1ee-6c54-4b01-90e6-d701748f0851
-          format: uuid
-          type: string
-        additional_info:
-          description: Additional information about the edit
-          example: Additional information about the edit
-          type: string
-      required:
-      - reason_oid
-      type: object
-    createOrUpdateParentRelationBetweenProfiles_request_data:
-      properties:
-        edit_reason:
-          $ref: '#/components/schemas/createOrUpdateParentRelationBetweenProfiles_request_data_edit_reason'
-        relation_external_id:
-          description: The external id of the relation
-          example: d290f1ee-6c54-4b01-90e6-d701748f0851
-          maxLength: 100
-          type: string
-        parent_profile_external_id:
-          description: The external id of the parent profile
-          example: d290f1ee-6c54-4b01-90e6-d701748f0851
-          maxLength: 100
-          type: string
-        hris_relationship_type_external_id:
-          description: The external id of the relationship type
-          example: d290f1ee-6c54-4b01-90e6-d701748f0851
-          maxLength: 100
-          type: string
-      required:
-      - hris_relationship_type_id
-      - parent_hris_profile_id
-      type: object
-    createOrUpdateParentRelationBetweenProfiles_request:
-      properties:
-        data:
-          $ref: '#/components/schemas/createOrUpdateParentRelationBetweenProfiles_request_data'
-      type: object
     get401kEnrollmentsDefinition_200_response_inner_details:
       description: Object containing additional information about the enrollment.
       example:
@@ -50797,6 +50667,48 @@ components:
           minimum: 0
           nullable: false
           type: integer
+      type: object
+    createOrUpdateParentRelationBetweenProfiles_request_data_edit_reason:
+      properties:
+        reason_oid:
+          description: The reason for the edit
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+          format: uuid
+          type: string
+        additional_info:
+          description: Additional information about the edit
+          example: Additional information about the edit
+          type: string
+      required:
+      - reason_oid
+      type: object
+    createOrUpdateParentRelationBetweenProfiles_request_data:
+      properties:
+        edit_reason:
+          $ref: '#/components/schemas/createOrUpdateParentRelationBetweenProfiles_request_data_edit_reason'
+        relation_external_id:
+          description: The external id of the relation
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+          maxLength: 100
+          type: string
+        parent_profile_external_id:
+          description: The external id of the parent profile
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+          maxLength: 100
+          type: string
+        hris_relationship_type_external_id:
+          description: The external id of the relationship type
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+          maxLength: 100
+          type: string
+      required:
+      - hris_relationship_type_id
+      - parent_hris_profile_id
+      type: object
+    createOrUpdateParentRelationBetweenProfiles_request:
+      properties:
+        data:
+          $ref: '#/components/schemas/createOrUpdateParentRelationBetweenProfiles_request_data'
       type: object
     get401kPlansDefinition_200_response_inner_details:
       description: Object containing additional information about the 401K plan.
@@ -51323,32 +51235,6 @@ components:
           description: Identifier for the payroll report column related to this item.
           example: 3f4b5f6e8
           type: string
-      type: object
-    upsertParentWorkerRelationsExternalId_request_data:
-      properties:
-        relation_external_id:
-          description: A custom ID to identify the relationship
-          example: e3b6f8e8-1b6b-4e1b-8e0b-6f8e81b6b4e1
-          maxLength: 100
-          type: string
-        parent_profile_external_id:
-          description: The external ID of the parent profile
-          example: e3b6f8e8-1b6b-4e1b-8e0b-6f8e81b6b4e1
-          maxLength: 100
-          type: string
-        hris_relationship_type_external_id:
-          description: The external ID of the relationship type
-          example: e3b6f8e8-1b6b-4e1b-8e0b-6f8e81b6b4e1
-          maxLength: 100
-          type: string
-      required:
-      - hris_relationship_type_external_id
-      - parent_profile_external_id
-      type: object
-    upsertParentWorkerRelationsExternalId_request:
-      properties:
-        data:
-          $ref: '#/components/schemas/upsertParentWorkerRelationsExternalId_request_data'
       type: object
     updatePeopleWorkingLocation_request_data:
       properties:
@@ -52395,40 +52281,6 @@ components:
       required:
       - data
       type: object
-    upsertChildWorkerRelationsExternalId_request_data_child_hris_profile_ids_inner_oneOf:
-      properties:
-        relation_external_id:
-          maxLength: 100
-          type: string
-        external_hris_profile_id:
-          maxLength: 100
-          type: string
-      required:
-      - external_hris_profile_id
-      - relation_external_id
-    upsertChildWorkerRelationsExternalId_request_data_child_hris_profile_ids_inner:
-      oneOf:
-      - $ref: '#/components/schemas/upsertChildWorkerRelationsExternalId_request_data_child_hris_profile_ids_inner_oneOf'
-      type: object
-    upsertChildWorkerRelationsExternalId_request_data:
-      properties:
-        child_hris_profile_ids:
-          items:
-            $ref: '#/components/schemas/upsertChildWorkerRelationsExternalId_request_data_child_hris_profile_ids_inner'
-          minItems: 1
-          type: array
-        hris_relationship_type_external_id:
-          format: uuid
-          type: string
-      required:
-      - child_hris_profile_ids
-      - hris_relationship_type_id
-      type: object
-    upsertChildWorkerRelationsExternalId_request:
-      properties:
-        data:
-          $ref: '#/components/schemas/upsertChildWorkerRelationsExternalId_request_data'
-      type: object
     getPayStub_200_response_data_inner_employees_inner_contributions_inner:
       example:
         amount: 100
@@ -52751,111 +52603,55 @@ components:
         page:
           $ref: '#/components/schemas/getBenefitEmployees_200_response_page'
       type: object
-    getHrisPositions_200_response_data_inner_role:
-      example:
-        name: Software Engineer
-        id: 1
+    createOrUpdateChildRelationBetweenProfiles_request_data_edit_reason:
       properties:
-        id:
-          description: Role ID
-          example: 1
-          type: integer
-        name:
-          description: Role Name
-          example: Software Engineer
-          type: string
-      type: object
-    getHrisPositions_200_response_data_inner_team_organization_structure:
-      example:
-        name: Engineering
-        id: 1
-      properties:
-        id:
-          description: Organization Structure ID
-          example: 1
-          type: integer
-        name:
-          description: Organization Structure Name
-          example: Engineering
-          type: string
-      type: object
-    getHrisPositions_200_response_data_inner_team:
-      example:
-        name: Engineering
-        organization_structure:
-          name: Engineering
-          id: 1
-        id: 1
-      properties:
-        id:
-          description: Team ID
-          example: 1
-          type: integer
-        name:
-          description: Team Name
-          example: Engineering
-          type: string
-        organization_structure:
-          $ref: '#/components/schemas/getHrisPositions_200_response_data_inner_team_organization_structure'
-      type: object
-    getHrisPositions_200_response_data_inner:
-      example:
-        role:
-          name: Software Engineer
-          id: 1
-        id: d290f1ee-6c54-4b01-90e6-d701748f0851
-        team:
-          name: Engineering
-          organization_structure:
-            name: Engineering
-            id: 1
-          id: 1
-        is_supportive: false
-      properties:
-        id:
-          description: HRIS Position ID
-          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        reason_oid:
+          description: ID of the reason for the edit
+          example: 8a7fbb1c-0cdb-4edd-98f8-9fffcc4b78d8
           format: uuid
           type: string
-        role:
-          $ref: '#/components/schemas/getHrisPositions_200_response_data_inner_role'
-        team:
-          $ref: '#/components/schemas/getHrisPositions_200_response_data_inner_team'
-        is_supportive:
-          description: Is Supportive Position
-          example: false
-          type: boolean
+        additional_info:
+          description: Additional information about the edit
+          example: Additional information about the edit
+          type: string
+      required:
+      - reason_oid
       type: object
-    getHrisPositions_200_response:
-      example:
-        data:
-        - role:
-            name: Software Engineer
-            id: 1
-          id: d290f1ee-6c54-4b01-90e6-d701748f0851
-          team:
-            name: Engineering
-            organization_structure:
-              name: Engineering
-              id: 1
-            id: 1
-          is_supportive: false
-        - role:
-            name: Software Engineer
-            id: 1
-          id: d290f1ee-6c54-4b01-90e6-d701748f0851
-          team:
-            name: Engineering
-            organization_structure:
-              name: Engineering
-              id: 1
-            id: 1
-          is_supportive: false
+    createOrUpdateChildRelationBetweenProfiles_request_data_child_hris_profile_ids_inner:
+      properties:
+        relation_external_id:
+          description: External id of the relation
+          example: 8a7fbb1c-0cdb-4edd-98f8-9fffcc4b78d8
+          maxLength: 100
+          type: string
+        external_hris_profile_id:
+          description: External id of the child profile
+          example: 8a7fbb1c-0cdb-4edd-98f8-9fffcc4b78d8
+          maxLength: 100
+          type: string
+      type: object
+    createOrUpdateChildRelationBetweenProfiles_request_data:
+      properties:
+        edit_reason:
+          $ref: '#/components/schemas/createOrUpdateChildRelationBetweenProfiles_request_data_edit_reason'
+        child_hris_profile_ids:
+          items:
+            $ref: '#/components/schemas/createOrUpdateChildRelationBetweenProfiles_request_data_child_hris_profile_ids_inner'
+          minItems: 1
+          type: array
+        hris_relationship_type_external_id:
+          description: External id of the relationship type
+          example: 8a7fbb1c-0cdb-4edd-98f8-9fffcc4b78d8
+          format: uuid
+          type: string
+      required:
+      - hris_relationship_type_id
+      - parent_hris_profile_id
+      type: object
+    createOrUpdateChildRelationBetweenProfiles_request:
       properties:
         data:
-          items:
-            $ref: '#/components/schemas/getHrisPositions_200_response_data_inner'
-          type: array
+          $ref: '#/components/schemas/createOrUpdateChildRelationBetweenProfiles_request_data'
       type: object
     listOnboardingTracker_pagination_parameter:
       properties:
@@ -54554,6 +54350,112 @@ components:
         page:
           $ref: '#/components/schemas/_offboarding_tracker_get_200_response_page'
       type: object
+    getHrisPositions_200_response_data_inner_role:
+      example:
+        name: Software Engineer
+        id: 1
+      properties:
+        id:
+          description: Role ID
+          example: 1
+          type: integer
+        name:
+          description: Role Name
+          example: Software Engineer
+          type: string
+      type: object
+    getHrisPositions_200_response_data_inner_team_organization_structure:
+      example:
+        name: Engineering
+        id: 1
+      properties:
+        id:
+          description: Organization Structure ID
+          example: 1
+          type: integer
+        name:
+          description: Organization Structure Name
+          example: Engineering
+          type: string
+      type: object
+    getHrisPositions_200_response_data_inner_team:
+      example:
+        name: Engineering
+        organization_structure:
+          name: Engineering
+          id: 1
+        id: 1
+      properties:
+        id:
+          description: Team ID
+          example: 1
+          type: integer
+        name:
+          description: Team Name
+          example: Engineering
+          type: string
+        organization_structure:
+          $ref: '#/components/schemas/getHrisPositions_200_response_data_inner_team_organization_structure'
+      type: object
+    getHrisPositions_200_response_data_inner:
+      example:
+        role:
+          name: Software Engineer
+          id: 1
+        id: d290f1ee-6c54-4b01-90e6-d701748f0851
+        team:
+          name: Engineering
+          organization_structure:
+            name: Engineering
+            id: 1
+          id: 1
+        is_supportive: false
+      properties:
+        id:
+          description: HRIS Position ID
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+          format: uuid
+          type: string
+        role:
+          $ref: '#/components/schemas/getHrisPositions_200_response_data_inner_role'
+        team:
+          $ref: '#/components/schemas/getHrisPositions_200_response_data_inner_team'
+        is_supportive:
+          description: Is Supportive Position
+          example: false
+          type: boolean
+      type: object
+    getHrisPositions_200_response:
+      example:
+        data:
+        - role:
+            name: Software Engineer
+            id: 1
+          id: d290f1ee-6c54-4b01-90e6-d701748f0851
+          team:
+            name: Engineering
+            organization_structure:
+              name: Engineering
+              id: 1
+            id: 1
+          is_supportive: false
+        - role:
+            name: Software Engineer
+            id: 1
+          id: d290f1ee-6c54-4b01-90e6-d701748f0851
+          team:
+            name: Engineering
+            organization_structure:
+              name: Engineering
+              id: 1
+            id: 1
+          is_supportive: false
+      properties:
+        data:
+          items:
+            $ref: '#/components/schemas/getHrisPositions_200_response_data_inner'
+          type: array
+      type: object
     getOffCyclePaymentByContractAndId_200_response_data_reported_by:
       example:
         full_name: John Doe
@@ -54664,6 +54566,40 @@ components:
           $ref: '#/components/schemas/getOffCyclePaymentByContractAndId_200_response_data'
       required:
       - data
+      type: object
+    upsertChildWorkerRelationsExternalId_request_data_child_hris_profile_ids_inner_oneOf:
+      properties:
+        relation_external_id:
+          maxLength: 100
+          type: string
+        external_hris_profile_id:
+          maxLength: 100
+          type: string
+      required:
+      - external_hris_profile_id
+      - relation_external_id
+    upsertChildWorkerRelationsExternalId_request_data_child_hris_profile_ids_inner:
+      oneOf:
+      - $ref: '#/components/schemas/upsertChildWorkerRelationsExternalId_request_data_child_hris_profile_ids_inner_oneOf'
+      type: object
+    upsertChildWorkerRelationsExternalId_request_data:
+      properties:
+        child_hris_profile_ids:
+          items:
+            $ref: '#/components/schemas/upsertChildWorkerRelationsExternalId_request_data_child_hris_profile_ids_inner'
+          minItems: 1
+          type: array
+        hris_relationship_type_external_id:
+          format: uuid
+          type: string
+      required:
+      - child_hris_profile_ids
+      - hris_relationship_type_id
+      type: object
+    upsertChildWorkerRelationsExternalId_request:
+      properties:
+        data:
+          $ref: '#/components/schemas/upsertChildWorkerRelationsExternalId_request_data'
       type: object
     CreatedHrisDirectEmployeeContainer_data_employment:
       properties:

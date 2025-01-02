@@ -2,7 +2,7 @@
 
 Deel REST API
 - API version: 1.25.0
-  - Build date: 2024-12-26T12:33:56.604502650Z[GMT]
+  - Build date: 2025-01-02T14:25:45.544976271Z[GMT]
   - Generator version: 7.10.0
 
 Deel REST API
@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.deel</groupId>
   <artifactId>deel-api-java-sdk</artifactId>
-  <version>alpha-0.0.14</version>
+  <version>2.1.23</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -57,7 +57,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.deel:deel-api-java-sdk:alpha-0.0.14"
+     implementation "com.deel:deel-api-java-sdk:2.1.23"
   }
 ```
 
@@ -71,7 +71,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/deel-api-java-sdk-alpha-0.0.14.jar`
+* `target/deel-api-java-sdk-2.1.23.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -352,7 +352,6 @@ Class | Method | HTTP request | Description
 *WorkerRelationsApi* | [**upsertChildWorkerRelations**](docs/WorkerRelationsApi.md#upsertChildWorkerRelations) | **PUT** /hris/worker_relations/profile/{hrisProfileOid}/child | Create child worker relation
 *WorkerRelationsApi* | [**upsertChildWorkerRelationsExternalId**](docs/WorkerRelationsApi.md#upsertChildWorkerRelationsExternalId) | **PUT** /hris/worker_relations/profile/external/{profileId}/child | Create child worker relation with external Id
 *WorkerRelationsApi* | [**upsertParentWorkerRelations**](docs/WorkerRelationsApi.md#upsertParentWorkerRelations) | **PUT** /hris/worker_relations/profile/{hrisProfileOid}/parent | Create a parent worker relation
-*WorkerRelationsApi* | [**upsertParentWorkerRelationsExternalId**](docs/WorkerRelationsApi.md#upsertParentWorkerRelationsExternalId) | **PUT** /hris/worker_relations/profile/external/{profileId}/parent | Create a parent worker relation with external id
 
 
 ## Documentation for Models
@@ -1801,8 +1800,6 @@ Class | Method | HTTP request | Description
  - [UpsertParentWorkerRelationsContainerData](docs/UpsertParentWorkerRelationsContainerData.md)
  - [UpsertParentWorkerRelationsExternalIdContainer](docs/UpsertParentWorkerRelationsExternalIdContainer.md)
  - [UpsertParentWorkerRelationsExternalIdContainerData](docs/UpsertParentWorkerRelationsExternalIdContainerData.md)
- - [UpsertParentWorkerRelationsExternalIdRequest](docs/UpsertParentWorkerRelationsExternalIdRequest.md)
- - [UpsertParentWorkerRelationsExternalIdRequestData](docs/UpsertParentWorkerRelationsExternalIdRequestData.md)
  - [UpsertParentWorkerRelationsRequest](docs/UpsertParentWorkerRelationsRequest.md)
  - [UpsertParentWorkerRelationsRequestData](docs/UpsertParentWorkerRelationsRequestData.md)
  - [UserPersonalInformationToUpdateContainer](docs/UserPersonalInformationToUpdateContainer.md)

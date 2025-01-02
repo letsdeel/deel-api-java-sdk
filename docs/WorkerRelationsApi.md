@@ -21,7 +21,6 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 | [**upsertChildWorkerRelations**](WorkerRelationsApi.md#upsertChildWorkerRelations) | **PUT** /hris/worker_relations/profile/{hrisProfileOid}/child | Create child worker relation |
 | [**upsertChildWorkerRelationsExternalId**](WorkerRelationsApi.md#upsertChildWorkerRelationsExternalId) | **PUT** /hris/worker_relations/profile/external/{profileId}/child | Create child worker relation with external Id |
 | [**upsertParentWorkerRelations**](WorkerRelationsApi.md#upsertParentWorkerRelations) | **PUT** /hris/worker_relations/profile/{hrisProfileOid}/parent | Create a parent worker relation |
-| [**upsertParentWorkerRelationsExternalId**](WorkerRelationsApi.md#upsertParentWorkerRelationsExternalId) | **PUT** /hris/worker_relations/profile/external/{profileId}/parent | Create a parent worker relation with external id |
 
 
 <a id="createOrUpdateChildRelationBetweenProfiles"></a>
@@ -1326,77 +1325,4 @@ null (empty response body)
 | **403** | Operation failed. |  -  |
 | **404** | Operation failed. |  -  |
 | **500** | Operation failed. |  -  |
-
-<a id="upsertParentWorkerRelationsExternalId"></a>
-# **upsertParentWorkerRelationsExternalId**
-> upsertParentWorkerRelationsExternalId(profileId, upsertParentWorkerRelationsExternalIdRequest).execute();
-
-Create a parent worker relation with external id
-
-Create a parent worker relation with external id.  **Token scopes**: &#x60;profile:write&#x60;
-
-### Example
-```java
-// Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.WorkerRelationsApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.letsdeel.com/rest/v2");
-    
-    // Configure HTTP bearer authorization: deelToken
-    HttpBearerAuth deelToken = (HttpBearerAuth) defaultClient.getAuthentication("deelToken");
-    deelToken.setBearerToken("BEARER TOKEN");
-
-    // Configure OAuth2 access token for authorization: oauth2
-    OAuth oauth2 = (OAuth) defaultClient.getAuthentication("oauth2");
-    oauth2.setAccessToken("YOUR ACCESS TOKEN");
-
-    WorkerRelationsApi apiInstance = new WorkerRelationsApi(defaultClient);
-    UUID profileId = UUID.fromString("e3b6f8e8-1b6b-4e1b-8e0b-6f8e81b6b4e1"); // UUID | HrisProfile external ID
-    UpsertParentWorkerRelationsExternalIdRequest upsertParentWorkerRelationsExternalIdRequest = new UpsertParentWorkerRelationsExternalIdRequest(); // UpsertParentWorkerRelationsExternalIdRequest | 
-    try {
-      apiInstance.upsertParentWorkerRelationsExternalId(profileId, upsertParentWorkerRelationsExternalIdRequest)
-            .execute();
-    } catch (ApiException e) {
-      System.err.println("Exception when calling WorkerRelationsApi#upsertParentWorkerRelationsExternalId");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **profileId** | **UUID**| HrisProfile external ID | |
-| **upsertParentWorkerRelationsExternalIdRequest** | [**UpsertParentWorkerRelationsExternalIdRequest**](UpsertParentWorkerRelationsExternalIdRequest.md)|  | |
-
-### Return type
-
-null (empty response body)
-
-### Authorization
-
-[deelToken](../README.md#deelToken), [oauth2](../README.md#oauth2)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **204** | Successful operation |  -  |
 

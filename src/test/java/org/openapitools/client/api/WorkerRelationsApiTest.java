@@ -30,7 +30,6 @@ import org.openapitools.client.model.UpdateWorkerRelationTypeExternalId204Respon
 import org.openapitools.client.model.UpdateWorkerRelationTypeRequest;
 import org.openapitools.client.model.UpsertChildWorkerRelationsExternalIdRequest;
 import org.openapitools.client.model.UpsertChildWorkerRelationsRequest;
-import org.openapitools.client.model.UpsertParentWorkerRelationsExternalIdRequest;
 import org.openapitools.client.model.UpsertParentWorkerRelationsRequest;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -305,22 +304,6 @@ public class WorkerRelationsApiTest {
         UUID hrisProfileOid = null;
         UpsertParentWorkerRelationsRequest upsertParentWorkerRelationsRequest = null;
         api.upsertParentWorkerRelations(hrisProfileOid, upsertParentWorkerRelationsRequest)
-                .execute();
-        // TODO: test validations
-    }
-
-    /**
-     * Create a parent worker relation with external id
-     *
-     * Create a parent worker relation with external id.  **Token scopes**: &#x60;profile:write&#x60;
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void upsertParentWorkerRelationsExternalIdTest() throws ApiException {
-        UUID profileId = null;
-        UpsertParentWorkerRelationsExternalIdRequest upsertParentWorkerRelationsExternalIdRequest = null;
-        api.upsertParentWorkerRelationsExternalId(profileId, upsertParentWorkerRelationsExternalIdRequest)
                 .execute();
         // TODO: test validations
     }
