@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.time.OffsetDateTime;
 import java.util.Arrays;
-import org.openapitools.client.model.GetInvoiceList200ResponseDataRowsInnerContract;
+import org.openapitools.client.model.GetInvoiceList200ResponseDataRowsInnerId;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -110,14 +110,6 @@ public class GetInvoiceList200ResponseDataRowsInnerTest {
     @Test
     public void paidAtTest() {
         // TODO: test paidAt
-    }
-
-    /**
-     * Test the property 'contract'
-     */
-    @Test
-    public void contractTest() {
-        // TODO: test contract
     }
 
     /**

@@ -2,7 +2,7 @@
 
 Deel REST API
 - API version: 1.25.0
-  - Build date: 2025-01-02T14:25:45.544976271Z[GMT]
+  - Build date: 2025-01-13T14:23:41.573776663Z[GMT]
   - Generator version: 7.10.0
 
 Deel REST API
@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.deel</groupId>
   <artifactId>deel-api-java-sdk</artifactId>
-  <version>2.1.23</version>
+  <version>alpha-0.0.15</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -57,7 +57,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.deel:deel-api-java-sdk:2.1.23"
+     implementation "com.deel:deel-api-java-sdk:alpha-0.0.15"
   }
 ```
 
@@ -71,7 +71,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/deel-api-java-sdk-2.1.23.jar`
+* `target/deel-api-java-sdk-alpha-0.0.15.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -182,6 +182,9 @@ Class | Method | HTTP request | Description
 *CustomFieldsApi* | [**getCustomFieldsFromPeople**](docs/CustomFieldsApi.md#getCustomFieldsFromPeople) | **GET** /people/custom_fields | List all custom fields
 *CustomFieldsApi* | [**upsertCustomFieldValueFromContracts**](docs/CustomFieldsApi.md#upsertCustomFieldValueFromContracts) | **PUT** /contracts/{contract_id}/custom_fields | Update custom field value
 *CustomFieldsApi* | [**upsertCustomFieldValueFromWorker**](docs/CustomFieldsApi.md#upsertCustomFieldValueFromWorker) | **PUT** /people/{worker_id}/custom_fields | Update custom field value
+*DeelAsAServiceApi* | [**addEORBankAccount**](docs/DeelAsAServiceApi.md#addEORBankAccount) | **POST** /daas/banks | Add bank account
+*DeelAsAServiceApi* | [**getEORBankAccountGuide**](docs/DeelAsAServiceApi.md#getEORBankAccountGuide) | **GET** /daas/banks/guide | Retrieve bank account guide
+*DeelAsAServiceApi* | [**patchEORBankAccount**](docs/DeelAsAServiceApi.md#patchEORBankAccount) | **PATCH** /daas/banks/{bank_id} | Modify bank account for an EOR employee
 *EmployeesApi* | [**getBenefitEmployee**](docs/EmployeesApi.md#getBenefitEmployee) | **GET** /benefits/legal-entities/{id}/employees/{employee_id} | Get employee from organization integrated with external benefits vendor
 *EmployeesApi* | [**getBenefitEmployees**](docs/EmployeesApi.md#getBenefitEmployees) | **GET** /benefits/legal-entities/{id}/employees | Get employees from organization integrated with external benefits vendor
 *EnrollmentsApi* | [**delete401kEnrollmentsDefinition**](docs/EnrollmentsApi.md#delete401kEnrollmentsDefinition) | **DELETE** /benefits/legal-entities/{id}/contracts/{contract_id}/plans/{plan_id} | Delete enrollment settings from an employee in a 401k plan
@@ -299,6 +302,8 @@ Class | Method | HTTP request | Description
 *PositionsApi* | [**applyChangesPositions**](docs/PositionsApi.md#applyChangesPositions) | **POST** /hris/positions/apply_changes | Apply changes to positions.
 *PositionsApi* | [**getHrisPositions**](docs/PositionsApi.md#getHrisPositions) | **GET** /hris/positions/profile/{hrisProfileId} | Fetch HrisPositions from a HrisProfile
 *ReportsApi* | [**getDetailedPaymentsReport**](docs/ReportsApi.md#getDetailedPaymentsReport) | **GET** /reports/detailed-payments | Detailed payments report
+*ScreeningsApi* | [**createVeriffSession**](docs/ScreeningsApi.md#createVeriffSession) | **POST** /veriff/session | Create Veriff session
+*ScreeningsApi* | [**getVerificationMethod**](docs/ScreeningsApi.md#getVerificationMethod) | **GET** /screenings/verification_method | Get verification method
 *TasksApi* | [**createContractPgoTak**](docs/TasksApi.md#createContractPgoTak) | **POST** /contracts/{contract_id}/tasks | Create a new task
 *TasksApi* | [**createTaskManyReview**](docs/TasksApi.md#createTaskManyReview) | **POST** /contracts/{contract_id}/tasks/many/reviews | Review multiple tasks
 *TasksApi* | [**createTaskReviewById**](docs/TasksApi.md#createTaskReviewById) | **POST** /contracts/{contract_id}/tasks/{task_id}/reviews | Review a single task
@@ -309,6 +314,7 @@ Class | Method | HTTP request | Description
 *TimeOffApi* | [**getPoliciesForProfile**](docs/TimeOffApi.md#getPoliciesForProfile) | **GET** /time_offs/profile/{hris_profile_id}/policies | List policies
 *TimeOffApi* | [**getProfileEntitlements**](docs/TimeOffApi.md#getProfileEntitlements) | **GET** /time_offs/profile/{hris_profile_id}/entitlements | Get Profile Entitlements
 *TimeOffApi* | [**getTimeOffsQuery**](docs/TimeOffApi.md#getTimeOffsQuery) | **GET** /time_offs/profile/{hris_profile_id} | List time-off requests
+*TimeOffApi* | [**getTimeOffsQueryForOrganization**](docs/TimeOffApi.md#getTimeOffsQueryForOrganization) | **GET** /time_offs | List time-off requests for Organization
 *TimeOffApi* | [**updateTimeOff**](docs/TimeOffApi.md#updateTimeOff) | **PATCH** /time_offs/{time_off_id} | Update time-off request
 *TimeTrackingRatesApi* | [**createShiftRate**](docs/TimeTrackingRatesApi.md#createShiftRate) | **POST** /time_tracking/shift_rates | Create a New Shift Rate
 *TimeTrackingRatesApi* | [**deleteShiftRateExternalId**](docs/TimeTrackingRatesApi.md#deleteShiftRateExternalId) | **DELETE** /time_tracking/shift_rates/{external_id} | Delete a ShiftRate by external ID
@@ -359,6 +365,10 @@ Class | Method | HTTP request | Description
  - [AddContractDocument201Response](docs/AddContractDocument201Response.md)
  - [AddContractDocument201ResponseData](docs/AddContractDocument201ResponseData.md)
  - [AddContractDocumentRequest](docs/AddContractDocumentRequest.md)
+ - [AddEORBankAccount201Response](docs/AddEORBankAccount201Response.md)
+ - [AddEORBankAccount201ResponseData](docs/AddEORBankAccount201ResponseData.md)
+ - [AddEORBankAccountRequest](docs/AddEORBankAccountRequest.md)
+ - [AddEORBankAccountRequestDataInner](docs/AddEORBankAccountRequestDataInner.md)
  - [AddGpBankAccount201Response](docs/AddGpBankAccount201Response.md)
  - [AddGpBankAccount201ResponseData](docs/AddGpBankAccount201ResponseData.md)
  - [AddWorkerBankAccountContainer](docs/AddWorkerBankAccountContainer.md)
@@ -716,6 +726,11 @@ Class | Method | HTTP request | Description
  - [CreateTimesheetRequest1](docs/CreateTimesheetRequest1.md)
  - [CreateTimesheetReviewRequest](docs/CreateTimesheetReviewRequest.md)
  - [CreateTimesheetReviewRequestData](docs/CreateTimesheetReviewRequestData.md)
+ - [CreateVeriffSession201Response](docs/CreateVeriffSession201Response.md)
+ - [CreateVeriffSession201ResponseData](docs/CreateVeriffSession201ResponseData.md)
+ - [CreateVeriffSessionRequest](docs/CreateVeriffSessionRequest.md)
+ - [CreateVeriffSessionRequestData](docs/CreateVeriffSessionRequestData.md)
+ - [CreateVeriffSessionRequestDataUserInput](docs/CreateVeriffSessionRequestDataUserInput.md)
  - [CreateWebhookRequest](docs/CreateWebhookRequest.md)
  - [CreateWorkerRelationContainer](docs/CreateWorkerRelationContainer.md)
  - [CreateWorkerRelationContainerData](docs/CreateWorkerRelationContainerData.md)
@@ -1077,6 +1092,11 @@ Class | Method | HTTP request | Description
  - [GetDepartments404Response](docs/GetDepartments404Response.md)
  - [GetDownloadUrlForGPPayslip200Response](docs/GetDownloadUrlForGPPayslip200Response.md)
  - [GetDownloadUrlForGPPayslip200ResponseData](docs/GetDownloadUrlForGPPayslip200ResponseData.md)
+ - [GetEORBankAccountGuide200Response](docs/GetEORBankAccountGuide200Response.md)
+ - [GetEORBankAccountGuide200ResponseDataInner](docs/GetEORBankAccountGuide200ResponseDataInner.md)
+ - [GetEORBankAccountGuide200ResponseDataInnerValidationsInner](docs/GetEORBankAccountGuide200ResponseDataInnerValidationsInner.md)
+ - [GetEORBankAccountGuide200ResponseDataInnerValidationsInnerValue](docs/GetEORBankAccountGuide200ResponseDataInnerValidationsInnerValue.md)
+ - [GetEORBankAccountGuide200ResponseDataInnerValuesAllowedInner](docs/GetEORBankAccountGuide200ResponseDataInnerValuesAllowedInner.md)
  - [GetEORContractBenefits200Response](docs/GetEORContractBenefits200Response.md)
  - [GetEORContractBenefits200ResponseDataInner](docs/GetEORContractBenefits200ResponseDataInner.md)
  - [GetEORContractBenefits200ResponseDataInnerEnrollmentDetails](docs/GetEORContractBenefits200ResponseDataInnerEnrollmentDetails.md)
@@ -1136,7 +1156,7 @@ Class | Method | HTTP request | Description
  - [GetInvoiceList200Response](docs/GetInvoiceList200Response.md)
  - [GetInvoiceList200ResponseData](docs/GetInvoiceList200ResponseData.md)
  - [GetInvoiceList200ResponseDataRowsInner](docs/GetInvoiceList200ResponseDataRowsInner.md)
- - [GetInvoiceList200ResponseDataRowsInnerContract](docs/GetInvoiceList200ResponseDataRowsInnerContract.md)
+ - [GetInvoiceList200ResponseDataRowsInnerId](docs/GetInvoiceList200ResponseDataRowsInnerId.md)
  - [GetInvoiceList200ResponsePage](docs/GetInvoiceList200ResponsePage.md)
  - [GetInvoiceListEntitiesParameter](docs/GetInvoiceListEntitiesParameter.md)
  - [GetJobTitleList200Response](docs/GetJobTitleList200Response.md)
@@ -1299,6 +1319,8 @@ Class | Method | HTTP request | Description
  - [GetTimesheetsByContractContractTypesParameter](docs/GetTimesheetsByContractContractTypesParameter.md)
  - [GetTimesheetsByContractStatusesParameter](docs/GetTimesheetsByContractStatusesParameter.md)
  - [GetTimesheetsStatusesParameter](docs/GetTimesheetsStatusesParameter.md)
+ - [GetVerificationMethod200Response](docs/GetVerificationMethod200Response.md)
+ - [GetVerificationMethod200ResponseData](docs/GetVerificationMethod200ResponseData.md)
  - [GetWorkerPayslips200Response](docs/GetWorkerPayslips200Response.md)
  - [GetWorkerPayslips200ResponseDataInner](docs/GetWorkerPayslips200ResponseDataInner.md)
  - [GetYearToDatePay200Response](docs/GetYearToDatePay200Response.md)
@@ -1487,6 +1509,8 @@ Class | Method | HTTP request | Description
  - [PageInfo](docs/PageInfo.md)
  - [PageInfoWithoutCursor](docs/PageInfoWithoutCursor.md)
  - [PageInfoWithoutCursorNew](docs/PageInfoWithoutCursorNew.md)
+ - [PatchEORBankAccount201Response](docs/PatchEORBankAccount201Response.md)
+ - [PatchEORBankAccount201ResponseData](docs/PatchEORBankAccount201ResponseData.md)
  - [PatchGpBankAccount200Response](docs/PatchGpBankAccount200Response.md)
  - [PatchGpBankAccount200ResponseData](docs/PatchGpBankAccount200ResponseData.md)
  - [PatchWebhookRequest](docs/PatchWebhookRequest.md)

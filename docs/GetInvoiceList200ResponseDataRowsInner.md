@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**id** | **String** | Unique identifier of this resource. |  |
+|**id** | [**GetInvoiceList200ResponseDataRowsInnerId**](GetInvoiceList200ResponseDataRowsInnerId.md) |  |  |
 |**fee** | **String** | Fee added to the invoice amount. |  [optional] |
 |**type** | **String** | Type of the invoice. |  [optional] |
 |**label** | **String** | Label or reference number of the invoice. |  |
@@ -16,7 +16,6 @@
 |**status** | [**StatusEnum**](#StatusEnum) | Current status of the invoice. |  |
 |**vatId** | **String** | VAT identification number related to the invoice. |  |
 |**paidAt** | **OffsetDateTime** | Date and time when the invoice was paid (ISO-8601 format). |  |
-|**contract** | [**GetInvoiceList200ResponseDataRowsInnerContract**](GetInvoiceList200ResponseDataRowsInnerContract.md) |  |  |
 |**currency** | **String** | Three-letter currency code for the invoice. |  |
 |**deelFee** | **String** | Fee charged by Deel. |  [optional] |
 |**dueDate** | **OffsetDateTime** | Date and time when the invoice is due (ISO-8601 format). |  |

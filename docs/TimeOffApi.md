@@ -9,6 +9,7 @@ All URIs are relative to *https://api.letsdeel.com/rest/v2*
 | [**getPoliciesForProfile**](TimeOffApi.md#getPoliciesForProfile) | **GET** /time_offs/profile/{hris_profile_id}/policies | List policies |
 | [**getProfileEntitlements**](TimeOffApi.md#getProfileEntitlements) | **GET** /time_offs/profile/{hris_profile_id}/entitlements | Get Profile Entitlements |
 | [**getTimeOffsQuery**](TimeOffApi.md#getTimeOffsQuery) | **GET** /time_offs/profile/{hris_profile_id} | List time-off requests |
+| [**getTimeOffsQueryForOrganization**](TimeOffApi.md#getTimeOffsQueryForOrganization) | **GET** /time_offs | List time-off requests for Organization |
 | [**updateTimeOff**](TimeOffApi.md#updateTimeOff) | **PATCH** /time_offs/{time_off_id} | Update time-off request |
 
 
@@ -433,6 +434,106 @@ public class Example {
 | **403** | Operation failed. |  -  |
 | **404** | Operation failed. |  -  |
 | **500** | Operation failed. |  -  |
+
+<a id="getTimeOffsQueryForOrganization"></a>
+# **getTimeOffsQueryForOrganization**
+> GetTimeOffsQuery200Response getTimeOffsQueryForOrganization().status(status).startDate(startDate).endDate(endDate).approvalStartDate(approvalStartDate).approvalEndDate(approvalEndDate).updatedStartDate(updatedStartDate).updatedEndDate(updatedEndDate).pageSize(pageSize).policyTypes(policyTypes).next(next).execute();
+
+List time-off requests for Organization
+
+List time-off requests for Organization  **Token scopes**: &#x60;time-off:read&#x60;
+
+### Example
+```java
+// Import classes:
+import org.openapitools.client.ApiClient;
+import org.openapitools.client.ApiException;
+import org.openapitools.client.Configuration;
+import org.openapitools.client.auth.*;
+import org.openapitools.client.models.*;
+import org.openapitools.client.api.TimeOffApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.letsdeel.com/rest/v2");
+    
+    // Configure HTTP bearer authorization: deelToken
+    HttpBearerAuth deelToken = (HttpBearerAuth) defaultClient.getAuthentication("deelToken");
+    deelToken.setBearerToken("BEARER TOKEN");
+
+    // Configure OAuth2 access token for authorization: oauth2
+    OAuth oauth2 = (OAuth) defaultClient.getAuthentication("oauth2");
+    oauth2.setAccessToken("YOUR ACCESS TOKEN");
+
+    TimeOffApi apiInstance = new TimeOffApi(defaultClient);
+    List<String> status = Arrays.asList(); // List<String> | Time off status
+    OffsetDateTime startDate = OffsetDateTime.parse("2022-01-01T00:00:00Z"); // OffsetDateTime | Start date of time off
+    OffsetDateTime endDate = OffsetDateTime.parse("2022-01-01T00:00:00Z"); // OffsetDateTime | End date of time off
+    OffsetDateTime approvalStartDate = OffsetDateTime.parse("2022-01-01T00:00:00Z"); // OffsetDateTime | Approval start date
+    OffsetDateTime approvalEndDate = OffsetDateTime.parse("2022-01-01T00:00:00Z"); // OffsetDateTime | Approval end date
+    OffsetDateTime updatedStartDate = OffsetDateTime.parse("2022-01-01T00:00:00Z"); // OffsetDateTime | Updated start date
+    OffsetDateTime updatedEndDate = OffsetDateTime.parse("2022-01-01T00:00:00Z"); // OffsetDateTime | Updated end date
+    Integer pageSize = 10; // Integer | Page size
+    List<UUID> policyTypes = Arrays.asList(); // List<UUID> | Policy types
+    String next = "d290f1ee-6c54-4b01-90e6-d701748f0851"; // String | Next page
+    try {
+      GetTimeOffsQuery200Response result = apiInstance.getTimeOffsQueryForOrganization()
+            .status(status)
+            .startDate(startDate)
+            .endDate(endDate)
+            .approvalStartDate(approvalStartDate)
+            .approvalEndDate(approvalEndDate)
+            .updatedStartDate(updatedStartDate)
+            .updatedEndDate(updatedEndDate)
+            .pageSize(pageSize)
+            .policyTypes(policyTypes)
+            .next(next)
+            .execute();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling TimeOffApi#getTimeOffsQueryForOrganization");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **status** | [**List&lt;String&gt;**](String.md)| Time off status | [optional] [enum: REQUESTED, APPROVED, REJECTED, USED, CANCELED] |
+| **startDate** | **OffsetDateTime**| Start date of time off | [optional] |
+| **endDate** | **OffsetDateTime**| End date of time off | [optional] |
+| **approvalStartDate** | **OffsetDateTime**| Approval start date | [optional] |
+| **approvalEndDate** | **OffsetDateTime**| Approval end date | [optional] |
+| **updatedStartDate** | **OffsetDateTime**| Updated start date | [optional] |
+| **updatedEndDate** | **OffsetDateTime**| Updated end date | [optional] |
+| **pageSize** | **Integer**| Page size | [optional] |
+| **policyTypes** | [**List&lt;UUID&gt;**](UUID.md)| Policy types | [optional] |
+| **next** | **String**| Next page | [optional] |
+
+### Return type
+
+[**GetTimeOffsQuery200Response**](GetTimeOffsQuery200Response.md)
+
+### Authorization
+
+[deelToken](../README.md#deelToken), [oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation time offs returned |  -  |
 
 <a id="updateTimeOff"></a>
 # **updateTimeOff**

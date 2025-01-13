@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * GetGpBankAccounts200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-02T14:25:45.544976271Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-13T14:23:41.573776663Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetGpBankAccounts200ResponseDataInner {
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
@@ -95,6 +95,11 @@ public class GetGpBankAccounts200ResponseDataInner {
   @SerializedName(SERIALIZED_NAME_FULL_NAME)
   @javax.annotation.Nullable
   private String fullName;
+
+  public static final String SERIALIZED_NAME_SORT_CODE = "sort_code";
+  @SerializedName(SERIALIZED_NAME_SORT_CODE)
+  @javax.annotation.Nullable
+  private String sortCode;
 
   public static final String SERIALIZED_NAME_SWIFT_BIC = "swift_bic";
   @SerializedName(SERIALIZED_NAME_SWIFT_BIC)
@@ -357,6 +362,25 @@ public class GetGpBankAccounts200ResponseDataInner {
 
   public void setFullName(@javax.annotation.Nullable String fullName) {
     this.fullName = fullName;
+  }
+
+
+  public GetGpBankAccounts200ResponseDataInner sortCode(@javax.annotation.Nullable String sortCode) {
+    this.sortCode = sortCode;
+    return this;
+  }
+
+  /**
+   * UK sort code.
+   * @return sortCode
+   */
+  @javax.annotation.Nullable
+  public String getSortCode() {
+    return sortCode;
+  }
+
+  public void setSortCode(@javax.annotation.Nullable String sortCode) {
+    this.sortCode = sortCode;
   }
 
 
@@ -721,6 +745,7 @@ public class GetGpBankAccounts200ResponseDataInner {
         Objects.equals(this.bankCode, getGpBankAccounts200ResponseDataInner.bankCode) &&
         Objects.equals(this.bankName, getGpBankAccounts200ResponseDataInner.bankName) &&
         Objects.equals(this.fullName, getGpBankAccounts200ResponseDataInner.fullName) &&
+        Objects.equals(this.sortCode, getGpBankAccounts200ResponseDataInner.sortCode) &&
         Objects.equals(this.swiftBic, getGpBankAccounts200ResponseDataInner.swiftBic) &&
         Objects.equals(this.ribNumber, getGpBankAccounts200ResponseDataInner.ribNumber) &&
         Objects.equals(this.branchCode, getGpBankAccounts200ResponseDataInner.branchCode) &&
@@ -743,7 +768,7 @@ public class GetGpBankAccounts200ResponseDataInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(city, iban, email, phone, postal, taxId, bankCode, bankName, fullName, swiftBic, ribNumber, branchCode, accountType, countryCode, addressLine1, addressLine2, currencyCode, originalName, accountNumber, provinceState, bankBranchName, bankCountryCode, achRoutingNumber, id, status, createdAt, updatedAt);
+    return Objects.hash(city, iban, email, phone, postal, taxId, bankCode, bankName, fullName, sortCode, swiftBic, ribNumber, branchCode, accountType, countryCode, addressLine1, addressLine2, currencyCode, originalName, accountNumber, provinceState, bankBranchName, bankCountryCode, achRoutingNumber, id, status, createdAt, updatedAt);
   }
 
   @Override
@@ -759,6 +784,7 @@ public class GetGpBankAccounts200ResponseDataInner {
     sb.append("    bankCode: ").append(toIndentedString(bankCode)).append("\n");
     sb.append("    bankName: ").append(toIndentedString(bankName)).append("\n");
     sb.append("    fullName: ").append(toIndentedString(fullName)).append("\n");
+    sb.append("    sortCode: ").append(toIndentedString(sortCode)).append("\n");
     sb.append("    swiftBic: ").append(toIndentedString(swiftBic)).append("\n");
     sb.append("    ribNumber: ").append(toIndentedString(ribNumber)).append("\n");
     sb.append("    branchCode: ").append(toIndentedString(branchCode)).append("\n");
@@ -808,6 +834,7 @@ public class GetGpBankAccounts200ResponseDataInner {
     openapiFields.add("bank_code");
     openapiFields.add("bank_name");
     openapiFields.add("full_name");
+    openapiFields.add("sort_code");
     openapiFields.add("swift_bic");
     openapiFields.add("rib_number");
     openapiFields.add("branch_code");
@@ -888,6 +915,9 @@ public class GetGpBankAccounts200ResponseDataInner {
       }
       if ((jsonObj.get("full_name") != null && !jsonObj.get("full_name").isJsonNull()) && !jsonObj.get("full_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `full_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("full_name").toString()));
+      }
+      if ((jsonObj.get("sort_code") != null && !jsonObj.get("sort_code").isJsonNull()) && !jsonObj.get("sort_code").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `sort_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("sort_code").toString()));
       }
       if ((jsonObj.get("swift_bic") != null && !jsonObj.get("swift_bic").isJsonNull()) && !jsonObj.get("swift_bic").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `swift_bic` to be a primitive type in the JSON string but got `%s`", jsonObj.get("swift_bic").toString()));

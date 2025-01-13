@@ -22,7 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.time.OffsetDateTime;
 import java.util.Arrays;
-import org.openapitools.client.model.GetInvoiceList200ResponseDataRowsInnerContract;
+import org.openapitools.client.model.GetInvoiceList200ResponseDataRowsInnerId;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -51,12 +51,12 @@ import org.openapitools.client.JSON;
 /**
  * GetInvoiceList200ResponseDataRowsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-02T14:25:45.544976271Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-13T14:23:41.573776663Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetInvoiceList200ResponseDataRowsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
   @javax.annotation.Nonnull
-  private String id;
+  private GetInvoiceList200ResponseDataRowsInnerId id;
 
   public static final String SERIALIZED_NAME_FEE = "fee";
   @SerializedName(SERIALIZED_NAME_FEE)
@@ -159,11 +159,6 @@ public class GetInvoiceList200ResponseDataRowsInner {
   @SerializedName(SERIALIZED_NAME_PAID_AT)
   @javax.annotation.Nullable
   private OffsetDateTime paidAt;
-
-  public static final String SERIALIZED_NAME_CONTRACT = "contract";
-  @SerializedName(SERIALIZED_NAME_CONTRACT)
-  @javax.annotation.Nonnull
-  private GetInvoiceList200ResponseDataRowsInnerContract contract;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
@@ -273,21 +268,21 @@ public class GetInvoiceList200ResponseDataRowsInner {
   public GetInvoiceList200ResponseDataRowsInner() {
   }
 
-  public GetInvoiceList200ResponseDataRowsInner id(@javax.annotation.Nonnull String id) {
+  public GetInvoiceList200ResponseDataRowsInner id(@javax.annotation.Nonnull GetInvoiceList200ResponseDataRowsInnerId id) {
     this.id = id;
     return this;
   }
 
   /**
-   * Unique identifier of this resource.
+   * Get id
    * @return id
    */
   @javax.annotation.Nonnull
-  public String getId() {
+  public GetInvoiceList200ResponseDataRowsInnerId getId() {
     return id;
   }
 
-  public void setId(@javax.annotation.Nonnull String id) {
+  public void setId(@javax.annotation.Nonnull GetInvoiceList200ResponseDataRowsInnerId id) {
     this.id = id;
   }
 
@@ -441,25 +436,6 @@ public class GetInvoiceList200ResponseDataRowsInner {
 
   public void setPaidAt(@javax.annotation.Nullable OffsetDateTime paidAt) {
     this.paidAt = paidAt;
-  }
-
-
-  public GetInvoiceList200ResponseDataRowsInner contract(@javax.annotation.Nonnull GetInvoiceList200ResponseDataRowsInnerContract contract) {
-    this.contract = contract;
-    return this;
-  }
-
-  /**
-   * Get contract
-   * @return contract
-   */
-  @javax.annotation.Nonnull
-  public GetInvoiceList200ResponseDataRowsInnerContract getContract() {
-    return contract;
-  }
-
-  public void setContract(@javax.annotation.Nonnull GetInvoiceList200ResponseDataRowsInnerContract contract) {
-    this.contract = contract;
   }
 
 
@@ -881,7 +857,6 @@ public class GetInvoiceList200ResponseDataRowsInner {
         Objects.equals(this.status, getInvoiceList200ResponseDataRowsInner.status) &&
         Objects.equals(this.vatId, getInvoiceList200ResponseDataRowsInner.vatId) &&
         Objects.equals(this.paidAt, getInvoiceList200ResponseDataRowsInner.paidAt) &&
-        Objects.equals(this.contract, getInvoiceList200ResponseDataRowsInner.contract) &&
         Objects.equals(this.currency, getInvoiceList200ResponseDataRowsInner.currency) &&
         Objects.equals(this.deelFee, getInvoiceList200ResponseDataRowsInner.deelFee) &&
         Objects.equals(this.dueDate, getInvoiceList200ResponseDataRowsInner.dueDate) &&
@@ -911,7 +886,7 @@ public class GetInvoiceList200ResponseDataRowsInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, fee, type, label, total, amount, status, vatId, paidAt, contract, currency, deelFee, dueDate, isSealed, issuedAt, vatTotal, createdAt, isOverdue, contractId, isOffcycle, exchangeFee, processedAt, hasBreakdown, isEarlyPaid, paymentMethod, vatPercentage, earlyPayoutFee, paymentCurrency, moneyReceivedAt, paymentProcessedAt, isPaidToContractor);
+    return Objects.hash(id, fee, type, label, total, amount, status, vatId, paidAt, currency, deelFee, dueDate, isSealed, issuedAt, vatTotal, createdAt, isOverdue, contractId, isOffcycle, exchangeFee, processedAt, hasBreakdown, isEarlyPaid, paymentMethod, vatPercentage, earlyPayoutFee, paymentCurrency, moneyReceivedAt, paymentProcessedAt, isPaidToContractor);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -934,7 +909,6 @@ public class GetInvoiceList200ResponseDataRowsInner {
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    vatId: ").append(toIndentedString(vatId)).append("\n");
     sb.append("    paidAt: ").append(toIndentedString(paidAt)).append("\n");
-    sb.append("    contract: ").append(toIndentedString(contract)).append("\n");
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
     sb.append("    deelFee: ").append(toIndentedString(deelFee)).append("\n");
     sb.append("    dueDate: ").append(toIndentedString(dueDate)).append("\n");
@@ -987,7 +961,6 @@ public class GetInvoiceList200ResponseDataRowsInner {
     openapiFields.add("status");
     openapiFields.add("vat_id");
     openapiFields.add("paid_at");
-    openapiFields.add("contract");
     openapiFields.add("currency");
     openapiFields.add("deel_fee");
     openapiFields.add("due_date");
@@ -1018,7 +991,6 @@ public class GetInvoiceList200ResponseDataRowsInner {
     openapiRequiredFields.add("status");
     openapiRequiredFields.add("vat_id");
     openapiRequiredFields.add("paid_at");
-    openapiRequiredFields.add("contract");
     openapiRequiredFields.add("currency");
     openapiRequiredFields.add("due_date");
     openapiRequiredFields.add("issued_at");
@@ -1057,9 +1029,8 @@ public class GetInvoiceList200ResponseDataRowsInner {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if (!jsonObj.get("id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
-      }
+      // validate the required field `id`
+      GetInvoiceList200ResponseDataRowsInnerId.validateJsonElement(jsonObj.get("id"));
       if ((jsonObj.get("fee") != null && !jsonObj.get("fee").isJsonNull()) && !jsonObj.get("fee").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `fee` to be a primitive type in the JSON string but got `%s`", jsonObj.get("fee").toString()));
       }
@@ -1083,8 +1054,6 @@ public class GetInvoiceList200ResponseDataRowsInner {
       if ((jsonObj.get("vat_id") != null && !jsonObj.get("vat_id").isJsonNull()) && !jsonObj.get("vat_id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `vat_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vat_id").toString()));
       }
-      // validate the required field `contract`
-      GetInvoiceList200ResponseDataRowsInnerContract.validateJsonElement(jsonObj.get("contract"));
       if (!jsonObj.get("currency").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `currency` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currency").toString()));
       }

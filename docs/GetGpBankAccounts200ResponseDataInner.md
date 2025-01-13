@@ -16,6 +16,7 @@
 |**bankCode** | **String** | The bank code. |  [optional] |
 |**bankName** | **String** | Name of the user&#39;s bank. |  [optional] |
 |**fullName** | **String** | Full name of the user. |  [optional] |
+|**sortCode** | **String** | UK sort code. |  [optional] |
 |**swiftBic** | **String** | SWIFT/BIC code for the bank. |  [optional] |
 |**ribNumber** | **String** | The RIB(Relevé d&#39;Identité Bancaire). |  [optional] |
 |**branchCode** | **String** | The branch code of the user&#39;s bank. |  [optional] |

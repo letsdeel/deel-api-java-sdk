@@ -39,11 +39,11 @@ public class GetLegalEntityList200ResponseDataInnerTest {
     }
 
     /**
-     * Test the property 'code'
+     * Test the property 'id'
      */
     @Test
-    public void codeTest() {
-        // TODO: test code
+    public void idTest() {
+        // TODO: test id
     }
 
     /**
@@ -52,6 +52,46 @@ public class GetLegalEntityList200ResponseDataInnerTest {
     @Test
     public void nameTest() {
         // TODO: test name
+    }
+
+    /**
+     * Test the property 'vatId'
+     */
+    @Test
+    public void vatIdTest() {
+        // TODO: test vatId
+    }
+
+    /**
+     * Test the property 'country'
+     */
+    @Test
+    public void countryTest() {
+        // TODO: test country
+    }
+
+    /**
+     * Test the property 'entityType'
+     */
+    @Test
+    public void entityTypeTest() {
+        // TODO: test entityType
+    }
+
+    /**
+     * Test the property 'entitySubtype'
+     */
+    @Test
+    public void entitySubtypeTest() {
+        // TODO: test entitySubtype
+    }
+
+    /**
+     * Test the property 'registrationNumber'
+     */
+    @Test
+    public void registrationNumberTest() {
+        // TODO: test registrationNumber
     }
 
 }

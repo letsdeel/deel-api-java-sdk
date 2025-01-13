@@ -24,41 +24,33 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for GetInvoiceList200ResponseDataRowsInnerContract
+ * Model tests for AddEORBankAccountRequestDataInner
  */
-public class GetInvoiceList200ResponseDataRowsInnerContractTest {
-    private final GetInvoiceList200ResponseDataRowsInnerContract model = new GetInvoiceList200ResponseDataRowsInnerContract();
+public class AddEORBankAccountRequestDataInnerTest {
+    private final AddEORBankAccountRequestDataInner model = new AddEORBankAccountRequestDataInner();
 
     /**
-     * Model tests for GetInvoiceList200ResponseDataRowsInnerContract
+     * Model tests for AddEORBankAccountRequestDataInner
      */
     @Test
-    public void testGetInvoiceList200ResponseDataRowsInnerContract() {
-        // TODO: test GetInvoiceList200ResponseDataRowsInnerContract
+    public void testAddEORBankAccountRequestDataInner() {
+        // TODO: test AddEORBankAccountRequestDataInner
     }
 
     /**
-     * Test the property 'id'
+     * Test the property 'key'
      */
     @Test
-    public void idTest() {
-        // TODO: test id
+    public void keyTest() {
+        // TODO: test key
     }
 
     /**
-     * Test the property 'name'
+     * Test the property 'value'
      */
     @Test
-    public void nameTest() {
-        // TODO: test name
-    }
-
-    /**
-     * Test the property 'contractType'
-     */
-    @Test
-    public void contractTypeTest() {
-        // TODO: test contractType
+    public void valueTest() {
+        // TODO: test value
     }
 
 }

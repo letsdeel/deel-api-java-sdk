@@ -1217,6 +1217,304 @@ public class TimeOffApi {
     public APIgetTimeOffsQueryRequest getTimeOffsQuery(UUID hrisProfileId) {
         return new APIgetTimeOffsQueryRequest(hrisProfileId);
     }
+    private okhttp3.Call getTimeOffsQueryForOrganizationCall(List<String> status, OffsetDateTime startDate, OffsetDateTime endDate, OffsetDateTime approvalStartDate, OffsetDateTime approvalEndDate, OffsetDateTime updatedStartDate, OffsetDateTime updatedEndDate, Integer pageSize, List<UUID> policyTypes, String next, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/time_offs";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        if (status != null) {
+            localVarCollectionQueryParams.addAll(localVarApiClient.parameterToPairs("multi", "status", status));
+        }
+
+        if (startDate != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("start_date", startDate));
+        }
+
+        if (endDate != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("end_date", endDate));
+        }
+
+        if (approvalStartDate != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("approval_start_date", approvalStartDate));
+        }
+
+        if (approvalEndDate != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("approval_end_date", approvalEndDate));
+        }
+
+        if (updatedStartDate != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("updated_start_date", updatedStartDate));
+        }
+
+        if (updatedEndDate != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("updated_end_date", updatedEndDate));
+        }
+
+        if (pageSize != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("page_size", pageSize));
+        }
+
+        if (policyTypes != null) {
+            localVarCollectionQueryParams.addAll(localVarApiClient.parameterToPairs("multi", "policy_types", policyTypes));
+        }
+
+        if (next != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("next", next));
+        }
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "deelToken", "oauth2" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call getTimeOffsQueryForOrganizationValidateBeforeCall(List<String> status, OffsetDateTime startDate, OffsetDateTime endDate, OffsetDateTime approvalStartDate, OffsetDateTime approvalEndDate, OffsetDateTime updatedStartDate, OffsetDateTime updatedEndDate, Integer pageSize, List<UUID> policyTypes, String next, final ApiCallback _callback) throws ApiException {
+        return getTimeOffsQueryForOrganizationCall(status, startDate, endDate, approvalStartDate, approvalEndDate, updatedStartDate, updatedEndDate, pageSize, policyTypes, next, _callback);
+
+    }
+
+
+    private ApiResponse<GetTimeOffsQuery200Response> getTimeOffsQueryForOrganizationWithHttpInfo(List<String> status, OffsetDateTime startDate, OffsetDateTime endDate, OffsetDateTime approvalStartDate, OffsetDateTime approvalEndDate, OffsetDateTime updatedStartDate, OffsetDateTime updatedEndDate, Integer pageSize, List<UUID> policyTypes, String next) throws ApiException {
+        okhttp3.Call localVarCall = getTimeOffsQueryForOrganizationValidateBeforeCall(status, startDate, endDate, approvalStartDate, approvalEndDate, updatedStartDate, updatedEndDate, pageSize, policyTypes, next, null);
+        Type localVarReturnType = new TypeToken<GetTimeOffsQuery200Response>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    private okhttp3.Call getTimeOffsQueryForOrganizationAsync(List<String> status, OffsetDateTime startDate, OffsetDateTime endDate, OffsetDateTime approvalStartDate, OffsetDateTime approvalEndDate, OffsetDateTime updatedStartDate, OffsetDateTime updatedEndDate, Integer pageSize, List<UUID> policyTypes, String next, final ApiCallback<GetTimeOffsQuery200Response> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = getTimeOffsQueryForOrganizationValidateBeforeCall(status, startDate, endDate, approvalStartDate, approvalEndDate, updatedStartDate, updatedEndDate, pageSize, policyTypes, next, _callback);
+        Type localVarReturnType = new TypeToken<GetTimeOffsQuery200Response>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+
+    public class APIgetTimeOffsQueryForOrganizationRequest {
+        private List<String> status;
+        private OffsetDateTime startDate;
+        private OffsetDateTime endDate;
+        private OffsetDateTime approvalStartDate;
+        private OffsetDateTime approvalEndDate;
+        private OffsetDateTime updatedStartDate;
+        private OffsetDateTime updatedEndDate;
+        private Integer pageSize;
+        private List<UUID> policyTypes;
+        private String next;
+
+        private APIgetTimeOffsQueryForOrganizationRequest() {
+        }
+
+        /**
+         * Set status
+         * @param status Time off status (optional)
+         * @return APIgetTimeOffsQueryForOrganizationRequest
+         */
+        public APIgetTimeOffsQueryForOrganizationRequest status(List<String> status) {
+            this.status = status;
+            return this;
+        }
+
+        /**
+         * Set startDate
+         * @param startDate Start date of time off (optional)
+         * @return APIgetTimeOffsQueryForOrganizationRequest
+         */
+        public APIgetTimeOffsQueryForOrganizationRequest startDate(OffsetDateTime startDate) {
+            this.startDate = startDate;
+            return this;
+        }
+
+        /**
+         * Set endDate
+         * @param endDate End date of time off (optional)
+         * @return APIgetTimeOffsQueryForOrganizationRequest
+         */
+        public APIgetTimeOffsQueryForOrganizationRequest endDate(OffsetDateTime endDate) {
+            this.endDate = endDate;
+            return this;
+        }
+
+        /**
+         * Set approvalStartDate
+         * @param approvalStartDate Approval start date (optional)
+         * @return APIgetTimeOffsQueryForOrganizationRequest
+         */
+        public APIgetTimeOffsQueryForOrganizationRequest approvalStartDate(OffsetDateTime approvalStartDate) {
+            this.approvalStartDate = approvalStartDate;
+            return this;
+        }
+
+        /**
+         * Set approvalEndDate
+         * @param approvalEndDate Approval end date (optional)
+         * @return APIgetTimeOffsQueryForOrganizationRequest
+         */
+        public APIgetTimeOffsQueryForOrganizationRequest approvalEndDate(OffsetDateTime approvalEndDate) {
+            this.approvalEndDate = approvalEndDate;
+            return this;
+        }
+
+        /**
+         * Set updatedStartDate
+         * @param updatedStartDate Updated start date (optional)
+         * @return APIgetTimeOffsQueryForOrganizationRequest
+         */
+        public APIgetTimeOffsQueryForOrganizationRequest updatedStartDate(OffsetDateTime updatedStartDate) {
+            this.updatedStartDate = updatedStartDate;
+            return this;
+        }
+
+        /**
+         * Set updatedEndDate
+         * @param updatedEndDate Updated end date (optional)
+         * @return APIgetTimeOffsQueryForOrganizationRequest
+         */
+        public APIgetTimeOffsQueryForOrganizationRequest updatedEndDate(OffsetDateTime updatedEndDate) {
+            this.updatedEndDate = updatedEndDate;
+            return this;
+        }
+
+        /**
+         * Set pageSize
+         * @param pageSize Page size (optional)
+         * @return APIgetTimeOffsQueryForOrganizationRequest
+         */
+        public APIgetTimeOffsQueryForOrganizationRequest pageSize(Integer pageSize) {
+            this.pageSize = pageSize;
+            return this;
+        }
+
+        /**
+         * Set policyTypes
+         * @param policyTypes Policy types (optional)
+         * @return APIgetTimeOffsQueryForOrganizationRequest
+         */
+        public APIgetTimeOffsQueryForOrganizationRequest policyTypes(List<UUID> policyTypes) {
+            this.policyTypes = policyTypes;
+            return this;
+        }
+
+        /**
+         * Set next
+         * @param next Next page (optional)
+         * @return APIgetTimeOffsQueryForOrganizationRequest
+         */
+        public APIgetTimeOffsQueryForOrganizationRequest next(String next) {
+            this.next = next;
+            return this;
+        }
+
+        /**
+         * Build call for getTimeOffsQueryForOrganization
+         * @param _callback ApiCallback API callback
+         * @return Call to execute
+         * @throws ApiException If fail to serialize the request body object
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successful operation time offs returned </td><td>  -  </td></tr>
+         </table>
+         */
+        public okhttp3.Call buildCall(final ApiCallback _callback) throws ApiException {
+            return getTimeOffsQueryForOrganizationCall(status, startDate, endDate, approvalStartDate, approvalEndDate, updatedStartDate, updatedEndDate, pageSize, policyTypes, next, _callback);
+        }
+
+        /**
+         * Execute getTimeOffsQueryForOrganization request
+         * @return GetTimeOffsQuery200Response
+         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successful operation time offs returned </td><td>  -  </td></tr>
+         </table>
+         */
+        public GetTimeOffsQuery200Response execute() throws ApiException {
+            ApiResponse<GetTimeOffsQuery200Response> localVarResp = getTimeOffsQueryForOrganizationWithHttpInfo(status, startDate, endDate, approvalStartDate, approvalEndDate, updatedStartDate, updatedEndDate, pageSize, policyTypes, next);
+            return localVarResp.getData();
+        }
+
+        /**
+         * Execute getTimeOffsQueryForOrganization request with HTTP info returned
+         * @return ApiResponse&lt;GetTimeOffsQuery200Response&gt;
+         * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successful operation time offs returned </td><td>  -  </td></tr>
+         </table>
+         */
+        public ApiResponse<GetTimeOffsQuery200Response> executeWithHttpInfo() throws ApiException {
+            return getTimeOffsQueryForOrganizationWithHttpInfo(status, startDate, endDate, approvalStartDate, approvalEndDate, updatedStartDate, updatedEndDate, pageSize, policyTypes, next);
+        }
+
+        /**
+         * Execute getTimeOffsQueryForOrganization request (asynchronously)
+         * @param _callback The callback to be executed when the API call finishes
+         * @return The request call
+         * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+         * @http.response.details
+         <table border="1">
+       <caption>Response Details</caption>
+            <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+            <tr><td> 200 </td><td> Successful operation time offs returned </td><td>  -  </td></tr>
+         </table>
+         */
+        public okhttp3.Call executeAsync(final ApiCallback<GetTimeOffsQuery200Response> _callback) throws ApiException {
+            return getTimeOffsQueryForOrganizationAsync(status, startDate, endDate, approvalStartDate, approvalEndDate, updatedStartDate, updatedEndDate, pageSize, policyTypes, next, _callback);
+        }
+    }
+
+    /**
+     * List time-off requests for Organization
+     * List time-off requests for Organization  **Token scopes**: &#x60;time-off:read&#x60;
+     * @return APIgetTimeOffsQueryForOrganizationRequest
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation time offs returned </td><td>  -  </td></tr>
+     </table>
+     */
+    public APIgetTimeOffsQueryForOrganizationRequest getTimeOffsQueryForOrganization() {
+        return new APIgetTimeOffsQueryForOrganizationRequest();
+    }
     private okhttp3.Call updateTimeOffCall(UUID timeOffId, UpdateTimeOffRequest updateTimeOffRequest, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers

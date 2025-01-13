@@ -23,6 +23,8 @@
 | Name | Value |
 |---- | -----|
 | PERCENTAGE | &quot;PERCENTAGE&quot; |
+| NEC_PERCENTAGE | &quot;NEC_PERCENTAGE&quot; |
+| NEC_FIXED_AMOUNT | &quot;NEC_FIXED_AMOUNT&quot; |
 | FIXED_AMOUNT | &quot;FIXED_AMOUNT&quot; |
 | MATCH | &quot;MATCH&quot; |
 

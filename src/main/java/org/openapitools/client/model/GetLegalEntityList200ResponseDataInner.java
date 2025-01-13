@@ -49,37 +49,114 @@ import org.openapitools.client.JSON;
 /**
  * GetLegalEntityList200ResponseDataInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-02T14:25:45.544976271Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-13T14:23:41.573776663Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetLegalEntityList200ResponseDataInner {
-  public static final String SERIALIZED_NAME_CODE = "code";
-  @SerializedName(SERIALIZED_NAME_CODE)
+  public static final String SERIALIZED_NAME_ID = "id";
+  @SerializedName(SERIALIZED_NAME_ID)
   @javax.annotation.Nullable
-  private String code;
+  private String id;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
   @javax.annotation.Nullable
   private String name;
 
+  public static final String SERIALIZED_NAME_VAT_ID = "vat_id";
+  @SerializedName(SERIALIZED_NAME_VAT_ID)
+  @javax.annotation.Nullable
+  private String vatId;
+
+  public static final String SERIALIZED_NAME_COUNTRY = "country";
+  @SerializedName(SERIALIZED_NAME_COUNTRY)
+  @javax.annotation.Nullable
+  private String country;
+
+  /**
+   * Entity type
+   */
+  @JsonAdapter(EntityTypeEnum.Adapter.class)
+  public enum EntityTypeEnum {
+    INDIVIDUAL("individual"),
+    
+    COMPANY("company");
+
+    private String value;
+
+    EntityTypeEnum(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static EntityTypeEnum fromValue(String value) {
+      for (EntityTypeEnum b : EntityTypeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+    }
+
+    public static class Adapter extends TypeAdapter<EntityTypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final EntityTypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public EntityTypeEnum read(final JsonReader jsonReader) throws IOException {
+        String value =  jsonReader.nextString();
+        return EntityTypeEnum.fromValue(value);
+      }
+    }
+
+    public static void validateJsonElement(JsonElement jsonElement) throws IOException {
+      String value = jsonElement.getAsString();
+      EntityTypeEnum.fromValue(value);
+    }
+  }
+
+  public static final String SERIALIZED_NAME_ENTITY_TYPE = "entity_type";
+  @SerializedName(SERIALIZED_NAME_ENTITY_TYPE)
+  @javax.annotation.Nullable
+  private EntityTypeEnum entityType;
+
+  public static final String SERIALIZED_NAME_ENTITY_SUBTYPE = "entity_subtype";
+  @SerializedName(SERIALIZED_NAME_ENTITY_SUBTYPE)
+  @javax.annotation.Nullable
+  private String entitySubtype;
+
+  public static final String SERIALIZED_NAME_REGISTRATION_NUMBER = "registrationNumber";
+  @SerializedName(SERIALIZED_NAME_REGISTRATION_NUMBER)
+  @javax.annotation.Nullable
+  private String registrationNumber;
+
   public GetLegalEntityList200ResponseDataInner() {
   }
 
-  public GetLegalEntityList200ResponseDataInner code(@javax.annotation.Nullable String code) {
-    this.code = code;
+  public GetLegalEntityList200ResponseDataInner id(@javax.annotation.Nullable String id) {
+    this.id = id;
     return this;
   }
 
   /**
-   * Get code
-   * @return code
+   * Id of the legal entity
+   * @return id
    */
   @javax.annotation.Nullable
-  public String getCode() {
-    return code;
+  public String getId() {
+    return id;
   }
 
-  public void setCode(@javax.annotation.Nullable String code) {
-    this.code = code;
+  public void setId(@javax.annotation.Nullable String id) {
+    this.id = id;
   }
 
 
@@ -89,7 +166,7 @@ public class GetLegalEntityList200ResponseDataInner {
   }
 
   /**
-   * Get name
+   * Name of the legal entity
    * @return name
    */
   @javax.annotation.Nullable
@@ -99,6 +176,101 @@ public class GetLegalEntityList200ResponseDataInner {
 
   public void setName(@javax.annotation.Nullable String name) {
     this.name = name;
+  }
+
+
+  public GetLegalEntityList200ResponseDataInner vatId(@javax.annotation.Nullable String vatId) {
+    this.vatId = vatId;
+    return this;
+  }
+
+  /**
+   * VAT ID
+   * @return vatId
+   */
+  @javax.annotation.Nullable
+  public String getVatId() {
+    return vatId;
+  }
+
+  public void setVatId(@javax.annotation.Nullable String vatId) {
+    this.vatId = vatId;
+  }
+
+
+  public GetLegalEntityList200ResponseDataInner country(@javax.annotation.Nullable String country) {
+    this.country = country;
+    return this;
+  }
+
+  /**
+   * Country of the legal entity
+   * @return country
+   */
+  @javax.annotation.Nullable
+  public String getCountry() {
+    return country;
+  }
+
+  public void setCountry(@javax.annotation.Nullable String country) {
+    this.country = country;
+  }
+
+
+  public GetLegalEntityList200ResponseDataInner entityType(@javax.annotation.Nullable EntityTypeEnum entityType) {
+    this.entityType = entityType;
+    return this;
+  }
+
+  /**
+   * Entity type
+   * @return entityType
+   */
+  @javax.annotation.Nullable
+  public EntityTypeEnum getEntityType() {
+    return entityType;
+  }
+
+  public void setEntityType(@javax.annotation.Nullable EntityTypeEnum entityType) {
+    this.entityType = entityType;
+  }
+
+
+  public GetLegalEntityList200ResponseDataInner entitySubtype(@javax.annotation.Nullable String entitySubtype) {
+    this.entitySubtype = entitySubtype;
+    return this;
+  }
+
+  /**
+   * Entity sub type
+   * @return entitySubtype
+   */
+  @javax.annotation.Nullable
+  public String getEntitySubtype() {
+    return entitySubtype;
+  }
+
+  public void setEntitySubtype(@javax.annotation.Nullable String entitySubtype) {
+    this.entitySubtype = entitySubtype;
+  }
+
+
+  public GetLegalEntityList200ResponseDataInner registrationNumber(@javax.annotation.Nullable String registrationNumber) {
+    this.registrationNumber = registrationNumber;
+    return this;
+  }
+
+  /**
+   * Registration number
+   * @return registrationNumber
+   */
+  @javax.annotation.Nullable
+  public String getRegistrationNumber() {
+    return registrationNumber;
+  }
+
+  public void setRegistrationNumber(@javax.annotation.Nullable String registrationNumber) {
+    this.registrationNumber = registrationNumber;
   }
 
 
@@ -112,8 +284,13 @@ public class GetLegalEntityList200ResponseDataInner {
       return false;
     }
     GetLegalEntityList200ResponseDataInner getLegalEntityList200ResponseDataInner = (GetLegalEntityList200ResponseDataInner) o;
-    return Objects.equals(this.code, getLegalEntityList200ResponseDataInner.code) &&
-        Objects.equals(this.name, getLegalEntityList200ResponseDataInner.name);
+    return Objects.equals(this.id, getLegalEntityList200ResponseDataInner.id) &&
+        Objects.equals(this.name, getLegalEntityList200ResponseDataInner.name) &&
+        Objects.equals(this.vatId, getLegalEntityList200ResponseDataInner.vatId) &&
+        Objects.equals(this.country, getLegalEntityList200ResponseDataInner.country) &&
+        Objects.equals(this.entityType, getLegalEntityList200ResponseDataInner.entityType) &&
+        Objects.equals(this.entitySubtype, getLegalEntityList200ResponseDataInner.entitySubtype) &&
+        Objects.equals(this.registrationNumber, getLegalEntityList200ResponseDataInner.registrationNumber);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -122,7 +299,7 @@ public class GetLegalEntityList200ResponseDataInner {
 
   @Override
   public int hashCode() {
-    return Objects.hash(code, name);
+    return Objects.hash(id, name, vatId, country, entityType, entitySubtype, registrationNumber);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -136,8 +313,13 @@ public class GetLegalEntityList200ResponseDataInner {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class GetLegalEntityList200ResponseDataInner {\n");
-    sb.append("    code: ").append(toIndentedString(code)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    vatId: ").append(toIndentedString(vatId)).append("\n");
+    sb.append("    country: ").append(toIndentedString(country)).append("\n");
+    sb.append("    entityType: ").append(toIndentedString(entityType)).append("\n");
+    sb.append("    entitySubtype: ").append(toIndentedString(entitySubtype)).append("\n");
+    sb.append("    registrationNumber: ").append(toIndentedString(registrationNumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -160,8 +342,13 @@ public class GetLegalEntityList200ResponseDataInner {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("code");
+    openapiFields.add("id");
     openapiFields.add("name");
+    openapiFields.add("vat_id");
+    openapiFields.add("country");
+    openapiFields.add("entity_type");
+    openapiFields.add("entity_subtype");
+    openapiFields.add("registrationNumber");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -188,11 +375,30 @@ public class GetLegalEntityList200ResponseDataInner {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("code") != null && !jsonObj.get("code").isJsonNull()) && !jsonObj.get("code").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("code").toString()));
+      if ((jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) && !jsonObj.get("id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
       }
       if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+      }
+      if ((jsonObj.get("vat_id") != null && !jsonObj.get("vat_id").isJsonNull()) && !jsonObj.get("vat_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `vat_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vat_id").toString()));
+      }
+      if ((jsonObj.get("country") != null && !jsonObj.get("country").isJsonNull()) && !jsonObj.get("country").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `country` to be a primitive type in the JSON string but got `%s`", jsonObj.get("country").toString()));
+      }
+      if ((jsonObj.get("entity_type") != null && !jsonObj.get("entity_type").isJsonNull()) && !jsonObj.get("entity_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `entity_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("entity_type").toString()));
+      }
+      // validate the optional field `entity_type`
+      if (jsonObj.get("entity_type") != null && !jsonObj.get("entity_type").isJsonNull()) {
+        EntityTypeEnum.validateJsonElement(jsonObj.get("entity_type"));
+      }
+      if ((jsonObj.get("entity_subtype") != null && !jsonObj.get("entity_subtype").isJsonNull()) && !jsonObj.get("entity_subtype").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `entity_subtype` to be a primitive type in the JSON string but got `%s`", jsonObj.get("entity_subtype").toString()));
+      }
+      if ((jsonObj.get("registrationNumber") != null && !jsonObj.get("registrationNumber").isJsonNull()) && !jsonObj.get("registrationNumber").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `registrationNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("registrationNumber").toString()));
       }
   }
 

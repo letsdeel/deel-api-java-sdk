@@ -111,6 +111,14 @@ public class GetGpBankAccounts200ResponseDataInnerTest {
     }
 
     /**
+     * Test the property 'sortCode'
+     */
+    @Test
+    public void sortCodeTest() {
+        // TODO: test sortCode
+    }
+
+    /**
      * Test the property 'swiftBic'
      */
     @Test

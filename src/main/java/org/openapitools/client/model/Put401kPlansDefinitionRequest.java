@@ -54,7 +54,7 @@ import org.openapitools.client.JSON;
 /**
  * Schema for the 401K Guideline Plan request body.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-02T14:25:45.544976271Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-13T14:23:41.573776663Z[GMT]", comments = "Generator version: 7.10.0")
 public class Put401kPlansDefinitionRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -76,6 +76,10 @@ public class Put401kPlansDefinitionRequest {
    */
   @JsonAdapter(ContributionTypeEnum.Adapter.class)
   public enum ContributionTypeEnum {
+    NEC_PERCENTAGE("NEC_PERCENTAGE"),
+    
+    NEC_FIXED_AMOUNT("NEC_FIXED_AMOUNT"),
+    
     PERCENTAGE("PERCENTAGE"),
     
     FIXED_AMOUNT("FIXED_AMOUNT"),

@@ -2214,6 +2214,139 @@ paths:
       x-accepts:
       - application/json
   /time_offs:
+    get:
+      description: |-
+        List time-off requests for Organization
+         **Token scopes**: `time-off:read`
+      operationId: getTimeOffsQueryForOrganization
+      parameters:
+      - description: Time off status
+        example:
+        - REQUESTED
+        explode: true
+        in: query
+        name: status
+        required: false
+        schema:
+          items:
+            enum:
+            - REQUESTED
+            - APPROVED
+            - REJECTED
+            - USED
+            - CANCELED
+            type: string
+          type: array
+        style: form
+      - description: Start date of time off
+        example: 2022-01-01T00:00:00Z
+        explode: true
+        in: query
+        name: start_date
+        required: false
+        schema:
+          format: date-time
+          type: string
+        style: form
+      - description: End date of time off
+        example: 2022-01-01T00:00:00Z
+        explode: true
+        in: query
+        name: end_date
+        required: false
+        schema:
+          format: date-time
+          type: string
+        style: form
+      - description: Approval start date
+        example: 2022-01-01T00:00:00Z
+        explode: true
+        in: query
+        name: approval_start_date
+        required: false
+        schema:
+          format: date-time
+          type: string
+        style: form
+      - description: Approval end date
+        example: 2022-01-01T00:00:00Z
+        explode: true
+        in: query
+        name: approval_end_date
+        required: false
+        schema:
+          format: date-time
+          type: string
+        style: form
+      - description: Updated start date
+        example: 2022-01-01T00:00:00Z
+        explode: true
+        in: query
+        name: updated_start_date
+        required: false
+        schema:
+          format: date-time
+          type: string
+        style: form
+      - description: Updated end date
+        example: 2022-01-01T00:00:00Z
+        explode: true
+        in: query
+        name: updated_end_date
+        required: false
+        schema:
+          format: date-time
+          type: string
+        style: form
+      - description: Page size
+        example: 10
+        explode: true
+        in: query
+        name: page_size
+        required: false
+        schema:
+          maximum: 200
+          minimum: 5
+          type: integer
+        style: form
+      - description: Policy types
+        example:
+        - d290f1ee-6c54-4b01-90e6-d701748f0851
+        explode: true
+        in: query
+        name: policy_types
+        required: false
+        schema:
+          items:
+            format: uuid
+            type: string
+          type: array
+        style: form
+      - description: Next page
+        example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        explode: true
+        in: query
+        name: next
+        required: false
+        schema:
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getTimeOffsQuery_200_response'
+          description: Successful operation time offs returned
+      security:
+      - deelToken: []
+      - oauth2:
+        - time-off:read
+      summary: List time-off requests for Organization
+      tags:
+      - Time Off
+      x-accepts:
+      - application/json
     post:
       description: |-
         Create time-off request
@@ -14764,6 +14897,35 @@ paths:
       x-content-type: application/json
       x-accepts:
       - application/json
+  /daas/banks:
+    post:
+      description: |-
+        Add bank account for an EOR employee.
+         **Token scopes**: `worker:write`
+      operationId: addEORBankAccount
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/addEORBankAccount_request'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/addEORBankAccount_201_response'
+          description: Successful operation.
+      security:
+      - deelToken: []
+      - oauth2:
+        - worker:write
+      summary: Add bank account
+      tags:
+      - Deel As a Service
+      x-content-type: application/json
+      x-accepts:
+      - application/json
   /benefits/legal-entities/{id}/contracts/{contract_id}/plans/{plan_id}/deductions:
     post:
       description: |-
@@ -15073,6 +15235,55 @@ paths:
       summary: List gross-to-net report
       tags:
       - Global Payroll
+      x-accepts:
+      - application/json
+  /screenings/verification_method:
+    get:
+      description: |-
+        Get verification method by provided country and document type
+         **Token scopes**: `screenings:read`, `worker:read`
+      operationId: getVerificationMethod
+      parameters:
+      - description: The document's issuing country code (ISO 3166-1 alpha-2)
+        example: CA
+        explode: true
+        in: query
+        name: country
+        required: true
+        schema:
+          maxLength: 2
+          minLength: 2
+          type: string
+        style: form
+      - description: The document to be provided during KYC
+        example: driving_license
+        explode: true
+        in: query
+        name: document_type
+        required: true
+        schema:
+          enum:
+          - passport
+          - government_id
+          - driving_license
+          - other
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getVerificationMethod_200_response'
+          description: Successful operation
+      security:
+      - deelToken: []
+      - oauth2:
+        - screenings:read
+        - worker:read
+      summary: Get verification method
+      tags:
+      - Screenings
       x-accepts:
       - application/json
   /benefits/legal-entities/{id}/pay-stub:
@@ -16613,6 +16824,101 @@ paths:
       tags:
       - Worker Relations
       x-content-type: application/json
+      x-accepts:
+      - application/json
+  /veriff/session:
+    post:
+      description: |-
+        Create Veriff session
+         **Token scopes**: `screenings:write`, `worker:write`
+      operationId: createVeriffSession
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/createVeriffSession_request'
+        required: true
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/createVeriffSession_201_response'
+          description: Successful operation
+      security:
+      - deelToken: []
+      - oauth2:
+        - screenings:write
+        - worker:write
+      summary: Create Veriff session
+      tags:
+      - Screenings
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+  /daas/banks/{bank_id}:
+    patch:
+      description: |-
+        Modify bank account for an EOR employee.
+         **Token scopes**: `worker:write`
+      operationId: patchEORBankAccount
+      parameters:
+      - description: Unique identifier for a bank in UUID format.
+        example: dcc7b587-2246-4909-853e-12056e90c451
+        explode: false
+        in: path
+        name: bank_id
+        required: true
+        schema:
+          description: Unique identifier for a bank in UUID format.
+          format: uuid
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/addEORBankAccount_request'
+        description: Bank Account object that needs to be modified
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/patchEORBankAccount_201_response'
+          description: Successful operation.
+      security:
+      - deelToken: []
+      - oauth2:
+        - worker:write
+      summary: Modify bank account for an EOR employee
+      tags:
+      - Deel As a Service
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+  /daas/banks/guide:
+    get:
+      description: |-
+        Retrieve bank account form guide for an EOR employee. This data can be used to add a new bank account for an employee.
+         **Token scopes**: `worker:read`
+      operationId: getEORBankAccountGuide
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getEORBankAccountGuide_200_response'
+          description: Successful operation.
+      security:
+      - deelToken: []
+      - oauth2:
+        - worker:read
+      summary: Retrieve bank account guide
+      tags:
+      - Deel As a Service
       x-accepts:
       - application/json
 components:
@@ -29958,25 +30264,16 @@ components:
         - individual
         - company
         type: string
-    getInvoiceList_200_response_data_rows_inner_contract:
-      example:
-        contract_type: EOR
-        name: John Doe
-        id: "12345"
-      properties:
-        id:
-          description: Unique identifier of the contract.
-          example: "12345"
-          type: string
-        name:
-          description: Name associated with the contract.
-          example: John Doe
-          type: string
-        contract_type:
-          description: Type of contract.
-          example: EOR
-          type: string
-      type: object
+    getInvoiceList_200_response_data_rows_inner_id:
+      oneOf:
+      - description: Unique identifier of this resource as a UUID.
+        example: 00000000-0000-0000-0000-000000000000
+        format: uuid
+        type: string
+      - description: Unique identifier of this resource.
+        example: 12345
+        format: int64
+        type: integer
     getInvoiceList_200_response_data_rows_inner:
       example:
         is_offcycle: true
@@ -29995,14 +30292,10 @@ components:
         vat_id: "123456789"
         processed_at: 2022-05-24T09:38:46.235Z
         currency: GBP
-        id: Hn7KBUpkuraaHAj8nJMYJ
+        id: 00000000-0000-0000-0000-000000000000
         payment_method: payment_method
         early_payout_fee: "10"
         amount: "1000"
-        contract:
-          contract_type: EOR
-          name: John Doe
-          id: "12345"
         due_date: 2022-05-24T09:38:46.235Z
         payment_processed_at: 2022-05-24T09:38:46.235Z
         is_overdue: true
@@ -30015,9 +30308,7 @@ components:
         status: paid
       properties:
         id:
-          description: Unique identifier of this resource.
-          example: Hn7KBUpkuraaHAj8nJMYJ
-          type: string
+          $ref: '#/components/schemas/getInvoiceList_200_response_data_rows_inner_id'
         fee:
           description: Fee added to the invoice amount.
           example: "10"
@@ -30065,8 +30356,6 @@ components:
           format: date-time
           nullable: true
           type: string
-        contract:
-          $ref: '#/components/schemas/getInvoiceList_200_response_data_rows_inner_contract'
         currency:
           description: Three-letter currency code for the invoice.
           example: GBP
@@ -30178,7 +30467,6 @@ components:
           nullable: true
           type: boolean
       required:
-      - contract
       - contract_id
       - created_at
       - currency
@@ -30213,14 +30501,10 @@ components:
           vat_id: "123456789"
           processed_at: 2022-05-24T09:38:46.235Z
           currency: GBP
-          id: Hn7KBUpkuraaHAj8nJMYJ
+          id: 00000000-0000-0000-0000-000000000000
           payment_method: payment_method
           early_payout_fee: "10"
           amount: "1000"
-          contract:
-            contract_type: EOR
-            name: John Doe
-            id: "12345"
           due_date: 2022-05-24T09:38:46.235Z
           payment_processed_at: 2022-05-24T09:38:46.235Z
           is_overdue: true
@@ -30247,14 +30531,10 @@ components:
           vat_id: "123456789"
           processed_at: 2022-05-24T09:38:46.235Z
           currency: GBP
-          id: Hn7KBUpkuraaHAj8nJMYJ
+          id: 00000000-0000-0000-0000-000000000000
           payment_method: payment_method
           early_payout_fee: "10"
           amount: "1000"
-          contract:
-            contract_type: EOR
-            name: John Doe
-            id: "12345"
           due_date: 2022-05-24T09:38:46.235Z
           payment_processed_at: 2022-05-24T09:38:46.235Z
           is_overdue: true
@@ -30323,14 +30603,10 @@ components:
             vat_id: "123456789"
             processed_at: 2022-05-24T09:38:46.235Z
             currency: GBP
-            id: Hn7KBUpkuraaHAj8nJMYJ
+            id: 00000000-0000-0000-0000-000000000000
             payment_method: payment_method
             early_payout_fee: "10"
             amount: "1000"
-            contract:
-              contract_type: EOR
-              name: John Doe
-              id: "12345"
             due_date: 2022-05-24T09:38:46.235Z
             payment_processed_at: 2022-05-24T09:38:46.235Z
             is_overdue: true
@@ -30357,14 +30633,10 @@ components:
             vat_id: "123456789"
             processed_at: 2022-05-24T09:38:46.235Z
             currency: GBP
-            id: Hn7KBUpkuraaHAj8nJMYJ
+            id: 00000000-0000-0000-0000-000000000000
             payment_method: payment_method
             early_payout_fee: "10"
             amount: "1000"
-            contract:
-              contract_type: EOR
-              name: John Doe
-              id: "12345"
             due_date: 2022-05-24T09:38:46.235Z
             payment_processed_at: 2022-05-24T09:38:46.235Z
             is_overdue: true
@@ -38443,6 +38715,10 @@ components:
             description: Full name of the user.
             example: John Doe
             type: string
+          sort_code:
+            description: UK sort code.
+            example: "12345"
+            type: string
           swift_bic:
             description: SWIFT/BIC code for the bank.
             example: BUKBGB22
@@ -38543,6 +38819,7 @@ components:
         bank_code: BUKB
         swift_bic: BUKBGB22
         province_state: NY
+        sort_code: "12345"
         tax_id: 123-45-6789
         branch_code: "12345"
         country_code: US
@@ -38574,6 +38851,7 @@ components:
           bank_code: BUKB
           swift_bic: BUKBGB22
           province_state: NY
+          sort_code: "12345"
           tax_id: 123-45-6789
           branch_code: "12345"
           country_code: US
@@ -38601,6 +38879,7 @@ components:
           bank_code: BUKB
           swift_bic: BUKBGB22
           province_state: NY
+          sort_code: "12345"
           tax_id: 123-45-6789
           branch_code: "12345"
           country_code: US
@@ -45694,22 +45973,65 @@ components:
         type: object
     getLegalEntityList_200_response_data_inner:
       example:
-        code: code
-        name: name
+        country: US
+        entity_type: company
+        entity_subtype: entity_subtype
+        registrationNumber: GSUGO3B5
+        name: Deel US
+        vat_id: P051709055R
+        id: b61f6b35-7670-4515-b667-066f02b7b8a0
       properties:
-        code:
+        id:
+          description: Id of the legal entity
+          example: b61f6b35-7670-4515-b667-066f02b7b8a0
           type: string
         name:
+          description: Name of the legal entity
+          example: Deel US
+          nullable: false
+          type: string
+        vat_id:
+          description: VAT ID
+          example: P051709055R
+          nullable: true
+          type: string
+        country:
+          description: Country of the legal entity
+          example: US
+          type: string
+        entity_type:
+          description: Entity type
+          enum:
+          - individual
+          - company
+          example: company
+          type: string
+        entity_subtype:
+          description: Entity sub type
+          type: string
+        registrationNumber:
+          description: Registration number
+          example: GSUGO3B5
           nullable: true
           type: string
       type: object
     getLegalEntityList_200_response:
       example:
         data:
-        - code: code
-          name: name
-        - code: code
-          name: name
+        - country: US
+          entity_type: company
+          entity_subtype: entity_subtype
+          registrationNumber: GSUGO3B5
+          name: Deel US
+          vat_id: P051709055R
+          id: b61f6b35-7670-4515-b667-066f02b7b8a0
+        - country: US
+          entity_type: company
+          entity_subtype: entity_subtype
+          registrationNumber: GSUGO3B5
+          name: Deel US
+          vat_id: P051709055R
+          id: b61f6b35-7670-4515-b667-066f02b7b8a0
       properties:
         data:
           items:
@@ -50822,6 +51144,8 @@ components:
           description: Type of contribution for the 401K plan.
           enum:
           - PERCENTAGE
+          - NEC_PERCENTAGE
+          - NEC_FIXED_AMOUNT
           - FIXED_AMOUNT
           - MATCH
           example: PERCENTAGE
@@ -50880,6 +51204,8 @@ components:
           description: Type of contribution for the 401K plan.
           enum:
           - PERCENTAGE
+          - NEC_PERCENTAGE
+          - NEC_FIXED_AMOUNT
           - FIXED_AMOUNT
           - MATCH
           example: PERCENTAGE
@@ -51040,6 +51366,8 @@ components:
         contribution_type:
           description: Type of contribution for the 401K plan.
           enum:
+          - NEC_PERCENTAGE
+          - NEC_FIXED_AMOUNT
           - PERCENTAGE
           - FIXED_AMOUNT
           - MATCH
@@ -51089,6 +51417,8 @@ components:
         contribution_type:
           description: Type of contribution for the 401K plan.
           enum:
+          - NEC_PERCENTAGE
+          - NEC_FIXED_AMOUNT
           - PERCENTAGE
           - FIXED_AMOUNT
           - MATCH
@@ -51165,6 +51495,51 @@ components:
       properties:
         data:
           $ref: '#/components/schemas/terminateContract_201_response_data'
+      type: object
+    addEORBankAccount_request_data_inner:
+      properties:
+        key:
+          description: The key of the bank account properties.
+          example: beneficiaryName
+          type: string
+        value:
+          description: The value for that key property.
+          example: John Doe
+          type: string
+      required:
+      - key
+      - value
+      type: object
+    addEORBankAccount_request:
+      properties:
+        data:
+          description: Array of key value properties of bank account
+          items:
+            $ref: '#/components/schemas/addEORBankAccount_request_data_inner'
+          type: array
+      required:
+      - data
+      type: object
+    addEORBankAccount_201_response_data:
+      example:
+        id: dcc7b587-2246-4909-853e-12056e90c451
+      properties:
+        id:
+          description: ID of Bank Account.
+          example: dcc7b587-2246-4909-853e-12056e90c451
+          type: string
+      required:
+      - id
+      type: object
+    addEORBankAccount_201_response:
+      example:
+        data:
+          id: dcc7b587-2246-4909-853e-12056e90c451
+      properties:
+        data:
+          $ref: '#/components/schemas/addEORBankAccount_201_response_data'
+      required:
+      - data
       type: object
     post401kSingleDeductionDefinition_request:
       description: Schema for the 401K Guideline Plan request body.
@@ -52278,6 +52653,27 @@ components:
           items:
             $ref: '#/components/schemas/getGrossToNetGPReports_200_response_data_inner'
           type: array
+      required:
+      - data
+      type: object
+    getVerificationMethod_200_response_data:
+      example:
+        verification_method: veriff
+      properties:
+        verification_method:
+          description: The supported method for KYC
+          example: veriff
+          type: string
+      required:
+      - verification_method
+      type: object
+    getVerificationMethod_200_response:
+      example:
+        data:
+          verification_method: veriff
+      properties:
+        data:
+          $ref: '#/components/schemas/getVerificationMethod_200_response_data'
       required:
       - data
       type: object
@@ -54600,6 +54996,238 @@ components:
       properties:
         data:
           $ref: '#/components/schemas/upsertChildWorkerRelationsExternalId_request_data'
+      type: object
+    createVeriffSession_request_data_user_input:
+      description: Input data for the name change KYC operation
+      properties:
+        last_name:
+          description: The desired last name of the user
+          example: Doe
+          nullable: false
+          type: string
+        first_name:
+          description: The desired first name of the user
+          example: John
+          nullable: false
+          type: string
+        middle_name:
+          description: The desired middle name of the user
+          example: Smith
+          nullable: true
+          type: string
+      required:
+      - first_name
+      - last_name
+      type: object
+    createVeriffSession_request_data:
+      properties:
+        user_input:
+          $ref: '#/components/schemas/createVeriffSession_request_data_user_input'
+        operation_type:
+          description: The type of KYC operation to perform
+          enum:
+          - IDENTITY_RESUBMISSION_KYC
+          - IDENTITY_VERIFICATION_KYC
+          - NAME_CHANGE_KYC
+          - EMAIL_CHANGE_KYC
+          example: IDENTITY_RESUBMISSION_KYC
+          type: string
+      required:
+      - operation_type
+      type: object
+    createVeriffSession_request:
+      properties:
+        data:
+          $ref: '#/components/schemas/createVeriffSession_request_data'
+      required:
+      - data
+      type: object
+    createVeriffSession_201_response_data:
+      example:
+        url: https://magic.veriff.me/v/some.jwt.token
+      properties:
+        url:
+          description: The URL of the Veriff session
+          example: https://magic.veriff.me/v/some.jwt.token
+          type: string
+      required:
+      - url
+      type: object
+    createVeriffSession_201_response:
+      example:
+        data:
+          url: https://magic.veriff.me/v/some.jwt.token
+      properties:
+        data:
+          $ref: '#/components/schemas/createVeriffSession_201_response_data'
+      required:
+      - data
+      type: object
+    patchEORBankAccount_201_response_data:
+      example:
+        updated_at: 2022-05-24T09:38:46.235Z
+        created_at: 2022-05-24T09:38:46.235Z
+        id: dcc7b587-2246-4909-853e-12056e90c451
+        status: pending
+      properties:
+        id:
+          description: ID of Bank Account.
+          example: dcc7b587-2246-4909-853e-12056e90c451
+          type: string
+        status:
+          description: Bank Account status
+          enum:
+          - new
+          - pending
+          - approved
+          - failed
+          example: pending
+          type: string
+        created_at:
+          description: Long date-time format following ISO-8601
+          example: 2022-05-24T09:38:46.235Z
+          format: date-time
+          type: string
+        updated_at:
+          description: Long date-time format following ISO-8601
+          example: 2022-05-24T09:38:46.235Z
+          format: date-time
+          type: string
+      type: object
+    patchEORBankAccount_201_response:
+      example:
+        data:
+          updated_at: 2022-05-24T09:38:46.235Z
+          created_at: 2022-05-24T09:38:46.235Z
+          id: dcc7b587-2246-4909-853e-12056e90c451
+          status: pending
+      properties:
+        data:
+          $ref: '#/components/schemas/patchEORBankAccount_201_response_data'
+      required:
+      - data
+      type: object
+    getEORBankAccountGuide_200_response_data_inner_validations_inner_value:
+      oneOf:
+      - description: Validation value.
+        example: "2"
+        type: string
+      - description: Validation value.
+        example: 2
+        type: number
+    getEORBankAccountGuide_200_response_data_inner_validations_inner:
+      example:
+        type: MIN_LENGTH
+        value: "2"
+      properties:
+        type:
+          enum:
+          - MIN_LENGTH
+          - MAX_LENGTH
+          - REGEX
+          type: string
+        value:
+          $ref: '#/components/schemas/getEORBankAccountGuide_200_response_data_inner_validations_inner_value'
+      type: object
+    getEORBankAccountGuide_200_response_data_inner_values_allowed_inner:
+      example:
+        label: Argentina
+        value: AR
+      properties:
+        label:
+          description: The name of the allowed value.
+          example: Argentina
+          type: string
+        value:
+          description: The key of the allowed value.
+          example: AR
+          type: string
+      type: object
+    getEORBankAccountGuide_200_response_data_inner:
+      example:
+        values_allowed:
+        - label: Argentina
+          value: AR
+        - label: Argentina
+          value: AR
+        label: Country
+        validations:
+        - type: MIN_LENGTH
+          value: "2"
+        - type: MIN_LENGTH
+          value: "2"
+        type: Text
+        key: countryCode
+        required: true
+      properties:
+        key:
+          description: The key of the field.
+          example: countryCode
+          nullable: false
+          type: string
+        type:
+          description: Type of the field
+          example: Text
+          type: string
+        label:
+          description: Label for this field.
+          example: Country
+          type: string
+        required:
+          description: Whether the field is required or not.
+          example: true
+          nullable: false
+          type: boolean
+        validations:
+          items:
+            $ref: '#/components/schemas/getEORBankAccountGuide_200_response_data_inner_validations_inner'
+          type: array
+        values_allowed:
+          items:
+            $ref: '#/components/schemas/getEORBankAccountGuide_200_response_data_inner_values_allowed_inner'
+          type: array
+      required:
+      - key
+      - required
+      type: object
+    getEORBankAccountGuide_200_response:
+      example:
+        data:
+        - values_allowed:
+          - label: Argentina
+            value: AR
+          - label: Argentina
+            value: AR
+          label: Country
+          validations:
+          - type: MIN_LENGTH
+            value: "2"
+          - type: MIN_LENGTH
+            value: "2"
+          type: Text
+          key: countryCode
+          required: true
+        - values_allowed:
+          - label: Argentina
+            value: AR
+          - label: Argentina
+            value: AR
+          label: Country
+          validations:
+          - type: MIN_LENGTH
+            value: "2"
+          - type: MIN_LENGTH
+            value: "2"
+          type: Text
+          key: countryCode
+          required: true
+      properties:
+        data:
+          items:
+            $ref: '#/components/schemas/getEORBankAccountGuide_200_response_data_inner'
+          type: array
+      required:
+      - data
       type: object
     CreatedHrisDirectEmployeeContainer_data_employment:
       properties:

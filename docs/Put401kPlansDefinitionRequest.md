@@ -21,6 +21,8 @@ Schema for the 401K Guideline Plan request body.
 
 | Name | Value |
 |---- | -----|
+| NEC_PERCENTAGE | &quot;NEC_PERCENTAGE&quot; |
+| NEC_FIXED_AMOUNT | &quot;NEC_FIXED_AMOUNT&quot; |
 | PERCENTAGE | &quot;PERCENTAGE&quot; |
 | FIXED_AMOUNT | &quot;FIXED_AMOUNT&quot; |
 | MATCH | &quot;MATCH&quot; |

@@ -147,6 +147,40 @@ public class TimeOffApiTest {
     }
 
     /**
+     * List time-off requests for Organization
+     *
+     * List time-off requests for Organization  **Token scopes**: &#x60;time-off:read&#x60;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void getTimeOffsQueryForOrganizationTest() throws ApiException {
+        List<String> status = null;
+        OffsetDateTime startDate = null;
+        OffsetDateTime endDate = null;
+        OffsetDateTime approvalStartDate = null;
+        OffsetDateTime approvalEndDate = null;
+        OffsetDateTime updatedStartDate = null;
+        OffsetDateTime updatedEndDate = null;
+        Integer pageSize = null;
+        List<UUID> policyTypes = null;
+        String next = null;
+        GetTimeOffsQuery200Response response = api.getTimeOffsQueryForOrganization()
+                .status(status)
+                .startDate(startDate)
+                .endDate(endDate)
+                .approvalStartDate(approvalStartDate)
+                .approvalEndDate(approvalEndDate)
+                .updatedStartDate(updatedStartDate)
+                .updatedEndDate(updatedEndDate)
+                .pageSize(pageSize)
+                .policyTypes(policyTypes)
+                .next(next)
+                .execute();
+        // TODO: test validations
+    }
+
+    /**
      * Update time-off request
      *
      * Update time-off request  **Token scopes**: &#x60;time-off:write&#x60;

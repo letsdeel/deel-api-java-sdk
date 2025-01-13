@@ -54,7 +54,7 @@ import org.openapitools.client.JSON;
 /**
  * Put401kPlansDefinition200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-02T14:25:45.544976271Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-13T14:23:41.573776663Z[GMT]", comments = "Generator version: 7.10.0")
 public class Put401kPlansDefinition200Response {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -81,6 +81,10 @@ public class Put401kPlansDefinition200Response {
    */
   @JsonAdapter(ContributionTypeEnum.Adapter.class)
   public enum ContributionTypeEnum {
+    NEC_PERCENTAGE("NEC_PERCENTAGE"),
+    
+    NEC_FIXED_AMOUNT("NEC_FIXED_AMOUNT"),
+    
     PERCENTAGE("PERCENTAGE"),
     
     FIXED_AMOUNT("FIXED_AMOUNT"),
