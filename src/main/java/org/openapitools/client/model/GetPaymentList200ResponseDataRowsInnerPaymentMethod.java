@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * GetPaymentList200ResponseDataRowsInnerPaymentMethod
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-13T14:23:41.573776663Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-13T14:33:09.703830198Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetPaymentList200ResponseDataRowsInnerPaymentMethod {
   /**
    * Type of payment method used for the transaction.

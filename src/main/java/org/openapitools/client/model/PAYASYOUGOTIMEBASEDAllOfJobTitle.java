@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * Worker&#39;s job title. You can enter a custom job title or use a pre-defiled job title using the Id retrieved in job-titles endpoint.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-13T14:23:41.573776663Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-13T14:33:09.703830198Z[GMT]", comments = "Generator version: 7.10.0")
 public class PAYASYOUGOTIMEBASEDAllOfJobTitle {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)

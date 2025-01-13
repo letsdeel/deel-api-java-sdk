@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * OffboardingTrackerGetPaginationParameter
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-13T14:23:41.573776663Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-13T14:33:09.703830198Z[GMT]", comments = "Generator version: 7.10.0")
 public class OffboardingTrackerGetPaginationParameter {
   public static final String SERIALIZED_NAME_CONTRACT_ID = "contractId";
   @SerializedName(SERIALIZED_NAME_CONTRACT_ID)

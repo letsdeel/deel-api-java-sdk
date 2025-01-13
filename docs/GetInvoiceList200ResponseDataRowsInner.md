@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**id** | [**GetInvoiceList200ResponseDataRowsInnerId**](GetInvoiceList200ResponseDataRowsInnerId.md) |  |  |
+|**id** | **UUID** | Unique identifier of this resource as a UUID. |  |
 |**fee** | **String** | Fee added to the invoice amount. |  [optional] |
 |**type** | **String** | Type of the invoice. |  [optional] |
 |**label** | **String** | Label or reference number of the invoice. |  |

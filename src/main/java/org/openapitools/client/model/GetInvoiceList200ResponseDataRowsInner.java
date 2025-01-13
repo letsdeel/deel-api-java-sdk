@@ -22,7 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.time.OffsetDateTime;
 import java.util.Arrays;
-import org.openapitools.client.model.GetInvoiceList200ResponseDataRowsInnerId;
+import java.util.UUID;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -51,12 +51,12 @@ import org.openapitools.client.JSON;
 /**
  * GetInvoiceList200ResponseDataRowsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-13T14:23:41.573776663Z[GMT]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-13T14:33:09.703830198Z[GMT]", comments = "Generator version: 7.10.0")
 public class GetInvoiceList200ResponseDataRowsInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
   @javax.annotation.Nonnull
-  private GetInvoiceList200ResponseDataRowsInnerId id;
+  private UUID id;
 
   public static final String SERIALIZED_NAME_FEE = "fee";
   @SerializedName(SERIALIZED_NAME_FEE)
@@ -268,21 +268,21 @@ public class GetInvoiceList200ResponseDataRowsInner {
   public GetInvoiceList200ResponseDataRowsInner() {
   }
 
-  public GetInvoiceList200ResponseDataRowsInner id(@javax.annotation.Nonnull GetInvoiceList200ResponseDataRowsInnerId id) {
+  public GetInvoiceList200ResponseDataRowsInner id(@javax.annotation.Nonnull UUID id) {
     this.id = id;
     return this;
   }
 
   /**
-   * Get id
+   * Unique identifier of this resource as a UUID.
    * @return id
    */
   @javax.annotation.Nonnull
-  public GetInvoiceList200ResponseDataRowsInnerId getId() {
+  public UUID getId() {
     return id;
   }
 
-  public void setId(@javax.annotation.Nonnull GetInvoiceList200ResponseDataRowsInnerId id) {
+  public void setId(@javax.annotation.Nonnull UUID id) {
     this.id = id;
   }
 
@@ -1029,8 +1029,9 @@ public class GetInvoiceList200ResponseDataRowsInner {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the required field `id`
-      GetInvoiceList200ResponseDataRowsInnerId.validateJsonElement(jsonObj.get("id"));
+      if (!jsonObj.get("id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
+      }
       if ((jsonObj.get("fee") != null && !jsonObj.get("fee").isJsonNull()) && !jsonObj.get("fee").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `fee` to be a primitive type in the JSON string but got `%s`", jsonObj.get("fee").toString()));
       }

@@ -30264,16 +30264,6 @@ components:
         - individual
         - company
         type: string
-    getInvoiceList_200_response_data_rows_inner_id:
-      oneOf:
-      - description: Unique identifier of this resource as a UUID.
-        example: 00000000-0000-0000-0000-000000000000
-        format: uuid
-        type: string
-      - description: Unique identifier of this resource.
-        example: 12345
-        format: int64
-        type: integer
     getInvoiceList_200_response_data_rows_inner:
       example:
         is_offcycle: true
@@ -30308,7 +30298,10 @@ components:
         status: paid
       properties:
         id:
-          $ref: '#/components/schemas/getInvoiceList_200_response_data_rows_inner_id'
+          description: Unique identifier of this resource as a UUID.
+          example: 00000000-0000-0000-0000-000000000000
+          format: uuid
+          type: string
         fee:
           description: Fee added to the invoice amount.
           example: "10"

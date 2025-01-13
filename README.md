@@ -2,7 +2,7 @@
 
 Deel REST API
 - API version: 1.25.0
-  - Build date: 2025-01-13T14:23:41.573776663Z[GMT]
+  - Build date: 2025-01-13T14:33:09.703830198Z[GMT]
   - Generator version: 7.10.0
 
 Deel REST API
@@ -1156,7 +1156,6 @@ Class | Method | HTTP request | Description
  - [GetInvoiceList200Response](docs/GetInvoiceList200Response.md)
  - [GetInvoiceList200ResponseData](docs/GetInvoiceList200ResponseData.md)
  - [GetInvoiceList200ResponseDataRowsInner](docs/GetInvoiceList200ResponseDataRowsInner.md)
- - [GetInvoiceList200ResponseDataRowsInnerId](docs/GetInvoiceList200ResponseDataRowsInnerId.md)
  - [GetInvoiceList200ResponsePage](docs/GetInvoiceList200ResponsePage.md)
  - [GetInvoiceListEntitiesParameter](docs/GetInvoiceListEntitiesParameter.md)
  - [GetJobTitleList200Response](docs/GetJobTitleList200Response.md)
